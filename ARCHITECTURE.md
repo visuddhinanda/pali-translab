@@ -59,7 +59,11 @@ pali-translab/
 │   ├── pitfalls.md             # 用户积累的坑（固定文件）
 │   ├── concepts/               # 自定义概念笔记（按 INDEX 加载）
 │   └── grammar/                # 自定义语法笔记
-├── translations/{method}/{book}/{para}_v{n}.jsonl
+├── tipitaka/{method}/
+│   ├── jsonl/{book}/{para}_v{n}.jsonl
+│   ├── mdbook/                 # mdbook 源码
+│   ├── html/                   # mdbook build 输出
+│   └── epub/                   # epub 输出
 ├── gold/{book}/{para}.jsonl
 └── lessons/{book}/{para}.md
 ```

@@ -1,7 +1,8 @@
 """Export translated jsonl → mdbook source (and optionally build).
 
-Reads:  workspace/translations/{method}/{book}/{para}_{version}.jsonl
-Writes: workspace/translations/{method}/{book}/_mdbook/{book.toml, src/SUMMARY.md, src/*.md}
+Reads:  workspace/tipitaka/{method}/jsonl/{book}/{para}_{version}.jsonl
+Writes: workspace/tipitaka/{method}/mdbook/{book.toml, src/SUMMARY.md, src/*.md}
+Build:  workspace/tipitaka/{method}/html/
 
 Layout: chapters grouped by TOC (from /api/v2/palitext?view=book-toc).
 Display: per project knowledge/style.md "显示巴利原文" flag.
@@ -58,7 +59,8 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     root = Path(args.project_root).resolve()
-    src = root / "workspace" / "translations" / args.method / str(args.book)
+    method_dir = root / "workspace" / "tipitaka" / args.method
+    src = method_dir / "jsonl" / str(args.book)
     if not src.exists():
         print(f"no source dir: {src}", file=sys.stderr)
         return 2
@@ -104,7 +106,7 @@ def main(argv: list[str] | None = None) -> int:
             chapters[toc_paras[idx]].append(para)
 
     # Write mdbook
-    dist = src / "_mdbook"
+    dist = method_dir / "mdbook"
     src_md = dist / "src"
     src_md.mkdir(parents=True, exist_ok=True)
 
@@ -142,13 +144,15 @@ def main(argv: list[str] | None = None) -> int:
     (src_md / "SUMMARY.md").write_text("\n".join(summary) + "\n", "utf-8")
     print(f"wrote {written} chapter files to {dist}")
 
+    html_dir = method_dir / "html"
     if shutil.which("mdbook"):
         print("mdbook found; building HTML...")
-        subprocess.run(["mdbook", "build", str(dist)], check=False)
+        html_dir.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["mdbook", "build", str(dist), "--dest-dir", str(html_dir)], check=False)
     else:
         print("mdbook not installed. To build HTML:")
         print("  cargo install mdbook   # or grab binary from github releases")
-        print(f"  cd {dist} && mdbook build")
+        print(f"  cd {dist} && mdbook build --dest-dir {html_dir}")
     return 0
 
 

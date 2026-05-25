@@ -4,7 +4,7 @@ resources:
   - prev_translation     # v(n).jsonl
   - prev_review          # v(n).md
 knowledge: []
-output: translations/{method}/{book}/{para}_v{n+1}.jsonl
+output: tipitaka/{method}/jsonl/{book}/{para}_v{n+1}.jsonl
 ---
 
 # Revise (按审稿意见修正)

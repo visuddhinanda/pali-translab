@@ -78,12 +78,16 @@ knowledge/                         # 用户知识库
 ├── concepts/                      # 自定义概念笔记（登记到 INDEX）
 └── grammar/                       # 自定义语法笔记（登记到 INDEX）
 
-translations/{method}/{book}/
-    ├── {para}_v1.jsonl
-    ├── {para}_v1.md
-    ├── ...
-    ├── {para}_final.jsonl
-    └── {para}_final.md
+tipitaka/{method}/
+    ├── jsonl/{book}/
+    │   ├── {para}_v1.jsonl
+    │   ├── {para}_v1.md
+    │   ├── ...
+    │   ├── {para}_final.jsonl
+    │   └── {para}_final.md
+    ├── mdbook/                    # mdbook 源码
+    ├── html/                      # mdbook build 输出
+    └── epub/                      # epub 输出
 
 gold/{book}/{para}.jsonl           # 人工校对定稿
 lessons/{book}/{para}.md           # 反哺学习：原始差异分析
@@ -123,7 +127,7 @@ knowledge:
   # 此处只列 INDEX.md 中登记的自定义条目
   - concepts/nissaya       # 项目个性化补充
   - grammar/absolutive
-output: translations/{method}/{book}/{para}_v{n}.jsonl
+output: tipitaka/{method}/jsonl/{book}/{para}_v{n}.jsonl
 ---
 
 # 翻译指南
@@ -202,7 +206,7 @@ skill 按前缀分发：`skill:` 调脚本、`mcp:` 调 MCP tool、普通路径�
 
 ### /distill {book}/{para}
 
-逐句 diff `translations/{method}/{book}/{para}_final.jsonl` 与 `gold/{book}/{para}.jsonl`，对每处差异分析：
+逐句 diff `tipitaka/{method}/jsonl/{book}/{para}_final.jsonl` 与 `gold/{book}/{para}.jsonl`，对每处差异分析：
 
 - **类别**：术语 / 语法句型 / 固定搭配 / 省略还原 / 语体风格 / 名相歧义
 - **原文片段**

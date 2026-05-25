@@ -3,7 +3,7 @@ resources:
   - pali
   - prev_translation     # 自动解析为 v(n).jsonl
 knowledge: []
-output: translations/{method}/{book}/{para}_v{n}.md
+output: tipitaka/{method}/jsonl/{book}/{para}_v{n}.md
 ---
 
 # Review (审稿，不改译文)

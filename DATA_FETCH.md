@@ -267,7 +267,7 @@ https://next.wikipali.org/api/v2/sentence
 | `level` | int (1–7) | `1` / `2` / `4` | 层级深度（1 = 顶层） |
 
 **用法**：
-- skill 输出译文时，按 TOC 生成 `translations/{method}/{book}/{toc-slug}/{para}_v1.jsonl` 的目录层级
+- skill 输出译文时，按 TOC 生成 `tipitaka/{method}/jsonl/{book}/{para}_v1.jsonl` 的目录层级
 - 用户可读性更好，避免一堆裸 para 号
 - 缓存到本地（`.cache/wikipali/toc/{book}-{start_para}.json`）或干脆按需拉
 

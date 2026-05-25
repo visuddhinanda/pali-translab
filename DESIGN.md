@@ -31,12 +31,14 @@ ROOT/
 │       └── dn/
 │           └── 1.jsonl          # Python 预处理结果（术语+字典）
 │
-├── translations/
-│   ├── method_pali/
-│   │   └── dn/
-│   │       └── 1.jsonl
-│   └── method_nissaya/
-│       └── dn/
+├── tipitaka/
+│   ├── pali-only/
+│   │   ├── jsonl/dn/1.jsonl
+│   │   ├── mdbook/
+│   │   ├── html/
+│   │   └── epub/
+│   └── pali-nissaya/
+│       └── jsonl/dn/
 │           └── 1.jsonl
 │
 ├── proofread/
@@ -355,9 +357,9 @@ WHERE word = ANY(%(words)s)
 
 **功能**：将分块译文合并为完整 JSONL。
 
-**输入**：`translations/{method}/{book}/` 目录
+**输入**：`tipitaka/{method}/jsonl/{book}/` 目录
 
-**输出**：`translations/{method}/{book}.jsonl`
+**输出**：`tipitaka/{method}/jsonl/{book}.jsonl`
 
 ---
 
@@ -405,7 +407,7 @@ $ARGUMENTS 格式：{corpus}/{chunk}
 输出：每行一条 JSON
 {"id": "<原id>", "pali": "<原文>", "zh": "<译文>", "method": "<METHOD>"}
 
-输出到：translations/$METHOD/$ARGUMENTS.jsonl
+输出到：tipitaka/$METHOD/jsonl/$ARGUMENTS.jsonl
 输出前确保目录存在。
 ```
 
@@ -416,7 +418,7 @@ $ARGUMENTS 格式：{corpus}/{chunk}
 
 读取以下文件：
 - 巴利原文：corpus/pali/$ARGUMENTS.jsonl
-- 待校对译文：translations/$METHOD/$ARGUMENTS.jsonl
+- 待校对译文：tipitaka/$METHOD/jsonl/$ARGUMENTS.jsonl
 - lookup 缓存：cache/lookup/$ARGUMENTS.jsonl
 
 如果 METHOD=method_nissaya，额外读取缅文逐词解析作为参考：
@@ -449,7 +451,7 @@ $ARGUMENTS 格式：{corpus}/{chunk}
 
 读取以下文件：
 - 巴利原文：corpus/pali/$ARGUMENTS.jsonl
-- 所有方案译文：translations/*/$ARGUMENTS.jsonl（自动读取所有存在的方案）
+- 所有方案译文：tipitaka/*/jsonl/$ARGUMENTS.jsonl（自动读取所有存在的方案）
 - 缅文译文（如存在）：corpus/burmese/$ARGUMENTS.txt（评估参考，不参与翻译）
 - 泰文译文（如存在）：corpus/thai/$ARGUMENTS.txt（评估参考，不参与翻译）
 
@@ -512,7 +514,7 @@ done
 METHOD=$1
 shift
 for BOOK in "$@"; do
-    for f in translations/$METHOD/$BOOK/*.jsonl; do
+    for f in tipitaka/$METHOD/jsonl/$BOOK/*.jsonl; do
         name=$(basename $f .jsonl)
         claude --print "/proofread $BOOK/$name" --env METHOD=$METHOD
     done

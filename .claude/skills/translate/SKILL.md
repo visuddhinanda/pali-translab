@@ -19,13 +19,13 @@ description: Pali Buddhist text translation pipeline. Subcommands: run/review/re
 
 | 子命令 | 输入 | 输出 |
 |---|---|---|
-| `run` | resources | `translations/{method}/{book}/{para}_v1.jsonl` |
-| `review` | v(n).jsonl + resources | `translations/{method}/{book}/{para}_v(n).md`（审稿意见，不改译文） |
-| `revise` | v(n).jsonl + v(n).md | `translations/{method}/{book}/{para}_v(n+1).jsonl` |
-| `evaluate` | v3.jsonl + resources | `translations/{method}/{book}/{para}_final.jsonl` + `{para}_final.md` |
+| `run` | resources | `tipitaka/{method}/jsonl/{book}/{para}_v1.jsonl` |
+| `review` | v(n).jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}_v(n).md`（审稿意见，不改译文） |
+| `revise` | v(n).jsonl + v(n).md | `tipitaka/{method}/jsonl/{book}/{para}_v(n+1).jsonl` |
+| `evaluate` | v3.jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}_final.jsonl` + `{para}_final.md` |
 | `pipeline` | 同 run | 按 `method.md` 的 `steps:` 串联跑完 |
 | `learn` | 自由文本 + 目标条目 | 追加到项目 `knowledge/` 对应文件 |
-| `export` | jsonl src | `workspace/translations/{method}/{book}/_mdbook/`（mdbook 源码 + 可选 HTML） |
+| `export` | jsonl src | `tipitaka/{method}/mdbook/`（mdbook 源码）+ `html/` + `epub/` |
 
 ## 分派流程
 
@@ -69,7 +69,7 @@ method 步骤文档 frontmatter `resources:` 字段使用人类可读 channel na
 **Src（机器/回写）**：扁平 jsonl，便于程序处理和未来上传 wikipali
 
 ```
-workspace/translations/{method}/{book_id}/
+workspace/tipitaka/{method}/jsonl/{book_id}/
 ├── INDEX.md               # 按 TOC 组织的导航，每次 run/evaluate 自动重写
 ├── {para}_v1.jsonl
 ├── {para}_v1.md           # review 输出
@@ -82,14 +82,14 @@ workspace/translations/{method}/{book_id}/
 - `{method}` 命名建议：`pali-only` / `pali-nissaya` / `standard`
 - INDEX.md 状态标记：✓ final / ⏳ v1/v2/v3 / ⚠️ 有疑问
 
-**Dist（人读）**：mdbook，按 TOC 分层
+**Dist（人读）**：按格式分目录
 
 ```
-workspace/translations/{method}/{book_id}/_mdbook/
-├── book.toml
-└── src/
-    ├── SUMMARY.md
-    └── {para}-{slug}.md   # 每章节一份
+workspace/tipitaka/{method}/
+├── jsonl/{book_id}/       # 源数据（上面的 Src）
+├── mdbook/                # mdbook 源码（book.toml + src/）
+├── html/                  # mdbook build 输出
+└── epub/                  # epub 输出
 ```
 
 由 `/translate export {book_id}` 子命令从 jsonl src 派生。展示是否含 pali 原文由项目 `knowledge/style.md` 的"显示巴利原文"决定。默认导出 `final` 版本，缺则跳过。

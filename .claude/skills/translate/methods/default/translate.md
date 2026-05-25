@@ -3,7 +3,7 @@ resources:
   - pali
   # - nissaya       # 取消注释以启用（需 resources.toml 中已定义 channel）
 knowledge: []        # 仅加载固定文件 + skill references
-output: translations/{method}/{book}/{para}_v1.jsonl
+output: tipitaka/{method}/jsonl/{book}/{para}_v1.jsonl
 ---
 
 # Translate (v1)

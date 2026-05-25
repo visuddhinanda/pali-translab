@@ -13,7 +13,7 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
-DEFAULT_BASE = os.environ.get("WIKIPALI_URL", "https://www.wikipali.org")
+DEFAULT_BASE = os.environ.get("WIKIPALI_URL", "https://next.wikipali.org")
 DEFAULT_CACHE = Path(os.environ.get("WIKIPALI_CACHE", ".cache/wikipali"))
 USER_AGENT = "pali-translab-skill/0.1"
 
