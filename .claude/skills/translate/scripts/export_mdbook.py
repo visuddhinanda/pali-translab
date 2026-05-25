@@ -138,13 +138,16 @@ def main(argv: list[str] | None = None) -> int:
         for para in ch_paras:
             md.append(f"## §{para}")
             md.append("")
+            para_lines: list[str] = []
             for sent in paras[para]:
                 if style["show_pali"] and sent.get("pali"):
                     md.append(f"> {sent['pali']}")
                     md.append("")
                 if sent.get("zh"):
-                    md.append(str(sent["zh"]))
-                    md.append("")
+                    para_lines.append(str(sent["zh"]))
+            if para_lines:
+                md.append("\n".join(para_lines))
+                md.append("")
         (src_md / fname).write_text("\n".join(md), "utf-8")
         written += 1
 
