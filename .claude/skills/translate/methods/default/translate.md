@@ -13,24 +13,45 @@ output: tipitaka/{method}/jsonl/{book}/{para}/{para}_v1.jsonl
 
 ## 工作方法
 
-1. **发现该段可用资源**：调 `scripts/fetch_channels.py --view paragraphs --book {B} --para {P}`
-2. **取 pali 原文**：用 `_System_Pali_VRI_` 的 uid（或 `fetch_channels.py --resolve _System_Pali_VRI_` 动态查），调 `fetch_sentence.py`
-3. **取 nissaya（如有）**：在步骤 1 的结果中筛 `type=nissaya, lang=my`
-   - 一键：`fetch_channels.py --view paragraphs --book B --para P --type nissaya --lang my --uids-only`
-   - 返回 0 个 → **降级为纯 pali 翻译**，不报错，输出目录不变，jsonl 中标注 `"actual_resources": ["pali"]`
-   - 返回 1 个 → 直接使用
-   - 返回 2 个（不同来源）→ 都取，作为对照参考；以第一个为主，第二个标 `nissaya2_*` 前缀
-4. **句对齐**：按 `(word_start, word_end)` 把 nissaya 对齐到 pali 句
-5. **逐句翻译**：
-   - 严格按 `knowledge/style.md` 中"语体 / 术语策略 / 原文显示"约定
-   - 术语命中 `knowledge/terms.md` → 直接采用；命中 wikipali 术语表 → 次优采用
-   - 不确定的译法**不要**猜——标 `⚠️[候选?]`，evaluate 步会处理
-4. 输出 jsonl，每行：
-   ```json
-   {"id": "<sentence uuid>", "book": N, "paragraph": N,
-    "word_start": N, "word_end": N,
-    "pali": "...", "zh": "...", "confidence": 0-100}
-   ```
+### 1. 组 Chunk
+
+从起始 para 开始，逐段拉取巴利原文，累加字符数。当 buffer ≥ 5000 巴利字符时截断为一个 chunk。
+
+```
+for para in range(start_para, ...):
+    text = fetch_sentence(book, para, pali_channel)
+    buffer += text
+    if len(buffer) >= 5000:
+        → 翻译当前 chunk
+        → 清空 buffer，开始下一个 chunk
+```
+
+### 2. 取资源
+
+对 chunk 内每段：
+- **取 pali 原文**：用 `_System_Pali_VRI_` uid，调 `fetch_sentence.py`
+- **取 nissaya（如有）**：`fetch_channels.py --view paragraphs --book B --para P --type nissaya --lang my --uids-only`
+  - 返回 0 个 → **降级为纯 pali 翻译**，输出目录不变，jsonl 中标注 `"actual_resources": ["pali"]`
+  - 返回 1 个 → 直接使用
+  - 返回 2 个 → 都取，以第一个为主
+- **句对齐**：按 `(word_start, word_end)` 把 nissaya 对齐到 pali 句
+
+### 3. 翻译整个 Chunk
+
+将 chunk 内所有段落的巴利原文（+ nissaya）一次性提交翻译：
+- 严格按 `knowledge/style.md` 中"语体 / 术语策略 / 原文显示"约定
+- 术语命中 `knowledge/terms.md` → 直接采用；命中 wikipali 术语表 → 次优采用
+- 不确定的译法**不要**猜——标 `⚠️[候选?]`，evaluate 步会处理
+- chunk 内术语保持一致
+
+### 4. 输出
+
+按 para 拆分写入各自目录，每行 jsonl：
+```json
+{"id": "<sentence uuid>", "book": N, "paragraph": N,
+ "word_start": N, "word_end": N,
+ "pali": "...", "zh": "...", "confidence": 0-100}
+```
 
 ## 不要做
 
