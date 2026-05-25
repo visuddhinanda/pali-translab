@@ -19,10 +19,10 @@ description: Pali Buddhist text translation pipeline. Subcommands: run/review/re
 
 | 子命令 | 输入 | 输出 |
 |---|---|---|
-| `run` | resources | `tipitaka/{method}/jsonl/{book}/{para}/{para}_v1.jsonl` |
-| `review` | v(n).jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}/{para}_v(n).md`（审稿意见，不改译文） |
-| `revise` | v(n).jsonl + v(n).md | `tipitaka/{method}/jsonl/{book}/{para}/{para}_v(n+1).jsonl` |
-| `evaluate` | v3.jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}/{para}_final.jsonl` + `{para}_final.md` |
+| `run` | resources（按 chunk 批处理） | per-para: `tipitaka/{method}/jsonl/{book}/{para}/{para}_v1.jsonl` |
+| `review` | chunk 内所有 v(n).jsonl | `tipitaka/{method}/jsonl/{book}/reviews/{start}-{end}_v(n).md` |
+| `revise` | chunk review md + v(n).jsonl | per-para: `tipitaka/{method}/jsonl/{book}/{para}/{para}_v(n+1).jsonl` |
+| `evaluate` | chunk 内所有 v3.jsonl | per-para: `{para}_final.jsonl` + chunk: `reviews/{start}-{end}_final.md` |
 | `pipeline` | 同 run | 按 `method.md` 的 `steps:` 串联跑完 |
 | `learn` | 自由文本 + 目标条目 | 追加到项目 `knowledge/` 对应文件 |
 | `export` | jsonl src | `tipitaka/{method}/mdbook/`（mdbook 源码）+ `html/` + `epub/` |
@@ -71,13 +71,15 @@ method 步骤文档 frontmatter `resources:` 字段使用人类可读 channel na
 ```
 workspace/tipitaka/{method}/jsonl/{book_id}/
 ├── INDEX.md               # 按 TOC 组织的导航，每次 run/evaluate 自动重写
-└── {para}/
-    ├── {para}_v1.jsonl
-    ├── {para}_v1.md       # review 输出
-    ├── {para}_v2.jsonl
-    ├── ...
-    ├── {para}_final.jsonl
-    └── {para}_final.md    # evaluate 总评
+├── {para}/
+│   ├── {para}_v1.jsonl
+│   ├── {para}_v2.jsonl
+│   ├── ...
+│   └── {para}_final.jsonl
+└── reviews/               # review/evaluate 按 chunk 存放
+    ├── {start}-{end}_v1.md
+    ├── {start}-{end}_v2.md
+    └── {start}-{end}_final.md
 ```
 
 - `{method}` 命名建议：`pali-only` / `pali-nissaya` / `standard`
@@ -102,6 +104,18 @@ workspace/tipitaka/{method}/
 - 输出仍写入当前 method 目录（如 `tipitaka/pali-nissaya/jsonl/93/14/`）
 - jsonl 中标注实际使用的资源：`"actual_resources": ["pali"]`（缺少的资源不列出）
 - 不因个别段落资源缺失而把译文分散到不同 method 目录
+
+## Chunk 批处理
+
+所有步骤（run/review/revise/evaluate）按 chunk 批处理，而非逐段处理。
+
+**组 chunk 方法**：从起始 para 逐段拉取巴利原文，累加字符数，当 buffer ≥ 5000 巴利字符时截断为一个 chunk。余下段落进入下一个 chunk。
+
+**输出分离**：
+- jsonl 翻译结果仍按 para 拆分写入各自目录
+- review/evaluate md 按 chunk 写入 `reviews/` 目录，文件名 `{start_para}-{end_para}_v{n}.md`
+
+**好处**：上下文连贯，术语/风格一致性更好，减少 LLM 调用次数。
 
 ## 详细规范
 
