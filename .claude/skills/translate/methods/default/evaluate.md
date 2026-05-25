@@ -4,15 +4,16 @@ resources:
   - prev_translation     # v3.jsonl
 knowledge: []
 output:
-  - tipitaka/{method}/jsonl/{book}/{para}/{para}_final.jsonl
-  - tipitaka/{method}/jsonl/{book}/{para}/{para}_final.md
+  - tipitaka/{method}/jsonl/{book}/{para}/{para}_final.jsonl    # per-para
+  - tipitaka/{method}/jsonl/{book}/reviews/{start}-{end}_final.md  # per-chunk
 ---
 
 # Evaluate (最终评估)
 
 ## 目标
-1. 在译文中**内联标注**所有疑点 `⚠️[候选?]`
-2. 产出总评 md（总分 / 信心 / 疑问清单）
+1. 读取 chunk 内所有最新版 v(n).jsonl，在译文中**内联标注**所有疑点 `⚠️[候选?]`
+2. 按 para 输出 final.jsonl
+3. 按 chunk 产出总评 md（总分 / 信心 / 疑问清单）到 `reviews/{start}-{end}_final.md`
 
 ## final.jsonl 格式
 
@@ -27,7 +28,7 @@ output:
 ## final.md 格式
 
 ```markdown
-# Evaluate — {book}/{para}
+# Evaluate — {book}/{start_para}-{end_para}
 
 ## 总分
 - 准确性: X/100
