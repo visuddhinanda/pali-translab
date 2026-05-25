@@ -4,8 +4,8 @@ resources:
   - prev_translation     # v3.jsonl
 knowledge: []
 output:
-  - tipitaka/{method}/jsonl/{book}/{para}_final.jsonl
-  - tipitaka/{method}/jsonl/{book}/{para}_final.md
+  - tipitaka/{method}/jsonl/{book}/{para}/{para}_final.jsonl
+  - tipitaka/{method}/jsonl/{book}/{para}/{para}_final.md
 ---
 
 # Evaluate (最终评估)

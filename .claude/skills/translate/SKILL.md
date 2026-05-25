@@ -19,10 +19,10 @@ description: Pali Buddhist text translation pipeline. Subcommands: run/review/re
 
 | 子命令 | 输入 | 输出 |
 |---|---|---|
-| `run` | resources | `tipitaka/{method}/jsonl/{book}/{para}_v1.jsonl` |
-| `review` | v(n).jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}_v(n).md`（审稿意见，不改译文） |
-| `revise` | v(n).jsonl + v(n).md | `tipitaka/{method}/jsonl/{book}/{para}_v(n+1).jsonl` |
-| `evaluate` | v3.jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}_final.jsonl` + `{para}_final.md` |
+| `run` | resources | `tipitaka/{method}/jsonl/{book}/{para}/{para}_v1.jsonl` |
+| `review` | v(n).jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}/{para}_v(n).md`（审稿意见，不改译文） |
+| `revise` | v(n).jsonl + v(n).md | `tipitaka/{method}/jsonl/{book}/{para}/{para}_v(n+1).jsonl` |
+| `evaluate` | v3.jsonl + resources | `tipitaka/{method}/jsonl/{book}/{para}/{para}_final.jsonl` + `{para}_final.md` |
 | `pipeline` | 同 run | 按 `method.md` 的 `steps:` 串联跑完 |
 | `learn` | 自由文本 + 目标条目 | 追加到项目 `knowledge/` 对应文件 |
 | `export` | jsonl src | `tipitaka/{method}/mdbook/`（mdbook 源码）+ `html/` + `epub/` |
@@ -71,12 +71,13 @@ method 步骤文档 frontmatter `resources:` 字段使用人类可读 channel na
 ```
 workspace/tipitaka/{method}/jsonl/{book_id}/
 ├── INDEX.md               # 按 TOC 组织的导航，每次 run/evaluate 自动重写
-├── {para}_v1.jsonl
-├── {para}_v1.md           # review 输出
-├── {para}_v2.jsonl
-├── ...
-├── {para}_final.jsonl
-└── {para}_final.md        # evaluate 总评
+└── {para}/
+    ├── {para}_v1.jsonl
+    ├── {para}_v1.md       # review 输出
+    ├── {para}_v2.jsonl
+    ├── ...
+    ├── {para}_final.jsonl
+    └── {para}_final.md    # evaluate 总评
 ```
 
 - `{method}` 命名建议：`pali-only` / `pali-nissaya` / `standard`
@@ -93,6 +94,14 @@ workspace/tipitaka/{method}/
 ```
 
 由 `/translate export {book_id}` 子命令从 jsonl src 派生。展示是否含 pali 原文由项目 `knowledge/style.md` 的"显示巴利原文"决定。默认导出 `final` 版本，缺则跳过。
+
+## 资源降级规则
+
+当 method 声明的资源不可用时（如 `pali-nissaya` method 某段无 nissaya channel），**降级翻译但不换目录**：
+
+- 输出仍写入当前 method 目录（如 `tipitaka/pali-nissaya/jsonl/93/14/`）
+- jsonl 中标注实际使用的资源：`"actual_resources": ["pali"]`（缺少的资源不列出）
+- 不因个别段落资源缺失而把译文分散到不同 method 目录
 
 ## 详细规范
 

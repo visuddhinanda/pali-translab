@@ -43,9 +43,16 @@ def read_style(project_root: Path) -> dict:
 
 def load_paras(src_dir: Path, version: str) -> dict[int, list[dict]]:
     out: dict[int, list[dict]] = {}
-    for f in src_dir.glob(f"*_{version}.jsonl"):
-        para = int(f.name.split("_")[0])
-        out[para] = [json.loads(l) for l in f.read_text("utf-8").splitlines() if l.strip()]
+    for d in src_dir.iterdir():
+        if not d.is_dir():
+            continue
+        try:
+            para = int(d.name)
+        except ValueError:
+            continue
+        f = d / f"{para}_{version}.jsonl"
+        if f.exists():
+            out[para] = [json.loads(l) for l in f.read_text("utf-8").splitlines() if l.strip()]
     return out
 
 

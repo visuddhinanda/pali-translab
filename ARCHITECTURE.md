@@ -60,7 +60,7 @@ pali-translab/
 │   ├── concepts/               # 自定义概念笔记（按 INDEX 加载）
 │   └── grammar/                # 自定义语法笔记
 ├── tipitaka/{method}/
-│   ├── jsonl/{book}/{para}_v{n}.jsonl
+│   ├── jsonl/{book}/{para}/{para}_v{n}.jsonl
 │   ├── mdbook/                 # mdbook 源码
 │   ├── html/                   # mdbook build 输出
 │   └── epub/                   # epub 输出

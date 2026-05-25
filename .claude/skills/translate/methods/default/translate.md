@@ -3,7 +3,7 @@ resources:
   - pali
   # - nissaya       # 取消注释以启用（需 resources.toml 中已定义 channel）
 knowledge: []        # 仅加载固定文件 + skill references
-output: tipitaka/{method}/jsonl/{book}/{para}_v1.jsonl
+output: tipitaka/{method}/jsonl/{book}/{para}/{para}_v1.jsonl
 ---
 
 # Translate (v1)
@@ -17,7 +17,7 @@ output: tipitaka/{method}/jsonl/{book}/{para}_v1.jsonl
 2. **取 pali 原文**：用 `_System_Pali_VRI_` 的 uid（或 `fetch_channels.py --resolve _System_Pali_VRI_` 动态查），调 `fetch_sentence.py`
 3. **取 nissaya（如有）**：在步骤 1 的结果中筛 `type=nissaya, lang=my`
    - 一键：`fetch_channels.py --view paragraphs --book B --para P --type nissaya --lang my --uids-only`
-   - 返回 0 个 → **降级为纯 pali 翻译**，不报错
+   - 返回 0 个 → **降级为纯 pali 翻译**，不报错，输出目录不变，jsonl 中标注 `"actual_resources": ["pali"]`
    - 返回 1 个 → 直接使用
    - 返回 2 个（不同来源）→ 都取，作为对照参考；以第一个为主，第二个标 `nissaya2_*` 前缀
 4. **句对齐**：按 `(word_start, word_end)` 把 nissaya 对齐到 pali 句
