@@ -12,3 +12,10 @@ __pycache__/
 
 # Personal CLAUDE config
 /CLAUDE.local.md
+
+# Local memory / session data
+/.claude/projects/
+
+# Batch runtime artifacts
+/scripts/*.err
+/scripts/audit.log
