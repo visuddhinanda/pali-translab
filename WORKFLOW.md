@@ -20,11 +20,11 @@
 ## 二、翻译流水线
 
 ```
-translate → review → revise → review → revise → evaluate
-   v1       v1.md     v2      v2.md     v3      final
+translate → review → revise → evaluate
+   v1       v1.md     v2      final
 ```
 
-固定两轮修正。
+固定一轮修正。
 
 ### 步骤定义
 
@@ -33,7 +33,7 @@ translate → review → revise → review → revise → evaluate
 | translate | 资源（pali / nissaya / lookup / …） | `{para}_v1.jsonl` | — |
 | review | v(n) jsonl + 资源 | `{para}_v{n}.md`（审稿意见） | 否（非侵入） |
 | revise | v(n) jsonl + v(n).md | `{para}_v(n+1).jsonl` | 是 |
-| evaluate | v3 jsonl + 资源 | `{para}_final.jsonl` + `{para}_final.md` | 是（内联标注疑问） |
+| evaluate | v2 jsonl + 资源 | `{para}_final.jsonl` + `{para}_final.md` | 是（内联标注疑问） |
 
 ### 触发方式
 
@@ -107,7 +107,7 @@ lessons/{book}/{para}.md           # 反哺学习：原始差异分析
 
 ```markdown
 ---
-steps: [translate, review, revise, review, revise, evaluate]
+steps: [translate, review, revise, evaluate]
 ---
 
 # method_nissaya
