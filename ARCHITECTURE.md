@@ -1,122 +1,158 @@
 # Pali-TransLab 架构
 
-> 三层分离：**Skill 层**（通用引擎）/ **MCP 层**（数据源，过渡期为 Python 脚本）/ **项目层**（用户定制）。
-> 目标：skill 可发布到 skills 市场，被任意佛教研究者复用，项目层只承载个人/团队的定制。
+> 四层分离：**知识层** / **技能层** / **工作流层** / **执行层**
+> 目标：skill 可独立发布复用，批量处理确定性可控，人工校对灵活组合。
 
 ---
 
-## 一、三层职责
-
-### 1. Skill 层 `.claude/skills/<name>/`
-
-通用、可发布、零项目依赖。
+## 一、四层架构总览
 
 ```
-.claude/skills/translate/
+知识层 knowledge/
+  style.md                 ← 翻译风格配置（skill 自动加载）
+  terms.md                 ← 术语偏好（skill 自动加载）
+  pitfalls.md              ← 已知坑（skill 自动加载）
+  translation-rules.md     ← 从校对中蒸馏出的翻译规则，版本化管理
+  term-glossary.jsonl      ← 术语表（结构化）
+  known-issues.md          ← 已知难点和处理方案
+  INDEX.md                 ← 自定义知识文件索引
+  concepts/                ← 自定义概念笔记
+  grammar/                 ← 自定义语法笔记
+
+技能层 .claude/skills/
+  pali-translate/          ← 原子能力：巴利原文 → 中译初稿
+  pali-review/             ← 原子能力：译文审读，输出问题清单
+  pali-revise/             ← 原子能力：根据审读意见修订译文
+  pali-evaluate/           ← 原子能力：译文质量评分
+  pali-footnote/           ← 原子能力：从义注查找并生成脚注
+  pali-term-check/         ← 原子能力：术语一致性检查
+  translate/               ← [旧] 伞形 skill，保留供参考
+
+工作流层 .claude/commands/
+  translate.md             ← 组合：translate → term-check
+  translate-review.md      ← 组合：translate → review → revise (x2) → term-check
+  annotate.md              ← 组合：footnote（只加注，不翻译）
+  full-pipeline.md         ← 组合：完整流程
+  extract-rules.md         ← 工具：从 audit.log 蒸馏规则 → 更新知识层
+
+执行层 scripts/
+  translate_batch.sh       ← 批量翻译，直接注入内容，支持断点续传
+  audit.log                ← 结构化操作日志（JSONL）
+```
+
+---
+
+## 二、各层职责
+
+### 知识层 `knowledge/`
+
+用户/团队的领域知识。进 repo，团队共享，注入每次翻译上下文。
+
+- **固定文件**（`style.md` / `terms.md` / `pitfalls.md`）：skill 按约定路径自动读取
+- **规则文件**（`translation-rules.md` / `term-glossary.jsonl` / `known-issues.md`）：从人工校对中蒸馏，版本化管理
+- **自定义条目**（`concepts/` / `grammar/`）：须登记在 `INDEX.md`，由 method frontmatter 引用
+
+### 技能层 `.claude/skills/`
+
+通用、可发布、零项目依赖的原子能力。每个 skill 职责单一：
+
+| Skill | 输入 | 输出 | 改译文？ |
+|---|---|---|---|
+| pali-translate | pali 原文 (+ nissaya) | v1.jsonl | — |
+| pali-review | v(n).jsonl | review md | 否 |
+| pali-revise | v(n).jsonl + review md | v(n+1).jsonl | 是 |
+| pali-evaluate | v(n).jsonl | final.jsonl + final.md | 是（标注） |
+| pali-footnote | final.jsonl + 义注 | jsonl + footnotes | 追加 |
+| pali-term-check | jsonl 范围 | term report md | 否 |
+
+每个 skill 内部结构：
+```
+.claude/skills/<name>/
 ├── SKILL.md                    # 触发条件 + 主流程
-├── methods/
-│   └── default/                # 自带默认 method（项目可整文件覆盖）
-│       ├── method.md
-│       ├── translate.md
-│       ├── review.md
-│       ├── revise.md
-│       └── evaluate.md
-├── references/                 # 业务流强绑定的知识（不可被项目覆盖）
-│   ├── nissaya_format.md       # 缅文 nissaya 6 类结构
-│   ├── pali_basics.md
-│   └── review_criteria.md
-└── scripts/                    # 过渡期：HTTP 调 wikipali；未来由 MCP 替换
-    ├── fetch_pali.py
-    ├── fetch_nissaya.py
-    └── fetch_dict.py
+├── methods/default/            # 默认 method（项目可整文件覆盖）
+├── references/                 # 业务强绑定知识（不可覆盖）
+└── scripts/                    # 数据获取脚本（过渡期 HTTP，未来 MCP）
 ```
 
-**原则**：skill 内一切都是"通用知识 + 通用流程"。任何与具体语料、具体研究者偏好相关的内容都不进 skill。
+### 工作流层 `.claude/commands/`
 
-### 2. MCP 层（未来）
+组合多个 skill 的预定义流程。每个 command 明确写明调用哪些 skills、执行顺序、输入输出。
 
-替换 skill 中的 `scripts/*.py`。接口对 skill 透明——SKILL.md 中调用方式从
-`python scripts/fetch_pali.py --id X` 改为 MCP tool 调用，其他不变。
+交互模式下用 `/command-name` 调用。
 
-**过渡期**：scripts 直接走 HTTP 调 wikipali API。
+### 执行层 `scripts/`
 
-### 3. 项目层（本仓库）
-
-用户/团队的个性化数据与配置。
-
-```
-pali-translab/
-├── config.toml                 # 项目元信息（语料范围、目标译语、wikipali endpoint…）
-├── resources.toml              # 资源名 → 路径/接口 映射
-├── methods/                    # 覆盖 skill 默认 method（可选）
-│   └── my_method/
-│       ├── method.md
-│       └── translate.md        # 整文件覆盖 skill 同名默认文件
-├── knowledge/                  # 用户知识库
-│   ├── INDEX.md                # 知识文件索引（必需）
-│   ├── style.md                # 语言风格（固定文件，skill 自动读取）
-│   ├── terms.md                # 术语偏好（固定文件）
-│   ├── pitfalls.md             # 用户积累的坑（固定文件）
-│   ├── concepts/               # 自定义概念笔记（按 INDEX 加载）
-│   └── grammar/                # 自定义语法笔记
-├── tipitaka/{method}/
-│   ├── jsonl/{book}/{para}/{para}_v{n}.jsonl
-│   ├── mdbook/                 # mdbook 源码
-│   ├── html/                   # mdbook build 输出
-│   └── epub/                   # epub 输出
-├── gold/{book}/{para}.jsonl
-└── lessons/{book}/{para}.md
-```
+批量自动化脚本。**不依赖 Skills 自动触发**，直接读取文件内容拼接提示词，用 `claude -p` 非交互模式执行。
 
 ---
 
-## 二、加载与覆盖规则
+## 三、两种使用模式
 
-### Method 加载
+### 人工校对模式（交互）
 
-1. skill 启动时，先看项目 `methods/<name>/<step>.md` 是否存在
-2. 存在 → 使用项目版本（**整文件覆盖**，不做字段合并）
-3. 不存在 → 回退到 `.claude/skills/<skill>/methods/default/<step>.md`
+在 Claude Code 中用自然语言或 slash commands 驱动：
+- `/pali-translate 94/3` — 单步翻译
+- `/translate-review 94/3` — 翻译 + 两轮审修
+- `/full-pipeline 94/3` — 完整流程
+- `/annotate 94/3` — 给现有译文加脚注
 
-**项目模板**：每个项目 `methods/` 下提供一份完整模板（拷贝自 skill default），用户按需编辑。
+灵活组合，可中途人工介入修改。
+
+### 批量处理模式（自动）
+
+```bash
+./scripts/translate_batch.sh 94 3 100 --method pali-only
+```
+
+确定性执行：
+- 直接注入 SKILL.md + knowledge 内容到提示词
+- 每次调用上下文完全相同
+- 支持断点续传（跳过已有 v1.jsonl）
+- 结构化审计日志（audit.log）
+
+---
+
+## 四、Method 覆盖规则
+
+1. 项目 `methods/<method>/<step>.md` 存在 → 使用项目版本（**整文件覆盖**）
+2. 不存在 → 回退到 `.claude/skills/<skill>/methods/default/<step>.md`
 
 ### Knowledge 加载
 
-1. **skill `references/`**：业务流强绑定，**总是加载**，项目不可覆盖
-2. **项目 `knowledge/` 固定文件**：skill 按约定路径自动读取
-   - `style.md` — 语言风格、术语策略、是否显示巴利原文等
-   - `terms.md` — 术语偏好对照表
-   - `pitfalls.md` — 个人积累的坑
-3. **项目 `knowledge/INDEX.md`**：列出额外可加载的知识文件，method 步骤文档的 `knowledge:` frontmatter 按 INDEX 中的条目名引用
+1. **skill `references/`**：业务强绑定，总是加载，不可覆盖
+2. **项目固定文件**（`style.md` / `terms.md` / `pitfalls.md`）：自动加载
+3. **项目自定义条目**：须登记在 `INDEX.md`，由 method frontmatter `knowledge:` 引用
 
-**追加而非覆盖**：项目 knowledge 追加到 skill references 之后，不替换。
-
-### 资源加载
-
-skill 中所有"取数据"的动作（取巴利原文、取 nissaya、查词典）：
-
-- 通过 `resources.toml` 的资源名解析
-- 解析结果可以是本地路径、HTTP endpoint、或未来的 MCP tool 名
-- skill 不关心后端形态
+追加而非覆盖。
 
 ---
 
-## 三、固定文件契约
+## 五、如何新增 Skill
 
-项目 `knowledge/` 下，以下文件名为**保留约定**，skill 会自动读取（如存在）：
-
-| 文件 | 用途 | 是否必需 |
-|---|---|---|
-| `INDEX.md` | 列出所有可被 method 引用的知识文件 | 必需 |
-| `style.md` | 语言风格、术语处理、是否显示原文 | 推荐 |
-| `terms.md` | 术语偏好对照 | 可选 |
-| `pitfalls.md` | 用户积累的坑 | 可选 |
-
-其余文件（如 `concepts/<topic>.md`、`grammar/<topic>.md`）由用户自定，必须在 INDEX.md 中登记才能被 method 引用。
+1. 在 `.claude/skills/<name>/` 创建目录
+2. 写 `SKILL.md`（frontmatter 含 `name` 和 `description`）
+3. 可选：`methods/default/` 放默认 method，`references/` 放业务知识，`scripts/` 放数据脚本
+4. 在相关 command 文件中引用新 skill
+5. 如需批量处理，在 `scripts/` 中创建对应的注入式脚本
 
 ---
 
-## 四、配置文件
+## 六、知识蒸馏循环
+
+```
+人工校对 → audit.log 记录 → /extract-rules 分析 → 人工确认 → 更新 knowledge/
+                                                                    ↓
+                                                            下次翻译自动加载
+```
+
+1. 交互模式下人工校对时，操作记录追加到 `scripts/audit.log`
+2. `/extract-rules` 命令分析日志，聚类提取可泛化规则
+3. 人工确认后用 `/translate learn` 写入 `knowledge/`
+4. 下次翻译（交互或批量）自动加载更新后的知识
+
+---
+
+## 七、配置文件
 
 ### `config.toml`（项目元信息）
 
@@ -130,37 +166,45 @@ books = ["dn", "mn"]
 
 [wikipali]
 endpoint = "https://wikipali.org/api"
-# 未来切 MCP 后此节作废
 ```
 
 ### `resources.toml`（资源映射）
 
 ```toml
-# 过渡期：scripts 调 wikipali HTTP
-pali       = "skill:translate/scripts/fetch_pali.py --id {book}/{para}"
-nissaya    = "skill:translate/scripts/fetch_nissaya.py --id {book}/{para}"
-lookup     = "skill:translate/scripts/fetch_dict.py --id {book}/{para}"
-
-# 未来：切换到 MCP
-# pali = "mcp:wikipali/get_pali"
+pali       = "skill:pali-translate/scripts/fetch_sentence.py --book {book} --para {para} --channels <uuid>"
+nissaya    = "skill:pali-translate/scripts/fetch_channels.py --view paragraphs --book {book} --para {para}"
+atthakatha = "skill:pali-footnote/scripts/fetch_sentence.py --book {book} --para {para} --channels <uuid>"
 ```
 
-skill 解析 `skill:` 前缀 → 调脚本；`mcp:` 前缀 → 调 MCP tool；普通路径 → 读本地文件。
+skill 按前缀分发：`skill:` 调脚本、`mcp:` 调 MCP tool、普通路径读本地文件。
 
 ---
 
-## 五、迁移路径
+## 八、输出目录结构
 
-1. **现在**：写第一个 skill（建议 translate），含 default method + scripts/fetch_*.py
-2. **跑通端到端**：用 wikipali HTTP 取数据，产出 v1.jsonl
-3. **沉淀 references/**：把 nissaya.md 等业务强绑定知识从项目 knowledge/ 搬进 skill references/
-4. **开发 wikipali MCP**：scripts 接口冻结后照样迁移
-5. **发布 skill**：项目层只剩 config + resources + knowledge + 产出物
+```
+workspace/tipitaka/{method}/
+├── jsonl/{book_id}/
+│   ├── INDEX.md
+│   ├── {para}/
+│   │   ├── {para}_v1.jsonl
+│   │   ├── {para}_v2.jsonl
+│   │   ├── {para}_v3.jsonl
+│   │   └── {para}_final.jsonl
+│   └── reviews/
+│       ├── {start}-{end}_v1.md
+│       ├── {start}-{end}_v2.md
+│       ├── {start}-{end}_final.md
+│       └── term_check_chunk.md
+├── mdbook/
+├── html/
+└── epub/
+```
 
 ---
 
-## 六、与 WORKFLOW.md 的关系
+## 九、与旧架构的关系
 
-- 本文档定义**结构与契约**（哪里放什么、如何加载）
-- `WORKFLOW.md` 定义**流程**（translate→review→revise→evaluate 怎么跑）
-- 两者互不重复，有冲突以本文档为准
+旧架构将 translate/review/revise/evaluate 合并在 `.claude/skills/translate/` 一个伞形 skill 里。新架构拆分为独立原子 skill + command 组合层，原有 `translate/` 目录保留供参考，不再作为主工作流使用。
+
+旧文档 `WORKFLOW.md` 中的流程定义仍然有效（translate→review→revise→evaluate 流水线），但实现方式从单一 skill 分派改为 command 组合多个独立 skill。
