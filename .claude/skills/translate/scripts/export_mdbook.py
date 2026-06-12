@@ -119,8 +119,27 @@ def main(argv: list[str] | None = None) -> int:
 
     title = " / ".join(w["title"] for w in works)
     (dist / "book.toml").write_text(
-        f'[book]\ntitle = "{title}"\nlanguage = "zh"\nsrc = "src"\n',
+        f'[book]\ntitle = "{title}"\nlanguage = "zh"\nsrc = "src"\n\n'
+        '[output.html]\nadditional-css = ["theme/evaluate.css"]\n',
         "utf-8",
+    )
+    # 评估标注配色（final 版 zh 中的 <span class="evaluate-*">）
+    theme = dist / "theme"
+    theme.mkdir(parents=True, exist_ok=True)
+    (theme / "evaluate.css").write_text(
+        ".evaluate-fatal      { background:#ffd6d6; border-bottom:2px solid #d00; cursor:help; }\n"
+        ".evaluate-error      { background:#ffe2c2; border-bottom:2px solid #e67e00; cursor:help; }\n"
+        ".evaluate-warning    { background:#fff3c4; border-bottom:2px dotted #c8a200; cursor:help; }\n"
+        ".evaluate-suggestion { background:#d9ecff; border-bottom:1px dotted #3b82c4; cursor:help; }\n"
+        '[class^="evaluate-"]:hover { filter:brightness(0.95); }\n',
+        "utf-8",
+    )
+
+    # 以实际有章节的条目中的最小 level 作为顶层（0 缩进），
+    # 否则首条即缩进、mdbook 识别不到任何章节。
+    base_level = min(
+        (max(1, t.get("level") or 1) for t in toc_entries if chapters[t["paragraph"]]),
+        default=1,
     )
 
     summary = ["# Summary", ""]
@@ -130,7 +149,7 @@ def main(argv: list[str] | None = None) -> int:
         if not ch_paras:
             continue
         level = max(1, t.get("level") or 1)
-        indent = "  " * (level - 1)
+        indent = "  " * (level - base_level)
         fname = f"{t['paragraph']:06d}-{slug(t['toc'])}.md"
         summary.append(f"{indent}- [{t['toc']}](./{fname})")
 
