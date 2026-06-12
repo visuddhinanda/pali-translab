@@ -24,12 +24,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 架构要点（不读架构文档时也要遵守）
 
-- **三层**：Skill 层（`.claude/skills/<name>/`，通用可发布）/ MCP 层（未来替换 skill 的 scripts）/ 项目层（本仓库）
+- **四层**：知识层（`knowledge/`）/ 技能层（`.claude/skills/pali-*`，原子能力）/ 工作流层（`.claude/commands/`，组合 skill）/ 执行层（`scripts/`，批量自动化）
+- **原子 Skills**：pali-translate / pali-review / pali-revise / pali-evaluate / pali-footnote / pali-term-check，各自独立
+- **批量处理**：`scripts/translate_batch.sh` 直接注入 SKILL.md + knowledge 内容到提示词，不依赖 Skills 自动触发
 - **数据源**：过渡期 skill 内 `scripts/*.py` 调 wikipali HTTP API；未来切 MCP。**不依赖项目本地语料文件。**
 - **Method 覆盖**：项目 `methods/<name>/<step>.md` 整文件覆盖 skill `methods/default/<step>.md`，不做字段合并
 - **Knowledge 分层**：
   - skill `references/`（业务强绑定，不可覆盖）
   - 项目 `knowledge/` 固定文件 `style.md` / `terms.md` / `pitfalls.md`（skill 自动加载）
+  - 项目 `knowledge/` 规则文件 `translation-rules.md` / `term-glossary.jsonl` / `known-issues.md`
   - 项目 `knowledge/INDEX.md` 登记的自定义条目（method frontmatter 按条目名引用）
 - **资源映射**：`resources.toml` 用前缀分发——`skill:` 调脚本、`mcp:` 调 MCP tool、普通路径读本地文件
 
