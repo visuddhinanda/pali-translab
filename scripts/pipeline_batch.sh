@@ -8,9 +8,9 @@
 #   revise v1  → v2.jsonl
 #   evaluate   → {p}_final.jsonl + reviews/{p}-{p}_final.md
 #
-# 逐阶段跑完整个 para 区间再进下一阶段；各阶段脚本各自断点续传。
-# 每阶段最多重试 MAX_TRY 次：重跑时 resume 跳过已成功段，只补失败段
-# （失败段无产物 → 被再次尝试）。模型偶发的 JSON/句数违规由此自动消化。
+# 处理粒度：**逐段跑完整 4 步**——一个段落 translate→review→revise→evaluate 全部
+# 做完（含引号归一化），再进下一段。每步本就是单段独立的 claude -p，段间上下文隔离。
+# 各阶段最多重试 MAX_TRY 次：重跑时 resume 跳过已成功产物，只补该段失败的步骤。
 #
 # 用法：
 #   ./pipeline_batch.sh <book_id> <start_para> <end_para> [--method <name>] [--tries N]
@@ -18,6 +18,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 BOOK_ID="${1:?用法: $0 <book_id> <start_para> <end_para> [--method <name>] [--tries N]}"
 START_PARA="${2:?缺少 start_para}"
@@ -34,37 +35,45 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-ARGS=("$BOOK_ID" "$START_PARA" "$END_PARA" --method "$METHOD")
-
-# run_stage <label> <script> [extra args...]
-# 重试直到该脚本报告 fail=0，或用尽 MAX_TRY 次。
+# run_stage <label> <script> <para> [extra args...]
+# 对单个段落重试某一步，直到该步报告 fail=0，或用尽 MAX_TRY 次。
 run_stage() {
-    local label="$1" script="$2"; shift 2
+    local label="$1" script="$2" para="$3"; shift 3
     local try out
     for ((try = 1; try <= MAX_TRY; try++)); do
-        echo ">>> [$label] 第 $try/$MAX_TRY 次"
-        out=$("$SCRIPT_DIR/$script" "${ARGS[@]}" "$@" 2>&1) || true
+        echo ">>> [§$para $label] 第 $try/$MAX_TRY 次"
+        out=$("$SCRIPT_DIR/$script" "$BOOK_ID" "$para" "$para" --method "$METHOD" "$@" 2>&1) || true
         echo "$out"
         # 末行形如 "=== 完成: done=.. skip=.. fail=N ==="
         if echo "$out" | grep -qE '完成: .*fail=0'; then
             return 0
         fi
-        echo ">>> [$label] 仍有失败段，准备重试..."
+        echo ">>> [§$para $label] 该步失败，准备重试..."
     done
-    echo ">>> [$label] 用尽 $MAX_TRY 次仍有失败段（见上）" >&2
-    return 0   # 不中断流水线，失败段留待人工/后续补跑
+    echo ">>> [§$para $label] 用尽 $MAX_TRY 次仍失败（见上）" >&2
+    return 0   # 不中断流水线，留待人工/后续补跑
 }
 
-echo "######## pipeline_batch: book=$BOOK_ID para=$START_PARA..$END_PARA method=$METHOD tries=$MAX_TRY ########"
+OUTPUT_BASE="$PROJECT_DIR/workspace/tipitaka/$METHOD/jsonl/$BOOK_ID"
 
-run_stage "1/4 translate"         translate_batch.sh
-run_stage "2/4 review(nissaya)"   review_batch.sh   --version 1
-run_stage "3/4 revise(v1→v2)"     revise_batch.sh   --version 1
-run_stage "4/4 evaluate(nissaya)" evaluate_batch.sh
+echo "######## pipeline_batch: book=$BOOK_ID para=$START_PARA..$END_PARA method=$METHOD tries=$MAX_TRY（逐段全流程）########"
 
-# 收尾：把模型顽固使用的直角引号「」『』统一为弯引号 “” ‘’（style.md 要求）
-echo ">>> [收尾] 引号归一化 「」→“” 、 『』→‘’"
-python3 "$SCRIPT_DIR/convert_quotes.py" \
-    "$(cd "$SCRIPT_DIR/.." && pwd)/workspace/tipitaka/$METHOD/jsonl/$BOOK_ID" >/dev/null 2>&1 || true
+for PARA in $(seq "$START_PARA" "$END_PARA"); do
+    echo "════════ 段落 $PARA 全流程开始 ════════"
+
+    run_stage "1/4 translate"         translate_batch.sh "$PARA"
+    run_stage "2/4 review(nissaya)"   review_batch.sh    "$PARA" --version 1
+    run_stage "3/4 revise(v1→v2)"     revise_batch.sh    "$PARA" --version 1
+    run_stage "4/4 evaluate(nissaya)" evaluate_batch.sh  "$PARA"
+
+    # 收尾：把该段直角引号「」『』统一为弯引号 “” ‘’（style.md 要求）
+    echo ">>> [§$PARA 收尾] 引号归一化"
+    python3 "$SCRIPT_DIR/convert_quotes.py" \
+        "$OUTPUT_BASE/$PARA" \
+        "$OUTPUT_BASE/reviews/${PARA}-${PARA}_v1.md" \
+        "$OUTPUT_BASE/reviews/${PARA}-${PARA}_final.md" >/dev/null 2>&1 || true
+
+    echo "════════ 段落 $PARA 全流程结束 ════════"
+done
 
 echo "######## pipeline_batch 完成 ########"
