@@ -4,12 +4,13 @@ Nissaya（နိဿယ）是缅甸传统的巴利**逐词对译注解**：把一
 
 ## 取数
 
-```
-GET /api/v2/sentence?view=paragraph&book={book}&para={para}&channel_type=nissaya&lang=my&format=text
+```bash
+wikipali versions <book>:<para> --json     # 找 type=nissaya 的 channel uid
+wikipali get <book>:<para> --json --channel <uid>
 ```
 
-- 也可先用 `fetch_channels.py --view paragraphs --book B --para P --type nissaya --lang my` 取 channel uid，再用 `--channels` 调 `fetch_sentence.py`。
-- `format=text` 用 `= ` 分隔词与释义；`format=html` 用缅文逗号 `၊` 分隔。两者内容相同。
+- 该段返回 0 个 nissaya channel 就是**没有**——降级为纯 pali，不要拿相邻段落或别的译本凑。
+- 取回的文本用 `= ` 分隔词与释义（html 形式用缅文逗号 `၊`），两者内容相同。
 
 ## 响应结构
 
