@@ -1,6 +1,9 @@
-[postgresql]
-host = '127.0.0.1'
-port = 5432
-user = 'www'
-password = 'change-me'
-db-name = 'name'
+[project]
+name = 'pali-translab'
+target_lang = 'zh-Hans'
+
+[wikipali]
+# 端点与凭据由 wikipali 插件管理（~/.wikipali/credentials.json）——这里不要放 token。
+# 切换站点用 `wikipali endpoint`，查看可写 channel 用 `wikipali channels`。
+# channel：译文默认写入的目标 channel uid（也可用 --channel 覆盖）
+channel = 'change-me'
