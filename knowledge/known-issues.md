@@ -19,7 +19,7 @@
 
 ## 四、批处理脚本（工具链，非译文知识）
 
-> 与翻译内容无关，记录 `scripts/*_batch.sh` 调 `claude -p` 时踩过的坑。
+> 与翻译内容无关，记录 `scripts/pipeline_batch.sh` 调 `claude -p` 时踩过的坑。
 
 1. **prompt 以 `---` 开头被 `claude -p` 当成选项**
    - 现象：拼接的提示词第一段是 SKILL.md 的 YAML frontmatter（`---` 开头），`claude -p --model sonnet "$PROMPT"` 报 `error: unknown option '---...'`，1 秒即失败。
@@ -27,9 +27,9 @@
    - 处理：在 prompt 前加 `--` 终止选项解析：`claude -p --model sonnet -- "$PROMPT"`。
 
 2. **`claude -p` stdout 裹旁白/代码围栏，污染 JSONL**
-   - 现象：模型在 JSONL 前后加「已获取…现在翻译」旁白或 ```jsonl 围栏，直接 `> out.jsonl` 后整行非法。
-   - 处理：先把原始 stdout 落到 `*.raw`，再用 `scripts/_extract_jsonl.py` 只抽取能 `json.loads` 成功的 dict 行；零行视为失败、保留 raw 供排查。
-   - 双输出步骤（evaluate 的 final.jsonl + final.md）：让模型在 stdout 用精确分隔符 `===FINAL_MD===` 分隔，脚本按分隔符切分，避免用 Write 工具写 jsonl。
+   - 现象：模型在 JSONL 前后加「已获取…现在翻译」旁白或 ```jsonl 围栏，整段管道进来就有非法行。
+   - 处理：`scripts/wp_push.py` 逐行宽松解析，只留能 `json.loads` 成功的 dict 行；再按 `--expect` 核对条数，不符就拒绝写入（宁可整段重跑，也不要往 channel 里写残缺的一段）。
+   - 纯 md 输出的步骤（review / evaluate）不受此影响：整个 stdout 就是报告，直接重定向到文件即可。
 
 ---
 
