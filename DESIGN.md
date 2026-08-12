@@ -1,6 +1,10 @@
 # Dahlia 巴利文翻译 Pipeline 设计文档
 
-> 本文档供 Claude Code 执行使用。所有开发工作在此 repo 中进行。
+> ⚠️ **历史文档，多数内容已作废。** 本文描述的是早期路线：本地 `corpus/` 语料、
+> 译文写成本地 jsonl、mdbook/epub 导出。现行架构改为**读写都经 wikipali 插件、
+> 译文只存 wikipali channel、本地不留 json**。
+>
+> **以 `ARCHITECTURE.md` 为准**；本文只保留供参考的项目目标与术语。
 
 ---
 
