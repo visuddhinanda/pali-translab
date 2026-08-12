@@ -1,57 +1,56 @@
 ---
 name: pali-footnote
-description: "Atomic skill: generate footnotes from Atthakatha/Tika commentaries for existing translations. Does not modify the main translation text."
+description: "Atomic skill: add inline commentary notes (from Atthakatha/Tika) to translations already in a WikiPali channel, following the wikipali inline-note convention."
 ---
 
 # pali-footnote
 
-从义注（Atthakathā）和复注（Ṭīkā）中查找相关解释，为现有译文生成脚注。
+从义注（Aṭṭhakathā）和复注（Ṭīkā）里取解释，为 channel 里的现有译文加**随文注**，
+覆盖写回同一 channel。
+
+## 依赖
+
+需要 **wikipali 插件**（`wikipali` CLI）。注释格式、来源标注、被解释词一致性等硬约束
+以插件 `references/conventions.md` 为准——本文件不重复。
 
 ## 调用方式
 
 ```
-/pali-footnote <book>/<para> [--method <name>]
+/pali-footnote <book>:<para> [--channel <uid>] [--method <name>]
 ```
 
 ## 分派流程
 
-1. 解析 `$ARGUMENTS` 为 `<book>/<para>`
-2. 加载现有译文（final.jsonl 或最新 v(n).jsonl）
-3. 通过 `resources.toml` 中的 `atthakatha` / `tika` 资源定位对应注释段
-4. 为译文中的关键术语和难解句查找注释出处
-5. 生成脚注，追加到 jsonl 的 `footnotes` 字段
+1. 解析 `$ARGUMENTS` 为 `<book>:<para>` 与目标 channel
+2. 读现有译文：`wikipali get <book>:<para> --json --channel <ch>`（没有译文则报错退出）
+3. 找注释：`wikipali related <book>:<para> --json` 给出本文 ↔ 义注 ↔ 复注的段落对应，
+   再 `wikipali get <义注坐标> --json` 取义注原文
+4. **先把该段的义注读完再决定注什么**——不要只摘最短的一条
+5. 把注释内联进译文，覆盖写回 channel，写后读回核对
 
-## 输出格式
+## 注释格式（摘要，细则见插件 conventions.md）
 
-在现有 jsonl 基础上追加 `footnotes` 数组：
+紧跟被注释词、反引号包裹、**不能换行**、**必须标出来源**：
 
-```json
-{
-  "id": "<book>-<para>-<word_start>-<word_end>", "book": N, "paragraph": N,
-  "word_start": N, "word_end": N,
-  "pali": "...", "zh": "...",
-  "footnotes": [
-    {
-      "ref": "atthakatha",
-      "source_book": N,
-      "source_para": N,
-      "pali_excerpt": "...",
-      "note_zh": "..."
-    }
-  ]
-}
+```
+不乐于`**义注**：被欲贪的热恼所烧，但**并非希求还俗**`修习梵行。
 ```
 
-## 输出路径
+- 注释内容只能取自 `wikipali related` 找到的义注复注，**不许自己发挥**
+- 注释里的巴利词不再加 `[[ ]]`
+- 该句没有可注的就不加，不要为了均匀硬凑
 
-覆写原文件，或输出到带 `_annotated` 后缀的新文件（由调用方决定）。
+## 硬约束：被解释词逐字同译
 
-## 资源需求
+义注里的**黑体**是从本文原样引出的被解释词，复注的引自义注。同一 channel 内，
+被解释词的译法必须与所注文本逐字相同——不一致，读者就看不出这条注在注哪个词。
+这条可以机械核查：抽出黑体词，到本文同一坐标比对字符串。
 
-- `atthakatha`：义注 channel（需在 `resources.toml` 中配置）
-- `tika`：复注 channel（可选）
+## 输出
+
+覆盖写回同一 channel（加注是在译文里加，不是另存一份）。需要离线副本时用
+`scripts/export_markdown.py` 导出 markdown。
 
 ## 待补充
 
-- 义注/复注的 channel UUID 映射表（books.json 中已有义注书目，需确认 channel 对应关系）
 - 脚注去重策略（同一术语在 chunk 内多次出现时）
