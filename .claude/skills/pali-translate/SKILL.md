@@ -58,6 +58,43 @@ description: "Atomic skill: translate Pali source text (mula / atthakatha / tika
 
 原文的黑体在取数时会转成 `**词**`，译文要保留这个标记。
 
+## 定位整章在各层的完整起止（硬规程）
+
+要翻译或导出**一整章（一部经）**时，**不要用 `wikipali related` 的段号当章节范围**。
+`related` 是段级对应，一段注释常跨注好几段父层，边界处必然错位——注释章的首段往往
+注的是上一章的本文，它的被解释词在本章里根本找不到。
+
+正确做法是 **book-title + 该书目录**，两样都有现成的 CLI：
+
+```bash
+# 1) 本文本章的起止：某条目录项到下一条目录项之前
+wikipali toc <mula_book>:<para> --json --depth 9
+
+# 2) 找出各层是哪本书（related 的 book_title_pali + tags 标层次；books 可按书名检索）
+wikipali related <mula_book>:<para> --json
+wikipali books <书名关键词>
+
+# 3) 用**该注释书自己的目录**求本章起止——这才是完整章节
+wikipali toc <att_book>:<related 给的任一段> --json --depth 9
+wikipali toc <tika_book>:<related 给的任一段> --json --depth 9
+```
+
+**校验**：注释章的章名通常是本文章名加 `vaṇṇanā`（本文 `Tayo codanārahā` →
+义注/复注 `Tayo codanārahavaṇṇanā`）。对不上就说明第 3 步取错了段，回去核对，
+不要将就。
+
+**实例**（本文 93:983-986 `Tayo codanārahā`）：
+
+| 层 | book | 章名 | 目录给的真实范围 | related 段号（**错位**） |
+|---|---|---|---|---|
+| 本文 | 93 | Tayo codanārahā | 983-986 | 983-986 |
+| 义注 | 103 | Tayo codanārahavaṇṇanā | **1469-1472** | 1468-1473 |
+| 复注 | 185 | Tayocodanārahavaṇṇanā | **1344-1347** | 1345-1348 |
+| 复注 | 189 | Tayocodanārahavaṇṇanā | **1262-1266** | 1261-1267 |
+
+按 related 的范围译，义注 1468 会被拉进来——它属于上一章、注的是本文 982，
+其被解释词在本章本文里找不到，被解释词对齐就无从谈起。
+
 ## 独立翻译（硬约束）
 
 **除父层对照外，本步骤的输入只有巴利原文。** 缅文 nissaya 是 review / evaluate 的
