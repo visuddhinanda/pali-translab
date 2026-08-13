@@ -42,6 +42,14 @@ evaluate 非侵入，只出报告。
 | harmonize | **整章** | 整章 channel 译文 + pali | channel 译文（覆盖） | 是（统一 + 修正，不重译） |
 | evaluate | chunk | channel 译文 + pali + 义注 + nissaya | `reports/{book}/{start}-{end}_final.md` | 否（非侵入，**最后一步**） |
 
+### 整章范围要用目录求，不能用 related
+
+要做**一整章（一部经）**时，各层的起止**用该层书自己的 `wikipali toc` 求**，
+不要拿 `wikipali related` 的段号当范围——related 是段级对应，边界必然错位：
+注释章的首段往往注的是上一章的本文，其被解释词在本章里根本找不到。
+
+完整规程与实例见 `.claude/skills/pali-translate/SKILL.md`「定位整章在各层的完整起止」。
+
 ### 资源分工：义注与 nissaya 从 review 才介入
 
 **translate 只看巴利原文**，独立译出一版。义注（aṭṭhakathā）与缅文 nissaya 留给
