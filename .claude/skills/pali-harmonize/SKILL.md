@@ -38,28 +38,68 @@ description: "Atomic skill: read the mula / atthakatha / tika translations of a 
 
 ## 定位整章在各层的完整起止（硬规程）
 
-要翻译或导出**一整章（一部经）**时，**不要用 `wikipali related` 的段号当章节范围**。
-`related` 是段级对应，一段注释常跨注好几段父层，边界处必然错位——注释章的首段往往
-注的是上一章的本文，它的被解释词在本章里根本找不到。
+要翻译或导出**一整章（一部经）**时，先用 `wikipali paras` 拿到该书的段落清单，
+再按下面的规程定各层范围。**不要用 `wikipali related` 的段号当章节范围**——
+它是段级对应，一段注释常跨注好几段父层，边界必然错位：注释章的首段往往注的是
+上一章的本文，其被解释词在本章里根本找不到。
 
-正确做法是 **book-title + 该书目录**，两样都有现成的 CLI：
+### 一次调用拿全书结构
 
 ```bash
-# 1) 本文本章的起止：某条目录项到下一条目录项之前
-wikipali toc <mula_book>:<para> --json --depth 9
-
-# 2) 找出各层是哪本书（related 的 book_title_pali + tags 标层次；books 可按书名检索）
-wikipali related <mula_book>:<para> --json
-wikipali books <书名关键词>
-
-# 3) 用**该注释书自己的目录**求本章起止——这才是完整章节
-wikipali toc <att_book>:<related 给的任一段> --json --depth 9
-wikipali toc <tika_book>:<related 给的任一段> --json --depth 9
+wikipali paras <book>:3 --body --json     # 每本书一次，约 2 秒
 ```
 
-**校验**：注释章的章名通常是本文章名加 `vaṇṇanā`（本文 `Tayo codanārahā` →
-义注/复注 `Tayo codanārahavaṇṇanā`）。对不上就说明第 3 步取错了段，回去核对，
-不要将就。
+每段一行，关键字段：
+
+| 字段 | 含义 |
+|---|---|
+| `level` | 标题层级；`< 100` 是标题行，`== 100` 是正文段 |
+| `length` | 该段巴利字符数（分块用）。⚠ 0.8.7 之前拼作 `lenght`，两种都要认 |
+| `chapter_len` | 该章段数 |
+| `cs_para` | **Chaṭṭha Saṅgāyana 典藏段号——跨书通用，是跨层对应的钥匙** |
+| `book_name` | 所属丛书（如 `dn1`），跨丛书时用来挡误配 |
+
+由此可得：章节边界（相邻标题行之间）、本书真实末段、每段字符数——
+这三样以前要上千次调用，现在一次拿全。
+
+### 跨层对应：用 cs_para，不用 related
+
+**同一个 `cs_para` 就是同一处内容**，本文与各层注释共用这套段号：
+
+```
+本文   93:984   cs_para=513
+义注  103:1470  cs_para=513
+复注  185:1345  cs_para=513
+复注  189:1263  cs_para=513
+```
+
+所以「义注这一章归哪个本文章」直接按 cs_para 交集判定，**一次 related 都不用调**。
+
+实测对比（DN Sīlakkhandhavagga，90 个有义注的本文章）：79 处两者一致，
+11 处不一致——**逐个核过，全是 `related` 判错、`cs_para` 判对**。例如本文
+`Ajitakesakambalavādo`，related 指到了下一章 `Pakudhakaccāyanavādavaṇṇanā`，
+而 cs_para 正确指向 `Ajitakesakambalavādavaṇṇanā`。
+
+### cs_para 不是全覆盖，孤儿兜底不能省
+
+注释书里有大段**本来就没有本文对应**的内容（序论 `Ganthārambhakathā`、
+结集史 `Paṭhamamahāsaṅgītikathā` 等），这些段没有 `cs_para`：
+
+| book | 正文段 | 有 cs_para |
+|---|---|---|
+| 93 本文 | 927 | 927（100%）|
+| 103 义注 | 1382 | 1189（86%）|
+| 188 复注 | 1523 | 1073（70%）|
+
+**整本翻译时这些段必须覆盖**，否则整本书是残的。做法：按**章名**跨层配对成独立作业
+（复注开头正是注释义注开头的，章名就是义注章名加 `vaṇṇanā`），作业内部做
+义注↔复注统稿，不牵扯本文。最后跑一遍覆盖率自检：**每本书从 level=1 到书末，
+每一段都必须被某个作业覆盖**。
+
+### 校验
+
+注释章的章名通常是本文章名加 `vaṇṇanā`（本文 `Tayo codanārahā` →
+义注/复注 `Tayo codanārahavaṇṇanā`）。对不上就回头核对，不要将就。
 
 **实例**（本文 93:983-986 `Tayo codanārahā`）：
 
@@ -68,10 +108,11 @@ wikipali toc <tika_book>:<related 给的任一段> --json --depth 9
 | 本文 | 93 | Tayo codanārahā | 983-986 | 983-986 |
 | 义注 | 103 | Tayo codanārahavaṇṇanā | **1469-1472** | 1468-1473 |
 | 复注 | 185 | Tayocodanārahavaṇṇanā | **1344-1347** | 1345-1348 |
-| 复注 | 189 | Tayocodanārahavaṇṇanā | **1262-1266** | 1261-1267 |
+| 复注 | 189 | Tayocodanārahavaṇṇanā | **1262-1266** | 1261-1266 |
 
-按 related 的范围译，义注 1468 会被拉进来——它属于上一章、注的是本文 982，
-其被解释词在本章本文里找不到，被解释词对齐就无从谈起。
+### related 还有什么用
+
+只在**验证**某个具体对应关系、或 cs_para 缺失时兜底。它不再是规划的主力。
 
 ## 做两件事
 
