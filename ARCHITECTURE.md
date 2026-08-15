@@ -92,6 +92,7 @@ workspace/export/{章节路径}/{章节名}.md   ← 一章（经文）一个文
 | 查该坐标有哪些 channel | `wikipali versions <book>:<para> --json` |
 | 找义注 / 复注对应 | `wikipali related <book>:<para> --json` |
 | 章节边界 | `wikipali toc <book>:<para> --json` |
+| **整书结构 + 跨层对应** | `wikipali paras <book>:3 --body --json`（含 `cs_para`，**规划首选**） |
 | 可写 channel 列表 | `wikipali channels --json` |
 | 写入 | `wikipali write - --channel <uid>` |
 
