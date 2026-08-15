@@ -44,9 +44,13 @@ evaluate 非侵入，只出报告。
 
 ### 整章范围要用目录求，不能用 related
 
-要做**一整章（一部经）**时，各层的起止**用该层书自己的 `wikipali toc` 求**，
-不要拿 `wikipali related` 的段号当范围——related 是段级对应，边界必然错位：
-注释章的首段往往注的是上一章的本文，其被解释词在本章里根本找不到。
+要做**一整章（一部经）**时，用 `wikipali paras <book>:3 --body --json` 一次拿到
+该书的章节边界与每段的 `cs_para`（Chaṭṭha Saṅgāyana 典藏段号，**跨书通用**），
+**按 cs_para 判跨层归属**——不要拿 `wikipali related` 的段号当范围：related 是
+段级对应，边界必然错位，实测有约一成的章会判到相邻章去。
+
+没有 `cs_para` 的段（注释书独有的序论、结集史等）按章名跨层配对成独立作业，
+并跑覆盖率自检确保一段不漏。
 
 完整规程与实例见 `.claude/skills/pali-translate/SKILL.md`「定位整章在各层的完整起止」。
 
