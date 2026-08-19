@@ -8,7 +8,9 @@
 每行至少要有 `zh`（或 `content`），坐标给 `id`（book-para-start-end）
 或给 `book`/`paragraph`/`word_start`/`word_end` 四元组。
 
-写入是覆盖式的：同一 (book, paragraph, word_start, word_end, channel) 的旧句子被替换。
+写入是覆盖式的：同一 (book, paragraph, word_start, word_end, channel) 的旧句子被替换，
+没提交的坐标原样保留——所以 revise / harmonize 这类增量步骤**只提交改动过的句子**
+（`--at-most N --allow-empty`），不必回传整个 chunk。translate 是整段新建，用 `--expect N`。
 
 用法：
     claude -p … | python3 scripts/wp_push.py --book 93 --para 983-986 --channel <uid> --expect 40
@@ -81,7 +83,11 @@ def main():
     ap.add_argument("--book", type=int, required=True)
     ap.add_argument("--para", required=True, help="段号：984 / 983-986 / 983,985-987")
     ap.add_argument("--channel", required=True, help="目标 channel（uid / 序号 / 名字片段）")
-    ap.add_argument("--expect", type=int, default=0, help="期望条数，不符则拒绝写入")
+    ap.add_argument("--expect", type=int, default=0, help="期望条数，不符则拒绝写入（整段重写用，如 translate）")
+    ap.add_argument("--at-most", type=int, default=0, dest="at_most",
+                    help="上限条数（增量写入用，如 revise / harmonize：只提交改动过的句子）")
+    ap.add_argument("--allow-empty", action="store_true",
+                    help="没有可写的句子时视为成功（增量写入时「无需改动」是正常结果）")
     ap.add_argument("--content-type", default="markdown")
     ap.add_argument("--batch", type=int, default=50)
     ap.add_argument("--dry-run", action="store_true")
@@ -96,6 +102,9 @@ def main():
 
     rows = extract_objects(sys.stdin.read())
     if not rows:
+        if args.allow_empty:
+            print(f"⚠ {scope} 上游一行 JSONL 也没给——按「无需改动」处理", file=sys.stderr)
+            return
         sys.exit("没有抽到任何 JSONL 行——上游可能失败了")
 
     sentences, dropped = [], []
@@ -123,7 +132,12 @@ def main():
 
     if args.expect and len(sentences) != args.expect:
         sys.exit(f"条数不符：期望 {args.expect}，可写 {len(sentences)}——拒绝写入 {scope}")
+    if args.at_most and len(sentences) > args.at_most:
+        sys.exit(f"条数超限：至多 {args.at_most}，可写 {len(sentences)}——拒绝写入 {scope}")
     if not sentences:
+        if args.allow_empty:
+            print(f"✓ {scope} 无需改动，未写入", file=sys.stderr)
+            return
         sys.exit(f"没有可写的句子：{scope}")
 
     for s in sentences:
