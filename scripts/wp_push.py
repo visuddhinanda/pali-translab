@@ -139,6 +139,11 @@ def main():
     if args.at_most and len(sentences) > args.at_most:
         sys.exit(f"条数超限：至多 {args.at_most}，可写 {len(sentences)}——拒绝写入 {scope}")
     if not sentences:
+        # 跨层统稿是一份输出分多次提交：本层一句都没改是正常的（别层改了）。
+        # 上游整个吐空已在前面拦掉，这里只可能是「本层无改动」。
+        if args.allow_empty:
+            print(f"✓ {scope} 本层无改动，未写入", file=sys.stderr)
+            return
         sys.exit(f"没有可写的句子：{scope}")
 
     for s in sentences:
