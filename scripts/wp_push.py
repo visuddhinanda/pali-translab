@@ -87,7 +87,8 @@ def main():
     ap.add_argument("--at-most", type=int, default=0, dest="at_most",
                     help="上限条数（增量写入用，如 revise / harmonize：只提交改动过的句子）")
     ap.add_argument("--allow-empty", action="store_true",
-                    help="没有可写的句子时视为成功（增量写入时「无需改动」是正常结果）")
+                    help='允许上游用 {"no_change": true} 声明「一句都不用改」（增量写入的正常结果）；'
+                         "空输出仍算失败")
     ap.add_argument("--content-type", default="markdown")
     ap.add_argument("--batch", type=int, default=50)
     ap.add_argument("--dry-run", action="store_true")
@@ -101,10 +102,13 @@ def main():
     scope = f"{args.book}:{ordered[0]}-{ordered[-1]}"
 
     rows = extract_objects(sys.stdin.read())
+    # 「一句都不用改」必须由上游显式声明 {"no_change": true}——空输出一律当上游失败。
+    # 历史上 claude -p 撞额度时就是干净地吐空，把空当成「无需改动」会把故障洗成成功。
+    if args.allow_empty and any(r.get("no_change") for r in rows):
+        print(f"✓ {scope} 上游声明无需改动，未写入", file=sys.stderr)
+        return
+    rows = [r for r in rows if not r.get("no_change")]
     if not rows:
-        if args.allow_empty:
-            print(f"⚠ {scope} 上游一行 JSONL 也没给——按「无需改动」处理", file=sys.stderr)
-            return
         sys.exit("没有抽到任何 JSONL 行——上游可能失败了")
 
     sentences, dropped = [], []
@@ -135,9 +139,6 @@ def main():
     if args.at_most and len(sentences) > args.at_most:
         sys.exit(f"条数超限：至多 {args.at_most}，可写 {len(sentences)}——拒绝写入 {scope}")
     if not sentences:
-        if args.allow_empty:
-            print(f"✓ {scope} 无需改动，未写入", file=sys.stderr)
-            return
         sys.exit(f"没有可写的句子：{scope}")
 
     for s in sentences:
