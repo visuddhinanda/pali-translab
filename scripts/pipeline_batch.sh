@@ -209,7 +209,8 @@ run_claude() {
     cat "$err" >&2
     # 只在**真的没输出**或进程异常时留档。review / evaluate 出的是 markdown 报告，
     # 本来就没有 JSONL 行，按「无 JSONL」留档会全是误报。
-    if [[ $rc -ne 0 || ! -s "$out" ]] || ! grep -q '[^[:space:]]' "$out"; then
+    if [[ $rc -ne 0 || ! -s "$out" ]] || ! grep -q '[^[:space:]]' "$out" \
+       || { ! grep -q '^[[:space:]]*{' "$out" && ! grep -q '^#' "$out"; }; then
         mkdir -p "$WORK/logs/raw"
         dst="$WORK/logs/raw/$(date +%m%d-%H%M%S)-$$-$RANDOM"
         {
