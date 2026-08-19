@@ -304,12 +304,29 @@ def hit_in(path, needles, tail_bytes=20000):
     return any(t in tail for t in needles)
 
 
+def hit_since_last_run(path, needles):
+    """只在**本次运行**那一段日志里找。
+
+    额度提示往往出现在作业早期，后面还有几十 KB 的导出与评估输出，按固定尾部
+    字节数去找必然漏掉——今天 4 个作业就是这样被误判成失败、耗光重试次数的。
+    按 `===== <时间> 第 N 次 =====` 分段，只看最后一段，也就不会翻到上一轮的旧提示。
+    """
+    try:
+        text = open(path, encoding="utf-8", errors="replace").read()
+    except OSError:
+        return False
+    i = text.rfind("\n===== ")
+    if i >= 0:
+        text = text[i:]
+    return any(t in text for t in needles)
+
+
 def transient_in(path):
-    return hit_in(path, TRANSIENT)
+    return hit_in(path, TRANSIENT) or hit_since_last_run(path, TRANSIENT)
 
 
 def rate_limited_in(path):
-    return hit_in(path, RATE_LIMIT)
+    return hit_since_last_run(path, RATE_LIMIT)
 
 
 def cmd_run(args):

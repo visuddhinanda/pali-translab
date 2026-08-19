@@ -221,6 +221,12 @@ run_claude() {
         cp "$f" "$dst.prompt"
         echo "  ⚠ 模型没有输出（rc=$rc），现场已存 ${dst##*/}.out / .prompt" >&2
     fi
+    # 撞额度时 claude 把提示写在 **stdout**，直接管进 wp_push 就进不了作业日志，
+    # 守护进程扫日志判 RATE_LIMIT 因此永远匹配不到，白白把作业判成失败。
+    # 这里把它复述到 stderr（= 作业日志），守护进程才看得见。
+    if grep -qiE "session limit|usage limit|rate limit|limit reached|resets [0-9]" "$out" "$err"; then
+        echo "  🚦 撞到额度限制：$(tr -d '\n' < "$out" | head -c 200)" >&2
+    fi
     cat "$out"
     rm -f "$f" "$out" "$err"
     return $rc
