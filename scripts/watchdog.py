@@ -16,7 +16,10 @@
 
     python3 scripts/watchdog.py --interval 600 --channel <uid> --plan workspace/plan_93.json
 
-停止：`touch workspace/STOP`（守护进程与看门狗共用这一个开关）。
+停止：`touch workspace/WATCHDOG_STOP`。**看门狗有自己的开关**——守护进程的
+`workspace/STOP` 只停守护进程，不停看门狗，否则「优雅重启守护进程」会把守着它的
+东西一起关掉，没人再拉起来。STOP 在的时候看门狗照常巡检，只是不拉守护进程；
+删掉 STOP 它就会把守护进程拉回来。
 """
 import argparse
 import json
@@ -32,6 +35,7 @@ import run_daemon as rd  # noqa: E402
 WATCH_LOG = os.path.join(rd.WORK, "watchdog.log")
 HEALTH = os.path.join(rd.WORK, "health.json")
 WD_LOCK = os.path.join(rd.WORK, "watchdog.lock")
+WD_STOP = os.path.join(rd.WORK, "WATCHDOG_STOP")   # 看门狗自己的停止开关，与 rd.STOP 无关
 
 
 def log(msg):
@@ -189,7 +193,7 @@ def main():
     last_done, stagnant = -1, 0
     log(f"看门狗启动：每 {args.interval // 60} 分钟巡检一次，卡住阈值 {args.stuck_min} 分钟")
     try:
-        while not os.path.exists(rd.STOP):
+        while not os.path.exists(WD_STOP):
             jobs = rd.load_jobs()
             counts = {k: sum(1 for j in jobs if j["status"] == k)
                       for k in (rd.DONE, rd.RUNNING, rd.PENDING, rd.FAILED)}
@@ -198,7 +202,10 @@ def main():
 
             # 1) 守护进程死了但还有活没干完
             if not alive and (counts[rd.PENDING] or counts[rd.RUNNING]):
-                start_daemon(args)
+                if os.path.exists(rd.STOP):
+                    log("守护进程不在，但 STOP 在——按有意停机处理，不拉起（删掉 STOP 即恢复）")
+                else:
+                    start_daemon(args)
                 alive = True
 
             # 2) 卡住的作业
@@ -254,7 +261,7 @@ def main():
                 break
 
             for _ in range(args.interval):
-                if os.path.exists(rd.STOP):
+                if os.path.exists(WD_STOP):
                     break
                 time.sleep(1)
     finally:
