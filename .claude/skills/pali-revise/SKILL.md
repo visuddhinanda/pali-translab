@@ -28,7 +28,7 @@ description: "Atomic skill: revise translations based on review feedback. Reads 
    - 巴利原文：`wikipali get <book>:<para> --json`
    - 审稿意见：`workspace/reports/{book}/{start}-{end}_review.md`
    - 义注与 nissaya：用来落实审稿意见里基于它们的判断
-5. 逐条采纳/拒绝审稿意见，未被提及的句子**原样保留**
+5. 逐条采纳/拒绝审稿意见，未被提及的句子**原样保留（不回传，不提交）**
 6. 覆盖写回：`wikipali write - --channel <ch>`，写完独立读回核对
 
 > 执行层封装：读用 `scripts/wp_pull.py`，写用 `scripts/wp_push.py`（含坐标校验与读回）。
