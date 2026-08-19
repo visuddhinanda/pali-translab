@@ -197,13 +197,29 @@ PY
 # Linux 单个参数上限 128KB，而父层对照动辄整章义注，几百段就爆
 # 「Argument list too long」，三次重试全挂还悄悄退出 0。
 # 另：数据已全部注入，禁掉工具，避免非交互下的权限请求污染输出。
+# 模型没给出 JSONL 时，把**原始输出、stderr、退出码、提示词**留档到 workspace/logs/raw/。
+# 「没有抽到任何 JSONL 行」是最高频的失败，但输出直接管进 wp_push 就没了，无从判断
+# 是撞额度、是拒答、还是提示词太长——留档才诊断得了。
 run_claude() {
-    local f rc
-    f="$(mktemp)"
+    local f out err rc dst
+    f="$(mktemp)"; out="$(mktemp)"; err="$(mktemp)"
     printf '%s' "$1" > "$f"
-    claude -p --model "$MODEL" --tools "" < "$f"
+    claude -p --model "$MODEL" --tools "" < "$f" > "$out" 2> "$err"
     rc=$?
-    rm -f "$f"
+    cat "$err" >&2
+    if ! grep -q '^[[:space:]]*{' "$out"; then
+        mkdir -p "$WORK/logs/raw"
+        dst="$WORK/logs/raw/$(date +%m%d-%H%M%S)-$$-$RANDOM"
+        {
+            echo "rc=$rc  model=$MODEL  提示词 $(wc -c < "$f") 字节  输出 $(wc -c < "$out") 字节"
+            echo "--- stderr ---"; cat "$err"
+            echo "--- stdout ---"; cat "$out"
+        } > "$dst.out"
+        cp "$f" "$dst.prompt"
+        echo "  ⚠ 模型没给出 JSONL（rc=$rc），原始输出已存 ${dst##*/}.out" >&2
+    fi
+    cat "$out"
+    rm -f "$f" "$out" "$err"
     return $rc
 }
 
