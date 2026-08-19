@@ -519,6 +519,8 @@ def cmd_stop(_args):
     os.makedirs(WORK, exist_ok=True)
     open(STOP, "w").write("stop\n")
     print(f"已写 {STOP}——守护进程会跑完手头的作业再退出（可能要几十分钟）")
+    print("看门狗不受这个开关影响，会继续巡检但不拉起守护进程；"
+          "删掉 STOP 它就把守护进程拉回来。要连看门狗一起停：touch workspace/WATCHDOG_STOP")
 
 
 def cmd_reset(_args):
