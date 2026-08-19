@@ -66,7 +66,9 @@ workspace/export/{章节路径}/{章节名}.md   ← 一章（经文）一个文
 **硬约束**：
 
 - **译文不写本地 json。** 没有 v1/v2/final 文件，channel 里就是最新一版
-- **写入是覆盖式的**：相同 `(book, paragraph, word_start, word_end, channel)` 的旧句子被替换
+- **写入是覆盖式的**：相同 `(book, paragraph, word_start, word_end, channel)` 的旧句子被替换；
+  没提交的坐标原样保留，所以 **revise / harmonize 只提交改动过的句子**，不回传整个 chunk
+  （translate 是整段新建，全部提交）
 - **只有 translate / revise / harmonize / footnote 改译文**；review 与 evaluate 是**非侵入**的，只出报告
 - **evaluate 排在最后**：评的必须是走完全部改动步骤的定稿，中途评的是半成品
 - **translate 只看巴利原文**，不给义注、不给 nissaya；这两样是 review / revise / evaluate 的
