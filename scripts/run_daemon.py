@@ -56,7 +56,11 @@ TRANSIENT = ("连接失败", "所有可用站点都连不上", "HTTP 500", "HTTP
 # 撞订阅额度：多天任务里这必然发生。**不能算作业失败**，否则一批作业连环耗光重试次数。
 RATE_LIMIT = ("rate limit", "rate_limit", "Rate limit", "usage limit", "Usage limit",
               "quota", "overloaded_error", "Too Many Requests", "429",
-              "resets at", "limit reached", "5-hour limit", "weekly limit")
+              "resets at", "limit reached", "5-hour limit", "weekly limit",
+              # claude -p 撞额度时原样吐这一句到 stdout 并 rc=1：
+              #   You've hit your session limit · resets 1:40pm (UTC)
+              # 没有 "at"，前面的 "resets at" 匹配不到，于是被当成作业失败白耗重试次数。
+              "session limit", "hit your", "resets ")
 
 
 # ---------- 作业清单 ----------
