@@ -207,7 +207,9 @@ run_claude() {
     claude -p --model "$MODEL" --tools "" < "$f" > "$out" 2> "$err"
     rc=$?
     cat "$err" >&2
-    if ! grep -q '^[[:space:]]*{' "$out"; then
+    # 只在**真的没输出**或进程异常时留档。review / evaluate 出的是 markdown 报告，
+    # 本来就没有 JSONL 行，按「无 JSONL」留档会全是误报。
+    if [[ $rc -ne 0 || ! -s "$out" ]] || ! grep -q '[^[:space:]]' "$out"; then
         mkdir -p "$WORK/logs/raw"
         dst="$WORK/logs/raw/$(date +%m%d-%H%M%S)-$$-$RANDOM"
         {
@@ -216,7 +218,7 @@ run_claude() {
             echo "--- stdout ---"; cat "$out"
         } > "$dst.out"
         cp "$f" "$dst.prompt"
-        echo "  ⚠ 模型没给出 JSONL（rc=$rc），原始输出已存 ${dst##*/}.out" >&2
+        echo "  ⚠ 模型没有输出（rc=$rc），现场已存 ${dst##*/}.out / .prompt" >&2
     fi
     cat "$out"
     rm -f "$f" "$out" "$err"
