@@ -241,13 +241,36 @@ channel = "73c03e1a-f333-11f0-808a-438f0af4b9e9"   # 默认写入目标 channel
 
 ```
 workspace/                        # 全部 gitignore
-├── audit.log                     # 批处理台账（断点续传依据）
+├── audit.log                     # 批处理台账（断点续传依据，append-only）
+├── projects/
+│   ├── <name>.json               # 项目文件：结构 + 状态 + harmonize 计划（唯一状态载体）
+│   ├── <name>.html               # 给人看的折叠视图（单文件，json 内嵌）
+│   ├── index.json / index.html   # 项目索引
 ├── reports/{book}/
 │   ├── {start}-{end}_review.md   # 审稿意见（按 chunk）
 │   ├── {start}-{end}_final.md    # 总评（分数 / 信心 / 问题清单）
 │   └── term_check_{范围}.md      # 术语报告
+├── epub/                         # build_epub.py 产出（一本书一个，或 --merge 合集）
 └── export/{章节路径}/
-    └── {章节名}.md               # 按用户要求导出的译文副本
+    └── [起始段号] {章节名}.md    # 按用户要求导出的译文副本
 ```
 
 这里**没有 jsonl**——译文在 wikipali。
+
+### project 文件：一个项目的唯一状态载体
+
+`plan_jobs.py --project <name>` 产出 `workspace/projects/<name>.json`，层级是
+**项目 → 作业 → 层 → 分块 / 统稿（横向 cross + 纵向 layer） / 导出**，每个叶子带 `status`。
+`harmonize` 一节在规划阶段就按 `cs_para` 算好体量并定好走法（direct / cross+layer /
+layer-only），见 `WORKFLOW.md`「harmonize 的规模分级」。
+
+两条硬规矩：
+
+- **写者只有一个**——守护进程。worker 只往 `audit.log` 追加，守护进程汇总后**原子落盘**
+  （写 tmp 再 rename）。人工操作不直接改状态，而是 `project.py pause/resume/reset-failed`
+  写 `command` 字段，守护进程下一轮消费掉。曾经状态同时存在 CSV 与守护进程内存里，
+  手工 `reset-failed` 被退出中的守护进程用旧内存覆盖了回去——这条规矩就是那次事故的产物。
+- **project.json 只是视图，audit.log 才是事实**——`project.py rebuild <name>` 能从
+  audit.log 完全重算进度，所以项目文件损坏或落后都不致命。
+
+`task_alloc.csv` 由 project 文件取代，不再维护。
