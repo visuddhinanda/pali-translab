@@ -162,7 +162,13 @@ def audit_done(channel=None):
 
 
 def rollup(proj, steps=("translate", "review", "revise")):
-    """按 audit.log 刷新分块状态：一个分块的每一段每一步都 ok 才算 done。"""
+    """按 audit.log 刷新分块与统稿状态。
+
+    分块：每一段的每一步都 ok 才算 done。
+    统稿：audit.log 里 harmonize 是按段记的，所以一个统稿单元覆盖的段全 ok 才算 done。
+    导出：pipeline 不给 export 记账（它只在日志里打一行），所以导出节点由作业完成时
+    顺带标记，不在这里推。
+    """
     done = audit_done(proj.get("channel"))
     touched = 0
     for job in proj["jobs"]:
@@ -176,6 +182,18 @@ def rollup(proj, steps=("translate", "review", "revise")):
                 if new != ch.get("status"):
                     ch["status"] = new
                     touched += 1
+        # 统稿单元：横向块跨多层，每层各自的段都要 ok
+        h = job.get("harmonize") or {}
+        for c in h.get("cross", []) + h.get("layer", []):
+            spans = ([(int(b), r[0], r[1]) for b, r in (c.get("layers") or {}).items()]
+                     or [(c.get("book"), c.get("start"), c.get("end"))])
+            spans = [x for x in spans if None not in x]
+            ok = bool(spans) and all(done.get(("harmonize", b, p)) == "ok"
+                                     for b, lo, hi in spans for p in range(lo, hi + 1))
+            if ok and c.get("status") != DONE:
+                c["status"] = DONE
+                touched += 1
+
         # 作业状态由它的单元推出来；跑着的那个由守护进程自己标 running
         us = list(units(job))
         c = counts(us)

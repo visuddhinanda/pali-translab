@@ -256,6 +256,10 @@ if [[ -n "$PLAN" ]]; then
 import json, sys
 plan, jid, want = json.load(open(sys.argv[1], encoding='utf-8')), int(sys.argv[2]), set(sys.argv[3].split(','))
 job = next(j for j in plan["jobs"] if j["id"] == jid)
+# 两种计划格式都要认：project 文件把本作业负责的层放在 layers[]（含 mula），
+# 旧的 plan_93.json 放在 own[]。ref[] 两边同名，都是只读参考。
+own = [e for e in job.get("layers", job.get("own", [])) if e["layer"] != "mula"]
+job = {**job, "own": own, "ref": job.get("ref", [])}
 att = [e for e in job["own"] + job["ref"] if e["layer"] == "atthakatha"]
 # 前置作业（注释书开头，与本文无对应）没有本文层：mula 为 None，
 # 此时义注就是最上层，父层为空，统稿是义注↔复注。

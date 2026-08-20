@@ -14,7 +14,7 @@
 
 巡检结果写 workspace/watchdog.log，并在 workspace/health.json 留一份快照。
 
-    python3 scripts/watchdog.py --interval 600 --channel <uid> --plan workspace/plan_93.json
+    python3 scripts/watchdog.py --interval 600 --channel <uid> --project <name>
 
 停止：`touch workspace/WATCHDOG_STOP`。**看门狗有自己的开关**——守护进程的
 `workspace/STOP` 只停守护进程，不停看门狗，否则「优雅重启守护进程」会把守着它的
@@ -67,8 +67,8 @@ def start_daemon(args):
     cmd = [sys.executable, os.path.join(rd.ROOT, "scripts", "run_daemon.py"), "run",
            "--book", str(args.book), "--channel", args.channel,
            "--workers", str(args.workers), "--nissaya"]
-    if args.plan:
-        cmd += ["--plan", args.plan]
+    if args.project:
+        cmd += ["--project", args.project]
     out = open(os.path.join(rd.WORK, "daemon.out"), "a", encoding="utf-8")
     out.write(f"\n===== watchdog 拉起 {time.strftime('%Y-%m-%d %H:%M:%S')} =====\n")
     out.flush()
@@ -176,11 +176,16 @@ def main():
     ap.add_argument("--book", type=int, default=93)
     ap.add_argument("--channel", required=True)
     ap.add_argument("--workers", type=int, default=8)
-    ap.add_argument("--plan", default="")
+    ap.add_argument("--project", default="", help="项目名（不给且只有一个项目时自动选）")
     ap.add_argument("--err-threshold", type=int, default=5,
                     help="同一错误出现几次就当系统性问题告警")
     args = ap.parse_args()
 
+    if not args.project:
+        names = rd.pj.all_names()
+        if len(names) != 1:
+            sys.exit("要给 --project <name>（可选：" + ", ".join(names) + "）")
+        args.project = names[0]
     os.makedirs(rd.WORK, exist_ok=True)
     if os.path.exists(WD_LOCK):
         try:
@@ -194,6 +199,8 @@ def main():
     log(f"看门狗启动：每 {args.interval // 60} 分钟巡检一次，卡住阈值 {args.stuck_min} 分钟")
     try:
         while not os.path.exists(WD_STOP):
+            # 看门狗只读项目文件，不写——写者只有守护进程（见 ARCHITECTURE.md）
+            rd.proj_load(args.project)
             jobs = rd.load_jobs()
             counts = {k: sum(1 for j in jobs if j["status"] == k)
                       for k in (rd.DONE, rd.RUNNING, rd.PENDING, rd.FAILED)}
