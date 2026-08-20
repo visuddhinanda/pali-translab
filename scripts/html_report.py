@@ -110,12 +110,22 @@ function layerNode(l){
     <div class="kids">${inner}</div></details>`;
 }
 
+const rng = c => Object.entries(c.layers||{})
+  .map(([b,r]) => `${b}:${r[0]}–${r[1]}`).join('　');
+function crossLabel(c){
+  // direct 模式的那一块没有 cs 字段（整章一次做完），不能无脑读 c.cs[0]
+  if (c.kind === 'direct') return `整章三层一次 · ${rng(c)}`;
+  const part = c.part ? ` 第 ${c.part[0]}/${c.part[1]} 份` : '';
+  return `横向 cs ${c.cs[0]}${c.cs[1]!==c.cs[0]?'–'+c.cs[1]:''}${part} · ${rng(c)}`;
+}
 function harmonizeNode(job){
   const h = job.harmonize; if(!h) return '';
-  const cross = (h.cross||[]).map(c => leaf(c, `横向 cs ${c.cs[0]}–${c.cs[1]}`)).join('');
+  const cross = (h.cross||[]).map(c => leaf(c, crossLabel(c))).join('');
   const lay = (h.layer||[]).map(c => leaf(c, `纵向 ${c.layer_cn||c.layer} ${c.book}:${c.start}–${c.end}`)).join('');
   const all = (h.cross||[]).concat(h.layer||[]);
-  const mode = h.mode==='direct' ? '整章三层一次' : `横向 ${(h.cross||[]).length} + 纵向 ${(h.layer||[]).length}`;
+  const MODE = {direct:'整章三层一次', 'cross+layer':`横向 ${(h.cross||[]).length} + 纵向 ${(h.layer||[]).length}`,
+                'layer-only':`只纵向 ${(h.layer||[]).length}（无 cs 对应）`};
+  const mode = MODE[h.mode] || h.mode;
   return `<details><summary><span class="t">统稿 harmonize · ${mode}</span>
     <span class="n">${num(job.chars)} 字符</span>${bar(all)}</summary>
     <div class="kids">${cross}${lay}</div></details>`;
@@ -127,18 +137,26 @@ function jobNode(job){
   const ex = job.export ? leaf(job.export, '导出 markdown') : '';
   return `<details data-status="${job.status||'pending'}" data-name="${(job.title||'').toLowerCase()}">
     <summary><span class="n">#${job.id}</span><span class="t">${job.title||'（无本文）'}</span>
-      <span class="n">${job.cs?`cs ${job.cs[0]}–${job.cs[1]} · `:''}${num(job.chars)} 字符 · ${t.done}/${us.length}</span>
+      <span class="n">${job.cs?`cs ${job.cs[0]}–${job.cs[1]} · `:''}${num(job.chars)} 字符 · ${t.done}/${us.length} 单元</span>
       ${bar(us)}${pill(job.status)}</summary>
     <div class="kids">${layers}${harmonizeNode(job)}${ex}</div></details>`;
 }
 
+// 渲染整棵树时任何一个字段对不上都会中断整页——曾经 direct 模式的统稿块没有 cs
+// 字段，`c.cs[0]` 一抛错，页面就只剩头部，看起来像"没有任务表"。逐个作业兜住，
+// 坏掉的那个显示成一行错误，其余照常。
+function safeJob(job){
+  try { return jobNode(job); }
+  catch(e){ return `<div class="leaf s-failed"><span class="n">#${job.id}</span>
+    <span class="t">这个作业渲染失败：${e.message}</span></div>`; }
+}
 function render(){
   const q = (document.getElementById('q').value||'').toLowerCase();
   const f = document.getElementById('f').value;
   const jobs = P.jobs.filter(j =>
     (!q || (j.title||'').toLowerCase().includes(q) || String(j.id)===q) &&
     (f==='all' || (j.status||'pending')===f));
-  document.getElementById('tree').innerHTML = jobs.map(jobNode).join('')
+  document.getElementById('tree').innerHTML = jobs.map(safeJob).join('')
     || '<p class="sub">没有符合条件的作业。</p>';
   document.getElementById('shown').textContent = jobs.length;
 }
