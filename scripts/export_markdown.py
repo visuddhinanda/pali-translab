@@ -6,7 +6,10 @@
 
 文件名用章节名，目录用章节路径（取自 toc 的祖先面包屑）：
 
-    workspace/export/(DN) Sīlakkhandhavaggapāḷi/12. Lohiccasuttaṃ/Tayo codanārahā.md
+    workspace/export/(DN) Sīlakkhandhavaggapāḷi/12. Lohiccasuttaṃ/[0983] Tayo codanārahā.md
+
+文件名前缀是该章的**起始段号**，这样文件管理器按名字排序就等于按段落顺序
+（补零到 4 位，否则 [1000] 会排在 [118] 前面）。
 
 正文只有译文（不含巴利原文）：**一句一行**，同段落的句子之间不空行，段落之间空一行。
 
@@ -76,6 +79,8 @@ def main():
     ap.add_argument("--to", dest="end", type=int)
     ap.add_argument("--out", default="workspace/export")
     ap.add_argument("--model", default="", help="写进 frontmatter 的模型名")
+    ap.add_argument("--pad", type=int, default=4,
+                    help="文件名里起始段号的补零位数（0 = 不补零）")
     args = ap.parse_args()
 
     meta = next((c for c in jget("channels", "--json") if c["uid"] == args.channel), {})
@@ -142,7 +147,10 @@ def main():
 
         outdir = os.path.join(args.out, *[safe_name(x) for x in ch["path"]])
         os.makedirs(outdir, exist_ok=True)
-        path = os.path.join(outdir, f"{safe_name(ch['title'])}.md")
+        # 文件名带起始段号前缀：目录里按名字排序 = 按段落顺序。补零是必须的，
+        # 否则 [1000] 会排到 [118] 前面（字符串排序）。
+        path = os.path.join(
+            outdir, f"[{paras[0]:0{args.pad}d}] {safe_name(ch['title'])}.md")
         with open(path, "w", encoding="utf-8") as f:
             f.write("\n".join(fm + body).rstrip() + "\n")
         print(f"✓ {path}（{args.book}:{paras[0]}–{paras[-1]}，{n} 句）")
