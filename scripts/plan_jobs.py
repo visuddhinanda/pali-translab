@@ -151,6 +151,12 @@ def harmonize_plan(job, entries, csm, chm, th):
             anchor_chars = sum(chm[int(b)].get(p, 0)
                                for b, r in anchors.items() for p in range(r[0], r[1] + 1))
             heavy = layers_in([e for e in entries if e["layer"] != "mula"], csm, lo, lo)
+            # 本文片段通常只有几段，整份带进每一子块当锚点最省事。但整章同属一个 cs 时
+            # （如波梨品的 Tikaṃ，本文 63 段 6.3k 字符、注释 10 万字符），锚点会被重复
+            # 十几遍，占掉每块一半的额度——这时把本文也按同样的权重切开。
+            if anchor_chars > budget // 3:
+                heavy = {**heavy, **anchors}
+                anchors, anchor_chars = {}, 0
             body = acc[lo] - anchor_chars
             k = max(1, -(-body // max(1, budget - anchor_chars)))
             cut = {b: split_range(int(b), r[0], r[1], chm, k) for b, r in heavy.items()}
