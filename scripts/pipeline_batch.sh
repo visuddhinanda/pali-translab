@@ -63,7 +63,8 @@ FORCE=""
 DRYRUN=""
 CHUNK_CHARS=5000
 MAX_PARAS=12
-HARMONIZE_MAX=120      # 单批统稿的句数上限，超过就按层分批。
+HARMONIZE_MAX=120      # 单批统稿的句数上限，超过就按层分批。**只在无计划时用**——
+                       # 有 project 计划时，统稿单元与体量在规划阶段就按 cs_para 排好了。
                        # 实测模型一次最多吐约 100 行 JSONL 就被截断，
                        # 定 300 会让 200+ 句的作业三次重试全废——比截断更贵。
 export MAX_SENTS=60    # 单个 chunk 的句数上限——模型输出会被截断，句数才是真约束
@@ -522,138 +523,242 @@ done < "$GROUPS_FILE"
 # ══════════ 阶段二：跨三层统稿 ══════════
 # 三层分头译完，被解释词和术语难免对不上。这一步把三层放在一起通读，统一并修正。
 if has_step harmonize; then
-    echo "╔══════ 阶段二 跨三层统稿 ══════╗"
+# 统稿有两条路：
+#   计划模式——project 文件里已按 cs_para 排好统稿单元（横向 cross + 纵向 layer），
+#              体量在规划阶段就算过，这里只管照着跑。见 WORKFLOW.md「harmonize 的规模分级」。
+#   无计划——退回旧路：按体量临时决定（整章一次；超过句数上限就按层分批）。
+HUNITS=""
+if [[ -n "$PLAN" ]]; then
+    HUNITS="$WORK/.hunits_job${JOB}"
+    python3 - "$PLAN" "$JOB" > "$HUNITS" <<'PYUNITS' || true
+import json, sys
+plan, jid = json.load(open(sys.argv[1], encoding='utf-8')), int(sys.argv[2])
+job = next((j for j in plan.get("jobs", []) if j["id"] == jid), None)
+h = (job or {}).get("harmonize") or {}
+# 每行：kind<TAB>id<TAB>chars<TAB>book:起-止,book:起-止…
+for c in h.get("cross", []):
+    spans = ",".join("%s:%d-%d" % (b, r[0], r[1])
+                     for b, r in sorted((c.get("layers") or {}).items()))
+    if spans:
+        print("\t".join([c.get("kind", "cross"), c["id"], str(c.get("chars", 0)), spans]))
+for c in h.get("layer", []):
+    print("\t".join(["layer", c["id"], str(c.get("chars", 0)),
+                     "%s:%d-%d" % (c["book"], c["start"], c["end"])]))
+PYUNITS
+fi
 
-    ALL_SRC=""
-    HAVE=1
-    while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
-        [[ -z "${LAYER:-}" ]] && continue
-        TXT=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" --channel "$CHANNEL" || true)
-        NL=$(count_mula "$TXT"); NZ=$(count_zh "$TXT")
-        if [[ "${OWN:-1}" == 1 ]]; then
-            echo "  [译] $(layer_cn "$LAYER") book=$LBOOK：$NZ/$NL 句有译文"
-            # 只有**本作业负责翻译**的层要求译全；ref 层归别的作业，此刻没译完是正常的
-            if [[ "$NZ" -ne "$NL" ]]; then
-                echo "  ⚠ 本作业负责的层译文不全（$NZ/$NL），先补齐再统稿——跳过统稿" >&2; HAVE=0
-            fi
-            MARK="本作业负责，需回写"
-        else
-            echo "  [参考] $(layer_cn "$LAYER") book=$LBOOK：$NZ/$NL 句有译文（归别的作业，只读）"
-            MARK="**只读参考，不要输出这一层的句子**"
-        fi
-        ALL_SRC="$ALL_SRC
-=== $(layer_cn "$LAYER")  book=$LBOOK  段 $LPARAS  $TITLE 〔$MARK〕===
-$TXT
-"
-    done < "$GROUPS_FILE"
+if [[ -s "${HUNITS:-/nonexistent}" ]]; then
+    echo "╔══════ 阶段二 统稿（按计划：$(wc -l < "$HUNITS") 个单元）══════╗"
+    while IFS=$'\t' read -r KIND HUID UCHARS SPANS; do
+        [[ -z "${KIND:-}" ]] && continue
 
-    # 只统计 own 层的句子——ref 层只进上下文，不要求模型回吐
-    TOTAL=0
-    while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
-        [[ -z "${LAYER:-}" ]] && continue
-        [[ "${OWN:-1}" == 1 ]] || continue
-        TOTAL=$(( TOTAL + $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true) ))
-    done < "$GROUPS_FILE"
-
-    # 超大作业（最大的一章注释有一千多段）没法一次塞进上下文，也没法让模型一次吐回来。
-    # 这时改为**按子层分批**：每个 own 注释层按 chunk 切，每批都带上完整本文译文当
-    # 被解释词的对齐锚点（本文最多几十段，永远塞得下）。
-    if [[ "$HAVE" -eq 1 && "$TOTAL" -gt "$HARMONIZE_MAX" ]]; then
-        echo ">>> 本作业 $TOTAL 句，超过单批上限 $HARMONIZE_MAX——改为按层分批统稿"
-        MULA_TXT="$(awk '$1=="mula" {print $2, $3}' "$GROUPS_FILE" | while read -r mb mp; do
-            python3 "$SCRIPT_DIR/wp_pull.py" --book "$mb" --para "$mp" --channel "$CHANNEL" || true
-        done)"
-        while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
-            [[ -z "${LAYER:-}" ]] && continue
-            [[ "${OWN:-1}" == 1 ]] || continue
-            [[ "$LAYER" == "mula" ]] && continue        # 本文随第一批一起统
-            while read -r HCH; do
-                [[ -z "$HCH" ]] && continue
-                HSRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$HCH" --channel "$CHANNEL" || true)
-                HN=$(count_mula "$HSRC")
-                [[ "$HN" -eq 0 ]] && continue
-                echo ">>> 统稿分批 $(layer_cn "$LAYER") $LBOOK:${HCH%%,*}-${HCH##*,}（$HN 句）"
-                run_claude "$(load_step pali-harmonize harmonize)
-
-$KNOWLEDGE
-
----本文译文（对齐锚点，**只读，一句都不要输出**）---
-$MULA_TXT
-
----待统稿：$(layer_cn "$LAYER") book=$LBOOK 段 $HCH $TITLE---
-$HSRC
-
----任务---
-只对上面这一层这一批做统稿：被解释词与本文/父层逐字对齐、术语与语体统一、就地修正明显错误。
-原文里的黑体是被解释词，译文里必须照样用双星号包起来，不要改成引号、不要去掉。
-**只输出你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
-写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $HN 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
-所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 JSONL，不要旁白或代码围栏。" \
-                    | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$HCH" \
-                        --channel "$CHANNEL" --at-most "$HN" --allow-empty $DRYRUN \
-                    || fail_step "分批统稿失败 $LBOOK:$HCH"
-            done < <(chunk_list "$LBOOK" "$LPARAS")
-            audit_chunk harmonize "$LBOOK" ok "分批" $(python3 -c "
+        # 断点续传：这个单元覆盖的段全部记过账就跳过
+        SKIP=1
+        for SP in ${SPANS//,/ }; do
+            UB="${SP%%:*}"; UR="${SP#*:}"
+            PS=$(python3 -c "
 import sys; sys.path.insert(0,'$SCRIPT_DIR')
-from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
-        done < "$GROUPS_FILE"
-    elif [[ "$HAVE" -eq 1 && "$TOTAL" -gt 0 ]]; then
+from _wp import parse_paras; print(' '.join(map(str, parse_paras('$UR'))))")
+            chunk_done harmonize "$UB" $PS || SKIP=0
+        done
+        [[ "$SKIP" -eq 1 ]] && { echo "  跳过 $HUID（已统稿过）"; continue; }
+
+        # 取各层译文：横向单元自带多层，纵向单元只有一层
+        USRC=""; UN=0
+        for SP in ${SPANS//,/ }; do
+            UB="${SP%%:*}"; UR="${SP#*:}"
+            T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
+            UN=$(( UN + $(count_mula "$T") ))
+            USRC="$USRC
+=== book=$UB  段 $UR ===
+$T
+"
+        done
+        [[ "$UN" -eq 0 ]] && { echo "  跳过 $HUID（没有译文）"; continue; }
+
+        if [[ "$KIND" == "layer" ]]; then
+            WHAT="纵向：只看这一层，通读求**同层一致**——术语、语体、称谓、重复定型句同译。跨层对齐已在横向那一步做过，这里不要再改被解释词的译法。"
+        else
+            WHAT="横向：三层同看，**被解释词与父层逐字对齐**是最高优先（义注黑体引自本文、复注黑体引自义注）；顺带统一术语与语体。"
+        fi
+
+        echo ">>> 统稿 $HUID（$KIND，$UCHARS 巴利字符 / $UN 句）"
+        UOUT="$(mktemp)"; OK=0
         for ((try = 1; try <= MAX_TRY; try++)); do
-            echo ">>> harmonize（跨三层）第 $try/$MAX_TRY 次（共 $TOTAL 句）"
-            OUT="$(mktemp)"
             if run_claude "$(load_step pali-harmonize harmonize)
 
 $KNOWLEDGE
 
----三层译文（同一部经的本文 / 义注 / 复注，已分头译完）---
-每块以 === 开头标出层次与 book；pali 里的 \`**词**\` 是黑体被解释词。
-$ALL_SRC
+---待统稿（每块以 === 标出 book 与段范围）---
+$USRC
 
 ---任务---
-把三层放在一起通读，做统稿，两件事：
-1. **统一**——
-   a) **被解释词逐字对齐（最高优先）**：义注的黑体引自本文，其译法必须与本文同一处逐字相同；
-      复注的黑体引自义注，必须与义注同一处逐字相同。不一致就改子层去迁就父层；
-      除非父层本身译错——那就把父层一并改对。
-   b) 三层之间术语译法统一、语体统一、称谓与专名统一、标点体例统一。
-2. **修正**——通读中发现的实际问题就地改掉：误译、漏译、指代接不上、汉语语病、
-   文言/半文半白、引号配对断裂。
+$WHAT
 每处改动都要有具体理由（对齐、一致性，或明确的错误）；**不要为「读起来更顺」而改**，不要重译。
-**只输出本作业负责的那几层里你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
-写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $TOTAL 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
-标了〔只读参考〕的层**一句都不要输出**——那些归别的作业写，这里只用来对齐被解释词与术语。
-原文里的黑体是**被解释词**（义注引自本文、复注引自义注）。译文里这些词必须照样用双星号包起来——不要改成引号、不要去掉。它是读者辨认「这条注在注哪个词」的唯一线索，也是逐字同译的机械核查依据。
-id 里带着 book 与段号，照抄输入，不要编造。译文里不要留任何工作标记。
+原文里的黑体是**被解释词**，译文里必须照样用双星号包起来——不要改成引号、不要去掉。
+**只输出你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
+写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $UN 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
+id 照抄输入，不要编造坐标。译文里不要留任何工作标记。
 所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 JSONL，不要旁白或代码围栏。" > "$OUT"; then
-                OK=1
-                # 一份输出分层提交：每层只收自己 book 的行，别层静默跳过
-                while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
-                    [[ -z "${LAYER:-}" ]] && continue
-                    [[ "${OWN:-1}" == 1 ]] || continue      # 参考层不回写
-                    NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true)
-                    if ! python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$LPARAS" \
-                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN < "$OUT"; then
-                        OK=0
-                    fi
-                done < "$GROUPS_FILE"
-                if [[ "$OK" -eq 1 ]]; then
-                    rm -f "$OUT"
+只输出 JSONL，不要旁白或代码围栏。" > "$UOUT"; then
+                PUSH_OK=1
+                for SP in ${SPANS//,/ }; do
+                    UB="${SP%%:*}"; UR="${SP#*:}"
+                    NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" | grep -c '^{' || true)
+                    python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
+                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN \
+                        < "$UOUT" || PUSH_OK=0
+                done
+                [[ "$PUSH_OK" -eq 1 ]] && { OK=1; break; }
+            fi
+        done
+        rm -f "$UOUT"
+
+        if [[ "$OK" -eq 1 ]]; then
+            for SP in ${SPANS//,/ }; do
+                UB="${SP%%:*}"; UR="${SP#*:}"
+                audit_chunk harmonize "$UB" ok "$HUID" $(python3 -c "
+import sys; sys.path.insert(0,'$SCRIPT_DIR')
+from _wp import parse_paras; print(' '.join(map(str, parse_paras('$UR'))))")
+            done
+        else
+            fail_step "统稿单元 $HUID 失败（用尽 $MAX_TRY 次）"
+        fi
+    done < "$HUNITS"
+else
+        echo "╔══════ 阶段二 跨三层统稿 ══════╗"
+
+        ALL_SRC=""
+        HAVE=1
+        while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
+            [[ -z "${LAYER:-}" ]] && continue
+            TXT=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" --channel "$CHANNEL" || true)
+            NL=$(count_mula "$TXT"); NZ=$(count_zh "$TXT")
+            if [[ "${OWN:-1}" == 1 ]]; then
+                echo "  [译] $(layer_cn "$LAYER") book=$LBOOK：$NZ/$NL 句有译文"
+                # 只有**本作业负责翻译**的层要求译全；ref 层归别的作业，此刻没译完是正常的
+                if [[ "$NZ" -ne "$NL" ]]; then
+                    echo "  ⚠ 本作业负责的层译文不全（$NZ/$NL），先补齐再统稿——跳过统稿" >&2; HAVE=0
+                fi
+                MARK="本作业负责，需回写"
+            else
+                echo "  [参考] $(layer_cn "$LAYER") book=$LBOOK：$NZ/$NL 句有译文（归别的作业，只读）"
+                MARK="**只读参考，不要输出这一层的句子**"
+            fi
+            ALL_SRC="$ALL_SRC
+    === $(layer_cn "$LAYER")  book=$LBOOK  段 $LPARAS  $TITLE 〔$MARK〕===
+    $TXT
+    "
+        done < "$GROUPS_FILE"
+
+        # 只统计 own 层的句子——ref 层只进上下文，不要求模型回吐
+        TOTAL=0
+        while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
+            [[ -z "${LAYER:-}" ]] && continue
+            [[ "${OWN:-1}" == 1 ]] || continue
+            TOTAL=$(( TOTAL + $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true) ))
+        done < "$GROUPS_FILE"
+
+        # 超大作业（最大的一章注释有一千多段）没法一次塞进上下文，也没法让模型一次吐回来。
+        # 这时改为**按子层分批**：每个 own 注释层按 chunk 切，每批都带上完整本文译文当
+        # 被解释词的对齐锚点（本文最多几十段，永远塞得下）。
+        if [[ "$HAVE" -eq 1 && "$TOTAL" -gt "$HARMONIZE_MAX" ]]; then
+            echo ">>> 本作业 $TOTAL 句，超过单批上限 $HARMONIZE_MAX——改为按层分批统稿"
+            MULA_TXT="$(awk '$1=="mula" {print $2, $3}' "$GROUPS_FILE" | while read -r mb mp; do
+                python3 "$SCRIPT_DIR/wp_pull.py" --book "$mb" --para "$mp" --channel "$CHANNEL" || true
+            done)"
+            while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
+                [[ -z "${LAYER:-}" ]] && continue
+                [[ "${OWN:-1}" == 1 ]] || continue
+                [[ "$LAYER" == "mula" ]] && continue        # 本文随第一批一起统
+                while read -r HCH; do
+                    [[ -z "$HCH" ]] && continue
+                    HSRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$HCH" --channel "$CHANNEL" || true)
+                    HN=$(count_mula "$HSRC")
+                    [[ "$HN" -eq 0 ]] && continue
+                    echo ">>> 统稿分批 $(layer_cn "$LAYER") $LBOOK:${HCH%%,*}-${HCH##*,}（$HN 句）"
+                    run_claude "$(load_step pali-harmonize harmonize)
+
+    $KNOWLEDGE
+
+    ---本文译文（对齐锚点，**只读，一句都不要输出**）---
+    $MULA_TXT
+
+    ---待统稿：$(layer_cn "$LAYER") book=$LBOOK 段 $HCH $TITLE---
+    $HSRC
+
+    ---任务---
+    只对上面这一层这一批做统稿：被解释词与本文/父层逐字对齐、术语与语体统一、就地修正明显错误。
+    原文里的黑体是被解释词，译文里必须照样用双星号包起来，不要改成引号、不要去掉。
+    **只输出你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
+    写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $HN 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
+    所需数据已全部注入上文，不要试图调用任何工具取数。
+    只输出 JSONL，不要旁白或代码围栏。" \
+                        | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$HCH" \
+                            --channel "$CHANNEL" --at-most "$HN" --allow-empty $DRYRUN \
+                        || fail_step "分批统稿失败 $LBOOK:$HCH"
+                done < <(chunk_list "$LBOOK" "$LPARAS")
+                audit_chunk harmonize "$LBOOK" ok "分批" $(python3 -c "
+    import sys; sys.path.insert(0,'$SCRIPT_DIR')
+    from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
+            done < "$GROUPS_FILE"
+        elif [[ "$HAVE" -eq 1 && "$TOTAL" -gt 0 ]]; then
+            for ((try = 1; try <= MAX_TRY; try++)); do
+                echo ">>> harmonize（跨三层）第 $try/$MAX_TRY 次（共 $TOTAL 句）"
+                OUT="$(mktemp)"
+                if run_claude "$(load_step pali-harmonize harmonize)
+
+    $KNOWLEDGE
+
+    ---三层译文（同一部经的本文 / 义注 / 复注，已分头译完）---
+    每块以 === 开头标出层次与 book；pali 里的 \`**词**\` 是黑体被解释词。
+    $ALL_SRC
+
+    ---任务---
+    把三层放在一起通读，做统稿，两件事：
+    1. **统一**——
+       a) **被解释词逐字对齐（最高优先）**：义注的黑体引自本文，其译法必须与本文同一处逐字相同；
+          复注的黑体引自义注，必须与义注同一处逐字相同。不一致就改子层去迁就父层；
+          除非父层本身译错——那就把父层一并改对。
+       b) 三层之间术语译法统一、语体统一、称谓与专名统一、标点体例统一。
+    2. **修正**——通读中发现的实际问题就地改掉：误译、漏译、指代接不上、汉语语病、
+       文言/半文半白、引号配对断裂。
+    每处改动都要有具体理由（对齐、一致性，或明确的错误）；**不要为「读起来更顺」而改**，不要重译。
+    **只输出本作业负责的那几层里你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
+    写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $TOTAL 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
+    标了〔只读参考〕的层**一句都不要输出**——那些归别的作业写，这里只用来对齐被解释词与术语。
+    原文里的黑体是**被解释词**（义注引自本文、复注引自义注）。译文里这些词必须照样用双星号包起来——不要改成引号、不要去掉。它是读者辨认「这条注在注哪个词」的唯一线索，也是逐字同译的机械核查依据。
+    id 里带着 book 与段号，照抄输入，不要编造。译文里不要留任何工作标记。
+    所需数据已全部注入上文，不要试图调用任何工具取数。
+    只输出 JSONL，不要旁白或代码围栏。" > "$OUT"; then
+                    OK=1
+                    # 一份输出分层提交：每层只收自己 book 的行，别层静默跳过
                     while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
                         [[ -z "${LAYER:-}" ]] && continue
-                        [[ "${OWN:-1}" == 1 ]] || continue
-                        audit_chunk harmonize "$LBOOK" ok "跨三层" $(python3 -c "
-import sys; sys.path.insert(0,'$SCRIPT_DIR')
-from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
+                        [[ "${OWN:-1}" == 1 ]] || continue      # 参考层不回写
+                        NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true)
+                        if ! python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$LPARAS" \
+                            --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN < "$OUT"; then
+                            OK=0
+                        fi
                     done < "$GROUPS_FILE"
-                    break
+                    if [[ "$OK" -eq 1 ]]; then
+                        rm -f "$OUT"
+                        while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
+                            [[ -z "${LAYER:-}" ]] && continue
+                            [[ "${OWN:-1}" == 1 ]] || continue
+                            audit_chunk harmonize "$LBOOK" ok "跨三层" $(python3 -c "
+    import sys; sys.path.insert(0,'$SCRIPT_DIR')
+    from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
+                        done < "$GROUPS_FILE"
+                        break
+                    fi
                 fi
-            fi
-            rm -f "$OUT"
-            [[ $try -eq $MAX_TRY ]] && fail_step "harmonize 失败（用尽 $MAX_TRY 次）"
-        done
-    fi
+                rm -f "$OUT"
+                [[ $try -eq $MAX_TRY ]] && fail_step "harmonize 失败（用尽 $MAX_TRY 次）"
+            done
+        fi
+fi
 fi
 
 # ══════════ 阶段三：evaluate（最后一步，只出报告）══════════
