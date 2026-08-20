@@ -14,6 +14,8 @@ epub 元数据；每章原样的 frontmatter 以 HTML 注释嵌在该章开头�
     python3 scripts/build_epub.py                          # 导出目录下每本书各一个 epub
     python3 scripts/build_epub.py --book "(DN) Sīlakkhandhavaggapāḷi"
     python3 scripts/build_epub.py --meta none --out dist   # 不要可见的章节摘要行
+    python3 scripts/build_epub.py --merge                   # 四本合成一个 epub
+    python3 scripts/build_epub.py --merge "我的书名"
     python3 scripts/build_epub.py --keep-md                # 保留中间 markdown，便于排错
 
 需要 pandoc（`pandoc --version`）。
@@ -49,19 +51,33 @@ def parse_front_matter(text):
 
 
 def load_chapters(book_dir):
-    """收集一本书的全部章节，按起始段号排序。"""
-    chs = []
+    """收集一本书的全部章节，先按 book 分组、组内按起始段号排。
+
+    两件事容易漏：
+    · 书目录旁边还有一个同名的 `<书名>.md`，那是这本书的扉页（`path` 为空），
+      它不在目录里，`os.walk` 收不到。
+    · 一个导出目录可能装着**两部书**（复注与新复注同名，如 book 188 与 189）。
+      段号各编各的，只按段号排会把两部书交错在一起，所以排序键要带上 book。
+    """
+    book_dir = book_dir.rstrip("/")
+    parent, name = os.path.split(book_dir)
+    paths = []
+    # 扉页文件名可能带 [0003] 前缀（见 rename_export_paras.py），按后缀认
+    for f in sorted(os.listdir(parent or ".")):
+        if f.endswith(".md") and re.sub(r"^\[\d+\]\s+", "", f) == name + ".md":
+            paths.append(os.path.join(parent, f))
     for dirpath, _, names in os.walk(book_dir):
-        for n in names:
-            if not n.endswith(".md"):
-                continue
-            p = os.path.join(dirpath, n)
-            meta, body = parse_front_matter(open(p, encoding="utf-8").read())
-            if "paragraph_start" not in meta:
-                print(f"  跳过（没有 paragraph_start）{p}", file=sys.stderr)
-                continue
-            chs.append({"path": p, "meta": meta, "body": body})
-    chs.sort(key=lambda c: (int(c["meta"]["paragraph_start"]),
+        paths += [os.path.join(dirpath, n) for n in names if n.endswith(".md")]
+
+    chs = []
+    for p in paths:
+        meta, body = parse_front_matter(open(p, encoding="utf-8").read())
+        if "paragraph_start" not in meta:
+            print(f"  跳过（没有 paragraph_start）{p}", file=sys.stderr)
+            continue
+        chs.append({"path": p, "meta": meta, "body": body})
+    chs.sort(key=lambda c: (int(c["meta"].get("book", 0)),
+                            int(c["meta"]["paragraph_start"]),
                             int(c["meta"].get("paragraph_end", 0))))
     return chs
 
@@ -96,9 +112,9 @@ def strip_leading_heading(body, title):
     return "\n".join(out).strip("\n")
 
 
-def chapter_md(ch, meta_mode):
+def chapter_md(ch, meta_mode, shift=0):
     m = ch["meta"]
-    level = max(1, len(m.get("path", [])) or 1)
+    level = max(1, len(m.get("path", [])) or 1) + shift
     lines = ["#" * level + " " + str(m.get("title", "untitled")), ""]
 
     # 原样保留整份 frontmatter：HTML 注释，读者看不见，机器取得回
@@ -130,7 +146,9 @@ def build(book_dir, out_dir, meta_mode, keep_md, dry):
                     {"role": "publisher", "text": "WikiPali"}],
         "date": today,
         "rights": "译文正本在 WikiPali，本 epub 是离线副本",
-        "description": (f"book {head.get('book')} · {len(chs)} 章 · {total} 句 · "
+        "description": ("book " + "/".join(sorted({str(c["meta"].get("book")) for c in chs},
+                                                   key=lambda x: int(x)))
+                        + f" · {len(chs)} 章 · {total} 句 · "
                         f"channel {head.get('channel')} ({head.get('channel_uid')})"),
         "source": head.get("source", "wikipali"),
     }
@@ -163,6 +181,78 @@ def build(book_dir, out_dir, meta_mode, keep_md, dry):
     return epub_path
 
 
+# 三层的阅读顺序：本文 → 义注 → 复注 → 复注的复注。按 book 号排正好是这个次序。
+def layer_key(chs):
+    return int(chs[0]["meta"].get("book", 10**9))
+
+
+def build_merged(book_dirs, out_dir, meta_mode, keep_md, dry, title):
+    """四本书合成一个 epub：每本书是一级标题，它的章节整体下沉一级。"""
+    books = []
+    for d in book_dirs:
+        chs = load_chapters(d)
+        if chs:
+            books.append((os.path.basename(d.rstrip("/")), chs))
+        else:
+            print(f"  {d}：没有可用章节，跳过", file=sys.stderr)
+    if not books:
+        sys.exit("一本可用的书都没有")
+    books.sort(key=lambda b: layer_key(b[1]))
+
+    head = books[0][1][0]["meta"]
+    total = sum(int(c["meta"].get("sentences", 0)) for _, chs in books for c in chs)
+    n_ch = sum(len(chs) for _, chs in books)
+
+    book_meta = {
+        "title": title,
+        "lang": head.get("lang", "zh-Hans"),
+        "creator": [{"role": "author", "text": f"{head.get('model', 'AI')}（机器翻译）"},
+                    {"role": "publisher", "text": "WikiPali"}],
+        "date": datetime.date.today().isoformat(),
+        "rights": "译文正本在 WikiPali，本 epub 是离线副本",
+        "description": (f"{len(books)} 部 · {n_ch} 章 · {total} 句 · book "
+                        # 一个目录可能含两部书（188/189），要全列出来
+                        + "/".join(sorted({str(c["meta"].get("book"))
+                                           for _, chs in books for c in chs},
+                                          key=lambda x: int(x)))
+                        + f" · channel {head.get('channel')} ({head.get('channel_uid')})"),
+        "source": head.get("source", "wikipali"),
+    }
+
+    parts = ["---", *yaml_block(book_meta), "---", ""]
+    for name, chs in books:
+        b = chs[0]["meta"].get("book")
+        parts.append(f"# {name}\n")
+        parts.append(f"<!-- pali-book\nbook: {b}\nchapters: {len(chs)}\n"
+                     f"sentences: {sum(int(c['meta'].get('sentences', 0)) for c in chs)}\n-->\n")
+        parts += [chapter_md(c, meta_mode, shift=1) for c in chs]
+        print(f"  + {name}（book {b}）{len(chs)} 章 / "
+              f"{sum(int(c['meta'].get('sentences', 0)) for c in chs)} 句")
+
+    os.makedirs(out_dir, exist_ok=True)
+    md_path = os.path.join(out_dir, f"{title}.md")
+    epub_path = os.path.join(out_dir, f"{title}.epub")
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(parts))
+
+    cmd = ["pandoc", md_path, "-o", epub_path,
+           "--from", "markdown+raw_html+yaml_metadata_block",
+           "--toc", "--toc-depth=3", "--split-level=2",
+           "--metadata", f"lang={book_meta['lang']}"]
+    print(f"  合并 {len(books)} 本：{n_ch} 章 / {total} 句 → {epub_path}")
+    if dry:
+        print("   ", " ".join(cmd))
+        return epub_path
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.stderr.strip():
+        print("   ", r.stderr.strip(), file=sys.stderr)
+    if r.returncode != 0:
+        sys.exit("pandoc 失败（合并）")
+    if not keep_md:
+        os.remove(md_path)
+    return epub_path
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="workspace/export", help="导出根目录")
@@ -172,6 +262,8 @@ def main():
     ap.add_argument("--meta", choices=["line", "none"], default="line",
                     help="章节开头是否显示一行摘要；完整 frontmatter 两种模式都会保留")
     ap.add_argument("--keep-md", action="store_true", help="保留合并后的中间 markdown")
+    ap.add_argument("--merge", nargs="?", const="Sīlakkhandhavagga 四层合集", default=None,
+                    help="把选中的书合成**一个** epub（可带书名，默认「Sīlakkhandhavagga 四层合集」）")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -184,7 +276,10 @@ def main():
     if not books:
         sys.exit(f"{args.root} 下没有书目录")
 
-    made = [build(b, args.out, args.meta, args.keep_md, args.dry_run) for b in books]
+    if args.merge:
+        made = [build_merged(books, args.out, args.meta, args.keep_md, args.dry_run, args.merge)]
+    else:
+        made = [build(b, args.out, args.meta, args.keep_md, args.dry_run) for b in books]
     made = [m for m in made if m]
     print(f"{'（试跑）' if args.dry_run else ''}共生成 {len(made)} 个 epub → {args.out}/")
 
