@@ -116,6 +116,26 @@ def pct(nodes, key="chars"):
     return 100.0 * got / tot
 
 
+def chunks_of(proj):
+    """全部翻译分块——进度按它们的字符数算。
+
+    不能把 harmonize / export 的字符也加进来：统稿读的是同一批文字，
+    加进去等于把同一段字符数了两遍，进度会凭空缩水。
+    """
+    return [c for j in proj["jobs"] for lay in j.get("layers", []) for c in lay.get("chunks", [])]
+
+
+def progress(proj):
+    """(翻译进度%, 统稿完成/总数, 导出完成/总数)——三件事各算各的。"""
+    tr = pct(chunks_of(proj))
+    hs = [c for j in proj["jobs"] for c in ((j.get("harmonize") or {}).get("cross", [])
+                                            + (j.get("harmonize") or {}).get("layer", []))]
+    ex = [j["export"] for j in proj["jobs"] if j.get("export")]
+    return (tr,
+            sum(1 for c in hs if c.get("status") == DONE), len(hs),
+            sum(1 for c in ex if c.get("status") == DONE), len(ex))
+
+
 # ── 从 audit.log 汇总进度 ───────────────────────────────────────────────
 
 def audit_done(channel=None):
@@ -180,7 +200,7 @@ def build_index():
             "jobs": len(p["jobs"]), "job_counts": jc,
             "units": len(us), "unit_counts": counts(us),
             "chars": sum(j.get("chars", 0) for j in p["jobs"]),
-            "pct": round(pct(p["jobs"]), 1),
+            "pct": round(progress(p)[0], 1),
             "updated": p.get("updated", ""), "created": p.get("created", ""),
         })
     rows.sort(key=lambda r: r["updated"], reverse=True)
@@ -230,8 +250,9 @@ def cmd_status(name):
     jc, uc = counts(p["jobs"]), counts(us)
     print(f"项目 {p['name']}｜{p.get('title','')}｜状态 {p.get('state','idle')}"
           f"｜channel {p.get('channel','')}")
-    print(f"作业 {len(p['jobs'])}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in jc.items() if v)
-          + f"｜进度 {pct(p['jobs']):.1f}%（按巴利字符）")
+    tr, hd, ht, ed, et = progress(p)
+    print(f"作业 {len(p['jobs'])}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in jc.items() if v))
+    print(f"翻译 {tr:.1f}%（按巴利字符）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
     print(f"单元 {len(us)}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in uc.items() if v))
     bad = [j for j in p["jobs"] if j.get("status") == FAILED]
     for j in bad[:20]:

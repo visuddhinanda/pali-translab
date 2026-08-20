@@ -103,10 +103,10 @@ function leaf(n, label){
 function layerNode(l){
   const cs = l.chunks||[];
   const inner = cs.length
-    ? cs.map(c => leaf(c, `${l.book}:${c.start}–${c.end}`)).join('')
-    : `<div class="leaf"><span class="t">（分块在跑的时候才切）</span></div>`;
+    ? cs.map(c => leaf(c, `${l.book}:${c.start}–${c.end}　${c.paras} 段`)).join('')
+    : `<div class="leaf"><span class="t">（这一层没有可切的分块）</span></div>`;
   return `<details><summary><span class="t">${l.layer_cn||l.layer} · ${l.book}:${l.start}–${l.end}</span>
-    <span class="n">${num(l.chars)} 字符 · ${cs.length} 分块</span>${bar(cs)}</summary>
+    <span class="n">${l.paras||0} 段 · ${num(l.chars)} 字符 · ${cs.length} 分块</span>${bar(cs)}</summary>
     <div class="kids">${inner}</div></details>`;
 }
 
@@ -185,8 +185,12 @@ def render_project(proj):
         if j.get("export"):
             us.append(j["export"])
     done_jobs = sum(1 for j in jobs if j.get("status") == "done")
-    chars = sum(j.get("chars", 0) for j in jobs)
-    done_chars = sum(j.get("chars", 0) for j in jobs if j.get("status") == "done")
+    chunks = [c for j in jobs for lay in j.get("layers", []) for c in lay.get("chunks", [])]
+    chars = sum(c.get("chars", 0) for c in chunks)
+    done_chars = sum(c.get("chars", 0) for c in chunks if c.get("status") == "done")
+    hs = [c for j in jobs for c in ((j.get("harmonize") or {}).get("cross", [])
+                                    + (j.get("harmonize") or {}).get("layer", []))]
+    hs_done = sum(1 for c in hs if c.get("status") == "done")
     data = json.dumps(proj, ensure_ascii=False).replace("</", "<\\/")
 
     return f"""<!doctype html>
@@ -202,9 +206,9 @@ def render_project(proj):
 </header>
 <div class="stats">
   <div class="stat"><b>{done_jobs} / {len(jobs)}</b><span>作业</span></div>
-  <div class="stat"><b>{len(us)}</b><span>可执行单元</span></div>
-  <div class="stat"><b>{100.0 * done_chars / (chars or 1):.1f}%</b><span>按巴利字符</span></div>
-  <div class="stat"><b>{chars:,}</b><span>巴利字符</span></div>
+  <div class="stat"><b>{100.0 * done_chars / (chars or 1):.1f}%</b><span>翻译（按巴利字符）</span></div>
+  <div class="stat"><b>{hs_done} / {len(hs)}</b><span>统稿单元</span></div>
+  <div class="stat"><b>{chars:,}</b><span>巴利字符 · {len(chunks)} 分块</span></div>
   <div class="stat"><b>{_esc(proj.get('method', 'default'))}</b><span>method</span></div>
 </div>
 <div class="toolbar">

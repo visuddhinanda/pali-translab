@@ -23,7 +23,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import book_chapters, cs_map, jget, para_chars, paras, plen  # noqa: E402
+from _wp import book_chapters, chunk_paras, cs_map, jget, para_chars, paras, plen  # noqa: E402
 import project as pj  # noqa: E402
 
 LAYER_CN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tika": "复注 ṭīkā"}
@@ -223,6 +223,27 @@ def harmonize_plan(job, entries, csm, chm, th):
                    "note": "" if cross else "本作业全部段落没有 cs_para 对应，只做纵向统稿"}
 
 
+def layer_node(jid, k, e, chm, args):
+    """一层的计划：段范围 + 体量 + **预切好的分块**。
+
+    分块只按字符数与段数切，不查句数——句数要逐段 `wikipali get`，全书两百多次调用，
+    而跑的时候 `pipeline_batch.sh` 本来就会用当时的参数重切一遍并加上句数上限。
+    所以这里切出来的是**计划视图**：段边界与实跑可能差一两段，进度按段号归属即可。
+    """
+    plist = list(range(e["start"], e["end"] + 1))
+    chunks = []
+    for n, ps in enumerate(chunk_paras(e["book"], plist, args.chunk_chars,
+                                       args.max_paras, max_sents=0), 1):
+        chunks.append({"id": f'{jid}.{k}.{n}', "kind": "chunk", "book": e["book"],
+                       "start": ps[0], "end": ps[-1], "paras": len(ps),
+                       "chars": sum(chm[e["book"]].get(p, 0) for p in ps),
+                       "status": pj.PENDING})
+    return {"layer": e["layer"], "layer_cn": LAYER_CN.get(e["layer"], e["layer"]),
+            "book": e["book"], "start": e["start"], "end": e["end"],
+            "title": e.get("title", ""), "paras": len(plist),
+            "chars": sum(chm[e["book"]].get(p, 0) for p in plist),
+            "chunks": chunks}
+
 def build_project(args, jobs, books_seen, channel):
     """把作业计划物化成 project 文件——结构、体量、harmonize 计划、状态全在里面。"""
     bl = {e["book"] for j in jobs for e in entries_of(j)}
@@ -230,6 +251,7 @@ def build_project(args, jobs, books_seen, channel):
     chm = {b: para_chars(b) for b in bl}
     th = dict(pj.THRESHOLDS)
 
+    th_chunk = f"≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段，句数留到跑时校正"
     out_jobs, modes = [], {"direct": 0, "cross+layer": 0, "layer-only": 0}
     for j in jobs:
         ents = entries_of(j)
@@ -246,12 +268,7 @@ def build_project(args, jobs, books_seen, channel):
             "note": j.get("note", ""),
             "mula": j["mula"],
             "ref": j.get("ref", []),
-            "layers": [{"layer": e["layer"], "layer_cn": LAYER_CN.get(e["layer"], e["layer"]),
-                        "book": e["book"], "start": e["start"], "end": e["end"],
-                        "title": e.get("title", ""),
-                        "chars": sum(chm[e["book"]].get(p, 0)
-                                     for p in range(e["start"], e["end"] + 1)),
-                        "chunks": []} for e in ents],
+            "layers": [layer_node(j["id"], k, e, chm, args) for k, e in enumerate(ents, 1)],
             "harmonize": harm,
             "export": {"id": f'{j["id"]}.E', "kind": "export", "chars": 0,
                        "status": pj.PENDING},
@@ -267,6 +284,8 @@ def build_project(args, jobs, books_seen, channel):
         "books": {str(b): {"layer": l, "title": t} for b, (l, t) in books_seen.items()},
         "jobs": out_jobs,
     }
+    nch = sum(len(l["chunks"]) for j in out_jobs for l in j["layers"])
+    print(f"  预切分块 {nch} 个（{th_chunk}）", file=sys.stderr)
     print(f"  harmonize 分级：整章直做 {modes['direct']} 个，"
           f"横向+纵向 {modes['cross+layer']} 个，只纵向 {modes['layer-only']} 个"
           f"（阈值 {th['harmonize_direct_max']:,} / {th['harmonize_cross_chars']:,}"
@@ -282,6 +301,10 @@ def main():
     ap.add_argument("--project", default="",
                     help="项目名：产出 workspace/projects/<name>.json（含状态与 harmonize 计划）")
     ap.add_argument("--title", default="", help="项目标题，给人看的")
+    ap.add_argument("--chunk-chars", type=int, default=5000, dest="chunk_chars",
+                    help="预切分块的巴利字符上限（与 pipeline_batch.sh 同名参数一致）")
+    ap.add_argument("--max-paras", type=int, default=12, dest="max_paras",
+                    help="预切分块的段数上限")
     ap.add_argument("--channel", default="", help="写进项目文件的目标 channel uid")
     ap.add_argument("--csv", default="",
                     help="任务表 csv 落盘路径；跑之前先出这张表，守护进程再逐条改状态")
