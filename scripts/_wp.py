@@ -169,6 +169,18 @@ def plen(row):
     return row.get("length", row.get("lenght", 0))
 
 
+def cs_map(book):
+    """{段号: cs_para}——Chaṭṭha Saṅgāyana 典藏段号，**跨书通用**，是三层之间唯一的公共坐标。
+
+    没有 cs_para 的段（注释层独有的序论、结语）值为 None。旧缓存里没有这个字段，
+    遇到就刷新一次，否则三层映射会静默变成空的。
+    """
+    rows = paras(book)
+    if rows and "cs_para" not in rows[0]:
+        rows = paras(book, refresh=True)
+    return {x["paragraph"]: x.get("cs_para") for x in rows}
+
+
 def para_chars(book):
     """{段号: 字符数}——分块直接用它，不必再逐段拉正文。"""
     return {x["paragraph"]: plen(x) for x in paras(book)}
