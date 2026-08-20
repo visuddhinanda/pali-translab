@@ -21,7 +21,7 @@ import sys
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from _wp import PALI_UID, dump, jget, parse_paras, plain  # noqa: E402
 
-# wikipali related 的 tags 里标文献层次
+# related 的 tags 里标文献层次
 LAYER_TAGS = {"aṭṭhakathā": "atthakatha", "ṭīkā": "tika"}
 
 
@@ -41,7 +41,15 @@ def find_nissaya(book, para):
 
 
 def find_commentary(book, para, want):
-    """`wikipali related` 给出本文 ↔ 义注 ↔ 复注的段落对应，按 tags 判层次。"""
+    """某一段的义注 / 复注对应段——**这里保留 `wikipali related`**，理由如下。
+
+    全书级的事情（排计划、定章节归属、切统稿单元）一律用 `cs_para`，因为它是本地
+    计算、跨书通用。但 cs 是**粗粒度**的：一个典藏段号常覆盖注释层几十上百段
+    （实测本文 93:12 一段的 cs 对应义注 96 段、复注 164 段），拿它给单段找对照
+    就是把整章塞进去。related 给的是逐段的精确对应，正是单段翻译需要的。
+
+    换句话说：**related 只用在单段场景，且一次只问一段**——这一层的调用量是可控的。
+    """
     hits = []
     for rel in jget("related", f"{book}:{para}", "--json"):
         names = {t.get("name") for t in rel.get("tags", [])}

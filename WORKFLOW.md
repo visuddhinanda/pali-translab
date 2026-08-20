@@ -261,7 +261,7 @@ output: wikipali:{channel}
 |---|---|
 | `pali` | `wikipali get <book>:<para> --json` |
 | `nissaya` | `wikipali versions` 里 `type=nissaya` 的 channel → `get --channel <uid>`（**translate 不声明此资源**） |
-| `atthakatha` / `tika` | `wikipali related <book>:<para> --json` 按 tags 找层次 → `get <义注坐标>`（**translate 不声明**） |
+| `atthakatha` / `tika` | 单段：`wikipali related <book>:<para> --json` → `get`；成章成书：`cs_para` 本地算（**translate 不声明**） |
 | `current_translation` | `wikipali get <book>:<para> --json --channel <目标 channel>` |
 | `review` | 本地 `workspace/reports/{book}/{start}-{end}_review.md` |
 

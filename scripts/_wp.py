@@ -220,3 +220,111 @@ def chunk_paras(book, plist, budget=5000, max_paras=12, max_sents=60):
     if cur:
         chunks.append(cur)
     return chunks
+
+
+# ── 跨层书目与 cs 映射 ─────────────────────────────────────────────────
+# `wikipali related` 是**段级**接口：一次一段、约 1.5 秒往返。用它做全书规划要
+# 每章问一次（一卷 150 多次 ≈ 4 分钟），而它给的段级对应边界还会错位。
+# 全书级的事情一律改用 `books`（一次拿到同一卷的各层书号）+ `cs_para`（跨书通用的
+# 典藏段号）。related 只留给单段翻译时临时找对应。
+
+LAYER_BY_TAG = {"mūla": "mula", "aṭṭhakathā": "atthakatha",
+                "ṭīkā": "tika", "abhinavaṭīkā": "tika"}
+# 这些 tag 说的是"哪一层"或"什么体裁"，不是"哪一卷"，配对时要排除
+NON_VAGGA_TAGS = set(LAYER_BY_TAG) | {"pāḷi", "sutta", "vinaya", "abhidhamma", "añña"}
+_BOOKS_CACHE = {}
+
+
+def all_books(refresh=False):
+    """全部书目（`wikipali books --json`），带 book 号与 tag。一次调用，本地缓存。"""
+    if refresh or "rows" not in _BOOKS_CACHE:
+        cache = "workspace/cache_books.json"
+        if not refresh and os.path.exists(cache):
+            _BOOKS_CACHE["rows"] = json.load(open(cache, encoding="utf-8"))
+        else:
+            rows = jget("books", "--json")
+            if rows:
+                os.makedirs("workspace", exist_ok=True)
+                json.dump(rows, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
+            _BOOKS_CACHE["rows"] = rows
+    return _BOOKS_CACHE["rows"]
+
+
+def layer_books(book):
+    """与 `book` 同卷的各层书：[{book, layer, title, toc}]，含它自己。
+
+    判定方式：同卷 = 共享全部"卷级 tag"（如 dīghanikāya + sīlakkhandhavagga）；
+    层次 = 该书的层级 tag（mūla / aṭṭhakathā / ṭīkā / abhinavaṭīkā）。
+    一卷可能有两部新复注（如 188/189 各覆盖 cs 的前后半段），都会列出来。
+    """
+    rows = all_books()
+    me = next((r for r in rows if r.get("book") == int(book)), None)
+    if not me:
+        return []
+    vagga = {t for t in me.get("tags", []) if t not in NON_VAGGA_TAGS}
+    out = []
+    for r in rows:
+        tags = set(r.get("tags", []))
+        if not vagga <= tags:
+            continue
+        layer = next((LAYER_BY_TAG[t] for t in tags if t in LAYER_BY_TAG), None)
+        if layer:
+            out.append({"book": r["book"], "layer": layer,
+                        "title": r.get("title", ""), "toc": r.get("toc", "")})
+    out.sort(key=lambda x: ({"mula": 0, "atthakatha": 1, "tika": 2}[x["layer"]], x["book"]))
+    return out
+
+
+def cs_filled(book):
+    """{段号: cs}，把段号对齐到**它所属那一章**的 cs。
+
+    两个坑，都是实测踩出来的：
+    · **章标题段带的是上一章的 cs**（如义注 103:1469「Tayo codanārahavaṇṇanā」标着
+      cs 510，而它这一章的正文是 513–515）。照抄就会把整章判到上一章去，
+      所以标题一律改取**后面第一段正文**的 cs。
+    · 正文里没有 cs 的段（注释独有的插话、结语）是接着前面讲的，向**前**继承。
+    """
+    rows = paras(book)
+    if rows and "cs_para" not in rows[0]:
+        rows = paras(book, refresh=True)
+    rows = sorted(rows, key=lambda x: x["paragraph"])
+    body_cs = {x["paragraph"]: x.get("cs_para") for x in rows if x.get("level", 100) >= 100}
+
+    nxt, fwd = None, {}
+    for x in reversed(rows):                      # 每段之后的第一个正文锚点
+        p = x["paragraph"]
+        if body_cs.get(p) is not None:
+            nxt = body_cs[p]
+        fwd[p] = nxt
+
+    out, last = {}, None
+    for x in rows:
+        p = x["paragraph"]
+        if x.get("level", 100) < 100:             # 标题：跟后面的正文走
+            out[p] = fwd.get(p)
+        elif body_cs.get(p) is not None:
+            out[p] = last = body_cs[p]
+        else:                                     # 正文缺 cs：跟前面走
+            out[p] = last
+    return out
+
+
+def cs_own(book):
+    """{段号: cs}，只认正文段自己的 cs；标题段一律 None。判章节归属用它。"""
+    rows = paras(book)
+    return {x["paragraph"]: (x.get("cs_para") if x.get("level", 100) >= 100 else None)
+            for x in rows}
+
+
+def cs_set(book, lo, hi, csm=None, carry=True):
+    """某本书 [lo, hi] 段里出现的 cs 值集合。
+
+    `carry=True`（默认）：没有 cs 的段跟着**前一个 cs 锚点**走——切 chunk 时用这个，
+    注释层独有的序论、结语夹在锚点之间，属于同一段释义，不能丢。
+
+    `carry=False`：只算这些段**自己**的 cs。判「这一章注的是哪一章」必须用它——
+    章标题段常常没有 cs，一旦向前继承，标题就会把上一章的 cs 带进来，
+    整章被判给上一章（实测把义注的 `8. Mahāsīhanādasuttavaṇṇanā` 判给了上一经的末章）。
+    """
+    csm = csm or (cs_filled(book) if carry else cs_own(book))
+    return {csm.get(p) for p in range(int(lo), int(hi) + 1) if csm.get(p) is not None}

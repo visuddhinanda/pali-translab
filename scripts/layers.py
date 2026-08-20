@@ -2,11 +2,12 @@
 """解析一段本文对应的三层文献坐标：mūla → aṭṭhakathā → ṭīkā。
 
 三层在**不同的书**里，段号也不同（本文 93:984 的义注在 103:1470，复注在 185:1345 与 189:1263）。
-本脚本用 `wikipali related` 逐层向下问，产出坐标表与**父层映射**——
+本脚本用 `wikipali books` + `cs_para` 逐层向下算，产出坐标表与**父层映射**——
 父层映射是「被解释词逐字同译」这条硬约束的执行依据：义注的父层是本文，复注的父层是义注。
 
 `--chapter` 把每一层扩成**该层书自己目录里的完整一章**——这是处理整章时的正确做法。
-`related` 是段级对应，一段注释常跨注好几段父层，直接拿它的段号当章节范围必然错位：
+cs_para 是跨书通用的典藏段号；旧做法用的 `related` 是段级对应、一次一段一秒半，
+一段注释常跨注好几段父层，直接拿它的段号当章节范围必然错位：
 注释章的首段往往注的是上一章的本文，其被解释词在本章里根本找不到。
 
 输出 JSON：
@@ -29,7 +30,7 @@ import json
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import jget, parse_paras  # noqa: E402
+from _wp import cs_filled, jget, layer_books, parse_paras  # noqa: E402
 
 LAYER_TAGS = {"aṭṭhakathā": "atthakatha", "ṭīkā": "tika"}
 PROBE = 500   # 末章没有下一条目录项时，向后按这个跨度收尾
@@ -60,28 +61,40 @@ def to_chapter(book, paras):
     return list(range(best[0], best[1] + 1)), best[2]
 
 
-def related(book, para, want):
-    """<book>:<para> 向下一层的对应坐标：[(layer, book, title, [paras])]"""
-    out = []
-    for rel in jget("related", f"{book}:{para}", "--json"):
-        names = {t.get("name") for t in rel.get("tags", [])}
-        layer = next((LAYER_TAGS[n] for n in names if n in LAYER_TAGS), None)
-        if layer in want and rel.get("book") != book:
-            out.append((layer, rel["book"], rel.get("book_title_pali", ""), rel.get("para", [])))
-    return out
+def by_cs(parent_book, parent_paras, want, books):
+    """父层这些段 → 下一层的对应段，全靠 cs_para，本地计算，**不调 related**。
 
+    related 是段级接口（一次约 1.5 秒往返），整章解析要几十上百次；而它给的是段级
+    对应，边界还会错位。cs_para 是跨书通用的典藏段号：父段与子段落在同一个 cs 上，
+    就是对应关系。子层里没有 cs 的段（注释独有的插话）跟着前一个锚点走。
 
-def collect(parent_book, parent_paras, want):
-    """把父层每一段的下层对应汇总成 {(layer, book): {"title":…, "map": {子段: [父段…]}}}"""
-    groups = {}
+    返回 {(layer, book): {"title":…, "map": {子段: [父段…]}}}
+    """
+    pcs = cs_filled(parent_book)
+    want_cs = {}
     for pp in parent_paras:
-        for layer, cbook, title, cparas in related(parent_book, pp, want):
-            g = groups.setdefault((layer, cbook), {"title": title, "map": {}})
-            for cp in cparas:
+        c = pcs.get(pp)
+        if c is not None:
+            want_cs.setdefault(c, []).append(pp)
+    groups = {}
+    for r in books:
+        if r["layer"] not in want or r["book"] == parent_book:
+            continue
+        ccs = cs_filled(r["book"])       # 空缺已补好：标题往后跟、正文往前跟
+        g = {"title": r["title"], "map": {}}
+        for cp, c in sorted(ccs.items()):
+            if c in want_cs:
                 g["map"].setdefault(cp, [])
-                if pp not in g["map"][cp]:
-                    g["map"][cp].append(pp)
+                for pp in want_cs[c]:
+                    if pp not in g["map"][cp]:
+                        g["map"][cp].append(pp)
+        if g["map"]:
+            groups[(r["layer"], r["book"])] = g
     return groups
+
+
+def collect(parent_book, parent_paras, want, books):
+    return by_cs(parent_book, parent_paras, want, books)
 
 
 def main():
@@ -94,13 +107,14 @@ def main():
     args = ap.parse_args()
 
     mula_paras = parse_paras(args.para)
+    books = layer_books(args.book)      # 一次 books 调用，拿到同卷各层的书号
     groups = [{
         "layer": "mula", "book": args.book, "title": "",
         "paras": mula_paras, "parent_book": None, "map": {},
     }]
 
     # 本文 → 义注
-    att = collect(args.book, mula_paras, {"atthakatha"})
+    att = collect(args.book, mula_paras, {"atthakatha"}, books)
     for (layer, cbook), g in sorted(att.items(), key=lambda kv: kv[0][1]):
         groups.append({
             "layer": layer, "book": cbook, "title": g["title"],
@@ -111,7 +125,7 @@ def main():
     # 义注 → 复注（复注的父层是义注，不是本文——被解释词引自义注）
     if not args.no_tika:
         for ag in [g for g in groups if g["layer"] == "atthakatha"]:
-            tik = collect(ag["book"], ag["paras"], {"tika"})
+            tik = collect(ag["book"], ag["paras"], {"tika"}, books)
             for (layer, cbook), g in sorted(tik.items(), key=lambda kv: kv[0][1]):
                 groups.append({
                     "layer": layer, "book": cbook, "title": g["title"],

@@ -30,7 +30,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **原子 Skills**：pali-translate / pali-review / pali-revise / **pali-harmonize** / pali-evaluate / pali-footnote / pali-term-check / pali-export，各自独立
 - **数据流**：wikipali 读 → 处理 → wikipali channel 写（**覆盖式**，同坐标替换）。channel 就是流水线状态，每步从 channel 读回上一步结果，所以中断能接上
 - **资源分工**：translate **只看巴利原文**；**义注定释义、nissaya 定词法**，两者从 review 才介入（译者与标准同源就查不出错），冲突以义注为准。改译文的是 translate / revise / harmonize / footnote，review 与 evaluate 非侵入只出报告。**evaluate 排在流水线最后**——评的必须是定稿
-- **三层都译**：本文 / 义注 / 复注分别翻译（坐标由 `wikipali related` 解析，见 `scripts/layers.py`）。**被解释词与父层逐字同译**是硬约束——义注黑体引自本文、复注黑体引自义注
+- **三层都译**：本文 / 义注 / 复注分别翻译（坐标由 `wikipali books` + `cs_para` 本地算出，见 `scripts/layers.py`；**全书级不用 `related`**——它是段级接口、一次约 1.5 秒，只留给单段临时查对应）。**被解释词与父层逐字同译**是硬约束——义注黑体引自本文、复注黑体引自义注
 - **按 chunk 提交**：一次连续若干段交同一次调用（默认 ≤5000 巴利字符 / ≤12 段），跨段漂移才看得见；再 **harmonize 跨三层统稿**（对齐被解释词 + 统一术语/语体/称谓 + 修正问题，但不重译、不为「更顺」而改），最后 evaluate 验收
 - **数据访问**：全部经 **wikipali 插件**的 `wikipali` CLI（`get` / `versions` / `related` / `toc` / `channels` / `write`）。skill 内不再有 `scripts/`，不直连 HTTP，不读本地语料
 - **写入规矩**以插件的 `wikipali:write` skill 与 `references/conventions.md` 为准，本项目不重复定义

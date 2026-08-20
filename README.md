@@ -38,7 +38,7 @@
 ./scripts/pipeline_batch.sh 93 983 986 --channel <uid> --nissaya
 ```
 
-给的是**本文**的坐标；义注与复注的坐标由 `wikipali related` 自动解析，三层都会翻译。
+给的是**本文**的坐标；义注与复注的坐标由 `wikipali books` + `cs_para` 自动算出，三层都会翻译。
 
 按 chunk 提交——连续若干段一次交给同一次调用（默认累加到 5000 巴利字符或 12 段截断，
 用 `--chunk-chars` / `--max-paras` 调），LLM 看得到上下文，术语与语体才连得起来。

@@ -92,7 +92,9 @@ workspace/export/{章节路径}/{章节名}.md   ← 一章（经文）一个文
 |---|---|
 | 取原文 / 译文 | `wikipali get <book>:<para> --json [--channel <uid>]` |
 | 查该坐标有哪些 channel | `wikipali versions <book>:<para> --json` |
-| 找义注 / 复注对应 | `wikipali related <book>:<para> --json` |
+| 找义注 / 复注对应（**单段**） | `wikipali related <book>:<para> --json`（段级接口，约 1.5 秒/次，只用于单段） |
+| 找同卷各层的书 | `wikipali books --json` → 按 tag 判层次（一次拿全卷） |
+| 跨层段落对应（**成章成书**） | `cs_para`（`wikipali paras` 自带，跨书通用，本地计算，零调用） |
 | 章节边界 | `wikipali toc <book>:<para> --json` |
 | **整书结构 + 跨层对应** | `wikipali paras <book>:3 --body --json`（含 `cs_para`，**规划首选**） |
 | 可写 channel 列表 | `wikipali channels --json` |

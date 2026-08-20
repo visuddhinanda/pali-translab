@@ -8,8 +8,9 @@
   · 参考（ref）——后面的本文章在 review 与跨层统稿时**仍要读**那个义注，
     否则被解释词无从对齐、用词也统一不起来。ref 只读不写，可以重叠。
 
-对应关系优先按**章名**判定（本文 `Cūḷasīlaṃ` ↔ 义注 `Cūḷasīlavaṇṇanā`），
-章名对不上再退回 `wikipali related` 的段级对应取最早认领者。
+层次由 `wikipali books` 的 tag 一次问出，章节对应按 **cs_para**（跨书通用的典藏段号）
+判定；章名匹配（本文 `Cūḷasīlaṃ` ↔ 义注 `Cūḷasīlavaṇṇanā`）用来在多个认领者之间定归属，
+章名对不上再按 cs_para 取最早的认领者。
 某个本文章没有义注是可能的，这时它的 own/ref 里就没有那一层。
 
 用法：
@@ -23,11 +24,11 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import book_chapters, chunk_paras, cs_map, jget, para_chars, paras, plen  # noqa: E402
+from _wp import (book_chapters, chunk_paras, cs_filled, cs_own,  # noqa: E402
+                 cs_set, layer_books, para_chars, paras, plen)
 import project as pj  # noqa: E402
 
 LAYER_CN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tika": "复注 ṭīkā"}
-LAYER_TAGS = {"aṭṭhakathā": "atthakatha", "ṭīkā": "tika"}
 LAYER_ORDER = {"mula": 0, "atthakatha": 1, "tika": 2}
 
 
@@ -46,26 +47,6 @@ def norm(title):
             break
     s = s.rstrip("ṃ").translate(str.maketrans("āīū", "aiu"))
     return s.rstrip("a")
-
-
-def chapter_of(chs, para):
-    for i, (lo, hi, title) in enumerate(chs):
-        if lo <= para and (hi is None or para <= hi):
-            return i
-    return None
-
-
-def discover(book, paras):
-    """本文这些段落向下关联到的 (layer, book, para)。"""
-    hits = []
-    for p in paras:
-        for rel in jget("related", f"{book}:{p}", "--json", retries=2):
-            names = {t.get("name") for t in rel.get("tags", [])}
-            layer = next((LAYER_TAGS[n] for n in names if n in LAYER_TAGS), None)
-            if layer and rel.get("book") != book:
-                for cp in rel.get("para", []):
-                    hits.append((layer, rel["book"], cp, rel.get("book_title_pali", "")))
-    return hits
 
 
 # ══════════ project 文件：结构 + harmonize 规模分级 ══════════
@@ -196,19 +177,21 @@ def harmonize_plan(job, entries, csm, chm, th):
             j += 1
         hi = cs_list[j - 1]
         layers = layers_in(entries, csm, lo, hi)
-        n += 1
-        cross.append({"id": f"{jid}.H{n}", "kind": "cross", "cs": [lo, hi],
-                      "chars": got, "layers": layers, "status": pj.PENDING})
+        if len(layers) >= 2:          # 只剩一层就没有"跨层"可言，交给纵向那一步即可
+            n += 1
+            cross.append({"id": f"{jid}.H{n}", "kind": "cross", "cs": [lo, hi],
+                          "chars": got, "layers": layers, "status": pj.PENDING})
         i = j
 
     layer_chunks = []
-    for e in entries:                              # 纵向：每层各自通读，太大再切
-        got, start, k = 0, e["start"], 0
+    seq = {}                                       # 编号按 book 连续，不能按 entry 重置——
+    for e in entries:                              # 一个作业可能认领同一层的好几段，会撞 id
+        got, start = 0, e["start"]
         for p in range(e["start"], e["end"] + 1):
             got += chm[e["book"]].get(p, 0)
             last = p == e["end"]
             if got >= th["harmonize_layer_chars"] or last:
-                k += 1
+                k = seq[e["book"]] = seq.get(e["book"], 0) + 1
                 layer_chunks.append({
                     "id": f'{jid}.HL{e["book"]}.{k}', "kind": "layer",
                     "layer": e["layer"], "layer_cn": LAYER_CN.get(e["layer"], e["layer"]),
@@ -247,7 +230,7 @@ def layer_node(jid, k, e, chm, args):
 def build_project(args, jobs, books_seen, channel):
     """把作业计划物化成 project 文件——结构、体量、harmonize 计划、状态全在里面。"""
     bl = {e["book"] for j in jobs for e in entries_of(j)}
-    csm = {b: cs_map(b) for b in bl}
+    csm = {b: cs_filled(b) for b in bl}
     chm = {b: para_chars(b) for b in bl}
     th = dict(pj.THRESHOLDS)
 
@@ -318,43 +301,71 @@ def main():
     # paras 已经给出真实末段，这里只需按 --end 裁剪
     mula = [(lo, min(hi, args.end), t) for lo, hi, t in mula if lo <= min(hi, args.end)]
 
-    # 1) 逐章向下发现注释坐标
+    # 1) 找同卷各层的书 —— 一次 `wikipali books`，不是每章一次 related
     #
-    # **每章只查一段**：三层之间是章节对应，要么一对多要么多对一，不会混合，
-    # 所以一段问出来的层归属对整章都成立。
-    # **只查有正文的底层章节**：上层章节只是个标题，本身没有对应关系——
-    # 用 paras 的 level 分辨（level==100 才是正文段）。
-    # 这两条把 related 从「每段一次」压到「每个叶子章节一次」。
-    body = {x["paragraph"] for x in paras(args.book) if x["level"] == 100}
-    probes = [next((p for p in range(lo, hi + 1) if p in body), None)
-              for lo, hi, _t in mula]
-    print(f"{len(mula)} 个本文章，其中 {sum(1 for x in probes if x)} 个有正文——"
-          f"只对这些各查一次 related", file=sys.stderr)
-
-    per_chapter = []
+    # related 是**段级**接口（一次约 1.5 秒），全书规划要每章问一次：一卷 150 多次、
+    # 四分钟，而且它给的段级对应边界还会错位（实测约一成的章判到相邻章）。
+    # 层次归属改由 books 的 tag 判定，章节对应改由 cs_para 判定，两者都是本地计算。
     books_seen = {}
-    for probe in probes:
-        hits = discover(args.book, [probe]) if probe is not None else []
-        for layer, b, _p, btitle in hits:
-            books_seen.setdefault(b, (layer, btitle))
-        per_chapter.append(hits)
+    for r in layer_books(args.book):
+        if r["book"] != args.book:
+            books_seen[r["book"]] = (r["layer"], r["title"])
+    if not books_seen:
+        print(f"  ⚠ 没找到与 book {args.book} 同卷的注释书——只排本文", file=sys.stderr)
+    print(f"{len(mula)} 个本文章｜同卷注释书 "
+          + "、".join(f"{b}({l})" for b, (l, _t) in sorted(books_seen.items())),
+          file=sys.stderr)
 
     ctoc = {b: toc_chapters(b) for b in books_seen}
+    csm = {b: cs_own(b) for b in [args.book] + list(books_seen)}   # 判归属只认正文段自己的 cs
 
-    # 2) 每个注释章的认领者集合（按本文章序号）
+    # 2) 每章的 cs 集合 → 注释章的认领者
+    #
+    # cs_para 是 Chaṭṭha Saṅgāyana 典藏段号，跨书通用，是三层唯一的公共坐标。
+    # 注释章与本文章共享哪怕一个 cs，就说明它注的是这一章。
+    # 判归属只看各章**自己**的 cs（carry=False）：章标题段往往没有 cs，
+    # 一旦向前继承就会把上一章的 cs 带进来，整章被判给上一章。
+    mula_cs = [cs_set(args.book, lo, hi, csm[args.book], carry=False) for lo, hi, _t in mula]
+    # 章名在本文里**唯一**时才敢拿它认亲：Cūḷasīlaṃ、Dvepabbajitavatthu 这类
+    # 小节名在好几部经里重复出现（本卷有 6 个），重名的只能靠 cs 判。
+    name_count = {}
+    for _lo, _hi, t in mula:
+        name_count[norm(t)] = name_count.get(norm(t), 0) + 1
+    by_name = {}
+    for mi, (_lo, _hi, t) in enumerate(mula):
+        if name_count[norm(t)] == 1:
+            by_name.setdefault(norm(t), mi)
+
     claims = {}                       # (book, chapter_idx) -> set(本文章序号)
-    for mi, hits in enumerate(per_chapter):
-        for _layer, b, p, _t in hits:
-            ci = chapter_of(ctoc[b], p)
-            if ci is not None:
-                claims.setdefault((b, ci), set()).add(mi)
+    for b, chs in ctoc.items():
+        for ci, (clo, chi, ctitle) in enumerate(chs):
+            S = cs_set(b, clo, chi, csm[b], carry=False)
+            hit = {mi for mi, M in enumerate(mula_cs) if S & M}
+            # 标题章自己没有 cs（如义注的「2. Sāmaññaphalasuttavaṇṇanā」只有一行标题），
+            # 靠章名认亲：它显然属于同名的那一经，而不该自成一个前置作业。
+            if not hit and norm(ctitle) in by_name:
+                hit = {by_name[norm(ctitle)]}
+            if hit:
+                claims[(b, ci)] = hit
 
-    # 3) 定归属：章名匹配优先，否则给最早的认领者
+    # 3) 定归属：章名匹配优先，其次 cs 重叠最多的那一章，再平手取最早
     owner = {}
     for (b, ci), who in claims.items():
-        key = norm(ctoc[b][ci][2])
+        clo, chi, ctitle = ctoc[b][ci]
+        key = norm(ctitle)
         named = [mi for mi in who if norm(mula[mi][2]) == key]
-        owner[(b, ci)] = min(named) if named else min(who)
+        if named:
+            owner[(b, ci)] = min(named)
+            continue
+        # 经题章（义注的「8. Mahāsīhanādasuttavaṇṇanā」只有一行标题）跟本文经题章
+        # 未必共享 cs，所以认领者里找不到同名的；章名唯一时直接认，别退回 cs 重叠——
+        # 退回去会把经题判给上一经的末章。
+        if key in by_name:
+            owner[(b, ci)] = by_name[key]
+            claims[(b, ci)] = who | {by_name[key]}
+            continue
+        S = cs_set(b, clo, chi, csm[b], carry=False)
+        owner[(b, ci)] = max(who, key=lambda mi: (len(S & mula_cs[mi]), -mi))
 
     # 4) 组装作业
     jobs = []
