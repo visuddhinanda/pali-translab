@@ -15,3 +15,5 @@ __pycache__/
 
 # Local memory / session data
 /.claude/projects/
+/.claude/RESUME.md
+/.claude/scheduled_tasks.lock

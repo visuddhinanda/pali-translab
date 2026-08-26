@@ -49,7 +49,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 依赖含 SQLAlchemy / psycopg / langchain / minio / pika（**尚未在代码中使用**）
 - `scripts/*.py` 只用标准库，通过 subprocess 调 `wikipali` CLI
 - 配置模板：`config.orig.toml`（实际配置 `config.toml` 已 gitignore；不存 token，凭据在 `~/.wikipali/credentials.json`）
-- 外部依赖：**wikipali 插件**（`/mnt/visuddhinanda/workspace/wikipali-plugins`）。`command -v wikipali` 为空时用 `${CLAUDE_PLUGIN_ROOT}/bin/wikipali` 并提醒重启会话
+- 外部依赖：**wikipali 插件**（<https://github.com/iapt-platform/wikipali-plugins>）。`command -v wikipali` 为空时用 `${CLAUDE_PLUGIN_ROOT}/bin/wikipali` 并提醒重启会话
 
 ## 沟通风格
 
