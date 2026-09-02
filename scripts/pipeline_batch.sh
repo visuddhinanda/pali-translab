@@ -225,7 +225,9 @@ run_claude() {
     # 撞额度时 claude 把提示写在 **stdout**，直接管进 wp_push 就进不了作业日志，
     # 守护进程扫日志判 RATE_LIMIT 因此永远匹配不到，白白把作业判成失败。
     # 这里把它复述到 stderr（= 作业日志），守护进程才看得见。
-    if grep -qiE "session limit|usage limit|rate limit|limit reached|resets [0-9]" "$out" "$err"; then
+    # 文案不止一种：「resets Sep 1, 8pm」里 resets 后面跟的是月份不是数字，
+    # 早先的 `resets [0-9]` 认不出来，70 个作业因此被当成普通失败一路重试到废。
+    if grep -qiE "session limit|usage limit|rate limit|limit reached|weekly limit|5-hour limit|hit your|resets " "$out" "$err"; then
         echo "  🚦 撞到额度限制：$(tr -d '\n' < "$out" | head -c 200)" >&2
     fi
     cat "$out"
