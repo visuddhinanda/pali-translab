@@ -63,7 +63,11 @@ TRANSIENT = ("连接失败", "所有可用站点都连不上", "HTTP 500", "HTTP
              "HTTP 503", "HTTP 504", "timed out", "Server Error")
 # 撞订阅额度：多天任务里这必然发生。**不能算作业失败**，否则一批作业连环耗光重试次数。
 RATE_LIMIT = ("rate limit", "rate_limit", "Rate limit", "usage limit", "Usage limit",
-              "quota", "overloaded_error", "Too Many Requests", "429",
+              "quota", "overloaded_error", "Too Many Requests",
+              # 这里曾经有个裸的 "429"。日志里每句译文前都带坐标（`95-1429-2-7`），
+              # 段号里只要出现 429/1429/2429 就会命中，把普通失败误判成撞额度：
+              # 作业退回队列且不计重试次数，再加 30 分钟全局冷却，如此循环不休。
+              # HTTP 429 真出现时会带 "Too Many Requests"，上面那条已经够了。
               "resets at", "limit reached", "5-hour limit", "weekly limit",
               # claude -p 撞额度时原样吐这一句到 stdout 并 rc=1：
               #   You've hit your session limit · resets 1:40pm (UTC)
@@ -228,9 +232,26 @@ def wait_for_api(book, para, log):
 
 # ---------- 主循环 ----------
 
+# 上一次全局冷却结束的时刻。多个 worker 并发时，一次撞限会让每个 worker 各自
+# 带回一份「撞额度」判定；若每份都照直冷却一遍，30 分钟就被串成 30×N 分钟——
+# 09-03 那次额度 9:50 就恢复了，进程却因为三段接力冷却空等到 10:25。
+# 判定所依据的那次运行如果结束于上一段冷却之前，说明这段等待已经替它等过了，
+# 作业照常退回队列，但不再叠加新的冷却。
+COOLDOWN_END = {"v": 0.0}
+
+
+def cooldown_covered(path):
+    """这个作业的撞限记录，是不是上一段冷却已经覆盖过的旧账？"""
+    try:
+        return os.path.getmtime(path) <= COOLDOWN_END["v"]
+    except OSError:
+        return False
+
+
 def cooldown(seconds, log):
     """撞额度后整体停一段时间——继续派发只会让所有作业一起失败。"""
     end = time.time() + seconds
+    COOLDOWN_END["v"] = end
     while time.time() < end:
         if os.path.exists(STOP):
             return False
@@ -408,10 +429,14 @@ def cmd_run(args):
                     job["tries"] -= 1          # 撞额度不算作业失败
                     job["note"] = "撞额度，已退回队列"
                     job["began"] = job["ended"] = ""
-                    log_line(f"🚦 {job['start']}-{job['end']} 撞到额度限制，"
-                             f"全局暂停 {args.cooldown // 60} 分钟等窗口刷新")
-                    if not cooldown(args.cooldown, log_line):
-                        stopping["v"] = True
+                    if cooldown_covered(path):
+                        log_line(f"🚦 {job['start']}-{job['end']} 撞额度（旧账，"
+                                 f"上一段冷却已覆盖），直接退回队列不再等")
+                    else:
+                        log_line(f"🚦 {job['start']}-{job['end']} 撞到额度限制，"
+                                 f"全局暂停 {args.cooldown // 60} 分钟等窗口刷新")
+                        if not cooldown(args.cooldown, log_line):
+                            stopping["v"] = True
                 elif transient_in(path):
                     job["status"] = PENDING
                     job["tries"] -= 1          # 环境问题不算次数
