@@ -99,23 +99,33 @@ def yaml_block(meta):
     return lines
 
 
-def strip_leading_heading(body, title):
-    """去掉正文自带的 `# 标题` 与那句离线副本提示——标题由本脚本按层级重排。"""
-    out, dropped_h1 = [], False
+def split_leading_heading(body):
+    """摘走正文自带的首个标题（连同那句离线副本提示），返回 (标题文字, 余下正文)。
+
+    标题级别不固定：导出脚本按面包屑深度给中文章名定级，书名页是 `#`、经是
+    `##`、章是 `###`。这里**不限级别**只认第一个 `#{1,6} `——早先写死认 `"# "`，
+    改了导出规则后 `## 中文章名` 剥不掉，于是每章多出一条巴利目录项。
+    """
+    out, title = [], ""
     for line in body.splitlines():
-        if not dropped_h1 and line.startswith("# "):
-            dropped_h1 = True
+        m = re.match(r"#{1,6} +(.*)", line) if not title else None
+        if m:
+            title = m.group(1).strip()
             continue
         if line.startswith("> 本文是") and line.rstrip().endswith("离线副本。"):
             continue
         out.append(line)
-    return "\n".join(out).strip("\n")
+    return title, "\n".join(out).strip("\n")
 
 
 def chapter_md(ch, meta_mode, shift=0):
     m = ch["meta"]
     level = max(1, len(m.get("path", [])) or 1) + shift
-    lines = ["#" * level + " " + str(m.get("title", "untitled")), ""]
+    # 章标题用正文里的**中文**章名；frontmatter 的 title 是巴利名，只作后备
+    # （旧规则导出的文件正文标题就是巴利名，取到的仍是它）。级别一律由这里
+    # 按 path 深度重排，正文那行原有的级别不带过来。
+    heading, body = split_leading_heading(ch["body"])
+    lines = ["#" * level + " " + (heading or str(m.get("title", "untitled"))), ""]
 
     # 原样保留整份 frontmatter：HTML 注释，读者看不见，机器取得回
     raw = "\n".join(f"{k}: {json.dumps(v, ensure_ascii=False)}" for k, v in m.items())
@@ -124,7 +134,7 @@ def chapter_md(ch, meta_mode, shift=0):
     if meta_mode == "line":
         lines += [f"*§{m.get('paragraph_start')}–{m.get('paragraph_end')} · "
                   f"{m.get('sentences', '?')} 句 · 导出 {m.get('exported_at', '')}*", ""]
-    lines.append(strip_leading_heading(ch["body"], m.get("title", "")))
+    lines.append(body)
     return "\n".join(lines).rstrip() + "\n"
 
 
