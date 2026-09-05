@@ -24,12 +24,13 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import (book_chapters, chunk_paras, cs_filled, cs_own,  # noqa: E402
-                 cs_set, layer_books, para_chars, paras, plen)
+from _wp import (LAYER_ORDER, book_chapters, chunk_paras, cs_filled,  # noqa: E402
+                 cs_own, cs_set, layer_books, para_chars, paras, plen)
 import project as pj  # noqa: E402
 
-LAYER_CN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tika": "复注 ṭīkā"}
-LAYER_ORDER = {"mula": 0, "atthakatha": 1, "tika": 2}
+# 层序与层名统一由 _wp.LAYER_CHAIN 定；论藏是四层，见那里的说明
+LAYER_CN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tika": "复注 ṭīkā",
+            "mulatika": "根本复注 mūlaṭīkā", "anutika": "随复注 anuṭīkā"}
 
 
 def toc_chapters(book, anchor=3):
