@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-"""解析一段本文对应的三层文献坐标：mūla → aṭṭhakathā → ṭīkā。
+"""解析一段本文对应的各层文献坐标：mūla → aṭṭhakathā → ṭīkā（论藏还有 mūlaṭīkā → anuṭīkā）。
 
-三层在**不同的书**里，段号也不同（本文 93:984 的义注在 103:1470，复注在 185:1345 与 189:1263）。
+层次链见 `_wp.LAYER_CHAIN`：逐层向下，父层就是链上前一个**在场**的层，
+所以经藏三层、论藏四层走的是同一段代码。各层在**不同的书**里，段号也不同（本文 93:984 的义注在 103:1470，复注在 185:1345 与 189:1263）。
 本脚本用 `wikipali books` + `cs_para` 逐层向下算，产出坐标表与**父层映射**——
-父层映射是「被解释词逐字同译」这条硬约束的执行依据：义注的父层是本文，复注的父层是义注。
+父层映射是「被解释词逐字同译」这条硬约束的执行依据：义注的父层是本文，复注的父层是义注，
+论藏的随复注（anuṭīkā）父层是根本复注（mūlaṭīkā）。
 
 `--chapter` 把每一层扩成**该层书自己目录里的完整一章**——这是处理整章时的正确做法。
 cs_para 是跨书通用的典藏段号；旧做法用的 `related` 是段级对应、一次一段一秒半，
@@ -30,9 +32,9 @@ import json
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import cs_filled, jget, layer_books, parse_paras  # noqa: E402
+from _wp import (LAYER_CHAIN, cs_filled, jget, layer_books,  # noqa: E402
+                 parse_paras)
 
-LAYER_TAGS = {"aṭṭhakathā": "atthakatha", "ṭīkā": "tika"}
 PROBE = 500   # 末章没有下一条目录项时，向后按这个跨度收尾
 
 
@@ -97,6 +99,12 @@ def collect(parent_book, parent_paras, want, books):
     return by_cs(parent_book, parent_paras, want, books)
 
 
+def _prev_present(layer, chain):
+    """`layer` 在本卷里的父层名——链上前一个**这一卷真有**的层；最上面那层归本文。"""
+    i = chain.index(layer)
+    return chain[i - 1] if i else "mula"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", type=int, required=True, help="本文（mūla）的 book")
@@ -113,23 +121,23 @@ def main():
         "paras": mula_paras, "parent_book": None, "map": {},
     }]
 
-    # 本文 → 义注
-    att = collect(args.book, mula_paras, {"atthakatha"}, books)
-    for (layer, cbook), g in sorted(att.items(), key=lambda kv: kv[0][1]):
-        groups.append({
-            "layer": layer, "book": cbook, "title": g["title"],
-            "paras": sorted(g["map"]), "parent_book": args.book,
-            "map": {str(k): v for k, v in sorted(g["map"].items())},
-        })
-
-    # 义注 → 复注（复注的父层是义注，不是本文——被解释词引自义注）
-    if not args.no_tika:
-        for ag in [g for g in groups if g["layer"] == "atthakatha"]:
-            tik = collect(ag["book"], ag["paras"], {"tika"}, books)
-            for (layer, cbook), g in sorted(tik.items(), key=lambda kv: kv[0][1]):
+    # 沿层次链逐层向下：每一层的父层是**上一层已经解出来的那些组**，不是本文。
+    # 被解释词引自父层（义注引本文、复注引义注、随复注引根本复注），链错了对齐就错。
+    present = {r["layer"] for r in books}
+    chain = [lay for lay in LAYER_CHAIN[1:] if lay in present]
+    if args.no_tika:
+        chain = chain[:1]               # 只到义注
+    for layer in chain:
+        # 上一层在这一卷里可能干脆不存在（论藏没有 ṭīkā 层），所以按**本卷实有**的链回退
+        parents = [g for g in groups if g["layer"] == _prev_present(layer, chain)]
+        for pg in parents:
+            if not pg["paras"]:
+                continue
+            sub = collect(pg["book"], pg["paras"], {layer}, books)
+            for (lay, cbook), g in sorted(sub.items(), key=lambda kv: kv[0][1]):
                 groups.append({
-                    "layer": layer, "book": cbook, "title": g["title"],
-                    "paras": sorted(g["map"]), "parent_book": ag["book"],
+                    "layer": lay, "book": cbook, "title": g["title"],
+                    "paras": sorted(g["map"]), "parent_book": pg["book"],
                     "map": {str(k): v for k, v in sorted(g["map"].items())},
                 })
 
