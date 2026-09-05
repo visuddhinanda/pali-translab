@@ -527,7 +527,8 @@ def cmd_status(args):
     print(f"项目 {p['name']}｜{p.get('title', '')}｜状态 {p.get('state', 'idle')}")
     print(f"共 {len(jobs)} 个作业：" +
           "  ".join(f"{EMOJI[k]} {counts.get(k, 0)}" for k in (DONE, RUNNING, PENDING, FAILED)))
-    print(f"翻译 {tr:.1f}%（按巴利字符）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
+    cdone, ctot = pj.chars(pj.chunks_of(p))
+    print(f"翻译 {tr:.1f}%（巴利字符 {cdone:,}/{ctot:,}）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
     for j in jobs:
         if j["status"] in (RUNNING, FAILED):
             print(f"  {EMOJI[j['status']]}  {j['book']}:{j['start']}-{j['end']}  {j['title']}"
