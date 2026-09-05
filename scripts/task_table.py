@@ -27,7 +27,8 @@ from _wp import chunk_paras, para_chars  # noqa: E402
 
 COLS = ["编号", "类型", "状态", "层次", "坐标", "名称", "归属",
         "段数", "字符数", "预计调用", "开始时间", "完成时间", "耗时", "备注"]
-LAYER_CN = {"mula": "本文", "atthakatha": "义注", "tika": "复注"}
+LAYER_CN = {"mula": "本文", "atthakatha": "义注", "tika": "复注",
+            "mulatika": "根本复注", "anutika": "随复注"}
 
 
 def rows_for_job(job, budget, max_paras, harmonize_max):
