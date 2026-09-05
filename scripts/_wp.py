@@ -228,10 +228,51 @@ def chunk_paras(book, plist, budget=5000, max_paras=12, max_sents=60):
 # 全书级的事情一律改用 `books`（一次拿到同一卷的各层书号）+ `cs_para`（跨书通用的
 # 典藏段号）。related 只留给单段翻译时临时找对应。
 
-LAYER_BY_TAG = {"mūla": "mula", "aṭṭhakathā": "atthakatha",
-                "ṭīkā": "tika", "abhinavaṭīkā": "tika"}
-# 这些 tag 说的是"哪一层"或"什么体裁"，不是"哪一卷"，配对时要排除
+# 注释层的链条：父层 = 链上前一个**在场**的层。
+# 经藏走 mula → atthakatha → tika，论藏走 mula → atthakatha → mulatika → anutika，
+# 两者都是这条链的子集，所以「父层」不必按藏别写死，沿链回退即可。
+LAYER_CHAIN = ["mula", "atthakatha", "tika", "mulatika", "anutika"]
+LAYER_ORDER = {n: i for i, n in enumerate(LAYER_CHAIN)}
+
+# tag → 层次。**按这个顺序匹配，先中先得**：论藏的 mūlaṭīkā / anuṭīkā 两种书
+# 都同时带着 `ṭīkā` 这个通用 tag，先看专名才分得开。
+# purāṇaṭīkā / abhinavaṭīkā 是同一层的新旧两个注本（**并列**，不是上下层），都归 tika。
+LAYER_TAG_RULES = [("mūla", "mula"), ("aṭṭhakathā", "atthakatha"),
+                   ("mūlaṭīkā", "mulatika"), ("anuṭīkā", "anutika"),
+                   ("purāṇaṭīkā", "tika"), ("abhinavaṭīkā", "tika"), ("ṭīkā", "tika")]
+LAYER_BY_TAG = dict(LAYER_TAG_RULES)
+# 这些 tag 说的是"哪一层"或"什么体裁"，不是"哪一卷"，配对时要排除。
+# 漏一个层次 tag，它就会被当成卷名参与配对，同卷的其它层全被排除掉
+#（实测 mūlaṭīkā 不在这里时，layer_books(172) 只能看到它自己）。
 NON_VAGGA_TAGS = set(LAYER_BY_TAG) | {"pāḷi", "sutta", "vinaya", "abhidhamma", "añña"}
+
+
+def _vagga_tags(tags):
+    """一本书的**卷级** tag：去掉层次、体裁，以及 `…pāḷi` 这类**书名** tag。
+
+    书名 tag 只挂在本文上（yamakapāḷi 挂在 78/79/80，注释书没有），当成卷名参与
+    `vagga <= tags` 判定，同卷的注释书就全被排除——实测 yamaka 与 paṭṭhāna
+    两部论因此完全找不到义注与复注。
+    """
+    return {t for t in tags
+            if t not in NON_VAGGA_TAGS and not (t.endswith("pāḷi") and t != "pāḷi")}
+
+
+def layer_of(tags):
+    """一组 tag 属于哪一层；不是任何注释层就给 None。"""
+    tags = set(tags)
+    return next((lay for tag, lay in LAYER_TAG_RULES if tag in tags), None)
+
+
+def parent_layer(layer, present):
+    """`layer` 的父层：链上排在它前面、且在 `present` 里的最后一个层。没有就 None。"""
+    if layer not in LAYER_ORDER:
+        return None
+    present = set(present)
+    for name in reversed(LAYER_CHAIN[:LAYER_ORDER[layer]]):
+        if name in present:
+            return name
+    return None
 _BOOKS_CACHE = {}
 
 
@@ -256,22 +297,23 @@ def layer_books(book):
     判定方式：同卷 = 共享全部"卷级 tag"（如 dīghanikāya + sīlakkhandhavagga）；
     层次 = 该书的层级 tag（mūla / aṭṭhakathā / ṭīkā / abhinavaṭīkā）。
     一卷可能有两部新复注（如 188/189 各覆盖 cs 的前后半段），都会列出来。
+    论藏是**四层**（mūla → aṭṭhakathā → mūlaṭīkā → anuṭīkā），见 LAYER_CHAIN。
     """
     rows = all_books()
     me = next((r for r in rows if r.get("book") == int(book)), None)
     if not me:
         return []
-    vagga = {t for t in me.get("tags", []) if t not in NON_VAGGA_TAGS}
+    vagga = _vagga_tags(me.get("tags", []))
     out = []
     for r in rows:
         tags = set(r.get("tags", []))
         if not vagga <= tags:
             continue
-        layer = next((LAYER_BY_TAG[t] for t in tags if t in LAYER_BY_TAG), None)
+        layer = layer_of(tags)
         if layer:
             out.append({"book": r["book"], "layer": layer,
                         "title": r.get("title", ""), "toc": r.get("toc", "")})
-    out.sort(key=lambda x: ({"mula": 0, "atthakatha": 1, "tika": 2}[x["layer"]], x["book"]))
+    out.sort(key=lambda x: (LAYER_ORDER.get(x["layer"], 99), x["book"]))
     return out
 
 
