@@ -30,7 +30,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import jget, plain  # noqa: E402
+from _wp import book_roots, jget, plain  # noqa: E402
 
 # 文件名/目录名保留章节名原貌，只挡掉路径分隔符与控制字符
 UNSAFE_RE = re.compile(r"[/\\\x00-\x1f]+")
@@ -88,7 +88,9 @@ def main():
     args = ap.parse_args()
 
     meta = next((c for c in jget("channels", "--json") if c["uid"] == args.channel), {})
-    anchor = args.para or args.start or 1
+    # 没指定段号时，锚点取书目表里这本书的根段（不是 1，也不是写死的 3——
+    # 根段号各书不同，给错了 toc 会取不到或只取到半本）
+    anchor = args.para or args.start or book_roots(args.book)[0]
     chs = chapters(args.book, anchor)
     if not chs:
         sys.exit(f"book {args.book} 取不到目录，无法按章导出")
