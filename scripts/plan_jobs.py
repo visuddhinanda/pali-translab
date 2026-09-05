@@ -33,8 +33,11 @@ LAYER_CN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tik
             "mulatika": "根本复注 mūlaṭīkā", "anutika": "随复注 anuṭīkā"}
 
 
-def toc_chapters(book, anchor=3):
-    """[(start, end, title)]——一次 `wikipali paras` 拿到，末段已确定，无需再探。"""
+def toc_chapters(book):
+    """[(start, end, title)]——一次 `wikipali paras` 拿到，末段已确定，无需再探。
+
+    锚点由 `_wp.book_roots` 从书目表取，这里不再有 anchor 参数（写死 3 是错的）。
+    """
     return [(lo, hi, ti) for lo, hi, ti, _c, _n in book_chapters(book)]
 
 
