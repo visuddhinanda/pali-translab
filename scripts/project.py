@@ -116,6 +116,12 @@ def pct(nodes, key="chars"):
     return 100.0 * got / tot
 
 
+def chars(nodes, key="chars"):
+    """(已完成字符, 总字符)——pct 的分子分母，报进度时连绝对量一起给。"""
+    return (sum(n.get(key, 0) for n in nodes if n.get("status") == DONE),
+            sum(n.get(key, 0) for n in nodes))
+
+
 def chunks_of(proj):
     """全部翻译分块——进度按它们的字符数算。
 
