@@ -19,10 +19,7 @@ import argparse
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import PALI_UID, dump, jget, parse_paras, plain  # noqa: E402
-
-# related 的 tags 里标文献层次
-LAYER_TAGS = {"aṭṭhakathā": "atthakatha", "ṭīkā": "tika"}
+from _wp import PALI_UID, dump, jget, layer_of, parse_paras, plain  # noqa: E402
 
 
 def fetch(book, paras, channels, batch=20):
@@ -55,7 +52,7 @@ def find_commentary(book, para, want):
     hits = []
     for rel in jget("related", f"{book}:{para}", "--json"):
         names = {t.get("name") for t in rel.get("tags", [])}
-        layer = next((LAYER_TAGS[n] for n in names if n in LAYER_TAGS), None)
+        layer = layer_of(names)   # related 的 tags 里标文献层次，判定同 _wp.LAYER_TAG_RULES
         if layer in want:
             for p in rel.get("para", []):
                 hits.append((layer, rel["book"], p))
