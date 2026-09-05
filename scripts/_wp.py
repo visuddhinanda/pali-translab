@@ -132,6 +132,8 @@ def paras(book, refresh=False):
     返回 [{book, paragraph, toc, level, lenght, chapter_len}]，
     `level < 100` 是标题行，`== 100` 是正文段。
     ⚠ 字段名是 `lenght`（服务端如此拼写），不是 length。
+
+    锚点必须取自书目表（见 book_roots），**不能写死 `<book>:3`**。
     """
     key = int(book)
     if refresh or key not in _PARAS_CACHE:
@@ -139,7 +141,13 @@ def paras(book, refresh=False):
         if not refresh and os.path.exists(cache):
             _PARAS_CACHE[key] = json.load(open(cache, encoding="utf-8"))
         else:
-            rows = jget("paras", f"{key}:3", "--body", "--json")
+            rows, seen = [], set()
+            for root in book_roots(key):
+                for r in jget("paras", f"{key}:{root}", "--body", "--json"):
+                    if r["paragraph"] not in seen:
+                        seen.add(r["paragraph"])
+                        rows.append(r)
+            rows.sort(key=lambda r: r["paragraph"])
             if rows:
                 os.makedirs("workspace", exist_ok=True)
                 json.dump(rows, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
@@ -289,6 +297,21 @@ def all_books(refresh=False):
                 json.dump(rows, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
             _BOOKS_CACHE["rows"] = rows
     return _BOOKS_CACHE["rows"]
+
+
+def book_roots(book):
+    """该 book 号下每部书的**根段号**，来自书目表自带的 `paragraph`。
+
+    两个理由不能写死 `<book>:3`：
+    · 根段号本来就不都是 3（96 dhammasaṅgaṇī-aṭṭhakathā 是 4）。给正文段时
+      `paras` 只回它自己一行，插件便向上找章节，服务端对它的父段回 -1，
+      于是请求 `v2/palitext/96--1` → HTTP 500，整本书取不到段表。
+    · 一个 book 号可能挂着好几部书（98 是五部论义注的合本，各部一条书目），
+      整本的段表是这些根段各自那一章的并集。
+    """
+    ps = sorted({int(r["paragraph"]) for r in all_books()
+                 if r.get("book") == int(book) and r.get("paragraph") is not None})
+    return ps or [3]
 
 
 def layer_books(book):
