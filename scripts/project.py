@@ -199,7 +199,10 @@ def rollup(proj, steps=("translate", "review", "revise")):
         c = counts(us)
         if c[DONE] == len(us) and us:
             job["status"] = DONE
-        elif job.get("status") != RUNNING and c[FAILED]:
+        elif job.get("status") not in (RUNNING, PENDING) and c[FAILED]:
+            # PENDING 是「已排队等重跑」（reset-failed 刚退回的）。audit.log 里的旧
+            # fail 记录会一直在，若照它把作业打回 FAILED，守护进程下一轮就不再派发，
+            # reset-failed 等于白做——这条 guard 就是为了不让旧账覆盖重跑意图。
             job["status"] = FAILED
     return touched
 
