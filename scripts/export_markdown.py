@@ -13,6 +13,10 @@
 
 正文只有译文（不含巴利原文）：**一句一行**，同段落的句子之间不空行，段落之间空一行。
 
+标题只留中文：章节名的巴利原文不再单独起一行标题（它在 frontmatter 的 `title` 里），
+正文第一段就是章节名的译文，给它补上 heading 记号。层级按**面包屑深度**（`len(path) + 1`）
+算，不用 toc 的 level——toc 的 level 是跳号的（书 2 / 经 3 / 章 5），照抄会让 h4 空着。
+
 用法：
     python3 scripts/export_markdown.py --book 216 --channel <uid>              # 整本
     python3 scripts/export_markdown.py --book 216 --channel <uid> --para 35    # 该段所属那一章
@@ -133,8 +137,6 @@ def main():
             f"exported_at: {today}",
             "---",
             "",
-            f"# {ch['title']}",
-            "",
             "> 本文是**机器生成的译文**，正本在 WikiPali，本文件只是离线副本。",
             "",
         ]
@@ -144,6 +146,15 @@ def main():
         for p in paras:
             body += [t for _, t in sorted(by_para[p])]
             body.append("")
+
+        # 章名的译文自成一段（章起始段只有一句），给它补 heading 记号。
+        # 层级 = 面包屑深度 + 1：path 是祖先每层一个，所以书下的经是 ##、经下的章是 ###。
+        # 不用 toc 的 level，那个是跳号的（大品：书 2 / 经 3 / 章 5），照抄会空出 h4。
+        if len(by_para[paras[0]]) == 1 and paras[0] == ch["start"]:
+            body[0] = "#" * (len(ch["path"]) + 1) + " " + body[0]
+        else:
+            print(f"  ⚠ {ch['title']}：起始段不是单句的章名，未加标题记号",
+                  file=sys.stderr)
 
         outdir = os.path.join(args.out, *[safe_name(x) for x in ch["path"]])
         os.makedirs(outdir, exist_ok=True)
