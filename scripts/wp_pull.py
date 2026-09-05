@@ -36,8 +36,10 @@ def fetch(book, paras, channels, batch=20):
 
 def find_nissaya(book, para):
     """该段有没有缅文 nissaya channel——没有就降级，不要拿别段的凑。"""
+    # 只认缅文原始 nissaya（lang == "my"）——同名 type 下还有 AI 生成的汉译 nissaya
+    # （lang zh-Hans），它是机器产物，不能拿来当词级基准。
     return [r["uid"] for r in jget("versions", f"{book}:{para}", "--json")
-            if r.get("type") == "nissaya"]
+            if r.get("type") == "nissaya" and r.get("lang") == "my"]
 
 
 def find_commentary(book, para, want):
