@@ -1,31 +1,32 @@
 #!/usr/bin/env bash
 #
-# pipeline_batch.sh — 三层批量流水线：本文 / 义注 / 复注全部翻译，再跨层统稿
+# pipeline_batch.sh — 多层批量流水线：本文 / 义注 / 复注（论藏还有根本复注 / 随复注）
+# 全部翻译，再跨层统稿。层次链见 scripts/_wp.py 的 LAYER_CHAIN
 #
 # 译文的唯一去处是 wikipali channel（覆盖式写入），**不落本地 jsonl**。
 # 每一步都从 channel 读回上一步的结果，所以任何一步中断后重跑都能接上。
 #
-# ── 三层与父层 ────────────────────────────────────────────────────────────
+# ── 层次与父层 ────────────────────────────────────────────────────────────
 #   mūla（本文）      → 只看巴利原文，独立译出
 #   aṭṭhakathā（义注） → 父层是本文；义注里的**黑体是被解释词，引自本文**
 #   ṭīkā（复注）      → 父层是义注；复注里的**黑体是被解释词，引自义注**
 #
 #   被解释词必须与所注文本**逐字同译**，否则读者看不出这条注在注哪个词——
 #   随文注的对应关系就断了。所以翻译子层时，把父层的原文与译文一并注入作为对照。
-#   坐标由 `wikipali related` 逐层解析（见 scripts/layers.py），三层在不同的书里。
+#   坐标由 cs_para 逐层解析（见 scripts/layers.py），各层在不同的书里。
 #   **做整章时加 --chapter**：各层按该层书自己的目录扩成完整一章。不加的话拿到的是
 #   related 的段级范围，边界必然错位——注释章的首段常注的是上一章的本文。
 #
 # ── 步骤与粒度 ────────────────────────────────────────────────────────────
 #   translate / review / revise / evaluate   按 chunk（累加巴利字符到 --chunk-chars）
-#   harmonize                                **跨三层**一次统稿
+#   harmonize                                **跨各层**一次统稿
 #
 #   写 channel 的是 translate / revise / harmonize；review 与 evaluate 不碰译文，
 #   只在本地出报告 md。evaluate 排在最后：评的是走完全部改动步骤之后的定稿。
 #
 # ── 阶段 ──────────────────────────────────────────────────────────────────
 #   阶段一  逐层（本文→义注→复注）逐 chunk 做 translate → review → revise
-#   阶段二  跨三层统稿：统一被解释词与术语语体，并修正通读发现的问题
+#   阶段二  跨层统稿：统一被解释词与术语语体，并修正通读发现的问题
 #   阶段三  逐层逐 chunk 做 evaluate，出报告
 #   阶段四  把本作业负责的每一层导出成 markdown（跑完一章立刻能看）
 #
@@ -54,7 +55,7 @@ shift 3
 
 METHOD="default"
 STEPS="translate,review,revise,harmonize,evaluate,export"
-WANT_LAYERS="mula,atthakatha,tika"
+WANT_LAYERS="mula,atthakatha,tika,mulatika,anutika"   # 本卷没有的层自动跳过
 MAX_TRY=3
 MODEL="sonnet"
 CHANNEL=""
@@ -244,40 +245,45 @@ layer_cn() {
         mula)       echo "本文（mūla）" ;;
         atthakatha) echo "义注（aṭṭhakathā）" ;;
         tika)       echo "复注（ṭīkā）" ;;
+        mulatika)   echo "根本复注（mūlaṭīkā）" ;;
+        anutika)    echo "随复注（anuṭīkā）" ;;
         *)          echo "$1" ;;
     esac
 }
 
-# ---------- 解析三层坐标 ----------
+# ---------- 解析各层坐标 ----------
 echo "######## 本文 book=$BOOK $START..$END → channel $CHANNEL｜method=$METHOD ########"
 echo "steps=$STEPS｜layers=$WANT_LAYERS"
-echo "解析三层坐标（wikipali related）..."
+echo "解析各层坐标（cs_para）..."
 
 if [[ -n "$PLAN" ]]; then
     # 计划模式：own=1 的组本作业负责翻译，own=0 的只读参考（归别的作业翻译）
     GROUPS_FILE="$WORK/.groups_job${JOB}"
-    python3 - "$PLAN" "$JOB" "$WANT_LAYERS" > "$GROUPS_FILE" <<'PY'
-import json, sys
+    SCRIPT_DIR="$SCRIPT_DIR" python3 - "$PLAN" "$JOB" "$WANT_LAYERS" > "$GROUPS_FILE" <<'PY'
+import json, sys, os
+sys.path.insert(0, os.environ["SCRIPT_DIR"])
+from _wp import parent_layer
 plan, jid, want = json.load(open(sys.argv[1], encoding='utf-8')), int(sys.argv[2]), set(sys.argv[3].split(','))
 job = next(j for j in plan["jobs"] if j["id"] == jid)
 # 两种计划格式都要认：project 文件把本作业负责的层放在 layers[]（含 mula），
 # 旧的 plan_93.json 放在 own[]。ref[] 两边同名，都是只读参考。
 own = [e for e in job.get("layers", job.get("own", [])) if e["layer"] != "mula"]
 job = {**job, "own": own, "ref": job.get("ref", [])}
-att = [e for e in job["own"] + job["ref"] if e["layer"] == "atthakatha"]
 # 前置作业（注释书开头，与本文无对应）没有本文层：mula 为 None，
 # 此时义注就是最上层，父层为空，统稿是义注↔复注。
 mula = job["mula"]
 rows = ([(mula, 1)] if mula else []) + [(e, 1) for e in job["own"]] + [(e, 0) for e in job["ref"]]
+# 父层按 _wp.LAYER_CHAIN 在**本作业实有的层**里回退一格：经藏是复注→义注，
+# 论藏是随复注→根本复注→义注。写死"非本文非义注一律以义注为父"会让随复注对错父层。
+present = {e["layer"] for e, _o in rows}
+by_layer = {}
+for e, _o in rows:
+    by_layer.setdefault(e["layer"], []).append(e)
 for e, own in rows:
     if e["layer"] not in want:
         continue
-    if e["layer"] == "mula":
-        parent = "-"
-    elif e["layer"] == "atthakatha":
-        parent = mula["book"] if mula else "-"
-    else:
-        parent = att[0]["book"] if att else "-"
+    pl = parent_layer(e["layer"], present)
+    parent = by_layer[pl][0]["book"] if pl else "-"
     title = (e.get("title") or "-").replace(" ", "_")
     print(e["layer"], e["book"], f"{e['start']}-{e['end']}", parent, title, own)
 PY
@@ -532,8 +538,8 @@ $(read_or_empty "$REVIEW_MD")
     done < <(chunk_list "$LBOOK" "$LPARAS")
 done < "$GROUPS_FILE"
 
-# ══════════ 阶段二：跨三层统稿 ══════════
-# 三层分头译完，被解释词和术语难免对不上。这一步把三层放在一起通读，统一并修正。
+# ══════════ 阶段二：跨层统稿 ══════════
+# 各层分头译完，被解释词和术语难免对不上。这一步把各层放在一起通读，统一并修正。
 if has_step harmonize; then
 # 统稿有两条路：
 #   计划模式——project 文件里已按 cs_para 排好统稿单元（横向 cross + 纵向 layer），
@@ -591,7 +597,7 @@ $T
         if [[ "$KIND" == "layer" ]]; then
             WHAT="纵向：只看这一层，通读求**同层一致**——术语、语体、称谓、重复定型句同译。跨层对齐已在横向那一步做过，这里不要再改被解释词的译法。"
         else
-            WHAT="横向：三层同看，**被解释词与父层逐字对齐**是最高优先（义注黑体引自本文、复注黑体引自义注）；顺带统一术语与语体。"
+            WHAT="横向：各层同看，**被解释词与父层逐字对齐**是最高优先（下一层的黑体引自它的上一层：义注引本文、复注引义注、随复注引根本复注）；顺带统一术语与语体。"
         fi
 
         echo ">>> 统稿 $HUID（$KIND，$UCHARS 巴利字符 / $UN 句）"
@@ -638,7 +644,7 @@ from _wp import parse_paras; print(' '.join(map(str, parse_paras('$UR'))))")
         fi
     done < "$HUNITS"
 else
-        echo "╔══════ 阶段二 跨三层统稿 ══════╗"
+        echo "╔══════ 阶段二 跨层统稿 ══════╗"
 
         ALL_SRC=""
         HAVE=1
@@ -716,23 +722,23 @@ else
             done < "$GROUPS_FILE"
         elif [[ "$HAVE" -eq 1 && "$TOTAL" -gt 0 ]]; then
             for ((try = 1; try <= MAX_TRY; try++)); do
-                echo ">>> harmonize（跨三层）第 $try/$MAX_TRY 次（共 $TOTAL 句）"
+                echo ">>> harmonize（跨层）第 $try/$MAX_TRY 次（共 $TOTAL 句）"
                 OUT="$(mktemp)"
                 if run_claude "$(load_step pali-harmonize harmonize)
 
     $KNOWLEDGE
 
-    ---三层译文（同一部经的本文 / 义注 / 复注，已分头译完）---
+    ---各层译文（同一部经的本文 / 义注 / 复注等，已分头译完）---
     每块以 === 开头标出层次与 book；pali 里的 \`**词**\` 是黑体被解释词。
     $ALL_SRC
 
     ---任务---
-    把三层放在一起通读，做统稿，两件事：
+    把各层放在一起通读，做统稿，两件事：
     1. **统一**——
        a) **被解释词逐字对齐（最高优先）**：义注的黑体引自本文，其译法必须与本文同一处逐字相同；
           复注的黑体引自义注，必须与义注同一处逐字相同。不一致就改子层去迁就父层；
           除非父层本身译错——那就把父层一并改对。
-       b) 三层之间术语译法统一、语体统一、称谓与专名统一、标点体例统一。
+       b) 各层之间术语译法统一、语体统一、称谓与专名统一、标点体例统一。
     2. **修正**——通读中发现的实际问题就地改掉：误译、漏译、指代接不上、汉语语病、
        文言/半文半白、引号配对断裂。
     每处改动都要有具体理由（对齐、一致性，或明确的错误）；**不要为「读起来更顺」而改**，不要重译。
@@ -759,7 +765,7 @@ else
                         while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
                             [[ -z "${LAYER:-}" ]] && continue
                             [[ "${OWN:-1}" == 1 ]] || continue
-                            audit_chunk harmonize "$LBOOK" ok "跨三层" $(python3 -c "
+                            audit_chunk harmonize "$LBOOK" ok "跨层" $(python3 -c "
     import sys; sys.path.insert(0,'$SCRIPT_DIR')
     from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
                         done < "$GROUPS_FILE"
@@ -837,4 +843,4 @@ if [[ "$FAILED_STEPS" -gt 0 ]]; then
     echo "######## 未完成：本文 $BOOK $START..$END 有 $FAILED_STEPS 个步骤失败 ########" >&2
     exit 1
 fi
-echo "######## 完成：本文 $BOOK $START..$END（三层）→ channel $CHANNEL（报告在 $REPORTS/）########"
+echo "######## 完成：本文 $BOOK $START..$END（各层）→ channel $CHANNEL（报告在 $REPORTS/）########"
