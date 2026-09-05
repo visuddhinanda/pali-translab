@@ -192,8 +192,33 @@ def build(book_dir, out_dir, meta_mode, keep_md, dry):
 
 
 # 三层的阅读顺序：本文 → 义注 → 复注 → 复注的复注。按 book 号排正好是这个次序。
+# 层级排序用的 tag：`wikipali books` 的书目 tag（本地缓存，见 _wp.all_books）
+LAYER_RANK = {"mūla": 0, "aṭṭhakathā": 1, "ṭīkā": 2, "abhinavaṭīkā": 3}
+
+
 def layer_key(chs):
-    return int(chs[0]["meta"].get("book", 10**9))
+    """合并时的排序键：**先层次后书号**——本文 → 义注 → 复注。
+
+    不能只按书号：长部碰巧是 93(本文) < 103(义注) < 185(复注)，中部却是
+    131(义注) < 165(本文) < 193(复注)，纯按书号会把义注排到本文前面。
+    """
+    book = int(chs[0]["meta"].get("book", 10**9))
+    return (book_layer_rank(book), book)
+
+
+def book_layer_rank(book):
+    """书号 → 层级序号；查不到（离线、书目缺 tag）就退回 9，排在最后但不报错。"""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from _wp import all_books
+        row = next((r for r in all_books() if r.get("book") == book), None)
+        if row:
+            for t in row.get("tags", []):
+                if t in LAYER_RANK:
+                    return LAYER_RANK[t]
+    except Exception as e:                       # 排序拿不到就降级，别拖垮打包
+        print(f"  取 book {book} 的层级失败（{e}），按书号排", file=sys.stderr)
+    return 9
 
 
 def build_merged(book_dirs, out_dir, meta_mode, keep_md, dry, title):
