@@ -237,6 +237,7 @@ run_claude() {
 
 count_mula() { printf '%s' "$1" | grep -c '^{"layer":"mula"' || true; }
 count_zh()   { printf '%s' "$1" | grep -c '^{"layer":"mula".*"zh":' || true; }
+count_nis()  { printf '%s' "$1" | grep -c '"nissaya":' || true; }
 
 layer_cn() {
     case "$1" in
@@ -456,6 +457,15 @@ $SRC
             REVIEW_SRC=$(pull_review "$LBOOK" "$CH" || true)
             if [[ "$(count_zh "$REVIEW_SRC")" -eq 0 ]]; then
                 echo "  跳过复核（channel 上 $LBOOK:$FIRST-$LAST 还没有译文）"
+                REVIEW_SRC=""
+            fi
+            # 复注层没有缅文 nissaya 就不复核：复注的 review 全靠词级基准，
+            # 缺了它只剩自说自话，改出来的是「更顺」而不是「更对」。
+            # 本文/义注不受此限——它们还有义注可依。该 chunk 的 translate、
+            # harmonize、evaluate 照常。
+            if [[ -n "$REVIEW_SRC" && "$LAYER" == "tika" && -n "$NISSAYA" \
+                  && "$(count_nis "$REVIEW_SRC")" -eq 0 ]]; then
+                echo "  跳过 review/revise（复注 $LBOOK:$FIRST-$LAST 没有缅文 nissaya）"
                 REVIEW_SRC=""
             fi
         fi
