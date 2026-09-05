@@ -25,7 +25,7 @@
   pali-translate/          ← 原子能力：巴利原文 → 中译初稿 → 写入 channel
   pali-review/             ← 原子能力：读回译文审读，输出问题清单（只读）
   pali-revise/             ← 原子能力：按审读意见修订，覆盖写回 channel
-  pali-harmonize/          ← 原子能力：跨三层统稿，对齐被解释词 + 统一用词语体 + 修正问题
+  pali-harmonize/          ← 原子能力：跨各层统稿，对齐被解释词 + 统一用词语体 + 修正问题
   pali-evaluate/           ← 原子能力：**流水线最后一步**，给定稿打分出报告（只读）
   pali-footnote/           ← 原子能力：从义注生成随文注，覆盖写回 channel
   pali-term-check/         ← 原子能力：术语一致性检查（只读）
@@ -42,7 +42,7 @@
 
 执行层 scripts/
   _wp.py                   ← wikipali CLI 共用薄封装（黑体转 **…**，页码标记剔除）
-  layers.py                ← 解析本文/义注/复注三层坐标与父层映射
+  layers.py                ← 解析各层坐标与父层映射（层次链见 _wp.LAYER_CHAIN）
   wp_pull.py               ← 取一批段落的原文 / nissaya / 义注 / 现有译文，对齐成逐句结构
   wp_push.py               ← 校验坐标与条数后写入 channel，写后读回核对
   export_markdown.py       ← channel → 本地 markdown（一章一文件，YAML frontmatter）
@@ -74,11 +74,15 @@ workspace/export/{章节路径}/{章节名}.md   ← 一章（经文）一个文
 - **translate 只看巴利原文**，不给义注、不给 nissaya；这两样是 review / revise / evaluate 的
   独立对照标准（**义注定释义，nissaya 定词法**）。译者与标准同源，复核就查不出错——
   这条不是效率取舍，是复核有没有意义的前提
-- **三层都译**：本文 mūla / 义注 aṭṭhakathā / 复注 ṭīkā 分别翻译，坐标由 `wikipali related`
-  逐层解析（三层在不同的书里）。**被解释词必须与父层逐字同译**——义注的黑体引自本文、
-  复注的黑体引自义注，不一致读者就看不出这条注在注哪个词
+- **各层都译**：本文 mūla / 义注 aṭṭhakathā / 复注 ṭīkā 分别翻译；**论藏是四层**
+  （mūla → aṭṭhakathā → mūlaṭīkā → anuṭīkā）。层次链定义在 `_wp.LAYER_CHAIN`，
+  **父层 = 链上前一个在场的层**，所以经藏三层、论藏四层走同一段代码。
+  坐标由 `cs_para` 逐层解析（各层在不同的书里）。**被解释词必须与父层逐字同译**——
+  义注的黑体引自本文、复注的黑体引自义注、随复注的黑体引自根本复注，
+  不一致读者就看不出这条注在注哪个词。
+  purāṇaṭīkā 与 abhinavaṭīkā 是同一层的新旧两个注本（**并列**，都归 tika），不是上下层
 - **按 chunk 提交，不逐段孤立处理**：一次把连续若干段交给同一次调用，跨段的术语漂移与
-  语体不一致才看得见。最后再由 harmonize 跨三层统一收口
+  语体不一致才看得见。最后再由 harmonize 跨各层统一收口
 - **坐标不能编造**：写前用 `wikipali get` 取真实坐标做集合比对，写后独立读回
 - **本地只留过程记录**：审稿意见、总评、术语报告、audit.log —— 这些不是译文
 - 需要修订前后的对照时，先 `/export` 导出快照，再改 channel
@@ -125,7 +129,7 @@ workspace/export/{章节路径}/{章节名}.md   ← 一章（经文）一个文
 | pali-translate | 本层 pali（+ 父层译文作被解释词对照） | channel 译文 | 是（新写） |
 | pali-review | channel 译文 + pali/义注/nissaya | review md | 否 |
 | pali-revise | channel 译文 + review md + 义注/nissaya | channel 译文 | 是（覆盖） |
-| pali-harmonize | 三层 channel 译文 + pali | 对齐并统一后的三层译文 | 是（覆盖） |
+| pali-harmonize | 各层 channel 译文 + pali | 对齐并统一后的各层译文 | 是（覆盖） |
 | pali-evaluate | channel 译文 + pali/义注/nissaya（**最后一步**） | final md（评分 + 问题清单） | 否 |
 | pali-footnote | channel 译文 + 义注 | channel 译文 | 是（覆盖，加随文注） |
 | pali-term-check | channel 译文范围 | term report md | 否 |
