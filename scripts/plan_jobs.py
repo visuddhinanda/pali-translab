@@ -223,14 +223,15 @@ CHUNK_STEPS = ("translate", "review", "revise")
 def layer_node(jid, k, e, chm, args):
     """一层的计划：段范围 + 体量 + **权威切好的分块**。
 
-    切分在这里定死（含句数上限），执行期照单执行、不再重切——重切一遍就会与计划
-    错位一两段，task 编号也就对不上了。句数要逐段 `wikipali get`，一本书约 67 次
-    调用，结果缓存在 workspace/cache_sents_<book>.json，重排计划不再花钱。
+    边界在这里定死，执行期照单执行、不再重切——重切一遍就会与计划错位一两段，
+    task 编号也就对不上了。**切分只用本地数据**（字符数来自整本 paras 缓存），
+    规划期不调任何逐段接口。句数上限归执行期：执行器取回原文后本地数，
+    一个 chunk 太长就分几次调用，仍算同一个 task。
     """
     plist = list(range(e["start"], e["end"] + 1))
     chunks = []
     for n, ps in enumerate(chunk_paras(e["book"], plist, args.chunk_chars,
-                                       args.max_paras, args.max_sents), 1):
+                                       args.max_paras), 1):
         chunks.append({"id": f'{jid}.{k}.{n}', "kind": "chunk", "book": e["book"],
                        "layer": e["layer"],
                        "start": ps[0], "end": ps[-1], "paras": len(ps),
@@ -284,7 +285,7 @@ def build_project(args, jobs, books_seen, channel):
     chm = {b: para_chars(b) for b in bl}
     th = dict(pj.THRESHOLDS)
 
-    th_chunk = f"≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段 / ≤{args.max_sents} 句"
+    th_chunk = f"≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段"
     out_jobs, modes = [], {"direct": 0, "cross+layer": 0, "layer-only": 0}
     for j in jobs:
         ents = entries_of(j)
@@ -335,12 +336,11 @@ def main():
     ap.add_argument("--project", default="",
                     help="项目名：产出 workspace/projects/<name>/project.json（含任务与 harmonize 计划）")
     ap.add_argument("--title", default="", help="项目标题，给人看的")
-    ap.add_argument("--chunk-chars", type=int, default=5000, dest="chunk_chars",
-                    help="预切分块的巴利字符上限（与 pipeline_batch.sh 同名参数一致）")
+    ap.add_argument("--chunk-chars", type=int, default=3500, dest="chunk_chars",
+                    help="分块的巴利字符上限（与 pipeline_batch.sh 同名参数一致）。"
+                         "余量从这里留：模型一次约 100 行 JSONL 就被截断，一句约 30 字符")
     ap.add_argument("--max-paras", type=int, default=12, dest="max_paras",
                     help="分块的段数上限")
-    ap.add_argument("--max-sents", type=int, default=60, dest="max_sents",
-                    help="分块的句数上限——模型输出会被截断，句数才是真约束")
     ap.add_argument("--channel", default="", help="写进项目文件的目标 channel uid")
     ap.add_argument("--csv", default="",
                     help="任务表 csv 落盘路径；跑之前先出这张表，守护进程再逐条改状态")

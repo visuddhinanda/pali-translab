@@ -194,54 +194,25 @@ def para_chars(book):
     return {x["paragraph"]: plen(x) for x in paras(book)}
 
 
-def sent_counts(book, plist, batch=30):
-    """{段号: 句数}——批量取，用来给 chunk 加句数上限。整本缓存到 workspace。
+def chunk_paras(book, plist, budget=3500, max_paras=12):
+    """按巴利字符数与段数切 chunk。**纯本地计算，不调任何接口。**
 
-    句数是切 chunk 的真约束（见 chunk_paras），所以**规划期就得算准**，
-    否则规划切的和执行切的对不上，task 编号就没法一一对应。一本书两千段
-    约 67 次调用，缓存之后重排计划不再花钱。
-    """
-    key = int(book)
-    cache = f"workspace/cache_sents_{key}.json"
-    have = {}
-    if os.path.exists(cache):
-        have = {int(k): v for k, v in json.load(open(cache, encoding="utf-8")).items()}
-    plist = [int(p) for p in plist]
-    todo = [p for p in plist if p not in have]
-    for i in range(0, len(todo), batch):
-        coords = [f"{key}:{p}" for p in todo[i:i + batch]]
-        got = {}
-        for r in jget("get", *coords, "--json"):
-            got[r["paragraph"]] = got.get(r["paragraph"], 0) + 1
-        for p in todo[i:i + batch]:
-            have[p] = got.get(p, 0)          # 没有句子的段也要记 0，否则每次都去问
-    if todo:
-        os.makedirs("workspace", exist_ok=True)
-        json.dump({str(k): v for k, v in have.items()},
-                  open(cache, "w", encoding="utf-8"), ensure_ascii=False)
-    return {p: have.get(p, 0) for p in plist}
-
-
-def chunk_paras(book, plist, budget=5000, max_paras=12, max_sents=60):
-    """按巴利字符数切 chunk，并**限制句数**。
-
-    只看字符数会翻车：短句密集的段落（复注常见）10 段就能有 170 多句，
-    一次让模型吐 170 行 JSONL 会被输出上限截断，实测停在整 100 行，
-    然后条数校验拒绝写入、三次重试全废。句数才是输出长度的真实约束。
+    句数不单独管：字符多的段句子必然多，字符少的段句子必然少，两者高度相关，
+    个别例外用**余量**兜住即可。为数句数逐段调 `get`，一本书上百次请求——
+    规划期绝对不该做那种大规模调用。
+    余量就是 budget 本身：实测模型一次约 100 行 JSONL 就被输出上限截断，
+    复注一句约 30 巴利字符，3,500 字符大致对应 110 句上下。
     """
     plist = [int(p) for p in plist]
     chars = para_chars(book)
-    sents = sent_counts(book, plist) if max_sents else {}
-    chunks, cur, size, nsent = [], [], 0, 0
+    chunks, cur, size = [], [], 0
     for p in plist:
         n = chars.get(p, 0)
         if n == 0:
             continue
-        k = sents.get(p, 0)
-        if cur and (size + n > budget or len(cur) >= max_paras
-                    or (max_sents and nsent + k > max_sents)):
-            chunks.append(cur); cur, size, nsent = [], 0, 0
-        cur.append(p); size += n; nsent += k
+        if cur and (size + n > budget or len(cur) >= max_paras):
+            chunks.append(cur); cur, size = [], 0
+        cur.append(p); size += n
     if cur:
         chunks.append(cur)
     return chunks

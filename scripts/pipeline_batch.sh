@@ -62,13 +62,16 @@ CHANNEL=""
 NISSAYA=""
 FORCE=""
 DRYRUN=""
-CHUNK_CHARS=5000
+# 余量从这里留：实测模型一次约 100 行 JSONL 就被输出上限截断。复注短句多，
+# 一句约 30 巴利字符，3,500 字符大致对应 110 句上下——比截断线略紧，留出余量。
+CHUNK_CHARS=3500
 MAX_PARAS=12
 HARMONIZE_MAX=120      # 单批统稿的句数上限，超过就按层分批。**只在无计划时用**——
                        # 有 project 计划时，统稿单元与体量在规划阶段就按 cs_para 排好了。
                        # 实测模型一次最多吐约 100 行 JSONL 就被截断，
                        # 定 300 会让 200+ 句的作业三次重试全废——比截断更贵。
-export MAX_SENTS=60    # 单个 chunk 的句数上限——模型输出会被截断，句数才是真约束
+# 分块只卡**段数**与**巴利字符数**：字符多的段句子必然多，字符少的段句子必然少，
+# 个别例外用余量兜住。为此专门去数句数要逐段调接口，不划算，也不该在规划期做。
 CHAPTER=""
 PLAN=""
 JOB=""
@@ -84,7 +87,6 @@ while [[ $# -gt 0 ]]; do
         --chunk-chars) CHUNK_CHARS="$2"; shift 2 ;;
         --max-paras)   MAX_PARAS="$2";   shift 2 ;;
         --harmonize-max) HARMONIZE_MAX="$2"; shift 2 ;;
-        --max-sents)     export MAX_SENTS="$2"; shift 2 ;;
         --chapter)     CHAPTER="--chapter"; shift ;;   # 各层扩成目录里的完整一章
         --plan)        PLAN="$2"; shift 2 ;;   # 作业计划 json（plan_jobs.py 产出）
         --job)         JOB="$2";  shift 2 ;;   # 计划里的作业 id
@@ -357,9 +359,7 @@ import sys
 script_dir, book, spec, budget, max_paras = sys.argv[1:]
 sys.path.insert(0, script_dir)
 from _wp import chunk_paras, parse_paras
-import os
-ms = int(os.environ.get("MAX_SENTS", "60"))
-for c in chunk_paras(int(book), parse_paras(spec), int(budget), int(max_paras), ms):
+for c in chunk_paras(int(book), parse_paras(spec), int(budget), int(max_paras)):
     print(",".join(str(x) for x in c))
 PY
 }
@@ -499,8 +499,8 @@ $SRC
                     audit_task "$CHID:translate" ok "$N 句" "$LBOOK" "$FIRST-$LAST"; break
                 fi
 
-                # 退出码 2 = 已写入的都写进去了，只有几句没提交。整块重译是浪费——
-                # 已译好的记 ok，下一轮只补缺失那几段。
+                # 退出码 2 = 能写的都写进去了，只有几句没提交。整块重译是浪费——
+                # 下一轮只补缺失那几段。
                 if [[ "$PUSH_RC" -eq 2 && -s "$MISS_FILE" ]]; then
                     MISS="$(tr -d '[:space:]' < "$MISS_FILE")"
                     if [[ $try -lt $MAX_TRY ]]; then
