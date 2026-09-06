@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """project 文件：一个项目的**唯一状态载体**——结构、进度、命令都在这一个 json 里。
 
-    workspace/projects/<name>.json     项目文件（层级：项目 → 作业 → 层 → 分块 / 统稿 / 导出）
+    workspace/projects/<name>/project.json  项目文件（层级：项目 → 流水线 → 任务）
     workspace/projects/index.json      项目索引
     workspace/projects/<name>.html     给人看的折叠视图（单文件，json 内嵌）
     workspace/projects/index.html      索引页，点进去看单个项目
