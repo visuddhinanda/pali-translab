@@ -333,7 +333,7 @@ def main():
     ap.add_argument("--end", type=int, default=10**9)
     ap.add_argument("--out", default="", help="计划 json 落盘路径（旧格式）")
     ap.add_argument("--project", default="",
-                    help="项目名：产出 workspace/projects/<name>.json（含状态与 harmonize 计划）")
+                    help="项目名：产出 workspace/projects/<name>/project.json（含任务与 harmonize 计划）")
     ap.add_argument("--title", default="", help="项目标题，给人看的")
     ap.add_argument("--chunk-chars", type=int, default=5000, dest="chunk_chars",
                     help="预切分块的巴利字符上限（与 pipeline_batch.sh 同名参数一致）")
