@@ -167,11 +167,13 @@ audit_chunk() {  # audit_chunk <step> <book> <status> <detail> <para...>
 }
 
 chunk_done() {  # chunk_done <step> <book> <para...> —— 整个 chunk 都做过才算做过
+    # skip 与 ok 同样算「这一步已经了结」：按规矩不该做的步骤（如复注无 nissaya
+    # 就不复核）不是待办事项，账上必须留痕，否则续跑与 rollup 都会以为它还欠着。
     [[ -n "$FORCE" ]] && return 1
     local step="$1" bk="$2"; shift 2
     local p
     for p in "$@"; do
-        grep -q "\"step\":\"$step\",\"book\":$bk,\"para\":$p,\"channel\":\"$CHANNEL\",\"method\":\"$METHOD\",\"status\":\"ok\"" \
+        grep -qE "\"step\":\"$step\",\"book\":$bk,\"para\":$p,\"channel\":\"$CHANNEL\",\"method\":\"$METHOD\",\"status\":\"(ok|skip)\"" \
             "$AUDIT" || return 1
     done
     return 0
@@ -513,6 +515,11 @@ $SRC
                   && "$(count_nis "$REVIEW_SRC")" -eq 0 ]]; then
                 echo "  跳过 review/revise（复注 $LBOOK:$FIRST-$LAST 没有缅文 nissaya）"
                 REVIEW_SRC=""
+                # 记账：这是**按规矩不该做**，不是没做成。不留痕的话 audit 里既非 ok
+                # 也非 fail，rollup 永远等不到这一步，chunk 升不到 done，早先真失败过
+                # 的 chunk 就再也洗不白，作业每轮都被重新打回 FAILED。
+                audit_chunk review "$LBOOK" skip "复注无缅文 nissaya" $PARAS
+                audit_chunk revise "$LBOOK" skip "复注无缅文 nissaya" $PARAS
             fi
         fi
 
