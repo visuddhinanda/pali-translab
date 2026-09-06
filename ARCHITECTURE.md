@@ -46,7 +46,9 @@
   wp_pull.py               ← 取一批段落的原文 / nissaya / 义注 / 现有译文，对齐成逐句结构
   wp_push.py               ← 校验坐标与条数后写入 channel，写后读回核对
   export_markdown.py       ← channel → 本地 markdown（一章一文件，YAML frontmatter）
-  pipeline_batch.sh        ← 批量流水线，注入式提示词，断点续传
+  plan_jobs.py             ← 规划：切分块、定归属、生成 pipelines[].tasks[]
+  run_daemon.py            ← 调度：派发流水线，按 task_id 落状态（唯一写者）
+  pipeline_batch.sh        ← 执行一条流水线，注入式提示词，按 task 记账
 ```
 
 ---
@@ -60,7 +62,7 @@ wikipali（pali / nissaya / 义注）
         ↓ 写（覆盖式，同坐标替换）
 wikipali channel  ←—— 译文的正本，唯一去处
         ↓ 可选，按用户要求
-workspace/export/{章节路径}/{章节名}.md   ← 一章（经文）一个文件，带 YAML frontmatter
+workspace/projects/<name>/export/{章节路径}/{章节名}.md   ← 一章一个文件，带 YAML frontmatter
 ```
 
 **硬约束**：
@@ -184,7 +186,7 @@ skill 内不再有 `scripts/`——数据访问统一走 wikipali CLI。
 - 直接注入 SKILL.md + method + knowledge 内容到提示词
 - 每次调用上下文完全相同
 - **按 chunk 提交**：累加到 `--chunk-chars`（默认 5000 巴利字符）或 `--max-paras`（默认 12 段）就切一刀
-- **断点续传靠 `workspace/audit.log`**：按段记账，整个 chunk 都做过才跳过——改 chunk 大小重跑也不会重做
+- **断点续传靠项目的 `audit.log`**：按 task_id 记账，查表即知做没做过
 - 每一步都从 channel 读回上一步结果，所以中断后能接上
 - **三阶段**：先所有 chunk 做 translate/review/revise，再按 `wikipali toc` 切章 harmonize，最后所有 chunk 做 evaluate
 
@@ -245,38 +247,59 @@ channel = "73c03e1a-f333-11f0-808a-438f0af4b9e9"   # 默认写入目标 channel
 
 ## 十、本地产物目录
 
+**一项目一目录**：一个项目的全部东西都在自己的目录里。此前 export 是五个项目共用的，
+打包发信要从一堆文件里挑属于本项目的那些，挑错就把别的书一起寄出去。
+
 ```
-workspace/                        # 全部 gitignore
-├── audit.log                     # 批处理台账（断点续传依据，append-only）
-├── projects/
-│   ├── <name>.json               # 项目文件：结构 + 状态 + harmonize 计划（唯一状态载体）
-│   ├── <name>.html               # 给人看的折叠视图（单文件，json 内嵌）
-│   ├── index.json / index.html   # 项目索引
-├── reports/{book}/
-│   ├── {start}-{end}_review.md   # 审稿意见（按 chunk）
-│   ├── {start}-{end}_final.md    # 总评（分数 / 信心 / 问题清单）
-│   └── term_check_{范围}.md      # 术语报告
-├── epub/                         # build_epub.py 产出（一本书一个，或 --merge 合集）
-└── export/{章节路径}/
-    └── [起始段号] {章节名}.md    # 按用户要求导出的译文副本
+workspace/
+├── audit.log                     # 迁移前的全局旧账，只读存档（LEGACY_AUDIT）
+├── cache_*.json                  # 书目 / 段表 / 句数缓存，跨项目共用
+├── logs/raw/                     # 模型原始输出留档，跨项目共用
+└── projects/
+    ├── index.json / index.html   # 项目索引
+    └── <name>/                   # ← 一个项目的全部
+        ├── project.json          # 结构 + 任务 + 状态（唯一状态载体）
+        ├── project.html          # 给人看的折叠视图（单文件，json 内嵌）
+        ├── audit.log             # 本项目的台账（append-only，记 task_id）
+        ├── logs/                 # 每条流水线一个日志
+        ├── reports/{book}/       # 审稿意见 / 总评 / 术语报告
+        ├── export/{章节路径}/    # [起始段号] {章节名}.md
+        ├── epub/
+        └── <name>.zip            # 发信附件（打包时排除 logs）
 ```
 
 这里**没有 jsonl**——译文在 wikipali。
 
-### project 文件：一个项目的唯一状态载体
+### project 文件：项目 → 流水线 → 任务
 
-`plan_jobs.py --project <name>` 产出 `workspace/projects/<name>.json`，层级是
-**项目 → 作业 → 层 → 分块 / 统稿（横向 cross + 纵向 layer） / 导出**，每个叶子带 `status`。
-`harmonize` 一节在规划阶段就按 `cs_para` 算好体量并定好走法（direct / cross+layer /
-layer-only），见 `WORKFLOW.md`「harmonize 的规模分级」。
+`plan_jobs.py --project <name>` 产出 `workspace/projects/<name>/project.json`：
+
+```
+project → pipelines[] → tasks[]
+```
+
+- **task = (chunk, step)**，是唯一带状态的单位：`<chunk_id>:<step>`，如 `56.1.1:translate`
+- **pipeline = 一章 × 各层**，内部严格按 tasks 顺序单线跑；pipeline 之间可并行
+  ——并行只压缩墙钟，**不省 token**，所以并发数不必贪多
+- 状态机 `pending → running → done | failed | skipped`；**skipped 与 done 同为终态**，
+  同样满足后继依赖（复注没有缅文 nissaya 就不复核，那是「不该做」，不是「还没做」）
+- 分块边界由**规划期定死**（含句数上限），执行期照单执行、不再重切——重切就会与计划
+  错位一两段，task 编号也就对不上
+- `harmonize` 在规划期按 `cs_para` 算好体量并定好走法（direct / cross+layer / layer-only），
+  见 `WORKFLOW.md`「harmonize 的规模分级」
 
 两条硬规矩：
 
-- **写者只有一个**——守护进程。worker 只往 `audit.log` 追加，守护进程汇总后**原子落盘**
-  （写 tmp 再 rename）。人工操作不直接改状态，而是 `project.py pause/resume/reset-failed`
-  写 `command` 字段，守护进程下一轮消费掉。曾经状态同时存在 CSV 与守护进程内存里，
-  手工 `reset-failed` 被退出中的守护进程用旧内存覆盖了回去——这条规矩就是那次事故的产物。
-- **project.json 只是视图，audit.log 才是事实**——`project.py rebuild <name>` 能从
-  audit.log 完全重算进度，所以项目文件损坏或落后都不致命。
+- **写者只有一个**——守护进程。执行器只往项目的 `audit.log` 追加 `{"task": …, "status": …}`，
+  守护进程**查表**落到 task 上再原子落盘（写 tmp 再 rename）。人工操作不直接改状态，
+  而是 `project.py pause/resume/reset-failed` 写 `command` 字段，守护进程下一轮消费掉。
+- **project.json 是视图，audit.log 是事实**——`project.py rebuild <name>` 能从 audit.log
+  完全重算，所以项目文件损坏或落后都不致命。
 
-`task_alloc.csv` 由 project 文件取代，不再维护。
+早先账记的是 `(step, book, para)`，再由 `rollup()` **反推** chunk 与作业状态。推错过两次：
+按规矩跳过的步骤没有账，chunk 永远升不到 done，早先失败过的 chunk 洗不白，作业每轮被
+重新打回 FAILED。task 成为一等公民之后，反推没了，这类 bug 也就没了。
+
+旧格式（schema 1）的项目只作**存档**：能看不能跑，守护进程会拒绝派发。
+
+`task_alloc.csv` 与 `task_table.py` 已由 project 文件取代，已删除。
