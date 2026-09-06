@@ -170,7 +170,7 @@ def audit_done(channel=None):
 def rollup(proj, steps=("translate", "review", "revise")):
     """按 audit.log 刷新分块与统稿状态。
 
-    分块：每一段的每一步都 ok 才算 done。
+    分块：每一段的每一步都 ok（或按规矩 skip）才算 done。
     统稿：audit.log 里 harmonize 是按段记的，所以一个统稿单元覆盖的段全 ok 才算 done。
     导出：pipeline 不给 export 记账（它只在日志里打一行），所以导出节点由作业完成时
     顺带标记，不在这里推。
@@ -182,7 +182,10 @@ def rollup(proj, steps=("translate", "review", "revise")):
             b = lay["book"]
             for ch in lay.get("chunks", []):
                 ps = range(ch["start"], ch["end"] + 1)
-                ok = all(done.get((s, b, p)) == "ok" for s in steps for p in ps)
+                # skip 与 ok 同样算了结：pipeline 会按规矩跳过某些步骤（复注没有缅文
+                # nissaya 就不复核），那是「不该做」，不是「还没做」。只认 ok 的话这类
+                # chunk 永远升不到 done，早先失败过的 chunk 洗不白，作业每轮被打回 FAILED。
+                ok = all(done.get((s, b, p)) in ("ok", "skip") for s in steps for p in ps)
                 bad = any(done.get((s, b, p)) == "fail" for s in steps for p in ps)
                 new = DONE if ok else (FAILED if bad else ch.get("status", PENDING))
                 if new != ch.get("status"):
