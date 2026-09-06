@@ -16,6 +16,8 @@
 模型漏一两句是常态，为此丢掉几十句已经译好的、再整块重译一遍，是白烧 token。
 写入本来就按坐标覆盖，部分写入天然幂等；补译只要重跑缺失坐标所在的**段**即可
 （缺失段号写在 `--missing-out` 指定的文件里，给上游重试用）。
+**只丢坏数据，不丢好数据**：坐标造假、越界、重复、空译文的行逐条丢弃并列名，
+其余照写。条数多于期望不算失败——模型多说几句不构成危害，为此拒收几十句好译文才是损失。
 退出码：0 全齐；2 已写入但有缺失；1 真故障（上游吐空、写入失败、读回不符）。
 
 用法：
@@ -144,6 +146,17 @@ def main():
         else:
             sentences.append(s)
 
+    # 同一坐标重复：留第一条，其余丢弃。**丢的是坏数据，不牵连好数据。**
+    seen, uniq = set(), []
+    for s in sentences:
+        k = (s["paragraph"], s["word_start"], s["word_end"])
+        if k in seen:
+            dropped.append(f"{s['book_id']}-{k[0]}-{k[1]}-{k[2]}：同一坐标重复提交")
+        else:
+            seen.add(k)
+            uniq.append(s)
+    sentences = uniq
+
     valid = real_coords(args.book, ordered)
     if valid:
         keep = []
@@ -157,11 +170,15 @@ def main():
     for d in dropped:
         print(f"  丢弃 {d}", file=sys.stderr)
 
+    # 条数对不上**不是拒收的理由**。坏数据（坐标造假、越界、重复、空译文）在上面
+    # 逐条丢干净了，剩下的每一条都验过真、都能写。多出来只说明模型多说了几句，
+    # 那不构成危害；为此丢掉几十句好译文才是真损失。只记一行提醒。
     if args.expect and len(sentences) > args.expect:
-        # 多出来的一定是坐标造假或重复，那是**上游不可信**的信号，不能靠部分写入兜底
-        sys.exit(f"条数超出：期望 {args.expect}，可写 {len(sentences)}——拒绝写入 {scope}")
+        print(f"  提醒：{scope} 期望 {args.expect} 句，实收 {len(sentences)} 句（多出的已验真，照写）",
+              file=sys.stderr)
     if args.at_most and len(sentences) > args.at_most:
-        sys.exit(f"条数超限：至多 {args.at_most}，可写 {len(sentences)}——拒绝写入 {scope}")
+        print(f"  提醒：{scope} 增量步骤至多 {args.at_most} 句，实收 {len(sentences)} 句"
+              f"（上游可能回传了未改动的句子；已验真，照写）", file=sys.stderr)
     if not sentences:
         # 跨层统稿是一份输出分多次提交：本层一句都没改是正常的（别层改了）。
         # 上游整个吐空已在前面拦掉，这里只可能是「本层无改动」。
