@@ -39,8 +39,9 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORK = os.path.join(ROOT, "workspace")
 PROJECTS = os.path.join(WORK, "projects")
-AUDIT = os.path.join(WORK, "audit.log")
 INDEX = os.path.join(PROJECTS, "index.json")
+# 全局旧账：迁到「一项目一目录」之前，五个项目的账混在这一本里。只读，不再写。
+LEGACY_AUDIT = os.path.join(WORK, "audit.log")
 
 SCHEMA = 1
 PENDING, RUNNING, DONE, FAILED, SKIPPED = "pending", "running", "done", "failed", "skipped"
@@ -56,8 +57,26 @@ def now():
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
+# ── 一项目一目录 ────────────────────────────────────────────────────────
+# workspace/projects/<name>/ 里放这个项目的**全部**东西：project.json、audit.log、
+# export/、reports/、logs/、epub/。历史上它们散在 workspace 下的公共目录里
+#（export 尤其是共用的），发信打包时要从一堆文件里挑属于本项目的那些，容易挑错。
+
+def home(name):
+    return os.path.join(PROJECTS, name)
+
+
 def path_of(name):
-    return os.path.join(PROJECTS, f"{name}.json")
+    return os.path.join(home(name), "project.json")
+
+
+def audit_path(name):
+    return os.path.join(home(name), "audit.log")
+
+
+def sub(name, *parts):
+    """项目目录下的子路径（export / reports / logs / epub …）。"""
+    return os.path.join(home(name), *parts)
 
 
 def load(name):
@@ -70,7 +89,7 @@ def load(name):
 
 def save(proj):
     """原子落盘：写 tmp 再 rename，中途断电也不会留下半个文件。"""
-    os.makedirs(PROJECTS, exist_ok=True)
+    os.makedirs(home(proj["name"]), exist_ok=True)
     proj["updated"] = now()
     p = path_of(proj["name"])
     tmp = p + ".tmp"
@@ -84,8 +103,8 @@ def save(proj):
 def all_names():
     if not os.path.isdir(PROJECTS):
         return []
-    return sorted(f[:-5] for f in os.listdir(PROJECTS)
-                  if f.endswith(".json") and f != "index.json")
+    return sorted(d for d in os.listdir(PROJECTS)
+                  if os.path.isfile(os.path.join(PROJECTS, d, "project.json")))
 
 
 # ── 节点遍历 ────────────────────────────────────────────────────────────
@@ -144,12 +163,19 @@ def progress(proj):
 
 # ── 从 audit.log 汇总进度 ───────────────────────────────────────────────
 
-def audit_done(channel=None):
-    """audit.log → {(step, book, para): status}，后写的覆盖先写的。"""
+def audit_done(name=None, channel=None):
+    """audit.log → {(step, book, para): status}，后写的覆盖先写的。
+
+    账本优先取项目自己的 `projects/<name>/audit.log`；没有就退回迁移前的全局旧账
+    （只读），旧项目的进度才显示得出来。
+    """
     seen = {}
-    if not os.path.exists(AUDIT):
+    path = audit_path(name) if name else LEGACY_AUDIT
+    if not os.path.exists(path):
+        path = LEGACY_AUDIT
+    if not os.path.exists(path):
         return seen
-    with open(AUDIT, encoding="utf-8", errors="replace") as f:
+    with open(path, encoding="utf-8", errors="replace") as f:
         for line in f:
             line = line.strip()
             if not line.startswith("{"):
@@ -175,7 +201,7 @@ def rollup(proj, steps=("translate", "review", "revise")):
     导出：pipeline 不给 export 记账（它只在日志里打一行），所以导出节点由作业完成时
     顺带标记，不在这里推。
     """
-    done = audit_done(proj.get("channel"))
+    done = audit_done(proj.get("name"), proj.get("channel"))
     touched = 0
     for job in proj["jobs"]:
         for lay in job.get("layers", []):
@@ -245,7 +271,7 @@ def build_index():
 
 def export_html(proj):
     from html_report import render_project  # noqa: E402
-    out = os.path.join(PROJECTS, f"{proj['name']}.html")
+    out = os.path.join(home(proj["name"]), "project.html")
     open(out, "w", encoding="utf-8").write(render_project(proj))
     return out
 
