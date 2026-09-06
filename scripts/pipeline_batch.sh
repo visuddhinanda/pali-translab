@@ -613,11 +613,11 @@ if has_step harmonize; then
 #   无计划——退回旧路：按体量临时决定（整章一次；超过句数上限就按层分批）。
 HUNITS=""
 if [[ -n "$PLAN" ]]; then
-    HUNITS="$WORK/.hunits_job${JOB}"
+    HUNITS="$PROJ_HOME/.hunits_job${JOB}"
     python3 - "$PLAN" "$JOB" > "$HUNITS" <<'PYUNITS' || true
 import json, sys
 plan, jid = json.load(open(sys.argv[1], encoding='utf-8')), int(sys.argv[2])
-job = next((j for j in plan.get("jobs", []) if j["id"] == jid), None)
+job = next((j for j in plan.get("pipelines", []) if j["id"] == jid), None)
 h = (job or {}).get("harmonize") or {}
 # 每行：kind<TAB>id<TAB>chars<TAB>book:起-止,book:起-止…
 for c in h.get("cross", []):
