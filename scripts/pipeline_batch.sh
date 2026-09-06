@@ -114,6 +114,10 @@ GROUPS_FILE="$WORK/.groups_${BOOK}_${START}-${END}"
 mkdir -p "$REPORTS" "$WORK"
 touch "$AUDIT"
 
+# translate 的两张便条：本轮期望的坐标清单、上一轮缺失的段号
+IDS_FILE="$(mktemp)"; MISS_FILE="$(mktemp)"
+trap 'rm -f "$IDS_FILE" "$MISS_FILE"' EXIT
+
 # --- 加载 knowledge（固定文件 + 规则文件）---
 read_or_empty() { [[ -f "$1" ]] && cat "$1" || true; }
 K="$PROJECT_DIR/knowledge"
@@ -415,20 +419,35 @@ $PARENT_TXT
         for p in $PARAS; do chunk_done translate "$LBOOK" "$p" || TODO="$TODO,$p"; done
         TODO="${TODO#,}"
         if has_step translate && [[ -n "$TODO" ]]; then
-            if [[ "$TODO" != "$CH" ]]; then
-                echo "  （本 chunk 已译过 $(( $(echo $PARAS | wc -w) - $(echo ${TODO//,/ } | wc -w) )) 段，只补译 $TODO）"
+            for ((try = 1; try <= MAX_TRY; try++)); do
+                # 每轮都按**本轮要译的段**重新取原文与上下文：第一轮是整个 TODO，
+                # 之后只剩上一轮缺的那几段（见下面的退出码 2）
                 SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$TODO" || true)
                 N=$(count_mula "$SRC")
-                DONE_CTX="
+                [[ "$N" -eq 0 ]] && { echo "  跳过 translate（$TODO 无巴利原文）"; break; }
+                printf '%s' "$SRC" | python3 -c "
+import json, sys
+for line in sys.stdin:
+    line = line.strip()
+    if line.startswith('{'):
+        r = json.loads(line)
+        if r.get('layer') == 'mula' and r.get('id'):
+            print(r['id'])
+" > "$IDS_FILE"
+                DONE_CTX=""
+                if [[ "$TODO" != "$CH" ]]; then
+                    echo "  （本 chunk 只译 $TODO，其余已有译文，作术语对照注入）"
+                    DONE_CTX="
 ---同一 chunk 内已有的译文（**只作术语与语体对照，不要重复输出**）---
 $(pull_review "$LBOOK" "$CH" || true)
 "
-            else
-                DONE_CTX=""
-            fi
-            for ((try = 1; try <= MAX_TRY; try++)); do
+                fi
+
                 echo ">>> translate 第 $try/$MAX_TRY 次（$N 句 / $(echo ${TODO//,/ } | wc -w) 段）"
-                if run_claude "$(load_step pali-translate translate)
+                : > "$MISS_FILE"
+                # 这条管道的非零退出是**正常控制流**（2 = 缺句），不能让 set -e 掐掉脚本
+                set +e
+                run_claude "$(load_step pali-translate translate)
 
 $KNOWLEDGE
 
@@ -447,9 +466,30 @@ $SRC
 所需数据已全部注入上文，不要试图调用任何工具取数。
 只输出 JSONL，不要旁白或代码围栏。" \
                     | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$TODO" \
-                        --channel "$CHANNEL" --expect "$N" $DRYRUN; then
+                        --channel "$CHANNEL" --expect "$N" --expect-ids "$IDS_FILE" \
+                        --missing-out "$MISS_FILE" $DRYRUN
+                PUSH_RC=${PIPESTATUS[1]}
+                set -e
+
+                if [[ "$PUSH_RC" -eq 0 ]]; then
                     audit_chunk translate "$LBOOK" ok "$N" ${TODO//,/ }; break
                 fi
+
+                # 退出码 2 = 已写入的都写进去了，只有几句没提交。整块重译是浪费——
+                # 已译好的记 ok，下一轮只补缺失那几段。
+                if [[ "$PUSH_RC" -eq 2 && -s "$MISS_FILE" ]]; then
+                    MISS="$(tr -d '[:space:]' < "$MISS_FILE")"
+                    for p in ${TODO//,/ }; do
+                        [[ ",$MISS," == *",$p,"* ]] || audit_one translate "$LBOOK" "$p" ok "补齐"
+                    done
+                    if [[ $try -lt $MAX_TRY ]]; then
+                        echo "  只补缺失的段：$MISS（原 $TODO）"
+                        TODO="$MISS"; continue
+                    fi
+                    audit_chunk translate "$LBOOK" fail "$MAX_TRY 次仍缺" ${MISS//,/ }
+                    fail_step "translate 缺句（translate $LBOOK:$MISS）"; break
+                fi
+
                 [[ $try -eq $MAX_TRY ]] && { audit_chunk translate "$LBOOK" fail "$MAX_TRY 次未成" ${TODO//,/ }; fail_step "translate 失败（translate $LBOOK:$FIRST-$LAST）"; }
             done
         fi
