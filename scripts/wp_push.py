@@ -12,6 +12,12 @@
 没提交的坐标原样保留——所以 revise / harmonize 这类增量步骤**只提交改动过的句子**
 （`--at-most N --allow-empty`），不必回传整个 chunk。translate 是整段新建，用 `--expect N`。
 
+`--expect` 缺条时**先写已有的，再报缺的**（退出码 2），不整批拒收：一个 chunk 几十句，
+模型漏一两句是常态，为此丢掉几十句已经译好的、再整块重译一遍，是白烧 token。
+写入本来就按坐标覆盖，部分写入天然幂等；补译只要重跑缺失坐标所在的**段**即可
+（缺失段号写在 `--missing-out` 指定的文件里，给上游重试用）。
+退出码：0 全齐；2 已写入但有缺失；1 真故障（上游吐空、写入失败、读回不符）。
+
 用法：
     claude -p … | python3 scripts/wp_push.py --book 93 --para 983-986 --channel <uid> --expect 40
 """
@@ -78,6 +84,18 @@ def real_coords(book, paras, channel=None, batch=20):
     return got
 
 
+def report_missing(book, scope, miss, missing_out):
+    """缺条报告：列出缺的句子坐标，并把它们所在的**段号**写给上游，只补这些段。"""
+    ids = ", ".join(f"{book}-{p}-{a}-{b}" for p, a, b in miss)
+    print(f"⚠ {scope} 缺 {len(miss)} 句未提交：{ids}", file=sys.stderr)
+    mparas = sorted({p for p, _a, _b in miss})
+    if missing_out:
+        with open(missing_out, "w", encoding="utf-8") as f:
+            f.write(",".join(str(p) for p in mparas) + "\n")
+    print(f"  缺失落在段 {','.join(str(p) for p in mparas)}——只需重跑这些段", file=sys.stderr)
+    sys.exit(2)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", type=int, required=True)
@@ -93,6 +111,11 @@ def main():
     ap.add_argument("--batch", type=int, default=50)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-verify", action="store_true", help="跳过写后读回核对")
+    ap.add_argument("--expect-ids", default="", dest="expect_ids",
+                    help="期望坐标清单文件（每行一个 book-para-ws-we）。缺条时用它算缺的是哪几句；"
+                         "不给则退回用原文全部坐标，那会把「没有巴利原文、本就不该译」的坐标算成缺失")
+    ap.add_argument("--missing-out", default="", dest="missing_out",
+                    help="把缺失坐标所在的**段号**写进这个文件（逗号分隔），给上游只补这些段")
     ap.add_argument("--ignore-foreign", action="store_true",
                     help="静默跳过不属于本次 book/para 范围的行（跨层统稿时一份输出要分多次提交）")
     args = ap.parse_args()
@@ -134,8 +157,9 @@ def main():
     for d in dropped:
         print(f"  丢弃 {d}", file=sys.stderr)
 
-    if args.expect and len(sentences) != args.expect:
-        sys.exit(f"条数不符：期望 {args.expect}，可写 {len(sentences)}——拒绝写入 {scope}")
+    if args.expect and len(sentences) > args.expect:
+        # 多出来的一定是坐标造假或重复，那是**上游不可信**的信号，不能靠部分写入兜底
+        sys.exit(f"条数超出：期望 {args.expect}，可写 {len(sentences)}——拒绝写入 {scope}")
     if args.at_most and len(sentences) > args.at_most:
         sys.exit(f"条数超限：至多 {args.at_most}，可写 {len(sentences)}——拒绝写入 {scope}")
     if not sentences:
@@ -145,6 +169,23 @@ def main():
             print(f"✓ {scope} 本层无改动，未写入", file=sys.stderr)
             return
         sys.exit(f"没有可写的句子：{scope}")
+
+    # 缺条：先算，写完再报。整批拒收会连带丢掉已经译好的几十句，而写入是按坐标覆盖的，
+    # 补译时重写一遍毫无副作用。缺失坐标 = 期望坐标 − 本次提交的坐标；期望坐标优先用
+    # --expect-ids（上游 wp_pull 实际给出的可译句），退回原文全部坐标只是兜底。
+    want = valid
+    if args.expect_ids:
+        want = set()
+        for line in open(args.expect_ids, encoding="utf-8"):
+            m = ID_RE.match(line.strip())
+            if m:
+                b, p, ws, we = (int(x) for x in m.groups())
+                if b == args.book:
+                    want.add((p, ws, we))
+    miss = []
+    if args.expect and want:
+        sent = {(x["paragraph"], x["word_start"], x["word_end"]) for x in sentences}
+        miss = sorted(want - sent)
 
     for s in sentences:
         s["content_type"] = args.content_type
@@ -159,6 +200,8 @@ def main():
     if r.returncode != 0:
         sys.exit(f"写入失败：{scope}")
     if args.dry_run:
+        if miss:
+            report_missing(args.book, scope, miss, args.missing_out)
         return
 
     if not args.no_verify:
@@ -170,6 +213,9 @@ def main():
             sys.exit(f"读回核对：{len(missing)} 句没写进去（{ids}）")
 
     print(f"✓ {scope} 已写入 {len(sentences)} 句 → channel {args.channel}", file=sys.stderr)
+
+    if miss:
+        report_missing(args.book, scope, miss, args.missing_out)
 
 
 if __name__ == "__main__":
