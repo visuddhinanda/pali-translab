@@ -108,10 +108,19 @@ fi
 [[ -n "$CHANNEL" ]] || { echo "缺少目标 channel：用 --channel <uid> 或在 config.toml 的 [wikipali] 下写 channel" >&2; exit 1; }
 
 WORK="$PROJECT_DIR/workspace"
-REPORTS="$WORK/reports/$BOOK"
-AUDIT="$WORK/audit.log"
-GROUPS_FILE="$WORK/.groups_${BOOK}_${START}-${END}"
-mkdir -p "$REPORTS" "$WORK"
+# 一项目一目录：计划文件就躺在项目目录里，其余产物（账本、报告、导出）都跟着它走。
+# 没有 --plan 的临时跑（skill 直调）落到 workspace/adhoc，不去污染任何项目。
+if [[ -n "$PLAN" ]]; then
+    PROJ_HOME="$(cd "$(dirname "$PLAN")" && pwd)"
+else
+    PROJ_HOME="$WORK/adhoc"
+fi
+REPORTS="$PROJ_HOME/reports/$BOOK"
+EXPORT_DIR="$PROJ_HOME/export"
+AUDIT="$PROJ_HOME/audit.log"
+GROUPS_FILE="$PROJ_HOME/.groups_job${JOB:-0}"
+CHUNKS_FILE="$PROJ_HOME/.chunks_job${JOB:-0}"
+mkdir -p "$REPORTS" "$EXPORT_DIR" "$PROJ_HOME"
 touch "$AUDIT"
 
 # translate 的两张便条：本轮期望的坐标清单、上一轮缺失的段号
@@ -155,28 +164,19 @@ load_step() {
     fi
 }
 
-audit_one() {  # audit_one <step> <book> <para> <status> <detail>
+# 账本只记 **task_id**：守护进程照它查表落状态，不再反推。
+# book/para/step 只为人读，程序不认。
+audit_task() {  # audit_task <task_id> <status> <detail> [book] [para范围]
     [[ -n "$DRYRUN" ]] && return 0      # dry-run 不记账，否则真跑时会误跳过
-    printf '{"ts":"%s","step":"%s","book":%s,"para":%s,"channel":"%s","method":"%s","status":"%s","detail":"%s"}\n' \
-        "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" "$2" "$3" "$CHANNEL" "$METHOD" "$4" "${5:-}" >> "$AUDIT"
+    printf '{"ts":"%s","task":"%s","status":"%s","detail":"%s","book":"%s","para":"%s","channel":"%s","method":"%s"}\n' \
+        "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" "$2" "${3:-}" "${4:-}" "${5:-}" "$CHANNEL" "$METHOD" >> "$AUDIT"
 }
 
-audit_chunk() {  # audit_chunk <step> <book> <status> <detail> <para...>
-    local step="$1" bk="$2" status="$3" detail="$4"; shift 4
-    local p; for p in "$@"; do audit_one "$step" "$bk" "$p" "$status" "$detail"; done
-}
-
-chunk_done() {  # chunk_done <step> <book> <para...> —— 整个 chunk 都做过才算做过
-    # skip 与 ok 同样算「这一步已经了结」：按规矩不该做的步骤（如复注无 nissaya
-    # 就不复核）不是待办事项，账上必须留痕，否则续跑与 rollup 都会以为它还欠着。
+task_done() {  # task_done <task_id> —— 这个 task 已了结？
+    # skip 与 ok 同样算了结：按规矩不该做的（如复注无缅文 nissaya 就不复核）
+    # 不是待办事项，账上要留痕，否则续跑会一遍遍去做同一件不该做的事。
     [[ -n "$FORCE" ]] && return 1
-    local step="$1" bk="$2"; shift 2
-    local p
-    for p in "$@"; do
-        grep -qE "\"step\":\"$step\",\"book\":$bk,\"para\":$p,\"channel\":\"$CHANNEL\",\"method\":\"$METHOD\",\"status\":\"(ok|skip)\"" \
-            "$AUDIT" || return 1
-    done
-    return 0
+    grep -qE "\"task\":\"$1\",\"status\":\"(ok|skip)\"" "$AUDIT"
 }
 
 has_step() { [[ ",$STEPS," == *",$1,"* ]]; }
@@ -270,10 +270,9 @@ import json, sys, os
 sys.path.insert(0, os.environ["SCRIPT_DIR"])
 from _wp import parent_layer
 plan, jid, want = json.load(open(sys.argv[1], encoding='utf-8')), int(sys.argv[2]), set(sys.argv[3].split(','))
-job = next(j for j in plan["jobs"] if j["id"] == jid)
-# 两种计划格式都要认：project 文件把本作业负责的层放在 layers[]（含 mula），
-# 旧的 plan_93.json 放在 own[]。ref[] 两边同名，都是只读参考。
-own = [e for e in job.get("layers", job.get("own", [])) if e["layer"] != "mula"]
+job = next(j for j in plan["pipelines"] if j["id"] == jid)
+# 本流水线负责翻译的层在 layers[]（含 mula）；ref[] 是只读参考，归别的流水线翻译
+own = [e for e in job.get("layers", []) if e["layer"] != "mula"]
 job = {**job, "own": own, "ref": job.get("ref", [])}
 # 前置作业（注释书开头，与本文无对应）没有本文层：mula 为 None，
 # 此时义注就是最上层，父层为空，统稿是义注↔复注。
@@ -292,6 +291,17 @@ for e, own in rows:
     parent = by_layer[pl][0]["book"] if pl else "-"
     title = (e.get("title") or "-").replace(" ", "_")
     print(e["layer"], e["book"], f"{e['start']}-{e['end']}", parent, title, own)
+PY
+    # 分块表：`<book> <chunk_id> <段,列表>`。**边界由计划定死**，执行期不再重切——
+    # 重切一遍就会与计划错位一两段，task 编号也就对不上了。
+    python3 - "$PLAN" "$JOB" > "$CHUNKS_FILE" <<'PY'
+import json, sys
+plan, jid = json.load(open(sys.argv[1], encoding='utf-8')), int(sys.argv[2])
+job = next(j for j in plan["pipelines"] if j["id"] == jid)
+for lay in job.get("layers", []):
+    for ch in lay.get("chunks", []):
+        paras = ",".join(str(p) for p in range(ch["start"], ch["end"] + 1))
+        print(ch["book"], ch["id"], paras)
 PY
 else
     LAYERS_JSON="$WORK/layers_${BOOK}_${START}-${END}.json"
@@ -312,6 +322,7 @@ PY
 fi
 
 [[ -s "$GROUPS_FILE" ]] || { echo "没解析出任何层次，无事可做" >&2; exit 1; }
+
 while read -r L B P PB T OWN; do
     [[ "$OWN" == 1 ]] && M="译" || M="参考"
     R="${P%%,*}"; R2="${P##*,}"
@@ -354,6 +365,18 @@ PY
 }
 
 # pull_review <book> <段列表> —— 复核输入：现有译文 + pali (+ nissaya)
+if [[ -z "$PLAN" ]]; then
+    # 临时跑没有计划，就地切一次，id 用 adhoc 前缀——它不进任何项目的账
+    : > "$CHUNKS_FILE"
+    while read -r L B P _PB _T OWN; do
+        [[ "$OWN" == 1 ]] || continue
+        n=0
+        while read -r CH; do
+            n=$((n + 1)); echo "$B adhoc.$B.$n $CH" >> "$CHUNKS_FILE"
+        done < <(chunk_list "$B" "$P")
+    done < "$GROUPS_FILE"
+fi
+
 pull_review() {
     python3 "$SCRIPT_DIR/wp_pull.py" --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL"
 }
@@ -402,12 +425,12 @@ $PARENT_TXT
         fi
     fi
 
-    while read -r CH; do
-        [[ -z "$CH" ]] && continue
+    while read -r CB CHID CH; do
+        [[ "$CB" == "$LBOOK" && -n "$CH" ]] || continue
         PARAS="${CH//,/ }"
         FIRST="${CH%%,*}"; LAST="${CH##*,}"
         TAG="$LBOOK-$FIRST-$LAST"
-        echo "════════ $LCN $LBOOK:$FIRST-$LAST ════════"
+        echo "════════ $LCN $LBOOK:$FIRST-$LAST（$CHID）════════"
 
         SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$CH" || true)
         N=$(count_mula "$SRC")
@@ -417,9 +440,8 @@ $PARENT_TXT
 
         # ---------- translate ----------
         # 只译本 chunk 里还没译过的段——已译过的不重译，但作为上下文注入保证术语一致
-        TODO=""
-        for p in $PARAS; do chunk_done translate "$LBOOK" "$p" || TODO="$TODO,$p"; done
-        TODO="${TODO#,}"
+        TODO="$CH"
+        task_done "$CHID:translate" && TODO=""
         if has_step translate && [[ -n "$TODO" ]]; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 # 每轮都按**本轮要译的段**重新取原文与上下文：第一轮是整个 TODO，
@@ -474,25 +496,22 @@ $SRC
                 set -e
 
                 if [[ "$PUSH_RC" -eq 0 ]]; then
-                    audit_chunk translate "$LBOOK" ok "$N" ${TODO//,/ }; break
+                    audit_task "$CHID:translate" ok "$N 句" "$LBOOK" "$FIRST-$LAST"; break
                 fi
 
                 # 退出码 2 = 已写入的都写进去了，只有几句没提交。整块重译是浪费——
                 # 已译好的记 ok，下一轮只补缺失那几段。
                 if [[ "$PUSH_RC" -eq 2 && -s "$MISS_FILE" ]]; then
                     MISS="$(tr -d '[:space:]' < "$MISS_FILE")"
-                    for p in ${TODO//,/ }; do
-                        [[ ",$MISS," == *",$p,"* ]] || audit_one translate "$LBOOK" "$p" ok "补齐"
-                    done
                     if [[ $try -lt $MAX_TRY ]]; then
                         echo "  只补缺失的段：$MISS（原 $TODO）"
                         TODO="$MISS"; continue
                     fi
-                    audit_chunk translate "$LBOOK" fail "$MAX_TRY 次仍缺" ${MISS//,/ }
-                    fail_step "translate 缺句（translate $LBOOK:$MISS）"; break
+                    audit_task "$CHID:translate" fail "$MAX_TRY 次仍缺 $MISS" "$LBOOK" "$FIRST-$LAST"
+                    fail_step "translate 缺句（$CHID，段 $MISS）"; break
                 fi
 
-                [[ $try -eq $MAX_TRY ]] && { audit_chunk translate "$LBOOK" fail "$MAX_TRY 次未成" ${TODO//,/ }; fail_step "translate 失败（translate $LBOOK:$FIRST-$LAST）"; }
+                [[ $try -eq $MAX_TRY ]] && { audit_task "$CHID:translate" fail "$MAX_TRY 次未成" "$LBOOK" "$FIRST-$LAST"; fail_step "translate 失败（$CHID）"; }
             done
         fi
 
@@ -518,14 +537,14 @@ $SRC
                 # 记账：这是**按规矩不该做**，不是没做成。不留痕的话 audit 里既非 ok
                 # 也非 fail，rollup 永远等不到这一步，chunk 升不到 done，早先真失败过
                 # 的 chunk 就再也洗不白，作业每轮都被重新打回 FAILED。
-                audit_chunk review "$LBOOK" skip "复注无缅文 nissaya" $PARAS
-                audit_chunk revise "$LBOOK" skip "复注无缅文 nissaya" $PARAS
+                audit_task "$CHID:review" skip "复注无缅文 nissaya" "$LBOOK" "$FIRST-$LAST"
+                audit_task "$CHID:revise" skip "复注无缅文 nissaya" "$LBOOK" "$FIRST-$LAST"
             fi
         fi
 
         # ---------- review ----------
         REVIEW_MD="$REPORTS/${TAG}_review.md"
-        if has_step review && [[ -n "$REVIEW_SRC" ]] && ! chunk_done review "$LBOOK" $PARAS; then
+        if has_step review && [[ -n "$REVIEW_SRC" ]] && ! task_done "$CHID:review"; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> review 第 $try/$MAX_TRY 次"
                 if run_claude "$(load_step pali-review review)
@@ -544,14 +563,14 @@ $REVIEW_SRC
 整个 chunk 一起审，跨段的术语与语体不一致也要列出。无问题的句子不必列出。
 所需数据已全部注入上文，不要试图调用任何工具取数。
 只输出 markdown，不要旁白或代码围栏。" > "$REVIEW_MD" && valid_report "$REVIEW_MD"; then
-                    audit_chunk review "$LBOOK" ok "$REVIEW_MD" $PARAS; break
+                    audit_task "$CHID:review" ok "$REVIEW_MD" "$LBOOK" "$FIRST-$LAST"; break
                 fi
-                [[ $try -eq $MAX_TRY ]] && { audit_chunk review "$LBOOK" fail "$MAX_TRY 次未成" $PARAS; fail_step "review 失败（输出不是报告）"; }
+                [[ $try -eq $MAX_TRY ]] && { audit_task "$CHID:review" fail "$MAX_TRY 次未成" "$LBOOK" "$FIRST-$LAST"; fail_step "review 失败（$CHID，输出不是报告）"; }
             done
         fi
 
         # ---------- revise ----------
-        if has_step revise && [[ -n "$REVIEW_SRC" ]] && ! chunk_done revise "$LBOOK" $PARAS; then
+        if has_step revise && [[ -n "$REVIEW_SRC" ]] && ! task_done "$CHID:revise"; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> revise 第 $try/$MAX_TRY 次"
                 if run_claude "$(load_step pali-revise revise)
@@ -577,12 +596,12 @@ $(read_or_empty "$REVIEW_MD")
 只输出 JSONL，不要旁白或代码围栏。" \
                     | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$CH" \
                         --channel "$CHANNEL" --at-most "$N" --allow-empty $DRYRUN; then
-                    audit_chunk revise "$LBOOK" ok "$N" $PARAS; break
+                    audit_task "$CHID:revise" ok "$N 句" "$LBOOK" "$FIRST-$LAST"; break
                 fi
-                [[ $try -eq $MAX_TRY ]] && { audit_chunk revise "$LBOOK" fail "$MAX_TRY 次未成" $PARAS; fail_step "revise 失败（revise $LBOOK:$FIRST-$LAST）"; }
+                [[ $try -eq $MAX_TRY ]] && { audit_task "$CHID:revise" fail "$MAX_TRY 次未成" "$LBOOK" "$FIRST-$LAST"; fail_step "revise 失败（$CHID）"; }
             done
         fi
-    done < <(chunk_list "$LBOOK" "$LPARAS")
+    done < "$CHUNKS_FILE"
 done < "$GROUPS_FILE"
 
 # ══════════ 阶段二：跨层统稿 ══════════
@@ -617,16 +636,8 @@ if [[ -s "${HUNITS:-/nonexistent}" ]]; then
     while IFS=$'\t' read -r KIND HUID UCHARS SPANS; do
         [[ -z "${KIND:-}" ]] && continue
 
-        # 断点续传：这个单元覆盖的段全部记过账就跳过
-        SKIP=1
-        for SP in ${SPANS//,/ }; do
-            UB="${SP%%:*}"; UR="${SP#*:}"
-            PS=$(python3 -c "
-import sys; sys.path.insert(0,'$SCRIPT_DIR')
-from _wp import parse_paras; print(' '.join(map(str, parse_paras('$UR'))))")
-            chunk_done harmonize "$UB" $PS || SKIP=0
-        done
-        [[ "$SKIP" -eq 1 ]] && { echo "  跳过 $HUID（已统稿过）"; continue; }
+        # 断点续传：统稿单元的 id 就是 task id，查一次账即可
+        task_done "$HUID" && { echo "  跳过 $HUID（已统稿过）"; continue; }
 
         # 取各层译文：横向单元自带多层，纵向单元只有一层
         USRC=""; UN=0
@@ -680,13 +691,9 @@ id 照抄输入，不要编造坐标。译文里不要留任何工作标记。
         rm -f "$UOUT"
 
         if [[ "$OK" -eq 1 ]]; then
-            for SP in ${SPANS//,/ }; do
-                UB="${SP%%:*}"; UR="${SP#*:}"
-                audit_chunk harmonize "$UB" ok "$HUID" $(python3 -c "
-import sys; sys.path.insert(0,'$SCRIPT_DIR')
-from _wp import parse_paras; print(' '.join(map(str, parse_paras('$UR'))))")
-            done
+            audit_task "$HUID" ok "$SPANS"
         else
+            audit_task "$HUID" fail "用尽 $MAX_TRY 次" 
             fail_step "统稿单元 $HUID 失败（用尽 $MAX_TRY 次）"
         fi
     done < "$HUNITS"
@@ -763,9 +770,7 @@ else
                             --channel "$CHANNEL" --at-most "$HN" --allow-empty $DRYRUN \
                         || fail_step "分批统稿失败 $LBOOK:$HCH"
                 done < <(chunk_list "$LBOOK" "$LPARAS")
-                audit_chunk harmonize "$LBOOK" ok "分批" $(python3 -c "
-    import sys; sys.path.insert(0,'$SCRIPT_DIR')
-    from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
+                audit_task "adhoc.$LBOOK.H" ok "分批" "$LBOOK" "$LPARAS"
             done < "$GROUPS_FILE"
         elif [[ "$HAVE" -eq 1 && "$TOTAL" -gt 0 ]]; then
             for ((try = 1; try <= MAX_TRY; try++)); do
@@ -812,9 +817,7 @@ else
                         while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
                             [[ -z "${LAYER:-}" ]] && continue
                             [[ "${OWN:-1}" == 1 ]] || continue
-                            audit_chunk harmonize "$LBOOK" ok "跨层" $(python3 -c "
-    import sys; sys.path.insert(0,'$SCRIPT_DIR')
-    from _wp import parse_paras; print(' '.join(map(str, parse_paras('$LPARAS'))))")
+                            audit_task "adhoc.$LBOOK.H" ok "跨层" "$LBOOK" "$LPARAS"
                         done < "$GROUPS_FILE"
                         break
                     fi
@@ -833,12 +836,12 @@ if has_step evaluate; then
         [[ -z "${LAYER:-}" ]] && continue
         [[ "${OWN:-1}" == 1 ]] || continue
         LCN="$(layer_cn "$LAYER")"
-        while read -r CH; do
-            [[ -z "$CH" ]] && continue
+        while read -r CB CHID CH; do
+            [[ "$CB" == "$LBOOK" && -n "$CH" ]] || continue
             PARAS="${CH//,/ }"
             FIRST="${CH%%,*}"; LAST="${CH##*,}"
             TAG="$LBOOK-$FIRST-$LAST"
-            chunk_done evaluate "$LBOOK" $PARAS && continue
+            task_done "$CHID:evaluate" && continue
 
             EVAL_SRC=$(pull_review "$LBOOK" "$CH" || true)
             if [[ "$(count_zh "$EVAL_SRC")" -eq 0 ]]; then
@@ -864,11 +867,11 @@ $EVAL_SRC
 所需数据已全部注入上文，不要试图调用任何工具取数。
 只输出 markdown，不要旁白或代码围栏。" > "$REPORTS/${TAG}_final.md" \
                     && valid_report "$REPORTS/${TAG}_final.md"; then
-                    audit_chunk evaluate "$LBOOK" ok "$REPORTS/${TAG}_final.md" $PARAS; break
+                    audit_task "$CHID:evaluate" ok "$REPORTS/${TAG}_final.md" "$LBOOK" "$FIRST-$LAST"; break
                 fi
-                [[ $try -eq $MAX_TRY ]] && { audit_chunk evaluate "$LBOOK" fail "$MAX_TRY 次未成" $PARAS; fail_step "evaluate 失败（evaluate $LBOOK:$FIRST-$LAST）"; }
+                [[ $try -eq $MAX_TRY ]] && { audit_task "$CHID:evaluate" fail "$MAX_TRY 次未成" "$LBOOK" "$FIRST-$LAST"; fail_step "evaluate 失败（$CHID）"; }
             done
-        done < <(chunk_list "$LBOOK" "$LPARAS")
+        done < "$CHUNKS_FILE"
     done < "$GROUPS_FILE"
 fi
 
@@ -879,13 +882,20 @@ if has_step export && [[ -z "$DRYRUN" ]]; then
     while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
         [[ -z "${LAYER:-}" ]] && continue
         [[ "${OWN:-1}" == 1 ]] || continue
+        EXP_TASK="${JOB:-adhoc}.$LBOOK:export"
+        task_done "$EXP_TASK" && { echo "  跳过导出 $LBOOK（已导出）"; continue; }
         ANCHOR="${LPARAS%%,*}"; ANCHOR="${ANCHOR%%-*}"
-        python3 "$SCRIPT_DIR/export_markdown.py" --book "$LBOOK" --channel "$CHANNEL" \
-            --para "$ANCHOR" --model claude-opus-5 || echo "  ⚠ 导出失败 $LBOOK:$ANCHOR" >&2
+        if python3 "$SCRIPT_DIR/export_markdown.py" --book "$LBOOK" --channel "$CHANNEL" \
+               --para "$ANCHOR" --out "$EXPORT_DIR" --model claude-opus-5; then
+            audit_task "$EXP_TASK" ok "$EXPORT_DIR" "$LBOOK" "$LPARAS"
+        else
+            audit_task "$EXP_TASK" fail "导出失败" "$LBOOK" "$LPARAS"
+            echo "  ⚠ 导出失败 $LBOOK:$ANCHOR" >&2
+        fi
     done < "$GROUPS_FILE"
 fi
 
-rm -f "$GROUPS_FILE"
+rm -f "$GROUPS_FILE" "$CHUNKS_FILE"
 if [[ "$FAILED_STEPS" -gt 0 ]]; then
     echo "######## 未完成：本文 $BOOK $START..$END 有 $FAILED_STEPS 个步骤失败 ########" >&2
     exit 1
