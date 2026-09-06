@@ -6,7 +6,7 @@
 
     python3 scripts/run_daemon.py run --project dn-silakkhandhavagga --channel <uid> --workers 4
 
-作业与状态都在 **project 文件**里（`workspace/projects/<name>.json`，由
+流水线与状态都在 **project 文件**里（`workspace/projects/<name>/project.json`，由
 `plan_jobs.py --project` 产出）。**本进程是它唯一的写者**：worker 只往 audit.log
 追加，人工操作写 `command` 字段（`project.py pause/resume/reset-failed`）由这里消费。
 
@@ -39,23 +39,24 @@ import project as pj  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORK = os.path.join(ROOT, "workspace")
-LOGS = os.path.join(WORK, "logs")
-# 状态载体是 project 文件（workspace/projects/<name>.json）。**守护进程是唯一写者**：
+def logs_dir(name):
+    """作业日志进项目目录——一项目一目录，打包发信不用再从公共目录里挑。"""
+    return pj.sub(name, "logs")
+# 状态载体是 project 文件（workspace/projects/<name>/project.json）。**守护进程是唯一写者**：
 # worker 只往 audit.log 追加，人工操作写 command 字段由这里消费。见 ARCHITECTURE.md。
 # 旧的 task_alloc.csv 已废弃——状态曾同时存在 CSV 与内存两处，手工 reset-failed
 # 被退出中的守护进程用旧内存覆盖了回去。
 LOCK = os.path.join(WORK, "daemon.lock")
 STOP = os.path.join(WORK, "STOP")
 STATUS = os.path.join(WORK, "status.json")
-AUDIT = os.path.join(WORK, "audit.log")
 SNAP = os.path.join(WORK, ".snapshot")     # 流水线脚本的运行时快照
 
 PENDING, RUNNING, DONE, FAILED = "pending", "running", "done", "failed"
 # 任务表用 emoji 标状态，一眼能扫出全书进度
 EMOJI = {PENDING: "⬜ 未开始", RUNNING: "🔄 进行中", DONE: "✅ 已完成", FAILED: "❌ 失败"}
 STATE = {v: k for k, v in EMOJI.items()}
-# 分配表的列（task_table.py 产出）。守护进程只管「类型==作业」那些行的状态，
-# 层/分块/统稿/导出等子行原样保留——它们由 audit.log 推导，见 sync_subrows()。
+# 状态表的列（历史遗留，仅 write_status 用）。
+# 子行状态来自 audit.log 里的 task_id（查表，见 sync_subrows）。
 COLS = ["编号", "类型", "状态", "层次", "坐标", "名称", "归属",
         "段数", "字符数", "预计调用", "开始时间", "完成时间", "耗时", "备注"]
 # 这些字样出现在日志里，说明是环境问题而非作业本身失败——退回队列，别耗重试次数
@@ -137,7 +138,7 @@ def proj_load(name):
 
 
 def job_coord(pjob):
-    """作业的派发坐标：有本文用本文，前置作业（注释书开头）用它的第一层。"""
+    """流水线的派发坐标：有本文用本文，前置流水线（注释书开头）用它的第一层。"""
     m = pjob.get("mula") or (pjob["layers"][0] if pjob.get("layers") else None)
     return int(m["book"]), int(m["start"]), int(m["end"])
 
@@ -145,12 +146,12 @@ def job_coord(pjob):
 def load_jobs():
     """project 的作业 → 调度用的扁平结构（字段名沿用旧的，主循环不用改）。"""
     out = []
-    for j in PROJ["data"]["jobs"]:
+    for j in pj.pipelines(PROJ["data"]):
         b, lo, hi = job_coord(j)
         out.append({"book": b, "start": lo, "end": hi,
                     "status": j.get("status", PENDING), "tries": j.get("tries", 0),
                     "title": j.get("title", ""), "jid": j["id"],
-                    "began": j.get("started") or "", "ended": j.get("finished") or "",
+                    "began": j.get("began") or "", "ended": j.get("ended") or "",
                     "note": j.get("note", "")})
     return out
 
@@ -158,21 +159,24 @@ def load_jobs():
 def save_jobs(jobs):
     """把调度状态写回 project 并原子落盘。"""
     by = {str(j["jid"]): j for j in jobs}
-    for pjob in PROJ["data"]["jobs"]:
+    for pjob in pj.pipelines(PROJ["data"]):
         j = by.get(str(pjob["id"]))
         if not j:
             continue
         pjob["status"] = j["status"]
         pjob["tries"] = j["tries"]
-        pjob["started"] = j.get("began") or None
-        pjob["finished"] = j.get("ended") or None
+        pjob["began"] = j.get("began") or ""
+        pjob["ended"] = j.get("ended") or ""
         pjob["note"] = j.get("note", "")
     pj.save(PROJ["data"])
 
 
 def build_jobs(book, lo, hi, project):
-    """读项目里的作业；上次被强杀留下的 running 复位为 pending。"""
+    """读项目里的流水线；上次被强杀留下的 running 复位为 pending。"""
     proj_load(project)
+    if pj.is_archive(PROJ["data"]):
+        sys.exit(f"项目 {project} 是旧格式（schema 1），只作存档，不能跑。"
+                 "重排计划：python3 scripts/plan_jobs.py --project <新名字> …")
     jobs = [j for j in load_jobs() if lo <= j["start"] and j["end"] <= hi]
     jobs.sort(key=lambda j: int(j["jid"]))
     for j in jobs:
@@ -295,8 +299,9 @@ def snapshot_scripts():
 
 
 def spawn(job, args):
-    os.makedirs(LOGS, exist_ok=True)
-    path = os.path.join(LOGS, f"{job['book']}-{job['start']}-{job['end']}.log")
+    logs = logs_dir(args.project)
+    os.makedirs(logs, exist_ok=True)
+    path = os.path.join(logs, f"{job['book']}-{job['start']}-{job['end']}.log")
     cmd = [os.path.join(SNAP, "pipeline_batch.sh"),
            str(job["book"]), str(job["start"]), str(job["end"]),
            "--channel", args.channel]
@@ -395,7 +400,7 @@ def cmd_run(args):
             # **非在跑作业**的状态：running 的以内存为准，否则会跟收割打架。
             running_keys = {str(j["jid"]) for j, _ in running}
             disk = pj.load(PROJ["name"])
-            by_disk = {str(d["id"]): d for d in disk["jobs"]}
+            by_disk = {str(d["id"]): d for d in pj.pipelines(disk)}
             for j in jobs:
                 d = by_disk.get(str(j["jid"]))
                 if not d or str(j["jid"]) in running_keys:
@@ -417,12 +422,7 @@ def cmd_run(args):
                 if p.returncode == 0:
                     job["status"] = DONE
                     job["note"] = ""
-                    # 导出这一步 pipeline 不记 audit（只在日志里打一行），
-                    # 作业整体跑完就等于它的导出也做了，在这里顺手标掉。
-                    pjob = next((x for x in PROJ["data"]["jobs"]
-                                 if str(x["id"]) == str(job["jid"])), None)
-                    if pjob and pjob.get("export"):
-                        pjob["export"]["status"] = DONE
+                    # 导出如今也是 task，由执行器自己记账，这里不再代劳
                     log_line(f"✓ {job['book']}:{job['start']}-{job['end']} {job['title']}")
                 elif rate_limited_in(path):
                     job["status"] = PENDING
@@ -476,8 +476,8 @@ def cmd_run(args):
         done = sum(1 for j in jobs if j["status"] == DONE)
         failed = [j for j in jobs if j["status"] == FAILED]
         # 这一轮可能只跑了 --start/--end 圈定的一段，项目整体完没完要看全表
-        whole = PROJ["data"]["jobs"]
-        all_done = all(j.get("status") == DONE for j in whole)
+        whole = pj.pipelines(PROJ["data"])
+        all_done = all(j.get("status") in (DONE, "skipped") for j in whole)
         PROJ["data"]["state"] = ("done" if all_done else
                                  "paused" if stopping["v"] else "idle")
         save_jobs(jobs)
@@ -499,12 +499,12 @@ _LAST_EXPORT = {"t": 0}
 
 
 def sync_subrows(force=False):
-    """按 audit.log 刷新分块进度，并（节流地）重导 html。
+    """把 audit.log 里的 task 结果落到项目文件上，并（节流地）重导 html。
 
-    作业一跑两三小时，没有分块级进度用户就只能干等。分块状态是 audit.log 推出来的，
-    作业状态由守护进程自己记——两者的写入都在这个进程里，不会打架。
+    一条流水线跑两三小时，没有 task 级进度用户就只能干等。task 状态来自执行器写的
+    task_id（查表），流水线状态由 task 推出——写项目文件的只有这个进程，不会打架。
     """
-    n = pj.rollup(PROJ["data"])
+    n = pj.apply_audit(PROJ["data"])
     pj.save(PROJ["data"])
     if n or force or time.time() - _LAST_EXPORT["t"] > 60:
         _LAST_EXPORT["t"] = time.time()
@@ -525,10 +525,12 @@ def cmd_status(args):
     for j in jobs:
         counts[j["status"]] = counts.get(j["status"], 0) + 1
     print(f"项目 {p['name']}｜{p.get('title', '')}｜状态 {p.get('state', 'idle')}")
-    print(f"共 {len(jobs)} 个作业：" +
+    print(f"共 {len(jobs)} 条流水线：" +
           "  ".join(f"{EMOJI[k]} {counts.get(k, 0)}" for k in (DONE, RUNNING, PENDING, FAILED)))
-    cdone, ctot = pj.chars(pj.chunks_of(p))
+    cdone, ctot = pj.chars(pj.by_step(p, "translate"))
+    tc = pj.counts([t for _pipe, t in pj.all_tasks(p)])
     print(f"翻译 {tr:.1f}%（巴利字符 {cdone:,}/{ctot:,}）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
+    print("任务 " + "  ".join(f"{pj.STATE_CN[k]} {v}" for k, v in tc.items() if v))
     for j in jobs:
         if j["status"] in (RUNNING, FAILED):
             print(f"  {EMOJI[j['status']]}  {j['book']}:{j['start']}-{j['end']}  {j['title']}"
@@ -544,7 +546,7 @@ def cmd_status(args):
         avg = sum(secs) // len(secs)
         left = sum(1 for j in jobs if j["status"] != DONE)
         print(f"\n已完成 {len(secs)} 个，平均耗时 {avg // 60} 分 {avg % 60} 秒；剩 {left} 个")
-    print(f"\n详细进度：workspace/projects/{p['name']}.html")
+    print(f"\n详细进度：workspace/projects/{p['name']}/project.html")
 
 
 def cmd_stop(_args):
@@ -584,7 +586,7 @@ def main():
     ap.add_argument("--stagger", type=float, default=10, help="派发间隔秒，错峰用")
     ap.add_argument("--cooldown", type=int, default=1800,
                     help="撞到额度限制后全局冷却秒数（默认 30 分钟）")
-    ap.add_argument("--project", default="", help="项目名（workspace/projects/<name>.json）")
+    ap.add_argument("--project", default="", help="项目名（workspace/projects/<name>/）")
     ap.add_argument("--nissaya", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     args, extra = ap.parse_known_args()   # 认不出的参数原样透传给 pipeline_batch.sh
