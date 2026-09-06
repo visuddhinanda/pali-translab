@@ -81,12 +81,13 @@ def main():
     ap.add_argument("--para", type=int, help="只导出该段所属的那一章")
     ap.add_argument("--from", dest="start", type=int)
     ap.add_argument("--to", dest="end", type=int)
-    ap.add_argument("--out", default="workspace/export")
+    ap.add_argument("--out", default="", help="导出根目录；不给就用 workspace/export（临时跑）")
     ap.add_argument("--model", default="", help="写进 frontmatter 的模型名")
     ap.add_argument("--pad", type=int, default=4,
                     help="文件名里起始段号的补零位数（0 = 不补零）")
     args = ap.parse_args()
 
+    args.out = args.out or "workspace/export"
     meta = next((c for c in jget("channels", "--json") if c["uid"] == args.channel), {})
     # 没指定段号时，锚点取书目表里这本书的根段（不是 1，也不是写死的 3——
     # 根段号各书不同，给错了 toc 会取不到或只取到半本）
