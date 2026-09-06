@@ -17,7 +17,7 @@ CH=$(python3 -c "import json;print(json.load(open('$PJ'))['channel'])")
 state() { python3 -c "
 import json;d=json.load(open('$PJ'))
 js=d['jobs']
-done=sum(1 for j in js if j.get('state')=='done')
+done=sum(1 for j in js if j.get('status')=='done')   # 作业上的字段是 status，不是 state
 print(d.get('state'), done, len(js))"; }
 
 while :; do
@@ -29,27 +29,36 @@ done
 echo "[$(date '+%F %T')] $PROJ 跑完（$DONE/$TOT），开始收尾"
 
 # 导出三层 markdown，再打 epub。
-# epub 与打包都**按项目单开目录**：workspace/epub、workspace/reports 里堆着前几本书的
-# 产物，整目录塞进附件既超 25 MB 上限也答非所问。
+# 附件**只装这一个项目的产物**：它的 markdown 导出、它的 epub、它的过程报告。
+# workspace/export 是历次项目共用的目录（长部三卷、中部各本都堆在里面），整个打包
+# 等于把别的书一并寄出；epub 同理——build_epub 的 --root 给整个 export，合集里就会
+# 混进不相干的书。所以先把本项目写到的书目录挑进一个暂存目录，epub 与打包都只认它。
+# 日志（logs / daemon.out / watchdog.log / audit.log）一概不装。
 EXP="workspace/export"
+STAGE="workspace/export-$PROJ"
 EPUB="workspace/epub-$PROJ"
-mkdir -p "$EPUB"
+OUTLOG="$(mktemp)"
+rm -rf "$STAGE" "$EPUB"; mkdir -p "$STAGE" "$EPUB"
+
 for B in "${BOOKS[@]}"; do
     python3 scripts/export_markdown.py --book "$B" --channel "$CH" --out "$EXP" \
-        || echo "⚠ 导出 book $B 失败"
+        2>&1 | tee -a "$OUTLOG" || echo "⚠ 导出 book $B 失败"
 done
-# build_epub 的 --book 收的是目录名不是书号，整个 root 一起做最省事
-python3 scripts/build_epub.py --root "$EXP" --out "$EPUB" --merge "$PROJ 三层合集" \
+
+# 本项目写到了哪些书目录，以导出自己打印的路径为准，不靠书名猜
+python3 scripts/pick_export.py "$OUTLOG" "$EXP" "$STAGE" || echo "⚠ 挑选导出目录失败"
+
+python3 scripts/build_epub.py --root "$STAGE" --out "$EPUB" --merge "$PROJ 三层合集" \
     || echo "⚠ epub 失败"
 
 # 本项目的过程报告：workspace/reports 下按书号分目录
 RPT="workspace/reports-$PROJ"
-mkdir -p "$RPT"
+rm -rf "$RPT"; mkdir -p "$RPT"
 for B in "${BOOKS[@]}"; do cp -r "workspace/reports/$B" "$RPT/" 2>/dev/null; done
 
 PKG="workspace/$PROJ.zip"
 rm -f "$PKG"
-(cd workspace && zip -qr "../$PKG" "export" "epub-$PROJ" "reports-$PROJ") || echo "⚠ 打包失败"
+(cd workspace && zip -qr "../$PKG" "export-$PROJ" "epub-$PROJ" "reports-$PROJ") || echo "⚠ 打包失败"
 ls -la "$PKG"
 
 python3 scripts/mail_file.py "$PKG" \
