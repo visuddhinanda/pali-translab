@@ -195,14 +195,31 @@ def para_chars(book):
 
 
 def sent_counts(book, plist, batch=30):
-    """{段号: 句数}——一次批量取，用来给 chunk 加句数上限。"""
-    out = {}
+    """{段号: 句数}——批量取，用来给 chunk 加句数上限。整本缓存到 workspace。
+
+    句数是切 chunk 的真约束（见 chunk_paras），所以**规划期就得算准**，
+    否则规划切的和执行切的对不上，task 编号就没法一一对应。一本书两千段
+    约 67 次调用，缓存之后重排计划不再花钱。
+    """
+    key = int(book)
+    cache = f"workspace/cache_sents_{key}.json"
+    have = {}
+    if os.path.exists(cache):
+        have = {int(k): v for k, v in json.load(open(cache, encoding="utf-8")).items()}
     plist = [int(p) for p in plist]
-    for i in range(0, len(plist), batch):
-        coords = [f"{book}:{p}" for p in plist[i:i + batch]]
+    todo = [p for p in plist if p not in have]
+    for i in range(0, len(todo), batch):
+        coords = [f"{key}:{p}" for p in todo[i:i + batch]]
+        got = {}
         for r in jget("get", *coords, "--json"):
-            out[r["paragraph"]] = out.get(r["paragraph"], 0) + 1
-    return out
+            got[r["paragraph"]] = got.get(r["paragraph"], 0) + 1
+        for p in todo[i:i + batch]:
+            have[p] = got.get(p, 0)          # 没有句子的段也要记 0，否则每次都去问
+    if todo:
+        os.makedirs("workspace", exist_ok=True)
+        json.dump({str(k): v for k, v in have.items()},
+                  open(cache, "w", encoding="utf-8"), ensure_ascii=False)
+    return {p: have.get(p, 0) for p in plist}
 
 
 def chunk_paras(book, plist, budget=5000, max_paras=12, max_sents=60):

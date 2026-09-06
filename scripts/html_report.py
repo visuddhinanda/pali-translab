@@ -72,12 +72,7 @@ const CN = {pending:'未开始',running:'进行中',done:'已完成',failed:'失
 const num = n => (n||0).toLocaleString();
 
 function unitsOf(job){
-  const u = [];
-  (job.layers||[]).forEach(l => (l.chunks||[]).forEach(c => u.push(c)));
-  const h = job.harmonize || {};
-  (h.cross||[]).concat(h.layer||[]).forEach(c => u.push(c));
-  if (job.export) u.push(job.export);
-  return u;
+  return job.tasks || [];
 }
 function tally(ns){
   const t = {pending:0,running:0,done:0,failed:0,skipped:0};
@@ -86,60 +81,48 @@ function tally(ns){
 }
 function bar(ns, chars){
   const tot = ns.reduce((a,n)=>a+(chars?(n.chars||0):1),0) || 1;
-  const seg = s => ns.filter(n=>(n.status||'pending')===s)
-                     .reduce((a,n)=>a+(chars?(n.chars||0):1),0)/tot*100;
-  return `<span class="bar mini"><i class="done" style="width:${seg('done')}%"></i>
-    <i class="running" style="width:${seg('running')}%"></i>
-    <i class="failed" style="width:${seg('failed')}%"></i></span>`;
+  const seg = ss => ns.filter(n=>ss.includes(n.status||'pending'))
+                      .reduce((a,n)=>a+(chars?(n.chars||0):1),0)/tot*100;
+  return `<span class="bar mini"><i class="done" style="width:${seg(['done','skipped'])}%"></i>
+    <i class="running" style="width:${seg(['running'])}%"></i>
+    <i class="failed" style="width:${seg(['failed'])}%"></i></span>`;
 }
 const pill = s => `<span class="pill s-${s||'pending'}">${CN[s||'pending']}</span>`;
 
-function leaf(n, label){
-  return `<div class="leaf" data-status="${n.status||'pending'}">
-    <span class="n">${n.id||''}</span><span class="t">${label}</span>
-    <span class="n">${n.chars?num(n.chars)+' 字符':''}</span>${pill(n.status)}</div>`;
+const STEP_CN = {translate:'翻译', review:'复核', revise:'修订',
+                 harmonize:'统稿', evaluate:'评估', export:'导出'};
+const LAYER_CN = {mula:'本文', atthakatha:'义注', tika:'复注',
+                  mulatika:'根本复注', anutika:'随复注'};
+
+function rng(t){
+  if (t.layers) return Object.entries(t.layers).map(([b,r]) => `${b}:${r[0]}–${r[1]}`).join('　');
+  return t.book ? `${t.book}:${t.start}–${t.end}` : '';
+}
+function taskLeaf(t){
+  const lay = LAYER_CN[t.layer] || t.layer || '';
+  return `<div class="leaf" data-status="${t.status||'pending'}">
+    <span class="n">${t.id||''}</span>
+    <span class="t">${STEP_CN[t.step]||t.step}　${lay}　${rng(t)}</span>
+    <span class="n">${t.chars?num(t.chars)+' 字符':''}</span>${pill(t.status)}</div>`;
 }
 
-function layerNode(l){
-  const cs = l.chunks||[];
-  const inner = cs.length
-    ? cs.map(c => leaf(c, `${l.book}:${c.start}–${c.end}　${c.paras} 段`)).join('')
-    : `<div class="leaf"><span class="t">（这一层没有可切的分块）</span></div>`;
-  return `<details><summary><span class="t">${l.layer_cn||l.layer} · ${l.book}:${l.start}–${l.end}</span>
-    <span class="n">${l.paras||0} 段 · ${num(l.chars)} 字符 · ${cs.length} 分块</span>${bar(cs)}</summary>
-    <div class="kids">${inner}</div></details>`;
-}
-
-const rng = c => Object.entries(c.layers||{})
-  .map(([b,r]) => `${b}:${r[0]}–${r[1]}`).join('　');
-function crossLabel(c){
-  // direct 模式的那一块没有 cs 字段（整章一次做完），不能无脑读 c.cs[0]
-  if (c.kind === 'direct') return `整章三层一次 · ${rng(c)}`;
-  const part = c.part ? ` 第 ${c.part[0]}/${c.part[1]} 份` : '';
-  return `横向 cs ${c.cs[0]}${c.cs[1]!==c.cs[0]?'–'+c.cs[1]:''}${part} · ${rng(c)}`;
-}
-function harmonizeNode(job){
-  const h = job.harmonize; if(!h) return '';
-  const cross = (h.cross||[]).map(c => leaf(c, crossLabel(c))).join('');
-  const lay = (h.layer||[]).map(c => leaf(c, `纵向 ${c.layer_cn||c.layer} ${c.book}:${c.start}–${c.end}`)).join('');
-  const all = (h.cross||[]).concat(h.layer||[]);
-  const MODE = {direct:'整章三层一次', 'cross+layer':`横向 ${(h.cross||[]).length} + 纵向 ${(h.layer||[]).length}`,
-                'layer-only':`只纵向 ${(h.layer||[]).length}（无 cs 对应）`};
-  const mode = MODE[h.mode] || h.mode;
-  return `<details><summary><span class="t">统稿 harmonize · ${mode}</span>
-    <span class="n">${num(job.chars)} 字符</span>${bar(all)}</summary>
-    <div class="kids">${cross}${lay}</div></details>`;
+// 按步骤分组显示：一条流水线动辄上百个 task，平铺没法看。组内仍是计划顺序。
+function stepGroup(step, ts){
+  return `<details><summary><span class="t">${STEP_CN[step]||step}</span>
+    <span class="n">${tally(ts).done}/${ts.length} 个任务</span>${bar(ts)}</summary>
+    <div class="kids">${ts.map(taskLeaf).join('')}</div></details>`;
 }
 
 function jobNode(job){
   const us = unitsOf(job), t = tally(us);
-  const layers = (job.layers||[]).map(layerNode).join('');
-  const ex = job.export ? leaf(job.export, '导出 markdown') : '';
+  const order = ['translate','review','revise','harmonize','evaluate','export'];
+  const groups = order.filter(s => us.some(x => x.step===s))
+    .map(s => stepGroup(s, us.filter(x => x.step===s))).join('');
   return `<details data-status="${job.status||'pending'}" data-name="${(job.title||'').toLowerCase()}">
     <summary><span class="n">#${job.id}</span><span class="t">${job.title||'（无本文）'}</span>
-      <span class="n">${job.cs?`cs ${job.cs[0]}–${job.cs[1]} · `:''}${num(job.chars)} 字符 · ${t.done}/${us.length} 单元</span>
+      <span class="n">${job.cs?`cs ${job.cs[0]}–${job.cs[1]} · `:''}${num(job.chars)} 字符 · ${t.done+t.skipped}/${us.length} 任务</span>
       ${bar(us)}${pill(job.status)}</summary>
-    <div class="kids">${layers}${harmonizeNode(job)}${ex}</div></details>`;
+    <div class="kids">${groups}</div></details>`;
 }
 
 // 渲染整棵树时任何一个字段对不上都会中断整页——曾经 direct 模式的统稿块没有 cs
@@ -153,7 +136,7 @@ function safeJob(job){
 function render(){
   const q = (document.getElementById('q').value||'').toLowerCase();
   const f = document.getElementById('f').value;
-  const jobs = P.jobs.filter(j =>
+  const jobs = (P.pipelines||[]).filter(j =>
     (!q || (j.title||'').toLowerCase().includes(q) || String(j.id)===q) &&
     (f==='all' || (j.status||'pending')===f));
   document.getElementById('tree').innerHTML = jobs.map(safeJob).join('')
@@ -175,22 +158,15 @@ def _esc(s):
 
 
 def render_project(proj):
-    jobs = proj["jobs"]
-    us = []
-    for j in jobs:
-        for lay in j.get("layers", []):
-            us += lay.get("chunks", [])
-        h = j.get("harmonize") or {}
-        us += h.get("cross", []) + h.get("layer", [])
-        if j.get("export"):
-            us.append(j["export"])
+    jobs = proj.get("pipelines") or []
+    us = [t for j in jobs for t in (j.get("tasks") or [])]
+    SETTLED = ("done", "skipped")
     done_jobs = sum(1 for j in jobs if j.get("status") == "done")
-    chunks = [c for j in jobs for lay in j.get("layers", []) for c in lay.get("chunks", [])]
+    chunks = [t for t in us if t.get("step") == "translate"]
     chars = sum(c.get("chars", 0) for c in chunks)
-    done_chars = sum(c.get("chars", 0) for c in chunks if c.get("status") == "done")
-    hs = [c for j in jobs for c in ((j.get("harmonize") or {}).get("cross", [])
-                                    + (j.get("harmonize") or {}).get("layer", []))]
-    hs_done = sum(1 for c in hs if c.get("status") == "done")
+    done_chars = sum(c.get("chars", 0) for c in chunks if c.get("status") in SETTLED)
+    hs = [t for t in us if t.get("step") == "harmonize"]
+    hs_done = sum(1 for c in hs if c.get("status") in SETTLED)
     data = json.dumps(proj, ensure_ascii=False).replace("</", "<\\/")
 
     return f"""<!doctype html>
@@ -205,10 +181,10 @@ def render_project(proj):
    · channel <code>{_esc(proj.get('channel', ''))}</code> · 更新于 {_esc(proj.get('updated', ''))}</p>
 </header>
 <div class="stats">
-  <div class="stat"><b>{done_jobs} / {len(jobs)}</b><span>作业</span></div>
+  <div class="stat"><b>{done_jobs} / {len(jobs)}</b><span>流水线</span></div>
   <div class="stat"><b>{100.0 * done_chars / (chars or 1):.1f}%</b><span>翻译（按巴利字符）</span></div>
   <div class="stat"><b>{hs_done} / {len(hs)}</b><span>统稿单元</span></div>
-  <div class="stat"><b>{chars:,}</b><span>巴利字符 · {len(chunks)} 分块</span></div>
+  <div class="stat"><b>{chars:,}</b><span>巴利字符 · {len(us)} 个任务</span></div>
   <div class="stat"><b>{_esc(proj.get('method', 'default'))}</b><span>method</span></div>
 </div>
 <div class="toolbar">
@@ -216,15 +192,15 @@ def render_project(proj):
   <select id="f">
     <option value="all">全部状态</option><option value="pending">未开始</option>
     <option value="running">进行中</option><option value="done">已完成</option>
-    <option value="failed">失败</option>
+    <option value="failed">失败</option><option value="skipped">跳过</option>
   </select>
   <button id="expand">全部展开</button><button id="collapse">全部收起</button>
-  <span class="sub">显示 <b id="shown">0</b> 个作业</span>
+  <span class="sub">显示 <b id="shown">0</b> 条流水线</span>
 </div>
 <div id="tree"></div>
 <footer>数据内嵌在本文件里（<code>#data</code>），源头是
-<code>workspace/projects/{_esc(proj['name'])}.json</code>；进度可由
-<code>workspace/audit.log</code> 完全重建。重新导出：<code>python3 scripts/project.py export</code></footer>
+<code>workspace/projects/{_esc(proj['name'])}/project.json</code>；进度可由同目录的
+<code>audit.log</code> 完全重建。重新导出：<code>python3 scripts/project.py export</code></footer>
 </div>
 <script id="data" type="application/json">{data}</script>
 <script>{JS}</script></body></html>

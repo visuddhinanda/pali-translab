@@ -137,8 +137,8 @@ def harmonize_plan(job, entries, csm, chm, th):
     if total <= th["harmonize_direct_max"]:
         return total, {"mode": "direct", "cross": [
             {"id": f"{jid}.H", "kind": "direct", "chars": total,
-             "layers": {str(e["book"]): [e["start"], e["end"]] for e in entries},
-             "status": pj.PENDING}], "layer": []}
+             "layers": {str(e["book"]): [e["start"], e["end"]] for e in entries}}],
+                "layer": []}
 
     acc, cs_list, headless = cs_chars(entries, csm, chm)
     budget = th["harmonize_cross_chars"]
@@ -190,7 +190,7 @@ def harmonize_plan(job, entries, csm, chm, th):
         if len(layers) >= 2:          # 只剩一层就没有"跨层"可言，交给纵向那一步即可
             n += 1
             cross.append({"id": f"{jid}.H{n}", "kind": "cross", "cs": [lo, hi],
-                          "chars": got, "layers": layers, "status": pj.PENDING})
+                          "chars": got, "layers": layers})
         i = j
 
     layer_chunks = []
@@ -205,8 +205,7 @@ def harmonize_plan(job, entries, csm, chm, th):
                 layer_chunks.append({
                     "id": f'{jid}.HL{e["book"]}.{k}', "kind": "layer",
                     "layer": e["layer"], "layer_cn": LAYER_CN.get(e["layer"], e["layer"]),
-                    "book": e["book"], "start": start, "end": p, "chars": got,
-                    "status": pj.PENDING})
+                    "book": e["book"], "start": start, "end": p, "chars": got})
                 got, start = 0, p + 1
     # 一个 cs 锚点都没有（注释书开头的序论、结集史）——那些段在父层里没有对应，
     # 横向对齐本来就无从做起，只做纵向，并把原因写进文件。
@@ -216,26 +215,67 @@ def harmonize_plan(job, entries, csm, chm, th):
                    "note": "" if cross else "本作业全部段落没有 cs_para 对应，只做纵向统稿"}
 
 
-def layer_node(jid, k, e, chm, args):
-    """一层的计划：段范围 + 体量 + **预切好的分块**。
+# 一个 chunk 上按顺序要做的步骤。evaluate 排在 harmonize 之后（评的必须是定稿），
+# 所以它不与 translate/review/revise 同批，见 tasks_of_pipeline。
+CHUNK_STEPS = ("translate", "review", "revise")
 
-    分块只按字符数与段数切，不查句数——句数要逐段 `wikipali get`，全书两百多次调用，
-    而跑的时候 `pipeline_batch.sh` 本来就会用当时的参数重切一遍并加上句数上限。
-    所以这里切出来的是**计划视图**：段边界与实跑可能差一两段，进度按段号归属即可。
+
+def layer_node(jid, k, e, chm, args):
+    """一层的计划：段范围 + 体量 + **权威切好的分块**。
+
+    切分在这里定死（含句数上限），执行期照单执行、不再重切——重切一遍就会与计划
+    错位一两段，task 编号也就对不上了。句数要逐段 `wikipali get`，一本书约 67 次
+    调用，结果缓存在 workspace/cache_sents_<book>.json，重排计划不再花钱。
     """
     plist = list(range(e["start"], e["end"] + 1))
     chunks = []
     for n, ps in enumerate(chunk_paras(e["book"], plist, args.chunk_chars,
-                                       args.max_paras, max_sents=0), 1):
+                                       args.max_paras, args.max_sents), 1):
         chunks.append({"id": f'{jid}.{k}.{n}', "kind": "chunk", "book": e["book"],
+                       "layer": e["layer"],
                        "start": ps[0], "end": ps[-1], "paras": len(ps),
-                       "chars": sum(chm[e["book"]].get(p, 0) for p in ps),
-                       "status": pj.PENDING})
+                       "chars": sum(chm[e["book"]].get(p, 0) for p in ps)})
     return {"layer": e["layer"], "layer_cn": LAYER_CN.get(e["layer"], e["layer"]),
             "book": e["book"], "start": e["start"], "end": e["end"],
             "title": e.get("title", ""), "paras": len(plist),
             "chars": sum(chm[e["book"]].get(p, 0) for p in plist),
             "chunks": chunks}
+
+
+def tasks_of_pipeline(jid, layers, harm):
+    """一条流水线的 task 列表，**按执行顺序**排好。
+
+    顺序即依赖：前一个了结（done 或 skipped）才轮到下一个。分四段——
+    逐层逐 chunk 的 translate→review→revise、跨层统稿、逐 chunk 评估、逐层导出。
+    evaluate 必须在 harmonize 之后：评的得是定稿。
+    """
+    out = []
+    for lay in layers:
+        for ch in lay["chunks"]:
+            for step in CHUNK_STEPS:
+                out.append({"id": f'{ch["id"]}:{step}', "step": step,
+                            "layer": lay["layer"], "book": ch["book"],
+                            "start": ch["start"], "end": ch["end"],
+                            "chars": ch["chars"] if step == "translate" else 0,
+                            "status": pj.PENDING, "detail": ""})
+    for c in harm["cross"] + harm["layer"]:
+        out.append({"id": c["id"], "step": "harmonize", "kind": c["kind"],
+                    "layer": c.get("layer", ""), "book": c.get("book"),
+                    "start": c.get("start"), "end": c.get("end"),
+                    "layers": c.get("layers"), "chars": 0,
+                    "status": pj.PENDING, "detail": ""})
+    for lay in layers:
+        for ch in lay["chunks"]:
+            out.append({"id": f'{ch["id"]}:evaluate', "step": "evaluate",
+                        "layer": lay["layer"], "book": ch["book"],
+                        "start": ch["start"], "end": ch["end"], "chars": 0,
+                        "status": pj.PENDING, "detail": ""})
+    for lay in layers:
+        out.append({"id": f'{jid}.{lay["book"]}:export', "step": "export",
+                    "layer": lay["layer"], "book": lay["book"],
+                    "start": lay["start"], "end": lay["end"], "chars": 0,
+                    "status": pj.PENDING, "detail": ""})
+    return out
 
 def build_project(args, jobs, books_seen, channel):
     """把作业计划物化成 project 文件——结构、体量、harmonize 计划、状态全在里面。"""
@@ -244,7 +284,7 @@ def build_project(args, jobs, books_seen, channel):
     chm = {b: para_chars(b) for b in bl}
     th = dict(pj.THRESHOLDS)
 
-    th_chunk = f"≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段，句数留到跑时校正"
+    th_chunk = f"≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段 / ≤{args.max_sents} 句"
     out_jobs, modes = [], {"direct": 0, "cross+layer": 0, "layer-only": 0}
     for j in jobs:
         ents = entries_of(j)
@@ -252,19 +292,19 @@ def build_project(args, jobs, books_seen, channel):
         modes[harm["mode"]] += 1
         cs_all = sorted({c for e in ents for p in range(e["start"], e["end"] + 1)
                          if (c := csm[e["book"]].get(p)) is not None})
+        layers = [layer_node(j["id"], k, e, chm, args) for k, e in enumerate(ents, 1)]
         out_jobs.append({
             "id": j["id"],
             "title": (j["mula"] or j["own"][0])["title"],
             "cs": [cs_all[0], cs_all[-1]] if cs_all else None,
             "chars": total,
-            "status": pj.PENDING, "tries": 0, "started": None, "finished": None,
+            "status": pj.PENDING, "tries": 0, "began": "", "ended": "",
             "note": j.get("note", ""),
             "mula": j["mula"],
             "ref": j.get("ref", []),
-            "layers": [layer_node(j["id"], k, e, chm, args) for k, e in enumerate(ents, 1)],
+            "layers": layers,          # 结构（层 → 分块边界），执行器照它取原文
             "harmonize": harm,
-            "export": {"id": f'{j["id"]}.E', "kind": "export", "chars": 0,
-                       "status": pj.PENDING},
+            "tasks": tasks_of_pipeline(j["id"], layers, harm),   # 状态只在这里
         })
 
     proj = {
@@ -275,10 +315,11 @@ def build_project(args, jobs, books_seen, channel):
         "state": "idle", "command": None,
         "thresholds": th,
         "books": {str(b): {"layer": l, "title": t} for b, (l, t) in books_seen.items()},
-        "jobs": out_jobs,
+        "pipelines": out_jobs,
     }
     nch = sum(len(l["chunks"]) for j in out_jobs for l in j["layers"])
-    print(f"  预切分块 {nch} 个（{th_chunk}）", file=sys.stderr)
+    nt = sum(len(j["tasks"]) for j in out_jobs)
+    print(f"  切分块 {nch} 个（{th_chunk}）→ 任务 {nt} 个", file=sys.stderr)
     print(f"  harmonize 分级：整章直做 {modes['direct']} 个，"
           f"横向+纵向 {modes['cross+layer']} 个，只纵向 {modes['layer-only']} 个"
           f"（阈值 {th['harmonize_direct_max']:,} / {th['harmonize_cross_chars']:,}"
@@ -297,7 +338,9 @@ def main():
     ap.add_argument("--chunk-chars", type=int, default=5000, dest="chunk_chars",
                     help="预切分块的巴利字符上限（与 pipeline_batch.sh 同名参数一致）")
     ap.add_argument("--max-paras", type=int, default=12, dest="max_paras",
-                    help="预切分块的段数上限")
+                    help="分块的段数上限")
+    ap.add_argument("--max-sents", type=int, default=60, dest="max_sents",
+                    help="分块的句数上限——模型输出会被截断，句数才是真约束")
     ap.add_argument("--channel", default="", help="写进项目文件的目标 channel uid")
     ap.add_argument("--csv", default="",
                     help="任务表 csv 落盘路径；跑之前先出这张表，守护进程再逐条改状态")

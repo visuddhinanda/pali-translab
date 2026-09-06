@@ -43,7 +43,7 @@ INDEX = os.path.join(PROJECTS, "index.json")
 # 全局旧账：迁到「一项目一目录」之前，五个项目的账混在这一本里。只读，不再写。
 LEGACY_AUDIT = os.path.join(WORK, "audit.log")
 
-SCHEMA = 1
+SCHEMA = 2
 PENDING, RUNNING, DONE, FAILED, SKIPPED = "pending", "running", "done", "failed", "skipped"
 STATE_CN = {PENDING: "未开始", RUNNING: "进行中", DONE: "已完成",
             FAILED: "失败", SKIPPED: "跳过"}
@@ -107,19 +107,37 @@ def all_names():
                   if os.path.isfile(os.path.join(PROJECTS, d, "project.json")))
 
 
-# ── 节点遍历 ────────────────────────────────────────────────────────────
-# 层级：job → layers[] → chunks[]，外加 job.harmonize.cross[] / .layer[] 与 job.export
+# ── 模型：project → pipelines[] → tasks[] ───────────────────────────────
+# **task = (chunk, step)**，是唯一带状态的单位。pipeline（一章 × 各层）内部严格
+# 单线按 tasks 顺序跑，pipeline 之间可以并行——并行在这里只压缩墙钟，不省 token。
+#
+# 状态只有一个来源：task 自己。执行器把 task_id 写进项目的 audit.log，守护进程
+# **查表**落状态。此前是记 (step, book, para) 再由 rollup() 反推 chunk 与作业的
+# 状态，推错过两次（跳过的步骤没有账 → chunk 永远升不到 done → 作业被反复打回
+# FAILED）。反推没了，这类 bug 也就没了。
 
-def units(job):
-    """一个作业下面全部**可执行单元**（带状态的叶子）。"""
-    for lay in job.get("layers", []):
-        for c in lay.get("chunks", []):
-            yield c
-    h = job.get("harmonize") or {}
-    for c in h.get("cross", []) + h.get("layer", []):
-        yield c
-    if job.get("export"):
-        yield job["export"]
+def is_archive(proj):
+    """旧格式（schema 1）只当存档看：能读能显示，不再跑。"""
+    return proj.get("schema") != SCHEMA or "pipelines" not in proj
+
+
+def pipelines(proj):
+    return proj.get("pipelines") or []
+
+
+def units(pipe):
+    """一条流水线下面全部 task。"""
+    return list(pipe.get("tasks") or [])
+
+
+def all_tasks(proj):
+    for pipe in pipelines(proj):
+        for t in units(pipe):
+            yield pipe, t
+
+
+def by_step(proj, *steps):
+    return [t for _p, t in all_tasks(proj) if t.get("step") in steps]
 
 
 def counts(nodes):
@@ -129,50 +147,46 @@ def counts(nodes):
     return c
 
 
+def settled(node):
+    """done 与 skipped 都是终态：skipped 是「按规矩不该做」，同样满足后继依赖。"""
+    return node.get("status") in (DONE, SKIPPED)
+
+
 def pct(nodes, key="chars"):
     tot = sum(n.get(key, 0) for n in nodes) or 1
-    got = sum(n.get(key, 0) for n in nodes if n.get("status") == DONE)
+    got = sum(n.get(key, 0) for n in nodes if settled(n))
     return 100.0 * got / tot
 
 
 def chars(nodes, key="chars"):
-    """(已完成字符, 总字符)——pct 的分子分母，报进度时连绝对量一起给。"""
-    return (sum(n.get(key, 0) for n in nodes if n.get("status") == DONE),
+    """(已了结字符, 总字符)——pct 的分子分母，报进度时连绝对量一起给。"""
+    return (sum(n.get(key, 0) for n in nodes if settled(n)),
             sum(n.get(key, 0) for n in nodes))
 
 
-def chunks_of(proj):
-    """全部翻译分块——进度按它们的字符数算。
-
-    不能把 harmonize / export 的字符也加进来：统稿读的是同一批文字，
-    加进去等于把同一段字符数了两遍，进度会凭空缩水。
-    """
-    return [c for j in proj["jobs"] for lay in j.get("layers", []) for c in lay.get("chunks", [])]
-
-
 def progress(proj):
-    """(翻译进度%, 统稿完成/总数, 导出完成/总数)——三件事各算各的。"""
-    tr = pct(chunks_of(proj))
-    hs = [c for j in proj["jobs"] for c in ((j.get("harmonize") or {}).get("cross", [])
-                                            + (j.get("harmonize") or {}).get("layer", []))]
-    ex = [j["export"] for j in proj["jobs"] if j.get("export")]
-    return (tr,
-            sum(1 for c in hs if c.get("status") == DONE), len(hs),
-            sum(1 for c in ex if c.get("status") == DONE), len(ex))
+    """(翻译进度%, 统稿完成/总数, 导出完成/总数)——三件事各算各的。
 
-
-# ── 从 audit.log 汇总进度 ───────────────────────────────────────────────
-
-def audit_done(name=None, channel=None):
-    """audit.log → {(step, book, para): status}，后写的覆盖先写的。
-
-    账本优先取项目自己的 `projects/<name>/audit.log`；没有就退回迁移前的全局旧账
-    （只读），旧项目的进度才显示得出来。
+    翻译进度只看 translate：review / revise / evaluate 读的是同一批文字，
+    算进去等于把同一段字符数好几遍。
     """
+    tr = by_step(proj, "translate")
+    hs = by_step(proj, "harmonize")
+    ex = by_step(proj, "export")
+    return (pct(tr),
+            sum(1 for t in hs if settled(t)), len(hs),
+            sum(1 for t in ex if settled(t)), len(ex))
+
+
+# ── audit.log → task 状态（查表，不是推断）───────────────────────────────
+
+AUDIT_STATUS = {"ok": DONE, "fail": FAILED, "skip": SKIPPED, "start": RUNNING}
+
+
+def audit_tasks(name):
+    """项目 audit.log → {task_id: 状态}，后写的覆盖先写的。"""
     seen = {}
-    path = audit_path(name) if name else LEGACY_AUDIT
-    if not os.path.exists(path):
-        path = LEGACY_AUDIT
+    path = audit_path(name)
     if not os.path.exists(path):
         return seen
     with open(path, encoding="utf-8", errors="replace") as f:
@@ -184,62 +198,40 @@ def audit_done(name=None, channel=None):
                 r = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if channel and r.get("channel") not in (None, channel):
-                continue
-            key = (r.get("step"), r.get("book"), r.get("paragraph", r.get("para")))
-            if None in key[:2]:
-                continue
-            seen[key] = r.get("status")
+            tid, st = r.get("task"), AUDIT_STATUS.get(r.get("status"))
+            if tid and st:
+                seen[tid] = st
     return seen
 
 
-def rollup(proj, steps=("translate", "review", "revise")):
-    """按 audit.log 刷新分块与统稿状态。
-
-    分块：每一段的每一步都 ok（或按规矩 skip）才算 done。
-    统稿：audit.log 里 harmonize 是按段记的，所以一个统稿单元覆盖的段全 ok 才算 done。
-    导出：pipeline 不给 export 记账（它只在日志里打一行），所以导出节点由作业完成时
-    顺带标记，不在这里推。
-    """
-    done = audit_done(proj.get("name"), proj.get("channel"))
+def apply_audit(proj):
+    """把 audit.log 里的 task 结果落到项目文件上，并按 task 推出流水线状态。"""
+    seen = audit_tasks(proj["name"])
     touched = 0
-    for job in proj["jobs"]:
-        for lay in job.get("layers", []):
-            b = lay["book"]
-            for ch in lay.get("chunks", []):
-                ps = range(ch["start"], ch["end"] + 1)
-                # skip 与 ok 同样算了结：pipeline 会按规矩跳过某些步骤（复注没有缅文
-                # nissaya 就不复核），那是「不该做」，不是「还没做」。只认 ok 的话这类
-                # chunk 永远升不到 done，早先失败过的 chunk 洗不白，作业每轮被打回 FAILED。
-                ok = all(done.get((s, b, p)) in ("ok", "skip") for s in steps for p in ps)
-                bad = any(done.get((s, b, p)) == "fail" for s in steps for p in ps)
-                new = DONE if ok else (FAILED if bad else ch.get("status", PENDING))
-                if new != ch.get("status"):
-                    ch["status"] = new
-                    touched += 1
-        # 统稿单元：横向块跨多层，每层各自的段都要 ok
-        h = job.get("harmonize") or {}
-        for c in h.get("cross", []) + h.get("layer", []):
-            spans = ([(int(b), r[0], r[1]) for b, r in (c.get("layers") or {}).items()]
-                     or [(c.get("book"), c.get("start"), c.get("end"))])
-            spans = [x for x in spans if None not in x]
-            ok = bool(spans) and all(done.get(("harmonize", b, p)) == "ok"
-                                     for b, lo, hi in spans for p in range(lo, hi + 1))
-            if ok and c.get("status") != DONE:
-                c["status"] = DONE
+    for pipe in pipelines(proj):
+        ts = units(pipe)
+        for t in ts:
+            st = seen.get(t["id"])
+            if st and st != t.get("status"):
+                t["status"] = st
                 touched += 1
-
-        # 作业状态由它的单元推出来；跑着的那个由守护进程自己标 running
-        us = list(units(job))
-        c = counts(us)
-        if c[DONE] == len(us) and us:
-            job["status"] = DONE
-        elif job.get("status") not in (RUNNING, PENDING) and c[FAILED]:
-            # PENDING 是「已排队等重跑」（reset-failed 刚退回的）。audit.log 里的旧
-            # fail 记录会一直在，若照它把作业打回 FAILED，守护进程下一轮就不再派发，
-            # reset-failed 等于白做——这条 guard 就是为了不让旧账覆盖重跑意图。
-            job["status"] = FAILED
+        c = counts(ts)
+        if ts and c[DONE] + c[SKIPPED] == len(ts):
+            new = DONE
+        elif c[FAILED]:
+            new = FAILED
+        elif c[RUNNING]:
+            new = RUNNING
+        else:
+            new = pipe.get("status", PENDING)
+        # PENDING 是「已排队等重跑」（reset-failed 刚退回的），别让旧账把它顶回 FAILED
+        if pipe.get("status") == PENDING and new == FAILED:
+            new = PENDING
+        if new != pipe.get("status"):
+            pipe["status"] = new
+            touched += 1
     return touched
+
 
 
 # ── 索引 ────────────────────────────────────────────────────────────────
@@ -248,14 +240,22 @@ def build_index():
     rows = []
     for name in all_names():
         p = load(name)
-        us = [u for j in p["jobs"] for u in units(j)]
-        jc = counts(p["jobs"])
+        if is_archive(p):                     # 旧格式：原样列出，不去解释它的内部结构
+            rows.append({"name": name, "title": p.get("title", name), "state": "archive",
+                         "book": p.get("book"), "channel": p.get("channel"),
+                         "jobs": len(p.get("jobs") or []), "job_counts": {},
+                         "units": 0, "unit_counts": {}, "chars": 0, "pct": 100.0,
+                         "archive": True,
+                         "updated": p.get("updated", ""), "created": p.get("created", "")})
+            continue
+        us = [t for _pipe, t in all_tasks(p)]
+        jc = counts(pipelines(p))
         rows.append({
             "name": name, "title": p.get("title", name), "state": p.get("state", "idle"),
             "book": p.get("book"), "channel": p.get("channel"),
-            "jobs": len(p["jobs"]), "job_counts": jc,
+            "jobs": len(pipelines(p)), "job_counts": jc,
             "units": len(us), "unit_counts": counts(us),
-            "chars": sum(j.get("chars", 0) for j in p["jobs"]),
+            "chars": sum(t.get("chars", 0) for t in us),
             "pct": round(progress(p)[0], 1),
             "updated": p.get("updated", ""), "created": p.get("created", ""),
         })
@@ -302,17 +302,24 @@ def take_command(proj):
 
 def cmd_status(name):
     p = load(name)
-    us = [u for j in p["jobs"] for u in units(j)]
-    jc, uc = counts(p["jobs"]), counts(us)
     print(f"项目 {p['name']}｜{p.get('title','')}｜状态 {p.get('state','idle')}"
           f"｜channel {p.get('channel','')}")
+    if is_archive(p):
+        print("旧格式（schema 1），只作存档：能看不能跑。")
+        return
+    us = [t for _pipe, t in all_tasks(p)]
+    jc, uc = counts(pipelines(p)), counts(us)
     tr, hd, ht, ed, et = progress(p)
-    print(f"作业 {len(p['jobs'])}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in jc.items() if v))
-    print(f"翻译 {tr:.1f}%（按巴利字符）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
-    print(f"单元 {len(us)}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in uc.items() if v))
-    bad = [j for j in p["jobs"] if j.get("status") == FAILED]
-    for j in bad[:20]:
-        print(f"  ❌ {j['id']} {j.get('title','')}  尝试 {j.get('tries',0)}  {j.get('note','')}")
+    cdone, ctot = chars(by_step(p, "translate"))
+    print(f"流水线 {len(pipelines(p))}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in jc.items() if v))
+    print(f"翻译 {tr:.1f}%（巴利字符 {cdone:,}/{ctot:,}）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
+    print(f"任务 {len(us)}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in uc.items() if v))
+    for pipe in pipelines(p):
+        if pipe.get("status") != FAILED:
+            continue
+        bad = [t["id"] for t in units(pipe) if t.get("status") == FAILED]
+        print(f"  ❌ {pipe['id']} {pipe.get('title','')}  尝试 {pipe.get('tries',0)}"
+              f"  失败任务 {', '.join(bad[:6])}")
 
 
 def main():
@@ -328,7 +335,8 @@ def main():
         if not rows:
             sys.exit("还没有项目（workspace/projects/ 是空的）")
         for r in rows:
-            print(f"{r['name']:<28} {r['state']:<8} 作业 {r['job_counts'][DONE]}/{r['jobs']:<5}"
+            print(f"{r['name']:<28} {r['state']:<8} 流水线 "
+                  f"{r['job_counts'].get(DONE, 0)}/{r['jobs']:<5}"
                   f" {r['pct']:>5.1f}%  更新 {r['updated']}")
         return
 
@@ -341,9 +349,11 @@ def main():
         put_command(args.name, args.cmd)
     elif args.cmd == "rebuild":
         p = load(args.name)
-        n = rollup(p)
+        if is_archive(p):
+            sys.exit("旧格式项目只作存档，不重算")
+        n = apply_audit(p)
         save(p)
-        print(f"按 audit.log 重算，改动 {n} 个分块状态")
+        print(f"按 audit.log 落状态，改动 {n} 个节点")
         cmd_status(args.name)
     elif args.cmd == "export":
         names = [args.name] if args.name else all_names()
