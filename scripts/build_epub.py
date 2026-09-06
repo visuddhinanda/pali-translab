@@ -290,7 +290,7 @@ def build_merged(book_dirs, out_dir, meta_mode, keep_md, dry, title):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="workspace/export", help="导出根目录")
+    ap.add_argument("--root", default="workspace/export", help="导出根目录（项目的在 workspace/projects/<name>/export）")
     ap.add_argument("--out", default="workspace/epub", help="epub 输出目录")
     ap.add_argument("--book", action="append", default=[],
                     help="只做这本（目录名）；可重复，默认全做")
