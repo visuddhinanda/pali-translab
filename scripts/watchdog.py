@@ -103,7 +103,7 @@ def _tail(path, nbytes):
         return ""
 
 
-def scan_failures(jobs, since_min=180, top=6):
+def scan_failures(jobs, project, since_min=180, top=6):
     """扫最近失败作业的日志，把错误按模式聚类。
 
     返回 [(次数, 说明, 样例行)]。同一模式反复出现就是系统性 bug——
@@ -113,7 +113,7 @@ def scan_failures(jobs, since_min=180, top=6):
     now = time.time()
     hits = {}
     for j in jobs:
-        path = os.path.join(rd.LOGS, f"{j['book']}-{j['start']}-{j['end']}.log")
+        path = os.path.join(rd.logs_dir(project), f"{j['book']}-{j['start']}-{j['end']}.log")
         if not os.path.exists(path):
             continue
         if (now - os.path.getmtime(path)) / 60 > since_min:
@@ -140,14 +140,14 @@ def scan_failures(jobs, since_min=180, top=6):
     return sorted(((c, d, s) for d, (c, s) in hits.items()), reverse=True)[:top]
 
 
-def stuck_jobs(jobs, stuck_min):
+def stuck_jobs(jobs, project, stuck_min):
     """日志长时间没动静的在跑作业。一次 claude 调用最多十几分钟，超阈值就是真卡住。"""
     out = []
     now = time.time()
     for j in jobs:
         if j["status"] != rd.RUNNING:
             continue
-        path = os.path.join(rd.LOGS, f"{j['book']}-{j['start']}-{j['end']}.log")
+        path = os.path.join(rd.logs_dir(project), f"{j['book']}-{j['start']}-{j['end']}.log")
         if not os.path.exists(path):
             continue
         idle = (now - os.path.getmtime(path)) / 60
@@ -216,7 +216,7 @@ def main():
                 alive = True
 
             # 2) 卡住的作业
-            for j, path, idle in stuck_jobs(jobs, args.stuck_min):
+            for j, path, idle in stuck_jobs(jobs, args.project, args.stuck_min):
                 n = kill_job(j)
                 log(f"⚠ 卡住 {args.book}:{j['start']}-{j['end']}「{j['title']}」"
                     f"日志静默 {idle:.0f} 分钟，已杀 {n} 个进程，交给守护进程重排")
@@ -232,7 +232,7 @@ def main():
             last_done = done
 
             # 4) 失败模式聚类——反复出现同一个错误就是代码问题，显式告警
-            errs = scan_failures(jobs)
+            errs = scan_failures(jobs, args.project)
             # 撞额度时 claude 返回空输出，流水线报「没有抽到 JSONL」——那是环境
             # 造成的空响应，不是代码 bug。守护进程正在冷却时，这一类一律不算系统性。
             cooling = any("撞到额度限制" in l for l in _tail(
