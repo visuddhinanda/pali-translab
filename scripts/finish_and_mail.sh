@@ -5,19 +5,20 @@
 # 项目文件的 state 变成 done 就自动收尾。中途失败会把原因留在日志里并照样发信，
 # 免得「静悄悄什么都没有」。
 #
-# 用法： nohup bash scripts/finish_and_mail.sh mn-majjhimapannasa 165 131 193 &
+# 用法： nohup bash scripts/finish_and_mail.sh mn-uparipannasa 166 132 194 &
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 PROJ="$1"; shift
 BOOKS=("$@")
-PJ="workspace/projects/$PROJ.json"
+PJ="workspace/projects/$PROJ/project.json"
 CH=$(python3 -c "import json;print(json.load(open('$PJ'))['channel'])")
 
 state() { python3 -c "
 import json;d=json.load(open('$PJ'))
-js=d['jobs']
-done=sum(1 for j in js if j.get('status')=='done')   # 作业上的字段是 status，不是 state
+js=d['pipelines']
+# 字段是 status 不是 state；skipped 与 done 同为终态，都算跑完
+done=sum(1 for j in js if j.get('status') in ('done', 'skipped'))
 print(d.get('state'), done, len(js))"; }
 
 while :; do
