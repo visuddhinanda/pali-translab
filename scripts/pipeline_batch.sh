@@ -884,13 +884,16 @@ if has_step export && [[ -z "$DRYRUN" ]]; then
         [[ "${OWN:-1}" == 1 ]] || continue
         EXP_TASK="${JOB:-adhoc}.$LBOOK:export"
         task_done "$EXP_TASK" && { echo "  跳过导出 $LBOOK（已导出）"; continue; }
-        ANCHOR="${LPARAS%%,*}"; ANCHOR="${ANCHOR%%-*}"
+        # 一个作业可能含好几章（小章合并），按整段范围导出，与之相交的章都出；
+        # 只给首段（--para）就只会导出第一章。LPARAS 形如 5-9 或 5,6,9。
+        EFROM="${LPARAS%%,*}"; EFROM="${EFROM%%-*}"
+        ETO="${LPARAS##*,}"; ETO="${ETO##*-}"
         if python3 "$SCRIPT_DIR/export_markdown.py" --book "$LBOOK" --channel "$CHANNEL" \
-               --para "$ANCHOR" --out "$EXPORT_DIR" --model claude-opus-5; then
+               --from "$EFROM" --to "$ETO" --out "$EXPORT_DIR" --model claude-opus-5; then
             audit_task "$EXP_TASK" ok "$EXPORT_DIR" "$LBOOK" "$LPARAS"
         else
             audit_task "$EXP_TASK" fail "导出失败" "$LBOOK" "$LPARAS"
-            echo "  ⚠ 导出失败 $LBOOK:$ANCHOR" >&2
+            echo "  ⚠ 导出失败 $LBOOK:$EFROM-$ETO" >&2
         fi
     done < "$GROUPS_FILE"
 fi
