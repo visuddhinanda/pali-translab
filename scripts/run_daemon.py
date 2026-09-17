@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """长任务守护进程：按章切分整本书，多进程并行跑三层流水线，断点续传 + 失败重试。
 
-一个**作业 = 本文的一章**。三层（本文/义注/复注）由 `pipeline_batch.sh --chapter`
+一个**作业 = 本文的一章**（或规划期合并的同一父章节下几个相邻小章，见 plan_jobs.merge_small）。三层（本文/义注/复注）由 `pipeline_batch.sh --chapter`
 在作业内部解析并处理，所以章与章之间互不相干，可以放心并行。
 
     python3 scripts/run_daemon.py run --project dn-silakkhandhavagga --channel <uid> --workers 4
