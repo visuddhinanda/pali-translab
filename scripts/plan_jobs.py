@@ -278,6 +278,123 @@ def tasks_of_pipeline(jid, layers, harm):
                     "status": pj.PENDING, "detail": ""})
     return out
 
+def chapter_levels(book):
+    """{章首段号: 目录层级}——与 book_chapters 同源（同一份 paras 缓存），不另调接口。"""
+    return {x["paragraph"]: x["level"] for x in paras(book) if x["level"] < 100}
+
+
+def span_title(titles):
+    return titles[0] if len(titles) == 1 else f"{titles[0]} … {titles[-1]}"
+
+
+def coalesce(entries):
+    """同层同书、段号首尾相接的片段接成一段——接上了，chunk_paras 才能跨过小章边界凑块。
+    接不上的（中间隔着归别的作业翻译的章）保持分开，照样各自切块，只是少凑一点。"""
+    out = []
+    for e in sorted(entries, key=lambda e: (LAYER_ORDER.get(e["layer"], 9), e["book"], e["start"])):
+        last = out[-1] if out else None
+        if last and last["book"] == e["book"] and last["end"] + 1 == e["start"]:
+            last["end"] = e["end"]
+            last["_titles"].append(e["title"])
+        else:
+            out.append({**e, "_titles": [e["title"]]})
+    for e in out:
+        e["title"] = span_title(e.pop("_titles"))
+    return out
+
+
+def merge_small(jobs, mula, levels, chm, budget, max_paras):
+    """同一父章节下相邻的小章节并成一个作业，省掉逐章逐 chunk 的固定开销。
+
+    chunk 出不了作业（它在作业的层片段内部切），所以合并只能做在作业这一级。
+    规则——宁可少并，不许并出界：
+      · 只并「子章节全是叶子」的父章节范围内的章（含父章节自己的标题章），
+        不跨父章节，品与品、相應与相應的边界原样保留；
+      · 并进来之后，每本书的合计仍须 ≤ budget 字符、≤ max_paras 个有字段——
+        即合并后每层恰好还是一个 chunk，不会因合并而多切或超上限；
+      · 单章就超限的大章永远独来独往，所以长部这类大章节书的计划与合并前逐字相同。
+    """
+    n = len(mula)
+    lv = [levels.get(lo, 99) for lo, _hi, _t in mula]
+    parent, kids = [None] * n, [[] for _ in range(n)]
+    stack = []
+    for i in range(n):
+        while stack and lv[stack[-1]] >= lv[i]:
+            stack.pop()
+        if stack:
+            parent[i] = stack[-1]
+            kids[stack[-1]].append(i)
+        stack.append(i)
+    leafy = [bool(kids[i]) and all(not kids[k] for k in kids[i]) for i in range(n)]
+
+    def key(i):
+        if leafy[i]:
+            return i
+        p = parent[i]
+        return p if p is not None and leafy[p] else None
+
+    def size(job):
+        acc = {}
+        for e in entries_of(job):
+            got = acc.setdefault(e["book"], [0, 0])
+            for p in range(e["start"], e["end"] + 1):
+                c = chm[e["book"]].get(p, 0)
+                if c:
+                    got[0] += c
+                    got[1] += 1
+        return acc
+
+    def fits(acc):
+        return all(c <= budget and k <= max_paras for c, k in acc.values())
+
+    groups, cur, cur_key, cur_size = [], [], None, {}
+    for i, job in enumerate(jobs):             # jobs 与 mula 一一对应、同序
+        k, sz = key(i), size(job)
+        if cur and k is not None and k == cur_key:
+            merged = dict(cur_size)
+            for b, (c, m) in sz.items():
+                c0, m0 = merged.get(b, (0, 0))
+                merged[b] = (c0 + c, m0 + m)
+            if fits(merged):
+                cur.append(job); cur_size = merged
+                continue
+        if cur:
+            groups.append(cur)
+        cur, cur_key, cur_size = [job], k, {b: tuple(v) for b, v in sz.items()}
+        if not fits(cur_size):              # 自己就超限：不给后面的章并进来
+            cur_key = None
+    if cur:
+        groups.append(cur)
+
+    out = []
+    for g in groups:
+        if len(g) == 1:
+            out.append(g[0])
+            continue
+        own = coalesce([e for j in g for e in j["own"]])
+        mine = {(e["book"], e["start"], e["end"]) for j in g for e in j["own"]}
+        seen, ref = set(), []
+        for j in g:
+            for e in j["ref"]:
+                t = (e["book"], e["start"], e["end"])
+                if t in mine or t in seen:
+                    continue
+                seen.add(t)
+                ref.append(e)
+        m0, m1 = g[0]["mula"], g[-1]["mula"]
+        out.append({
+            "id": g[0]["id"],
+            "mula": {**m0, "end": m1["end"],
+                     "title": span_title([j["mula"]["title"] for j in g])},
+            "own": own,
+            "ref": sorted(ref, key=lambda e: (LAYER_ORDER.get(e["layer"], 9), e["book"], e["start"])),
+            "chapters": [{"start": j["mula"]["start"], "end": j["mula"]["end"],
+                          "title": j["mula"]["title"]} for j in g],
+            "note": f"合并 {len(g)} 个小章",
+        })
+    return out
+
+
 def build_project(args, jobs, books_seen, channel):
     """把作业计划物化成 project 文件——结构、体量、harmonize 计划、状态全在里面。"""
     bl = {e["book"] for j in jobs for e in entries_of(j)}
@@ -302,6 +419,7 @@ def build_project(args, jobs, books_seen, channel):
             "status": pj.PENDING, "tries": 0, "began": "", "ended": "",
             "note": j.get("note", ""),
             "mula": j["mula"],
+            "chapters": j.get("chapters", []),   # 合并作业的成员章；单章作业为空
             "ref": j.get("ref", []),
             "layers": layers,          # 结构（层 → 分块边界），执行器照它取原文
             "harmonize": harm,
@@ -315,6 +433,8 @@ def build_project(args, jobs, books_seen, channel):
         "book": args.book, "channel": channel, "method": "default",
         "state": "idle", "command": None,
         "thresholds": th,
+        "chunking": {"chunk_chars": args.chunk_chars, "max_paras": args.max_paras,
+                     "merge_small": not args.no_merge},
         "books": {str(b): {"layer": l, "title": t} for b, (l, t) in books_seen.items()},
         "pipelines": out_jobs,
     }
@@ -341,6 +461,8 @@ def main():
                          "余量从这里留：模型一次约 100 行 JSONL 就被截断，一句约 30 字符")
     ap.add_argument("--max-paras", type=int, default=12, dest="max_paras",
                     help="分块的段数上限")
+    ap.add_argument("--no-merge", action="store_true", dest="no_merge",
+                    help="不合并小章节（一章一作业，旧行为；对照用）")
     ap.add_argument("--channel", default="", help="写进项目文件的目标 channel uid")
     ap.add_argument("--csv", default="",
                     help="任务表 csv 落盘路径；跑之前先出这张表，守护进程再逐条改状态")
@@ -441,6 +563,16 @@ def main():
             "ref": sorted(ref, key=key),
         })
 
+    # 4b) 小章合并：同一父章节下相邻的小章并成一个作业（见 merge_small）
+    if not args.no_merge:
+        before = len(jobs)
+        chm_all = {b: para_chars(b) for b in [args.book] + list(books_seen)}
+        jobs = merge_small(jobs, mula, chapter_levels(args.book), chm_all,
+                           args.chunk_chars, args.max_paras)
+        print(f"  小章合并：{before} 章 → {len(jobs)} 个作业"
+              f"（每层合计 ≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段，不跨父章节）",
+              file=sys.stderr)
+
     # ── 5) 前置作业：注释书里与本文无对应的开头部分 ──────────────────────
     # 注释书从 level=1 起就是本书的一部分（序论 Ganthārambhakathā、Nidānakathā、
     # 结集史 Paṭhamamahāsaṅgītikathā 等），只是与本文对不上。整本翻译时必须覆盖，
@@ -515,7 +647,7 @@ def main():
                     own = f'本文{m["end"] - m["start"] + 1}段'
                     if j["own"]:
                         own += f' + 注释{len(j["own"])}章/{segs}段'
-                    note = ""
+                    note = j.get("note", "")
                 else:                       # 前置作业：注释书开头，无本文
                     e0 = j["own"][0]
                     coord = f'{e0["book"]}:{e0["start"]}-{e0["end"]}'
