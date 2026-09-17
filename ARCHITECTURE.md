@@ -279,10 +279,15 @@ project → pipelines[] → tasks[]
 ```
 
 - **task = (chunk, step)**，是唯一带状态的单位：`<chunk_id>:<step>`，如 `56.1.1:translate`
-- **pipeline = 一章 × 各层**，内部严格按 tasks 顺序单线跑；pipeline 之间可并行
+- **pipeline = 一章 × 各层**（或同一父章节下合并的几个小章，见下），内部严格按 tasks 顺序单线跑；pipeline 之间可并行
   ——并行只压缩墙钟，**不省 token**，所以并发数不必贪多
 - 状态机 `pending → running → done | failed | skipped`；**skipped 与 done 同为终态**，
   同样满足后继依赖（复注没有缅文 nissaya 就不复核，那是「不该做」，不是「还没做」）
+- **小章合并**：chunk 出不了 pipeline，所以短章多的书（相應部、增支部）在规划期把
+  同一父章节（子章节全是叶子）下相邻的小章并成一条 pipeline，条件是合并后每层合计仍
+  ≤ `--chunk-chars` / `--max-paras`——每层还是恰好一个 chunk。不跨父章节；单章就超限的
+  大章不参与，所以长部这类书的大章计划不变。成员章记在 pipeline 的 `chapters[]`；
+  导出按整段范围（`--from/--to`）出，与之相交的章都出。`--no-merge` 回到一章一条
 - 分块边界由**规划期定死**（含句数上限），执行期照单执行、不再重切——重切就会与计划
   错位一两段，task 编号也就对不上
 - `harmonize` 在规划期按 `cs_para` 算好体量并定好走法（direct / cross+layer / layer-only），
