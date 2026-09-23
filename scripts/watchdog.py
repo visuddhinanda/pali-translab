@@ -66,9 +66,14 @@ def start_daemon(args):
         os.remove(rd.LOCK)                     # 陈旧锁
     cmd = [sys.executable, os.path.join(rd.ROOT, "scripts", "run_daemon.py"), "run",
            "--book", str(args.book), "--channel", args.channel,
-           "--workers", str(args.workers), "--nissaya"]
+           "--workers", str(args.workers)]
+    if args.nissaya:
+        cmd.append("--nissaya")
     if args.project:
         cmd += ["--project", args.project]
+    # 认不出的参数原样透传（--model 等）——拉起来的守护进程必须与人手起的那条一致，
+    # 否则看门狗一重启就把模型换成了默认值，跑了一夜才发现。
+    cmd += args.extra
     out = open(os.path.join(rd.WORK, "daemon.out"), "a", encoding="utf-8")
     out.write(f"\n===== watchdog 拉起 {time.strftime('%Y-%m-%d %H:%M:%S')} =====\n")
     out.flush()
@@ -177,9 +182,12 @@ def main():
     ap.add_argument("--channel", required=True)
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--project", default="", help="项目名（不给且只有一个项目时自动选）")
+    ap.add_argument("--nissaya", action="store_true",
+                    help="拉起守护进程时带上 --nissaya（要与人手起的那条一致）")
     ap.add_argument("--err-threshold", type=int, default=5,
                     help="同一错误出现几次就当系统性问题告警")
-    args = ap.parse_args()
+    args, extra = ap.parse_known_args()   # 认不出的参数透传给 run_daemon.py
+    args.extra = extra
 
     if not args.project:
         names = rd.pj.all_names()
