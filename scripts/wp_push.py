@@ -34,6 +34,28 @@ from _wp import jget, parse_paras, run  # noqa: E402
 ID_RE = re.compile(r"^(\d+)-(\d+)-(\d+)-(\d+)$")
 
 
+# 上传切块：一块 ≤ CHUNK_BYTES 字节且 ≤ CHUNK_SENTS 句，**谁先到按谁切**。
+# 与规划期的 chunk 是两件事：那个管一次给模型多少内容，这个只管一次往服务端发多少。
+# 服务端一次收太多就 500（2026-09-26 实测 19 句起必挂，且返回 500 而不是 4xx），
+# 长句子还会先撞体积上限，所以两个条件都要卡。
+CHUNK_BYTES, CHUNK_SENTS = 2560, 15
+
+
+def split_for_upload(sentences, max_bytes=CHUNK_BYTES, max_count=CHUNK_SENTS):
+    """按字节与句数切块。单句自己就超体积上限时单独成块——切不动，只能照发。"""
+    out, cur, size = [], [], 0
+    for s in sentences:
+        n = len(json.dumps(s, ensure_ascii=False).encode())
+        if cur and (size + n > max_bytes or len(cur) >= max_count):
+            out.append(cur)
+            cur, size = [], 0
+        cur.append(s)
+        size += n
+    if cur:
+        out.append(cur)
+    return out
+
+
 def extract_objects(raw):
     """从可能夹带围栏/旁白的文本里逐行抽出合法 JSON 对象。"""
     rows = []
@@ -110,10 +132,10 @@ def main():
                     help='允许上游用 {"no_change": true} 声明「一句都不用改」（增量写入的正常结果）；'
                          "空输出仍算失败")
     ap.add_argument("--content-type", default="markdown")
-    # 服务端一次收太多句会 500（2026-09-26 实测：18 条过、19 条起必挂，两个 channel 都一样，
-    # 返回 500 而不是 4xx，日志里只看得到「环境异常」）。15 留一点余量；
-    # 服务端修好后可以调回去。
-    ap.add_argument("--batch", type=int, default=15)
+    ap.add_argument("--batch", type=int, default=CHUNK_SENTS, dest="batch",
+                    help=f"一块最多几句（默认 {CHUNK_SENTS}）")
+    ap.add_argument("--chunk-bytes", type=int, default=CHUNK_BYTES, dest="chunk_bytes",
+                    help=f"一块最多多少字节（默认 {CHUNK_BYTES}）；与句数上限谁先到按谁切")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-verify", action="store_true", help="跳过写后读回核对")
     ap.add_argument("--expect-ids", default="", dest="expect_ids",
@@ -209,16 +231,25 @@ def main():
 
     for s in sentences:
         s["content_type"] = args.content_type
-    payload = json.dumps({"sentences": sentences}, ensure_ascii=False)
-
-    cmd = ["write", "-", "--channel", args.channel, "--batch", str(args.batch), "-y"]
-    if args.dry_run:
-        cmd.append("--dry-run")
-    r = run(cmd, stdin=payload, check=False)
-    sys.stderr.write(r.stderr)
-    print(r.stdout, end="")
-    if r.returncode != 0:
-        sys.exit(f"写入失败：{scope}")
+    blocks = split_for_upload(sentences, args.chunk_bytes, args.batch)
+    if len(blocks) > 1:
+        print(f"分 {len(blocks)} 块上传（每块 ≤{args.chunk_bytes} 字节 / ≤{args.batch} 句）",
+              file=sys.stderr)
+    sent_n = 0
+    for i, blk in enumerate(blocks, 1):
+        payload = json.dumps({"sentences": blk}, ensure_ascii=False)
+        # 块已经切好，CLI 不必再分：--batch 给本块的实际条数
+        cmd = ["write", "-", "--channel", args.channel, "--batch", str(len(blk)), "-y"]
+        if args.dry_run:
+            cmd.append("--dry-run")
+        r = run(cmd, stdin=payload, check=False)
+        sys.stderr.write(r.stderr)
+        print(r.stdout, end="")
+        if r.returncode != 0:
+            # 写入按坐标覆盖，前面的块已经落地不必回滚；报清楚写到哪里，重跑即可补齐
+            sys.exit(f"写入失败：{scope} 第 {i}/{len(blocks)} 块"
+                     f"（已写 {sent_n}/{len(sentences)} 句）")
+        sent_n += len(blk)
     if args.dry_run:
         if miss:
             report_missing(args.book, scope, miss, args.missing_out)
