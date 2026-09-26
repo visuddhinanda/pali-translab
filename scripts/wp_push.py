@@ -110,7 +110,10 @@ def main():
                     help='允许上游用 {"no_change": true} 声明「一句都不用改」（增量写入的正常结果）；'
                          "空输出仍算失败")
     ap.add_argument("--content-type", default="markdown")
-    ap.add_argument("--batch", type=int, default=50)
+    # 服务端一次收太多句会 500（2026-09-26 实测：18 条过、19 条起必挂，两个 channel 都一样，
+    # 返回 500 而不是 4xx，日志里只看得到「环境异常」）。15 留一点余量；
+    # 服务端修好后可以调回去。
+    ap.add_argument("--batch", type=int, default=15)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-verify", action="store_true", help="跳过写后读回核对")
     ap.add_argument("--expect-ids", default="", dest="expect_ids",
