@@ -35,6 +35,7 @@ import time
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from _wp import jget, run as wp_run  # noqa: E402
+import _wp as wp  # noqa: E402
 import project as pj  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -359,6 +360,42 @@ def rate_limited_in(path):
     return hit_since_last_run(path, RATE_LIMIT)
 
 
+def refresh_credentials(args):
+    """开跑前把凭据刷新一遍：模型身份 + channel access token。
+
+    两个都有有效期，而且过期的表现都不明显：
+      · **模型身份**决定句子的 editor 署名。别处跑过 `ensure-model` 换了名字，
+        这里不重签，整本书就会署上别人的名字，写完才看得出来（实测 sn3/sn4 全署错）。
+      · **access token 只有 7 天**。跨天的长任务跑到一半过期，服务端返回的是
+        **500 而不是 401**，日志里只看到「环境异常」，人会往网络故障上找，
+        实际白转了一天多（sn5 09-25 卡住即此）。
+
+    失败不拦着开跑——凭据可能本来就是好的，真坏了第一次写入自然会报出来。
+    """
+    model = ""
+    for i, a in enumerate(args.extra):
+        if a == "--model" and i + 1 < len(args.extra):
+            model = args.extra[i + 1]
+        elif a.startswith("--model="):
+            model = a.split("=", 1)[1]
+    try:
+        exe = wp._exe()
+    except SystemExit:
+        log_line("⚠ 找不到 wikipali，跳过凭据刷新")
+        return
+    if model:
+        # 署名用不带变体后缀的名字：claude-opus-5[1m] → claude-opus-5
+        name = model.split("[")[0]
+        r = subprocess.run([exe, "ensure-model", "--name", name, "--model", model],
+                           capture_output=True, text=True)
+        tail = (r.stdout or r.stderr).strip().splitlines()
+        log_line(f"模型身份 {name}：" + (tail[-1][:80] if tail else f"rc={r.returncode}"))
+    r = subprocess.run([exe, "grant", args.channel, "--force"],
+                       capture_output=True, text=True)
+    tail = [x for x in (r.stdout or r.stderr).strip().splitlines() if "token" in x or "到期" in x]
+    log_line("channel token：" + (tail[-1][:80] if tail else f"rc={r.returncode}"))
+
+
 def cmd_run(args):
     os.makedirs(WORK, exist_ok=True)
     if os.path.exists(LOCK):
@@ -371,6 +408,7 @@ def cmd_run(args):
     open(LOCK, "w").write(str(os.getpid()))
     if os.path.exists(STOP):
         os.remove(STOP)
+    refresh_credentials(args)           # 开跑前刷新署名身份与 access token
 
     stopping = {"v": False}
     def on_sig(*_):
