@@ -88,7 +88,12 @@ def load(name):
 
 
 def save(proj):
-    """原子落盘：写 tmp 再 rename，中途断电也不会留下半个文件。"""
+    """原子落盘：写 tmp → fsync → rename → fsync 目录。
+
+    光靠 rename 不够：rename 这条元数据先落盘、tmp 的数据块还在页缓存里时断电，
+    醒来就是一个 **0 字节的 project.json**（2026-09-27 机器重启实测，状态全丢，
+    只能靠 audit.log 重建）。所以文件和目录都要 fsync 再换名。
+    """
     os.makedirs(home(proj["name"]), exist_ok=True)
     proj["updated"] = now()
     p = path_of(proj["name"])
@@ -96,7 +101,14 @@ def save(proj):
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(proj, f, ensure_ascii=False, indent=1)
         f.write("\n")
+        f.flush()
+        os.fsync(f.fileno())
     os.replace(tmp, p)
+    d = os.open(os.path.dirname(p), os.O_RDONLY)     # 目录项也要落盘
+    try:
+        os.fsync(d)
+    finally:
+        os.close(d)
     return p
 
 
