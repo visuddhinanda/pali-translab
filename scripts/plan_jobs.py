@@ -25,7 +25,7 @@ import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from _wp import (LAYER_ORDER, book_chapters, chunk_paras, cs_filled,  # noqa: E402
-                 cs_own, cs_set, layer_books, para_chars, paras, plen)
+                 cs_own, cs_set, layer_segments, para_chars, paras, plen)
 import project as pj  # noqa: E402
 
 # 层序与层名统一由 _wp.LAYER_CHAIN 定；论藏是四层，见那里的说明
@@ -481,17 +481,24 @@ def main():
     # related 是**段级**接口（一次约 1.5 秒），全书规划要每章问一次：一卷 150 多次、
     # 四分钟，而且它给的段级对应边界还会错位（实测约一成的章判到相邻章）。
     # 层次归属改由 books 的 tag 判定，章节对应改由 cs_para 判定，两者都是本地计算。
-    books_seen = {}
-    for r in layer_books(args.book):
-        if r["book"] != args.book:
-            books_seen[r["book"]] = (r["layer"], r["title"])
+    # 注释书不一定整本只对一本本文：增支部一本义注含好几集（book 100 = an2+an3+an4），
+    # 所以要连**本集在那本书里的段范围**一起拿，否则会把别集的注释也拉进本项目。
+    segs = layer_segments(args.book)
+    books_seen = {b: (l, t) for b, (l, t, _lo, _hi) in segs.items()}
     if not books_seen:
         print(f"  ⚠ 没找到与 book {args.book} 同卷的注释书——只排本文", file=sys.stderr)
     print(f"{len(mula)} 个本文章｜同卷注释书 "
           + "、".join(f"{b}({l})" for b, (l, _t) in sorted(books_seen.items())),
           file=sys.stderr)
 
-    ctoc = {b: toc_chapters(b) for b in books_seen}
+    ctoc = {}
+    for b, (_l, _t, lo, hi) in segs.items():        # 只留落在本集段范围内的注释章
+        chs = [(max(clo, lo), min(chi, hi), ti) for clo, chi, ti in toc_chapters(b)
+               if chi >= lo and clo <= hi]
+        ctoc[b] = chs
+        if lo > 0 or hi < 10 ** 9:
+            print(f"  book {b} 限定在本集范围 {lo}-{min(hi, chs[-1][1]) if chs else hi}"
+                  f"（{len(chs)} 章）", file=sys.stderr)
     csm = {b: cs_own(b) for b in [args.book] + list(books_seen)}   # 判归属只认正文段自己的 cs
 
     # 2) 每章的 cs 集合 → 注释章的认领者
