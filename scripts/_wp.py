@@ -302,6 +302,39 @@ def book_roots(book):
     return ps or [3]
 
 
+def layer_segments(book):
+    """与 `book` 同卷的各注释书，**连它在这一卷里的段范围**：
+    {注释书号: (layer, title, 起段, 止段)}。
+
+    增支部一本注释书含好几集（book 100 的三行书目分别是 an2/an3/an4），
+    整本拉进来就会把别集的注释也当成本集的——相应部那种一集一本的书不会暴露这个问题。
+    划界靠书目表的 `related_name`：取与本文同族的那一行（an2 ↔ an2_A），
+    止段是同一本书里下一行的段号减一；只有一行就是整本。
+    """
+    rows = all_books()
+    me = next((r for r in rows if r.get("book") == int(book)), None)
+    fam = (me or {}).get("related_name") or ""
+    fam = fam.split("_")[0]
+    out = {}
+    for r in layer_books(book):
+        b = r["book"]
+        if b == int(book):
+            continue
+        same = sorted((x for x in rows if x.get("book") == b
+                       and x.get("paragraph") is not None),
+                      key=lambda x: int(x["paragraph"]))
+        mine = [i for i, x in enumerate(same)
+                if ((x.get("related_name") or "").split("_")[0]) == fam]
+        if not mine or len(same) == 1:
+            out[b] = (r["layer"], r["title"], 0, 10 ** 9)
+            continue
+        i = mine[0]
+        lo = int(same[i]["paragraph"])
+        hi = int(same[i + 1]["paragraph"]) - 1 if i + 1 < len(same) else 10 ** 9
+        out[b] = (r["layer"], r["title"], lo, hi)
+    return out
+
+
 def layer_books(book):
     """与 `book` 同卷的各层书：[{book, layer, title, toc}]，含它自己。
 
