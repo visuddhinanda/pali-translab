@@ -67,7 +67,8 @@ workspace/projects/<name>/export/{章节路径}/{章节名}.md   ← 一章一�
 
 **硬约束**：
 
-- **译文不写本地 json。** 没有 v1/v2/final 文件，channel 里就是最新一版
+- **译文不写本地 json。** 没有 v1/v2/final 文件，channel 里就是最新一版。
+  模型产物缓存（`llm-cache/`）不是译文版本，是**写入的输入**——权威始终只有 channel
 - **写入是覆盖式的**：相同 `(book, paragraph, word_start, word_end, channel)` 的旧句子被替换；
   没提交的坐标原样保留，所以 **revise / harmonize 只提交改动过的句子**，不回传整个 chunk
   （translate 是整段新建，全部提交）
@@ -86,7 +87,12 @@ workspace/projects/<name>/export/{章节路径}/{章节名}.md   ← 一章一�
 - **按 chunk 提交，不逐段孤立处理**：一次把连续若干段交给同一次调用，跨段的术语漂移与
   语体不一致才看得见。最后再由 harmonize 跨各层统一收口
 - **坐标不能编造**：写前用 `wikipali get` 取真实坐标做集合比对，写后独立读回
-- **本地只留过程记录**：审稿意见、总评、术语报告、audit.log —— 这些不是译文
+- **本地只留过程记录**：审稿意见、总评、术语报告、audit.log、模型产物缓存 —— 这些不是译文
+- **模型产物一律落盘，重试复用、不重新生成**：每次模型调用的产物按「任务坐标 + 模型」
+  存进项目的 `llm-cache/`（见 `pipeline_batch.sh:cached_claude`）。重试时先吃缓存，
+  只重做写入那一段。服务端写入 504 把一批打断是最常见的失败，重新生成只会换个说法、
+  不会更对，却要再付一次模型调用。空输出（OAuth 过期、撞额度）不入缓存，否则重跑永远
+  吃到空壳。换模型重跑不吃旧缓存——文件名带模型名
 - 需要修订前后的对照时，先 `/export` 导出快照，再改 channel
 
 ## 三、外部依赖：wikipali 插件
@@ -263,12 +269,14 @@ workspace/
         ├── audit.log             # 本项目的台账（append-only，记 task_id）
         ├── logs/                 # 每条流水线一个日志
         ├── reports/{book}/       # 审稿意见 / 总评 / 术语报告
+        ├── llm-cache/            # 模型产物缓存 <模型>__<任务坐标>.out，重试复用
         ├── export/{章节路径}/    # [起始段号] {章节名}.md
         ├── epub/
         └── <name>.zip            # 发信附件（打包时排除 logs）
 ```
 
-这里**没有 jsonl**——译文在 wikipali。
+这里**没有译文 jsonl**——译文在 wikipali。`llm-cache/` 里的 JSONL 是模型产物留档，
+供重试时重新喂给 `wp_push`，不是译文的另一个版本。
 
 ### project 文件：项目 → 流水线 → 任务
 
