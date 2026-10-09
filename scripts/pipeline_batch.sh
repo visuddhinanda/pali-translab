@@ -62,6 +62,7 @@ CHANNEL=""
 NISSAYA=""
 FORCE=""
 DRYRUN=""
+NO_CACHE=""
 # 余量从这里留：实测模型一次约 100 行 JSONL 就被输出上限截断。复注短句多，
 # 一句约 30 巴利字符，3,500 字符大致对应 110 句上下——比截断线略紧，留出余量。
 CHUNK_CHARS=3500
@@ -91,6 +92,7 @@ while [[ $# -gt 0 ]]; do
         --plan)        PLAN="$2"; shift 2 ;;   # 作业计划 json（plan_jobs.py 产出）
         --job)         JOB="$2";  shift 2 ;;   # 计划里的作业 id
         --nissaya)     NISSAYA="--nissaya"; shift ;;   # 只给复核步骤，translate 永远不给
+        --no-llm-cache) NO_CACHE=1; shift ;;   # 不读不写产物缓存，每步都真调模型
         --force)       FORCE=1; shift ;;
         --dry-run)     DRYRUN="--dry-run"; shift ;;
         *) echo "未知参数: $1" >&2; exit 1 ;;
@@ -119,6 +121,8 @@ else
 fi
 REPORTS="$PROJ_HOME/reports/$BOOK"
 EXPORT_DIR="$PROJ_HOME/export"
+# LLM 产物缓存：每次模型调用的产物都落在这里，重试直接复用（见 cached_claude）
+LLM_CACHE="$PROJ_HOME/llm-cache"
 AUDIT="$PROJ_HOME/audit.log"
 GROUPS_FILE="$PROJ_HOME/.groups_job${JOB:-0}"
 CHUNKS_FILE="$PROJ_HOME/.chunks_job${JOB:-0}"
@@ -241,6 +245,42 @@ run_claude() {
     fi
     cat "$out"
     rm -f "$f" "$out" "$err"
+    return $rc
+}
+
+# ══════════ LLM 产物本地缓存 ══════════
+# 模型产物一律落盘，键是**这一步的任务坐标**（chunk id + 步骤 + 层 book + 段），由调用方给。
+# 重试时先看缓存：命中就把那份产物重新喂给 wp_push，**不再调模型**。
+# 服务端写入 504 把一批打断是最常见的失败，重新生成只会换个说法、不会更对，
+# 还要再花一次模型调用——所以重试复用产物，只重做写入。
+#
+# 只缓存**看起来是产物**的输出（有 JSONL 行或 markdown 标题）。OAuth 过期、撞额度
+# 那类空输出或纯提示文本不入缓存，否则下次重跑会一直吃到空壳，永远好不了。
+# 键里带段范围：translate 补缺句时只译剩下那几段，段变了键就变，不会错拿整批的旧产物。
+cache_path() {
+    # 文件名带模型：换模型重跑是「想要一份新产物」，不该吃到上一个模型的缓存
+    printf '%s/%s__%s.out' "$LLM_CACHE" "$MODEL" \
+        "$(printf '%s' "$1" | tr -c 'A-Za-z0-9._:-' '_')"
+}
+
+cached_claude() {
+    local key="$1" prompt="$2" f tmp rc
+    f="$(cache_path "$key")"
+    if [[ -z "$NO_CACHE" && -s "$f" ]]; then
+        echo "  ♻ 复用缓存产物 ${f##*/}（$(wc -c < "$f") 字节，不再调模型）" >&2
+        cat "$f"
+        return 0
+    fi
+    tmp="$(mktemp)"; rc=0
+    run_claude "$prompt" > "$tmp" || rc=$?
+    # 产物判定与 run_claude 的留档判定同一套：有 JSONL 行或 markdown 标题才算
+    if [[ -z "$NO_CACHE" && $rc -eq 0 ]] \
+       && grep -qE '^[[:space:]]*\{|^[[:space:]]*#' "$tmp"; then
+        mkdir -p "$LLM_CACHE"
+        cp "$tmp" "$f.part" && mv "$f.part" "$f"
+    fi
+    cat "$tmp"
+    rm -f "$tmp"
     return $rc
 }
 
@@ -471,7 +511,7 @@ $(pull_review "$LBOOK" "$CH" || true)
                 : > "$MISS_FILE"
                 # 这条管道的非零退出是**正常控制流**（2 = 缺句），不能让 set -e 掐掉脚本
                 set +e
-                run_claude "$(load_step pali-translate translate)
+                cached_claude "$CHID:translate:$LBOOK:$TODO" "$(load_step pali-translate translate)
 
 $KNOWLEDGE
 
@@ -547,7 +587,7 @@ $SRC
         if has_step review && [[ -n "$REVIEW_SRC" ]] && ! task_done "$CHID:review"; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> review 第 $try/$MAX_TRY 次"
-                if run_claude "$(load_step pali-review review)
+                if cached_claude "$CHID:review:$LBOOK:$CH" "$(load_step pali-review review)
 
 $KNOWLEDGE
 
@@ -573,7 +613,7 @@ $REVIEW_SRC
         if has_step revise && [[ -n "$REVIEW_SRC" ]] && ! task_done "$CHID:revise"; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> revise 第 $try/$MAX_TRY 次"
-                if run_claude "$(load_step pali-revise revise)
+                if cached_claude "$CHID:revise:$LBOOK:$CH" "$(load_step pali-revise revise)
 
 $KNOWLEDGE
 
@@ -661,7 +701,7 @@ $T
         echo ">>> 统稿 $HUID（$KIND，$UCHARS 巴利字符 / $UN 句）"
         UOUT="$(mktemp)"; OK=0
         for ((try = 1; try <= MAX_TRY; try++)); do
-            if run_claude "$(load_step pali-harmonize harmonize)
+            if cached_claude "$HUID" "$(load_step pali-harmonize harmonize)
 
 $KNOWLEDGE
 
@@ -749,7 +789,7 @@ else
                     HN=$(count_mula "$HSRC")
                     [[ "$HN" -eq 0 ]] && continue
                     echo ">>> 统稿分批 $(layer_cn "$LAYER") $LBOOK:${HCH%%,*}-${HCH##*,}（$HN 句）"
-                    run_claude "$(load_step pali-harmonize harmonize)
+                    cached_claude "adhoc.$LBOOK.H:$HCH" "$(load_step pali-harmonize harmonize)
 
     $KNOWLEDGE
 
@@ -776,7 +816,7 @@ else
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> harmonize（跨层）第 $try/$MAX_TRY 次（共 $TOTAL 句）"
                 OUT="$(mktemp)"
-                if run_claude "$(load_step pali-harmonize harmonize)
+                if cached_claude "adhoc.${JOB:-x}.H.all" "$(load_step pali-harmonize harmonize)
 
     $KNOWLEDGE
 
@@ -851,7 +891,7 @@ if has_step evaluate; then
             echo "════════ 评估 $LCN $LBOOK:$FIRST-$LAST ════════"
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> evaluate 第 $try/$MAX_TRY 次"
-                if run_claude "$(load_step pali-evaluate evaluate)
+                if cached_claude "$CHID:evaluate:$LBOOK:$CH" "$(load_step pali-evaluate evaluate)
 
 $KNOWLEDGE
 
