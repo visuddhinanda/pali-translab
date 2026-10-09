@@ -236,9 +236,13 @@ def apply_audit(proj):
             new = RUNNING
         else:
             new = pipe.get("status", PENDING)
-        # PENDING 是「已排队等重跑」（reset-failed 刚退回的），别让旧账把它顶回 FAILED
-        if pipe.get("status") == PENDING and new == FAILED:
-            new = PENDING
+        # PENDING / RUNNING 是**调度器的话**：前者是 reset-failed 刚退回重跑的，
+        # 后者是此刻正在跑的。两者都不能被 audit 里的旧账顶回 FAILED——
+        # 重跑一条失败过的流水线时，它的 task 在新结果写进 audit 之前仍是上次的 fail，
+        # 按 task 推导就会把在跑的作业显示成失败（还会盖掉收割刚写上的 done）。
+        # 作业真失败由守护进程收割时自己写，不走这里。
+        if pipe.get("status") in (PENDING, RUNNING) and new == FAILED:
+            new = pipe["status"]
         if new != pipe.get("status"):
             pipe["status"] = new
             touched += 1
