@@ -18,7 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 硬约束
 
-- **译文只写 wikipali channel，不写本地 json。** 没有 v1/v2/final 文件。用户明确要本地副本时，用 `/export` 导出 markdown（一章一文件，带 YAML frontmatter）。
+- **译文只写 wikipali channel，不写本地 json。** 没有 v1/v2/final 文件。模型产物缓存 `projects/<name>/llm-cache/` 是重试用的输入留档，不是译文版本。用户明确要本地副本时，用 `/export` 导出 markdown（一章一文件，带 YAML frontmatter）。
 - **坐标不能编造。** 写前用 `wikipali get` 取真实坐标比对，写后独立读回核对；条数不符要如实报告，不要说"已全部写入"。
 - **不要擅自创建目录或文件。** 仅在用户明确批准的范围内落盘。
 - **不要把项目特定的内容写进 skill。** Skill 必须零项目依赖（除 wikipali 插件这一外部 CLI），可发布到 skills 市场。
