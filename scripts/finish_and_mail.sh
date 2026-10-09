@@ -37,9 +37,33 @@ EXP="$HOME_DIR/export"
 EPUB="$HOME_DIR/epub"
 mkdir -p "$EXP" "$EPUB"
 
+# 导出**只能**按本项目负责的段范围来。注释书一本含好几集（book 100 = an2+an3+an4），
+# 不给 --from/--to 就是整本导出：同一个 channel 上别的集早翻译过，于是把别集的章
+# 一起导进来、打进 zip、合进 epub、寄出去。范围从 project.json 的 layers 现算
+# （每本书取 min(start)/max(end)），不另外问 API。
+RANGES=$(python3 - "$PJ" <<'PYR'
+import json, sys
+p = json.load(open(sys.argv[1], encoding='utf-8'))
+rng = {}
+for j in p.get('pipelines', []):
+    for L in j.get('layers') or []:          # layers = 本作业负责翻译的层，不含只读的 ref
+        b, lo, hi = str(L['book']), int(L['start']), int(L['end'])
+        o = rng.get(b)
+        rng[b] = (min(o[0], lo), max(o[1], hi)) if o else (lo, hi)
+for b, (lo, hi) in sorted(rng.items(), key=lambda kv: int(kv[0])):
+    print(b, lo, hi)
+PYR
+)
 for B in "${BOOKS[@]}"; do
+    R=$(printf '%s\n' "$RANGES" | awk -v b="$B" '$1==b {print $2, $3}')
+    if [[ -z "$R" ]]; then
+        echo "⚠ book $B 不在 $PROJ 的负责范围里，跳过导出（别集的章不进附件）"
+        continue
+    fi
+    read -r FROM TO <<<"$R"
+    echo "导出 book $B 段 $FROM-$TO"
     python3 scripts/export_markdown.py --book "$B" --channel "$CH" --out "$EXP" \
-        || echo "⚠ 导出 book $B 失败"
+        --from "$FROM" --to "$TO" || echo "⚠ 导出 book $B 失败"
 done
 
 python3 scripts/build_epub.py --root "$EXP" --out "$EPUB" --merge "$PROJ 三层合集" \
