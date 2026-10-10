@@ -16,7 +16,9 @@
   · 每个作业独立日志（workspace/logs/<book>-<start>-<end>.log）
   · 失败自动重试；**连不上或服务端 5xx 不算作业失败**，退回队列并整体退避
   · 启动前与每轮探活；API 挂了就停下等，不空烧 LLM 调用
-  · 优雅停止：`touch workspace/STOP`（或 Ctrl-C / SIGTERM），跑完手头的作业才退出
+  · 优雅停止：`run_daemon.py stop --project <name>`（或 Ctrl-C / SIGTERM），跑完手头的作业才退出。
+    锁、STOP、状态与脚本快照都在 `workspace/projects/<name>/` 下，**几个项目可以同时跑**；
+    `touch workspace/STOP` 是全局开关，一次停掉所有项目
 
 子命令：
     run            跑（默认）
@@ -47,10 +49,21 @@ def logs_dir(name):
 # worker 只往 audit.log 追加，人工操作写 command 字段由这里消费。见 ARCHITECTURE.md。
 # 旧的 task_alloc.csv 已废弃——状态曾同时存在 CSV 与内存两处，手工 reset-failed
 # 被退出中的守护进程用旧内存覆盖了回去。
-LOCK = os.path.join(WORK, "daemon.lock")
-STOP = os.path.join(WORK, "STOP")
-STATUS = os.path.join(WORK, "status.json")
-SNAP = os.path.join(WORK, ".snapshot")     # 流水线脚本的运行时快照
+# 运行时文件**按项目分**：锁、停止开关、状态快照、脚本快照都在 projects/<name>/ 里，
+# 所以几个项目能同时跑、互不干扰。早先这些都在公共 workspace/ 下：锁是全局的，
+# 第二个项目的守护进程直接被拒；快照被后启动的那个覆盖，而前一个的作业正在读它。
+def lock_path(name):   return pj.sub(name, "daemon.lock")
+def stop_path(name):   return pj.sub(name, "STOP")
+def status_path(name): return pj.sub(name, "status.json")
+def snap_dir(name):    return pj.sub(name, ".snapshot")
+
+GLOBAL_STOP = os.path.join(WORK, "STOP")   # 老位置保留一个语义：**所有项目一起停**
+
+
+def stop_requested(name=None):
+    """该收尾了吗——本项目的 STOP，或全局 STOP（所有项目一起停）。"""
+    name = name or PROJ.get("name")
+    return os.path.exists(GLOBAL_STOP) or (bool(name) and os.path.exists(stop_path(name)))
 
 PENDING, RUNNING, DONE, FAILED = "pending", "running", "done", "failed"
 # 任务表用 emoji 标状态，一眼能扫出全书进度
@@ -223,12 +236,12 @@ def api_alive(book, para):
 
 def wait_for_api(book, para, log):
     delay = 60
-    while not os.path.exists(STOP):
+    while not stop_requested():
         if api_alive(book, para):
             return True
         log(f"API 不可用，{delay}s 后重试")
         for _ in range(delay):
-            if os.path.exists(STOP):
+            if stop_requested():
                 return False
             time.sleep(1)
         delay = min(delay * 2, 900)
@@ -258,7 +271,7 @@ def cooldown(seconds, log):
     end = time.time() + seconds
     COOLDOWN_END["v"] = end
     while time.time() < end:
-        if os.path.exists(STOP):
+        if stop_requested():
             return False
         left = int(end - time.time())
         if left % 300 == 0:
@@ -275,14 +288,14 @@ def write_status(jobs, running):
     counts = {}
     for j in jobs:
         counts[j["status"]] = counts.get(j["status"], 0) + 1
-    with open(STATUS, "w", encoding="utf-8") as f:
+    with open(status_path(PROJ["name"]), "w", encoding="utf-8") as f:
         json.dump({"updated": time.strftime("%Y-%m-%d %H:%M:%S"),
                    "counts": counts, "total": len(jobs),
                    "running": [f"{j['book']}:{j['start']}-{j['end']} {j['title']}" for j, _ in running]},
                   f, ensure_ascii=False, indent=2)
 
 
-def snapshot_scripts():
+def snapshot_scripts(name):
     """把流水线脚本复制一份到 .snapshot 再跑。
 
     bash 是按**字节偏移**边读边执行的：源文件在作业运行期间被编辑，
@@ -291,19 +304,20 @@ def snapshot_scripts():
     重启守护进程时生效。
     """
     import shutil
-    os.makedirs(SNAP, exist_ok=True)
-    for name in os.listdir(os.path.join(ROOT, "scripts")):
-        if name.endswith((".sh", ".py")):
-            shutil.copy2(os.path.join(ROOT, "scripts", name), os.path.join(SNAP, name))
-    os.chmod(os.path.join(SNAP, "pipeline_batch.sh"), 0o755)
-    return os.path.join(SNAP, "pipeline_batch.sh")
+    snap = snap_dir(name)
+    os.makedirs(snap, exist_ok=True)
+    for fn in os.listdir(os.path.join(ROOT, "scripts")):
+        if fn.endswith((".sh", ".py")):
+            shutil.copy2(os.path.join(ROOT, "scripts", fn), os.path.join(snap, fn))
+    os.chmod(os.path.join(snap, "pipeline_batch.sh"), 0o755)
+    return os.path.join(snap, "pipeline_batch.sh")
 
 
 def spawn(job, args):
     logs = logs_dir(args.project)
     os.makedirs(logs, exist_ok=True)
     path = os.path.join(logs, f"{job['book']}-{job['start']}-{job['end']}.log")
-    cmd = [os.path.join(SNAP, "pipeline_batch.sh"),
+    cmd = [os.path.join(snap_dir(args.project), "pipeline_batch.sh"),
            str(job["book"]), str(job["start"]), str(job["end"]),
            "--channel", args.channel]
     if args.project:                    # 计划模式：翻译归属已定好，不再各自解析层次
@@ -398,16 +412,18 @@ def refresh_credentials(args):
 
 def cmd_run(args):
     os.makedirs(WORK, exist_ok=True)
-    if os.path.exists(LOCK):
-        pid = open(LOCK).read().strip()
+    lock = lock_path(args.project)
+    if os.path.exists(lock):
+        pid = open(lock).read().strip()
         try:
             os.kill(int(pid), 0)
-            sys.exit(f"已有守护进程在跑（pid {pid}）。要停用：python3 scripts/run_daemon.py stop")
+            sys.exit(f"{args.project} 已有守护进程在跑（pid {pid}）。要停它："
+                     f"python3 scripts/run_daemon.py stop --project {args.project}")
         except (ValueError, ProcessLookupError):
             pass                       # 陈旧锁
-    open(LOCK, "w").write(str(os.getpid()))
-    if os.path.exists(STOP):
-        os.remove(STOP)
+    open(lock, "w").write(str(os.getpid()))
+    if os.path.exists(stop_path(args.project)):
+        os.remove(stop_path(args.project))
     refresh_credentials(args)           # 开跑前刷新署名身份与 access token
 
     stopping = {"v": False}
@@ -419,8 +435,9 @@ def cmd_run(args):
 
     running = []               # [(job, (proc, fh, path))]
     try:
-        snapshot_scripts()
-        log_line("已快照 scripts/ → workspace/.snapshot（跑快照，改源码不影响在跑的作业）")
+        snapshot_scripts(args.project)
+        log_line(f"已快照 scripts/ → {snap_dir(args.project)}"
+                 "（跑快照，改源码不影响在跑的作业）")
         jobs = build_jobs(args.book, args.start, args.end, args.project)
         PROJ["data"]["state"] = "running"
         todo = [j for j in jobs if j["status"] in (PENDING, FAILED) and j["tries"] < args.tries]
@@ -429,7 +446,7 @@ def cmd_run(args):
             return
 
         while True:
-            if os.path.exists(STOP):
+            if stop_requested(args.project):
                 stopping["v"] = True
             if take_command(jobs, args, log_line):
                 stopping["v"] = True
@@ -529,8 +546,8 @@ def cmd_run(args):
                 fh.close()
             except Exception:
                 pass
-        if os.path.exists(LOCK):
-            os.remove(LOCK)
+        if os.path.exists(lock):
+            os.remove(lock)
 
 
 _LAST_EXPORT = {"t": 0}
@@ -587,18 +604,22 @@ def cmd_status(args):
     print(f"\n详细进度：workspace/projects/{p['name']}/project.html")
 
 
-def cmd_stop(_args):
+def cmd_stop(args):
+    """只停这一个项目。要停全部：touch workspace/STOP（全局开关）。"""
     os.makedirs(WORK, exist_ok=True)
-    open(STOP, "w").write("stop\n")
-    print(f"已写 {STOP}——守护进程会跑完手头的作业再退出（可能要几十分钟）")
+    f = stop_path(args.project)
+    open(f, "w").write("stop\n")
+    print(f"已写 {f}——{args.project} 的守护进程会跑完手头的作业再退出（可能要几十分钟）")
+    print(f"别的项目不受影响。要所有项目一起停：touch {GLOBAL_STOP}")
     print("看门狗不受这个开关影响，会继续巡检但不拉起守护进程；"
-          "删掉 STOP 它就把守护进程拉回来。要连看门狗一起停：touch workspace/WATCHDOG_STOP")
+          f"删掉这个文件它就把守护进程拉回来。要连看门狗一起停："
+          f"touch {pj.sub(args.project, 'WATCHDOG_STOP')}")
 
 
 def cmd_reset(args):
     """不直接改状态——写命令，由守护进程消费。守护进程没跑时就地执行。"""
     proj_load(args.project)
-    if os.path.exists(LOCK):
+    if os.path.exists(lock_path(args.project)):
         pj.put_command(args.project, "reset-failed")
         return
     jobs = load_jobs()
