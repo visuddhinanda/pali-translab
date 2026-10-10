@@ -43,7 +43,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-# 守护进程跑的是 workspace/.snapshot 里的副本（见 run_daemon.snapshot_scripts），
+# 守护进程跑的是 workspace/projects/<name>/.snapshot 里的副本（见 run_daemon.snapshot_scripts），
 # 那时 $SCRIPT_DIR/.. 并不是项目根，必须由 PROJECT_ROOT 指定。
 PROJECT_DIR="${PROJECT_ROOT:-$(cd "$SCRIPT_DIR/.." && pwd)}"
 SKILLS="$PROJECT_DIR/.claude/skills"
@@ -306,7 +306,9 @@ echo "解析各层坐标（cs_para）..."
 
 if [[ -n "$PLAN" ]]; then
     # 计划模式：own=1 的组本作业负责翻译，own=0 的只读参考（归别的作业翻译）
-    GROUPS_FILE="$WORK/.groups_job${JOB}"
+    # GROUPS_FILE 用上面按项目算好的那个（$PROJ_HOME/.groups_job<JOB>），
+    # **不要再指回公共 workspace/**：两个项目都有 job 5，会写同一个文件，
+    # 层坐标串台之后可能拿着别的项目的 book 和段去写 channel。
     SCRIPT_DIR="$SCRIPT_DIR" python3 - "$PLAN" "$JOB" "$WANT_LAYERS" > "$GROUPS_FILE" <<'PY'
 import json, sys, os
 sys.path.insert(0, os.environ["SCRIPT_DIR"])
@@ -346,7 +348,7 @@ for lay in job.get("layers", []):
         print(ch["book"], ch["id"], paras)
 PY
 else
-    LAYERS_JSON="$WORK/layers_${BOOK}_${START}-${END}.json"
+    LAYERS_JSON="$PROJ_HOME/layers_${BOOK}_${START}-${END}.json"
     python3 "$SCRIPT_DIR/layers.py" --book "$BOOK" --para "$START-$END" $CHAPTER > "$LAYERS_JSON"
 
     # 每行一个组："层 书号 段列表 父书号(无则 -) 标题 是否本作业翻译"
