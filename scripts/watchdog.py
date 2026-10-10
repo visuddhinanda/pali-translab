@@ -16,7 +16,8 @@
 
     python3 scripts/watchdog.py --interval 600 --channel <uid> --project <name>
 
-停止：`touch workspace/WATCHDOG_STOP`。**看门狗有自己的开关**——守护进程的
+停止：`touch workspace/projects/<name>/WATCHDOG_STOP`（全局 `workspace/WATCHDOG_STOP`
+停掉所有项目的看门狗）。**看门狗有自己的开关**——守护进程的
 `workspace/STOP` 只停守护进程，不停看门狗，否则「优雅重启守护进程」会把守着它的
 东西一起关掉，没人再拉起来。STOP 在的时候看门狗照常巡检，只是不拉守护进程；
 删掉 STOP 它就会把守护进程拉回来。
@@ -32,16 +33,28 @@ sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from _wp import run as wp_run  # noqa: E402
 import run_daemon as rd  # noqa: E402
 
-WATCH_LOG = os.path.join(rd.WORK, "watchdog.log")
-HEALTH = os.path.join(rd.WORK, "health.json")
-WD_LOCK = os.path.join(rd.WORK, "watchdog.lock")
-WD_STOP = os.path.join(rd.WORK, "WATCHDOG_STOP")   # 看门狗自己的停止开关，与 rd.STOP 无关
+# 看门狗的文件也**按项目分**（日志、健康快照、自己的锁与停止开关），
+# 这样每个项目可以有自己的看门狗，日志不混、锁不打架。
+WD = {"project": None}            # main 里定好项目名后，下面的路径才算得出来
+
+
+def wd_file(fn):
+    """项目目录下的看门狗文件；项目还没定（不该发生）时退回公共目录。"""
+    return rd.pj.sub(WD["project"], fn) if WD["project"] else os.path.join(rd.WORK, fn)
+
+
+# 老位置保留一个语义：**所有项目的看门狗一起停**。项目自己的开关只停自己那只。
+GLOBAL_WD_STOP = os.path.join(rd.WORK, "WATCHDOG_STOP")
+
+
+def wd_stopping():
+    return os.path.exists(GLOBAL_WD_STOP) or os.path.exists(wd_file("WATCHDOG_STOP"))
 
 
 def log(msg):
     line = f"[{time.strftime('%m-%d %H:%M:%S')}] {msg}"
     print(line, flush=True)
-    with open(WATCH_LOG, "a", encoding="utf-8") as f:
+    with open(wd_file("watchdog.log"), "a", encoding="utf-8") as f:
         f.write(line + "\n")
 
 
@@ -51,10 +64,11 @@ def pids(pattern):
 
 
 def daemon_alive():
-    if not os.path.exists(rd.LOCK):
+    lock = rd.lock_path(WD["project"])
+    if not os.path.exists(lock):
         return False
     try:
-        os.kill(int(open(rd.LOCK).read().strip()), 0)
+        os.kill(int(open(lock).read().strip()), 0)
         return True
     except (ValueError, ProcessLookupError, PermissionError):
         return False
@@ -62,8 +76,8 @@ def daemon_alive():
 
 def start_daemon(args):
     """拉起守护进程；它自己会把上次残留的 running 复位成 pending。"""
-    if os.path.exists(rd.LOCK):
-        os.remove(rd.LOCK)                     # 陈旧锁
+    if os.path.exists(rd.lock_path(args.project)):
+        os.remove(rd.lock_path(args.project))  # 陈旧锁
     cmd = [sys.executable, os.path.join(rd.ROOT, "scripts", "run_daemon.py"), "run",
            "--book", str(args.book), "--channel", args.channel,
            "--workers", str(args.workers)]
@@ -74,7 +88,7 @@ def start_daemon(args):
     # 认不出的参数原样透传（--model 等）——拉起来的守护进程必须与人手起的那条一致，
     # 否则看门狗一重启就把模型换成了默认值，跑了一夜才发现。
     cmd += args.extra
-    out = open(os.path.join(rd.WORK, "daemon.out"), "a", encoding="utf-8")
+    out = open(wd_file("daemon.out"), "a", encoding="utf-8")
     out.write(f"\n===== watchdog 拉起 {time.strftime('%Y-%m-%d %H:%M:%S')} =====\n")
     out.flush()
     subprocess.Popen(cmd, stdout=out, stderr=subprocess.STDOUT,
@@ -195,18 +209,19 @@ def main():
             sys.exit("要给 --project <name>（可选：" + ", ".join(names) + "）")
         args.project = names[0]
     os.makedirs(rd.WORK, exist_ok=True)
-    if os.path.exists(WD_LOCK):
+    WD["project"] = args.project          # 之后 wd_file() 才指得对
+    if os.path.exists(wd_file("watchdog.lock")):
         try:
-            os.kill(int(open(WD_LOCK).read().strip()), 0)
-            sys.exit("已有看门狗在跑")
+            os.kill(int(open(wd_file("watchdog.lock")).read().strip()), 0)
+            sys.exit(f"{args.project} 已有看门狗在跑")
         except (ValueError, ProcessLookupError):
             pass
-    open(WD_LOCK, "w").write(str(os.getpid()))
+    open(wd_file("watchdog.lock"), "w").write(str(os.getpid()))
 
     last_done, stagnant = -1, 0
     log(f"看门狗启动：每 {args.interval // 60} 分钟巡检一次，卡住阈值 {args.stuck_min} 分钟")
     try:
-        while not os.path.exists(WD_STOP):
+        while not wd_stopping():
             # 看门狗只读项目文件，不写——写者只有守护进程（见 ARCHITECTURE.md）
             rd.proj_load(args.project)
             jobs = rd.load_jobs()
@@ -217,7 +232,7 @@ def main():
 
             # 1) 守护进程死了但还有活没干完
             if not alive and (counts[rd.PENDING] or counts[rd.RUNNING]):
-                if os.path.exists(rd.STOP):
+                if rd.stop_requested(args.project):
                     log("守护进程不在，但 STOP 在——按有意停机处理，不拉起（删掉 STOP 即恢复）")
                 else:
                     start_daemon(args)
@@ -244,7 +259,7 @@ def main():
             # 撞额度时 claude 返回空输出，流水线报「没有抽到 JSONL」——那是环境
             # 造成的空响应，不是代码 bug。守护进程正在冷却时，这一类一律不算系统性。
             cooling = any("撞到额度限制" in l for l in _tail(
-                os.path.join(rd.WORK, "daemon.out"), 4000).splitlines()[-25:])
+                wd_file("daemon.out"), 4000).splitlines()[-25:])
             ENV = ("5xx", "网络", "额度")
             systemic = [e for e in errs
                         if e[0] >= args.err_threshold
@@ -262,7 +277,7 @@ def main():
                    f"❌{counts[rd.FAILED]} / {len(jobs)}"
                    f"｜守护 {'在' if alive else '停'}｜API {'通' if api else '断'}")
             log(msg)
-            with open(HEALTH, "w", encoding="utf-8") as f:
+            with open(wd_file("health.json"), "w", encoding="utf-8") as f:
                 json.dump({"updated": time.strftime("%Y-%m-%d %H:%M:%S"),
                            "counts": {k: counts[k] for k in counts},
                            "total": len(jobs), "daemon": alive, "api": api,
@@ -276,12 +291,12 @@ def main():
                 break
 
             for _ in range(args.interval):
-                if os.path.exists(WD_STOP):
+                if wd_stopping():
                     break
                 time.sleep(1)
     finally:
-        if os.path.exists(WD_LOCK):
-            os.remove(WD_LOCK)
+        if os.path.exists(wd_file("watchdog.lock")):
+            os.remove(wd_file("watchdog.lock"))
         log("看门狗退出")
 
 
