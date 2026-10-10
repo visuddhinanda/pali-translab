@@ -267,6 +267,12 @@ workspace/
         ├── project.json          # 结构 + 任务 + 状态（唯一状态载体）
         ├── project.html          # 给人看的折叠视图（单文件，json 内嵌）
         ├── audit.log             # 本项目的台账（append-only，记 task_id）
+        ├── daemon.lock           # 守护进程单实例锁（**按项目**，所以多项目能并行）
+        ├── STOP                  # 只停这一个项目（全局 workspace/STOP 停全部）
+        ├── WATCHDOG_STOP         # 只停这一个项目的看门狗
+        ├── status.json           # 作业计数快照（给人看）
+        ├── watchdog.log / health.json / watchdog.lock
+        ├── .snapshot/            # 本项目在跑的 scripts 副本（改源码不影响在跑的作业）
         ├── logs/                 # 每条流水线一个日志
         ├── reports/{book}/       # 审稿意见 / 总评 / 术语报告
         ├── llm-cache/            # 模型产物缓存 <模型>__<任务坐标>.out，重试复用
@@ -274,6 +280,13 @@ workspace/
         ├── epub/
         └── <name>.zip            # 发信附件（打包时排除 logs）
 ```
+
+**多项目并行**：守护进程的全部运行时文件（锁、STOP、状态、脚本快照）和看门狗的
+全部文件都在各自的项目目录里，所以 `an-tikanipata` 与 `mn-mulapannasa` 可以同时跑，
+各有自己的守护进程与看门狗，停一个不影响另一个。`workspace/` 下只剩两个全局开关
+（`STOP` / `WATCHDOG_STOP`，一次停掉所有项目）与有意共享的只读缓存
+（`cache_books.json`、`cache_paras_*.json`）和模型现场留档（`logs/raw/`，文件名带
+时间与 pid，不会撞）。
 
 这里**没有译文 jsonl**——译文在 wikipali。`llm-cache/` 里的 JSONL 是模型产物留档，
 供重试时重新喂给 `wp_push`，不是译文的另一个版本。
