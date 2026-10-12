@@ -328,6 +328,12 @@ def spawn(job, args):
         cmd.append("--nissaya")
     if args.dry_run:
         cmd.append("--dry-run")
+    # 计划里写明了做哪些步骤就照它派（plan_jobs --steps）。不透传的话执行器会按
+    # 自己的默认全跑一遍，跑出来的步骤却没有对应 task——白花一次模型调用，
+    # rollup 也等不到它。人手在命令行给了 --steps 就以人手的为准。
+    steps = (PROJ.get("data") or {}).get("steps")
+    if steps and not any(a == "--steps" or a.startswith("--steps=") for a in args.extra):
+        cmd += ["--steps", ",".join(steps)]
     cmd += args.extra
     f = open(path, "a", encoding="utf-8")
     f.write(f"\n===== {time.strftime('%Y-%m-%d %H:%M:%S')} 第 {job['tries'] + 1} 次 =====\n")
