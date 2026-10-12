@@ -218,6 +218,10 @@ def harmonize_plan(job, entries, csm, chm, th):
 # 一个 chunk 上按顺序要做的步骤。evaluate 排在 harmonize 之后（评的必须是定稿），
 # 所以它不与 translate/review/revise 同批，见 tasks_of_pipeline。
 CHUNK_STEPS = ("translate", "review", "revise")
+# 流水线的全部步骤，按执行顺序。--steps 只能从这里挑子集：**计划里没有的步骤
+# 执行器也不会跑**（steps 写进 project 文件，守护进程派发时透传给 pipeline_batch），
+# 否则跑了却没有对应 task，白花一次模型调用，rollup 也等不到它。
+ALL_STEPS = ("translate", "review", "revise", "harmonize", "evaluate", "export")
 
 
 def layer_node(jid, k, e, chm, args):
@@ -243,7 +247,7 @@ def layer_node(jid, k, e, chm, args):
             "chunks": chunks}
 
 
-def tasks_of_pipeline(jid, layers, harm):
+def tasks_of_pipeline(jid, layers, harm, steps=ALL_STEPS):
     """一条流水线的 task 列表，**按执行顺序**排好。
 
     顺序即依赖：前一个了结（done 或 skipped）才轮到下一个。分四段——
@@ -254,24 +258,26 @@ def tasks_of_pipeline(jid, layers, harm):
     for lay in layers:
         for ch in lay["chunks"]:
             for step in CHUNK_STEPS:
+                if step not in steps:
+                    continue
                 out.append({"id": f'{ch["id"]}:{step}', "step": step,
                             "layer": lay["layer"], "book": ch["book"],
                             "start": ch["start"], "end": ch["end"],
                             "chars": ch["chars"] if step == "translate" else 0,
                             "status": pj.PENDING, "detail": ""})
-    for c in harm["cross"] + harm["layer"]:
+    for c in (harm["cross"] + harm["layer"] if "harmonize" in steps else []):
         out.append({"id": c["id"], "step": "harmonize", "kind": c["kind"],
                     "layer": c.get("layer", ""), "book": c.get("book"),
                     "start": c.get("start"), "end": c.get("end"),
                     "layers": c.get("layers"), "chars": 0,
                     "status": pj.PENDING, "detail": ""})
-    for lay in layers:
+    for lay in (layers if "evaluate" in steps else []):
         for ch in lay["chunks"]:
             out.append({"id": f'{ch["id"]}:evaluate', "step": "evaluate",
                         "layer": lay["layer"], "book": ch["book"],
                         "start": ch["start"], "end": ch["end"], "chars": 0,
                         "status": pj.PENDING, "detail": ""})
-    for lay in layers:
+    for lay in (layers if "export" in steps else []):
         out.append({"id": f'{jid}.{lay["book"]}:export', "step": "export",
                     "layer": lay["layer"], "book": lay["book"],
                     "start": lay["start"], "end": lay["end"], "chars": 0,
@@ -395,8 +401,21 @@ def merge_small(jobs, mula, levels, chm, budget, max_paras):
     return out
 
 
+def parse_steps(raw):
+    """--steps 的值 → 按 ALL_STEPS 的执行顺序排好的子集。顺序由这里定，不由用户的书写顺序定。"""
+    want = {x.strip() for x in raw.split(",") if x.strip()}
+    bad = want - set(ALL_STEPS)
+    if bad:
+        sys.exit(f"--steps 里有认不出的步骤：{', '.join(sorted(bad))}"
+                 f"（可选：{', '.join(ALL_STEPS)}）")
+    if not want:
+        sys.exit("--steps 不能为空")
+    return tuple(s for s in ALL_STEPS if s in want)
+
+
 def build_project(args, jobs, books_seen, channel):
     """把作业计划物化成 project 文件——结构、体量、harmonize 计划、状态全在里面。"""
+    steps = parse_steps(args.steps)
     bl = {e["book"] for j in jobs for e in entries_of(j)}
     csm = {b: cs_filled(b) for b in bl}
     chm = {b: para_chars(b) for b in bl}
@@ -423,7 +442,7 @@ def build_project(args, jobs, books_seen, channel):
             "ref": j.get("ref", []),
             "layers": layers,          # 结构（层 → 分块边界），执行器照它取原文
             "harmonize": harm,
-            "tasks": tasks_of_pipeline(j["id"], layers, harm),   # 状态只在这里
+            "tasks": tasks_of_pipeline(j["id"], layers, harm, steps),   # 状态只在这里
         })
 
     proj = {
@@ -432,6 +451,9 @@ def build_project(args, jobs, books_seen, channel):
         "created": pj.now(), "updated": pj.now(),
         "book": args.book, "channel": channel, "method": "default",
         "state": "idle", "command": None,
+        # 这条流水线做哪些步骤。守护进程派发时透传成 pipeline_batch 的 --steps，
+        # 执行器与计划因此永远一致。
+        "steps": list(steps),
         "thresholds": th,
         "chunking": {"chunk_chars": args.chunk_chars, "max_paras": args.max_paras,
                      "merge_small": not args.no_merge},
@@ -464,6 +486,10 @@ def main():
     ap.add_argument("--no-merge", action="store_true", dest="no_merge",
                     help="不合并小章节（一章一作业，旧行为；对照用）")
     ap.add_argument("--channel", default="", help="写进项目文件的目标 channel uid")
+    ap.add_argument("--steps", default=",".join(ALL_STEPS),
+                    help="这个项目做哪些步骤（逗号分隔，顺序不论）。"
+                         "计划里没有的步骤执行器也不会跑，例如不要总评："
+                         "--steps translate,review,revise,harmonize,export")
     ap.add_argument("--csv", default="",
                     help="任务表 csv 落盘路径；跑之前先出这张表，守护进程再逐条改状态")
     args = ap.parse_args()
