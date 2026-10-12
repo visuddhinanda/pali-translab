@@ -313,6 +313,11 @@ project → pipelines[] → tasks[]
   错位一两段，task 编号也就对不上
 - `harmonize` 在规划期按 `cs_para` 算好体量并定好走法（direct / cross+layer / layer-only），
   见 `WORKFLOW.md`「harmonize 的规模分级」
+- **做哪些步骤由规划期定**：`plan_jobs --steps`（默认全六步）决定生成哪些 task，并记在
+  project 的 `steps` 字段；守护进程派发时把它透传成 `pipeline_batch --steps`。
+  两边因此永远一致——计划里没有的步骤执行器不会跑（跑了也没有对应 task，白花一次
+  模型调用，rollup 还会一直等它）。例：验收交给人工时 `--steps
+  translate,review,revise,harmonize,export`，不出总评
 
 两条硬规矩：
 
