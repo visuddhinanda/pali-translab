@@ -281,6 +281,11 @@ workspace/
         └── <name>.zip            # 发信附件（打包时排除 logs）
 ```
 
+**句数是分块的真约束**：模型一次吐约 100 行 JSONL 就被输出上限截断，截断一次整块白跑。
+真实句数由句子表（`pali_sentences`）一次性离线导出到 `workspace/cache_sent_counts.csv`
+（`book,paragraph,sentences`，跨项目共用），字符数只是它的代理。没有这份数据时规划器
+退回「字符数 + 段数」的老办法并出声提醒。
+
 **多项目并行**：守护进程的全部运行时文件（锁、STOP、状态、脚本快照）和看门狗的
 全部文件都在各自的项目目录里，所以 `an-tikanipata` 与 `mn-mulapannasa` 可以同时跑，
 各有自己的守护进程与看门狗，停一个不影响另一个。`workspace/` 下只剩两个全局开关
@@ -313,7 +318,19 @@ project → pipelines[] → tasks[]
   错位一两段，task 编号也就对不上
 - `harmonize` 在规划期按 `cs_para` 算好体量并定好走法（direct / cross+layer / layer-only），
   见 `WORKFLOW.md`「harmonize 的规模分级」
-- **做哪些步骤由规划期定**：`plan_jobs --steps`（默认全六步）决定生成哪些 task，并记在
+- **两种规划器，两种调度单位**：
+  - `plan_jobs.py`（**schema 2**）——流水线 = 一章 × 各层，层间对齐，内部串行跑完全部步骤，
+    流水线之间并行。长部那种大章书合适。
+  - `plan_scan.py`（**schema 3**）——各层**各自**从上到下扫章切块（不切断章，单章超限才章内
+    按段切），三层的块互不相干；统稿按 `cs_para` 跨层成组，与块无关；排班按**阶段**推进
+    （`mula:translate → mula:review → mula:revise → atthakatha:translate → …
+    → harmonize → export`）。小经文多的书（增支部、相應部）靠它把块数减一半以上：
+    六集 279 块 → 132 块、1132 task → 447 task。阶段内的 task 同类，连着跑吃得到
+    prompt 缓存；层间是硬屏障——注释层 translate 要注入父层**定稿**译文。
+    一个阶段里只剩重试用尽的失败 task 时**带伤前进**，不卡住后面的步骤。
+  - 执行器一个：`pipeline_batch.sh`，`--job` 跑 schema 2 的一条流水线，`--task` 跑
+    schema 3 的一个 task，提示词是同一份（`emit_translate` 等五个函数）。
+- **做哪些步骤由规划期定**：`--steps`（默认全六步）决定生成哪些 task，并记在
   project 的 `steps` 字段；守护进程派发时把它透传成 `pipeline_batch --steps`。
   两边因此永远一致——计划里没有的步骤执行器不会跑（跑了也没有对应 task，白花一次
   模型调用，rollup 还会一直等它）。例：验收交给人工时 `--steps
