@@ -194,25 +194,64 @@ def para_chars(book):
     return {x["paragraph"]: plen(x) for x in paras(book)}
 
 
-def chunk_paras(book, plist, budget=3500, max_paras=12):
-    """按巴利字符数与段数切 chunk。**纯本地计算，不调任何接口。**
+# 句子表（pali_sentences）的离线导出：book,paragraph,sentences。
+# 真实句数是分块的**正主**——模型一次吐约 100 行 JSONL 就被输出上限截断，
+# 截断一次整块白跑。字符数只是它的代理，相关但不精确（偈颂句短、长行注释句长）。
+# 这份数据从数据库一次导出（见 README 的 SQL），放在这里跨项目共用；
+# 没有它就退回「字符数 + 段数」的老办法。
+SENT_CSV = "workspace/cache_sent_counts.csv"
+_SENTS_CACHE = {}
 
-    句数不单独管：字符多的段句子必然多，字符少的段句子必然少，两者高度相关，
-    个别例外用**余量**兜住即可。为数句数逐段调 `get`，一本书上百次请求——
-    规划期绝对不该做那种大规模调用。
-    余量就是 budget 本身：实测模型一次约 100 行 JSONL 就被输出上限截断，
-    复注一句约 30 巴利字符，3,500 字符大致对应 110 句上下。
+
+def para_sents(book):
+    """{段号: 句子数}——来自句子表的离线导出；没有那份 CSV 就返回 {}。"""
+    key = int(book)
+    if not _SENTS_CACHE:
+        if not os.path.exists(SENT_CSV):
+            _SENTS_CACHE["_missing"] = True
+            return {}
+        import csv as _csv
+        with open(SENT_CSV, encoding="utf-8-sig", newline="") as f:
+            for row in _csv.DictReader(f):
+                b = int(row["book"])
+                _SENTS_CACHE.setdefault(b, {})[int(row["paragraph"])] = int(row["sentences"])
+    return _SENTS_CACHE.get(key, {})
+
+
+def have_sent_counts():
+    """句数数据在不在——规划期据此决定要不要再用段数兜底。"""
+    para_sents(0)                     # 触发一次加载
+    return not _SENTS_CACHE.get("_missing", False)
+
+
+def chunk_paras(book, plist, budget=3500, max_paras=12, max_sents=0):
+    """按巴利字符数、句数与段数切 chunk。**纯本地计算，不调任何接口。**
+
+    三条上限，哪条先到按哪条切：
+      · budget      本块的巴利字符数上限
+      · max_sents   本块的句数上限（>0 且有句数数据时生效）。这是真约束——
+                    模型一次约 100 行 JSONL 就被输出上限截断
+      · max_paras   段数上限，<=0 为不限。**只在没有句数数据时**才需要它兜底：
+                    那时句数无从约束，段数是唯一能防住「块里句子太多」的粗代理
+
+    单段自己就超限（长偈颂整段上百句）时不拆段——段是坐标的最小单位，拆了
+    坐标就对不上。那种段单独成块，执行器自己分几次调用写同一个 task。
     """
     plist = [int(p) for p in plist]
     chars = para_chars(book)
-    chunks, cur, size = [], [], 0
+    sents = para_sents(book) if max_sents > 0 else {}
+    chunks, cur, size, nsent = [], [], 0, 0
     for p in plist:
         n = chars.get(p, 0)
         if n == 0:
             continue
-        if cur and (size + n > budget or len(cur) >= max_paras):
-            chunks.append(cur); cur, size = [], 0
-        cur.append(p); size += n
+        sn = sents.get(p, 0)
+        full = (size + n > budget
+                or (max_paras > 0 and len(cur) >= max_paras)
+                or (max_sents > 0 and sn and nsent + sn > max_sents))
+        if cur and full:
+            chunks.append(cur); cur, size, nsent = [], 0, 0
+        cur.append(p); size += n; nsent += sn
     if cur:
         chunks.append(cur)
     return chunks
