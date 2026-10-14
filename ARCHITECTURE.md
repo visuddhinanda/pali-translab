@@ -322,9 +322,13 @@ project → pipelines[] → tasks[]
   - `plan_jobs.py`（**schema 2**）——流水线 = 一章 × 各层，层间对齐，内部串行跑完全部步骤，
     流水线之间并行。长部那种大章书合适。
   - `plan_scan.py`（**schema 3**）——各层**各自**从上到下扫章切块（不切断章，单章超限才章内
-    按段切），三层的块互不相干；统稿按 `cs_para` 跨层成组，与块无关；排班按**阶段**推进
-    （`mula:translate → mula:review → mula:revise → atthakatha:translate → …
-    → harmonize → export`）。小经文多的书（增支部、相應部）靠它把块数减一半以上：
+    按段切），三层的块互不相干；统稿按 `cs_para` 跨层成组，与块无关；排班按**阶段**推进，
+    阶段是**步骤优先**的（`translate → review → revise → harmonize → export`）：
+    一个步骤把各层连续做完（translate 段里本文 → 义注 → 复注），再进下一个步骤。
+    层优先（本文 t→r→r 走完才开义注）的好处是注释层开译时父层已定稿，代价是同一步骤
+    被切成三段、review 也看不到三层的对应关系；步骤优先反过来——注释层 translate 注入的
+    父层译文**只是 translate 版、尚未复核**，对不齐的地方留给 review（那时三层译文都在
+    channel 上）与 harmonize 收拾。小经文多的书（增支部、相應部）靠它把块数减一半以上：
     六集 279 块 → 132 块、1132 task → 447 task。
     **派发是一条队列，不是阶段屏障**：task 在计划里按阶段顺序排好，worker 空出来就领
     队列里第一个「前置都已了结」的 task。于是同类连着跑、吃得到 prompt 缓存，
@@ -332,7 +336,7 @@ project → pipelines[] → tasks[]
     （实测 447 个 task、3 并发跑满 149 个时间单位，正好是理论下限）。
     能不能领由 **task 的 `needs` 表**说话，规划期就算死（`plan_scan.build_needs`）：
     同块 translate→review→revise 串行；注释层某块开译前，父层对照范围覆盖的父层块
-    必须定稿；统稿单元依赖它 spans 覆盖的各层块；导出依赖本层全部统稿。
+    必须**已经译出**；统稿单元依赖它 spans 覆盖的各层块定稿；导出依赖本层全部统稿。
     依赖查表比阶段屏障严——某块 translate 失败退回队列重跑时，它的 review 已经排在
     后面，只有查表才知道还不能做。前置**终局失败**（重试用尽）则放行，
     不让一个失败的前置把整条队列堵死（执行器自己判断 channel 上有没有译文，没有就记 skip）。
