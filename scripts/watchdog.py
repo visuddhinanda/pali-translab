@@ -58,6 +58,26 @@ def log(msg):
         f.write(line + "\n")
 
 
+def unit_log(project, j):
+    """这条调度单位的日志路径：schema 3 按 task id，schema 2 按作业坐标。"""
+    if "stage" in j:
+        return os.path.join(rd.logs_dir(project), rd.task_log_name(j["id"]))
+    return os.path.join(rd.logs_dir(project), f"{j['book']}-{j['start']}-{j['end']}.log")
+
+
+def unit_pat(j):
+    """找它的子进程用的 pgrep 模式。"""
+    if "stage" in j:
+        return f'--task {j["id"]}'
+    return f"pipeline_batch.sh {j['book']} {j['start']} {j['end']}"
+
+
+def unit_name(j):
+    if "stage" in j:
+        return f'{j["id"]} {j.get("title", "")}'
+    return f"{j['book']}:{j['start']}-{j['end']} {j.get('title', '')}"
+
+
 def pids(pattern):
     r = subprocess.run(["pgrep", "-f", pattern], capture_output=True, text=True)
     return [int(x) for x in r.stdout.split()] if r.returncode == 0 else []
@@ -132,7 +152,7 @@ def scan_failures(jobs, project, since_min=180, top=6):
     now = time.time()
     hits = {}
     for j in jobs:
-        path = os.path.join(rd.logs_dir(project), f"{j['book']}-{j['start']}-{j['end']}.log")
+        path = unit_log(project, j)
         if not os.path.exists(path):
             continue
         if (now - os.path.getmtime(path)) / 60 > since_min:
@@ -166,7 +186,7 @@ def stuck_jobs(jobs, project, stuck_min):
     for j in jobs:
         if j["status"] != rd.RUNNING:
             continue
-        path = os.path.join(rd.logs_dir(project), f"{j['book']}-{j['start']}-{j['end']}.log")
+        path = unit_log(project, j)
         if not os.path.exists(path):
             continue
         idle = (now - os.path.getmtime(path)) / 60
@@ -177,7 +197,7 @@ def stuck_jobs(jobs, project, stuck_min):
 
 def kill_job(j):
     """杀掉这个作业的流水线子进程；守护进程会收割并按失败退回队列。"""
-    pat = f"pipeline_batch.sh {j['book']} {j['start']} {j['end']}"
+    pat = unit_pat(j)
     killed = 0
     for pid in pids(pat):
         try:
@@ -224,7 +244,10 @@ def main():
         while not wd_stopping():
             # 看门狗只读项目文件，不写——写者只有守护进程（见 ARCHITECTURE.md）
             rd.proj_load(args.project)
-            jobs = rd.load_jobs()
+            # schema 3 的调度单位是 task，schema 2 是流水线——两边的字段都有 status，
+            # 下面的计数、卡住检测、失败聚类因此可以一视同仁
+            jobs = (rd.scan_tasks(rd.PROJ["data"]) if rd.pj.is_scan(rd.PROJ["data"])
+                    else rd.load_jobs())
             counts = {k: sum(1 for j in jobs if j["status"] == k)
                       for k in (rd.DONE, rd.RUNNING, rd.PENDING, rd.FAILED)}
             done, alive = counts[rd.DONE], daemon_alive()
@@ -241,8 +264,8 @@ def main():
             # 2) 卡住的作业
             for j, path, idle in stuck_jobs(jobs, args.project, args.stuck_min):
                 n = kill_job(j)
-                log(f"⚠ 卡住 {args.book}:{j['start']}-{j['end']}「{j['title']}」"
-                    f"日志静默 {idle:.0f} 分钟，已杀 {n} 个进程，交给守护进程重排")
+                log(f"⚠ 卡住 {unit_name(j)}：日志静默 {idle:.0f} 分钟，"
+                    f"已杀 {n} 个进程，交给守护进程重排")
 
             # 3) 长时间零进展
             if done == last_done and counts[rd.RUNNING]:
