@@ -24,8 +24,13 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import (LAYER_ORDER, book_chapters, chunk_paras, cs_filled,  # noqa: E402
-                 cs_own, cs_set, layer_segments, para_chars, paras, plen)
+from _wp import (LAYER_ORDER, SENT_CSV, book_chapters, chunk_paras,  # noqa: E402
+                 cs_filled, cs_own, cs_set, have_sent_counts, layer_segments,
+                 para_chars, para_sents, paras, plen)
+
+
+def wp_sent_csv():
+    return SENT_CSV
 import project as pj  # noqa: E402
 
 # 层序与层名统一由 _wp.LAYER_CHAIN 定；论藏是四层，见那里的说明
@@ -235,11 +240,13 @@ def layer_node(jid, k, e, chm, args):
     plist = list(range(e["start"], e["end"] + 1))
     chunks = []
     for n, ps in enumerate(chunk_paras(e["book"], plist, args.chunk_chars,
-                                       args.max_paras), 1):
+                                       args.max_paras, args.max_sents), 1):
+        snm = para_sents(e["book"])
         chunks.append({"id": f'{jid}.{k}.{n}', "kind": "chunk", "book": e["book"],
                        "layer": e["layer"],
                        "start": ps[0], "end": ps[-1], "paras": len(ps),
-                       "chars": sum(chm[e["book"]].get(p, 0) for p in ps)})
+                       "chars": sum(chm[e["book"]].get(p, 0) for p in ps),
+                       "sents": sum(snm.get(p, 0) for p in ps)})
     return {"layer": e["layer"], "layer_cn": LAYER_CN.get(e["layer"], e["layer"]),
             "book": e["book"], "start": e["start"], "end": e["end"],
             "title": e.get("title", ""), "paras": len(plist),
@@ -309,15 +316,17 @@ def coalesce(entries):
     return out
 
 
-def merge_small(jobs, mula, levels, chm, budget, max_paras):
+def merge_small(jobs, mula, levels, chm, budget, max_paras, max_sents=0):
     """同一父章节下相邻的小章节并成一个作业，省掉逐章逐 chunk 的固定开销。
 
     chunk 出不了作业（它在作业的层片段内部切），所以合并只能做在作业这一级。
     规则——宁可少并，不许并出界：
       · 只并「子章节全是叶子」的父章节范围内的章（含父章节自己的标题章），
         不跨父章节，品与品、相應与相應的边界原样保留；
-      · 并进来之后，每本书的合计仍须 ≤ budget 字符、≤ max_paras 个有字段——
-        即合并后每层恰好还是一个 chunk，不会因合并而多切或超上限；
+      · 并进来之后，每本书的合计仍须守住分块的那几条上限（字符、句数、段数）——
+        即合并后每层恰好还是一个 chunk，不会因合并而多切或超上限。
+        **三条上限要与 chunk_paras 用的完全一致**，否则合出来的作业一跑就被重新切成
+        两块，task 编号与计划错位；
       · 单章就超限的大章永远独来独往，所以长部这类大章节书的计划与合并前逐字相同。
     """
     n = len(mula)
@@ -342,25 +351,30 @@ def merge_small(jobs, mula, levels, chm, budget, max_paras):
     def size(job):
         acc = {}
         for e in entries_of(job):
-            got = acc.setdefault(e["book"], [0, 0])
+            got = acc.setdefault(e["book"], [0, 0, 0])
+            snm = para_sents(e["book"])
             for p in range(e["start"], e["end"] + 1):
                 c = chm[e["book"]].get(p, 0)
                 if c:
                     got[0] += c
                     got[1] += 1
+                    got[2] += snm.get(p, 0)
         return acc
 
     def fits(acc):
-        return all(c <= budget and k <= max_paras for c, k in acc.values())
+        return all(c <= budget
+                   and (max_paras <= 0 or k <= max_paras)
+                   and (max_sents <= 0 or not sn or sn <= max_sents)
+                   for c, k, sn in acc.values())
 
     groups, cur, cur_key, cur_size = [], [], None, {}
     for i, job in enumerate(jobs):             # jobs 与 mula 一一对应、同序
         k, sz = key(i), size(job)
         if cur and k is not None and k == cur_key:
             merged = dict(cur_size)
-            for b, (c, m) in sz.items():
-                c0, m0 = merged.get(b, (0, 0))
-                merged[b] = (c0 + c, m0 + m)
+            for b, (c, m, sn) in sz.items():
+                c0, m0, s0 = merged.get(b, (0, 0, 0))
+                merged[b] = (c0 + c, m0 + m, s0 + sn)
             if fits(merged):
                 cur.append(job); cur_size = merged
                 continue
@@ -401,6 +415,13 @@ def merge_small(jobs, mula, levels, chm, budget, max_paras):
     return out
 
 
+def limits_text(args):
+    """分块上限的人话版——规划日志与任务表都用它，免得说一套做一套。"""
+    return (f"≤{args.chunk_chars:,} 字符"
+            + (f" / ≤{args.max_sents} 句" if args.max_sents > 0 and have_sent_counts() else "")
+            + (f" / ≤{args.max_paras} 段" if args.max_paras > 0 else ""))
+
+
 def parse_steps(raw):
     """--steps 的值 → 按 ALL_STEPS 的执行顺序排好的子集。顺序由这里定，不由用户的书写顺序定。"""
     want = {x.strip() for x in raw.split(",") if x.strip()}
@@ -421,7 +442,7 @@ def build_project(args, jobs, books_seen, channel):
     chm = {b: para_chars(b) for b in bl}
     th = dict(pj.THRESHOLDS)
 
-    th_chunk = f"≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段"
+    th_chunk = limits_text(args)
     out_jobs, modes = [], {"direct": 0, "cross+layer": 0, "layer-only": 0}
     for j in jobs:
         ents = entries_of(j)
@@ -455,8 +476,9 @@ def build_project(args, jobs, books_seen, channel):
         # 执行器与计划因此永远一致。
         "steps": list(steps),
         "thresholds": th,
-        "chunking": {"chunk_chars": args.chunk_chars, "max_paras": args.max_paras,
-                     "merge_small": not args.no_merge},
+        "chunking": {"chunk_chars": args.chunk_chars, "max_sents": args.max_sents,
+                     "max_paras": args.max_paras, "merge_small": not args.no_merge,
+                     "sent_counts": have_sent_counts()},
         "books": {str(b): {"layer": l, "title": t} for b, (l, t) in books_seen.items()},
         "pipelines": out_jobs,
     }
@@ -478,11 +500,15 @@ def main():
     ap.add_argument("--project", default="",
                     help="项目名：产出 workspace/projects/<name>/project.json（含任务与 harmonize 计划）")
     ap.add_argument("--title", default="", help="项目标题，给人看的")
-    ap.add_argument("--chunk-chars", type=int, default=3500, dest="chunk_chars",
-                    help="分块的巴利字符上限（与 pipeline_batch.sh 同名参数一致）。"
-                         "余量从这里留：模型一次约 100 行 JSONL 就被截断，一句约 30 字符")
-    ap.add_argument("--max-paras", type=int, default=12, dest="max_paras",
-                    help="分块的段数上限")
+    ap.add_argument("--chunk-chars", type=int, default=5000, dest="chunk_chars",
+                    help="分块的巴利字符上限")
+    ap.add_argument("--max-sents", type=int, default=80, dest="max_sents",
+                    help="分块的句数上限（真约束：模型一次约 100 行 JSONL 就被截断）。"
+                         "要 workspace/cache_sent_counts.csv（句子表的离线导出）；"
+                         "没有那份数据时这项不生效，改用段数兜底")
+    ap.add_argument("--max-paras", type=int, default=0, dest="max_paras",
+                    help="分块的段数上限，0 为不限。只在**没有句数数据**时需要它兜底"
+                         "（缺数据且未显式给值时自动按 12）")
     ap.add_argument("--no-merge", action="store_true", dest="no_merge",
                     help="不合并小章节（一章一作业，旧行为；对照用）")
     ap.add_argument("--channel", default="", help="写进项目文件的目标 channel uid")
@@ -493,6 +519,13 @@ def main():
     ap.add_argument("--csv", default="",
                     help="任务表 csv 落盘路径；跑之前先出这张表，守护进程再逐条改状态")
     args = ap.parse_args()
+    # 句数是分块的真约束；没有那份离线数据时，退回用段数兜底（旧行为），
+    # 并说明清楚——不然会拿 5,000 字符不限段地切，块里句子可能上百、必被截断。
+    if not have_sent_counts():
+        if args.max_paras <= 0:
+            args.max_paras = 12
+        print(f"  ⚠ 没有 {wp_sent_csv()}（句子表的离线导出），"
+              f"句数上限不生效，改用 ≤{args.max_paras} 段兜底", file=sys.stderr)
 
     mula = toc_chapters(args.book)
     mula = [(lo, hi, t) for lo, hi, t in mula
@@ -601,10 +634,9 @@ def main():
         before = len(jobs)
         chm_all = {b: para_chars(b) for b in [args.book] + list(books_seen)}
         jobs = merge_small(jobs, mula, chapter_levels(args.book), chm_all,
-                           args.chunk_chars, args.max_paras)
+                           args.chunk_chars, args.max_paras, args.max_sents)
         print(f"  小章合并：{before} 章 → {len(jobs)} 个作业"
-              f"（每层合计 ≤{args.chunk_chars:,} 字符 / ≤{args.max_paras} 段，不跨父章节）",
-              file=sys.stderr)
+              f"（每层合计 {limits_text(args)}，不跨父章节）", file=sys.stderr)
 
     # ── 5) 前置作业：注释书里与本文无对应的开头部分 ──────────────────────
     # 注释书从 level=1 起就是本书的一部分（序论 Ganthārambhakathā、Nidānakathā、
