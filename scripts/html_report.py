@@ -157,7 +157,43 @@ def _esc(s):
     return html.escape(str(s), quote=False)
 
 
+def _as_view(proj):
+    """schema 3 的项目**按阶段分组**，套进 schema 2 的视图结构——只为显示，不落盘。
+
+    页面的折叠树本来是「流水线 → task」两层；schema 3 没有流水线，但有阶段表，
+    一个阶段正好是一组同类 task，层级与读法都对得上，所以视图不必另写一套。
+    """
+    if proj.get("schema") != 3:
+        return proj
+    SETTLED = ("done", "skipped")
+    by = {}
+    for t in proj.get("tasks") or []:
+        by.setdefault(t.get("stage", ""), []).append(t)
+    pipes = []
+    for st in proj.get("stages") or []:
+        ts = by.get(st["id"], [])
+        c = {}
+        for t in ts:
+            c[t.get("status", "pending")] = c.get(t.get("status", "pending"), 0) + 1
+        nset = sum(c.get(k, 0) for k in SETTLED)
+        status = ("done" if ts and nset == len(ts) else
+                  "running" if c.get("running") else
+                  "failed" if c.get("failed") else "pending")
+        began = min((t.get("began") or "9" for t in ts), default="")
+        ended = max((t.get("ended") or "" for t in ts), default="")
+        pipes.append({"id": st["id"], "title": f'{st["id"]}（{len(ts)} 个 task）',
+                      "status": status, "tasks": ts, "tries": 0,
+                      "began": "" if began == "9" else began, "ended": ended,
+                      "chars": sum(t.get("chars", 0) for t in ts),
+                      "note": st.get("layer", "")})
+    v = dict(proj)
+    v["pipelines"] = pipes
+    v.pop("tasks", None)              # 已经挂到各阶段下，别在页面里存两份
+    return v
+
+
 def render_project(proj):
+    proj = _as_view(proj)
     jobs = proj.get("pipelines") or []
     us = [t for j in jobs for t in (j.get("tasks") or [])]
     SETTLED = ("done", "skipped")
@@ -181,7 +217,7 @@ def render_project(proj):
    · channel <code>{_esc(proj.get('channel', ''))}</code> · 更新于 {_esc(proj.get('updated', ''))}</p>
 </header>
 <div class="stats">
-  <div class="stat"><b>{done_jobs} / {len(jobs)}</b><span>流水线</span></div>
+  <div class="stat"><b>{done_jobs} / {len(jobs)}</b><span>{'阶段' if proj.get('schema') == 3 else '流水线'}</span></div>
   <div class="stat"><b>{100.0 * done_chars / (chars or 1):.1f}%</b><span>翻译（按巴利字符）</span></div>
   <div class="stat"><b>{hs_done} / {len(hs)}</b><span>统稿单元</span></div>
   <div class="stat"><b>{chars:,}</b><span>巴利字符 · {len(us)} 个任务</span></div>
