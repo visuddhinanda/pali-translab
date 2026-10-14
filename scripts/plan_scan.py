@@ -255,8 +255,91 @@ def build_stages(layers_meta, steps):
     return out
 
 
+def last_step(steps):
+    """一个块上最后一个改译文的步骤——它了结了，这块才算定稿。"""
+    for st in reversed(CHUNK_STEPS):
+        if st in steps:
+            return st
+    return None
+
+
+def hits(meta, book, lo, hi):
+    """某层里与 [lo,hi] 相交的块。依赖是按**段区间相交**算的，不是按块号。"""
+    return [ch for ch in meta["chunks"]
+            if ch["book"] == book and not (ch["end"] < lo or ch["start"] > hi)]
+
+
+def build_needs(layers, units, exports, steps):
+    """每个 task 的前置 task（`needs`），**在规划期算死**。
+
+    调度器因此不必靠「阶段屏障」那种粗办法等——队列里第一个前置都了结的 task
+    随时可以派，三个 worker 不会因为最后几个 translate 没跑完就空等。
+    屏障挡不住的事它也能挡住：某块 translate 失败后退回队列重跑时，
+    它的 review 已经排在后面，只有依赖查表才知道「还不能做」。
+
+    依赖只有四条：
+      · 同一块里 translate → review → revise 顺序串起来；
+      · 注释层某块的 translate，依赖**父层对照范围**覆盖到的那些父层块定稿；
+      · 统稿单元依赖它 spans 覆盖的各层块定稿；
+      · 导出依赖本层全部统稿单元（没有统稿就依赖本层全部块定稿）。
+    """
+    by_layer = {m["layer"]: m for m in layers}
+    fin = last_step(steps)
+    needs = {}
+
+    def chunk_fin(ch):
+        return f'{ch["id"]}:{fin}' if fin else None
+
+    for m in layers:
+        for ch in m["chunks"]:
+            prev = None
+            for st in CHUNK_STEPS:
+                if st not in steps:
+                    continue
+                tid = f'{ch["id"]}:{st}'
+                needs[tid] = [prev] if prev else []
+                prev = tid
+            # 注释层开译前，父层对照范围里的块必须已经定稿
+            par = ch.get("parent")
+            if par and "translate" in steps:
+                pm = by_layer.get(par.get("layer"))
+                if pm:
+                    dep = [chunk_fin(x) for sp in par["spans"]
+                           for x in hits(pm, par["book"], sp["start"], sp["end"])]
+                    needs[f'{ch["id"]}:translate'] += [d for d in dep if d]
+
+    for u in units:
+        dep = []
+        for sp in u["spans"]:
+            m = by_layer.get(sp.get("layer"))
+            if m:
+                dep += [chunk_fin(x) for x in hits(m, sp["book"], sp["start"], sp["end"])]
+        needs[f'{u["id"]}:harmonize'] = sorted({d for d in dep if d})
+
+    # evaluate 评的必须是定稿：同块定稿 + 覆盖这块的统稿单元都做完
+    if "evaluate" in steps:
+        for m in layers:
+            for ch in m["chunks"]:
+                dep = [chunk_fin(ch)]
+                dep += [f'{u["id"]}:harmonize' for u in units
+                        if any(sp["book"] == ch["book"]
+                               and not (sp["end"] < ch["start"] or sp["start"] > ch["end"])
+                               for sp in u["spans"])]
+                needs[f'{ch["id"]}:evaluate'] = sorted({d for d in dep if d})
+
+    for e in exports:
+        m = by_layer.get(e["layer"])
+        dep = [f'{u["id"]}:harmonize' for u in units
+               if any(sp["book"] == e["book"] for sp in u["spans"])]
+        if not dep and m:
+            dep = [chunk_fin(ch) for ch in m["chunks"]]
+        needs[f'{e["id"]}:export'] = sorted({d for d in dep if d})
+    return needs
+
+
 def build_tasks(layers, units, exports, steps):
-    """全部 task，**按阶段顺序排好**。task 是唯一带状态的单位。"""
+    """全部 task，**按阶段顺序排好**（队列顺序 = 派发顺序，同类连着跑才吃得到缓存）。"""
+    needs = build_needs(layers, units, exports, steps)
     out = []
     for m in sorted(layers, key=lambda m: LAYER_ORDER.get(m["layer"], 9)):
         for st in CHUNK_STEPS:
@@ -268,6 +351,7 @@ def build_tasks(layers, units, exports, steps):
                             "start": ch["start"], "end": ch["end"],
                             "chars": ch["chars"] if st == "translate" else 0,
                             "sents": ch["sents"], "title": ch["title"],
+                            "needs": needs.get(f'{ch["id"]}:{st}', []),
                             "status": pj.PENDING, "tries": 0,
                             "began": "", "ended": "", "note": "", "detail": ""})
     if "harmonize" in steps:
@@ -276,6 +360,7 @@ def build_tasks(layers, units, exports, steps):
                         "step": "harmonize", "layer": "", "book": None,
                         "start": None, "end": None, "chars": 0, "sents": u["sents"],
                         "spans": u["spans"], "title": u["title"],
+                        "needs": needs.get(f'{u["id"]}:harmonize', []),
                         "status": pj.PENDING, "tries": 0,
                         "began": "", "ended": "", "note": "", "detail": ""})
     if "evaluate" in steps:
@@ -285,6 +370,7 @@ def build_tasks(layers, units, exports, steps):
                             "step": "evaluate", "layer": m["layer"], "book": m["book"],
                             "start": ch["start"], "end": ch["end"], "chars": 0,
                             "sents": ch["sents"], "title": ch["title"],
+                            "needs": needs.get(f'{ch["id"]}:evaluate', []),
                             "status": pj.PENDING, "tries": 0,
                             "began": "", "ended": "", "note": "", "detail": ""})
     if "export" in steps:
@@ -292,7 +378,8 @@ def build_tasks(layers, units, exports, steps):
             out.append({"id": f'{e["id"]}:export', "stage": "export", "step": "export",
                         "layer": e["layer"], "book": e["book"],
                         "start": e["start"], "end": e["end"], "chars": 0, "sents": 0,
-                        "title": e["title"], "status": pj.PENDING, "tries": 0,
+                        "title": e["title"], "needs": needs.get(f'{e["id"]}:export', []),
+                        "status": pj.PENDING, "tries": 0,
                         "began": "", "ended": "", "note": "", "detail": ""})
     return out
 
@@ -371,6 +458,29 @@ def check(proj, verbose=True):
     if len(set(ids)) != len(ids):
         bad.append("task id 有重复")
 
+    # 4b) needs 指向的 task 必须存在，且拓扑可排（有环就永远派不出去）
+    ids = {t["id"] for t in proj["tasks"]}
+    dangling = sorted({d for t in proj["tasks"] for d in t.get("needs") or []} - ids)
+    if dangling:
+        bad.append(f'这些前置 task 不存在：{dangling[:6]}')
+    indeg = {t["id"]: len([d for d in t.get("needs") or [] if d in ids])
+             for t in proj["tasks"]}
+    rev = {}
+    for t in proj["tasks"]:
+        for d in t.get("needs") or []:
+            rev.setdefault(d, []).append(t["id"])
+    q = [i for i, n in indeg.items() if n == 0]
+    seen = 0
+    while q:
+        cur = q.pop()
+        seen += 1
+        for nxt in rev.get(cur, []):
+            indeg[nxt] -= 1
+            if indeg[nxt] == 0:
+                q.append(nxt)
+    if seen != len(ids):
+        bad.append(f'依赖图有环：{len(ids) - seen} 个 task 永远等不到前置')
+
     # 5) 阶段表与 task 的 stage 对得上
     sid = {s["id"] for s in proj["stages"]}
     orphan = sorted({t["stage"] for t in proj["tasks"]} - sid)
@@ -387,7 +497,8 @@ def check(proj, verbose=True):
                 print(f"     · {x}", file=sys.stderr)
         else:
             print("  ✓ 自检通过：各层无缝覆盖且不重叠、统稿覆盖每一段、"
-                  "task 与块/单元一一对应、阶段表自洽", file=sys.stderr)
+                  "task 与块/单元一一对应、依赖图无环且无悬空、阶段表自洽",
+                  file=sys.stderr)
     return bad
 
 
