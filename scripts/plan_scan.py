@@ -239,16 +239,21 @@ def harmonize_units(layers_meta, args):
 # ══════════════════ 四、阶段与任务 ══════════════════
 
 def build_stages(layers_meta, steps):
-    """阶段表，**即推进顺序**：各层的 translate→review→revise，然后统稿、评估、导出。
+    """阶段表，**即推进顺序**：一个步骤把各层连续做完，再进下一个步骤。
 
-    层间是硬屏障：注释层 translate 要注入父层**定稿**译文，父层没走完 revise
-    就开译子层，注进去的是半成品，被解释词白对一遍。
+        translate（本文→义注→复注）→ review（三层）→ revise（三层）→ 统稿 → 导出
+
+    **步骤优先，不是层优先**。层优先（本文 t→r→r 走完才开义注）的好处是注释层
+    开译时父层已定稿；代价是同一个步骤被切成三段、隔得很远，而且 review 看不到
+    三层的对应关系。步骤优先反过来：同一步骤的 task 全部连着跑（prompt 前缀一样，
+    缓存命中最好），review 时三层译文都在 channel 上、能对着看；代价是注释层
+    translate 注入的父层译文**只是 translate 版、尚未复核**，对不齐的地方留给
+    review/revise/harmonize 收拾。
     """
     out = []
-    for m in sorted(layers_meta, key=lambda m: LAYER_ORDER.get(m["layer"], 9)):
-        for st in CHUNK_STEPS:
-            if st in steps:
-                out.append({"id": f'{m["layer"]}:{st}', "step": st, "layer": m["layer"]})
+    for st in CHUNK_STEPS:
+        if st in steps:
+            out.append({"id": st, "step": st, "layer": ""})
     for st in ("harmonize", "evaluate", "export"):
         if st in steps:
             out.append({"id": st, "step": st, "layer": ""})
@@ -299,14 +304,16 @@ def build_needs(layers, units, exports, steps):
                 tid = f'{ch["id"]}:{st}'
                 needs[tid] = [prev] if prev else []
                 prev = tid
-            # 注释层开译前，父层对照范围里的块必须已经定稿
+            # 注释层开译前，父层对照范围里的块必须**已经译出**（translate 终态）。
+            # 不等父层 revise——阶段是步骤优先的，父层的 review/revise 还排在后面；
+            # 对不齐的地方由 review（三层译文都在 channel 上）与 harmonize 收拾。
             par = ch.get("parent")
             if par and "translate" in steps:
                 pm = by_layer.get(par.get("layer"))
                 if pm:
-                    dep = [chunk_fin(x) for sp in par["spans"]
+                    dep = [f'{x["id"]}:translate' for sp in par["spans"]
                            for x in hits(pm, par["book"], sp["start"], sp["end"])]
-                    needs[f'{ch["id"]}:translate'] += [d for d in dep if d]
+                    needs[f'{ch["id"]}:translate'] += dep
 
     for u in units:
         dep = []
@@ -341,12 +348,12 @@ def build_tasks(layers, units, exports, steps):
     """全部 task，**按阶段顺序排好**（队列顺序 = 派发顺序，同类连着跑才吃得到缓存）。"""
     needs = build_needs(layers, units, exports, steps)
     out = []
-    for m in sorted(layers, key=lambda m: LAYER_ORDER.get(m["layer"], 9)):
-        for st in CHUNK_STEPS:
-            if st not in steps:
-                continue
+    for st in CHUNK_STEPS:
+        if st not in steps:
+            continue
+        for m in sorted(layers, key=lambda m: LAYER_ORDER.get(m["layer"], 9)):
             for ch in m["chunks"]:
-                out.append({"id": f'{ch["id"]}:{st}', "stage": f'{m["layer"]}:{st}',
+                out.append({"id": f'{ch["id"]}:{st}', "stage": st,
                             "step": st, "layer": m["layer"], "book": m["book"],
                             "start": ch["start"], "end": ch["end"],
                             "chars": ch["chars"] if st == "translate" else 0,
