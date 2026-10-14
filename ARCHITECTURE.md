@@ -325,9 +325,17 @@ project → pipelines[] → tasks[]
     按段切），三层的块互不相干；统稿按 `cs_para` 跨层成组，与块无关；排班按**阶段**推进
     （`mula:translate → mula:review → mula:revise → atthakatha:translate → …
     → harmonize → export`）。小经文多的书（增支部、相應部）靠它把块数减一半以上：
-    六集 279 块 → 132 块、1132 task → 447 task。阶段内的 task 同类，连着跑吃得到
-    prompt 缓存；层间是硬屏障——注释层 translate 要注入父层**定稿**译文。
-    一个阶段里只剩重试用尽的失败 task 时**带伤前进**，不卡住后面的步骤。
+    六集 279 块 → 132 块、1132 task → 447 task。
+    **派发是一条队列，不是阶段屏障**：task 在计划里按阶段顺序排好，worker 空出来就领
+    队列里第一个「前置都已了结」的 task。于是同类连着跑、吃得到 prompt 缓存，
+    又**不会空等**——最后三个 translate 还在跑时，空出来的 worker 立刻去领第一个 review
+    （实测 447 个 task、3 并发跑满 149 个时间单位，正好是理论下限）。
+    能不能领由 **task 的 `needs` 表**说话，规划期就算死（`plan_scan.build_needs`）：
+    同块 translate→review→revise 串行；注释层某块开译前，父层对照范围覆盖的父层块
+    必须定稿；统稿单元依赖它 spans 覆盖的各层块；导出依赖本层全部统稿。
+    依赖查表比阶段屏障严——某块 translate 失败退回队列重跑时，它的 review 已经排在
+    后面，只有查表才知道还不能做。前置**终局失败**（重试用尽）则放行，
+    不让一个失败的前置把整条队列堵死（执行器自己判断 channel 上有没有译文，没有就记 skip）。
   - 执行器一个：`pipeline_batch.sh`，`--job` 跑 schema 2 的一条流水线，`--task` 跑
     schema 3 的一个 task，提示词是同一份（`emit_translate` 等五个函数）。
 - **做哪些步骤由规划期定**：`--steps`（默认全六步）决定生成哪些 task，并记在
