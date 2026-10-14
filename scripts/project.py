@@ -43,7 +43,9 @@ INDEX = os.path.join(PROJECTS, "index.json")
 # 全局旧账：迁到「一项目一目录」之前，五个项目的账混在这一本里。只读，不再写。
 LEGACY_AUDIT = os.path.join(WORK, "audit.log")
 
-SCHEMA = 2
+SCHEMA = 2          # plan_jobs.py 的结构：pipelines[] = 一章 × 各层
+SCAN_SCHEMA = 3     # plan_scan.py 的结构：各层独立切块 + 阶段表，tasks 在顶层
+LIVE_SCHEMAS = (SCHEMA, SCAN_SCHEMA)
 PENDING, RUNNING, DONE, FAILED, SKIPPED = "pending", "running", "done", "failed", "skipped"
 STATE_CN = {PENDING: "未开始", RUNNING: "进行中", DONE: "已完成",
             FAILED: "失败", SKIPPED: "跳过"}
@@ -130,11 +132,29 @@ def all_names():
 
 def is_archive(proj):
     """旧格式（schema 1）只当存档看：能读能显示，不再跑。"""
-    return proj.get("schema") != SCHEMA or "pipelines" not in proj
+    sc = proj.get("schema")
+    if sc == SCAN_SCHEMA:
+        return "tasks" not in proj
+    return sc != SCHEMA or "pipelines" not in proj
+
+
+def is_scan(proj):
+    """schema 3：各层独立切块、按阶段推进。调度与视图都要分流，所以单列一个判定。"""
+    return proj.get("schema") == SCAN_SCHEMA
 
 
 def pipelines(proj):
+    """schema 2 的流水线。schema 3 没有这一层——它的调度单位直接是 task。"""
     return proj.get("pipelines") or []
+
+
+def stages(proj):
+    """schema 3 的阶段表，即推进顺序；schema 2 没有阶段这回事。"""
+    return proj.get("stages") or []
+
+
+def stage_tasks(proj, stage_id):
+    return [t for t in proj.get("tasks") or [] if t.get("stage") == stage_id]
 
 
 def units(pipe):
@@ -143,6 +163,11 @@ def units(pipe):
 
 
 def all_tasks(proj):
+    """(父流水线, task)。schema 3 没有父流水线，第一个元素给 None。"""
+    if is_scan(proj):
+        for t in proj.get("tasks") or []:
+            yield None, t
+        return
     for pipe in pipelines(proj):
         for t in units(pipe):
             yield pipe, t
@@ -216,10 +241,36 @@ def audit_tasks(name):
     return seen
 
 
+def stage_state(proj, stage_id):
+    """一个阶段的状态由它的 task 推出：全终态为 done，有失败为 failed，有在跑为 running。"""
+    ts = stage_tasks(proj, stage_id)
+    if not ts:
+        return DONE
+    c = counts(ts)
+    if c[DONE] + c[SKIPPED] == len(ts):
+        return DONE
+    if c[RUNNING]:
+        return RUNNING
+    if c[FAILED]:
+        return FAILED
+    return PENDING
+
+
 def apply_audit(proj):
     """把 audit.log 里的 task 结果落到项目文件上，并按 task 推出流水线状态。"""
     seen = audit_tasks(proj["name"])
     touched = 0
+    if is_scan(proj):
+        # schema 3 没有流水线这一层：task 就是状态的全部，照抄 audit 即可。
+        # 唯一要护住的是 running——那是调度器此刻的事实，audit 里还是上一轮的旧账。
+        for t in proj.get("tasks") or []:
+            st = seen.get(t["id"])
+            if st and st != t.get("status"):
+                if t.get("status") == RUNNING and st == FAILED:
+                    continue
+                t["status"] = st
+                touched += 1
+        return touched
     for pipe in pipelines(proj):
         ts = units(pipe)
         for t in ts:
@@ -265,11 +316,15 @@ def build_index():
                          "updated": p.get("updated", ""), "created": p.get("created", "")})
             continue
         us = [t for _pipe, t in all_tasks(p)]
-        jc = counts(pipelines(p))
+        # schema 3 的「大格子」是阶段，schema 2 是流水线——索引页一视同仁地显示条数
+        groups = ([{"status": stage_state(p, st["id"])} for st in stages(p)]
+                  if is_scan(p) else pipelines(p))
+        jc = counts(groups)
         rows.append({
             "name": name, "title": p.get("title", name), "state": p.get("state", "idle"),
             "book": p.get("book"), "channel": p.get("channel"),
-            "jobs": len(pipelines(p)), "job_counts": jc,
+            "scan": is_scan(p),
+            "jobs": len(groups), "job_counts": jc,
             "units": len(us), "unit_counts": counts(us),
             "chars": sum(t.get("chars", 0) for t in us),
             "pct": round(progress(p)[0], 1),
@@ -324,12 +379,25 @@ def cmd_status(name):
         print("旧格式（schema 1），只作存档：能看不能跑。")
         return
     us = [t for _pipe, t in all_tasks(p)]
-    jc, uc = counts(pipelines(p)), counts(us)
+    uc = counts(us)
     tr, hd, ht, ed, et = progress(p)
     cdone, ctot = chars(by_step(p, "translate"))
-    print(f"流水线 {len(pipelines(p))}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in jc.items() if v))
+    if is_scan(p):
+        print(f"阶段 {len(stages(p))}：" + " → ".join(
+            f"{st['id']}{'✓' if stage_state(p, st['id']) == DONE else ''}"
+            for st in stages(p)))
+    else:
+        jc = counts(pipelines(p))
+        print(f"流水线 {len(pipelines(p))}："
+              + "  ".join(f"{STATE_CN[k]} {v}" for k, v in jc.items() if v))
     print(f"翻译 {tr:.1f}%（巴利字符 {cdone:,}/{ctot:,}）｜统稿 {hd}/{ht}｜导出 {ed}/{et}")
     print(f"任务 {len(us)}：" + "  ".join(f"{STATE_CN[k]} {v}" for k, v in uc.items() if v))
+    if is_scan(p):
+        for t in us:
+            if t.get("status") == FAILED:
+                print(f"  ❌ {t['id']} {t.get('title','')}  尝试 {t.get('tries',0)}"
+                      f"  {t.get('note','')}")
+        return
     for pipe in pipelines(p):
         if pipe.get("status") != FAILED:
             continue
