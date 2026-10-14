@@ -442,15 +442,39 @@ def runnable(t, tries):
 
 
 def pick_stage(proj, tries):
-    """该跑哪个阶段：阶段表里第一个「还有 task 能派发或正在跑」的。
-
-    只剩重试用尽的失败 task 时**带伤前进**（下一阶段照跑）——卡在这儿等不来好结果，
-    而后面的步骤对其余段落照样有意义。带伤的阶段会在收尾时如实报出来。
-    """
+    """此刻在跑哪个阶段——**只用于显示**。派发看的是依赖，不是阶段（见 pick_task）。"""
     for st in pj.stages(proj):
         ts = pj.stage_tasks(proj, st["id"])
         if any(t.get("status") == RUNNING or runnable(t, tries) for t in ts):
             return st
+    return None
+
+
+def dep_done(dep, tries):
+    """这个前置算不算「不必再等」。
+
+    了结了当然不必等；**终局失败**（failed 且重试用尽）也不必等——等不来好结果，
+    而后面的步骤对其余段落照样有意义（执行器自己会判断 channel 上有没有译文，
+    没有就记 skip）。不这样放行，整条队列会被一个失败的前置永久堵住。
+    """
+    if pj.settled(dep):
+        return True
+    return dep.get("status") == FAILED and dep.get("tries", 0) >= tries
+
+
+def pick_task(tasks, by_id, tries):
+    """队列里第一个**前置都不必再等**的 task。
+
+    task 在计划里已经按阶段顺序排好，所以从头扫就是「先 translate、再 review…」，
+    同类连着跑、吃得到 prompt 缓存；但**不等整个阶段跑完**——最后三个 translate
+    还在跑时，空出来的 worker 立刻去领第一个 review，不空等。
+    谁能领由 needs 查表决定（规划期算死，见 plan_scan.build_needs）。
+    """
+    for t in tasks:
+        if not runnable(t, tries):
+            continue
+        if all(dep_done(by_id[d], tries) for d in (t.get("needs") or []) if d in by_id):
+            return t
     return None
 
 
@@ -492,6 +516,7 @@ def run_scan(args):
     """schema 3 的主循环。状态只写在 task 上，项目文件由本进程独占写。"""
     proj = PROJ["data"]
     tasks = scan_tasks(proj)
+    by_id = {t["id"]: t for t in tasks}
     for t in tasks:                       # 上次被强杀留下的 running 复位
         if t.get("status") == RUNNING:
             t["status"] = PENDING
@@ -562,7 +587,7 @@ def run_scan(args):
                              f'（第 {t["tries"]}/{args.tries} 次，日志 {path}）')
                 pj.save(proj)
 
-            # 当前阶段
+            # 走到哪个阶段了（只为日志好看）
             st = pick_stage(proj, args.tries)
             if st and (cur is None or st["id"] != cur):
                 cur = st["id"]
@@ -571,10 +596,9 @@ def run_scan(args):
             if st is None and not running:
                 break
 
-            # 派发：只派当前阶段的，阶段之间不交叉（层间屏障靠这个成立）
-            while st and not stopping["v"] and len(running) < args.workers:
-                pool = pj.stage_tasks(proj, st["id"])
-                nxt = next((t for t in pool if runnable(t, args.tries)), None)
+            # 派发：**一条队列**，谁空出来就领下一个前置已就绪的 task
+            while not stopping["v"] and len(running) < args.workers:
+                nxt = pick_task(tasks, by_id, args.tries)
                 if not nxt:
                     break
                 nxt["status"] = RUNNING
@@ -586,7 +610,9 @@ def run_scan(args):
                 time.sleep(args.stagger)
 
             sync_subrows()
-            if not running and (stopping["v"] or pick_stage(proj, args.tries) is None):
+            # 队列空了（或剩下的都在等终局失败的前置）就收尾——有 task 在跑就继续等
+            if not running and (stopping["v"]
+                                or pick_task(tasks, by_id, args.tries) is None):
                 break
             time.sleep(5)
 
