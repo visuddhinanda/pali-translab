@@ -16,7 +16,8 @@ CH=$(python3 -c "import json;print(json.load(open('$PJ'))['channel'])")
 
 state() { python3 -c "
 import json;d=json.load(open('$PJ'))
-js=d['pipelines']
+# schema 3 的调度单位是 task（顶层 tasks），schema 2 是 pipelines
+js = d.get('tasks') if d.get('schema') == 3 else d['pipelines']
 # 字段是 status 不是 state；skipped 与 done 同为终态，都算跑完
 done=sum(1 for j in js if j.get('status') in ('done', 'skipped'))
 print(d.get('state'), done, len(js))"; }
@@ -45,8 +46,12 @@ RANGES=$(python3 - "$PJ" <<'PYR'
 import json, sys
 p = json.load(open(sys.argv[1], encoding='utf-8'))
 rng = {}
-for j in p.get('pipelines', []):
-    for L in j.get('layers') or []:          # layers = 本作业负责翻译的层，不含只读的 ref
+# schema 3：各层就在顶层 layers，每层一段连续范围
+# schema 2：层片段挂在每条流水线下（layers = 本作业负责翻译的层，不含只读的 ref）
+groups = ([p.get('layers') or []] if p.get('schema') == 3
+          else [j.get('layers') or [] for j in p.get('pipelines', [])])
+for g in groups:
+    for L in g:
         b, lo, hi = str(L['book']), int(L['start']), int(L['end'])
         o = rng.get(b)
         rng[b] = (min(o[0], lo), max(o[1], hi)) if o else (lo, hi)
