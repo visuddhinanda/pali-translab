@@ -222,8 +222,14 @@ def take_command(jobs, args, log):
             if j["status"] == FAILED:
                 j.update(status=PENDING, tries=0, note="", began="", ended="")
                 n += 1
-        log(f"收到 reset-failed：{n} 个失败作业已退回队列")
-    save_jobs(jobs)
+        log(f"收到 reset-failed：{n} 个失败{'task' if pj.is_scan(PROJ['data']) else '作业'}"
+            "已退回队列")
+    # schema 3 的状态就在 tasks 上（jobs 传进来的正是它），直接落盘；
+    # schema 2 要把调度结构写回 pipelines，走 save_jobs
+    if pj.is_scan(PROJ["data"]):
+        pj.save(PROJ["data"])
+    else:
+        save_jobs(jobs)
     return PROJ["data"].get("state") == "paused"
 
 
@@ -416,6 +422,217 @@ def refresh_credentials(args):
     log_line("channel token：" + (tail[-1][:80] if tail else f"rc={r.returncode}"))
 
 
+
+# ══════════ schema 3：按阶段推进的调度 ══════════
+# 与 schema 2 的差别只在「什么是调度单位」：那边是流水线（一章 × 各层，内部串行
+# 跑完全部步骤），这边是 **task**，按阶段表一段一段推。
+# 阶段内的 task 同类（全是 translate，或全是 review），连着跑提示词前缀一样，
+# 吃得到 prompt 缓存；层间的屏障是硬要求——注释层 translate 要注入父层**定稿**译文。
+
+
+def scan_tasks(proj):
+    return proj.get("tasks") or []
+
+
+def runnable(t, tries):
+    """还能派发吗——没跑过的，或失败过但重试次数没用尽的。"""
+    return (t.get("status") in (PENDING, FAILED)
+            and t.get("tries", 0) < tries
+            and t.get("status") != RUNNING)
+
+
+def pick_stage(proj, tries):
+    """该跑哪个阶段：阶段表里第一个「还有 task 能派发或正在跑」的。
+
+    只剩重试用尽的失败 task 时**带伤前进**（下一阶段照跑）——卡在这儿等不来好结果，
+    而后面的步骤对其余段落照样有意义。带伤的阶段会在收尾时如实报出来。
+    """
+    for st in pj.stages(proj):
+        ts = pj.stage_tasks(proj, st["id"])
+        if any(t.get("status") == RUNNING or runnable(t, tries) for t in ts):
+            return st
+    return None
+
+
+def task_log_name(tid):
+    """task id → 日志文件名。看门狗也用它找日志，所以放在这儿公用。"""
+    return tid.replace(":", "-").replace("/", "-") + ".log"
+
+
+def spawn_task(t, args):
+    """派一个 task 给执行器。日志按 task id 一个文件，谁出问题一眼找得到。"""
+    logs = logs_dir(args.project)
+    os.makedirs(logs, exist_ok=True)
+    path = os.path.join(logs, task_log_name(t["id"]))
+    cmd = [os.path.join(snap_dir(args.project), "pipeline_batch.sh"),
+           "--plan", pj.path_of(args.project), "--task", t["id"],
+           "--channel", args.channel]
+    if args.nissaya:
+        cmd.append("--nissaya")
+    if args.dry_run:
+        cmd.append("--dry-run")
+    cmd += args.extra
+    f = open(path, "a", encoding="utf-8")
+    f.write(f"\n===== {time.strftime('%Y-%m-%d %H:%M:%S')} 第 {t.get('tries', 0) + 1} 次 =====\n")
+    f.flush()
+    env = dict(os.environ, PROJECT_ROOT=ROOT)
+    p = subprocess.Popen(cmd, stdout=f, stderr=subprocess.STDOUT, cwd=ROOT,
+                         start_new_session=True, env=env)
+    return p, f, path
+
+
+def task_coord(t):
+    if t.get("book"):
+        return f'{t["book"]}:{t["start"]}-{t["end"]}'
+    sp = t.get("spans") or []
+    return "、".join(f'{x["book"]}:{x["start"]}-{x["end"]}' for x in sp[:2]) or t["id"]
+
+
+def run_scan(args):
+    """schema 3 的主循环。状态只写在 task 上，项目文件由本进程独占写。"""
+    proj = PROJ["data"]
+    tasks = scan_tasks(proj)
+    for t in tasks:                       # 上次被强杀留下的 running 复位
+        if t.get("status") == RUNNING:
+            t["status"] = PENDING
+            t["began"] = ""
+    pj.save(proj)
+
+    stopping = {"v": False}
+
+    def on_sig(*_):
+        stopping["v"] = True
+        log_line("收到停止信号，跑完手头的 task 就退出")
+    signal.signal(signal.SIGINT, on_sig)
+    signal.signal(signal.SIGTERM, on_sig)
+
+    running = []                          # [(task, (proc, fh, path))]
+    cur = None
+    try:
+        snapshot_scripts(args.project)
+        log_line(f"已快照 scripts/ → {snap_dir(args.project)}")
+        nrun = sum(1 for t in tasks if runnable(t, args.tries))
+        log_line(f"共 {len(tasks)} 个 task，待处理 {nrun}，并发 {args.workers}"
+                 f"｜阶段 {len(pj.stages(proj))} 个")
+        if not wait_for_api(args.book, 3, log_line):
+            return
+        proj["state"] = "running"
+
+        while True:
+            if stop_requested(args.project):
+                stopping["v"] = True
+            if take_command(tasks, args, log_line):
+                stopping["v"] = True
+
+            # 收割
+            for item in list(running):
+                t, (p, fh, path) = item
+                if p.poll() is None:
+                    continue
+                running.remove(item)
+                fh.close()
+                t["tries"] = t.get("tries", 0) + 1
+                t["ended"] = time.strftime("%Y-%m-%d %H:%M:%S")
+                if p.returncode == 0:
+                    t["status"], t["note"] = DONE, ""
+                    log_line(f'✓ {t["id"]} {t.get("title", "")}')
+                elif rate_limited_in(path):
+                    t["status"] = PENDING
+                    t["tries"] -= 1       # 撞额度不算失败
+                    t["note"] = "撞额度，已退回队列"
+                    if cooldown_covered(path):
+                        log_line(f'🚦 {t["id"]} 撞额度（旧账，上一段冷却已覆盖），直接退回队列')
+                    else:
+                        log_line(f'🚦 {t["id"]} 撞到额度限制，全局暂停 '
+                                 f'{args.cooldown // 60} 分钟等窗口刷新')
+                        if not cooldown(args.cooldown, log_line):
+                            stopping["v"] = True
+                elif transient_in(path):
+                    t["status"] = PENDING
+                    t["tries"] -= 1       # 环境问题不算次数
+                    t["note"] = "环境异常（网络/5xx），已退回队列"
+                    t["began"] = t["ended"] = ""
+                    log_line(f'⏸ {t["id"]} 环境异常，退回队列并等 API')
+                    if not wait_for_api(args.book, 3, log_line):
+                        stopping["v"] = True
+                else:
+                    t["note"] = f"退出码 {p.returncode}，见 {os.path.basename(path)}"
+                    t["status"] = FAILED if t["tries"] >= args.tries else PENDING
+                    log_line(f'✗ {t["id"]} 退出码 {p.returncode}'
+                             f'（第 {t["tries"]}/{args.tries} 次，日志 {path}）')
+                pj.save(proj)
+
+            # 当前阶段
+            st = pick_stage(proj, args.tries)
+            if st and (cur is None or st["id"] != cur):
+                cur = st["id"]
+                n = len(pj.stage_tasks(proj, cur))
+                log_line(f"══ 阶段 {cur}（{n} 个 task）══")
+            if st is None and not running:
+                break
+
+            # 派发：只派当前阶段的，阶段之间不交叉（层间屏障靠这个成立）
+            while st and not stopping["v"] and len(running) < args.workers:
+                pool = pj.stage_tasks(proj, st["id"])
+                nxt = next((t for t in pool if runnable(t, args.tries)), None)
+                if not nxt:
+                    break
+                nxt["status"] = RUNNING
+                nxt["began"] = time.strftime("%Y-%m-%d %H:%M:%S")
+                nxt["ended"] = ""
+                pj.save(proj)
+                running.append((nxt, spawn_task(nxt, args)))
+                log_line(f'▶ {nxt["id"]} {task_coord(nxt)} {nxt.get("title", "")}')
+                time.sleep(args.stagger)
+
+            sync_subrows()
+            if not running and (stopping["v"] or pick_stage(proj, args.tries) is None):
+                break
+            time.sleep(5)
+
+        c = pj.counts(tasks)
+        bad = [t for t in tasks if t.get("status") == FAILED]
+        all_done = not any(runnable(t, args.tries) for t in tasks) and not bad
+        proj["state"] = ("done" if all_done
+                         else "paused" if stopping["v"] else "idle")
+        pj.save(proj)
+        sync_subrows(force=True)
+        log_line(f'结束：完成 {c[DONE]}/{len(tasks)}，失败 {len(bad)}'
+                 + (f'，跳过 {c[SKIPPED]}' if c[SKIPPED] else ''))
+        for t in bad[:20]:
+            log_line(f'   失败 {t["id"]} {task_coord(t)} {t.get("note", "")}')
+    finally:
+        for _t, (_p, fh, _path) in running:
+            try:
+                fh.close()
+            except Exception:
+                pass
+
+
+def cmd_status_scan(args):
+    p = PROJ["data"]
+    tasks = scan_tasks(p)
+    tr, hd, ht, ed, et = pj.progress(p)
+    cdone, ctot = pj.chars(pj.by_step(p, "translate"))
+    print(f'项目 {p["name"]}｜{p.get("title", "")}｜状态 {p.get("state", "idle")}')
+    print(f'共 {len(tasks)} 个 task：' + "  ".join(
+        f'{EMOJI[k]} {v}' for k, v in pj.counts(tasks).items() if v))
+    print(f'翻译 {tr:.1f}%（巴利字符 {cdone:,}/{ctot:,}）｜统稿 {hd}/{ht}｜导出 {ed}/{et}')
+    for st in pj.stages(p):
+        ts = pj.stage_tasks(p, st["id"])
+        c = pj.counts(ts)
+        mark = {pj.DONE: "✅", RUNNING: "🔄", FAILED: "❌"}.get(pj.stage_state(p, st["id"]), "⬜")
+        print(f'  {mark} {st["id"]:<22} {c[DONE]}/{len(ts)}'
+              + (f'  ❌{c[FAILED]}' if c[FAILED] else '')
+              + (f'  🔄{c[RUNNING]}' if c[RUNNING] else ''))
+    for t in tasks:
+        if t.get("status") in (RUNNING, FAILED):
+            print(f'  {EMOJI[t["status"]]}  {t["id"]}  {task_coord(t)}  '
+                  f'{t.get("title", "")}  起 {t.get("began", "") or "-"}  '
+                  f'尝试 {t.get("tries", 0)}  {t.get("note", "")}')
+    print(f'\n详细进度：workspace/projects/{p["name"]}/project.html')
+
+
 def cmd_run(args):
     os.makedirs(WORK, exist_ok=True)
     lock = lock_path(args.project)
@@ -431,6 +648,14 @@ def cmd_run(args):
     if os.path.exists(stop_path(args.project)):
         os.remove(stop_path(args.project))
     refresh_credentials(args)           # 开跑前刷新署名身份与 access token
+
+    # schema 3（plan_scan.py 规划的）走按阶段推进的调度，与下面的流水线调度是两套
+    if pj.is_scan(proj_load(args.project)):
+        try:
+            return run_scan(args)
+        finally:
+            if os.path.exists(lock):
+                os.remove(lock)
 
     stopping = {"v": False}
     def on_sig(*_):
@@ -578,7 +803,8 @@ def sync_subrows(force=False):
 
 
 def cmd_status(args):
-    proj_load(args.project)
+    if pj.is_scan(proj_load(args.project)):
+        return cmd_status_scan(args)
     jobs = load_jobs()
     p = PROJ["data"]
     tr, hd, ht, ed, et = pj.progress(p)
