@@ -48,10 +48,19 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="${PROJECT_ROOT:-$(cd "$SCRIPT_DIR/.." && pwd)}"
 SKILLS="$PROJECT_DIR/.claude/skills"
 
-BOOK="${1:?用法: $0 <本文book> <start_para> <end_para> [选项]}"
-START="${2:?缺少 start_para}"
-END="${3:?缺少 end_para}"
-shift 3
+# 两种调用形态：
+#   作业模式（schema 2）：位置参数给本文的 book 与段范围，跑完这一章的整条流水线
+#   单 task 模式（schema 3）：没有位置参数，坐标从 --plan 里那个 task 查
+TASK=""
+for _a in "$@"; do [[ "$_a" == "--task" || "$_a" == --task=* ]] && TASK="?" && break; done
+if [[ -z "$TASK" ]]; then
+    BOOK="${1:?用法: $0 <本文book> <start_para> <end_para> [选项]｜或 --plan <json> --task <id>}"
+    START="${2:?缺少 start_para}"
+    END="${3:?缺少 end_para}"
+    shift 3
+else
+    BOOK=0; START=0; END=0                 # 查到 task 之后再填
+fi
 
 METHOD="default"
 STEPS="translate,review,revise,harmonize,evaluate,export"
@@ -91,6 +100,8 @@ while [[ $# -gt 0 ]]; do
         --chapter)     CHAPTER="--chapter"; shift ;;   # 各层扩成目录里的完整一章
         --plan)        PLAN="$2"; shift 2 ;;   # 作业计划 json（plan_jobs.py 产出）
         --job)         JOB="$2";  shift 2 ;;   # 计划里的作业 id
+        --task)        TASK="$2"; shift 2 ;;   # 计划里的 task id（schema 3，单 task 模式）
+        --task=*)      TASK="${1#*=}"; shift ;;
         --nissaya)     NISSAYA="--nissaya"; shift ;;   # 只给复核步骤，translate 永远不给
         --no-llm-cache) NO_CACHE=1; shift ;;   # 不读不写产物缓存，每步都真调模型
         --force)       FORCE=1; shift ;;
@@ -284,6 +295,113 @@ cached_claude() {
     return $rc
 }
 
+# ══════════ 五个步骤的提示词 ══════════
+# 提示词只写一份，两条执行路径共用：
+#   · 作业模式（schema 2，--job）——下面的阶段一～四按章跑完整条流水线
+#   · 单 task 模式（schema 3，--task）——按阶段推进时一次只做一个 task
+# 参数是缓存键（见 cached_claude）；正文引用的 $KNOWLEDGE / $SRC / $N 等是调用处的变量。
+
+emit_translate() {
+    cached_claude "$1" "$(load_step pali-translate translate)
+
+$KNOWLEDGE
+
+---本次要译的文献层次：$LCN（book=$LBOOK $TITLE）---
+$PARENT_BLOCK$DONE_CTX
+---待翻译（book=$LBOOK，段 $TODO，共 $N 句，按段落顺序排列）---
+pali 里的 \`**词**\` 是原文的黑体；在义注/复注里它就是**被解释词**，译文要保留 \`**…**\` 标记。
+$SRC
+
+---任务---
+把上面 $N 句 pali 逐句译为现代书面汉语。这些段落是连续上下文，术语与语体要通篇一致。
+**只输出 $N 行 JSONL，与输入逐句一一对应**，不得合并、拆分、增删或漏译。
+每行：{\"id\": 同输入, \"zh\": \"你的译文\", \"confidence\": 0-100}
+坐标以输入为准，不要编造 id。标点用中文全角；引号用全角 “” ‘’，不要出现 ASCII 引号。
+不确定时给出最好的一个译法并调低该句 confidence，**不要在译文里留任何工作标记**（候选、待定、问号之类）。
+所需数据已全部注入上文，不要试图调用任何工具取数。
+只输出 JSONL，不要旁白或代码围栏。"
+}
+
+emit_review() {
+    cached_claude "$1" "$(load_step pali-review review)
+
+$KNOWLEDGE
+
+---本次审的文献层次：$LCN（book=$LBOOK $TITLE）---
+$PARENT_BLOCK
+$ATT_REF
+---待审译文（book=$LBOOK，段 $CH，channel=$CHANNEL）---
+$REVIEW_SRC
+
+---任务---
+按方法文档逐句审查，输出 markdown 审稿意见。
+本层若有父层对照，**第一项就查被解释词是否与父层译文逐字相同**，不同即必改项。
+整个 chunk 一起审，跨段的术语与语体不一致也要列出。无问题的句子不必列出。
+所需数据已全部注入上文，不要试图调用任何工具取数。
+只输出 markdown，不要旁白或代码围栏。"
+}
+
+emit_revise() {
+    cached_claude "$1" "$(load_step pali-revise revise)
+
+$KNOWLEDGE
+
+---本次修订的文献层次：$LCN（book=$LBOOK $TITLE）---
+$PARENT_BLOCK
+$ATT_REF
+---现有译文与资源（book=$LBOOK，段 $CH）---
+$REVIEW_SRC
+
+---审稿意见---
+$(read_or_empty "$REVIEW_MD")
+
+---任务---
+按审稿意见修正译文。**只输出你真正改动过的句子**，每行：{\"id\": 同输入, \"zh\": \"修正后译文\", \"confidence\": 0-100}
+写入是按坐标覆盖的，没提交的句子原样保留——所以**不要回传未改动的句子**（至多 $N 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
+未被审稿意见提及的句子不要顺手改。
+原文里的黑体是**被解释词**（义注引自本文、复注引自义注）。译文里这些词必须照样用双星号包起来——不要改成引号、不要去掉。它是读者辨认「这条注在注哪个词」的唯一线索，也是逐字同译的机械核查依据。
+坐标不要编造。译文里不要留任何工作标记。
+所需数据已全部注入上文，不要试图调用任何工具取数。
+只输出 JSONL，不要旁白或代码围栏。"
+}
+
+emit_harmonize() {
+    cached_claude "$1" "$(load_step pali-harmonize harmonize)
+
+$KNOWLEDGE
+
+---待统稿（每块以 === 标出 book 与段范围）---
+$USRC
+
+---任务---
+$WHAT
+每处改动都要有具体理由（对齐、一致性，或明确的错误）；**不要为「读起来更顺」而改**，不要重译。
+原文里的黑体是**被解释词**，译文里必须照样用双星号包起来——不要改成引号、不要去掉。
+**只输出你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
+写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $UN 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
+id 照抄输入，不要编造坐标。译文里不要留任何工作标记。
+所需数据已全部注入上文，不要试图调用任何工具取数。
+只输出 JSONL，不要旁白或代码围栏。"
+}
+
+emit_evaluate() {
+    cached_claude "$1" "$(load_step pali-evaluate evaluate)
+
+$KNOWLEDGE
+
+---本次评估的文献层次：$LCN（book=$LBOOK $TITLE）---
+
+---待评估译文（book=$LBOOK，段 $CH，channel=$CHANNEL，已走完 translate/review/revise/harmonize）---
+$EVAL_SRC
+
+---任务---
+按方法文档逐句评估，输出 markdown 总评（总分 / 信心 / 理由 / 问题清单）。
+问题清单每条给出句 id 与原样摘出的问题片段；句 id 不要编造。
+**不要改译文、不要输出 JSONL**——这是流水线的最后一步，只出报告。
+所需数据已全部注入上文，不要试图调用任何工具取数。
+只输出 markdown，不要旁白或代码围栏。"
+}
+
 count_mula() { printf '%s' "$1" | grep -c '^{"layer":"mula"' || true; }
 count_zh()   { printf '%s' "$1" | grep -c '^{"layer":"mula".*"zh":' || true; }
 count_nis()  { printf '%s' "$1" | grep -c '"nissaya":' || true; }
@@ -298,6 +416,263 @@ layer_cn() {
         *)          echo "$1" ;;
     esac
 }
+
+# 复核各步都从 channel 读回译文——**channel 就是流水线各步之间的交接处**
+# （见 ARCHITECTURE「数据流」）。两条执行路径都要用，所以定义放在这里。
+pull_review() {
+    python3 "$SCRIPT_DIR/wp_pull.py" --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL"
+}
+
+# ══════════ 单 task 模式（schema 3）══════════
+# 按阶段推进时一次只做一个 task：坐标、父层对照、统稿 spans 全部从计划里查，
+# 执行期不再解析层次、不再重切块——边界在规划期就定死了（见 plan_scan.py）。
+# 提示词与作业模式共用上面那五个 emit_* 函数，只有「取数据、写回、记账」这一圈在这里。
+if [[ -n "$TASK" ]]; then
+    [[ -n "$PLAN" ]] || { echo "--task 要和 --plan 一起给" >&2; exit 2; }
+    eval "$(python3 - "$PLAN" "$TASK" <<'PYTASK'
+import json, shlex, sys
+plan = json.load(open(sys.argv[1], encoding='utf-8'))
+tid = sys.argv[2]
+t = next((x for x in plan.get("tasks") or [] if x["id"] == tid), None)
+if t is None:
+    print(f'echo "计划里没有 task {tid}" >&2; exit 2')
+    sys.exit(0)
+LCN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tika": "复注 ṭīkā",
+       "mulatika": "根本复注 mūlaṭīkā", "anutika": "随复注 anuṭīkā"}
+chunk = None
+for m in plan.get("layers", []):
+    for ch in m.get("chunks", []):
+        if tid.startswith(ch["id"] + ":"):
+            chunk = ch
+out = []
+
+
+def put(k, v):
+    out.append(f'{k}={shlex.quote("" if v is None else str(v))}')
+
+
+def paras(spans):
+    return ",".join(str(p) for sp in spans
+                    for p in range(int(sp["start"]), int(sp["end"]) + 1))
+
+
+put("T_STEP", t["step"])
+put("T_LAYER", t.get("layer", ""))
+put("T_BOOK", t.get("book") or "")
+put("T_START", t.get("start") or "")
+put("T_END", t.get("end") or "")
+put("T_TITLE", t.get("title", ""))
+put("T_LCN", LCN.get(t.get("layer", ""), t.get("layer", "")))
+put("T_SENTS", t.get("sents") or 0)
+# export 用 --from/--to，段列表对它没用（整层八百多段，展开只是把命令行撑长）
+if t.get("book") and t.get("start") and t["step"] != "export":
+    put("T_PARAS", paras([{"start": t["start"], "end": t["end"]}]))
+else:
+    put("T_PARAS", "")
+pb = (chunk or {}).get("parent") or {}
+put("T_PBOOK", pb.get("book") or "")
+put("T_PPARAS", paras(pb.get("spans", [])))
+ar = (chunk or {}).get("att_ref") or {}
+put("T_ABOOK", ar.get("book") or "")
+put("T_APARAS", paras(ar.get("spans", [])))
+put("T_SPANS", " ".join(f'{sp["book"]}:{paras([sp])}' for sp in t.get("spans", [])))
+put("T_NBOOK", len({sp["book"] for sp in t.get("spans", [])}))
+print("\n".join(out))
+PYTASK
+)"
+
+    # 这个 task 的坐标就位，报告路径跟着它的 book 走
+    LBOOK="$T_BOOK"; LAYER="$T_LAYER"; LCN="$T_LCN"; TITLE="$T_TITLE"
+    TODO="$T_PARAS"; CH="$T_PARAS"
+    CHID="$TASK"
+    [[ -n "$T_BOOK" ]] && REPORTS="$PROJ_HOME/reports/$T_BOOK"
+    mkdir -p "$REPORTS"
+    TAG="$T_BOOK-$T_START-$T_END"
+    REVIEW_MD="$REPORTS/${TAG}_review.md"
+    DONE_CTX=""; PARENT_BLOCK=""; ATT_REF=""
+
+    echo "######## task $TASK｜$T_STEP｜$T_LCN $T_BOOK:$T_START-$T_END｜$T_TITLE ########"
+    echo "channel=$CHANNEL｜method=$METHOD｜计划 $PLAN"
+
+    if [[ -z "$FORCE" ]] && task_done "$TASK"; then
+        echo "  跳过：$TASK 已了结（--force 可强制重做）"; exit 0
+    fi
+
+    # 父层对照：翻译/复核子层时，黑体被解释词必须与父层译文逐字相同
+    if [[ -n "$T_PBOOK" && -n "$T_PPARAS" ]]; then
+        PARENT_TXT="$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_PBOOK" --para "$T_PPARAS" --channel "$CHANNEL" || true)"
+        if [[ "$(count_zh "$PARENT_TXT")" -gt 0 ]]; then
+            PARENT_BLOCK="
+---父层对照（book=$T_PBOOK，段 $T_PPARAS；pali 为父层原文，zh 为**已定稿的父层译文**）---
+本层的**黑体被解释词引自父层**。凡是黑体词，译法必须与下面父层译文中同一处**逐字相同**，
+一个字都不能改——不一致读者就看不出这条注在注哪个词。父层没提到的词才由你自己定译法。
+$PARENT_TXT
+"
+        else
+            echo "  ⚠ 父层 $T_PBOOK:$T_PPARAS 还没有译文，本层无法对齐被解释词" >&2
+        fi
+    fi
+
+    # 义注参考：只给本文层的复核步骤用（**义注定释义**），translate 永远不给
+    if [[ "$T_LAYER" == "mula" && -n "$T_ABOOK" && -n "$T_APARAS" \
+          && ( "$T_STEP" == "review" || "$T_STEP" == "revise" ) ]]; then
+        ATT_REF="
+---义注参考（校对用；本 task **不翻译**义注）---
+$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL" || true)
+"
+    fi
+
+    case "$T_STEP" in
+    translate)
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_BOOK" --para "$TODO" || true)
+            N=$(count_mula "$SRC")
+            if [[ "$N" -eq 0 ]]; then
+                echo "  跳过：$T_BOOK:$TODO 没有巴利原文"
+                audit_task "$TASK" skip "无巴利原文" "$T_BOOK" "$T_START-$T_END"; exit 0
+            fi
+            printf '%s' "$SRC" | python3 -c "
+import json, sys
+for line in sys.stdin:
+    line = line.strip()
+    if line.startswith('{'):
+        r = json.loads(line)
+        if r.get('layer') == 'mula' and r.get('id'):
+            print(r['id'])
+" > "$IDS_FILE"
+            echo ">>> translate 第 $try/$MAX_TRY 次（$N 句 / $(echo ${TODO//,/ } | wc -w) 段）"
+            : > "$MISS_FILE"
+            set +e
+            emit_translate "$TASK" \
+                | python3 "$SCRIPT_DIR/wp_push.py" --book "$T_BOOK" --para "$TODO" \
+                    --channel "$CHANNEL" --expect "$N" --expect-ids "$IDS_FILE" \
+                    --missing-out "$MISS_FILE" $DRYRUN
+            PUSH_RC=${PIPESTATUS[1]}
+            set -e
+            if [[ "$PUSH_RC" -eq 0 ]]; then
+                audit_task "$TASK" ok "$N 句" "$T_BOOK" "$T_START-$T_END"; exit 0
+            fi
+            # 退出码 2 = 能写的都写进去了，只差几段：下一轮只补缺的
+            if [[ "$PUSH_RC" -eq 2 && -s "$MISS_FILE" && $try -lt $MAX_TRY ]]; then
+                TODO="$(tr -d '[:space:]' < "$MISS_FILE")"
+                echo "  只补缺失的段：$TODO"
+                continue
+            fi
+        done
+        audit_task "$TASK" fail "$MAX_TRY 次未成" "$T_BOOK" "$T_START-$T_END"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    review|evaluate)
+        SRC_TXT=$(pull_review "$T_BOOK" "$CH" || true)
+        if [[ "$(count_zh "$SRC_TXT")" -eq 0 ]]; then
+            echo "  跳过：channel 上 $T_BOOK:$T_START-$T_END 还没有译文"
+            audit_task "$TASK" skip "channel 上还没有译文" "$T_BOOK" "$T_START-$T_END"; exit 0
+        fi
+        # 复注的 review 全靠缅文 nissaya 定词法，没有它只剩自说自话
+        if [[ "$T_STEP" == "review" && "$T_LAYER" == "tika" && -n "$NISSAYA" \
+              && "$(count_nis "$SRC_TXT")" -eq 0 ]]; then
+            echo "  跳过 review：复注 $T_BOOK:$T_START-$T_END 没有缅文 nissaya"
+            audit_task "$TASK" skip "复注无缅文 nissaya" "$T_BOOK" "$T_START-$T_END"; exit 0
+        fi
+        if [[ "$T_STEP" == "review" ]]; then
+            REVIEW_SRC="$SRC_TXT"; OUT_MD="$REVIEW_MD"
+        else
+            EVAL_SRC="$SRC_TXT"; OUT_MD="$REPORTS/${TAG}_final.md"
+        fi
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            echo ">>> $T_STEP 第 $try/$MAX_TRY 次"
+            if [[ "$T_STEP" == "review" ]]; then
+                emit_review "$TASK" > "$OUT_MD" && valid_report "$OUT_MD" && {
+                    audit_task "$TASK" ok "$OUT_MD" "$T_BOOK" "$T_START-$T_END"; exit 0; }
+            else
+                emit_evaluate "$TASK" > "$OUT_MD" && valid_report "$OUT_MD" && {
+                    audit_task "$TASK" ok "$OUT_MD" "$T_BOOK" "$T_START-$T_END"; exit 0; }
+            fi
+        done
+        audit_task "$TASK" fail "$MAX_TRY 次未成（输出不是报告）" "$T_BOOK" "$T_START-$T_END"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    revise)
+        REVIEW_SRC=$(pull_review "$T_BOOK" "$CH" || true)
+        if [[ "$(count_zh "$REVIEW_SRC")" -eq 0 ]]; then
+            echo "  跳过：channel 上 $T_BOOK:$T_START-$T_END 还没有译文"
+            audit_task "$TASK" skip "channel 上还没有译文" "$T_BOOK" "$T_START-$T_END"; exit 0
+        fi
+        if [[ ! -s "$REVIEW_MD" ]]; then
+            echo "  跳过 revise：没有审稿意见（$REVIEW_MD）"
+            audit_task "$TASK" skip "没有审稿意见" "$T_BOOK" "$T_START-$T_END"; exit 0
+        fi
+        N=$(count_mula "$REVIEW_SRC")
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            echo ">>> revise 第 $try/$MAX_TRY 次"
+            set +e
+            emit_revise "$TASK" \
+                | python3 "$SCRIPT_DIR/wp_push.py" --book "$T_BOOK" --para "$CH" \
+                    --channel "$CHANNEL" --at-most "$N" --allow-empty $DRYRUN
+            PUSH_RC=${PIPESTATUS[1]}
+            set -e
+            [[ "$PUSH_RC" -eq 0 ]] && {
+                audit_task "$TASK" ok "至多 $N 句" "$T_BOOK" "$T_START-$T_END"; exit 0; }
+        done
+        audit_task "$TASK" fail "$MAX_TRY 次未成" "$T_BOOK" "$T_START-$T_END"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    harmonize)
+        USRC=""; UN=0
+        for SP in $T_SPANS; do
+            UB="${SP%%:*}"; UR="${SP#*:}"
+            T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
+            UN=$(( UN + $(count_mula "$T") ))
+            USRC="$USRC
+=== book=$UB  段 $UR ===
+$T
+"
+        done
+        if [[ "$UN" -eq 0 ]]; then
+            echo "  跳过：这个统稿单元还没有译文"
+            audit_task "$TASK" skip "没有译文"; exit 0
+        fi
+        if [[ "${T_NBOOK:-1}" -gt 1 ]]; then
+            WHAT="横向：各层同看，**被解释词与父层逐字对齐**是最高优先（下一层的黑体引自它的上一层：义注引本文、复注引义注、随复注引根本复注）；顺带统一术语与语体。"
+        else
+            WHAT="纵向：只看这一层，通读求**同层一致**——术语、语体、称谓、重复定型句同译。跨层对齐已在横向那一步做过，这里不要再改被解释词的译法。"
+        fi
+        echo ">>> 统稿 $TASK（$UN 句 / 计划 $T_SENTS 句）"
+        UOUT="$(mktemp)"; OK=0
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            if emit_harmonize "$TASK" > "$UOUT"; then
+                PUSH_OK=1
+                for SP in $T_SPANS; do
+                    UB="${SP%%:*}"; UR="${SP#*:}"
+                    NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" | grep -c '^{' || true)
+                    python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
+                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN \
+                        < "$UOUT" || PUSH_OK=0
+                done
+                [[ "$PUSH_OK" -eq 1 ]] && { OK=1; break; }
+            fi
+        done
+        rm -f "$UOUT"
+        [[ "$OK" -eq 1 ]] && { audit_task "$TASK" ok "$T_SPANS"; exit 0; }
+        audit_task "$TASK" fail "用尽 $MAX_TRY 次"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    export)
+        if [[ -n "$DRYRUN" ]]; then
+            echo "  --dry-run：不导出"; exit 0
+        fi
+        if python3 "$SCRIPT_DIR/export_markdown.py" --book "$T_BOOK" --channel "$CHANNEL" \
+               --from "$T_START" --to "$T_END" --out "$EXPORT_DIR" --model claude-opus-5; then
+            audit_task "$TASK" ok "$EXPORT_DIR" "$T_BOOK" "$T_START-$T_END"; exit 0
+        fi
+        audit_task "$TASK" fail "导出失败" "$T_BOOK" "$T_START-$T_END"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    *)
+        echo "不认识的步骤：$T_STEP" >&2; exit 2
+        ;;
+    esac
+fi
 
 # ---------- 解析各层坐标 ----------
 echo "######## 本文 book=$BOOK $START..$END → channel $CHANNEL｜method=$METHOD ########"
@@ -419,9 +794,7 @@ if [[ -z "$PLAN" ]]; then
     done < "$GROUPS_FILE"
 fi
 
-pull_review() {
-    python3 "$SCRIPT_DIR/wp_pull.py" --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL"
-}
+
 
 # ══════════ 阶段一：逐层 translate → review → revise ══════════
 while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
@@ -513,24 +886,7 @@ $(pull_review "$LBOOK" "$CH" || true)
                 : > "$MISS_FILE"
                 # 这条管道的非零退出是**正常控制流**（2 = 缺句），不能让 set -e 掐掉脚本
                 set +e
-                cached_claude "$CHID:translate:$LBOOK:$TODO" "$(load_step pali-translate translate)
-
-$KNOWLEDGE
-
----本次要译的文献层次：$LCN（book=$LBOOK $TITLE）---
-$PARENT_BLOCK$DONE_CTX
----待翻译（book=$LBOOK，段 $TODO，共 $N 句，按段落顺序排列）---
-pali 里的 \`**词**\` 是原文的黑体；在义注/复注里它就是**被解释词**，译文要保留 \`**…**\` 标记。
-$SRC
-
----任务---
-把上面 $N 句 pali 逐句译为现代书面汉语。这些段落是连续上下文，术语与语体要通篇一致。
-**只输出 $N 行 JSONL，与输入逐句一一对应**，不得合并、拆分、增删或漏译。
-每行：{\"id\": 同输入, \"zh\": \"你的译文\", \"confidence\": 0-100}
-坐标以输入为准，不要编造 id。标点用中文全角；引号用全角 “” ‘’，不要出现 ASCII 引号。
-不确定时给出最好的一个译法并调低该句 confidence，**不要在译文里留任何工作标记**（候选、待定、问号之类）。
-所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 JSONL，不要旁白或代码围栏。" \
+                emit_translate "$CHID:translate:$LBOOK:$TODO" \
                     | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$TODO" \
                         --channel "$CHANNEL" --expect "$N" --expect-ids "$IDS_FILE" \
                         --missing-out "$MISS_FILE" $DRYRUN
@@ -589,22 +945,7 @@ $SRC
         if has_step review && [[ -n "$REVIEW_SRC" ]] && ! task_done "$CHID:review"; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> review 第 $try/$MAX_TRY 次"
-                if cached_claude "$CHID:review:$LBOOK:$CH" "$(load_step pali-review review)
-
-$KNOWLEDGE
-
----本次审的文献层次：$LCN（book=$LBOOK $TITLE）---
-$PARENT_BLOCK
-$ATT_REF
----待审译文（book=$LBOOK，段 $CH，channel=$CHANNEL）---
-$REVIEW_SRC
-
----任务---
-按方法文档逐句审查，输出 markdown 审稿意见。
-本层若有父层对照，**第一项就查被解释词是否与父层译文逐字相同**，不同即必改项。
-整个 chunk 一起审，跨段的术语与语体不一致也要列出。无问题的句子不必列出。
-所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 markdown，不要旁白或代码围栏。" > "$REVIEW_MD" && valid_report "$REVIEW_MD"; then
+                if emit_review "$CHID:review:$LBOOK:$CH" > "$REVIEW_MD" && valid_report "$REVIEW_MD"; then
                     audit_task "$CHID:review" ok "$REVIEW_MD" "$LBOOK" "$FIRST-$LAST"; break
                 fi
                 [[ $try -eq $MAX_TRY ]] && { audit_task "$CHID:review" fail "$MAX_TRY 次未成" "$LBOOK" "$FIRST-$LAST"; fail_step "review 失败（$CHID，输出不是报告）"; }
@@ -615,27 +956,7 @@ $REVIEW_SRC
         if has_step revise && [[ -n "$REVIEW_SRC" ]] && ! task_done "$CHID:revise"; then
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> revise 第 $try/$MAX_TRY 次"
-                if cached_claude "$CHID:revise:$LBOOK:$CH" "$(load_step pali-revise revise)
-
-$KNOWLEDGE
-
----本次修订的文献层次：$LCN（book=$LBOOK $TITLE）---
-$PARENT_BLOCK
-$ATT_REF
----现有译文与资源（book=$LBOOK，段 $CH）---
-$REVIEW_SRC
-
----审稿意见---
-$(read_or_empty "$REVIEW_MD")
-
----任务---
-按审稿意见修正译文。**只输出你真正改动过的句子**，每行：{\"id\": 同输入, \"zh\": \"修正后译文\", \"confidence\": 0-100}
-写入是按坐标覆盖的，没提交的句子原样保留——所以**不要回传未改动的句子**（至多 $N 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
-未被审稿意见提及的句子不要顺手改。
-原文里的黑体是**被解释词**（义注引自本文、复注引自义注）。译文里这些词必须照样用双星号包起来——不要改成引号、不要去掉。它是读者辨认「这条注在注哪个词」的唯一线索，也是逐字同译的机械核查依据。
-坐标不要编造。译文里不要留任何工作标记。
-所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 JSONL，不要旁白或代码围栏。" \
+                if emit_revise "$CHID:revise:$LBOOK:$CH" \
                     | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$CH" \
                         --channel "$CHANNEL" --at-most "$N" --allow-empty $DRYRUN; then
                     audit_task "$CHID:revise" ok "$N 句" "$LBOOK" "$FIRST-$LAST"; break
@@ -703,22 +1024,7 @@ $T
         echo ">>> 统稿 $HUID（$KIND，$UCHARS 巴利字符 / $UN 句）"
         UOUT="$(mktemp)"; OK=0
         for ((try = 1; try <= MAX_TRY; try++)); do
-            if cached_claude "$HUID" "$(load_step pali-harmonize harmonize)
-
-$KNOWLEDGE
-
----待统稿（每块以 === 标出 book 与段范围）---
-$USRC
-
----任务---
-$WHAT
-每处改动都要有具体理由（对齐、一致性，或明确的错误）；**不要为「读起来更顺」而改**，不要重译。
-原文里的黑体是**被解释词**，译文里必须照样用双星号包起来——不要改成引号、不要去掉。
-**只输出你真正改动过的句子**：{\"id\": 同输入, \"zh\": \"统稿后译文\"}
-写入是按坐标覆盖的，没提交的句子原样保留——不要回传未改动的句子（至多 $UN 行）。一句都没改就只输出一行 {\"no_change\": true}——不要输出空。
-id 照抄输入，不要编造坐标。译文里不要留任何工作标记。
-所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 JSONL，不要旁白或代码围栏。" > "$UOUT"; then
+            if emit_harmonize "$HUID" > "$UOUT"; then
                 PUSH_OK=1
                 for SP in ${SPANS//,/ }; do
                     UB="${SP%%:*}"; UR="${SP#*:}"
@@ -893,21 +1199,7 @@ if has_step evaluate; then
             echo "════════ 评估 $LCN $LBOOK:$FIRST-$LAST ════════"
             for ((try = 1; try <= MAX_TRY; try++)); do
                 echo ">>> evaluate 第 $try/$MAX_TRY 次"
-                if cached_claude "$CHID:evaluate:$LBOOK:$CH" "$(load_step pali-evaluate evaluate)
-
-$KNOWLEDGE
-
----本次评估的文献层次：$LCN（book=$LBOOK $TITLE）---
-
----待评估译文（book=$LBOOK，段 $CH，channel=$CHANNEL，已走完 translate/review/revise/harmonize）---
-$EVAL_SRC
-
----任务---
-按方法文档逐句评估，输出 markdown 总评（总分 / 信心 / 理由 / 问题清单）。
-问题清单每条给出句 id 与原样摘出的问题片段；句 id 不要编造。
-**不要改译文、不要输出 JSONL**——这是流水线的最后一步，只出报告。
-所需数据已全部注入上文，不要试图调用任何工具取数。
-只输出 markdown，不要旁白或代码围栏。" > "$REPORTS/${TAG}_final.md" \
+                if emit_evaluate "$CHID:evaluate:$LBOOK:$CH" > "$REPORTS/${TAG}_final.md" \
                     && valid_report "$REPORTS/${TAG}_final.md"; then
                     audit_task "$CHID:evaluate" ok "$REPORTS/${TAG}_final.md" "$LBOOK" "$FIRST-$LAST"; break
                 fi
