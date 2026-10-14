@@ -66,8 +66,10 @@ def stop_requested(name=None):
     return os.path.exists(GLOBAL_STOP) or (bool(name) and os.path.exists(stop_path(name)))
 
 PENDING, RUNNING, DONE, FAILED = "pending", "running", "done", "failed"
+SKIPPED = pj.SKIPPED        # 「按规矩不该做」，与 done 同为终态（见 project.settled）
 # 任务表用 emoji 标状态，一眼能扫出全书进度
-EMOJI = {PENDING: "⬜ 未开始", RUNNING: "🔄 进行中", DONE: "✅ 已完成", FAILED: "❌ 失败"}
+EMOJI = {PENDING: "⬜ 未开始", RUNNING: "🔄 进行中", DONE: "✅ 已完成", FAILED: "❌ 失败",
+         SKIPPED: "⏭ 跳过"}
 STATE = {v: k for k, v in EMOJI.items()}
 # 状态表的列（历史遗留，仅 write_status 用）。
 # 子行状态来自 audit.log 里的 task_id（查表，见 sync_subrows）。
@@ -515,6 +517,9 @@ def task_coord(t):
 def run_scan(args):
     """schema 3 的主循环。状态只写在 task 上，项目文件由本进程独占写。"""
     proj = PROJ["data"]
+    # 先把 audit 的账落到 task 上，**再**决定派什么：重新规划过的计划是全 pending 的，
+    # 不先查账就会把已经跑完的 task 又派一遍（白花钱，还会覆盖写 channel）
+    pj.apply_audit(proj)
     tasks = scan_tasks(proj)
     by_id = {t["id"]: t for t in tasks}
     for t in tasks:                       # 上次被强杀留下的 running 复位
