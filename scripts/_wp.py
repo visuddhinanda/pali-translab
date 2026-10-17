@@ -341,6 +341,64 @@ def book_roots(book):
     return ps or [3]
 
 
+def book_works(book):
+    """一本书里的全部**作品**（work）：[(起段, 止段, 卷名, 族)]，按段号排序。
+
+    书目表（`wikipali books`）的一行就是一个 work：book 209 的六行是六部作品
+    （`209:3` 序论、`209:166` Pārājika 注、`209:992` Mahāvagga 注…），各属不同卷族。
+    止段 = 同一本书里下一行的段号 - 1；最后一行到书末。
+    **规划的单位是 work，不是 book** —— 按 book 规划会把别卷的注释一起拉进来。
+    """
+    rows = sorted((x for x in all_books()
+                   if x.get("book") == int(book) and x.get("paragraph") is not None),
+                  key=lambda x: int(x["paragraph"]))
+    out = []
+    for i, x in enumerate(rows):
+        lo = int(x["paragraph"])
+        hi = int(rows[i + 1]["paragraph"]) - 1 if i + 1 < len(rows) else 10 ** 9
+        out.append((lo, hi, x.get("toc") or x.get("title") or "",
+                    (x.get("related_name") or "").split("_")[0]))
+    return out
+
+
+def layer_works(book, para=None):
+    """与某个 work 同族的各层作品：[{layer, book, start, end, title, fam}]，含它自己。
+
+    族看书目表的 **related_name**（`vin1`、`an2`…），不看 tag：律藏的复注与本文
+    **不共享卷级 tag**（204/205/210 的 tags 里没有 `pārājika`），按 tag 判同卷会把
+    三部复注漏掉。related_name 是书目表给出的权威族标记。
+
+    **同一层可以有多个 work**：律藏一卷常有并列的几部复注（vin1 有
+    `Sāratthadīpanī` 两段 + `Vajirabuddhi` + `Vimativinodanī` 共四部五个 work），
+    它们各自注同一部义注，彼此是并列关系、不该互相统一。
+    经藏一层一个 work，退化成原来的样子。
+    """
+    rows = all_books()
+    mine = [x for x in rows if x.get("book") == int(book)]
+    if para is not None:
+        mine = [x for x in mine if int(x.get("paragraph") or 0) <= int(para)] or mine
+        mine = mine[-1:]
+    fam = ((mine[0].get("related_name") if mine else "") or "").split("_")[0]
+    out = []
+    for r in rows:
+        lay = layer_of(set(r.get("tags", [])))
+        if not lay:
+            continue
+        f = (r.get("related_name") or "").split("_")[0]
+        if fam and f != fam:
+            continue
+        lo = int(r.get("paragraph") or 0)
+        hi = 10 ** 9
+        for a, b, _t, _f in book_works(r["book"]):
+            if a == lo:
+                hi = b
+                break
+        out.append({"layer": lay, "book": r["book"], "start": lo, "end": hi,
+                    "title": r.get("toc") or r.get("title") or "", "fam": f})
+    out.sort(key=lambda x: (LAYER_ORDER.get(x["layer"], 99), x["book"], x["start"]))
+    return out
+
+
 def layer_segments(book):
     """与 `book` 同卷的各注释书，**连它在这一卷里的段范围**：
     {注释书号: (layer, title, 起段, 止段)}。
