@@ -31,7 +31,7 @@ import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from _wp import (LAYER_CHAIN, LAYER_ORDER, SENT_CSV, book_chapters,  # noqa: E402
-                 chunk_paras, cs_filled, have_sent_counts, layer_segments,
+                 chunk_paras, cs_filled, have_sent_counts, layer_works,
                  para_chars, para_sents, parent_layer)
 import project as pj  # noqa: E402
 
@@ -148,91 +148,119 @@ def parent_block(chunk, csf_child, pbook, pidx, plo, phi):
 
 # ══════════════════ 三、统稿单元（按 cs_para 跨层成组）══════════════════
 
-def harmonize_units(layers_meta, args):
-    """按 cs_para 把各层对应的段聚成统稿单元，相邻 cs 合并到上限为止。
+def harmonize_pairs(works, args):
+    """统稿单元：**相邻两层配对**，按 cs_para 成组，父层只读。
 
-    单元是**跨层**的：一个 cs 在本文、义注、复注各自对应若干段，它们必须放在一起读，
-    黑体被解释词才对得齐。与块的切分完全无关——块是为了翻译时的体量，
-    单元是为了对齐时的对应关系。
+    被解释词的引用关系只存在于相邻两层（义注的黑体引自本文、复注的引自义注），
+    所以对齐只需两层对照，不必把三层堆在一起。配对因此是：
 
-    开头没有 cs 锚点的段（注释书的序论在本文里无对应）并进第一个单元，一段都不丢。
+        本文 + 义注    →  改义注
+        义注 + 复注1   →  改复注1
+        义注 + 复注2   →  改复注2    …（并列注本各自与义注对齐）
+
+    **父层只读**：并列的几部复注都以同一部义注为基准，若允许它们改义注，
+    五部注的统稿会轮流改同一批句子、互相打架，而且后跑的复注对齐的是被前一部
+    改过的义注。父层自己的问题交给它那一层的 review/revise（那里有义注与
+    nissaya 作独立基准）。所以单元只写子层，父层整段标为只读参考。
+
+    相邻 cs 合并到上限；单个 cs 自己就超限时按层拆（见 split_layerwise）。
     """
-    csf = {m["book"]: cs_filled(m["book"]) for m in layers_meta}
-    chars = {m["book"]: para_chars(m["book"]) for m in layers_meta}
-    sents = {m["book"]: para_sents(m["book"]) for m in layers_meta}
+    chars = {w["book"]: para_chars(w["book"]) for w in works}
+    sents = {w["book"]: para_sents(w["book"]) for w in works}
+    csf = {w["book"]: cs_filled(w["book"]) for w in works}
+    by_id = {w["id"]: w for w in works}
+    units = []
 
-    # cs → {book: [段…]}；None 收在 head 里
-    by_cs, head = {}, {}
-    for m in layers_meta:
-        b, lo, hi = m["book"], m["start"], m["end"]
-        for p in range(lo, hi + 1):
-            if not chars[b].get(p, 0):
-                continue
-            cs = csf[b].get(p)
-            (head if cs is None else by_cs.setdefault(cs, {})).setdefault(b, []).append(p)
-
-    def vol(group):
-        c = sum(chars[b].get(p, 0) for b, ps in group.items() for p in ps)
-        s = sum(sents[b].get(p, 0) for b, ps in group.items() for p in ps)
-        return c, s
-
-    def split_layerwise(g):
-        """一个 cs 自己就超限（本集最大的那个有三百多句）：改**按层**拆。
-
-        一个 cs 是跨层对应的最小单位，再往里切就没有公共锚点了，所以不能横向细分。
-        退一步按层拆成纵向单元（层内还超就按段切），跨层对齐那部分交给 translate
-        阶段的父层对照去保——那一步每块都注入了父层定稿译文。
-        """
-        parts = []
-        for b in sorted(g, key=lambda x: LAYER_ORDER.get(
-                next(m["layer"] for m in layers_meta if m["book"] == x), 9)):
-            cur_ps, c, s2 = [], 0, 0
-            for p in sorted(g[b]):
-                pc, ps_ = chars[b].get(p, 0), sents[b].get(p, 0)
-                if cur_ps and (c + pc > args.harm_chars
-                               or (args.harm_sents > 0 and s2 + ps_ > args.harm_sents)):
-                    parts.append({b: cur_ps}); cur_ps, c, s2 = [], 0, 0
-                cur_ps.append(p); c += pc; s2 += ps_
-            if cur_ps:
-                parts.append({b: cur_ps})
-        return parts
-
-    units, cur, cur_cs = [], {}, []
-    if head:
-        cur, cur_cs = {b: list(ps) for b, ps in head.items()}, []
-
-    def flush():
-        nonlocal cur, cur_cs
-        if not cur:
-            return
-        c, s = vol(cur)
-        units.append({"cs": [cur_cs[0], cur_cs[-1]] if cur_cs else None,
-                      "chars": c, "sents": s,
-                      "spans": [{"book": b, "layer": next(m["layer"] for m in layers_meta
-                                                          if m["book"] == b),
-                                 "start": lo, "end": hi}
-                                for b in sorted(cur, key=lambda x: LAYER_ORDER.get(
-                                    next(m["layer"] for m in layers_meta if m["book"] == x), 9))
-                                for lo, hi in spans_of(cur[b])]})
-        cur, cur_cs = {}, []
-
-    for cs in sorted(by_cs):
-        g = by_cs[cs]
-        c, s = vol(g)
-        if cur:
-            merged = {b: cur.get(b, []) + g.get(b, []) for b in set(cur) | set(g)}
-            mc, ms = vol(merged)
-            if mc <= args.harm_chars and (args.harm_sents <= 0 or ms <= args.harm_sents):
-                cur, cur_cs = merged, cur_cs + [cs]
-                continue
-            flush()
-        if c > args.harm_chars or (args.harm_sents > 0 and s > args.harm_sents):
-            for part in split_layerwise(g):      # 这个 cs 自己就超限：按层拆
-                cur, cur_cs = part, [cs]
-                flush()
+    for child in works:
+        if not child.get("parent_id"):
             continue
-        cur, cur_cs = {b: list(ps) for b, ps in g.items()}, [cs]
-    flush()
+        par = by_id[child["parent_id"]]
+
+        def cs_map(w):
+            out = {}
+            for p in range(w["start"], w["end"] + 1):
+                if not chars[w["book"]].get(p, 0):
+                    continue
+                out.setdefault(csf[w["book"]].get(p), []).append(p)
+            return out
+
+        cmap, pmap = cs_map(child), cs_map(par)
+        # 子层没有 cs 锚点的段并进第一个单元，一段也不丢
+        head = cmap.pop(None, [])
+        pmap.pop(None, None)
+
+        def vol(cps, pps=()):
+            """(子层字符, 子层句数)——**上限只管子层**。
+
+            父层是只读对照，而且切不开：义注一个 cs 对应的段常有几万字符，
+            按合计卡上限的话，无论子层怎么切都超，单元会被切成碎片还是超限。
+            统稿的输出只来自子层（父层整段只读），所以上限约束子层就够了；
+            父层对照带多少由 cs 对应关系决定，规划末尾会把最大的那个报出来。
+            """
+            return (sum(chars[child["book"]].get(p, 0) for p in cps),
+                    sum(sents[child["book"]].get(p, 0) for p in cps))
+
+        def ctx_chars(pps):
+            return sum(chars[par["book"]].get(p, 0) for p in pps)
+
+        def emit_split(cps, pps, cs_val):
+            """按子层段切成若干单元——段是坐标最小单位，永不拆段。"""
+            nonlocal cur_c, cur_p, cur_cs
+            acc, ac, an = [], 0, 0
+            for p in sorted(cps):
+                pc = chars[child["book"]].get(p, 0)
+                pn = sents[child["book"]].get(p, 0)
+                if acc and (ac + pc > args.harm_chars
+                            or (args.harm_sents > 0 and an + pn > args.harm_sents)):
+                    cur_c, cur_p, cur_cs = acc, pps, ([cs_val] if cs_val is not None else [])
+                    flush()
+                    acc, ac, an = [], 0, 0
+                acc.append(p)
+                ac += pc
+                an += pn
+            if acc:
+                cur_c, cur_p, cur_cs = acc, pps, ([cs_val] if cs_val is not None else [])
+                flush()
+
+        def flush():
+            nonlocal cur_c, cur_p, cur_cs
+            if not cur_c:
+                return
+            c, n = vol(cur_c)
+            units.append({
+                "pair": [par["id"], child["id"]],
+                "cs": [cur_cs[0], cur_cs[-1]] if cur_cs else None,
+                "chars": c, "sents": n, "ctx_chars": ctx_chars(cur_p),
+                # write = 要改的（子层）；read = 只读的父层对照
+                "write": [{"book": child["book"], "layer": child["layer"],
+                           "work": child["id"], "start": lo, "end": hi}
+                          for lo, hi in spans_of(cur_c)],
+                "read": [{"book": par["book"], "layer": par["layer"],
+                          "work": par["id"], "start": lo, "end": hi}
+                         for lo, hi in spans_of(cur_p)],
+            })
+            cur_c, cur_p, cur_cs = [], [], []
+
+        cur_c, cur_p, cur_cs = [], [], []
+        if head:
+            emit_split(head, [], None)      # 没有 cs 锚点的段：无父层可对，单独成单元
+
+        for cs in sorted(cmap):
+            cps, pps = cmap[cs], pmap.get(cs, [])
+            c, n = vol(cps)
+            if cur_c:
+                mc, mn = vol(cur_c + cps)
+                if mc <= args.harm_chars and (args.harm_sents <= 0 or mn <= args.harm_sents):
+                    cur_c += cps
+                    cur_p += pps
+                    cur_cs.append(cs)
+                    continue
+                flush()
+            if c > args.harm_chars or (args.harm_sents > 0 and n > args.harm_sents):
+                emit_split(cps, pps, cs)    # 这个 cs 自己就超限：子层按段切
+                continue
+            cur_c, cur_p, cur_cs = list(cps), list(pps), [cs]
+        flush()
     return units
 
 
@@ -288,7 +316,7 @@ def build_needs(layers, units, exports, steps):
       · 统稿单元依赖它 spans 覆盖的各层块定稿；
       · 导出依赖本层全部统稿单元（没有统稿就依赖本层全部块定稿）。
     """
-    by_layer = {m["layer"]: m for m in layers}
+    by_id = {m["id"]: m for m in layers}
     fin = last_step(steps)
     needs = {}
 
@@ -309,7 +337,7 @@ def build_needs(layers, units, exports, steps):
             # 对不齐的地方由 review（三层译文都在 channel 上）与 harmonize 收拾。
             par = ch.get("parent")
             if par and "translate" in steps:
-                pm = by_layer.get(par.get("layer"))
+                pm = by_id.get(par.get("work"))
                 if pm:
                     dep = [f'{x["id"]}:translate' for sp in par["spans"]
                            for x in hits(pm, par["book"], sp["start"], sp["end"])]
@@ -317,8 +345,8 @@ def build_needs(layers, units, exports, steps):
 
     for u in units:
         dep = []
-        for sp in u["spans"]:
-            m = by_layer.get(sp.get("layer"))
+        for sp in u["write"] + u["read"]:        # 读到的父层块也得先定稿
+            m = by_id.get(sp.get("work"))
             if m:
                 dep += [chunk_fin(x) for x in hits(m, sp["book"], sp["start"], sp["end"])]
         needs[f'{u["id"]}:harmonize'] = sorted({d for d in dep if d})
@@ -331,13 +359,13 @@ def build_needs(layers, units, exports, steps):
                 dep += [f'{u["id"]}:harmonize' for u in units
                         if any(sp["book"] == ch["book"]
                                and not (sp["end"] < ch["start"] or sp["start"] > ch["end"])
-                               for sp in u["spans"])]
+                               for sp in u["write"])]
                 needs[f'{ch["id"]}:evaluate'] = sorted({d for d in dep if d})
 
     for e in exports:
-        m = by_layer.get(e["layer"])
+        m = by_id.get(e["id"][1:]) or next((x for x in layers if x["book"] == e["book"]), None)
         dep = [f'{u["id"]}:harmonize' for u in units
-               if any(sp["book"] == e["book"] for sp in u["spans"])]
+               if any(sp["book"] == e["book"] for sp in u["write"])]
         if not dep and m:
             dep = [chunk_fin(ch) for ch in m["chunks"]]
         needs[f'{e["id"]}:export'] = sorted({d for d in dep if d})
@@ -366,7 +394,8 @@ def build_tasks(layers, units, exports, steps):
             out.append({"id": f'{u["id"]}:harmonize', "stage": "harmonize",
                         "step": "harmonize", "layer": "", "book": None,
                         "start": None, "end": None, "chars": 0, "sents": u["sents"],
-                        "spans": u["spans"], "title": u["title"],
+                        "write": u["write"], "read": u["read"],
+                        "pair": u["pair"], "title": u["title"],
                         "needs": needs.get(f'{u["id"]}:harmonize', []),
                         "status": pj.PENDING, "tries": 0,
                         "began": "", "ended": "", "note": "", "detail": ""})
@@ -399,7 +428,7 @@ def check(proj, verbose=True):
     查六件事：每层无缝覆盖本集段界、块之间不重叠、统稿单元覆盖每层每一段、
     task 与块/单元一一对应、阶段表与 task 的 stage 对得上、注释层都有父层对照。
     """
-    bad = []
+    bad, warn = [], []
     chars_of = {}
     for m in proj["layers"]:
         b = m["book"]
@@ -421,33 +450,51 @@ def check(proj, verbose=True):
                        f'：{sorted(extra)[:10]}')
         if overlap:
             bad.append(f'层 {m["layer"]}(book {b}) 的块之间重叠 {overlap} 段')
-        # 6) 注释层要有父层对照
-        if m["layer"] != "mula":
+        # 6) 注释层的父层对照：**缺一些是正常的**，缺太多才是 cs 映射出了问题。
+        #    注释书的序论（Ganthārambhakathā、结集史、Bāhiranidānakathā…）在本文里
+        #    根本没有对应段，律藏尤其多。那些块翻译时没有父层译文可注入，
+        #    模型自己定译法——这是事实，不是计划的错。超过一半才判错。
+        if m.get("parent_id"):
             noparent = [ch["id"] for ch in m["chunks"] if not ch.get("parent")]
             if noparent:
-                bad.append(f'层 {m["layer"]} 有 {len(noparent)} 块没有父层对照'
-                           f'：{noparent[:5]}')
+                ratio = len(noparent) / max(1, len(m["chunks"]))
+                if ratio >= 1.0:
+                    # 整个 work 都对不上父层：它是**独立作品**（如 209:3-165
+                    # Vajirabuddhi 的序论，义注里没有对应段）。统稿时它没有父层
+                    # 可对齐，只能做同层一致。
+                    warn.append(f'{m["id"]}({m["layer"]}) 与父层 {m["parent_id"]} '
+                                f'完全无 cs 对应（{len(m["chunks"])} 块），'
+                                f'按独立作品处理：没有父层对照，统稿只做同层一致')
+                else:
+                    msg = (f'{m["id"]}({m["layer"]}) 有 {len(noparent)}/{len(m["chunks"])} 块'
+                           f'没有父层对照（{ratio:.0%}）：{noparent[:5]}')
+                    # 零星缺是正常的（序论几章）；过半缺但不是全无，才像 cs 映射出错
+                    (bad if ratio > 0.5 else warn).append(msg)
 
-    # 3) 统稿单元覆盖每层每一段（只要有正文的段）
+    # 3) 统稿**只写子层**（父层只读），所以核的是「每个有父层的 work 都被写全」
     if proj.get("harmonize"):
         hcov = {}
         for u in proj["harmonize"]:
-            for sp in u["spans"]:
-                hcov.setdefault(sp["book"], set()).update(
+            for sp in u["write"]:
+                hcov.setdefault(sp["work"], set()).update(
                     range(sp["start"], sp["end"] + 1))
         for m in proj["layers"]:
+            if not m.get("parent_id"):
+                continue                      # 最上层没有父层可对齐，不参与统稿
             b = m["book"]
             want = {p for p in range(m["start"], m["end"] + 1) if chars_of[b].get(p, 0)}
-            miss = want - hcov.get(b, set())
+            miss = want - hcov.get(m["id"], set())
             if miss:
-                bad.append(f'统稿漏了 book {b} 的 {len(miss)} 段：{sorted(miss)[:10]}')
+                bad.append(f'统稿漏了 {m["id"]}(book {b}) 的 {len(miss)} 段'
+                           f'：{sorted(miss)[:10]}')
 
     # 3b) 统稿单元不超限（单段自己就超限的除外——段不拆）
     th = proj["chunking"]
     for u in proj.get("harmonize", []):
+        # u["sents"] 已经只算子层（要写回的那层），与 harm_sents 的语义一致
         if u["chars"] > th["harm_chars"] or (th["harm_sents"] > 0
                                              and u["sents"] > th["harm_sents"]):
-            if len(u["spans"]) == 1 and u["spans"][0]["start"] == u["spans"][0]["end"]:
+            if len(u["write"]) == 1 and u["write"][0]["start"] == u["write"][0]["end"]:
                 continue                 # 一个段自己就超限，拆不动
             bad.append(f'统稿单元 {u["id"]} 超限：{u["chars"]:,} 字符 / {u["sents"]} 句'
                        f'（上限 {th["harm_chars"]:,} / {th["harm_sents"]}）')
@@ -498,6 +545,8 @@ def check(proj, verbose=True):
         bad.append(f"这些阶段一个 task 都没有：{empty}")
 
     if verbose:
+        for w in warn:
+            print(f"  ⚠ {w}", file=sys.stderr)
         if bad:
             print("  ✗ 自检不过：", file=sys.stderr)
             for x in bad:
@@ -511,27 +560,50 @@ def check(proj, verbose=True):
 
 # ══════════════════ 六、组装 ══════════════════
 
+LAYER_PFX = {"mula": "M", "atthakatha": "A", "tika": "T",
+             "mulatika": "MT", "anutika": "AT"}
+
+
 def build(args):
-    segs = layer_segments(args.book)
-    chm = para_chars(args.book)
-    mula_paras = sorted(p for p in chm)
-    layers_meta = [{"layer": "mula", "book": args.book,
-                    "start": min(mula_paras), "end": max(mula_paras), "title": ""}]
-    for b, (lay, title, lo, hi) in sorted(segs.items(), key=lambda kv: LAYER_ORDER.get(kv[1][0], 9)):
-        ps = sorted(para_chars(b))
-        layers_meta.append({"layer": lay, "book": b, "title": title,
-                            "start": max(lo, min(ps)), "end": min(hi, max(ps))})
-    present = {m["layer"] for m in layers_meta}
+    # **规划单位是 work（书目表的一行），不是 book**：book 209 的 `3-165` 与
+    # `166-991` 是两部作品，各属不同卷族；而一层可以有**多个并列 work**——
+    # 律藏一卷常有好几部复注（vin1 有 SAD 两段 + Vajirabuddhi 两段 + Vimativinodanī），
+    # 它们各自注同一部义注，彼此并列、不该互相统一。
+    works = []
+    for w in layer_works(args.book):
+        ps = sorted(para_chars(w["book"]))
+        if not ps:
+            continue
+        lo, hi = max(w["start"], min(ps)), min(w["end"], max(ps))
+        if lo > hi:
+            continue
+        works.append({"layer": w["layer"], "book": w["book"], "title": w["title"],
+                      "start": lo, "end": hi, "fam": w.get("fam", "")})
+    if not works:
+        sys.exit(f"书目表里找不到 book {args.book} 的作品")
+    present = {w["layer"] for w in works}
     steps = parse_steps(args.steps)
 
-    print(f'层次：' + "、".join(f'{m["layer"]}(book {m["book"]} {m["start"]}-{m["end"]})'
-                               for m in layers_meta), file=sys.stderr)
+    # work 前缀：该层只有一个 work 时沿用 M/A/T（与经藏既有的 task id 一致），
+    # 多个时加序号与横线（T1-、T2-…），这样 id 不会歧义、audit 的账也对得上
+    per_layer = {}
+    for w in works:
+        per_layer.setdefault(w["layer"], []).append(w)
+    for lay, ws in per_layer.items():
+        base = LAYER_PFX.get(lay, lay[:2].upper())
+        for i, w in enumerate(ws, 1):
+            w["pfx"] = base if len(ws) == 1 else f"{base}{i}-"
+            w["id"] = base if len(ws) == 1 else f"{base}{i}"
+
+    print("作品：", file=sys.stderr)
+    for w in works:
+        print(f'  {w["id"]:<4} {w["layer"]:<11} book {w["book"]:>3} '
+              f'{w["start"]}-{w["end"]}  {w["title"]}', file=sys.stderr)
 
     # 切块
-    for m in layers_meta:
+    for m in works:
         chs = layer_chunks(m["book"], m["start"], m["end"], m["layer"], args)
-        pfx = {"mula": "M", "atthakatha": "A", "tika": "T",
-               "mulatika": "MT", "anutika": "AT"}.get(m["layer"], m["layer"][:2].upper())
+        pfx = m["pfx"]
         for i, ch in enumerate(chs, 1):
             ch["id"] = f"{pfx}{i}"
             ch["book"] = m["book"]
@@ -545,59 +617,75 @@ def build(args):
         nsplit = sum(1 for c in chs if c["split"])
         # 大章被切成几块时每块都挂一份章条目，按 (start,end) 去重才是真实章数
         nchap = len({(c["start"], c["end"]) for ch in chs for c in ch["chapters"]})
-        print(f'  {m["layer_cn"]:<16} book {m["book"]:>3}｜本集 {nchap} 章 → {len(chs)} 块'
-              f'（{nsplit} 块来自超限大章）｜'
+        print(f'  {m["id"]:<4} {m["layer_cn"]:<16} book {m["book"]:>3}｜{nchap} 章 → '
+              f'{len(chs)} 块（{nsplit} 块来自超限大章）｜'
               f'{m["chars"]:,} 字符 / {m["sents"]:,} 句', file=sys.stderr)
 
-    # 父层对照
-    by_layer = {m["layer"]: m for m in layers_meta}
-    for m in layers_meta:
+    # 父层对照：子 work 的父层是**上一层在场的那个 work**。
+    # 一层多 work 时（并列复注）各自指向同一个父 work；父层本身多 work 的情况
+    # （本文分卷）按 cs 交集挑最贴的那个。
+    for m in works:
         pl = parent_layer(m["layer"], present)
+        m["parent_id"] = None
         if not pl:
             continue
-        pm = by_layer[pl]
+        cands = per_layer[pl]
         csf = cs_filled(m["book"])
+        mycs = {csf.get(p) for p in range(m["start"], m["end"] + 1)} - {None}
+        pm = max(cands, key=lambda c: len(mycs & ({cs_filled(c["book"]).get(p)
+                 for p in range(c["start"], c["end"] + 1)} - {None}))) \
+            if len(cands) > 1 else cands[0]
+        m["parent_id"] = pm["id"]
         pidx = cs_index(pm["book"])
         for ch in m["chunks"]:
             ch["parent"] = parent_block(ch, csf, pm["book"], pidx, pm["start"], pm["end"])
             if ch["parent"]:
                 ch["parent"]["layer"] = pl
+                ch["parent"]["work"] = pm["id"]
 
     # 本文的复核要义注参考：**义注定释义**，译者与标准同源就查不出错。
-    # translate 永远不给（那会让复核失去独立基准），所以只挂在块上供 review/revise 取。
-    att = by_layer.get("atthakatha")
-    mu = by_layer.get("mula")
-    if att and mu:
+    # translate 永远不给（那会让复核失去独立基准），只挂在块上供 review/revise 取。
+    atts = per_layer.get("atthakatha") or []
+    for mu in per_layer.get("mula") or []:
         csf = cs_filled(mu["book"])
-        aidx = cs_index(att["book"])
         for ch in mu["chunks"]:
-            ch["att_ref"] = parent_block(ch, csf, att["book"], aidx,
-                                         att["start"], att["end"])
-            if ch["att_ref"]:
-                ch["att_ref"]["layer"] = "atthakatha"
+            ch["att_ref"] = None
+            for att in atts:                      # 义注多 work 时取第一个有对应的
+                r = parent_block(ch, csf, att["book"], cs_index(att["book"]),
+                                 att["start"], att["end"])
+                if r:
+                    r["layer"] = "atthakatha"
+                    r["work"] = att["id"]
+                    ch["att_ref"] = r
+                    break
 
-    # 统稿单元
+    # 统稿单元：相邻两层配对（见 harmonize_pairs）
     units = []
     if "harmonize" in steps:
-        units = harmonize_units(layers_meta, args)
+        units = harmonize_pairs(works, args)
         for i, u in enumerate(units, 1):
             u["id"] = f"H{i}"
-            u["kind"] = "cross" if len({sp["book"] for sp in u["spans"]}) > 1 else "layer"
-            first = u["spans"][0]
-            u["title"] = (f'cs {u["cs"][0]}-{u["cs"][1]}' if u["cs"]
-                          else f'{first["book"]}:{first["start"]}（无 cs 锚点）')
-        ncross = sum(1 for u in units if u["kind"] == "cross")
-        print(f'  统稿单元 {len(units)} 个（跨层 {ncross}、单层 {len(units) - ncross}）'
+            u["kind"] = "pair"
+            u["title"] = (f'{u["pair"][0]}+{u["pair"][1]} cs {u["cs"][0]}-{u["cs"][1]}'
+                          if u["cs"] else
+                          f'{u["pair"][0]}+{u["pair"][1]} {u["write"][0]["book"]}:'
+                          f'{u["write"][0]["start"]}（无 cs 锚点）')
+        bypair = {}
+        for u in units:
+            bypair["+".join(u["pair"])] = bypair.get("+".join(u["pair"]), 0) + 1
+        print(f'  统稿单元 {len(units)} 个（相邻两层配对，父层只读）'
               f'｜上限 ≤{args.harm_chars:,} 字符'
               + (f' / ≤{args.harm_sents} 句' if args.harm_sents > 0 else ""),
               file=sys.stderr)
+        for k, v in bypair.items():
+            print(f'    {k:<10} {v} 个', file=sys.stderr)
 
-    exports = [{"id": f'E{m["book"]}', "book": m["book"], "layer": m["layer"],
+    exports = [{"id": f'E{m["id"]}', "book": m["book"], "layer": m["layer"],
                 "start": m["start"], "end": m["end"],
-                "title": m["title"] or f'book {m["book"]}'} for m in layers_meta]
+                "title": m["title"] or f'book {m["book"]}'} for m in works]
 
-    stages = build_stages(layers_meta, steps)
-    tasks = build_tasks(layers_meta, units, exports, steps)
+    stages = build_stages(works, steps)
+    tasks = build_tasks(works, units, exports, steps)
 
     proj = {
         "schema": 3, "name": args.project,
@@ -611,8 +699,10 @@ def build(args):
                      "harm_chars": args.harm_chars, "harm_sents": args.harm_sents,
                      "scan": True},
         "books": {str(m["book"]): {"layer": m["layer"], "title": m["title"]}
-                  for m in layers_meta},
-        "layers": layers_meta,
+                  for m in works},
+        # 字段名沿用 layers（schema 3 既有的读者都认它），内容是**作品**列表：
+        # 一层可以有多个，各带 id / pfx / parent_id
+        "layers": works,
         "harmonize": units,
         "exports": exports,
         "stages": stages,
@@ -644,7 +734,7 @@ def write_csv(proj, path):
         for t in proj["tasks"]:
             coord = (f'{t["book"]}:{t["start"]}-{t["end"]}' if t.get("book")
                      else "、".join(f'{sp["book"]}:{sp["start"]}-{sp["end"]}'
-                                   for sp in t.get("spans", [])[:3]))
+                                   for sp in (t.get("write") or [])[:3]))
             w.writerow([t["stage"], t["id"], t["step"], t.get("layer", ""), coord,
                         t.get("title", ""), t.get("chars") or "", t.get("sents") or "",
                         "⬜ 未开始", "", "", 0, ""])
