@@ -374,7 +374,7 @@ emit_harmonize() {
 
 $KNOWLEDGE
 
----待统稿（每块以 === 标出 book 与段范围）---
+---待统稿（每块以 === 开头，标明 book、段范围，以及它是只读对照还是要改的那一层）---
 $USRC
 
 ---任务---
@@ -479,8 +479,14 @@ put("T_PPARAS", paras(pb.get("spans", [])))
 ar = (chunk or {}).get("att_ref") or {}
 put("T_ABOOK", ar.get("book") or "")
 put("T_APARAS", paras(ar.get("spans", [])))
-put("T_SPANS", " ".join(f'{sp["book"]}:{paras([sp])}' for sp in t.get("spans", [])))
-put("T_NBOOK", len({sp["book"] for sp in t.get("spans", [])}))
+# 统稿是**相邻两层配对**：write = 要改的子层，read = 只读的父层对照。
+# 旧结构只有 spans（三层一起、都可写），兼容着读一下。
+w = t.get("write") or t.get("spans") or []
+rd = t.get("read") or []
+put("T_WRITE", " ".join(f'{sp["book"]}:{paras([sp])}' for sp in w))
+put("T_READ", " ".join(f'{sp["book"]}:{paras([sp])}' for sp in rd))
+put("T_PAIR", "+".join(t.get("pair") or []))
+put("T_NBOOK", len({sp["book"] for sp in w + rd}))
 print("\n".join(out))
 PYTASK
 )"
@@ -616,13 +622,24 @@ $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channe
         echo "######## 未完成：task $TASK ########" >&2; exit 1
         ;;
     harmonize)
+        # 相邻两层配对：$T_READ 是父层（**只读**），$T_WRITE 是子层（要改的）。
+        # 父层只读的理由见 plan_scan.harmonize_pairs——并列的几部复注都以同一部
+        # 义注为基准，谁都能改义注的话，几套统稿会轮流改同一批句子、互相打架。
         USRC=""; UN=0
-        for SP in $T_SPANS; do
+        for SP in $T_READ; do
+            UB="${SP%%:*}"; UR="${SP#*:}"
+            T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
+            USRC="$USRC
+=== 父层对照〔只读，一句都不要输出〕 book=$UB  段 $UR ===
+$T
+"
+        done
+        for SP in $T_WRITE; do
             UB="${SP%%:*}"; UR="${SP#*:}"
             T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
             UN=$(( UN + $(count_mula "$T") ))
             USRC="$USRC
-=== book=$UB  段 $UR ===
+=== 待统稿〔要改的就是这一层〕 book=$UB  段 $UR ===
 $T
 "
         done
@@ -630,17 +647,19 @@ $T
             echo "  跳过：这个统稿单元还没有译文"
             audit_task "$TASK" skip "没有译文"; exit 0
         fi
-        if [[ "${T_NBOOK:-1}" -gt 1 ]]; then
-            WHAT="横向：各层同看，**被解释词与父层逐字对齐**是最高优先（下一层的黑体引自它的上一层：义注引本文、复注引义注、随复注引根本复注）；顺带统一术语与语体。"
+        if [[ -n "$T_READ" ]]; then
+            WHAT="两层同看，**被解释词与父层逐字对齐**是最高优先（下一层的黑体引自它的上一层：义注引本文、复注引义注、随复注引根本复注）；顺带统一术语与语体。父层标了〔只读〕，**一句都不要输出**——它的问题不在这一步修。"
         else
-            WHAT="纵向：只看这一层，通读求**同层一致**——术语、语体、称谓、重复定型句同译。跨层对齐已在横向那一步做过，这里不要再改被解释词的译法。"
+            WHAT="这一单元没有父层对照（独立作品，或在父层里没有 cs 对应）。只看这一层，通读求**同层一致**——术语、语体、称谓、重复定型句同译；不要凭想象改被解释词的译法。"
         fi
-        echo ">>> 统稿 $TASK（$UN 句 / 计划 $T_SENTS 句）"
+        echo ">>> 统稿 $TASK（$T_PAIR｜待改 $UN 句 / 计划 $T_SENTS 句）"
         UOUT="$(mktemp)"; OK=0
         for ((try = 1; try <= MAX_TRY; try++)); do
             if emit_harmonize "$TASK" > "$UOUT"; then
                 PUSH_OK=1
-                for SP in $T_SPANS; do
+                # **只写子层**：父层那几段不在 --para 范围里，模型若回传了
+                # 父层的句子，wp_push 会按 --ignore-foreign 丢弃
+                for SP in $T_WRITE; do
                     UB="${SP%%:*}"; UR="${SP#*:}"
                     NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" | grep -c '^{' || true)
                     python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
@@ -651,7 +670,7 @@ $T
             fi
         done
         rm -f "$UOUT"
-        [[ "$OK" -eq 1 ]] && { audit_task "$TASK" ok "$T_SPANS"; exit 0; }
+        [[ "$OK" -eq 1 ]] && { audit_task "$TASK" ok "$T_PAIR $T_WRITE"; exit 0; }
         audit_task "$TASK" fail "用尽 $MAX_TRY 次"
         echo "######## 未完成：task $TASK ########" >&2; exit 1
         ;;
