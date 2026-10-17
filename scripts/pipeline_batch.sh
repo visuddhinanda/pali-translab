@@ -318,6 +318,7 @@ $SRC
 最容易漏的是这三种，一句也不能少：**偈颂的每一行**（一行就是一句，哪怕只有几个词、哪怕
 与上一行句法相连）、**「…niṭṭhitā / …vaggo」这类结语与品末标记**、**重复定型句的省略号段**
 （「…pe…」「…peyyālaṃ」）。输出前请核对行数是否正好 $N 行。
+反过来，**只有标点、没有巴利词的句子不要输出**（pali 形如 \"**.**\" 的那种），它们不算漏译。
 每行：{\"id\": 同输入, \"zh\": \"你的译文\", \"confidence\": 0-100}
 坐标以输入为准，不要编造 id。标点用中文全角；引号用全角 “” ‘’，不要出现 ASCII 引号。
 不确定时给出最好的一个译法并调低该句 confidence，**不要在译文里留任何工作标记**（候选、待定、问号之类）。
@@ -529,20 +530,14 @@ $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channe
     translate)
         for ((try = 1; try <= MAX_TRY; try++)); do
             SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_BOOK" --para "$TODO" || true)
-            N=$(count_mula "$SRC")
+            # 期望清单与句数**只算真有巴利词的句子**：句子表会把孤立的标点切成
+            # 独立句（实测有 pali 就是 `**.**` 的），模型不会为它输出译文，
+            # 按「缺句」算会让整块必然重试到失败。见 scripts/pali_ids.py
+            N=$(printf '%s' "$SRC" | python3 "$SCRIPT_DIR/pali_ids.py" "$IDS_FILE")
             if [[ "$N" -eq 0 ]]; then
-                echo "  跳过：$T_BOOK:$TODO 没有巴利原文"
-                audit_task "$TASK" skip "无巴利原文" "$T_BOOK" "$T_START-$T_END"; exit 0
+                echo "  跳过：$T_BOOK:$TODO 没有可译的巴利句"
+                audit_task "$TASK" skip "无可译巴利句" "$T_BOOK" "$T_START-$T_END"; exit 0
             fi
-            printf '%s' "$SRC" | python3 -c "
-import json, sys
-for line in sys.stdin:
-    line = line.strip()
-    if line.startswith('{'):
-        r = json.loads(line)
-        if r.get('layer') == 'mula' and r.get('id'):
-            print(r['id'])
-" > "$IDS_FILE"
             echo ">>> translate 第 $try/$MAX_TRY 次（$N 句 / $(echo ${TODO//,/ } | wc -w) 段）"
             : > "$MISS_FILE"
             set +e
@@ -865,17 +860,9 @@ $PARENT_TXT
                 # 每轮都按**本轮要译的段**重新取原文与上下文：第一轮是整个 TODO，
                 # 之后只剩上一轮缺的那几段（见下面的退出码 2）
                 SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$TODO" || true)
-                N=$(count_mula "$SRC")
-                [[ "$N" -eq 0 ]] && { echo "  跳过 translate（$TODO 无巴利原文）"; break; }
-                printf '%s' "$SRC" | python3 -c "
-import json, sys
-for line in sys.stdin:
-    line = line.strip()
-    if line.startswith('{'):
-        r = json.loads(line)
-        if r.get('layer') == 'mula' and r.get('id'):
-            print(r['id'])
-" > "$IDS_FILE"
+                # 只算真有巴利词的句子，纯标点句不计入漏译（见 scripts/pali_ids.py）
+                N=$(printf '%s' "$SRC" | python3 "$SCRIPT_DIR/pali_ids.py" "$IDS_FILE")
+                [[ "$N" -eq 0 ]] && { echo "  跳过 translate（$TODO 没有可译的巴利句）"; break; }
                 DONE_CTX=""
                 if [[ "$TODO" != "$CH" ]]; then
                     echo "  （本 chunk 只译 $TODO，其余已有译文，作术语对照注入）"
