@@ -41,6 +41,26 @@ LAYER_CN = {"mula": "本文 mūla", "atthakatha": "义注 aṭṭhakathā", "tik
 CHUNK_STEPS = ("translate", "review", "revise")
 ALL_STEPS = ("translate", "review", "revise", "harmonize", "evaluate", "export")
 
+# ── 对齐表（`--align`）──
+# cs_para 当不了跨书坐标的书族（vin6：义注全书 cs=75、古复注无 cs），由专门的脚本
+# 按标题算出一张表（如 scripts/align_vin6.py），规划器拿它**整体顶替 cs**：
+#   works     各层作品（层次也由表定，不看书目表的 tag）
+#   para_key  {book: {段: 组号}}——组号按经文顺序排，用法与 cs 完全相同
+#   copy      [[book, 目标段, 源段]]——巴利逐句相同的段，不译，源段定稿后照搬
+ALIGN = None
+
+
+def key_of(book):
+    """{段号: 对齐键}：有对齐表用表里的组号，否则用 cs_filled。"""
+    if ALIGN:
+        return {int(p): k for p, k in ALIGN["para_key"].get(str(book), {}).items()}
+    return cs_filled(book)
+
+
+def copy_map(book):
+    """{目标段: 源段}——这本书里不译、照搬的段。没有对齐表就是空的。"""
+    return {int(d): int(s) for b, d, s in (ALIGN or {}).get("copy", []) if int(b) == int(book)}
+
 
 # ══════════════════ 一、各层切块 ══════════════════
 
@@ -55,15 +75,18 @@ def spans_of(paras_list):
     return [(lo, hi) for lo, hi in out]
 
 
-def layer_chunks(book, lo, hi, layer, args):
+def layer_chunks(book, lo, hi, layer, args, skip=()):
     """一层的块序列：从上到下扫章，累加到上限就切。
 
     返回 [{start, end, paras, chars, sents, chapters:[{start,end,title}], split}]。
     `split=True` 表示这块是某个超限大章的一部分（章被切开了，不得已）。
+    `skip`：照搬的段（见 copy_map）——留在块的段界里保证无缝覆盖，但不计体量、不送去译。
     块的 start/end 取**章的边界**，不取非空段的边界——章标题段字符数为 0，
     按非空段取会把标题漏在两块之间，整本就不是无缝覆盖了。
     """
-    chars, sents = para_chars(book), para_sents(book)
+    chars, sents = dict(para_chars(book)), dict(para_sents(book))
+    for p in skip:
+        chars[p] = sents[p] = 0
     chs = [(max(s, lo), min(e, hi), t)
            for s, e, t, _c, _n in book_chapters(book) if e >= lo and s <= hi]
     CH, SE, MP = args.chunk_chars, args.max_sents, args.max_paras
@@ -90,7 +113,9 @@ def layer_chunks(book, lo, hi, layer, args):
             parts = chunk_paras(book, ps, CH, MP, SE) or [ps]
             for i, part in enumerate(parts):
                 a = s if i == 0 else part[0]              # 首块兜住章标题段
-                b = e if i == len(parts) - 1 else part[-1]
+                # 非末块止于下一块起点的前一段：两块之间的空段（0 字符、标题行）
+                # 不能落在缝里，否则整本就不是无缝覆盖
+                b = e if i == len(parts) - 1 else parts[i + 1][0] - 1
                 cc, cs_, _n = vol(a, b)
                 out.append({"start": a, "end": b, "chars": cc, "sents": cs_,
                             "paras": len([p for p in range(a, b + 1) if chars.get(p, 0)]),
@@ -123,9 +148,9 @@ def chunk_title(ch):
 # ══════════════════ 二、父层对照范围 ══════════════════
 
 def cs_index(book):
-    """{cs: [段号…]}——cs_filled 的反向索引，用来由子层的 cs 找父层的段。"""
+    """{cs: [段号…]}——key_of 的反向索引，用来由子层的 cs 找父层的段。"""
     idx = {}
-    for p, cs in cs_filled(book).items():
+    for p, cs in key_of(book).items():
         if cs is not None:
             idx.setdefault(cs, []).append(p)
     return idx
@@ -140,7 +165,9 @@ def parent_block(chunk, csf_child, pbook, pidx, plo, phi):
     """
     want = {csf_child.get(p) for p in range(chunk["start"], chunk["end"] + 1)}
     want.discard(None)
-    ps = [p for cs in want for p in pidx.get(cs, []) if plo <= p <= phi]
+    # 照搬段此时还没有译文（要等源段定稿），换成源段：巴利逐句相同，译文已在
+    cp = copy_map(pbook)
+    ps = sorted({cp.get(p, p) for cs in want for p in pidx.get(cs, []) if plo <= p <= phi})
     if not ps:
         return None
     return {"book": pbook, "spans": [{"start": lo, "end": hi} for lo, hi in spans_of(ps)]}
@@ -167,7 +194,7 @@ def harmonize_pairs(works, args):
     """
     chars = {w["book"]: para_chars(w["book"]) for w in works}
     sents = {w["book"]: para_sents(w["book"]) for w in works}
-    csf = {w["book"]: cs_filled(w["book"]) for w in works}
+    csf = {w["book"]: key_of(w["book"]) for w in works}
     by_id = {w["id"]: w for w in works}
     units = []
 
@@ -250,7 +277,10 @@ def harmonize_pairs(works, args):
             c, n = vol(cps)
             if cur_c:
                 mc, mn = vol(cur_c + cps)
-                if mc <= args.harm_chars and (args.harm_sents <= 0 or mn <= args.harm_sents):
+                # 父层对照也要卡：注得稀的复注（如古复注）一组只几段，按子层合并会一口气
+                # 并上百组，父层对照随之十万字符起跳。单组自己超就算了（切不开）
+                if (mc <= args.harm_chars and (args.harm_sents <= 0 or mn <= args.harm_sents)
+                        and (args.harm_ctx <= 0 or ctx_chars(cur_p + pps) <= args.harm_ctx)):
                     cur_c += cps
                     cur_p += pps
                     cur_cs.append(cs)
@@ -266,6 +296,13 @@ def harmonize_pairs(works, args):
 
 # ══════════════════ 四、阶段与任务 ══════════════════
 
+def copy_chunks(layers, steps):
+    """有照搬段的块。照搬跟着翻译走：计划里没有 translate，就也不照搬。"""
+    if "translate" not in steps:
+        return []
+    return [ch for m in layers for ch in m["chunks"] if ch.get("copy")]
+
+
 def build_stages(layers_meta, steps):
     """阶段表，**即推进顺序**：一个步骤把各层连续做完，再进下一个步骤。
 
@@ -277,11 +314,16 @@ def build_stages(layers_meta, steps):
     缓存命中最好），review 时三层译文都在 channel 上、能对着看；代价是注释层
     translate 注入的父层译文**只是 translate 版、尚未复核**，对不齐的地方留给
     review/revise/harmonize 收拾。
+
+    有照搬段（对齐表的 copy）时，revise 之后插一个 copy 阶段：源段**定稿**了才照搬，
+    统稿读到的父层因此是完整的。
     """
     out = []
     for st in CHUNK_STEPS:
         if st in steps:
             out.append({"id": st, "step": st, "layer": ""})
+    if copy_chunks(layers_meta, steps):
+        out.append({"id": "copy", "step": "copy", "layer": ""})
     for st in ("harmonize", "evaluate", "export"):
         if st in steps:
             out.append({"id": st, "step": st, "layer": ""})
@@ -310,8 +352,9 @@ def build_needs(layers, units, exports, steps):
     屏障挡不住的事它也能挡住：某块 translate 失败后退回队列重跑时，
     它的 review 已经排在后面，只有依赖查表才知道「还不能做」。
 
-    依赖只有四条：
+    依赖只有五条：
       · 同一块里 translate → review → revise 顺序串起来；
+      · 照搬依赖源段所在的块定稿；读到或写到照搬段的统稿、导出都等照搬做完；
       · 注释层某块的 translate，依赖**父层对照范围**覆盖到的那些父层块定稿；
       · 统稿单元依赖它 spans 覆盖的各层块定稿；
       · 导出依赖本层全部统稿单元（没有统稿就依赖本层全部块定稿）。
@@ -343,12 +386,24 @@ def build_needs(layers, units, exports, steps):
                            for x in hits(pm, par["book"], sp["start"], sp["end"])]
                     needs[f'{ch["id"]}:translate'] += dep
 
+    cps = copy_chunks(layers, steps)
+    for ch in cps:
+        m = next(x for x in layers if ch in x["chunks"])
+        dep = {chunk_fin(x) for _d, src in ch["copy"]
+               for x in hits(m, ch["book"], src, src)}
+        needs[f'{ch["id"]}:copy'] = sorted(d for d in dep if d)
+
+    def copy_deps(book, lo, hi):
+        return [f'{ch["id"]}:copy' for ch in cps if ch["book"] == book
+                and any(lo <= d <= hi for d, _s in ch["copy"])]
+
     for u in units:
         dep = []
         for sp in u["write"] + u["read"]:        # 读到的父层块也得先定稿
             m = by_id.get(sp.get("work"))
             if m:
                 dep += [chunk_fin(x) for x in hits(m, sp["book"], sp["start"], sp["end"])]
+            dep += copy_deps(sp["book"], sp["start"], sp["end"])
         needs[f'{u["id"]}:harmonize'] = sorted({d for d in dep if d})
 
     # evaluate 评的必须是定稿：同块定稿 + 覆盖这块的统稿单元都做完
@@ -360,6 +415,7 @@ def build_needs(layers, units, exports, steps):
                         if any(sp["book"] == ch["book"]
                                and not (sp["end"] < ch["start"] or sp["start"] > ch["end"])
                                for sp in u["write"])]
+                dep += copy_deps(ch["book"], ch["start"], ch["end"])
                 needs[f'{ch["id"]}:evaluate'] = sorted({d for d in dep if d})
 
     for e in exports:
@@ -368,6 +424,7 @@ def build_needs(layers, units, exports, steps):
                if any(sp["book"] == e["book"] for sp in u["write"])]
         if not dep and m:
             dep = [chunk_fin(ch) for ch in m["chunks"]]
+        dep += copy_deps(e["book"], e["start"], e["end"])
         needs[f'{e["id"]}:export'] = sorted({d for d in dep if d})
     return needs
 
@@ -389,6 +446,14 @@ def build_tasks(layers, units, exports, steps):
                             "needs": needs.get(f'{ch["id"]}:{st}', []),
                             "status": pj.PENDING, "tries": 0,
                             "began": "", "ended": "", "note": "", "detail": ""})
+    for ch in copy_chunks(layers, steps):
+        out.append({"id": f'{ch["id"]}:copy', "stage": "copy", "step": "copy",
+                    "layer": ch["layer"], "book": ch["book"],
+                    "start": ch["start"], "end": ch["end"], "chars": 0,
+                    "sents": 0, "title": ch["title"], "copy": ch["copy"],
+                    "needs": needs.get(f'{ch["id"]}:copy', []),
+                    "status": pj.PENDING, "tries": 0,
+                    "began": "", "ended": "", "note": "", "detail": ""})
     if "harmonize" in steps:
         for u in units:
             out.append({"id": f'{u["id"]}:harmonize', "stage": "harmonize",
@@ -505,7 +570,8 @@ def check(proj, verbose=True):
     want_n = (nchunk * len([s for s in CHUNK_STEPS if s in steps])
               + (len(proj.get("harmonize", [])) if "harmonize" in steps else 0)
               + (nchunk if "evaluate" in steps else 0)
-              + (len(proj.get("exports", [])) if "export" in steps else 0))
+              + (len(proj.get("exports", [])) if "export" in steps else 0)
+              + len(copy_chunks(proj["layers"], steps)))
     if len(proj["tasks"]) != want_n:
         bad.append(f'task 数不对：有 {len(proj["tasks"])} 个，按块与单元应是 {want_n} 个')
     ids = [t["id"] for t in proj["tasks"]]
@@ -570,7 +636,7 @@ def build(args):
     # 律藏一卷常有好几部复注（vin1 有 SAD 两段 + Vajirabuddhi 两段 + Vimativinodanī），
     # 它们各自注同一部义注，彼此并列、不该互相统一。
     works = []
-    for w in layer_works(args.book):
+    for w in (ALIGN["works"] if ALIGN else layer_works(args.book)):
         ps = sorted(para_chars(w["book"]))
         if not ps:
             continue
@@ -602,13 +668,17 @@ def build(args):
 
     # 切块
     for m in works:
-        chs = layer_chunks(m["book"], m["start"], m["end"], m["layer"], args)
+        cp = {d: s for d, s in copy_map(m["book"]).items() if m["start"] <= d <= m["end"]}
+        chs = layer_chunks(m["book"], m["start"], m["end"], m["layer"], args, skip=cp)
         pfx = m["pfx"]
         for i, ch in enumerate(chs, 1):
             ch["id"] = f"{pfx}{i}"
             ch["book"] = m["book"]
             ch["layer"] = m["layer"]
             ch["title"] = chunk_title(ch)
+            ch["skip"] = sorted(d for d in cp if ch["start"] <= d <= ch["end"])
+            if ch["skip"]:
+                ch["copy"] = [[d, cp[d]] for d in ch["skip"]]
         m["chunks"] = chs
         m["paras"] = sum(c["paras"] for c in chs)
         m["chars"] = sum(c["chars"] for c in chs)
@@ -630,9 +700,9 @@ def build(args):
         if not pl:
             continue
         cands = per_layer[pl]
-        csf = cs_filled(m["book"])
+        csf = key_of(m["book"])
         mycs = {csf.get(p) for p in range(m["start"], m["end"] + 1)} - {None}
-        pm = max(cands, key=lambda c: len(mycs & ({cs_filled(c["book"]).get(p)
+        pm = max(cands, key=lambda c: len(mycs & ({key_of(c["book"]).get(p)
                  for p in range(c["start"], c["end"] + 1)} - {None}))) \
             if len(cands) > 1 else cands[0]
         m["parent_id"] = pm["id"]
@@ -647,7 +717,7 @@ def build(args):
     # translate 永远不给（那会让复核失去独立基准），只挂在块上供 review/revise 取。
     atts = per_layer.get("atthakatha") or []
     for mu in per_layer.get("mula") or []:
-        csf = cs_filled(mu["book"])
+        csf = key_of(mu["book"])
         for ch in mu["chunks"]:
             ch["att_ref"] = None
             for att in atts:                      # 义注多 work 时取第一个有对应的
@@ -697,7 +767,9 @@ def build(args):
         "chunking": {"chunk_chars": args.chunk_chars, "max_sents": args.max_sents,
                      "max_paras": args.max_paras, "sent_counts": have_sent_counts(),
                      "harm_chars": args.harm_chars, "harm_sents": args.harm_sents,
+                     "harm_ctx": args.harm_ctx,
                      "scan": True},
+        "align": args.align or None,
         "books": {str(m["book"]): {"layer": m["layer"], "title": m["title"]}
                   for m in works},
         # 字段名沿用 layers（schema 3 既有的读者都认它），内容是**作品**列表：
@@ -764,9 +836,16 @@ def main():
                     help="一个统稿单元的各层合计字符上限")
     ap.add_argument("--harm-sents", type=int, default=200, dest="harm_sents",
                     help="一个统稿单元的各层合计句数上限（0 为不限）")
+    ap.add_argument("--harm-ctx", type=int, default=60000, dest="harm_ctx",
+                    help="一个统稿单元的父层对照字符上限（0 为不限）；单组自己超限的不拆")
     ap.add_argument("--csv", default="", help="任务表 csv 落盘路径")
     ap.add_argument("--dry-run", action="store_true", help="只算不落盘")
+    ap.add_argument("--align", default="",
+                    help="对齐表 json（如 align_vin6.py 的产物）：顶替 cs_para 与书目表的层次")
     args = ap.parse_args()
+    if args.align:
+        global ALIGN
+        ALIGN = json.load(open(args.align, encoding="utf-8"))
 
     if not have_sent_counts():
         if args.max_paras <= 0:

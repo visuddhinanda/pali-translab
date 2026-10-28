@@ -464,16 +464,20 @@ def dep_done(dep, tries):
     return dep.get("status") == FAILED and dep.get("tries", 0) >= tries
 
 
-def pick_task(tasks, by_id, tries):
+def pick_task(tasks, by_id, tries, stage=None):
     """队列里第一个**前置都不必再等**的 task。
 
     task 在计划里已经按阶段顺序排好，所以从头扫就是「先 translate、再 review…」，
     同类连着跑、吃得到 prompt 缓存；但**不等整个阶段跑完**——最后三个 translate
     还在跑时，空出来的 worker 立刻去领第一个 review，不空等。
     谁能领由 needs 查表决定（规划期算死，见 plan_scan.build_needs）。
+
+    `stage` 给了就只在这个阶段里挑——`--barrier` 用：一个阶段全部了结才进下一个。
     """
     for t in tasks:
         if not runnable(t, tries):
+            continue
+        if stage and t.get("stage") != stage:
             continue
         if all(dep_done(by_id[d], tries) for d in (t.get("needs") or []) if d in by_id):
             return t
@@ -601,9 +605,11 @@ def run_scan(args):
             if st is None and not running:
                 break
 
-            # 派发：**一条队列**，谁空出来就领下一个前置已就绪的 task
+            # 派发：**一条队列**，谁空出来就领下一个前置已就绪的 task。
+            # --barrier 时只从当前阶段领：translate 全部了结（或终局失败）才开 review
+            only = st["id"] if (args.barrier and st) else None
             while not stopping["v"] and len(running) < args.workers:
-                nxt = pick_task(tasks, by_id, args.tries)
+                nxt = pick_task(tasks, by_id, args.tries, only)
                 if not nxt:
                     break
                 nxt["status"] = RUNNING
@@ -910,6 +916,8 @@ def main():
                     help="撞到额度限制后全局冷却秒数（默认 30 分钟）")
     ap.add_argument("--project", default="", help="项目名（workspace/projects/<name>/）")
     ap.add_argument("--nissaya", action="store_true")
+    ap.add_argument("--barrier", action="store_true",
+                    help="schema 3：阶段屏障——一个阶段的 task 全部了结才派下一阶段（默认是一条队列、按依赖派）")
     ap.add_argument("--dry-run", action="store_true")
     args, extra = ap.parse_known_args()   # 认不出的参数原样透传给 pipeline_batch.sh
     args.extra = extra

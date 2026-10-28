@@ -469,10 +469,14 @@ put("T_TITLE", t.get("title", ""))
 put("T_LCN", LCN.get(t.get("layer", ""), t.get("layer", "")))
 put("T_SENTS", t.get("sents") or 0)
 # export 用 --from/--to，段列表对它没用（整层八百多段，展开只是把命令行撑长）
-if t.get("book") and t.get("start") and t["step"] != "export":
-    put("T_PARAS", paras([{"start": t["start"], "end": t["end"]}]))
+# 照搬段（chunk.skip）不送去译也不送去审——它们等源段定稿后由 copy 步骤原样复制
+skip = set((chunk or {}).get("skip") or [])
+if t.get("book") and t.get("start") and t["step"] not in ("export", "copy"):
+    put("T_PARAS", ",".join(str(p) for p in range(int(t["start"]), int(t["end"]) + 1)
+                            if p not in skip))
 else:
     put("T_PARAS", "")
+put("T_COPY", ",".join(f"{d}:{s}" for d, s in t.get("copy") or []))
 pb = (chunk or {}).get("parent") or {}
 put("T_PBOOK", pb.get("book") or "")
 put("T_PPARAS", paras(pb.get("spans", [])))
@@ -672,6 +676,18 @@ $T
         rm -f "$UOUT"
         [[ "$OK" -eq 1 ]] && { audit_task "$TASK" ok "$T_PAIR $T_WRITE"; exit 0; }
         audit_task "$TASK" fail "用尽 $MAX_TRY 次"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    copy)
+        # 巴利逐句相同的段：源段定稿后照搬，不译（对齐表的 copy，见 wp_copy.py）
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            echo ">>> copy 第 $try/$MAX_TRY 次（$(echo "${T_COPY//,/ }" | wc -w) 段）"
+            if python3 "$SCRIPT_DIR/wp_copy.py" --book "$T_BOOK" --pairs "$T_COPY" \
+                   --channel "$CHANNEL" $DRYRUN; then
+                audit_task "$TASK" ok "照搬 $T_COPY" "$T_BOOK" "$T_START-$T_END"; exit 0
+            fi
+        done
+        audit_task "$TASK" fail "$MAX_TRY 次未成" "$T_BOOK" "$T_START-$T_END"
         echo "######## 未完成：task $TASK ########" >&2; exit 1
         ;;
     export)

@@ -90,7 +90,7 @@ function bar(ns, chars){
 const pill = s => `<span class="pill s-${s||'pending'}">${CN[s||'pending']}</span>`;
 
 const STEP_CN = {translate:'翻译', review:'复核', revise:'修订',
-                 harmonize:'统稿', evaluate:'评估', export:'导出'};
+                 copy:'照搬', harmonize:'统稿', evaluate:'评估', export:'导出'};
 const LAYER_CN = {mula:'本文', atthakatha:'义注', tika:'复注',
                   mulatika:'根本复注', anutika:'随复注'};
 
@@ -115,7 +115,7 @@ function stepGroup(step, ts){
 
 function jobNode(job){
   const us = unitsOf(job), t = tally(us);
-  const order = ['translate','review','revise','harmonize','evaluate','export'];
+  const order = ['translate','review','revise','copy','harmonize','evaluate','export'];
   const groups = order.filter(s => us.some(x => x.step===s))
     .map(s => stepGroup(s, us.filter(x => x.step===s))).join('');
   return `<details data-status="${job.status||'pending'}" data-name="${(job.title||'').toLowerCase()}">
