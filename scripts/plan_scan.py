@@ -97,6 +97,8 @@ def layer_chunks(book, lo, hi, layer, args, skip=()):
                 sum(sents.get(p, 0) for p in ps), len(ps))
 
     out, cur = [], None
+    # 对齐表要求一键一界（hard_keys，如 kn1 一经一键）时，块不跨键：键一变就切
+    hk = key_of(book) if hard_keys() else None
 
     def flush():
         nonlocal cur
@@ -106,6 +108,8 @@ def layer_chunks(book, lo, hi, layer, args, skip=()):
 
     for s, e, t in chs:
         c, sn, np = vol(s, e)
+        if hk is not None and cur and hk.get(s) != cur["key"]:
+            flush()
         over = c > CH or (SE > 0 and sn > SE) or (MP > 0 and np > MP)
         if over:                      # 单章就超限：独来独往，章内按段切
             flush()
@@ -128,14 +132,22 @@ def layer_chunks(book, lo, hi, layer, args, skip=()):
             flush()
         if cur is None:
             cur = {"start": s, "end": e, "chars": 0, "sents": 0, "paras": 0,
-                   "chapters": [], "split": False}
+                   "chapters": [], "split": False,
+                   "key": hk.get(s) if hk is not None else None}
         cur["end"] = e
         cur["chars"] += c
         cur["sents"] += sn
         cur["paras"] += np
         cur["chapters"].append({"start": s, "end": e, "title": t})
     flush()
+    for ch in out:
+        ch.pop("key", None)
     return out
+
+
+def hard_keys():
+    """对齐表声明 `hard_keys`：块与统稿单元都不跨对齐键（一键一界）。"""
+    return bool(ALIGN and ALIGN.get("hard_keys"))
 
 
 def chunk_title(ch):
@@ -275,6 +287,8 @@ def harmonize_pairs(works, args):
         for cs in sorted(cmap):
             cps, pps = cmap[cs], pmap.get(cs, [])
             c, n = vol(cps)
+            if cur_c and hard_keys():
+                flush()                     # 一键一界：相邻键不合并
             if cur_c:
                 mc, mn = vol(cur_c + cps)
                 # 父层对照也要卡：注得稀的复注（如古复注）一组只几段，按子层合并会一口气
