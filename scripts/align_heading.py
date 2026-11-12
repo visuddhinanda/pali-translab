@@ -15,10 +15,23 @@ plan_scan 把它们当「无锚点」处理：块无父层对照，统稿自成�
 
 表里写 `hard_keys: true`：块与统稿单元**不跨键**（一经一界），只在经内合并/切分。
 
+`--backfill-level N`（配合 `--key cs`）：第 N 级标题（法句经义注的因缘故事 vatthu）
+到它下面第一个编号小标题（偈号「21.」）之间的段，键改取那个偈号的 cs。法句经义注是
+**先讲故事、后出偈**，原始数据里故事正文标的是**上一偈**的 cs（122:565-676 Sāmāvatī
+故事标 cs 20，到 677 才出「21.」），不改的话几乎每个故事都挂到前一偈上。
+
+`--key cs`：对齐键改用 cs_para（`cs_filled`），编号标题只当**切块边界**（写进 `bounds`）。
+适用于 cs 本身干净、只想再加「不跨品」约束的书。kn2（法句经）就是这样：两层 cs
+都是全书连续偈号 1-423，按偈对齐比按品精确；但义注序论（122:5-36）的颂带着
+cs 1-10，与本文第 1-10 偈撞号——第一个编号标题之前的段一律不给键，序论自成一块。
+
 用法：
     python3 scripts/align_heading.py --family kn1 --level 2 \\
         --work mula:154:3:276 --work atthakatha:116:3:1235 \\
         --out workspace/projects/kn1/align.json
+    python3 scripts/align_heading.py --family kn2 --level 2 --key cs \\
+        --work mula:156:3:1392 --work atthakatha:122:3:5229 \\
+        --out workspace/projects/kn2/align.json
 """
 import argparse
 import json
@@ -27,7 +40,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import paras  # noqa: E402
+from _wp import cs_filled, paras  # noqa: E402
 
 NUM = re.compile(r"^\s*(\d+)\s*\.")
 
@@ -37,17 +50,49 @@ def parse_work(spec):
     return {"layer": layer, "book": int(book), "start": int(lo), "end": int(hi)}
 
 
+def backfill(rows, level, csf, d):
+    """{段: cs}——第 level 级标题起、到其下第一个编号小标题止的段，改取该小标题的 cs。
+
+    只改本来就有键的段（序论等无键段不碰）；遇到同级或更高级标题而没等到编号，放弃这一段。
+    """
+    out, pending, heads_only = {}, None, False
+    for x in rows:
+        p, lv = x["paragraph"], x.get("level", 100)
+        if lv < level:
+            pending, heads_only = [p], True       # 品标题：跟着它下面第一个故事走
+            continue
+        if lv == level:
+            pending = pending if (pending and heads_only) else []
+            heads_only = False
+        elif pending is not None and lv < 100 and NUM.match(x.get("toc") or ""):
+            cs = csf.get(p)
+            if cs is not None:
+                for q in pending:
+                    if str(q) in d:
+                        out[str(q)] = cs
+            pending = None
+            continue
+        if pending is not None:
+            pending.append(p)
+            heads_only = False
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--family", required=True)
     ap.add_argument("--level", type=int, default=2, help="按哪一级标题对齐")
     ap.add_argument("--work", action="append", required=True,
                     help="layer:book:start:end，可重复；层序按给出的顺序")
+    ap.add_argument("--key", choices=("heading", "cs"), default="heading",
+                    help="对齐键：heading = 标题号（默认）；cs = cs_para，标题号只作切块边界")
+    ap.add_argument("--backfill-level", type=int, default=0, dest="backfill",
+                    help="--key cs 时：该级标题到其下第一个编号小标题之间的段，取那个编号段的 cs")
     ap.add_argument("--out", required=True)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    works, para_key, heads = [], {}, {}
+    works, para_key, heads, bounds = [], {}, {}, {}
     for spec in args.work:
         w = parse_work(spec)
         rows = sorted((x for x in paras(w["book"]) if w["start"] <= x["paragraph"] <= w["end"]),
@@ -64,8 +109,15 @@ def main():
                     hs.append((cur, x["paragraph"], x["toc"]))
             if cur is not None:
                 d[str(x["paragraph"])] = cur
-        para_key[str(w["book"])] = d
         heads[w["book"]] = hs
+        if args.key == "cs":
+            # 标题号退为边界；键取 cs，但第一个编号标题之前（序论、书名）不给键
+            bounds[str(w["book"])] = d
+            csf = cs_filled(w["book"])
+            d = {p: csf[int(p)] for p in d if csf.get(int(p)) is not None}
+            if args.backfill:
+                d.update(backfill(rows, args.backfill, csf, d))
+        para_key[str(w["book"])] = d
 
     # 自检：各层编号集合一致、单调不重复
     sets = {b: [n for n, _p, _t in hs] for b, hs in heads.items()}
@@ -92,10 +144,12 @@ def main():
     if not ok:
         sys.exit("对齐表自检失败，没有落盘")
 
-    table = {"family": args.family, "by": f"heading level {args.level}", "hard_keys": True,
-             "works": works, "para_key": para_key,
+    table = {"family": args.family, "by": f"{args.key} / heading level {args.level}",
+             "hard_keys": True, "works": works, "para_key": para_key,
              "groups": [{"id": n, "label": t} for n, _p, t in heads[works[0]["book"]]],
              "copy": []}
+    if bounds:
+        table["bounds"] = bounds
     if args.dry_run:
         print("  （--dry-run：没有落盘）", file=sys.stderr)
         return
