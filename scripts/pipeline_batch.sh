@@ -169,6 +169,9 @@ $(read_or_empty "$K/known-issues.md")
 EOF
 )
 
+# 故事型计划（variant story）的两种注入；别的计划里恒为空
+NAMES_BLOCK=""; GLOSS_BLOCK=""
+
 # load_step <skill> <step> —— SKILL.md + method（项目覆盖优先）+ references
 load_step() {
     local skill="$1" step="$2" mfile
@@ -307,7 +310,7 @@ emit_translate() {
 $KNOWLEDGE
 
 ---本次要译的文献层次：$LCN（book=$LBOOK $TITLE）---
-$PARENT_BLOCK$DONE_CTX
+$PARENT_BLOCK$DONE_CTX$NAMES_BLOCK
 ---待翻译（book=$LBOOK，段 $TODO，共 $N 句，按段落顺序排列）---
 pali 里的 \`**词**\` 是原文的黑体；在义注/复注里它就是**被解释词**，译文要保留 \`**…**\` 标记。
 $SRC
@@ -326,6 +329,27 @@ $SRC
 只输出 JSONL，不要旁白或代码围栏。"
 }
 
+emit_names() {
+    cached_claude "$1" "你是巴利语佛典的汉译者。下面的术语与风格约定供定译名时参考。
+
+$KNOWLEDGE
+
+---本次任务：从义注原文中抽取人名与地名（book=$LBOOK，段 $TODO）---
+$SRC
+
+---任务---
+列出上文出现的全部**人名**与**地名**，并给出统一的汉译名。
+· 人名：人、天、龙、夜叉等有专名者（佛陀、弟子、国王、长者、婆罗门……）；
+· 地名：国、城、村、精舍、园林、河、山、湖等。
+· **只收专名**。称号、职业、普通名词不收（如 satthā、bhikkhu、seṭṭhi、rājā 本身不收；
+  「Pasenadi」收，「kosalarājā」作为称号不收）。
+· 汉译名优先用汉传佛典通行译名（如 Sāvatthī 舍卫城、Jetavana 祇园精舍、Pasenadi 波斯匿王），
+  没有通行译名的按音译，前后同一人同一地只给一个译名。
+每个专名只输出一行 JSONL：
+{\"pali\": \"原形（主格或词干，如 Sāmāvatī）\", \"forms\": [\"文中实际出现的词形\", …], \"type\": \"人名\" 或 \"地名\", \"zh\": \"汉译名\"}
+不要输出说明、不要编号、不要代码围栏。所需数据已全部注入上文，不要试图调用任何工具取数。"
+}
+
 emit_review() {
     cached_claude "$1" "$(load_step pali-review review)
 
@@ -333,7 +357,7 @@ $KNOWLEDGE
 
 ---本次审的文献层次：$LCN（book=$LBOOK $TITLE）---
 $PARENT_BLOCK
-$ATT_REF
+$ATT_REF$GLOSS_BLOCK$NAMES_BLOCK
 ---待审译文（book=$LBOOK，段 $CH，channel=$CHANNEL）---
 $REVIEW_SRC
 
@@ -352,7 +376,7 @@ $KNOWLEDGE
 
 ---本次修订的文献层次：$LCN（book=$LBOOK $TITLE）---
 $PARENT_BLOCK
-$ATT_REF
+$ATT_REF$GLOSS_BLOCK$NAMES_BLOCK
 ---现有译文与资源（book=$LBOOK，段 $CH）---
 $REVIEW_SRC
 
@@ -461,6 +485,7 @@ def paras(spans):
 
 
 put("T_STEP", t["step"])
+put("T_VARIANT", plan.get("variant", ""))
 put("T_LAYER", t.get("layer", ""))
 put("T_BOOK", t.get("book") or "")
 put("T_START", t.get("start") or "")
@@ -536,7 +561,49 @@ $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channe
 "
     fi
 
+    # 故事型计划：translate/review/revise 注入本块出现的人名地名；
+    # 本文自译块的 review/revise 再注入义注对这些偈的黑体解释（义注定释义）
+    if [[ "$T_VARIANT" == "story" && ( "$T_STEP" == "translate" || "$T_STEP" == "review" \
+          || "$T_STEP" == "revise" ) ]]; then
+        if ! NAMES_BLOCK="$(python3 "$SCRIPT_DIR/story_ctx.py" names-block --plan "$PLAN" --task "$TASK")"; then
+            echo "  人名地名表未就绪，本 task 不开跑" >&2
+            audit_task "$TASK" fail "人名地名表未就绪" "$T_BOOK" "$T_START-$T_END"; exit 1
+        fi
+        if [[ "$T_LAYER" == "mula" && "$T_STEP" != "translate" ]]; then
+            GLOSS_BLOCK="$(python3 "$SCRIPT_DIR/story_ctx.py" gloss-block --plan "$PLAN" \
+                --task "$TASK" --channel "$CHANNEL" || true)"
+        fi
+        echo "  注入：人名地名 $(printf '%s' "$NAMES_BLOCK" | grep -c '^{' || true) 条｜义注黑体解释 $(printf '%s' "$GLOSS_BLOCK" | grep -c '^{' || true) 句"
+    fi
+
     case "$T_STEP" in
+    names)
+        NDIR="$PROJ_HOME/names"; mkdir -p "$NDIR"
+        NOUT="$NDIR/${TASK%%:*}.jsonl"
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_BOOK" --para "$TODO" || true)
+            echo ">>> names 第 $try/$MAX_TRY 次（$(echo ${TODO//,/ } | wc -w) 段）"
+            if emit_names "$TASK" | python3 "$SCRIPT_DIR/story_ctx.py" names-check > "$NOUT.part"; then
+                mv "$NOUT.part" "$NOUT"
+                audit_task "$TASK" ok "$(grep -c '^{' "$NOUT") 个专名" "$T_BOOK" "$T_START-$T_END"; exit 0
+            fi
+        done
+        rm -f "$NOUT.part"
+        audit_task "$TASK" fail "$MAX_TRY 次未成" "$T_BOOK" "$T_START-$T_END"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
+    vcopy)
+        # 本文照抄组：义注引偈（带上下文、有 nissaya 复核过）的定稿逐句抄到本文，不译不审
+        for ((try = 1; try <= MAX_TRY; try++)); do
+            echo ">>> vcopy 第 $try/$MAX_TRY 次（$T_SENTS 句）"
+            if python3 "$SCRIPT_DIR/story_ctx.py" vcopy --plan "$PLAN" --task "$TASK" \
+                   --channel "$CHANNEL" $DRYRUN; then
+                audit_task "$TASK" ok "照抄 $T_SENTS 句" "$T_BOOK" "$T_START-$T_END"; exit 0
+            fi
+        done
+        audit_task "$TASK" fail "$MAX_TRY 次未成" "$T_BOOK" "$T_START-$T_END"
+        echo "######## 未完成：task $TASK ########" >&2; exit 1
+        ;;
     translate)
         for ((try = 1; try <= MAX_TRY; try++)); do
             SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_BOOK" --para "$TODO" || true)
