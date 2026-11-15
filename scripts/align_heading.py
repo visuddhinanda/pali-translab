@@ -78,6 +78,26 @@ def backfill(rows, level, csf, d):
     return out
 
 
+def monotonic(d, book):
+    """cs 倒退的段归回所在经：键取到此为止的最大 cs。
+
+    kn3 自说义注 123:990-1062 是第 38 经义注里引的 12 首宿业偈（Pubbakammapiloti），
+    原始数据给它另编了 cs 1-12，跟本文第 1-12 经撞号，第 1 经的义注参考里会混进这段。
+    """
+    out, top, moved = {}, None, []
+    for p in sorted(d, key=int):
+        k = d[p]
+        if top is not None and k < top:
+            moved.append(int(p))
+            k = top
+        top = k if top is None else max(top, k)
+        out[p] = k
+    if moved:
+        print(f"  book {book}：cs 倒退 {len(moved)} 段（{moved[0]}-{moved[-1]}）归回所在经",
+              file=sys.stderr)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--family", required=True)
@@ -88,6 +108,8 @@ def main():
                     help="对齐键：heading = 标题号（默认）；cs = cs_para，标题号只作切块边界")
     ap.add_argument("--backfill-level", type=int, default=0, dest="backfill",
                     help="--key cs 时：该级标题到其下第一个编号小标题之间的段，取那个编号段的 cs")
+    ap.add_argument("--monotonic", action="store_true",
+                    help="--key cs 时：cs 比前面小的段（书内另起编号的引偈等）键取前面的最大 cs")
     ap.add_argument("--out", required=True)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
@@ -117,6 +139,8 @@ def main():
             d = {p: csf[int(p)] for p in d if csf.get(int(p)) is not None}
             if args.backfill:
                 d.update(backfill(rows, args.backfill, csf, d))
+            if args.monotonic:
+                d = monotonic(d, w["book"])
         para_key[str(w["book"])] = d
 
     # 自检：各层编号集合一致、单调不重复
