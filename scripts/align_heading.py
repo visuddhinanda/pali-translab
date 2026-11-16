@@ -78,6 +78,46 @@ def backfill(rows, level, csf, d):
     return out
 
 
+JOINT = re.compile(r"^\s*(\d+)\s*-\s*(\d+)\s*\.")
+
+
+def joint(rows, level, d, book):
+    """合注：第 level 级标题写作「N-M.」的，一段义注解释了相邻 M-N+1 部经。
+
+    kn4 如是语义注 124:267「9-10.」、124:272「1-3.」（本文第 11-13 经）、
+    124:953「7-8.」。前两处原始 cs 是乱码（44084、44148），第三处是 56。
+    一律改为：合注下的段（连同紧挨在它前面、cs 与它相同的段，如品标题 124:271）
+    键取「上一经的 cs + 1」= k；返回 {被并掉的经号: k}，交给其他层把对应的经并进同一组。
+    """
+    out, remap, last, i = dict(d), {}, None, 0
+    seq = [x for x in rows if str(x["paragraph"]) in d]
+    while i < len(seq):
+        x = seq[i]
+        p, toc = x["paragraph"], x.get("toc") or ""
+        if x.get("level") == level:
+            m = JOINT.match(toc)
+            if m and last is not None:
+                span, k, raw = int(m.group(2)) - int(m.group(1)) + 1, last + 1, d[str(p)]
+                j = i - 1
+                while j >= 0 and d[str(seq[j]["paragraph"])] == raw and str(seq[j]["paragraph"]) != "":
+                    out[str(seq[j]["paragraph"])] = k
+                    j -= 1
+                j = i
+                while j < len(seq) and (j == i or seq[j].get("level") != level):
+                    out[str(seq[j]["paragraph"])] = k
+                    j += 1
+                for c in range(k + 1, k + span):
+                    remap[c] = k
+                print(f"  book {book}：合注 {p}「{toc[:30]}」→ 经号 {k}"
+                      + (f"（并入 {k + 1}-{k + span - 1}）" if span > 1 else "")
+                      + (f"，原始 cs {raw}" if raw != k else ""), file=sys.stderr)
+                last, i = k + span - 1, j
+                continue
+            last = d[str(p)]
+        i += 1
+    return out, remap
+
+
 def monotonic(d, book):
     """cs 倒退的段归回所在经：键取到此为止的最大 cs。
 
@@ -110,11 +150,13 @@ def main():
                     help="--key cs 时：该级标题到其下第一个编号小标题之间的段，取那个编号段的 cs")
     ap.add_argument("--monotonic", action="store_true",
                     help="--key cs 时：cs 比前面小的段（书内另起编号的引偈等）键取前面的最大 cs")
+    ap.add_argument("--joint", type=int, default=0,
+                    help="--key cs 时：该级标题写作「N-M.」的是合注，键取上一经 cs+1，别层对应各经并组")
     ap.add_argument("--out", required=True)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    works, para_key, heads, bounds = [], {}, {}, {}
+    works, para_key, heads, bounds, remap = [], {}, {}, {}, {}
     for spec in args.work:
         w = parse_work(spec)
         rows = sorted((x for x in paras(w["book"]) if w["start"] <= x["paragraph"] <= w["end"]),
@@ -139,9 +181,21 @@ def main():
             d = {p: csf[int(p)] for p in d if csf.get(int(p)) is not None}
             if args.backfill:
                 d.update(backfill(rows, args.backfill, csf, d))
+            if args.joint:
+                d, rm = joint(rows, args.joint, d, w["book"])
+                remap.update(rm)
             if args.monotonic:
                 d = monotonic(d, w["book"])
         para_key[str(w["book"])] = d
+
+    # 合注：别的层里被并掉的经号改成合注的键，两边同组
+    if remap:
+        for b, d in para_key.items():
+            n = sum(1 for p in d if d[p] in remap)
+            for p in d:
+                d[p] = remap.get(d[p], d[p])
+            if n:
+                print(f"  book {b}：{n} 段按合注并组", file=sys.stderr)
 
     # 自检：各层编号集合一致、单调不重复
     sets = {b: [n for n, _p, _t in hs] for b, hs in heads.items()}
