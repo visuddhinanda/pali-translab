@@ -478,6 +478,15 @@ def cs_filled(book):
     rows = sorted(rows, key=lambda x: x["paragraph"])
     body_cs = {x["paragraph"]: x.get("cs_para") for x in rows if x.get("level", 100) >= 100}
 
+    # · **离群值当没有 cs**：前后锚点彼此有序、它却落在两者之外，就是录入坏了
+    #   （经集义注 125:122 注第 10–13 偈，cs 却是 44117，会被并进全书最后一组统稿）。
+    #   只在前 ≤ 后时判，cs 按品重计（如事品每品从 1 起）的回落不受影响。
+    anchors = [p for p in sorted(body_cs) if body_cs[p] is not None]
+    for i in range(1, len(anchors) - 1):
+        a, v, b = (body_cs[anchors[j]] for j in (i - 1, i, i + 1))
+        if a is not None and b is not None and a <= b and not a <= v <= b:
+            body_cs[anchors[i]] = None
+
     nxt, fwd = None, {}
     for x in reversed(rows):                      # 每段之后的第一个正文锚点
         p = x["paragraph"]
