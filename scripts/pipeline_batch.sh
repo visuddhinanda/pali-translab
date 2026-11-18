@@ -423,8 +423,22 @@ layer_cn() {
 
 # 复核各步都从 channel 读回译文——**channel 就是流水线各步之间的交接处**
 # （见 ARCHITECTURE「数据流」）。两条执行路径都要用，所以定义放在这里。
+# 读 channel / 原文一律走 wp_read：**读失败就中止整个 task（作业模式是整个作业）**。
+# 以前写的是 `wp_pull.py … || true`——网络一断拿到空串，被当成「还没有译文」记 skip。
+# skip 是终态，续跑也不会再做（kn4 A136-A143 的 revise 就这样被永久跳过）；
+# 父层对照读空，注释层就在没有被解释词对照的情况下照译，账上还记 ok。
+# 调用点大多在 $(…) 里，子 shell 的 exit 带不出来，所以失败时给主进程发 USR1，
+# 由它统一退出。wikipali 的报错已经在日志里，守护进程认得「连接失败 / HTTP 5xx」，
+# 按环境异常退回队列、不计重试次数；不是网络问题的，照常算一次失败。
+trap 'echo "  ✗ 读取 wikipali 失败，中止（不记 skip；原因见上方报错）" >&2
+      echo "######## 未完成：task ${TASK:-作业} ########" >&2; exit 1' USR1
+wp_read() {
+    python3 "$SCRIPT_DIR/wp_pull.py" "$@" && return 0
+    kill -USR1 $$; return 1
+}
+
 pull_review() {
-    python3 "$SCRIPT_DIR/wp_pull.py" --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL"
+    wp_read --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL"
 }
 
 # ══════════ 单 task 模式（schema 3）══════════
@@ -514,7 +528,7 @@ PYTASK
 
     # 父层对照：翻译/复核子层时，黑体被解释词必须与父层译文逐字相同
     if [[ -n "$T_PBOOK" && -n "$T_PPARAS" ]]; then
-        PARENT_TXT="$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_PBOOK" --para "$T_PPARAS" --channel "$CHANNEL" || true)"
+        PARENT_TXT="$(wp_read --book "$T_PBOOK" --para "$T_PPARAS" --channel "$CHANNEL")"
         if [[ "$(count_zh "$PARENT_TXT")" -gt 0 ]]; then
             PARENT_BLOCK="
 ---父层对照（book=$T_PBOOK，段 $T_PPARAS；pali 为父层原文，zh 为**已定稿的父层译文**）---
@@ -532,14 +546,14 @@ $PARENT_TXT
           && ( "$T_STEP" == "review" || "$T_STEP" == "revise" ) ]]; then
         ATT_REF="
 ---义注参考（校对用；本 task **不翻译**义注）---
-$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL" || true)
+$(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL")
 "
     fi
 
     case "$T_STEP" in
     translate)
         for ((try = 1; try <= MAX_TRY; try++)); do
-            SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_BOOK" --para "$TODO" || true)
+            SRC=$(wp_read --book "$T_BOOK" --para "$TODO")
             # 期望清单与句数**只算真有巴利词的句子**：句子表会把孤立的标点切成
             # 独立句（实测有 pali 就是 `**.**` 的），模型不会为它输出译文，
             # 按「缺句」算会让整块必然重试到失败。见 scripts/pali_ids.py
@@ -571,7 +585,7 @@ $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channe
         echo "######## 未完成：task $TASK ########" >&2; exit 1
         ;;
     review|evaluate)
-        SRC_TXT=$(pull_review "$T_BOOK" "$CH" || true)
+        SRC_TXT=$(pull_review "$T_BOOK" "$CH")
         if [[ "$(count_zh "$SRC_TXT")" -eq 0 ]]; then
             echo "  跳过：channel 上 $T_BOOK:$T_START-$T_END 还没有译文"
             audit_task "$TASK" skip "channel 上还没有译文" "$T_BOOK" "$T_START-$T_END"; exit 0
@@ -601,7 +615,7 @@ $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channe
         echo "######## 未完成：task $TASK ########" >&2; exit 1
         ;;
     revise)
-        REVIEW_SRC=$(pull_review "$T_BOOK" "$CH" || true)
+        REVIEW_SRC=$(pull_review "$T_BOOK" "$CH")
         if [[ "$(count_zh "$REVIEW_SRC")" -eq 0 ]]; then
             echo "  跳过：channel 上 $T_BOOK:$T_START-$T_END 还没有译文"
             audit_task "$TASK" skip "channel 上还没有译文" "$T_BOOK" "$T_START-$T_END"; exit 0
@@ -632,7 +646,7 @@ $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$T_ABOOK" --para "$T_APARAS" --channe
         USRC=""; UN=0
         for SP in $T_READ; do
             UB="${SP%%:*}"; UR="${SP#*:}"
-            T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
+            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL")
             USRC="$USRC
 === 父层对照〔只读，一句都不要输出〕 book=$UB  段 $UR ===
 $T
@@ -640,7 +654,7 @@ $T
         done
         for SP in $T_WRITE; do
             UB="${SP%%:*}"; UR="${SP#*:}"
-            T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
+            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL")
             UN=$(( UN + $(count_mula "$T") ))
             USRC="$USRC
 === 待统稿〔要改的就是这一层〕 book=$UB  段 $UR ===
@@ -665,7 +679,7 @@ $T
                 # 父层的句子，wp_push 会按 --ignore-foreign 丢弃
                 for SP in $T_WRITE; do
                     UB="${SP%%:*}"; UR="${SP#*:}"
-                    NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" | grep -c '^{' || true)
+                    NL=$(wp_read --book "$UB" --para "$UR" | grep -c '^{' || true)
                     python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
                         --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN \
                         < "$UOUT" || PUSH_OK=0
@@ -695,7 +709,7 @@ $T
             echo "  --dry-run：不导出"; exit 0
         fi
         if python3 "$SCRIPT_DIR/export_markdown.py" --book "$T_BOOK" --channel "$CHANNEL" \
-               --from "$T_START" --to "$T_END" --out "$EXPORT_DIR" --model claude-opus-5; then
+               --from "$T_START" --to "$T_END" --out "$EXPORT_DIR" --model "$MODEL"; then
             audit_task "$TASK" ok "$EXPORT_DIR" "$T_BOOK" "$T_START-$T_END"; exit 0
         fi
         audit_task "$TASK" fail "导出失败" "$T_BOOK" "$T_START-$T_END"
@@ -843,7 +857,7 @@ while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
         if [[ -n "$ASPEC" ]]; then
             ATT_REF="
 ---义注参考（校对用；本作业**不翻译**义注）---
-$(set -- $ASPEC; while [[ $# -ge 2 ]]; do python3 "$SCRIPT_DIR/wp_pull.py" --book "$1" --para "$2" --channel "$CHANNEL" || true; shift 2; done)
+$(set -- $ASPEC; while [[ $# -ge 2 ]]; do wp_read --book "$1" --para "$2" --channel "$CHANNEL"; shift 2; done)
 "
         fi
     fi
@@ -859,7 +873,7 @@ $(set -- $ASPEC; while [[ $# -ge 2 ]]; do python3 "$SCRIPT_DIR/wp_pull.py" --boo
             PSPEC="$(parent_spec "$LBOOK" "$LPARAS")"
         fi
         if [[ -n "$PSPEC" ]]; then
-            PARENT_TXT="$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$PBOOK" --para "$PSPEC" --channel "$CHANNEL" || true)"
+            PARENT_TXT="$(wp_read --book "$PBOOK" --para "$PSPEC" --channel "$CHANNEL")"
             if [[ "$(count_zh "$PARENT_TXT")" -gt 0 ]]; then
                 PARENT_BLOCK="
 ---父层对照（book=$PBOOK，段 $PSPEC；pali 为父层原文，zh 为**已定稿的父层译文**）---
@@ -880,7 +894,7 @@ $PARENT_TXT
         TAG="$LBOOK-$FIRST-$LAST"
         echo "════════ $LCN $LBOOK:$FIRST-$LAST（$CHID）════════"
 
-        SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$CH" || true)
+        SRC=$(wp_read --book "$LBOOK" --para "$CH")
         N=$(count_mula "$SRC")
         if [[ "$N" -eq 0 ]]; then
             echo "  跳过（无巴利原文）"; continue
@@ -894,7 +908,7 @@ $PARENT_TXT
             for ((try = 1; try <= MAX_TRY; try++)); do
                 # 每轮都按**本轮要译的段**重新取原文与上下文：第一轮是整个 TODO，
                 # 之后只剩上一轮缺的那几段（见下面的退出码 2）
-                SRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$TODO" || true)
+                SRC=$(wp_read --book "$LBOOK" --para "$TODO")
                 # 只算真有巴利词的句子，纯标点句不计入漏译（见 scripts/pali_ids.py）
                 N=$(printf '%s' "$SRC" | python3 "$SCRIPT_DIR/pali_ids.py" "$IDS_FILE")
                 [[ "$N" -eq 0 ]] && { echo "  跳过 translate（$TODO 没有可译的巴利句）"; break; }
@@ -903,7 +917,7 @@ $PARENT_TXT
                     echo "  （本 chunk 只译 $TODO，其余已有译文，作术语对照注入）"
                     DONE_CTX="
 ---同一 chunk 内已有的译文（**只作术语与语体对照，不要重复输出**）---
-$(pull_review "$LBOOK" "$CH" || true)
+$(pull_review "$LBOOK" "$CH")
 "
                 fi
 
@@ -939,12 +953,12 @@ $(pull_review "$LBOOK" "$CH" || true)
         fi
 
         # 后续步骤按整个 chunk 走（补译只影响 translate 的范围）
-        N=$(count_mula "$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$CH" || true)")
+        N=$(count_mula "$(wp_read --book "$LBOOK" --para "$CH")")
 
         # review / revise 都要有译文才有意义
         REVIEW_SRC=""
         if has_step review || has_step revise; then
-            REVIEW_SRC=$(pull_review "$LBOOK" "$CH" || true)
+            REVIEW_SRC=$(pull_review "$LBOOK" "$CH")
             if [[ "$(count_zh "$REVIEW_SRC")" -eq 0 ]]; then
                 echo "  跳过复核（channel 上 $LBOOK:$FIRST-$LAST 还没有译文）"
                 REVIEW_SRC=""
@@ -1031,7 +1045,7 @@ if [[ -s "${HUNITS:-/nonexistent}" ]]; then
         USRC=""; UN=0
         for SP in ${SPANS//,/ }; do
             UB="${SP%%:*}"; UR="${SP#*:}"
-            T=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" --channel "$CHANNEL" || true)
+            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL")
             UN=$(( UN + $(count_mula "$T") ))
             USRC="$USRC
 === book=$UB  段 $UR ===
@@ -1053,7 +1067,7 @@ $T
                 PUSH_OK=1
                 for SP in ${SPANS//,/ }; do
                     UB="${SP%%:*}"; UR="${SP#*:}"
-                    NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$UB" --para "$UR" | grep -c '^{' || true)
+                    NL=$(wp_read --book "$UB" --para "$UR" | grep -c '^{' || true)
                     python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
                         --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN \
                         < "$UOUT" || PUSH_OK=0
@@ -1077,7 +1091,7 @@ else
         HAVE=1
         while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
             [[ -z "${LAYER:-}" ]] && continue
-            TXT=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" --channel "$CHANNEL" || true)
+            TXT=$(wp_read --book "$LBOOK" --para "$LPARAS" --channel "$CHANNEL")
             NL=$(count_mula "$TXT"); NZ=$(count_zh "$TXT")
             if [[ "${OWN:-1}" == 1 ]]; then
                 echo "  [译] $(layer_cn "$LAYER") book=$LBOOK：$NZ/$NL 句有译文"
@@ -1101,7 +1115,7 @@ else
         while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
             [[ -z "${LAYER:-}" ]] && continue
             [[ "${OWN:-1}" == 1 ]] || continue
-            TOTAL=$(( TOTAL + $(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true) ))
+            TOTAL=$(( TOTAL + $(wp_read --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true) ))
         done < "$GROUPS_FILE"
 
         # 超大作业（最大的一章注释有一千多段）没法一次塞进上下文，也没法让模型一次吐回来。
@@ -1110,7 +1124,7 @@ else
         if [[ "$HAVE" -eq 1 && "$TOTAL" -gt "$HARMONIZE_MAX" ]]; then
             echo ">>> 本作业 $TOTAL 句，超过单批上限 $HARMONIZE_MAX——改为按层分批统稿"
             MULA_TXT="$(awk '$1=="mula" {print $2, $3}' "$GROUPS_FILE" | while read -r mb mp; do
-                python3 "$SCRIPT_DIR/wp_pull.py" --book "$mb" --para "$mp" --channel "$CHANNEL" || true
+                wp_read --book "$mb" --para "$mp" --channel "$CHANNEL"
             done)"
             while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
                 [[ -z "${LAYER:-}" ]] && continue
@@ -1118,7 +1132,7 @@ else
                 [[ "$LAYER" == "mula" ]] && continue        # 本文随第一批一起统
                 while read -r HCH; do
                     [[ -z "$HCH" ]] && continue
-                    HSRC=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$HCH" --channel "$CHANNEL" || true)
+                    HSRC=$(wp_read --book "$LBOOK" --para "$HCH" --channel "$CHANNEL")
                     HN=$(count_mula "$HSRC")
                     [[ "$HN" -eq 0 ]] && continue
                     echo ">>> 统稿分批 $(layer_cn "$LAYER") $LBOOK:${HCH%%,*}-${HCH##*,}（$HN 句）"
@@ -1179,7 +1193,7 @@ else
                     while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
                         [[ -z "${LAYER:-}" ]] && continue
                         [[ "${OWN:-1}" == 1 ]] || continue      # 参考层不回写
-                        NL=$(python3 "$SCRIPT_DIR/wp_pull.py" --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true)
+                        NL=$(wp_read --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true)
                         if ! python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$LPARAS" \
                             --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN < "$OUT"; then
                             OK=0
@@ -1216,7 +1230,7 @@ if has_step evaluate; then
             TAG="$LBOOK-$FIRST-$LAST"
             task_done "$CHID:evaluate" && continue
 
-            EVAL_SRC=$(pull_review "$LBOOK" "$CH" || true)
+            EVAL_SRC=$(pull_review "$LBOOK" "$CH")
             if [[ "$(count_zh "$EVAL_SRC")" -eq 0 ]]; then
                 echo "  跳过评估（$LBOOK:$FIRST-$LAST 还没有译文）"; continue
             fi
@@ -1248,7 +1262,7 @@ if has_step export && [[ -z "$DRYRUN" ]]; then
         EFROM="${LPARAS%%,*}"; EFROM="${EFROM%%-*}"
         ETO="${LPARAS##*,}"; ETO="${ETO##*-}"
         if python3 "$SCRIPT_DIR/export_markdown.py" --book "$LBOOK" --channel "$CHANNEL" \
-               --from "$EFROM" --to "$ETO" --out "$EXPORT_DIR" --model claude-opus-5; then
+               --from "$EFROM" --to "$ETO" --out "$EXPORT_DIR" --model "$MODEL"; then
             audit_task "$EXP_TASK" ok "$EXPORT_DIR" "$LBOOK" "$LPARAS"
         else
             audit_task "$EXP_TASK" fail "导出失败" "$LBOOK" "$LPARAS"

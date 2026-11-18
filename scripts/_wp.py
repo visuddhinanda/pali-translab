@@ -76,11 +76,16 @@ def run(args, stdin=None, check=True, retries=0, backoff=20):
 
 
 def jget(*args, retries=5):
-    """跑一条 wikipali 命令并解析 JSON；解析不了就当空。读操作默认带重试。"""
+    """跑一条 wikipali 命令并解析 JSON。读操作默认带重试。
+
+    空输出是「确实没有」，返回 []；**解析不了就报错退出，不当空**——
+    当空会让上层把读坏了误判成「没有译文」，记成 skip 永久跳过。
+    """
+    out = run(list(args), retries=retries).stdout
     try:
-        return json.loads(run(list(args), retries=retries).stdout or "[]")
+        return json.loads(out or "[]")
     except json.JSONDecodeError:
-        return []
+        sys.exit(f"wikipali {' '.join(args[:2])} 返回的不是 JSON：{out[:200]!r}")
 
 
 def plain(rec):
