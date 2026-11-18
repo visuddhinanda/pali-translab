@@ -88,13 +88,22 @@ def main():
 
     paras = parse_paras(args.para)
 
+    # 先取巴利原文，**只对真有原文的段**查 nissaya、取译文。
+    # 段号区间里会有不存在的编号（kn15 的 149:2446，`get` 返回 []）：对它调
+    # `versions` 服务端回 500，守护进程认作环境异常无限退回队列，整个阶段卡死。
+    # 查询失败照样中止——这里只排除「确实没有」，不吞「读不到」。
+    rows = fetch(args.book, paras, [PALI_UID])
+    present = sorted({r["paragraph"] for r in rows})
+
     nissaya_uids = []
     if args.nissaya:
-        for p in paras:
+        for p in present:
             nissaya_uids += find_nissaya(args.book, p)
         nissaya_uids = list(dict.fromkeys(nissaya_uids))
 
-    rows = fetch(args.book, paras, [PALI_UID, *nissaya_uids, *args.channel])
+    extra = [*nissaya_uids, *args.channel]
+    if extra and present:
+        rows += fetch(args.book, present, extra)
     for row in merge(rows, PALI_UID, nissaya_uids):
         if row.get("pali"):          # 没有巴利原文的坐标不是可翻译单位
             print(dump({"layer": "mula", **row}))
