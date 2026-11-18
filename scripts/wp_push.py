@@ -29,7 +29,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import jget, parse_paras, run  # noqa: E402
+from _wp import get_rows, jget, parse_paras, run  # noqa: E402
 
 ID_RE = re.compile(r"^(\d+)-(\d+)-(\d+)-(\d+)$")
 
@@ -99,13 +99,9 @@ def to_sentence(obj, book, paras):
 
 def real_coords(book, paras, channel=None, batch=20):
     """真实存在的坐标集合——写之前用它挡掉编造的坐标，写之后用它读回核对。"""
-    ch = ["--channel", channel] if channel else []
-    got = set()
-    for i in range(0, len(paras), batch):
-        coords = [f"{book}:{p}" for p in paras[i:i + batch]]
-        for x in jget("get", *coords, "--json", *ch):
-            got.add((x["paragraph"], x["word_start"], x["word_end"]))
-    return got
+    # get_rows 防 `wikipali get` 的静默截断——截了就会把真写进去的句子报成缺句
+    return {(x["paragraph"], x["word_start"], x["word_end"])
+            for x in get_rows(book, paras, [channel] if channel else [], batch)}
 
 
 def report_missing(book, scope, miss, missing_out):

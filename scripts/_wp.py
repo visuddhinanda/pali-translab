@@ -88,6 +88,36 @@ def jget(*args, retries=5):
         sys.exit(f"wikipali {' '.join(args[:2])} 返回的不是 JSON：{out[:200]!r}")
 
 
+GET_LIMIT = 1000   # `wikipali get` 一次最多返回几行（句 × channel）；CLI 默认只有 200
+
+
+def get_rows(book, paras, channels=(), batch=20):
+    """按段取句子（`wikipali get`），**返回行数顶到上限就对半拆了重取**。
+
+    `wikipali get` 按 `--limit` 截断、不报错，默认 200 行。以前各处不传它：
+    一批 20 段 × (巴利 + nissaya + 译文) 超过约 66 句，批尾的段就被静默丢掉——
+    kn5 的 H7 统稿只看到 193 句里的 100 句，整本读回核对一轮丢 201 段。
+    所有按段取句子的地方都走这里。
+    """
+    chan = [a for uid in channels for a in ("--channel", uid)]
+
+    def get(ps):
+        got = jget("get", *[f"{book}:{p}" for p in ps], "--json",
+                   "--limit", str(GET_LIMIT), *chan) or []
+        if len(got) < GET_LIMIT:
+            return got
+        if len(ps) == 1:
+            sys.exit(f"wikipali get {book}:{ps[0]} 单段就有 ≥{GET_LIMIT} 行，可能被截断——调大 GET_LIMIT")
+        mid = len(ps) // 2
+        return get(ps[:mid]) + get(ps[mid:])
+
+    paras = list(paras)
+    rows = []
+    for i in range(0, len(paras), batch):
+        rows += get(paras[i:i + batch])
+    return rows
+
+
 def plain(rec):
     """取句子文本。
 

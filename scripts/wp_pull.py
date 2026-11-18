@@ -19,16 +19,12 @@ import argparse
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import PALI_UID, dump, jget, layer_of, parse_paras, plain  # noqa: E402
+from _wp import PALI_UID, dump, get_rows, jget, layer_of, parse_paras, plain  # noqa: E402
 
 
 def fetch(book, paras, channels, batch=20):
-    rows = []
-    for i in range(0, len(paras), batch):
-        coords = [f"{book}:{p}" for p in paras[i:i + batch]]
-        rows += jget("get", *coords, "--json",
-                     *[a for uid in channels for a in ("--channel", uid)])
-    return rows
+    """见 _wp.get_rows：拆批重取，防 `wikipali get` 的静默截断。"""
+    return get_rows(book, paras, channels, batch)
 
 
 def find_nissaya(book, para):

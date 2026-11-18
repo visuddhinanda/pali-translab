@@ -30,7 +30,7 @@ import tempfile
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from _wp import _exe, jget  # noqa: E402
+from _wp import _exe, get_rows, jget  # noqa: E402
 from wp_push import CHUNK_BYTES, CHUNK_SENTS, split_for_upload  # noqa: E402
 
 
@@ -43,11 +43,7 @@ def digest(rows):
 
 
 def read_paras(book, paras, channel, read_batch):
-    out = []
-    for i in range(0, len(paras), read_batch):
-        coords = [f"{book}:{p}" for p in paras[i:i + read_batch]]
-        out += jget("get", *coords, "--json", "--channel", channel)
-    return out
+    return get_rows(book, paras, [channel], read_batch)
 
 
 def write_blocks(rows, channel, max_bytes, max_count):

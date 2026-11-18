@@ -36,7 +36,7 @@ import sys
 from collections import Counter
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import jget, paras  # noqa: E402
+from _wp import get_rows, jget, paras  # noqa: E402
 
 # 本文合成一个 work：两部巴提木叉同在 207、首尾相接，而义注一部书注两部——
 # 拆成两个 work 的话义注只能挑一个父 work，另一部就没有对照了。
@@ -191,7 +191,7 @@ def mula_text(book, lo, hi):
     out = {}
     ps = list(range(lo, hi + 1))
     for i in range(0, len(ps), 40):
-        for x in jget("get", *[f"{book}:{p}" for p in ps[i:i + 40]], "--json") or []:
+        for x in get_rows(book, ps[i:i + 40], batch=40):
             s = re.sub(r"<code>.*?</code>", "", x.get("content") or "")
             s = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", s)).strip()
             out.setdefault(x["paragraph"], {})[(x["word_start"], x["word_end"])] = s

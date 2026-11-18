@@ -30,7 +30,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import book_roots, jget, plain  # noqa: E402
+from _wp import book_roots, get_rows, jget, plain  # noqa: E402
 
 # 文件名/目录名保留章节名原貌，只挡掉路径分隔符与控制字符
 UNSAFE_RE = re.compile(r"[/\\\x00-\x1f]+")
@@ -57,12 +57,8 @@ def chapters(book, anchor_para):
 
 
 def fetch_range(book, start, end, channels, batch=20):
-    rows = []
-    for lo in range(start, end + 1, batch):
-        coords = [f"{book}:{p}" for p in range(lo, min(lo + batch, end + 1))]
-        rows += jget("get", *coords, "--json",
-                     *[a for uid in channels for a in ("--channel", uid)])
-    return rows
+    # `wikipali get` 默认只回 200 行、超出静默截断；get_rows 会拆批重取
+    return get_rows(book, range(start, end + 1), channels, batch)
 
 
 def safe_name(title):
