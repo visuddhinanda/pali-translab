@@ -66,10 +66,10 @@ def stop_requested(name=None):
     return os.path.exists(GLOBAL_STOP) or (bool(name) and os.path.exists(stop_path(name)))
 
 PENDING, RUNNING, DONE, FAILED = "pending", "running", "done", "failed"
-SKIPPED = pj.SKIPPED        # 「按规矩不该做」，与 done 同为终态（见 project.settled）
+SKIPPED, FIXED = pj.SKIPPED, pj.FIXED   # 「按规矩不该做」，与 done 同为终态（见 project.settled）
 # 任务表用 emoji 标状态，一眼能扫出全书进度
 EMOJI = {PENDING: "⬜ 未开始", RUNNING: "🔄 进行中", DONE: "✅ 已完成", FAILED: "❌ 失败",
-         SKIPPED: "⏭ 跳过"}
+         SKIPPED: "⏭ 跳过", FIXED: "🩹 已补齐"}
 STATE = {v: k for k, v in EMOJI.items()}
 # 状态表的列（历史遗留，仅 write_status 用）。
 # 子行状态来自 audit.log 里的 task_id（查表，见 sync_subrows）。
@@ -635,7 +635,8 @@ def run_scan(args):
         pj.save(proj)
         sync_subrows(force=True)
         log_line(f'结束：完成 {c[DONE]}/{len(tasks)}，失败 {len(bad)}'
-                 + (f'，跳过 {c[SKIPPED]}' if c[SKIPPED] else ''))
+                 + (f'，跳过 {c[SKIPPED]}' if c[SKIPPED] else '')
+                 + (f'，revise 补齐 {c[FIXED]}' if c[FIXED] else ''))
         for t in bad[:20]:
             log_line(f'   失败 {t["id"]} {task_coord(t)} {t.get("note", "")}')
     finally:
@@ -800,7 +801,7 @@ def cmd_run(args):
         failed = [j for j in jobs if j["status"] == FAILED]
         # 这一轮可能只跑了 --start/--end 圈定的一段，项目整体完没完要看全表
         whole = pj.pipelines(PROJ["data"])
-        all_done = all(j.get("status") in (DONE, "skipped") for j in whole)
+        all_done = all(j.get("status") in (DONE, SKIPPED, FIXED) for j in whole)
         PROJ["data"]["state"] = ("done" if all_done else
                                  "paused" if stopping["v"] else "idle")
         save_jobs(jobs)

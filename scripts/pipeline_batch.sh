@@ -193,10 +193,61 @@ task_done() {  # task_done <task_id> —— 这个 task 已了结？
     # skip 与 ok 同样算了结：按规矩不该做的（如复注无缅文 nissaya 就不复核）
     # 不是待办事项，账上要留痕，否则续跑会一遍遍去做同一件不该做的事。
     [[ -n "$FORCE" ]] && return 1
-    grep -qE "\"task\":\"$1\",\"status\":\"(ok|skip)\"" "$AUDIT"
+    # fixed = translate 失败但 revise 已补齐（见 mark_translate_fixed），同样不再重做
+    grep -qE "\"task\":\"$1\",\"status\":\"(ok|skip|fixed)\"" "$AUDIT"
 }
 
 has_step() { [[ ",$STEPS," == *",$1,"* ]]; }
+
+# mark_translate_fixed <translate task_id> —— revise 成功后调用（单 task 模式）。
+# translate 常因模型漏一两句而终局失败（缺句检查严格），revise 读到空句时会补译。
+# 这里在 revise 写回之后**读回本块**：每个有巴利词的句子都有译文了，才把那个
+# translate 记成 fixed——终态，不再重跑，finish_and_mail 放行。仍有缺句就不标，
+# 留在失败里给人看。translate 账上不是 fail 的（本来就成功）什么都不做。
+mark_translate_fixed() {
+    [[ -n "$DRYRUN" ]] && return 0
+    local tr="$1" last after ids miss
+    last=$(python3 - "$AUDIT" "$tr" <<'PYLAST'
+import json, sys
+st = ""
+for line in open(sys.argv[1], encoding="utf-8", errors="replace"):
+    try:
+        r = json.loads(line)
+    except ValueError:
+        continue
+    if r.get("task") == sys.argv[2]:
+        st = r.get("status", "")
+print(st)
+PYLAST
+)
+    [[ "$last" == "fail" ]] || return 0
+    after=$(wp_read --book "$T_BOOK" --para "$CH" --channel "$CHANNEL")
+    ids="$(mktemp)"; local src; src="$(mktemp)"
+    printf '%s\n' "$after" > "$src"
+    python3 "$SCRIPT_DIR/pali_ids.py" "$ids" < "$src" > /dev/null
+    # 数据走文件，不走管道：`python3 - <<heredoc` 的 stdin 已被代码占用
+    miss=$(python3 - "$ids" "$src" <<'PYMISS'
+import json, sys
+want = {l.strip() for l in open(sys.argv[1], encoding="utf-8") if l.strip()}
+have = set()
+for line in open(sys.argv[2], encoding="utf-8"):
+    try:
+        r = json.loads(line)
+    except ValueError:
+        continue
+    if r.get("layer") == "mula" and (r.get("zh") or "").strip():
+        have.add(r["id"])
+print(" ".join(sorted(want - have)))
+PYMISS
+)
+    local n; n=$(wc -l < "$ids"); rm -f "$ids" "$src"
+    if [[ -z "$miss" ]]; then
+        audit_task "$tr" fixed "translate 缺句已由 revise 补齐（$n 句全有译文）" "$T_BOOK" "$T_START-$T_END"
+        echo "  🩹 $tr 记为 fixed：revise 后本块 $n 句全有译文"
+    else
+        echo "  ⚠ $tr 仍是失败：revise 后还缺 $miss" >&2
+    fi
+}
 
 FAILED_STEPS=0        # 任一步用尽重试仍失败 → 作业以非零退出，守护进程才会标 ❌ 并重排
 fail_step() { FAILED_STEPS=$((FAILED_STEPS + 1)); echo "  ⚠ $1" >&2; }
@@ -634,7 +685,8 @@ $(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL")
             PUSH_RC=${PIPESTATUS[1]}
             set -e
             [[ "$PUSH_RC" -eq 0 ]] && {
-                audit_task "$TASK" ok "至多 $N 句" "$T_BOOK" "$T_START-$T_END"; exit 0; }
+                audit_task "$TASK" ok "至多 $N 句" "$T_BOOK" "$T_START-$T_END"
+                mark_translate_fixed "${TASK%:revise}:translate"; exit 0; }
         done
         audit_task "$TASK" fail "$MAX_TRY 次未成" "$T_BOOK" "$T_START-$T_END"
         echo "######## 未完成：task $TASK ########" >&2; exit 1

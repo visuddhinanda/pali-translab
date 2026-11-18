@@ -18,8 +18,8 @@ state() { python3 -c "
 import json;d=json.load(open('$PJ'))
 # schema 3 的调度单位是 task（顶层 tasks），schema 2 是 pipelines
 js = d.get('tasks') if d.get('schema') == 3 else d['pipelines']
-# 字段是 status 不是 state；skipped 与 done 同为终态，都算跑完
-done=sum(1 for j in js if j.get('status') in ('done', 'skipped'))
+# 字段是 status 不是 state；skipped / fixed（revise 已补齐的 translate 失败）与 done 同为终态
+done=sum(1 for j in js if j.get('status') in ('done', 'skipped', 'fixed'))
 print(d.get('state'), done, len(js))"; }
 
 while :; do

@@ -83,7 +83,7 @@ function bar(ns, chars){
   const tot = ns.reduce((a,n)=>a+(chars?(n.chars||0):1),0) || 1;
   const seg = ss => ns.filter(n=>ss.includes(n.status||'pending'))
                       .reduce((a,n)=>a+(chars?(n.chars||0):1),0)/tot*100;
-  return `<span class="bar mini"><i class="done" style="width:${seg(['done','skipped'])}%"></i>
+  return `<span class="bar mini"><i class="done" style="width:${seg(['done','skipped','fixed'])}%"></i>
     <i class="running" style="width:${seg(['running'])}%"></i>
     <i class="failed" style="width:${seg(['failed'])}%"></i></span>`;
 }
@@ -165,7 +165,7 @@ def _as_view(proj):
     """
     if proj.get("schema") != 3:
         return proj
-    SETTLED = ("done", "skipped")
+    SETTLED = ("done", "skipped", "fixed")
     by = {}
     for t in proj.get("tasks") or []:
         by.setdefault(t.get("stage", ""), []).append(t)
@@ -196,7 +196,7 @@ def render_project(proj):
     proj = _as_view(proj)
     jobs = proj.get("pipelines") or []
     us = [t for j in jobs for t in (j.get("tasks") or [])]
-    SETTLED = ("done", "skipped")
+    SETTLED = ("done", "skipped", "fixed")
     done_jobs = sum(1 for j in jobs if j.get("status") == "done")
     chunks = [t for t in us if t.get("step") == "translate"]
     chars = sum(c.get("chars", 0) for c in chunks)
@@ -228,7 +228,7 @@ def render_project(proj):
   <select id="f">
     <option value="all">全部状态</option><option value="pending">未开始</option>
     <option value="running">进行中</option><option value="done">已完成</option>
-    <option value="failed">失败</option><option value="skipped">跳过</option>
+    <option value="failed">失败</option><option value="skipped">跳过</option><option value="fixed">已补齐</option>
   </select>
   <button id="expand">全部展开</button><button id="collapse">全部收起</button>
   <span class="sub">显示 <b id="shown">0</b> 条流水线</span>

@@ -47,8 +47,11 @@ SCHEMA = 2          # plan_jobs.py 的结构：pipelines[] = 一章 × 各层
 SCAN_SCHEMA = 3     # plan_scan.py 的结构：各层独立切块 + 阶段表，tasks 在顶层
 LIVE_SCHEMAS = (SCHEMA, SCAN_SCHEMA)
 PENDING, RUNNING, DONE, FAILED, SKIPPED = "pending", "running", "done", "failed", "skipped"
+# fixed：translate 失败（漏句），但同一块的 revise 已把缺的句子补齐并读回核对过。
+# 与 done / skipped 同为终态——不再重跑，也不挡收尾（finish_and_mail 放行）。
+FIXED = "fixed"
 STATE_CN = {PENDING: "未开始", RUNNING: "进行中", DONE: "已完成",
-            FAILED: "失败", SKIPPED: "跳过"}
+            FAILED: "失败", SKIPPED: "跳过", FIXED: "已补齐"}
 # harmonize 的规模阈值（三层合计巴利字符）。经验初值，见 WORKFLOW.md「harmonize 的规模分级」
 THRESHOLDS = {"harmonize_direct_max": 30000,
               "harmonize_cross_chars": 12000,
@@ -178,15 +181,16 @@ def by_step(proj, *steps):
 
 
 def counts(nodes):
-    c = {k: 0 for k in (PENDING, RUNNING, DONE, FAILED, SKIPPED)}
+    c = {k: 0 for k in (PENDING, RUNNING, DONE, FAILED, SKIPPED, FIXED)}
     for n in nodes:
         c[n.get("status", PENDING)] = c.get(n.get("status", PENDING), 0) + 1
     return c
 
 
 def settled(node):
-    """done 与 skipped 都是终态：skipped 是「按规矩不该做」，同样满足后继依赖。"""
-    return node.get("status") in (DONE, SKIPPED)
+    """done / skipped / fixed 都是终态：skipped 是「按规矩不该做」，fixed 是「失败但已由
+    revise 补齐」，都满足后继依赖。"""
+    return node.get("status") in (DONE, SKIPPED, FIXED)
 
 
 def pct(nodes, key="chars"):
@@ -217,7 +221,7 @@ def progress(proj):
 
 # ── audit.log → task 状态（查表，不是推断）───────────────────────────────
 
-AUDIT_STATUS = {"ok": DONE, "fail": FAILED, "skip": SKIPPED, "start": RUNNING}
+AUDIT_STATUS = {"ok": DONE, "fail": FAILED, "skip": SKIPPED, "start": RUNNING, "fixed": FIXED}
 
 
 def audit_tasks(name):
@@ -247,7 +251,7 @@ def stage_state(proj, stage_id):
     if not ts:
         return DONE
     c = counts(ts)
-    if c[DONE] + c[SKIPPED] == len(ts):
+    if c[DONE] + c[SKIPPED] + c[FIXED] == len(ts):
         return DONE
     if c[RUNNING]:
         return RUNNING
@@ -279,7 +283,7 @@ def apply_audit(proj):
                 t["status"] = st
                 touched += 1
         c = counts(ts)
-        if ts and c[DONE] + c[SKIPPED] == len(ts):
+        if ts and c[DONE] + c[SKIPPED] + c[FIXED] == len(ts):
             new = DONE
         elif c[FAILED]:
             new = FAILED
