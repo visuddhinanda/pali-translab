@@ -14,8 +14,11 @@
     python3 scripts/wp_pull.py --book 93 --para 983-986 --nissaya          # 附缅文 nissaya
     python3 scripts/wp_pull.py --book 93 --para 983-986 --atthakatha       # 附义注（含复注用 --tika）
     python3 scripts/wp_pull.py --book 93 --para 983-986 --channel <uid>    # 附该 channel 的现有译文
+    python3 scripts/wp_pull.py --book 93 --para 983-986 --local-dir DIR    # zh 取本地待补传的 JSONL
 """
 import argparse
+import json
+import os
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
@@ -75,6 +78,41 @@ def merge(rows, pali_uid, nissaya_uids):
     return [merged[k] for k in sorted(order)]
 
 
+def local_zh(out_dir, book, paras):
+    """从待补传目录里读该书这些段的译文：`{(段,起,止): 译文}`。
+
+    服务端写不进去时译文只存在本地（见 `wp_push.py --out-dir`），而注释层开译要
+    注入父层译文——被解释词必须与父层逐字同译。没有这个回退，本地模式下
+    父层译文就成了空的，注释层只能自己定译法，统稿再也补不回来。
+
+    文件是 `<book>-<起段>-<止段>.jsonl`，一行一句；按 book 与段号过滤，
+    文件名只用来缩小扫描范围，真正认的是行里的坐标。
+    """
+    out = {}
+    if not out_dir or not os.path.isdir(out_dir):
+        return out
+    want = set(paras)
+    for name in sorted(os.listdir(out_dir)):
+        if not name.endswith(".jsonl") or not name.startswith(f"{book}-"):
+            continue
+        with open(os.path.join(out_dir, name), encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    r = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if int(r.get("book_id") or r.get("book") or 0) != book:
+                    continue
+                if r.get("paragraph") not in want:
+                    continue
+                out[(r["paragraph"], r["word_start"], r["word_end"])] = \
+                    r.get("content") or ""
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", type=int, required=True)
@@ -84,6 +122,8 @@ def main():
     ap.add_argument("--nissaya", action="store_true", help="附缅文 nissaya（该段没有则静默跳过）")
     ap.add_argument("--atthakatha", action="store_true", help="附义注原文")
     ap.add_argument("--tika", action="store_true", help="附复注原文")
+    ap.add_argument("--local-dir", default="", dest="local_dir",
+                    help="待补传目录（wp_push --out-dir 的产物）；channel 里没有的译文从这里取")
     args = ap.parse_args()
 
     paras = parse_paras(args.para)
@@ -104,9 +144,16 @@ def main():
     extra = [*nissaya_uids, *args.channel]
     if extra and present:
         rows += fetch(args.book, present, extra)
+    # channel 里已有的译文优先；本地待补传的只补 channel 没有的那些坐标
+    local = local_zh(args.local_dir, args.book, present)
     for row in merge(rows, PALI_UID, nissaya_uids):
-        if row.get("pali"):          # 没有巴利原文的坐标不是可翻译单位
-            print(dump({"layer": "mula", **row}))
+        if not row.get("pali"):      # 没有巴利原文的坐标不是可翻译单位
+            continue
+        if not row.get("zh"):
+            zh = local.get((row["paragraph"], row["word_start"], row["word_end"]))
+            if zh:
+                row["zh"] = zh
+        print(dump({"layer": "mula", **row}))
 
     want = {l for l, on in (("atthakatha", args.atthakatha), ("tika", args.tika)) if on}
     if not want:
