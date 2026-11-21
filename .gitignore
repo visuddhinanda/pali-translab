@@ -7,8 +7,20 @@ __pycache__/
 .cache/
 **/.cache/
 
-# 本地产物：报告、审计日志、导出的 markdown（译文正本在 wikipali）
-/workspace/
+# 本地产物（译文正本在 wikipali）：只提交新机器继续工作所需的，
+# cache / log / export / epub / zip / llm-cache 都能重建，不提交
+/workspace/*
+!/workspace/projects/
+/workspace/projects/index.html
+/workspace/projects/*/*
+!/workspace/projects/*/project.json
+!/workspace/projects/*/plan.csv
+!/workspace/projects/*/tasks.csv
+!/workspace/projects/*/audit.log
+!/workspace/projects/*/reports/
+!/workspace/terms/
+/workspace/terms/*
+!/workspace/terms/*.md
 
 # Personal CLAUDE config
 /CLAUDE.local.md
