@@ -1,0 +1,3170 @@
+{
+ "schema": 3,
+ "name": "vin11-mulasikkha",
+ "title": "律藏·根本学（vin11）",
+ "created": "2026-11-06 03:20:36",
+ "updated": "2026-11-06 03:52:49",
+ "book": 203,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate",
+  "review",
+  "revise",
+  "harmonize",
+  "export"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "scan": true
+ },
+ "align": "workspace/projects/vin11-mulasikkha/align.json",
+ "books": {
+  "203": {
+   "layer": "tika",
+   "title": "Mūlasikkhā-ṭīkā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 203,
+   "title": "Mūlasikkhā",
+   "start": 3100,
+   "end": 3480,
+   "fam": "",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 3100,
+     "end": 3177,
+     "chars": 2260,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 3100,
+       "end": 3100,
+       "title": "Mūlasikkhā"
+      },
+      {
+       "start": 3101,
+       "end": 3103,
+       "title": "Ganthārambhakathā"
+      },
+      {
+       "start": 3104,
+       "end": 3104,
+       "title": "1. Pārājikaniddeso"
+      },
+      {
+       "start": 3105,
+       "end": 3107,
+       "title": "1."
+      },
+      {
+       "start": 3108,
+       "end": 3110,
+       "title": "2."
+      },
+      {
+       "start": 3111,
+       "end": 3113,
+       "title": "3."
+      },
+      {
+       "start": 3114,
+       "end": 3116,
+       "title": "4."
+      },
+      {
+       "start": 3117,
+       "end": 3119,
+       "title": "5."
+      },
+      {
+       "start": 3120,
+       "end": 3122,
+       "title": "6."
+      },
+      {
+       "start": 3123,
+       "end": 3125,
+       "title": "7."
+      },
+      {
+       "start": 3126,
+       "end": 3128,
+       "title": "8."
+      },
+      {
+       "start": 3129,
+       "end": 3133,
+       "title": "9."
+      },
+      {
+       "start": 3134,
+       "end": 3134,
+       "title": "2. Garukāpattiniddeso"
+      },
+      {
+       "start": 3135,
+       "end": 3137,
+       "title": "10."
+      },
+      {
+       "start": 3138,
+       "end": 3140,
+       "title": "11."
+      },
+      {
+       "start": 3141,
+       "end": 3143,
+       "title": "12."
+      },
+      {
+       "start": 3144,
+       "end": 3146,
+       "title": "13."
+      },
+      {
+       "start": 3147,
+       "end": 3149,
+       "title": "14."
+      },
+      {
+       "start": 3150,
+       "end": 3152,
+       "title": "15."
+      },
+      {
+       "start": 3153,
+       "end": 3155,
+       "title": "16."
+      },
+      {
+       "start": 3156,
+       "end": 3156,
+       "title": "3. Nissaggiyaniddeso"
+      },
+      {
+       "start": 3157,
+       "end": 3159,
+       "title": "17."
+      },
+      {
+       "start": 3160,
+       "end": 3162,
+       "title": "18."
+      },
+      {
+       "start": 3163,
+       "end": 3165,
+       "title": "19."
+      },
+      {
+       "start": 3166,
+       "end": 3168,
+       "title": "20."
+      },
+      {
+       "start": 3169,
+       "end": 3171,
+       "title": "21."
+      },
+      {
+       "start": 3172,
+       "end": 3174,
+       "title": "22."
+      },
+      {
+       "start": 3175,
+       "end": 3177,
+       "title": "23."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 203,
+     "layer": "mula",
+     "title": "Mūlasikkhā … 23.",
+     "skip": [],
+     "comm_refs": [
+      {
+       "book": 203,
+       "spans": [
+        {
+         "start": 3481,
+         "end": 3539
+        }
+       ],
+       "layer": "tika",
+       "work": "T",
+       "title": "Mūlasikkhā-ṭīkā"
+      }
+     ]
+    },
+    {
+     "start": 3178,
+     "end": 3256,
+     "chars": 2407,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 3178,
+       "end": 3180,
+       "title": "24."
+      },
+      {
+       "start": 3181,
+       "end": 3183,
+       "title": "25."
+      },
+      {
+       "start": 3184,
+       "end": 3186,
+       "title": "26."
+      },
+      {
+       "start": 3187,
+       "end": 3189,
+       "title": "27."
+      },
+      {
+       "start": 3190,
+       "end": 3192,
+       "title": "28."
+      },
+      {
+       "start": 3193,
+       "end": 3195,
+       "title": "29."
+      },
+      {
+       "start": 3196,
+       "end": 3196,
+       "title": "4. Pācittiyaniddeso"
+      },
+      {
+       "start": 3197,
+       "end": 3199,
+       "title": "30."
+      },
+      {
+       "start": 3200,
+       "end": 3202,
+       "title": "31."
+      },
+      {
+       "start": 3203,
+       "end": 3205,
+       "title": "32."
+      },
+      {
+       "start": 3206,
+       "end": 3208,
+       "title": "33."
+      },
+      {
+       "start": 3209,
+       "end": 3211,
+       "title": "34."
+      },
+      {
+       "start": 3212,
+       "end": 3214,
+       "title": "35."
+      },
+      {
+       "start": 3215,
+       "end": 3217,
+       "title": "36."
+      },
+      {
+       "start": 3218,
+       "end": 3220,
+       "title": "37."
+      },
+      {
+       "start": 3221,
+       "end": 3223,
+       "title": "38."
+      },
+      {
+       "start": 3224,
+       "end": 3226,
+       "title": "39."
+      },
+      {
+       "start": 3227,
+       "end": 3229,
+       "title": "40."
+      },
+      {
+       "start": 3230,
+       "end": 3232,
+       "title": "41."
+      },
+      {
+       "start": 3233,
+       "end": 3235,
+       "title": "42."
+      },
+      {
+       "start": 3236,
+       "end": 3238,
+       "title": "43."
+      },
+      {
+       "start": 3239,
+       "end": 3241,
+       "title": "44."
+      },
+      {
+       "start": 3242,
+       "end": 3244,
+       "title": "45."
+      },
+      {
+       "start": 3245,
+       "end": 3247,
+       "title": "46."
+      },
+      {
+       "start": 3248,
+       "end": 3250,
+       "title": "47."
+      },
+      {
+       "start": 3251,
+       "end": 3253,
+       "title": "48."
+      },
+      {
+       "start": 3254,
+       "end": 3256,
+       "title": "49."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 203,
+     "layer": "mula",
+     "title": "24. … 49.",
+     "skip": [],
+     "comm_refs": [
+      {
+       "book": 203,
+       "spans": [
+        {
+         "start": 3522,
+         "end": 3561
+        }
+       ],
+       "layer": "tika",
+       "work": "T",
+       "title": "Mūlasikkhā-ṭīkā"
+      }
+     ]
+    },
+    {
+     "start": 3257,
+     "end": 3334,
+     "chars": 2331,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 3257,
+       "end": 3259,
+       "title": "50."
+      },
+      {
+       "start": 3260,
+       "end": 3262,
+       "title": "51."
+      },
+      {
+       "start": 3263,
+       "end": 3267,
+       "title": "52."
+      },
+      {
+       "start": 3268,
+       "end": 3268,
+       "title": "5. Pakiṇṇakaniddeso"
+      },
+      {
+       "start": 3269,
+       "end": 3271,
+       "title": "53."
+      },
+      {
+       "start": 3272,
+       "end": 3274,
+       "title": "54."
+      },
+      {
+       "start": 3275,
+       "end": 3277,
+       "title": "55."
+      },
+      {
+       "start": 3278,
+       "end": 3280,
+       "title": "56."
+      },
+      {
+       "start": 3281,
+       "end": 3283,
+       "title": "57."
+      },
+      {
+       "start": 3284,
+       "end": 3286,
+       "title": "58."
+      },
+      {
+       "start": 3287,
+       "end": 3289,
+       "title": "59."
+      },
+      {
+       "start": 3290,
+       "end": 3292,
+       "title": "60."
+      },
+      {
+       "start": 3293,
+       "end": 3295,
+       "title": "61."
+      },
+      {
+       "start": 3296,
+       "end": 3298,
+       "title": "62."
+      },
+      {
+       "start": 3299,
+       "end": 3301,
+       "title": "63."
+      },
+      {
+       "start": 3302,
+       "end": 3304,
+       "title": "64."
+      },
+      {
+       "start": 3305,
+       "end": 3307,
+       "title": "65."
+      },
+      {
+       "start": 3308,
+       "end": 3310,
+       "title": "66."
+      },
+      {
+       "start": 3311,
+       "end": 3313,
+       "title": "67."
+      },
+      {
+       "start": 3314,
+       "end": 3316,
+       "title": "68."
+      },
+      {
+       "start": 3317,
+       "end": 3319,
+       "title": "69."
+      },
+      {
+       "start": 3320,
+       "end": 3322,
+       "title": "70."
+      },
+      {
+       "start": 3323,
+       "end": 3325,
+       "title": "71."
+      },
+      {
+       "start": 3326,
+       "end": 3328,
+       "title": "72."
+      },
+      {
+       "start": 3329,
+       "end": 3331,
+       "title": "73."
+      },
+      {
+       "start": 3332,
+       "end": 3334,
+       "title": "74."
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 203,
+     "layer": "mula",
+     "title": "50. … 74.",
+     "skip": [],
+     "comm_refs": [
+      {
+       "book": 203,
+       "spans": [
+        {
+         "start": 3540,
+         "end": 3599
+        }
+       ],
+       "layer": "tika",
+       "work": "T",
+       "title": "Mūlasikkhā-ṭīkā"
+      }
+     ]
+    },
+    {
+     "start": 3335,
+     "end": 3412,
+     "chars": 2352,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 3335,
+       "end": 3337,
+       "title": "75."
+      },
+      {
+       "start": 3338,
+       "end": 3340,
+       "title": "76."
+      },
+      {
+       "start": 3341,
+       "end": 3343,
+       "title": "77."
+      },
+      {
+       "start": 3344,
+       "end": 3346,
+       "title": "78."
+      },
+      {
+       "start": 3347,
+       "end": 3349,
+       "title": "79."
+      },
+      {
+       "start": 3350,
+       "end": 3352,
+       "title": "80."
+      },
+      {
+       "start": 3353,
+       "end": 3355,
+       "title": "81."
+      },
+      {
+       "start": 3356,
+       "end": 3358,
+       "title": "82."
+      },
+      {
+       "start": 3359,
+       "end": 3361,
+       "title": "83."
+      },
+      {
+       "start": 3362,
+       "end": 3364,
+       "title": "84."
+      },
+      {
+       "start": 3365,
+       "end": 3367,
+       "title": "85."
+      },
+      {
+       "start": 3368,
+       "end": 3370,
+       "title": "86."
+      },
+      {
+       "start": 3371,
+       "end": 3373,
+       "title": "87."
+      },
+      {
+       "start": 3374,
+       "end": 3376,
+       "title": "88."
+      },
+      {
+       "start": 3377,
+       "end": 3379,
+       "title": "89."
+      },
+      {
+       "start": 3380,
+       "end": 3382,
+       "title": "90."
+      },
+      {
+       "start": 3383,
+       "end": 3385,
+       "title": "91."
+      },
+      {
+       "start": 3386,
+       "end": 3388,
+       "title": "92."
+      },
+      {
+       "start": 3389,
+       "end": 3391,
+       "title": "93."
+      },
+      {
+       "start": 3392,
+       "end": 3394,
+       "title": "94."
+      },
+      {
+       "start": 3395,
+       "end": 3399,
+       "title": "95."
+      },
+      {
+       "start": 3400,
+       "end": 3400,
+       "title": "6. Vattādikaṇḍaniddeso"
+      },
+      {
+       "start": 3401,
+       "end": 3403,
+       "title": "96."
+      },
+      {
+       "start": 3404,
+       "end": 3406,
+       "title": "97."
+      },
+      {
+       "start": 3407,
+       "end": 3409,
+       "title": "98."
+      },
+      {
+       "start": 3410,
+       "end": 3412,
+       "title": "99."
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 203,
+     "layer": "mula",
+     "title": "75. … 99.",
+     "skip": [],
+     "comm_refs": [
+      {
+       "book": 203,
+       "spans": [
+        {
+         "start": 3562,
+         "end": 3619
+        }
+       ],
+       "layer": "tika",
+       "work": "T",
+       "title": "Mūlasikkhā-ṭīkā"
+      }
+     ]
+    },
+    {
+     "start": 3413,
+     "end": 3480,
+     "chars": 4378,
+     "sents": 75,
+     "paras": 68,
+     "chapters": [
+      {
+       "start": 3413,
+       "end": 3415,
+       "title": "100."
+      },
+      {
+       "start": 3416,
+       "end": 3418,
+       "title": "101."
+      },
+      {
+       "start": 3419,
+       "end": 3421,
+       "title": "102."
+      },
+      {
+       "start": 3422,
+       "end": 3425,
+       "title": "103."
+      },
+      {
+       "start": 3426,
+       "end": 3429,
+       "title": "104."
+      },
+      {
+       "start": 3430,
+       "end": 3432,
+       "title": "105."
+      },
+      {
+       "start": 3433,
+       "end": 3435,
+       "title": "106."
+      },
+      {
+       "start": 3436,
+       "end": 3438,
+       "title": "107."
+      },
+      {
+       "start": 3439,
+       "end": 3441,
+       "title": "108."
+      },
+      {
+       "start": 3442,
+       "end": 3444,
+       "title": "109."
+      },
+      {
+       "start": 3445,
+       "end": 3450,
+       "title": "110."
+      },
+      {
+       "start": 3451,
+       "end": 3453,
+       "title": "112."
+      },
+      {
+       "start": 3454,
+       "end": 3456,
+       "title": "113."
+      },
+      {
+       "start": 3457,
+       "end": 3459,
+       "title": "114."
+      },
+      {
+       "start": 3460,
+       "end": 3463,
+       "title": "115."
+      },
+      {
+       "start": 3464,
+       "end": 3480,
+       "title": "116."
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 203,
+     "layer": "mula",
+     "title": "100. … 116.",
+     "skip": [],
+     "comm_refs": [
+      {
+       "book": 203,
+       "spans": [
+        {
+         "start": 3600,
+         "end": 3619
+        }
+       ],
+       "layer": "tika",
+       "work": "T",
+       "title": "Mūlasikkhā-ṭīkā"
+      }
+     ]
+    }
+   ],
+   "paras": 381,
+   "chars": 13728,
+   "sents": 388,
+   "layer_cn": "本文 mūla",
+   "parent_id": null
+  },
+  {
+   "layer": "tika",
+   "book": 203,
+   "title": "Mūlasikkhā-ṭīkā",
+   "start": 3481,
+   "end": 3631,
+   "fam": "",
+   "pfx": "T",
+   "id": "T",
+   "chunks": [
+    {
+     "start": 3481,
+     "end": 3495,
+     "chars": 4551,
+     "sents": 52,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 3481,
+       "end": 3481,
+       "title": "Mūlasikkhā-ṭīkā"
+      },
+      {
+       "start": 3482,
+       "end": 3486,
+       "title": "Ganthārambhakathā"
+      },
+      {
+       "start": 3487,
+       "end": 3495,
+       "title": "Ganthārambhakathāvaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "T1",
+     "book": 203,
+     "layer": "tika",
+     "title": "Mūlasikkhā-ṭīkā … Ganthārambhakathāvaṇṇanā",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3100,
+        "end": 3103
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3496,
+     "end": 3501,
+     "chars": 4288,
+     "sents": 53,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 3496,
+       "end": 3509,
+       "title": "1. Pārājikaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T2",
+     "book": 203,
+     "layer": "tika",
+     "title": "1. Pārājikaniddesavaṇṇanā（3496-3501）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3104,
+        "end": 3133
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3502,
+     "end": 3507,
+     "chars": 4211,
+     "sents": 43,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 3496,
+       "end": 3509,
+       "title": "1. Pārājikaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T3",
+     "book": 203,
+     "layer": "tika",
+     "title": "1. Pārājikaniddesavaṇṇanā（3502-3507）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3104,
+        "end": 3133
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3508,
+     "end": 3509,
+     "chars": 839,
+     "sents": 13,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 3496,
+       "end": 3509,
+       "title": "1. Pārājikaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T4",
+     "book": 203,
+     "layer": "tika",
+     "title": "1. Pārājikaniddesavaṇṇanā（3508-3509）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3104,
+        "end": 3133
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3510,
+     "end": 3517,
+     "chars": 4958,
+     "sents": 55,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 3510,
+       "end": 3521,
+       "title": "2. Garukāpattiniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T5",
+     "book": 203,
+     "layer": "tika",
+     "title": "2. Garukāpattiniddesavaṇṇanā（3510-3517）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3134,
+        "end": 3155
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3518,
+     "end": 3521,
+     "chars": 3360,
+     "sents": 27,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 3510,
+       "end": 3521,
+       "title": "2. Garukāpattiniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T6",
+     "book": 203,
+     "layer": "tika",
+     "title": "2. Garukāpattiniddesavaṇṇanā（3518-3521）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3134,
+        "end": 3155
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3522,
+     "end": 3529,
+     "chars": 4947,
+     "sents": 58,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 3522,
+       "end": 3539,
+       "title": "3. Nissaggiyaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T7",
+     "book": 203,
+     "layer": "tika",
+     "title": "3. Nissaggiyaniddesavaṇṇanā（3522-3529）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3156,
+        "end": 3195
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3530,
+     "end": 3538,
+     "chars": 4981,
+     "sents": 66,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 3522,
+       "end": 3539,
+       "title": "3. Nissaggiyaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T8",
+     "book": 203,
+     "layer": "tika",
+     "title": "3. Nissaggiyaniddesavaṇṇanā（3530-3538）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3156,
+        "end": 3195
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3539,
+     "end": 3539,
+     "chars": 34,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 3522,
+       "end": 3539,
+       "title": "3. Nissaggiyaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T9",
+     "book": 203,
+     "layer": "tika",
+     "title": "3. Nissaggiyaniddesavaṇṇanā（3539-3539）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3156,
+        "end": 3195
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3540,
+     "end": 3549,
+     "chars": 4992,
+     "sents": 53,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 3540,
+       "end": 3561,
+       "title": "4. Pācittiyaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T10",
+     "book": 203,
+     "layer": "tika",
+     "title": "4. Pācittiyaniddesavaṇṇanā（3540-3549）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3196,
+        "end": 3267
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3550,
+     "end": 3561,
+     "chars": 4603,
+     "sents": 61,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 3540,
+       "end": 3561,
+       "title": "4. Pācittiyaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T11",
+     "book": 203,
+     "layer": "tika",
+     "title": "4. Pācittiyaniddesavaṇṇanā（3550-3561）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3196,
+        "end": 3267
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3562,
+     "end": 3575,
+     "chars": 4613,
+     "sents": 69,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 3562,
+       "end": 3599,
+       "title": "5. Pakiṇṇakaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T12",
+     "book": 203,
+     "layer": "tika",
+     "title": "5. Pakiṇṇakaniddesavaṇṇanā（3562-3575）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3268,
+        "end": 3399
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3576,
+     "end": 3588,
+     "chars": 4987,
+     "sents": 69,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 3562,
+       "end": 3599,
+       "title": "5. Pakiṇṇakaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T13",
+     "book": 203,
+     "layer": "tika",
+     "title": "5. Pakiṇṇakaniddesavaṇṇanā（3576-3588）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3268,
+        "end": 3399
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3589,
+     "end": 3599,
+     "chars": 3250,
+     "sents": 43,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 3562,
+       "end": 3599,
+       "title": "5. Pakiṇṇakaniddesavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T14",
+     "book": 203,
+     "layer": "tika",
+     "title": "5. Pakiṇṇakaniddesavaṇṇanā（3589-3599）",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3268,
+        "end": 3399
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    },
+    {
+     "start": 3600,
+     "end": 3631,
+     "chars": 3281,
+     "sents": 56,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 3600,
+       "end": 3619,
+       "title": "6. Vattādikaṇḍaniddesavaṇṇanā"
+      },
+      {
+       "start": 3620,
+       "end": 3631,
+       "title": "Nigamanakathā"
+      }
+     ],
+     "split": false,
+     "id": "T15",
+     "book": 203,
+     "layer": "tika",
+     "title": "6. Vattādikaṇḍaniddesavaṇṇanā … Nigamanakathā",
+     "skip": [],
+     "parent": {
+      "book": 203,
+      "spans": [
+       {
+        "start": 3400,
+        "end": 3480
+       }
+      ],
+      "layer": "mula",
+      "work": "M"
+     },
+     "comm_refs": []
+    }
+   ],
+   "paras": 151,
+   "chars": 57895,
+   "sents": 719,
+   "layer_cn": "复注 ṭīkā",
+   "parent_id": "M"
+  }
+ ],
+ "harmonize": [
+  {
+   "pair": [
+    "M",
+    "T"
+   ],
+   "cs": [
+    0,
+    1
+   ],
+   "chars": 13889,
+   "sents": 161,
+   "ctx_chars": 968,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3481,
+     "end": 3509
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3100,
+     "end": 3133
+    }
+   ],
+   "id": "H1",
+   "kind": "pair",
+   "title": "M+T cs 0-1"
+  },
+  {
+   "pair": [
+    "M",
+    "T"
+   ],
+   "cs": [
+    2,
+    2
+   ],
+   "chars": 8318,
+   "sents": 82,
+   "ctx_chars": 651,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3510,
+     "end": 3521
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3134,
+     "end": 3155
+    }
+   ],
+   "id": "H2",
+   "kind": "pair",
+   "title": "M+T cs 2-2"
+  },
+  {
+   "pair": [
+    "M",
+    "T"
+   ],
+   "cs": [
+    3,
+    3
+   ],
+   "chars": 9962,
+   "sents": 125,
+   "ctx_chars": 1193,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3522,
+     "end": 3539
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3156,
+     "end": 3195
+    }
+   ],
+   "id": "H3",
+   "kind": "pair",
+   "title": "M+T cs 3-3"
+  },
+  {
+   "pair": [
+    "M",
+    "T"
+   ],
+   "cs": [
+    4,
+    4
+   ],
+   "chars": 9595,
+   "sents": 114,
+   "ctx_chars": 2162,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3540,
+     "end": 3561
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3196,
+     "end": 3267
+    }
+   ],
+   "id": "H4",
+   "kind": "pair",
+   "title": "M+T cs 4-4"
+  },
+  {
+   "pair": [
+    "M",
+    "T"
+   ],
+   "cs": [
+    5,
+    5
+   ],
+   "chars": 12850,
+   "sents": 181,
+   "ctx_chars": 3978,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3562,
+     "end": 3599
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3268,
+     "end": 3399
+    }
+   ],
+   "id": "H5",
+   "kind": "pair",
+   "title": "M+T cs 5-5"
+  },
+  {
+   "pair": [
+    "M",
+    "T"
+   ],
+   "cs": [
+    6,
+    7
+   ],
+   "chars": 3281,
+   "sents": 56,
+   "ctx_chars": 4776,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3600,
+     "end": 3631
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3400,
+     "end": 3480
+    }
+   ],
+   "id": "H6",
+   "kind": "pair",
+   "title": "M+T cs 6-7"
+  }
+ ],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 203,
+   "layer": "mula",
+   "start": 3100,
+   "end": 3480,
+   "title": "Mūlasikkhā"
+  },
+  {
+   "id": "ET",
+   "book": 203,
+   "layer": "tika",
+   "start": 3481,
+   "end": 3631,
+   "title": "Mūlasikkhā-ṭīkā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  },
+  {
+   "id": "review",
+   "step": "review",
+   "layer": ""
+  },
+  {
+   "id": "revise",
+   "step": "revise",
+   "layer": ""
+  },
+  {
+   "id": "harmonize",
+   "step": "harmonize",
+   "layer": ""
+  },
+  {
+   "id": "export",
+   "step": "export",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 203,
+   "start": 3100,
+   "end": 3177,
+   "chars": 2260,
+   "sents": 78,
+   "title": "Mūlasikkhā … 23.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:20:44",
+   "ended": "2026-11-06 03:22:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 203,
+   "start": 3178,
+   "end": 3256,
+   "chars": 2407,
+   "sents": 79,
+   "title": "24. … 49.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:20:54",
+   "ended": "2026-11-06 03:22:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 203,
+   "start": 3257,
+   "end": 3334,
+   "chars": 2331,
+   "sents": 78,
+   "title": "50. … 74.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:21:04",
+   "ended": "2026-11-06 03:22:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 203,
+   "start": 3335,
+   "end": 3412,
+   "chars": 2352,
+   "sents": 78,
+   "title": "75. … 99.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:21:14",
+   "ended": "2026-11-06 03:23:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 203,
+   "start": 3413,
+   "end": 3480,
+   "chars": 4378,
+   "sents": 75,
+   "title": "100. … 116.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:22:09",
+   "ended": "2026-11-06 03:23:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3481,
+   "end": 3495,
+   "chars": 4551,
+   "sents": 52,
+   "title": "Mūlasikkhā-ṭīkā … Ganthārambhakathāvaṇṇanā",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:22:45",
+   "ended": "2026-11-06 03:24:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3496,
+   "end": 3501,
+   "chars": 4288,
+   "sents": 53,
+   "title": "1. Pārājikaniddesavaṇṇanā（3496-3501）",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:22:55",
+   "ended": "2026-11-06 03:24:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3502,
+   "end": 3507,
+   "chars": 4211,
+   "sents": 43,
+   "title": "1. Pārājikaniddesavaṇṇanā（3502-3507）",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:23:10",
+   "ended": "2026-11-06 03:24:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3508,
+   "end": 3509,
+   "chars": 839,
+   "sents": 13,
+   "title": "1. Pārājikaniddesavaṇṇanā（3508-3509）",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:23:50",
+   "ended": "2026-11-06 03:24:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3510,
+   "end": 3517,
+   "chars": 4958,
+   "sents": 55,
+   "title": "2. Garukāpattiniddesavaṇṇanā（3510-3517）",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:24:31",
+   "ended": "2026-11-06 03:26:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3518,
+   "end": 3521,
+   "chars": 3360,
+   "sents": 27,
+   "title": "2. Garukāpattiniddesavaṇṇanā（3518-3521）",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:24:41",
+   "ended": "2026-11-06 03:25:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3522,
+   "end": 3529,
+   "chars": 4947,
+   "sents": 58,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3522-3529）",
+   "needs": [
+    "M1:translate",
+    "M2:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:24:56",
+   "ended": "2026-11-06 03:26:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3530,
+   "end": 3538,
+   "chars": 4981,
+   "sents": 66,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3530-3538）",
+   "needs": [
+    "M1:translate",
+    "M2:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:25:06",
+   "ended": "2026-11-06 03:27:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3539,
+   "end": 3539,
+   "chars": 34,
+   "sents": 1,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3539-3539）",
+   "needs": [
+    "M1:translate",
+    "M2:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:25:51",
+   "ended": "2026-11-06 03:26:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3540,
+   "end": 3549,
+   "chars": 4992,
+   "sents": 53,
+   "title": "4. Pācittiyaniddesavaṇṇanā（3540-3549）",
+   "needs": [
+    "M2:translate",
+    "M3:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:26:12",
+   "ended": "2026-11-06 03:28:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3550,
+   "end": 3561,
+   "chars": 4603,
+   "sents": 61,
+   "title": "4. Pācittiyaniddesavaṇṇanā（3550-3561）",
+   "needs": [
+    "M2:translate",
+    "M3:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:26:27",
+   "ended": "2026-11-06 03:29:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3562,
+   "end": 3575,
+   "chars": 4613,
+   "sents": 69,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3562-3575）",
+   "needs": [
+    "M3:translate",
+    "M4:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:26:42",
+   "ended": "2026-11-06 03:29:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3576,
+   "end": 3588,
+   "chars": 4987,
+   "sents": 69,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3576-3588）",
+   "needs": [
+    "M3:translate",
+    "M4:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:27:02",
+   "ended": "2026-11-06 03:30:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3589,
+   "end": 3599,
+   "chars": 3250,
+   "sents": 43,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3589-3599）",
+   "needs": [
+    "M3:translate",
+    "M4:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:28:58",
+   "ended": "2026-11-06 03:31:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "tika",
+   "book": 203,
+   "start": 3600,
+   "end": 3631,
+   "chars": 3281,
+   "sents": 56,
+   "title": "6. Vattādikaṇḍaniddesavaṇṇanā … Nigamanakathā",
+   "needs": [
+    "M4:translate",
+    "M5:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:29:23",
+   "ended": "2026-11-06 03:31:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M1:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 203,
+   "start": 3100,
+   "end": 3177,
+   "chars": 0,
+   "sents": 78,
+   "title": "Mūlasikkhā … 23.",
+   "needs": [
+    "M1:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:29:39",
+   "ended": "2026-11-06 03:36:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 203,
+   "start": 3178,
+   "end": 3256,
+   "chars": 0,
+   "sents": 79,
+   "title": "24. … 49.",
+   "needs": [
+    "M2:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:30:14",
+   "ended": "2026-11-06 03:35:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 203,
+   "start": 3257,
+   "end": 3334,
+   "chars": 0,
+   "sents": 78,
+   "title": "50. … 74.",
+   "needs": [
+    "M3:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:31:09",
+   "ended": "2026-11-06 03:37:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 203,
+   "start": 3335,
+   "end": 3412,
+   "chars": 0,
+   "sents": 78,
+   "title": "75. … 99.",
+   "needs": [
+    "M4:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:31:45",
+   "ended": "2026-11-06 03:37:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 203,
+   "start": 3413,
+   "end": 3480,
+   "chars": 0,
+   "sents": 75,
+   "title": "100. … 116.",
+   "needs": [
+    "M5:translate"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:35:21",
+   "ended": "2026-11-06 03:40:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T1:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3481,
+   "end": 3495,
+   "chars": 0,
+   "sents": 52,
+   "title": "Mūlasikkhā-ṭīkā … Ganthārambhakathāvaṇṇanā",
+   "needs": [
+    "T1:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:36:37",
+   "ended": "2026-11-06 03:37:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T2:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3496,
+   "end": 3501,
+   "chars": 0,
+   "sents": 53,
+   "title": "1. Pārājikaniddesavaṇṇanā（3496-3501）",
+   "needs": [
+    "T2:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:37:33",
+   "ended": "2026-11-06 03:38:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T3:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3502,
+   "end": 3507,
+   "chars": 0,
+   "sents": 43,
+   "title": "1. Pārājikaniddesavaṇṇanā（3502-3507）",
+   "needs": [
+    "T3:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:37:43",
+   "ended": "2026-11-06 03:38:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T4:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3508,
+   "end": 3509,
+   "chars": 0,
+   "sents": 13,
+   "title": "1. Pārājikaniddesavaṇṇanā（3508-3509）",
+   "needs": [
+    "T4:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:37:53",
+   "ended": "2026-11-06 03:38:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T5:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3510,
+   "end": 3517,
+   "chars": 0,
+   "sents": 55,
+   "title": "2. Garukāpattiniddesavaṇṇanā（3510-3517）",
+   "needs": [
+    "T5:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:38:08",
+   "ended": "2026-11-06 03:38:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T6:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3518,
+   "end": 3521,
+   "chars": 0,
+   "sents": 27,
+   "title": "2. Garukāpattiniddesavaṇṇanā（3518-3521）",
+   "needs": [
+    "T6:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:38:18",
+   "ended": "2026-11-06 03:38:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T7:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3522,
+   "end": 3529,
+   "chars": 0,
+   "sents": 58,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3522-3529）",
+   "needs": [
+    "T7:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:38:28",
+   "ended": "2026-11-06 03:39:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T8:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3530,
+   "end": 3538,
+   "chars": 0,
+   "sents": 66,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3530-3538）",
+   "needs": [
+    "T8:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:38:43",
+   "ended": "2026-11-06 03:39:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T9:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3539,
+   "end": 3539,
+   "chars": 0,
+   "sents": 1,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3539-3539）",
+   "needs": [
+    "T9:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:38:53",
+   "ended": "2026-11-06 03:39:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T10:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3540,
+   "end": 3549,
+   "chars": 0,
+   "sents": 53,
+   "title": "4. Pācittiyaniddesavaṇṇanā（3540-3549）",
+   "needs": [
+    "T10:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:39:09",
+   "ended": "2026-11-06 03:39:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T11:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3550,
+   "end": 3561,
+   "chars": 0,
+   "sents": 61,
+   "title": "4. Pācittiyaniddesavaṇṇanā（3550-3561）",
+   "needs": [
+    "T11:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:39:19",
+   "ended": "2026-11-06 03:40:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T12:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3562,
+   "end": 3575,
+   "chars": 0,
+   "sents": 69,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3562-3575）",
+   "needs": [
+    "T12:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:39:34",
+   "ended": "2026-11-06 03:40:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T13:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3576,
+   "end": 3588,
+   "chars": 0,
+   "sents": 69,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3576-3588）",
+   "needs": [
+    "T13:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:39:49",
+   "ended": "2026-11-06 03:40:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T14:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3589,
+   "end": 3599,
+   "chars": 0,
+   "sents": 43,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3589-3599）",
+   "needs": [
+    "T14:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:40:05",
+   "ended": "2026-11-06 03:40:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T15:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 203,
+   "start": 3600,
+   "end": 3631,
+   "chars": 0,
+   "sents": 56,
+   "title": "6. Vattādikaṇḍaniddesavaṇṇanā … Nigamanakathā",
+   "needs": [
+    "T15:translate"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:40:20",
+   "ended": "2026-11-06 03:42:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M1:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 203,
+   "start": 3100,
+   "end": 3177,
+   "chars": 0,
+   "sents": 78,
+   "title": "Mūlasikkhā … 23.",
+   "needs": [
+    "M1:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:40:35",
+   "ended": "2026-11-06 03:45:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 203,
+   "start": 3178,
+   "end": 3256,
+   "chars": 0,
+   "sents": 79,
+   "title": "24. … 49.",
+   "needs": [
+    "M2:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:40:50",
+   "ended": "2026-11-06 03:45:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 203,
+   "start": 3257,
+   "end": 3334,
+   "chars": 0,
+   "sents": 78,
+   "title": "50. … 74.",
+   "needs": [
+    "M3:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:41:00",
+   "ended": "2026-11-06 03:45:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 203,
+   "start": 3335,
+   "end": 3412,
+   "chars": 0,
+   "sents": 78,
+   "title": "75. … 99.",
+   "needs": [
+    "M4:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:42:01",
+   "ended": "2026-11-06 03:46:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 203,
+   "start": 3413,
+   "end": 3480,
+   "chars": 0,
+   "sents": 75,
+   "title": "100. … 116.",
+   "needs": [
+    "M5:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:45:18",
+   "ended": "2026-11-06 03:49:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T1:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3481,
+   "end": 3495,
+   "chars": 0,
+   "sents": 52,
+   "title": "Mūlasikkhā-ṭīkā … Ganthārambhakathāvaṇṇanā",
+   "needs": [
+    "T1:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:45:28",
+   "ended": "2026-11-06 03:46:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T2:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3496,
+   "end": 3501,
+   "chars": 0,
+   "sents": 53,
+   "title": "1. Pārājikaniddesavaṇṇanā（3496-3501）",
+   "needs": [
+    "T2:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:45:53",
+   "ended": "2026-11-06 03:46:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T3:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3502,
+   "end": 3507,
+   "chars": 0,
+   "sents": 43,
+   "title": "1. Pārājikaniddesavaṇṇanā（3502-3507）",
+   "needs": [
+    "T3:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:46:09",
+   "ended": "2026-11-06 03:46:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T4:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3508,
+   "end": 3509,
+   "chars": 0,
+   "sents": 13,
+   "title": "1. Pārājikaniddesavaṇṇanā（3508-3509）",
+   "needs": [
+    "T4:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:46:24",
+   "ended": "2026-11-06 03:46:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T5:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3510,
+   "end": 3517,
+   "chars": 0,
+   "sents": 55,
+   "title": "2. Garukāpattiniddesavaṇṇanā（3510-3517）",
+   "needs": [
+    "T5:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:46:39",
+   "ended": "2026-11-06 03:47:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T6:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3518,
+   "end": 3521,
+   "chars": 0,
+   "sents": 27,
+   "title": "2. Garukāpattiniddesavaṇṇanā（3518-3521）",
+   "needs": [
+    "T6:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:46:49",
+   "ended": "2026-11-06 03:47:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T7:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3522,
+   "end": 3529,
+   "chars": 0,
+   "sents": 58,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3522-3529）",
+   "needs": [
+    "T7:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:46:59",
+   "ended": "2026-11-06 03:47:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T8:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3530,
+   "end": 3538,
+   "chars": 0,
+   "sents": 66,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3530-3538）",
+   "needs": [
+    "T8:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:47:15",
+   "ended": "2026-11-06 03:48:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T9:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3539,
+   "end": 3539,
+   "chars": 0,
+   "sents": 1,
+   "title": "3. Nissaggiyaniddesavaṇṇanā（3539-3539）",
+   "needs": [
+    "T9:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:47:25",
+   "ended": "2026-11-06 03:47:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T10:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3540,
+   "end": 3549,
+   "chars": 0,
+   "sents": 53,
+   "title": "4. Pācittiyaniddesavaṇṇanā（3540-3549）",
+   "needs": [
+    "T10:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:47:40",
+   "ended": "2026-11-06 03:48:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T11:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3550,
+   "end": 3561,
+   "chars": 0,
+   "sents": 61,
+   "title": "4. Pācittiyaniddesavaṇṇanā（3550-3561）",
+   "needs": [
+    "T11:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:47:50",
+   "ended": "2026-11-06 03:48:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T12:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3562,
+   "end": 3575,
+   "chars": 0,
+   "sents": 69,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3562-3575）",
+   "needs": [
+    "T12:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:48:05",
+   "ended": "2026-11-06 03:48:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T13:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3576,
+   "end": 3588,
+   "chars": 0,
+   "sents": 69,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3576-3588）",
+   "needs": [
+    "T13:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:48:20",
+   "ended": "2026-11-06 03:49:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T14:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3589,
+   "end": 3599,
+   "chars": 0,
+   "sents": 43,
+   "title": "5. Pakiṇṇakaniddesavaṇṇanā（3589-3599）",
+   "needs": [
+    "T14:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:48:31",
+   "ended": "2026-11-06 03:49:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T15:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 203,
+   "start": 3600,
+   "end": 3631,
+   "chars": 0,
+   "sents": 56,
+   "title": "6. Vattādikaṇḍaniddesavaṇṇanā … Nigamanakathā",
+   "needs": [
+    "T15:review"
+   ],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-06 03:48:46",
+   "ended": "2026-11-06 03:49:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H1:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 161,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3481,
+     "end": 3509
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3100,
+     "end": 3133
+    }
+   ],
+   "pair": [
+    "M",
+    "T"
+   ],
+   "title": "M+T cs 0-1",
+   "needs": [
+    "M1:revise",
+    "T1:revise",
+    "T2:revise",
+    "T3:revise",
+    "T4:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:49:01",
+   "ended": "2026-11-06 03:50:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H2:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 82,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3510,
+     "end": 3521
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3134,
+     "end": 3155
+    }
+   ],
+   "pair": [
+    "M",
+    "T"
+   ],
+   "title": "M+T cs 2-2",
+   "needs": [
+    "M1:revise",
+    "T5:revise",
+    "T6:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:49:11",
+   "ended": "2026-11-06 03:50:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H3:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 125,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3522,
+     "end": 3539
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3156,
+     "end": 3195
+    }
+   ],
+   "pair": [
+    "M",
+    "T"
+   ],
+   "title": "M+T cs 3-3",
+   "needs": [
+    "M1:revise",
+    "M2:revise",
+    "T7:revise",
+    "T8:revise",
+    "T9:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:49:26",
+   "ended": "2026-11-06 03:50:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H4:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 114,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3540,
+     "end": 3561
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3196,
+     "end": 3267
+    }
+   ],
+   "pair": [
+    "M",
+    "T"
+   ],
+   "title": "M+T cs 4-4",
+   "needs": [
+    "M2:revise",
+    "M3:revise",
+    "T10:revise",
+    "T11:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:49:52",
+   "ended": "2026-11-06 03:51:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H5:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 181,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3562,
+     "end": 3599
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3268,
+     "end": 3399
+    }
+   ],
+   "pair": [
+    "M",
+    "T"
+   ],
+   "title": "M+T cs 5-5",
+   "needs": [
+    "M3:revise",
+    "M4:revise",
+    "T12:revise",
+    "T13:revise",
+    "T14:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:50:12",
+   "ended": "2026-11-06 03:51:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H6:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 56,
+   "write": [
+    {
+     "book": 203,
+     "layer": "tika",
+     "work": "T",
+     "start": 3600,
+     "end": 3631
+    }
+   ],
+   "read": [
+    {
+     "book": 203,
+     "layer": "mula",
+     "work": "M",
+     "start": 3400,
+     "end": 3480
+    }
+   ],
+   "pair": [
+    "M",
+    "T"
+   ],
+   "title": "M+T cs 6-7",
+   "needs": [
+    "M4:revise",
+    "M5:revise",
+    "T15:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:50:27",
+   "ended": "2026-11-06 03:51:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "EM:export",
+   "stage": "export",
+   "step": "export",
+   "layer": "mula",
+   "book": 203,
+   "start": 3100,
+   "end": 3480,
+   "chars": 0,
+   "sents": 0,
+   "title": "Mūlasikkhā",
+   "needs": [
+    "H1:harmonize",
+    "H2:harmonize",
+    "H3:harmonize",
+    "H4:harmonize",
+    "H5:harmonize",
+    "H6:harmonize"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:51:48",
+   "ended": "2026-11-06 03:52:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "ET:export",
+   "stage": "export",
+   "step": "export",
+   "layer": "tika",
+   "book": 203,
+   "start": 3481,
+   "end": 3631,
+   "chars": 0,
+   "sents": 0,
+   "title": "Mūlasikkhā-ṭīkā",
+   "needs": [
+    "H1:harmonize",
+    "H2:harmonize",
+    "H3:harmonize",
+    "H4:harmonize",
+    "H5:harmonize",
+    "H6:harmonize"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-06 03:51:58",
+   "ended": "2026-11-06 03:52:49",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "api": "next.cc",
+ "model": "claude-opus-5-5"
+}
