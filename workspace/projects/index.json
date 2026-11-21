@@ -1,0 +1,618 @@
+{
+ "schema": 2,
+ "updated": "2026-11-15 07:50:12",
+ "projects": [
+  {
+   "name": "an-dasakanipata",
+   "title": "增支部 十集 三層翻譯",
+   "state": "done",
+   "book": 82,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 367,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 318,
+    "failed": 0,
+    "skipped": 49
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-15 07:50:11",
+   "created": "2026-11-15 02:16:44"
+  },
+  {
+   "name": "an-navakanipata",
+   "title": "增支部 九集 三層翻譯",
+   "state": "done",
+   "book": 92,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 164,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 130,
+    "failed": 0,
+    "skipped": 34
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-15 02:07:07",
+   "created": "2026-11-15 00:30:31"
+  },
+  {
+   "name": "an-atthakanipata",
+   "title": "增支部 八集 三層翻譯",
+   "state": "done",
+   "book": 91,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 306,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 248,
+    "failed": 0,
+    "skipped": 58
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-15 00:19:44",
+   "created": "2026-11-14 21:17:24"
+  },
+  {
+   "name": "an-sattakanipata",
+   "title": "增支部 七集 三層翻譯",
+   "state": "done",
+   "book": 90,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 237,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 183,
+    "failed": 0,
+    "skipped": 54
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-14 21:08:12",
+   "created": "2026-11-14 16:30:27"
+  },
+  {
+   "name": "an-chakkanipata",
+   "title": "增支部 六集 三層翻譯",
+   "state": "done",
+   "book": 89,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 285,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 219,
+    "failed": 0,
+    "skipped": 66
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-14 16:19:35",
+   "created": "2026-11-14 12:43:36"
+  },
+  {
+   "name": "vin-parajika",
+   "title": "律藏 波罗夷 多层翻譯",
+   "state": "done",
+   "book": 213,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 2128,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1848,
+    "failed": 0,
+    "skipped": 280
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-12 18:42:13",
+   "created": "2026-11-09 07:27:18"
+  },
+  {
+   "name": "an-ekadasakanipata",
+   "title": "增支部 十一集 三層翻譯",
+   "state": "done",
+   "book": 83,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 79,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 72,
+    "failed": 0,
+    "skipped": 7
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-09 06:19:23",
+   "created": "2026-11-09 04:22:51"
+  },
+  {
+   "name": "vin-kankhavitarani",
+   "title": "Kaṅkhāvitaraṇī 五部作品 三層翻譯",
+   "state": "idle",
+   "book": 207,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 262,
+   "unit_counts": {
+    "pending": 262,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 1377016,
+   "pct": 0.0,
+   "updated": "2026-10-27 10:47:29",
+   "created": "2026-10-27 10:47:29"
+  },
+  {
+   "name": "an-pancakanipata",
+   "title": "增支部 五集 三層翻譯",
+   "state": "done",
+   "book": 88,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 170,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 170,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 1944,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1944,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 673287,
+   "pct": 100.0,
+   "updated": "2026-10-14 03:35:25",
+   "created": "2026-10-12 00:11:34"
+  },
+  {
+   "name": "an-catukkanipata",
+   "title": "增支部 四集 三層翻譯",
+   "state": "done",
+   "book": 87,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 221,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 221,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 3384,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3384,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 994223,
+   "pct": 100.0,
+   "updated": "2026-10-11 04:24:53",
+   "created": "2026-10-10 00:16:43"
+  },
+  {
+   "name": "an-dukanipata",
+   "title": "增支部 二集 三層翻譯",
+   "state": "done",
+   "book": 85,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 27,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 27,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 721,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 721,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 320266,
+   "pct": 100.0,
+   "updated": "2026-10-10 00:09:30",
+   "created": "2026-10-04 13:45:04"
+  },
+  {
+   "name": "an-tikanipata",
+   "title": "增支部 三集 三層翻譯",
+   "state": "done",
+   "book": 86,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 124,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 124,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 2434,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 2434,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 911773,
+   "pct": 100.0,
+   "updated": "2026-10-09 23:53:40",
+   "created": "2026-10-06 14:59:35"
+  },
+  {
+   "name": "an-ekakanipata",
+   "title": "增支部 一集 三層翻譯",
+   "state": "done",
+   "book": 84,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 51,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 51,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 3046,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3046,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 1349615,
+   "pct": 100.0,
+   "updated": "2026-10-01 22:38:34",
+   "created": "2026-09-30 02:02:25"
+  },
+  {
+   "name": "sn-mahavagga",
+   "title": "相應部 大篇 三層翻譯",
+   "state": "done",
+   "book": 171,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 349,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 349,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 4718,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4718,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 1249873,
+   "pct": 100.0,
+   "updated": "2026-09-29 22:01:59",
+   "created": "2026-09-28 07:47:40"
+  },
+  {
+   "name": "sn-salayatanavagga",
+   "title": "相應部 六處篇 三層翻譯",
+   "state": "done",
+   "book": 170,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 211,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 211,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 3335,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3335,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 1006751,
+   "pct": 100.0,
+   "updated": "2026-09-23 19:51:33",
+   "created": "2026-09-18 03:21:22"
+  },
+  {
+   "name": "sn-khandhavagga",
+   "title": "相應部 蘊篇 三層翻譯",
+   "state": "done",
+   "book": 169,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 163,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 163,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 2213,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 2213,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 680703,
+   "pct": 100.0,
+   "updated": "2026-09-17 10:49:17",
+   "created": "2026-09-17 02:20:43"
+  },
+  {
+   "name": "sn-nidanavagga",
+   "title": "相應部 因緣篇 三層翻譯",
+   "state": "done",
+   "book": 168,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 288,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 288,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 4645,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4645,
+    "failed": 0,
+    "skipped": 0
+   },
+   "chars": 1108244,
+   "pct": 100.0,
+   "updated": "2026-09-16 12:30:33",
+   "created": "2026-09-09 08:03:41"
+  },
+  {
+   "name": "sn-sagathavagga",
+   "title": "相應部 有偈篇 三層翻譯",
+   "state": "done",
+   "book": 167,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 362,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 362,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 6436,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 5646,
+    "failed": 0,
+    "skipped": 790
+   },
+   "chars": 1449606,
+   "pct": 100.0,
+   "updated": "2026-09-09 04:41:35",
+   "created": "2026-09-07 07:29:06"
+  },
+  {
+   "name": "mn-mulapannasa",
+   "title": "中部 根本五十經篇 三層翻譯",
+   "state": "archive",
+   "book": 164,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "jobs": 89,
+   "job_counts": {},
+   "units": 0,
+   "unit_counts": {},
+   "chars": 0,
+   "pct": 100.0,
+   "archive": true,
+   "updated": "2026-09-07 14:58:21",
+   "created": "2026-08-29 04:43:39"
+  },
+  {
+   "name": "mn-uparipannasa",
+   "title": "中部 後五十經篇 三層翻譯",
+   "state": "done",
+   "book": 166,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": false,
+   "jobs": 63,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 63,
+    "failed": 0,
+    "skipped": 0
+   },
+   "units": 2819,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 2487,
+    "failed": 0,
+    "skipped": 332
+   },
+   "chars": 1510208,
+   "pct": 100.0,
+   "updated": "2026-09-07 03:34:15",
+   "created": "2026-09-06 10:56:45"
+  },
+  {
+   "name": "mn-majjhimapannasa",
+   "title": "中部 中五十經篇 三層翻譯",
+   "state": "archive",
+   "book": 165,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "jobs": 64,
+   "job_counts": {},
+   "units": 0,
+   "unit_counts": {},
+   "chars": 0,
+   "pct": 100.0,
+   "archive": true,
+   "updated": "2026-09-06 09:17:51",
+   "created": "2026-09-05 07:17:09"
+  },
+  {
+   "name": "dn-pathikavagga",
+   "title": "長部 波梨品 三層翻譯",
+   "state": "archive",
+   "book": 95,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "jobs": 150,
+   "job_counts": {},
+   "units": 0,
+   "unit_counts": {},
+   "chars": 0,
+   "pct": 100.0,
+   "archive": true,
+   "updated": "2026-08-29 04:03:50",
+   "created": "2026-08-20 16:15:58"
+  },
+  {
+   "name": "dn-mahavagga",
+   "title": "長部 大品 三層翻譯",
+   "state": "archive",
+   "book": 94,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "jobs": 161,
+   "job_counts": {},
+   "units": 0,
+   "unit_counts": {},
+   "chars": 0,
+   "pct": 100.0,
+   "archive": true,
+   "updated": "2026-08-27 10:22:10",
+   "created": "2026-08-20 16:15:57"
+  },
+  {
+   "name": "dn-silakkhandhavagga",
+   "title": "長部 戒蘊品 三層翻譯",
+   "state": "archive",
+   "book": 93,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "jobs": 160,
+   "job_counts": {},
+   "units": 0,
+   "unit_counts": {},
+   "chars": 0,
+   "pct": 100.0,
+   "archive": true,
+   "updated": "2026-08-20 16:15:56",
+   "created": "2026-08-20 16:15:56"
+  }
+ ]
+}

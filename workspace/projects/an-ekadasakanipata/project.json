@@ -1,0 +1,3531 @@
+{
+ "schema": 3,
+ "name": "an-ekadasakanipata",
+ "title": "增支部 十一集 三層翻譯",
+ "created": "2026-11-09 04:22:51",
+ "updated": "2026-11-09 06:19:23",
+ "book": 83,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "review",
+  "revise",
+  "harmonize",
+  "export"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "scan": true
+ },
+ "books": {
+  "83": {
+   "layer": "mula",
+   "title": "Ekādasakanipātapāḷi"
+  },
+  "102": {
+   "layer": "atthakatha",
+   "title": "Ekādasakanipāta-aṭṭhakathā"
+  },
+  "184": {
+   "layer": "tika",
+   "title": "Ekādasakanipāta-ṭīkā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 83,
+   "title": "Ekādasakanipātapāḷi",
+   "start": 3,
+   "end": 245,
+   "fam": "an11",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 3,
+     "end": 28,
+     "chars": 4042,
+     "sents": 64,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 3,
+       "title": "Ekādasakanipātapāḷi"
+      },
+      {
+       "start": 4,
+       "end": 4,
+       "title": "1. Nissayavaggo"
+      },
+      {
+       "start": 5,
+       "end": 16,
+       "title": "1. Kimatthiyasuttaṃ"
+      },
+      {
+       "start": 17,
+       "end": 28,
+       "title": "2. Cetanākaraṇīyasuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 83,
+     "layer": "mula",
+     "title": "Ekādasakanipātapāḷi … 2. Cetanākaraṇīyasuttaṃ",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 706,
+        "end": 709
+       }
+      ]
+     }
+    },
+    {
+     "start": 29,
+     "end": 39,
+     "chars": 4306,
+     "sents": 33,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 29,
+       "end": 33,
+       "title": "3. Paṭhamaupanisāsuttaṃ"
+      },
+      {
+       "start": 34,
+       "end": 39,
+       "title": "4. Dutiyaupanisāsuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 83,
+     "layer": "mula",
+     "title": "3. Paṭhamaupanisāsuttaṃ … 4. Dutiyaupanisāsuttaṃ",
+     "att_ref": null
+    },
+    {
+     "start": 40,
+     "end": 49,
+     "chars": 3666,
+     "sents": 18,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 40,
+       "end": 44,
+       "title": "5. Tatiyaupanisāsuttaṃ"
+      },
+      {
+       "start": 45,
+       "end": 49,
+       "title": "6. Byasanasuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 83,
+     "layer": "mula",
+     "title": "5. Tatiyaupanisāsuttaṃ … 6. Byasanasuttaṃ",
+     "att_ref": null
+    },
+    {
+     "start": 50,
+     "end": 60,
+     "chars": 4617,
+     "sents": 28,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 50,
+       "end": 60,
+       "title": "7. Saññāsuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 83,
+     "layer": "mula",
+     "title": "7. Saññāsuttaṃ",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 710,
+        "end": 711
+       }
+      ]
+     }
+    },
+    {
+     "start": 61,
+     "end": 66,
+     "chars": 2412,
+     "sents": 15,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 61,
+       "end": 66,
+       "title": "8. Manasikārasuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 83,
+     "layer": "mula",
+     "title": "8. Manasikārasuttaṃ",
+     "att_ref": null
+    },
+    {
+     "start": 67,
+     "end": 75,
+     "chars": 4180,
+     "sents": 37,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 67,
+       "end": 78,
+       "title": "9. Saddhasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 83,
+     "layer": "mula",
+     "title": "9. Saddhasuttaṃ（67-75）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 712,
+        "end": 714
+       }
+      ]
+     }
+    },
+    {
+     "start": 76,
+     "end": 78,
+     "chars": 987,
+     "sents": 7,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 67,
+       "end": 78,
+       "title": "9. Saddhasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 83,
+     "layer": "mula",
+     "title": "9. Saddhasuttaṃ（76-78）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 712,
+        "end": 714
+       }
+      ]
+     }
+    },
+    {
+     "start": 79,
+     "end": 94,
+     "chars": 2313,
+     "sents": 33,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 79,
+       "end": 93,
+       "title": "10. Moranivāpasuttaṃ"
+      },
+      {
+       "start": 94,
+       "end": 94,
+       "title": "2. Anussativaggo"
+      }
+     ],
+     "split": false,
+     "id": "M8",
+     "book": 83,
+     "layer": "mula",
+     "title": "10. Moranivāpasuttaṃ … 2. Anussativaggo",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 715,
+        "end": 720
+       }
+      ]
+     }
+    },
+    {
+     "start": 95,
+     "end": 101,
+     "chars": 4786,
+     "sents": 48,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 95,
+       "end": 103,
+       "title": "1. Paṭhamamahānāmasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 83,
+     "layer": "mula",
+     "title": "1. Paṭhamamahānāmasuttaṃ（95-101）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 718,
+        "end": 720
+       }
+      ]
+     }
+    },
+    {
+     "start": 102,
+     "end": 103,
+     "chars": 2350,
+     "sents": 20,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 95,
+       "end": 103,
+       "title": "1. Paṭhamamahānāmasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 83,
+     "layer": "mula",
+     "title": "1. Paṭhamamahānāmasuttaṃ（102-103）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 718,
+        "end": 720
+       }
+      ]
+     }
+    },
+    {
+     "start": 104,
+     "end": 109,
+     "chars": 3381,
+     "sents": 40,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 104,
+       "end": 109,
+       "title": "2. Dutiyamahānāmasuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 83,
+     "layer": "mula",
+     "title": "2. Dutiyamahānāmasuttaṃ",
+     "att_ref": null
+    },
+    {
+     "start": 110,
+     "end": 121,
+     "chars": 4057,
+     "sents": 54,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 110,
+       "end": 121,
+       "title": "3. Nandiyasuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 83,
+     "layer": "mula",
+     "title": "3. Nandiyasuttaṃ",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 721,
+        "end": 722
+       }
+      ]
+     }
+    },
+    {
+     "start": 122,
+     "end": 134,
+     "chars": 4286,
+     "sents": 37,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 122,
+       "end": 149,
+       "title": "4. Subhūtisuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 83,
+     "layer": "mula",
+     "title": "4. Subhūtisuttaṃ（122-134）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 723,
+        "end": 724
+       }
+      ]
+     }
+    },
+    {
+     "start": 135,
+     "end": 149,
+     "chars": 3213,
+     "sents": 26,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 122,
+       "end": 149,
+       "title": "4. Subhūtisuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 83,
+     "layer": "mula",
+     "title": "4. Subhūtisuttaṃ（135-149）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 723,
+        "end": 724
+       }
+      ]
+     }
+    },
+    {
+     "start": 150,
+     "end": 152,
+     "chars": 685,
+     "sents": 6,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 150,
+       "end": 152,
+       "title": "5. Mettāsuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 83,
+     "layer": "mula",
+     "title": "5. Mettāsuttaṃ",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 725,
+        "end": 728
+       }
+      ]
+     }
+    },
+    {
+     "start": 153,
+     "end": 159,
+     "chars": 4266,
+     "sents": 37,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 153,
+       "end": 164,
+       "title": "6. Aṭṭhakanāgarasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 83,
+     "layer": "mula",
+     "title": "6. Aṭṭhakanāgarasuttaṃ（153-159）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 729,
+        "end": 739
+       }
+      ]
+     }
+    },
+    {
+     "start": 160,
+     "end": 164,
+     "chars": 3453,
+     "sents": 34,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 153,
+       "end": 164,
+       "title": "6. Aṭṭhakanāgarasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 83,
+     "layer": "mula",
+     "title": "6. Aṭṭhakanāgarasuttaṃ（160-164）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 729,
+        "end": 739
+       }
+      ]
+     }
+    },
+    {
+     "start": 165,
+     "end": 179,
+     "chars": 4950,
+     "sents": 50,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 165,
+       "end": 193,
+       "title": "7. Gopālasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 83,
+     "layer": "mula",
+     "title": "7. Gopālasuttaṃ（165-179）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 740,
+        "end": 796
+       }
+      ]
+     }
+    },
+    {
+     "start": 180,
+     "end": 193,
+     "chars": 4533,
+     "sents": 49,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 165,
+       "end": 193,
+       "title": "7. Gopālasuttaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 83,
+     "layer": "mula",
+     "title": "7. Gopālasuttaṃ（180-193）",
+     "att_ref": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 740,
+        "end": 796
+       }
+      ]
+     }
+    },
+    {
+     "start": 194,
+     "end": 206,
+     "chars": 3774,
+     "sents": 40,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 194,
+       "end": 199,
+       "title": "8. Paṭhamasamādhisuttaṃ"
+      },
+      {
+       "start": 200,
+       "end": 206,
+       "title": "9. Dutiyasamādhisuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M20",
+     "book": 83,
+     "layer": "mula",
+     "title": "8. Paṭhamasamādhisuttaṃ … 9. Dutiyasamādhisuttaṃ",
+     "att_ref": null
+    },
+    {
+     "start": 207,
+     "end": 222,
+     "chars": 3742,
+     "sents": 40,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 207,
+       "end": 211,
+       "title": "10. Tatiyasamādhisuttaṃ"
+      },
+      {
+       "start": 212,
+       "end": 222,
+       "title": "11. Catutthasamādhisuttaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 83,
+     "layer": "mula",
+     "title": "10. Tatiyasamādhisuttaṃ … 11. Catutthasamādhisuttaṃ",
+     "att_ref": null
+    },
+    {
+     "start": 223,
+     "end": 245,
+     "chars": 3359,
+     "sents": 41,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 223,
+       "end": 235,
+       "title": "3. Sāmaññavaggo"
+      },
+      {
+       "start": 236,
+       "end": 245,
+       "title": "4. Rāgapeyyālaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M22",
+     "book": 83,
+     "layer": "mula",
+     "title": "3. Sāmaññavaggo … 4. Rāgapeyyālaṃ",
+     "att_ref": null
+    }
+   ],
+   "paras": 243,
+   "chars": 77358,
+   "sents": 757,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  },
+  {
+   "layer": "atthakatha",
+   "book": 102,
+   "title": "Ekādasakanipāta-aṭṭhakathā",
+   "start": 706,
+   "end": 796,
+   "fam": "an11",
+   "pfx": "A",
+   "id": "A",
+   "chunks": [
+    {
+     "start": 706,
+     "end": 724,
+     "chars": 3377,
+     "sents": 62,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 706,
+       "end": 706,
+       "title": "Ekādasakanipāta-aṭṭhakathā"
+      },
+      {
+       "start": 707,
+       "end": 707,
+       "title": "1. Nissayavaggo"
+      },
+      {
+       "start": 708,
+       "end": 709,
+       "title": "1-6. Kimatthiyasuttādivaṇṇanā"
+      },
+      {
+       "start": 710,
+       "end": 711,
+       "title": "7-8. Paṭhamasaññāsuttādivaṇṇanā"
+      },
+      {
+       "start": 712,
+       "end": 714,
+       "title": "9. Saddhasuttavaṇṇanā"
+      },
+      {
+       "start": 715,
+       "end": 717,
+       "title": "10. Moranivāpasuttavaṇṇanā"
+      },
+      {
+       "start": 718,
+       "end": 718,
+       "title": "2. Anussativaggo"
+      },
+      {
+       "start": 719,
+       "end": 720,
+       "title": "1-2. Mahānāmasuttadvayavaṇṇanā"
+      },
+      {
+       "start": 721,
+       "end": 722,
+       "title": "3. Nandiyasuttavaṇṇanā"
+      },
+      {
+       "start": 723,
+       "end": 724,
+       "title": "4. Subhūtisuttavaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "A1",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "Ekādasakanipāta-aṭṭhakathā … 4. Subhūtisuttavaṇṇanā",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 3,
+         "end": 16
+        },
+        {
+         "start": 50,
+         "end": 60
+        },
+        {
+         "start": 67,
+         "end": 103
+        },
+        {
+         "start": 110,
+         "end": 149
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 3,
+        "end": 16
+       },
+       {
+        "start": 50,
+        "end": 60
+       },
+       {
+        "start": 67,
+        "end": 103
+       },
+       {
+        "start": 110,
+        "end": 149
+       }
+      ]
+     }
+    },
+    {
+     "start": 725,
+     "end": 728,
+     "chars": 1996,
+     "sents": 20,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 725,
+       "end": 728,
+       "title": "5. Mettasuttavaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "A2",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "5. Mettasuttavaṇṇanā",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 150,
+         "end": 152
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 150,
+        "end": 152
+       }
+      ]
+     }
+    },
+    {
+     "start": 729,
+     "end": 739,
+     "chars": 4223,
+     "sents": 47,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 729,
+       "end": 739,
+       "title": "6. Aṭṭhakanāgarasuttavaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "A3",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "6. Aṭṭhakanāgarasuttavaṇṇanā",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 153,
+         "end": 164
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 153,
+        "end": 164
+       }
+      ]
+     }
+    },
+    {
+     "start": 740,
+     "end": 749,
+     "chars": 4534,
+     "sents": 56,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 740,
+       "end": 767,
+       "title": "7. Gopālasuttavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "A4",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "7. Gopālasuttavaṇṇanā（740-749）",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 165,
+         "end": 193
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 165,
+        "end": 193
+       }
+      ]
+     }
+    },
+    {
+     "start": 750,
+     "end": 758,
+     "chars": 4616,
+     "sents": 44,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 740,
+       "end": 767,
+       "title": "7. Gopālasuttavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "A5",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "7. Gopālasuttavaṇṇanā（750-758）",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 165,
+         "end": 193
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 165,
+        "end": 193
+       }
+      ]
+     }
+    },
+    {
+     "start": 759,
+     "end": 767,
+     "chars": 3618,
+     "sents": 39,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 740,
+       "end": 767,
+       "title": "7. Gopālasuttavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "A6",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "7. Gopālasuttavaṇṇanā（759-767）",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 165,
+         "end": 193
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 165,
+        "end": 193
+       }
+      ]
+     }
+    },
+    {
+     "start": 768,
+     "end": 796,
+     "chars": 1860,
+     "sents": 29,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 768,
+       "end": 796,
+       "title": "Nigamanakathā"
+      }
+     ],
+     "split": false,
+     "id": "A7",
+     "book": 102,
+     "layer": "atthakatha",
+     "title": "Nigamanakathā",
+     "parents": [
+      {
+       "book": 83,
+       "layer": "mula",
+       "work": "M",
+       "spans": [
+        {
+         "start": 165,
+         "end": 193
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 83,
+      "layer": "mula",
+      "work": "M",
+      "works": [
+       "M"
+      ],
+      "spans": [
+       {
+        "start": 165,
+        "end": 193
+       }
+      ]
+     }
+    }
+   ],
+   "paras": 91,
+   "chars": 24224,
+   "sents": 297,
+   "layer_cn": "义注 aṭṭhakathā",
+   "parent_ids": [
+    "M"
+   ]
+  },
+  {
+   "layer": "tika",
+   "book": 184,
+   "title": "Ekādasakanipāta-ṭīkā",
+   "start": 776,
+   "end": 868,
+   "fam": "an11",
+   "pfx": "T",
+   "id": "T",
+   "chunks": [
+    {
+     "start": 776,
+     "end": 785,
+     "chars": 1799,
+     "sents": 31,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 776,
+       "end": 776,
+       "title": "Ekādasakanipāta-ṭīkā"
+      },
+      {
+       "start": 777,
+       "end": 777,
+       "title": "1. Nissayavaggo"
+      },
+      {
+       "start": 778,
+       "end": 781,
+       "title": "1-10. Kimatthiyasuttādivaṇṇanā"
+      },
+      {
+       "start": 782,
+       "end": 782,
+       "title": "2. Anussativaggo"
+      },
+      {
+       "start": 783,
+       "end": 785,
+       "title": "1-4. Paṭhamamahānāmasuttādivaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "T1",
+     "book": 184,
+     "layer": "tika",
+     "title": "Ekādasakanipāta-ṭīkā … 1-4. Paṭhamamahānāmasuttādivaṇṇanā",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 706,
+         "end": 709
+        },
+        {
+         "start": 718,
+         "end": 720
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 706,
+        "end": 709
+       },
+       {
+        "start": 718,
+        "end": 720
+       }
+      ]
+     }
+    },
+    {
+     "start": 786,
+     "end": 801,
+     "chars": 4658,
+     "sents": 55,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 786,
+       "end": 801,
+       "title": "5. Mettāsuttavaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "T2",
+     "book": 184,
+     "layer": "tika",
+     "title": "5. Mettāsuttavaṇṇanā",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 725,
+         "end": 728
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 725,
+        "end": 728
+       }
+      ]
+     }
+    },
+    {
+     "start": 802,
+     "end": 810,
+     "chars": 4076,
+     "sents": 50,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 802,
+       "end": 810,
+       "title": "6. Aṭṭhakanāgarasuttavaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "T3",
+     "book": 184,
+     "layer": "tika",
+     "title": "6. Aṭṭhakanāgarasuttavaṇṇanā",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 729,
+         "end": 739
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 729,
+        "end": 739
+       }
+      ]
+     }
+    },
+    {
+     "start": 811,
+     "end": 821,
+     "chars": 4882,
+     "sents": 69,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 811,
+       "end": 843,
+       "title": "7. Gopālasuttavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T4",
+     "book": 184,
+     "layer": "tika",
+     "title": "7. Gopālasuttavaṇṇanā（811-821）",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 740,
+         "end": 796
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 740,
+        "end": 796
+       }
+      ]
+     }
+    },
+    {
+     "start": 822,
+     "end": 833,
+     "chars": 4814,
+     "sents": 61,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 811,
+       "end": 843,
+       "title": "7. Gopālasuttavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T5",
+     "book": 184,
+     "layer": "tika",
+     "title": "7. Gopālasuttavaṇṇanā（822-833）",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 740,
+         "end": 796
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 740,
+        "end": 796
+       }
+      ]
+     }
+    },
+    {
+     "start": 834,
+     "end": 843,
+     "chars": 2035,
+     "sents": 27,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 811,
+       "end": 843,
+       "title": "7. Gopālasuttavaṇṇanā"
+      }
+     ],
+     "split": true,
+     "id": "T6",
+     "book": 184,
+     "layer": "tika",
+     "title": "7. Gopālasuttavaṇṇanā（834-843）",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 740,
+         "end": 796
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 740,
+        "end": 796
+       }
+      ]
+     }
+    },
+    {
+     "start": 844,
+     "end": 868,
+     "chars": 1828,
+     "sents": 32,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 844,
+       "end": 868,
+       "title": "Nigamanakathāvaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "T7",
+     "book": 184,
+     "layer": "tika",
+     "title": "Nigamanakathāvaṇṇanā",
+     "parents": [
+      {
+       "book": 102,
+       "layer": "atthakatha",
+       "work": "A",
+       "spans": [
+        {
+         "start": 740,
+         "end": 796
+        }
+       ]
+      }
+     ],
+     "parent": {
+      "book": 102,
+      "layer": "atthakatha",
+      "work": "A",
+      "works": [
+       "A"
+      ],
+      "spans": [
+       {
+        "start": 740,
+        "end": 796
+       }
+      ]
+     }
+    }
+   ],
+   "paras": 93,
+   "chars": 24092,
+   "sents": 325,
+   "layer_cn": "复注 ṭīkā",
+   "parent_ids": [
+    "A"
+   ]
+  }
+ ],
+ "harmonize": [
+  {
+   "pair": [
+    "M",
+    "A"
+   ],
+   "cs": [
+    [
+     "cs",
+     1
+    ],
+    [
+     "cs",
+     16
+    ]
+   ],
+   "chars": 9596,
+   "sents": 129,
+   "ctx_chars": 41210,
+   "write": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 706,
+     "end": 739
+    }
+   ],
+   "read": [
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 3,
+     "end": 16
+    },
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 50,
+     "end": 60
+    },
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 67,
+     "end": 103
+    },
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 110,
+     "end": 164
+    }
+   ],
+   "id": "H1",
+   "kind": "pair",
+   "title": "M+A cs 1-cs 16"
+  },
+  {
+   "pair": [
+    "M",
+    "A"
+   ],
+   "cs": [
+    [
+     "cs",
+     17
+    ],
+    [
+     "cs",
+     17
+    ]
+   ],
+   "chars": 14628,
+   "sents": 168,
+   "ctx_chars": 9483,
+   "write": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 740,
+     "end": 796
+    }
+   ],
+   "read": [
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 165,
+     "end": 193
+    }
+   ],
+   "id": "H2",
+   "kind": "pair",
+   "title": "M+A cs 17-cs 17"
+  },
+  {
+   "pair": [
+    "A",
+    "T"
+   ],
+   "cs": [
+    [
+     "cs",
+     1
+    ],
+    [
+     "cs",
+     16
+    ]
+   ],
+   "chars": 10533,
+   "sents": 136,
+   "ctx_chars": 6883,
+   "write": [
+    {
+     "book": 184,
+     "layer": "tika",
+     "work": "T",
+     "start": 776,
+     "end": 810
+    }
+   ],
+   "read": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 706,
+     "end": 709
+    },
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 718,
+     "end": 720
+    },
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 725,
+     "end": 739
+    }
+   ],
+   "id": "H3",
+   "kind": "pair",
+   "title": "A+T cs 1-cs 16"
+  },
+  {
+   "pair": [
+    "A",
+    "T"
+   ],
+   "cs": [
+    [
+     "cs",
+     17
+    ],
+    [
+     "cs",
+     17
+    ]
+   ],
+   "chars": 13559,
+   "sents": 189,
+   "ctx_chars": 14628,
+   "write": [
+    {
+     "book": 184,
+     "layer": "tika",
+     "work": "T",
+     "start": 811,
+     "end": 868
+    }
+   ],
+   "read": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 740,
+     "end": 796
+    }
+   ],
+   "id": "H4",
+   "kind": "pair",
+   "title": "A+T cs 17-cs 17"
+  }
+ ],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 83,
+   "layer": "mula",
+   "start": 3,
+   "end": 245,
+   "title": "Ekādasakanipātapāḷi"
+  },
+  {
+   "id": "EA",
+   "book": 102,
+   "layer": "atthakatha",
+   "start": 706,
+   "end": 796,
+   "title": "Ekādasakanipāta-aṭṭhakathā"
+  },
+  {
+   "id": "ET",
+   "book": 184,
+   "layer": "tika",
+   "start": 776,
+   "end": 868,
+   "title": "Ekādasakanipāta-ṭīkā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "review",
+   "step": "review",
+   "layer": ""
+  },
+  {
+   "id": "revise",
+   "step": "revise",
+   "layer": ""
+  },
+  {
+   "id": "harmonize",
+   "step": "harmonize",
+   "layer": ""
+  },
+  {
+   "id": "export",
+   "step": "export",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 3,
+   "end": 28,
+   "chars": 0,
+   "sents": 64,
+   "title": "Ekādasakanipātapāḷi … 2. Cetanākaraṇīyasuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:51:46",
+   "ended": "2026-11-09 04:55:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 29,
+   "end": 39,
+   "chars": 0,
+   "sents": 33,
+   "title": "3. Paṭhamaupanisāsuttaṃ … 4. Dutiyaupanisāsuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:51:56",
+   "ended": "2026-11-09 04:54:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 40,
+   "end": 49,
+   "chars": 0,
+   "sents": 18,
+   "title": "5. Tatiyaupanisāsuttaṃ … 6. Byasanasuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:52:06",
+   "ended": "2026-11-09 04:56:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 50,
+   "end": 60,
+   "chars": 0,
+   "sents": 28,
+   "title": "7. Saññāsuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:54:34",
+   "ended": "2026-11-09 04:57:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 61,
+   "end": 66,
+   "chars": 0,
+   "sents": 15,
+   "title": "8. Manasikārasuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:55:50",
+   "ended": "2026-11-09 04:58:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 67,
+   "end": 75,
+   "chars": 0,
+   "sents": 37,
+   "title": "9. Saddhasuttaṃ（67-75）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:56:10",
+   "ended": "2026-11-09 05:02:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 76,
+   "end": 78,
+   "chars": 0,
+   "sents": 7,
+   "title": "9. Saddhasuttaṃ（76-78）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:57:52",
+   "ended": "2026-11-09 05:01:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 79,
+   "end": 94,
+   "chars": 0,
+   "sents": 33,
+   "title": "10. Moranivāpasuttaṃ … 2. Anussativaggo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 04:58:58",
+   "ended": "2026-11-09 05:03:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 95,
+   "end": 101,
+   "chars": 0,
+   "sents": 48,
+   "title": "1. Paṭhamamahānāmasuttaṃ（95-101）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:01:10",
+   "ended": "2026-11-09 05:08:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 102,
+   "end": 103,
+   "chars": 0,
+   "sents": 20,
+   "title": "1. Paṭhamamahānāmasuttaṃ（102-103）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:02:11",
+   "ended": "2026-11-09 05:05:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 104,
+   "end": 109,
+   "chars": 0,
+   "sents": 40,
+   "title": "2. Dutiyamahānāmasuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:03:42",
+   "ended": "2026-11-09 05:07:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 110,
+   "end": 121,
+   "chars": 0,
+   "sents": 54,
+   "title": "3. Nandiyasuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:05:23",
+   "ended": "2026-11-09 05:10:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 122,
+   "end": 134,
+   "chars": 0,
+   "sents": 37,
+   "title": "4. Subhūtisuttaṃ（122-134）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:07:15",
+   "ended": "2026-11-09 05:13:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 135,
+   "end": 149,
+   "chars": 0,
+   "sents": 26,
+   "title": "4. Subhūtisuttaṃ（135-149）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:08:52",
+   "ended": "2026-11-09 05:13:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 150,
+   "end": 152,
+   "chars": 0,
+   "sents": 6,
+   "title": "5. Mettāsuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:10:33",
+   "ended": "2026-11-09 05:13:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 153,
+   "end": 159,
+   "chars": 0,
+   "sents": 37,
+   "title": "6. Aṭṭhakanāgarasuttaṃ（153-159）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:13:11",
+   "ended": "2026-11-09 05:19:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 160,
+   "end": 164,
+   "chars": 0,
+   "sents": 34,
+   "title": "6. Aṭṭhakanāgarasuttaṃ（160-164）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:13:21",
+   "ended": "2026-11-09 05:17:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 165,
+   "end": 179,
+   "chars": 0,
+   "sents": 50,
+   "title": "7. Gopālasuttaṃ（165-179）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:13:37",
+   "ended": "2026-11-09 05:20:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 180,
+   "end": 193,
+   "chars": 0,
+   "sents": 49,
+   "title": "7. Gopālasuttaṃ（180-193）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:21:35",
+   "ended": "2026-11-09 05:24:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 194,
+   "end": 206,
+   "chars": 0,
+   "sents": 40,
+   "title": "8. Paṭhamasamādhisuttaṃ … 9. Dutiyasamādhisuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:21:45",
+   "ended": "2026-11-09 05:23:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 207,
+   "end": 222,
+   "chars": 0,
+   "sents": 40,
+   "title": "10. Tatiyasamādhisuttaṃ … 11. Catutthasamādhisuttaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:21:55",
+   "ended": "2026-11-09 05:24:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "mula",
+   "book": 83,
+   "start": 223,
+   "end": 245,
+   "chars": 0,
+   "sents": 41,
+   "title": "3. Sāmaññavaggo … 4. Rāgapeyyālaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:23:41",
+   "ended": "2026-11-09 05:29:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A1:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 706,
+   "end": 724,
+   "chars": 0,
+   "sents": 62,
+   "title": "Ekādasakanipāta-aṭṭhakathā … 4. Subhūtisuttavaṇṇanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:24:12",
+   "ended": "2026-11-09 05:35:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A2:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 725,
+   "end": 728,
+   "chars": 0,
+   "sents": 20,
+   "title": "5. Mettasuttavaṇṇanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:24:42",
+   "ended": "2026-11-09 05:29:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A3:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 729,
+   "end": 739,
+   "chars": 0,
+   "sents": 47,
+   "title": "6. Aṭṭhakanāgarasuttavaṇṇanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:29:22",
+   "ended": "2026-11-09 05:40:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A4:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 740,
+   "end": 749,
+   "chars": 0,
+   "sents": 56,
+   "title": "7. Gopālasuttavaṇṇanā（740-749）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:29:37",
+   "ended": "2026-11-09 05:40:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A5:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 750,
+   "end": 758,
+   "chars": 0,
+   "sents": 44,
+   "title": "7. Gopālasuttavaṇṇanā（750-758）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:35:02",
+   "ended": "2026-11-09 05:42:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A6:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 759,
+   "end": 767,
+   "chars": 0,
+   "sents": 39,
+   "title": "7. Gopālasuttavaṇṇanā（759-767）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:40:12",
+   "ended": "2026-11-09 05:48:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A7:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 768,
+   "end": 796,
+   "chars": 0,
+   "sents": 29,
+   "title": "Nigamanakathā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:40:32",
+   "ended": "2026-11-09 05:50:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T1:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 776,
+   "end": 785,
+   "chars": 0,
+   "sents": 31,
+   "title": "Ekādasakanipāta-ṭīkā … 1-4. Paṭhamamahānāmasuttādivaṇṇanā",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:42:44",
+   "ended": "2026-11-09 05:43:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T2:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 786,
+   "end": 801,
+   "chars": 0,
+   "sents": 55,
+   "title": "5. Mettāsuttavaṇṇanā",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:43:05",
+   "ended": "2026-11-09 05:43:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T3:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 802,
+   "end": 810,
+   "chars": 0,
+   "sents": 50,
+   "title": "6. Aṭṭhakanāgarasuttavaṇṇanā",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:43:30",
+   "ended": "2026-11-09 05:43:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T4:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 811,
+   "end": 821,
+   "chars": 0,
+   "sents": 69,
+   "title": "7. Gopālasuttavaṇṇanā（811-821）",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:43:46",
+   "ended": "2026-11-09 05:44:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T5:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 822,
+   "end": 833,
+   "chars": 0,
+   "sents": 61,
+   "title": "7. Gopālasuttavaṇṇanā（822-833）",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:44:12",
+   "ended": "2026-11-09 05:44:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T6:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 834,
+   "end": 843,
+   "chars": 0,
+   "sents": 27,
+   "title": "7. Gopālasuttavaṇṇanā（834-843）",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:44:38",
+   "ended": "2026-11-09 05:45:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T7:review",
+   "stage": "review",
+   "step": "review",
+   "layer": "tika",
+   "book": 184,
+   "start": 844,
+   "end": 868,
+   "chars": 0,
+   "sents": 32,
+   "title": "Nigamanakathāvaṇṇanā",
+   "needs": [],
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-09 05:45:03",
+   "ended": "2026-11-09 05:45:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M1:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 3,
+   "end": 28,
+   "chars": 0,
+   "sents": 64,
+   "title": "Ekādasakanipātapāḷi … 2. Cetanākaraṇīyasuttaṃ",
+   "needs": [
+    "M1:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:45:49",
+   "ended": "2026-11-09 05:48:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 29,
+   "end": 39,
+   "chars": 0,
+   "sents": 33,
+   "title": "3. Paṭhamaupanisāsuttaṃ … 4. Dutiyaupanisāsuttaṃ",
+   "needs": [
+    "M2:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:48:17",
+   "ended": "2026-11-09 05:49:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 40,
+   "end": 49,
+   "chars": 0,
+   "sents": 18,
+   "title": "5. Tatiyaupanisāsuttaṃ … 6. Byasanasuttaṃ",
+   "needs": [
+    "M3:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:48:32",
+   "ended": "2026-11-09 05:49:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 50,
+   "end": 60,
+   "chars": 0,
+   "sents": 28,
+   "title": "7. Saññāsuttaṃ",
+   "needs": [
+    "M4:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:49:33",
+   "ended": "2026-11-09 05:51:00",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 61,
+   "end": 66,
+   "chars": 0,
+   "sents": 15,
+   "title": "8. Manasikārasuttaṃ",
+   "needs": [
+    "M5:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:49:53",
+   "ended": "2026-11-09 05:50:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 67,
+   "end": 75,
+   "chars": 0,
+   "sents": 37,
+   "title": "9. Saddhasuttaṃ（67-75）",
+   "needs": [
+    "M6:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:50:14",
+   "ended": "2026-11-09 05:53:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 76,
+   "end": 78,
+   "chars": 0,
+   "sents": 7,
+   "title": "9. Saddhasuttaṃ（76-78）",
+   "needs": [
+    "M7:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:50:44",
+   "ended": "2026-11-09 05:51:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 79,
+   "end": 94,
+   "chars": 0,
+   "sents": 33,
+   "title": "10. Moranivāpasuttaṃ … 2. Anussativaggo",
+   "needs": [
+    "M8:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:51:00",
+   "ended": "2026-11-09 05:52:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 95,
+   "end": 101,
+   "chars": 0,
+   "sents": 48,
+   "title": "1. Paṭhamamahānāmasuttaṃ（95-101）",
+   "needs": [
+    "M9:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:51:20",
+   "ended": "2026-11-09 05:52:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 102,
+   "end": 103,
+   "chars": 0,
+   "sents": 20,
+   "title": "1. Paṭhamamahānāmasuttaṃ（102-103）",
+   "needs": [
+    "M10:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:52:31",
+   "ended": "2026-11-09 05:53:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 104,
+   "end": 109,
+   "chars": 0,
+   "sents": 40,
+   "title": "2. Dutiyamahānāmasuttaṃ",
+   "needs": [
+    "M11:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:52:47",
+   "ended": "2026-11-09 05:53:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 110,
+   "end": 121,
+   "chars": 0,
+   "sents": 54,
+   "title": "3. Nandiyasuttaṃ",
+   "needs": [
+    "M12:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:53:02",
+   "ended": "2026-11-09 05:54:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 122,
+   "end": 134,
+   "chars": 0,
+   "sents": 37,
+   "title": "4. Subhūtisuttaṃ（122-134）",
+   "needs": [
+    "M13:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:53:22",
+   "ended": "2026-11-09 05:55:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 135,
+   "end": 149,
+   "chars": 0,
+   "sents": 26,
+   "title": "4. Subhūtisuttaṃ（135-149）",
+   "needs": [
+    "M14:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:53:47",
+   "ended": "2026-11-09 05:55:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 150,
+   "end": 152,
+   "chars": 0,
+   "sents": 6,
+   "title": "5. Mettāsuttaṃ",
+   "needs": [
+    "M15:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:54:33",
+   "ended": "2026-11-09 05:55:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 153,
+   "end": 159,
+   "chars": 0,
+   "sents": 37,
+   "title": "6. Aṭṭhakanāgarasuttaṃ（153-159）",
+   "needs": [
+    "M16:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:55:04",
+   "ended": "2026-11-09 05:57:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 160,
+   "end": 164,
+   "chars": 0,
+   "sents": 34,
+   "title": "6. Aṭṭhakanāgarasuttaṃ（160-164）",
+   "needs": [
+    "M17:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:55:20",
+   "ended": "2026-11-09 05:56:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 165,
+   "end": 179,
+   "chars": 0,
+   "sents": 50,
+   "title": "7. Gopālasuttaṃ（165-179）",
+   "needs": [
+    "M18:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:55:36",
+   "ended": "2026-11-09 05:57:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 180,
+   "end": 193,
+   "chars": 0,
+   "sents": 49,
+   "title": "7. Gopālasuttaṃ（180-193）",
+   "needs": [
+    "M19:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:56:31",
+   "ended": "2026-11-09 05:57:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 194,
+   "end": 206,
+   "chars": 0,
+   "sents": 40,
+   "title": "8. Paṭhamasamādhisuttaṃ … 9. Dutiyasamādhisuttaṃ",
+   "needs": [
+    "M20:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:57:12",
+   "ended": "2026-11-09 05:58:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 207,
+   "end": 222,
+   "chars": 0,
+   "sents": 40,
+   "title": "10. Tatiyasamādhisuttaṃ … 11. Catutthasamādhisuttaṃ",
+   "needs": [
+    "M21:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:57:32",
+   "ended": "2026-11-09 05:58:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "mula",
+   "book": 83,
+   "start": 223,
+   "end": 245,
+   "chars": 0,
+   "sents": 41,
+   "title": "3. Sāmaññavaggo … 4. Rāgapeyyālaṃ",
+   "needs": [
+    "M22:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:57:48",
+   "ended": "2026-11-09 05:59:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A1:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 706,
+   "end": 724,
+   "chars": 0,
+   "sents": 62,
+   "title": "Ekādasakanipāta-aṭṭhakathā … 4. Subhūtisuttavaṇṇanā",
+   "needs": [
+    "A1:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:58:03",
+   "ended": "2026-11-09 06:00:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A2:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 725,
+   "end": 728,
+   "chars": 0,
+   "sents": 20,
+   "title": "5. Mettasuttavaṇṇanā",
+   "needs": [
+    "A2:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:58:23",
+   "ended": "2026-11-09 05:59:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A3:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 729,
+   "end": 739,
+   "chars": 0,
+   "sents": 47,
+   "title": "6. Aṭṭhakanāgarasuttavaṇṇanā",
+   "needs": [
+    "A3:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:59:09",
+   "ended": "2026-11-09 06:01:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A4:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 740,
+   "end": 749,
+   "chars": 0,
+   "sents": 56,
+   "title": "7. Gopālasuttavaṇṇanā（740-749）",
+   "needs": [
+    "A4:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 05:59:34",
+   "ended": "2026-11-09 06:01:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A5:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 750,
+   "end": 758,
+   "chars": 0,
+   "sents": 44,
+   "title": "7. Gopālasuttavaṇṇanā（750-758）",
+   "needs": [
+    "A5:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:00:10",
+   "ended": "2026-11-09 06:01:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A6:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 759,
+   "end": 767,
+   "chars": 0,
+   "sents": 39,
+   "title": "7. Gopālasuttavaṇṇanā（759-767）",
+   "needs": [
+    "A6:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:01:11",
+   "ended": "2026-11-09 06:03:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "A7:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 768,
+   "end": 796,
+   "chars": 0,
+   "sents": 29,
+   "title": "Nigamanakathā",
+   "needs": [
+    "A7:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:01:41",
+   "ended": "2026-11-09 06:03:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T1:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 776,
+   "end": 785,
+   "chars": 0,
+   "sents": 31,
+   "title": "Ekādasakanipāta-ṭīkā … 1-4. Paṭhamamahānāmasuttādivaṇṇanā",
+   "needs": [
+    "T1:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:01:51",
+   "ended": "2026-11-09 06:03:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T2:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 786,
+   "end": 801,
+   "chars": 0,
+   "sents": 55,
+   "title": "5. Mettāsuttavaṇṇanā",
+   "needs": [
+    "T2:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:03:08",
+   "ended": "2026-11-09 06:05:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T3:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 802,
+   "end": 810,
+   "chars": 0,
+   "sents": 50,
+   "title": "6. Aṭṭhakanāgarasuttavaṇṇanā",
+   "needs": [
+    "T3:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:03:23",
+   "ended": "2026-11-09 06:04:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T4:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 811,
+   "end": 821,
+   "chars": 0,
+   "sents": 69,
+   "title": "7. Gopālasuttavaṇṇanā（811-821）",
+   "needs": [
+    "T4:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:03:53",
+   "ended": "2026-11-09 06:06:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T5:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 822,
+   "end": 833,
+   "chars": 0,
+   "sents": 61,
+   "title": "7. Gopālasuttavaṇṇanā（822-833）",
+   "needs": [
+    "T5:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:04:29",
+   "ended": "2026-11-09 06:06:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T6:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 834,
+   "end": 843,
+   "chars": 0,
+   "sents": 27,
+   "title": "7. Gopālasuttavaṇṇanā（834-843）",
+   "needs": [
+    "T6:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:05:04",
+   "ended": "2026-11-09 06:05:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "T7:revise",
+   "stage": "revise",
+   "step": "revise",
+   "layer": "tika",
+   "book": 184,
+   "start": 844,
+   "end": 868,
+   "chars": 0,
+   "sents": 32,
+   "title": "Nigamanakathāvaṇṇanā",
+   "needs": [
+    "T7:review"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:05:45",
+   "ended": "2026-11-09 06:07:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H1:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 129,
+   "write": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 706,
+     "end": 739
+    }
+   ],
+   "read": [
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 3,
+     "end": 16
+    },
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 50,
+     "end": 60
+    },
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 67,
+     "end": 103
+    },
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 110,
+     "end": 164
+    }
+   ],
+   "pair": [
+    "M",
+    "A"
+   ],
+   "title": "M+A cs 1-cs 16",
+   "needs": [
+    "A1:revise",
+    "A2:revise",
+    "A3:revise",
+    "M10:revise",
+    "M12:revise",
+    "M13:revise",
+    "M14:revise",
+    "M15:revise",
+    "M16:revise",
+    "M17:revise",
+    "M1:revise",
+    "M4:revise",
+    "M6:revise",
+    "M7:revise",
+    "M8:revise",
+    "M9:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:06:01",
+   "ended": "2026-11-09 06:12:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H2:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 168,
+   "write": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 740,
+     "end": 796
+    }
+   ],
+   "read": [
+    {
+     "book": 83,
+     "layer": "mula",
+     "work": "M",
+     "start": 165,
+     "end": 193
+    }
+   ],
+   "pair": [
+    "M",
+    "A"
+   ],
+   "title": "M+A cs 17-cs 17",
+   "needs": [
+    "A4:revise",
+    "A5:revise",
+    "A6:revise",
+    "A7:revise",
+    "M18:revise",
+    "M19:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:06:26",
+   "ended": "2026-11-09 06:11:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H3:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 136,
+   "write": [
+    {
+     "book": 184,
+     "layer": "tika",
+     "work": "T",
+     "start": 776,
+     "end": 810
+    }
+   ],
+   "read": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 706,
+     "end": 709
+    },
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 718,
+     "end": 720
+    },
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 725,
+     "end": 739
+    }
+   ],
+   "pair": [
+    "A",
+    "T"
+   ],
+   "title": "A+T cs 1-cs 16",
+   "needs": [
+    "A1:revise",
+    "A2:revise",
+    "A3:revise",
+    "T1:revise",
+    "T2:revise",
+    "T3:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:07:37",
+   "ended": "2026-11-09 06:11:00",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "H4:harmonize",
+   "stage": "harmonize",
+   "step": "harmonize",
+   "layer": "",
+   "book": null,
+   "start": null,
+   "end": null,
+   "chars": 0,
+   "sents": 189,
+   "write": [
+    {
+     "book": 184,
+     "layer": "tika",
+     "work": "T",
+     "start": 811,
+     "end": 868
+    }
+   ],
+   "read": [
+    {
+     "book": 102,
+     "layer": "atthakatha",
+     "work": "A",
+     "start": 740,
+     "end": 796
+    }
+   ],
+   "pair": [
+    "A",
+    "T"
+   ],
+   "title": "A+T cs 17-cs 17",
+   "needs": [
+    "A4:revise",
+    "A5:revise",
+    "A6:revise",
+    "A7:revise",
+    "T4:revise",
+    "T5:revise",
+    "T6:revise",
+    "T7:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:11:00",
+   "ended": "2026-11-09 06:18:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "EM:export",
+   "stage": "export",
+   "step": "export",
+   "layer": "mula",
+   "book": 83,
+   "start": 3,
+   "end": 245,
+   "chars": 0,
+   "sents": 0,
+   "title": "Ekādasakanipātapāḷi",
+   "needs": [
+    "M10:revise",
+    "M11:revise",
+    "M12:revise",
+    "M13:revise",
+    "M14:revise",
+    "M15:revise",
+    "M16:revise",
+    "M17:revise",
+    "M18:revise",
+    "M19:revise",
+    "M1:revise",
+    "M20:revise",
+    "M21:revise",
+    "M22:revise",
+    "M2:revise",
+    "M3:revise",
+    "M4:revise",
+    "M5:revise",
+    "M6:revise",
+    "M7:revise",
+    "M8:revise",
+    "M9:revise"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:11:21",
+   "ended": "2026-11-09 06:12:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "EA:export",
+   "stage": "export",
+   "step": "export",
+   "layer": "atthakatha",
+   "book": 102,
+   "start": 706,
+   "end": 796,
+   "chars": 0,
+   "sents": 0,
+   "title": "Ekādasakanipāta-aṭṭhakathā",
+   "needs": [
+    "H1:harmonize",
+    "H2:harmonize"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:12:11",
+   "ended": "2026-11-09 06:12:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "ET:export",
+   "stage": "export",
+   "step": "export",
+   "layer": "tika",
+   "book": 184,
+   "start": 776,
+   "end": 868,
+   "chars": 0,
+   "sents": 0,
+   "title": "Ekādasakanipāta-ṭīkā",
+   "needs": [
+    "H3:harmonize",
+    "H4:harmonize"
+   ],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-09 06:18:43",
+   "ended": "2026-11-09 06:19:23",
+   "note": "",
+   "detail": ""
+  }
+ ]
+}
