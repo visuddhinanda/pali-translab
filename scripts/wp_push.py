@@ -4,6 +4,9 @@
 从 stdin 读 LLM 的原始输出（可能夹杂代码围栏与旁白），宽松抽出 JSONL，
 校验坐标与条数，再交给 `wikipali write` 提交。**不写本地 jsonl。**
 
+唯一的例外是 `--out-dir`：服务端连不上时，把验过坐标的句子存成本地 JSONL 待补传。
+那不是译文的另一个版本，是一次没能完成的写入的待办清单——连上了就得补传、补完即废。
+
 一次可提交多段（`--para 983-986`）：坐标按 `id` 里的段号分派，越界的丢弃。
 每行至少要有 `zh`（或 `content`），坐标给 `id`（book-para-start-end）
 或给 `book`/`paragraph`/`word_start`/`word_end` 四元组。
@@ -25,6 +28,7 @@
 """
 import argparse
 import json
+import os
 import re
 import sys
 
@@ -141,6 +145,9 @@ def main():
                     help="把缺失坐标所在的**段号**写进这个文件（逗号分隔），给上游只补这些段")
     ap.add_argument("--ignore-foreign", action="store_true",
                     help="静默跳过不属于本次 book/para 范围的行（跨层统稿时一份输出要分多次提交）")
+    ap.add_argument("--out-dir", default="", dest="out_dir",
+                    help="不写 channel，把**验过坐标**的句子存成本地 JSONL（写不了服务端时用，"
+                         "恢复后由补传脚本按原样提交）。坐标校验、丢坏数据、缺条统计照做")
     args = ap.parse_args()
 
     paras = set(parse_paras(args.para))
@@ -227,6 +234,28 @@ def main():
 
     for s in sentences:
         s["content_type"] = args.content_type
+
+    # 写不了服务端时的落地口：句子已经逐条验过坐标（存在于原文、不越界、不重复、非空），
+    # 原样存成 JSONL，恢复连接后由补传脚本读这些文件按坐标提交，不必重新校验、
+    # 也不必重跑模型。文件名带 book 与段范围，与任务坐标一一对应；**同名直接覆盖**，
+    # 因为同一坐标重跑就该取最新那份（写入本来就是覆盖式的）。
+    if args.out_dir:
+        os.makedirs(args.out_dir, exist_ok=True)
+        path = os.path.join(args.out_dir,
+                            f"{args.book}-{ordered[0]}-{ordered[-1]}.jsonl")
+        tmp = path + ".part"
+        with open(tmp, "w", encoding="utf-8") as f:
+            for s in sentences:
+                f.write(json.dumps({"channel": args.channel, **s},
+                                   ensure_ascii=False) + "\n")
+        os.replace(tmp, path)
+        print(f"✓ {scope} 已存本地 {len(sentences)} 句 → {path}"
+              f"（未写 channel，待补传）", file=sys.stderr)
+        if miss:
+            report_missing(args.book, scope, miss, args.missing_out)
+            sys.exit(2)
+        return
+
     blocks = split_for_upload(sentences, args.chunk_bytes, args.batch)
     if len(blocks) > 1:
         print(f"分 {len(blocks)} 块上传（每块 ≤{args.chunk_bytes} 字节 / ≤{args.batch} 句）",
