@@ -97,6 +97,9 @@ def layer_chunks(book, lo, hi, layer, args, skip=()):
                 sum(sents.get(p, 0) for p in ps), len(ps))
 
     out, cur = [], None
+    # 对齐表要求一键一界（hard_keys，如 kn1 一经一键）时，块不跨键：键一变就切。
+    # 表里另给了 bounds（如 kn2 键是偈号、界是品号）就按 bounds 切，不按键
+    hk = bound_of(book) if hard_keys() else None
 
     def flush():
         nonlocal cur
@@ -106,6 +109,8 @@ def layer_chunks(book, lo, hi, layer, args, skip=()):
 
     for s, e, t in chs:
         c, sn, np = vol(s, e)
+        if hk is not None and cur and hk.get(s) != cur["key"]:
+            flush()
         over = c > CH or (SE > 0 and sn > SE) or (MP > 0 and np > MP)
         if over:                      # 单章就超限：独来独往，章内按段切
             flush()
@@ -128,13 +133,69 @@ def layer_chunks(book, lo, hi, layer, args, skip=()):
             flush()
         if cur is None:
             cur = {"start": s, "end": e, "chars": 0, "sents": 0, "paras": 0,
-                   "chapters": [], "split": False}
+                   "chapters": [], "split": False,
+                   "key": hk.get(s) if hk is not None else None}
         cur["end"] = e
         cur["chars"] += c
         cur["sents"] += sn
         cur["paras"] += np
         cur["chapters"].append({"start": s, "end": e, "title": t})
     flush()
+    for ch in out:
+        ch.pop("key", None)
+    return out
+
+
+def bound_of(book):
+    """{段号: 切块边界号}：对齐表有 bounds 用 bounds，否则就是对齐键本身。"""
+    if ALIGN and ALIGN.get("bounds"):
+        return {int(p): k for p, k in ALIGN["bounds"].get(str(book), {}).items()}
+    return {int(p): k for p, k in (ALIGN or {}).get("para_key", {}).get(str(book), {}).items()}
+
+
+def hard_keys():
+    """对齐表声明 `hard_keys`：块与统稿单元都不跨对齐键（一键一界）。"""
+    return bool(ALIGN and ALIGN.get("hard_keys"))
+
+
+def split_by_ref(ch, book, akey, aidx, abook, alo, ahi, limit):
+    """本文块注入的义注参考超过 `limit` 字符时，在 cs 边界把本文块切小。
+
+    法句经这类书本文极短、义注极长：一块本文装下整品偈颂，review 时要注入的义注
+    （该品全部因缘故事）可达 26 万字符，上下文装不下。按 cs 分组（同一偈的段不拆），
+    贪心累加义注体量，超了就切。单个 cs 自己就超限的，独立成块，不再往下拆。
+    """
+    achars = para_chars(abook)
+    pchars, psents = para_chars(book), para_sents(book)
+    groups = []                              # [(段列表, 义注段集合)]
+    for p in range(ch["start"], ch["end"] + 1):
+        cs = akey.get(p)
+        aps = {q for q in aidx.get(cs, []) if alo <= q <= ahi} if cs is not None else set()
+        if groups and (cs is None or cs == groups[-1][2]):
+            groups[-1][0].append(p)
+            groups[-1][1].update(aps)
+        else:
+            groups.append([[p], set(aps), cs])
+    parts, cur, cur_a = [], [], set()
+    for ps_, aps, _cs in groups:
+        if cur and sum(achars.get(q, 0) for q in cur_a | aps) > limit:
+            parts.append(cur)
+            cur, cur_a = [], set()
+        cur = cur + ps_
+        cur_a |= aps
+    if cur:
+        parts.append(cur)
+    if len(parts) <= 1:
+        return [ch]
+    out = []
+    for ps_ in parts:
+        a, b = ps_[0], ps_[-1]
+        out.append({"start": a, "end": b,
+                    "chars": sum(pchars.get(q, 0) for q in ps_),
+                    "sents": sum(psents.get(q, 0) for q in ps_),
+                    "paras": sum(1 for q in ps_ if pchars.get(q, 0)),
+                    "chapters": [c for c in ch["chapters"] if c["end"] >= a and c["start"] <= b],
+                    "split": True})
     return out
 
 
@@ -370,9 +431,13 @@ def harmonize_pairs(works, anchors, args):
                              for lo, hi in spans_of(pps)],
                 })
 
+            cbound = bound_of(cb) if hard_keys() else {}
             cur_c, cur_p, cur_k = [], [], []
             for k, cps in groups:
                 pps = pidx.get(k, []) if k is not None else []
+                if cur_c and hard_keys() and cbound.get(cps[0]) != cbound.get(cur_c[0]):
+                    emit(cur_c, cur_p, cur_k)   # 一界一单元：跨界（经/品）不合并
+                    cur_c, cur_p, cur_k = [], [], []
                 if cur_c:
                     mc, mn = vol(cur_c + cps)
                     # 父层对照也要卡：注得稀的复注（如古复注）一组只几段，按子层合并会一口气
@@ -783,10 +848,21 @@ def build(args):
         print(f'  {w["id"]:<4} {w["layer"]:<11} book {w["book"]:>3} '
               f'{w["start"]}-{w["end"]}  {w["title"]}', file=sys.stderr)
 
+    # 跨层坐标：各 work 一张表，按 work 算（见 build_anchors）；切块的 --ref-chars 也要用
+    anchors = build_anchors(works)
+    aidx = {w["id"]: anchor_index(anchors[w["id"]], w["start"], w["end"]) for w in works}
+
     # 切块
     for m in works:
         cp = {d: s for d, s in copy_map(m["book"]).items() if m["start"] <= d <= m["end"]}
         chs = layer_chunks(m["book"], m["start"], m["end"], m["layer"], args, skip=cp)
+        # 本文块的义注参考设上限（--ref-chars）：超了就在 cs 边界把本文块切小
+        if args.ref_chars > 0 and m["layer"] == "mula" and per_layer.get("atthakatha"):
+            att = per_layer["atthakatha"][0]
+            chs = [x for ch in chs for x in split_by_ref(
+                ch, m["book"], anchors[m["id"]], aidx[att["id"]],
+                att["book"], att["start"], att["end"],
+                args.ref_chars)]
         pfx = m["pfx"]
         for i, ch in enumerate(chs, 1):
             ch["id"] = f"{pfx}{i}"
@@ -808,9 +884,6 @@ def build(args):
               f'{len(chs)} 块（{nsplit} 块来自超限大章）｜'
               f'{m["chars"]:,} 字符 / {m["sents"]:,} 句', file=sys.stderr)
 
-    # 跨层坐标：各 work 一张表，按 work 算（见 build_anchors）
-    anchors = build_anchors(works)
-    aidx = {w["id"]: anchor_index(anchors[w["id"]], w["start"], w["end"]) for w in works}
     for w in works:
         ps = [p for p in range(w["start"], w["end"] + 1)
               if para_chars(w["book"]).get(p, 0)]
@@ -882,7 +955,7 @@ def build(args):
         "chunking": {"chunk_chars": args.chunk_chars, "max_sents": args.max_sents,
                      "max_paras": args.max_paras, "sent_counts": have_sent_counts(),
                      "harm_chars": args.harm_chars, "harm_sents": args.harm_sents,
-                     "harm_ctx": args.harm_ctx,
+                     "harm_ctx": args.harm_ctx, "ref_chars": args.ref_chars,
                      "scan": True},
         "align": args.align or None,
         "books": {str(m["book"]): {"layer": m["layer"], "title": m["title"]}
@@ -953,6 +1026,8 @@ def main():
                     help="一个统稿单元的各层合计句数上限（0 为不限）")
     ap.add_argument("--harm-ctx", type=int, default=60000, dest="harm_ctx",
                     help="一个统稿单元的父层对照字符上限（0 为不限）；单组自己超限的不拆")
+    ap.add_argument("--ref-chars", type=int, default=0, dest="ref_chars",
+                    help="本文块注入的义注参考字符上限，超了在 cs 边界切小本文块（0=不限）")
     ap.add_argument("--csv", default="", help="任务表 csv 落盘路径")
     ap.add_argument("--dry-run", action="store_true", help="只算不落盘")
     ap.add_argument("--align", default="",

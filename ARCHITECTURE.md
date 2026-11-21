@@ -381,6 +381,15 @@ project → pipelines[] → tasks[]
     表里的 `copy` 是**巴利逐句相同**的段（比丘尼部与比丘部同文的标题、定型句）：
     不译不审，revise 之后插一个 `copy` 阶段，源段定稿后由 `wp_copy.py` 原样复制，
     统稿与导出都等它。注释层翻译时，父层对照里的照搬段换成它的源段。
+    别的对齐表来源：`align_heading.py` 按编号标题对齐（小部 kn1–kn4；`--joint` 合注、
+    `--monotonic` 引偈归经），表里 `hard_keys: true` 时块与统稿单元**不跨键**（一经一界），
+    另给 `bounds` 则按 bounds 切界（如键是偈号、界是品号）。
+    `--ref-chars` 给本文块注入的义注参考设上限，超了在坐标边界把本文块切小（法句经这类
+    本文极短、义注极长的书）。
+  - 另两种 schema 3 规划器，产物与 `plan_scan` 同构，执行器与守护进程不用改：
+    `plan_story.py`（`variant: story`，故事型：先抽人名地名、义注先译，本文引偈从义注定稿
+    照抄，`story_ctx.py` 供注入与照抄）；`plan_align.py`（Abhidhammatthasaṅgaha 一族，
+    层次与父子关系来自 `works.json`，跨层对应来自 `align_lemma.py` 按被解释词建的表）。
   - 执行器一个：`pipeline_batch.sh`，`--job` 跑 schema 2 的一条流水线，`--task` 跑
     schema 3 的一个 task，提示词是同一份（`emit_translate` 等五个函数）。
 - **做哪些步骤由规划期定**：`--steps`（默认全六步）决定生成哪些 task，并记在
