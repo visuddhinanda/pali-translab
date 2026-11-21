@@ -18,6 +18,11 @@ __pycache__/
 !/workspace/projects/*/tasks.csv
 !/workspace/projects/*/audit.log
 !/workspace/projects/*/reports/
+# 重新规划要用的对齐表 / 对照表（含手工 overrides）与故事型计划的专名表
+!/workspace/projects/*/align.json
+!/workspace/projects/*/align/
+!/workspace/projects/*/names.json
+!/workspace/projects/*/project.scan.json
 !/workspace/terms/
 /workspace/terms/*
 !/workspace/terms/*.md
