@@ -555,6 +555,9 @@ def run_scan(args):
         while True:
             if stop_requested(args.project):
                 stopping["v"] = True
+            # 命令只从盘上来：内存里的 PROJ["data"] 从不重读，不在这里取，
+            # put_command 写下的命令会被守护进程下一次 save 覆盖掉，reset-failed 石沉大海
+            PROJ["data"]["command"] = pj.load(PROJ["name"]).get("command")
             if take_command(tasks, args, log_line):
                 stopping["v"] = True
 
@@ -892,13 +895,16 @@ def cmd_reset(args):
     if os.path.exists(lock_path(args.project)):
         pj.put_command(args.project, "reset-failed")
         return
-    jobs = load_jobs()
+    # schema 3 的状态在 tasks 上，load_jobs 只认 schema 2 的 pipelines——
+    # 走它会把 scan 项目报成「0 个失败」
+    scan = pj.is_scan(PROJ["data"])
+    jobs = [t for _p, t in pj.all_tasks(PROJ["data"])] if scan else load_jobs()
     n = 0
     for j in jobs:
         if j["status"] == FAILED:
             j.update(status=PENDING, tries=0, note="", began="", ended="")
             n += 1
-    save_jobs(jobs)
+    pj.save(PROJ["data"]) if scan else save_jobs(jobs)
     print(f"守护进程没在跑，已就地把 {n} 个失败作业改回 pending")
 
 
