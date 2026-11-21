@@ -72,6 +72,7 @@ NISSAYA=""
 FORCE=""
 DRYRUN=""
 NO_CACHE=""
+OUTDIR=""
 # 余量从这里留：实测模型一次约 100 行 JSONL 就被输出上限截断。复注短句多，
 # 一句约 30 巴利字符，3,500 字符大致对应 110 句上下——比截断线略紧，留出余量。
 CHUNK_CHARS=3500
@@ -102,10 +103,16 @@ while [[ $# -gt 0 ]]; do
         --job)         JOB="$2";  shift 2 ;;   # 计划里的作业 id
         --task)        TASK="$2"; shift 2 ;;   # 计划里的 task id（schema 3，单 task 模式）
         --task=*)      TASK="${1#*=}"; shift ;;
-        --nissaya)     NISSAYA="--nissaya"; shift ;;   # 只给复核步骤，translate 永远不给
+        # 只给复核步骤，translate 永远不给。开了它就是**只要 nissaya 审稿意见**：
+        # 不附义注参考，审稿只看词法（见 NIS_ONLY）
+        --nissaya)     NISSAYA="--nissaya"; shift ;;
         --no-llm-cache) NO_CACHE=1; shift ;;   # 不读不写产物缓存，每步都真调模型
         --force)       FORCE=1; shift ;;
         --dry-run)     DRYRUN="--dry-run"; shift ;;
+        # 服务端连不上时：译文不写 channel，验过坐标后存本地 JSONL 待补传。
+        # 不给目录名，默认落在项目目录的 pending-push/ 下。
+        --out-dir)     OUTDIR="$2"; shift 2 ;;
+        --local-only)  OUTDIR="auto"; shift ;;
         *) echo "未知参数: $1" >&2; exit 1 ;;
     esac
 done
@@ -134,6 +141,17 @@ REPORTS="$PROJ_HOME/reports/$BOOK"
 EXPORT_DIR="$PROJ_HOME/export"
 # LLM 产物缓存：每次模型调用的产物都落在这里，重试直接复用（见 cached_claude）
 LLM_CACHE="$PROJ_HOME/llm-cache"
+# --out-dir / --local-only：写不了服务端时译文落本地待补传（见 wp_push 的 --out-dir）。
+# 这不是译文的另一个版本，是一次没完成的写入的待办清单，补完即废。
+[[ "$OUTDIR" == "auto" ]] && OUTDIR="$PROJ_HOME/pending-push"
+PUSH_OUT=()
+PULL_LOC=()
+if [[ -n "$OUTDIR" ]]; then
+    PUSH_OUT=(--out-dir "$OUTDIR")
+    # 本地模式下 channel 里没有译文，注释层要注入的父层译文只能从待补传目录取，
+    # 否则「被解释词与父层逐字同译」这条硬约束在本地模式下直接失效
+    PULL_LOC=(--local-dir "$OUTDIR")
+fi
 AUDIT="$PROJ_HOME/audit.log"
 GROUPS_FILE="$PROJ_HOME/.groups_job${JOB:-0}"
 CHUNKS_FILE="$PROJ_HOME/.chunks_job${JOB:-0}"
@@ -221,7 +239,7 @@ print(st)
 PYLAST
 )
     [[ "$last" == "fail" ]] || return 0
-    after=$(wp_read --book "$T_BOOK" --para "$CH" --channel "$CHANNEL")
+    after=$(wp_read --book "$T_BOOK" --para "$CH" --channel "$CHANNEL" "${PULL_LOC[@]}")
     ids="$(mktemp)"; local src; src="$(mktemp)"
     printf '%s\n' "$after" > "$src"
     python3 "$SCRIPT_DIR/pali_ids.py" "$ids" < "$src" > /dev/null
@@ -336,8 +354,10 @@ cached_claude() {
     tmp="$(mktemp)"; rc=0
     run_claude "$prompt" > "$tmp" || rc=$?
     # 产物判定与 run_claude 的留档判定同一套：有 JSONL 行或 markdown 标题才算
+    # 判的是**首个非空行**，不是「任意一行」：开头被截掉的报告中间也有 ### 小标题，
+    # 曾被当成产物缓存下来，valid_report 却判失败，重试次次复用同一份坏产物，永远过不去
     if [[ -z "$NO_CACHE" && $rc -eq 0 ]] \
-       && grep -qE '^[[:space:]]*\{|^[[:space:]]*#' "$tmp"; then
+       && grep -m1 '[^[:space:]]' "$tmp" | grep -qE '^[[:space:]]*(\{|#|```)'; then
         mkdir -p "$LLM_CACHE"
         cp "$tmp" "$f.part" && mv "$f.part" "$f"
     fi
@@ -351,6 +371,14 @@ cached_claude() {
 #   · 作业模式（schema 2，--job）——下面的阶段一～四按章跑完整条流水线
 #   · 单 task 模式（schema 3，--task）——按阶段推进时一次只做一个 task
 # 参数是缓存键（见 cached_claude）；正文引用的 $KNOWLEDGE / $SRC / $N 等是调用处的变量。
+
+# --nissaya 时审稿只要 nissaya 意见。义注等资源是有意不给的——不说清楚，模型会在
+# 资源行和每条意见后补「缺义注」「待义注核」，这些标注对用户是噪声。
+NIS_ONLY=""
+[[ -n "$NISSAYA" ]] && NIS_ONLY="
+**本次只做 nissaya 复核**：只依据 nissaya 审词法——格、数、主宾属关系、隐含成分。
+义注等其他资源是**有意不提供**的，不是缺失：资源行只列 pali 与 nissaya，意见里也不要写
+「缺义注」「待义注核」「定稿前须补义注复核」之类的说明。没有 nissaya 的句子直接略过，不出意见。"
 
 emit_translate() {
     cached_claude "$1" "$(load_step pali-translate translate)
@@ -389,7 +417,7 @@ $ATT_REF
 $REVIEW_SRC
 
 ---任务---
-按方法文档逐句审查，输出 markdown 审稿意见。
+按方法文档逐句审查，输出 markdown 审稿意见。$NIS_ONLY
 本层若有父层对照，**第一项就查被解释词是否与父层译文逐字相同**，不同即必改项。
 整个 chunk 一起审，跨段的术语与语体不一致也要列出。无问题的句子不必列出。
 所需数据已全部注入上文，不要试图调用任何工具取数。
@@ -489,7 +517,7 @@ wp_read() {
 }
 
 pull_review() {
-    wp_read --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL"
+    wp_read --book "$1" --para "$2" $NISSAYA --channel "$CHANNEL" "${PULL_LOC[@]}"
 }
 
 # ══════════ 单 task 模式（schema 3）══════════
@@ -579,7 +607,7 @@ PYTASK
 
     # 父层对照：翻译/复核子层时，黑体被解释词必须与父层译文逐字相同
     if [[ -n "$T_PBOOK" && -n "$T_PPARAS" ]]; then
-        PARENT_TXT="$(wp_read --book "$T_PBOOK" --para "$T_PPARAS" --channel "$CHANNEL")"
+        PARENT_TXT="$(wp_read --book "$T_PBOOK" --para "$T_PPARAS" --channel "$CHANNEL" "${PULL_LOC[@]}")"
         if [[ "$(count_zh "$PARENT_TXT")" -gt 0 ]]; then
             PARENT_BLOCK="
 ---父层对照（book=$T_PBOOK，段 $T_PPARAS；pali 为父层原文，zh 为**已定稿的父层译文**）---
@@ -593,11 +621,11 @@ $PARENT_TXT
     fi
 
     # 义注参考：只给本文层的复核步骤用（**义注定释义**），translate 永远不给
-    if [[ "$T_LAYER" == "mula" && -n "$T_ABOOK" && -n "$T_APARAS" \
+    if [[ -z "$NISSAYA" && "$T_LAYER" == "mula" && -n "$T_ABOOK" && -n "$T_APARAS" \
           && ( "$T_STEP" == "review" || "$T_STEP" == "revise" ) ]]; then
         ATT_REF="
 ---义注参考（校对用；本 task **不翻译**义注）---
-$(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL")
+$(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL" "${PULL_LOC[@]}")
 "
     fi
 
@@ -619,7 +647,7 @@ $(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL")
             emit_translate "$TASK" \
                 | python3 "$SCRIPT_DIR/wp_push.py" --book "$T_BOOK" --para "$TODO" \
                     --channel "$CHANNEL" --expect "$N" --expect-ids "$IDS_FILE" \
-                    --missing-out "$MISS_FILE" $DRYRUN
+                    --missing-out "$MISS_FILE" "${PUSH_OUT[@]}" $DRYRUN
             PUSH_RC=${PIPESTATUS[1]}
             set -e
             if [[ "$PUSH_RC" -eq 0 ]]; then
@@ -675,13 +703,21 @@ $(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL")
             echo "  跳过 revise：没有审稿意见（$REVIEW_MD）"
             audit_task "$TASK" skip "没有审稿意见" "$T_BOOK" "$T_START-$T_END"; exit 0
         fi
+        # 本轮 review 按规矩跳过了（如复注无缅文 nissaya），磁盘上的报告是上一轮的，
+        # 早已改过一遍——拿它再改就是重复施工
+        # 只看这个 review 的**最后一条**账：补跑过的 review 前面还留着当初的 skip
+        LAST_REV=$(grep -F "\"task\":\"${TASK%:revise}:review\"" "$AUDIT" 2>/dev/null | tail -1)
+        if [[ "$LAST_REV" == *'"status":"skip"'* ]]; then
+            echo "  跳过 revise：本轮 review 已跳过，不用旧报告"
+            audit_task "$TASK" skip "本轮 review 已跳过" "$T_BOOK" "$T_START-$T_END"; exit 0
+        fi
         N=$(count_mula "$REVIEW_SRC")
         for ((try = 1; try <= MAX_TRY; try++)); do
             echo ">>> revise 第 $try/$MAX_TRY 次"
             set +e
             emit_revise "$TASK" \
                 | python3 "$SCRIPT_DIR/wp_push.py" --book "$T_BOOK" --para "$CH" \
-                    --channel "$CHANNEL" --at-most "$N" --allow-empty $DRYRUN
+                    --channel "$CHANNEL" --at-most "$N" --allow-empty "${PUSH_OUT[@]}" $DRYRUN
             PUSH_RC=${PIPESTATUS[1]}
             set -e
             [[ "$PUSH_RC" -eq 0 ]] && {
@@ -698,7 +734,7 @@ $(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL")
         USRC=""; UN=0
         for SP in $T_READ; do
             UB="${SP%%:*}"; UR="${SP#*:}"
-            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL")
+            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL" "${PULL_LOC[@]}")
             USRC="$USRC
 === 父层对照〔只读，一句都不要输出〕 book=$UB  段 $UR ===
 $T
@@ -706,7 +742,7 @@ $T
         done
         for SP in $T_WRITE; do
             UB="${SP%%:*}"; UR="${SP#*:}"
-            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL")
+            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL" "${PULL_LOC[@]}")
             UN=$(( UN + $(count_mula "$T") ))
             USRC="$USRC
 === 待统稿〔要改的就是这一层〕 book=$UB  段 $UR ===
@@ -733,7 +769,7 @@ $T
                     UB="${SP%%:*}"; UR="${SP#*:}"
                     NL=$(wp_read --book "$UB" --para "$UR" | grep -c '^{' || true)
                     python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
-                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN \
+                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign "${PUSH_OUT[@]}" $DRYRUN \
                         < "$UOUT" || PUSH_OK=0
                 done
                 [[ "$PUSH_OK" -eq 1 ]] && { OK=1; break; }
@@ -904,12 +940,12 @@ while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
 
     # 本文层在 review/revise 时参考义注原文（只参考，不翻译；见用户约定）
     ATT_REF=""
-    if [[ "$LAYER" == "mula" ]]; then
+    if [[ -z "$NISSAYA" && "$LAYER" == "mula" ]]; then
         ASPEC="$(awk '$1=="atthakatha" {printf "%s ", $2" "$3}' "$GROUPS_FILE")"
         if [[ -n "$ASPEC" ]]; then
             ATT_REF="
 ---义注参考（校对用；本作业**不翻译**义注）---
-$(set -- $ASPEC; while [[ $# -ge 2 ]]; do wp_read --book "$1" --para "$2" --channel "$CHANNEL"; shift 2; done)
+$(set -- $ASPEC; while [[ $# -ge 2 ]]; do wp_read --book "$1" --para "$2" --channel "$CHANNEL" "${PULL_LOC[@]}"; shift 2; done)
 "
         fi
     fi
@@ -925,7 +961,7 @@ $(set -- $ASPEC; while [[ $# -ge 2 ]]; do wp_read --book "$1" --para "$2" --chan
             PSPEC="$(parent_spec "$LBOOK" "$LPARAS")"
         fi
         if [[ -n "$PSPEC" ]]; then
-            PARENT_TXT="$(wp_read --book "$PBOOK" --para "$PSPEC" --channel "$CHANNEL")"
+            PARENT_TXT="$(wp_read --book "$PBOOK" --para "$PSPEC" --channel "$CHANNEL" "${PULL_LOC[@]}")"
             if [[ "$(count_zh "$PARENT_TXT")" -gt 0 ]]; then
                 PARENT_BLOCK="
 ---父层对照（book=$PBOOK，段 $PSPEC；pali 为父层原文，zh 为**已定稿的父层译文**）---
@@ -980,7 +1016,7 @@ $(pull_review "$LBOOK" "$CH")
                 emit_translate "$CHID:translate:$LBOOK:$TODO" \
                     | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$TODO" \
                         --channel "$CHANNEL" --expect "$N" --expect-ids "$IDS_FILE" \
-                        --missing-out "$MISS_FILE" $DRYRUN
+                        --missing-out "$MISS_FILE" "${PUSH_OUT[@]}" $DRYRUN
                 PUSH_RC=${PIPESTATUS[1]}
                 set -e
 
@@ -1049,7 +1085,7 @@ $(pull_review "$LBOOK" "$CH")
                 echo ">>> revise 第 $try/$MAX_TRY 次"
                 if emit_revise "$CHID:revise:$LBOOK:$CH" \
                     | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$CH" \
-                        --channel "$CHANNEL" --at-most "$N" --allow-empty $DRYRUN; then
+                        --channel "$CHANNEL" --at-most "$N" --allow-empty "${PUSH_OUT[@]}" $DRYRUN; then
                     audit_task "$CHID:revise" ok "$N 句" "$LBOOK" "$FIRST-$LAST"; break
                 fi
                 [[ $try -eq $MAX_TRY ]] && { audit_task "$CHID:revise" fail "$MAX_TRY 次未成" "$LBOOK" "$FIRST-$LAST"; fail_step "revise 失败（$CHID）"; }
@@ -1097,7 +1133,7 @@ if [[ -s "${HUNITS:-/nonexistent}" ]]; then
         USRC=""; UN=0
         for SP in ${SPANS//,/ }; do
             UB="${SP%%:*}"; UR="${SP#*:}"
-            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL")
+            T=$(wp_read --book "$UB" --para "$UR" --channel "$CHANNEL" "${PULL_LOC[@]}")
             UN=$(( UN + $(count_mula "$T") ))
             USRC="$USRC
 === book=$UB  段 $UR ===
@@ -1121,7 +1157,7 @@ $T
                     UB="${SP%%:*}"; UR="${SP#*:}"
                     NL=$(wp_read --book "$UB" --para "$UR" | grep -c '^{' || true)
                     python3 "$SCRIPT_DIR/wp_push.py" --book "$UB" --para "$UR" \
-                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN \
+                        --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign "${PUSH_OUT[@]}" $DRYRUN \
                         < "$UOUT" || PUSH_OK=0
                 done
                 [[ "$PUSH_OK" -eq 1 ]] && { OK=1; break; }
@@ -1143,7 +1179,7 @@ else
         HAVE=1
         while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
             [[ -z "${LAYER:-}" ]] && continue
-            TXT=$(wp_read --book "$LBOOK" --para "$LPARAS" --channel "$CHANNEL")
+            TXT=$(wp_read --book "$LBOOK" --para "$LPARAS" --channel "$CHANNEL" "${PULL_LOC[@]}")
             NL=$(count_mula "$TXT"); NZ=$(count_zh "$TXT")
             if [[ "${OWN:-1}" == 1 ]]; then
                 echo "  [译] $(layer_cn "$LAYER") book=$LBOOK：$NZ/$NL 句有译文"
@@ -1176,7 +1212,7 @@ else
         if [[ "$HAVE" -eq 1 && "$TOTAL" -gt "$HARMONIZE_MAX" ]]; then
             echo ">>> 本作业 $TOTAL 句，超过单批上限 $HARMONIZE_MAX——改为按层分批统稿"
             MULA_TXT="$(awk '$1=="mula" {print $2, $3}' "$GROUPS_FILE" | while read -r mb mp; do
-                wp_read --book "$mb" --para "$mp" --channel "$CHANNEL"
+                wp_read --book "$mb" --para "$mp" --channel "$CHANNEL" "${PULL_LOC[@]}"
             done)"
             while read -r LAYER LBOOK LPARAS PBOOK TITLE OWN; do
                 [[ -z "${LAYER:-}" ]] && continue
@@ -1184,7 +1220,7 @@ else
                 [[ "$LAYER" == "mula" ]] && continue        # 本文随第一批一起统
                 while read -r HCH; do
                     [[ -z "$HCH" ]] && continue
-                    HSRC=$(wp_read --book "$LBOOK" --para "$HCH" --channel "$CHANNEL")
+                    HSRC=$(wp_read --book "$LBOOK" --para "$HCH" --channel "$CHANNEL" "${PULL_LOC[@]}")
                     HN=$(count_mula "$HSRC")
                     [[ "$HN" -eq 0 ]] && continue
                     echo ">>> 统稿分批 $(layer_cn "$LAYER") $LBOOK:${HCH%%,*}-${HCH##*,}（$HN 句）"
@@ -1206,7 +1242,7 @@ else
     所需数据已全部注入上文，不要试图调用任何工具取数。
     只输出 JSONL，不要旁白或代码围栏。" \
                         | python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$HCH" \
-                            --channel "$CHANNEL" --at-most "$HN" --allow-empty $DRYRUN \
+                            --channel "$CHANNEL" --at-most "$HN" --allow-empty "${PUSH_OUT[@]}" $DRYRUN \
                         || fail_step "分批统稿失败 $LBOOK:$HCH"
                 done < <(chunk_list "$LBOOK" "$LPARAS")
                 audit_task "adhoc.$LBOOK.H" ok "分批" "$LBOOK" "$LPARAS"
@@ -1247,7 +1283,7 @@ else
                         [[ "${OWN:-1}" == 1 ]] || continue      # 参考层不回写
                         NL=$(wp_read --book "$LBOOK" --para "$LPARAS" | grep -c '^{' || true)
                         if ! python3 "$SCRIPT_DIR/wp_push.py" --book "$LBOOK" --para "$LPARAS" \
-                            --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign $DRYRUN < "$OUT"; then
+                            --channel "$CHANNEL" --at-most "$NL" --allow-empty --ignore-foreign "${PUSH_OUT[@]}" $DRYRUN < "$OUT"; then
                             OK=0
                         fi
                     done < "$GROUPS_FILE"
