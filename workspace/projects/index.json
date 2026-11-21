@@ -1,35 +1,95 @@
 {
  "schema": 2,
- "updated": "2026-11-21 04:37:23",
+ "updated": "2026-11-21 05:06:32",
  "projects": [
+  {
+   "name": "kn15",
+   "title": "大义释 Mahāniddesa 两层汉译（本文／义注 Saddhammapajjotikā）",
+   "state": "idle",
+   "book": 149,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 5,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 5,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1207,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1204,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 3
+   },
+   "chars": 1460026,
+   "pct": 100.0,
+   "updated": "2026-11-18 17:34:08",
+   "created": "2026-11-18 04:52:08"
+  },
+  {
+   "name": "kn5",
+   "title": "经集 Suttanipāta 两层汉译（本文／义注 Paramatthajotikā II）",
+   "state": "idle",
+   "book": 159,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 5,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 1,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1072,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1071,
+    "failed": 1,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 1310937,
+   "pct": 99.6,
+   "updated": "2026-11-18 03:31:06",
+   "created": "2026-11-17 16:51:18"
+  },
   {
    "name": "kn4",
    "title": "如是语 Itivuttaka 两层汉译（本文／义注 Paramatthadīpanī）",
-   "state": "paused",
+   "state": "done",
    "book": 158,
    "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
    "scan": true,
    "jobs": 5,
    "job_counts": {
-    "pending": 2,
+    "pending": 0,
     "running": 0,
-    "done": 2,
-    "failed": 1,
+    "done": 5,
+    "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "units": 667,
    "unit_counts": {
-    "pending": 72,
+    "pending": 0,
     "running": 0,
-    "done": 585,
-    "failed": 2,
-    "skipped": 8,
+    "done": 667,
+    "failed": 0,
+    "skipped": 0,
     "fixed": 0
    },
    "chars": 725570,
    "pct": 100.0,
-   "updated": "2026-11-17 15:20:45",
+   "updated": "2026-11-18 01:33:13",
    "created": "2026-11-16 09:20:14"
   },
   {

@@ -3,11 +3,11 @@
  "name": "kn4",
  "title": "如是语 Itivuttaka 两层汉译（本文／义注 Paramatthadīpanī）",
  "created": "2026-11-16 09:20:14",
- "updated": "2026-11-17 15:20:45",
+ "updated": "2026-11-18 01:33:13",
  "book": 158,
  "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
  "method": "default",
- "state": "paused",
+ "state": "done",
  "command": null,
  "steps": [
   "translate",
@@ -20606,11 +20606,11 @@
    "needs": [
     "A134:review"
    ],
-   "status": "failed",
-   "tries": 0,
-   "began": "",
-   "ended": "",
-   "note": "环境异常（网络/5xx），已退回队列",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:38:30",
+   "ended": "2026-11-17 15:39:51",
+   "note": "",
    "detail": ""
   },
   {
@@ -20627,11 +20627,11 @@
    "needs": [
     "A135:review"
    ],
-   "status": "failed",
-   "tries": 0,
-   "began": "",
-   "ended": "",
-   "note": "环境异常（网络/5xx），已退回队列",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:38:40",
+   "ended": "2026-11-17 15:40:16",
+   "note": "",
    "detail": ""
   },
   {
@@ -20648,10 +20648,10 @@
    "needs": [
     "A136:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 03:16:40",
-   "ended": "2026-11-17 03:57:31",
+   "status": "done",
+   "tries": 3,
+   "began": "2026-11-18 00:20:49",
+   "ended": "2026-11-18 00:21:54",
    "note": "",
    "detail": ""
   },
@@ -20669,10 +20669,10 @@
    "needs": [
     "A137:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 03:16:50",
-   "ended": "2026-11-17 04:38:06",
+   "status": "done",
+   "tries": 3,
+   "began": "2026-11-18 00:20:59",
+   "ended": "2026-11-18 00:21:54",
    "note": "",
    "detail": ""
   },
@@ -20690,10 +20690,10 @@
    "needs": [
     "A138:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 03:17:01",
-   "ended": "2026-11-17 04:38:22",
+   "status": "done",
+   "tries": 3,
+   "began": "2026-11-18 00:21:09",
+   "ended": "2026-11-18 00:22:04",
    "note": "",
    "detail": ""
   },
@@ -20711,10 +20711,10 @@
    "needs": [
     "A139:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 03:17:11",
-   "ended": "2026-11-17 04:38:37",
+   "status": "done",
+   "tries": 3,
+   "began": "2026-11-18 00:21:19",
+   "ended": "2026-11-18 00:22:29",
    "note": "",
    "detail": ""
   },
@@ -20732,10 +20732,10 @@
    "needs": [
     "A140:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 03:57:31",
-   "ended": "2026-11-17 15:20:44",
+   "status": "done",
+   "tries": 3,
+   "began": "2026-11-18 00:21:29",
+   "ended": "2026-11-18 00:23:05",
    "note": "",
    "detail": ""
   },
@@ -20753,10 +20753,10 @@
    "needs": [
     "A141:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 04:38:06",
-   "ended": "2026-11-17 15:20:44",
+   "status": "done",
+   "tries": 3,
+   "began": "2026-11-18 00:21:39",
+   "ended": "2026-11-18 00:22:14",
    "note": "",
    "detail": ""
   },
@@ -20774,10 +20774,10 @@
    "needs": [
     "A142:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 04:38:22",
-   "ended": "2026-11-17 15:20:45",
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-18 00:17:51",
+   "ended": "2026-11-18 00:19:11",
    "note": "",
    "detail": ""
   },
@@ -20795,10 +20795,10 @@
    "needs": [
     "A143:review"
    ],
-   "status": "skipped",
-   "tries": 1,
-   "began": "2026-11-17 04:38:37",
-   "ended": "2026-11-17 15:20:45",
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-18 00:18:01",
+   "ended": "2026-11-18 00:19:01",
    "note": "",
    "detail": ""
   },
@@ -20816,10 +20816,10 @@
    "needs": [
     "A144:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:38:50",
+   "ended": "2026-11-17 15:40:31",
    "note": "",
    "detail": ""
   },
@@ -20837,10 +20837,10 @@
    "needs": [
     "A145:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:39:00",
+   "ended": "2026-11-17 15:40:31",
    "note": "",
    "detail": ""
   },
@@ -20858,10 +20858,10 @@
    "needs": [
     "A146:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:39:11",
+   "ended": "2026-11-17 15:39:51",
    "note": "",
    "detail": ""
   },
@@ -20879,10 +20879,10 @@
    "needs": [
     "A147:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:39:21",
+   "ended": "2026-11-17 15:41:21",
    "note": "",
    "detail": ""
   },
@@ -20900,10 +20900,10 @@
    "needs": [
     "A148:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:39:51",
+   "ended": "2026-11-17 15:46:58",
    "note": "",
    "detail": ""
   },
@@ -20921,10 +20921,10 @@
    "needs": [
     "A149:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:40:01",
+   "ended": "2026-11-17 15:41:36",
    "note": "",
    "detail": ""
   },
@@ -20942,10 +20942,10 @@
    "needs": [
     "A150:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:40:16",
+   "ended": "2026-11-17 15:46:43",
    "note": "",
    "detail": ""
   },
@@ -20963,10 +20963,10 @@
    "needs": [
     "A151:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:40:31",
+   "ended": "2026-11-17 15:49:23",
    "note": "",
    "detail": ""
   },
@@ -20984,10 +20984,10 @@
    "needs": [
     "A152:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:40:41",
+   "ended": "2026-11-17 15:44:17",
    "note": "",
    "detail": ""
   },
@@ -21005,10 +21005,10 @@
    "needs": [
     "A153:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:41:21",
+   "ended": "2026-11-17 15:46:58",
    "note": "",
    "detail": ""
   },
@@ -21026,10 +21026,10 @@
    "needs": [
     "A154:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:41:36",
+   "ended": "2026-11-17 15:45:47",
    "note": "",
    "detail": ""
   },
@@ -21047,10 +21047,10 @@
    "needs": [
     "A155:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:44:17",
+   "ended": "2026-11-17 15:46:58",
    "note": "",
    "detail": ""
   },
@@ -21068,10 +21068,10 @@
    "needs": [
     "A156:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:45:47",
+   "ended": "2026-11-17 15:53:04",
    "note": "",
    "detail": ""
   },
@@ -21089,10 +21089,10 @@
    "needs": [
     "A157:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:46:43",
+   "ended": "2026-11-17 15:53:50",
    "note": "",
    "detail": ""
   },
@@ -21110,10 +21110,10 @@
    "needs": [
     "A158:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:46:58",
+   "ended": "2026-11-17 15:49:38",
    "note": "",
    "detail": ""
   },
@@ -21131,10 +21131,10 @@
    "needs": [
     "A159:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:47:08",
+   "ended": "2026-11-17 15:52:04",
    "note": "",
    "detail": ""
   },
@@ -21152,10 +21152,10 @@
    "needs": [
     "A160:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:47:18",
+   "ended": "2026-11-17 15:49:59",
    "note": "",
    "detail": ""
   },
@@ -21173,10 +21173,10 @@
    "needs": [
     "A161:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:49:23",
+   "ended": "2026-11-17 15:56:26",
    "note": "",
    "detail": ""
   },
@@ -21194,10 +21194,10 @@
    "needs": [
     "A162:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:49:38",
+   "ended": "2026-11-17 15:54:30",
    "note": "",
    "detail": ""
   },
@@ -21215,10 +21215,10 @@
    "needs": [
     "A163:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:49:59",
+   "ended": "2026-11-17 15:55:50",
    "note": "",
    "detail": ""
   },
@@ -21236,10 +21236,10 @@
    "needs": [
     "A164:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:52:04",
+   "ended": "2026-11-17 15:57:06",
    "note": "",
    "detail": ""
   },
@@ -21257,10 +21257,10 @@
    "needs": [
     "A165:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:53:04",
+   "ended": "2026-11-17 15:56:51",
    "note": "",
    "detail": ""
   },
@@ -21278,10 +21278,10 @@
    "needs": [
     "A166:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:53:50",
+   "ended": "2026-11-17 15:59:22",
    "note": "",
    "detail": ""
   },
@@ -21299,10 +21299,10 @@
    "needs": [
     "A167:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:54:30",
+   "ended": "2026-11-17 15:57:31",
    "note": "",
    "detail": ""
   },
@@ -21320,10 +21320,10 @@
    "needs": [
     "A168:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:55:50",
+   "ended": "2026-11-17 16:01:42",
    "note": "",
    "detail": ""
   },
@@ -21341,10 +21341,10 @@
    "needs": [
     "A169:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:56:26",
+   "ended": "2026-11-17 16:02:58",
    "note": "",
    "detail": ""
   },
@@ -21362,10 +21362,10 @@
    "needs": [
     "A170:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:56:51",
+   "ended": "2026-11-17 16:01:57",
    "note": "",
    "detail": ""
   },
@@ -21383,10 +21383,10 @@
    "needs": [
     "A171:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:57:06",
+   "ended": "2026-11-17 16:00:12",
    "note": "",
    "detail": ""
   },
@@ -21404,10 +21404,10 @@
    "needs": [
     "A172:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 15:57:31",
+   "ended": "2026-11-17 16:02:53",
    "note": "",
    "detail": ""
   },
@@ -21443,10 +21443,10 @@
     "A4:revise",
     "A5:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:02:58",
+   "ended": "2026-11-17 16:14:36",
    "note": "",
    "detail": ""
   },
@@ -21482,10 +21482,10 @@
     "A8:revise",
     "A9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:03:08",
+   "ended": "2026-11-17 16:08:24",
    "note": "",
    "detail": ""
   },
@@ -21521,10 +21521,10 @@
     "A13:revise",
     "A9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:03:18",
+   "ended": "2026-11-17 16:07:24",
    "note": "",
    "detail": ""
   },
@@ -21570,10 +21570,10 @@
     "A19:revise",
     "M2:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:03:28",
+   "ended": "2026-11-17 16:11:00",
    "note": "",
    "detail": ""
   },
@@ -21620,10 +21620,10 @@
     "M2:revise",
     "M3:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:03:38",
+   "ended": "2026-11-17 16:11:30",
    "note": "",
    "detail": ""
   },
@@ -21670,10 +21670,10 @@
     "M3:revise",
     "M4:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:03:48",
+   "ended": "2026-11-17 16:11:15",
    "note": "",
    "detail": ""
   },
@@ -21717,10 +21717,10 @@
     "A34:revise",
     "M5:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:07:24",
+   "ended": "2026-11-17 16:13:26",
    "note": "",
    "detail": ""
   },
@@ -21764,10 +21764,10 @@
     "A38:revise",
     "M6:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:08:24",
+   "ended": "2026-11-17 16:14:36",
    "note": "",
    "detail": ""
   },
@@ -21812,10 +21812,10 @@
     "M6:revise",
     "M7:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:11:00",
+   "ended": "2026-11-17 16:17:42",
    "note": "",
    "detail": ""
   },
@@ -21858,10 +21858,10 @@
     "A45:revise",
     "M7:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:11:15",
+   "ended": "2026-11-17 16:17:57",
    "note": "",
    "detail": ""
   },
@@ -21907,10 +21907,10 @@
     "M8:revise",
     "M9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:11:30",
+   "ended": "2026-11-17 16:17:57",
    "note": "",
    "detail": ""
   },
@@ -21954,10 +21954,10 @@
     "A53:revise",
     "M9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:13:26",
+   "ended": "2026-11-17 16:21:13",
    "note": "",
    "detail": ""
   },
@@ -21999,10 +21999,10 @@
     "A55:revise",
     "M10:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:14:36",
+   "ended": "2026-11-17 16:19:38",
    "note": "",
    "detail": ""
   },
@@ -22048,10 +22048,10 @@
     "A61:revise",
     "M11:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:14:46",
+   "ended": "2026-11-17 16:27:40",
    "note": "",
    "detail": ""
   },
@@ -22096,10 +22096,10 @@
     "A65:revise",
     "M11:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:17:42",
+   "ended": "2026-11-17 16:36:42",
    "note": "",
    "detail": ""
   },
@@ -22144,10 +22144,10 @@
     "A69:revise",
     "M11:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:17:57",
+   "ended": "2026-11-17 16:22:33",
    "note": "",
    "detail": ""
   },
@@ -22192,10 +22192,10 @@
     "M12:revise",
     "M13:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:18:07",
+   "ended": "2026-11-17 16:25:34",
    "note": "",
    "detail": ""
   },
@@ -22241,10 +22241,10 @@
     "M13:revise",
     "M14:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:19:38",
+   "ended": "2026-11-17 16:26:30",
    "note": "",
    "detail": ""
   },
@@ -22290,10 +22290,10 @@
     "M14:revise",
     "M15:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:21:13",
+   "ended": "2026-11-17 16:28:10",
    "note": "",
    "detail": ""
   },
@@ -22335,10 +22335,10 @@
     "A85:revise",
     "M16:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:22:33",
+   "ended": "2026-11-17 16:25:04",
    "note": "",
    "detail": ""
   },
@@ -22382,10 +22382,10 @@
     "A89:revise",
     "M16:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:25:04",
+   "ended": "2026-11-17 16:47:46",
    "note": "",
    "detail": ""
   },
@@ -22429,10 +22429,10 @@
     "M16:revise",
     "M17:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:25:34",
+   "ended": "2026-11-17 16:37:13",
    "note": "",
    "detail": ""
   },
@@ -22478,10 +22478,10 @@
     "M17:revise",
     "M18:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:45:15",
+   "ended": "2026-11-17 16:51:52",
    "note": "",
    "detail": ""
   },
@@ -22527,10 +22527,10 @@
     "M19:revise",
     "M20:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:27:40",
+   "ended": "2026-11-17 16:50:37",
    "note": "",
    "detail": ""
   },
@@ -22571,10 +22571,10 @@
     "A102:revise",
     "M20:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:28:10",
+   "ended": "2026-11-17 16:36:07",
    "note": "",
    "detail": ""
   },
@@ -22618,10 +22618,10 @@
     "A106:revise",
     "M21:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:36:07",
+   "ended": "2026-11-17 16:48:46",
    "note": "",
    "detail": ""
   },
@@ -22663,10 +22663,10 @@
     "A108:revise",
     "M21:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:36:43",
+   "ended": "2026-11-17 16:47:46",
    "note": "",
    "detail": ""
   },
@@ -22713,10 +22713,10 @@
     "M22:revise",
     "M23:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:37:13",
+   "ended": "2026-11-17 16:47:31",
    "note": "",
    "detail": ""
   },
@@ -22761,10 +22761,10 @@
     "M23:revise",
     "M24:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:47:31",
+   "ended": "2026-11-17 16:50:22",
    "note": "",
    "detail": ""
   },
@@ -22810,10 +22810,10 @@
     "M24:revise",
     "M25:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:47:46",
+   "ended": "2026-11-17 16:55:39",
    "note": "",
    "detail": ""
   },
@@ -22857,10 +22857,10 @@
     "M25:revise",
     "M26:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:47:56",
+   "ended": "2026-11-17 16:52:07",
    "note": "",
    "detail": ""
   },
@@ -22904,10 +22904,10 @@
     "M26:revise",
     "M27:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:48:46",
+   "ended": "2026-11-17 16:56:50",
    "note": "",
    "detail": ""
   },
@@ -22952,10 +22952,10 @@
     "A131:revise",
     "M27:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:50:22",
+   "ended": "2026-11-17 16:54:08",
    "note": "",
    "detail": ""
   },
@@ -23001,10 +23001,10 @@
     "M27:revise",
     "M28:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-18 00:46:59",
+   "ended": "2026-11-18 00:54:06",
    "note": "",
    "detail": ""
   },
@@ -23050,10 +23050,10 @@
     "M28:revise",
     "M29:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-18 00:47:09",
+   "ended": "2026-11-18 00:49:29",
    "note": "",
    "detail": ""
   },
@@ -23098,10 +23098,10 @@
     "M29:revise",
     "M30:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-18 00:47:19",
+   "ended": "2026-11-18 00:50:29",
    "note": "",
    "detail": ""
   },
@@ -23149,10 +23149,10 @@
     "M31:revise",
     "M32:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:54:08",
+   "ended": "2026-11-17 17:04:12",
    "note": "",
    "detail": ""
   },
@@ -23198,10 +23198,10 @@
     "M32:revise",
     "M33:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:55:39",
+   "ended": "2026-11-17 16:58:55",
    "note": "",
    "detail": ""
   },
@@ -23248,10 +23248,10 @@
     "M33:revise",
     "M34:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:56:50",
+   "ended": "2026-11-17 17:03:57",
    "note": "",
    "detail": ""
   },
@@ -23295,10 +23295,10 @@
     "A167:revise",
     "M35:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:57:10",
+   "ended": "2026-11-17 17:04:12",
    "note": "",
    "detail": ""
   },
@@ -23343,10 +23343,10 @@
     "A172:revise",
     "M36:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 16:58:05",
+   "ended": "2026-11-17 17:08:18",
    "note": "",
    "detail": ""
   },
@@ -23399,10 +23399,10 @@
     "M8:revise",
     "M9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-17 17:08:18",
+   "ended": "2026-11-17 17:40:29",
    "note": "",
    "detail": ""
   },
@@ -23460,10 +23460,10 @@
     "H8:harmonize",
     "H9:harmonize"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-18 00:54:06",
+   "ended": "2026-11-18 01:33:13",
    "note": "",
    "detail": ""
   }
