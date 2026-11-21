@@ -3,6 +3,7 @@
 
 本项目所有数据读写都经 wikipali 插件的 `wikipali` 命令，不直连 HTTP、不读本地语料。
 """
+import bisect
 import html
 import json
 import os
@@ -328,10 +329,43 @@ def _vagga_tags(tags):
             if t not in NON_VAGGA_TAGS and not (t.endswith("pāḷi") and t != "pāḷi")}
 
 
-def layer_of(tags):
-    """一组 tag 属于哪一层；不是任何注释层就给 None。"""
+# 专名 tag 是可靠的；只剩一个泛 `ṭīkā` 时它什么也没说明，这时看书名。
+# 书目表里有五行就是这种残缺（207 的两部 pātimokkhapāḷi 与 Kaṅkhāvitaraṇī 义注、
+# 180 的 Abhidhammamātikāpāḷi 与 Mohavicchedanī）：本文没挂 `mūla`、义注没挂
+# `aṭṭhakathā`，全都只有 `ṭīkā`，照 tag 判会把一整卷五部作品统统当成复注，
+# 于是没有本文也没有义注，父层链整条断掉。
+SPECIFIC_LAYER_TAGS = {"mūla", "aṭṭhakathā", "mūlaṭīkā", "anuṭīkā",
+                       "purāṇaṭīkā", "abhinavaṭīkā"}
+# 书名里的层次线索，按顺序先中先得。`aṭṭhakathā` 要先于 `ṭīkā`：
+# `Kaṅkhāvitaraṇī-aṭṭhakathā` 两个词都占，先看义注才不会判成复注。
+LAYER_NAME_RULES = [("aṭṭhakathā", "atthakatha"), ("purāṇaṭīkā", "tika"),
+                    ("abhinavaṭīkā", "tika"), ("ṭīkā", "tika"),
+                    ("pāḷi", "mula"), ("pāṭha", "mula")]
+
+
+def layer_by_name(*names):
+    """按书名/toc 判层次。只在 tag 只剩泛 `ṭīkā` 时用，判不出就 None。"""
+    s = " ".join(n for n in names if n).lower()
+    return next((lay for key, lay in LAYER_NAME_RULES if key in s), None)
+
+
+def layer_of(tags, name="", toc=""):
+    """一组 tag 属于哪一层；不是任何注释层就给 None。
+
+    专名 tag 优先。只有泛 `ṭīkā` 时改看书名（见 LAYER_NAME_RULES）——这一步只
+    影响书目表 tag 残缺的那五行，其余 184 行都有专名 tag，判定与从前一字不差。
+    """
     tags = set(tags)
-    return next((lay for tag, lay in LAYER_TAG_RULES if tag in tags), None)
+    lay = next((lay for tag, lay in LAYER_TAG_RULES if tag in tags), None)
+    if lay == "tika" and not (tags & SPECIFIC_LAYER_TAGS):
+        return layer_by_name(name, toc) or lay
+    return lay
+
+
+def layer_of_row(row):
+    """书目表一行属于哪一层——`layer_of` 的入口，连书名一起看。"""
+    return layer_of(set(row.get("tags") or ()),
+                    row.get("title") or "", row.get("toc") or "")
 
 
 def parent_layer(layer, present):
@@ -416,7 +450,7 @@ def layer_works(book, para=None):
     fam = ((mine[0].get("related_name") if mine else "") or "").split("_")[0]
     out = []
     for r in rows:
-        lay = layer_of(set(r.get("tags", [])))
+        lay = layer_of_row(r)
         if not lay:
             continue
         f = (r.get("related_name") or "").split("_")[0]
@@ -485,7 +519,7 @@ def layer_books(book):
         tags = set(r.get("tags", []))
         if not vagga <= tags:
             continue
-        layer = layer_of(tags)
+        layer = layer_of_row(r)
         if layer:
             out.append({"book": r["book"], "layer": layer,
                         "title": r.get("title", ""), "toc": r.get("toc", "")})
@@ -555,3 +589,214 @@ def cs_set(book, lo, hi, csm=None, carry=True):
     """
     csm = csm or (cs_filled(book) if carry else cs_own(book))
     return {csm.get(p) for p in range(int(lo), int(hi) + 1) if csm.get(p) is not None}
+
+
+# ── 学处键：cs_para 当不成跨层坐标时的替代 ───────────────────────────
+# 律藏 pātimokkha 一族（related_name=vin6，book 207 的两部本文与 Kaṅkhāvitaraṇī 义注、
+# book 212 的新旧两部复注）的 cs_para 是坏的，三种坏法都占齐了：
+#   · 本文的 cs 其实是**学处序号**，每个犍度从 1 重来（僧残 13 / 不定 2 / 舍堕 30 /
+#     波逸提 92 / 悔过 4 / 众学 75），跨犍度不唯一；
+#   · Kaṅkhāvitaraṇī 义注 1135 段的 cs **全是同一个值 75**，零信息；
+#   · purāṇaṭīkā 整部 543 段一个 cs 都没有，abhinavaṭīkā 只有末尾附录那 61 段有。
+# 于是按 cs 配层必然全空。可用的替代坐标是目录自己给出的
+# **(比丘/比丘尼分, 犍度, 犍度内学处序号)**：
+#   · 注释层逐学处立标题（`1. Sukkavissaṭṭhisikkhāpadavaṇṇanā`），三部注名字一字不差；
+#   · 本文没有逐学处标题，但它的 cs 就是学处序号，犍度由 `Saṅghādisesuddeso` 这一级给出。
+# 舍堕与波逸提下面还有品（vagga），序号在品内从 1 重来，要按品的大小累加成犍度内连续号——
+# 品的大小不写死，从同族**注得最全**的那部注的目录里数出来（见 rule_sizes）。
+
+# 犍度词干 → 代号。**顺序要紧**：`Nissaggiyapācittiyā` 两个词干都占，先看舍堕；
+# `Suddhapācittiyā` 只含 `pācittiy`，所以泛的那条排在后面。
+KANDA_STEMS = [("nissaggiy", "NIS"), ("suddhapācittiy", "PAC"), ("pārājik", "PAR"),
+               ("saṅghādises", "SAN"), ("aniyat", "ANI"), ("pācittiy", "PAC"),
+               ("pāṭidesanīy", "PAT"), ("sekhiy", "SEK"), ("adhikaraṇasamath", "ADH")]
+RULE_NO_RE = re.compile(r"^\s*(\d+)")
+
+
+def _kanda_of(toc):
+    """这个标题是不是犍度标题。
+
+    **带序号的一律不算**——`1. Paṭhamapārājikavaṇṇanā` 里也有 `pārājik`，
+    不排掉它就会把一条学处当成一个犍度，整个犍度的段全判错。
+    """
+    if RULE_NO_RE.match(toc):
+        return None
+    s = toc.lower()
+    return next((v for k, v in KANDA_STEMS if k in s), None)
+
+
+def _is_vagga(toc):
+    """带序号的品标题（`1. Cīvaravaggo`）；不带序号的品标题当普通小节。"""
+    return bool(RULE_NO_RE.match(toc)) and "vagg" in toc.lower()
+
+
+def _vibh_switch(toc):
+    """这个标题把后文切到哪一分：比丘尼 / 比丘 / 不切。
+
+    比丘尼在前判——`Bhikkhunīpātimokkhavaṇṇanā` 里也含 `bhikkhu`。
+    注释层只在比丘尼分之前立一个 `Bhikkhupātimokkhavaṇṇanā`，有的注干脆不立，
+    所以默认是比丘分，遇到比丘尼标题才翻过去。
+    """
+    s = toc.lower()
+    if "pātimokkha" not in s and "vibhaṅga" not in s:
+        return None
+    if "bhikkhunī" in s or "bhikkhuni" in s:
+        return "BI"
+    return "BU" if "bhikkhu" in s else None
+
+
+def toc_walk(book, lo, hi):
+    """走一遍某 work 的目录，给每个**正文段**标上 `(vibh, kanda, vagga, 印刷序号)`。
+
+    层级不看 `level` 的数值（各书不一致：同一类标题在 207 是 L4、在 212 是 L4/L5），
+    只看标题文字的语义，四种标题各管一件事，见上面那三个判定函数。
+
+    返回 `(marks, has_rule_headings)`。`has_rule_headings` 说明这个 work 自己
+    有没有逐学处标题：有就按目录数序号（注释层），没有就得退回 cs（本文层）。
+    """
+    vibh, kanda, vagga, no, has = "BU", None, None, None, False
+    marks = {}
+    for r in sorted(paras(book), key=lambda x: x["paragraph"]):
+        p = r["paragraph"]
+        if not (lo <= p <= hi):
+            continue
+        if (r.get("level") or 100) >= 100:
+            marks[p] = (vibh, kanda, vagga, no)
+            continue
+        toc = r.get("toc") or ""
+        sw = _vibh_switch(toc)
+        if sw:
+            vibh, kanda, vagga, no = sw, None, None, None
+            continue
+        k = _kanda_of(toc)
+        if k:
+            kanda, vagga, no = k, None, None
+            continue
+        if _is_vagga(toc):
+            vagga, no = int(RULE_NO_RE.match(toc).group(1)), None
+            continue
+        m = RULE_NO_RE.match(toc)
+        # 光一个序号、后面没有名字的标题不是学处（abhinavaṭīkā 末尾的结颂附录就是
+        # `1.` `2.` … `18.` 这样十八条）。把它们当学处会凭空给犍度加满一批序号，
+        # 本文那边的学处就被配到附录上去了。
+        if m and re.search(r"\w", toc[m.end():].strip(". 　")):
+            no, has = int(m.group(1)), True
+    return marks, has
+
+
+def rule_sizes(spans):
+    """同族各 work 合起来数出的品内学处数：`{(vibh, kanda, vagga): 学处数}`。
+
+    一部注常只注其中一段：purāṇaṭīkā 的波逸提直接从第 4 品起头（前三品不注），
+    所以品的大小取各 work 印刷序号的**最大值**——谁注得全就用谁的。
+    没有品的犍度（波罗夷、僧残、不定、悔过、众学）不进这张表，序号本来就是犍度内连续的。
+    """
+    sizes = {}
+    for book, lo, hi in spans:
+        marks, has = toc_walk(book, lo, hi)
+        if not has:
+            continue
+        for _p, (v, k, vg, no) in marks.items():
+            if k is None or vg is None or no is None:
+                continue
+            key = (v, k, vg)
+            sizes[key] = max(sizes.get(key, 0), no)
+    return sizes
+
+
+def rule_counts(spans, sizes):
+    """`{(vibh, kanda): 该犍度的学处总数}`——各品之和，没有品的犍度取最大印刷序号。
+
+    这张表有两个用处：把品内序号摊平成犍度内连续号，以及给本文的 cs **定上界**。
+    上界是必需的：wikipali 的段里，一个犍度的结颂常排在下一个犍度的标题之后，
+    那几段会带着上一个犍度的 cs（实测不定法头三段带着僧残的 cs 13，而不定只有 2 条）。
+    超过上界就判成对不上，宁可少给父层对照，也不能把段配到别的学处上去。
+    """
+    counts = {}
+    for (v, k, _vg), n in sizes.items():
+        counts[(v, k)] = counts.get((v, k), 0) + n
+    for book, lo, hi in spans:
+        marks, has = toc_walk(book, lo, hi)
+        if not has:
+            continue
+        for _p, (v, k, vg, no) in marks.items():
+            if k is None or vg is not None or no is None:
+                continue
+            counts[(v, k)] = max(counts.get((v, k), 0), no)
+    return counts
+
+
+def flat_no(vibh, kanda, vagga, no, sizes):
+    """品内序号 → 犍度内连续序号。品号是印刷出来的，所以**跳品也算得对**
+    （purāṇaṭīkā 从第 4 品起头，基数照样是前三品之和）。"""
+    if no is None:
+        return None
+    if vagga is None:
+        return no
+    base = sum(n for (v, k, vg), n in sizes.items()
+               if v == vibh and k == kanda and vg < vagga)
+    return base + no
+
+
+# cs_para 是 CS 典藏的段号，实际从没超过四位数（Pārājikapāḷi 到 662、
+# 它的义注到 660）。44053、22313 这种是脏值，判重启前先剔掉，不然一个脏值
+# 就制造一次下跌，好书也会被判成重启。
+CS_SANE_MAX = 10000
+
+
+def cs_runs(vals):
+    """cs 序列里有几段非递减——即「从头重编过几次」。脏值先剔掉。
+
+    每段从头重编都意味着这串数不是跨书唯一的坐标。几次算重启，看实测：
+    律藏 vin1 一族最多 3 段（Vimativinodanī 从比丘波罗夷注到波逸提，换了本文书，
+    段号自然从 1 重来；Sāratthadīpanī 3 段同理），而 pātimokkha 本文是 **7 段**
+    （七个犍度各自从 1 编号，因为那其实是学处序号不是段号）。
+    """
+    g = [v for v in vals if v < CS_SANE_MAX]
+    return (1 if g else 0) + sum(1 for a, b in zip(g, g[1:]) if b < a)
+
+
+def cs_usable(book, lo, hi):
+    """这个 work 的 cs_para 能不能当跨层坐标。三条都要过：
+
+      · 有 cs 的正文段 ≥ 20%——注释层本来就有大段没有 cs（义注 138 只有 75%、
+        Sāratthadīpanī 只有 51%，照样够用），但整部一个都没有就没得谈
+        （purāṇaṭīkā 与 Vajirabuddhi 序论都是 0%）；
+      · 取值不止一个（Kaṅkhāvitaraṇī 义注 1135 段全是同一个值 75，零信息）；
+      · 非递减段 ≤ 3，即没有反复从头重编（见 `cs_runs`）。
+
+    判定是**族级**的，不是单 work 的（见 plan_scan.build_anchors）：坐标体系必须
+    全族统一，父层用 cs、子层用学处键，一条也配不上。
+    """
+    rows = [r for r in paras(book)
+            if lo <= r["paragraph"] <= hi and (r.get("level") or 100) >= 100]
+    if not rows:
+        return False
+    vals = [r.get("cs_para") for r in sorted(rows, key=lambda x: x["paragraph"])]
+    got = [v for v in vals if v is not None]
+    if len(got) < 0.2 * len(vals) or len(set(got)) < 2:
+        return False
+    return cs_runs(got) <= 3
+
+
+def work_anchors(book, lo, hi, sizes=None, counts=None, use_cs=True):
+    """某 work 的跨层坐标：`{段号: key}`，key 可比较、可跨 work。
+
+    `use_cs` 为真就是 `("cs", cs)`（标题跟后面的正文、缺 cs 的正文跟前面，
+    同 `cs_filled`）；为假就改成 `("rule", 分, 犍度, 犍度内学处序号)`。
+    对不上的段给 None。该用哪种由调用方按**族**决定，不在这里单 work 决定。
+    """
+    if use_cs:
+        csf = cs_filled(book)
+        return {p: (("cs", csf[p]) if csf.get(p) is not None else None)
+                for p in csf if lo <= p <= hi}
+    marks, has = toc_walk(book, lo, hi)
+    sizes = sizes or {}
+    counts = counts or {}
+    own = cs_own(book) if not has else {}
+    out = {}
+    for p, (v, k, vg, no) in marks.items():
+        n = flat_no(v, k, vg, no, sizes) if has else own.get(p)
+        lim = counts.get((v, k))
+        out[p] = ("rule", v, k, n) if (k and n and lim and n <= lim) else None
+    return out
