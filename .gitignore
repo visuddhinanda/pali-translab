@@ -17,6 +17,11 @@ __pycache__/
 !/workspace/projects/*/plan.csv
 !/workspace/projects/*/tasks.csv
 !/workspace/projects/*/audit.log
+# 进度台账的历史版本（v1 / redo 等）也要带走，新机器靠它们接着跑
+!/workspace/projects/*/project.*.json
+!/workspace/projects/*/plan.*.csv
+!/workspace/projects/*/tasks.*.csv
+!/workspace/projects/*/audit.*.log
 !/workspace/projects/*/reports/
 # 重新规划要用的对齐表 / 对照表（含手工 overrides）与故事型计划的专名表
 !/workspace/projects/*/align.json
