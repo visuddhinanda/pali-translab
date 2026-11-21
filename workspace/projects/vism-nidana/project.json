@@ -1,0 +1,11678 @@
+{
+ "schema": 1,
+ "name": "vism-nidana",
+ "title": "清净道论大复注·序论 Visuddhimagga-mahāṭīkā Nidānakathā 汉译",
+ "created": "2026-09-21 16:22:20",
+ "updated": "2026-10-13 06:53:52",
+ "book": 68,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "thresholds": {
+  "harmonize_direct_max": 30000,
+  "harmonize_cross_chars": 12000,
+  "harmonize_layer_chars": 15000
+ },
+ "books": {},
+ "jobs": [
+  {
+   "id": 0,
+   "title": "Visuddhimagga nidānakathā",
+   "cs": [
+    215,
+    215
+   ],
+   "chars": 1288,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:49:40",
+   "finished": "2026-09-27 16:52:28",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 2,
+    "end": 9,
+    "title": "Visuddhimagga nidānakathā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 2,
+     "end": 9,
+     "title": "Visuddhimagga nidānakathā",
+     "paras": 8,
+     "chars": 1288,
+     "chunks": [
+      {
+       "id": "0.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 2,
+       "end": 9,
+       "paras": 8,
+       "chars": 1288,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "0.H",
+      "kind": "direct",
+      "chars": 1288,
+      "layers": {
+       "68": [
+        [
+         2,
+         9
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "0.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 1,
+   "title": "Mahāvaṃsa-buddhaghosakathā",
+   "cs": [
+    215,
+    215
+   ],
+   "chars": 26,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:49:50",
+   "finished": "2026-09-27 16:51:13",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 10,
+    "end": 10,
+    "title": "Mahāvaṃsa-buddhaghosakathā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 10,
+     "end": 10,
+     "title": "Mahāvaṃsa-buddhaghosakathā",
+     "paras": 1,
+     "chars": 26,
+     "chunks": [
+      {
+       "id": "1.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 10,
+       "end": 10,
+       "paras": 1,
+       "chars": 26,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "1.H",
+      "kind": "direct",
+      "chars": 26,
+      "layers": {
+       "68": [
+        [
+         10,
+         10
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "1.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 2,
+   "title": "215.",
+   "cs": [
+    215,
+    215
+   ],
+   "chars": 88,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:51:13",
+   "finished": "2026-09-27 16:53:00",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 11,
+    "end": 13,
+    "title": "215.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 11,
+     "end": 13,
+     "title": "215.",
+     "paras": 3,
+     "chars": 88,
+     "chunks": [
+      {
+       "id": "2.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 11,
+       "end": 13,
+       "paras": 3,
+       "chars": 88,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "2.H",
+      "kind": "direct",
+      "chars": 88,
+      "layers": {
+       "68": [
+        [
+         11,
+         13
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "2.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 3,
+   "title": "216.",
+   "cs": [
+    216,
+    216
+   ],
+   "chars": 86,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:52:28",
+   "finished": "2026-09-27 16:54:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 14,
+    "end": 16,
+    "title": "216.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 14,
+     "end": 16,
+     "title": "216.",
+     "paras": 3,
+     "chars": 86,
+     "chunks": [
+      {
+       "id": "3.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 14,
+       "end": 16,
+       "paras": 3,
+       "chars": 86,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "3.H",
+      "kind": "direct",
+      "chars": 86,
+      "layers": {
+       "68": [
+        [
+         14,
+         16
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "3.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 4,
+   "title": "217.",
+   "cs": [
+    217,
+    217
+   ],
+   "chars": 89,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:53:00",
+   "finished": "2026-09-27 16:54:55",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 17,
+    "end": 19,
+    "title": "217.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 17,
+     "end": 19,
+     "title": "217.",
+     "paras": 3,
+     "chars": 89,
+     "chunks": [
+      {
+       "id": "4.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 17,
+       "end": 19,
+       "paras": 3,
+       "chars": 89,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "4.H",
+      "kind": "direct",
+      "chars": 89,
+      "layers": {
+       "68": [
+        [
+         17,
+         19
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "4.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 5,
+   "title": "218.",
+   "cs": [
+    218,
+    218
+   ],
+   "chars": 94,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:54:23",
+   "finished": "2026-09-27 16:56:11",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 20,
+    "end": 22,
+    "title": "218.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 20,
+     "end": 22,
+     "title": "218.",
+     "paras": 3,
+     "chars": 94,
+     "chunks": [
+      {
+       "id": "5.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 20,
+       "end": 22,
+       "paras": 3,
+       "chars": 94,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "5.H",
+      "kind": "direct",
+      "chars": 94,
+      "layers": {
+       "68": [
+        [
+         20,
+         22
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "5.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 6,
+   "title": "219.",
+   "cs": [
+    219,
+    219
+   ],
+   "chars": 100,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:54:55",
+   "finished": "2026-09-27 16:56:35",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 23,
+    "end": 25,
+    "title": "219.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 23,
+     "end": 25,
+     "title": "219.",
+     "paras": 3,
+     "chars": 100,
+     "chunks": [
+      {
+       "id": "6.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 23,
+       "end": 25,
+       "paras": 3,
+       "chars": 100,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "6.H",
+      "kind": "direct",
+      "chars": 100,
+      "layers": {
+       "68": [
+        [
+         23,
+         25
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "6.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 7,
+   "title": "220.",
+   "cs": [
+    220,
+    220
+   ],
+   "chars": 100,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:56:11",
+   "finished": "2026-09-27 16:58:13",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 26,
+    "end": 28,
+    "title": "220.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 26,
+     "end": 28,
+     "title": "220.",
+     "paras": 3,
+     "chars": 100,
+     "chunks": [
+      {
+       "id": "7.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 26,
+       "end": 28,
+       "paras": 3,
+       "chars": 100,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "7.H",
+      "kind": "direct",
+      "chars": 100,
+      "layers": {
+       "68": [
+        [
+         26,
+         28
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "7.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 8,
+   "title": "221.",
+   "cs": [
+    221,
+    221
+   ],
+   "chars": 99,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:56:35",
+   "finished": "2026-09-27 16:58:59",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 29,
+    "end": 31,
+    "title": "221.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 29,
+     "end": 31,
+     "title": "221.",
+     "paras": 3,
+     "chars": 99,
+     "chunks": [
+      {
+       "id": "8.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 29,
+       "end": 31,
+       "paras": 3,
+       "chars": 99,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "8.H",
+      "kind": "direct",
+      "chars": 99,
+      "layers": {
+       "68": [
+        [
+         29,
+         31
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "8.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 9,
+   "title": "222.",
+   "cs": [
+    222,
+    222
+   ],
+   "chars": 109,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:58:13",
+   "finished": "2026-09-27 17:00:15",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 32,
+    "end": 34,
+    "title": "222.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 32,
+     "end": 34,
+     "title": "222.",
+     "paras": 3,
+     "chars": 109,
+     "chunks": [
+      {
+       "id": "9.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 32,
+       "end": 34,
+       "paras": 3,
+       "chars": 109,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "9.H",
+      "kind": "direct",
+      "chars": 109,
+      "layers": {
+       "68": [
+        [
+         32,
+         34
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "9.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 10,
+   "title": "223.",
+   "cs": [
+    223,
+    223
+   ],
+   "chars": 93,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 16:58:59",
+   "finished": "2026-09-27 17:00:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 35,
+    "end": 37,
+    "title": "223.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 35,
+     "end": 37,
+     "title": "223.",
+     "paras": 3,
+     "chars": 93,
+     "chunks": [
+      {
+       "id": "10.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 35,
+       "end": 37,
+       "paras": 3,
+       "chars": 93,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "10.H",
+      "kind": "direct",
+      "chars": 93,
+      "layers": {
+       "68": [
+        [
+         35,
+         37
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "10.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 11,
+   "title": "224.",
+   "cs": [
+    224,
+    224
+   ],
+   "chars": 97,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:00:15",
+   "finished": "2026-09-27 17:02:24",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 38,
+    "end": 40,
+    "title": "224.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 38,
+     "end": 40,
+     "title": "224.",
+     "paras": 3,
+     "chars": 97,
+     "chunks": [
+      {
+       "id": "11.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 38,
+       "end": 40,
+       "paras": 3,
+       "chars": 97,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "11.H",
+      "kind": "direct",
+      "chars": 97,
+      "layers": {
+       "68": [
+        [
+         38,
+         40
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "11.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 12,
+   "title": "225.",
+   "cs": [
+    225,
+    225
+   ],
+   "chars": 257,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:00:54",
+   "finished": "2026-09-27 17:03:18",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 41,
+    "end": 43,
+    "title": "225.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 41,
+     "end": 43,
+     "title": "225.",
+     "paras": 3,
+     "chars": 257,
+     "chunks": [
+      {
+       "id": "12.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 41,
+       "end": 43,
+       "paras": 3,
+       "chars": 257,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "12.H",
+      "kind": "direct",
+      "chars": 257,
+      "layers": {
+       "68": [
+        [
+         41,
+         43
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "12.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 13,
+   "title": "226.",
+   "cs": [
+    226,
+    226
+   ],
+   "chars": 196,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:02:24",
+   "finished": "2026-09-27 17:04:26",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 44,
+    "end": 46,
+    "title": "226.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 44,
+     "end": 46,
+     "title": "226.",
+     "paras": 3,
+     "chars": 196,
+     "chunks": [
+      {
+       "id": "13.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 44,
+       "end": 46,
+       "paras": 3,
+       "chars": 196,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "13.H",
+      "kind": "direct",
+      "chars": 196,
+      "layers": {
+       "68": [
+        [
+         44,
+         46
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "13.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 14,
+   "title": "227.",
+   "cs": [
+    227,
+    227
+   ],
+   "chars": 255,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:03:18",
+   "finished": "2026-09-27 17:05:34",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 47,
+    "end": 49,
+    "title": "227.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 47,
+     "end": 49,
+     "title": "227.",
+     "paras": 3,
+     "chars": 255,
+     "chunks": [
+      {
+       "id": "14.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 47,
+       "end": 49,
+       "paras": 3,
+       "chars": 255,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "14.H",
+      "kind": "direct",
+      "chars": 255,
+      "layers": {
+       "68": [
+        [
+         47,
+         49
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "14.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 15,
+   "title": "228.",
+   "cs": [
+    228,
+    228
+   ],
+   "chars": 92,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:04:26",
+   "finished": "2026-09-27 17:06:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 50,
+    "end": 52,
+    "title": "228.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 50,
+     "end": 52,
+     "title": "228.",
+     "paras": 3,
+     "chars": 92,
+     "chunks": [
+      {
+       "id": "15.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 50,
+       "end": 52,
+       "paras": 3,
+       "chars": 92,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "15.H",
+      "kind": "direct",
+      "chars": 92,
+      "layers": {
+       "68": [
+        [
+         50,
+         52
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "15.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 16,
+   "title": "229.",
+   "cs": [
+    229,
+    229
+   ],
+   "chars": 87,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:05:34",
+   "finished": "2026-09-27 17:07:36",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 53,
+    "end": 55,
+    "title": "229.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 53,
+     "end": 55,
+     "title": "229.",
+     "paras": 3,
+     "chars": 87,
+     "chunks": [
+      {
+       "id": "16.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 53,
+       "end": 55,
+       "paras": 3,
+       "chars": 87,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "16.H",
+      "kind": "direct",
+      "chars": 87,
+      "layers": {
+       "68": [
+        [
+         53,
+         55
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "16.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 17,
+   "title": "230.",
+   "cs": [
+    230,
+    230
+   ],
+   "chars": 98,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:06:50",
+   "finished": "2026-09-27 17:08:45",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 56,
+    "end": 58,
+    "title": "230.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 56,
+     "end": 58,
+     "title": "230.",
+     "paras": 3,
+     "chars": 98,
+     "chunks": [
+      {
+       "id": "17.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 56,
+       "end": 58,
+       "paras": 3,
+       "chars": 98,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "17.H",
+      "kind": "direct",
+      "chars": 98,
+      "layers": {
+       "68": [
+        [
+         56,
+         58
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "17.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 18,
+   "title": "231.",
+   "cs": [
+    231,
+    231
+   ],
+   "chars": 291,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:07:36",
+   "finished": "2026-09-27 17:10:00",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 59,
+    "end": 61,
+    "title": "231.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 59,
+     "end": 61,
+     "title": "231.",
+     "paras": 3,
+     "chars": 291,
+     "chunks": [
+      {
+       "id": "18.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 59,
+       "end": 61,
+       "paras": 3,
+       "chars": 291,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "18.H",
+      "kind": "direct",
+      "chars": 291,
+      "layers": {
+       "68": [
+        [
+         59,
+         61
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "18.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 19,
+   "title": "232.",
+   "cs": [
+    232,
+    232
+   ],
+   "chars": 97,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:08:45",
+   "finished": "2026-09-27 17:10:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 62,
+    "end": 64,
+    "title": "232.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 62,
+     "end": 64,
+     "title": "232.",
+     "paras": 3,
+     "chars": 97,
+     "chunks": [
+      {
+       "id": "19.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 62,
+       "end": 64,
+       "paras": 3,
+       "chars": 97,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "19.H",
+      "kind": "direct",
+      "chars": 97,
+      "layers": {
+       "68": [
+        [
+         62,
+         64
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "19.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 20,
+   "title": "233.",
+   "cs": [
+    233,
+    233
+   ],
+   "chars": 97,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:10:00",
+   "finished": "2026-09-27 17:11:55",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 65,
+    "end": 67,
+    "title": "233.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 65,
+     "end": 67,
+     "title": "233.",
+     "paras": 3,
+     "chars": 97,
+     "chunks": [
+      {
+       "id": "20.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 65,
+       "end": 67,
+       "paras": 3,
+       "chars": 97,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "20.H",
+      "kind": "direct",
+      "chars": 97,
+      "layers": {
+       "68": [
+        [
+         65,
+         67
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "20.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 21,
+   "title": "234.",
+   "cs": [
+    234,
+    234
+   ],
+   "chars": 105,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:10:32",
+   "finished": "2026-09-27 17:12:34",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 68,
+    "end": 70,
+    "title": "234.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 68,
+     "end": 70,
+     "title": "234.",
+     "paras": 3,
+     "chars": 105,
+     "chunks": [
+      {
+       "id": "21.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 68,
+       "end": 70,
+       "paras": 3,
+       "chars": 105,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "21.H",
+      "kind": "direct",
+      "chars": 105,
+      "layers": {
+       "68": [
+        [
+         68,
+         70
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "21.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 22,
+   "title": "235.",
+   "cs": [
+    235,
+    235
+   ],
+   "chars": 734,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:11:55",
+   "finished": "2026-09-27 17:14:43",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 71,
+    "end": 73,
+    "title": "235.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 71,
+     "end": 73,
+     "title": "235.",
+     "paras": 3,
+     "chars": 734,
+     "chunks": [
+      {
+       "id": "22.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 71,
+       "end": 73,
+       "paras": 3,
+       "chars": 734,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "22.H",
+      "kind": "direct",
+      "chars": 734,
+      "layers": {
+       "68": [
+        [
+         71,
+         73
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "22.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 23,
+   "title": "236.",
+   "cs": [
+    236,
+    236
+   ],
+   "chars": 95,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:12:34",
+   "finished": "2026-09-27 17:14:26",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 74,
+    "end": 76,
+    "title": "236.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 74,
+     "end": 76,
+     "title": "236.",
+     "paras": 3,
+     "chars": 95,
+     "chunks": [
+      {
+       "id": "23.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 74,
+       "end": 76,
+       "paras": 3,
+       "chars": 95,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "23.H",
+      "kind": "direct",
+      "chars": 95,
+      "layers": {
+       "68": [
+        [
+         74,
+         76
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "23.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 24,
+   "title": "237.",
+   "cs": [
+    237,
+    237
+   ],
+   "chars": 92,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:14:26",
+   "finished": "2026-09-27 17:16:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 77,
+    "end": 79,
+    "title": "237.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 77,
+     "end": 79,
+     "title": "237.",
+     "paras": 3,
+     "chars": 92,
+     "chunks": [
+      {
+       "id": "24.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 77,
+       "end": 79,
+       "paras": 3,
+       "chars": 92,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "24.H",
+      "kind": "direct",
+      "chars": 92,
+      "layers": {
+       "68": [
+        [
+         77,
+         79
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "24.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 25,
+   "title": "238.",
+   "cs": [
+    238,
+    238
+   ],
+   "chars": 722,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:14:43",
+   "finished": "2026-09-27 17:17:14",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 80,
+    "end": 82,
+    "title": "238.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 80,
+     "end": 82,
+     "title": "238.",
+     "paras": 3,
+     "chars": 722,
+     "chunks": [
+      {
+       "id": "25.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 80,
+       "end": 82,
+       "paras": 3,
+       "chars": 722,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "25.H",
+      "kind": "direct",
+      "chars": 722,
+      "layers": {
+       "68": [
+        [
+         80,
+         82
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "25.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 26,
+   "title": "239.",
+   "cs": [
+    239,
+    239
+   ],
+   "chars": 93,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:16:21",
+   "finished": "2026-09-27 17:18:08",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 83,
+    "end": 85,
+    "title": "239.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 83,
+     "end": 85,
+     "title": "239.",
+     "paras": 3,
+     "chars": 93,
+     "chunks": [
+      {
+       "id": "26.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 83,
+       "end": 85,
+       "paras": 3,
+       "chars": 93,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "26.H",
+      "kind": "direct",
+      "chars": 93,
+      "layers": {
+       "68": [
+        [
+         83,
+         85
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "26.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 27,
+   "title": "240.",
+   "cs": [
+    240,
+    240
+   ],
+   "chars": 92,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:17:15",
+   "finished": "2026-09-27 17:19:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 86,
+    "end": 88,
+    "title": "240.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 86,
+     "end": 88,
+     "title": "240.",
+     "paras": 3,
+     "chars": 92,
+     "chunks": [
+      {
+       "id": "27.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 86,
+       "end": 88,
+       "paras": 3,
+       "chars": 92,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "27.H",
+      "kind": "direct",
+      "chars": 92,
+      "layers": {
+       "68": [
+        [
+         86,
+         88
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "27.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 28,
+   "title": "241.",
+   "cs": [
+    241,
+    241
+   ],
+   "chars": 87,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:18:08",
+   "finished": "2026-09-27 17:20:10",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 89,
+    "end": 91,
+    "title": "241.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 89,
+     "end": 91,
+     "title": "241.",
+     "paras": 3,
+     "chars": 87,
+     "chunks": [
+      {
+       "id": "28.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 89,
+       "end": 91,
+       "paras": 3,
+       "chars": 87,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "28.H",
+      "kind": "direct",
+      "chars": 87,
+      "layers": {
+       "68": [
+        [
+         89,
+         91
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "28.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 29,
+   "title": "242.",
+   "cs": [
+    242,
+    242
+   ],
+   "chars": 97,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:19:09",
+   "finished": "2026-09-27 17:21:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 92,
+    "end": 94,
+    "title": "242.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 92,
+     "end": 94,
+     "title": "242.",
+     "paras": 3,
+     "chars": 97,
+     "chunks": [
+      {
+       "id": "29.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 92,
+       "end": 94,
+       "paras": 3,
+       "chars": 97,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "29.H",
+      "kind": "direct",
+      "chars": 97,
+      "layers": {
+       "68": [
+        [
+         92,
+         94
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "29.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 30,
+   "title": "243.",
+   "cs": [
+    243,
+    243
+   ],
+   "chars": 93,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:20:10",
+   "finished": "2026-09-27 17:22:34",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 95,
+    "end": 97,
+    "title": "243.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 95,
+     "end": 97,
+     "title": "243.",
+     "paras": 3,
+     "chars": 93,
+     "chunks": [
+      {
+       "id": "30.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 95,
+       "end": 97,
+       "paras": 3,
+       "chars": 93,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "30.H",
+      "kind": "direct",
+      "chars": 93,
+      "layers": {
+       "68": [
+        [
+         95,
+         97
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "30.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 31,
+   "title": "244.",
+   "cs": [
+    244,
+    244
+   ],
+   "chars": 89,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:21:04",
+   "finished": "2026-09-27 17:22:51",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 98,
+    "end": 100,
+    "title": "244.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 98,
+     "end": 100,
+     "title": "244.",
+     "paras": 3,
+     "chars": 89,
+     "chunks": [
+      {
+       "id": "31.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 98,
+       "end": 100,
+       "paras": 3,
+       "chars": 89,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "31.H",
+      "kind": "direct",
+      "chars": 89,
+      "layers": {
+       "68": [
+        [
+         98,
+         100
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "31.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 32,
+   "title": "245.",
+   "cs": [
+    245,
+    245
+   ],
+   "chars": 91,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:22:34",
+   "finished": "2026-09-27 17:24:14",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 101,
+    "end": 103,
+    "title": "245.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 101,
+     "end": 103,
+     "title": "245.",
+     "paras": 3,
+     "chars": 91,
+     "chunks": [
+      {
+       "id": "32.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 101,
+       "end": 103,
+       "paras": 3,
+       "chars": 91,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "32.H",
+      "kind": "direct",
+      "chars": 91,
+      "layers": {
+       "68": [
+        [
+         101,
+         103
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "32.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 33,
+   "title": "246.",
+   "cs": [
+    246,
+    246
+   ],
+   "chars": 898,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:22:52",
+   "finished": "2026-09-27 17:25:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 104,
+    "end": 107,
+    "title": "246.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 104,
+     "end": 107,
+     "title": "246.",
+     "paras": 4,
+     "chars": 898,
+     "chunks": [
+      {
+       "id": "33.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 104,
+       "end": 107,
+       "paras": 4,
+       "chars": 898,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "33.H",
+      "kind": "direct",
+      "chars": 898,
+      "layers": {
+       "68": [
+        [
+         104,
+         107
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "33.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 34,
+   "title": "Jātidesavicāraṇā",
+   "cs": [
+    2000001,
+    2000001
+   ],
+   "chars": 5442,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:24:14",
+   "finished": "2026-09-27 17:36:12",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 108,
+    "end": 134,
+    "title": "Jātidesavicāraṇā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 108,
+     "end": 134,
+     "title": "Jātidesavicāraṇā",
+     "paras": 27,
+     "chars": 5442,
+     "chunks": [
+      {
+       "id": "34.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 108,
+       "end": 119,
+       "paras": 12,
+       "chars": 845,
+       "status": "done"
+      },
+      {
+       "id": "34.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 120,
+       "end": 131,
+       "paras": 12,
+       "chars": 2651,
+       "status": "done"
+      },
+      {
+       "id": "34.1.3",
+       "kind": "chunk",
+       "book": 68,
+       "start": 132,
+       "end": 134,
+       "paras": 3,
+       "chars": 1946,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "34.H",
+      "kind": "direct",
+      "chars": 5442,
+      "layers": {
+       "68": [
+        [
+         108,
+         134
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "34.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 35,
+   "title": "Brāhmaṇakulavicāraṇā",
+   "cs": [
+    2000002,
+    2000002
+   ],
+   "chars": 6277,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:25:52",
+   "finished": "2026-09-27 17:37:28",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 135,
+    "end": 152,
+    "title": "Brāhmaṇakulavicāraṇā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 135,
+     "end": 152,
+     "title": "Brāhmaṇakulavicāraṇā",
+     "paras": 18,
+     "chars": 6277,
+     "chunks": [
+      {
+       "id": "35.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 135,
+       "end": 146,
+       "paras": 12,
+       "chars": 2595,
+       "status": "done"
+      },
+      {
+       "id": "35.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 147,
+       "end": 152,
+       "paras": 6,
+       "chars": 3682,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "35.H",
+      "kind": "direct",
+      "chars": 6277,
+      "layers": {
+       "68": [
+        [
+         135,
+         152
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "35.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 36,
+   "title": "Patañjalivādavicāraṇā",
+   "cs": [
+    2000003,
+    2000003
+   ],
+   "chars": 3930,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:36:12",
+   "finished": "2026-09-27 17:44:45",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 153,
+    "end": 173,
+    "title": "Patañjalivādavicāraṇā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 153,
+     "end": 173,
+     "title": "Patañjalivādavicāraṇā",
+     "paras": 21,
+     "chars": 3930,
+     "chunks": [
+      {
+       "id": "36.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 153,
+       "end": 164,
+       "paras": 12,
+       "chars": 3146,
+       "status": "done"
+      },
+      {
+       "id": "36.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 165,
+       "end": 173,
+       "paras": 9,
+       "chars": 784,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "36.H",
+      "kind": "direct",
+      "chars": 3930,
+      "layers": {
+       "68": [
+        [
+         153,
+         173
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "36.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 37,
+   "title": "Kabbasatthavicāraṇā",
+   "cs": [
+    2000004,
+    2000004
+   ],
+   "chars": 739,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:37:28",
+   "finished": "2026-09-27 17:40:18",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 174,
+    "end": 176,
+    "title": "Kabbasatthavicāraṇā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 174,
+     "end": 176,
+     "title": "Kabbasatthavicāraṇā",
+     "paras": 3,
+     "chars": 739,
+     "chunks": [
+      {
+       "id": "37.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 174,
+       "end": 176,
+       "paras": 3,
+       "chars": 739,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "37.H",
+      "kind": "direct",
+      "chars": 739,
+      "layers": {
+       "68": [
+        [
+         174,
+         176
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "37.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 38,
+   "title": "Bāhusaccaguṇamakkhanaṃ",
+   "cs": [
+    2000005,
+    2000005
+   ],
+   "chars": 1005,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:40:18",
+   "finished": "2026-09-27 17:42:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 177,
+    "end": 179,
+    "title": "Bāhusaccaguṇamakkhanaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 177,
+     "end": 179,
+     "title": "Bāhusaccaguṇamakkhanaṃ",
+     "paras": 3,
+     "chars": 1005,
+     "chunks": [
+      {
+       "id": "38.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 177,
+       "end": 179,
+       "paras": 3,
+       "chars": 1005,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "38.H",
+      "kind": "direct",
+      "chars": 1005,
+      "layers": {
+       "68": [
+        [
+         177,
+         179
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "38.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 39,
+   "title": "Mahāyānikanayavicāraṇā",
+   "cs": [
+    2000006,
+    2000006
+   ],
+   "chars": 1451,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:42:54",
+   "finished": "2026-09-27 17:47:36",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 180,
+    "end": 192,
+    "title": "Mahāyānikanayavicāraṇā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 180,
+     "end": 192,
+     "title": "Mahāyānikanayavicāraṇā",
+     "paras": 13,
+     "chars": 1451,
+     "chunks": [
+      {
+       "id": "39.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 180,
+       "end": 191,
+       "paras": 12,
+       "chars": 1201,
+       "status": "done"
+      },
+      {
+       "id": "39.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 192,
+       "end": 192,
+       "paras": 1,
+       "chars": 250,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "39.H",
+      "kind": "direct",
+      "chars": 1451,
+      "layers": {
+       "68": [
+        [
+         180,
+         192
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "39.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 40,
+   "title": "Sāsanappavattikkamo",
+   "cs": [
+    2000006,
+    2000006
+   ],
+   "chars": 1580,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:44:45",
+   "finished": "2026-09-27 17:47:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 193,
+    "end": 197,
+    "title": "Sāsanappavattikkamo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 193,
+     "end": 197,
+     "title": "Sāsanappavattikkamo",
+     "paras": 5,
+     "chars": 1580,
+     "chunks": [
+      {
+       "id": "40.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 193,
+       "end": 197,
+       "paras": 5,
+       "chars": 1580,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "40.H",
+      "kind": "direct",
+      "chars": 1580,
+      "layers": {
+       "68": [
+        [
+         193,
+         197
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "40.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 41,
+   "title": "30.",
+   "cs": [
+    2000030,
+    2000030
+   ],
+   "chars": 100,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:47:36",
+   "finished": "2026-09-27 17:49:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 198,
+    "end": 200,
+    "title": "30.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 198,
+     "end": 200,
+     "title": "30.",
+     "paras": 3,
+     "chars": 100,
+     "chunks": [
+      {
+       "id": "41.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 198,
+       "end": 200,
+       "paras": 3,
+       "chars": 100,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "41.H",
+      "kind": "direct",
+      "chars": 100,
+      "layers": {
+       "68": [
+        [
+         198,
+         200
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "41.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 42,
+   "title": "31.",
+   "cs": [
+    2000031,
+    2000031
+   ],
+   "chars": 96,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:47:53",
+   "finished": "2026-09-27 17:49:41",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 201,
+    "end": 203,
+    "title": "31.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 201,
+     "end": 203,
+     "title": "31.",
+     "paras": 3,
+     "chars": 96,
+     "chunks": [
+      {
+       "id": "42.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 201,
+       "end": 203,
+       "paras": 3,
+       "chars": 96,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "42.H",
+      "kind": "direct",
+      "chars": 96,
+      "layers": {
+       "68": [
+        [
+         201,
+         203
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "42.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 43,
+   "title": "32.",
+   "cs": [
+    2000032,
+    2000032
+   ],
+   "chars": 95,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:49:23",
+   "finished": "2026-09-27 17:51:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 204,
+    "end": 206,
+    "title": "32.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 204,
+     "end": 206,
+     "title": "32.",
+     "paras": 3,
+     "chars": 95,
+     "chunks": [
+      {
+       "id": "43.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 204,
+       "end": 206,
+       "paras": 3,
+       "chars": 95,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "43.H",
+      "kind": "direct",
+      "chars": 95,
+      "layers": {
+       "68": [
+        [
+         204,
+         206
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "43.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 44,
+   "title": "33.",
+   "cs": [
+    2000033,
+    2000033
+   ],
+   "chars": 109,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:49:41",
+   "finished": "2026-09-27 17:51:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 207,
+    "end": 209,
+    "title": "33.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 207,
+     "end": 209,
+     "title": "33.",
+     "paras": 3,
+     "chars": 109,
+     "chunks": [
+      {
+       "id": "44.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 207,
+       "end": 209,
+       "paras": 3,
+       "chars": 109,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "44.H",
+      "kind": "direct",
+      "chars": 109,
+      "layers": {
+       "68": [
+        [
+         207,
+         209
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "44.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 45,
+   "title": "49.",
+   "cs": [
+    2000049,
+    2000049
+   ],
+   "chars": 100,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:51:04",
+   "finished": "2026-09-27 17:52:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 210,
+    "end": 212,
+    "title": "49.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 210,
+     "end": 212,
+     "title": "49.",
+     "paras": 3,
+     "chars": 100,
+     "chunks": [
+      {
+       "id": "45.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 210,
+       "end": 212,
+       "paras": 3,
+       "chars": 100,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "45.H",
+      "kind": "direct",
+      "chars": 100,
+      "layers": {
+       "68": [
+        [
+         210,
+         212
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "45.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 46,
+   "title": "50.",
+   "cs": [
+    2000050,
+    2000050
+   ],
+   "chars": 94,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:51:21",
+   "finished": "2026-09-27 17:53:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 213,
+    "end": 215,
+    "title": "50.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 213,
+     "end": 215,
+     "title": "50.",
+     "paras": 3,
+     "chars": 94,
+     "chunks": [
+      {
+       "id": "46.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 213,
+       "end": 215,
+       "paras": 3,
+       "chars": 94,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "46.H",
+      "kind": "direct",
+      "chars": 94,
+      "layers": {
+       "68": [
+        [
+         213,
+         215
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "46.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 47,
+   "title": "51.",
+   "cs": [
+    2000051,
+    2000051
+   ],
+   "chars": 88,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:52:52",
+   "finished": "2026-09-27 17:54:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 216,
+    "end": 218,
+    "title": "51.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 216,
+     "end": 218,
+     "title": "51.",
+     "paras": 3,
+     "chars": 88,
+     "chunks": [
+      {
+       "id": "47.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 216,
+       "end": 218,
+       "paras": 3,
+       "chars": 88,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "47.H",
+      "kind": "direct",
+      "chars": 88,
+      "layers": {
+       "68": [
+        [
+         216,
+         218
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "47.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 48,
+   "title": "52.",
+   "cs": [
+    2000052,
+    2000052
+   ],
+   "chars": 131,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:53:09",
+   "finished": "2026-09-27 17:55:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 219,
+    "end": 222,
+    "title": "52.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 219,
+     "end": 222,
+     "title": "52.",
+     "paras": 4,
+     "chars": 131,
+     "chunks": [
+      {
+       "id": "48.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 219,
+       "end": 222,
+       "paras": 4,
+       "chars": 131,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "48.H",
+      "kind": "direct",
+      "chars": 131,
+      "layers": {
+       "68": [
+        [
+         219,
+         222
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "48.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 49,
+   "title": "53.",
+   "cs": [
+    2000053,
+    2000053
+   ],
+   "chars": 3703,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:54:32",
+   "finished": "2026-09-27 17:59:03",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 223,
+    "end": 230,
+    "title": "53.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 223,
+     "end": 230,
+     "title": "53.",
+     "paras": 8,
+     "chars": 3703,
+     "chunks": [
+      {
+       "id": "49.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 223,
+       "end": 230,
+       "paras": 8,
+       "chars": 3703,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "49.H",
+      "kind": "direct",
+      "chars": 3703,
+      "layers": {
+       "68": [
+        [
+         223,
+         230
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "49.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 50,
+   "title": "Abhayagirinikāyuppatti",
+   "cs": [
+    2000053,
+    2000053
+   ],
+   "chars": 1961,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:55:04",
+   "finished": "2026-09-27 17:58:45",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 231,
+    "end": 233,
+    "title": "Abhayagirinikāyuppatti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 231,
+     "end": 233,
+     "title": "Abhayagirinikāyuppatti",
+     "paras": 3,
+     "chars": 1961,
+     "chunks": [
+      {
+       "id": "50.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 231,
+       "end": 233,
+       "paras": 3,
+       "chars": 1961,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "50.H",
+      "kind": "direct",
+      "chars": 1961,
+      "layers": {
+       "68": [
+        [
+         231,
+         233
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "50.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 51,
+   "title": "Dhammarucinikāyuppatti",
+   "cs": [
+    2000053,
+    2000053
+   ],
+   "chars": 670,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:58:45",
+   "finished": "2026-09-27 18:01:24",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 234,
+    "end": 235,
+    "title": "Dhammarucinikāyuppatti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 234,
+     "end": 235,
+     "title": "Dhammarucinikāyuppatti",
+     "paras": 2,
+     "chars": 670,
+     "chunks": [
+      {
+       "id": "51.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 234,
+       "end": 235,
+       "paras": 2,
+       "chars": 670,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "51.H",
+      "kind": "direct",
+      "chars": 670,
+      "layers": {
+       "68": [
+        [
+         234,
+         235
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "51.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 52,
+   "title": "Piṭakattayassa potthakāropanaṃ",
+   "cs": [
+    2000053,
+    2000053
+   ],
+   "chars": 1875,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 17:59:03",
+   "finished": "2026-09-27 18:02:18",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 236,
+    "end": 238,
+    "title": "Piṭakattayassa potthakāropanaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 236,
+     "end": 238,
+     "title": "Piṭakattayassa potthakāropanaṃ",
+     "paras": 3,
+     "chars": 1875,
+     "chunks": [
+      {
+       "id": "52.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 236,
+       "end": 238,
+       "paras": 3,
+       "chars": 1875,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "52.H",
+      "kind": "direct",
+      "chars": 1875,
+      "layers": {
+       "68": [
+        [
+         236,
+         238
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "52.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 53,
+   "title": "Adhammavāduppatti",
+   "cs": [
+    2000053,
+    2000053
+   ],
+   "chars": 3388,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:01:24",
+   "finished": "2026-09-27 18:08:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 239,
+    "end": 256,
+    "title": "Adhammavāduppatti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 239,
+     "end": 256,
+     "title": "Adhammavāduppatti",
+     "paras": 18,
+     "chars": 3388,
+     "chunks": [
+      {
+       "id": "53.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 239,
+       "end": 250,
+       "paras": 12,
+       "chars": 1573,
+       "status": "done"
+      },
+      {
+       "id": "53.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 251,
+       "end": 256,
+       "paras": 6,
+       "chars": 1815,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "53.H",
+      "kind": "direct",
+      "chars": 3388,
+      "layers": {
+       "68": [
+        [
+         239,
+         256
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "53.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 54,
+   "title": "Vetullavādassa paṭhamaniggaho",
+   "cs": [
+    2000053,
+    2000053
+   ],
+   "chars": 609,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:02:18",
+   "finished": "2026-09-27 18:04:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 257,
+    "end": 258,
+    "title": "Vetullavādassa paṭhamaniggaho",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 257,
+     "end": 258,
+     "title": "Vetullavādassa paṭhamaniggaho",
+     "paras": 2,
+     "chars": 609,
+     "chunks": [
+      {
+       "id": "54.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 257,
+       "end": 258,
+       "paras": 2,
+       "chars": 609,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "54.H",
+      "kind": "direct",
+      "chars": 609,
+      "layers": {
+       "68": [
+        [
+         257,
+         258
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "54.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 55,
+   "title": "36-41.",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 97,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:04:32",
+   "finished": "2026-09-27 18:06:24",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 259,
+    "end": 261,
+    "title": "36-41.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 259,
+     "end": 261,
+     "title": "36-41.",
+     "paras": 3,
+     "chars": 97,
+     "chunks": [
+      {
+       "id": "55.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 259,
+       "end": 261,
+       "paras": 3,
+       "chars": 97,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "55.H",
+      "kind": "direct",
+      "chars": 97,
+      "layers": {
+       "68": [
+        [
+         259,
+         261
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "55.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 56,
+   "title": "Sāgaliyanikāyuppatti",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 667,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:06:24",
+   "finished": "2026-09-27 18:08:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 262,
+    "end": 263,
+    "title": "Sāgaliyanikāyuppatti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 262,
+     "end": 263,
+     "title": "Sāgaliyanikāyuppatti",
+     "paras": 2,
+     "chars": 667,
+     "chunks": [
+      {
+       "id": "56.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 262,
+       "end": 263,
+       "paras": 2,
+       "chars": 667,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "56.H",
+      "kind": "direct",
+      "chars": 667,
+      "layers": {
+       "68": [
+        [
+         262,
+         263
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "56.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 57,
+   "title": "Vetullavādassa dutiyaniggaho",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 2143,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:08:52",
+   "finished": "2026-09-27 18:12:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 264,
+    "end": 267,
+    "title": "Vetullavādassa dutiyaniggaho",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 264,
+     "end": 267,
+     "title": "Vetullavādassa dutiyaniggaho",
+     "paras": 4,
+     "chars": 2143,
+     "chunks": [
+      {
+       "id": "57.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 264,
+       "end": 267,
+       "paras": 4,
+       "chars": 2143,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "57.H",
+      "kind": "direct",
+      "chars": 2143,
+      "layers": {
+       "68": [
+        [
+         264,
+         267
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "57.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 58,
+   "title": "Vetullavādo",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 2222,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:09:02",
+   "finished": "2026-09-27 18:12:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 268,
+    "end": 279,
+    "title": "Vetullavādo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 268,
+     "end": 279,
+     "title": "Vetullavādo",
+     "paras": 12,
+     "chars": 2222,
+     "chunks": [
+      {
+       "id": "58.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 268,
+       "end": 279,
+       "paras": 12,
+       "chars": 2222,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "58.H",
+      "kind": "direct",
+      "chars": 2222,
+      "layers": {
+       "68": [
+        [
+         268,
+         279
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "58.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 59,
+   "title": "Mahāvihāranāsanaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 612,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:12:07",
+   "finished": "2026-09-27 18:14:45",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 280,
+    "end": 281,
+    "title": "Mahāvihāranāsanaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 280,
+     "end": 281,
+     "title": "Mahāvihāranāsanaṃ",
+     "paras": 2,
+     "chars": 612,
+     "chunks": [
+      {
+       "id": "59.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 280,
+       "end": 281,
+       "paras": 2,
+       "chars": 612,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "59.H",
+      "kind": "direct",
+      "chars": 612,
+      "layers": {
+       "68": [
+        [
+         280,
+         281
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "59.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 60,
+   "title": "Jetavanavāsinikāyuppatti",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1379,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:12:54",
+   "finished": "2026-09-27 18:16:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 282,
+    "end": 284,
+    "title": "Jetavanavāsinikāyuppatti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 282,
+     "end": 284,
+     "title": "Jetavanavāsinikāyuppatti",
+     "paras": 3,
+     "chars": 1379,
+     "chunks": [
+      {
+       "id": "60.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 282,
+       "end": 284,
+       "paras": 3,
+       "chars": 1379,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "60.H",
+      "kind": "direct",
+      "chars": 1379,
+      "layers": {
+       "68": [
+        [
+         282,
+         284
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "60.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 61,
+   "title": "Phāhiyamaddhānakkamakathā",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 2634,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:14:46",
+   "finished": "2026-09-27 18:19:31",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 285,
+    "end": 289,
+    "title": "Phāhiyamaddhānakkamakathā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 285,
+     "end": 289,
+     "title": "Phāhiyamaddhānakkamakathā",
+     "paras": 5,
+     "chars": 2634,
+     "chunks": [
+      {
+       "id": "61.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 285,
+       "end": 289,
+       "paras": 5,
+       "chars": 2634,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "61.H",
+      "kind": "direct",
+      "chars": 2634,
+      "layers": {
+       "68": [
+        [
+         285,
+         289
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "61.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 62,
+   "title": "Marammaraṭṭhikabhāvakathā",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 648,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:16:09",
+   "finished": "2026-09-27 18:18:59",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 290,
+    "end": 291,
+    "title": "Marammaraṭṭhikabhāvakathā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 290,
+     "end": 291,
+     "title": "Marammaraṭṭhikabhāvakathā",
+     "paras": 2,
+     "chars": 648,
+     "chunks": [
+      {
+       "id": "62.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 290,
+       "end": 291,
+       "paras": 2,
+       "chars": 648,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "62.H",
+      "kind": "direct",
+      "chars": 648,
+      "layers": {
+       "68": [
+        [
+         290,
+         291
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "62.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 63,
+   "title": "Dakkhiṇaindiyaraṭṭhikabhāvayutti",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 3788,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:18:59",
+   "finished": "2026-09-27 18:27:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 292,
+    "end": 306,
+    "title": "Dakkhiṇaindiyaraṭṭhikabhāvayutti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 292,
+     "end": 306,
+     "title": "Dakkhiṇaindiyaraṭṭhikabhāvayutti",
+     "paras": 15,
+     "chars": 3788,
+     "chunks": [
+      {
+       "id": "63.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 292,
+       "end": 303,
+       "paras": 12,
+       "chars": 2024,
+       "status": "done"
+      },
+      {
+       "id": "63.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 304,
+       "end": 306,
+       "paras": 3,
+       "chars": 1764,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "63.H",
+      "kind": "direct",
+      "chars": 3788,
+      "layers": {
+       "68": [
+        [
+         292,
+         306
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "63.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 64,
+   "title": "Ācariyabuddhaghosattherassa aṭṭhuppatti",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 5509,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:19:31",
+   "finished": "2026-09-27 18:26:44",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 307,
+    "end": 319,
+    "title": "Ācariyabuddhaghosattherassa aṭṭhuppatti",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 307,
+     "end": 319,
+     "title": "Ācariyabuddhaghosattherassa aṭṭhuppatti",
+     "paras": 13,
+     "chars": 5509,
+     "chunks": [
+      {
+       "id": "64.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 307,
+       "end": 318,
+       "paras": 12,
+       "chars": 4900,
+       "status": "done"
+      },
+      {
+       "id": "64.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 319,
+       "end": 319,
+       "paras": 1,
+       "chars": 609,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "64.H",
+      "kind": "direct",
+      "chars": 5509,
+      "layers": {
+       "68": [
+        [
+         307,
+         319
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "64.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 65,
+   "title": "Āyācanakāraṇaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1343,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:26:44",
+   "finished": "2026-09-27 18:30:06",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 320,
+    "end": 321,
+    "title": "Āyācanakāraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 320,
+     "end": 321,
+     "title": "Āyācanakāraṇaṃ",
+     "paras": 2,
+     "chars": 1343,
+     "chunks": [
+      {
+       "id": "65.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 320,
+       "end": 321,
+       "paras": 2,
+       "chars": 1343,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "65.H",
+      "kind": "direct",
+      "chars": 1343,
+      "layers": {
+       "68": [
+        [
+         320,
+         321
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "65.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 66,
+   "title": "Visuddhimaggassa karaṇaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1324,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:27:23",
+   "finished": "2026-09-27 18:32:28",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 322,
+    "end": 336,
+    "title": "Visuddhimaggassa karaṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 322,
+     "end": 336,
+     "title": "Visuddhimaggassa karaṇaṃ",
+     "paras": 15,
+     "chars": 1324,
+     "chunks": [
+      {
+       "id": "66.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 322,
+       "end": 333,
+       "paras": 12,
+       "chars": 1169,
+       "status": "done"
+      },
+      {
+       "id": "66.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 334,
+       "end": 336,
+       "paras": 3,
+       "chars": 155,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "66.H",
+      "kind": "direct",
+      "chars": 1324,
+      "layers": {
+       "68": [
+        [
+         322,
+         336
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "66.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 67,
+   "title": "Tannissayo",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1506,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:30:06",
+   "finished": "2026-09-27 18:36:16",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 337,
+    "end": 350,
+    "title": "Tannissayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 337,
+     "end": 350,
+     "title": "Tannissayo",
+     "paras": 14,
+     "chars": 1506,
+     "chunks": [
+      {
+       "id": "67.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 337,
+       "end": 348,
+       "paras": 12,
+       "chars": 1166,
+       "status": "done"
+      },
+      {
+       "id": "67.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 349,
+       "end": 350,
+       "paras": 2,
+       "chars": 340,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "67.H",
+      "kind": "direct",
+      "chars": 1506,
+      "layers": {
+       "68": [
+        [
+         337,
+         350
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "67.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 68,
+   "title": "Takkaraṇappakāro",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1975,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:32:28",
+   "finished": "2026-09-27 18:36:41",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 351,
+    "end": 356,
+    "title": "Takkaraṇappakāro",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 351,
+     "end": 356,
+     "title": "Takkaraṇappakāro",
+     "paras": 6,
+     "chars": 1975,
+     "chunks": [
+      {
+       "id": "68.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 351,
+       "end": 356,
+       "paras": 6,
+       "chars": 1975,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "68.H",
+      "kind": "direct",
+      "chars": 1975,
+      "layers": {
+       "68": [
+        [
+         351,
+         356
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "68.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 69,
+   "title": "Vimuttimaggapakaraṇaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 6991,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:36:16",
+   "finished": "2026-09-27 18:48:51",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 357,
+    "end": 383,
+    "title": "Vimuttimaggapakaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 357,
+     "end": 383,
+     "title": "Vimuttimaggapakaraṇaṃ",
+     "paras": 27,
+     "chars": 6991,
+     "chunks": [
+      {
+       "id": "69.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 357,
+       "end": 368,
+       "paras": 12,
+       "chars": 2933,
+       "status": "done"
+      },
+      {
+       "id": "69.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 369,
+       "end": 380,
+       "paras": 12,
+       "chars": 2887,
+       "status": "done"
+      },
+      {
+       "id": "69.1.3",
+       "kind": "chunk",
+       "book": 68,
+       "start": 381,
+       "end": 383,
+       "paras": 3,
+       "chars": 1171,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "69.H",
+      "kind": "direct",
+      "chars": 6991,
+      "layers": {
+       "68": [
+        [
+         357,
+         383
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "69.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 70,
+   "title": "Nissayaṭṭhakathāvibhāvanā",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1596,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:36:41",
+   "finished": "2026-09-27 18:40:08",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 384,
+    "end": 387,
+    "title": "Nissayaṭṭhakathāvibhāvanā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 384,
+     "end": 387,
+     "title": "Nissayaṭṭhakathāvibhāvanā",
+     "paras": 4,
+     "chars": 1596,
+     "chunks": [
+      {
+       "id": "70.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 384,
+       "end": 387,
+       "paras": 4,
+       "chars": 1596,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "70.H",
+      "kind": "direct",
+      "chars": 1596,
+      "layers": {
+       "68": [
+        [
+         384,
+         387
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "70.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 71,
+   "title": "Porāṇavacanadassanaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 1120,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:40:08",
+   "finished": "2026-09-27 18:43:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 388,
+    "end": 392,
+    "title": "Porāṇavacanadassanaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 388,
+     "end": 392,
+     "title": "Porāṇavacanadassanaṃ",
+     "paras": 5,
+     "chars": 1120,
+     "chunks": [
+      {
+       "id": "71.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 388,
+       "end": 392,
+       "paras": 5,
+       "chars": 1120,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "71.H",
+      "kind": "direct",
+      "chars": 1120,
+      "layers": {
+       "68": [
+        [
+         388,
+         392
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "71.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 72,
+   "title": "Vinayaṭṭhakathākaraṇaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 3918,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:43:50",
+   "finished": "2026-09-27 18:53:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 393,
+    "end": 418,
+    "title": "Vinayaṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 393,
+     "end": 418,
+     "title": "Vinayaṭṭhakathākaraṇaṃ",
+     "paras": 26,
+     "chars": 3918,
+     "chunks": [
+      {
+       "id": "72.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 393,
+       "end": 404,
+       "paras": 12,
+       "chars": 1263,
+       "status": "done"
+      },
+      {
+       "id": "72.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 405,
+       "end": 416,
+       "paras": 12,
+       "chars": 605,
+       "status": "done"
+      },
+      {
+       "id": "72.1.3",
+       "kind": "chunk",
+       "book": 68,
+       "start": 417,
+       "end": 418,
+       "paras": 2,
+       "chars": 2050,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "72.H",
+      "kind": "direct",
+      "chars": 3918,
+      "layers": {
+       "68": [
+        [
+         393,
+         418
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "72.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 73,
+   "title": "Āgamaṭṭhakathākaraṇaṃ",
+   "cs": [
+    4000036,
+    4000036
+   ],
+   "chars": 3416,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:48:51",
+   "finished": "2026-09-27 19:02:19",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 419,
+    "end": 461,
+    "title": "Āgamaṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 419,
+     "end": 461,
+     "title": "Āgamaṭṭhakathākaraṇaṃ",
+     "paras": 43,
+     "chars": 3416,
+     "chunks": [
+      {
+       "id": "73.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 419,
+       "end": 430,
+       "paras": 12,
+       "chars": 804,
+       "status": "done"
+      },
+      {
+       "id": "73.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 431,
+       "end": 442,
+       "paras": 12,
+       "chars": 1032,
+       "status": "done"
+      },
+      {
+       "id": "73.1.3",
+       "kind": "chunk",
+       "book": 68,
+       "start": 443,
+       "end": 454,
+       "paras": 12,
+       "chars": 799,
+       "status": "done"
+      },
+      {
+       "id": "73.1.4",
+       "kind": "chunk",
+       "book": 68,
+       "start": 455,
+       "end": 461,
+       "paras": 7,
+       "chars": 781,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "73.H",
+      "kind": "direct",
+      "chars": 3416,
+      "layers": {
+       "68": [
+        [
+         419,
+         461
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "73.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 74,
+   "title": "Abhidhammaṭṭhakathākaraṇaṃ",
+   "cs": [
+    4000036,
+    4000225
+   ],
+   "chars": 6643,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 18:53:53",
+   "finished": "2026-09-27 19:08:00",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 462,
+    "end": 499,
+    "title": "Abhidhammaṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 462,
+     "end": 499,
+     "title": "Abhidhammaṭṭhakathākaraṇaṃ",
+     "paras": 38,
+     "chars": 6643,
+     "chunks": [
+      {
+       "id": "74.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 462,
+       "end": 473,
+       "paras": 12,
+       "chars": 868,
+       "status": "done"
+      },
+      {
+       "id": "74.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 474,
+       "end": 485,
+       "paras": 12,
+       "chars": 1082,
+       "status": "done"
+      },
+      {
+       "id": "74.1.3",
+       "kind": "chunk",
+       "book": 68,
+       "start": 486,
+       "end": 497,
+       "paras": 12,
+       "chars": 4341,
+       "status": "done"
+      },
+      {
+       "id": "74.1.4",
+       "kind": "chunk",
+       "book": 68,
+       "start": 498,
+       "end": 499,
+       "paras": 2,
+       "chars": 352,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "74.H",
+      "kind": "direct",
+      "chars": 6643,
+      "layers": {
+       "68": [
+        [
+         462,
+         499
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "74.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 75,
+   "title": "Kaṅkhāvitaraṇīaṭṭhakathākaraṇaṃ",
+   "cs": [
+    4000225,
+    4000225
+   ],
+   "chars": 912,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:02:19",
+   "finished": "2026-09-27 19:07:43",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 500,
+    "end": 513,
+    "title": "Kaṅkhāvitaraṇīaṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 500,
+     "end": 513,
+     "title": "Kaṅkhāvitaraṇīaṭṭhakathākaraṇaṃ",
+     "paras": 14,
+     "chars": 912,
+     "chunks": [
+      {
+       "id": "75.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 500,
+       "end": 511,
+       "paras": 12,
+       "chars": 784,
+       "status": "done"
+      },
+      {
+       "id": "75.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 512,
+       "end": 513,
+       "paras": 2,
+       "chars": 128,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "75.H",
+      "kind": "direct",
+      "chars": 912,
+      "layers": {
+       "68": [
+        [
+         500,
+         513
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "75.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 76,
+   "title": "Dhammapadaṭṭhakathākaraṇaṃ",
+   "cs": [
+    4000225,
+    4000225
+   ],
+   "chars": 1776,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:07:43",
+   "finished": "2026-09-27 19:14:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 514,
+    "end": 529,
+    "title": "Dhammapadaṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 514,
+     "end": 529,
+     "title": "Dhammapadaṭṭhakathākaraṇaṃ",
+     "paras": 16,
+     "chars": 1776,
+     "chunks": [
+      {
+       "id": "76.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 514,
+       "end": 525,
+       "paras": 12,
+       "chars": 1401,
+       "status": "done"
+      },
+      {
+       "id": "76.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 526,
+       "end": 529,
+       "paras": 4,
+       "chars": 375,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "76.H",
+      "kind": "direct",
+      "chars": 1776,
+      "layers": {
+       "68": [
+        [
+         514,
+         529
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "76.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 77,
+   "title": "37-212.",
+   "cs": [
+    6000037,
+    6000037
+   ],
+   "chars": 94,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:08:00",
+   "finished": "2026-09-27 19:10:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 530,
+    "end": 532,
+    "title": "37-212.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 530,
+     "end": 532,
+     "title": "37-212.",
+     "paras": 3,
+     "chars": 94,
+     "chunks": [
+      {
+       "id": "77.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 530,
+       "end": 532,
+       "paras": 3,
+       "chars": 94,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "77.H",
+      "kind": "direct",
+      "chars": 94,
+      "layers": {
+       "68": [
+        [
+         530,
+         532
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "77.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 78,
+   "title": "213.",
+   "cs": [
+    6000213,
+    6000213
+   ],
+   "chars": 407,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:10:07",
+   "finished": "2026-09-27 19:12:44",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 533,
+    "end": 536,
+    "title": "213.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 533,
+     "end": 536,
+     "title": "213.",
+     "paras": 4,
+     "chars": 407,
+     "chunks": [
+      {
+       "id": "78.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 533,
+       "end": 536,
+       "paras": 4,
+       "chars": 407,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "78.H",
+      "kind": "direct",
+      "chars": 407,
+      "layers": {
+       "68": [
+        [
+         533,
+         536
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "78.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 79,
+   "title": "Paramatthajotikāṭṭhakathākaraṇaṃ",
+   "cs": [
+    6000213,
+    6000213
+   ],
+   "chars": 1666,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:12:44",
+   "finished": "2026-09-27 19:18:03",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 537,
+    "end": 549,
+    "title": "Paramatthajotikāṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 537,
+     "end": 549,
+     "title": "Paramatthajotikāṭṭhakathākaraṇaṃ",
+     "paras": 13,
+     "chars": 1666,
+     "chunks": [
+      {
+       "id": "79.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 537,
+       "end": 548,
+       "paras": 12,
+       "chars": 653,
+       "status": "done"
+      },
+      {
+       "id": "79.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 549,
+       "end": 549,
+       "paras": 1,
+       "chars": 1013,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "79.H",
+      "kind": "direct",
+      "chars": 1666,
+      "layers": {
+       "68": [
+        [
+         537,
+         549
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "79.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 80,
+   "title": "Jātakaṭṭhakathākaraṇaṃ",
+   "cs": [
+    6000213,
+    6000213
+   ],
+   "chars": 920,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:14:07",
+   "finished": "2026-09-27 19:18:28",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 550,
+    "end": 562,
+    "title": "Jātakaṭṭhakathākaraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 550,
+     "end": 562,
+     "title": "Jātakaṭṭhakathākaraṇaṃ",
+     "paras": 13,
+     "chars": 920,
+     "chunks": [
+      {
+       "id": "80.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 550,
+       "end": 561,
+       "paras": 12,
+       "chars": 777,
+       "status": "done"
+      },
+      {
+       "id": "80.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 562,
+       "end": 562,
+       "paras": 1,
+       "chars": 143,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "80.H",
+      "kind": "direct",
+      "chars": 920,
+      "layers": {
+       "68": [
+        [
+         550,
+         562
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "80.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 81,
+   "title": "Sakalalokapatthārakāraṇaṃ",
+   "cs": [
+    6000213,
+    6000213
+   ],
+   "chars": 6175,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:18:04",
+   "finished": "2026-09-27 19:32:39",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 563,
+    "end": 609,
+    "title": "Sakalalokapatthārakāraṇaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 563,
+     "end": 609,
+     "title": "Sakalalokapatthārakāraṇaṃ",
+     "paras": 47,
+     "chars": 6175,
+     "chunks": [
+      {
+       "id": "81.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 563,
+       "end": 574,
+       "paras": 12,
+       "chars": 1511,
+       "status": "done"
+      },
+      {
+       "id": "81.1.2",
+       "kind": "chunk",
+       "book": 68,
+       "start": 575,
+       "end": 586,
+       "paras": 12,
+       "chars": 654,
+       "status": "done"
+      },
+      {
+       "id": "81.1.3",
+       "kind": "chunk",
+       "book": 68,
+       "start": 587,
+       "end": 598,
+       "paras": 12,
+       "chars": 2079,
+       "status": "done"
+      },
+      {
+       "id": "81.1.4",
+       "kind": "chunk",
+       "book": 68,
+       "start": 599,
+       "end": 609,
+       "paras": 11,
+       "chars": 1931,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "81.H",
+      "kind": "direct",
+      "chars": 6175,
+      "layers": {
+       "68": [
+        [
+         563,
+         609
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "81.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 82,
+   "title": "1.",
+   "cs": [
+    8000001,
+    8000001
+   ],
+   "chars": 118,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:18:28",
+   "finished": "2026-09-27 19:21:12",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 610,
+    "end": 614,
+    "title": "1.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 610,
+     "end": 614,
+     "title": "1.",
+     "paras": 5,
+     "chars": 118,
+     "chunks": [
+      {
+       "id": "82.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 610,
+       "end": 614,
+       "paras": 5,
+       "chars": 118,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "82.H",
+      "kind": "direct",
+      "chars": 118,
+      "layers": {
+       "68": [
+        [
+         610,
+         614
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "82.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 83,
+   "title": "2.",
+   "cs": [
+    8000002,
+    8000002
+   ],
+   "chars": 123,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:21:12",
+   "finished": "2026-09-27 19:24:10",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 615,
+    "end": 619,
+    "title": "2.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 615,
+     "end": 619,
+     "title": "2.",
+     "paras": 5,
+     "chars": 123,
+     "chunks": [
+      {
+       "id": "83.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 615,
+       "end": 619,
+       "paras": 5,
+       "chars": 123,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "83.H",
+      "kind": "direct",
+      "chars": 123,
+      "layers": {
+       "68": [
+        [
+         615,
+         619
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "83.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 84,
+   "title": "3.",
+   "cs": [
+    8000003,
+    8000003
+   ],
+   "chars": 126,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:24:10",
+   "finished": "2026-09-27 19:26:46",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 620,
+    "end": 624,
+    "title": "3.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 620,
+     "end": 624,
+     "title": "3.",
+     "paras": 5,
+     "chars": 126,
+     "chunks": [
+      {
+       "id": "84.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 620,
+       "end": 624,
+       "paras": 5,
+       "chars": 126,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "84.H",
+      "kind": "direct",
+      "chars": 126,
+      "layers": {
+       "68": [
+        [
+         620,
+         624
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "84.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 85,
+   "title": "4.",
+   "cs": [
+    8000004,
+    8000004
+   ],
+   "chars": 121,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:26:46",
+   "finished": "2026-09-27 19:29:45",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 625,
+    "end": 629,
+    "title": "4.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 625,
+     "end": 629,
+     "title": "4.",
+     "paras": 5,
+     "chars": 121,
+     "chunks": [
+      {
+       "id": "85.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 625,
+       "end": 629,
+       "paras": 5,
+       "chars": 121,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "85.H",
+      "kind": "direct",
+      "chars": 121,
+      "layers": {
+       "68": [
+        [
+         625,
+         629
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "85.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 86,
+   "title": "5.",
+   "cs": [
+    8000005,
+    8000005
+   ],
+   "chars": 119,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:29:45",
+   "finished": "2026-09-27 19:32:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 630,
+    "end": 634,
+    "title": "5.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 630,
+     "end": 634,
+     "title": "5.",
+     "paras": 5,
+     "chars": 119,
+     "chunks": [
+      {
+       "id": "86.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 630,
+       "end": 634,
+       "paras": 5,
+       "chars": 119,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "86.H",
+      "kind": "direct",
+      "chars": 119,
+      "layers": {
+       "68": [
+        [
+         630,
+         634
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "86.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 87,
+   "title": "6.",
+   "cs": [
+    8000006,
+    8000006
+   ],
+   "chars": 118,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:32:21",
+   "finished": "2026-09-27 19:34:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 635,
+    "end": 639,
+    "title": "6.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 635,
+     "end": 639,
+     "title": "6.",
+     "paras": 5,
+     "chars": 118,
+     "chunks": [
+      {
+       "id": "87.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 635,
+       "end": 639,
+       "paras": 5,
+       "chars": 118,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "87.H",
+      "kind": "direct",
+      "chars": 118,
+      "layers": {
+       "68": [
+        [
+         635,
+         639
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "87.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 88,
+   "title": "7.",
+   "cs": [
+    8000007,
+    8000007
+   ],
+   "chars": 119,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:32:39",
+   "finished": "2026-09-27 19:34:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 640,
+    "end": 644,
+    "title": "7.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 640,
+     "end": 644,
+     "title": "7.",
+     "paras": 5,
+     "chars": 119,
+     "chunks": [
+      {
+       "id": "88.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 640,
+       "end": 644,
+       "paras": 5,
+       "chars": 119,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "88.H",
+      "kind": "direct",
+      "chars": 119,
+      "layers": {
+       "68": [
+        [
+         640,
+         644
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "88.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 89,
+   "title": "8.",
+   "cs": [
+    8000008,
+    8000008
+   ],
+   "chars": 121,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:34:32",
+   "finished": "2026-09-27 19:36:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 645,
+    "end": 649,
+    "title": "8.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 645,
+     "end": 649,
+     "title": "8.",
+     "paras": 5,
+     "chars": 121,
+     "chunks": [
+      {
+       "id": "89.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 645,
+       "end": 649,
+       "paras": 5,
+       "chars": 121,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "89.H",
+      "kind": "direct",
+      "chars": 121,
+      "layers": {
+       "68": [
+        [
+         645,
+         649
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "89.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 90,
+   "title": "9.",
+   "cs": [
+    8000009,
+    8000009
+   ],
+   "chars": 120,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:34:56",
+   "finished": "2026-09-27 19:37:36",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 650,
+    "end": 654,
+    "title": "9.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 650,
+     "end": 654,
+     "title": "9.",
+     "paras": 5,
+     "chars": 120,
+     "chunks": [
+      {
+       "id": "90.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 650,
+       "end": 654,
+       "paras": 5,
+       "chars": 120,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "90.H",
+      "kind": "direct",
+      "chars": 120,
+      "layers": {
+       "68": [
+        [
+         650,
+         654
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "90.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 91,
+   "title": "10.",
+   "cs": [
+    8000010,
+    8000010
+   ],
+   "chars": 118,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:36:56",
+   "finished": "2026-09-27 19:39:14",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 655,
+    "end": 659,
+    "title": "10.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 655,
+     "end": 659,
+     "title": "10.",
+     "paras": 5,
+     "chars": 118,
+     "chunks": [
+      {
+       "id": "91.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 655,
+       "end": 659,
+       "paras": 5,
+       "chars": 118,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "91.H",
+      "kind": "direct",
+      "chars": 118,
+      "layers": {
+       "68": [
+        [
+         655,
+         659
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "91.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 92,
+   "title": "11.",
+   "cs": [
+    8000011,
+    8000011
+   ],
+   "chars": 125,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:37:36",
+   "finished": "2026-09-27 19:39:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 660,
+    "end": 664,
+    "title": "11.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 660,
+     "end": 664,
+     "title": "11.",
+     "paras": 5,
+     "chars": 125,
+     "chunks": [
+      {
+       "id": "92.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 660,
+       "end": 664,
+       "paras": 5,
+       "chars": 125,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "92.H",
+      "kind": "direct",
+      "chars": 125,
+      "layers": {
+       "68": [
+        [
+         660,
+         664
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "92.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 93,
+   "title": "12.",
+   "cs": [
+    8000012,
+    8000012
+   ],
+   "chars": 125,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:39:14",
+   "finished": "2026-09-27 19:41:46",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 665,
+    "end": 669,
+    "title": "12.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 665,
+     "end": 669,
+     "title": "12.",
+     "paras": 5,
+     "chars": 125,
+     "chunks": [
+      {
+       "id": "93.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 665,
+       "end": 669,
+       "paras": 5,
+       "chars": 125,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "93.H",
+      "kind": "direct",
+      "chars": 125,
+      "layers": {
+       "68": [
+        [
+         665,
+         669
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "93.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 94,
+   "title": "13.",
+   "cs": [
+    8000013,
+    8000013
+   ],
+   "chars": 122,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:39:53",
+   "finished": "2026-09-27 19:42:25",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 670,
+    "end": 674,
+    "title": "13.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 670,
+     "end": 674,
+     "title": "13.",
+     "paras": 5,
+     "chars": 122,
+     "chunks": [
+      {
+       "id": "94.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 670,
+       "end": 674,
+       "paras": 5,
+       "chars": 122,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "94.H",
+      "kind": "direct",
+      "chars": 122,
+      "layers": {
+       "68": [
+        [
+         670,
+         674
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "94.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 95,
+   "title": "14.",
+   "cs": [
+    8000014,
+    8000014
+   ],
+   "chars": 127,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:41:46",
+   "finished": "2026-09-27 19:44:18",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 675,
+    "end": 679,
+    "title": "14.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 675,
+     "end": 679,
+     "title": "14.",
+     "paras": 5,
+     "chars": 127,
+     "chunks": [
+      {
+       "id": "95.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 675,
+       "end": 679,
+       "paras": 5,
+       "chars": 127,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "95.H",
+      "kind": "direct",
+      "chars": 127,
+      "layers": {
+       "68": [
+        [
+         675,
+         679
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "95.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 96,
+   "title": "15.",
+   "cs": [
+    8000015,
+    8000015
+   ],
+   "chars": 117,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:42:25",
+   "finished": "2026-09-27 19:45:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 680,
+    "end": 684,
+    "title": "15.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 680,
+     "end": 684,
+     "title": "15.",
+     "paras": 5,
+     "chars": 117,
+     "chunks": [
+      {
+       "id": "96.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 680,
+       "end": 684,
+       "paras": 5,
+       "chars": 117,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "96.H",
+      "kind": "direct",
+      "chars": 117,
+      "layers": {
+       "68": [
+        [
+         680,
+         684
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "96.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 97,
+   "title": "16.",
+   "cs": [
+    8000016,
+    8000016
+   ],
+   "chars": 120,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:44:18",
+   "finished": "2026-09-27 19:46:43",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 685,
+    "end": 689,
+    "title": "16.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 685,
+     "end": 689,
+     "title": "16.",
+     "paras": 5,
+     "chars": 120,
+     "chunks": [
+      {
+       "id": "97.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 685,
+       "end": 689,
+       "paras": 5,
+       "chars": 120,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "97.H",
+      "kind": "direct",
+      "chars": 120,
+      "layers": {
+       "68": [
+        [
+         685,
+         689
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "97.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 98,
+   "title": "17.",
+   "cs": [
+    8000017,
+    8000017
+   ],
+   "chars": 115,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:45:05",
+   "finished": "2026-09-27 19:47:37",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 690,
+    "end": 694,
+    "title": "17.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 690,
+     "end": 694,
+     "title": "17.",
+     "paras": 5,
+     "chars": 115,
+     "chunks": [
+      {
+       "id": "98.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 690,
+       "end": 694,
+       "paras": 5,
+       "chars": 115,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "98.H",
+      "kind": "direct",
+      "chars": 115,
+      "layers": {
+       "68": [
+        [
+         690,
+         694
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "98.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 99,
+   "title": "18.",
+   "cs": [
+    8000018,
+    8000018
+   ],
+   "chars": 124,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:46:43",
+   "finished": "2026-09-27 19:49:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 695,
+    "end": 699,
+    "title": "18.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 695,
+     "end": 699,
+     "title": "18.",
+     "paras": 5,
+     "chars": 124,
+     "chunks": [
+      {
+       "id": "99.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 695,
+       "end": 699,
+       "paras": 5,
+       "chars": 124,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "99.H",
+      "kind": "direct",
+      "chars": 124,
+      "layers": {
+       "68": [
+        [
+         695,
+         699
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "99.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 100,
+   "title": "19.",
+   "cs": [
+    8000019,
+    8000019
+   ],
+   "chars": 124,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:47:37",
+   "finished": "2026-09-27 19:49:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 700,
+    "end": 704,
+    "title": "19.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 700,
+     "end": 704,
+     "title": "19.",
+     "paras": 5,
+     "chars": 124,
+     "chunks": [
+      {
+       "id": "100.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 700,
+       "end": 704,
+       "paras": 5,
+       "chars": 124,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "100.H",
+      "kind": "direct",
+      "chars": 124,
+      "layers": {
+       "68": [
+        [
+         700,
+         704
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "100.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 101,
+   "title": "20.",
+   "cs": [
+    8000020,
+    8000020
+   ],
+   "chars": 118,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:49:22",
+   "finished": "2026-09-27 19:51:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 705,
+    "end": 709,
+    "title": "20.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 705,
+     "end": 709,
+     "title": "20.",
+     "paras": 5,
+     "chars": 118,
+     "chunks": [
+      {
+       "id": "101.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 705,
+       "end": 709,
+       "paras": 5,
+       "chars": 118,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "101.H",
+      "kind": "direct",
+      "chars": 118,
+      "layers": {
+       "68": [
+        [
+         705,
+         709
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "101.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 102,
+   "title": "21.",
+   "cs": [
+    8000021,
+    8000021
+   ],
+   "chars": 112,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:49:54",
+   "finished": "2026-09-27 19:52:12",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 710,
+    "end": 714,
+    "title": "21.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 710,
+     "end": 714,
+     "title": "21.",
+     "paras": 5,
+     "chars": 112,
+     "chunks": [
+      {
+       "id": "102.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 710,
+       "end": 714,
+       "paras": 5,
+       "chars": 112,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "102.H",
+      "kind": "direct",
+      "chars": 112,
+      "layers": {
+       "68": [
+        [
+         710,
+         714
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "102.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 103,
+   "title": "22.",
+   "cs": [
+    8000022,
+    8000022
+   ],
+   "chars": 124,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:51:54",
+   "finished": "2026-09-27 19:54:48",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 715,
+    "end": 719,
+    "title": "22.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 715,
+     "end": 719,
+     "title": "22.",
+     "paras": 5,
+     "chars": 124,
+     "chunks": [
+      {
+       "id": "103.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 715,
+       "end": 719,
+       "paras": 5,
+       "chars": 124,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "103.H",
+      "kind": "direct",
+      "chars": 124,
+      "layers": {
+       "68": [
+        [
+         715,
+         719
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "103.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 104,
+   "title": "23.",
+   "cs": [
+    8000023,
+    8000023
+   ],
+   "chars": 124,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:52:12",
+   "finished": "2026-09-27 19:54:48",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 720,
+    "end": 724,
+    "title": "23.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 720,
+     "end": 724,
+     "title": "23.",
+     "paras": 5,
+     "chars": 124,
+     "chunks": [
+      {
+       "id": "104.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 720,
+       "end": 724,
+       "paras": 5,
+       "chars": 124,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "104.H",
+      "kind": "direct",
+      "chars": 124,
+      "layers": {
+       "68": [
+        [
+         720,
+         724
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "104.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 105,
+   "title": "24.",
+   "cs": [
+    8000024,
+    8000024
+   ],
+   "chars": 116,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:54:48",
+   "finished": "2026-09-27 19:57:13",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 725,
+    "end": 729,
+    "title": "24.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 725,
+     "end": 729,
+     "title": "24.",
+     "paras": 5,
+     "chars": 116,
+     "chunks": [
+      {
+       "id": "105.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 725,
+       "end": 729,
+       "paras": 5,
+       "chars": 116,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "105.H",
+      "kind": "direct",
+      "chars": 116,
+      "layers": {
+       "68": [
+        [
+         725,
+         729
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "105.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 106,
+   "title": "25.",
+   "cs": [
+    8000025,
+    8000025
+   ],
+   "chars": 118,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:54:58",
+   "finished": "2026-09-27 19:57:38",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 730,
+    "end": 734,
+    "title": "25.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 730,
+     "end": 734,
+     "title": "25.",
+     "paras": 5,
+     "chars": 118,
+     "chunks": [
+      {
+       "id": "106.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 730,
+       "end": 734,
+       "paras": 5,
+       "chars": 118,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "106.H",
+      "kind": "direct",
+      "chars": 118,
+      "layers": {
+       "68": [
+        [
+         730,
+         734
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "106.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 107,
+   "title": "26.",
+   "cs": [
+    8000026,
+    8000026
+   ],
+   "chars": 126,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:57:13",
+   "finished": "2026-09-27 19:59:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 735,
+    "end": 739,
+    "title": "26.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 735,
+     "end": 739,
+     "title": "26.",
+     "paras": 5,
+     "chars": 126,
+     "chunks": [
+      {
+       "id": "107.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 735,
+       "end": 739,
+       "paras": 5,
+       "chars": 126,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "107.H",
+      "kind": "direct",
+      "chars": 126,
+      "layers": {
+       "68": [
+        [
+         735,
+         739
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "107.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 108,
+   "title": "27.",
+   "cs": [
+    8000027,
+    8000027
+   ],
+   "chars": 129,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:57:38",
+   "finished": "2026-09-27 19:59:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 740,
+    "end": 744,
+    "title": "27.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 740,
+     "end": 744,
+     "title": "27.",
+     "paras": 5,
+     "chars": 129,
+     "chunks": [
+      {
+       "id": "108.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 740,
+       "end": 744,
+       "paras": 5,
+       "chars": 129,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "108.H",
+      "kind": "direct",
+      "chars": 129,
+      "layers": {
+       "68": [
+        [
+         740,
+         744
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "108.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 109,
+   "title": "28.",
+   "cs": [
+    8000028,
+    8000028
+   ],
+   "chars": 134,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 19:59:53",
+   "finished": "2026-09-27 20:02:25",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 745,
+    "end": 749,
+    "title": "28.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 745,
+     "end": 749,
+     "title": "28.",
+     "paras": 5,
+     "chars": 134,
+     "chunks": [
+      {
+       "id": "109.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 745,
+       "end": 749,
+       "paras": 5,
+       "chars": 134,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "109.H",
+      "kind": "direct",
+      "chars": 134,
+      "layers": {
+       "68": [
+        [
+         745,
+         749
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "109.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 110,
+   "title": "29.",
+   "cs": [
+    8000029,
+    8000029
+   ],
+   "chars": 133,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:00:03",
+   "finished": "2026-09-27 20:02:42",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 750,
+    "end": 754,
+    "title": "29.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 750,
+     "end": 754,
+     "title": "29.",
+     "paras": 5,
+     "chars": 133,
+     "chunks": [
+      {
+       "id": "110.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 750,
+       "end": 754,
+       "paras": 5,
+       "chars": 133,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "110.H",
+      "kind": "direct",
+      "chars": 133,
+      "layers": {
+       "68": [
+        [
+         750,
+         754
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "110.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 111,
+   "title": "30.",
+   "cs": [
+    8000030,
+    8000030
+   ],
+   "chars": 148,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:02:25",
+   "finished": "2026-09-27 20:05:05",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 755,
+    "end": 759,
+    "title": "30.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 755,
+     "end": 759,
+     "title": "30.",
+     "paras": 5,
+     "chars": 148,
+     "chunks": [
+      {
+       "id": "111.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 755,
+       "end": 759,
+       "paras": 5,
+       "chars": 148,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "111.H",
+      "kind": "direct",
+      "chars": 148,
+      "layers": {
+       "68": [
+        [
+         755,
+         759
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "111.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 112,
+   "title": "31.",
+   "cs": [
+    8000031,
+    8000031
+   ],
+   "chars": 151,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:02:43",
+   "finished": "2026-09-27 20:05:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 760,
+    "end": 764,
+    "title": "31.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 760,
+     "end": 764,
+     "title": "31.",
+     "paras": 5,
+     "chars": 151,
+     "chunks": [
+      {
+       "id": "112.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 760,
+       "end": 764,
+       "paras": 5,
+       "chars": 151,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "112.H",
+      "kind": "direct",
+      "chars": 151,
+      "layers": {
+       "68": [
+        [
+         760,
+         764
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "112.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 113,
+   "title": "32.",
+   "cs": [
+    8000032,
+    8000032
+   ],
+   "chars": 150,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:05:05",
+   "finished": "2026-09-27 20:07:37",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 765,
+    "end": 769,
+    "title": "32.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 765,
+     "end": 769,
+     "title": "32.",
+     "paras": 5,
+     "chars": 150,
+     "chunks": [
+      {
+       "id": "113.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 765,
+       "end": 769,
+       "paras": 5,
+       "chars": 150,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "113.H",
+      "kind": "direct",
+      "chars": 150,
+      "layers": {
+       "68": [
+        [
+         765,
+         769
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "113.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 114,
+   "title": "33.",
+   "cs": [
+    8000033,
+    8000033
+   ],
+   "chars": 152,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:05:22",
+   "finished": "2026-09-27 20:08:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 770,
+    "end": 774,
+    "title": "33.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 770,
+     "end": 774,
+     "title": "33.",
+     "paras": 5,
+     "chars": 152,
+     "chunks": [
+      {
+       "id": "114.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 770,
+       "end": 774,
+       "paras": 5,
+       "chars": 152,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "114.H",
+      "kind": "direct",
+      "chars": 152,
+      "layers": {
+       "68": [
+        [
+         770,
+         774
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "114.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 115,
+   "title": "34.",
+   "cs": [
+    8000034,
+    8000034
+   ],
+   "chars": 151,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:07:37",
+   "finished": "2026-09-27 20:10:12",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 775,
+    "end": 779,
+    "title": "34.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 775,
+     "end": 779,
+     "title": "34.",
+     "paras": 5,
+     "chars": 151,
+     "chunks": [
+      {
+       "id": "115.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 775,
+       "end": 779,
+       "paras": 5,
+       "chars": 151,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "115.H",
+      "kind": "direct",
+      "chars": 151,
+      "layers": {
+       "68": [
+        [
+         775,
+         779
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "115.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 116,
+   "title": "35.",
+   "cs": [
+    8000035,
+    8000035
+   ],
+   "chars": 160,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:08:09",
+   "finished": "2026-09-27 20:09:55",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 780,
+    "end": 784,
+    "title": "35.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 780,
+     "end": 784,
+     "title": "35.",
+     "paras": 5,
+     "chars": 160,
+     "chunks": [
+      {
+       "id": "116.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 780,
+       "end": 784,
+       "paras": 5,
+       "chars": 160,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "116.H",
+      "kind": "direct",
+      "chars": 160,
+      "layers": {
+       "68": [
+        [
+         780,
+         784
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "116.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 117,
+   "title": "36.",
+   "cs": [
+    8000036,
+    8000036
+   ],
+   "chars": 158,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:09:55",
+   "finished": "2026-09-27 20:12:44",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 785,
+    "end": 789,
+    "title": "36.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 785,
+     "end": 789,
+     "title": "36.",
+     "paras": 5,
+     "chars": 158,
+     "chunks": [
+      {
+       "id": "117.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 785,
+       "end": 789,
+       "paras": 5,
+       "chars": 158,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "117.H",
+      "kind": "direct",
+      "chars": 158,
+      "layers": {
+       "68": [
+        [
+         785,
+         789
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "117.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 118,
+   "title": "37.",
+   "cs": [
+    8000037,
+    8000037
+   ],
+   "chars": 162,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:10:12",
+   "finished": "2026-09-27 20:12:27",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 790,
+    "end": 794,
+    "title": "37.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 790,
+     "end": 794,
+     "title": "37.",
+     "paras": 5,
+     "chars": 162,
+     "chunks": [
+      {
+       "id": "118.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 790,
+       "end": 794,
+       "paras": 5,
+       "chars": 162,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "118.H",
+      "kind": "direct",
+      "chars": 162,
+      "layers": {
+       "68": [
+        [
+         790,
+         794
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "118.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 119,
+   "title": "38.",
+   "cs": [
+    8000038,
+    8000038
+   ],
+   "chars": 150,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:12:27",
+   "finished": "2026-09-27 20:14:37",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 795,
+    "end": 799,
+    "title": "38.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 795,
+     "end": 799,
+     "title": "38.",
+     "paras": 5,
+     "chars": 150,
+     "chunks": [
+      {
+       "id": "119.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 795,
+       "end": 799,
+       "paras": 5,
+       "chars": 150,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "119.H",
+      "kind": "direct",
+      "chars": 150,
+      "layers": {
+       "68": [
+        [
+         795,
+         799
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "119.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 120,
+   "title": "39.",
+   "cs": [
+    8000039,
+    8000039
+   ],
+   "chars": 155,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:12:44",
+   "finished": "2026-09-27 20:14:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 800,
+    "end": 804,
+    "title": "39.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 800,
+     "end": 804,
+     "title": "39.",
+     "paras": 5,
+     "chars": 155,
+     "chunks": [
+      {
+       "id": "120.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 800,
+       "end": 804,
+       "paras": 5,
+       "chars": 155,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "120.H",
+      "kind": "direct",
+      "chars": 155,
+      "layers": {
+       "68": [
+        [
+         800,
+         804
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "120.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 121,
+   "title": "40.",
+   "cs": [
+    8000040,
+    8000040
+   ],
+   "chars": 147,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:14:37",
+   "finished": "2026-09-27 20:17:02",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 805,
+    "end": 809,
+    "title": "40.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 805,
+     "end": 809,
+     "title": "40.",
+     "paras": 5,
+     "chars": 147,
+     "chunks": [
+      {
+       "id": "121.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 805,
+       "end": 809,
+       "paras": 5,
+       "chars": 147,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "121.H",
+      "kind": "direct",
+      "chars": 147,
+      "layers": {
+       "68": [
+        [
+         805,
+         809
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "121.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 122,
+   "title": "41.",
+   "cs": [
+    8000041,
+    8000041
+   ],
+   "chars": 148,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:14:55",
+   "finished": "2026-09-27 20:17:20",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 810,
+    "end": 814,
+    "title": "41.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 810,
+     "end": 814,
+     "title": "41.",
+     "paras": 5,
+     "chars": 148,
+     "chunks": [
+      {
+       "id": "122.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 810,
+       "end": 814,
+       "paras": 5,
+       "chars": 148,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "122.H",
+      "kind": "direct",
+      "chars": 148,
+      "layers": {
+       "68": [
+        [
+         810,
+         814
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "122.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 123,
+   "title": "42.",
+   "cs": [
+    8000042,
+    8000042
+   ],
+   "chars": 148,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:17:02",
+   "finished": "2026-09-27 20:19:42",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 815,
+    "end": 819,
+    "title": "42.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 815,
+     "end": 819,
+     "title": "42.",
+     "paras": 5,
+     "chars": 148,
+     "chunks": [
+      {
+       "id": "123.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 815,
+       "end": 819,
+       "paras": 5,
+       "chars": 148,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "123.H",
+      "kind": "direct",
+      "chars": 148,
+      "layers": {
+       "68": [
+        [
+         815,
+         819
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "123.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 124,
+   "title": "43.",
+   "cs": [
+    8000043,
+    8000043
+   ],
+   "chars": 153,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:17:20",
+   "finished": "2026-09-27 20:20:06",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 820,
+    "end": 824,
+    "title": "43.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 820,
+     "end": 824,
+     "title": "43.",
+     "paras": 5,
+     "chars": 153,
+     "chunks": [
+      {
+       "id": "124.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 820,
+       "end": 824,
+       "paras": 5,
+       "chars": 153,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "124.H",
+      "kind": "direct",
+      "chars": 153,
+      "layers": {
+       "68": [
+        [
+         820,
+         824
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "124.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 125,
+   "title": "44.",
+   "cs": [
+    8000044,
+    8000044
+   ],
+   "chars": 149,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:19:42",
+   "finished": "2026-09-27 20:22:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 825,
+    "end": 829,
+    "title": "44.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 825,
+     "end": 829,
+     "title": "44.",
+     "paras": 5,
+     "chars": 149,
+     "chunks": [
+      {
+       "id": "125.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 825,
+       "end": 829,
+       "paras": 5,
+       "chars": 149,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "125.H",
+      "kind": "direct",
+      "chars": 149,
+      "layers": {
+       "68": [
+        [
+         825,
+         829
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "125.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 126,
+   "title": "45.",
+   "cs": [
+    8000045,
+    8000045
+   ],
+   "chars": 145,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:20:06",
+   "finished": "2026-09-27 20:22:39",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 830,
+    "end": 834,
+    "title": "45.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 830,
+     "end": 834,
+     "title": "45.",
+     "paras": 5,
+     "chars": 145,
+     "chunks": [
+      {
+       "id": "126.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 830,
+       "end": 834,
+       "paras": 5,
+       "chars": 145,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "126.H",
+      "kind": "direct",
+      "chars": 145,
+      "layers": {
+       "68": [
+        [
+         830,
+         834
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "126.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 127,
+   "title": "46.",
+   "cs": [
+    8000046,
+    8000046
+   ],
+   "chars": 148,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:22:21",
+   "finished": "2026-09-27 20:24:46",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 835,
+    "end": 839,
+    "title": "46.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 835,
+     "end": 839,
+     "title": "46.",
+     "paras": 5,
+     "chars": 148,
+     "chunks": [
+      {
+       "id": "127.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 835,
+       "end": 839,
+       "paras": 5,
+       "chars": 148,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "127.H",
+      "kind": "direct",
+      "chars": 148,
+      "layers": {
+       "68": [
+        [
+         835,
+         839
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "127.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 128,
+   "title": "47.",
+   "cs": [
+    8000047,
+    8000047
+   ],
+   "chars": 143,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:22:39",
+   "finished": "2026-09-27 20:25:18",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 840,
+    "end": 844,
+    "title": "47.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 840,
+     "end": 844,
+     "title": "47.",
+     "paras": 5,
+     "chars": 143,
+     "chunks": [
+      {
+       "id": "128.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 840,
+       "end": 844,
+       "paras": 5,
+       "chars": 143,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "128.H",
+      "kind": "direct",
+      "chars": 143,
+      "layers": {
+       "68": [
+        [
+         840,
+         844
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "128.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 129,
+   "title": "48.",
+   "cs": [
+    8000048,
+    8000048
+   ],
+   "chars": 152,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:24:46",
+   "finished": "2026-09-27 20:27:11",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 845,
+    "end": 849,
+    "title": "48.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 845,
+     "end": 849,
+     "title": "48.",
+     "paras": 5,
+     "chars": 152,
+     "chunks": [
+      {
+       "id": "129.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 845,
+       "end": 849,
+       "paras": 5,
+       "chars": 152,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "129.H",
+      "kind": "direct",
+      "chars": 152,
+      "layers": {
+       "68": [
+        [
+         845,
+         849
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "129.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 130,
+   "title": "49.",
+   "cs": [
+    8000049,
+    8000049
+   ],
+   "chars": 148,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:25:18",
+   "finished": "2026-09-27 20:27:58",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 850,
+    "end": 854,
+    "title": "49.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 850,
+     "end": 854,
+     "title": "49.",
+     "paras": 5,
+     "chars": 148,
+     "chunks": [
+      {
+       "id": "130.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 850,
+       "end": 854,
+       "paras": 5,
+       "chars": 148,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "130.H",
+      "kind": "direct",
+      "chars": 148,
+      "layers": {
+       "68": [
+        [
+         850,
+         854
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "130.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 131,
+   "title": "50.",
+   "cs": [
+    8000050,
+    8000050
+   ],
+   "chars": 158,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:27:11",
+   "finished": "2026-09-27 20:29:58",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 855,
+    "end": 859,
+    "title": "50.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 855,
+     "end": 859,
+     "title": "50.",
+     "paras": 5,
+     "chars": 158,
+     "chunks": [
+      {
+       "id": "131.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 855,
+       "end": 859,
+       "paras": 5,
+       "chars": 158,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "131.H",
+      "kind": "direct",
+      "chars": 158,
+      "layers": {
+       "68": [
+        [
+         855,
+         859
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "131.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 132,
+   "title": "51.",
+   "cs": [
+    8000051,
+    8000051
+   ],
+   "chars": 146,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:27:58",
+   "finished": "2026-09-27 20:30:16",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 860,
+    "end": 864,
+    "title": "51.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 860,
+     "end": 864,
+     "title": "51.",
+     "paras": 5,
+     "chars": 146,
+     "chunks": [
+      {
+       "id": "132.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 860,
+       "end": 864,
+       "paras": 5,
+       "chars": 146,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "132.H",
+      "kind": "direct",
+      "chars": 146,
+      "layers": {
+       "68": [
+        [
+         860,
+         864
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "132.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 133,
+   "title": "52.",
+   "cs": [
+    8000052,
+    8000052
+   ],
+   "chars": 156,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:29:58",
+   "finished": "2026-09-27 20:32:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 865,
+    "end": 869,
+    "title": "52.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 865,
+     "end": 869,
+     "title": "52.",
+     "paras": 5,
+     "chars": 156,
+     "chunks": [
+      {
+       "id": "133.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 865,
+       "end": 869,
+       "paras": 5,
+       "chars": 156,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "133.H",
+      "kind": "direct",
+      "chars": 156,
+      "layers": {
+       "68": [
+        [
+         865,
+         869
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "133.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 134,
+   "title": "53.",
+   "cs": [
+    8000053,
+    8000053
+   ],
+   "chars": 154,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:30:16",
+   "finished": "2026-09-27 20:32:55",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 870,
+    "end": 874,
+    "title": "53.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 870,
+     "end": 874,
+     "title": "53.",
+     "paras": 5,
+     "chars": 154,
+     "chunks": [
+      {
+       "id": "134.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 870,
+       "end": 874,
+       "paras": 5,
+       "chars": 154,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "134.H",
+      "kind": "direct",
+      "chars": 154,
+      "layers": {
+       "68": [
+        [
+         870,
+         874
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "134.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 135,
+   "title": "54.",
+   "cs": [
+    8000054,
+    8000054
+   ],
+   "chars": 135,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:32:09",
+   "finished": "2026-09-27 20:34:12",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 875,
+    "end": 879,
+    "title": "54.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 875,
+     "end": 879,
+     "title": "54.",
+     "paras": 5,
+     "chars": 135,
+     "chunks": [
+      {
+       "id": "135.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 875,
+       "end": 879,
+       "paras": 5,
+       "chars": 135,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "135.H",
+      "kind": "direct",
+      "chars": 135,
+      "layers": {
+       "68": [
+        [
+         875,
+         879
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "135.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 136,
+   "title": "55.",
+   "cs": [
+    8000055,
+    8000055
+   ],
+   "chars": 140,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:32:56",
+   "finished": "2026-09-27 20:35:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 880,
+    "end": 884,
+    "title": "55.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 880,
+     "end": 884,
+     "title": "55.",
+     "paras": 5,
+     "chars": 140,
+     "chunks": [
+      {
+       "id": "136.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 880,
+       "end": 884,
+       "paras": 5,
+       "chars": 140,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "136.H",
+      "kind": "direct",
+      "chars": 140,
+      "layers": {
+       "68": [
+        [
+         880,
+         884
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "136.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 137,
+   "title": "56.",
+   "cs": [
+    8000056,
+    8000056
+   ],
+   "chars": 125,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:34:12",
+   "finished": "2026-09-27 20:36:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 885,
+    "end": 889,
+    "title": "56.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 885,
+     "end": 889,
+     "title": "56.",
+     "paras": 5,
+     "chars": 125,
+     "chunks": [
+      {
+       "id": "137.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 885,
+       "end": 889,
+       "paras": 5,
+       "chars": 125,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "137.H",
+      "kind": "direct",
+      "chars": 125,
+      "layers": {
+       "68": [
+        [
+         885,
+         889
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "137.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 138,
+   "title": "57.",
+   "cs": [
+    8000057,
+    8000057
+   ],
+   "chars": 131,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:35:21",
+   "finished": "2026-09-27 20:37:24",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 890,
+    "end": 894,
+    "title": "57.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 890,
+     "end": 894,
+     "title": "57.",
+     "paras": 5,
+     "chars": 131,
+     "chunks": [
+      {
+       "id": "138.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 890,
+       "end": 894,
+       "paras": 5,
+       "chars": 131,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "138.H",
+      "kind": "direct",
+      "chars": 131,
+      "layers": {
+       "68": [
+        [
+         890,
+         894
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "138.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 139,
+   "title": "58.",
+   "cs": [
+    8000058,
+    8000058
+   ],
+   "chars": 129,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:36:22",
+   "finished": "2026-09-27 20:38:47",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 895,
+    "end": 899,
+    "title": "58.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 895,
+     "end": 899,
+     "title": "58.",
+     "paras": 5,
+     "chars": 129,
+     "chunks": [
+      {
+       "id": "139.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 895,
+       "end": 899,
+       "paras": 5,
+       "chars": 129,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "139.H",
+      "kind": "direct",
+      "chars": 129,
+      "layers": {
+       "68": [
+        [
+         895,
+         899
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "139.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 140,
+   "title": "59.",
+   "cs": [
+    8000059,
+    8000059
+   ],
+   "chars": 138,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:37:24",
+   "finished": "2026-09-27 20:39:27",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 900,
+    "end": 904,
+    "title": "59.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 900,
+     "end": 904,
+     "title": "59.",
+     "paras": 5,
+     "chars": 138,
+     "chunks": [
+      {
+       "id": "140.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 900,
+       "end": 904,
+       "paras": 5,
+       "chars": 138,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "140.H",
+      "kind": "direct",
+      "chars": 138,
+      "layers": {
+       "68": [
+        [
+         900,
+         904
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "140.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 141,
+   "title": "60.",
+   "cs": [
+    8000060,
+    8000060
+   ],
+   "chars": 136,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:38:47",
+   "finished": "2026-09-27 20:41:20",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 905,
+    "end": 909,
+    "title": "60.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 905,
+     "end": 909,
+     "title": "60.",
+     "paras": 5,
+     "chars": 136,
+     "chunks": [
+      {
+       "id": "141.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 905,
+       "end": 909,
+       "paras": 5,
+       "chars": 136,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "141.H",
+      "kind": "direct",
+      "chars": 136,
+      "layers": {
+       "68": [
+        [
+         905,
+         909
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "141.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 142,
+   "title": "61.",
+   "cs": [
+    8000061,
+    8000061
+   ],
+   "chars": 129,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:39:27",
+   "finished": "2026-09-27 20:41:59",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 910,
+    "end": 914,
+    "title": "61.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 910,
+     "end": 914,
+     "title": "61.",
+     "paras": 5,
+     "chars": 129,
+     "chunks": [
+      {
+       "id": "142.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 910,
+       "end": 914,
+       "paras": 5,
+       "chars": 129,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "142.H",
+      "kind": "direct",
+      "chars": 129,
+      "layers": {
+       "68": [
+        [
+         910,
+         914
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "142.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 143,
+   "title": "62.",
+   "cs": [
+    8000062,
+    8000062
+   ],
+   "chars": 131,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:41:20",
+   "finished": "2026-09-27 20:44:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 915,
+    "end": 919,
+    "title": "62.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 915,
+     "end": 919,
+     "title": "62.",
+     "paras": 5,
+     "chars": 131,
+     "chunks": [
+      {
+       "id": "143.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 915,
+       "end": 919,
+       "paras": 5,
+       "chars": 131,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "143.H",
+      "kind": "direct",
+      "chars": 131,
+      "layers": {
+       "68": [
+        [
+         915,
+         919
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "143.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 144,
+   "title": "63.",
+   "cs": [
+    8000063,
+    8000063
+   ],
+   "chars": 132,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:41:59",
+   "finished": "2026-09-27 20:44:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 920,
+    "end": 924,
+    "title": "63.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 920,
+     "end": 924,
+     "title": "63.",
+     "paras": 5,
+     "chars": 132,
+     "chunks": [
+      {
+       "id": "144.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 920,
+       "end": 924,
+       "paras": 5,
+       "chars": 132,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "144.H",
+      "kind": "direct",
+      "chars": 132,
+      "layers": {
+       "68": [
+        [
+         920,
+         924
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "144.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 145,
+   "title": "64.",
+   "cs": [
+    8000064,
+    8000064
+   ],
+   "chars": 137,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:44:07",
+   "finished": "2026-09-27 20:46:25",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 925,
+    "end": 929,
+    "title": "64.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 925,
+     "end": 929,
+     "title": "64.",
+     "paras": 5,
+     "chars": 137,
+     "chunks": [
+      {
+       "id": "145.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 925,
+       "end": 929,
+       "paras": 5,
+       "chars": 137,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "145.H",
+      "kind": "direct",
+      "chars": 137,
+      "layers": {
+       "68": [
+        [
+         925,
+         929
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "145.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 146,
+   "title": "65.",
+   "cs": [
+    8000065,
+    8000065
+   ],
+   "chars": 128,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:44:32",
+   "finished": "2026-09-27 20:47:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 930,
+    "end": 934,
+    "title": "65.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 930,
+     "end": 934,
+     "title": "65.",
+     "paras": 5,
+     "chars": 128,
+     "chunks": [
+      {
+       "id": "146.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 930,
+       "end": 934,
+       "paras": 5,
+       "chars": 128,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "146.H",
+      "kind": "direct",
+      "chars": 128,
+      "layers": {
+       "68": [
+        [
+         930,
+         934
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "146.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 147,
+   "title": "66.",
+   "cs": [
+    8000066,
+    8000066
+   ],
+   "chars": 142,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:46:25",
+   "finished": "2026-09-27 20:49:05",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 935,
+    "end": 939,
+    "title": "66.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 935,
+     "end": 939,
+     "title": "66.",
+     "paras": 5,
+     "chars": 142,
+     "chunks": [
+      {
+       "id": "147.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 935,
+       "end": 939,
+       "paras": 5,
+       "chars": 142,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "147.H",
+      "kind": "direct",
+      "chars": 142,
+      "layers": {
+       "68": [
+        [
+         935,
+         939
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "147.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 148,
+   "title": "67.",
+   "cs": [
+    8000067,
+    8000067
+   ],
+   "chars": 138,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:47:04",
+   "finished": "2026-09-27 20:49:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 940,
+    "end": 944,
+    "title": "67.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 940,
+     "end": 944,
+     "title": "67.",
+     "paras": 5,
+     "chars": 138,
+     "chunks": [
+      {
+       "id": "148.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 940,
+       "end": 944,
+       "paras": 5,
+       "chars": 138,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "148.H",
+      "kind": "direct",
+      "chars": 138,
+      "layers": {
+       "68": [
+        [
+         940,
+         944
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "148.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 149,
+   "title": "68.",
+   "cs": [
+    8000068,
+    8000068
+   ],
+   "chars": 132,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:49:05",
+   "finished": "2026-09-27 20:51:40",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 945,
+    "end": 949,
+    "title": "68.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 945,
+     "end": 949,
+     "title": "68.",
+     "paras": 5,
+     "chars": 132,
+     "chunks": [
+      {
+       "id": "149.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 945,
+       "end": 949,
+       "paras": 5,
+       "chars": 132,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "149.H",
+      "kind": "direct",
+      "chars": 132,
+      "layers": {
+       "68": [
+        [
+         945,
+         949
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "149.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 150,
+   "title": "69.",
+   "cs": [
+    8000069,
+    8000069
+   ],
+   "chars": 130,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:49:22",
+   "finished": "2026-09-27 20:51:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 950,
+    "end": 954,
+    "title": "69.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 950,
+     "end": 954,
+     "title": "69.",
+     "paras": 5,
+     "chars": 130,
+     "chunks": [
+      {
+       "id": "150.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 950,
+       "end": 954,
+       "paras": 5,
+       "chars": 130,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "150.H",
+      "kind": "direct",
+      "chars": 130,
+      "layers": {
+       "68": [
+        [
+         950,
+         954
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "150.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 151,
+   "title": "70.",
+   "cs": [
+    8000070,
+    8000070
+   ],
+   "chars": 123,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:51:22",
+   "finished": "2026-09-27 20:53:40",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 955,
+    "end": 959,
+    "title": "70.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 955,
+     "end": 959,
+     "title": "70.",
+     "paras": 5,
+     "chars": 123,
+     "chunks": [
+      {
+       "id": "151.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 955,
+       "end": 959,
+       "paras": 5,
+       "chars": 123,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "151.H",
+      "kind": "direct",
+      "chars": 123,
+      "layers": {
+       "68": [
+        [
+         955,
+         959
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "151.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 152,
+   "title": "71.",
+   "cs": [
+    8000071,
+    8000071
+   ],
+   "chars": 123,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:51:40",
+   "finished": "2026-09-27 20:53:40",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 960,
+    "end": 964,
+    "title": "71.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 960,
+     "end": 964,
+     "title": "71.",
+     "paras": 5,
+     "chars": 123,
+     "chunks": [
+      {
+       "id": "152.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 960,
+       "end": 964,
+       "paras": 5,
+       "chars": 123,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "152.H",
+      "kind": "direct",
+      "chars": 123,
+      "layers": {
+       "68": [
+        [
+         960,
+         964
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "152.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 153,
+   "title": "72.",
+   "cs": [
+    8000072,
+    8000072
+   ],
+   "chars": 121,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:53:40",
+   "finished": "2026-09-27 20:55:51",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 965,
+    "end": 969,
+    "title": "72.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 965,
+     "end": 969,
+     "title": "72.",
+     "paras": 5,
+     "chars": 121,
+     "chunks": [
+      {
+       "id": "153.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 965,
+       "end": 969,
+       "paras": 5,
+       "chars": 121,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "153.H",
+      "kind": "direct",
+      "chars": 121,
+      "layers": {
+       "68": [
+        [
+         965,
+         969
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "153.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 154,
+   "title": "73.",
+   "cs": [
+    8000073,
+    8000073
+   ],
+   "chars": 123,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:53:50",
+   "finished": "2026-09-27 20:56:08",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 970,
+    "end": 974,
+    "title": "73.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 970,
+     "end": 974,
+     "title": "73.",
+     "paras": 5,
+     "chars": 123,
+     "chunks": [
+      {
+       "id": "154.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 970,
+       "end": 974,
+       "paras": 5,
+       "chars": 123,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "154.H",
+      "kind": "direct",
+      "chars": 123,
+      "layers": {
+       "68": [
+        [
+         970,
+         974
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "154.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 155,
+   "title": "74.",
+   "cs": [
+    8000074,
+    8000074
+   ],
+   "chars": 218,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-09-27 20:55:51",
+   "finished": "2026-09-27 20:58:06",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 68,
+    "start": 975,
+    "end": 981,
+    "title": "74.",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 68,
+     "start": 975,
+     "end": 981,
+     "title": "74.",
+     "paras": 7,
+     "chars": 218,
+     "chunks": [
+      {
+       "id": "155.1.1",
+       "kind": "chunk",
+       "book": 68,
+       "start": 975,
+       "end": 981,
+       "paras": 7,
+       "chars": 218,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "155.H",
+      "kind": "direct",
+      "chars": 218,
+      "layers": {
+       "68": [
+        [
+         975,
+         981
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "155.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  }
+ ]
+}

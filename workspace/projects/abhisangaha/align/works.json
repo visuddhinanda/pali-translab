@@ -1,0 +1,17 @@
+{
+  "title": "Abhidhammatthasaṅgaha 四部：本论 · Vibhāvinī · Paramatthadīpanī · Anudīpanī",
+  "works": [
+    {"id": "M", "layer": "mula", "book": 178, "start": 2, "end": 874,
+     "title": "Abhidhammatthasaṅgaho"},
+    {"id": "A1", "layer": "atthakatha", "book": 178, "start": 875, "end": 1838,
+     "title": "Abhidhammatthavibhāvinīṭīkā", "parent": "M", "table": "178b__178a.jsonl"},
+    {"id": "A2", "layer": "atthakatha", "book": 23, "start": 2, "end": 1498,
+     "title": "Paramatthadīpanī", "parent": "M", "table": "23__178a.jsonl",
+     "quote": {"work": "A1", "table": "23__178b.quote.jsonl"}},
+    {"id": "T", "layer": "tika", "book": 24, "start": 2, "end": 434,
+     "title": "Anudīpanīpāṭha", "parent": "A2", "table": "24__23.jsonl",
+     "steps": ["translate"]}
+  ],
+  "att_ref": {"M": "A1"},
+  "harmonize_batches": [["A1", "A2"], ["T"]]
+}

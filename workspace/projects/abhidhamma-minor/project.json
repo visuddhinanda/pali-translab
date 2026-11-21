@@ -1,0 +1,7174 @@
+{
+ "schema": 1,
+ "name": "abhidhamma-minor",
+ "title": "阿毗达摩小论六部汉译（名色差别论／胜义抉择论／谛要略论／论母／断痴论／发趣总说灯论）·仅翻译",
+ "created": "2026-11-03 02:20:32",
+ "updated": "2026-11-03 07:37:33",
+ "book": 177,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "steps": "translate",
+ "chunker": "scan",
+ "state": "done",
+ "command": null,
+ "thresholds": {
+  "harmonize_direct_max": 30000,
+  "harmonize_cross_chars": 12000,
+  "harmonize_layer_chars": 15000
+ },
+ "books": {
+  "177:4805": {
+   "layer": "mula",
+   "title": "nāmarūpaparicchedo",
+   "book": 177,
+   "start": 4805
+  },
+  "177:10627": {
+   "layer": "mula",
+   "title": "paramatthavinicchayo",
+   "book": 177,
+   "start": 10627
+  },
+  "177:14272": {
+   "layer": "mula",
+   "title": "saccasaṅkhepo",
+   "book": 177,
+   "start": 14272
+  },
+  "180:2": {
+   "layer": "mula",
+   "title": "abhidhammamātikāpāḷi",
+   "book": 180,
+   "start": 2
+  },
+  "180:1221": {
+   "layer": "mula",
+   "title": "mohavicchedanī",
+   "book": 180,
+   "start": 1221
+  },
+  "25:2": {
+   "layer": "mula",
+   "title": "paṭṭhānuddesa dīpanīpāṭha",
+   "book": 25,
+   "start": 2
+  }
+ },
+ "jobs": [
+  {
+   "id": 0,
+   "title": "nāmarūpaparicchedo · Nāmarūpaparicchedo ～ 1. Paṭhamo paricchedo",
+   "cs": null,
+   "chars": 6151,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:30:23",
+   "finished": "2026-11-03 06:43:25",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 4805,
+    "end": 5016,
+    "title": "Nāmarūpaparicchedo ～ 1. Paṭhamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 4805,
+     "end": 5016,
+     "title": "Nāmarūpaparicchedo ～ 1. Paṭhamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 212,
+     "chars": 6151,
+     "chunks": [
+      {
+       "id": "0.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 4805,
+       "end": 4862,
+       "paras": 58,
+       "chars": 1675,
+       "status": "done"
+      },
+      {
+       "id": "0.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 4863,
+       "end": 4921,
+       "paras": 59,
+       "chars": 1753,
+       "status": "done"
+      },
+      {
+       "id": "0.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 4922,
+       "end": 4981,
+       "paras": 60,
+       "chars": 1791,
+       "status": "done"
+      },
+      {
+       "id": "0.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 4982,
+       "end": 5016,
+       "paras": 35,
+       "chars": 932,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "title": "nāmarūpaparicchedo · 2. Dutiyo paricchedo",
+   "cs": null,
+   "chars": 5151,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:43:25",
+   "finished": "2026-11-03 06:52:14",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 5017,
+    "end": 5196,
+    "title": "2. Dutiyo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 5017,
+     "end": 5196,
+     "title": "2. Dutiyo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 180,
+     "chars": 5151,
+     "chunks": [
+      {
+       "id": "1.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5017,
+       "end": 5074,
+       "paras": 58,
+       "chars": 1635,
+       "status": "done"
+      },
+      {
+       "id": "1.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5075,
+       "end": 5134,
+       "paras": 60,
+       "chars": 1741,
+       "status": "done"
+      },
+      {
+       "id": "1.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5135,
+       "end": 5189,
+       "paras": 55,
+       "chars": 1545,
+       "status": "done"
+      },
+      {
+       "id": "1.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5190,
+       "end": 5196,
+       "paras": 7,
+       "chars": 230,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "title": "nāmarūpaparicchedo · 3. Tatiyo paricchedo",
+   "cs": null,
+   "chars": 8218,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:01:56",
+   "finished": "2026-11-03 06:16:48",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 5197,
+    "end": 5474,
+    "title": "3. Tatiyo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 5197,
+     "end": 5474,
+     "title": "3. Tatiyo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 278,
+     "chars": 8218,
+     "chunks": [
+      {
+       "id": "2.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5197,
+       "end": 5255,
+       "paras": 59,
+       "chars": 1737,
+       "status": "done"
+      },
+      {
+       "id": "2.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5256,
+       "end": 5315,
+       "paras": 60,
+       "chars": 1627,
+       "status": "done"
+      },
+      {
+       "id": "2.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5316,
+       "end": 5374,
+       "paras": 59,
+       "chars": 1828,
+       "status": "done"
+      },
+      {
+       "id": "2.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5375,
+       "end": 5433,
+       "paras": 59,
+       "chars": 1695,
+       "status": "done"
+      },
+      {
+       "id": "2.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5434,
+       "end": 5474,
+       "paras": 41,
+       "chars": 1331,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "title": "nāmarūpaparicchedo · 4. Catuttho paricchedo",
+   "cs": null,
+   "chars": 10740,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:47:07",
+   "finished": "2026-11-03 06:09:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 5475,
+    "end": 5837,
+    "title": "4. Catuttho paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 5475,
+     "end": 5837,
+     "title": "4. Catuttho paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 362,
+     "chars": 10740,
+     "chunks": [
+      {
+       "id": "3.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5475,
+       "end": 5533,
+       "paras": 59,
+       "chars": 1762,
+       "status": "done"
+      },
+      {
+       "id": "3.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5534,
+       "end": 5593,
+       "paras": 60,
+       "chars": 1803,
+       "status": "done"
+      },
+      {
+       "id": "3.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5594,
+       "end": 5653,
+       "paras": 60,
+       "chars": 1759,
+       "status": "done"
+      },
+      {
+       "id": "3.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5654,
+       "end": 5713,
+       "paras": 60,
+       "chars": 1792,
+       "status": "done"
+      },
+      {
+       "id": "3.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5714,
+       "end": 5774,
+       "paras": 60,
+       "chars": 1820,
+       "status": "pending"
+      },
+      {
+       "id": "3.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5775,
+       "end": 5830,
+       "paras": 56,
+       "chars": 1579,
+       "status": "done"
+      },
+      {
+       "id": "3.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5831,
+       "end": 5837,
+       "paras": 7,
+       "chars": 225,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "nāmarūpaparicchedo · 5. Pañcamo paricchedo",
+   "cs": null,
+   "chars": 13964,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:29:50",
+   "finished": "2026-11-03 05:51:58",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 5838,
+    "end": 6312,
+    "title": "5. Pañcamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 5838,
+     "end": 6312,
+     "title": "5. Pañcamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 474,
+     "chars": 13964,
+     "chunks": [
+      {
+       "id": "4.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5838,
+       "end": 5895,
+       "paras": 58,
+       "chars": 1688,
+       "status": "done"
+      },
+      {
+       "id": "4.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5896,
+       "end": 5953,
+       "paras": 57,
+       "chars": 1700,
+       "status": "pending"
+      },
+      {
+       "id": "4.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 5954,
+       "end": 6011,
+       "paras": 58,
+       "chars": 1799,
+       "status": "done"
+      },
+      {
+       "id": "4.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6012,
+       "end": 6069,
+       "paras": 58,
+       "chars": 1593,
+       "status": "done"
+      },
+      {
+       "id": "4.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6070,
+       "end": 6129,
+       "paras": 60,
+       "chars": 1775,
+       "status": "done"
+      },
+      {
+       "id": "4.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6130,
+       "end": 6188,
+       "paras": 59,
+       "chars": 1676,
+       "status": "done"
+      },
+      {
+       "id": "4.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6189,
+       "end": 6248,
+       "paras": 60,
+       "chars": 1743,
+       "status": "done"
+      },
+      {
+       "id": "4.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6249,
+       "end": 6305,
+       "paras": 57,
+       "chars": 1728,
+       "status": "done"
+      },
+      {
+       "id": "4.1.9",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6306,
+       "end": 6312,
+       "paras": 7,
+       "chars": 262,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "title": "nāmarūpaparicchedo · 6. Chaṭṭho paricchedo",
+   "cs": null,
+   "chars": 12301,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:41:24",
+   "finished": "2026-11-03 06:01:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 6313,
+    "end": 6734,
+    "title": "6. Chaṭṭho paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 6313,
+     "end": 6734,
+     "title": "6. Chaṭṭho paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 422,
+     "chars": 12301,
+     "chunks": [
+      {
+       "id": "5.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6313,
+       "end": 6371,
+       "paras": 59,
+       "chars": 1718,
+       "status": "done"
+      },
+      {
+       "id": "5.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6372,
+       "end": 6430,
+       "paras": 59,
+       "chars": 1699,
+       "status": "done"
+      },
+      {
+       "id": "5.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6431,
+       "end": 6489,
+       "paras": 59,
+       "chars": 1669,
+       "status": "done"
+      },
+      {
+       "id": "5.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6490,
+       "end": 6549,
+       "paras": 60,
+       "chars": 1754,
+       "status": "done"
+      },
+      {
+       "id": "5.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6550,
+       "end": 6609,
+       "paras": 60,
+       "chars": 1822,
+       "status": "done"
+      },
+      {
+       "id": "5.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6610,
+       "end": 6668,
+       "paras": 59,
+       "chars": 1690,
+       "status": "done"
+      },
+      {
+       "id": "5.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6669,
+       "end": 6724,
+       "paras": 56,
+       "chars": 1615,
+       "status": "done"
+      },
+      {
+       "id": "5.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6725,
+       "end": 6734,
+       "paras": 10,
+       "chars": 334,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "title": "nāmarūpaparicchedo · 7. Sattamo paricchedo",
+   "cs": null,
+   "chars": 23999,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:07:54",
+   "finished": "2026-11-03 05:20:47",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 6735,
+    "end": 7535,
+    "title": "7. Sattamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 6735,
+     "end": 7535,
+     "title": "7. Sattamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 801,
+     "chars": 23999,
+     "chunks": [
+      {
+       "id": "6.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6735,
+       "end": 6793,
+       "paras": 59,
+       "chars": 1722,
+       "status": "done"
+      },
+      {
+       "id": "6.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6794,
+       "end": 6853,
+       "paras": 60,
+       "chars": 1826,
+       "status": "done"
+      },
+      {
+       "id": "6.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6854,
+       "end": 6913,
+       "paras": 60,
+       "chars": 1788,
+       "status": "done"
+      },
+      {
+       "id": "6.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6914,
+       "end": 6972,
+       "paras": 59,
+       "chars": 1769,
+       "status": "done"
+      },
+      {
+       "id": "6.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 6973,
+       "end": 7032,
+       "paras": 60,
+       "chars": 1802,
+       "status": "done"
+      },
+      {
+       "id": "6.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7033,
+       "end": 7092,
+       "paras": 60,
+       "chars": 1853,
+       "status": "done"
+      },
+      {
+       "id": "6.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7093,
+       "end": 7152,
+       "paras": 60,
+       "chars": 1797,
+       "status": "done"
+      },
+      {
+       "id": "6.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7153,
+       "end": 7212,
+       "paras": 60,
+       "chars": 1783,
+       "status": "done"
+      },
+      {
+       "id": "6.1.9",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7213,
+       "end": 7272,
+       "paras": 60,
+       "chars": 1815,
+       "status": "done"
+      },
+      {
+       "id": "6.1.10",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7273,
+       "end": 7332,
+       "paras": 60,
+       "chars": 1761,
+       "status": "done"
+      },
+      {
+       "id": "6.1.11",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7333,
+       "end": 7392,
+       "paras": 60,
+       "chars": 1744,
+       "status": "done"
+      },
+      {
+       "id": "6.1.12",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7393,
+       "end": 7452,
+       "paras": 60,
+       "chars": 1740,
+       "status": "done"
+      },
+      {
+       "id": "6.1.13",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7453,
+       "end": 7512,
+       "paras": 60,
+       "chars": 1750,
+       "status": "done"
+      },
+      {
+       "id": "6.1.14",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7513,
+       "end": 7535,
+       "paras": 23,
+       "chars": 849,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "title": "nāmarūpaparicchedo · 8. Aṭṭhamo paricchedo",
+   "cs": null,
+   "chars": 20103,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:08:04",
+   "finished": "2026-11-03 05:25:05",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 7536,
+    "end": 8227,
+    "title": "8. Aṭṭhamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 7536,
+     "end": 8227,
+     "title": "8. Aṭṭhamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 692,
+     "chars": 20103,
+     "chunks": [
+      {
+       "id": "7.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7536,
+       "end": 7593,
+       "paras": 58,
+       "chars": 1668,
+       "status": "done"
+      },
+      {
+       "id": "7.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7594,
+       "end": 7653,
+       "paras": 60,
+       "chars": 1631,
+       "status": "done"
+      },
+      {
+       "id": "7.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7654,
+       "end": 7713,
+       "paras": 60,
+       "chars": 1789,
+       "status": "done"
+      },
+      {
+       "id": "7.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7714,
+       "end": 7772,
+       "paras": 59,
+       "chars": 1710,
+       "status": "done"
+      },
+      {
+       "id": "7.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7773,
+       "end": 7831,
+       "paras": 59,
+       "chars": 1687,
+       "status": "done"
+      },
+      {
+       "id": "7.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7832,
+       "end": 7891,
+       "paras": 60,
+       "chars": 1778,
+       "status": "done"
+      },
+      {
+       "id": "7.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7892,
+       "end": 7951,
+       "paras": 60,
+       "chars": 1805,
+       "status": "done"
+      },
+      {
+       "id": "7.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 7952,
+       "end": 8009,
+       "paras": 58,
+       "chars": 1596,
+       "status": "done"
+      },
+      {
+       "id": "7.1.9",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8010,
+       "end": 8068,
+       "paras": 59,
+       "chars": 1684,
+       "status": "done"
+      },
+      {
+       "id": "7.1.10",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8069,
+       "end": 8128,
+       "paras": 60,
+       "chars": 1864,
+       "status": "done"
+      },
+      {
+       "id": "7.1.11",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8129,
+       "end": 8188,
+       "paras": 60,
+       "chars": 1659,
+       "status": "done"
+      },
+      {
+       "id": "7.1.12",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8189,
+       "end": 8227,
+       "paras": 39,
+       "chars": 1232,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "title": "nāmarūpaparicchedo · 9. Navamo paricchedo",
+   "cs": null,
+   "chars": 18290,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:08:24",
+   "finished": "2026-11-03 05:24:29",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 8228,
+    "end": 8851,
+    "title": "9. Navamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 8228,
+     "end": 8851,
+     "title": "9. Navamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 624,
+     "chars": 18290,
+     "chunks": [
+      {
+       "id": "8.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8228,
+       "end": 8287,
+       "paras": 60,
+       "chars": 1637,
+       "status": "done"
+      },
+      {
+       "id": "8.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8288,
+       "end": 8347,
+       "paras": 60,
+       "chars": 1812,
+       "status": "done"
+      },
+      {
+       "id": "8.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8348,
+       "end": 8406,
+       "paras": 59,
+       "chars": 1694,
+       "status": "done"
+      },
+      {
+       "id": "8.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8407,
+       "end": 8465,
+       "paras": 59,
+       "chars": 1701,
+       "status": "done"
+      },
+      {
+       "id": "8.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8466,
+       "end": 8523,
+       "paras": 58,
+       "chars": 1635,
+       "status": "done"
+      },
+      {
+       "id": "8.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8524,
+       "end": 8583,
+       "paras": 60,
+       "chars": 1814,
+       "status": "done"
+      },
+      {
+       "id": "8.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8584,
+       "end": 8641,
+       "paras": 58,
+       "chars": 1620,
+       "status": "done"
+      },
+      {
+       "id": "8.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8642,
+       "end": 8701,
+       "paras": 60,
+       "chars": 1640,
+       "status": "done"
+      },
+      {
+       "id": "8.1.9",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8702,
+       "end": 8761,
+       "paras": 60,
+       "chars": 1853,
+       "status": "done"
+      },
+      {
+       "id": "8.1.10",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8762,
+       "end": 8821,
+       "paras": 60,
+       "chars": 1846,
+       "status": "done"
+      },
+      {
+       "id": "8.1.11",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8822,
+       "end": 8851,
+       "paras": 30,
+       "chars": 1038,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "title": "nāmarūpaparicchedo · 10. Dasamo paricchedo",
+   "cs": null,
+   "chars": 19323,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:08:14",
+   "finished": "2026-11-03 05:18:48",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 8852,
+    "end": 9517,
+    "title": "10. Dasamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 8852,
+     "end": 9517,
+     "title": "10. Dasamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 666,
+     "chars": 19323,
+     "chunks": [
+      {
+       "id": "9.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8852,
+       "end": 8909,
+       "paras": 58,
+       "chars": 1683,
+       "status": "done"
+      },
+      {
+       "id": "9.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8910,
+       "end": 8967,
+       "paras": 58,
+       "chars": 1598,
+       "status": "done"
+      },
+      {
+       "id": "9.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 8968,
+       "end": 9026,
+       "paras": 59,
+       "chars": 1740,
+       "status": "done"
+      },
+      {
+       "id": "9.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9027,
+       "end": 9085,
+       "paras": 59,
+       "chars": 1750,
+       "status": "done"
+      },
+      {
+       "id": "9.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9086,
+       "end": 9143,
+       "paras": 58,
+       "chars": 1670,
+       "status": "done"
+      },
+      {
+       "id": "9.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9144,
+       "end": 9202,
+       "paras": 59,
+       "chars": 1748,
+       "status": "done"
+      },
+      {
+       "id": "9.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9203,
+       "end": 9262,
+       "paras": 60,
+       "chars": 1824,
+       "status": "done"
+      },
+      {
+       "id": "9.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9263,
+       "end": 9322,
+       "paras": 60,
+       "chars": 1644,
+       "status": "done"
+      },
+      {
+       "id": "9.1.9",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9323,
+       "end": 9381,
+       "paras": 59,
+       "chars": 1568,
+       "status": "done"
+      },
+      {
+       "id": "9.1.10",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9382,
+       "end": 9441,
+       "paras": 60,
+       "chars": 1799,
+       "status": "done"
+      },
+      {
+       "id": "9.1.11",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9442,
+       "end": 9500,
+       "paras": 59,
+       "chars": 1731,
+       "status": "done"
+      },
+      {
+       "id": "9.1.12",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9501,
+       "end": 9517,
+       "paras": 17,
+       "chars": 568,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "title": "nāmarūpaparicchedo · 11. Ekādasamo paricchedo",
+   "cs": null,
+   "chars": 12675,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:35:42",
+   "finished": "2026-11-03 05:54:44",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 9518,
+    "end": 9937,
+    "title": "11. Ekādasamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 9518,
+     "end": 9937,
+     "title": "11. Ekādasamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 420,
+     "chars": 12675,
+     "chunks": [
+      {
+       "id": "10.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9518,
+       "end": 9576,
+       "paras": 59,
+       "chars": 1784,
+       "status": "done"
+      },
+      {
+       "id": "10.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9577,
+       "end": 9636,
+       "paras": 60,
+       "chars": 1831,
+       "status": "done"
+      },
+      {
+       "id": "10.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9637,
+       "end": 9694,
+       "paras": 58,
+       "chars": 1640,
+       "status": "done"
+      },
+      {
+       "id": "10.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9695,
+       "end": 9754,
+       "paras": 60,
+       "chars": 1858,
+       "status": "done"
+      },
+      {
+       "id": "10.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9755,
+       "end": 9814,
+       "paras": 60,
+       "chars": 1855,
+       "status": "done"
+      },
+      {
+       "id": "10.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9815,
+       "end": 9874,
+       "paras": 60,
+       "chars": 1837,
+       "status": "done"
+      },
+      {
+       "id": "10.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9875,
+       "end": 9930,
+       "paras": 56,
+       "chars": 1671,
+       "status": "done"
+      },
+      {
+       "id": "10.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9931,
+       "end": 9937,
+       "paras": 7,
+       "chars": 199,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "title": "nāmarūpaparicchedo · 12. Dvādasamo paricchedo",
+   "cs": null,
+   "chars": 14013,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:25:05",
+   "finished": "2026-11-03 05:47:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 9938,
+    "end": 10409,
+    "title": "12. Dvādasamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 9938,
+     "end": 10409,
+     "title": "12. Dvādasamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 472,
+     "chars": 14013,
+     "chunks": [
+      {
+       "id": "11.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9938,
+       "end": 9995,
+       "paras": 58,
+       "chars": 1697,
+       "status": "done"
+      },
+      {
+       "id": "11.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 9996,
+       "end": 10055,
+       "paras": 60,
+       "chars": 1643,
+       "status": "done"
+      },
+      {
+       "id": "11.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10056,
+       "end": 10114,
+       "paras": 59,
+       "chars": 1759,
+       "status": "done"
+      },
+      {
+       "id": "11.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10115,
+       "end": 10174,
+       "paras": 60,
+       "chars": 1820,
+       "status": "done"
+      },
+      {
+       "id": "11.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10175,
+       "end": 10233,
+       "paras": 59,
+       "chars": 1731,
+       "status": "done"
+      },
+      {
+       "id": "11.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10234,
+       "end": 10293,
+       "paras": 60,
+       "chars": 1821,
+       "status": "done"
+      },
+      {
+       "id": "11.1.7",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10294,
+       "end": 10352,
+       "paras": 59,
+       "chars": 1808,
+       "status": "done"
+      },
+      {
+       "id": "11.1.8",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10353,
+       "end": 10409,
+       "paras": 57,
+       "chars": 1734,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "title": "nāmarūpaparicchedo · 13. Terasamo paricchedo",
+   "cs": null,
+   "chars": 6425,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:28:44",
+   "finished": "2026-11-03 06:39:08",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 10410,
+    "end": 10626,
+    "title": "13. Terasamo paricchedo",
+    "book_title": "nāmarūpaparicchedo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 10410,
+     "end": 10626,
+     "title": "13. Terasamo paricchedo",
+     "book_title": "nāmarūpaparicchedo",
+     "layer_cn": "本文 mūla",
+     "paras": 217,
+     "chars": 6425,
+     "chunks": [
+      {
+       "id": "12.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10410,
+       "end": 10468,
+       "paras": 59,
+       "chars": 1832,
+       "status": "done"
+      },
+      {
+       "id": "12.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10469,
+       "end": 10527,
+       "paras": 59,
+       "chars": 1723,
+       "status": "done"
+      },
+      {
+       "id": "12.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10528,
+       "end": 10582,
+       "paras": 55,
+       "chars": 1614,
+       "status": "done"
+      },
+      {
+       "id": "12.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10583,
+       "end": 10626,
+       "paras": 44,
+       "chars": 1256,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "title": "paramatthavinicchayo · Paramatthavinicchayo ～ Paṭhamo paricchedo",
+   "cs": null,
+   "chars": 4111,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:05:50",
+   "finished": "2026-11-03 07:13:12",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 10627,
+    "end": 10768,
+    "title": "Paramatthavinicchayo ～ Paṭhamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 10627,
+     "end": 10768,
+     "title": "Paramatthavinicchayo ～ Paṭhamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 142,
+     "chars": 4111,
+     "chunks": [
+      {
+       "id": "13.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10627,
+       "end": 10685,
+       "paras": 59,
+       "chars": 1700,
+       "status": "done"
+      },
+      {
+       "id": "13.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10686,
+       "end": 10745,
+       "paras": 60,
+       "chars": 1739,
+       "status": "done"
+      },
+      {
+       "id": "13.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10746,
+       "end": 10768,
+       "paras": 23,
+       "chars": 672,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "title": "paramatthavinicchayo · Dutiyo paricchedo",
+   "cs": null,
+   "chars": 3544,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:22:38",
+   "finished": "2026-11-03 07:29:41",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 10769,
+    "end": 10889,
+    "title": "Dutiyo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 10769,
+     "end": 10889,
+     "title": "Dutiyo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 121,
+     "chars": 3544,
+     "chunks": [
+      {
+       "id": "14.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10769,
+       "end": 10827,
+       "paras": 59,
+       "chars": 1714,
+       "status": "done"
+      },
+      {
+       "id": "14.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10828,
+       "end": 10884,
+       "paras": 57,
+       "chars": 1678,
+       "status": "done"
+      },
+      {
+       "id": "14.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10885,
+       "end": 10889,
+       "paras": 5,
+       "chars": 152,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "title": "paramatthavinicchayo · Tatiyo paricchedo",
+   "cs": null,
+   "chars": 3742,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:16:54",
+   "finished": "2026-11-03 07:24:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 10890,
+    "end": 11018,
+    "title": "Tatiyo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 10890,
+     "end": 11018,
+     "title": "Tatiyo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 129,
+     "chars": 3742,
+     "chunks": [
+      {
+       "id": "15.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10890,
+       "end": 10948,
+       "paras": 59,
+       "chars": 1705,
+       "status": "done"
+      },
+      {
+       "id": "15.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 10949,
+       "end": 11008,
+       "paras": 60,
+       "chars": 1794,
+       "status": "done"
+      },
+      {
+       "id": "15.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11009,
+       "end": 11018,
+       "paras": 10,
+       "chars": 243,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "title": "paramatthavinicchayo · Catuttho paricchedo",
+   "cs": null,
+   "chars": 4926,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:44:54",
+   "finished": "2026-11-03 06:57:20",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11019,
+    "end": 11186,
+    "title": "Catuttho paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11019,
+     "end": 11186,
+     "title": "Catuttho paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 168,
+     "chars": 4926,
+     "chunks": [
+      {
+       "id": "16.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11019,
+       "end": 11077,
+       "paras": 59,
+       "chars": 1728,
+       "status": "done"
+      },
+      {
+       "id": "16.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11078,
+       "end": 11137,
+       "paras": 60,
+       "chars": 1782,
+       "status": "done"
+      },
+      {
+       "id": "16.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11138,
+       "end": 11186,
+       "paras": 49,
+       "chars": 1416,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "title": "paramatthavinicchayo · Pañcamo paricchedo",
+   "cs": null,
+   "chars": 4715,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:52:14",
+   "finished": "2026-11-03 07:00:13",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11187,
+    "end": 11350,
+    "title": "Pañcamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11187,
+     "end": 11350,
+     "title": "Pañcamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 164,
+     "chars": 4715,
+     "chunks": [
+      {
+       "id": "17.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11187,
+       "end": 11245,
+       "paras": 59,
+       "chars": 1710,
+       "status": "done"
+      },
+      {
+       "id": "17.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11246,
+       "end": 11304,
+       "paras": 59,
+       "chars": 1684,
+       "status": "done"
+      },
+      {
+       "id": "17.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11305,
+       "end": 11350,
+       "paras": 46,
+       "chars": 1321,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "title": "paramatthavinicchayo · Chaṭṭho paricchedo",
+   "cs": null,
+   "chars": 3530,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:23:46",
+   "finished": "2026-11-03 07:32:34",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11351,
+    "end": 11468,
+    "title": "Chaṭṭho paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11351,
+     "end": 11468,
+     "title": "Chaṭṭho paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 118,
+     "chars": 3530,
+     "chunks": [
+      {
+       "id": "18.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11351,
+       "end": 11409,
+       "paras": 59,
+       "chars": 1727,
+       "status": "done"
+      },
+      {
+       "id": "18.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11410,
+       "end": 11468,
+       "paras": 59,
+       "chars": 1803,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "title": "paramatthavinicchayo · Sattamo paricchedo ～ Aṭṭhamo paricchedo",
+   "cs": null,
+   "chars": 4373,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:58:39",
+   "finished": "2026-11-03 07:07:03",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11469,
+    "end": 11617,
+    "title": "Sattamo paricchedo ～ Aṭṭhamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11469,
+     "end": 11617,
+     "title": "Sattamo paricchedo ～ Aṭṭhamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 149,
+     "chars": 4373,
+     "chunks": [
+      {
+       "id": "19.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11469,
+       "end": 11526,
+       "paras": 58,
+       "chars": 1679,
+       "status": "done"
+      },
+      {
+       "id": "19.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11527,
+       "end": 11585,
+       "paras": 59,
+       "chars": 1723,
+       "status": "done"
+      },
+      {
+       "id": "19.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11586,
+       "end": 11617,
+       "paras": 32,
+       "chars": 971,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "title": "paramatthavinicchayo · Navamo paricchedo",
+   "cs": null,
+   "chars": 3485,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:24:23",
+   "finished": "2026-11-03 07:30:38",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11618,
+    "end": 11732,
+    "title": "Navamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11618,
+     "end": 11732,
+     "title": "Navamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 115,
+     "chars": 3485,
+     "chunks": [
+      {
+       "id": "20.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11618,
+       "end": 11676,
+       "paras": 59,
+       "chars": 1772,
+       "status": "done"
+      },
+      {
+       "id": "20.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11677,
+       "end": 11732,
+       "paras": 56,
+       "chars": 1713,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "title": "paramatthavinicchayo · Dasamo paricchedo",
+   "cs": null,
+   "chars": 3007,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:32:34",
+   "finished": "2026-11-03 07:37:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11733,
+    "end": 11832,
+    "title": "Dasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11733,
+     "end": 11832,
+     "title": "Dasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 100,
+     "chars": 3007,
+     "chunks": [
+      {
+       "id": "21.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11733,
+       "end": 11791,
+       "paras": 59,
+       "chars": 1754,
+       "status": "done"
+      },
+      {
+       "id": "21.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11792,
+       "end": 11832,
+       "paras": 41,
+       "chars": 1253,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "title": "paramatthavinicchayo · Ekādasamo paricchedo",
+   "cs": null,
+   "chars": 3014,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:31:58",
+   "finished": "2026-11-03 07:37:27",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11833,
+    "end": 11938,
+    "title": "Ekādasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11833,
+     "end": 11938,
+     "title": "Ekādasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 106,
+     "chars": 3014,
+     "chunks": [
+      {
+       "id": "22.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11833,
+       "end": 11890,
+       "paras": 58,
+       "chars": 1689,
+       "status": "done"
+      },
+      {
+       "id": "22.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11891,
+       "end": 11938,
+       "paras": 48,
+       "chars": 1325,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "title": "paramatthavinicchayo · Dvādasamo paricchedo ～ Terasamo paricchedo",
+   "cs": null,
+   "chars": 6895,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:16:48",
+   "finished": "2026-11-03 06:28:44",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 11939,
+    "end": 12174,
+    "title": "Dvādasamo paricchedo ～ Terasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 11939,
+     "end": 12174,
+     "title": "Dvādasamo paricchedo ～ Terasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 236,
+     "chars": 6895,
+     "chunks": [
+      {
+       "id": "23.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11939,
+       "end": 11996,
+       "paras": 58,
+       "chars": 1726,
+       "status": "done"
+      },
+      {
+       "id": "23.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 11997,
+       "end": 12054,
+       "paras": 58,
+       "chars": 1693,
+       "status": "done"
+      },
+      {
+       "id": "23.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12055,
+       "end": 12114,
+       "paras": 60,
+       "chars": 1790,
+       "status": "done"
+      },
+      {
+       "id": "23.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12115,
+       "end": 12174,
+       "paras": 60,
+       "chars": 1686,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "title": "paramatthavinicchayo · Cuddasamo paricchedo ～ Pannarasamo paricchedo",
+   "cs": null,
+   "chars": 4071,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:07:56",
+   "finished": "2026-11-03 07:16:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 12175,
+    "end": 12313,
+    "title": "Cuddasamo paricchedo ～ Pannarasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 12175,
+     "end": 12313,
+     "title": "Cuddasamo paricchedo ～ Pannarasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 139,
+     "chars": 4071,
+     "chunks": [
+      {
+       "id": "24.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12175,
+       "end": 12233,
+       "paras": 59,
+       "chars": 1717,
+       "status": "done"
+      },
+      {
+       "id": "24.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12234,
+       "end": 12293,
+       "paras": 60,
+       "chars": 1755,
+       "status": "done"
+      },
+      {
+       "id": "24.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12294,
+       "end": 12313,
+       "paras": 20,
+       "chars": 599,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "title": "paramatthavinicchayo · Soḷasamo paricchedo",
+   "cs": null,
+   "chars": 5523,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:39:08",
+   "finished": "2026-11-03 06:49:59",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 12314,
+    "end": 12507,
+    "title": "Soḷasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 12314,
+     "end": 12507,
+     "title": "Soḷasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 194,
+     "chars": 5523,
+     "chunks": [
+      {
+       "id": "25.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12314,
+       "end": 12373,
+       "paras": 60,
+       "chars": 1663,
+       "status": "done"
+      },
+      {
+       "id": "25.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12374,
+       "end": 12433,
+       "paras": 60,
+       "chars": 1599,
+       "status": "done"
+      },
+      {
+       "id": "25.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12434,
+       "end": 12493,
+       "paras": 60,
+       "chars": 1828,
+       "status": "done"
+      },
+      {
+       "id": "25.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12494,
+       "end": 12507,
+       "paras": 14,
+       "chars": 433,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "title": "paramatthavinicchayo · Sattarasamo paricchedo",
+   "cs": null,
+   "chars": 5607,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:34:35",
+   "finished": "2026-11-03 06:44:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 12508,
+    "end": 12695,
+    "title": "Sattarasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 12508,
+     "end": 12695,
+     "title": "Sattarasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 188,
+     "chars": 5607,
+     "chunks": [
+      {
+       "id": "26.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12508,
+       "end": 12565,
+       "paras": 58,
+       "chars": 1685,
+       "status": "done"
+      },
+      {
+       "id": "26.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12566,
+       "end": 12623,
+       "paras": 58,
+       "chars": 1702,
+       "status": "done"
+      },
+      {
+       "id": "26.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12624,
+       "end": 12683,
+       "paras": 60,
+       "chars": 1838,
+       "status": "done"
+      },
+      {
+       "id": "26.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12684,
+       "end": 12695,
+       "paras": 12,
+       "chars": 382,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "title": "paramatthavinicchayo · Aṭṭhārasamo paricchedo",
+   "cs": null,
+   "chars": 4817,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:49:59",
+   "finished": "2026-11-03 06:57:20",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 12696,
+    "end": 12863,
+    "title": "Aṭṭhārasamo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 12696,
+     "end": 12863,
+     "title": "Aṭṭhārasamo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 168,
+     "chars": 4817,
+     "chunks": [
+      {
+       "id": "27.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12696,
+       "end": 12754,
+       "paras": 59,
+       "chars": 1638,
+       "status": "done"
+      },
+      {
+       "id": "27.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12755,
+       "end": 12814,
+       "paras": 60,
+       "chars": 1792,
+       "status": "done"
+      },
+      {
+       "id": "27.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12815,
+       "end": 12863,
+       "paras": 49,
+       "chars": 1387,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "title": "paramatthavinicchayo · Ekūnavīsatimo paricchedo",
+   "cs": null,
+   "chars": 4490,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:57:30",
+   "finished": "2026-11-03 07:04:57",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 12864,
+    "end": 13011,
+    "title": "Ekūnavīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 12864,
+     "end": 13011,
+     "title": "Ekūnavīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 148,
+     "chars": 4490,
+     "chunks": [
+      {
+       "id": "28.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12864,
+       "end": 12922,
+       "paras": 59,
+       "chars": 1781,
+       "status": "done"
+      },
+      {
+       "id": "28.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12923,
+       "end": 12982,
+       "paras": 60,
+       "chars": 1825,
+       "status": "done"
+      },
+      {
+       "id": "28.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 12983,
+       "end": 13011,
+       "paras": 29,
+       "chars": 884,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "title": "paramatthavinicchayo · Vīsatimo paricchedo",
+   "cs": null,
+   "chars": 3923,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:14:10",
+   "finished": "2026-11-03 07:22:38",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13012,
+    "end": 13152,
+    "title": "Vīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13012,
+     "end": 13152,
+     "title": "Vīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 141,
+     "chars": 3923,
+     "chunks": [
+      {
+       "id": "29.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13012,
+       "end": 13067,
+       "paras": 56,
+       "chars": 1632,
+       "status": "done"
+      },
+      {
+       "id": "29.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13068,
+       "end": 13126,
+       "paras": 59,
+       "chars": 1519,
+       "status": "done"
+      },
+      {
+       "id": "29.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13127,
+       "end": 13152,
+       "paras": 26,
+       "chars": 772,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "title": "paramatthavinicchayo · Ekavīsatimo paricchedo",
+   "cs": null,
+   "chars": 4308,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:00:34",
+   "finished": "2026-11-03 07:07:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13153,
+    "end": 13307,
+    "title": "Ekavīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13153,
+     "end": 13307,
+     "title": "Ekavīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 155,
+     "chars": 4308,
+     "chunks": [
+      {
+       "id": "30.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13153,
+       "end": 13211,
+       "paras": 59,
+       "chars": 1524,
+       "status": "done"
+      },
+      {
+       "id": "30.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13212,
+       "end": 13269,
+       "paras": 58,
+       "chars": 1634,
+       "status": "done"
+      },
+      {
+       "id": "30.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13270,
+       "end": 13307,
+       "paras": 38,
+       "chars": 1150,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "title": "paramatthavinicchayo · Dvāvīsatimo paricchedo",
+   "cs": null,
+   "chars": 4755,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:51:33",
+   "finished": "2026-11-03 06:58:39",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13308,
+    "end": 13469,
+    "title": "Dvāvīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13308,
+     "end": 13469,
+     "title": "Dvāvīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 162,
+     "chars": 4755,
+     "chunks": [
+      {
+       "id": "31.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13308,
+       "end": 13365,
+       "paras": 58,
+       "chars": 1675,
+       "status": "done"
+      },
+      {
+       "id": "31.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13366,
+       "end": 13425,
+       "paras": 60,
+       "chars": 1827,
+       "status": "done"
+      },
+      {
+       "id": "31.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13426,
+       "end": 13469,
+       "paras": 44,
+       "chars": 1253,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "title": "paramatthavinicchayo · Tevīsatimo paricchedo",
+   "cs": null,
+   "chars": 4174,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:04:57",
+   "finished": "2026-11-03 07:11:11",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13470,
+    "end": 13611,
+    "title": "Tevīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13470,
+     "end": 13611,
+     "title": "Tevīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 142,
+     "chars": 4174,
+     "chunks": [
+      {
+       "id": "32.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13470,
+       "end": 13528,
+       "paras": 59,
+       "chars": 1658,
+       "status": "done"
+      },
+      {
+       "id": "32.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13529,
+       "end": 13588,
+       "paras": 60,
+       "chars": 1813,
+       "status": "done"
+      },
+      {
+       "id": "32.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13589,
+       "end": 13611,
+       "paras": 23,
+       "chars": 703,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "title": "paramatthavinicchayo · Catuvīsatimo paricchedo",
+   "cs": null,
+   "chars": 3783,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:16:38",
+   "finished": "2026-11-03 07:21:55",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13612,
+    "end": 13738,
+    "title": "Catuvīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13612,
+     "end": 13738,
+     "title": "Catuvīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 127,
+     "chars": 3783,
+     "chunks": [
+      {
+       "id": "33.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13612,
+       "end": 13670,
+       "paras": 59,
+       "chars": 1774,
+       "status": "done"
+      },
+      {
+       "id": "33.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13671,
+       "end": 13730,
+       "paras": 60,
+       "chars": 1755,
+       "status": "done"
+      },
+      {
+       "id": "33.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13731,
+       "end": 13738,
+       "paras": 8,
+       "chars": 254,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "title": "paramatthavinicchayo · Pañcavīsatimo paricchedo",
+   "cs": null,
+   "chars": 3574,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:21:55",
+   "finished": "2026-11-03 07:28:11",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13739,
+    "end": 13861,
+    "title": "Pañcavīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13739,
+     "end": 13861,
+     "title": "Pañcavīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 123,
+     "chars": 3574,
+     "chunks": [
+      {
+       "id": "34.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13739,
+       "end": 13795,
+       "paras": 57,
+       "chars": 1593,
+       "status": "done"
+      },
+      {
+       "id": "34.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13796,
+       "end": 13853,
+       "paras": 58,
+       "chars": 1728,
+       "status": "done"
+      },
+      {
+       "id": "34.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13854,
+       "end": 13861,
+       "paras": 8,
+       "chars": 253,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "title": "paramatthavinicchayo · Chabbisatimo paricchedo",
+   "cs": null,
+   "chars": 4069,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:09:52",
+   "finished": "2026-11-03 07:16:38",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 13862,
+    "end": 13999,
+    "title": "Chabbisatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 13862,
+     "end": 13999,
+     "title": "Chabbisatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 138,
+     "chars": 4069,
+     "chunks": [
+      {
+       "id": "35.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13862,
+       "end": 13921,
+       "paras": 60,
+       "chars": 1703,
+       "status": "done"
+      },
+      {
+       "id": "35.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13922,
+       "end": 13981,
+       "paras": 60,
+       "chars": 1803,
+       "status": "done"
+      },
+      {
+       "id": "35.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 13982,
+       "end": 13999,
+       "paras": 18,
+       "chars": 563,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "title": "paramatthavinicchayo · Sattavīsatimo paricchedo ～ Aṭṭhavīsatimo paricchedo",
+   "cs": null,
+   "chars": 5000,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:44:22",
+   "finished": "2026-11-03 06:51:33",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 14000,
+    "end": 14168,
+    "title": "Sattavīsatimo paricchedo ～ Aṭṭhavīsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 14000,
+     "end": 14168,
+     "title": "Sattavīsatimo paricchedo ～ Aṭṭhavīsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 169,
+     "chars": 5000,
+     "chunks": [
+      {
+       "id": "36.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14000,
+       "end": 14059,
+       "paras": 60,
+       "chars": 1827,
+       "status": "done"
+      },
+      {
+       "id": "36.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14060,
+       "end": 14119,
+       "paras": 60,
+       "chars": 1748,
+       "status": "done"
+      },
+      {
+       "id": "36.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14120,
+       "end": 14168,
+       "paras": 49,
+       "chars": 1425,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "title": "paramatthavinicchayo · Ekūnatiṃsatimo paricchedo",
+   "cs": null,
+   "chars": 3098,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:30:38",
+   "finished": "2026-11-03 07:36:49",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 14169,
+    "end": 14271,
+    "title": "Ekūnatiṃsatimo paricchedo",
+    "book_title": "paramatthavinicchayo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 14169,
+     "end": 14271,
+     "title": "Ekūnatiṃsatimo paricchedo",
+     "book_title": "paramatthavinicchayo",
+     "layer_cn": "本文 mūla",
+     "paras": 102,
+     "chars": 3098,
+     "chunks": [
+      {
+       "id": "37.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14169,
+       "end": 14227,
+       "paras": 59,
+       "chars": 1791,
+       "status": "done"
+      },
+      {
+       "id": "37.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14228,
+       "end": 14271,
+       "paras": 43,
+       "chars": 1307,
+       "status": "pending"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "title": "saccasaṅkhepo · Saccasaṅkhepo ～ 1. Paṭhamo paricchedo",
+   "cs": null,
+   "chars": 6633,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:25:15",
+   "finished": "2026-11-03 06:40:31",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 14272,
+    "end": 14495,
+    "title": "Saccasaṅkhepo ～ 1. Paṭhamo paricchedo",
+    "book_title": "saccasaṅkhepo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 14272,
+     "end": 14495,
+     "title": "Saccasaṅkhepo ～ 1. Paṭhamo paricchedo",
+     "book_title": "saccasaṅkhepo",
+     "layer_cn": "本文 mūla",
+     "paras": 224,
+     "chars": 6633,
+     "chunks": [
+      {
+       "id": "38.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14272,
+       "end": 14329,
+       "paras": 58,
+       "chars": 1685,
+       "status": "done"
+      },
+      {
+       "id": "38.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14330,
+       "end": 14389,
+       "paras": 60,
+       "chars": 1834,
+       "status": "done"
+      },
+      {
+       "id": "38.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14390,
+       "end": 14448,
+       "paras": 59,
+       "chars": 1698,
+       "status": "done"
+      },
+      {
+       "id": "38.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14449,
+       "end": 14495,
+       "paras": 47,
+       "chars": 1416,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "title": "saccasaṅkhepo · 2. Dutiyo paricchedo",
+   "cs": null,
+   "chars": 3934,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:13:12",
+   "finished": "2026-11-03 07:23:46",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 14496,
+    "end": 14644,
+    "title": "2. Dutiyo paricchedo",
+    "book_title": "saccasaṅkhepo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 14496,
+     "end": 14644,
+     "title": "2. Dutiyo paricchedo",
+     "book_title": "saccasaṅkhepo",
+     "layer_cn": "本文 mūla",
+     "paras": 149,
+     "chars": 3934,
+     "chunks": [
+      {
+       "id": "39.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14496,
+       "end": 14554,
+       "paras": 59,
+       "chars": 1566,
+       "status": "done"
+      },
+      {
+       "id": "39.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14555,
+       "end": 14611,
+       "paras": 57,
+       "chars": 1483,
+       "status": "done"
+      },
+      {
+       "id": "39.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14612,
+       "end": 14644,
+       "paras": 33,
+       "chars": 885,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "title": "saccasaṅkhepo · 3. Tatiyo paricchedo",
+   "cs": null,
+   "chars": 7031,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:14:16",
+   "finished": "2026-11-03 06:30:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 14645,
+    "end": 14882,
+    "title": "3. Tatiyo paricchedo",
+    "book_title": "saccasaṅkhepo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 14645,
+     "end": 14882,
+     "title": "3. Tatiyo paricchedo",
+     "book_title": "saccasaṅkhepo",
+     "layer_cn": "本文 mūla",
+     "paras": 238,
+     "chars": 7031,
+     "chunks": [
+      {
+       "id": "40.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14645,
+       "end": 14702,
+       "paras": 58,
+       "chars": 1645,
+       "status": "done"
+      },
+      {
+       "id": "40.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14703,
+       "end": 14761,
+       "paras": 59,
+       "chars": 1741,
+       "status": "done"
+      },
+      {
+       "id": "40.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14762,
+       "end": 14820,
+       "paras": 59,
+       "chars": 1742,
+       "status": "done"
+      },
+      {
+       "id": "40.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14821,
+       "end": 14877,
+       "paras": 57,
+       "chars": 1750,
+       "status": "done"
+      },
+      {
+       "id": "40.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14878,
+       "end": 14882,
+       "paras": 5,
+       "chars": 153,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "title": "saccasaṅkhepo · 4. Catuttho paricchedo",
+   "cs": null,
+   "chars": 10090,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:51:58",
+   "finished": "2026-11-03 06:29:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 14883,
+    "end": 15234,
+    "title": "4. Catuttho paricchedo",
+    "book_title": "saccasaṅkhepo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 14883,
+     "end": 15234,
+     "title": "4. Catuttho paricchedo",
+     "book_title": "saccasaṅkhepo",
+     "layer_cn": "本文 mūla",
+     "paras": 352,
+     "chars": 10090,
+     "chunks": [
+      {
+       "id": "41.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14883,
+       "end": 14941,
+       "paras": 59,
+       "chars": 1767,
+       "status": "done"
+      },
+      {
+       "id": "41.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 14942,
+       "end": 15001,
+       "paras": 60,
+       "chars": 1789,
+       "status": "done"
+      },
+      {
+       "id": "41.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15002,
+       "end": 15061,
+       "paras": 60,
+       "chars": 1737,
+       "status": "done"
+      },
+      {
+       "id": "41.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15062,
+       "end": 15119,
+       "paras": 58,
+       "chars": 1583,
+       "status": "done"
+      },
+      {
+       "id": "41.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15120,
+       "end": 15178,
+       "paras": 59,
+       "chars": 1503,
+       "status": "done"
+      },
+      {
+       "id": "41.1.6",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15179,
+       "end": 15234,
+       "paras": 56,
+       "chars": 1711,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "title": "saccasaṅkhepo · 5. Pañcamo paricchedo",
+   "cs": null,
+   "chars": 7801,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:08:53",
+   "finished": "2026-11-03 06:25:15",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 177,
+    "start": 15235,
+    "end": 15499,
+    "title": "5. Pañcamo paricchedo",
+    "book_title": "saccasaṅkhepo"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 177,
+     "start": 15235,
+     "end": 15499,
+     "title": "5. Pañcamo paricchedo",
+     "book_title": "saccasaṅkhepo",
+     "layer_cn": "本文 mūla",
+     "paras": 265,
+     "chars": 7801,
+     "chunks": [
+      {
+       "id": "42.1.1",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15235,
+       "end": 15293,
+       "paras": 59,
+       "chars": 1799,
+       "status": "done"
+      },
+      {
+       "id": "42.1.2",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15294,
+       "end": 15352,
+       "paras": 59,
+       "chars": 1717,
+       "status": "done"
+      },
+      {
+       "id": "42.1.3",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15353,
+       "end": 15411,
+       "paras": 59,
+       "chars": 1781,
+       "status": "done"
+      },
+      {
+       "id": "42.1.4",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15412,
+       "end": 15471,
+       "paras": 60,
+       "chars": 1817,
+       "status": "done"
+      },
+      {
+       "id": "42.1.5",
+       "kind": "chunk",
+       "book": 177,
+       "start": 15472,
+       "end": 15499,
+       "paras": 28,
+       "chars": 687,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "title": "abhidhammamātikāpāḷi · Abhidhammamātikāpāḷi ～ 1. Dhammasaṅgaṇīmātikā",
+   "cs": null,
+   "chars": 9039,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:00:49",
+   "finished": "2026-11-03 06:08:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2,
+    "end": 39,
+    "title": "Abhidhammamātikāpāḷi ～ 1. Dhammasaṅgaṇīmātikā",
+    "book_title": "abhidhammamātikāpāḷi"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2,
+     "end": 39,
+     "title": "Abhidhammamātikāpāḷi ～ 1. Dhammasaṅgaṇīmātikā",
+     "book_title": "abhidhammamātikāpāḷi",
+     "layer_cn": "本文 mūla",
+     "paras": 38,
+     "chars": 9039,
+     "chunks": [
+      {
+       "id": "43.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2,
+       "end": 14,
+       "paras": 13,
+       "chars": 2841,
+       "status": "done"
+      },
+      {
+       "id": "43.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 15,
+       "end": 26,
+       "paras": 12,
+       "chars": 2148,
+       "status": "done"
+      },
+      {
+       "id": "43.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 27,
+       "end": 35,
+       "paras": 9,
+       "chars": 2453,
+       "status": "done"
+      },
+      {
+       "id": "43.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 36,
+       "end": 39,
+       "paras": 4,
+       "chars": 1597,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "title": "abhidhammamātikāpāḷi · 2. Vibhaṅgamātikā",
+   "cs": null,
+   "chars": 26727,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 04:09:56",
+   "finished": "2026-11-03 04:24:19",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 40,
+    "end": 146,
+    "title": "2. Vibhaṅgamātikā",
+    "book_title": "abhidhammamātikāpāḷi"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 40,
+     "end": 146,
+     "title": "2. Vibhaṅgamātikā",
+     "book_title": "abhidhammamātikāpāḷi",
+     "layer_cn": "本文 mūla",
+     "paras": 107,
+     "chars": 26727,
+     "chunks": [
+      {
+       "id": "44.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 40,
+       "end": 68,
+       "paras": 29,
+       "chars": 3828,
+       "status": "done"
+      },
+      {
+       "id": "44.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 69,
+       "end": 84,
+       "paras": 16,
+       "chars": 4144,
+       "status": "done"
+      },
+      {
+       "id": "44.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 85,
+       "end": 93,
+       "paras": 9,
+       "chars": 4708,
+       "status": "done"
+      },
+      {
+       "id": "44.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 94,
+       "end": 98,
+       "paras": 5,
+       "chars": 3788,
+       "status": "done"
+      },
+      {
+       "id": "44.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 99,
+       "end": 115,
+       "paras": 17,
+       "chars": 4828,
+       "status": "done"
+      },
+      {
+       "id": "44.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 116,
+       "end": 117,
+       "paras": 2,
+       "chars": 196,
+       "status": "done"
+      },
+      {
+       "id": "44.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 118,
+       "end": 141,
+       "paras": 24,
+       "chars": 4800,
+       "status": "done"
+      },
+      {
+       "id": "44.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 142,
+       "end": 146,
+       "paras": 5,
+       "chars": 435,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "title": "abhidhammamātikāpāḷi · 3. Dhātukathāmātikā ～ 5. Kathāvatthumātikā",
+   "cs": null,
+   "chars": 15877,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:20:47",
+   "finished": "2026-11-03 05:29:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 147,
+    "end": 236,
+    "title": "3. Dhātukathāmātikā ～ 5. Kathāvatthumātikā",
+    "book_title": "abhidhammamātikāpāḷi"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 147,
+     "end": 236,
+     "title": "3. Dhātukathāmātikā ～ 5. Kathāvatthumātikā",
+     "book_title": "abhidhammamātikāpāḷi",
+     "layer_cn": "本文 mūla",
+     "paras": 90,
+     "chars": 15877,
+     "chunks": [
+      {
+       "id": "45.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 147,
+       "end": 163,
+       "paras": 17,
+       "chars": 1191,
+       "status": "done"
+      },
+      {
+       "id": "45.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 164,
+       "end": 184,
+       "paras": 21,
+       "chars": 4883,
+       "status": "done"
+      },
+      {
+       "id": "45.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 185,
+       "end": 205,
+       "paras": 21,
+       "chars": 4879,
+       "status": "done"
+      },
+      {
+       "id": "45.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 206,
+       "end": 230,
+       "paras": 25,
+       "chars": 4078,
+       "status": "done"
+      },
+      {
+       "id": "45.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 231,
+       "end": 236,
+       "paras": 6,
+       "chars": 846,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "title": "abhidhammamātikāpāḷi · 6. Yamakamātikā ～ 7. Paṭṭhānamātikā ～ Nigamanaṃ",
+   "cs": null,
+   "chars": 57748,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 04:04:14",
+   "finished": "2026-11-03 04:42:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 237,
+    "end": 1220,
+    "title": "6. Yamakamātikā ～ 7. Paṭṭhānamātikā ～ Nigamanaṃ",
+    "book_title": "abhidhammamātikāpāḷi"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 237,
+     "end": 1220,
+     "title": "6. Yamakamātikā ～ 7. Paṭṭhānamātikā ～ Nigamanaṃ",
+     "book_title": "abhidhammamātikāpāḷi",
+     "layer_cn": "本文 mūla",
+     "paras": 984,
+     "chars": 57748,
+     "chunks": [
+      {
+       "id": "46.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 237,
+       "end": 264,
+       "paras": 28,
+       "chars": 3010,
+       "status": "done"
+      },
+      {
+       "id": "46.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 265,
+       "end": 298,
+       "paras": 34,
+       "chars": 3380,
+       "status": "done"
+      },
+      {
+       "id": "46.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 299,
+       "end": 354,
+       "paras": 56,
+       "chars": 2696,
+       "status": "done"
+      },
+      {
+       "id": "46.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 355,
+       "end": 414,
+       "paras": 60,
+       "chars": 2235,
+       "status": "done"
+      },
+      {
+       "id": "46.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 415,
+       "end": 466,
+       "paras": 52,
+       "chars": 2315,
+       "status": "done"
+      },
+      {
+       "id": "46.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 467,
+       "end": 525,
+       "paras": 59,
+       "chars": 2274,
+       "status": "done"
+      },
+      {
+       "id": "46.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 526,
+       "end": 580,
+       "paras": 55,
+       "chars": 2207,
+       "status": "done"
+      },
+      {
+       "id": "46.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 581,
+       "end": 638,
+       "paras": 58,
+       "chars": 2211,
+       "status": "done"
+      },
+      {
+       "id": "46.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 639,
+       "end": 689,
+       "paras": 51,
+       "chars": 2719,
+       "status": "done"
+      },
+      {
+       "id": "46.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 690,
+       "end": 719,
+       "paras": 30,
+       "chars": 2922,
+       "status": "done"
+      },
+      {
+       "id": "46.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 720,
+       "end": 754,
+       "paras": 35,
+       "chars": 3198,
+       "status": "done"
+      },
+      {
+       "id": "46.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 755,
+       "end": 788,
+       "paras": 34,
+       "chars": 2991,
+       "status": "done"
+      },
+      {
+       "id": "46.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 789,
+       "end": 819,
+       "paras": 31,
+       "chars": 3330,
+       "status": "done"
+      },
+      {
+       "id": "46.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 820,
+       "end": 852,
+       "paras": 33,
+       "chars": 3528,
+       "status": "done"
+      },
+      {
+       "id": "46.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 853,
+       "end": 878,
+       "paras": 26,
+       "chars": 1743,
+       "status": "done"
+      },
+      {
+       "id": "46.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 879,
+       "end": 914,
+       "paras": 36,
+       "chars": 1538,
+       "status": "done"
+      },
+      {
+       "id": "46.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 915,
+       "end": 961,
+       "paras": 47,
+       "chars": 2294,
+       "status": "done"
+      },
+      {
+       "id": "46.1.18",
+       "kind": "chunk",
+       "book": 180,
+       "start": 962,
+       "end": 1021,
+       "paras": 60,
+       "chars": 2774,
+       "status": "done"
+      },
+      {
+       "id": "46.1.19",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1022,
+       "end": 1025,
+       "paras": 4,
+       "chars": 186,
+       "status": "done"
+      },
+      {
+       "id": "46.1.20",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1026,
+       "end": 1069,
+       "paras": 44,
+       "chars": 3123,
+       "status": "done"
+      },
+      {
+       "id": "46.1.21",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1070,
+       "end": 1116,
+       "paras": 47,
+       "chars": 1781,
+       "status": "done"
+      },
+      {
+       "id": "46.1.22",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1117,
+       "end": 1159,
+       "paras": 43,
+       "chars": 1825,
+       "status": "done"
+      },
+      {
+       "id": "46.1.23",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1160,
+       "end": 1207,
+       "paras": 48,
+       "chars": 2947,
+       "status": "done"
+      },
+      {
+       "id": "46.1.24",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1208,
+       "end": 1220,
+       "paras": 13,
+       "chars": 521,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "title": "mohavicchedanī · Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（1）",
+   "cs": null,
+   "chars": 75210,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 02:22:46",
+   "finished": "2026-11-03 03:13:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 1221,
+    "end": 1403,
+    "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（1）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 1221,
+     "end": 1403,
+     "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（1）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 183,
+     "chars": 75210,
+     "chunks": [
+      {
+       "id": "47.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1221,
+       "end": 1246,
+       "paras": 26,
+       "chars": 963,
+       "status": "done"
+      },
+      {
+       "id": "47.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1247,
+       "end": 1256,
+       "paras": 10,
+       "chars": 4627,
+       "status": "done"
+      },
+      {
+       "id": "47.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1257,
+       "end": 1258,
+       "paras": 2,
+       "chars": 1855,
+       "status": "done"
+      },
+      {
+       "id": "47.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1259,
+       "end": 1268,
+       "paras": 10,
+       "chars": 3872,
+       "status": "done"
+      },
+      {
+       "id": "47.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1269,
+       "end": 1292,
+       "paras": 24,
+       "chars": 4959,
+       "status": "done"
+      },
+      {
+       "id": "47.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1293,
+       "end": 1301,
+       "paras": 9,
+       "chars": 4555,
+       "status": "done"
+      },
+      {
+       "id": "47.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1302,
+       "end": 1312,
+       "paras": 11,
+       "chars": 4880,
+       "status": "done"
+      },
+      {
+       "id": "47.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1313,
+       "end": 1322,
+       "paras": 10,
+       "chars": 4967,
+       "status": "done"
+      },
+      {
+       "id": "47.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1323,
+       "end": 1334,
+       "paras": 12,
+       "chars": 4968,
+       "status": "done"
+      },
+      {
+       "id": "47.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1335,
+       "end": 1343,
+       "paras": 9,
+       "chars": 4508,
+       "status": "done"
+      },
+      {
+       "id": "47.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1344,
+       "end": 1348,
+       "paras": 5,
+       "chars": 4039,
+       "status": "done"
+      },
+      {
+       "id": "47.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1349,
+       "end": 1354,
+       "paras": 6,
+       "chars": 4911,
+       "status": "done"
+      },
+      {
+       "id": "47.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1355,
+       "end": 1365,
+       "paras": 11,
+       "chars": 4333,
+       "status": "done"
+      },
+      {
+       "id": "47.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1366,
+       "end": 1370,
+       "paras": 5,
+       "chars": 4181,
+       "status": "done"
+      },
+      {
+       "id": "47.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1371,
+       "end": 1378,
+       "paras": 8,
+       "chars": 4769,
+       "status": "done"
+      },
+      {
+       "id": "47.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1379,
+       "end": 1385,
+       "paras": 7,
+       "chars": 4843,
+       "status": "done"
+      },
+      {
+       "id": "47.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1386,
+       "end": 1394,
+       "paras": 9,
+       "chars": 4954,
+       "status": "done"
+      },
+      {
+       "id": "47.1.18",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1395,
+       "end": 1402,
+       "paras": 8,
+       "chars": 3011,
+       "status": "done"
+      },
+      {
+       "id": "47.1.19",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1403,
+       "end": 1403,
+       "paras": 1,
+       "chars": 15,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "title": "mohavicchedanī · Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（2）",
+   "cs": null,
+   "chars": 74374,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 02:22:56",
+   "finished": "2026-11-03 03:19:11",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 1404,
+    "end": 1528,
+    "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（2）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 1404,
+     "end": 1528,
+     "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（2）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 125,
+     "chars": 74374,
+     "chunks": [
+      {
+       "id": "48.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1404,
+       "end": 1417,
+       "paras": 14,
+       "chars": 4834,
+       "status": "done"
+      },
+      {
+       "id": "48.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1418,
+       "end": 1426,
+       "paras": 9,
+       "chars": 4278,
+       "status": "done"
+      },
+      {
+       "id": "48.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1427,
+       "end": 1432,
+       "paras": 6,
+       "chars": 4462,
+       "status": "done"
+      },
+      {
+       "id": "48.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1433,
+       "end": 1443,
+       "paras": 11,
+       "chars": 3687,
+       "status": "done"
+      },
+      {
+       "id": "48.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1444,
+       "end": 1456,
+       "paras": 13,
+       "chars": 4902,
+       "status": "done"
+      },
+      {
+       "id": "48.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1457,
+       "end": 1461,
+       "paras": 5,
+       "chars": 685,
+       "status": "done"
+      },
+      {
+       "id": "48.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1462,
+       "end": 1467,
+       "paras": 6,
+       "chars": 4502,
+       "status": "done"
+      },
+      {
+       "id": "48.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1468,
+       "end": 1472,
+       "paras": 5,
+       "chars": 4409,
+       "status": "done"
+      },
+      {
+       "id": "48.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1473,
+       "end": 1477,
+       "paras": 5,
+       "chars": 4922,
+       "status": "done"
+      },
+      {
+       "id": "48.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1478,
+       "end": 1484,
+       "paras": 7,
+       "chars": 4294,
+       "status": "done"
+      },
+      {
+       "id": "48.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1485,
+       "end": 1488,
+       "paras": 4,
+       "chars": 4624,
+       "status": "done"
+      },
+      {
+       "id": "48.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1489,
+       "end": 1492,
+       "paras": 4,
+       "chars": 4213,
+       "status": "done"
+      },
+      {
+       "id": "48.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1493,
+       "end": 1498,
+       "paras": 6,
+       "chars": 4685,
+       "status": "done"
+      },
+      {
+       "id": "48.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1499,
+       "end": 1504,
+       "paras": 6,
+       "chars": 4969,
+       "status": "done"
+      },
+      {
+       "id": "48.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1505,
+       "end": 1510,
+       "paras": 6,
+       "chars": 4400,
+       "status": "done"
+      },
+      {
+       "id": "48.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1511,
+       "end": 1515,
+       "paras": 5,
+       "chars": 4953,
+       "status": "done"
+      },
+      {
+       "id": "48.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1516,
+       "end": 1519,
+       "paras": 4,
+       "chars": 3685,
+       "status": "done"
+      },
+      {
+       "id": "48.1.18",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1520,
+       "end": 1528,
+       "paras": 9,
+       "chars": 1870,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "title": "mohavicchedanī · Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（3）",
+   "cs": null,
+   "chars": 68705,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 03:17:09",
+   "finished": "2026-11-03 04:14:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 1529,
+    "end": 1697,
+    "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（3）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 1529,
+     "end": 1697,
+     "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（3）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 169,
+     "chars": 68705,
+     "chunks": [
+      {
+       "id": "49.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1529,
+       "end": 1539,
+       "paras": 11,
+       "chars": 4597,
+       "status": "done"
+      },
+      {
+       "id": "49.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1540,
+       "end": 1549,
+       "paras": 10,
+       "chars": 4545,
+       "status": "done"
+      },
+      {
+       "id": "49.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1550,
+       "end": 1556,
+       "paras": 7,
+       "chars": 4587,
+       "status": "done"
+      },
+      {
+       "id": "49.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1557,
+       "end": 1566,
+       "paras": 10,
+       "chars": 4755,
+       "status": "done"
+      },
+      {
+       "id": "49.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1567,
+       "end": 1571,
+       "paras": 5,
+       "chars": 4795,
+       "status": "done"
+      },
+      {
+       "id": "49.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1572,
+       "end": 1577,
+       "paras": 6,
+       "chars": 4786,
+       "status": "done"
+      },
+      {
+       "id": "49.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1578,
+       "end": 1584,
+       "paras": 7,
+       "chars": 3924,
+       "status": "done"
+      },
+      {
+       "id": "49.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1585,
+       "end": 1598,
+       "paras": 14,
+       "chars": 4901,
+       "status": "done"
+      },
+      {
+       "id": "49.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1599,
+       "end": 1607,
+       "paras": 9,
+       "chars": 4724,
+       "status": "done"
+      },
+      {
+       "id": "49.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1608,
+       "end": 1622,
+       "paras": 15,
+       "chars": 4728,
+       "status": "done"
+      },
+      {
+       "id": "49.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1623,
+       "end": 1637,
+       "paras": 15,
+       "chars": 4853,
+       "status": "done"
+      },
+      {
+       "id": "49.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1638,
+       "end": 1647,
+       "paras": 10,
+       "chars": 4096,
+       "status": "done"
+      },
+      {
+       "id": "49.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1648,
+       "end": 1662,
+       "paras": 15,
+       "chars": 3664,
+       "status": "done"
+      },
+      {
+       "id": "49.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1663,
+       "end": 1676,
+       "paras": 14,
+       "chars": 4088,
+       "status": "done"
+      },
+      {
+       "id": "49.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1677,
+       "end": 1690,
+       "paras": 14,
+       "chars": 4212,
+       "status": "done"
+      },
+      {
+       "id": "49.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1691,
+       "end": 1697,
+       "paras": 7,
+       "chars": 1450,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "title": "mohavicchedanī · Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（4）",
+   "cs": null,
+   "chars": 14980,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:24:29",
+   "finished": "2026-11-03 05:35:42",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 1698,
+    "end": 1740,
+    "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（4）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 1698,
+     "end": 1740,
+     "title": "Mohavicchedanī ～ 1. Dhammasaṅgaṇīmātikā（4）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 43,
+     "chars": 14980,
+     "chunks": [
+      {
+       "id": "50.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1698,
+       "end": 1705,
+       "paras": 8,
+       "chars": 4273,
+       "status": "done"
+      },
+      {
+       "id": "50.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1706,
+       "end": 1715,
+       "paras": 10,
+       "chars": 4697,
+       "status": "done"
+      },
+      {
+       "id": "50.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1716,
+       "end": 1732,
+       "paras": 17,
+       "chars": 4364,
+       "status": "done"
+      },
+      {
+       "id": "50.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1733,
+       "end": 1740,
+       "paras": 8,
+       "chars": 1646,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "title": "mohavicchedanī · 2. Vibhaṅgamātikā（1）",
+   "cs": null,
+   "chars": 73052,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 02:23:06",
+   "finished": "2026-11-03 03:17:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 1741,
+    "end": 1935,
+    "title": "2. Vibhaṅgamātikā（1）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 1741,
+     "end": 1935,
+     "title": "2. Vibhaṅgamātikā（1）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 195,
+     "chars": 73052,
+     "chunks": [
+      {
+       "id": "51.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1741,
+       "end": 1745,
+       "paras": 5,
+       "chars": 461,
+       "status": "done"
+      },
+      {
+       "id": "51.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1746,
+       "end": 1757,
+       "paras": 12,
+       "chars": 4863,
+       "status": "done"
+      },
+      {
+       "id": "51.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1758,
+       "end": 1760,
+       "paras": 3,
+       "chars": 3311,
+       "status": "done"
+      },
+      {
+       "id": "51.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1761,
+       "end": 1770,
+       "paras": 10,
+       "chars": 4142,
+       "status": "done"
+      },
+      {
+       "id": "51.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1771,
+       "end": 1779,
+       "paras": 9,
+       "chars": 1900,
+       "status": "done"
+      },
+      {
+       "id": "51.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1780,
+       "end": 1791,
+       "paras": 12,
+       "chars": 4590,
+       "status": "done"
+      },
+      {
+       "id": "51.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1792,
+       "end": 1794,
+       "paras": 3,
+       "chars": 1589,
+       "status": "done"
+      },
+      {
+       "id": "51.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1795,
+       "end": 1812,
+       "paras": 18,
+       "chars": 4994,
+       "status": "done"
+      },
+      {
+       "id": "51.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1813,
+       "end": 1820,
+       "paras": 8,
+       "chars": 1420,
+       "status": "done"
+      },
+      {
+       "id": "51.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1821,
+       "end": 1832,
+       "paras": 12,
+       "chars": 4003,
+       "status": "done"
+      },
+      {
+       "id": "51.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1833,
+       "end": 1836,
+       "paras": 4,
+       "chars": 3741,
+       "status": "done"
+      },
+      {
+       "id": "51.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1837,
+       "end": 1844,
+       "paras": 8,
+       "chars": 4714,
+       "status": "done"
+      },
+      {
+       "id": "51.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1845,
+       "end": 1865,
+       "paras": 21,
+       "chars": 4352,
+       "status": "done"
+      },
+      {
+       "id": "51.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1866,
+       "end": 1869,
+       "paras": 4,
+       "chars": 1646,
+       "status": "done"
+      },
+      {
+       "id": "51.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1870,
+       "end": 1880,
+       "paras": 11,
+       "chars": 4575,
+       "status": "done"
+      },
+      {
+       "id": "51.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1881,
+       "end": 1887,
+       "paras": 7,
+       "chars": 4316,
+       "status": "done"
+      },
+      {
+       "id": "51.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1888,
+       "end": 1899,
+       "paras": 12,
+       "chars": 4918,
+       "status": "done"
+      },
+      {
+       "id": "51.1.18",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1900,
+       "end": 1908,
+       "paras": 9,
+       "chars": 4748,
+       "status": "done"
+      },
+      {
+       "id": "51.1.19",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1909,
+       "end": 1926,
+       "paras": 18,
+       "chars": 4786,
+       "status": "done"
+      },
+      {
+       "id": "51.1.20",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1927,
+       "end": 1935,
+       "paras": 9,
+       "chars": 3983,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "title": "mohavicchedanī · 2. Vibhaṅgamātikā（2）",
+   "cs": null,
+   "chars": 67262,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 03:20:02",
+   "finished": "2026-11-03 04:09:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 1936,
+    "end": 2068,
+    "title": "2. Vibhaṅgamātikā（2）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 1936,
+     "end": 2068,
+     "title": "2. Vibhaṅgamātikā（2）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 133,
+     "chars": 67262,
+     "chunks": [
+      {
+       "id": "52.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1936,
+       "end": 1945,
+       "paras": 10,
+       "chars": 4910,
+       "status": "done"
+      },
+      {
+       "id": "52.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1946,
+       "end": 1955,
+       "paras": 10,
+       "chars": 4014,
+       "status": "done"
+      },
+      {
+       "id": "52.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1956,
+       "end": 1965,
+       "paras": 10,
+       "chars": 3625,
+       "status": "done"
+      },
+      {
+       "id": "52.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1966,
+       "end": 1972,
+       "paras": 7,
+       "chars": 3195,
+       "status": "done"
+      },
+      {
+       "id": "52.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1973,
+       "end": 1981,
+       "paras": 9,
+       "chars": 4763,
+       "status": "done"
+      },
+      {
+       "id": "52.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1982,
+       "end": 1984,
+       "paras": 3,
+       "chars": 1302,
+       "status": "done"
+      },
+      {
+       "id": "52.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1985,
+       "end": 1995,
+       "paras": 11,
+       "chars": 3722,
+       "status": "done"
+      },
+      {
+       "id": "52.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 1996,
+       "end": 2010,
+       "paras": 15,
+       "chars": 4977,
+       "status": "done"
+      },
+      {
+       "id": "52.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2011,
+       "end": 2015,
+       "paras": 5,
+       "chars": 4315,
+       "status": "done"
+      },
+      {
+       "id": "52.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2016,
+       "end": 2020,
+       "paras": 5,
+       "chars": 3750,
+       "status": "done"
+      },
+      {
+       "id": "52.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2021,
+       "end": 2023,
+       "paras": 3,
+       "chars": 3193,
+       "status": "done"
+      },
+      {
+       "id": "52.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2024,
+       "end": 2026,
+       "paras": 3,
+       "chars": 4186,
+       "status": "done"
+      },
+      {
+       "id": "52.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2027,
+       "end": 2033,
+       "paras": 7,
+       "chars": 4997,
+       "status": "done"
+      },
+      {
+       "id": "52.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2034,
+       "end": 2040,
+       "paras": 7,
+       "chars": 3942,
+       "status": "done"
+      },
+      {
+       "id": "52.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2041,
+       "end": 2045,
+       "paras": 5,
+       "chars": 2424,
+       "status": "done"
+      },
+      {
+       "id": "52.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2046,
+       "end": 2053,
+       "paras": 8,
+       "chars": 4712,
+       "status": "done"
+      },
+      {
+       "id": "52.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2054,
+       "end": 2059,
+       "paras": 6,
+       "chars": 1420,
+       "status": "done"
+      },
+      {
+       "id": "52.1.18",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2060,
+       "end": 2068,
+       "paras": 9,
+       "chars": 3815,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "title": "mohavicchedanī · 2. Vibhaṅgamātikā（3）",
+   "cs": null,
+   "chars": 76734,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 02:22:36",
+   "finished": "2026-11-03 03:20:02",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2069,
+    "end": 2196,
+    "title": "2. Vibhaṅgamātikā（3）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2069,
+     "end": 2196,
+     "title": "2. Vibhaṅgamātikā（3）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 128,
+     "chars": 76734,
+     "chunks": [
+      {
+       "id": "53.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2069,
+       "end": 2074,
+       "paras": 6,
+       "chars": 4576,
+       "status": "done"
+      },
+      {
+       "id": "53.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2075,
+       "end": 2079,
+       "paras": 5,
+       "chars": 4593,
+       "status": "done"
+      },
+      {
+       "id": "53.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2080,
+       "end": 2089,
+       "paras": 10,
+       "chars": 4751,
+       "status": "done"
+      },
+      {
+       "id": "53.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2090,
+       "end": 2106,
+       "paras": 17,
+       "chars": 4399,
+       "status": "done"
+      },
+      {
+       "id": "53.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2107,
+       "end": 2111,
+       "paras": 5,
+       "chars": 3191,
+       "status": "done"
+      },
+      {
+       "id": "53.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2112,
+       "end": 2114,
+       "paras": 3,
+       "chars": 4387,
+       "status": "done"
+      },
+      {
+       "id": "53.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2115,
+       "end": 2120,
+       "paras": 6,
+       "chars": 4932,
+       "status": "done"
+      },
+      {
+       "id": "53.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2121,
+       "end": 2140,
+       "paras": 20,
+       "chars": 4838,
+       "status": "done"
+      },
+      {
+       "id": "53.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2141,
+       "end": 2145,
+       "paras": 5,
+       "chars": 4216,
+       "status": "done"
+      },
+      {
+       "id": "53.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2146,
+       "end": 2150,
+       "paras": 5,
+       "chars": 4685,
+       "status": "done"
+      },
+      {
+       "id": "53.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2151,
+       "end": 2157,
+       "paras": 7,
+       "chars": 2920,
+       "status": "done"
+      },
+      {
+       "id": "53.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2158,
+       "end": 2164,
+       "paras": 7,
+       "chars": 4917,
+       "status": "done"
+      },
+      {
+       "id": "53.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2165,
+       "end": 2169,
+       "paras": 5,
+       "chars": 4831,
+       "status": "done"
+      },
+      {
+       "id": "53.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2170,
+       "end": 2178,
+       "paras": 9,
+       "chars": 4967,
+       "status": "done"
+      },
+      {
+       "id": "53.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2179,
+       "end": 2184,
+       "paras": 6,
+       "chars": 4921,
+       "status": "done"
+      },
+      {
+       "id": "53.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2185,
+       "end": 2188,
+       "paras": 4,
+       "chars": 4768,
+       "status": "done"
+      },
+      {
+       "id": "53.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2189,
+       "end": 2196,
+       "paras": 8,
+       "chars": 4842,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "title": "mohavicchedanī · 2. Vibhaṅgamātikā（4）",
+   "cs": null,
+   "chars": 13243,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:31:23",
+   "finished": "2026-11-03 05:41:24",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2197,
+    "end": 2249,
+    "title": "2. Vibhaṅgamātikā（4）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2197,
+     "end": 2249,
+     "title": "2. Vibhaṅgamātikā（4）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 53,
+     "chars": 13243,
+     "chunks": [
+      {
+       "id": "54.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2197,
+       "end": 2216,
+       "paras": 20,
+       "chars": 4555,
+       "status": "done"
+      },
+      {
+       "id": "54.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2217,
+       "end": 2230,
+       "paras": 14,
+       "chars": 4661,
+       "status": "done"
+      },
+      {
+       "id": "54.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2231,
+       "end": 2249,
+       "paras": 19,
+       "chars": 4027,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "title": "mohavicchedanī · 3. Dhātukathāmātikā",
+   "cs": null,
+   "chars": 25362,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 04:14:32",
+   "finished": "2026-11-03 04:32:51",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2250,
+    "end": 2339,
+    "title": "3. Dhātukathāmātikā",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2250,
+     "end": 2339,
+     "title": "3. Dhātukathāmātikā",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 90,
+     "chars": 25362,
+     "chunks": [
+      {
+       "id": "55.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2250,
+       "end": 2260,
+       "paras": 11,
+       "chars": 2749,
+       "status": "done"
+      },
+      {
+       "id": "55.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2261,
+       "end": 2272,
+       "paras": 12,
+       "chars": 4333,
+       "status": "done"
+      },
+      {
+       "id": "55.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2273,
+       "end": 2284,
+       "paras": 12,
+       "chars": 3956,
+       "status": "done"
+      },
+      {
+       "id": "55.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2285,
+       "end": 2298,
+       "paras": 14,
+       "chars": 4004,
+       "status": "done"
+      },
+      {
+       "id": "55.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2299,
+       "end": 2315,
+       "paras": 17,
+       "chars": 4638,
+       "status": "done"
+      },
+      {
+       "id": "55.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2316,
+       "end": 2334,
+       "paras": 19,
+       "chars": 4331,
+       "status": "done"
+      },
+      {
+       "id": "55.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2335,
+       "end": 2339,
+       "paras": 5,
+       "chars": 1351,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 56,
+   "title": "mohavicchedanī · 4. Puggalapaññattimātikā",
+   "cs": null,
+   "chars": 24533,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 04:24:19",
+   "finished": "2026-11-03 04:44:47",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2340,
+    "end": 2380,
+    "title": "4. Puggalapaññattimātikā",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2340,
+     "end": 2380,
+     "title": "4. Puggalapaññattimātikā",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 41,
+     "chars": 24533,
+     "chunks": [
+      {
+       "id": "56.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2340,
+       "end": 2340,
+       "paras": 1,
+       "chars": 24,
+       "status": "done"
+      },
+      {
+       "id": "56.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2341,
+       "end": 2348,
+       "paras": 8,
+       "chars": 4306,
+       "status": "done"
+      },
+      {
+       "id": "56.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2349,
+       "end": 2355,
+       "paras": 7,
+       "chars": 4054,
+       "status": "done"
+      },
+      {
+       "id": "56.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2356,
+       "end": 2360,
+       "paras": 5,
+       "chars": 4178,
+       "status": "done"
+      },
+      {
+       "id": "56.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2361,
+       "end": 2368,
+       "paras": 8,
+       "chars": 3981,
+       "status": "done"
+      },
+      {
+       "id": "56.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2369,
+       "end": 2372,
+       "paras": 4,
+       "chars": 4637,
+       "status": "done"
+      },
+      {
+       "id": "56.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2373,
+       "end": 2380,
+       "paras": 8,
+       "chars": 3353,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "title": "mohavicchedanī · 5. Kathāvatthumātikā",
+   "cs": null,
+   "chars": 36993,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 04:06:27",
+   "finished": "2026-11-03 04:38:29",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2381,
+    "end": 2462,
+    "title": "5. Kathāvatthumātikā",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2381,
+     "end": 2462,
+     "title": "5. Kathāvatthumātikā",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 82,
+     "chars": 36993,
+     "chunks": [
+      {
+       "id": "57.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2381,
+       "end": 2381,
+       "paras": 1,
+       "chars": 20,
+       "status": "done"
+      },
+      {
+       "id": "57.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2382,
+       "end": 2385,
+       "paras": 4,
+       "chars": 4284,
+       "status": "done"
+      },
+      {
+       "id": "57.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2386,
+       "end": 2390,
+       "paras": 5,
+       "chars": 4577,
+       "status": "done"
+      },
+      {
+       "id": "57.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2391,
+       "end": 2406,
+       "paras": 16,
+       "chars": 4934,
+       "status": "done"
+      },
+      {
+       "id": "57.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2407,
+       "end": 2425,
+       "paras": 19,
+       "chars": 4985,
+       "status": "done"
+      },
+      {
+       "id": "57.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2426,
+       "end": 2437,
+       "paras": 12,
+       "chars": 1815,
+       "status": "done"
+      },
+      {
+       "id": "57.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2438,
+       "end": 2442,
+       "paras": 5,
+       "chars": 4030,
+       "status": "done"
+      },
+      {
+       "id": "57.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2443,
+       "end": 2447,
+       "paras": 5,
+       "chars": 3562,
+       "status": "done"
+      },
+      {
+       "id": "57.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2448,
+       "end": 2452,
+       "paras": 5,
+       "chars": 3827,
+       "status": "done"
+      },
+      {
+       "id": "57.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2453,
+       "end": 2459,
+       "paras": 7,
+       "chars": 3958,
+       "status": "done"
+      },
+      {
+       "id": "57.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2460,
+       "end": 2462,
+       "paras": 3,
+       "chars": 1001,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "title": "mohavicchedanī · 6. Yamakamātikā（1）",
+   "cs": null,
+   "chars": 68944,
+   "status": "done",
+   "tries": 2,
+   "started": "2026-11-03 04:01:31",
+   "finished": "2026-11-03 04:04:14",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2463,
+    "end": 2558,
+    "title": "6. Yamakamātikā（1）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2463,
+     "end": 2558,
+     "title": "6. Yamakamātikā（1）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 96,
+     "chars": 68944,
+     "chunks": [
+      {
+       "id": "58.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2463,
+       "end": 2463,
+       "paras": 1,
+       "chars": 15,
+       "status": "done"
+      },
+      {
+       "id": "58.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2464,
+       "end": 2469,
+       "paras": 6,
+       "chars": 4602,
+       "status": "done"
+      },
+      {
+       "id": "58.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2470,
+       "end": 2476,
+       "paras": 7,
+       "chars": 3512,
+       "status": "done"
+      },
+      {
+       "id": "58.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2477,
+       "end": 2483,
+       "paras": 7,
+       "chars": 4894,
+       "status": "done"
+      },
+      {
+       "id": "58.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2484,
+       "end": 2489,
+       "paras": 6,
+       "chars": 4796,
+       "status": "done"
+      },
+      {
+       "id": "58.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2490,
+       "end": 2495,
+       "paras": 6,
+       "chars": 4322,
+       "status": "done"
+      },
+      {
+       "id": "58.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2496,
+       "end": 2500,
+       "paras": 5,
+       "chars": 4659,
+       "status": "done"
+      },
+      {
+       "id": "58.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2501,
+       "end": 2502,
+       "paras": 2,
+       "chars": 1406,
+       "status": "done"
+      },
+      {
+       "id": "58.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2503,
+       "end": 2507,
+       "paras": 5,
+       "chars": 2563,
+       "status": "done"
+      },
+      {
+       "id": "58.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2508,
+       "end": 2513,
+       "paras": 6,
+       "chars": 4598,
+       "status": "done"
+      },
+      {
+       "id": "58.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2514,
+       "end": 2515,
+       "paras": 2,
+       "chars": 1681,
+       "status": "done"
+      },
+      {
+       "id": "58.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2516,
+       "end": 2520,
+       "paras": 5,
+       "chars": 4367,
+       "status": "done"
+      },
+      {
+       "id": "58.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2521,
+       "end": 2525,
+       "paras": 5,
+       "chars": 4263,
+       "status": "done"
+      },
+      {
+       "id": "58.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2526,
+       "end": 2531,
+       "paras": 6,
+       "chars": 4821,
+       "status": "done"
+      },
+      {
+       "id": "58.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2532,
+       "end": 2535,
+       "paras": 4,
+       "chars": 3639,
+       "status": "done"
+      },
+      {
+       "id": "58.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2536,
+       "end": 2539,
+       "paras": 4,
+       "chars": 2916,
+       "status": "done"
+      },
+      {
+       "id": "58.1.17",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2540,
+       "end": 2547,
+       "paras": 8,
+       "chars": 4810,
+       "status": "done"
+      },
+      {
+       "id": "58.1.18",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2548,
+       "end": 2554,
+       "paras": 7,
+       "chars": 4207,
+       "status": "done"
+      },
+      {
+       "id": "58.1.19",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2555,
+       "end": 2558,
+       "paras": 4,
+       "chars": 2873,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "title": "mohavicchedanī · 6. Yamakamātikā（2）",
+   "cs": null,
+   "chars": 17196,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:18:48",
+   "finished": "2026-11-03 05:31:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2559,
+    "end": 2601,
+    "title": "6. Yamakamātikā（2）",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2559,
+     "end": 2601,
+     "title": "6. Yamakamātikā（2）",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 43,
+     "chars": 17196,
+     "chunks": [
+      {
+       "id": "59.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2559,
+       "end": 2565,
+       "paras": 7,
+       "chars": 4922,
+       "status": "done"
+      },
+      {
+       "id": "59.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2566,
+       "end": 2570,
+       "paras": 5,
+       "chars": 1995,
+       "status": "done"
+      },
+      {
+       "id": "59.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2571,
+       "end": 2576,
+       "paras": 6,
+       "chars": 2178,
+       "status": "done"
+      },
+      {
+       "id": "59.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2577,
+       "end": 2585,
+       "paras": 9,
+       "chars": 3432,
+       "status": "done"
+      },
+      {
+       "id": "59.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2586,
+       "end": 2588,
+       "paras": 3,
+       "chars": 830,
+       "status": "done"
+      },
+      {
+       "id": "59.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2589,
+       "end": 2601,
+       "paras": 13,
+       "chars": 3839,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "title": "mohavicchedanī · 7. Paṭṭhānamātikatthavaṇṇanā",
+   "cs": null,
+   "chars": 68554,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 03:19:11",
+   "finished": "2026-11-03 04:06:27",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2602,
+    "end": 2743,
+    "title": "7. Paṭṭhānamātikatthavaṇṇanā",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2602,
+     "end": 2743,
+     "title": "7. Paṭṭhānamātikatthavaṇṇanā",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 142,
+     "chars": 68554,
+     "chunks": [
+      {
+       "id": "60.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2602,
+       "end": 2606,
+       "paras": 5,
+       "chars": 4539,
+       "status": "done"
+      },
+      {
+       "id": "60.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2607,
+       "end": 2612,
+       "paras": 6,
+       "chars": 4752,
+       "status": "done"
+      },
+      {
+       "id": "60.1.3",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2613,
+       "end": 2619,
+       "paras": 7,
+       "chars": 4096,
+       "status": "done"
+      },
+      {
+       "id": "60.1.4",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2620,
+       "end": 2625,
+       "paras": 6,
+       "chars": 4570,
+       "status": "done"
+      },
+      {
+       "id": "60.1.5",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2626,
+       "end": 2632,
+       "paras": 7,
+       "chars": 3205,
+       "status": "done"
+      },
+      {
+       "id": "60.1.6",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2633,
+       "end": 2646,
+       "paras": 14,
+       "chars": 4955,
+       "status": "done"
+      },
+      {
+       "id": "60.1.7",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2647,
+       "end": 2655,
+       "paras": 9,
+       "chars": 4728,
+       "status": "done"
+      },
+      {
+       "id": "60.1.8",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2656,
+       "end": 2659,
+       "paras": 4,
+       "chars": 4926,
+       "status": "done"
+      },
+      {
+       "id": "60.1.9",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2660,
+       "end": 2666,
+       "paras": 7,
+       "chars": 4522,
+       "status": "done"
+      },
+      {
+       "id": "60.1.10",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2667,
+       "end": 2673,
+       "paras": 7,
+       "chars": 4902,
+       "status": "done"
+      },
+      {
+       "id": "60.1.11",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2674,
+       "end": 2679,
+       "paras": 6,
+       "chars": 3816,
+       "status": "done"
+      },
+      {
+       "id": "60.1.12",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2680,
+       "end": 2693,
+       "paras": 14,
+       "chars": 4041,
+       "status": "done"
+      },
+      {
+       "id": "60.1.13",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2694,
+       "end": 2708,
+       "paras": 15,
+       "chars": 4501,
+       "status": "done"
+      },
+      {
+       "id": "60.1.14",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2709,
+       "end": 2716,
+       "paras": 8,
+       "chars": 4742,
+       "status": "done"
+      },
+      {
+       "id": "60.1.15",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2717,
+       "end": 2734,
+       "paras": 18,
+       "chars": 3957,
+       "status": "done"
+      },
+      {
+       "id": "60.1.16",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2735,
+       "end": 2743,
+       "paras": 9,
+       "chars": 2302,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "title": "mohavicchedanī · Nigamanakathā",
+   "cs": null,
+   "chars": 2371,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:32:50",
+   "finished": "2026-11-03 07:37:16",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 180,
+    "start": 2744,
+    "end": 2826,
+    "title": "Nigamanakathā",
+    "book_title": "mohavicchedanī"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 180,
+     "start": 2744,
+     "end": 2826,
+     "title": "Nigamanakathā",
+     "book_title": "mohavicchedanī",
+     "layer_cn": "本文 mūla",
+     "paras": 83,
+     "chars": 2371,
+     "chunks": [
+      {
+       "id": "61.1.1",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2744,
+       "end": 2803,
+       "paras": 60,
+       "chars": 1704,
+       "status": "done"
+      },
+      {
+       "id": "61.1.2",
+       "kind": "chunk",
+       "book": 180,
+       "start": 2804,
+       "end": 2826,
+       "paras": 23,
+       "chars": 667,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · Paṭṭhānuddesa dīpanīpāṭha ～ 1. Hetupaccayo",
+   "cs": null,
+   "chars": 4233,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:02:46",
+   "finished": "2026-11-03 07:05:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 2,
+    "end": 13,
+    "title": "Paṭṭhānuddesa dīpanīpāṭha ～ 1. Hetupaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 2,
+     "end": 13,
+     "title": "Paṭṭhānuddesa dīpanīpāṭha ～ 1. Hetupaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 12,
+     "chars": 4233,
+     "chunks": [
+      {
+       "id": "62.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 2,
+       "end": 13,
+       "paras": 12,
+       "chars": 4233,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 2. Ārammaṇapaccayo ～ 3. Adhipatipaccayo",
+   "cs": null,
+   "chars": 9304,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 05:54:44",
+   "finished": "2026-11-03 06:00:49",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 14,
+    "end": 41,
+    "title": "2. Ārammaṇapaccayo ～ 3. Adhipatipaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 14,
+     "end": 41,
+     "title": "2. Ārammaṇapaccayo ～ 3. Adhipatipaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 28,
+     "chars": 9304,
+     "chunks": [
+      {
+       "id": "63.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 14,
+       "end": 21,
+       "paras": 8,
+       "chars": 2494,
+       "status": "done"
+      },
+      {
+       "id": "63.1.2",
+       "kind": "chunk",
+       "book": 25,
+       "start": 22,
+       "end": 37,
+       "paras": 16,
+       "chars": 4869,
+       "status": "done"
+      },
+      {
+       "id": "63.1.3",
+       "kind": "chunk",
+       "book": 25,
+       "start": 38,
+       "end": 41,
+       "paras": 4,
+       "chars": 1941,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 4. Anantarapaccayo",
+   "cs": null,
+   "chars": 3941,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:11:11",
+   "finished": "2026-11-03 07:14:10",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 42,
+    "end": 53,
+    "title": "4. Anantarapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 42,
+     "end": 53,
+     "title": "4. Anantarapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 12,
+     "chars": 3941,
+     "chunks": [
+      {
+       "id": "64.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 42,
+       "end": 53,
+       "paras": 12,
+       "chars": 3941,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 65,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 5. Samanantarapaccayo ～ 6. Sahajātapaccayo",
+   "cs": null,
+   "chars": 4084,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:07:03",
+   "finished": "2026-11-03 07:09:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 54,
+    "end": 62,
+    "title": "5. Samanantarapaccayo ～ 6. Sahajātapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 54,
+     "end": 62,
+     "title": "5. Samanantarapaccayo ～ 6. Sahajātapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 9,
+     "chars": 4084,
+     "chunks": [
+      {
+       "id": "65.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 54,
+       "end": 62,
+       "paras": 9,
+       "chars": 4084,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 7. Aññamaññapaccayo ～ 8. Nissayapaccayo",
+   "cs": null,
+   "chars": 4356,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:00:13",
+   "finished": "2026-11-03 07:02:46",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 63,
+    "end": 77,
+    "title": "7. Aññamaññapaccayo ～ 8. Nissayapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 63,
+     "end": 77,
+     "title": "7. Aññamaññapaccayo ～ 8. Nissayapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 15,
+     "chars": 4356,
+     "chunks": [
+      {
+       "id": "66.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 63,
+       "end": 77,
+       "paras": 15,
+       "chars": 4356,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 67,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 9. Upanissayapaccayo",
+   "cs": null,
+   "chars": 7374,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:09:09",
+   "finished": "2026-11-03 06:14:16",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 78,
+    "end": 99,
+    "title": "9. Upanissayapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 78,
+     "end": 99,
+     "title": "9. Upanissayapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 22,
+     "chars": 7374,
+     "chunks": [
+      {
+       "id": "67.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 78,
+       "end": 91,
+       "paras": 14,
+       "chars": 4961,
+       "status": "done"
+      },
+      {
+       "id": "67.1.2",
+       "kind": "chunk",
+       "book": 25,
+       "start": 92,
+       "end": 99,
+       "paras": 8,
+       "chars": 2413,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 10. Purejātapaccayo ～ 11. Pacchājātapaccayo",
+   "cs": null,
+   "chars": 3273,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:29:41",
+   "finished": "2026-11-03 07:31:58",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 100,
+    "end": 109,
+    "title": "10. Purejātapaccayo ～ 11. Pacchājātapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 100,
+     "end": 109,
+     "title": "10. Purejātapaccayo ～ 11. Pacchājātapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 10,
+     "chars": 3273,
+     "chunks": [
+      {
+       "id": "68.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 100,
+       "end": 109,
+       "paras": 10,
+       "chars": 3273,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 12. Āsevanapaccayo ～ 13. Kammapaccayo",
+   "cs": null,
+   "chars": 5281,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:40:31",
+   "finished": "2026-11-03 06:44:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 110,
+    "end": 127,
+    "title": "12. Āsevanapaccayo ～ 13. Kammapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 110,
+     "end": 127,
+     "title": "12. Āsevanapaccayo ～ 13. Kammapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 18,
+     "chars": 5281,
+     "chunks": [
+      {
+       "id": "69.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 110,
+       "end": 118,
+       "paras": 9,
+       "chars": 2463,
+       "status": "done"
+      },
+      {
+       "id": "69.1.2",
+       "kind": "chunk",
+       "book": 25,
+       "start": 119,
+       "end": 127,
+       "paras": 9,
+       "chars": 2818,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 14. Vipākapaccayo ～ 15. Āhārapaccayo",
+   "cs": null,
+   "chars": 4550,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:57:20",
+   "finished": "2026-11-03 07:00:34",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 128,
+    "end": 143,
+    "title": "14. Vipākapaccayo ～ 15. Āhārapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 128,
+     "end": 143,
+     "title": "14. Vipākapaccayo ～ 15. Āhārapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 16,
+     "chars": 4550,
+     "chunks": [
+      {
+       "id": "70.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 128,
+       "end": 143,
+       "paras": 16,
+       "chars": 4550,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 71,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 16. Indriyapaccayo",
+   "cs": null,
+   "chars": 3307,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:28:11",
+   "finished": "2026-11-03 07:30:23",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 144,
+    "end": 152,
+    "title": "16. Indriyapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 144,
+     "end": 152,
+     "title": "16. Indriyapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 9,
+     "chars": 3307,
+     "chunks": [
+      {
+       "id": "71.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 144,
+       "end": 152,
+       "paras": 9,
+       "chars": 3307,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 72,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 17. Jhānapaccayo ～ 18. Maggapaccayo",
+   "cs": null,
+   "chars": 3210,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 07:30:23",
+   "finished": "2026-11-03 07:32:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 153,
+    "end": 162,
+    "title": "17. Jhānapaccayo ～ 18. Maggapaccayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 153,
+     "end": 162,
+     "title": "17. Jhānapaccayo ～ 18. Maggapaccayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 10,
+     "chars": 3210,
+     "chunks": [
+      {
+       "id": "72.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 153,
+       "end": 162,
+       "paras": 10,
+       "chars": 3210,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 73,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · 19. Sampayuttapaccayo ～ Paccayasabhāgo",
+   "cs": null,
+   "chars": 6186,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 06:29:52",
+   "finished": "2026-11-03 06:34:35",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 163,
+    "end": 195,
+    "title": "19. Sampayuttapaccayo ～ Paccayasabhāgo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 163,
+     "end": 195,
+     "title": "19. Sampayuttapaccayo ～ Paccayasabhāgo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 33,
+     "chars": 6186,
+     "chunks": [
+      {
+       "id": "73.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 163,
+       "end": 180,
+       "paras": 18,
+       "chars": 2533,
+       "status": "done"
+      },
+      {
+       "id": "73.1.2",
+       "kind": "chunk",
+       "book": 25,
+       "start": 181,
+       "end": 195,
+       "paras": 15,
+       "chars": 3653,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "title": "paṭṭhānuddesa dīpanīpāṭha · Paccayaghaṭanānayo",
+   "cs": null,
+   "chars": 21444,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-11-03 04:38:29",
+   "finished": "2026-11-03 04:51:32",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 25,
+    "start": 196,
+    "end": 249,
+    "title": "Paccayaghaṭanānayo",
+    "book_title": "paṭṭhānuddesa dīpanīpāṭha"
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "book": 25,
+     "start": 196,
+     "end": 249,
+     "title": "Paccayaghaṭanānayo",
+     "book_title": "paṭṭhānuddesa dīpanīpāṭha",
+     "layer_cn": "本文 mūla",
+     "paras": 54,
+     "chars": 21444,
+     "chunks": [
+      {
+       "id": "74.1.1",
+       "kind": "chunk",
+       "book": 25,
+       "start": 196,
+       "end": 204,
+       "paras": 9,
+       "chars": 3761,
+       "status": "done"
+      },
+      {
+       "id": "74.1.2",
+       "kind": "chunk",
+       "book": 25,
+       "start": 205,
+       "end": 216,
+       "paras": 12,
+       "chars": 4414,
+       "status": "done"
+      },
+      {
+       "id": "74.1.3",
+       "kind": "chunk",
+       "book": 25,
+       "start": 217,
+       "end": 226,
+       "paras": 10,
+       "chars": 2879,
+       "status": "done"
+      },
+      {
+       "id": "74.1.4",
+       "kind": "chunk",
+       "book": 25,
+       "start": 227,
+       "end": 237,
+       "paras": 11,
+       "chars": 4974,
+       "status": "done"
+      },
+      {
+       "id": "74.1.5",
+       "kind": "chunk",
+       "book": 25,
+       "start": 238,
+       "end": 246,
+       "paras": 9,
+       "chars": 4018,
+       "status": "done"
+      },
+      {
+       "id": "74.1.6",
+       "kind": "chunk",
+       "book": 25,
+       "start": 247,
+       "end": 249,
+       "paras": 3,
+       "chars": 1398,
+       "status": "done"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

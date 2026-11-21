@@ -1,0 +1,964 @@
+{"child": "178:875", "parent": [], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:876", "parent": [], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:877", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:878", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:879", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:880", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:881", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:882", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:883", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:884", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:885", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:886", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "178:887", "parent": ["178:4"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:888", "parent": ["178:4"], "method": "lemma", "score": 3.3, "anchors": ["#1", "sammāsambuddhan"]}
+{"child": "178:889", "parent": ["178:4"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:890", "parent": ["178:4"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:891", "parent": ["178:4"], "method": "lemma", "score": 0.65, "anchors": ["sammā sambuddho ,"]}
+{"child": "178:892", "parent": ["178:4"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:893", "parent": ["178:4"], "method": "lemma", "score": 0.65, "anchors": ["sammāsambuddhan"]}
+{"child": "178:894", "parent": ["178:4"], "method": "lemma", "score": 3.8, "anchors": ["sasaddhammagaṇuttaman"]}
+{"child": "178:895", "parent": ["178:4"], "method": "lemma", "score": 1.9, "anchors": ["sasaddhammagaṇuttamaṃ ."]}
+{"child": "178:896", "parent": ["178:5"], "method": "lemma", "score": 1.77, "anchors": ["Abhivādiyā", "Bhāsissan", "abhidhammatthasaṅgahaṃ ."]}
+{"child": "178:897", "parent": ["178:6", "178:7", "178:8"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:898", "parent": ["178:6", "178:7", "178:8"], "method": "lemma", "score": 4.87, "anchors": ["#2", "catudhā", "cetasikaṃ", "nibbānaṃ", "paramatthato", "paramattho .", "sabbathā", "tattha vuttā"]}
+{"child": "178:899", "parent": ["178:8"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:900", "parent": ["178:8"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:901", "parent": ["178:8"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:902", "parent": ["178:8"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:903", "parent": ["178:8"], "method": "lemma", "score": 0.04, "anchors": ["cetasikaṃ ."]}
+{"child": "178:904", "parent": ["178:8"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:905", "parent": ["178:8"], "method": "lemma", "score": 0.04, "anchors": ["nibbānaṃ ."]}
+{"child": "178:906", "parent": ["178:11"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:907", "parent": ["178:11"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:908", "parent": ["178:11"], "method": "lemma", "score": 5.15, "anchors": ["#3", "catubbidhaṃ .", "kāmāvacaraṃ", "kāmāvacaraṃ .", "tattha cittaṃ tāvā"]}
+{"child": "178:909", "parent": ["178:11"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:910", "parent": ["178:11"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:911", "parent": ["178:11"], "method": "lemma", "score": 0.12, "anchors": ["lokuttaraṃ ,", "lokuttaraṃ ."]}
+{"child": "178:912", "parent": ["178:11"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:913", "parent": ["178:13"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:914", "parent": ["178:13"], "method": "lemma", "score": 2.36, "anchors": ["#4", "somanassasahagatan"]}
+{"child": "178:915", "parent": ["178:13"], "method": "lemma", "score": 1.09, "anchors": ["asaṅkhārikaṃ .", "diṭṭhigatasampayuttaṃ .", "diṭṭhī", "sasaṅkhārikaṃ .", "somanassasahagataṃ ."]}
+{"child": "178:916", "parent": ["178:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:917", "parent": ["178:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:918", "parent": ["178:13"], "method": "lemma", "score": 1.28, "anchors": ["Upekkhāsahagatan", "asaṅkhārikaṃ .", "diṭṭhigatavippayuttaṃ .", "sasaṅkhārikaṃ"]}
+{"child": "178:919", "parent": ["178:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:920", "parent": ["178:13"], "method": "lemma", "score": 0.02, "anchors": ["Aṭṭhapī"]}
+{"child": "178:921", "parent": ["178:14"], "method": "lemma", "score": 2.59, "anchors": ["#5", "domanassasahagataṃ .", "paṭigho ,"]}
+{"child": "178:922", "parent": ["178:15"], "method": "lemma", "score": 3.9, "anchors": ["#6", "vicikicchāsampayuttaṃ ."]}
+{"child": "178:923", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:924", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:925", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:926", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:927", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:928", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:929", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:930", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:931", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:932", "parent": ["178:15"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:933", "parent": ["178:16"], "method": "lemma", "score": 2.2, "anchors": ["#7", "Iccevaṃ", "sabbathāpi", "samattāni"]}
+{"child": "178:934", "parent": ["178:17"], "method": "lemma", "score": 3.68, "anchors": ["#8", "Aṭṭhadhā", "aṭṭhadhā", "dosamūlāni", "lobhamūlāni"]}
+{"child": "178:935", "parent": ["178:17"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:936", "parent": ["178:20"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:937", "parent": ["178:20"], "method": "lemma", "score": 7.75, "anchors": ["#9", "cakkhuviññāṇaṃ .", "cakkhū", "upekkhāsahagataṃ cakkhuviññāṇan"]}
+{"child": "178:938", "parent": ["178:20", "178:21"], "method": "lemma", "score": 1.63, "anchors": ["akusalavipākacittāni .", "dukkhan", "dukkhaṃ .", "sampaṭicchanaṃ .", "santīraṇaṃ .", "sotaviññāṇā", "vipākā ,"]}
+{"child": "178:939", "parent": ["178:21"], "method": "number", "score": 2.0, "anchors": ["#10"]}
+{"child": "178:940", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:941", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:942", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:943", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:944", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:945", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:946", "parent": ["178:21"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:947", "parent": ["178:21"], "method": "lemma", "score": 2.4, "anchors": ["kusalavipākāhetukacittāni ."]}
+{"child": "178:948", "parent": ["178:21", "178:22"], "method": "lemma", "score": 3.88, "anchors": ["#11", "hasituppādaṃ ,", "manodvārāvajjanaṃ ,", "pañcadvārāvajjanaṃ ,", "upekkhāsahagatan"]}
+{"child": "178:949", "parent": ["178:23", "178:25"], "method": "lemma", "score": 2.5, "anchors": ["#12", "Ahetukacittānī", "Aṭṭhārasā", "Sabbathāpī"]}
+{"child": "178:950", "parent": ["178:25"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:951", "parent": ["178:27", "178:28"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:952", "parent": ["178:27", "178:28"], "method": "lemma", "score": 7.9, "anchors": ["#14", "ekanavutipi", "pāpāhetukamuttānī", "sobhanānīti vuccare"]}
+{"child": "178:953", "parent": ["178:30"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:954", "parent": ["178:30"], "method": "lemma", "score": 2.36, "anchors": ["#15", "somanassasahagatan"]}
+{"child": "178:955", "parent": ["178:30"], "method": "lemma", "score": 0.02, "anchors": ["Aṭṭhapī"]}
+{"child": "178:956", "parent": ["178:30"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:957", "parent": ["178:30"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:958", "parent": ["178:30"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:959", "parent": ["178:30"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:960", "parent": ["178:30"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:961", "parent": ["178:30"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:962", "parent": ["178:30"], "method": "lemma", "score": 2.2, "anchors": ["kāmāvacarakusalacittāni ."]}
+{"child": "178:963", "parent": ["178:31"], "method": "number", "score": 2.0, "anchors": ["#16"]}
+{"child": "178:964", "parent": ["178:32"], "method": "number", "score": 2.0, "anchors": ["#17"]}
+{"child": "178:965", "parent": ["178:33"], "method": "lemma", "score": 5.0, "anchors": ["#18", "Sahetukakāmāvacarakusalavipākakiriyacittānī"]}
+{"child": "178:966", "parent": ["178:34"], "method": "number", "score": 2.0, "anchors": ["#19"]}
+{"child": "178:967", "parent": ["178:36"], "method": "lemma", "score": 5.3, "anchors": ["#20", "kāme tevīsā", "puññāpuññāni vīsati"]}
+{"child": "178:968", "parent": ["178:36"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:969", "parent": ["178:39"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:970", "parent": ["178:39"], "method": "lemma", "score": 2.8, "anchors": ["#21", "vitakkavicārapītisukhekaggatāsahitaṃ .", "vitakko ,"]}
+{"child": "178:971", "parent": ["178:39"], "method": "lemma", "score": 0.05, "anchors": ["vicāro ."]}
+{"child": "178:972", "parent": ["178:39"], "method": "lemma", "score": 0.1, "anchors": ["ekaggatā ,"]}
+{"child": "178:973", "parent": ["178:39"], "method": "lemma", "score": 2.3, "anchors": ["paṭhamajjhānakusalacittaṃ ."]}
+{"child": "178:974", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:975", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:976", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:977", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:978", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:979", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:980", "parent": ["178:39"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:981", "parent": ["178:40"], "method": "number", "score": 2.0, "anchors": ["#22"]}
+{"child": "178:982", "parent": ["178:43"], "method": "lemma", "score": 3.15, "anchors": ["#25", "jhānabhedena", "pañcadhā"]}
+{"child": "178:983", "parent": ["178:43"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:984", "parent": ["178:46"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:985", "parent": ["178:46"], "method": "lemma", "score": 5.35, "anchors": ["#26", "ākāsānañcāyatanakusalacittaṃ .", "ākāsānañcāyatanan", "ākāsānañcāyatanā"]}
+{"child": "178:986", "parent": ["178:46"], "method": "lemma", "score": 0.3, "anchors": ["viññāṇañcāyatanaṃ ."]}
+{"child": "178:987", "parent": ["178:46"], "method": "lemma", "score": 0.13, "anchors": ["ākiñcaññaṃ ,"]}
+{"child": "178:988", "parent": ["178:46", "178:47", "178:48"], "method": "lemma", "score": 0.75, "anchors": ["nevasaññānāsaññan"]}
+{"child": "178:989", "parent": ["178:50"], "method": "number", "score": 2.0, "anchors": ["#30"]}
+{"child": "178:990", "parent": ["178:50"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:991", "parent": ["178:50"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:992", "parent": ["178:50"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:993", "parent": ["178:50"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:994", "parent": ["178:53"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:995", "parent": ["178:53"], "method": "lemma", "score": 5.6, "anchors": ["#31", "sotāpattimaggacittan", "sotāpattimaggacittaṃ ."]}
+{"child": "178:996", "parent": ["178:53"], "method": "lemma", "score": 2.37, "anchors": ["sakadāgāmimaggacittaṃ .", "sakadāgāmimaggo"]}
+{"child": "178:997", "parent": ["178:53"], "method": "lemma", "score": 2.45, "anchors": ["anāgāmimaggacittaṃ .", "arahattamaggacittaṃ ."]}
+{"child": "178:998", "parent": ["178:53"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:999", "parent": ["178:54"], "method": "lemma", "score": 4.65, "anchors": ["#32", "arahattaphalacittaṃ .", "sotāpattiphalacittaṃ ."]}
+{"child": "178:1000", "parent": ["178:56", "178:57"], "method": "lemma", "score": 4.21, "anchors": ["#34", "Catumaggappabhedenā", "anuttaraṃ", "phalattā"]}
+{"child": "178:1001", "parent": ["178:57"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1002", "parent": ["178:57"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1003", "parent": ["178:59"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1004", "parent": ["178:59"], "method": "lemma", "score": 5.2, "anchors": ["#35", "Dvādasākusalānevan"]}
+{"child": "178:1005", "parent": ["178:61", "178:62"], "method": "lemma", "score": 5.91, "anchors": ["#36", "Anuttare", "anuttare", "catupaññāsadhā kāme", "kāme , rūpe", "āruppe"]}
+{"child": "178:1006", "parent": ["178:63", "178:64", "178:66"], "method": "lemma", "score": 2.97, "anchors": ["#37", "ekavīsasataṃ", "vicakkhaṇā"]}
+{"child": "178:1007", "parent": ["178:66"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1008", "parent": ["178:66"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1009", "parent": ["178:66"], "method": "lemma", "score": 5.0, "anchors": ["#38", "paṭhamajjhānasotāpattimaggacittaṃ ."]}
+{"child": "178:1010", "parent": ["178:66"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1011", "parent": ["178:66"], "method": "lemma", "score": 3.12, "anchors": ["pañcame", "paṭhamajjhānan", "paṭhamajjhānasotāpattimaggacittan"]}
+{"child": "178:1012", "parent": ["178:66"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1013", "parent": ["178:66"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1014", "parent": ["178:74"], "method": "lemma", "score": 1.2, "anchors": ["tevīsatividhaṃ"]}
+{"child": "178:1015", "parent": ["178:75"], "method": "lemma", "score": 2.45, "anchors": ["#43", "sattatiṃsā"]}
+{"child": "178:1016", "parent": ["178:75"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1017", "parent": ["178:75"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1018", "parent": ["178:81", "178:82"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1019", "parent": ["178:81", "178:82"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1020", "parent": ["178:81", "178:82"], "method": "lemma", "score": 9.1, "anchors": ["#1", "cetoyuttā", "ekuppādanirodhā .", "ekuppādanirodhā cā", "ekālambaṇavatthukā ."]}
+{"child": "178:1021", "parent": ["178:82"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1022", "parent": ["178:82"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1023", "parent": ["178:84"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1024", "parent": ["178:84"], "method": "lemma", "score": 2.16, "anchors": ["#2", "phasso", "vedanā ,"]}
+{"child": "178:1025", "parent": ["178:84"], "method": "lemma", "score": 0.17, "anchors": ["cetanā ."]}
+{"child": "178:1026", "parent": ["178:84"], "method": "lemma", "score": 2.02, "anchors": ["jīvitindriyaṃ ,", "manasikāro ,", "sabbacittasādhāraṇā"]}
+{"child": "178:1027", "parent": ["178:85"], "method": "lemma", "score": 2.41, "anchors": ["#3", "adhimokkho ,", "chando ,", "pakiṇṇakā .", "vīriyaṃ ,"]}
+{"child": "178:1028", "parent": ["178:86"], "method": "lemma", "score": 2.08, "anchors": ["#4", "aññasamānā ."]}
+{"child": "178:1029", "parent": ["178:86"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1030", "parent": ["178:88"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1031", "parent": ["178:88"], "method": "lemma", "score": 2.35, "anchors": ["#5", "ahirikaṃ .", "anottappaṃ ."]}
+{"child": "178:1032", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1033", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1034", "parent": ["178:88"], "method": "lemma", "score": 0.78, "anchors": ["kukkuccaṃ ,", "macchariyaṃ ,", "middhaṃ ,", "uddhaccaṃ ,"]}
+{"child": "178:1035", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1036", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1037", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1038", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1039", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1040", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1041", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1042", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1043", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1044", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1045", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1046", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1047", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1048", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1049", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1050", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1051", "parent": ["178:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1052", "parent": ["178:88", "178:90"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1053", "parent": ["178:88", "178:90"], "method": "lemma", "score": 3.81, "anchors": ["#6", "alobho ,", "ottappaṃ ,", "saddhā ,", "tatramajjhattatā ,"]}
+{"child": "178:1054", "parent": ["178:90"], "method": "lemma", "score": 11.65, "anchors": ["cittakammaññatā .", "cittalahutā .", "cittamudutā .", "cittapāguññatā .", "cittujukatā .", "kāyakammaññatā .", "kāyalahutā .", "kāyamudutā .", "kāyapāguññatā .", "kāyujukatā .", "sobhanasādhāraṇā ."]}
+{"child": "178:1055", "parent": ["178:91"], "method": "lemma", "score": 4.07, "anchors": ["#7", "sammākammanto ,", "sammāvācā ,", "sammāājīvo ,", "viratiyo nāma"]}
+{"child": "178:1056", "parent": ["178:92"], "method": "lemma", "score": 2.27, "anchors": ["#8", "appamaññā .", "karuṇā ,", "muditā ,"]}
+{"child": "178:1057", "parent": ["178:92"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1058", "parent": ["178:92"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1059", "parent": ["178:92"], "method": "lemma", "score": 0.33, "anchors": ["paññindriyaṃ ."]}
+{"child": "178:1060", "parent": ["178:93", "178:94"], "method": "lemma", "score": 4.8, "anchors": ["#9", "Terasaññasamānā"]}
+{"child": "178:1061", "parent": ["178:94"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1062", "parent": ["178:97", "178:98"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1063", "parent": ["178:97", "178:98"], "method": "lemma", "score": 2.61, "anchors": ["#10", "cittuppādo .", "cittāviyuttā ,"]}
+{"child": "178:1064", "parent": ["178:103"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1065", "parent": ["178:103"], "method": "number", "score": 2.0, "anchors": ["#13"]}
+{"child": "178:1066", "parent": ["178:103", "178:104"], "method": "lemma", "score": 2.35, "anchors": ["#14", "Tesu ceva"]}
+{"child": "178:1067", "parent": ["178:105"], "method": "number", "score": 2.0, "anchors": ["#15"]}
+{"child": "178:1068", "parent": ["178:106"], "method": "number", "score": 2.0, "anchors": ["#16"]}
+{"child": "178:1069", "parent": ["178:107"], "method": "number", "score": 2.0, "anchors": ["#17"]}
+{"child": "178:1070", "parent": ["178:108"], "method": "number", "score": 2.0, "anchors": ["#18"]}
+{"child": "178:1071", "parent": ["178:109", "178:110"], "method": "lemma", "score": 6.17, "anchors": ["#19", "Chasaṭṭhi pañcapaññāsā", "Te panā", "Yathākkaman"]}
+{"child": "178:1072", "parent": ["178:110"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1073", "parent": ["178:115"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1074", "parent": ["178:115"], "method": "lemma", "score": 4.3, "anchors": ["#20", "Sabbākusalasādhāraṇā", "sabbesupī"]}
+{"child": "178:1075", "parent": ["178:116"], "method": "lemma", "score": 4.2, "anchors": ["#21", "Lobhasahagatacittesvevā"]}
+{"child": "178:1076", "parent": ["178:119"], "method": "number", "score": 2.0, "anchors": ["#24"]}
+{"child": "178:1077", "parent": ["178:120"], "method": "number", "score": 2.0, "anchors": ["#25"]}
+{"child": "178:1078", "parent": ["178:122", "178:124", "178:126"], "method": "lemma", "score": 4.63, "anchors": ["#27", "Vicikicchā vicikicchācitte cā", "cattāro"]}
+{"child": "178:1079", "parent": ["178:126"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1080", "parent": ["178:130", "178:131"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1081", "parent": ["178:130", "178:131"], "method": "lemma", "score": 8.23, "anchors": ["#29", "Kadācī", "Kāmāvacarakusalesvevā", "Niyatā", "Sabbathāpī", "ekatovā", "viratiyo panā", "visuṃ visun"]}
+{"child": "178:1082", "parent": ["178:131"], "method": "number", "score": 2.0, "anchors": ["#30"]}
+{"child": "178:1083", "parent": ["178:133", "178:134"], "method": "lemma", "score": 3.6, "anchors": ["#32", "Tayo soḷasacittesū"]}
+{"child": "178:1084", "parent": ["178:137", "178:138"], "method": "lemma", "score": 4.55, "anchors": ["#33", "issāmaccherā", "kadāci", "māno cā"]}
+{"child": "178:1085", "parent": ["178:139"], "method": "number", "score": 2.0, "anchors": ["#34"]}
+{"child": "178:1086", "parent": ["178:140"], "method": "lemma", "score": 1.8, "anchors": ["saṅgahañcā"]}
+{"child": "178:1087", "parent": ["178:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1088", "parent": ["178:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1089", "parent": ["178:142"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1090", "parent": ["178:142"], "method": "lemma", "score": 2.23, "anchors": ["#35", "Chattiṃsā"]}
+{"child": "178:1091", "parent": ["178:147"], "method": "lemma", "score": 5.98, "anchors": ["#36", "Pañcakajjhānavasenā", "Upekkhāsahagatā", "appamaññāvajjitā"]}
+{"child": "178:1092", "parent": ["178:148", "178:149"], "method": "lemma", "score": 3.2, "anchors": ["#37", "Tettiṃsadvayaṃ"]}
+{"child": "178:1093", "parent": ["178:151"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1094", "parent": ["178:151"], "method": "lemma", "score": 5.43, "anchors": ["#38", "Appamaññāyo na labbhantī", "Paccekamevā", "Pannarasasū"]}
+{"child": "178:1095", "parent": ["178:151"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1096", "parent": ["178:155"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1097", "parent": ["178:155"], "method": "lemma", "score": 8.93, "anchors": ["#40", "Paccekamevā", "appamaññāvirativajjitā", "virativajjitā"]}
+{"child": "178:1098", "parent": ["178:155"], "method": "lemma", "score": 0.3, "anchors": ["Dvādasadhā"]}
+{"child": "178:1099", "parent": ["178:160", "178:161", "178:162", "178:163"], "method": "lemma", "score": 7.3, "anchors": ["#42", "Anuttare", "Majjhime", "Parittesu", "anuttare jhānadhammā", "appamaññā", "viratī", "ñāṇapītī"]}
+{"child": "178:1100", "parent": ["178:163"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1101", "parent": ["178:166"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1102", "parent": ["178:166"], "method": "lemma", "score": 3.6, "anchors": ["#44", "Dutiye asaṅkhārike"]}
+{"child": "178:1103", "parent": ["178:167"], "method": "lemma", "score": 2.03, "anchors": ["#45", "Tatiye"]}
+{"child": "178:1104", "parent": ["178:168"], "method": "lemma", "score": 2.04, "anchors": ["#46", "Catutthe"]}
+{"child": "178:1105", "parent": ["178:169"], "method": "lemma", "score": 5.0, "anchors": ["#47", "Issāmacchariyakukkuccāni panettha paccekameva yojetabbāni"]}
+{"child": "178:1106", "parent": ["178:172"], "method": "lemma", "score": 5.4, "anchors": ["#50", "adhimokkhavirahitā"]}
+{"child": "178:1107", "parent": ["178:173"], "method": "number", "score": 2.0, "anchors": ["#51"]}
+{"child": "178:1108", "parent": ["178:175"], "method": "lemma", "score": 3.49, "anchors": ["#52", "Sādhāraṇā", "cattāro samānā ca"]}
+{"child": "178:1109", "parent": ["178:175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1110", "parent": ["178:179"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1111", "parent": ["178:179"], "method": "number", "score": 2.0, "anchors": ["#54"]}
+{"child": "178:1112", "parent": ["178:181"], "method": "number", "score": 2.0, "anchors": ["#56"]}
+{"child": "178:1113", "parent": ["178:183"], "method": "number", "score": 2.0, "anchors": ["#58"]}
+{"child": "178:1114", "parent": ["178:185", "178:186"], "method": "lemma", "score": 3.9, "anchors": ["#59", "Tettiṃsavidhasaṅgaho"]}
+{"child": "178:1115", "parent": ["178:187"], "method": "lemma", "score": 3.75, "anchors": ["#60", "cittāviyuttānaṃ", "sampayogañca"]}
+{"child": "178:1116", "parent": ["178:187"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1117", "parent": ["178:187"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1118", "parent": ["178:187"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1119", "parent": ["178:192"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1120", "parent": ["178:192"], "method": "lemma", "score": 6.6, "anchors": ["#1", "sabhāvato", "sampayuttā yathāyogan", "tepaññāsa"]}
+{"child": "178:1121", "parent": ["178:193", "178:194", "178:195"], "method": "lemma", "score": 4.28, "anchors": ["#2", "cittuppādavaseneva", "nīyate", "saṅgaho nāma"]}
+{"child": "178:1122", "parent": ["178:196", "178:197"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1123", "parent": ["178:196", "178:197"], "method": "lemma", "score": 3.93, "anchors": ["#3", "sukhaṃ dukkhan", "vedanāsaṅgaho ."]}
+{"child": "178:1124", "parent": ["178:197"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1125", "parent": ["178:197"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1126", "parent": ["178:197", "178:198", "178:199"], "method": "lemma", "score": 0.25, "anchors": ["domanassaṃ .", "dukkhaṃ .", "somanassaṃ .", "upekkhā ."]}
+{"child": "178:1127", "parent": ["178:199"], "method": "lemma", "score": 2.6, "anchors": ["#5", "Catucattālīsa"]}
+{"child": "178:1128", "parent": ["178:201"], "method": "lemma", "score": 2.2, "anchors": ["#7", "Sesānī", "pañcapaññāsa ."]}
+{"child": "178:1129", "parent": ["178:201"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1130", "parent": ["178:206", "178:207"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1131", "parent": ["178:206", "178:207"], "method": "lemma", "score": 3.0, "anchors": ["#10", "hetusaṅgaho ."]}
+{"child": "178:1132", "parent": ["178:213"], "method": "lemma", "score": 4.0, "anchors": ["#16", "lobho doso cā"]}
+{"child": "178:1133", "parent": ["178:213"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1134", "parent": ["178:219", "178:220"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1135", "parent": ["178:219", "178:220"], "method": "lemma", "score": 3.1, "anchors": ["#18", "kiccasaṅgaho ."]}
+{"child": "178:1136", "parent": ["178:221"], "method": "number", "score": 2.0, "anchors": ["#19"]}
+{"child": "178:1137", "parent": ["178:221"], "method": "lemma", "score": 1.6, "anchors": ["pañcaviññāṇaṭhānaṃ ."]}
+{"child": "178:1138", "parent": ["178:222"], "method": "lemma", "score": 4.8, "anchors": ["#20", "Dve upekkhāsahagatasantīraṇāni"]}
+{"child": "178:1139", "parent": ["178:227"], "method": "lemma", "score": 9.1, "anchors": ["#25", "Kusalākusalaphalakiriyacittānī", "āvajjanadvayavajjitānī"]}
+{"child": "178:1140", "parent": ["178:229"], "method": "lemma", "score": 2.17, "anchors": ["#27", "tesu panā"]}
+{"child": "178:1141", "parent": ["178:235"], "method": "lemma", "score": 5.2, "anchors": ["#33", "nāmakiccabhedena", "paṭisandhādayo nāma"]}
+{"child": "178:1142", "parent": ["178:235"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1143", "parent": ["178:239", "178:240", "178:241"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1144", "parent": ["178:239", "178:240", "178:241"], "method": "lemma", "score": 3.4, "anchors": ["#35", "dvārasaṅgaho .", "dvārāni ."]}
+{"child": "178:1145", "parent": ["178:241"], "method": "lemma", "score": 2.9, "anchors": ["#36", "Cakkhumevā"]}
+{"child": "178:1146", "parent": ["178:242"], "method": "number", "score": 2.0, "anchors": ["#37"]}
+{"child": "178:1147", "parent": ["178:242"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1148", "parent": ["178:244"], "method": "lemma", "score": 2.04, "anchors": ["#39", "Sabbathāpī"]}
+{"child": "178:1149", "parent": ["178:246"], "method": "number", "score": 2.0, "anchors": ["#41"]}
+{"child": "178:1150", "parent": ["178:247"], "method": "lemma", "score": 2.8, "anchors": ["#42", "ekadvārikacittāni ."]}
+{"child": "178:1151", "parent": ["178:250"], "method": "lemma", "score": 5.0, "anchors": ["#45", "chadvārikāni ceva", "dvāravimuttāni ca ."]}
+{"child": "178:1152", "parent": ["178:252", "178:253"], "method": "lemma", "score": 7.2, "anchors": ["#47", "chadvārikavimuttāni .", "chadvārikavimuttānī", "pañcachadvārikāni ."]}
+{"child": "178:1153", "parent": ["178:253"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1154", "parent": ["178:256", "178:257", "178:258"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1155", "parent": ["178:256", "178:257", "178:258"], "method": "lemma", "score": 9.57, "anchors": ["#48", "dhammārammaṇaṃ .", "gandhārammaṇaṃ .", "phoṭṭhabbārammaṇaṃ .", "rasārammaṇaṃ .", "rūpārammaṇaṃ .", "saddārammaṇaṃ .", "ālambaṇasaṅgaho ."]}
+{"child": "178:1156", "parent": ["178:258"], "method": "lemma", "score": 2.94, "anchors": ["#49", "Saddādayo", "rūpamevā"]}
+{"child": "178:1157", "parent": ["178:259"], "method": "number", "score": 2.0, "anchors": ["#50"]}
+{"child": "178:1158", "parent": ["178:260", "178:261"], "method": "lemma", "score": 2.33, "anchors": ["#51", "Paccuppannan"]}
+{"child": "178:1159", "parent": ["178:261", "178:262"], "method": "lemma", "score": 3.76, "anchors": ["#52", "Chabbidhampī", "Yathārahan", "kālavimuttaṃ"]}
+{"child": "178:1160", "parent": ["178:262"], "method": "lemma", "score": 2.17, "anchors": ["#53", "yathāsambhavan"]}
+{"child": "178:1161", "parent": ["178:262"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1162", "parent": ["178:262"], "method": "lemma", "score": 3.0, "anchors": ["Yebhuyyena bhavantare chadvāraggahitan"]}
+{"child": "178:1163", "parent": ["178:262"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1164", "parent": ["178:262"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1165", "parent": ["178:262"], "method": "lemma", "score": 0.7, "anchors": ["chadvāraggahitan"]}
+{"child": "178:1166", "parent": ["178:262"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1167", "parent": ["178:262"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1168", "parent": ["178:262"], "method": "lemma", "score": 0.33, "anchors": ["Paccuppannan"]}
+{"child": "178:1169", "parent": ["178:263"], "method": "lemma", "score": 3.9, "anchors": ["#54", "rūpādiekekārammaṇāni ."]}
+{"child": "178:1170", "parent": ["178:264"], "method": "lemma", "score": 3.7, "anchors": ["#55", "rūpādipañcārammaṇaṃ ."]}
+{"child": "178:1171", "parent": ["178:265"], "method": "lemma", "score": 4.84, "anchors": ["#56", "Sabbathāpi kāmāvacarārammaṇānī", "Sesānī"]}
+{"child": "178:1172", "parent": ["178:265"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1173", "parent": ["178:266", "178:267"], "method": "lemma", "score": 4.4, "anchors": ["#57", "akusalāni cevā"]}
+{"child": "178:1174", "parent": ["178:267"], "method": "lemma", "score": 5.0, "anchors": ["#58", "Arahattamaggaphalavajjitasabbārammaṇāni"]}
+{"child": "178:1175", "parent": ["178:268"], "method": "lemma", "score": 4.3, "anchors": ["#59", "Sabbathāpi sabbārammaṇānī"]}
+{"child": "178:1176", "parent": ["178:269"], "method": "lemma", "score": 5.0, "anchors": ["#60", "āruppesu dutiyacatutthāni mahaggatārammaṇāni ."]}
+{"child": "178:1177", "parent": ["178:270"], "method": "number", "score": 2.0, "anchors": ["#61"]}
+{"child": "178:1178", "parent": ["178:272"], "method": "lemma", "score": 2.03, "anchors": ["#63", "parittaṃ ."]}
+{"child": "178:1179", "parent": ["178:272"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1180", "parent": ["178:276", "178:277"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1181", "parent": ["178:276", "178:277"], "method": "lemma", "score": 3.3, "anchors": ["#64", "vatthusaṅgaho .", "vatthūni ."]}
+{"child": "178:1182", "parent": ["178:278"], "method": "lemma", "score": 4.6, "anchors": ["#65", "Tāni kāmaloke sabbānipi labbhanti"]}
+{"child": "178:1183", "parent": ["178:279"], "method": "lemma", "score": 3.8, "anchors": ["#66", "Ghānādittayaṃ natthi"]}
+{"child": "178:1184", "parent": ["178:280"], "method": "lemma", "score": 2.35, "anchors": ["#67", "saṃvijjanti"]}
+{"child": "178:1185", "parent": ["178:281"], "method": "lemma", "score": 3.8, "anchors": ["#68", "pañcaviññāṇadhātuyo ."]}
+{"child": "178:1186", "parent": ["178:282"], "method": "lemma", "score": 2.13, "anchors": ["#69", "manodhātu ."]}
+{"child": "178:1187", "parent": ["178:283"], "method": "lemma", "score": 3.5, "anchors": ["#70", "manoviññāṇadhātu ."]}
+{"child": "178:1188", "parent": ["178:283"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1189", "parent": ["178:284"], "method": "lemma", "score": 2.45, "anchors": ["#71", "anissāyavā"]}
+{"child": "178:1190", "parent": ["178:285", "178:286", "178:287"], "method": "lemma", "score": 2.05, "anchors": ["#73", "āruppe"]}
+{"child": "178:1191", "parent": ["178:288", "178:289"], "method": "lemma", "score": 4.35, "anchors": ["#74", "dvecattālīsa", "pākāruppā", "tecattālīsa"]}
+{"child": "178:1192", "parent": ["178:289"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1193", "parent": ["178:289"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1194", "parent": ["178:289"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1195", "parent": ["178:293", "178:295"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1196", "parent": ["178:293", "178:295"], "method": "lemma", "score": 4.39, "anchors": ["#1", "Iccevaṃ", "cittuppādānaṃ", "pavattisaṅgahaṃ nāma", "uttaraṃ"]}
+{"child": "178:1197", "parent": ["178:297"], "method": "number", "score": 2.0, "anchors": ["#2"]}
+{"child": "178:1198", "parent": ["178:297"], "method": "lemma", "score": 0.43, "anchors": ["visayappavatti ."]}
+{"child": "178:1199", "parent": ["178:298"], "method": "number", "score": 2.0, "anchors": ["#4"]}
+{"child": "178:1200", "parent": ["178:302"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1201", "parent": ["178:302"], "method": "lemma", "score": 5.0, "anchors": ["#6", "cakkhudvāravīthī"]}
+{"child": "178:1202", "parent": ["178:302"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1203", "parent": ["178:304"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1204", "parent": ["178:304"], "method": "lemma", "score": 4.34, "anchors": ["#7", "Atimahantan", "Avibhūtaṃ", "Vibhūtaṃ", "atimahantaṃ", "atiparittaṃ", "mahantaṃ", "parittaṃ"]}
+{"child": "178:1205", "parent": ["178:304"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1206", "parent": ["178:306"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1207", "parent": ["178:306"], "method": "lemma", "score": 6.47, "anchors": ["#8", "bhaṅgo ,", "uppādaṭhitibhaṅgavasenā", "uppādaṭhitī", "uppādo ,"]}
+{"child": "178:1208", "parent": ["178:307"], "method": "lemma", "score": 4.15, "anchors": ["#9", "Rūpadhammānan", "sattarasacittakkhaṇāni ,"]}
+{"child": "178:1209", "parent": ["178:307"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1210", "parent": ["178:307"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1211", "parent": ["178:308"], "method": "number", "score": 2.0, "anchors": ["#10"]}
+{"child": "178:1212", "parent": ["178:308"], "method": "lemma", "score": 4.8, "anchors": ["Dvikkhattuṃ bhavaṅge calite", "dvikkhattuṃ bhavaṅge calite"]}
+{"child": "178:1213", "parent": ["178:308"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1214", "parent": ["178:308"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1215", "parent": ["178:308"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1216", "parent": ["178:308"], "method": "lemma", "score": 1.49, "anchors": ["Bhavaṅgasotan", "Passantan", "Āvajjantan"]}
+{"child": "178:1217", "parent": ["178:308"], "method": "lemma", "score": 9.89, "anchors": ["Javanānubandhānī", "Sampaṭicchantan", "Santīrayamānan", "Vavatthapentan", "bhavaṅgapāto", "laddhapaccayaṃ .", "tadārammaṇapākāni . Yathārahan", "yebhuyyenā"]}
+{"child": "178:1218", "parent": ["178:308"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1219", "parent": ["178:309"], "method": "number", "score": 2.0, "anchors": ["#11"]}
+{"child": "178:1220", "parent": ["178:310", "178:311"], "method": "lemma", "score": 3.98, "anchors": ["#12", "Appahontātītakan", "Natthi tadārammaṇuppādo"]}
+{"child": "178:1221", "parent": ["178:311"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1222", "parent": ["178:311"], "method": "lemma", "score": 7.2, "anchors": ["#13", "Dvattikkhattun", "javanampi anuppajjitvā"]}
+{"child": "178:1223", "parent": ["178:311"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1224", "parent": ["178:312"], "method": "lemma", "score": 6.0, "anchors": ["#14", "Natthi vīthicittuppādo", "natthi vīthicittuppādo"]}
+{"child": "178:1225", "parent": ["178:313"], "method": "lemma", "score": 3.1, "anchors": ["#15", "moghavārā", "Ārammaṇabhūtā"]}
+{"child": "178:1226", "parent": ["178:314", "178:315"], "method": "lemma", "score": 3.28, "anchors": ["#16", "Cittuppādā", "catuddasa", "catupaññāsa", "satteva", "yathārahaṃ"]}
+{"child": "178:1227", "parent": ["178:315"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1228", "parent": ["178:315"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1229", "parent": ["178:318"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1230", "parent": ["178:318"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1231", "parent": ["178:318"], "method": "lemma", "score": 5.8, "anchors": ["#17", "yadi vibhūtamārammaṇan"]}
+{"child": "178:1232", "parent": ["178:320", "178:321"], "method": "lemma", "score": 3.1, "anchors": ["#19", "Ekacattālīsa"]}
+{"child": "178:1233", "parent": ["178:321"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1234", "parent": ["178:324"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1235", "parent": ["178:324"], "method": "lemma", "score": 4.4, "anchors": ["#20", "Vibhūtāvibhūtabhedo natthi"]}
+{"child": "178:1236", "parent": ["178:325"], "method": "lemma", "score": 6.33, "anchors": ["#21", "anulomaṃ .", "catukkhattun", "gotrabhu ,", "parikammaṃ .", "pañcamaṃ vā"]}
+{"child": "178:1237", "parent": ["178:325"], "method": "lemma", "score": 5.0, "anchors": ["Yathābhinīhāravasenā", "Yathārahan", "appanāvasāne", "appanāvīthi .", "bhavaṅgapātovā"]}
+{"child": "178:1238", "parent": ["178:326"], "method": "lemma", "score": 9.27, "anchors": ["#22", "Kusalajavanānantaran", "Pāṭikaṅkhitabbā", "Somanassasahagatajavanānantaran", "Somanassasahagatāvā", "Tatthāpī"]}
+{"child": "178:1239", "parent": ["178:327"], "method": "lemma", "score": 3.2, "anchors": ["#23", "Sukhapuññamhā"]}
+{"child": "178:1240", "parent": ["178:329"], "method": "number", "score": 2.0, "anchors": ["#24"]}
+{"child": "178:1241", "parent": ["178:329"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1242", "parent": ["178:329"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1243", "parent": ["178:329"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1244", "parent": ["178:333"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1245", "parent": ["178:333"], "method": "lemma", "score": 2.11, "anchors": ["#25", "Sabbatthāpī"]}
+{"child": "178:1246", "parent": ["178:334", "178:335"], "method": "lemma", "score": 8.0, "anchors": ["#26", "atiiṭṭhe pana somanassasahagatānevā"]}
+{"child": "178:1247", "parent": ["178:335"], "method": "lemma", "score": 11.07, "anchors": ["#27", "Somanassasahagatakiriyajavanāvasāne", "Tatthāpī", "somanassasahagatakiriyajavanāvasāne"]}
+{"child": "178:1248", "parent": ["178:335", "178:336"], "method": "lemma", "score": 7.6, "anchors": ["#28", "somanassasahagatakiriyajavanāvasāne", "… upekkhāsahagatāneva bhavanti ,"]}
+{"child": "178:1249", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1250", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1251", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1252", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1253", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1254", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1255", "parent": ["178:336"], "method": "lemma", "score": 4.2, "anchors": ["Paricitapubban", "Upekkhāsahagatasantīraṇaṃ uppajjati"]}
+{"child": "178:1256", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1257", "parent": ["178:336"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1258", "parent": ["178:336"], "method": "lemma", "score": 1.3, "anchors": ["Tamanantaritvā"]}
+{"child": "178:1259", "parent": ["178:337"], "method": "number", "score": 2.0, "anchors": ["#29"]}
+{"child": "178:1260", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1261", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1262", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1263", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1264", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1265", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1266", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1267", "parent": ["178:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1268", "parent": ["178:343"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1269", "parent": ["178:343"], "method": "lemma", "score": 4.7, "anchors": ["#32", "Mandappavattiyan", "Maraṇakālādīsū"]}
+{"child": "178:1270", "parent": ["178:344"], "method": "lemma", "score": 5.0, "anchors": ["#33", "Bhagavato", "Cattāri pañca vā"]}
+{"child": "178:1271", "parent": ["178:345"], "method": "lemma", "score": 7.0, "anchors": ["#34", "paṭhamakappanā .", "paṭhamakappanāyā", "sabbadāpī", "Ādikammikassā"]}
+{"child": "178:1272", "parent": ["178:346"], "method": "number", "score": 2.0, "anchors": ["#35"]}
+{"child": "178:1273", "parent": ["178:346", "178:347", "178:348"], "method": "lemma", "score": 12.04, "anchors": ["#36", "Catutthāruppajavanan", "Nirodhasamāpattikāle", "Yathārahan", "anāgāmiphalaṃ vā arahattaphalaṃ vā", "niruddhe"]}
+{"child": "178:1274", "parent": ["178:349"], "method": "lemma", "score": 4.6, "anchors": ["#38", "Sabbatthāpi samāpattivīthiyan"]}
+{"child": "178:1275", "parent": ["178:350", "178:351"], "method": "lemma", "score": 2.5, "anchors": ["#39", "Avasesāni", "Parittāni"]}
+{"child": "178:1276", "parent": ["178:351"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1277", "parent": ["178:354"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1278", "parent": ["178:354"], "method": "lemma", "score": 6.42, "anchors": ["#40", "ahetukā .", "duhetukānamahetukānañcā"]}
+{"child": "178:1279", "parent": ["178:355"], "method": "lemma", "score": 7.6, "anchors": ["#41", "tathā ñāṇasampayuttavipākāni cā"]}
+{"child": "178:1280", "parent": ["178:355"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1281", "parent": ["178:355", "178:356"], "method": "lemma", "score": 2.77, "anchors": ["duggatiyaṃ panā", "sugatiyan"]}
+{"child": "178:1282", "parent": ["178:357"], "method": "lemma", "score": 2.9, "anchors": ["#43", "Tihetukesū"]}
+{"child": "178:1283", "parent": ["178:358", "178:359"], "method": "lemma", "score": 2.25, "anchors": ["#45", "sekkhā"]}
+{"child": "178:1284", "parent": ["178:360"], "method": "lemma", "score": 3.6, "anchors": ["#46", "Paṭighajavanāni cā"]}
+{"child": "178:1285", "parent": ["178:361"], "method": "number", "score": 2.0, "anchors": ["#47"]}
+{"child": "178:1286", "parent": ["178:362", "178:363"], "method": "lemma", "score": 3.46, "anchors": ["#48", "asekkhānan", "asekkhānaṃ", "catucattālīsa", "sambhavā"]}
+{"child": "178:1287", "parent": ["178:362", "178:363"], "method": "lemma", "score": 1.43, "anchors": ["Sekkhānaṃ", "catupaññāsa", "chappaññāsa"]}
+{"child": "178:1288", "parent": ["178:364"], "method": "lemma", "score": 0.22, "anchors": ["puggalabhedo ."]}
+{"child": "178:1289", "parent": ["178:364"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1290", "parent": ["178:366"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1291", "parent": ["178:366"], "method": "lemma", "score": 2.03, "anchors": ["#49", "Yathārahan"]}
+{"child": "178:1292", "parent": ["178:369"], "method": "number", "score": 2.0, "anchors": ["#52"]}
+{"child": "178:1293", "parent": ["178:371", "178:372"], "method": "lemma", "score": 4.85, "anchors": ["#54", "asīti vīthicittāni ,", "dvecattālīsa", "labbhare"]}
+{"child": "178:1294", "parent": ["178:372"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1295", "parent": ["178:373"], "method": "lemma", "score": 0.55, "anchors": ["bhūmivibhāgo ."]}
+{"child": "178:1296", "parent": ["178:373"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1297", "parent": ["178:374"], "method": "lemma", "score": 2.62, "anchors": ["#55", "Yathāsambhavan", "Yāvatāyukan"]}
+{"child": "178:1298", "parent": ["178:374"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1299", "parent": ["178:374"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1300", "parent": ["178:378", "178:379"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1301", "parent": ["178:378", "178:379"], "method": "lemma", "score": 5.47, "anchors": ["#1", "sandhiyaṃ", "vīthicittavasenevan"]}
+{"child": "178:1302", "parent": ["178:382", "178:383"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1303", "parent": ["178:382", "178:383"], "method": "lemma", "score": 3.06, "anchors": ["#3", "apāyabhūmi .", "kāmasugatibhūmi ."]}
+{"child": "178:1304", "parent": ["178:383"], "method": "lemma", "score": 4.8, "anchors": ["#4", "nirayo .", "pettivisayo .", "tiracchānayoni ."]}
+{"child": "178:1305", "parent": ["178:383"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1306", "parent": ["178:384"], "method": "lemma", "score": 2.36, "anchors": ["#5", "manussā", "manussā ."]}
+{"child": "178:1307", "parent": ["178:384"], "method": "lemma", "score": 1.3, "anchors": ["cātumahārājikā .", "tusitā .", "tāvatiṃsā"]}
+{"child": "178:1308", "parent": ["178:386"], "method": "lemma", "score": 2.9, "anchors": ["#7", "brahmapurohitā .", "brahmapārisajjā ."]}
+{"child": "178:1309", "parent": ["178:387"], "method": "lemma", "score": 3.43, "anchors": ["#8", "appamāṇābhā .", "parittābhā .", "ābhassarā ."]}
+{"child": "178:1310", "parent": ["178:388"], "method": "lemma", "score": 3.37, "anchors": ["#9", "appamāṇasubhā .", "parittasubhā .", "subhakiṇhā", "subhakiṇhā ."]}
+{"child": "178:1311", "parent": ["178:389", "178:390"], "method": "lemma", "score": 2.89, "anchors": ["#10", "asaññasattā .", "suddhāvāsā .", "vehapphalā ."]}
+{"child": "178:1312", "parent": ["178:390"], "method": "lemma", "score": 2.63, "anchors": ["#11", "akaniṭṭhā .", "atappā .", "sudassā ."]}
+{"child": "178:1313", "parent": ["178:391"], "method": "lemma", "score": 4.0, "anchors": ["#12", "ākāsānañcāyatanabhūmi ."]}
+{"child": "178:1314", "parent": ["178:392"], "method": "number", "score": 2.0, "anchors": ["#13"]}
+{"child": "178:1315", "parent": ["178:394", "178:395"], "method": "lemma", "score": 3.1, "anchors": ["#14", "Sesaṭṭhānesū"]}
+{"child": "178:1316", "parent": ["178:395"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1317", "parent": ["178:399"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1318", "parent": ["178:399"], "method": "lemma", "score": 2.6, "anchors": ["#16", "Okkantikkhaṇe"]}
+{"child": "178:1319", "parent": ["178:400"], "method": "lemma", "score": 6.25, "anchors": ["#17", "Jaccandhādīnan", "bhummassitā .", "jaccandho", "jaccandho .", "vinipātikā ."]}
+{"child": "178:1320", "parent": ["178:401"], "method": "lemma", "score": 4.2, "anchors": ["#18", "Sabbatthāpi kāmasugatiyan"]}
+{"child": "178:1321", "parent": ["178:404"], "method": "lemma", "score": 4.9, "anchors": ["#21", "Āyuppamāṇagaṇanāya niyamo natthi"]}
+{"child": "178:1322", "parent": ["178:404"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1323", "parent": ["178:404"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1324", "parent": ["178:404"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1325", "parent": ["178:404"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1326", "parent": ["178:404"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1327", "parent": ["178:405"], "method": "lemma", "score": 4.2, "anchors": ["#22", "Dibbāni pañcavassasatānī"]}
+{"child": "178:1328", "parent": ["178:405"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1329", "parent": ["178:405"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1330", "parent": ["178:405"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1331", "parent": ["178:405"], "method": "lemma", "score": 12.2, "anchors": ["Manussagaṇanāyā", "Tato catugguṇan", "Tato catugguṇaṃ nimmānaratīnan", "Tato catugguṇaṃ paranimmitavasavattīnan", "Tato catugguṇaṃ tusitānan", "Tato catugguṇaṃ yāmānan"]}
+{"child": "178:1332", "parent": ["178:406"], "method": "lemma", "score": 4.0, "anchors": ["#23", "navasatañcā"]}
+{"child": "178:1333", "parent": ["178:409"], "method": "lemma", "score": 3.8, "anchors": ["#25", "Dutiyajjhānabhūmiyan"]}
+{"child": "178:1334", "parent": ["178:413"], "method": "lemma", "score": 2.7, "anchors": ["#29", "Kappassā"]}
+{"child": "178:1335", "parent": ["178:413"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1336", "parent": ["178:413"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1337", "parent": ["178:413"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1338", "parent": ["178:413"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1339", "parent": ["178:413"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1340", "parent": ["178:429"], "method": "lemma", "score": 3.9, "anchors": ["#45", "ākāsānañcāyatanūpagā ."]}
+{"child": "178:1341", "parent": ["178:433", "178:434"], "method": "lemma", "score": 2.92, "anchors": ["#49", "Ekajātiyan", "Ekamevā"]}
+{"child": "178:1342", "parent": ["178:434"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1343", "parent": ["178:437"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1344", "parent": ["178:437"], "method": "lemma", "score": 5.4, "anchors": ["#50", "janakan", "janakaṃ .", "upaghātakaṃ .", "upapīḷakaṃ .", "upatthambhakaṃ ."]}
+{"child": "178:1345", "parent": ["178:437"], "method": "lemma", "score": 3.07, "anchors": ["janakaṃ", "upaghātakaṃ", "upapīḷakaṃ", "upatthambhakaṃ"]}
+{"child": "178:1346", "parent": ["178:437"], "method": "lemma", "score": 1.0, "anchors": ["Kiccavasenā"]}
+{"child": "178:1347", "parent": ["178:438"], "method": "lemma", "score": 3.78, "anchors": ["#51", "Garukan", "Kaṭattākamman", "Āciṇṇan", "Āsannan"]}
+{"child": "178:1348", "parent": ["178:438"], "method": "lemma", "score": 3.57, "anchors": ["garukan", "pākadānapariyāyenā"]}
+{"child": "178:1349", "parent": ["178:439"], "method": "lemma", "score": 8.1, "anchors": ["#52", "ahosikammaṃ .", "aparāpariyavedanīyaṃ .", "diṭṭhadhammavedanīyaṃ .", "upapajjavedanīyaṃ ."]}
+{"child": "178:1350", "parent": ["178:439"], "method": "lemma", "score": 6.1, "anchors": ["ahosikammaṃ", "aparāpariyavedaniyaṃ", "diṭṭhadhammavedanīyaṃ", "upapajjavedanīyaṃ"]}
+{"child": "178:1351", "parent": ["178:439"], "method": "lemma", "score": 1.3, "anchors": ["Pākakālavasenā"]}
+{"child": "178:1352", "parent": ["178:440"], "method": "lemma", "score": 3.4, "anchors": ["#53", "Pākaṭhānavasenā"]}
+{"child": "178:1353", "parent": ["178:441", "178:442"], "method": "lemma", "score": 3.87, "anchors": ["#54", "kāyakammaṃ .", "tattha akusalan", "vacīkammā"]}
+{"child": "178:1354", "parent": ["178:442"], "method": "lemma", "score": 4.1, "anchors": ["#55", "adinnādānaṃ .", "kāmesu micchācāro .", "pāṇātipāto ."]}
+{"child": "178:1355", "parent": ["178:442"], "method": "lemma", "score": 4.9, "anchors": ["Kāyaviññattisaṅkhāte kāyadvāre", "adinnādānaṃ .", "kāmesumicchācāro", "pāṇātipāto ."]}
+{"child": "178:1356", "parent": ["178:442", "178:443"], "method": "lemma", "score": 1.73, "anchors": ["bāhullavuttito"]}
+{"child": "178:1357", "parent": ["178:443"], "method": "lemma", "score": 4.7, "anchors": ["#56", "musāvādo .", "pharusā .", "pisuṇā .", "samphappalāpo ."]}
+{"child": "178:1358", "parent": ["178:443", "178:444"], "method": "lemma", "score": 6.97, "anchors": ["Bāhullavuttito", "Vacīviññattisaṅkhāte vacīdvāre", "musāvādo .", "pharusavācā .", "pisuṇavācā ,", "samphappalāpo ,"]}
+{"child": "178:1359", "parent": ["178:444"], "method": "lemma", "score": 2.72, "anchors": ["#57", "abhijjhā .", "byāpādo .", "micchādiṭṭhi ."]}
+{"child": "178:1360", "parent": ["178:444", "178:445", "178:446"], "method": "lemma", "score": 3.24, "anchors": ["Aññatrāpi viññattiyā", "abhijjhā ,", "byāpādo .", "micchādiṭṭhi ."]}
+{"child": "178:1361", "parent": ["178:445", "178:446", "178:447"], "method": "lemma", "score": 11.4, "anchors": ["#58", "Dosamūlena jāyantī", "Sesāni cattāripi dvīhi mūlehi sambhavantī", "micchādiṭṭhi ca lobhamūlenā"]}
+{"child": "178:1362", "parent": ["178:450"], "method": "lemma", "score": 7.0, "anchors": ["#63", "tathā dānasīlabhāvanāvasenā"]}
+{"child": "178:1363", "parent": ["178:452"], "method": "lemma", "score": 9.2, "anchors": ["#65", "apacāyanaṃ .", "dhammadesanā .", "dhammassavanaṃ .", "diṭṭhijukammaṃ .", "pattidānaṃ .", "pattānumodanā .", "veyyāvaccaṃ ."]}
+{"child": "178:1364", "parent": ["178:452"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1365", "parent": ["178:452"], "method": "lemma", "score": 7.2, "anchors": ["apacāyanaṃ", "dhammadesanā", "dhammassavanaṃ", "diṭṭhijukammaṃ", "pattidānaṃ", "pattānumodanā", "veyyāvaccaṃ"]}
+{"child": "178:1366", "parent": ["178:452"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1367", "parent": ["178:452"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1368", "parent": ["178:454", "178:455"], "method": "lemma", "score": 6.37, "anchors": ["#67", "Appanāppattaṃ", "Jhānaṅgabhedenā", "Manokammameva", "bhāvanāmayaṃ"]}
+{"child": "178:1369", "parent": ["178:455"], "method": "lemma", "score": 2.7, "anchors": ["#68", "Ārammaṇabhedenā"]}
+{"child": "178:1370", "parent": ["178:456"], "method": "lemma", "score": 3.3, "anchors": ["#69", "Uddhaccarahitan"]}
+{"child": "178:1371", "parent": ["178:456"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1372", "parent": ["178:456"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1373", "parent": ["178:456"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1374", "parent": ["178:456"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1375", "parent": ["178:456"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1376", "parent": ["178:456"], "method": "lemma", "score": 1.3, "anchors": ["pavattiyaṃ panā"]}
+{"child": "178:1377", "parent": ["178:456", "178:457"], "method": "lemma", "score": 3.66, "anchors": ["Sabbatthāpi kāmaloke", "Yathārahan", "sabbatthāpi kāmaloke"]}
+{"child": "178:1378", "parent": ["178:458", "178:459"], "method": "lemma", "score": 3.14, "anchors": ["#71", "Tatthāpī", "Ukkaṭṭhan", "tatthāpi", "ukkaṭṭhaṃ ."]}
+{"child": "178:1379", "parent": ["178:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1380", "parent": ["178:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1381", "parent": ["178:461"], "method": "lemma", "score": 4.7, "anchors": ["#74", "asaṅkhāraṃ sasaṅkhāravipākānī"]}
+{"child": "178:1382", "parent": ["178:463", "178:464"], "method": "lemma", "score": 0.41, "anchors": ["Yathākkaman", "anusārena", "yathāsambhavaṃ"]}
+{"child": "178:1383", "parent": ["178:465", "178:466", "178:467", "178:468", "178:469", "178:470", "178:471", "178:472"], "method": "lemma", "score": 2.74, "anchors": ["#75", "majjhimaṃ .", "parittaṃ .", "paṇītaṃ ,"]}
+{"child": "178:1384", "parent": ["178:472"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1385", "parent": ["178:472"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1386", "parent": ["178:465", "178:466", "178:467", "178:468", "178:469", "178:470", "178:471", "178:472", "178:473"], "method": "lemma", "score": 0.79, "anchors": ["majjhimaṃ .", "parittaṃ .", "paṇītan"]}
+{"child": "178:1387", "parent": ["178:474", "178:475"], "method": "lemma", "score": 6.0, "anchors": ["#84", "Pañcamajjhānaṃ bhāvetvā", "Saññāvirāgaṃ bhāvetvā"]}
+{"child": "178:1388", "parent": ["178:476"], "method": "lemma", "score": 5.0, "anchors": ["#86", "Anāgāmino pana suddhāvāsesu uppajjantī"]}
+{"child": "178:1389", "parent": ["178:477"], "method": "lemma", "score": 2.04, "anchors": ["#87", "yathākkaman"]}
+{"child": "178:1390", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1391", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1392", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1393", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1394", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1395", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1396", "parent": ["178:477"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1397", "parent": ["178:482"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1398", "parent": ["178:482"], "method": "lemma", "score": 4.0, "anchors": ["#89", "Āyukkhayenā"]}
+{"child": "178:1399", "parent": ["178:482"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1400", "parent": ["178:482"], "method": "lemma", "score": 0.55, "anchors": ["maraṇuppatti ."]}
+{"child": "178:1401", "parent": ["178:483"], "method": "lemma", "score": 6.28, "anchors": ["#90", "Maraṇakāle", "Upabhogabhūtan", "Upalabhitabban", "Upaladdhapubban", "Yathārahan", "gatinimittaṃ ."]}
+{"child": "178:1402", "parent": ["178:483", "178:484"], "method": "lemma", "score": 8.66, "anchors": ["Abhinavakaraṇavasenā", "Bāhullenā", "Channaṃ dvārānan", "Kammabalenā", "Tatthoṇataṃ vā", "bāhullenā", "yathārahan"]}
+{"child": "178:1403", "parent": ["178:484"], "method": "lemma", "score": 8.3, "anchors": ["#91", "Bhavaṅgakkhayevā", "Paccāsannamaraṇassā", "Tassānantaramevā", "Vīthicittāvasāne"]}
+{"child": "178:1404", "parent": ["178:484"], "method": "lemma", "score": 2.43, "anchors": ["Yathārahan", "avijjānusayaparikkhittenā"]}
+{"child": "178:1405", "parent": ["178:484"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1406", "parent": ["178:484"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1407", "parent": ["178:484"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1408", "parent": ["178:484"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1409", "parent": ["178:484"], "method": "lemma", "score": 8.2, "anchors": ["Bhavantarapaṭisandhānavasenā", "Sampayuttehi pariggayhamānan", "sahajātānamadhiṭṭhānabhāvena pubbaṅgamabhūtan"]}
+{"child": "178:1410", "parent": ["178:485"], "method": "lemma", "score": 7.1, "anchors": ["#92", "Chadvāraggahitan", "Paṭisandhibhavaṅgānampi paccuppannārammaṇatā labbhatī", "mandappavattāni ."]}
+{"child": "178:1411", "parent": ["178:485"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1412", "parent": ["178:485"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1413", "parent": ["178:487"], "method": "lemma", "score": 2.03, "anchors": ["#94", "Yathārahan"]}
+{"child": "178:1414", "parent": ["178:491"], "method": "number", "score": 2.0, "anchors": ["#98"]}
+{"child": "178:1415", "parent": ["178:491"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1416", "parent": ["178:496"], "method": "lemma", "score": 3.9, "anchors": ["#99", "Asati vīthicittuppāde"]}
+{"child": "178:1417", "parent": ["178:498"], "method": "lemma", "score": 3.8, "anchors": ["#101", "Parivattantā pavattanti"]}
+{"child": "178:1418", "parent": ["178:499", "178:501", "178:502"], "method": "lemma", "score": 10.85, "anchors": ["#102", "accutaṃ", "addhuvaṃ", "adhigantvā", "cirāya", "essanti", "paṭisandhibhavaṅgavīthiyo", "paṭisaṅkhāya", "paṭisaṅkhāya panetamaddhuvan"]}
+{"child": "178:1419", "parent": ["178:502"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1420", "parent": ["178:502"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1421", "parent": ["178:506"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1422", "parent": ["178:506"], "method": "lemma", "score": 4.37, "anchors": ["#1", "Sappabhedappavattikā", "ettāvatā"]}
+{"child": "178:1423", "parent": ["178:508", "178:510"], "method": "lemma", "score": 3.68, "anchors": ["#2", "samuddeso .", "samuddesā", "samuṭṭhānaṃ ,", "vibhāgo ,"]}
+{"child": "178:1424", "parent": ["178:511"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1425", "parent": ["178:511"], "method": "lemma", "score": 2.6, "anchors": ["#3", "mahābhūtā", "mahābhūtā ."]}
+{"child": "178:1426", "parent": ["178:511"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1427", "parent": ["178:511"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1428", "parent": ["178:511"], "method": "lemma", "score": 2.0, "anchors": ["mahābhūtāni .", "upādāyarūpaṃ ."]}
+{"child": "178:1429", "parent": ["178:512"], "method": "lemma", "score": 3.1, "anchors": ["#4", "pathavīdhātu ."]}
+{"child": "178:1430", "parent": ["178:513"], "method": "lemma", "score": 3.4, "anchors": ["#5", "Pasādarūpaṃ nāma"]}
+{"child": "178:1431", "parent": ["178:514"], "method": "lemma", "score": 8.0, "anchors": ["#6", "āpodhātu vivajjitaṃ bhūtattayasaṅkhātan"]}
+{"child": "178:1432", "parent": ["178:514"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1433", "parent": ["178:514"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1434", "parent": ["178:514"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1435", "parent": ["178:514"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1436", "parent": ["178:514"], "method": "lemma", "score": 1.4, "anchors": ["Gocararūpaṃ nāma"]}
+{"child": "178:1437", "parent": ["178:515"], "method": "lemma", "score": 3.15, "anchors": ["#7", "itthattaṃ", "purisattaṃ ."]}
+{"child": "178:1438", "parent": ["178:515"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1439", "parent": ["178:515"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1440", "parent": ["178:515"], "method": "lemma", "score": 1.3, "anchors": ["Bhāvarūpaṃ nāma"]}
+{"child": "178:1441", "parent": ["178:516"], "method": "lemma", "score": 2.55, "anchors": ["#8", "hadayavatthu ."]}
+{"child": "178:1442", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1443", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1444", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1445", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1446", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1447", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1448", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1449", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1450", "parent": ["178:516"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1451", "parent": ["178:517"], "method": "lemma", "score": 2.22, "anchors": ["#9", "jīvitindriyaṃ ."]}
+{"child": "178:1452", "parent": ["178:518"], "method": "lemma", "score": 2.35, "anchors": ["#10", "kabaḷīkāro āhāro ,"]}
+{"child": "178:1453", "parent": ["178:519"], "method": "lemma", "score": 4.0, "anchors": ["#11", "rūparūpan", "salakkhaṇaṃ .", "sammasanarūpaṃ ."]}
+{"child": "178:1454", "parent": ["178:520"], "method": "lemma", "score": 3.75, "anchors": ["#12", "paricchedarūpaṃ .", "ākāsadhātu ."]}
+{"child": "178:1455", "parent": ["178:521"], "method": "lemma", "score": 2.73, "anchors": ["#13", "kāyaviññatti .", "vacīviññatti ."]}
+{"child": "178:1456", "parent": ["178:521"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1457", "parent": ["178:521"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1458", "parent": ["178:521"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1459", "parent": ["178:522"], "method": "lemma", "score": 2.78, "anchors": ["#14", "kammaññatā .", "lahutā .", "mudutā ."]}
+{"child": "178:1460", "parent": ["178:523", "178:524"], "method": "lemma", "score": 4.97, "anchors": ["#15", "Lakkhaṇarūpaṃ nāma", "aniccatā ,", "jaratā ,", "santati ,", "upacayo ,"]}
+{"child": "178:1461", "parent": ["178:523", "178:524"], "method": "lemma", "score": 5.8, "anchors": ["#16", "Ekādasavidhampī", "Jātirūpamevā", "upacayo santatī"]}
+{"child": "178:1462", "parent": ["178:525"], "method": "number", "score": 2.0, "anchors": ["#17"]}
+{"child": "178:1463", "parent": ["178:525"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1464", "parent": ["178:532", "178:533"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1465", "parent": ["178:532", "178:533"], "method": "lemma", "score": 6.85, "anchors": ["#18", "ahetukaṃ .", "anārammaṇaṃ .", "appahātabbaṃ . Iti", "kāmāvacaraṃ .", "lokiyaṃ .", "sabbañca panetan", "sappaccayaṃ .", "saṅkhataṃ .", "sāsavaṃ ."]}
+{"child": "178:1466", "parent": ["178:533"], "method": "lemma", "score": 4.2, "anchors": ["#19", "Ajjhattikarūpaṃ", "bāhirarūpaṃ ."]}
+{"child": "178:1467", "parent": ["178:534"], "method": "lemma", "score": 3.0, "anchors": ["#20", "avatthurūpaṃ ."]}
+{"child": "178:1468", "parent": ["178:536"], "method": "lemma", "score": 4.3, "anchors": ["#22", "Aṭṭhavidhampi indriyarūpaṃ"]}
+{"child": "178:1469", "parent": ["178:537"], "method": "lemma", "score": 4.23, "anchors": ["#23", "oḷārikarūpaṃ .", "sappaṭighaṃ .", "sukhumarūpā"]}
+{"child": "178:1470", "parent": ["178:538"], "method": "lemma", "score": 3.2, "anchors": ["#24", "anupādinnarūpaṃ .", "upādinnarūpaṃ"]}
+{"child": "178:1471", "parent": ["178:539"], "method": "lemma", "score": 3.0, "anchors": ["#25", "sanidassanaṃ ."]}
+{"child": "178:1472", "parent": ["178:540"], "method": "lemma", "score": 3.4, "anchors": ["#26", "Asampattavasenā"]}
+{"child": "178:1473", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1474", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1475", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1476", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1477", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1478", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1479", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1480", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1481", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1482", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1483", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1484", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1485", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1486", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1487", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1488", "parent": ["178:540"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1489", "parent": ["178:540"], "method": "lemma", "score": 3.3, "anchors": ["Gocaraggāhikarūpaṃ", "agocaraggāhikarūpaṃ"]}
+{"child": "178:1490", "parent": ["178:541"], "method": "number", "score": 2.0, "anchors": ["#27"]}
+{"child": "178:1491", "parent": ["178:542"], "method": "lemma", "score": 2.02, "anchors": ["#28", "Iccevan"]}
+{"child": "178:1492", "parent": ["178:542"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1493", "parent": ["178:546", "178:547"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1494", "parent": ["178:546", "178:547"], "method": "lemma", "score": 3.47, "anchors": ["#29", "Khaṇe khaṇe", "Paṭisandhimupādāyā"]}
+{"child": "178:1495", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1496", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1497", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1498", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1499", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1500", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1501", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1502", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1503", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1504", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1505", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1506", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1507", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1508", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1509", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1510", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1511", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1512", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1513", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1514", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1515", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1516", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1517", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1518", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1519", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1520", "parent": ["178:547"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1521", "parent": ["178:548"], "method": "lemma", "score": 6.4, "anchors": ["#31", "Jāyantameva samuṭṭhāpeti ,", "Paṭhamabhavaṅgamupādāyā"]}
+{"child": "178:1522", "parent": ["178:549"], "method": "lemma", "score": 2.9, "anchors": ["#32", "iriyāpatho ,"]}
+{"child": "178:1523", "parent": ["178:550"], "method": "lemma", "score": 4.3, "anchors": ["#33", "Viññattimpi samuṭṭhāpenti ,"]}
+{"child": "178:1524", "parent": ["178:551"], "method": "lemma", "score": 2.06, "anchors": ["#34", "Terasā"]}
+{"child": "178:1525", "parent": ["178:552"], "method": "lemma", "score": 5.8, "anchors": ["#35", "tejodhātu ṭhitippattā"]}
+{"child": "178:1526", "parent": ["178:554"], "method": "lemma", "score": 5.0, "anchors": ["#37", "hadayaindriyarūpāni", "kammajan", "kammajāneva ."]}
+{"child": "178:1527", "parent": ["178:557"], "method": "lemma", "score": 8.0, "anchors": ["#40", "lahutādittayaṃ utucittāhārehi sambhotī"]}
+{"child": "178:1528", "parent": ["178:560"], "method": "number", "score": 2.0, "anchors": ["#43"]}
+{"child": "178:1529", "parent": ["178:562"], "method": "lemma", "score": 4.4, "anchors": ["#44", "jāyamānādirūpānaṃ", "sabhāvattā"]}
+{"child": "178:1530", "parent": ["178:562"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1531", "parent": ["178:562"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1532", "parent": ["178:562"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1533", "parent": ["178:566"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1534", "parent": ["178:566"], "method": "lemma", "score": 3.7, "anchors": ["#45", "Sahavuttino", "ekuppādā"]}
+{"child": "178:1535", "parent": ["178:567"], "method": "lemma", "score": 2.55, "anchors": ["#46", "cakkhudasakaṃ ."]}
+{"child": "178:1536", "parent": ["178:568"], "method": "lemma", "score": 5.4, "anchors": ["#47", "vacīviññattidasakan"]}
+{"child": "178:1537", "parent": ["178:571"], "method": "number", "score": 2.0, "anchors": ["#50"]}
+{"child": "178:1538", "parent": ["178:571"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1539", "parent": ["178:578"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1540", "parent": ["178:578"], "method": "lemma", "score": 5.23, "anchors": ["#52", "Yathārahan", "sabbānipi panetānī"]}
+{"child": "178:1541", "parent": ["178:579", "178:580"], "method": "lemma", "score": 7.0, "anchors": ["#53", "Kadāci na labbhanti", "Satta dasakāni pātubhavanti", "opapātikā ,", "saṃsedajā ."]}
+{"child": "178:1542", "parent": ["178:580"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1543", "parent": ["178:580"], "method": "lemma", "score": 8.58, "anchors": ["#54", "Kadāci na labbhati", "Kamenā", "Pavattikāle", "Tato paran", "Tīṇi dasakāni pātubhavanti ,", "gabbhaseyyakasattā ."]}
+{"child": "178:1544", "parent": ["178:581", "178:582"], "method": "lemma", "score": 4.5, "anchors": ["#55", "Ojāpharaṇamupādāyā", "Ṭhitikālan"]}
+{"child": "178:1545", "parent": ["178:582"], "method": "number", "score": 2.0, "anchors": ["#56"]}
+{"child": "178:1546", "parent": ["178:582"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1547", "parent": ["178:582"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1548", "parent": ["178:582"], "method": "lemma", "score": 3.7, "anchors": ["Puretaran", "Tatoparaṃ cittajāhārajarūpañca vocchijjatī"]}
+{"child": "178:1549", "parent": ["178:585", "178:586"], "method": "lemma", "score": 4.95, "anchors": ["#58", "Jīvitanavakan", "Āhārajakalāpāni ca na labbhanti"]}
+{"child": "178:1550", "parent": ["178:586"], "method": "lemma", "score": 2.8, "anchors": ["#59", "Atiricchati"]}
+{"child": "178:1551", "parent": ["178:588", "178:590"], "method": "lemma", "score": 4.0, "anchors": ["#61", "Saddo vikāro"]}
+{"child": "178:1552", "parent": ["178:590"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1553", "parent": ["178:594"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1554", "parent": ["178:594"], "method": "lemma", "score": 17.0, "anchors": ["#62", "Catumaggañāṇena sacchikātabban", "Maggaphalānamārammaṇabhūtan", "nibbānaṃ panā", "nikkhantattā", "vānasaṅkhātāya"]}
+{"child": "178:1555", "parent": ["178:595"], "method": "lemma", "score": 2.2, "anchors": ["#63", "Sabhāvato"]}
+{"child": "178:1556", "parent": ["178:596"], "method": "lemma", "score": 2.63, "anchors": ["#64", "animittaṃ .", "appaṇihitaṃ .", "suññataṃ ,", "suññataṃ ."]}
+{"child": "178:1557", "parent": ["178:597", "178:598", "178:599"], "method": "lemma", "score": 4.45, "anchors": ["#65", "Iti cittan", "accantaṃ .", "accutaṃ .", "anuttaraṃ .", "asaṅkhataṃ .", "vānamuttā ."]}
+{"child": "178:1558", "parent": ["178:599"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1559", "parent": ["178:599"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1560", "parent": ["178:599"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1561", "parent": ["178:603", "178:604", "178:605", "178:606"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1562", "parent": ["178:603", "178:604", "178:605", "178:606"], "method": "lemma", "score": 3.73, "anchors": ["#1", "Salakkhaṇā", "samuccayaṃ", "vatthudhammā", "yathāyogaṃ"]}
+{"child": "178:1563", "parent": ["178:606", "178:607", "178:608"], "method": "lemma", "score": 4.53, "anchors": ["#2", "akusalasaṅgaho .", "bodhipakkhiyasaṅgaho .", "missakasaṅgaho ,", "sabbasaṅgaho ."]}
+{"child": "178:1564", "parent": ["178:608"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1565", "parent": ["178:608"], "method": "lemma", "score": 5.3, "anchors": ["#3", "avijjāsavo .", "bhavāsavo .", "diṭṭhāsavo .", "kāmāsavo ,"]}
+{"child": "178:1566", "parent": ["178:609"], "method": "number", "score": 2.0, "anchors": ["#4"]}
+{"child": "178:1567", "parent": ["178:610"], "method": "number", "score": 2.0, "anchors": ["#5"]}
+{"child": "178:1568", "parent": ["178:611"], "method": "lemma", "score": 3.92, "anchors": ["#6", "idaṃ saccābhiniveso .", "kāyaganthā .", "parāmāso ."]}
+{"child": "178:1569", "parent": ["178:612"], "method": "lemma", "score": 5.6, "anchors": ["#7", "attavādupādānaṃ .", "kāmupādānaṃ .", "sīlabbatupādānaṃ ."]}
+{"child": "178:1570", "parent": ["178:613"], "method": "lemma", "score": 10.55, "anchors": ["#8", "byāpādanīvaraṇaṃ .", "kāmacchandanīvaraṇaṃ .", "nīvaraṇā .", "nīvaraṇāni ,", "thinamiddhanīvaraṇaṃ .", "uddhaccakukkuccanīvaraṇaṃ ."]}
+{"child": "178:1571", "parent": ["178:613"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1572", "parent": ["178:613"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1573", "parent": ["178:613"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1574", "parent": ["178:613"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1575", "parent": ["178:614"], "method": "lemma", "score": 3.9, "anchors": ["#9", "anusayā", "anusayā ,", "kāmarāgānusayo ."]}
+{"child": "178:1576", "parent": ["178:615", "178:616"], "method": "lemma", "score": 2.67, "anchors": ["#10", "saṃyojanāni ."]}
+{"child": "178:1577", "parent": ["178:617"], "method": "lemma", "score": 2.08, "anchors": ["#12", "kilesā ."]}
+{"child": "178:1578", "parent": ["178:618"], "method": "lemma", "score": 3.95, "anchors": ["#13", "Kāmabhavanāmenā", "Tathāpavattan"]}
+{"child": "178:1579", "parent": ["178:619", "178:620", "178:623"], "method": "lemma", "score": 3.83, "anchors": ["#14", "Nava saṃyojanā matā", "vatthuto"]}
+{"child": "178:1580", "parent": ["178:623"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1581", "parent": ["178:623"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1582", "parent": ["178:623"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1583", "parent": ["178:623"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1584", "parent": ["178:623"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1585", "parent": ["178:623"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1586", "parent": ["178:626"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1587", "parent": ["178:626"], "method": "number", "score": 2.0, "anchors": ["#15"]}
+{"child": "178:1588", "parent": ["178:627"], "method": "lemma", "score": 2.23, "anchors": ["#16", "jhānaṅgāni ."]}
+{"child": "178:1589", "parent": ["178:628"], "method": "lemma", "score": 4.07, "anchors": ["#17", "maggaṅgāni .", "sammādiṭṭhi .", "sammāsamādhi ,", "sammāsati .", "sammāsaṅkappo .", "sammāvāyāmo ."]}
+{"child": "178:1590", "parent": ["178:629"], "method": "lemma", "score": 7.2, "anchors": ["#18", "Jīvitindriyan", "anaññātaññassāmītindriyaṃ .", "anaññātaṃ ñassāmī", "aññindriyaṃ .", "aññātāvindriyaṃ .", "cakkhundriyan"]}
+{"child": "178:1591", "parent": ["178:629"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1592", "parent": ["178:630"], "method": "lemma", "score": 2.17, "anchors": ["#19", "balāni ,"]}
+{"child": "178:1593", "parent": ["178:631"], "method": "lemma", "score": 2.14, "anchors": ["#20", "adhipatī ."]}
+{"child": "178:1594", "parent": ["178:632"], "method": "number", "score": 2.0, "anchors": ["#21"]}
+{"child": "178:1595", "parent": ["178:632"], "method": "lemma", "score": 1.34, "anchors": ["Manosañcetanā", "Phasso", "Viññāṇaṃ"]}
+{"child": "178:1596", "parent": ["178:637"], "method": "number", "score": 2.0, "anchors": ["#26"]}
+{"child": "178:1597", "parent": ["178:638"], "method": "lemma", "score": 5.8, "anchors": ["#27", "tathā vicikicchācitte"]}
+{"child": "178:1598", "parent": ["178:639"], "method": "lemma", "score": 6.14, "anchors": ["#28", "Dvihetukatihetuka", "Ekova labbhati ,", "Javanesvevā", "yathāsambhavan"]}
+{"child": "178:1599", "parent": ["178:640", "178:643"], "method": "lemma", "score": 3.66, "anchors": ["#29", "Vatthuto", "maggaṅgā nava", "missakasaṅgaho"]}
+{"child": "178:1600", "parent": ["178:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1601", "parent": ["178:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1602", "parent": ["178:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1603", "parent": ["178:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1604", "parent": ["178:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1605", "parent": ["178:645"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1606", "parent": ["178:645"], "method": "lemma", "score": 9.65, "anchors": ["#30", "cattāro satipaṭṭhānā", "cittānupassanā .", "dhammānupassanā .", "kāyānupassanā .", "satipaṭṭhānaṃ .", "vedanānupassanā ."]}
+{"child": "178:1607", "parent": ["178:646"], "method": "lemma", "score": 4.5, "anchors": ["#31", "cattāro sammappadhānā", "sammappadhānaṃ ,"]}
+{"child": "178:1608", "parent": ["178:647"], "method": "lemma", "score": 3.3, "anchors": ["#32", "chandiddhipādo ."]}
+{"child": "178:1609", "parent": ["178:650"], "method": "lemma", "score": 7.62, "anchors": ["#35", "Upekkhā", "dhammavicayo ,", "satisambojjhaṅgo", "satisambojjhaṅgo ."]}
+{"child": "178:1610", "parent": ["178:657", "178:658"], "method": "lemma", "score": 6.6, "anchors": ["#40", "Sattadhā tattha saṅgaho", "saṅkappapassaddhi cā"]}
+{"child": "178:1611", "parent": ["178:664"], "method": "number", "score": 2.0, "anchors": ["#41"]}
+{"child": "178:1612", "parent": ["178:664"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1613", "parent": ["178:667", "178:668"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1614", "parent": ["178:667", "178:668"], "method": "lemma", "score": 3.22, "anchors": ["#42", "khandhā .", "rūpakkhandho"]}
+{"child": "178:1615", "parent": ["178:667", "178:668"], "method": "lemma", "score": 7.4, "anchors": ["#43", "pañcakkhandhā", "rūpupādānakkhandho", "upādānakkhandhā", "upādānakkhandhā ,"]}
+{"child": "178:1616", "parent": ["178:669"], "method": "lemma", "score": 5.45, "anchors": ["#44", "cakkhāyatanan", "cakkhāyatanaṃ .", "āyatanan", "āyatanāni ."]}
+{"child": "178:1617", "parent": ["178:669"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1618", "parent": ["178:670"], "method": "lemma", "score": 2.4, "anchors": ["#45", "dhātuyo ."]}
+{"child": "178:1619", "parent": ["178:670"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1620", "parent": ["178:670"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1621", "parent": ["178:670"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1622", "parent": ["178:670"], "method": "lemma", "score": 2.0, "anchors": ["cakkhudhātū"]}
+{"child": "178:1623", "parent": ["178:671"], "method": "lemma", "score": 3.1, "anchors": ["#46", "ariyasaccāni ."]}
+{"child": "178:1624", "parent": ["178:671"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1625", "parent": ["178:671"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1626", "parent": ["178:671"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1627", "parent": ["178:671"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1628", "parent": ["178:671"], "method": "lemma", "score": 9.83, "anchors": ["ariyasaccāni .", "cattāri ariyasaccānī", "dukkhanirodhagāminipaṭipadā .", "dukkhanirodho .", "dukkhasamudayo .", "dukkhaṃ ."]}
+{"child": "178:1629", "parent": ["178:672"], "method": "number", "score": 2.0, "anchors": ["#47"]}
+{"child": "178:1630", "parent": ["178:674"], "method": "lemma", "score": 3.1, "anchors": ["#49", "Sesā cetasikā"]}
+{"child": "178:1631", "parent": ["178:674"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1632", "parent": ["178:674"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1633", "parent": ["178:676", "178:677"], "method": "lemma", "score": 4.5, "anchors": ["#50", "bhedābhāvenā", "nissaṭaṃ ,"]}
+{"child": "178:1634", "parent": ["178:678", "178:679"], "method": "lemma", "score": 2.23, "anchors": ["#51", "pariyāyena"]}
+{"child": "178:1635", "parent": ["178:680"], "method": "lemma", "score": 3.2, "anchors": ["#52", "tebhūmakaṃ .", "vaṭṭaṃ . Taṇhā"]}
+{"child": "178:1636", "parent": ["178:682"], "method": "lemma", "score": 2.9, "anchors": ["#53", "Maggayuttā"]}
+{"child": "178:1637", "parent": ["178:682"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1638", "parent": ["178:682"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1639", "parent": ["178:682"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1640", "parent": ["178:686", "178:687", "178:688", "178:689"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1641", "parent": ["178:686", "178:687", "178:688", "178:689"], "method": "lemma", "score": 2.99, "anchors": ["#1", "paccayā", "taṃ vibhāgaṃ", "yathārahaṃ"]}
+{"child": "178:1642", "parent": ["178:689", "178:690"], "method": "lemma", "score": 3.15, "anchors": ["#2", "paṭiccasamuppādo ,", "paṭṭhānanayo ."]}
+{"child": "178:1643", "parent": ["178:690"], "method": "lemma", "score": 10.3, "anchors": ["#3", "Vomissetvā", "papañcenti", "tabbhāvabhāvībhāvākāramattopalakkhito .", "ācariyā", "āhaccapaccayaṭṭhiti .", "āhaccapaccayaṭṭhitī"]}
+{"child": "178:1644", "parent": ["178:692"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1645", "parent": ["178:692"], "method": "lemma", "score": 5.29, "anchors": ["#4", "Nāmarūpapaccayā", "avijjāpaccayo .", "nāmarūpaṃ .", "phasso", "saḷāyatanaṃ .", "saṅkhārā ,", "vedanā .", "viññāṇaṃ"]}
+{"child": "178:1646", "parent": ["178:692"], "method": "lemma", "score": 4.73, "anchors": ["Bhavapaccayā jātī", "Upādānapaccayā bhavo", "domanassaṃ .", "dukkhaṃ .", "maraṇaṃ .", "paridevo .", "upāyāso ."]}
+{"child": "178:1647", "parent": ["178:692"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1648", "parent": ["178:692"], "method": "lemma", "score": 5.74, "anchors": ["Evametassa kevalassa dukkhakkhandhassa samudayo hotī", "dukkhakkhandhassa", "etassa", "kevalassa", "samudayo"]}
+{"child": "178:1649", "parent": ["178:693"], "method": "number", "score": 2.0, "anchors": ["#5"]}
+{"child": "178:1650", "parent": ["178:694"], "method": "lemma", "score": 6.9, "anchors": ["#6", "Avijjāsaṅkhārā atīto addhā", "Jātijarāmaraṇaṃ anāgato addhā"]}
+{"child": "178:1651", "parent": ["178:696"], "method": "lemma", "score": 4.2, "anchors": ["#8", "sokādivacanan"]}
+{"child": "178:1652", "parent": ["178:697"], "method": "lemma", "score": 6.4, "anchors": ["#9", "jātijarāmaraṇaggahaṇenā"]}
+{"child": "178:1653", "parent": ["178:698", "178:699"], "method": "lemma", "score": 8.3, "anchors": ["#10", "Atīte hetavo pañcā", "Idāni hetavo pañcā", "idāni phalapañcakan", "Āyatiṃ phalapañcakan"]}
+{"child": "178:1654", "parent": ["178:700"], "method": "lemma", "score": 0.55, "anchors": ["catusaṅkhepā ."]}
+{"child": "178:1655", "parent": ["178:701"], "method": "lemma", "score": 8.6, "anchors": ["#11", "Avasesā cā", "Kammabhavasaṅkhāto bhavekadeso", "Upapattibhavasaṅkhāto bhavekadeso"]}
+{"child": "178:1656", "parent": ["178:702"], "method": "lemma", "score": 4.5, "anchors": ["#12", "avijjātaṇhāvasena dve mūlānī"]}
+{"child": "178:1657", "parent": ["178:703", "178:704", "178:705", "178:706", "178:707"], "method": "lemma", "score": 10.22, "anchors": ["#13", "Abhiṇhaso", "Iccevaṃ", "Tesameva", "anādikaṃ", "jarāmaraṇa", "mahāmuni", "mucchāya pīḷitānaṃ", "mūlānaṃ nirodhena", "paṭiccasamuppādoti paṭṭhapesi", "tebhūmakaṃ", "āsavānaṃ"]}
+{"child": "178:1658", "parent": ["178:707"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1659", "parent": ["178:709"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1660", "parent": ["178:709"], "method": "lemma", "score": 5.0, "anchors": ["#14", "hetupaccayo", "hetupaccayo ."]}
+{"child": "178:1661", "parent": ["178:709"], "method": "lemma", "score": 0.7, "anchors": ["adhipatipaccayo ."]}
+{"child": "178:1662", "parent": ["178:709"], "method": "lemma", "score": 6.2, "anchors": ["anantarapaccayo", "anantarapaccayo .", "samanantarapaccayo", "samanantarapaccayo ."]}
+{"child": "178:1663", "parent": ["178:709"], "method": "lemma", "score": 0.7, "anchors": ["sahajātapaccayo ,"]}
+{"child": "178:1664", "parent": ["178:709"], "method": "lemma", "score": 0.75, "anchors": ["aññamaññapaccayo ."]}
+{"child": "178:1665", "parent": ["178:709"], "method": "lemma", "score": 2.25, "anchors": ["nissayapaccayo", "upanissayapaccayo"]}
+{"child": "178:1666", "parent": ["178:709"], "method": "lemma", "score": 3.0, "anchors": ["pacchājātapaccayo .", "purejātapaccayo ."]}
+{"child": "178:1667", "parent": ["178:709"], "method": "lemma", "score": 2.4, "anchors": ["kammapaccayo .", "āsevanapaccayo ."]}
+{"child": "178:1668", "parent": ["178:709"], "method": "lemma", "score": 1.2, "anchors": ["vipākapaccayo ."]}
+{"child": "178:1669", "parent": ["178:709"], "method": "lemma", "score": 1.2, "anchors": ["indriyapaccayo .", "āhārapaccayo ."]}
+{"child": "178:1670", "parent": ["178:709"], "method": "lemma", "score": 2.2, "anchors": ["jhānapaccayo .", "maggapaccayo ."]}
+{"child": "178:1671", "parent": ["178:709"], "method": "lemma", "score": 2.4, "anchors": ["sampayuttapaccayo .", "vippayuttapaccayo ."]}
+{"child": "178:1672", "parent": ["178:709"], "method": "lemma", "score": 0.97, "anchors": ["atthipaccayo .", "natthipaccayo ."]}
+{"child": "178:1673", "parent": ["178:709"], "method": "lemma", "score": 1.25, "anchors": ["avigatapaccayo .", "vigatapaccayo ."]}
+{"child": "178:1674", "parent": ["178:710", "178:711", "178:713"], "method": "lemma", "score": 3.51, "anchors": ["#15", "dvayassa", "ekadhā", "navadhā", "nāmarūpīnaṃ", "pañcadhā"]}
+{"child": "178:1675", "parent": ["178:714"], "method": "lemma", "score": 5.0, "anchors": ["#16", "purimāni javanānī"]}
+{"child": "178:1676", "parent": ["178:714"], "method": "lemma", "score": 1.35, "anchors": ["cittacetasikā dhammā aññamaññan"]}
+{"child": "178:1677", "parent": ["178:715"], "method": "lemma", "score": 9.88, "anchors": ["#17", "Hetujhānaṅgamaggaṅgāni sahajātānaṃ nāma rūpānan", "Nāmarūpānan", "Nānākkhaṇikā cetanā", "Sahajātā cetanā", "Sahajātānaṃ nāma rūpānan", "Vipākakkhandhā"]}
+{"child": "178:1678", "parent": ["178:716"], "method": "lemma", "score": 3.15, "anchors": ["#18", "Purejātassa imassa kāyassā"]}
+{"child": "178:1679", "parent": ["178:717"], "method": "lemma", "score": 3.9, "anchors": ["#19", "chavatthūni pavattiyan"]}
+{"child": "178:1680", "parent": ["178:720"], "method": "lemma", "score": 2.7, "anchors": ["#22", "pakatūpanissayo ."]}
+{"child": "178:1681", "parent": ["178:721"], "method": "lemma", "score": 2.35, "anchors": ["#23", "Garukatan"]}
+{"child": "178:1682", "parent": ["178:722"], "method": "lemma", "score": 3.5, "anchors": ["#24", "anantaraniruddhā"]}
+{"child": "178:1683", "parent": ["178:723"], "method": "number", "score": 2.0, "anchors": ["#25"]}
+{"child": "178:1684", "parent": ["178:723"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1685", "parent": ["178:723"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1686", "parent": ["178:723"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1687", "parent": ["178:723"], "method": "lemma", "score": 6.93, "anchors": ["Bhojanan", "Puggalo", "Saddhādayo", "Sukhaṃ dukkhan", "bahudhā hoti pakatūpanissayo"]}
+{"child": "178:1688", "parent": ["178:725"], "method": "lemma", "score": 7.2, "anchors": ["#27", "Garukatamārammaṇan", "tattha garukatamārammaṇan"]}
+{"child": "178:1689", "parent": ["178:726", "178:727"], "method": "lemma", "score": 6.0, "anchors": ["#28", "vatthuvipākā aññamaññan"]}
+{"child": "178:1690", "parent": ["178:726", "178:727", "178:728"], "method": "lemma", "score": 9.45, "anchors": ["#30", "cittacetasikā dhammā aññamaññan", "mahābhūtā aññamaññan"]}
+{"child": "178:1691", "parent": ["178:729"], "method": "lemma", "score": 5.0, "anchors": ["#31", "arūpino āhārā sahajātānaṃ nāmarūpānan"]}
+{"child": "178:1692", "parent": ["178:730"], "method": "lemma", "score": 2.5, "anchors": ["#32", "Pañca pasādā"]}
+{"child": "178:1693", "parent": ["178:731"], "method": "lemma", "score": 5.6, "anchors": ["#33", "okkantikkhaṇe vatthū"]}
+{"child": "178:1694", "parent": ["178:732"], "method": "lemma", "score": 2.03, "anchors": ["#34", "Sabbathā"]}
+{"child": "178:1695", "parent": ["178:735"], "method": "number", "score": 2.0, "anchors": ["#35"]}
+{"child": "178:1696", "parent": ["178:736"], "method": "lemma", "score": 4.03, "anchors": ["#36", "kaṭattārūpāni .", "sahajātarūpan"]}
+{"child": "178:1697", "parent": ["178:737", "178:740"], "method": "lemma", "score": 2.83, "anchors": ["#37", "paṭṭhāne", "sambhavā", "tekālikā"]}
+{"child": "178:1698", "parent": ["178:741"], "method": "number", "score": 2.0, "anchors": ["#38"]}
+{"child": "178:1699", "parent": ["178:741"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1700", "parent": ["178:742", "178:743", "178:744"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1701", "parent": ["178:742", "178:743", "178:744"], "method": "lemma", "score": 5.93, "anchors": ["#39", "Paññāpanato", "Paññāpiyattā", "paññattī", "paññāpiyattā"]}
+{"child": "178:1702", "parent": ["178:744"], "method": "lemma", "score": 20.4, "anchors": ["#40", "Asamphuṭṭhākāran", "Atthacchāyākārenā", "Bhāvanāvisesan", "Bhūmipabbatādikā", "Candāvaṭṭanādikan", "Disākālādikā", "Evamādippabhedā", "Kasiṇanimittādikā", "Kūpaguhādikā", "Rathasakaṭādikā", "Sambhārasannivesākāran", "Tathā tathā", "Taṃtaṃbhūtanimittan"]}
+{"child": "178:1703", "parent": ["178:745"], "method": "lemma", "score": 6.4, "anchors": ["#41", "Nāmanāmakammādināmenā", "nāmakammaṃ .", "vijjamānapaññattī"]}
+{"child": "178:1704", "parent": ["178:745", "178:746"], "method": "lemma", "score": 14.7, "anchors": ["#42", "Ubhinnan", "avijjamānena avijjamānapaññatti .", "avijjamānena vijjamānapaññatti .", "chaḷabhiñño .", "vijjamānena avijjamānapaññatti", "vijjamānena vijjamānapaññatti ."]}
+{"child": "178:1705", "parent": ["178:747"], "method": "lemma", "score": 5.5, "anchors": ["#43", "Vacīghosānusārenā", "anusārena", "sotaviññāṇavīthiyā"]}
+{"child": "178:1706", "parent": ["178:747"], "method": "lemma", "score": 1.7, "anchors": ["sotaviññāṇavīthiyā"]}
+{"child": "178:1707", "parent": ["178:747"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1708", "parent": ["178:747"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1709", "parent": ["178:747"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1710", "parent": ["178:753", "178:754", "178:755", "178:756", "178:757"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1711", "parent": ["178:753", "178:754", "178:755", "178:756", "178:757"], "method": "lemma", "score": 2.83, "anchors": ["#1", "bhāvanānaṃ", "kammaṭṭhānaṃ", "samatha", "vipassanā", "yathākkamaṃ"]}
+{"child": "178:1712", "parent": ["178:759"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1713", "parent": ["178:759"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1714", "parent": ["178:759"], "method": "lemma", "score": 4.1, "anchors": ["#3", "Caritasaṅgaho", "dosacaritā", "rāgacaritā ."]}
+{"child": "178:1715", "parent": ["178:759"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1716", "parent": ["178:759"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1717", "parent": ["178:759"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1718", "parent": ["178:759"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1719", "parent": ["178:761"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1720", "parent": ["178:761"], "method": "lemma", "score": 3.53, "anchors": ["#4", "appanābhāvanā", "parikammabhāvanā", "upacārabhāvanā"]}
+{"child": "178:1721", "parent": ["178:761"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1722", "parent": ["178:763"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1723", "parent": ["178:763"], "method": "lemma", "score": 3.17, "anchors": ["#5", "parikammanimittaṃ ,", "paṭibhāganimittaṃ .", "uggahanimittaṃ ."]}
+{"child": "178:1724", "parent": ["178:764"], "method": "lemma", "score": 3.4, "anchors": ["#6", "pathavīkasiṇaṃ ,", "āpokasiṇā"]}
+{"child": "178:1725", "parent": ["178:764", "178:765"], "method": "lemma", "score": 10.52, "anchors": ["#7", "aṭṭhikaṃ .", "hatavikkhittakaṃ .", "lohitakaṃ .", "puḷavakaṃ .", "uddhumātakaṃ .", "vicchiddakaṃ .", "vikkhittakaṃ .", "vikkhāyitakaṃ .", "vinīlakaṃ", "vipubbakaṃ ."]}
+{"child": "178:1726", "parent": ["178:766"], "method": "lemma", "score": 11.97, "anchors": ["#8", "buddhānussati .", "cāgānussati .", "devatānussati .", "dhammānussati .", "kāyagatāsati .", "maraṇānussati .", "saṃghānussati .", "sīlānussati .", "upasamānussati .", "ānāpānassati ."]}
+{"child": "178:1727", "parent": ["178:767"], "method": "lemma", "score": 3.17, "anchors": ["#9", "appamaññā .", "brahmavihāro ."]}
+{"child": "178:1728", "parent": ["178:768"], "method": "lemma", "score": 3.7, "anchors": ["#10", "āhāre paṭikūlasaññā ."]}
+{"child": "178:1729", "parent": ["178:769"], "method": "lemma", "score": 3.8, "anchors": ["#11", "catudhātuvavatthānaṃ ."]}
+{"child": "178:1730", "parent": ["178:770"], "method": "lemma", "score": 2.02, "anchors": ["#12", "āruppā ."]}
+{"child": "178:1731", "parent": ["178:770"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1732", "parent": ["178:772"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1733", "parent": ["178:772"], "method": "lemma", "score": 4.65, "anchors": ["#13", "caritāsu panā", "rāgacarito ,"]}
+{"child": "178:1734", "parent": ["178:776"], "method": "number", "score": 2.0, "anchors": ["#17"]}
+{"child": "178:1735", "parent": ["178:777"], "method": "lemma", "score": 2.11, "anchors": ["#18", "Sesānī", "Tatthāpī"]}
+{"child": "178:1736", "parent": ["178:777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1737", "parent": ["178:780"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1738", "parent": ["178:780"], "method": "lemma", "score": 3.21, "anchors": ["#19", "Sabbatthāpī", "natthi appanā ,"]}
+{"child": "178:1739", "parent": ["178:782"], "method": "lemma", "score": 3.6, "anchors": ["#21", "pañcakajjhānikāni ."]}
+{"child": "178:1740", "parent": ["178:783"], "method": "lemma", "score": 2.93, "anchors": ["#22", "paṭhamajjhānikā"]}
+{"child": "178:1741", "parent": ["178:784"], "method": "lemma", "score": 7.4, "anchors": ["#23", "mettādayo tayo catukkajjhānikā"]}
+{"child": "178:1742", "parent": ["178:785"], "method": "lemma", "score": 6.2, "anchors": ["#24", "upekkhā pañcamajjhānikā"]}
+{"child": "178:1743", "parent": ["178:785"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1744", "parent": ["178:789"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1745", "parent": ["178:789"], "method": "lemma", "score": 2.48, "anchors": ["#26", "Yathārahan", "pariyāyenā"]}
+{"child": "178:1746", "parent": ["178:790"], "method": "number", "score": 2.0, "anchors": ["#27"]}
+{"child": "178:1747", "parent": ["178:791", "178:792"], "method": "lemma", "score": 10.3, "anchors": ["#28", "Manodvārassa āpāthamāgatan", "Pathavīmaṇḍalādīsu nimittaṃ uggaṇhantassā", "Yadā pana taṃ nimittaṃ cittena samuggahitan"]}
+{"child": "178:1748", "parent": ["178:792"], "method": "lemma", "score": 2.5, "anchors": ["#29", "Samādhiyatī"]}
+{"child": "178:1749", "parent": ["178:793"], "method": "lemma", "score": 8.47, "anchors": ["#30", "Tappaṭibhāgan", "Vatthudhammavimuccitan", "paṭibhāganimittan", "tathā samāhitassā"]}
+{"child": "178:1750", "parent": ["178:794"], "method": "lemma", "score": 3.1, "anchors": ["#31", "Tato paṭṭhāyā"]}
+{"child": "178:1751", "parent": ["178:796"], "method": "lemma", "score": 2.73, "anchors": ["#33", "Padahato", "Yathārahan"]}
+{"child": "178:1752", "parent": ["178:797", "178:799", "178:800"], "method": "lemma", "score": 6.04, "anchors": ["#36", "Anantan", "Anantavasena parikammaṃ karontassā", "Kasiṇan", "Ugghāṭetvā"]}
+{"child": "178:1753", "parent": ["178:802"], "method": "lemma", "score": 6.9, "anchors": ["#39", "Santametaṃ , paṇītametan", "Santametaṃ , paṇītametan ti parikammaṃ karontassā"]}
+{"child": "178:1754", "parent": ["178:803"], "method": "lemma", "score": 9.9, "anchors": ["#40", "Avasesesu cā", "Parikammañca samādhiyatī", "Parikammaṃ katvā", "Sādhukamuggahite", "Upacāro ca sampajjatī"]}
+{"child": "178:1755", "parent": ["178:804"], "method": "lemma", "score": 9.7, "anchors": ["#41", "Abhiññāvasena pavattamānan", "Adhiṭṭheyyādikamāvajjetvā", "abhiññāpādakapañcamajjhānā vuṭṭhahitvā"]}
+{"child": "178:1756", "parent": ["178:804"], "method": "lemma", "score": 1.08, "anchors": ["Parikammaṃ karontassā", "Rūpādīsū"]}
+{"child": "178:1757", "parent": ["178:804"], "method": "lemma", "score": 1.5, "anchors": ["Yathārahamappetī"]}
+{"child": "178:1758", "parent": ["178:805", "178:806", "178:807"], "method": "lemma", "score": 8.9, "anchors": ["#42", "dibbacakkhu .", "dibbasotaṃ .", "iddhividhā", "iddhividhā .", "paracittavijānanā .", "pubbenivāsānussati ."]}
+{"child": "178:1759", "parent": ["178:808"], "method": "lemma", "score": 0.5, "anchors": ["gocarabhedo ."]}
+{"child": "178:1760", "parent": ["178:808"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1761", "parent": ["178:808"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1762", "parent": ["178:810", "178:812"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1763", "parent": ["178:810", "178:812"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1764", "parent": ["178:810", "178:812"], "method": "lemma", "score": 3.27, "anchors": ["#43", "vipassanākammaṭṭhāne"]}
+{"child": "178:1765", "parent": ["178:813"], "method": "lemma", "score": 5.9, "anchors": ["#44", "anattalakkhaṇaṃ .", "aniccalakkhaṇaṃ .", "dukkhalakkhaṇaṃ ."]}
+{"child": "178:1766", "parent": ["178:814"], "method": "lemma", "score": 2.7, "anchors": ["#45", "aniccānupassanā"]}
+{"child": "178:1767", "parent": ["178:815"], "method": "lemma", "score": 11.93, "anchors": ["#46", "anulomañāṇaṃ .", "bhayañāṇaṃ ,", "bhaṅgañāṇaṃ .", "muccitukamyatāñāṇaṃ .", "nibbidāñāṇaṃ .", "paṭisaṅkhāñāṇaṃ .", "sammasanañāṇaṃ .", "saṅkhārupekkhāñāṇaṃ .", "udayabbayañāṇaṃ .", "ādīnavañāṇaṃ ,"]}
+{"child": "178:1768", "parent": ["178:816", "178:817"], "method": "lemma", "score": 2.79, "anchors": ["#47", "animitto .", "appaṇihito .", "suññato .", "vimokkho ."]}
+{"child": "178:1769", "parent": ["178:818"], "method": "lemma", "score": 11.2, "anchors": ["#49", "catupārisuddhisīlaṃ", "indriyasaṃvarasīlaṃ .", "paccayasannissitasīlaṃ .", "pātimokkhasaṃvarasīlaṃ .", "ājīvapārisuddhisīlaṃ ."]}
+{"child": "178:1770", "parent": ["178:819"], "method": "lemma", "score": 3.6, "anchors": ["#50", "Cittavisuddhi nāma"]}
+{"child": "178:1771", "parent": ["178:820"], "method": "lemma", "score": 3.7, "anchors": ["#51", "diṭṭhivisuddhi nāma"]}
+{"child": "178:1772", "parent": ["178:821"], "method": "lemma", "score": 6.0, "anchors": ["#52", "Paccayapariggaho", "kaṅkhāvitaraṇavisuddhi nāma"]}
+{"child": "178:1773", "parent": ["178:822"], "method": "lemma", "score": 15.93, "anchors": ["#53", "anattā asārakaṭṭhena", "aniccaṃ", "atītādibhedabhinnesu khandhādinayamārabbha", "dukkhaṃ bhayaṭṭhena", "kalāpavasena", "khayaṭṭhena", "sammasanañāṇena", "sammasantassa", "saṅkhipitvā", "tathāpariggahitesu"]}
+{"child": "178:1774", "parent": ["178:822", "178:823", "178:824", "178:825"], "method": "lemma", "score": 10.2, "anchors": ["adhimokkho ,", "khaṇavasena", "maggāmaggañāṇadassanavisuddhi nāma .", "nikanti", "obhāso ,", "paccayavasena", "paggaho ,", "passaddhi ,", "tesveva", "udayabbayañāṇena udayabbayaṃ samanupassantassa", "upekkhā ,"]}
+{"child": "178:1775", "parent": ["178:826", "178:827"], "method": "lemma", "score": 7.13, "anchors": ["#54", "Nava vipassanāñāṇānī", "Yāvānulomā", "anulomañāṇan", "paṭipadāñāṇadassanavisuddhi nāma .", "udayabbayañāṇaṃ ,"]}
+{"child": "178:1776", "parent": ["178:827"], "method": "lemma", "score": 5.94, "anchors": ["#55", "Yaṃ kiñcī", "appanā uppajjissatī", "vipassanāparipāko ,", "āgamma"]}
+{"child": "178:1777", "parent": ["178:828"], "method": "lemma", "score": 5.0, "anchors": ["#56", "saṅkhārupekkhā .", "sikhāppattā .", "sānulomā .", "vuṭṭhānagāminī ."]}
+{"child": "178:1778", "parent": ["178:829"], "method": "lemma", "score": 3.2, "anchors": ["#57", "Abhisambhontan"]}
+{"child": "178:1779", "parent": ["178:830"], "method": "lemma", "score": 6.5, "anchors": ["#58", "Maggasaccaṃ bhāvanāvasenā", "Parijānanto", "Sacchikaronto"]}
+{"child": "178:1780", "parent": ["178:831"], "method": "lemma", "score": 5.7, "anchors": ["#59", "Dve tīṇi phalacittāni pavattitvā", "Paccavekkhaṇañāṇānī"]}
+{"child": "178:1781", "parent": ["178:832"], "method": "lemma", "score": 4.6, "anchors": ["#60", "maggaṃ phalañcā"]}
+{"child": "178:1782", "parent": ["178:834", "178:835"], "method": "lemma", "score": 2.25, "anchors": ["Chabbisuddhikamenā", "ñāṇadassanavisuddhi nāma ."]}
+{"child": "178:1783", "parent": ["178:835"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1784", "parent": ["178:835"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1785", "parent": ["178:838"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1786", "parent": ["178:838"], "method": "lemma", "score": 5.02, "anchors": ["#61", "anattā", "suññatānupassanā nāma vimokkhamukhaṃ"]}
+{"child": "178:1787", "parent": ["178:839"], "method": "lemma", "score": 6.43, "anchors": ["#62", "aniccan", "animittānupassanā nāma", "vipallāsanimittaṃ muñcantī"]}
+{"child": "178:1788", "parent": ["178:839", "178:840"], "method": "lemma", "score": 5.8, "anchors": ["#63", "Dukkhan", "appaṇihitānupassanā nāma .", "muñcantī", "taṇhāpaṇidhiṃ"]}
+{"child": "178:1789", "parent": ["178:841"], "method": "number", "score": 2.0, "anchors": ["#64"]}
+{"child": "178:1790", "parent": ["178:843", "178:844"], "method": "lemma", "score": 4.1, "anchors": ["#66", "Vipassanāgamanavasenā", "āgamanaṃ"]}
+{"child": "178:1791", "parent": ["178:844"], "method": "lemma", "score": 5.1, "anchors": ["#67", "Sabbatthā", "Sabbesampī", "Sarasavasenā", "Yathāvuttanayenā", "Ārammaṇavasenā"]}
+{"child": "178:1792", "parent": ["178:844"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1793", "parent": ["178:847"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1794", "parent": ["178:847"], "method": "lemma", "score": 3.7, "anchors": ["#68", "sattakkhattuparamo"]}
+{"child": "178:1795", "parent": ["178:848"], "method": "lemma", "score": 3.3, "anchors": ["#69", "Rāgadosamohānan"]}
+{"child": "178:1796", "parent": ["178:849", "178:850"], "method": "lemma", "score": 3.8, "anchors": ["#70", "aggadakkhiṇeyyo .", "khīṇāsavo ."]}
+{"child": "178:1797", "parent": ["178:850"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1798", "parent": ["178:853"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1799", "parent": ["178:853"], "method": "lemma", "score": 2.23, "anchors": ["#72", "Sabbesampī"]}
+{"child": "178:1800", "parent": ["178:854"], "method": "lemma", "score": 7.05, "anchors": ["#73", "Adhiṭṭheyyādikan", "Anāgāmīnañcā", "Yāva ākiñcaññāyatanaṃ gantvā", "nirodhasamāpatti ,"]}
+{"child": "178:1801", "parent": ["178:854"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1802", "parent": ["178:854"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1803", "parent": ["178:859", "178:860"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1804", "parent": ["178:859", "178:860"], "method": "lemma", "score": 3.7, "anchors": ["#75", "Paṭipattirasassādan"]}
+{"child": "178:1805", "parent": ["178:860"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1806", "parent": ["178:860"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1807", "parent": ["178:866", "178:867"], "method": "heading", "score": 0, "anchors": []}
+{"child": "178:1808", "parent": ["178:864", "178:865", "178:866", "178:867"], "method": "manual", "score": 0, "anchors": ["注 Saṅgaha 跋偈 (Ka) 全首，锚点只命中后两行"]}
+{"child": "178:1809", "parent": ["178:868", "178:869"], "method": "lemma", "score": 1.5, "anchors": ["mūlasomaṃ", "uditoditaṃ"]}
+{"child": "178:1810", "parent": ["178:869"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1811", "parent": ["178:869"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1812", "parent": ["178:869"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "178:1813", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1814", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1815", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1816", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1817", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1818", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1819", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1820", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1821", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1822", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1823", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1824", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1825", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1826", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1827", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1828", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1829", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1830", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1831", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1832", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1833", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1834", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1835", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1836", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1837", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}
+{"child": "178:1838", "parent": [], "method": "manual", "score": 0, "anchors": ["Vibhāvinī 自己的跋（Nigamanakathā），不注 Saṅgaha"]}

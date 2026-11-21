@@ -1,0 +1,513 @@
+{
+ "schema": 1,
+ "name": "mn1_A-align",
+ "kind": "align",
+ "title": "mn1_A 注释书对照（commentary-align）",
+ "created": "2026-09-30 22:38:09",
+ "updated": "2026-09-30 22:38:09",
+ "book_name": "mn1_A",
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "state": "idle",
+ "command": null,
+ "jobs": [
+  {
+   "id": 0,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 1,
+   "title": "mn1_A cs 1 · Nidānakathā",
+   "sources": [
+    {
+     "layer": "atthakatha",
+     "book": 130,
+     "title": "papañcasūdanī",
+     "chapter": "Nidānakathā",
+     "paras": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+     ],
+     "chars": 1118
+    },
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89
+     ],
+     "chars": 22303
+    }
+   ],
+   "chars": 23421,
+   "status": "pending",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "",
+   "result": null
+  },
+  {
+   "id": 1,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 2,
+   "title": "mn1_A cs 2 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+     ],
+     "chars": 4656
+    }
+   ],
+   "chars": 4656,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 2,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 3,
+   "title": "mn1_A cs 3 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      51,
+      52,
+      53,
+      54,
+      55
+     ],
+     "chars": 3841
+    }
+   ],
+   "chars": 3841,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 3,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 4,
+   "title": "mn1_A cs 4 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+     ],
+     "chars": 1555
+    }
+   ],
+   "chars": 1555,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 4,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 5,
+   "title": "mn1_A cs 5 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      63,
+      64
+     ],
+     "chars": 2298
+    }
+   ],
+   "chars": 2298,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 5,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 6,
+   "title": "mn1_A cs 6 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      65
+     ],
+     "chars": 559
+    }
+   ],
+   "chars": 559,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 6,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 7,
+   "title": "mn1_A cs 7 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      66
+     ],
+     "chars": 509
+    }
+   ],
+   "chars": 509,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 7,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 8,
+   "title": "mn1_A cs 8 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      67
+     ],
+     "chars": 330
+    }
+   ],
+   "chars": 330,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 8,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 9,
+   "title": "mn1_A cs 9 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      68
+     ],
+     "chars": 791
+    }
+   ],
+   "chars": 791,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 9,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 10,
+   "title": "mn1_A cs 10 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      69
+     ],
+     "chars": 620
+    }
+   ],
+   "chars": 620,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 10,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 11,
+   "title": "mn1_A cs 11 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      70
+     ],
+     "chars": 854
+    }
+   ],
+   "chars": 854,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 11,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 12,
+   "title": "mn1_A cs 12 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      71
+     ],
+     "chars": 174
+    }
+   ],
+   "chars": 174,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 12,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 13,
+   "title": "mn1_A cs 13 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      72
+     ],
+     "chars": 413
+    }
+   ],
+   "chars": 413,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 13,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 14,
+   "title": "mn1_A cs 14 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      73
+     ],
+     "chars": 170
+    }
+   ],
+   "chars": 170,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 14,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 15,
+   "title": "mn1_A cs 15 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      74
+     ],
+     "chars": 379
+    }
+   ],
+   "chars": 379,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  },
+  {
+   "id": 15,
+   "kind": "align",
+   "book_name": "mn1_A",
+   "cs": 16,
+   "title": "mn1_A cs 16 · Ganthārambhakathāvaṇṇanā",
+   "sources": [
+    {
+     "layer": "tika",
+     "book": 192,
+     "title": "līnatthappakāsanā",
+     "chapter": "Ganthārambhakathāvaṇṇanā",
+     "paras": [
+      75,
+      76,
+      77
+     ],
+     "chars": 504
+    }
+   ],
+   "chars": 504,
+   "status": "skipped",
+   "tries": 0,
+   "started": null,
+   "finished": null,
+   "note": "只有一层（tika），无可对照",
+   "result": null
+  }
+ ]
+}

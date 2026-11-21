@@ -1,0 +1,7354 @@
+{
+ "schema": 1,
+ "name": "dhatukatha",
+ "title": "界论 Dhātukathā 四层汉译（本文／义注／复注 Mūlaṭīkā／复复注 Anuṭīkā）",
+ "created": "2026-10-06 15:07:37",
+ "updated": "2026-10-13 06:53:48",
+ "book": 75,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "thresholds": {
+  "harmonize_direct_max": 30000,
+  "harmonize_cross_chars": 12000,
+  "harmonize_layer_chars": 15000
+ },
+ "books": {
+  "98:4": {
+   "layer": "atthakatha",
+   "title": "dhātukathā-aṭṭhakathā",
+   "book": 98,
+   "start": 4
+  },
+  "174:4": {
+   "layer": "tika",
+   "title": "mūlaṭīkā",
+   "book": 174,
+   "start": 4
+  },
+  "176:4": {
+   "layer": "anutika",
+   "title": "anuṭīkā",
+   "book": 176,
+   "start": 4
+  }
+ },
+ "jobs": [
+  {
+   "id": 0,
+   "title": "Dhātukathā-aṭṭhakathā",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 196,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:09:06",
+   "finished": "2026-10-06 15:12:38",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 4,
+     "end": 4,
+     "title": "Dhātukathā-aṭṭhakathā",
+     "paras": 1,
+     "chars": 21,
+     "chunks": [
+      {
+       "id": "0.1.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 4,
+       "end": 4,
+       "paras": 1,
+       "chars": 21,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 5,
+     "end": 8,
+     "title": "",
+     "paras": 4,
+     "chars": 175,
+     "chunks": [
+      {
+       "id": "0.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 5,
+       "end": 8,
+       "paras": 4,
+       "chars": 175,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "0.H",
+      "kind": "direct",
+      "chars": 196,
+      "layers": {
+       "98": [
+        [
+         4,
+         8
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "0.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 1,
+   "title": "1. Mātikāvaṇṇanā",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 48,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:09:16",
+   "finished": "2026-10-06 15:12:57",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 9,
+     "end": 9,
+     "title": "1. Mātikāvaṇṇanā",
+     "paras": 1,
+     "chars": 16,
+     "chunks": [
+      {
+       "id": "1.1.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 9,
+       "end": 9,
+       "paras": 1,
+       "chars": 16,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 9,
+     "end": 9,
+     "title": "1. Mātikāvaṇṇanā",
+     "paras": 1,
+     "chars": 16,
+     "chunks": [
+      {
+       "id": "1.2.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 9,
+       "end": 9,
+       "paras": 1,
+       "chars": 16,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 11,
+     "end": 11,
+     "title": "1. Mātikāvaṇṇanā",
+     "paras": 1,
+     "chars": 16,
+     "chunks": [
+      {
+       "id": "1.3.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 11,
+       "end": 11,
+       "paras": 1,
+       "chars": 16,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "1.H",
+      "kind": "direct",
+      "chars": 48,
+      "layers": {
+       "98": [
+        [
+         9,
+         9
+        ]
+       ],
+       "174": [
+        [
+         9,
+         9
+        ]
+       ],
+       "176": [
+        [
+         11,
+         11
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "1.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 2,
+   "title": "2. Niddesavaṇṇanā",
+   "cs": [
+    6,
+    6
+   ],
+   "chars": 51,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:12:38",
+   "finished": "2026-10-06 15:16:19",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 22,
+     "end": 22,
+     "title": "2. Niddesavaṇṇanā",
+     "paras": 1,
+     "chars": 17,
+     "chunks": [
+      {
+       "id": "2.1.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 22,
+       "end": 22,
+       "paras": 1,
+       "chars": 17,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 27,
+     "end": 27,
+     "title": "2. Niddesavaṇṇanā",
+     "paras": 1,
+     "chars": 17,
+     "chunks": [
+      {
+       "id": "2.2.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 27,
+       "end": 27,
+       "paras": 1,
+       "chars": 17,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 33,
+     "end": 33,
+     "title": "2. Niddesavaṇṇanā",
+     "paras": 1,
+     "chars": 17,
+     "chunks": [
+      {
+       "id": "2.3.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 33,
+       "end": 33,
+       "paras": 1,
+       "chars": 17,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "2.H",
+      "kind": "direct",
+      "chars": 51,
+      "layers": {
+       "98": [
+        [
+         22,
+         22
+        ]
+       ],
+       "174": [
+        [
+         27,
+         27
+        ]
+       ],
+       "176": [
+        [
+         33,
+         33
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "2.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 3,
+   "title": "1. Paṭhamanayo saṅgahāsaṅgahapadavaṇṇanā",
+   "cs": [
+    6,
+    6
+   ],
+   "chars": 120,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:12:57",
+   "finished": "2026-10-06 15:16:48",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 23,
+     "end": 23,
+     "title": "1. Paṭhamanayo saṅgahāsaṅgahapadavaṇṇanā",
+     "paras": 1,
+     "chars": 40,
+     "chunks": [
+      {
+       "id": "3.1.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 23,
+       "end": 23,
+       "paras": 1,
+       "chars": 40,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 28,
+     "end": 28,
+     "title": "1. Paṭhamanayo saṅgahāsaṅgahapadavaṇṇanā",
+     "paras": 1,
+     "chars": 40,
+     "chunks": [
+      {
+       "id": "3.2.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 28,
+       "end": 28,
+       "paras": 1,
+       "chars": 40,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 34,
+     "end": 34,
+     "title": "1. Paṭhamanayo saṅgahāsaṅgahapadavaṇṇanā",
+     "paras": 1,
+     "chars": 40,
+     "chunks": [
+      {
+       "id": "3.3.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 34,
+       "end": 34,
+       "paras": 1,
+       "chars": 40,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "3.H",
+      "kind": "direct",
+      "chars": 120,
+      "layers": {
+       "98": [
+        [
+         23,
+         23
+        ]
+       ],
+       "174": [
+        [
+         28,
+         28
+        ]
+       ],
+       "176": [
+        [
+         34,
+         34
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "3.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 4,
+   "title": "Dhātukathāpakaraṇa-mūlaṭīkā",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 27,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:16:19",
+   "finished": "2026-10-06 15:17:34",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 4,
+     "end": 4,
+     "title": "Dhātukathāpakaraṇa-mūlaṭīkā",
+     "paras": 1,
+     "chars": 27,
+     "chunks": [
+      {
+       "id": "4.1.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 4,
+       "end": 4,
+       "paras": 1,
+       "chars": 27,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "4.H",
+      "kind": "direct",
+      "chars": 27,
+      "layers": {
+       "174": [
+        [
+         4,
+         4
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "4.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 5,
+   "title": "Ganthārambhavaṇṇanā",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 4680,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:16:48",
+   "finished": "2026-10-06 15:27:14",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 5,
+     "end": 8,
+     "title": "Ganthārambhavaṇṇanā",
+     "paras": 4,
+     "chars": 1683,
+     "chunks": [
+      {
+       "id": "5.1.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 5,
+       "end": 8,
+       "paras": 4,
+       "chars": 1683,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 5,
+     "end": 10,
+     "title": "Ganthārambhavaṇṇanā",
+     "paras": 6,
+     "chars": 2997,
+     "chunks": [
+      {
+       "id": "5.2.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 5,
+       "end": 10,
+       "paras": 6,
+       "chars": 2997,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "5.H",
+      "kind": "direct",
+      "chars": 4680,
+      "layers": {
+       "174": [
+        [
+         5,
+         8
+        ]
+       ],
+       "176": [
+        [
+         5,
+         10
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "5.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 6,
+   "title": "Dhātukathāpakaraṇa-anuṭīkā",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 26,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:17:34",
+   "finished": "2026-10-06 15:18:49",
+   "note": "",
+   "mula": null,
+   "ref": [],
+   "layers": [
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 4,
+     "end": 4,
+     "title": "Dhātukathāpakaraṇa-anuṭīkā",
+     "paras": 1,
+     "chars": 26,
+     "chunks": [
+      {
+       "id": "6.1.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 4,
+       "end": 4,
+       "paras": 1,
+       "chars": 26,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "6.H",
+      "kind": "direct",
+      "chars": 26,
+      "layers": {
+       "176": [
+        [
+         4,
+         4
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "6.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 7,
+   "title": "Dhātukathāpāḷi",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:18:49",
+   "finished": "2026-10-06 15:20:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 3,
+    "end": 3,
+    "title": "Dhātukathāpāḷi",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 3,
+     "end": 3,
+     "title": "Dhātukathāpāḷi",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "7.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 3,
+       "end": 3,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "7.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         3,
+         3
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "7.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 8,
+   "title": "Uddeso",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 6,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:20:04",
+   "finished": "2026-10-06 15:21:09",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 4,
+    "end": 4,
+    "title": "Uddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 4,
+     "end": 4,
+     "title": "Uddeso",
+     "paras": 1,
+     "chars": 6,
+     "chunks": [
+      {
+       "id": "8.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 4,
+       "end": 4,
+       "paras": 1,
+       "chars": 6,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "8.H",
+      "kind": "direct",
+      "chars": 6,
+      "layers": {
+       "75": [
+        [
+         4,
+         4
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "8.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 9,
+   "title": "1. Nayamātikā",
+   "cs": [
+    1,
+    1
+   ],
+   "chars": 2309,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:21:09",
+   "finished": "2026-10-06 15:33:29",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 5,
+    "end": 6,
+    "title": "1. Nayamātikā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 5,
+     "end": 6,
+     "title": "1. Nayamātikā",
+     "paras": 2,
+     "chars": 454,
+     "chunks": [
+      {
+       "id": "9.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 5,
+       "end": 6,
+       "paras": 2,
+       "chars": 454,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 10,
+     "end": 11,
+     "title": "1. Nayamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 547,
+     "chunks": [
+      {
+       "id": "9.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 10,
+       "end": 11,
+       "paras": 2,
+       "chars": 547,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 10,
+     "end": 11,
+     "title": "1. Nayamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 557,
+     "chunks": [
+      {
+       "id": "9.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 10,
+       "end": 11,
+       "paras": 2,
+       "chars": 557,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 12,
+     "end": 13,
+     "title": "1. Nayamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 751,
+     "chunks": [
+      {
+       "id": "9.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 12,
+       "end": 13,
+       "paras": 2,
+       "chars": 751,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "9.H",
+      "kind": "direct",
+      "chars": 2309,
+      "layers": {
+       "75": [
+        [
+         5,
+         6
+        ]
+       ],
+       "98": [
+        [
+         10,
+         11
+        ]
+       ],
+       "174": [
+        [
+         10,
+         11
+        ]
+       ],
+       "176": [
+        [
+         12,
+         13
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "9.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 10,
+   "title": "2. Abbhantaramātikā",
+   "cs": [
+    2,
+    2
+   ],
+   "chars": 3783,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:27:14",
+   "finished": "2026-10-06 15:40:38",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 7,
+    "end": 8,
+    "title": "2. Abbhantaramātikā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 7,
+     "end": 8,
+     "title": "2. Abbhantaramātikā",
+     "paras": 2,
+     "chars": 409,
+     "chunks": [
+      {
+       "id": "10.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 7,
+       "end": 8,
+       "paras": 2,
+       "chars": 409,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 12,
+     "end": 13,
+     "title": "2. Abbhantaramātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 415,
+     "chunks": [
+      {
+       "id": "10.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 12,
+       "end": 13,
+       "paras": 2,
+       "chars": 415,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 12,
+     "end": 14,
+     "title": "2. Abbhantaramātikāvaṇṇanā",
+     "paras": 3,
+     "chars": 1520,
+     "chunks": [
+      {
+       "id": "10.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 12,
+       "end": 14,
+       "paras": 3,
+       "chars": 1520,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 14,
+     "end": 16,
+     "title": "2. Abbhantaramātikāvaṇṇanā",
+     "paras": 3,
+     "chars": 1439,
+     "chunks": [
+      {
+       "id": "10.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 14,
+       "end": 16,
+       "paras": 3,
+       "chars": 1439,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "10.H",
+      "kind": "direct",
+      "chars": 3783,
+      "layers": {
+       "75": [
+        [
+         7,
+         8
+        ]
+       ],
+       "98": [
+        [
+         12,
+         13
+        ]
+       ],
+       "174": [
+        [
+         12,
+         14
+        ]
+       ],
+       "176": [
+        [
+         14,
+         16
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "10.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 11,
+   "title": "3. Nayamukhamātikā",
+   "cs": [
+    3,
+    3
+   ],
+   "chars": 4719,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:33:29",
+   "finished": "2026-10-06 15:47:48",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 9,
+    "end": 10,
+    "title": "3. Nayamukhamātikā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 9,
+     "end": 10,
+     "title": "3. Nayamukhamātikā",
+     "paras": 2,
+     "chars": 86,
+     "chunks": [
+      {
+       "id": "11.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 9,
+       "end": 10,
+       "paras": 2,
+       "chars": 86,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 14,
+     "end": 15,
+     "title": "3. Nayamukhamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 439,
+     "chunks": [
+      {
+       "id": "11.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 14,
+       "end": 15,
+       "paras": 2,
+       "chars": 439,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 15,
+     "end": 17,
+     "title": "3. Nayamukhamātikāvaṇṇanā",
+     "paras": 3,
+     "chars": 1413,
+     "chunks": [
+      {
+       "id": "11.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 15,
+       "end": 17,
+       "paras": 3,
+       "chars": 1413,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 17,
+     "end": 21,
+     "title": "3. Nayamukhamātikāvaṇṇanā",
+     "paras": 5,
+     "chars": 2781,
+     "chunks": [
+      {
+       "id": "11.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 17,
+       "end": 21,
+       "paras": 5,
+       "chars": 2781,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "11.H",
+      "kind": "direct",
+      "chars": 4719,
+      "layers": {
+       "75": [
+        [
+         9,
+         10
+        ]
+       ],
+       "98": [
+        [
+         14,
+         15
+        ]
+       ],
+       "174": [
+        [
+         15,
+         17
+        ]
+       ],
+       "176": [
+        [
+         17,
+         21
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "11.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 12,
+   "title": "4. Lakkhaṇamātikā",
+   "cs": [
+    4,
+    4
+   ],
+   "chars": 1551,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:40:38",
+   "finished": "2026-10-06 15:50:06",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 11,
+    "end": 12,
+    "title": "4. Lakkhaṇamātikā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 11,
+     "end": 12,
+     "title": "4. Lakkhaṇamātikā",
+     "paras": 2,
+     "chars": 39,
+     "chunks": [
+      {
+       "id": "12.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 11,
+       "end": 12,
+       "paras": 2,
+       "chars": 39,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 16,
+     "end": 17,
+     "title": "4. Lakkhaṇamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 314,
+     "chunks": [
+      {
+       "id": "12.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 16,
+       "end": 17,
+       "paras": 2,
+       "chars": 314,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 18,
+     "end": 19,
+     "title": "4. Lakkhaṇamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 580,
+     "chunks": [
+      {
+       "id": "12.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 18,
+       "end": 19,
+       "paras": 2,
+       "chars": 580,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 22,
+     "end": 23,
+     "title": "4. Lakkhaṇamātikāvaṇṇanā",
+     "paras": 2,
+     "chars": 618,
+     "chunks": [
+      {
+       "id": "12.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 22,
+       "end": 23,
+       "paras": 2,
+       "chars": 618,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "12.H",
+      "kind": "direct",
+      "chars": 1551,
+      "layers": {
+       "75": [
+        [
+         11,
+         12
+        ]
+       ],
+       "98": [
+        [
+         16,
+         17
+        ]
+       ],
+       "174": [
+        [
+         18,
+         19
+        ]
+       ],
+       "176": [
+        [
+         22,
+         23
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "12.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 13,
+   "title": "5. Bāhiramātikā",
+   "cs": [
+    5,
+    5
+   ],
+   "chars": 13378,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:47:48",
+   "finished": "2026-10-06 16:11:43",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 13,
+    "end": 14,
+    "title": "5. Bāhiramātikā",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 13,
+     "end": 14,
+     "title": "5. Bāhiramātikā",
+     "paras": 2,
+     "chars": 62,
+     "chunks": [
+      {
+       "id": "13.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 13,
+       "end": 14,
+       "paras": 2,
+       "chars": 62,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 18,
+     "end": 21,
+     "title": "5. Bāhiramātikāvaṇṇanā",
+     "paras": 4,
+     "chars": 2101,
+     "chunks": [
+      {
+       "id": "13.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 18,
+       "end": 21,
+       "paras": 4,
+       "chars": 2101,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 20,
+     "end": 26,
+     "title": "5. Bāhiramātikāvaṇṇanā",
+     "paras": 7,
+     "chars": 3982,
+     "chunks": [
+      {
+       "id": "13.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 20,
+       "end": 26,
+       "paras": 7,
+       "chars": 3982,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 24,
+     "end": 32,
+     "title": "5. Bāhiramātikāvaṇṇanā",
+     "paras": 9,
+     "chars": 7233,
+     "chunks": [
+      {
+       "id": "13.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 24,
+       "end": 29,
+       "paras": 6,
+       "chars": 4515,
+       "status": "done"
+      },
+      {
+       "id": "13.4.2",
+       "kind": "chunk",
+       "book": 176,
+       "start": 30,
+       "end": 32,
+       "paras": 3,
+       "chars": 2718,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "13.H",
+      "kind": "direct",
+      "chars": 13378,
+      "layers": {
+       "75": [
+        [
+         13,
+         14
+        ]
+       ],
+       "98": [
+        [
+         18,
+         21
+        ]
+       ],
+       "174": [
+        [
+         20,
+         26
+        ]
+       ],
+       "176": [
+        [
+         24,
+         32
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "13.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 14,
+   "title": "1. Paṭhamanayo",
+   "cs": [
+    6,
+    6
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:50:06",
+   "finished": "2026-10-06 15:51:20",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 15,
+    "end": 15,
+    "title": "1. Paṭhamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 15,
+     "end": 15,
+     "title": "1. Paṭhamanayo",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "14.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 15,
+       "end": 15,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "14.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         15,
+         15
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "14.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 15,
+   "title": "1. Saṅgahāsaṅgahapadaniddeso",
+   "cs": [
+    6,
+    6
+   ],
+   "chars": 28,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:51:20",
+   "finished": "2026-10-06 15:52:43",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 16,
+    "end": 16,
+    "title": "1. Saṅgahāsaṅgahapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 16,
+     "end": 16,
+     "title": "1. Saṅgahāsaṅgahapadaniddeso",
+     "paras": 1,
+     "chars": 28,
+     "chunks": [
+      {
+       "id": "15.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 16,
+       "end": 16,
+       "paras": 1,
+       "chars": 28,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "15.H",
+      "kind": "direct",
+      "chars": 28,
+      "layers": {
+       "75": [
+        [
+         16,
+         16
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "15.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 16,
+   "title": "1. Khandho",
+   "cs": [
+    6,
+    21
+   ],
+   "chars": 8681,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 15:52:43",
+   "finished": "2026-10-06 16:12:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 17,
+    "end": 38,
+    "title": "1. Khandho",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 17,
+     "end": 38,
+     "title": "1. Khandho",
+     "paras": 22,
+     "chars": 3992,
+     "chunks": [
+      {
+       "id": "16.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 17,
+       "end": 28,
+       "paras": 12,
+       "chars": 2020,
+       "status": "done"
+      },
+      {
+       "id": "16.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 29,
+       "end": 38,
+       "paras": 10,
+       "chars": 1972,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 24,
+     "end": 26,
+     "title": "1. Khandhapadavaṇṇanā",
+     "paras": 3,
+     "chars": 1896,
+     "chunks": [
+      {
+       "id": "16.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 24,
+       "end": 26,
+       "paras": 3,
+       "chars": 1896,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 29,
+     "end": 31,
+     "title": "1. Khandhapadavaṇṇanā",
+     "paras": 3,
+     "chars": 1616,
+     "chunks": [
+      {
+       "id": "16.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 29,
+       "end": 31,
+       "paras": 3,
+       "chars": 1616,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 35,
+     "end": 37,
+     "title": "1. Khandhapadavaṇṇanā",
+     "paras": 3,
+     "chars": 1177,
+     "chunks": [
+      {
+       "id": "16.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 35,
+       "end": 37,
+       "paras": 3,
+       "chars": 1177,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "16.H",
+      "kind": "direct",
+      "chars": 8681,
+      "layers": {
+       "75": [
+        [
+         17,
+         38
+        ]
+       ],
+       "98": [
+        [
+         24,
+         26
+        ]
+       ],
+       "174": [
+        [
+         29,
+         31
+        ]
+       ],
+       "176": [
+        [
+         35,
+         37
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "16.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 17,
+   "title": "2. Āyatanaṃ",
+   "cs": [
+    22,
+    50
+   ],
+   "chars": 3438,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:11:43",
+   "finished": "2026-10-06 16:20:35",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 39,
+    "end": 51,
+    "title": "2. Āyatanaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 39,
+     "end": 51,
+     "title": "2. Āyatanaṃ",
+     "paras": 13,
+     "chars": 2127,
+     "chunks": [
+      {
+       "id": "17.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 39,
+       "end": 50,
+       "paras": 12,
+       "chars": 2114,
+       "status": "done"
+      },
+      {
+       "id": "17.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 51,
+       "end": 51,
+       "paras": 1,
+       "chars": 13,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 27,
+     "end": 30,
+     "title": "2. Āyatanapadādivaṇṇanā",
+     "paras": 4,
+     "chars": 1311,
+     "chunks": [
+      {
+       "id": "17.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 27,
+       "end": 30,
+       "paras": 4,
+       "chars": 1311,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "17.H",
+      "kind": "direct",
+      "chars": 3438,
+      "layers": {
+       "75": [
+        [
+         39,
+         51
+        ]
+       ],
+       "98": [
+        [
+         27,
+         30
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "17.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 18,
+   "title": "3. Dhātu",
+   "cs": [
+    31,
+    39
+   ],
+   "chars": 2390,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:12:21",
+   "finished": "2026-10-06 16:17:59",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 52,
+    "end": 64,
+    "title": "3. Dhātu",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 52,
+     "end": 64,
+     "title": "3. Dhātu",
+     "paras": 13,
+     "chars": 2390,
+     "chunks": [
+      {
+       "id": "18.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 52,
+       "end": 63,
+       "paras": 12,
+       "chars": 2375,
+       "status": "done"
+      },
+      {
+       "id": "18.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 64,
+       "end": 64,
+       "paras": 1,
+       "chars": 15,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "18.H",
+      "kind": "direct",
+      "chars": 2390,
+      "layers": {
+       "75": [
+        [
+         52,
+         64
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "18.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 19,
+   "title": "4. Saccaṃ",
+   "cs": [
+    40,
+    49
+   ],
+   "chars": 4029,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:17:59",
+   "finished": "2026-10-06 16:29:54",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 65,
+    "end": 79,
+    "title": "4. Saccaṃ",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "atthakatha",
+     "book": 98,
+     "start": 27,
+     "end": 30,
+     "title": "2. Āyatanapadādivaṇṇanā",
+     "book_title": "dhātukathā-aṭṭhakathā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 65,
+     "end": 79,
+     "title": "4. Saccaṃ",
+     "paras": 15,
+     "chars": 2236,
+     "chunks": [
+      {
+       "id": "19.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 65,
+       "end": 76,
+       "paras": 12,
+       "chars": 1686,
+       "status": "done"
+      },
+      {
+       "id": "19.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 77,
+       "end": 79,
+       "paras": 3,
+       "chars": 550,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 32,
+     "end": 33,
+     "title": "Āyatanapadādivaṇṇanā",
+     "paras": 2,
+     "chars": 455,
+     "chunks": [
+      {
+       "id": "19.2.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 32,
+       "end": 33,
+       "paras": 2,
+       "chars": 455,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 38,
+     "end": 39,
+     "title": "Āyatanapadādivaṇṇanā",
+     "paras": 2,
+     "chars": 1338,
+     "chunks": [
+      {
+       "id": "19.3.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 38,
+       "end": 39,
+       "paras": 2,
+       "chars": 1338,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "19.H",
+      "kind": "direct",
+      "chars": 4029,
+      "layers": {
+       "75": [
+        [
+         65,
+         79
+        ]
+       ],
+       "174": [
+        [
+         32,
+         33
+        ]
+       ],
+       "176": [
+        [
+         38,
+         39
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "19.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 20,
+   "title": "5. Indriyaṃ",
+   "cs": [
+    50,
+    60
+   ],
+   "chars": 2807,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:20:35",
+   "finished": "2026-10-06 16:25:19",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 80,
+    "end": 93,
+    "title": "5. Indriyaṃ",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "atthakatha",
+     "book": 98,
+     "start": 27,
+     "end": 30,
+     "title": "2. Āyatanapadādivaṇṇanā",
+     "book_title": "dhātukathā-aṭṭhakathā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 80,
+     "end": 93,
+     "title": "5. Indriyaṃ",
+     "paras": 14,
+     "chars": 2807,
+     "chunks": [
+      {
+       "id": "20.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 80,
+       "end": 91,
+       "paras": 12,
+       "chars": 2549,
+       "status": "done"
+      },
+      {
+       "id": "20.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 92,
+       "end": 93,
+       "paras": 2,
+       "chars": 258,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "20.H",
+      "kind": "direct",
+      "chars": 2807,
+      "layers": {
+       "75": [
+        [
+         80,
+         93
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "20.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 21,
+   "title": "6. Paṭiccasamuppādādi",
+   "cs": [
+    61,
+    76
+   ],
+   "chars": 8132,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:25:19",
+   "finished": "2026-10-06 16:44:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 94,
+    "end": 110,
+    "title": "6. Paṭiccasamuppādādi",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 94,
+     "end": 110,
+     "title": "6. Paṭiccasamuppādādi",
+     "paras": 17,
+     "chars": 3010,
+     "chunks": [
+      {
+       "id": "21.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 94,
+       "end": 105,
+       "paras": 12,
+       "chars": 2052,
+       "status": "done"
+      },
+      {
+       "id": "21.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 106,
+       "end": 110,
+       "paras": 5,
+       "chars": 958,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 31,
+     "end": 35,
+     "title": "6. Paṭiccasamuppādavaṇṇanā",
+     "paras": 5,
+     "chars": 2064,
+     "chunks": [
+      {
+       "id": "21.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 31,
+       "end": 35,
+       "paras": 5,
+       "chars": 2064,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 34,
+     "end": 37,
+     "title": "6. Paṭiccasamuppādavaṇṇanā",
+     "paras": 4,
+     "chars": 1424,
+     "chunks": [
+      {
+       "id": "21.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 34,
+       "end": 37,
+       "paras": 4,
+       "chars": 1424,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 40,
+     "end": 43,
+     "title": "6. Paṭiccasamuppādavaṇṇanā",
+     "paras": 4,
+     "chars": 1634,
+     "chunks": [
+      {
+       "id": "21.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 40,
+       "end": 43,
+       "paras": 4,
+       "chars": 1634,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "21.H",
+      "kind": "direct",
+      "chars": 8132,
+      "layers": {
+       "75": [
+        [
+         94,
+         110
+        ]
+       ],
+       "98": [
+        [
+         31,
+         35
+        ]
+       ],
+       "174": [
+        [
+         34,
+         37
+        ]
+       ],
+       "176": [
+        [
+         40,
+         43
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "21.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 22,
+   "title": "7. Tikaṃ",
+   "cs": [
+    77,
+    110
+   ],
+   "chars": 7659,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:29:54",
+   "finished": "2026-10-06 16:43:45",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 111,
+    "end": 145,
+    "title": "7. Tikaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 111,
+     "end": 145,
+     "title": "7. Tikaṃ",
+     "paras": 35,
+     "chars": 6954,
+     "chunks": [
+      {
+       "id": "22.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 111,
+       "end": 122,
+       "paras": 12,
+       "chars": 2188,
+       "status": "done"
+      },
+      {
+       "id": "22.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 123,
+       "end": 134,
+       "paras": 12,
+       "chars": 2626,
+       "status": "done"
+      },
+      {
+       "id": "22.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 135,
+       "end": 145,
+       "paras": 11,
+       "chars": 2140,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 36,
+     "end": 38,
+     "title": "7. Tikapadavaṇṇanā",
+     "paras": 3,
+     "chars": 705,
+     "chunks": [
+      {
+       "id": "22.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 36,
+       "end": 38,
+       "paras": 3,
+       "chars": 705,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "22.H",
+      "kind": "direct",
+      "chars": 7659,
+      "layers": {
+       "75": [
+        [
+         111,
+         145
+        ]
+       ],
+       "98": [
+        [
+         36,
+         38
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "22.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 23,
+   "title": "8. Dukaṃ",
+   "cs": [
+    111,
+    170
+   ],
+   "chars": 13014,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:43:45",
+   "finished": "2026-10-06 17:03:26",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 146,
+    "end": 207,
+    "title": "8. Dukaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 146,
+     "end": 207,
+     "title": "8. Dukaṃ",
+     "paras": 62,
+     "chars": 13014,
+     "chunks": [
+      {
+       "id": "23.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 146,
+       "end": 157,
+       "paras": 12,
+       "chars": 2271,
+       "status": "done"
+      },
+      {
+       "id": "23.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 158,
+       "end": 169,
+       "paras": 12,
+       "chars": 2708,
+       "status": "done"
+      },
+      {
+       "id": "23.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 170,
+       "end": 181,
+       "paras": 12,
+       "chars": 2383,
+       "status": "done"
+      },
+      {
+       "id": "23.1.4",
+       "kind": "chunk",
+       "book": 75,
+       "start": 182,
+       "end": 193,
+       "paras": 12,
+       "chars": 2641,
+       "status": "done"
+      },
+      {
+       "id": "23.1.5",
+       "kind": "chunk",
+       "book": 75,
+       "start": 194,
+       "end": 205,
+       "paras": 12,
+       "chars": 2622,
+       "status": "done"
+      },
+      {
+       "id": "23.1.6",
+       "kind": "chunk",
+       "book": 75,
+       "start": 206,
+       "end": 207,
+       "paras": 2,
+       "chars": 389,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "23.H",
+      "kind": "direct",
+      "chars": 13014,
+      "layers": {
+       "75": [
+        [
+         146,
+         207
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "23.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 24,
+   "title": "2. Dutiyanayo",
+   "cs": [
+    171,
+    171
+   ],
+   "chars": 13,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:44:50",
+   "finished": "2026-10-06 16:46:13",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 208,
+    "end": 208,
+    "title": "2. Dutiyanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 208,
+     "end": 208,
+     "title": "2. Dutiyanayo",
+     "paras": 1,
+     "chars": 13,
+     "chunks": [
+      {
+       "id": "24.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 208,
+       "end": 208,
+       "paras": 1,
+       "chars": 13,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "24.H",
+      "kind": "direct",
+      "chars": 13,
+      "layers": {
+       "75": [
+        [
+         208,
+         208
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "24.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 25,
+   "title": "2. Saṅgahitenaasaṅgahitapadaniddeso",
+   "cs": [
+    171,
+    178
+   ],
+   "chars": 25963,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 16:46:13",
+   "finished": "2026-10-06 18:00:48",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 209,
+    "end": 222,
+    "title": "2. Saṅgahitenaasaṅgahitapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 209,
+     "end": 222,
+     "title": "2. Saṅgahitenaasaṅgahitapadaniddeso",
+     "paras": 14,
+     "chars": 2386,
+     "chunks": [
+      {
+       "id": "25.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 209,
+       "end": 220,
+       "paras": 12,
+       "chars": 2288,
+       "status": "done"
+      },
+      {
+       "id": "25.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 221,
+       "end": 222,
+       "paras": 2,
+       "chars": 98,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 39,
+     "end": 54,
+     "title": "2. Dutiyanayo saṅgahitenaasaṅgahitapadavaṇṇanā",
+     "paras": 16,
+     "chars": 4316,
+     "chunks": [
+      {
+       "id": "25.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 39,
+       "end": 50,
+       "paras": 12,
+       "chars": 3286,
+       "status": "done"
+      },
+      {
+       "id": "25.2.2",
+       "kind": "chunk",
+       "book": 98,
+       "start": 51,
+       "end": 54,
+       "paras": 4,
+       "chars": 1030,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 38,
+     "end": 48,
+     "title": "2. Dutiyanayo saṅgahitenaasaṅgahitapadavaṇṇanā",
+     "paras": 11,
+     "chars": 8686,
+     "chunks": [
+      {
+       "id": "25.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 38,
+       "end": 43,
+       "paras": 6,
+       "chars": 4985,
+       "status": "done"
+      },
+      {
+       "id": "25.3.2",
+       "kind": "chunk",
+       "book": 174,
+       "start": 44,
+       "end": 48,
+       "paras": 5,
+       "chars": 3701,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 44,
+     "end": 58,
+     "title": "2. Dutiyanayo saṅgahitenaasaṅgahitapadavaṇṇanā",
+     "paras": 15,
+     "chars": 10575,
+     "chunks": [
+      {
+       "id": "25.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 44,
+       "end": 50,
+       "paras": 7,
+       "chars": 4835,
+       "status": "done"
+      },
+      {
+       "id": "25.4.2",
+       "kind": "chunk",
+       "book": 176,
+       "start": 51,
+       "end": 55,
+       "paras": 5,
+       "chars": 4120,
+       "status": "done"
+      },
+      {
+       "id": "25.4.3",
+       "kind": "chunk",
+       "book": 176,
+       "start": 56,
+       "end": 58,
+       "paras": 3,
+       "chars": 1620,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "25.H",
+      "kind": "direct",
+      "chars": 25963,
+      "layers": {
+       "75": [
+        [
+         209,
+         222
+        ]
+       ],
+       "98": [
+        [
+         39,
+         54
+        ]
+       ],
+       "174": [
+        [
+         38,
+         48
+        ]
+       ],
+       "176": [
+        [
+         44,
+         58
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "25.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 26,
+   "title": "3. Tatiyanayo",
+   "cs": [
+    179,
+    179
+   ],
+   "chars": 13,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 17:03:26",
+   "finished": "2026-10-06 17:04:31",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 223,
+    "end": 223,
+    "title": "3. Tatiyanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 223,
+     "end": 223,
+     "title": "3. Tatiyanayo",
+     "paras": 1,
+     "chars": 13,
+     "chunks": [
+      {
+       "id": "26.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 223,
+       "end": 223,
+       "paras": 1,
+       "chars": 13,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "26.H",
+      "kind": "direct",
+      "chars": 13,
+      "layers": {
+       "75": [
+        [
+         223,
+         223
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "26.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 27,
+   "title": "3. Asaṅgahitenasaṅgahitapadaniddeso",
+   "cs": [
+    179,
+    190
+   ],
+   "chars": 12066,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 17:54:24",
+   "finished": "2026-10-06 18:12:05",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 224,
+    "end": 241,
+    "title": "3. Asaṅgahitenasaṅgahitapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 224,
+     "end": 241,
+     "title": "3. Asaṅgahitenasaṅgahitapadaniddeso",
+     "paras": 18,
+     "chars": 4842,
+     "chunks": [
+      {
+       "id": "27.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 224,
+       "end": 235,
+       "paras": 12,
+       "chars": 4142,
+       "status": "done"
+      },
+      {
+       "id": "27.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 236,
+       "end": 241,
+       "paras": 6,
+       "chars": 700,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 55,
+     "end": 68,
+     "title": "3. Tatiyanayo asaṅgahitenasaṅgahitapadavaṇṇanā",
+     "paras": 14,
+     "chars": 3323,
+     "chunks": [
+      {
+       "id": "27.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 55,
+       "end": 66,
+       "paras": 12,
+       "chars": 3046,
+       "status": "done"
+      },
+      {
+       "id": "27.2.2",
+       "kind": "chunk",
+       "book": 98,
+       "start": 67,
+       "end": 68,
+       "paras": 2,
+       "chars": 277,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 49,
+     "end": 52,
+     "title": "3. Tatiyanayo asaṅgahitenasaṅgahitapadavaṇṇanā",
+     "paras": 4,
+     "chars": 1920,
+     "chunks": [
+      {
+       "id": "27.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 49,
+       "end": 52,
+       "paras": 4,
+       "chars": 1920,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 59,
+     "end": 63,
+     "title": "3. Tatiyanayo asaṅgahitenasaṅgahitapadavaṇṇanā",
+     "paras": 5,
+     "chars": 1981,
+     "chunks": [
+      {
+       "id": "27.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 59,
+       "end": 63,
+       "paras": 5,
+       "chars": 1981,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "27.H",
+      "kind": "direct",
+      "chars": 12066,
+      "layers": {
+       "75": [
+        [
+         224,
+         241
+        ]
+       ],
+       "98": [
+        [
+         55,
+         68
+        ]
+       ],
+       "174": [
+        [
+         49,
+         52
+        ]
+       ],
+       "176": [
+        [
+         59,
+         63
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "27.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 28,
+   "title": "4. Catutthanayo",
+   "cs": [
+    191,
+    191
+   ],
+   "chars": 15,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 18:00:48",
+   "finished": "2026-10-06 18:08:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 242,
+    "end": 242,
+    "title": "4. Catutthanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 242,
+     "end": 242,
+     "title": "4. Catutthanayo",
+     "paras": 1,
+     "chars": 15,
+     "chunks": [
+      {
+       "id": "28.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 242,
+       "end": 242,
+       "paras": 1,
+       "chars": 15,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "28.H",
+      "kind": "direct",
+      "chars": 15,
+      "layers": {
+       "75": [
+        [
+         242,
+         242
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "28.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 29,
+   "title": "4. Saṅgahitenasaṅgahitapadaniddeso",
+   "cs": [
+    191,
+    192
+   ],
+   "chars": 8225,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 18:08:07",
+   "finished": "2026-10-06 19:04:27",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 243,
+    "end": 251,
+    "title": "4. Saṅgahitenasaṅgahitapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 243,
+     "end": 251,
+     "title": "4. Saṅgahitenasaṅgahitapadaniddeso",
+     "paras": 9,
+     "chars": 2273,
+     "chunks": [
+      {
+       "id": "29.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 243,
+       "end": 251,
+       "paras": 9,
+       "chars": 2273,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 69,
+     "end": 74,
+     "title": "4. Catutthanayo saṅgahitenasaṅgahitapadavaṇṇanā",
+     "paras": 6,
+     "chars": 1445,
+     "chunks": [
+      {
+       "id": "29.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 69,
+       "end": 74,
+       "paras": 6,
+       "chars": 1445,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 53,
+     "end": 56,
+     "title": "4. Catutthanayo saṅgahitenasaṅgahitapadavaṇṇanā",
+     "paras": 4,
+     "chars": 2348,
+     "chunks": [
+      {
+       "id": "29.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 53,
+       "end": 56,
+       "paras": 4,
+       "chars": 2348,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 64,
+     "end": 67,
+     "title": "4. Catutthanayo saṅgahitenasaṅgahitapadavaṇṇanā",
+     "paras": 4,
+     "chars": 2159,
+     "chunks": [
+      {
+       "id": "29.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 64,
+       "end": 67,
+       "paras": 4,
+       "chars": 2159,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "29.H",
+      "kind": "direct",
+      "chars": 8225,
+      "layers": {
+       "75": [
+        [
+         243,
+         251
+        ]
+       ],
+       "98": [
+        [
+         69,
+         74
+        ]
+       ],
+       "174": [
+        [
+         53,
+         56
+        ]
+       ],
+       "176": [
+        [
+         64,
+         67
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "29.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 30,
+   "title": "5. Pañcamanayo",
+   "cs": [
+    193,
+    193
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 18:12:05",
+   "finished": "2026-10-06 18:16:22",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 252,
+    "end": 252,
+    "title": "5. Pañcamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 252,
+     "end": 252,
+     "title": "5. Pañcamanayo",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "30.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 252,
+       "end": 252,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "30.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         252,
+         252
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "30.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 31,
+   "title": "5. Asaṅgahitenaasaṅgahitapadaniddeso",
+   "cs": [
+    193,
+    209
+   ],
+   "chars": 15513,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 21:07:58",
+   "finished": "2026-10-06 21:29:00",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 253,
+    "end": 270,
+    "title": "5. Asaṅgahitenaasaṅgahitapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 253,
+     "end": 270,
+     "title": "5. Asaṅgahitenaasaṅgahitapadaniddeso",
+     "paras": 18,
+     "chars": 5381,
+     "chunks": [
+      {
+       "id": "31.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 253,
+       "end": 264,
+       "paras": 12,
+       "chars": 3406,
+       "status": "done"
+      },
+      {
+       "id": "31.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 265,
+       "end": 270,
+       "paras": 6,
+       "chars": 1975,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 75,
+     "end": 87,
+     "title": "5. Pañcamanayo asaṅgahitenaasaṅgahitapadavaṇṇanā",
+     "paras": 13,
+     "chars": 2582,
+     "chunks": [
+      {
+       "id": "31.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 75,
+       "end": 86,
+       "paras": 12,
+       "chars": 2548,
+       "status": "done"
+      },
+      {
+       "id": "31.2.2",
+       "kind": "chunk",
+       "book": 98,
+       "start": 87,
+       "end": 87,
+       "paras": 1,
+       "chars": 34,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 57,
+     "end": 62,
+     "title": "5. Pañcamanayo asaṅgahitenaasaṅgahitapadavaṇṇanā",
+     "paras": 6,
+     "chars": 3305,
+     "chunks": [
+      {
+       "id": "31.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 57,
+       "end": 62,
+       "paras": 6,
+       "chars": 3305,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 68,
+     "end": 74,
+     "title": "5. Pañcamanayo asaṅgahitenaasaṅgahitapadavaṇṇanā",
+     "paras": 7,
+     "chars": 4245,
+     "chunks": [
+      {
+       "id": "31.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 68,
+       "end": 74,
+       "paras": 7,
+       "chars": 4245,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "31.H",
+      "kind": "direct",
+      "chars": 15513,
+      "layers": {
+       "75": [
+        [
+         253,
+         270
+        ]
+       ],
+       "98": [
+        [
+         75,
+         87
+        ]
+       ],
+       "174": [
+        [
+         57,
+         62
+        ]
+       ],
+       "176": [
+        [
+         68,
+         74
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "31.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 32,
+   "title": "1. Tikaṃ",
+   "cs": [
+    210,
+    211
+   ],
+   "chars": 2022,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 19:04:27",
+   "finished": "2026-10-06 19:12:31",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 271,
+    "end": 273,
+    "title": "1. Tikaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 271,
+     "end": 273,
+     "title": "1. Tikaṃ",
+     "paras": 3,
+     "chars": 2022,
+     "chunks": [
+      {
+       "id": "32.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 271,
+       "end": 273,
+       "paras": 3,
+       "chars": 2022,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "32.H",
+      "kind": "direct",
+      "chars": 2022,
+      "layers": {
+       "75": [
+        [
+         271,
+         273
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "32.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 33,
+   "title": "2. Dukaṃ",
+   "cs": [
+    212,
+    227
+   ],
+   "chars": 6493,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 19:12:32",
+   "finished": "2026-10-06 19:36:16",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 274,
+    "end": 295,
+    "title": "2. Dukaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 274,
+     "end": 295,
+     "title": "2. Dukaṃ",
+     "paras": 22,
+     "chars": 6493,
+     "chunks": [
+      {
+       "id": "33.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 274,
+       "end": 285,
+       "paras": 12,
+       "chars": 3663,
+       "status": "done"
+      },
+      {
+       "id": "33.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 286,
+       "end": 295,
+       "paras": 10,
+       "chars": 2830,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "33.H",
+      "kind": "direct",
+      "chars": 6493,
+      "layers": {
+       "75": [
+        [
+         274,
+         295
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "33.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 34,
+   "title": "6. Chaṭṭhanayo",
+   "cs": [
+    228,
+    228
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 19:36:16",
+   "finished": "2026-10-06 19:38:34",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 296,
+    "end": 296,
+    "title": "6. Chaṭṭhanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 296,
+     "end": 296,
+     "title": "6. Chaṭṭhanayo",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "34.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 296,
+       "end": 296,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "34.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         296,
+         296
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "34.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 35,
+   "title": "6. Sampayogavippayogapadaniddeso",
+   "cs": [
+    228,
+    228
+   ],
+   "chars": 32,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 19:38:34",
+   "finished": "2026-10-06 19:44:13",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 297,
+    "end": 297,
+    "title": "6. Sampayogavippayogapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 297,
+     "end": 297,
+     "title": "6. Sampayogavippayogapadaniddeso",
+     "paras": 1,
+     "chars": 32,
+     "chunks": [
+      {
+       "id": "35.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 297,
+       "end": 297,
+       "paras": 1,
+       "chars": 32,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "35.H",
+      "kind": "direct",
+      "chars": 32,
+      "layers": {
+       "75": [
+        [
+         297,
+         297
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "35.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 36,
+   "title": "1. Khandho",
+   "cs": [
+    228,
+    262
+   ],
+   "chars": 18869,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 19:44:13",
+   "finished": "2026-10-06 20:51:37",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 298,
+    "end": 301,
+    "title": "1. Khandho",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "atthakatha",
+     "book": 98,
+     "start": 88,
+     "end": 109,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "dhātukathā-aṭṭhakathā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 298,
+     "end": 301,
+     "title": "1. Khandho",
+     "paras": 4,
+     "chars": 721,
+     "chunks": [
+      {
+       "id": "36.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 298,
+       "end": 301,
+       "paras": 4,
+       "chars": 721,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 63,
+     "end": 70,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "paras": 8,
+     "chars": 7248,
+     "chunks": [
+      {
+       "id": "36.2.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 63,
+       "end": 67,
+       "paras": 5,
+       "chars": 4075,
+       "status": "done"
+      },
+      {
+       "id": "36.2.2",
+       "kind": "chunk",
+       "book": 174,
+       "start": 68,
+       "end": 70,
+       "paras": 3,
+       "chars": 3173,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 75,
+     "end": 86,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "paras": 12,
+     "chars": 10900,
+     "chunks": [
+      {
+       "id": "36.3.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 75,
+       "end": 79,
+       "paras": 5,
+       "chars": 4888,
+       "status": "done"
+      },
+      {
+       "id": "36.3.2",
+       "kind": "chunk",
+       "book": 176,
+       "start": 80,
+       "end": 84,
+       "paras": 5,
+       "chars": 4879,
+       "status": "done"
+      },
+      {
+       "id": "36.3.3",
+       "kind": "chunk",
+       "book": 176,
+       "start": 85,
+       "end": 86,
+       "paras": 2,
+       "chars": 1133,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "36.H",
+      "kind": "direct",
+      "chars": 18869,
+      "layers": {
+       "75": [
+        [
+         298,
+         301
+        ]
+       ],
+       "174": [
+        [
+         63,
+         70
+        ]
+       ],
+       "176": [
+        [
+         75,
+         86
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "36.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 37,
+   "title": "2. Āyatanaṃ",
+   "cs": [
+    231,
+    232
+   ],
+   "chars": 426,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 20:51:37",
+   "finished": "2026-10-06 20:59:05",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 302,
+    "end": 304,
+    "title": "2. Āyatanaṃ",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "atthakatha",
+     "book": 98,
+     "start": 88,
+     "end": 109,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "dhātukathā-aṭṭhakathā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 302,
+     "end": 304,
+     "title": "2. Āyatanaṃ",
+     "paras": 3,
+     "chars": 426,
+     "chunks": [
+      {
+       "id": "37.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 302,
+       "end": 304,
+       "paras": 3,
+       "chars": 426,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "37.H",
+      "kind": "direct",
+      "chars": 426,
+      "layers": {
+       "75": [
+        [
+         302,
+         304
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "37.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 38,
+   "title": "3. Dhātu",
+   "cs": [
+    233,
+    234
+   ],
+   "chars": 452,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 20:59:05",
+   "finished": "2026-10-06 21:10:15",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 305,
+    "end": 307,
+    "title": "3. Dhātu",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "atthakatha",
+     "book": 98,
+     "start": 88,
+     "end": 109,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "dhātukathā-aṭṭhakathā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 305,
+     "end": 307,
+     "title": "3. Dhātu",
+     "paras": 3,
+     "chars": 452,
+     "chunks": [
+      {
+       "id": "38.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 305,
+       "end": 307,
+       "paras": 3,
+       "chars": 452,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "38.H",
+      "kind": "direct",
+      "chars": 452,
+      "layers": {
+       "75": [
+        [
+         305,
+         307
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "38.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 39,
+   "title": "4. Saccādi",
+   "cs": [
+    235,
+    256
+   ],
+   "chars": 5675,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 21:10:15",
+   "finished": "2026-10-06 21:32:31",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 308,
+    "end": 330,
+    "title": "4. Saccādi",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "atthakatha",
+     "book": 98,
+     "start": 88,
+     "end": 109,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "dhātukathā-aṭṭhakathā"
+    },
+    {
+     "layer": "tika",
+     "book": 174,
+     "start": 63,
+     "end": 70,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "mūlaṭīkā"
+    },
+    {
+     "layer": "anutika",
+     "book": 176,
+     "start": 75,
+     "end": 86,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "anuṭīkā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 308,
+     "end": 330,
+     "title": "4. Saccādi",
+     "paras": 23,
+     "chars": 5675,
+     "chunks": [
+      {
+       "id": "39.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 308,
+       "end": 319,
+       "paras": 12,
+       "chars": 2897,
+       "status": "done"
+      },
+      {
+       "id": "39.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 320,
+       "end": 330,
+       "paras": 11,
+       "chars": 2778,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "39.H",
+      "kind": "direct",
+      "chars": 5675,
+      "layers": {
+       "75": [
+        [
+         308,
+         330
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "39.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 40,
+   "title": "5. Tikaṃ",
+   "cs": [
+    228,
+    276
+   ],
+   "chars": 9597,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 22:29:14",
+   "finished": "2026-10-06 22:39:00",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 331,
+    "end": 351,
+    "title": "5. Tikaṃ",
+    "book_title": ""
+   },
+   "ref": [
+    {
+     "layer": "tika",
+     "book": 174,
+     "start": 63,
+     "end": 70,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "mūlaṭīkā"
+    },
+    {
+     "layer": "anutika",
+     "book": 176,
+     "start": 75,
+     "end": 86,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "book_title": "anuṭīkā"
+    }
+   ],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 331,
+     "end": 351,
+     "title": "5. Tikaṃ",
+     "paras": 21,
+     "chars": 4388,
+     "chunks": [
+      {
+       "id": "40.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 331,
+       "end": 342,
+       "paras": 12,
+       "chars": 2326,
+       "status": "done"
+      },
+      {
+       "id": "40.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 343,
+       "end": 351,
+       "paras": 9,
+       "chars": 2062,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 88,
+     "end": 109,
+     "title": "6. Chaṭṭhanayo sampayogavippayogapadavaṇṇanā",
+     "paras": 22,
+     "chars": 5209,
+     "chunks": [
+      {
+       "id": "40.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 88,
+       "end": 99,
+       "paras": 12,
+       "chars": 2811,
+       "status": "done"
+      },
+      {
+       "id": "40.2.2",
+       "kind": "chunk",
+       "book": 98,
+       "start": 100,
+       "end": 109,
+       "paras": 10,
+       "chars": 2398,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "40.H",
+      "kind": "direct",
+      "chars": 9597,
+      "layers": {
+       "75": [
+        [
+         331,
+         351
+        ]
+       ],
+       "98": [
+        [
+         88,
+         109
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "40.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 41,
+   "title": "6. Dukaṃ",
+   "cs": [
+    277,
+    305
+   ],
+   "chars": 7144,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 21:32:31",
+   "finished": "2026-10-06 22:12:25",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 352,
+    "end": 388,
+    "title": "6. Dukaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 352,
+     "end": 388,
+     "title": "6. Dukaṃ",
+     "paras": 37,
+     "chars": 7144,
+     "chunks": [
+      {
+       "id": "41.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 352,
+       "end": 363,
+       "paras": 12,
+       "chars": 2648,
+       "status": "done"
+      },
+      {
+       "id": "41.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 364,
+       "end": 375,
+       "paras": 12,
+       "chars": 2892,
+       "status": "done"
+      },
+      {
+       "id": "41.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 376,
+       "end": 387,
+       "paras": 12,
+       "chars": 1566,
+       "status": "done"
+      },
+      {
+       "id": "41.1.4",
+       "kind": "chunk",
+       "book": 75,
+       "start": 388,
+       "end": 388,
+       "paras": 1,
+       "chars": 38,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "41.H",
+      "kind": "direct",
+      "chars": 7144,
+      "layers": {
+       "75": [
+        [
+         352,
+         388
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "41.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 42,
+   "title": "7. Sattamanayo",
+   "cs": [
+    306,
+    306
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 2,
+   "started": "2026-10-06 22:16:33",
+   "finished": "2026-10-06 22:24:47",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 389,
+    "end": 389,
+    "title": "7. Sattamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 389,
+     "end": 389,
+     "title": "7. Sattamanayo",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "42.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 389,
+       "end": 389,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "42.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         389,
+         389
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "42.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 43,
+   "title": "7. Sampayuttenavippayuttapadaniddeso",
+   "cs": [
+    306,
+    316
+   ],
+   "chars": 9208,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 22:24:47",
+   "finished": "2026-10-06 23:13:56",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 390,
+    "end": 408,
+    "title": "7. Sampayuttenavippayuttapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 390,
+     "end": 408,
+     "title": "7. Sampayuttenavippayuttapadaniddeso",
+     "paras": 19,
+     "chars": 3046,
+     "chunks": [
+      {
+       "id": "43.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 390,
+       "end": 401,
+       "paras": 12,
+       "chars": 2806,
+       "status": "done"
+      },
+      {
+       "id": "43.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 402,
+       "end": 408,
+       "paras": 7,
+       "chars": 240,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 110,
+     "end": 120,
+     "title": "7. Sattamanayo sampayuttenavippayuttapadavaṇṇanā",
+     "paras": 11,
+     "chars": 1567,
+     "chunks": [
+      {
+       "id": "43.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 110,
+       "end": 120,
+       "paras": 11,
+       "chars": 1567,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 71,
+     "end": 75,
+     "title": "7. Sattamanayo sampayuttenavippayuttapadavaṇṇanā",
+     "paras": 5,
+     "chars": 2076,
+     "chunks": [
+      {
+       "id": "43.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 71,
+       "end": 75,
+       "paras": 5,
+       "chars": 2076,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 87,
+     "end": 92,
+     "title": "7. Sattamanayo sampayuttenavippayuttapadavaṇṇanā",
+     "paras": 6,
+     "chars": 2519,
+     "chunks": [
+      {
+       "id": "43.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 87,
+       "end": 92,
+       "paras": 6,
+       "chars": 2519,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "43.H",
+      "kind": "direct",
+      "chars": 9208,
+      "layers": {
+       "75": [
+        [
+         390,
+         408
+        ]
+       ],
+       "98": [
+        [
+         110,
+         120
+        ]
+       ],
+       "174": [
+        [
+         71,
+         75
+        ]
+       ],
+       "176": [
+        [
+         87,
+         92
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "43.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 44,
+   "title": "8. Aṭṭhamanayo",
+   "cs": [
+    317,
+    317
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 22:39:00",
+   "finished": "2026-10-06 22:48:38",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 409,
+    "end": 409,
+    "title": "8. Aṭṭhamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 409,
+     "end": 409,
+     "title": "8. Aṭṭhamanayo",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "44.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 409,
+       "end": 409,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "44.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         409,
+         409
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "44.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 45,
+   "title": "8. Vippayuttenasampayuttapadaniddeso",
+   "cs": [
+    317,
+    318
+   ],
+   "chars": 2259,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 22:48:38",
+   "finished": "2026-10-06 23:20:04",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 410,
+    "end": 418,
+    "title": "8. Vippayuttenasampayuttapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 410,
+     "end": 418,
+     "title": "8. Vippayuttenasampayuttapadaniddeso",
+     "paras": 9,
+     "chars": 714,
+     "chunks": [
+      {
+       "id": "45.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 410,
+       "end": 418,
+       "paras": 9,
+       "chars": 714,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 121,
+     "end": 123,
+     "title": "8. Aṭṭhamanayo vippayuttenasampayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 492,
+     "chunks": [
+      {
+       "id": "45.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 121,
+       "end": 123,
+       "paras": 3,
+       "chars": 492,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 76,
+     "end": 78,
+     "title": "8. Aṭṭhamanayo vippayuttenasampayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 572,
+     "chunks": [
+      {
+       "id": "45.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 76,
+       "end": 78,
+       "paras": 3,
+       "chars": 572,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 93,
+     "end": 95,
+     "title": "8. Aṭṭhamanayo vippayuttenasampayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 481,
+     "chunks": [
+      {
+       "id": "45.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 93,
+       "end": 95,
+       "paras": 3,
+       "chars": 481,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "45.H",
+      "kind": "direct",
+      "chars": 2259,
+      "layers": {
+       "75": [
+        [
+         410,
+         418
+        ]
+       ],
+       "98": [
+        [
+         121,
+         123
+        ]
+       ],
+       "174": [
+        [
+         76,
+         78
+        ]
+       ],
+       "176": [
+        [
+         93,
+         95
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "45.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 46,
+   "title": "9. Navamanayo",
+   "cs": [
+    319,
+    319
+   ],
+   "chars": 13,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 23:13:56",
+   "finished": "2026-10-06 23:22:31",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 419,
+    "end": 419,
+    "title": "9. Navamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 419,
+     "end": 419,
+     "title": "9. Navamanayo",
+     "paras": 1,
+     "chars": 13,
+     "chunks": [
+      {
+       "id": "46.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 419,
+       "end": 419,
+       "paras": 1,
+       "chars": 13,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "46.H",
+      "kind": "direct",
+      "chars": 13,
+      "layers": {
+       "75": [
+        [
+         419,
+         419
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "46.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 47,
+   "title": "9. Sampayuttenasampayuttapadaniddeso",
+   "cs": [
+    319,
+    352
+   ],
+   "chars": 12731,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 00:45:59",
+   "finished": "2026-10-07 01:05:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 420,
+    "end": 461,
+    "title": "9. Sampayuttenasampayuttapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 420,
+     "end": 461,
+     "title": "9. Sampayuttenasampayuttapadaniddeso",
+     "paras": 42,
+     "chars": 8991,
+     "chunks": [
+      {
+       "id": "47.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 420,
+       "end": 431,
+       "paras": 12,
+       "chars": 2808,
+       "status": "done"
+      },
+      {
+       "id": "47.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 432,
+       "end": 443,
+       "paras": 12,
+       "chars": 2721,
+       "status": "done"
+      },
+      {
+       "id": "47.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 444,
+       "end": 455,
+       "paras": 12,
+       "chars": 3204,
+       "status": "done"
+      },
+      {
+       "id": "47.1.4",
+       "kind": "chunk",
+       "book": 75,
+       "start": 456,
+       "end": 461,
+       "paras": 6,
+       "chars": 258,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 124,
+     "end": 133,
+     "title": "9. Navamanayo sampayuttenasampayuttapadavaṇṇanā",
+     "paras": 10,
+     "chars": 1324,
+     "chunks": [
+      {
+       "id": "47.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 124,
+       "end": 133,
+       "paras": 10,
+       "chars": 1324,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 79,
+     "end": 81,
+     "title": "9. Navamanayo sampayuttenasampayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 1063,
+     "chunks": [
+      {
+       "id": "47.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 79,
+       "end": 81,
+       "paras": 3,
+       "chars": 1063,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 96,
+     "end": 98,
+     "title": "9. Navamanayo sampayuttenasampayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 1353,
+     "chunks": [
+      {
+       "id": "47.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 96,
+       "end": 98,
+       "paras": 3,
+       "chars": 1353,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "47.H",
+      "kind": "direct",
+      "chars": 12731,
+      "layers": {
+       "75": [
+        [
+         420,
+         461
+        ]
+       ],
+       "98": [
+        [
+         124,
+         133
+        ]
+       ],
+       "174": [
+        [
+         79,
+         81
+        ]
+       ],
+       "176": [
+        [
+         96,
+         98
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "47.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 48,
+   "title": "10. Dasamanayo",
+   "cs": [
+    353,
+    353
+   ],
+   "chars": 14,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-06 23:22:31",
+   "finished": "2026-10-06 23:28:39",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 462,
+    "end": 462,
+    "title": "10. Dasamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 462,
+     "end": 462,
+     "title": "10. Dasamanayo",
+     "paras": 1,
+     "chars": 14,
+     "chunks": [
+      {
+       "id": "48.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 462,
+       "end": 462,
+       "paras": 1,
+       "chars": 14,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "48.H",
+      "kind": "direct",
+      "chars": 14,
+      "layers": {
+       "75": [
+        [
+         462,
+         462
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "48.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 49,
+   "title": "10. Vippayuttenavippayuttapadaniddeso",
+   "cs": [
+    353,
+    368
+   ],
+   "chars": 6423,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 00:13:38",
+   "finished": "2026-10-07 00:29:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 463,
+    "end": 479,
+    "title": "10. Vippayuttenavippayuttapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 463,
+     "end": 479,
+     "title": "10. Vippayuttenavippayuttapadaniddeso",
+     "paras": 17,
+     "chars": 4578,
+     "chunks": [
+      {
+       "id": "49.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 463,
+       "end": 474,
+       "paras": 12,
+       "chars": 3119,
+       "status": "done"
+      },
+      {
+       "id": "49.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 475,
+       "end": 479,
+       "paras": 5,
+       "chars": 1459,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 134,
+     "end": 136,
+     "title": "10. Dasamanayo vippayuttenavippayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 727,
+     "chunks": [
+      {
+       "id": "49.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 134,
+       "end": 136,
+       "paras": 3,
+       "chars": 727,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 82,
+     "end": 84,
+     "title": "10. Dasamanayo vippayuttenavippayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 388,
+     "chunks": [
+      {
+       "id": "49.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 82,
+       "end": 84,
+       "paras": 3,
+       "chars": 388,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 99,
+     "end": 101,
+     "title": "10. Dasamanayo vippayuttenavippayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 730,
+     "chunks": [
+      {
+       "id": "49.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 99,
+       "end": 101,
+       "paras": 3,
+       "chars": 730,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "49.H",
+      "kind": "direct",
+      "chars": 6423,
+      "layers": {
+       "75": [
+        [
+         463,
+         479
+        ]
+       ],
+       "98": [
+        [
+         134,
+         136
+        ]
+       ],
+       "174": [
+        [
+         82,
+         84
+        ]
+       ],
+       "176": [
+        [
+         99,
+         101
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "49.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 50,
+   "title": "1. Tikaṃ",
+   "cs": [
+    369,
+    388
+   ],
+   "chars": 4984,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 00:29:50",
+   "finished": "2026-10-07 00:54:24",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 480,
+    "end": 500,
+    "title": "1. Tikaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 480,
+     "end": 500,
+     "title": "1. Tikaṃ",
+     "paras": 21,
+     "chars": 4984,
+     "chunks": [
+      {
+       "id": "50.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 480,
+       "end": 491,
+       "paras": 12,
+       "chars": 2441,
+       "status": "done"
+      },
+      {
+       "id": "50.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 492,
+       "end": 500,
+       "paras": 9,
+       "chars": 2543,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "50.H",
+      "kind": "direct",
+      "chars": 4984,
+      "layers": {
+       "75": [
+        [
+         480,
+         500
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "50.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 51,
+   "title": "2. Dukaṃ",
+   "cs": [
+    389,
+    408
+   ],
+   "chars": 6374,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 00:54:24",
+   "finished": "2026-10-07 01:24:43",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 501,
+    "end": 528,
+    "title": "2. Dukaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 501,
+     "end": 528,
+     "title": "2. Dukaṃ",
+     "paras": 28,
+     "chars": 6374,
+     "chunks": [
+      {
+       "id": "51.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 501,
+       "end": 512,
+       "paras": 12,
+       "chars": 3805,
+       "status": "done"
+      },
+      {
+       "id": "51.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 513,
+       "end": 524,
+       "paras": 12,
+       "chars": 2396,
+       "status": "done"
+      },
+      {
+       "id": "51.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 525,
+       "end": 528,
+       "paras": 4,
+       "chars": 173,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "51.H",
+      "kind": "direct",
+      "chars": 6374,
+      "layers": {
+       "75": [
+        [
+         501,
+         528
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "51.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 52,
+   "title": "11. Ekādasamanayo",
+   "cs": [
+    409,
+    409
+   ],
+   "chars": 17,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 01:05:52",
+   "finished": "2026-10-07 01:13:50",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 529,
+    "end": 529,
+    "title": "11. Ekādasamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 529,
+     "end": 529,
+     "title": "11. Ekādasamanayo",
+     "paras": 1,
+     "chars": 17,
+     "chunks": [
+      {
+       "id": "52.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 529,
+       "end": 529,
+       "paras": 1,
+       "chars": 17,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "52.H",
+      "kind": "direct",
+      "chars": 17,
+      "layers": {
+       "75": [
+        [
+         529,
+         529
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "52.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 53,
+   "title": "11. Saṅgahitenasampayuttavippayuttapadaniddeso",
+   "cs": [
+    409,
+    416
+   ],
+   "chars": 7176,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 01:13:50",
+   "finished": "2026-10-07 01:47:59",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 530,
+    "end": 541,
+    "title": "11. Saṅgahitenasampayuttavippayuttapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 530,
+     "end": 541,
+     "title": "11. Saṅgahitenasampayuttavippayuttapadaniddeso",
+     "paras": 12,
+     "chars": 4580,
+     "chunks": [
+      {
+       "id": "53.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 530,
+       "end": 541,
+       "paras": 12,
+       "chars": 4580,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 137,
+     "end": 140,
+     "title": "11. Ekādasamanayo saṅgahitenasampayuttavippayuttapadavaṇṇanā",
+     "paras": 4,
+     "chars": 1019,
+     "chunks": [
+      {
+       "id": "53.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 137,
+       "end": 140,
+       "paras": 4,
+       "chars": 1019,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 85,
+     "end": 87,
+     "title": "11. Ekādasamanayo saṅgahitenasampayuttavippayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 698,
+     "chunks": [
+      {
+       "id": "53.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 85,
+       "end": 87,
+       "paras": 3,
+       "chars": 698,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 102,
+     "end": 104,
+     "title": "11. Ekādasamanayo saṅgahitenasampayuttavippayuttapadavaṇṇanā",
+     "paras": 3,
+     "chars": 879,
+     "chunks": [
+      {
+       "id": "53.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 102,
+       "end": 104,
+       "paras": 3,
+       "chars": 879,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "53.H",
+      "kind": "direct",
+      "chars": 7176,
+      "layers": {
+       "75": [
+        [
+         530,
+         541
+        ]
+       ],
+       "98": [
+        [
+         137,
+         140
+        ]
+       ],
+       "174": [
+        [
+         85,
+         87
+        ]
+       ],
+       "176": [
+        [
+         102,
+         104
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "53.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 54,
+   "title": "12. Dvādasamanayo",
+   "cs": [
+    417,
+    417
+   ],
+   "chars": 17,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 01:24:43",
+   "finished": "2026-10-07 01:31:19",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 542,
+    "end": 542,
+    "title": "12. Dvādasamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 542,
+     "end": 542,
+     "title": "12. Dvādasamanayo",
+     "paras": 1,
+     "chars": 17,
+     "chunks": [
+      {
+       "id": "54.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 542,
+       "end": 542,
+       "paras": 1,
+       "chars": 17,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "54.H",
+      "kind": "direct",
+      "chars": 17,
+      "layers": {
+       "75": [
+        [
+         542,
+         542
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "54.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 55,
+   "title": "12. Sampayuttenasaṅgahitāsaṅgahitapadaniddeso",
+   "cs": [
+    417,
+    447
+   ],
+   "chars": 10044,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 02:55:03",
+   "finished": "2026-10-07 03:13:07",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 543,
+    "end": 581,
+    "title": "12. Sampayuttenasaṅgahitāsaṅgahitapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 543,
+     "end": 581,
+     "title": "12. Sampayuttenasaṅgahitāsaṅgahitapadaniddeso",
+     "paras": 39,
+     "chars": 8810,
+     "chunks": [
+      {
+       "id": "55.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 543,
+       "end": 554,
+       "paras": 12,
+       "chars": 2804,
+       "status": "done"
+      },
+      {
+       "id": "55.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 555,
+       "end": 566,
+       "paras": 12,
+       "chars": 3033,
+       "status": "done"
+      },
+      {
+       "id": "55.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 567,
+       "end": 578,
+       "paras": 12,
+       "chars": 2833,
+       "status": "done"
+      },
+      {
+       "id": "55.1.4",
+       "kind": "chunk",
+       "book": 75,
+       "start": 579,
+       "end": 581,
+       "paras": 3,
+       "chars": 140,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 141,
+     "end": 144,
+     "title": "12. Dvādasamanayo sampayuttenasaṅgahitāsaṅgahitapadavaṇṇanā",
+     "paras": 4,
+     "chars": 711,
+     "chunks": [
+      {
+       "id": "55.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 141,
+       "end": 144,
+       "paras": 4,
+       "chars": 711,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 88,
+     "end": 90,
+     "title": "12. Dvādasamanayo sampayuttenasaṅgahitāsaṅgahitapadavaṇṇanā",
+     "paras": 3,
+     "chars": 214,
+     "chunks": [
+      {
+       "id": "55.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 88,
+       "end": 90,
+       "paras": 3,
+       "chars": 214,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 105,
+     "end": 107,
+     "title": "12. Dvādasamanayo sampayuttenasaṅgahitāsaṅgahitapadavaṇṇanā",
+     "paras": 3,
+     "chars": 309,
+     "chunks": [
+      {
+       "id": "55.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 105,
+       "end": 107,
+       "paras": 3,
+       "chars": 309,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "55.H",
+      "kind": "direct",
+      "chars": 10044,
+      "layers": {
+       "75": [
+        [
+         543,
+         581
+        ]
+       ],
+       "98": [
+        [
+         141,
+         144
+        ]
+       ],
+       "174": [
+        [
+         88,
+         90
+        ]
+       ],
+       "176": [
+        [
+         105,
+         107
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "55.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 56,
+   "title": "13. Terasamanayo",
+   "cs": [
+    448,
+    448
+   ],
+   "chars": 16,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 01:47:59",
+   "finished": "2026-10-07 01:53:02",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 582,
+    "end": 582,
+    "title": "13. Terasamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 582,
+     "end": 582,
+     "title": "13. Terasamanayo",
+     "paras": 1,
+     "chars": 16,
+     "chunks": [
+      {
+       "id": "56.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 582,
+       "end": 582,
+       "paras": 1,
+       "chars": 16,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "56.H",
+      "kind": "direct",
+      "chars": 16,
+      "layers": {
+       "75": [
+        [
+         582,
+         582
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "56.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 57,
+   "title": "13. Asaṅgahitenasampayuttavippayuttapadaniddeso",
+   "cs": [
+    448,
+    455
+   ],
+   "chars": 11064,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 02:54:31",
+   "finished": "2026-10-07 03:13:26",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 583,
+    "end": 596,
+    "title": "13. Asaṅgahitenasampayuttavippayuttapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 583,
+     "end": 596,
+     "title": "13. Asaṅgahitenasampayuttavippayuttapadaniddeso",
+     "paras": 14,
+     "chars": 6998,
+     "chunks": [
+      {
+       "id": "57.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 583,
+       "end": 589,
+       "paras": 7,
+       "chars": 4648,
+       "status": "done"
+      },
+      {
+       "id": "57.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 590,
+       "end": 596,
+       "paras": 7,
+       "chars": 2350,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 145,
+     "end": 148,
+     "title": "13. Terasamanayo asaṅgahitenasampayuttavippayuttapadavaṇṇanā",
+     "paras": 4,
+     "chars": 1065,
+     "chunks": [
+      {
+       "id": "57.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 145,
+       "end": 148,
+       "paras": 4,
+       "chars": 1065,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 91,
+     "end": 94,
+     "title": "13. Terasamanayo asaṅgahitenasampayuttavippayuttapadavaṇṇanā",
+     "paras": 4,
+     "chars": 1836,
+     "chunks": [
+      {
+       "id": "57.3.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 91,
+       "end": 94,
+       "paras": 4,
+       "chars": 1836,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 108,
+     "end": 111,
+     "title": "13. Terasamanayo asaṅgahitenasampayuttavippayuttapadavaṇṇanā",
+     "paras": 4,
+     "chars": 1165,
+     "chunks": [
+      {
+       "id": "57.4.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 108,
+       "end": 111,
+       "paras": 4,
+       "chars": 1165,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "57.H",
+      "kind": "direct",
+      "chars": 11064,
+      "layers": {
+       "75": [
+        [
+         583,
+         596
+        ]
+       ],
+       "98": [
+        [
+         145,
+         148
+        ]
+       ],
+       "174": [
+        [
+         91,
+         94
+        ]
+       ],
+       "176": [
+        [
+         108,
+         111
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "57.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 58,
+   "title": "14. Cuddasamanayo",
+   "cs": [
+    456,
+    456
+   ],
+   "chars": 17,
+   "status": "done",
+   "tries": 2,
+   "started": "2026-10-07 03:18:41",
+   "finished": "2026-10-07 03:23:37",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 597,
+    "end": 597,
+    "title": "14. Cuddasamanayo",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 597,
+     "end": 597,
+     "title": "14. Cuddasamanayo",
+     "paras": 1,
+     "chars": 17,
+     "chunks": [
+      {
+       "id": "58.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 597,
+       "end": 597,
+       "paras": 1,
+       "chars": 17,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "58.H",
+      "kind": "direct",
+      "chars": 17,
+      "layers": {
+       "75": [
+        [
+         597,
+         597
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "58.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 59,
+   "title": "14. Vippayuttenasaṅgahitāsaṅgahitapadaniddeso",
+   "cs": [
+    456,
+    456
+   ],
+   "chars": 45,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 03:13:26",
+   "finished": "2026-10-07 03:18:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 598,
+    "end": 598,
+    "title": "14. Vippayuttenasaṅgahitāsaṅgahitapadaniddeso",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 598,
+     "end": 598,
+     "title": "14. Vippayuttenasaṅgahitāsaṅgahitapadaniddeso",
+     "paras": 1,
+     "chars": 45,
+     "chunks": [
+      {
+       "id": "59.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 598,
+       "end": 598,
+       "paras": 1,
+       "chars": 45,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "59.H",
+      "kind": "direct",
+      "chars": 45,
+      "layers": {
+       "75": [
+        [
+         598,
+         598
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "59.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 60,
+   "title": "1. Khandhādi",
+   "cs": [
+    456,
+    459
+   ],
+   "chars": 4453,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 03:18:22",
+   "finished": "2026-10-07 04:07:21",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 599,
+    "end": 603,
+    "title": "1. Khandhādi",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 599,
+     "end": 603,
+     "title": "1. Khandhādi",
+     "paras": 5,
+     "chars": 1390,
+     "chunks": [
+      {
+       "id": "60.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 599,
+       "end": 603,
+       "paras": 5,
+       "chars": 1390,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 149,
+     "end": 159,
+     "title": "14. Cuddasamanayo vippayuttenasaṅgahitāsaṅgahitapadavaṇṇanā",
+     "paras": 11,
+     "chars": 897,
+     "chunks": [
+      {
+       "id": "60.2.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 149,
+       "end": 159,
+       "paras": 11,
+       "chars": 897,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "atthakatha",
+     "layer_cn": "义注 aṭṭhakathā",
+     "book": 98,
+     "start": 160,
+     "end": 172,
+     "title": "Nigamanakathā",
+     "paras": 13,
+     "chars": 515,
+     "chunks": [
+      {
+       "id": "60.3.1",
+       "kind": "chunk",
+       "book": 98,
+       "start": 160,
+       "end": 171,
+       "paras": 12,
+       "chars": 499,
+       "status": "done"
+      },
+      {
+       "id": "60.3.2",
+       "kind": "chunk",
+       "book": 98,
+       "start": 172,
+       "end": 172,
+       "paras": 1,
+       "chars": 16,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "tika",
+     "layer_cn": "复注 ṭīkā",
+     "book": 174,
+     "start": 95,
+     "end": 99,
+     "title": "14. Cuddasamanayo vippayuttenasaṅgahitāsaṅgahitapadavaṇṇanā",
+     "paras": 5,
+     "chars": 880,
+     "chunks": [
+      {
+       "id": "60.4.1",
+       "kind": "chunk",
+       "book": 174,
+       "start": 95,
+       "end": 99,
+       "paras": 5,
+       "chars": 880,
+       "status": "done"
+      }
+     ]
+    },
+    {
+     "layer": "anutika",
+     "layer_cn": "复复注 anuṭīkā",
+     "book": 176,
+     "start": 112,
+     "end": 116,
+     "title": "14. Cuddasamanayo vippayuttenasaṅgahitāsaṅgahitapadavaṇṇanā",
+     "paras": 5,
+     "chars": 771,
+     "chunks": [
+      {
+       "id": "60.5.1",
+       "kind": "chunk",
+       "book": 176,
+       "start": 112,
+       "end": 116,
+       "paras": 5,
+       "chars": 771,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "60.H",
+      "kind": "direct",
+      "chars": 4453,
+      "layers": {
+       "75": [
+        [
+         599,
+         603
+        ]
+       ],
+       "98": [
+        [
+         149,
+         172
+        ]
+       ],
+       "174": [
+        [
+         95,
+         99
+        ]
+       ],
+       "176": [
+        [
+         112,
+         116
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "60.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 61,
+   "title": "2. Saccādi",
+   "cs": [
+    460,
+    471
+   ],
+   "chars": 3710,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 03:23:37",
+   "finished": "2026-10-07 03:44:28",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 604,
+    "end": 616,
+    "title": "2. Saccādi",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 604,
+     "end": 616,
+     "title": "2. Saccādi",
+     "paras": 13,
+     "chars": 3710,
+     "chunks": [
+      {
+       "id": "61.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 604,
+       "end": 615,
+       "paras": 12,
+       "chars": 3083,
+       "status": "done"
+      },
+      {
+       "id": "61.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 616,
+       "end": 616,
+       "paras": 1,
+       "chars": 627,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "61.H",
+      "kind": "direct",
+      "chars": 3710,
+      "layers": {
+       "75": [
+        [
+         604,
+         616
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "61.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 62,
+   "title": "3. Phassādisattakaṃ",
+   "cs": [
+    472,
+    473
+   ],
+   "chars": 570,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 03:44:28",
+   "finished": "2026-10-07 03:51:51",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 617,
+    "end": 619,
+    "title": "3. Phassādisattakaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 617,
+     "end": 619,
+     "title": "3. Phassādisattakaṃ",
+     "paras": 3,
+     "chars": 570,
+     "chunks": [
+      {
+       "id": "62.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 617,
+       "end": 619,
+       "paras": 3,
+       "chars": 570,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "62.H",
+      "kind": "direct",
+      "chars": 570,
+      "layers": {
+       "75": [
+        [
+         617,
+         619
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "62.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 63,
+   "title": "4. Tikaṃ",
+   "cs": [
+    474,
+    493
+   ],
+   "chars": 6192,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 04:32:23",
+   "finished": "2026-10-07 04:39:53",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 620,
+    "end": 640,
+    "title": "4. Tikaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 620,
+     "end": 640,
+     "title": "4. Tikaṃ",
+     "paras": 21,
+     "chars": 6192,
+     "chunks": [
+      {
+       "id": "63.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 620,
+       "end": 631,
+       "paras": 12,
+       "chars": 2918,
+       "status": "done"
+      },
+      {
+       "id": "63.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 632,
+       "end": 640,
+       "paras": 9,
+       "chars": 3274,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "63.H",
+      "kind": "direct",
+      "chars": 6192,
+      "layers": {
+       "75": [
+        [
+         620,
+         640
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "63.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  },
+  {
+   "id": 64,
+   "title": "5. Dukaṃ",
+   "cs": [
+    494,
+    518
+   ],
+   "chars": 8900,
+   "status": "done",
+   "tries": 1,
+   "started": "2026-10-07 04:07:21",
+   "finished": "2026-10-07 04:43:52",
+   "note": "",
+   "mula": {
+    "layer": "mula",
+    "book": 75,
+    "start": 641,
+    "end": 673,
+    "title": "5. Dukaṃ",
+    "book_title": ""
+   },
+   "ref": [],
+   "layers": [
+    {
+     "layer": "mula",
+     "layer_cn": "本文 mūla",
+     "book": 75,
+     "start": 641,
+     "end": 673,
+     "title": "5. Dukaṃ",
+     "paras": 33,
+     "chars": 8900,
+     "chunks": [
+      {
+       "id": "64.1.1",
+       "kind": "chunk",
+       "book": 75,
+       "start": 641,
+       "end": 652,
+       "paras": 12,
+       "chars": 3952,
+       "status": "done"
+      },
+      {
+       "id": "64.1.2",
+       "kind": "chunk",
+       "book": 75,
+       "start": 653,
+       "end": 664,
+       "paras": 12,
+       "chars": 3856,
+       "status": "done"
+      },
+      {
+       "id": "64.1.3",
+       "kind": "chunk",
+       "book": 75,
+       "start": 665,
+       "end": 673,
+       "paras": 9,
+       "chars": 1092,
+       "status": "done"
+      }
+     ]
+    }
+   ],
+   "harmonize": {
+    "mode": "direct",
+    "cross": [
+     {
+      "id": "64.H",
+      "kind": "direct",
+      "chars": 8900,
+      "layers": {
+       "75": [
+        [
+         641,
+         673
+        ]
+       ]
+      },
+      "status": "done"
+     }
+    ],
+    "layer": []
+   },
+   "export": {
+    "id": "64.E",
+    "kind": "export",
+    "chars": 0,
+    "status": "done"
+   }
+  }
+ ]
+}
