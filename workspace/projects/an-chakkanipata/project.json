@@ -3,11 +3,11 @@
  "name": "an-chakkanipata",
  "title": "增支部 六集 三層翻譯",
  "created": "2026-11-14 12:43:36",
- "updated": "2026-11-15 11:02:56",
+ "updated": "2026-11-22 10:10:24",
  "book": 89,
  "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
  "method": "default",
- "state": "idle",
+ "state": "done",
  "command": null,
  "steps": [
   "review",
@@ -7992,10 +7992,10 @@
    "sents": 63,
    "title": "1. Nāgasuttaṃ … ",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-22 10:01:35",
+   "ended": "2026-11-22 10:04:48",
    "note": "",
    "detail": ""
   },
@@ -10556,10 +10556,10 @@
    "needs": [
     "M28:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-22 10:04:48",
+   "ended": "2026-11-22 10:06:25",
    "note": "",
    "detail": ""
   },
@@ -13005,10 +13005,10 @@
     "M29:revise",
     "M30:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-22 10:06:25",
+   "ended": "2026-11-22 10:08:17",
    "note": "",
    "detail": ""
   },
@@ -13977,10 +13977,10 @@
     "M8:revise",
     "M9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-22 10:06:35",
+   "ended": "2026-11-22 10:10:04",
    "note": "",
    "detail": ""
   },
@@ -14006,10 +14006,10 @@
     "H8:harmonize",
     "H9:harmonize"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-22 10:08:17",
+   "ended": "2026-11-22 10:10:24",
    "note": "",
    "detail": ""
   },
