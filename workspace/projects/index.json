@@ -1,35 +1,65 @@
 {
  "schema": 2,
- "updated": "2026-11-23 07:31:16",
+ "updated": "2026-11-23 17:43:18",
  "projects": [
+  {
+   "name": "kn18",
+   "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
+   "state": "done",
+   "book": 152,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 8,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 8,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 641,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 585,
+    "failed": 0,
+    "skipped": 56,
+    "fixed": 0
+   },
+   "chars": 780971,
+   "pct": 100.0,
+   "updated": "2026-11-23 17:10:22",
+   "created": "2026-11-23 07:18:43"
+  },
   {
    "name": "kn17",
    "title": "无碍解道 Paṭisambhidāmagga 两层汉译（本文／义注 Saddhammappakāsinī）",
-   "state": "running",
+   "state": "done",
    "book": 151,
    "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
    "scan": true,
    "jobs": 5,
    "job_counts": {
-    "pending": 4,
-    "running": 1,
-    "done": 0,
+    "pending": 0,
+    "running": 0,
+    "done": 5,
     "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "units": 2068,
    "unit_counts": {
-    "pending": 2038,
-    "running": 7,
-    "done": 23,
+    "pending": 0,
+    "running": 0,
+    "done": 2068,
     "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "chars": 1993953,
-   "pct": 3.4,
-   "updated": "2026-11-23 07:31:15",
+   "pct": 100.0,
+   "updated": "2026-11-23 14:31:25",
    "created": "2026-11-23 07:18:41"
   },
   {
@@ -63,36 +93,6 @@
    "created": "2026-11-23 07:18:46"
   },
   {
-   "name": "kn18",
-   "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
-   "state": "idle",
-   "book": 152,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 8,
-   "job_counts": {
-    "pending": 8,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 641,
-   "unit_counts": {
-    "pending": 641,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 780971,
-   "pct": 0.0,
-   "updated": "2026-11-23 07:18:43",
-   "created": "2026-11-23 07:18:43"
-  },
-  {
    "name": "kn16",
    "title": "小义释 Cūḷaniddesa 两层汉译（本文／义注 Saddhammapajjotikā）",
    "state": "done",
@@ -121,6 +121,36 @@
    "pct": 100.0,
    "updated": "2026-11-22 21:31:12",
    "created": "2026-11-22 11:02:26"
+  },
+  {
+   "name": "an-chakkanipata",
+   "title": "增支部 六集 三層翻譯",
+   "state": "done",
+   "book": 89,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 4,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 285,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 221,
+    "failed": 0,
+    "skipped": 64,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-22 10:10:24",
+   "created": "2026-11-14 12:43:36"
   },
   {
    "name": "kn15",
@@ -241,36 +271,6 @@
    "pct": 100.0,
    "updated": "2026-11-15 11:11:36",
    "created": "2026-11-14 13:33:24"
-  },
-  {
-   "name": "an-chakkanipata",
-   "title": "增支部 六集 三層翻譯",
-   "state": "idle",
-   "book": 89,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 4,
-   "job_counts": {
-    "pending": 4,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 285,
-   "unit_counts": {
-    "pending": 5,
-    "running": 0,
-    "done": 216,
-    "failed": 0,
-    "skipped": 64,
-    "fixed": 0
-   },
-   "chars": 0,
-   "pct": 0.0,
-   "updated": "2026-11-15 11:02:56",
-   "created": "2026-11-14 12:43:36"
   },
   {
    "name": "an-dasakanipata",
