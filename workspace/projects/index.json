@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-11-23 17:43:18",
+ "updated": "2026-11-23 17:43:20",
  "projects": [
   {
    "name": "kn18",
@@ -63,6 +63,36 @@
    "created": "2026-11-23 07:18:41"
   },
   {
+   "name": "an-pancakanipata",
+   "title": "增支部 五集 三層翻譯",
+   "state": "done",
+   "book": 88,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 379,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 311,
+    "failed": 0,
+    "skipped": 68,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 08:23:01",
+   "created": "2026-11-22 11:10:29"
+  },
+  {
    "name": "kn19",
    "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
    "state": "idle",
@@ -91,6 +121,126 @@
    "pct": 0.0,
    "updated": "2026-11-23 07:18:46",
    "created": "2026-11-23 07:18:46"
+  },
+  {
+   "name": "an-catukkanipata",
+   "title": "增支部 四集 三層翻譯",
+   "state": "done",
+   "book": 87,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 579,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 417,
+    "failed": 0,
+    "skipped": 162,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 06:23:20",
+   "created": "2026-11-22 11:10:26"
+  },
+  {
+   "name": "an-tikanipata",
+   "title": "增支部 三集 三層翻譯",
+   "state": "done",
+   "book": 86,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 547,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 411,
+    "failed": 0,
+    "skipped": 136,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 03:30:35",
+   "created": "2026-11-22 11:10:23"
+  },
+  {
+   "name": "an-dukanipata",
+   "title": "增支部 二集 三層翻譯",
+   "state": "done",
+   "book": 85,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 194,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 124,
+    "failed": 0,
+    "skipped": 70,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 01:03:12",
+   "created": "2026-11-22 11:10:20"
+  },
+  {
+   "name": "an-ekakanipata",
+   "title": "增支部 一集 三層翻譯",
+   "state": "done",
+   "book": 84,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 811,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 547,
+    "failed": 0,
+    "skipped": 264,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 00:13:58",
+   "created": "2026-11-22 11:10:19"
   },
   {
    "name": "kn16",
@@ -907,36 +1057,6 @@
    "created": "2026-10-13 12:05:07"
   },
   {
-   "name": "an-pancakanipata",
-   "title": "增支部 五集 三層翻譯",
-   "state": "done",
-   "book": 88,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 170,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 170,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 1944,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 1944,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 673287,
-   "pct": 100.0,
-   "updated": "2026-10-14 03:35:25",
-   "created": "2026-10-12 00:11:34"
-  },
-  {
    "name": "vism-2",
    "title": "清净道论 Visuddhimagga 卷二 汉译（本文 + 大复注 Mahāṭīkā）",
    "state": "archive",
@@ -1081,96 +1201,6 @@
    "created": "2026-09-08 09:17:23"
   },
   {
-   "name": "an-catukkanipata",
-   "title": "增支部 四集 三層翻譯",
-   "state": "done",
-   "book": 87,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 221,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 221,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 3384,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 3384,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 994223,
-   "pct": 100.0,
-   "updated": "2026-10-11 04:24:53",
-   "created": "2026-10-10 00:16:43"
-  },
-  {
-   "name": "an-dukanipata",
-   "title": "增支部 二集 三層翻譯",
-   "state": "done",
-   "book": 85,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 27,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 27,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 721,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 721,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 320266,
-   "pct": 100.0,
-   "updated": "2026-10-10 00:09:30",
-   "created": "2026-10-04 13:45:04"
-  },
-  {
-   "name": "an-tikanipata",
-   "title": "增支部 三集 三層翻譯",
-   "state": "done",
-   "book": 86,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 124,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 124,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 2434,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 2434,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 911773,
-   "pct": 100.0,
-   "updated": "2026-10-09 23:53:40",
-   "created": "2026-10-06 14:59:35"
-  },
-  {
    "name": "mn1-align",
    "title": "mn1 注释书对照（commentary-align）",
    "state": "archive",
@@ -1185,36 +1215,6 @@
    "archive": true,
    "updated": "2026-10-02 11:59:49",
    "created": "2026-09-30 22:40:08"
-  },
-  {
-   "name": "an-ekakanipata",
-   "title": "增支部 一集 三層翻譯",
-   "state": "done",
-   "book": 84,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 51,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 51,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 3046,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 3046,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1349615,
-   "pct": 100.0,
-   "updated": "2026-10-01 22:38:34",
-   "created": "2026-09-30 02:02:25"
   },
   {
    "name": "mn1_A-align",
