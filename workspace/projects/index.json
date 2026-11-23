@@ -1,7 +1,187 @@
 {
  "schema": 2,
- "updated": "2026-11-23 17:43:20",
+ "updated": "2026-11-23 18:02:35",
  "projects": [
+  {
+   "name": "mn-mulapannasa",
+   "title": "中部 根本五十經篇 三層翻譯",
+   "state": "idle",
+   "book": 164,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1922,
+   "unit_counts": {
+    "pending": 1922,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:30",
+   "created": "2026-11-23 18:02:30"
+  },
+  {
+   "name": "dn-pathikavagga",
+   "title": "長部 波梨品 三層翻譯",
+   "state": "idle",
+   "book": 95,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 816,
+   "unit_counts": {
+    "pending": 816,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:24",
+   "created": "2026-11-23 18:02:24"
+  },
+  {
+   "name": "sn-mahavagga",
+   "title": "相應部 大篇 三層翻譯",
+   "state": "idle",
+   "book": 171,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 704,
+   "unit_counts": {
+    "pending": 704,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:21",
+   "created": "2026-11-23 18:02:21"
+  },
+  {
+   "name": "sn-nidanavagga",
+   "title": "相應部 因緣篇 三層翻譯",
+   "state": "idle",
+   "book": 168,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 690,
+   "unit_counts": {
+    "pending": 690,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:17",
+   "created": "2026-11-23 18:02:17"
+  },
+  {
+   "name": "sn-salayatanavagga",
+   "title": "相應部 六處篇 三層翻譯",
+   "state": "idle",
+   "book": 170,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 582,
+   "unit_counts": {
+    "pending": 582,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:14",
+   "created": "2026-11-23 18:02:14"
+  },
+  {
+   "name": "sn-khandhavagga",
+   "title": "相應部 蘊篇 三層翻譯",
+   "state": "idle",
+   "book": 169,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 406,
+   "unit_counts": {
+    "pending": 406,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:11",
+   "created": "2026-11-23 18:02:11"
+  },
   {
    "name": "kn18",
    "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
@@ -1233,126 +1413,6 @@
    "created": "2026-09-30 22:38:09"
   },
   {
-   "name": "sn-mahavagga",
-   "title": "相應部 大篇 三層翻譯",
-   "state": "done",
-   "book": 171,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 349,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 349,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 4718,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 4718,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1249873,
-   "pct": 100.0,
-   "updated": "2026-09-29 22:01:59",
-   "created": "2026-09-28 07:47:40"
-  },
-  {
-   "name": "sn-salayatanavagga",
-   "title": "相應部 六處篇 三層翻譯",
-   "state": "done",
-   "book": 170,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 211,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 211,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 3335,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 3335,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1006751,
-   "pct": 100.0,
-   "updated": "2026-09-23 19:51:33",
-   "created": "2026-09-18 03:21:22"
-  },
-  {
-   "name": "sn-khandhavagga",
-   "title": "相應部 蘊篇 三層翻譯",
-   "state": "done",
-   "book": 169,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 163,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 163,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 2213,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 2213,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 680703,
-   "pct": 100.0,
-   "updated": "2026-09-17 10:49:17",
-   "created": "2026-09-17 02:20:43"
-  },
-  {
-   "name": "sn-nidanavagga",
-   "title": "相應部 因緣篇 三層翻譯",
-   "state": "done",
-   "book": 168,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 288,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 288,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 4645,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 4645,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1108244,
-   "pct": 100.0,
-   "updated": "2026-09-16 12:30:33",
-   "created": "2026-09-09 08:03:41"
-  },
-  {
    "name": "sn-sagathavagga",
    "title": "相應部 有偈篇 三層翻譯",
    "state": "done",
@@ -1381,22 +1441,6 @@
    "pct": 100.0,
    "updated": "2026-09-09 04:41:35",
    "created": "2026-09-07 07:29:06"
-  },
-  {
-   "name": "mn-mulapannasa",
-   "title": "中部 根本五十經篇 三層翻譯",
-   "state": "archive",
-   "book": 164,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "jobs": 89,
-   "job_counts": {},
-   "units": 0,
-   "unit_counts": {},
-   "chars": 0,
-   "pct": 100.0,
-   "archive": true,
-   "updated": "2026-09-07 14:58:21",
-   "created": "2026-08-29 04:43:39"
   },
   {
    "name": "mn-uparipannasa",
@@ -1443,22 +1487,6 @@
    "archive": true,
    "updated": "2026-09-06 09:17:51",
    "created": "2026-09-05 07:17:09"
-  },
-  {
-   "name": "dn-pathikavagga",
-   "title": "長部 波梨品 三層翻譯",
-   "state": "archive",
-   "book": 95,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "jobs": 150,
-   "job_counts": {},
-   "units": 0,
-   "unit_counts": {},
-   "chars": 0,
-   "pct": 100.0,
-   "archive": true,
-   "updated": "2026-08-29 04:03:50",
-   "created": "2026-08-20 16:15:58"
   },
   {
    "name": "dn-mahavagga",
