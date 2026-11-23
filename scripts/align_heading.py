@@ -29,6 +29,9 @@ cs 1-10，与本文第 1-10 偈撞号——第一个编号标题之前的段一�
     python3 scripts/align_heading.py --family kn1 --level 2 \\
         --work mula:154:3:276 --work atthakatha:116:3:1235 \\
         --out workspace/projects/kn1/align.json
+    python3 scripts/align_heading.py --family kn17 --key name \\
+        --work mula:151:3:2044 --work atthakatha:120:3:2526 \\
+        --out workspace/projects/kn17/align.json
     python3 scripts/align_heading.py --family kn2 --level 2 --key cs \\
         --work mula:156:3:1392 --work atthakatha:122:3:5229 \\
         --out workspace/projects/kn2/align.json
@@ -38,6 +41,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from _wp import cs_filled, paras  # noqa: E402
@@ -138,14 +142,144 @@ def monotonic(d, book):
     return out
 
 
+LEAD_NUM = re.compile(r"^\s*[\(\[]?\s*\d+(?:\s*-\s*\d+)?\s*[\)\]\.]?\s*")
+VANNANA = re.compile(r"vaṇṇanā\s*$")
+
+
+def stem(toc):
+    """标题 → 比对用的词干：去编号（1. / (1) / 2-4.）、去 vaṇṇanā、只留字母、去词尾格变化。
+
+    `1. Sutamayañāṇaniddeso` 与 `1. Sutamayañāṇaniddesavaṇṇanā` 都成 sutamayañāṇaniddes；
+    纯编号标题（偈号「62.」）成空串，不参与比对。
+    """
+    s = unicodedata.normalize("NFC", LEAD_NUM.sub("", toc or "").lower())
+    s = "".join(ch for ch in s if ch.isalpha())
+    s = VANNANA.sub("", s)
+    return re.sub(r"[aāoeiīuūṃ]+$", "", s)
+
+
+def lcs_pairs(a, b):
+    """两串词干的最长公共子序列 → [(i, j)]（a 的下标, b 的下标），顺序单调。"""
+    n, m = len(a), len(b)
+    dp = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            dp[i][j] = dp[i + 1][j + 1] + 1 if a[i] == b[j] else max(dp[i + 1][j], dp[i][j + 1])
+    out, i, j = [], 0, 0
+    while i < n and j < m:
+        if a[i] == b[j]:
+            out.append((i, j)); i += 1; j += 1
+        elif dp[i + 1][j] >= dp[i][j + 1]:
+            i += 1
+        else:
+            j += 1
+    return out
+
+
+def name_align(works, rows_of, args):
+    """`--key name`：按标题名对齐，不看层级与编号。
+
+    适用：各层标题名一一对应，但编号每品重数、层级各层不同、写法不一的书。
+    kn17（无碍解道）就是这样（2026-11-23 实测）：两层都是 3 品 × 10 论，论号每品从 1
+    重数；义注品标题写作「(1) Mahāvaggo」；义注第二品的论标题在 level 4，其余在 level 3。
+    做法：每层全部标题（level < 100）取词干，**以第一层为基准**与其余各层求最长公共
+    子序列；配上的基准标题各开一组，组号 = 它在基准层的序号（顺序即经文顺序）。
+    某层的段归它前面最近一个配上的标题；第一个配上的标题之前的段无键（序论）。
+    """
+    heads = {}
+    for w in works:
+        heads[w["book"]] = [(x["paragraph"], x.get("toc") or "", stem(x.get("toc")))
+                            for x in rows_of[w["book"]] if x.get("level", 100) < 100]
+    base = works[0]["book"]
+    bstems = [s for _p, _t, s in heads[base]]
+    starts = {w["book"]: {} for w in works}      # 段 → 组号（该段是配上的标题）
+    matched_base = set()
+    for w in works[1:]:
+        cs = [s for _p, _t, s in heads[w["book"]]]
+        bi = [i for i, s in enumerate(bstems) if s]
+        ci = [j for j, s in enumerate(cs) if s]
+        for i, j in lcs_pairs([bstems[k] for k in bi], [cs[k] for k in ci]):
+            gi = bi[i]
+            matched_base.add(gi)
+            starts[w["book"]][heads[w["book"]][ci[j]][0]] = gi
+    for gi in matched_base:
+        starts[base][heads[base][gi][0]] = gi
+    # 交叉：同名标题在两层的先后不同（kn17 本文 Mātikā 在 Ñāṇakathā 标题之前，义注
+    # Mātikāvaṇṇanā 在其之后），单调的 LCS 只能配上一个。两个没配上的同名标题落在
+    # 不同组 → 把这两组之间的组并成一组（取小号），否则一方的内容挂到对方的标题段上。
+    def group_at(book, p):
+        g = None
+        for q, k in sorted(starts[book].items()):
+            if q > p:
+                break
+            g = k
+        return g
+    merge = {}
+    for w in works[1:]:
+        cb = w["book"]
+        bmiss = [(p, s) for p, _t, s in heads[base] if s and p not in starts[base]]
+        cmiss = [(p, s) for p, _t, s in heads[cb] if s and p not in starts[cb]]
+        for bp, bs in bmiss:
+            for cp, cs_ in cmiss:
+                if bs != cs_:
+                    continue
+                g1, g2 = group_at(base, bp), group_at(cb, cp)
+                if g1 is None or g2 is None or g1 == g2:
+                    continue
+                lo, hi = min(g1, g2), max(g1, g2)
+                if sum(1 for g in matched_base if lo < g <= hi) > 2:
+                    continue                      # 隔得远的同名标题（常见小标题）不算交叉
+                for g in matched_base:
+                    if lo < g <= hi:
+                        merge[g] = lo
+                print(f"  交叉：book {base}:{bp} ↔ book {cb}:{cp}「{bs}」→ 组 {lo}-{hi} 并成 {lo}",
+                      file=sys.stderr)
+    if merge:
+        for b in starts:
+            starts[b] = {p: merge.get(g, g) for p, g in starts[b].items()}
+        matched_base = {merge.get(g, g) for g in matched_base}
+    para_key, groups = {}, {}
+    for w in works:
+        d, cur = {}, None
+        for x in rows_of[w["book"]]:
+            p = x["paragraph"]
+            if p in starts[w["book"]]:
+                cur = starts[w["book"]][p]
+            if cur is not None:
+                d[str(p)] = cur
+        para_key[str(w["book"])] = d
+        hs = heads[w["book"]]
+        miss = [t for p, t, s in hs if s and p not in starts[w["book"]]]
+        free = [p for p in range(w["start"], w["end"] + 1) if str(p) not in d]
+        print(f'  {w["layer"]:<11} book {w["book"]} {w["start"]}-{w["end"]}：'
+              f'标题 {len(hs)}，配上 {len(starts[w["book"]])}，没配上 {len(miss)}'
+              f'｜无键段 {len(free)}' + (f'（{free[0]}-{free[-1]}）' if free else ""),
+              file=sys.stderr)
+        if miss:
+            print("    没配上：" + " / ".join(m[:30] for m in miss[:12])
+                  + (" …" if len(miss) > 12 else ""), file=sys.stderr)
+    for gi in sorted(matched_base):
+        groups[gi] = heads[base][gi][1]
+    # 自检：各层键随段号单调不减
+    ok = True
+    for b, d in para_key.items():
+        ks = [d[p] for p in sorted(d, key=int)]
+        if any(x > y for x, y in zip(ks, ks[1:])):
+            print(f"  ✗ book {b} 组号不单调", file=sys.stderr)
+            ok = False
+    print(f"  共 {len(groups)} 组", file=sys.stderr)
+    return para_key, [{"id": g, "label": t} for g, t in sorted(groups.items())], ok
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--family", required=True)
     ap.add_argument("--level", type=int, default=2, help="按哪一级标题对齐")
     ap.add_argument("--work", action="append", required=True,
                     help="layer:book:start:end，可重复；层序按给出的顺序")
-    ap.add_argument("--key", choices=("heading", "cs"), default="heading",
-                    help="对齐键：heading = 标题号（默认）；cs = cs_para，标题号只作切块边界")
+    ap.add_argument("--key", choices=("heading", "cs", "name"), default="heading",
+                    help="对齐键：heading = 标题号（默认）；cs = cs_para，标题号只作切块边界；"
+                         "name = 按标题名对齐（不看层级与编号，见 name_align）")
     ap.add_argument("--backfill-level", type=int, default=0, dest="backfill",
                     help="--key cs 时：该级标题到其下第一个编号小标题之间的段，取那个编号段的 cs")
     ap.add_argument("--monotonic", action="store_true",
@@ -157,6 +291,27 @@ def main():
     args = ap.parse_args()
 
     works, para_key, heads, bounds, remap = [], {}, {}, {}, {}
+    if args.key == "name":
+        rows_of = {}
+        for spec in args.work:
+            w = parse_work(spec)
+            rows = sorted((x for x in paras(w["book"]) if w["start"] <= x["paragraph"] <= w["end"]),
+                          key=lambda x: x["paragraph"])
+            w["title"] = rows[0].get("toc") or f'book {w["book"]}'
+            works.append(w)
+            rows_of[w["book"]] = rows
+        para_key, groups, ok = name_align(works, rows_of, args)
+        if not ok:
+            sys.exit("对齐表自检失败，没有落盘")
+        table = {"family": args.family, "by": "heading name (LCS)", "hard_keys": True,
+                 "works": works, "para_key": para_key, "groups": groups, "copy": []}
+        if args.dry_run:
+            print("  （--dry-run：没有落盘）", file=sys.stderr)
+            return
+        os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
+        json.dump(table, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print(f"→ {args.out}", file=sys.stderr)
+        return
     for spec in args.work:
         w = parse_work(spec)
         rows = sorted((x for x in paras(w["book"]) if w["start"] <= x["paragraph"] <= w["end"]),

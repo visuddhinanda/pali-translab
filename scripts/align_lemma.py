@@ -149,10 +149,40 @@ QUOTE = re.compile(r"‘‘(.+?)’’")
 JUNK = re.compile(r"^[\s\[\]\d.,;:‘’'\"()\-–—]*$")
 
 
+# 句首「被解释词 + ti」：没有黑体的注本（僧伽罗丛书 Milidaṭīkā 等）这样引父层——
+# `Paṇidhāyāti …`、`Bhāsayivāna mānasanti …`、`Kaṅkhāṭhānavidāḷane ’ ti …`。
+# 只看句首 ITI_SPAN 个词之内第一个以 ti 收尾（或后随单独的 ’ ti）的词。
+ITI = {"on": False}
+ITI_SPAN = 4
+ITI_SKIP = {"iti", "ti", "atthi", "hoti", "honti", "natthi", "vutti", "pīti", "sati", "gati"}
+SENT_SPLIT = re.compile(r"\s+[.?!;]\s+|\s+[.?!;]$")
+
+
+def iti_anchors(text):
+    out = []
+    for sent in SENT_SPLIT.split(text.replace("**", "")):
+        w = sent.replace("‘", " ").replace("’", " ’ ").split()
+        for i, t in enumerate(w[:ITI_SPAN + 2]):
+            if t == "’" and i + 1 < len(w) and w[i + 1] in ("ti", "ti,"):
+                phrase = w[:i]
+            elif t in ("cāti", "vāti", "pīti", "cāti,", "vāti,") and i > 0:
+                phrase = w[:i]                     # Paṇidhāyā cāti = paṇidhāya ca + iti
+            elif t.endswith("ti") and t.lower() not in ITI_SKIP and len(t) > 4:
+                phrase = w[:i] + [t[:-2]]          # Paṇidhāyāti → Paṇidhāyā；mānasanti → mānasan
+            else:
+                continue
+            phrase = [x for x in phrase if x not in ("’", ",")]
+            if phrase and len(phrase) <= ITI_SPAN and not JUNK.match(" ".join(phrase)):
+                out.append(" ".join(phrase))
+            break
+    return out
+
+
 def anchors(text):
     """一段里的锚点：相邻黑体合并为一个（** ceto ** ** yuttā ** → ceto yuttā），
-    以及 ‘‘…’’ 引文（黑体里的引号先剥掉）。纯标点/编号的黑体丢掉。"""
-    out = []
+    以及 ‘‘…’’ 引文（黑体里的引号先剥掉）。纯标点/编号的黑体丢掉。
+    `--iti` 时另加句首「…ti」被解释词（见 iti_anchors）。"""
+    out = iti_anchors(text) if ITI["on"] else []
     for m in BOLD_RUN.finditer(text):
         s = re.sub(r"\*\*", " ", m.group(0))
         s = s.replace("‘", " ").replace("’", " ")
@@ -510,6 +540,8 @@ def main():
     a.add_argument("--parent", required=True)
     a.add_argument("--out", required=True)
     a.add_argument("--number", action="store_true", help="段首编号也当锚点（两边编号体系相同时）")
+    a.add_argument("--iti", action="store_true",
+                   help="句首「…ti」也当锚点（没有黑体标记的注本，如僧伽罗丛书 Milidaṭīkā）")
     a.add_argument("--zone", action="store_true", help="只对齐「[N]」驳议块（引别家注再驳）")
     a.add_argument("--exclude", help="这部书里也有的锚点不算（zone 模式排除祖层用）")
     a.add_argument("--via", nargs=2, metavar=("CHILD2ANC", "PARENT2ANC"),
@@ -525,6 +557,7 @@ def main():
     if args.cmd == "sents":
         write_sents(args.books)
         return
+    ITI["on"] = bool(getattr(args, "iti", False))
     child, parent = parse_work(args.child), parse_work(args.parent)
     ctext, ptext, out, n_anchor = align(child, parent, number=args.number, zone=args.zone,
                                         exclude=parse_work(args.exclude) if args.exclude else None)
