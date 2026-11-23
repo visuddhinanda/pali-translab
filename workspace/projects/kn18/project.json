@@ -3,11 +3,11 @@
  "name": "kn18",
  "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
  "created": "2026-11-23 07:18:43",
- "updated": "2026-11-23 07:18:43",
+ "updated": "2026-11-23 17:10:22",
  "book": 152,
  "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
  "method": "default",
- "state": "idle",
+ "state": "done",
  "command": null,
  "steps": [
   "translate",
@@ -6698,10 +6698,10 @@
    "sents": 20,
    "title": "Milindapañhapāḷi … 1. Bāhirakathā",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:55:27",
+   "ended": "2026-11-23 14:57:13",
    "note": "",
    "detail": ""
   },
@@ -6717,10 +6717,10 @@
    "sents": 17,
    "title": "Pubbayogādi（20-27）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:55:37",
+   "ended": "2026-11-23 14:57:13",
    "note": "",
    "detail": ""
   },
@@ -6736,10 +6736,10 @@
    "sents": 33,
    "title": "Pubbayogādi（28-39）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:55:47",
+   "ended": "2026-11-23 14:57:13",
    "note": "",
    "detail": ""
   },
@@ -6755,10 +6755,10 @@
    "sents": 35,
    "title": "Pubbayogādi（40-50）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:55:57",
+   "ended": "2026-11-23 14:57:59",
    "note": "",
    "detail": ""
   },
@@ -6774,10 +6774,10 @@
    "sents": 30,
    "title": "Pubbayogādi（51-58）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:56:07",
+   "ended": "2026-11-23 14:57:59",
    "note": "",
    "detail": ""
   },
@@ -6793,10 +6793,10 @@
    "sents": 30,
    "title": "Pubbayogādi（59-68）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:56:17",
+   "ended": "2026-11-23 14:57:59",
    "note": "",
    "detail": ""
   },
@@ -6812,10 +6812,10 @@
    "sents": 38,
    "title": "Pubbayogādi（69-77）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:56:27",
+   "ended": "2026-11-23 14:57:59",
    "note": "",
    "detail": ""
   },
@@ -6831,10 +6831,10 @@
    "sents": 29,
    "title": "Pubbayogādi（78-93）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:56:37",
+   "ended": "2026-11-23 14:59:05",
    "note": "",
    "detail": ""
   },
@@ -6850,10 +6850,10 @@
    "sents": 30,
    "title": "Pubbayogādi（94-108）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:56:47",
+   "ended": "2026-11-23 14:57:59",
    "note": "",
    "detail": ""
   },
@@ -6869,10 +6869,10 @@
    "sents": 3,
    "title": "2-3. Milindapañho … 1. Mahāvaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:56:57",
+   "ended": "2026-11-23 14:57:13",
    "note": "",
    "detail": ""
   },
@@ -6888,10 +6888,10 @@
    "sents": 60,
    "title": "1. Paññattipañho（111-115）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:57:13",
+   "ended": "2026-11-23 14:59:05",
    "note": "",
    "detail": ""
   },
@@ -6907,10 +6907,10 @@
    "sents": 6,
    "title": "1. Paññattipañho（116-120）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:57:23",
+   "ended": "2026-11-23 14:57:59",
    "note": "",
    "detail": ""
   },
@@ -6926,10 +6926,10 @@
    "sents": 26,
    "title": "2. Vassagaṇanapañho … 3. Vīmaṃsanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:57:33",
+   "ended": "2026-11-23 14:59:05",
    "note": "",
    "detail": ""
   },
@@ -6945,10 +6945,10 @@
    "sents": 49,
    "title": "4. Anantakāyapañho … 5. Pabbajjapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:57:43",
+   "ended": "2026-11-23 14:59:05",
    "note": "",
    "detail": ""
   },
@@ -6964,10 +6964,10 @@
    "sents": 51,
    "title": "6. Paṭisandhipañho … 9. Sīlalakkhaṇapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:57:59",
+   "ended": "2026-11-23 15:00:01",
    "note": "",
    "detail": ""
   },
@@ -6983,10 +6983,10 @@
    "sents": 43,
    "title": "10. Sampasādanalakkhaṇasaddhāpañho … 12. Vīriyalakkhaṇapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:58:09",
+   "ended": "2026-11-23 14:59:05",
    "note": "",
    "detail": ""
   },
@@ -7002,10 +7002,10 @@
    "sents": 61,
    "title": "13. Satilakkhaṇapañho … 15. Paññālakkhaṇapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:58:19",
+   "ended": "2026-11-23 15:00:01",
    "note": "",
    "detail": ""
   },
@@ -7021,10 +7021,10 @@
    "sents": 53,
    "title": "16. Nānādhammānaṃ ekakiccaabhinipphādanapañho … 2. Paṭisandahanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:58:29",
+   "ended": "2026-11-23 15:00:01",
    "note": "",
    "detail": ""
   },
@@ -7040,10 +7040,10 @@
    "sents": 47,
    "title": "3. Ñāṇapaññāpañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:58:39",
+   "ended": "2026-11-23 15:00:01",
    "note": "",
    "detail": ""
   },
@@ -7059,10 +7059,10 @@
    "sents": 37,
    "title": "4. Paṭisandahanapuggalavediyanapañho … 5. Vedanāpañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:58:49",
+   "ended": "2026-11-23 15:00:01",
    "note": "",
    "detail": ""
   },
@@ -7078,10 +7078,10 @@
    "sents": 50,
    "title": "6. Nāmarūpaekattanānattapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:59:05",
+   "ended": "2026-11-23 15:00:57",
    "note": "",
    "detail": ""
   },
@@ -7097,10 +7097,10 @@
    "sents": 68,
    "title": "7. Therapaṭisandahanāpaṭisandahanapañho … 2. Purimakoṭipañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:59:15",
+   "ended": "2026-11-23 15:00:57",
    "note": "",
    "detail": ""
   },
@@ -7116,10 +7116,10 @@
    "sents": 24,
    "title": "3. Koṭipaññāyanapañho … 4. Saṅkhārajāyamānapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:59:25",
+   "ended": "2026-11-23 15:00:57",
    "note": "",
    "detail": ""
   },
@@ -7135,10 +7135,10 @@
    "sents": 39,
    "title": "5. Bhavantasaṅkhārajāyamānapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:59:35",
+   "ended": "2026-11-23 15:00:57",
    "note": "",
    "detail": ""
   },
@@ -7154,10 +7154,10 @@
    "sents": 33,
    "title": "6. Vedagūpañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 14:59:45",
+   "ended": "2026-11-23 15:00:57",
    "note": "",
    "detail": ""
   },
@@ -7173,10 +7173,10 @@
    "sents": 40,
    "title": "7. Cakkhuviññāṇādipañho（318-330）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:00:01",
+   "ended": "2026-11-23 15:02:03",
    "note": "",
    "detail": ""
   },
@@ -7192,10 +7192,10 @@
    "sents": 5,
    "title": "7. Cakkhuviññāṇādipañho（331-334）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:00:11",
+   "ended": "2026-11-23 15:00:57",
    "note": "",
    "detail": ""
   },
@@ -7211,10 +7211,10 @@
    "sents": 70,
    "title": "8. Phassalakkhaṇapañho … 13. Vitakkalakkhaṇapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:00:21",
+   "ended": "2026-11-23 15:02:03",
    "note": "",
    "detail": ""
   },
@@ -7230,10 +7230,10 @@
    "sents": 54,
    "title": "14. Vicāralakkhaṇapañho … 4. Kammanānākaraṇapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:00:31",
+   "ended": "2026-11-23 15:02:29",
    "note": "",
    "detail": ""
   },
@@ -7249,10 +7249,10 @@
    "sents": 68,
    "title": "5. Vāyāmakaraṇapañho … 7. Pathavisandhārakapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:00:41",
+   "ended": "2026-11-23 15:02:29",
    "note": "",
    "detail": ""
   },
@@ -7268,10 +7268,10 @@
    "sents": 80,
    "title": "8. Nirodhanibbānapañho … 5. Asaṅkamanapaṭisandahanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:00:57",
+   "ended": "2026-11-23 15:03:05",
    "note": "",
    "detail": ""
   },
@@ -7287,10 +7287,10 @@
    "sents": 70,
    "title": "6. Vedagūpañho … 1. Kāyapiyāyanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:01:07",
+   "ended": "2026-11-23 15:03:05",
    "note": "",
    "detail": ""
   },
@@ -7306,10 +7306,10 @@
    "sents": 73,
    "title": "2. Sabbaññūbhāvapañho … 8. Paññāpatiṭṭhānapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:01:17",
+   "ended": "2026-11-23 15:03:05",
    "note": "",
    "detail": ""
   },
@@ -7325,10 +7325,10 @@
    "sents": 28,
    "title": "9. Saṃsārapañho … 7. Arūpadhammavavattanavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:01:27",
+   "ended": "2026-11-23 15:02:29",
    "note": "",
    "detail": ""
   },
@@ -7344,10 +7344,10 @@
    "sents": 51,
    "title": "1. Satiuppajjanapañho … 2. Buddhaguṇasatipaṭilābhapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:01:38",
+   "ended": "2026-11-23 15:03:05",
    "note": "",
    "detail": ""
   },
@@ -7363,10 +7363,10 @@
    "sents": 53,
    "title": "3. Dukkhappahānavāyamapañho … 4. Brahmalokapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:01:48",
+   "ended": "2026-11-23 15:03:05",
    "note": "",
    "detail": ""
   },
@@ -7382,10 +7382,10 @@
    "sents": 71,
    "title": "5. Dvinnaṃ lokuppannānaṃ samakabhāvapañho … 10. Dīghaṭṭhipañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:02:03",
+   "ended": "2026-11-23 15:04:01",
    "note": "",
    "detail": ""
   },
@@ -7401,10 +7401,10 @@
    "sents": 53,
    "title": "11. Assāsapassāsanirodhapañho … 16. Arūpadhammavavatthānadukkarapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:02:13",
+   "ended": "2026-11-23 15:04:01",
    "note": "",
    "detail": ""
   },
@@ -7420,10 +7420,10 @@
    "sents": 27,
    "title": "Milindapañhapucchāvisajjanā … Meṇḍakapañhārambhakathā",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:02:29",
+   "ended": "2026-11-23 15:04:01",
    "note": "",
    "detail": ""
   },
@@ -7439,10 +7439,10 @@
    "sents": 41,
    "title": "Aṭṭhamantaparivajjanīyaṭṭhānāni … Aṭṭhamantavināsakapuggalā",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:02:39",
+   "ended": "2026-11-23 15:04:01",
    "note": "",
    "detail": ""
   },
@@ -7458,10 +7458,10 @@
    "sents": 36,
    "title": "Navaguyhamantavidhaṃsakaṃ … 1. Iddhibalavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:02:49",
+   "ended": "2026-11-23 15:04:47",
    "note": "",
    "detail": ""
   },
@@ -7477,10 +7477,10 @@
    "sents": 26,
    "title": "1. Katādhikārasaphalapañho（685-694）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:03:05",
+   "ended": "2026-11-23 15:04:47",
    "note": "",
    "detail": ""
   },
@@ -7496,10 +7496,10 @@
    "sents": 30,
    "title": "1. Katādhikārasaphalapañho（695-700）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:03:15",
+   "ended": "2026-11-23 15:04:47",
    "note": "",
    "detail": ""
   },
@@ -7515,10 +7515,10 @@
    "sents": 30,
    "title": "1. Katādhikārasaphalapañho（701-704）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:03:25",
+   "ended": "2026-11-23 15:04:47",
    "note": "",
    "detail": ""
   },
@@ -7534,10 +7534,10 @@
    "sents": 52,
    "title": "2. Sabbaññubhāvapañho（705-711）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:03:35",
+   "ended": "2026-11-23 15:05:33",
    "note": "",
    "detail": ""
   },
@@ -7553,10 +7553,10 @@
    "sents": 33,
    "title": "2. Sabbaññubhāvapañho（712-720）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:03:46",
+   "ended": "2026-11-23 15:05:33",
    "note": "",
    "detail": ""
   },
@@ -7572,10 +7572,10 @@
    "sents": 21,
    "title": "3. Devadattapabbajjapañho（721-727）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:04:01",
+   "ended": "2026-11-23 15:05:33",
    "note": "",
    "detail": ""
   },
@@ -7591,10 +7591,10 @@
    "sents": 34,
    "title": "3. Devadattapabbajjapañho（728-735）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:04:11",
+   "ended": "2026-11-23 15:05:33",
    "note": "",
    "detail": ""
   },
@@ -7610,10 +7610,10 @@
    "sents": 41,
    "title": "4. Pathavicalanapañho（736-744）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:04:22",
+   "ended": "2026-11-23 15:06:29",
    "note": "",
    "detail": ""
   },
@@ -7629,10 +7629,10 @@
    "sents": 14,
    "title": "4. Pathavicalanapañho（745-749）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:04:32",
+   "ended": "2026-11-23 15:06:30",
    "note": "",
    "detail": ""
   },
@@ -7648,10 +7648,10 @@
    "sents": 3,
    "title": "4. Pathavicalanapañho（750-751）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:04:47",
+   "ended": "2026-11-23 15:05:34",
    "note": "",
    "detail": ""
   },
@@ -7667,10 +7667,10 @@
    "sents": 32,
    "title": "5. Sivirājacakkhudānapañho（752-762）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:04:58",
+   "ended": "2026-11-23 15:06:30",
    "note": "",
    "detail": ""
   },
@@ -7686,10 +7686,10 @@
    "sents": 14,
    "title": "5. Sivirājacakkhudānapañho（763-765）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:05:08",
+   "ended": "2026-11-23 15:06:30",
    "note": "",
    "detail": ""
   },
@@ -7705,10 +7705,10 @@
    "sents": 32,
    "title": "6. Gabbhāvakkantipañho（766-770）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:05:18",
+   "ended": "2026-11-23 15:07:16",
    "note": "",
    "detail": ""
   },
@@ -7724,10 +7724,10 @@
    "sents": 26,
    "title": "6. Gabbhāvakkantipañho（771-776）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:05:34",
+   "ended": "2026-11-23 15:07:16",
    "note": "",
    "detail": ""
   },
@@ -7743,10 +7743,10 @@
    "sents": 35,
    "title": "6. Gabbhāvakkantipañho（777-783）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:05:44",
+   "ended": "2026-11-23 15:07:16",
    "note": "",
    "detail": ""
   },
@@ -7762,10 +7762,10 @@
    "sents": 32,
    "title": "7. Saddhammantaradhānapañho（784-790）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:05:54",
+   "ended": "2026-11-23 15:07:16",
    "note": "",
    "detail": ""
   },
@@ -7781,10 +7781,10 @@
    "sents": 10,
    "title": "7. Saddhammantaradhānapañho（791-794）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:06:04",
+   "ended": "2026-11-23 15:07:16",
    "note": "",
    "detail": ""
   },
@@ -7800,10 +7800,10 @@
    "sents": 39,
    "title": "8. Akusalacchedanapañho（795-804）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:06:14",
+   "ended": "2026-11-23 15:08:22",
    "note": "",
    "detail": ""
   },
@@ -7819,10 +7819,10 @@
    "sents": 21,
    "title": "8. Akusalacchedanapañho（805-810）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:06:30",
+   "ended": "2026-11-23 15:07:16",
    "note": "",
    "detail": ""
   },
@@ -7838,10 +7838,10 @@
    "sents": 25,
    "title": "9. Uttarikaraṇīyapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:06:40",
+   "ended": "2026-11-23 15:08:22",
    "note": "",
    "detail": ""
   },
@@ -7857,10 +7857,10 @@
    "sents": 22,
    "title": "10. Iddhibaladassanapañho … 2. Abhejjavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:06:50",
+   "ended": "2026-11-23 15:08:22",
    "note": "",
    "detail": ""
   },
@@ -7876,10 +7876,10 @@
    "sents": 18,
    "title": "1. Khuddānukhuddakapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:07:00",
+   "ended": "2026-11-23 15:08:22",
    "note": "",
    "detail": ""
   },
@@ -7895,10 +7895,10 @@
    "sents": 34,
    "title": "2. Abyākaraṇīyapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:07:16",
+   "ended": "2026-11-23 15:08:22",
    "note": "",
    "detail": ""
   },
@@ -7914,10 +7914,10 @@
    "sents": 39,
    "title": "3. Maccubhāyanābhāyanapañho（841-849）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:07:26",
+   "ended": "2026-11-23 15:09:18",
    "note": "",
    "detail": ""
   },
@@ -7933,10 +7933,10 @@
    "sents": 28,
    "title": "3. Maccubhāyanābhāyanapañho（850-855）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:07:36",
+   "ended": "2026-11-23 15:09:18",
    "note": "",
    "detail": ""
   },
@@ -7952,10 +7952,10 @@
    "sents": 49,
    "title": "4. Maccupāsamuttipañho（856-870）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:07:46",
+   "ended": "2026-11-23 15:09:18",
    "note": "",
    "detail": ""
   },
@@ -7971,10 +7971,10 @@
    "sents": 10,
    "title": "4. Maccupāsamuttipañho（871-872）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:07:56",
+   "ended": "2026-11-23 15:09:18",
    "note": "",
    "detail": ""
   },
@@ -7990,10 +7990,10 @@
    "sents": 29,
    "title": "5. Buddhalābhantarāyapañho（873-882）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:08:06",
+   "ended": "2026-11-23 15:09:18",
    "note": "",
    "detail": ""
   },
@@ -8009,10 +8009,10 @@
    "sents": 20,
    "title": "5. Buddhalābhantarāyapañho（883-886）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:08:22",
+   "ended": "2026-11-23 15:09:18",
    "note": "",
    "detail": ""
   },
@@ -8028,10 +8028,10 @@
    "sents": 32,
    "title": "6. Apuññapañho … 7. Bhikkhusaṅghapariharaṇapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:08:32",
+   "ended": "2026-11-23 15:10:24",
    "note": "",
    "detail": ""
   },
@@ -8047,10 +8047,10 @@
    "sents": 18,
    "title": "8. Abhejjaparisapañho … 3. Paṇāmitavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:08:42",
+   "ended": "2026-11-23 15:10:24",
    "note": "",
    "detail": ""
   },
@@ -8066,10 +8066,10 @@
    "sents": 28,
    "title": "1. Seṭṭhadhammapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:08:52",
+   "ended": "2026-11-23 15:10:24",
    "note": "",
    "detail": ""
   },
@@ -8085,10 +8085,10 @@
    "sents": 27,
    "title": "2. Sabbasattahitapharaṇapañho（919-928）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:09:02",
+   "ended": "2026-11-23 15:10:24",
    "note": "",
    "detail": ""
   },
@@ -8104,10 +8104,10 @@
    "sents": 10,
    "title": "2. Sabbasattahitapharaṇapañho（929-930）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:09:18",
+   "ended": "2026-11-23 15:10:24",
    "note": "",
    "detail": ""
   },
@@ -8123,10 +8123,10 @@
    "sents": 40,
    "title": "3. Vatthaguyhanidassanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:09:28",
+   "ended": "2026-11-23 15:11:20",
    "note": "",
    "detail": ""
   },
@@ -8142,10 +8142,10 @@
    "sents": 25,
    "title": "4. Pharusavācābhāvapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:09:38",
+   "ended": "2026-11-23 15:11:20",
    "note": "",
    "detail": ""
   },
@@ -8161,10 +8161,10 @@
    "sents": 18,
    "title": "5. Rukkhaacetanābhāvapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:09:48",
+   "ended": "2026-11-23 15:11:20",
    "note": "",
    "detail": ""
   },
@@ -8180,10 +8180,10 @@
    "sents": 38,
    "title": "6. Piṇḍapātamahapphalapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:09:58",
+   "ended": "2026-11-23 15:11:20",
    "note": "",
    "detail": ""
   },
@@ -8199,10 +8199,10 @@
    "sents": 15,
    "title": "7. Buddhapūjanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:10:08",
+   "ended": "2026-11-23 15:11:20",
    "note": "",
    "detail": ""
   },
@@ -8218,10 +8218,10 @@
    "sents": 26,
    "title": "8. Pādasakalikāhatapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:10:24",
+   "ended": "2026-11-23 15:12:16",
    "note": "",
    "detail": ""
   },
@@ -8237,10 +8237,10 @@
    "sents": 33,
    "title": "9. Aggaggasamaṇapañho … 10. Vaṇṇabhaṇanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:10:34",
+   "ended": "2026-11-23 15:12:16",
    "note": "",
    "detail": ""
   },
@@ -8256,10 +8256,10 @@
    "sents": 49,
    "title": "11. Ahiṃsāniggahapañho … 4. Sabbaññutañāṇavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:10:44",
+   "ended": "2026-11-23 15:12:16",
    "note": "",
    "detail": ""
   },
@@ -8275,10 +8275,10 @@
    "sents": 23,
    "title": "1. Iddhikammavipākapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:10:54",
+   "ended": "2026-11-23 15:12:16",
    "note": "",
    "detail": ""
   },
@@ -8294,10 +8294,10 @@
    "sents": 28,
    "title": "2. Dhammavinayapaṭicchannāpaṭicchannapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:11:04",
+   "ended": "2026-11-23 15:12:16",
    "note": "",
    "detail": ""
   },
@@ -8313,10 +8313,10 @@
    "sents": 35,
    "title": "3. Musāvādagarulahubhāvapañho … 4. Bodhisattadhammatāpañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:11:20",
+   "ended": "2026-11-23 15:12:16",
    "note": "",
    "detail": ""
   },
@@ -8332,10 +8332,10 @@
    "sents": 20,
    "title": "5. Attanipātanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:11:30",
+   "ended": "2026-11-23 15:13:22",
    "note": "",
    "detail": ""
   },
@@ -8351,10 +8351,10 @@
    "sents": 35,
    "title": "6. Mettābhāvanānisaṃsapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:11:40",
+   "ended": "2026-11-23 15:13:22",
    "note": "",
    "detail": ""
   },
@@ -8370,10 +8370,10 @@
    "sents": 29,
    "title": "7. Kusalākusalasamavisamapañho（1075-1098）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:11:50",
+   "ended": "2026-11-23 15:13:22",
    "note": "",
    "detail": ""
   },
@@ -8389,10 +8389,10 @@
    "sents": 18,
    "title": "7. Kusalākusalasamavisamapañho（1099-1104）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:12:00",
+   "ended": "2026-11-23 15:13:22",
    "note": "",
    "detail": ""
   },
@@ -8408,10 +8408,10 @@
    "sents": 28,
    "title": "8. Amarādevīpañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:12:16",
+   "ended": "2026-11-23 15:13:22",
    "note": "",
    "detail": ""
   },
@@ -8427,10 +8427,10 @@
    "sents": 25,
    "title": "9. Arahantaabhāyanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:12:26",
+   "ended": "2026-11-23 15:14:18",
    "note": "",
    "detail": ""
   },
@@ -8446,10 +8446,10 @@
    "sents": 42,
    "title": "10. Buddhasabbaññubhāvapañho … 1. Santhavapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:12:36",
+   "ended": "2026-11-23 15:14:18",
    "note": "",
    "detail": ""
   },
@@ -8465,10 +8465,10 @@
    "sents": 19,
    "title": "2. Udarasaṃyatapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:12:46",
+   "ended": "2026-11-23 15:14:18",
    "note": "",
    "detail": ""
   },
@@ -8484,10 +8484,10 @@
    "sents": 18,
    "title": "3. Buddhaappābādhapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:12:56",
+   "ended": "2026-11-23 15:14:18",
    "note": "",
    "detail": ""
   },
@@ -8503,10 +8503,10 @@
    "sents": 17,
    "title": "4. Magguppādanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:13:06",
+   "ended": "2026-11-23 15:14:19",
    "note": "",
    "detail": ""
   },
@@ -8522,10 +8522,10 @@
    "sents": 26,
    "title": "5. Buddhaaviheṭhakapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:13:22",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8541,10 +8541,10 @@
    "sents": 16,
    "title": "6. Chaddantajotipālārabbhapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:13:33",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8560,10 +8560,10 @@
    "sents": 19,
    "title": "7. Ghaṭikārapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:13:43",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8579,10 +8579,10 @@
    "sents": 27,
    "title": "8. Brāhmaṇarājavādapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:13:53",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8598,10 +8598,10 @@
    "sents": 39,
    "title": "9. Gāthābhigītabhojanakathāpañho（1214-1230）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:14:03",
+   "ended": "2026-11-23 15:16:31",
    "note": "",
    "detail": ""
   },
@@ -8617,10 +8617,10 @@
    "sents": 14,
    "title": "9. Gāthābhigītabhojanakathāpañho（1231-1236）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:14:19",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8636,10 +8636,10 @@
    "sents": 19,
    "title": "10. Dhammadesanāya appossukkapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:14:29",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8655,10 +8655,10 @@
    "sents": 32,
    "title": "11. Ācariyānācariyapañho … 1. Buddhavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:14:39",
+   "ended": "2026-11-23 15:16:31",
    "note": "",
    "detail": ""
   },
@@ -8674,10 +8674,10 @@
    "sents": 39,
    "title": "1. Dvinnaṃ buddhānaṃ anuppajjamānapañho（1266-1274）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:14:49",
+   "ended": "2026-11-23 15:16:31",
    "note": "",
    "detail": ""
   },
@@ -8693,10 +8693,10 @@
    "sents": 4,
    "title": "1. Dvinnaṃ buddhānaṃ anuppajjamānapañho（1275-1276）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:14:59",
+   "ended": "2026-11-23 15:15:15",
    "note": "",
    "detail": ""
   },
@@ -8712,10 +8712,10 @@
    "sents": 35,
    "title": "2. Gotamivatthadānapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:15:15",
+   "ended": "2026-11-23 15:17:27",
    "note": "",
    "detail": ""
   },
@@ -8731,10 +8731,10 @@
    "sents": 19,
    "title": "3. Gihipabbajitasammāpaṭipattipañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:15:25",
+   "ended": "2026-11-23 15:16:31",
    "note": "",
    "detail": ""
   },
@@ -8750,10 +8750,10 @@
    "sents": 22,
    "title": "4. Paṭipadādosapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:15:35",
+   "ended": "2026-11-23 15:16:31",
    "note": "",
    "detail": ""
   },
@@ -8769,10 +8769,10 @@
    "sents": 25,
    "title": "5. Hīnāyāvattanapañho（1313-1319）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:15:45",
+   "ended": "2026-11-23 15:17:27",
    "note": "",
    "detail": ""
   },
@@ -8788,10 +8788,10 @@
    "sents": 55,
    "title": "5. Hīnāyāvattanapañho（1320-1328）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:15:55",
+   "ended": "2026-11-23 15:18:13",
    "note": "",
    "detail": ""
   },
@@ -8807,10 +8807,10 @@
    "sents": 11,
    "title": "5. Hīnāyāvattanapañho（1329-1332）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:16:05",
+   "ended": "2026-11-23 15:17:27",
    "note": "",
    "detail": ""
   },
@@ -8826,10 +8826,10 @@
    "sents": 27,
    "title": "6. Arahantavedanāvediyanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:16:15",
+   "ended": "2026-11-23 15:17:27",
    "note": "",
    "detail": ""
   },
@@ -8845,10 +8845,10 @@
    "sents": 38,
    "title": "7. Abhisamayantarāyakarapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:16:31",
+   "ended": "2026-11-23 15:18:13",
    "note": "",
    "detail": ""
   },
@@ -8864,10 +8864,10 @@
    "sents": 24,
    "title": "8. Dussīlapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:16:41",
+   "ended": "2026-11-23 15:18:13",
    "note": "",
    "detail": ""
   },
@@ -8883,10 +8883,10 @@
    "sents": 34,
    "title": "9. Udakasattajīvapañho（1365-1372）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:16:51",
+   "ended": "2026-11-23 15:19:09",
    "note": "",
    "detail": ""
   },
@@ -8902,10 +8902,10 @@
    "sents": 14,
    "title": "9. Udakasattajīvapañho（1373-1377）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:17:01",
+   "ended": "2026-11-23 15:18:13",
    "note": "",
    "detail": ""
   },
@@ -8921,10 +8921,10 @@
    "sents": 30,
    "title": "2. Nippapañcavaggo … 1. Nippapañcapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:17:11",
+   "ended": "2026-11-23 15:18:13",
    "note": "",
    "detail": ""
   },
@@ -8940,10 +8940,10 @@
    "sents": 48,
    "title": "2. Khīṇāsavabhāvapañho … 3. Khīṇāsavasatisammosapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:17:27",
+   "ended": "2026-11-23 15:19:09",
    "note": "",
    "detail": ""
   },
@@ -8959,10 +8959,10 @@
    "sents": 8,
    "title": "4. Loke natthibhāvapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:17:37",
+   "ended": "2026-11-23 15:19:09",
    "note": "",
    "detail": ""
   },
@@ -8978,10 +8978,10 @@
    "sents": 48,
    "title": "5. Akammajādipañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:17:47",
+   "ended": "2026-11-23 15:19:09",
    "note": "",
    "detail": ""
   },
@@ -8997,10 +8997,10 @@
    "sents": 36,
    "title": "6. Kammajādipañho … 9. Sūriyatapanapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:17:57",
+   "ended": "2026-11-23 15:19:09",
    "note": "",
    "detail": ""
   },
@@ -9016,10 +9016,10 @@
    "sents": 10,
    "title": "10. Kaṭhinatapanapañho … 3. Vessantaravaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:18:13",
+   "ended": "2026-11-23 15:19:09",
    "note": "",
    "detail": ""
   },
@@ -9035,10 +9035,10 @@
    "sents": 28,
    "title": "1. Vessantarapañho（1438-1449）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:18:23",
+   "ended": "2026-11-23 15:20:15",
    "note": "",
    "detail": ""
   },
@@ -9054,10 +9054,10 @@
    "sents": 20,
    "title": "1. Vessantarapañho（1450-1454）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:18:33",
+   "ended": "2026-11-23 15:20:15",
    "note": "",
    "detail": ""
   },
@@ -9073,10 +9073,10 @@
    "sents": 36,
    "title": "1. Vessantarapañho（1455-1466）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:18:43",
+   "ended": "2026-11-23 15:20:15",
    "note": "",
    "detail": ""
   },
@@ -9092,10 +9092,10 @@
    "sents": 21,
    "title": "1. Vessantarapañho（1467-1475）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:18:53",
+   "ended": "2026-11-23 15:20:15",
    "note": "",
    "detail": ""
   },
@@ -9111,10 +9111,10 @@
    "sents": 33,
    "title": "2. Dukkarakārikapañho（1476-1488）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:19:09",
+   "ended": "2026-11-23 15:21:01",
    "note": "",
    "detail": ""
   },
@@ -9130,10 +9130,10 @@
    "sents": 23,
    "title": "2. Dukkarakārikapañho（1489-1495）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:19:19",
+   "ended": "2026-11-23 15:21:01",
    "note": "",
    "detail": ""
   },
@@ -9149,10 +9149,10 @@
    "sents": 32,
    "title": "3. Kusalākusalabalavatarapañho（1496-1502）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:19:29",
+   "ended": "2026-11-23 15:21:01",
    "note": "",
    "detail": ""
   },
@@ -9168,10 +9168,10 @@
    "sents": 14,
    "title": "3. Kusalākusalabalavatarapañho（1503-1505）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:19:39",
+   "ended": "2026-11-23 15:21:01",
    "note": "",
    "detail": ""
   },
@@ -9187,10 +9187,10 @@
    "sents": 47,
    "title": "4. Pubbapetādisapañho（1506-1515）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:19:49",
+   "ended": "2026-11-23 15:22:07",
    "note": "",
    "detail": ""
   },
@@ -9206,10 +9206,10 @@
    "sents": 9,
    "title": "4. Pubbapetādisapañho（1516-1518）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:19:59",
+   "ended": "2026-11-23 15:21:01",
    "note": "",
    "detail": ""
   },
@@ -9225,10 +9225,10 @@
    "sents": 28,
    "title": "5. Supinapañho（1519-1527）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:20:15",
+   "ended": "2026-11-23 15:22:07",
    "note": "",
    "detail": ""
   },
@@ -9244,10 +9244,10 @@
    "sents": 13,
    "title": "5. Supinapañho（1528-1529）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:20:25",
+   "ended": "2026-11-23 15:21:01",
    "note": "",
    "detail": ""
   },
@@ -9263,10 +9263,10 @@
    "sents": 32,
    "title": "6. Akālamaraṇapañho（1530-1546）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:20:35",
+   "ended": "2026-11-23 15:22:07",
    "note": "",
    "detail": ""
   },
@@ -9282,10 +9282,10 @@
    "sents": 40,
    "title": "6. Akālamaraṇapañho（1547-1556）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:20:45",
+   "ended": "2026-11-23 15:22:53",
    "note": "",
    "detail": ""
   },
@@ -9301,10 +9301,10 @@
    "sents": 28,
    "title": "6. Akālamaraṇapañho（1557-1562）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:21:01",
+   "ended": "2026-11-23 15:22:53",
    "note": "",
    "detail": ""
   },
@@ -9320,10 +9320,10 @@
    "sents": 13,
    "title": "7. Cetiyapāṭihāriyapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:21:11",
+   "ended": "2026-11-23 15:22:08",
    "note": "",
    "detail": ""
   },
@@ -9339,10 +9339,10 @@
    "sents": 37,
    "title": "8. Dhammābhisamayapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:21:21",
+   "ended": "2026-11-23 15:22:54",
    "note": "",
    "detail": ""
   },
@@ -9358,10 +9358,10 @@
    "sents": 35,
    "title": "9. Ekantasukhanibbānapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:21:32",
+   "ended": "2026-11-23 15:23:39",
    "note": "",
    "detail": ""
   },
@@ -9377,10 +9377,10 @@
    "sents": 35,
    "title": "10. Nibbānarūpasaṇṭhānapañho（1585-1593）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:21:42",
+   "ended": "2026-11-23 15:23:40",
    "note": "",
    "detail": ""
   },
@@ -9396,10 +9396,10 @@
    "sents": 42,
    "title": "10. Nibbānarūpasaṇṭhānapañho（1594-1598）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:21:52",
+   "ended": "2026-11-23 15:23:40",
    "note": "",
    "detail": ""
   },
@@ -9415,10 +9415,10 @@
    "sents": 30,
    "title": "10. Nibbānarūpasaṇṭhānapañho（1599-1602）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:22:08",
+   "ended": "2026-11-23 15:23:40",
    "note": "",
    "detail": ""
   },
@@ -9434,10 +9434,10 @@
    "sents": 34,
    "title": "11. Nibbānasacchikaraṇapañho（1603-1613）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:22:18",
+   "ended": "2026-11-23 15:24:36",
    "note": "",
    "detail": ""
   },
@@ -9453,10 +9453,10 @@
    "sents": 4,
    "title": "11. Nibbānasacchikaraṇapañho（1614-1616）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:22:28",
+   "ended": "2026-11-23 15:22:54",
    "note": "",
    "detail": ""
   },
@@ -9472,10 +9472,10 @@
    "sents": 23,
    "title": "12. Nibbānasannihitapañho … 4. Anumānavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:22:38",
+   "ended": "2026-11-23 15:23:40",
    "note": "",
    "detail": ""
   },
@@ -9491,10 +9491,10 @@
    "sents": 30,
    "title": "1. Anumānapañho（1629-1636）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:22:54",
+   "ended": "2026-11-23 15:25:02",
    "note": "",
    "detail": ""
   },
@@ -9510,10 +9510,10 @@
    "sents": 37,
    "title": "1. Anumānapañho（1637-1653）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:23:04",
+   "ended": "2026-11-23 15:24:36",
    "note": "",
    "detail": ""
   },
@@ -9529,10 +9529,10 @@
    "sents": 46,
    "title": "1. Anumānapañho（1654-1673）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:23:14",
+   "ended": "2026-11-23 15:25:27",
    "note": "",
    "detail": ""
   },
@@ -9548,10 +9548,10 @@
    "sents": 30,
    "title": "1. Anumānapañho（1674-1691）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:23:24",
+   "ended": "2026-11-23 15:25:02",
    "note": "",
    "detail": ""
   },
@@ -9567,10 +9567,10 @@
    "sents": 38,
    "title": "1. Anumānapañho（1692-1728）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:23:40",
+   "ended": "2026-11-23 15:25:27",
    "note": "",
    "detail": ""
   },
@@ -9586,10 +9586,10 @@
    "sents": 47,
    "title": "1. Anumānapañho（1729-1774）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:23:50",
+   "ended": "2026-11-23 15:26:03",
    "note": "",
    "detail": ""
   },
@@ -9605,10 +9605,10 @@
    "sents": 21,
    "title": "2. Dhutaṅgapañho（1775-1788）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:24:00",
+   "ended": "2026-11-23 15:25:27",
    "note": "",
    "detail": ""
   },
@@ -9624,10 +9624,10 @@
    "sents": 25,
    "title": "2. Dhutaṅgapañho（1789-1797）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:24:10",
+   "ended": "2026-11-23 15:26:03",
    "note": "",
    "detail": ""
   },
@@ -9643,10 +9643,10 @@
    "sents": 28,
    "title": "2. Dhutaṅgapañho（1798-1799）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:24:20",
+   "ended": "2026-11-23 15:26:03",
    "note": "",
    "detail": ""
   },
@@ -9662,10 +9662,10 @@
    "sents": 8,
    "title": "2. Dhutaṅgapañho（1800-1803）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:24:36",
+   "ended": "2026-11-23 15:26:49",
    "note": "",
    "detail": ""
   },
@@ -9681,10 +9681,10 @@
    "sents": 16,
    "title": "2. Dhutaṅgapañho（1804-1812）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:24:46",
+   "ended": "2026-11-23 15:26:49",
    "note": "",
    "detail": ""
   },
@@ -9700,10 +9700,10 @@
    "sents": 7,
    "title": "2. Dhutaṅgapañho（1813-1817）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:25:02",
+   "ended": "2026-11-23 15:26:03",
    "note": "",
    "detail": ""
   },
@@ -9719,10 +9719,10 @@
    "sents": 80,
    "title": "6. Opammakathāpañho（1818-1897）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:25:12",
+   "ended": "2026-11-23 15:26:49",
    "note": "",
    "detail": ""
   },
@@ -9738,10 +9738,10 @@
    "sents": 37,
    "title": "6. Opammakathāpañho（1898-1934）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:25:28",
+   "ended": "2026-11-23 15:26:50",
    "note": "",
    "detail": ""
   },
@@ -9757,10 +9757,10 @@
    "sents": 49,
    "title": "1. Gadrabhavaggo … 3. Kalandakaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:25:38",
+   "ended": "2026-11-23 15:27:35",
    "note": "",
    "detail": ""
   },
@@ -9776,10 +9776,10 @@
    "sents": 46,
    "title": "4. Dīpiniyaṅgapañho … 6. Kummaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:25:48",
+   "ended": "2026-11-23 15:27:35",
    "note": "",
    "detail": ""
   },
@@ -9795,10 +9795,10 @@
    "sents": 52,
    "title": "7. Vaṃsaṅgapañho … 1. Lābulataṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:26:04",
+   "ended": "2026-11-23 15:27:36",
    "note": "",
    "detail": ""
   },
@@ -9814,10 +9814,10 @@
    "sents": 48,
    "title": "2. Padumaṅgapañho … 5. Nāvaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:26:14",
+   "ended": "2026-11-23 15:27:36",
    "note": "",
    "detail": ""
   },
@@ -9833,10 +9833,10 @@
    "sents": 35,
    "title": "6. Nāvālagganakaṅgapañho … 9. Kammakāraṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:26:24",
+   "ended": "2026-11-23 15:28:21",
    "note": "",
    "detail": ""
   },
@@ -9852,10 +9852,10 @@
    "sents": 46,
    "title": "10. Samuddaṅgapañho … 1. Pathavīaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:26:34",
+   "ended": "2026-11-23 15:28:22",
    "note": "",
    "detail": ""
   },
@@ -9871,10 +9871,10 @@
    "sents": 49,
    "title": "2. Āpaṅgapañho … 4. Vāyuṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:26:50",
+   "ended": "2026-11-23 15:28:22",
    "note": "",
    "detail": ""
   },
@@ -9890,10 +9890,10 @@
    "sents": 48,
    "title": "5. Pabbataṅgapañho … 6. Ākāsaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:27:00",
+   "ended": "2026-11-23 15:28:22",
    "note": "",
    "detail": ""
   },
@@ -9909,10 +9909,10 @@
    "sents": 48,
    "title": "7. Candaṅgapañho … 9. Sakkaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:27:10",
+   "ended": "2026-11-23 15:29:08",
    "note": "",
    "detail": ""
   },
@@ -9928,10 +9928,10 @@
    "sents": 56,
    "title": "10. Cakkavattiṅgapañho … 4. Vicchikaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:27:20",
+   "ended": "2026-11-23 15:29:08",
    "note": "",
    "detail": ""
   },
@@ -9947,10 +9947,10 @@
    "sents": 57,
    "title": "5. Nakulaṅgapañho … 8. Gorūpaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:27:36",
+   "ended": "2026-11-23 15:29:44",
    "note": "",
    "detail": ""
   },
@@ -9966,10 +9966,10 @@
    "sents": 33,
    "title": "9. Varāhaṅgapañho … 5. Sīhavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:27:46",
+   "ended": "2026-11-23 15:29:08",
    "note": "",
    "detail": ""
   },
@@ -9985,10 +9985,10 @@
    "sents": 41,
    "title": "1. Sīhaṅgapañho … 3. Peṇāhikaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:27:56",
+   "ended": "2026-11-23 15:29:44",
    "note": "",
    "detail": ""
   },
@@ -10004,10 +10004,10 @@
    "sents": 45,
    "title": "4. Gharakapotaṅgapañho … 8. Jalūkaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:28:06",
+   "ended": "2026-11-23 15:29:44",
    "note": "",
    "detail": ""
   },
@@ -10023,10 +10023,10 @@
    "sents": 53,
    "title": "9. Sappaṅgapañho … 3. Cittakadharakummaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:28:22",
+   "ended": "2026-11-23 15:30:40",
    "note": "",
    "detail": ""
   },
@@ -10042,10 +10042,10 @@
    "sents": 44,
    "title": "4. Pavanaṅgapañho … 6. Meghaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:28:32",
+   "ended": "2026-11-23 15:30:40",
    "note": "",
    "detail": ""
   },
@@ -10061,10 +10061,10 @@
    "sents": 55,
    "title": "7. Maṇiratanaṅgapañho … 7. Kumbhavaggo",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:28:42",
+   "ended": "2026-11-23 15:30:40",
    "note": "",
    "detail": ""
   },
@@ -10080,10 +10080,10 @@
    "sents": 55,
    "title": "1. Kumbhaṅgapañho … 5. Agadaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:28:52",
+   "ended": "2026-11-23 15:30:40",
    "note": "",
    "detail": ""
   },
@@ -10099,10 +10099,10 @@
    "sents": 12,
    "title": "6. Bhojanaṅgapañho",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:29:08",
+   "ended": "2026-11-23 15:29:44",
    "note": "",
    "detail": ""
   },
@@ -10118,10 +10118,10 @@
    "sents": 41,
    "title": "7. Issāsaṅgapañho（2461-2491）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:29:18",
+   "ended": "2026-11-23 15:31:26",
    "note": "",
    "detail": ""
   },
@@ -10137,10 +10137,10 @@
    "sents": 2,
    "title": "7. Issāsaṅgapañho（2492-2493）",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:29:28",
+   "ended": "2026-11-23 15:29:44",
    "note": "",
    "detail": ""
   },
@@ -10158,10 +10158,10 @@
    "needs": [
     "M1:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:29:44",
+   "ended": "2026-11-23 15:32:02",
    "note": "",
    "detail": ""
   },
@@ -10179,10 +10179,10 @@
    "needs": [
     "M2:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:29:54",
+   "ended": "2026-11-23 15:32:58",
    "note": "",
    "detail": ""
   },
@@ -10200,10 +10200,10 @@
    "needs": [
     "M3:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:30:04",
+   "ended": "2026-11-23 15:32:58",
    "note": "",
    "detail": ""
   },
@@ -10221,10 +10221,10 @@
    "needs": [
     "M4:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:30:14",
+   "ended": "2026-11-23 15:32:58",
    "note": "",
    "detail": ""
   },
@@ -10242,10 +10242,10 @@
    "needs": [
     "M5:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:30:24",
+   "ended": "2026-11-23 15:32:02",
    "note": "",
    "detail": ""
   },
@@ -10263,10 +10263,10 @@
    "needs": [
     "M6:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:30:40",
+   "ended": "2026-11-23 15:31:26",
    "note": "",
    "detail": ""
   },
@@ -10284,10 +10284,10 @@
    "needs": [
     "M7:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:30:50",
+   "ended": "2026-11-23 15:31:26",
    "note": "",
    "detail": ""
   },
@@ -10305,10 +10305,10 @@
    "needs": [
     "M8:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:31:00",
+   "ended": "2026-11-23 15:32:02",
    "note": "",
    "detail": ""
   },
@@ -10326,10 +10326,10 @@
    "needs": [
     "M9:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:31:10",
+   "ended": "2026-11-23 15:32:02",
    "note": "",
    "detail": ""
   },
@@ -10347,10 +10347,10 @@
    "needs": [
     "M10:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:31:26",
+   "ended": "2026-11-23 15:32:02",
    "note": "",
    "detail": ""
   },
@@ -10368,10 +10368,10 @@
    "needs": [
     "M11:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:31:36",
+   "ended": "2026-11-23 15:33:44",
    "note": "",
    "detail": ""
   },
@@ -10389,10 +10389,10 @@
    "needs": [
     "M12:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:31:46",
+   "ended": "2026-11-23 15:32:58",
    "note": "",
    "detail": ""
   },
@@ -10410,10 +10410,10 @@
    "needs": [
     "M13:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:32:02",
+   "ended": "2026-11-23 15:33:44",
    "note": "",
    "detail": ""
   },
@@ -10431,10 +10431,10 @@
    "needs": [
     "M14:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:32:12",
+   "ended": "2026-11-23 15:34:25",
    "note": "",
    "detail": ""
   },
@@ -10452,10 +10452,10 @@
    "needs": [
     "M15:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:32:22",
+   "ended": "2026-11-23 15:35:31",
    "note": "",
    "detail": ""
   },
@@ -10473,10 +10473,10 @@
    "needs": [
     "M16:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:32:32",
+   "ended": "2026-11-23 15:34:10",
    "note": "",
    "detail": ""
   },
@@ -10494,10 +10494,10 @@
    "needs": [
     "M17:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:32:42",
+   "ended": "2026-11-23 15:35:05",
    "note": "",
    "detail": ""
   },
@@ -10515,10 +10515,10 @@
    "needs": [
     "M18:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:32:58",
+   "ended": "2026-11-23 15:34:50",
    "note": "",
    "detail": ""
   },
@@ -10536,10 +10536,10 @@
    "needs": [
     "M19:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:33:08",
+   "ended": "2026-11-23 15:35:05",
    "note": "",
    "detail": ""
   },
@@ -10557,10 +10557,10 @@
    "needs": [
     "M20:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:33:18",
+   "ended": "2026-11-23 15:35:31",
    "note": "",
    "detail": ""
   },
@@ -10578,10 +10578,10 @@
    "needs": [
     "M21:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:33:28",
+   "ended": "2026-11-23 15:35:31",
    "note": "",
    "detail": ""
   },
@@ -10599,10 +10599,10 @@
    "needs": [
     "M22:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:33:44",
+   "ended": "2026-11-23 15:36:27",
    "note": "",
    "detail": ""
   },
@@ -10620,10 +10620,10 @@
    "needs": [
     "M23:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:33:54",
+   "ended": "2026-11-23 15:35:31",
    "note": "",
    "detail": ""
   },
@@ -10641,10 +10641,10 @@
    "needs": [
     "M24:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:34:10",
+   "ended": "2026-11-23 15:36:27",
    "note": "",
    "detail": ""
   },
@@ -10662,10 +10662,10 @@
    "needs": [
     "M25:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:34:25",
+   "ended": "2026-11-23 15:36:27",
    "note": "",
    "detail": ""
   },
@@ -10683,10 +10683,10 @@
    "needs": [
     "M26:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:34:50",
+   "ended": "2026-11-23 15:36:27",
    "note": "",
    "detail": ""
   },
@@ -10704,10 +10704,10 @@
    "needs": [
     "M27:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:35:05",
+   "ended": "2026-11-23 15:35:31",
    "note": "",
    "detail": ""
   },
@@ -10725,10 +10725,10 @@
    "needs": [
     "M28:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:35:15",
+   "ended": "2026-11-23 15:37:44",
    "note": "",
    "detail": ""
   },
@@ -10746,10 +10746,10 @@
    "needs": [
     "M29:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:35:31",
+   "ended": "2026-11-23 15:38:35",
    "note": "",
    "detail": ""
   },
@@ -10767,10 +10767,10 @@
    "needs": [
     "M30:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:35:41",
+   "ended": "2026-11-23 15:38:09",
    "note": "",
    "detail": ""
   },
@@ -10788,10 +10788,10 @@
    "needs": [
     "M31:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:35:51",
+   "ended": "2026-11-23 15:38:35",
    "note": "",
    "detail": ""
   },
@@ -10809,10 +10809,10 @@
    "needs": [
     "M32:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:36:01",
+   "ended": "2026-11-23 15:39:21",
    "note": "",
    "detail": ""
   },
@@ -10830,10 +10830,10 @@
    "needs": [
     "M33:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:36:12",
+   "ended": "2026-11-23 15:38:35",
    "note": "",
    "detail": ""
   },
@@ -10851,10 +10851,10 @@
    "needs": [
     "M34:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:36:27",
+   "ended": "2026-11-23 15:38:09",
    "note": "",
    "detail": ""
   },
@@ -10872,10 +10872,10 @@
    "needs": [
     "M35:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:36:38",
+   "ended": "2026-11-23 15:39:21",
    "note": "",
    "detail": ""
   },
@@ -10893,10 +10893,10 @@
    "needs": [
     "M36:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:36:48",
+   "ended": "2026-11-23 15:38:35",
    "note": "",
    "detail": ""
   },
@@ -10914,10 +10914,10 @@
    "needs": [
     "M37:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:36:58",
+   "ended": "2026-11-23 15:39:21",
    "note": "",
    "detail": ""
   },
@@ -10935,10 +10935,10 @@
    "needs": [
     "M38:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:37:44",
+   "ended": "2026-11-23 15:39:57",
    "note": "",
    "detail": ""
   },
@@ -10956,10 +10956,10 @@
    "needs": [
     "M39:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:38:09",
+   "ended": "2026-11-23 15:39:57",
    "note": "",
    "detail": ""
   },
@@ -10977,10 +10977,10 @@
    "needs": [
     "M40:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:38:19",
+   "ended": "2026-11-23 15:41:34",
    "note": "",
    "detail": ""
   },
@@ -10998,10 +10998,10 @@
    "needs": [
     "M41:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:38:35",
+   "ended": "2026-11-23 15:40:58",
    "note": "",
    "detail": ""
   },
@@ -11019,10 +11019,10 @@
    "needs": [
     "M42:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:38:45",
+   "ended": "2026-11-23 15:40:42",
    "note": "",
    "detail": ""
   },
@@ -11040,10 +11040,10 @@
    "needs": [
     "M43:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:38:55",
+   "ended": "2026-11-23 15:40:58",
    "note": "",
    "detail": ""
   },
@@ -11061,10 +11061,10 @@
    "needs": [
     "M44:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:39:05",
+   "ended": "2026-11-23 15:40:22",
    "note": "",
    "detail": ""
   },
@@ -11082,10 +11082,10 @@
    "needs": [
     "M45:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:39:21",
+   "ended": "2026-11-23 15:40:58",
    "note": "",
    "detail": ""
   },
@@ -11103,10 +11103,10 @@
    "needs": [
     "M46:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:39:31",
+   "ended": "2026-11-23 15:41:34",
    "note": "",
    "detail": ""
   },
@@ -11124,10 +11124,10 @@
    "needs": [
     "M47:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:39:41",
+   "ended": "2026-11-23 15:42:10",
    "note": "",
    "detail": ""
   },
@@ -11145,10 +11145,10 @@
    "needs": [
     "M48:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:39:57",
+   "ended": "2026-11-23 15:41:34",
    "note": "",
    "detail": ""
   },
@@ -11166,10 +11166,10 @@
    "needs": [
     "M49:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:40:07",
+   "ended": "2026-11-23 15:42:36",
    "note": "",
    "detail": ""
   },
@@ -11187,10 +11187,10 @@
    "needs": [
     "M50:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:40:22",
+   "ended": "2026-11-23 15:42:36",
    "note": "",
    "detail": ""
   },
@@ -11208,10 +11208,10 @@
    "needs": [
     "M51:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:40:42",
+   "ended": "2026-11-23 15:42:10",
    "note": "",
    "detail": ""
   },
@@ -11229,10 +11229,10 @@
    "needs": [
     "M52:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:40:58",
+   "ended": "2026-11-23 15:43:12",
    "note": "",
    "detail": ""
   },
@@ -11250,10 +11250,10 @@
    "needs": [
     "M53:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:41:08",
+   "ended": "2026-11-23 15:42:36",
    "note": "",
    "detail": ""
   },
@@ -11271,10 +11271,10 @@
    "needs": [
     "M54:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:41:18",
+   "ended": "2026-11-23 15:43:12",
    "note": "",
    "detail": ""
   },
@@ -11292,10 +11292,10 @@
    "needs": [
     "M55:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:41:34",
+   "ended": "2026-11-23 15:43:38",
    "note": "",
    "detail": ""
   },
@@ -11313,10 +11313,10 @@
    "needs": [
     "M56:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:41:44",
+   "ended": "2026-11-23 15:43:38",
    "note": "",
    "detail": ""
   },
@@ -11334,10 +11334,10 @@
    "needs": [
     "M57:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:41:54",
+   "ended": "2026-11-23 15:44:40",
    "note": "",
    "detail": ""
   },
@@ -11355,10 +11355,10 @@
    "needs": [
     "M58:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:42:10",
+   "ended": "2026-11-23 15:43:38",
    "note": "",
    "detail": ""
   },
@@ -11376,10 +11376,10 @@
    "needs": [
     "M59:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:42:20",
+   "ended": "2026-11-23 15:44:14",
    "note": "",
    "detail": ""
   },
@@ -11397,10 +11397,10 @@
    "needs": [
     "M60:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:42:36",
+   "ended": "2026-11-23 15:44:14",
    "note": "",
    "detail": ""
   },
@@ -11418,10 +11418,10 @@
    "needs": [
     "M61:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:42:46",
+   "ended": "2026-11-23 15:44:40",
    "note": "",
    "detail": ""
   },
@@ -11439,10 +11439,10 @@
    "needs": [
     "M62:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:42:56",
+   "ended": "2026-11-23 15:44:40",
    "note": "",
    "detail": ""
   },
@@ -11460,10 +11460,10 @@
    "needs": [
     "M63:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:43:12",
+   "ended": "2026-11-23 15:44:40",
    "note": "",
    "detail": ""
   },
@@ -11481,10 +11481,10 @@
    "needs": [
     "M64:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:43:22",
+   "ended": "2026-11-23 15:45:26",
    "note": "",
    "detail": ""
   },
@@ -11502,10 +11502,10 @@
    "needs": [
     "M65:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:43:38",
+   "ended": "2026-11-23 15:46:18",
    "note": "",
    "detail": ""
   },
@@ -11523,10 +11523,10 @@
    "needs": [
     "M66:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:43:48",
+   "ended": "2026-11-23 15:45:42",
    "note": "",
    "detail": ""
   },
@@ -11544,10 +11544,10 @@
    "needs": [
     "M67:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:43:58",
+   "ended": "2026-11-23 15:46:18",
    "note": "",
    "detail": ""
   },
@@ -11565,10 +11565,10 @@
    "needs": [
     "M68:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:44:14",
+   "ended": "2026-11-23 15:45:42",
    "note": "",
    "detail": ""
   },
@@ -11586,10 +11586,10 @@
    "needs": [
     "M69:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:44:24",
+   "ended": "2026-11-23 15:46:54",
    "note": "",
    "detail": ""
   },
@@ -11607,10 +11607,10 @@
    "needs": [
     "M70:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:44:40",
+   "ended": "2026-11-23 15:45:42",
    "note": "",
    "detail": ""
   },
@@ -11628,10 +11628,10 @@
    "needs": [
     "M71:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:44:50",
+   "ended": "2026-11-23 15:46:54",
    "note": "",
    "detail": ""
   },
@@ -11649,10 +11649,10 @@
    "needs": [
     "M72:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:45:00",
+   "ended": "2026-11-23 15:46:18",
    "note": "",
    "detail": ""
   },
@@ -11670,10 +11670,10 @@
    "needs": [
     "M73:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:45:10",
+   "ended": "2026-11-23 15:47:30",
    "note": "",
    "detail": ""
   },
@@ -11691,10 +11691,10 @@
    "needs": [
     "M74:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:45:26",
+   "ended": "2026-11-23 15:47:30",
    "note": "",
    "detail": ""
   },
@@ -11712,10 +11712,10 @@
    "needs": [
     "M75:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:45:42",
+   "ended": "2026-11-23 15:46:54",
    "note": "",
    "detail": ""
   },
@@ -11733,10 +11733,10 @@
    "needs": [
     "M76:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:45:52",
+   "ended": "2026-11-23 15:47:56",
    "note": "",
    "detail": ""
   },
@@ -11754,10 +11754,10 @@
    "needs": [
     "M77:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:46:02",
+   "ended": "2026-11-23 15:47:56",
    "note": "",
    "detail": ""
   },
@@ -11775,10 +11775,10 @@
    "needs": [
     "M78:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:46:18",
+   "ended": "2026-11-23 15:47:56",
    "note": "",
    "detail": ""
   },
@@ -11796,10 +11796,10 @@
    "needs": [
     "M79:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:46:28",
+   "ended": "2026-11-23 15:48:32",
    "note": "",
    "detail": ""
   },
@@ -11817,10 +11817,10 @@
    "needs": [
     "M80:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:46:38",
+   "ended": "2026-11-23 15:48:32",
    "note": "",
    "detail": ""
   },
@@ -11838,10 +11838,10 @@
    "needs": [
     "M81:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:46:54",
+   "ended": "2026-11-23 15:48:32",
    "note": "",
    "detail": ""
   },
@@ -11859,10 +11859,10 @@
    "needs": [
     "M82:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:47:04",
+   "ended": "2026-11-23 15:49:08",
    "note": "",
    "detail": ""
   },
@@ -11880,10 +11880,10 @@
    "needs": [
     "M83:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:47:14",
+   "ended": "2026-11-23 15:49:08",
    "note": "",
    "detail": ""
   },
@@ -11901,10 +11901,10 @@
    "needs": [
     "M84:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:47:30",
+   "ended": "2026-11-23 15:49:08",
    "note": "",
    "detail": ""
   },
@@ -11922,10 +11922,10 @@
    "needs": [
     "M85:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:47:40",
+   "ended": "2026-11-23 15:49:44",
    "note": "",
    "detail": ""
   },
@@ -11943,10 +11943,10 @@
    "needs": [
     "M86:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:47:56",
+   "ended": "2026-11-23 15:49:44",
    "note": "",
    "detail": ""
   },
@@ -11964,10 +11964,10 @@
    "needs": [
     "M87:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:48:06",
+   "ended": "2026-11-23 15:50:09",
    "note": "",
    "detail": ""
   },
@@ -11985,10 +11985,10 @@
    "needs": [
     "M88:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:48:16",
+   "ended": "2026-11-23 15:50:10",
    "note": "",
    "detail": ""
   },
@@ -12006,10 +12006,10 @@
    "needs": [
     "M89:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:48:32",
+   "ended": "2026-11-23 15:51:01",
    "note": "",
    "detail": ""
   },
@@ -12027,10 +12027,10 @@
    "needs": [
     "M90:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:48:42",
+   "ended": "2026-11-23 15:50:10",
    "note": "",
    "detail": ""
   },
@@ -12048,10 +12048,10 @@
    "needs": [
     "M91:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:48:52",
+   "ended": "2026-11-23 15:51:01",
    "note": "",
    "detail": ""
   },
@@ -12069,10 +12069,10 @@
    "needs": [
     "M92:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:49:08",
+   "ended": "2026-11-23 15:50:45",
    "note": "",
    "detail": ""
   },
@@ -12090,10 +12090,10 @@
    "needs": [
     "M93:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:49:18",
+   "ended": "2026-11-23 15:51:27",
    "note": "",
    "detail": ""
   },
@@ -12111,10 +12111,10 @@
    "needs": [
     "M94:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:49:28",
+   "ended": "2026-11-23 15:51:28",
    "note": "",
    "detail": ""
   },
@@ -12132,10 +12132,10 @@
    "needs": [
     "M95:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:49:44",
+   "ended": "2026-11-23 15:51:53",
    "note": "",
    "detail": ""
   },
@@ -12153,10 +12153,10 @@
    "needs": [
     "M96:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:49:54",
+   "ended": "2026-11-23 15:51:53",
    "note": "",
    "detail": ""
   },
@@ -12174,10 +12174,10 @@
    "needs": [
     "M97:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:50:10",
+   "ended": "2026-11-23 15:51:53",
    "note": "",
    "detail": ""
   },
@@ -12195,10 +12195,10 @@
    "needs": [
     "M98:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:50:20",
+   "ended": "2026-11-23 15:52:29",
    "note": "",
    "detail": ""
   },
@@ -12216,10 +12216,10 @@
    "needs": [
     "M99:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:50:30",
+   "ended": "2026-11-23 15:52:29",
    "note": "",
    "detail": ""
   },
@@ -12237,10 +12237,10 @@
    "needs": [
     "M100:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:50:46",
+   "ended": "2026-11-23 15:53:41",
    "note": "",
    "detail": ""
   },
@@ -12258,10 +12258,10 @@
    "needs": [
     "M101:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:51:01",
+   "ended": "2026-11-23 15:54:07",
    "note": "",
    "detail": ""
   },
@@ -12279,10 +12279,10 @@
    "needs": [
     "M102:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:51:11",
+   "ended": "2026-11-23 15:52:29",
    "note": "",
    "detail": ""
   },
@@ -12300,10 +12300,10 @@
    "needs": [
     "M103:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:51:28",
+   "ended": "2026-11-23 15:53:41",
    "note": "",
    "detail": ""
   },
@@ -12321,10 +12321,10 @@
    "needs": [
     "M104:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:51:38",
+   "ended": "2026-11-23 15:54:07",
    "note": "",
    "detail": ""
   },
@@ -12342,10 +12342,10 @@
    "needs": [
     "M105:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:51:53",
+   "ended": "2026-11-23 15:54:07",
    "note": "",
    "detail": ""
   },
@@ -12363,10 +12363,10 @@
    "needs": [
     "M106:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:52:04",
+   "ended": "2026-11-23 15:53:05",
    "note": "",
    "detail": ""
   },
@@ -12384,10 +12384,10 @@
    "needs": [
     "M107:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:52:14",
+   "ended": "2026-11-23 15:55:09",
    "note": "",
    "detail": ""
   },
@@ -12405,10 +12405,10 @@
    "needs": [
     "M108:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:52:29",
+   "ended": "2026-11-23 15:54:43",
    "note": "",
    "detail": ""
   },
@@ -12426,10 +12426,10 @@
    "needs": [
     "M109:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:52:39",
+   "ended": "2026-11-23 15:54:43",
    "note": "",
    "detail": ""
   },
@@ -12447,10 +12447,10 @@
    "needs": [
     "M110:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:52:50",
+   "ended": "2026-11-23 15:55:09",
    "note": "",
    "detail": ""
   },
@@ -12468,10 +12468,10 @@
    "needs": [
     "M111:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:53:05",
+   "ended": "2026-11-23 15:55:45",
    "note": "",
    "detail": ""
   },
@@ -12489,10 +12489,10 @@
    "needs": [
     "M112:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:53:41",
+   "ended": "2026-11-23 15:55:09",
    "note": "",
    "detail": ""
   },
@@ -12510,10 +12510,10 @@
    "needs": [
     "M113:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:53:51",
+   "ended": "2026-11-23 15:56:01",
    "note": "",
    "detail": ""
   },
@@ -12531,10 +12531,10 @@
    "needs": [
     "M114:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:54:07",
+   "ended": "2026-11-23 15:56:27",
    "note": "",
    "detail": ""
   },
@@ -12552,10 +12552,10 @@
    "needs": [
     "M115:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:54:17",
+   "ended": "2026-11-23 15:56:27",
    "note": "",
    "detail": ""
   },
@@ -12573,10 +12573,10 @@
    "needs": [
     "M116:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:54:27",
+   "ended": "2026-11-23 15:56:27",
    "note": "",
    "detail": ""
   },
@@ -12594,10 +12594,10 @@
    "needs": [
     "M117:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:54:43",
+   "ended": "2026-11-23 15:56:01",
    "note": "",
    "detail": ""
   },
@@ -12615,10 +12615,10 @@
    "needs": [
     "M118:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:54:53",
+   "ended": "2026-11-23 15:57:13",
    "note": "",
    "detail": ""
   },
@@ -12636,10 +12636,10 @@
    "needs": [
     "M119:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:55:09",
+   "ended": "2026-11-23 15:57:43",
    "note": "",
    "detail": ""
   },
@@ -12657,10 +12657,10 @@
    "needs": [
     "M120:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:55:19",
+   "ended": "2026-11-23 15:56:27",
    "note": "",
    "detail": ""
   },
@@ -12678,10 +12678,10 @@
    "needs": [
     "M121:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:55:29",
+   "ended": "2026-11-23 15:58:09",
    "note": "",
    "detail": ""
   },
@@ -12699,10 +12699,10 @@
    "needs": [
     "M122:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:55:45",
+   "ended": "2026-11-23 15:57:43",
    "note": "",
    "detail": ""
   },
@@ -12720,10 +12720,10 @@
    "needs": [
     "M123:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:56:01",
+   "ended": "2026-11-23 15:57:13",
    "note": "",
    "detail": ""
   },
@@ -12741,10 +12741,10 @@
    "needs": [
     "M124:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:56:11",
+   "ended": "2026-11-23 15:58:39",
    "note": "",
    "detail": ""
   },
@@ -12762,10 +12762,10 @@
    "needs": [
     "M125:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:56:27",
+   "ended": "2026-11-23 15:58:09",
    "note": "",
    "detail": ""
   },
@@ -12783,10 +12783,10 @@
    "needs": [
     "M126:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:56:37",
+   "ended": "2026-11-23 15:58:39",
    "note": "",
    "detail": ""
   },
@@ -12804,10 +12804,10 @@
    "needs": [
     "M127:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:56:47",
+   "ended": "2026-11-23 15:59:05",
    "note": "",
    "detail": ""
   },
@@ -12825,10 +12825,10 @@
    "needs": [
     "M128:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:56:57",
+   "ended": "2026-11-23 15:59:05",
    "note": "",
    "detail": ""
   },
@@ -12846,10 +12846,10 @@
    "needs": [
     "M129:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:57:13",
+   "ended": "2026-11-23 16:00:07",
    "note": "",
    "detail": ""
   },
@@ -12867,10 +12867,10 @@
    "needs": [
     "M130:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:57:23",
+   "ended": "2026-11-23 15:59:41",
    "note": "",
    "detail": ""
   },
@@ -12888,10 +12888,10 @@
    "needs": [
     "M131:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:57:43",
+   "ended": "2026-11-23 15:59:41",
    "note": "",
    "detail": ""
   },
@@ -12909,10 +12909,10 @@
    "needs": [
     "M132:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:57:53",
+   "ended": "2026-11-23 16:00:07",
    "note": "",
    "detail": ""
   },
@@ -12930,10 +12930,10 @@
    "needs": [
     "M133:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:58:09",
+   "ended": "2026-11-23 15:59:05",
    "note": "",
    "detail": ""
   },
@@ -12951,10 +12951,10 @@
    "needs": [
     "M134:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:58:19",
+   "ended": "2026-11-23 16:00:43",
    "note": "",
    "detail": ""
   },
@@ -12972,10 +12972,10 @@
    "needs": [
     "M135:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:58:39",
+   "ended": "2026-11-23 16:00:07",
    "note": "",
    "detail": ""
   },
@@ -12993,10 +12993,10 @@
    "needs": [
     "M136:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:58:49",
+   "ended": "2026-11-23 16:01:19",
    "note": "",
    "detail": ""
   },
@@ -13014,10 +13014,10 @@
    "needs": [
     "M137:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:59:05",
+   "ended": "2026-11-23 16:01:35",
    "note": "",
    "detail": ""
   },
@@ -13035,10 +13035,10 @@
    "needs": [
     "M138:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:59:15",
+   "ended": "2026-11-23 16:00:43",
    "note": "",
    "detail": ""
   },
@@ -13056,10 +13056,10 @@
    "needs": [
     "M139:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:59:25",
+   "ended": "2026-11-23 16:00:43",
    "note": "",
    "detail": ""
   },
@@ -13077,10 +13077,10 @@
    "needs": [
     "M140:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:59:41",
+   "ended": "2026-11-23 16:01:35",
    "note": "",
    "detail": ""
   },
@@ -13098,10 +13098,10 @@
    "needs": [
     "M141:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 15:59:51",
+   "ended": "2026-11-23 16:02:31",
    "note": "",
    "detail": ""
   },
@@ -13119,10 +13119,10 @@
    "needs": [
     "M142:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:00:07",
+   "ended": "2026-11-23 16:01:35",
    "note": "",
    "detail": ""
   },
@@ -13140,10 +13140,10 @@
    "needs": [
     "M143:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:00:17",
+   "ended": "2026-11-23 16:02:31",
    "note": "",
    "detail": ""
   },
@@ -13161,10 +13161,10 @@
    "needs": [
     "M144:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:00:27",
+   "ended": "2026-11-23 16:01:35",
    "note": "",
    "detail": ""
   },
@@ -13182,10 +13182,10 @@
    "needs": [
     "M145:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:00:43",
+   "ended": "2026-11-23 16:03:32",
    "note": "",
    "detail": ""
   },
@@ -13203,10 +13203,10 @@
    "needs": [
     "M146:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:00:53",
+   "ended": "2026-11-23 16:01:35",
    "note": "",
    "detail": ""
   },
@@ -13224,10 +13224,10 @@
    "needs": [
     "M147:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:01:03",
+   "ended": "2026-11-23 16:03:06",
    "note": "",
    "detail": ""
   },
@@ -13245,10 +13245,10 @@
    "needs": [
     "M148:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:01:19",
+   "ended": "2026-11-23 16:03:48",
    "note": "",
    "detail": ""
   },
@@ -13266,10 +13266,10 @@
    "needs": [
     "M149:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:01:35",
+   "ended": "2026-11-23 16:04:29",
    "note": "",
    "detail": ""
   },
@@ -13287,10 +13287,10 @@
    "needs": [
     "M150:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:01:45",
+   "ended": "2026-11-23 16:04:13",
    "note": "",
    "detail": ""
   },
@@ -13308,10 +13308,10 @@
    "needs": [
     "M151:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:01:55",
+   "ended": "2026-11-23 16:04:29",
    "note": "",
    "detail": ""
   },
@@ -13329,10 +13329,10 @@
    "needs": [
     "M152:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:02:05",
+   "ended": "2026-11-23 16:05:41",
    "note": "",
    "detail": ""
   },
@@ -13350,10 +13350,10 @@
    "needs": [
     "M153:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:02:15",
+   "ended": "2026-11-23 16:06:07",
    "note": "",
    "detail": ""
   },
@@ -13371,10 +13371,10 @@
    "needs": [
     "M154:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:02:31",
+   "ended": "2026-11-23 16:05:41",
    "note": "",
    "detail": ""
   },
@@ -13392,10 +13392,10 @@
    "needs": [
     "M155:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:02:41",
+   "ended": "2026-11-23 16:05:05",
    "note": "",
    "detail": ""
   },
@@ -13413,10 +13413,10 @@
    "needs": [
     "M156:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:03:06",
+   "ended": "2026-11-23 16:04:29",
    "note": "",
    "detail": ""
   },
@@ -13434,10 +13434,10 @@
    "needs": [
     "M157:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:03:32",
+   "ended": "2026-11-23 16:06:34",
    "note": "",
    "detail": ""
   },
@@ -13455,10 +13455,10 @@
    "needs": [
     "M158:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:03:48",
+   "ended": "2026-11-23 16:06:07",
    "note": "",
    "detail": ""
   },
@@ -13476,10 +13476,10 @@
    "needs": [
     "M159:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:04:13",
+   "ended": "2026-11-23 16:05:25",
    "note": "",
    "detail": ""
   },
@@ -13497,10 +13497,10 @@
    "needs": [
     "M160:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:04:29",
+   "ended": "2026-11-23 16:07:40",
    "note": "",
    "detail": ""
   },
@@ -13518,10 +13518,10 @@
    "needs": [
     "M161:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:04:39",
+   "ended": "2026-11-23 16:06:50",
    "note": "",
    "detail": ""
   },
@@ -13539,10 +13539,10 @@
    "needs": [
     "M162:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:04:49",
+   "ended": "2026-11-23 16:07:15",
    "note": "",
    "detail": ""
   },
@@ -13560,10 +13560,10 @@
    "needs": [
     "M163:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:05:05",
+   "ended": "2026-11-23 16:08:12",
    "note": "",
    "detail": ""
   },
@@ -13581,10 +13581,10 @@
    "needs": [
     "M164:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:05:25",
+   "ended": "2026-11-23 16:07:56",
    "note": "",
    "detail": ""
   },
@@ -13602,10 +13602,10 @@
    "needs": [
     "M165:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:05:41",
+   "ended": "2026-11-23 16:08:12",
    "note": "",
    "detail": ""
   },
@@ -13623,10 +13623,10 @@
    "needs": [
     "M166:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:05:51",
+   "ended": "2026-11-23 16:08:12",
    "note": "",
    "detail": ""
   },
@@ -13644,10 +13644,10 @@
    "needs": [
     "M167:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:06:08",
+   "ended": "2026-11-23 16:08:48",
    "note": "",
    "detail": ""
   },
@@ -13665,10 +13665,10 @@
    "needs": [
     "M168:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:06:18",
+   "ended": "2026-11-23 16:09:08",
    "note": "",
    "detail": ""
   },
@@ -13686,10 +13686,10 @@
    "needs": [
     "M169:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:06:34",
+   "ended": "2026-11-23 16:09:38",
    "note": "",
    "detail": ""
   },
@@ -13707,10 +13707,10 @@
    "needs": [
     "M170:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:06:50",
+   "ended": "2026-11-23 16:09:23",
    "note": "",
    "detail": ""
   },
@@ -13728,10 +13728,10 @@
    "needs": [
     "M171:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:07:15",
+   "ended": "2026-11-23 16:09:54",
    "note": "",
    "detail": ""
   },
@@ -13749,10 +13749,10 @@
    "needs": [
     "M172:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:07:40",
+   "ended": "2026-11-23 16:10:26",
    "note": "",
    "detail": ""
   },
@@ -13770,10 +13770,10 @@
    "needs": [
     "M173:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:07:56",
+   "ended": "2026-11-23 16:10:10",
    "note": "",
    "detail": ""
   },
@@ -13791,10 +13791,10 @@
    "needs": [
     "M174:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:08:12",
+   "ended": "2026-11-23 16:10:42",
    "note": "",
    "detail": ""
   },
@@ -13812,10 +13812,10 @@
    "needs": [
     "M175:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:08:22",
+   "ended": "2026-11-23 16:11:18",
    "note": "",
    "detail": ""
   },
@@ -13833,10 +13833,10 @@
    "needs": [
     "M176:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:08:32",
+   "ended": "2026-11-23 16:11:18",
    "note": "",
    "detail": ""
   },
@@ -13854,10 +13854,10 @@
    "needs": [
     "M177:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:08:48",
+   "ended": "2026-11-23 16:11:18",
    "note": "",
    "detail": ""
   },
@@ -13875,10 +13875,10 @@
    "needs": [
     "M178:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:09:08",
+   "ended": "2026-11-23 16:12:40",
    "note": "",
    "detail": ""
   },
@@ -13896,10 +13896,10 @@
    "needs": [
     "M179:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:09:23",
+   "ended": "2026-11-23 16:12:40",
    "note": "",
    "detail": ""
   },
@@ -13917,10 +13917,10 @@
    "needs": [
     "M180:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:09:38",
+   "ended": "2026-11-23 16:10:42",
    "note": "",
    "detail": ""
   },
@@ -13938,10 +13938,10 @@
    "needs": [
     "M181:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:09:54",
+   "ended": "2026-11-23 16:14:07",
    "note": "",
    "detail": ""
   },
@@ -13959,10 +13959,10 @@
    "needs": [
     "M182:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:10:10",
+   "ended": "2026-11-23 16:10:42",
    "note": "",
    "detail": ""
   },
@@ -13980,10 +13980,10 @@
    "needs": [
     "M1:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:10:26",
+   "ended": "2026-11-23 16:11:54",
    "note": "",
    "detail": ""
   },
@@ -14001,10 +14001,10 @@
    "needs": [
     "M2:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:10:42",
+   "ended": "2026-11-23 16:11:54",
    "note": "",
    "detail": ""
   },
@@ -14022,10 +14022,10 @@
    "needs": [
     "M3:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:10:52",
+   "ended": "2026-11-23 16:11:54",
    "note": "",
    "detail": ""
   },
@@ -14043,10 +14043,10 @@
    "needs": [
     "M4:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:11:02",
+   "ended": "2026-11-23 16:11:54",
    "note": "",
    "detail": ""
   },
@@ -14064,10 +14064,10 @@
    "needs": [
     "M5:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:11:18",
+   "ended": "2026-11-23 16:12:40",
    "note": "",
    "detail": ""
   },
@@ -14085,10 +14085,10 @@
    "needs": [
     "M6:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:11:28",
+   "ended": "2026-11-23 16:12:40",
    "note": "",
    "detail": ""
   },
@@ -14106,10 +14106,10 @@
    "needs": [
     "M7:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:11:38",
+   "ended": "2026-11-23 16:12:40",
    "note": "",
    "detail": ""
   },
@@ -14127,10 +14127,10 @@
    "needs": [
     "M8:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:11:54",
+   "ended": "2026-11-23 16:12:41",
    "note": "",
    "detail": ""
   },
@@ -14148,10 +14148,10 @@
    "needs": [
     "M9:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:12:04",
+   "ended": "2026-11-23 16:12:41",
    "note": "",
    "detail": ""
   },
@@ -14169,10 +14169,10 @@
    "needs": [
     "M10:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:12:14",
+   "ended": "2026-11-23 16:12:41",
    "note": "",
    "detail": ""
   },
@@ -14190,10 +14190,10 @@
    "needs": [
     "M11:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:12:24",
+   "ended": "2026-11-23 16:14:07",
    "note": "",
    "detail": ""
   },
@@ -14211,10 +14211,10 @@
    "needs": [
     "M12:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:12:41",
+   "ended": "2026-11-23 16:14:07",
    "note": "",
    "detail": ""
   },
@@ -14232,10 +14232,10 @@
    "needs": [
     "M13:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:12:51",
+   "ended": "2026-11-23 16:14:07",
    "note": "",
    "detail": ""
   },
@@ -14253,10 +14253,10 @@
    "needs": [
     "M14:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:13:01",
+   "ended": "2026-11-23 16:14:53",
    "note": "",
    "detail": ""
   },
@@ -14274,10 +14274,10 @@
    "needs": [
     "M15:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:13:11",
+   "ended": "2026-11-23 16:14:53",
    "note": "",
    "detail": ""
   },
@@ -14295,10 +14295,10 @@
    "needs": [
     "M16:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:13:21",
+   "ended": "2026-11-23 16:14:53",
    "note": "",
    "detail": ""
   },
@@ -14316,10 +14316,10 @@
    "needs": [
     "M17:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:13:31",
+   "ended": "2026-11-23 16:14:53",
    "note": "",
    "detail": ""
   },
@@ -14337,10 +14337,10 @@
    "needs": [
     "M18:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:13:41",
+   "ended": "2026-11-23 16:14:53",
    "note": "",
    "detail": ""
   },
@@ -14358,10 +14358,10 @@
    "needs": [
     "M19:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:13:51",
+   "ended": "2026-11-23 16:15:49",
    "note": "",
    "detail": ""
   },
@@ -14379,10 +14379,10 @@
    "needs": [
     "M20:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:14:07",
+   "ended": "2026-11-23 16:15:49",
    "note": "",
    "detail": ""
   },
@@ -14400,10 +14400,10 @@
    "needs": [
     "M21:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:14:17",
+   "ended": "2026-11-23 16:15:49",
    "note": "",
    "detail": ""
   },
@@ -14421,10 +14421,10 @@
    "needs": [
     "M22:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:14:27",
+   "ended": "2026-11-23 16:16:45",
    "note": "",
    "detail": ""
   },
@@ -14442,10 +14442,10 @@
    "needs": [
     "M23:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:14:37",
+   "ended": "2026-11-23 16:15:49",
    "note": "",
    "detail": ""
   },
@@ -14463,10 +14463,10 @@
    "needs": [
     "M24:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:14:53",
+   "ended": "2026-11-23 16:16:45",
    "note": "",
    "detail": ""
   },
@@ -14484,10 +14484,10 @@
    "needs": [
     "M25:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:15:03",
+   "ended": "2026-11-23 16:16:45",
    "note": "",
    "detail": ""
   },
@@ -14505,10 +14505,10 @@
    "needs": [
     "M26:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:15:13",
+   "ended": "2026-11-23 16:16:45",
    "note": "",
    "detail": ""
   },
@@ -14526,10 +14526,10 @@
    "needs": [
     "M27:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:15:23",
+   "ended": "2026-11-23 16:15:49",
    "note": "",
    "detail": ""
   },
@@ -14547,10 +14547,10 @@
    "needs": [
     "M28:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:15:33",
+   "ended": "2026-11-23 16:17:31",
    "note": "",
    "detail": ""
   },
@@ -14568,10 +14568,10 @@
    "needs": [
     "M29:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:15:49",
+   "ended": "2026-11-23 16:17:31",
    "note": "",
    "detail": ""
   },
@@ -14589,10 +14589,10 @@
    "needs": [
     "M30:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:15:59",
+   "ended": "2026-11-23 16:18:08",
    "note": "",
    "detail": ""
   },
@@ -14610,10 +14610,10 @@
    "needs": [
     "M31:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:16:09",
+   "ended": "2026-11-23 16:18:08",
    "note": "",
    "detail": ""
   },
@@ -14631,10 +14631,10 @@
    "needs": [
     "M32:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:16:19",
+   "ended": "2026-11-23 16:18:08",
    "note": "",
    "detail": ""
   },
@@ -14652,10 +14652,10 @@
    "needs": [
     "M33:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:16:29",
+   "ended": "2026-11-23 16:18:08",
    "note": "",
    "detail": ""
   },
@@ -14673,10 +14673,10 @@
    "needs": [
     "M34:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:16:45",
+   "ended": "2026-11-23 16:17:31",
    "note": "",
    "detail": ""
   },
@@ -14694,10 +14694,10 @@
    "needs": [
     "M35:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:16:55",
+   "ended": "2026-11-23 16:19:04",
    "note": "",
    "detail": ""
   },
@@ -14715,10 +14715,10 @@
    "needs": [
     "M36:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:17:05",
+   "ended": "2026-11-23 16:18:08",
    "note": "",
    "detail": ""
   },
@@ -14736,10 +14736,10 @@
    "needs": [
     "M37:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:17:15",
+   "ended": "2026-11-23 16:19:04",
    "note": "",
    "detail": ""
   },
@@ -14757,10 +14757,10 @@
    "needs": [
     "M38:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:17:32",
+   "ended": "2026-11-23 16:19:04",
    "note": "",
    "detail": ""
   },
@@ -14778,10 +14778,10 @@
    "needs": [
     "M39:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:17:42",
+   "ended": "2026-11-23 16:19:04",
    "note": "",
    "detail": ""
   },
@@ -14799,10 +14799,10 @@
    "needs": [
     "M40:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:17:52",
+   "ended": "2026-11-23 16:19:50",
    "note": "",
    "detail": ""
   },
@@ -14820,10 +14820,10 @@
    "needs": [
     "M41:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:18:08",
+   "ended": "2026-11-23 16:19:50",
    "note": "",
    "detail": ""
   },
@@ -14841,10 +14841,10 @@
    "needs": [
     "M42:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:18:18",
+   "ended": "2026-11-23 16:19:50",
    "note": "",
    "detail": ""
   },
@@ -14862,10 +14862,10 @@
    "needs": [
     "M43:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:18:28",
+   "ended": "2026-11-23 16:19:50",
    "note": "",
    "detail": ""
   },
@@ -14883,10 +14883,10 @@
    "needs": [
     "M44:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:18:38",
+   "ended": "2026-11-23 16:19:50",
    "note": "",
    "detail": ""
   },
@@ -14904,10 +14904,10 @@
    "needs": [
     "M45:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:18:48",
+   "ended": "2026-11-23 16:19:50",
    "note": "",
    "detail": ""
   },
@@ -14925,10 +14925,10 @@
    "needs": [
     "M46:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:19:04",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -14946,10 +14946,10 @@
    "needs": [
     "M47:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:19:14",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -14967,10 +14967,10 @@
    "needs": [
     "M48:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:19:24",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -14988,10 +14988,10 @@
    "needs": [
     "M49:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:19:34",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -15009,10 +15009,10 @@
    "needs": [
     "M50:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:19:50",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -15030,10 +15030,10 @@
    "needs": [
     "M51:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:20:00",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -15051,10 +15051,10 @@
    "needs": [
     "M52:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:20:10",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15072,10 +15072,10 @@
    "needs": [
     "M53:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:20:20",
+   "ended": "2026-11-23 16:20:56",
    "note": "",
    "detail": ""
   },
@@ -15093,10 +15093,10 @@
    "needs": [
     "M54:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:20:30",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15114,10 +15114,10 @@
    "needs": [
     "M55:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:20:40",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15135,10 +15135,10 @@
    "needs": [
     "M56:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:20:56",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15156,10 +15156,10 @@
    "needs": [
     "M57:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:21:06",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15177,10 +15177,10 @@
    "needs": [
     "M58:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:21:16",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15198,10 +15198,10 @@
    "needs": [
     "M59:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:21:26",
+   "ended": "2026-11-23 16:23:29",
    "note": "",
    "detail": ""
   },
@@ -15219,10 +15219,10 @@
    "needs": [
     "M60:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:21:36",
+   "ended": "2026-11-23 16:22:12",
    "note": "",
    "detail": ""
   },
@@ -15240,10 +15240,10 @@
    "needs": [
     "M61:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:21:46",
+   "ended": "2026-11-23 16:23:29",
    "note": "",
    "detail": ""
   },
@@ -15261,10 +15261,10 @@
    "needs": [
     "M62:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:21:56",
+   "ended": "2026-11-23 16:23:29",
    "note": "",
    "detail": ""
   },
@@ -15282,10 +15282,10 @@
    "needs": [
     "M63:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:22:13",
+   "ended": "2026-11-23 16:23:29",
    "note": "",
    "detail": ""
   },
@@ -15303,10 +15303,10 @@
    "needs": [
     "M64:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:22:23",
+   "ended": "2026-11-23 16:23:29",
    "note": "",
    "detail": ""
   },
@@ -15324,10 +15324,10 @@
    "needs": [
     "M65:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:22:33",
+   "ended": "2026-11-23 16:24:35",
    "note": "",
    "detail": ""
   },
@@ -15345,10 +15345,10 @@
    "needs": [
     "M66:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:22:43",
+   "ended": "2026-11-23 16:24:35",
    "note": "",
    "detail": ""
   },
@@ -15366,10 +15366,10 @@
    "needs": [
     "M67:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:22:53",
+   "ended": "2026-11-23 16:24:35",
    "note": "",
    "detail": ""
   },
@@ -15387,10 +15387,10 @@
    "needs": [
     "M68:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:23:03",
+   "ended": "2026-11-23 16:23:29",
    "note": "",
    "detail": ""
   },
@@ -15408,10 +15408,10 @@
    "needs": [
     "M69:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:23:13",
+   "ended": "2026-11-23 16:24:35",
    "note": "",
    "detail": ""
   },
@@ -15429,10 +15429,10 @@
    "needs": [
     "M70:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:23:29",
+   "ended": "2026-11-23 16:24:35",
    "note": "",
    "detail": ""
   },
@@ -15450,10 +15450,10 @@
    "needs": [
     "M71:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:23:39",
+   "ended": "2026-11-23 16:25:41",
    "note": "",
    "detail": ""
   },
@@ -15471,10 +15471,10 @@
    "needs": [
     "M72:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:23:49",
+   "ended": "2026-11-23 16:24:35",
    "note": "",
    "detail": ""
   },
@@ -15492,10 +15492,10 @@
    "needs": [
     "M73:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:23:59",
+   "ended": "2026-11-23 16:25:41",
    "note": "",
    "detail": ""
   },
@@ -15513,10 +15513,10 @@
    "needs": [
     "M74:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:24:09",
+   "ended": "2026-11-23 16:26:27",
    "note": "",
    "detail": ""
   },
@@ -15534,10 +15534,10 @@
    "needs": [
     "M75:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:24:19",
+   "ended": "2026-11-23 16:25:41",
    "note": "",
    "detail": ""
   },
@@ -15555,10 +15555,10 @@
    "needs": [
     "M76:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:24:35",
+   "ended": "2026-11-23 16:26:27",
    "note": "",
    "detail": ""
   },
@@ -15576,10 +15576,10 @@
    "needs": [
     "M77:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:24:45",
+   "ended": "2026-11-23 16:26:27",
    "note": "",
    "detail": ""
   },
@@ -15597,10 +15597,10 @@
    "needs": [
     "M78:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:24:55",
+   "ended": "2026-11-23 16:25:41",
    "note": "",
    "detail": ""
   },
@@ -15618,10 +15618,10 @@
    "needs": [
     "M79:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:25:05",
+   "ended": "2026-11-23 16:26:27",
    "note": "",
    "detail": ""
   },
@@ -15639,10 +15639,10 @@
    "needs": [
     "M80:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:25:15",
+   "ended": "2026-11-23 16:26:27",
    "note": "",
    "detail": ""
   },
@@ -15660,10 +15660,10 @@
    "needs": [
     "M81:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:25:25",
+   "ended": "2026-11-23 16:26:27",
    "note": "",
    "detail": ""
   },
@@ -15681,10 +15681,10 @@
    "needs": [
     "M82:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:25:41",
+   "ended": "2026-11-23 16:27:33",
    "note": "",
    "detail": ""
   },
@@ -15702,10 +15702,10 @@
    "needs": [
     "M83:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:25:51",
+   "ended": "2026-11-23 16:27:33",
    "note": "",
    "detail": ""
   },
@@ -15723,10 +15723,10 @@
    "needs": [
     "M84:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:26:01",
+   "ended": "2026-11-23 16:27:33",
    "note": "",
    "detail": ""
   },
@@ -15744,10 +15744,10 @@
    "needs": [
     "M85:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:26:11",
+   "ended": "2026-11-23 16:27:33",
    "note": "",
    "detail": ""
   },
@@ -15765,10 +15765,10 @@
    "needs": [
     "M86:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:26:27",
+   "ended": "2026-11-23 16:27:33",
    "note": "",
    "detail": ""
   },
@@ -15786,10 +15786,10 @@
    "needs": [
     "M87:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:26:37",
+   "ended": "2026-11-23 16:28:29",
    "note": "",
    "detail": ""
   },
@@ -15807,10 +15807,10 @@
    "needs": [
     "M88:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:26:47",
+   "ended": "2026-11-23 16:28:29",
    "note": "",
    "detail": ""
   },
@@ -15828,10 +15828,10 @@
    "needs": [
     "M89:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:26:57",
+   "ended": "2026-11-23 16:28:29",
    "note": "",
    "detail": ""
   },
@@ -15849,10 +15849,10 @@
    "needs": [
     "M90:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:27:07",
+   "ended": "2026-11-23 16:28:30",
    "note": "",
    "detail": ""
   },
@@ -15870,10 +15870,10 @@
    "needs": [
     "M91:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:27:17",
+   "ended": "2026-11-23 16:28:30",
    "note": "",
    "detail": ""
   },
@@ -15891,10 +15891,10 @@
    "needs": [
     "M92:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:27:33",
+   "ended": "2026-11-23 16:28:30",
    "note": "",
    "detail": ""
   },
@@ -15912,10 +15912,10 @@
    "needs": [
     "M93:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:27:43",
+   "ended": "2026-11-23 16:29:36",
    "note": "",
    "detail": ""
   },
@@ -15933,10 +15933,10 @@
    "needs": [
     "M94:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:27:54",
+   "ended": "2026-11-23 16:29:36",
    "note": "",
    "detail": ""
   },
@@ -15954,10 +15954,10 @@
    "needs": [
     "M95:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:28:04",
+   "ended": "2026-11-23 16:29:36",
    "note": "",
    "detail": ""
   },
@@ -15975,10 +15975,10 @@
    "needs": [
     "M96:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:28:14",
+   "ended": "2026-11-23 16:29:36",
    "note": "",
    "detail": ""
   },
@@ -15996,10 +15996,10 @@
    "needs": [
     "M97:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:28:30",
+   "ended": "2026-11-23 16:29:36",
    "note": "",
    "detail": ""
   },
@@ -16017,10 +16017,10 @@
    "needs": [
     "M98:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:28:40",
+   "ended": "2026-11-23 16:30:42",
    "note": "",
    "detail": ""
   },
@@ -16038,10 +16038,10 @@
    "needs": [
     "M99:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:28:50",
+   "ended": "2026-11-23 16:29:36",
    "note": "",
    "detail": ""
   },
@@ -16059,10 +16059,10 @@
    "needs": [
     "M100:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:29:00",
+   "ended": "2026-11-23 16:30:42",
    "note": "",
    "detail": ""
   },
@@ -16080,10 +16080,10 @@
    "needs": [
     "M101:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:29:10",
+   "ended": "2026-11-23 16:30:42",
    "note": "",
    "detail": ""
   },
@@ -16101,10 +16101,10 @@
    "needs": [
     "M102:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:29:20",
+   "ended": "2026-11-23 16:30:42",
    "note": "",
    "detail": ""
   },
@@ -16122,10 +16122,10 @@
    "needs": [
     "M103:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:29:36",
+   "ended": "2026-11-23 16:30:42",
    "note": "",
    "detail": ""
   },
@@ -16143,10 +16143,10 @@
    "needs": [
     "M104:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:29:46",
+   "ended": "2026-11-23 16:31:48",
    "note": "",
    "detail": ""
   },
@@ -16164,10 +16164,10 @@
    "needs": [
     "M105:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:29:56",
+   "ended": "2026-11-23 16:31:48",
    "note": "",
    "detail": ""
   },
@@ -16185,10 +16185,10 @@
    "needs": [
     "M106:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:30:06",
+   "ended": "2026-11-23 16:30:42",
    "note": "",
    "detail": ""
   },
@@ -16206,10 +16206,10 @@
    "needs": [
     "M107:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:30:16",
+   "ended": "2026-11-23 16:31:48",
    "note": "",
    "detail": ""
   },
@@ -16227,10 +16227,10 @@
    "needs": [
     "M108:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:30:26",
+   "ended": "2026-11-23 16:31:49",
    "note": "",
    "detail": ""
   },
@@ -16248,10 +16248,10 @@
    "needs": [
     "M109:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:30:42",
+   "ended": "2026-11-23 16:31:49",
    "note": "",
    "detail": ""
   },
@@ -16269,10 +16269,10 @@
    "needs": [
     "M110:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:30:52",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16290,10 +16290,10 @@
    "needs": [
     "M111:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:31:02",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16311,10 +16311,10 @@
    "needs": [
     "M112:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:31:12",
+   "ended": "2026-11-23 16:31:49",
    "note": "",
    "detail": ""
   },
@@ -16332,10 +16332,10 @@
    "needs": [
     "M113:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:31:22",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16353,10 +16353,10 @@
    "needs": [
     "M114:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:31:32",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16374,10 +16374,10 @@
    "needs": [
     "M115:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:31:49",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16395,10 +16395,10 @@
    "needs": [
     "M116:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:31:59",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16416,10 +16416,10 @@
    "needs": [
     "M117:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:32:09",
+   "ended": "2026-11-23 16:32:55",
    "note": "",
    "detail": ""
   },
@@ -16437,10 +16437,10 @@
    "needs": [
     "M118:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:32:19",
+   "ended": "2026-11-23 16:34:11",
    "note": "",
    "detail": ""
   },
@@ -16458,10 +16458,10 @@
    "needs": [
     "M119:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:32:29",
+   "ended": "2026-11-23 16:34:11",
    "note": "",
    "detail": ""
   },
@@ -16479,10 +16479,10 @@
    "needs": [
     "M120:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:32:39",
+   "ended": "2026-11-23 16:34:11",
    "note": "",
    "detail": ""
   },
@@ -16500,10 +16500,10 @@
    "needs": [
     "M121:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:32:55",
+   "ended": "2026-11-23 16:34:11",
    "note": "",
    "detail": ""
   },
@@ -16521,10 +16521,10 @@
    "needs": [
     "M122:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:33:05",
+   "ended": "2026-11-23 16:35:07",
    "note": "",
    "detail": ""
   },
@@ -16542,10 +16542,10 @@
    "needs": [
     "M123:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:33:15",
+   "ended": "2026-11-23 16:34:11",
    "note": "",
    "detail": ""
   },
@@ -16563,10 +16563,10 @@
    "needs": [
     "M124:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:33:25",
+   "ended": "2026-11-23 16:35:07",
    "note": "",
    "detail": ""
   },
@@ -16584,10 +16584,10 @@
    "needs": [
     "M125:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:33:35",
+   "ended": "2026-11-23 16:35:07",
    "note": "",
    "detail": ""
   },
@@ -16605,10 +16605,10 @@
    "needs": [
     "M126:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:33:45",
+   "ended": "2026-11-23 16:35:07",
    "note": "",
    "detail": ""
   },
@@ -16626,10 +16626,10 @@
    "needs": [
     "M127:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:33:55",
+   "ended": "2026-11-23 16:35:07",
    "note": "",
    "detail": ""
   },
@@ -16647,10 +16647,10 @@
    "needs": [
     "M128:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:34:11",
+   "ended": "2026-11-23 16:35:07",
    "note": "",
    "detail": ""
   },
@@ -16668,10 +16668,10 @@
    "needs": [
     "M129:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:34:21",
+   "ended": "2026-11-23 16:36:13",
    "note": "",
    "detail": ""
   },
@@ -16689,10 +16689,10 @@
    "needs": [
     "M130:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:34:31",
+   "ended": "2026-11-23 16:36:13",
    "note": "",
    "detail": ""
   },
@@ -16710,10 +16710,10 @@
    "needs": [
     "M131:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:34:41",
+   "ended": "2026-11-23 16:36:13",
    "note": "",
    "detail": ""
   },
@@ -16731,10 +16731,10 @@
    "needs": [
     "M132:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:34:51",
+   "ended": "2026-11-23 16:36:13",
    "note": "",
    "detail": ""
   },
@@ -16752,10 +16752,10 @@
    "needs": [
     "M133:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:35:07",
+   "ended": "2026-11-23 16:36:13",
    "note": "",
    "detail": ""
   },
@@ -16773,10 +16773,10 @@
    "needs": [
     "M134:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:35:17",
+   "ended": "2026-11-23 16:37:19",
    "note": "",
    "detail": ""
   },
@@ -16794,10 +16794,10 @@
    "needs": [
     "M135:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:35:27",
+   "ended": "2026-11-23 16:36:13",
    "note": "",
    "detail": ""
   },
@@ -16815,10 +16815,10 @@
    "needs": [
     "M136:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:35:37",
+   "ended": "2026-11-23 16:37:19",
    "note": "",
    "detail": ""
   },
@@ -16836,10 +16836,10 @@
    "needs": [
     "M137:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:35:47",
+   "ended": "2026-11-23 16:37:19",
    "note": "",
    "detail": ""
   },
@@ -16857,10 +16857,10 @@
    "needs": [
     "M138:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:35:57",
+   "ended": "2026-11-23 16:37:19",
    "note": "",
    "detail": ""
   },
@@ -16878,10 +16878,10 @@
    "needs": [
     "M139:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:36:13",
+   "ended": "2026-11-23 16:37:19",
    "note": "",
    "detail": ""
   },
@@ -16899,10 +16899,10 @@
    "needs": [
     "M140:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:36:23",
+   "ended": "2026-11-23 16:38:15",
    "note": "",
    "detail": ""
   },
@@ -16920,10 +16920,10 @@
    "needs": [
     "M141:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:36:33",
+   "ended": "2026-11-23 16:38:16",
    "note": "",
    "detail": ""
   },
@@ -16941,10 +16941,10 @@
    "needs": [
     "M142:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:36:43",
+   "ended": "2026-11-23 16:38:16",
    "note": "",
    "detail": ""
   },
@@ -16962,10 +16962,10 @@
    "needs": [
     "M143:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:36:53",
+   "ended": "2026-11-23 16:38:16",
    "note": "",
    "detail": ""
   },
@@ -16983,10 +16983,10 @@
    "needs": [
     "M144:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:37:04",
+   "ended": "2026-11-23 16:38:16",
    "note": "",
    "detail": ""
   },
@@ -17004,10 +17004,10 @@
    "needs": [
     "M145:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:37:19",
+   "ended": "2026-11-23 16:39:22",
    "note": "",
    "detail": ""
   },
@@ -17025,10 +17025,10 @@
    "needs": [
     "M146:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:37:30",
+   "ended": "2026-11-23 16:38:16",
    "note": "",
    "detail": ""
   },
@@ -17046,10 +17046,10 @@
    "needs": [
     "M147:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:37:40",
+   "ended": "2026-11-23 16:39:22",
    "note": "",
    "detail": ""
   },
@@ -17067,10 +17067,10 @@
    "needs": [
     "M148:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:37:50",
+   "ended": "2026-11-23 16:39:22",
    "note": "",
    "detail": ""
   },
@@ -17088,10 +17088,10 @@
    "needs": [
     "M149:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:38:00",
+   "ended": "2026-11-23 16:39:22",
    "note": "",
    "detail": ""
   },
@@ -17109,10 +17109,10 @@
    "needs": [
     "M150:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:38:16",
+   "ended": "2026-11-23 16:40:08",
    "note": "",
    "detail": ""
   },
@@ -17130,10 +17130,10 @@
    "needs": [
     "M151:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:38:26",
+   "ended": "2026-11-23 16:40:08",
    "note": "",
    "detail": ""
   },
@@ -17151,10 +17151,10 @@
    "needs": [
     "M152:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:38:36",
+   "ended": "2026-11-23 16:40:44",
    "note": "",
    "detail": ""
   },
@@ -17172,10 +17172,10 @@
    "needs": [
     "M153:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:38:46",
+   "ended": "2026-11-23 16:41:40",
    "note": "",
    "detail": ""
   },
@@ -17193,10 +17193,10 @@
    "needs": [
     "M154:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:38:56",
+   "ended": "2026-11-23 16:40:44",
    "note": "",
    "detail": ""
   },
@@ -17214,10 +17214,10 @@
    "needs": [
     "M155:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:39:06",
+   "ended": "2026-11-23 16:40:44",
    "note": "",
    "detail": ""
   },
@@ -17235,10 +17235,10 @@
    "needs": [
     "M156:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:39:22",
+   "ended": "2026-11-23 16:40:08",
    "note": "",
    "detail": ""
   },
@@ -17256,10 +17256,10 @@
    "needs": [
     "M157:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:39:32",
+   "ended": "2026-11-23 16:40:44",
    "note": "",
    "detail": ""
   },
@@ -17277,10 +17277,10 @@
    "needs": [
     "M158:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:39:42",
+   "ended": "2026-11-23 16:41:40",
    "note": "",
    "detail": ""
   },
@@ -17298,10 +17298,10 @@
    "needs": [
     "M159:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:39:52",
+   "ended": "2026-11-23 16:40:44",
    "note": "",
    "detail": ""
   },
@@ -17319,10 +17319,10 @@
    "needs": [
     "M160:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:40:08",
+   "ended": "2026-11-23 16:43:08",
    "note": "",
    "detail": ""
   },
@@ -17340,10 +17340,10 @@
    "needs": [
     "M161:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:40:18",
+   "ended": "2026-11-23 16:42:06",
    "note": "",
    "detail": ""
   },
@@ -17361,10 +17361,10 @@
    "needs": [
     "M162:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:40:28",
+   "ended": "2026-11-23 16:42:06",
    "note": "",
    "detail": ""
   },
@@ -17382,10 +17382,10 @@
    "needs": [
     "M163:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:40:44",
+   "ended": "2026-11-23 16:42:32",
    "note": "",
    "detail": ""
   },
@@ -17403,10 +17403,10 @@
    "needs": [
     "M164:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:40:54",
+   "ended": "2026-11-23 16:43:08",
    "note": "",
    "detail": ""
   },
@@ -17424,10 +17424,10 @@
    "needs": [
     "M165:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:41:04",
+   "ended": "2026-11-23 16:42:32",
    "note": "",
    "detail": ""
   },
@@ -17445,10 +17445,10 @@
    "needs": [
     "M166:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:41:14",
+   "ended": "2026-11-23 16:42:32",
    "note": "",
    "detail": ""
   },
@@ -17466,10 +17466,10 @@
    "needs": [
     "M167:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:41:24",
+   "ended": "2026-11-23 16:43:08",
    "note": "",
    "detail": ""
   },
@@ -17487,10 +17487,10 @@
    "needs": [
     "M168:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:41:40",
+   "ended": "2026-11-23 16:43:44",
    "note": "",
    "detail": ""
   },
@@ -17508,10 +17508,10 @@
    "needs": [
     "M169:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:41:50",
+   "ended": "2026-11-23 16:43:44",
    "note": "",
    "detail": ""
   },
@@ -17529,10 +17529,10 @@
    "needs": [
     "M170:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:42:06",
+   "ended": "2026-11-23 16:43:44",
    "note": "",
    "detail": ""
   },
@@ -17550,10 +17550,10 @@
    "needs": [
     "M171:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:42:16",
+   "ended": "2026-11-23 16:44:20",
    "note": "",
    "detail": ""
   },
@@ -17571,10 +17571,10 @@
    "needs": [
     "M172:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:42:32",
+   "ended": "2026-11-23 16:44:20",
    "note": "",
    "detail": ""
   },
@@ -17592,10 +17592,10 @@
    "needs": [
     "M173:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:42:42",
+   "ended": "2026-11-23 16:44:20",
    "note": "",
    "detail": ""
   },
@@ -17613,10 +17613,10 @@
    "needs": [
     "M174:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:42:52",
+   "ended": "2026-11-23 16:44:20",
    "note": "",
    "detail": ""
   },
@@ -17634,10 +17634,10 @@
    "needs": [
     "M175:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:43:08",
+   "ended": "2026-11-23 16:45:06",
    "note": "",
    "detail": ""
   },
@@ -17655,10 +17655,10 @@
    "needs": [
     "M176:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:43:18",
+   "ended": "2026-11-23 16:45:07",
    "note": "",
    "detail": ""
   },
@@ -17676,10 +17676,10 @@
    "needs": [
     "M177:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:43:28",
+   "ended": "2026-11-23 16:45:07",
    "note": "",
    "detail": ""
   },
@@ -17697,10 +17697,10 @@
    "needs": [
     "M178:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:43:44",
+   "ended": "2026-11-23 16:46:03",
    "note": "",
    "detail": ""
   },
@@ -17718,10 +17718,10 @@
    "needs": [
     "M179:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:43:54",
+   "ended": "2026-11-23 16:46:03",
    "note": "",
    "detail": ""
   },
@@ -17739,10 +17739,10 @@
    "needs": [
     "M180:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:44:04",
+   "ended": "2026-11-23 16:45:07",
    "note": "",
    "detail": ""
   },
@@ -17760,10 +17760,10 @@
    "needs": [
     "M181:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:44:20",
+   "ended": "2026-11-23 16:46:03",
    "note": "",
    "detail": ""
   },
@@ -17781,10 +17781,10 @@
    "needs": [
     "M182:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:44:31",
+   "ended": "2026-11-23 16:45:07",
    "note": "",
    "detail": ""
   },
@@ -17800,10 +17800,10 @@
    "sents": 18,
    "title": "Milidaṭīkā … ",
    "needs": [],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:44:41",
+   "ended": "2026-11-23 16:46:03",
    "note": "",
    "detail": ""
   },
@@ -17821,10 +17821,10 @@
    "needs": [
     "M1:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:44:51",
+   "ended": "2026-11-23 16:47:35",
    "note": "",
    "detail": ""
   },
@@ -17845,10 +17845,10 @@
     "M6:revise",
     "M8:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:45:07",
+   "ended": "2026-11-23 16:47:19",
    "note": "",
    "detail": ""
   },
@@ -17869,10 +17869,10 @@
     "M15:revise",
     "M8:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:45:17",
+   "ended": "2026-11-23 16:47:35",
    "note": "",
    "detail": ""
   },
@@ -17895,10 +17895,10 @@
     "M19:revise",
     "M20:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:45:27",
+   "ended": "2026-11-23 16:48:01",
    "note": "",
    "detail": ""
   },
@@ -17922,10 +17922,10 @@
     "M29:revise",
     "M30:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:45:37",
+   "ended": "2026-11-23 16:48:27",
    "note": "",
    "detail": ""
   },
@@ -17945,10 +17945,10 @@
     "M31:revise",
     "M32:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:45:47",
+   "ended": "2026-11-23 16:48:01",
    "note": "",
    "detail": ""
   },
@@ -17969,10 +17969,10 @@
     "M40:revise",
     "M41:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:46:03",
+   "ended": "2026-11-23 16:48:27",
    "note": "",
    "detail": ""
   },
@@ -17995,10 +17995,10 @@
     "M46:revise",
     "M48:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:46:13",
+   "ended": "2026-11-23 16:48:53",
    "note": "",
    "detail": ""
   },
@@ -18023,10 +18023,10 @@
     "M61:revise",
     "M62:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:46:23",
+   "ended": "2026-11-23 16:48:53",
    "note": "",
    "detail": ""
   },
@@ -18051,10 +18051,10 @@
     "M72:revise",
     "M73:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:46:33",
+   "ended": "2026-11-23 16:49:28",
    "note": "",
    "detail": ""
   },
@@ -18079,10 +18079,10 @@
     "M84:revise",
     "M85:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:47:19",
+   "ended": "2026-11-23 16:50:20",
    "note": "",
    "detail": ""
   },
@@ -18110,10 +18110,10 @@
     "M96:revise",
     "M97:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:47:35",
+   "ended": "2026-11-23 16:49:54",
    "note": "",
    "detail": ""
   },
@@ -18137,10 +18137,10 @@
     "M122:revise",
     "M135:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:47:45",
+   "ended": "2026-11-23 16:50:20",
    "note": "",
    "detail": ""
   },
@@ -18161,10 +18161,10 @@
     "M149:revise",
     "M150:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:48:01",
+   "ended": "2026-11-23 16:50:20",
    "note": "",
    "detail": ""
   },
@@ -18182,10 +18182,10 @@
    "needs": [
     "M150:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:48:11",
+   "ended": "2026-11-23 16:49:54",
    "note": "",
    "detail": ""
   },
@@ -18203,10 +18203,10 @@
    "needs": [
     "M150:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:48:27",
+   "ended": "2026-11-23 16:50:20",
    "note": "",
    "detail": ""
   },
@@ -18224,10 +18224,10 @@
    "needs": [
     "M150:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:48:37",
+   "ended": "2026-11-23 16:50:20",
    "note": "",
    "detail": ""
   },
@@ -18245,10 +18245,10 @@
    "needs": [
     "M150:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:48:53",
+   "ended": "2026-11-23 16:51:16",
    "note": "",
    "detail": ""
   },
@@ -18266,10 +18266,10 @@
    "needs": [
     "M150:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:49:03",
+   "ended": "2026-11-23 16:51:16",
    "note": "",
    "detail": ""
   },
@@ -18290,10 +18290,10 @@
     "M152:revise",
     "M153:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:49:28",
+   "ended": "2026-11-23 16:51:16",
    "note": "",
    "detail": ""
   },
@@ -18312,10 +18312,10 @@
     "M153:revise",
     "M154:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:49:54",
+   "ended": "2026-11-23 16:51:16",
    "note": "",
    "detail": ""
   },
@@ -18333,10 +18333,10 @@
    "needs": [
     "M154:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:50:04",
+   "ended": "2026-11-23 16:52:12",
    "note": "",
    "detail": ""
   },
@@ -18354,10 +18354,10 @@
    "needs": [
     "M154:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:50:20",
+   "ended": "2026-11-23 16:51:16",
    "note": "",
    "detail": ""
   },
@@ -18375,10 +18375,10 @@
    "needs": [
     "M154:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:50:30",
+   "ended": "2026-11-23 16:52:59",
    "note": "",
    "detail": ""
   },
@@ -18397,10 +18397,10 @@
     "M154:revise",
     "M157:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:50:40",
+   "ended": "2026-11-23 16:52:12",
    "note": "",
    "detail": ""
   },
@@ -18418,10 +18418,10 @@
    "needs": [
     "M157:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:50:50",
+   "ended": "2026-11-23 16:53:45",
    "note": "",
    "detail": ""
   },
@@ -18439,10 +18439,10 @@
    "needs": [
     "M157:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 16:51:00",
+   "ended": "2026-11-23 16:52:12",
    "note": "",
    "detail": ""
   },
@@ -18460,10 +18460,10 @@
    "needs": [
     "T1:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:51:16",
+   "ended": "2026-11-23 16:52:12",
    "note": "",
    "detail": ""
   },
@@ -18481,10 +18481,10 @@
    "needs": [
     "T2:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:51:26",
+   "ended": "2026-11-23 16:52:59",
    "note": "",
    "detail": ""
   },
@@ -18502,10 +18502,10 @@
    "needs": [
     "T3:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:51:36",
+   "ended": "2026-11-23 16:52:59",
    "note": "",
    "detail": ""
   },
@@ -18523,10 +18523,10 @@
    "needs": [
     "T4:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:51:47",
+   "ended": "2026-11-23 16:52:59",
    "note": "",
    "detail": ""
   },
@@ -18544,10 +18544,10 @@
    "needs": [
     "T5:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:51:57",
+   "ended": "2026-11-23 16:53:45",
    "note": "",
    "detail": ""
   },
@@ -18565,10 +18565,10 @@
    "needs": [
     "T6:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:52:13",
+   "ended": "2026-11-23 16:53:45",
    "note": "",
    "detail": ""
   },
@@ -18586,10 +18586,10 @@
    "needs": [
     "T7:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:52:23",
+   "ended": "2026-11-23 16:53:45",
    "note": "",
    "detail": ""
   },
@@ -18607,10 +18607,10 @@
    "needs": [
     "T8:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:52:33",
+   "ended": "2026-11-23 16:53:45",
    "note": "",
    "detail": ""
   },
@@ -18628,10 +18628,10 @@
    "needs": [
     "T9:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:52:43",
+   "ended": "2026-11-23 16:54:41",
    "note": "",
    "detail": ""
   },
@@ -18649,10 +18649,10 @@
    "needs": [
     "T10:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:52:59",
+   "ended": "2026-11-23 16:54:41",
    "note": "",
    "detail": ""
   },
@@ -18670,10 +18670,10 @@
    "needs": [
     "T11:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:53:09",
+   "ended": "2026-11-23 16:55:17",
    "note": "",
    "detail": ""
   },
@@ -18691,10 +18691,10 @@
    "needs": [
     "T12:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:53:19",
+   "ended": "2026-11-23 16:55:17",
    "note": "",
    "detail": ""
   },
@@ -18712,10 +18712,10 @@
    "needs": [
     "T13:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:53:29",
+   "ended": "2026-11-23 16:55:17",
    "note": "",
    "detail": ""
   },
@@ -18733,10 +18733,10 @@
    "needs": [
     "T14:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:53:45",
+   "ended": "2026-11-23 16:56:23",
    "note": "",
    "detail": ""
   },
@@ -18754,10 +18754,10 @@
    "needs": [
     "T15:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:53:55",
+   "ended": "2026-11-23 16:55:17",
    "note": "",
    "detail": ""
   },
@@ -18775,10 +18775,10 @@
    "needs": [
     "T16:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:54:05",
+   "ended": "2026-11-23 16:55:17",
    "note": "",
    "detail": ""
   },
@@ -18796,10 +18796,10 @@
    "needs": [
     "T17:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:54:15",
+   "ended": "2026-11-23 16:54:41",
    "note": "",
    "detail": ""
   },
@@ -18817,10 +18817,10 @@
    "needs": [
     "T18:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:54:25",
+   "ended": "2026-11-23 16:55:17",
    "note": "",
    "detail": ""
   },
@@ -18838,10 +18838,10 @@
    "needs": [
     "T19:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:54:41",
+   "ended": "2026-11-23 16:56:23",
    "note": "",
    "detail": ""
   },
@@ -18859,10 +18859,10 @@
    "needs": [
     "T20:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:54:51",
+   "ended": "2026-11-23 16:57:29",
    "note": "",
    "detail": ""
   },
@@ -18880,10 +18880,10 @@
    "needs": [
     "T21:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:55:01",
+   "ended": "2026-11-23 16:57:29",
    "note": "",
    "detail": ""
   },
@@ -18901,10 +18901,10 @@
    "needs": [
     "T22:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:55:17",
+   "ended": "2026-11-23 16:56:23",
    "note": "",
    "detail": ""
   },
@@ -18922,10 +18922,10 @@
    "needs": [
     "T23:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:55:27",
+   "ended": "2026-11-23 16:56:23",
    "note": "",
    "detail": ""
   },
@@ -18943,10 +18943,10 @@
    "needs": [
     "T24:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:55:37",
+   "ended": "2026-11-23 16:56:23",
    "note": "",
    "detail": ""
   },
@@ -18964,10 +18964,10 @@
    "needs": [
     "T25:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:55:47",
+   "ended": "2026-11-23 16:57:29",
    "note": "",
    "detail": ""
   },
@@ -18985,10 +18985,10 @@
    "needs": [
     "T26:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:55:57",
+   "ended": "2026-11-23 16:56:23",
    "note": "",
    "detail": ""
   },
@@ -19006,10 +19006,10 @@
    "needs": [
     "T27:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:56:07",
+   "ended": "2026-11-23 16:58:26",
    "note": "",
    "detail": ""
   },
@@ -19027,10 +19027,10 @@
    "needs": [
     "T28:translate"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:56:23",
+   "ended": "2026-11-23 16:57:29",
    "note": "",
    "detail": ""
   },
@@ -19048,10 +19048,10 @@
    "needs": [
     "T1:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:56:33",
+   "ended": "2026-11-23 16:57:29",
    "note": "",
    "detail": ""
   },
@@ -19069,10 +19069,10 @@
    "needs": [
     "T2:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:56:43",
+   "ended": "2026-11-23 16:58:26",
    "note": "",
    "detail": ""
   },
@@ -19090,10 +19090,10 @@
    "needs": [
     "T3:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:56:53",
+   "ended": "2026-11-23 16:58:26",
    "note": "",
    "detail": ""
   },
@@ -19111,10 +19111,10 @@
    "needs": [
     "T4:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:57:03",
+   "ended": "2026-11-23 16:58:26",
    "note": "",
    "detail": ""
   },
@@ -19132,10 +19132,10 @@
    "needs": [
     "T5:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:57:14",
+   "ended": "2026-11-23 16:58:26",
    "note": "",
    "detail": ""
   },
@@ -19153,10 +19153,10 @@
    "needs": [
     "T6:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:57:30",
+   "ended": "2026-11-23 16:59:22",
    "note": "",
    "detail": ""
   },
@@ -19174,10 +19174,10 @@
    "needs": [
     "T7:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:57:40",
+   "ended": "2026-11-23 16:59:22",
    "note": "",
    "detail": ""
   },
@@ -19195,10 +19195,10 @@
    "needs": [
     "T8:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:57:50",
+   "ended": "2026-11-23 16:59:22",
    "note": "",
    "detail": ""
   },
@@ -19216,10 +19216,10 @@
    "needs": [
     "T9:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:58:00",
+   "ended": "2026-11-23 16:59:22",
    "note": "",
    "detail": ""
   },
@@ -19237,10 +19237,10 @@
    "needs": [
     "T10:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:58:10",
+   "ended": "2026-11-23 17:00:08",
    "note": "",
    "detail": ""
   },
@@ -19258,10 +19258,10 @@
    "needs": [
     "T11:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:58:26",
+   "ended": "2026-11-23 17:00:08",
    "note": "",
    "detail": ""
   },
@@ -19279,10 +19279,10 @@
    "needs": [
     "T12:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:58:36",
+   "ended": "2026-11-23 17:00:08",
    "note": "",
    "detail": ""
   },
@@ -19300,10 +19300,10 @@
    "needs": [
     "T13:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:58:46",
+   "ended": "2026-11-23 17:01:04",
    "note": "",
    "detail": ""
   },
@@ -19321,10 +19321,10 @@
    "needs": [
     "T14:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:58:56",
+   "ended": "2026-11-23 17:01:04",
    "note": "",
    "detail": ""
   },
@@ -19342,10 +19342,10 @@
    "needs": [
     "T15:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:59:06",
+   "ended": "2026-11-23 17:01:04",
    "note": "",
    "detail": ""
   },
@@ -19363,10 +19363,10 @@
    "needs": [
     "T16:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:59:22",
+   "ended": "2026-11-23 17:01:04",
    "note": "",
    "detail": ""
   },
@@ -19384,10 +19384,10 @@
    "needs": [
     "T17:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:59:32",
+   "ended": "2026-11-23 17:00:08",
    "note": "",
    "detail": ""
   },
@@ -19405,10 +19405,10 @@
    "needs": [
     "T18:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:59:42",
+   "ended": "2026-11-23 17:00:08",
    "note": "",
    "detail": ""
   },
@@ -19426,10 +19426,10 @@
    "needs": [
     "T19:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 16:59:52",
+   "ended": "2026-11-23 17:02:10",
    "note": "",
    "detail": ""
   },
@@ -19447,10 +19447,10 @@
    "needs": [
     "T20:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:00:08",
+   "ended": "2026-11-23 17:02:11",
    "note": "",
    "detail": ""
   },
@@ -19468,10 +19468,10 @@
    "needs": [
     "T21:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:00:18",
+   "ended": "2026-11-23 17:02:11",
    "note": "",
    "detail": ""
   },
@@ -19489,10 +19489,10 @@
    "needs": [
     "T22:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:00:28",
+   "ended": "2026-11-23 17:01:04",
    "note": "",
    "detail": ""
   },
@@ -19510,10 +19510,10 @@
    "needs": [
     "T23:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:00:38",
+   "ended": "2026-11-23 17:02:11",
    "note": "",
    "detail": ""
   },
@@ -19531,10 +19531,10 @@
    "needs": [
     "T24:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:00:48",
+   "ended": "2026-11-23 17:01:04",
    "note": "",
    "detail": ""
   },
@@ -19552,10 +19552,10 @@
    "needs": [
     "T25:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:01:04",
+   "ended": "2026-11-23 17:02:11",
    "note": "",
    "detail": ""
   },
@@ -19573,10 +19573,10 @@
    "needs": [
     "T26:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:01:15",
+   "ended": "2026-11-23 17:02:11",
    "note": "",
    "detail": ""
   },
@@ -19594,10 +19594,10 @@
    "needs": [
     "T27:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:01:25",
+   "ended": "2026-11-23 17:03:17",
    "note": "",
    "detail": ""
   },
@@ -19615,10 +19615,10 @@
    "needs": [
     "T28:review"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "skipped",
+   "tries": 1,
+   "began": "2026-11-23 17:01:35",
+   "ended": "2026-11-23 17:02:11",
    "note": "",
    "detail": ""
   },
@@ -19645,10 +19645,10 @@
     "T3:revise",
     "T4:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:01:45",
+   "ended": "2026-11-23 17:03:58",
    "note": "",
    "detail": "",
    "write": [
@@ -19769,10 +19769,10 @@
     "T6:revise",
     "T7:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:01:55",
+   "ended": "2026-11-23 17:05:00",
    "note": "",
    "detail": "",
    "write": [
@@ -19976,10 +19976,10 @@
     "T8:revise",
     "T9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:02:11",
+   "ended": "2026-11-23 17:05:15",
    "note": "",
    "detail": "",
    "write": [
@@ -20213,10 +20213,10 @@
     "T11:revise",
     "T12:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:02:21",
+   "ended": "2026-11-23 17:05:00",
    "note": "",
    "detail": "",
    "write": [
@@ -20454,10 +20454,10 @@
     "T14:revise",
     "T15:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:02:31",
+   "ended": "2026-11-23 17:05:30",
    "note": "",
    "detail": "",
    "write": [
@@ -20670,10 +20670,10 @@
     "T18:revise",
     "T19:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:02:41",
+   "ended": "2026-11-23 17:05:10",
    "note": "",
    "detail": "",
    "write": [
@@ -20719,10 +20719,10 @@
     "T20:revise",
     "T21:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:02:51",
+   "ended": "2026-11-23 17:04:50",
    "note": "",
    "detail": "",
    "write": [
@@ -20827,10 +20827,10 @@
     "T26:revise",
     "T27:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:03:17",
+   "ended": "2026-11-23 17:05:51",
    "note": "",
    "detail": "",
    "write": [
@@ -20886,10 +20886,10 @@
     "T27:revise",
     "T28:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:03:27",
+   "ended": "2026-11-23 17:04:14",
    "note": "",
    "detail": "",
    "write": [
@@ -21110,10 +21110,10 @@
     "M99:revise",
     "M9:revise"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:03:01",
+   "ended": "2026-11-23 17:10:22",
    "note": "",
    "detail": ""
   },
@@ -21139,10 +21139,10 @@
     "H8:harmonize",
     "H9:harmonize"
    ],
-   "status": "pending",
-   "tries": 0,
-   "began": "",
-   "ended": "",
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-23 17:05:51",
+   "ended": "2026-11-23 17:07:38",
    "note": "",
    "detail": ""
   }
