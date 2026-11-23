@@ -1,0 +1,1240 @@
+{"child": "46:1", "parent": [], "method": "heading", "score": 0, "anchors": []}
+{"child": "46:2", "parent": [], "method": "heading", "score": 0, "anchors": []}
+{"child": "46:3", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:4", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:5", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:6", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:7", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:8", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:9", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:10", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:11", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:12", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:13", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:14", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:15", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:16", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:17", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:18", "parent": [], "method": "heading", "score": 0, "anchors": []}
+{"child": "46:19", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:20", "parent": [], "method": "none", "score": 0, "anchors": []}
+{"child": "46:21", "parent": ["152:6"], "method": "lemma", "score": 0.6, "anchors": ["Gaṅgā vā"]}
+{"child": "46:22", "parent": ["152:6"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:23", "parent": ["152:6"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:24", "parent": ["152:6"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:25", "parent": ["152:12"], "method": "lemma", "score": 0.17, "anchors": ["Nayehi"]}
+{"child": "46:26", "parent": ["152:13"], "method": "lemma", "score": 0.8, "anchors": ["Paṇidhāyā"]}
+{"child": "46:27", "parent": ["152:13"], "method": "lemma", "score": 0.8, "anchors": ["Paṇidhāyā"]}
+{"child": "46:28", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:29", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:30", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:31", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:32", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:33", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:34", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:35", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:36", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:37", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:38", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:39", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:40", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:41", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:42", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:43", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:44", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:45", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:46", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:47", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:48", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:49", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:50", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:51", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:52", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:53", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:54", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:55", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:56", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:57", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:58", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:59", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:60", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:61", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:62", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:63", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:64", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:65", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:66", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:67", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:68", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:69", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:70", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:71", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:72", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:73", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:74", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:75", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:76", "parent": ["152:13"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:77", "parent": ["152:24"], "method": "lemma", "score": 3.0, "anchors": ["Paṭibalo atītānāgatapaccuppannānan"]}
+{"child": "46:78", "parent": ["152:24"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:79", "parent": ["152:24"], "method": "lemma", "score": 0.04, "anchors": ["Seyyathīdan"]}
+{"child": "46:80", "parent": ["152:24"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:81", "parent": ["152:24"], "method": "lemma", "score": 0.12, "anchors": ["Sammutī"]}
+{"child": "46:82", "parent": ["152:24"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:83", "parent": ["152:24"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:84", "parent": ["152:24"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:85", "parent": ["152:67"], "method": "lemma", "score": 0.95, "anchors": ["Dhammacakkhuṃ udapādī"]}
+{"child": "46:86", "parent": ["152:67"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:87", "parent": ["152:67"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:88", "parent": ["152:67"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:89", "parent": ["152:67"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:90", "parent": ["152:67"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:91", "parent": ["152:67"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:92", "parent": ["152:83"], "method": "lemma", "score": 0.03, "anchors": ["Nipuṇo"]}
+{"child": "46:93", "parent": ["152:83", "152:84"], "method": "lemma", "score": 0.17, "anchors": ["Visārado"]}
+{"child": "46:94", "parent": ["152:85"], "method": "lemma", "score": 0.07, "anchors": ["Sāmayiko"]}
+{"child": "46:95", "parent": ["152:85"], "method": "lemma", "score": 0.07, "anchors": ["Paṭibhāṇo"]}
+{"child": "46:96", "parent": ["152:88"], "method": "lemma", "score": 0.12, "anchors": ["Medhāvī"]}
+{"child": "46:97", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:98", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:99", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:100", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:101", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:102", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:103", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:104", "parent": ["152:88"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:105", "parent": ["152:126"], "method": "lemma", "score": 1.6, "anchors": ["Āveṭhanampi kayira"]}
+{"child": "46:106", "parent": ["152:126"], "method": "lemma", "score": 1.6, "anchors": ["Niggaho pi kayiratī"]}
+{"child": "46:107", "parent": ["152:126"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:108", "parent": ["152:126"], "method": "lemma", "score": 0.02, "anchors": ["Viseso"]}
+{"child": "46:109", "parent": ["152:127"], "method": "lemma", "score": 2.4, "anchors": ["Bhante nāgasena pucchissāmī"]}
+{"child": "46:110", "parent": ["152:127"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:111", "parent": ["152:130"], "method": "lemma", "score": 1.5, "anchors": ["Nāgaseno nāgaseno"]}
+{"child": "46:112", "parent": ["152:130"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:113", "parent": ["152:130"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:114", "parent": ["152:130"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:115", "parent": ["152:134"], "method": "lemma", "score": 3.0, "anchors": ["Assāsapassāsā nāmete kāyasaṅkhāro"]}
+{"child": "46:116", "parent": ["152:134"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:117", "parent": ["152:134"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:118", "parent": ["152:138"], "method": "lemma", "score": 2.0, "anchors": ["Kimhi hoti kathāsallāpo"]}
+{"child": "46:119", "parent": ["152:138"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:120", "parent": ["152:138"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:121", "parent": ["152:138"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:122", "parent": ["152:138"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:123", "parent": ["152:138"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:124", "parent": ["152:139"], "method": "lemma", "score": 1.7, "anchors": ["Anupādāparinibbānan"]}
+{"child": "46:125", "parent": ["152:140"], "method": "lemma", "score": 1.0, "anchors": ["Rājābhinītā"]}
+{"child": "46:126", "parent": ["152:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:127", "parent": ["152:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:128", "parent": ["152:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:129", "parent": ["152:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:130", "parent": ["152:140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:131", "parent": ["152:149"], "method": "lemma", "score": 0.15, "anchors": ["Yoniso manasikārenā"]}
+{"child": "46:132", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:133", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:134", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:135", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:136", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:137", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:138", "parent": ["152:149"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:139", "parent": ["152:183", "152:184", "152:185"], "method": "lemma", "score": 0.96, "anchors": ["Sabbe kusalā dhammā"]}
+{"child": "46:140", "parent": ["152:185"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:141", "parent": ["152:189"], "method": "lemma", "score": 0.8, "anchors": ["Apilāpanalakkhaṇo"]}
+{"child": "46:142", "parent": ["152:189"], "method": "lemma", "score": 0.53, "anchors": ["Kaṇhasukkasappaṭibhāge"]}
+{"child": "46:143", "parent": ["152:189", "152:190"], "method": "lemma", "score": 0.8, "anchors": ["Apilāpetī"]}
+{"child": "46:144", "parent": ["152:191", "152:192"], "method": "lemma", "score": 2.5, "anchors": ["Hitāhitānaṃ dhammānaṃ gatiyo"]}
+{"child": "46:145", "parent": ["152:192"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:146", "parent": ["152:192"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:147", "parent": ["152:198"], "method": "lemma", "score": 0.9, "anchors": ["Tappamukhā"]}
+{"child": "46:148", "parent": ["152:198"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:149", "parent": ["152:215"], "method": "lemma", "score": 0.4, "anchors": ["Yo uppajja"]}
+{"child": "46:150", "parent": ["152:215"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:151", "parent": ["152:215"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:152", "parent": ["152:215"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:153", "parent": ["152:215"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:154", "parent": ["152:215"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:155", "parent": ["152:215"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:156", "parent": ["152:229", "152:230", "152:231"], "method": "lemma", "score": 0.48, "anchors": ["Sakiccayan"]}
+{"child": "46:157", "parent": ["152:231"], "method": "lemma", "score": 1.8, "anchors": ["Ālimpanaṃ vijjhāpetun"]}
+{"child": "46:158", "parent": ["152:231"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:159", "parent": ["152:240"], "method": "lemma", "score": 1.9, "anchors": ["Nibbisaṃ bhatako yathā"]}
+{"child": "46:160", "parent": ["152:240"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:161", "parent": ["152:246"], "method": "lemma", "score": 0.6, "anchors": ["Kusalaṃ dukkhan"]}
+{"child": "46:162", "parent": ["152:246"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:163", "parent": ["152:246"], "method": "lemma", "score": 1.3, "anchors": ["Ajānāhi niggahan"]}
+{"child": "46:164", "parent": ["152:246"], "method": "lemma", "score": 1.5, "anchors": ["Yadi tattaṃ dahatī"]}
+{"child": "46:165", "parent": ["152:246"], "method": "lemma", "score": 0.9, "anchors": ["Na ca te ubho"]}
+{"child": "46:166", "parent": ["152:246"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:167", "parent": ["152:246"], "method": "lemma", "score": 1.6, "anchors": ["Yadi sītalaṃ dahatī"]}
+{"child": "46:168", "parent": ["152:246"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:169", "parent": ["152:246"], "method": "lemma", "score": 2.0, "anchors": ["Kusalaṃ dukkhan", "Ubhopi te dahantī"]}
+{"child": "46:170", "parent": ["152:246"], "method": "lemma", "score": 0.3, "anchors": ["Tayā vādinā"]}
+{"child": "46:171", "parent": ["152:246"], "method": "lemma", "score": 1.6, "anchors": ["Sukhā vedanā kusalā"]}
+{"child": "46:172", "parent": ["152:247"], "method": "lemma", "score": 1.2, "anchors": ["Gehanissitānī"]}
+{"child": "46:173", "parent": ["152:247"], "method": "lemma", "score": 1.7, "anchors": ["Nekkhammanissītānī"]}
+{"child": "46:174", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:175", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:176", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:177", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:178", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:179", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:180", "parent": ["152:247"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:181", "parent": ["152:250", "152:251", "152:252", "152:253", "152:254", "152:255", "152:256", "152:258"], "method": "lemma", "score": 0.4, "anchors": ["Nāmarūpan"]}
+{"child": "46:182", "parent": ["152:258"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:183", "parent": ["152:258"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:184", "parent": ["152:258"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:185", "parent": ["152:258"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:186", "parent": ["152:261"], "method": "lemma", "score": 0.03, "anchors": ["Adhikāran"]}
+{"child": "46:187", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:188", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:189", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:190", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:191", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:192", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:193", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:194", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:195", "parent": ["152:261"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:196", "parent": ["152:294"], "method": "lemma", "score": 1.8, "anchors": ["Cakkhusmiñcā", "Rūpesu cā"]}
+{"child": "46:197", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:198", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:199", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:200", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:201", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:202", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:203", "parent": ["152:294"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:204", "parent": ["152:337"], "method": "lemma", "score": 1.4, "anchors": ["Phusanalakkhaṇo"]}
+{"child": "46:205", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:206", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:207", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:208", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:209", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:210", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:211", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:212", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:213", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:214", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:215", "parent": ["152:337"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:216", "parent": ["152:385"], "method": "lemma", "score": 2.1, "anchors": ["Nanu loṇameva āharitabban"]}
+{"child": "46:217", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:218", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:219", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:220", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:221", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:222", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:223", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:224", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:225", "parent": ["152:385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:226", "parent": ["152:399", "152:400", "152:401"], "method": "lemma", "score": 0.3, "anchors": ["Akiccakaro"]}
+{"child": "46:227", "parent": ["152:401"], "method": "lemma", "score": 0.33, "anchors": ["Bubhukkhito"]}
+{"child": "46:228", "parent": ["152:401"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:229", "parent": ["152:412", "152:413"], "method": "lemma", "score": 0.4, "anchors": ["Paccamānā"]}
+{"child": "46:230", "parent": ["152:413", "152:414", "152:415"], "method": "lemma", "score": 1.3, "anchors": ["Kammādhikatenā"]}
+{"child": "46:231", "parent": ["152:415"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:232", "parent": ["152:415"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:233", "parent": ["152:423"], "method": "lemma", "score": 0.8, "anchors": ["Ajjhosāyā"]}
+{"child": "46:234", "parent": ["152:423"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:235", "parent": ["152:427"], "method": "lemma", "score": 1.5, "anchors": ["Abhiññeyye dhamme"]}
+{"child": "46:236", "parent": ["152:427"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:237", "parent": ["152:427"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:238", "parent": ["152:427"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:239", "parent": ["152:427"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:240", "parent": ["152:427"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:241", "parent": ["152:446"], "method": "lemma", "score": 2.5, "anchors": ["Sakkā jānituṃ buddho anuttaro"]}
+{"child": "46:242", "parent": ["152:446"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:243", "parent": ["152:450"], "method": "lemma", "score": 1.2, "anchors": ["Buddhanettīyā"]}
+{"child": "46:244", "parent": ["152:450"], "method": "lemma", "score": 1.2, "anchors": ["( Buddhapaññat"]}
+{"child": "46:245", "parent": ["152:450"], "method": "lemma", "score": 2.6, "anchors": ["Yāvajīvaṃ sāvakehi vattitabban"]}
+{"child": "46:246", "parent": ["152:450"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:247", "parent": ["152:450"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:248", "parent": ["152:459"], "method": "lemma", "score": 0.53, "anchors": ["Vedagu upalabbhatī"]}
+{"child": "46:249", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:250", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:251", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:252", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:253", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:254", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:255", "parent": ["152:459"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:256", "parent": ["152:487"], "method": "lemma", "score": 1.8, "anchors": ["Samantato paggharatī"]}
+{"child": "46:257", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:258", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:259", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:260", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:261", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:262", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:263", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:264", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:265", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:266", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:267", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:268", "parent": ["152:487"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:269", "parent": ["152:536", "152:537", "152:538", "152:539", "152:541", "152:542", "152:543", "152:544", "152:545", "152:546", "152:547", "152:550", "152:553"], "method": "lemma", "score": 12.75, "anchors": ["Abhijānato", "Ahitaviññāṇato", "Anubhūtato", "Bhāvanāto", "Kathābhiññāṇato", "Kaṭumikāyā", "Lakkhaṇato", "Lipiyā sikkhitattā", "Olārikaviññāṇato", "Sabhāganimittato", "Saraṇato", "Visabhāganimittato"]}
+{"child": "46:270", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:271", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:272", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:273", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:274", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:275", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:276", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:277", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:278", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:279", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:280", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:281", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:282", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:283", "parent": ["152:553"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:284", "parent": ["152:629"], "method": "lemma", "score": 1.07, "anchors": ["Gamissanti", "Rājadeyyānī"]}
+{"child": "46:285", "parent": ["152:629"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:286", "parent": ["152:629"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:287", "parent": ["152:629"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:288", "parent": ["152:629"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:289", "parent": ["152:629"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:290", "parent": ["152:640"], "method": "lemma", "score": 1.8, "anchors": ["Vasanto tassa chāyāyā"]}
+{"child": "46:291", "parent": ["152:643"], "method": "lemma", "score": 1.9, "anchors": ["Addakkhi meṇḍake pañhe"]}
+{"child": "46:292", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:293", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:294", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:295", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:296", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:297", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:298", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:299", "parent": ["152:643"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:300", "parent": ["152:652"], "method": "lemma", "score": 1.6, "anchors": ["Garukaṃ pariṇamatī"]}
+{"child": "46:301", "parent": ["152:664"], "method": "lemma", "score": 0.9, "anchors": ["Ittaratāyā"]}
+{"child": "46:302", "parent": ["152:664"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:303", "parent": ["152:664"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:304", "parent": ["152:664"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:305", "parent": ["152:664"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:306", "parent": ["152:673"], "method": "lemma", "score": 1.1, "anchors": ["Snehasaṃsevā"]}
+{"child": "46:307", "parent": ["152:673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:308", "parent": ["152:679"], "method": "lemma", "score": 0.02, "anchors": ["Allāpo"]}
+{"child": "46:309", "parent": ["152:679"], "method": "lemma", "score": 1.3, "anchors": ["Sakkaccakārinā"]}
+{"child": "46:310", "parent": ["152:679"], "method": "lemma", "score": 2.6, "anchors": ["Khalite dhammena paggahetabbo"]}
+{"child": "46:311", "parent": ["152:679"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:312", "parent": ["152:681"], "method": "lemma", "score": 1.9, "anchors": ["Abhivaḍḍhiyā vāyamatī"]}
+{"child": "46:313", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:314", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:315", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:316", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:317", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:318", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:319", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:320", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:321", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:322", "parent": ["152:681"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:323", "parent": ["152:686"], "method": "lemma", "score": 1.2, "anchors": ["Lokasādhāraṇo"]}
+{"child": "46:324", "parent": ["152:686"], "method": "lemma", "score": 1.4, "anchors": ["Appattamānasānan"]}
+{"child": "46:325", "parent": ["152:691", "152:693"], "method": "lemma", "score": 1.8, "anchors": ["Ñāṇaratanārammaṇenā"]}
+{"child": "46:326", "parent": ["152:702"], "method": "lemma", "score": 1.1, "anchors": ["Ubbattīyante"]}
+{"child": "46:327", "parent": ["152:702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:328", "parent": ["152:702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:329", "parent": ["152:706"], "method": "lemma", "score": 0.8, "anchors": ["Aḍḍhacūḷan"]}
+{"child": "46:330", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:331", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:332", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:333", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:334", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:335", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:336", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:337", "parent": ["152:706"], "method": "lemma", "score": 2.9, "anchors": ["Ekaccharakkhaṇe pavattacittassā"]}
+{"child": "46:338", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:339", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:340", "parent": ["152:706"], "method": "lemma", "score": 1.0, "anchors": ["Parikkhayaṃ pariyādānan"]}
+{"child": "46:341", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:342", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:343", "parent": ["152:706"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:344", "parent": ["152:707"], "method": "lemma", "score": 2.7, "anchors": ["Ime sattavidhā cittā pavattantī"]}
+{"child": "46:345", "parent": ["152:707"], "method": "lemma", "score": 0.55, "anchors": ["Abhāvitakāyā"]}
+{"child": "46:346", "parent": ["152:707"], "method": "lemma", "score": 0.55, "anchors": ["Abhāvitasīlā"]}
+{"child": "46:347", "parent": ["152:708", "152:709"], "method": "lemma", "score": 1.73, "anchors": ["Tīsu ṭhānesu", "Uparibhumīsu"]}
+{"child": "46:348", "parent": ["152:709"], "method": "lemma", "score": 1.3, "anchors": ["Pañcasu ṭhānesu"]}
+{"child": "46:349", "parent": ["152:710"], "method": "lemma", "score": 0.6, "anchors": ["Dasasu ṭhānesu"]}
+{"child": "46:350", "parent": ["152:713"], "method": "lemma", "score": 0.4, "anchors": ["Nārācassā"]}
+{"child": "46:351", "parent": ["152:713"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:352", "parent": ["152:713"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:353", "parent": ["152:713"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:354", "parent": ["152:715"], "method": "lemma", "score": 2.2, "anchors": ["Āvajjanavikaḷamattakenā"]}
+{"child": "46:355", "parent": ["152:715"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:356", "parent": ["152:731"], "method": "lemma", "score": 1.9, "anchors": ["Chakoṭṭhāse kate kappe"]}
+{"child": "46:357", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:358", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:359", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:360", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:361", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:362", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:363", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:364", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:365", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:366", "parent": ["152:731"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:367", "parent": ["152:750"], "method": "lemma", "score": 1.8, "anchors": ["Parakkamo dakkhāpito"]}
+{"child": "46:368", "parent": ["152:750"], "method": "lemma", "score": 1.2, "anchors": ["Hiyyo obhāsitā"]}
+{"child": "46:369", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:370", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:371", "parent": ["152:750"], "method": "lemma", "score": 0.42, "anchors": ["Gambhīro uttānikato"]}
+{"child": "46:372", "parent": ["152:750"], "method": "lemma", "score": 3.0, "anchors": ["Sammāladdhaṃ jinaputtānaṃ nibbāhanan"]}
+{"child": "46:373", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:374", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:375", "parent": ["152:750"], "method": "lemma", "score": 0.22, "anchors": ["Gaṇīvarapavarā"]}
+{"child": "46:376", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:377", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:378", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:379", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:380", "parent": ["152:750"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:381", "parent": ["152:770"], "method": "lemma", "score": 1.3, "anchors": ["Kalalaṃ osaratī"]}
+{"child": "46:382", "parent": ["152:770"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:383", "parent": ["152:770"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:384", "parent": ["152:777"], "method": "lemma", "score": 0.02, "anchors": ["Te sabbe"]}
+{"child": "46:385", "parent": ["152:777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:386", "parent": ["152:777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:387", "parent": ["152:784", "152:785", "152:786", "152:787"], "method": "lemma", "score": 0.32, "anchors": ["Saddhammo"]}
+{"child": "46:388", "parent": ["152:787"], "method": "lemma", "score": 2.1, "anchors": ["Taṃ khayaṃ paridīpayanto"]}
+{"child": "46:389", "parent": ["152:787"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:390", "parent": ["152:787"], "method": "lemma", "score": 0.45, "anchors": ["Naṭṭhāyiko"]}
+{"child": "46:391", "parent": ["152:787"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:392", "parent": ["152:787"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:393", "parent": ["152:800"], "method": "lemma", "score": 1.7, "anchors": ["Tatra ye te navavidhā"]}
+{"child": "46:394", "parent": ["152:800"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:395", "parent": ["152:800"], "method": "lemma", "score": 1.3, "anchors": ["Tehi tehi kopehī"]}
+{"child": "46:396", "parent": ["152:800"], "method": "lemma", "score": 1.5, "anchors": ["Sakaṃ sakaṃ vedanan"]}
+{"child": "46:397", "parent": ["152:800"], "method": "lemma", "score": 0.21, "anchors": ["Visamaparihārajā"]}
+{"child": "46:398", "parent": ["152:800"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:399", "parent": ["152:800"], "method": "lemma", "score": 0.2, "anchors": ["Kammavipākajā"]}
+{"child": "46:400", "parent": ["152:800"], "method": "lemma", "score": 1.5, "anchors": ["Bahutaraṃ avasesan"]}
+{"child": "46:401", "parent": ["152:802"], "method": "lemma", "score": 0.22, "anchors": ["Na sambhavatī"]}
+{"child": "46:402", "parent": ["152:802"], "method": "lemma", "score": 1.1, "anchors": ["Bījaduṭṭhatā"]}
+{"child": "46:403", "parent": ["152:802", "152:803"], "method": "lemma", "score": 0.93, "anchors": ["Kammavipakato vā"]}
+{"child": "46:404", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:405", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:406", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:407", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:408", "parent": ["152:803"], "method": "lemma", "score": 0.3, "anchors": ["Kiriyato vā"]}
+{"child": "46:409", "parent": ["152:803"], "method": "lemma", "score": 1.2, "anchors": ["Bhojanaṃ visamaṃ pariṇamatī"]}
+{"child": "46:410", "parent": ["152:803"], "method": "lemma", "score": 1.7, "anchors": ["Tāya ca pana vedanāyā"]}
+{"child": "46:411", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:412", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:413", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:414", "parent": ["152:803"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:415", "parent": ["152:812", "152:813", "152:814", "152:815"], "method": "lemma", "score": 0.31, "anchors": ["Nibbāhitabbo", "Paṭisallānan"]}
+{"child": "46:416", "parent": ["152:815"], "method": "lemma", "score": 0.04, "anchors": ["Rakkhatī"]}
+{"child": "46:417", "parent": ["152:815"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:418", "parent": ["152:821"], "method": "lemma", "score": 1.1, "anchors": ["Taṃ iddhibalan"]}
+{"child": "46:419", "parent": ["152:821"], "method": "lemma", "score": 3.0, "anchors": ["Antamaso accharāsaṅghātamattampī"]}
+{"child": "46:420", "parent": ["152:821"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:421", "parent": ["152:821"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:422", "parent": ["152:827", "152:828"], "method": "lemma", "score": 3.0, "anchors": ["Abhiññāyāhaṃ bhikkhave dhammaṃ desemī"]}
+{"child": "46:423", "parent": ["152:828"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:424", "parent": ["152:828"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:425", "parent": ["152:828"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:426", "parent": ["152:828"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:427", "parent": ["152:836"], "method": "lemma", "score": 1.4, "anchors": ["Aniccampana rūpan"]}
+{"child": "46:428", "parent": ["152:836"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:429", "parent": ["152:843"], "method": "lemma", "score": 0.77, "anchors": ["Samuhato bhayahetu arahato"]}
+{"child": "46:430", "parent": ["152:843", "152:844", "152:846"], "method": "lemma", "score": 0.66, "anchors": ["Unnatāvanatā"]}
+{"child": "46:431", "parent": ["152:846"], "method": "lemma", "score": 0.9, "anchors": ["Kuṭipurise"]}
+{"child": "46:432", "parent": ["152:848"], "method": "lemma", "score": 0.9, "anchors": ["Āhaccapadan"]}
+{"child": "46:433", "parent": ["152:848"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:434", "parent": ["152:865"], "method": "lemma", "score": 1.7, "anchors": ["Tena tesaṃ pavattenā"]}
+{"child": "46:435", "parent": ["152:866"], "method": "lemma", "score": 1.6, "anchors": ["Visaṃ cikkhassanto"]}
+{"child": "46:436", "parent": ["152:866"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:437", "parent": ["152:866"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:438", "parent": ["152:866"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:439", "parent": ["152:870"], "method": "lemma", "score": 0.35, "anchors": ["Sūcikāyā"]}
+{"child": "46:440", "parent": ["152:870"], "method": "lemma", "score": 0.55, "anchors": ["Dūrupacārenā"]}
+{"child": "46:441", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:442", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:443", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:444", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:445", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:446", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:447", "parent": ["152:870"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:448", "parent": ["152:889"], "method": "lemma", "score": 1.2, "anchors": ["Saññāvimokkho"]}
+{"child": "46:449", "parent": ["152:889"], "method": "lemma", "score": 1.4, "anchors": ["No saññāvimokkho"]}
+{"child": "46:450", "parent": ["152:889"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:451", "parent": ["152:893"], "method": "lemma", "score": 2.1, "anchors": ["Etasmiñca mahārāja pañhe"]}
+{"child": "46:452", "parent": ["152:893"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:453", "parent": ["152:893"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:454", "parent": ["152:899"], "method": "lemma", "score": 1.2, "anchors": ["Katena ādānena"]}
+{"child": "46:455", "parent": ["152:899"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:456", "parent": ["152:899"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:457", "parent": ["152:907"], "method": "lemma", "score": 0.9, "anchors": ["Seṭṭho yamo"]}
+{"child": "46:458", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:459", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:460", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:461", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:462", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:463", "parent": ["152:907"], "method": "lemma", "score": 0.9, "anchors": ["Aggo niyamo"]}
+{"child": "46:464", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:465", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:466", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:467", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:468", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:469", "parent": ["152:907"], "method": "lemma", "score": 0.01, "anchors": ["Vihāro"]}
+{"child": "46:470", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:471", "parent": ["152:907"], "method": "lemma", "score": 0.02, "anchors": ["Saṃvaro"]}
+{"child": "46:472", "parent": ["152:907"], "method": "lemma", "score": 0.01, "anchors": ["Khantī"]}
+{"child": "46:473", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:474", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:475", "parent": ["152:907"], "method": "lemma", "score": 2.4, "anchors": ["Kāsāvadhāraṇaṃ bhaṇḍubhāvo"]}
+{"child": "46:476", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:477", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:478", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:479", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:480", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:481", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:482", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:483", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:484", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:485", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:486", "parent": ["152:907"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:487", "parent": ["152:908"], "method": "lemma", "score": 0.7, "anchors": ["Sāmaññaṃ upagato"]}
+{"child": "46:488", "parent": ["152:908", "152:909"], "method": "lemma", "score": 1.7, "anchors": ["Aggaparisan", "So sāmaññan"]}
+{"child": "46:489", "parent": ["152:915"], "method": "lemma", "score": 0.8, "anchors": ["So me āgamo"]}
+{"child": "46:490", "parent": ["152:915"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:491", "parent": ["152:915"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:492", "parent": ["152:915"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:493", "parent": ["152:936", "152:937", "152:938"], "method": "lemma", "score": 1.1, "anchors": ["Tappaṭibhāgan"]}
+{"child": "46:494", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:495", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:496", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:497", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:498", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:499", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:500", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:501", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:502", "parent": ["152:938"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:503", "parent": ["152:949"], "method": "lemma", "score": 1.0, "anchors": ["Asārambhenā"]}
+{"child": "46:504", "parent": ["152:949"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:505", "parent": ["152:949"], "method": "lemma", "score": 1.0, "anchors": ["Purisattanan"]}
+{"child": "46:506", "parent": ["152:949", "152:950"], "method": "lemma", "score": 3.45, "anchors": ["Aññaṃ kayiramānaṃ aññena sambhavatī", "Sabhāvampī"]}
+{"child": "46:507", "parent": ["152:950"], "method": "lemma", "score": 1.0, "anchors": ["Yo akkosanto"]}
+{"child": "46:508", "parent": ["152:950"], "method": "lemma", "score": 1.3, "anchors": ["Kiriyāyeva katā"]}
+{"child": "46:509", "parent": ["152:950"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:510", "parent": ["152:951"], "method": "lemma", "score": 0.8, "anchors": ["Ottappatī"]}
+{"child": "46:511", "parent": ["152:951"], "method": "lemma", "score": 1.4, "anchors": ["Bhiyyodassanenā"]}
+{"child": "46:512", "parent": ["152:951"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:513", "parent": ["152:951"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:514", "parent": ["152:951"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:515", "parent": ["152:951"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:516", "parent": ["152:956"], "method": "lemma", "score": 2.7, "anchors": ["Sukhaseyyaṃ pucchasi kissahetu"]}
+{"child": "46:517", "parent": ["152:956"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:518", "parent": ["152:956"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:519", "parent": ["152:956"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:520", "parent": ["152:956"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:521", "parent": ["152:956"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:522", "parent": ["152:956"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:523", "parent": ["152:979"], "method": "lemma", "score": 3.0, "anchors": ["Navannaṃ mahārāja anupubbavihārasamāpattīnan"]}
+{"child": "46:524", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:525", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:526", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:527", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:528", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:529", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:530", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:531", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:532", "parent": ["152:979"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:533", "parent": ["152:1021"], "method": "lemma", "score": 3.0, "anchors": ["Uddhataṃ mahārāja cittaṃ niggahetabban"]}
+{"child": "46:534", "parent": ["152:1022"], "method": "lemma", "score": 2.1, "anchors": ["Sayaṅkatenasoghātīyatī"]}
+{"child": "46:535", "parent": ["152:1022"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:536", "parent": ["152:1022"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:537", "parent": ["152:1025"], "method": "lemma", "score": 0.17, "anchors": ["Paṇāmesī"]}
+{"child": "46:538", "parent": ["152:1025"], "method": "lemma", "score": 1.2, "anchors": ["Appativattito"]}
+{"child": "46:539", "parent": ["152:1025"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:540", "parent": ["152:1025"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:541", "parent": ["152:1025"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:542", "parent": ["152:1028"], "method": "lemma", "score": 0.9, "anchors": ["Paṇāmīyatī"]}
+{"child": "46:543", "parent": ["152:1028"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:544", "parent": ["152:1028"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:545", "parent": ["152:1036", "152:1037", "152:1038"], "method": "lemma", "score": 1.7, "anchors": ["Kammādhiggahitassā"]}
+{"child": "46:546", "parent": ["152:1038"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:547", "parent": ["152:1038"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:548", "parent": ["152:1041"], "method": "lemma", "score": 0.9, "anchors": ["Dhammaraso"]}
+{"child": "46:549", "parent": ["152:1041"], "method": "lemma", "score": 0.33, "anchors": ["Vimuttiraso"]}
+{"child": "46:550", "parent": ["152:1046"], "method": "lemma", "score": 1.2, "anchors": ["Aññaṃ ārādhetī"]}
+{"child": "46:551", "parent": ["152:1047"], "method": "lemma", "score": 1.7, "anchors": ["Savarapuraṃ anugatan"]}
+{"child": "46:552", "parent": ["152:1047"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:553", "parent": ["152:1051"], "method": "lemma", "score": 0.9, "anchors": ["Ucchijjatī"]}
+{"child": "46:554", "parent": ["152:1052"], "method": "lemma", "score": 0.55, "anchors": ["Ubhato pakkhe"]}
+{"child": "46:555", "parent": ["152:1052"], "method": "lemma", "score": 1.3, "anchors": ["Manussantarenā"]}
+{"child": "46:556", "parent": ["152:1052"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:557", "parent": ["152:1052"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:558", "parent": ["152:1052"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:559", "parent": ["152:1055"], "method": "lemma", "score": 1.3, "anchors": ["Nimesantarampa"]}
+{"child": "46:560", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:561", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:562", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:563", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:564", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:565", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:566", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:567", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:568", "parent": ["152:1055"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:569", "parent": ["152:1069", "152:1070", "152:1071"], "method": "lemma", "score": 1.5, "anchors": ["Nete mahārāja guṇā puggalassā"]}
+{"child": "46:570", "parent": ["152:1071"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:571", "parent": ["152:1071"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:572", "parent": ["152:1071"], "method": "lemma", "score": 1.3, "anchors": ["Antaradhānassā"]}
+{"child": "46:573", "parent": ["152:1071"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:574", "parent": ["152:1071"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:575", "parent": ["152:1073"], "method": "lemma", "score": 3.0, "anchors": ["Mettābhāvanā hitānampi ahitānampī"]}
+{"child": "46:576", "parent": ["152:1073"], "method": "lemma", "score": 0.02, "anchors": ["Sabbesan"]}
+{"child": "46:577", "parent": ["152:1073"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:578", "parent": ["152:1079"], "method": "lemma", "score": 0.45, "anchors": ["Naṭṭhāyiko"]}
+{"child": "46:579", "parent": ["152:1079"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:580", "parent": ["152:1100"], "method": "lemma", "score": 1.2, "anchors": ["Yathā paṇihitan"]}
+{"child": "46:581", "parent": ["152:1100"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:582", "parent": ["152:1113"], "method": "lemma", "score": 0.35, "anchors": ["Sapakkho"]}
+{"child": "46:583", "parent": ["152:1113"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:584", "parent": ["152:1113"], "method": "lemma", "score": 0.6, "anchors": ["Āyūhako"]}
+{"child": "46:585", "parent": ["152:1113"], "method": "lemma", "score": 0.4, "anchors": ["Saṅgāhako"]}
+{"child": "46:586", "parent": ["152:1113"], "method": "lemma", "score": 0.6, "anchors": ["Sakhilo"]}
+{"child": "46:587", "parent": ["152:1113"], "method": "lemma", "score": 1.7, "anchors": ["Hitesī upanissitānan"]}
+{"child": "46:588", "parent": ["152:1113"], "method": "lemma", "score": 0.07, "anchors": ["Dhanavā"]}
+{"child": "46:589", "parent": ["152:1113"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:590", "parent": ["152:1116", "152:1117"], "method": "lemma", "score": 0.2, "anchors": ["Opatantī"]}
+{"child": "46:591", "parent": ["152:1117"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:592", "parent": ["152:1124"], "method": "lemma", "score": 0.04, "anchors": ["Okassā"]}
+{"child": "46:593", "parent": ["152:1124"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:594", "parent": ["152:1124"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:595", "parent": ["152:1124"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:596", "parent": ["152:1140"], "method": "lemma", "score": 1.2, "anchors": ["Byattasaṅketā"]}
+{"child": "46:597", "parent": ["152:1140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:598", "parent": ["152:1140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:599", "parent": ["152:1140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:600", "parent": ["152:1140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:601", "parent": ["152:1140"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:602", "parent": ["152:1154"], "method": "lemma", "score": 1.5, "anchors": ["Bāhirānaṃ āgamānan"]}
+{"child": "46:603", "parent": ["152:1154"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:604", "parent": ["152:1154"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:605", "parent": ["152:1166"], "method": "lemma", "score": 0.33, "anchors": ["Tassapakatan"]}
+{"child": "46:606", "parent": ["152:1166"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:607", "parent": ["152:1166"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:608", "parent": ["152:1172", "152:1173"], "method": "lemma", "score": 0.32, "anchors": ["Vājapeyyan"]}
+{"child": "46:609", "parent": ["152:1174"], "method": "lemma", "score": 0.7, "anchors": ["Ratto rāgavasenā"]}
+{"child": "46:610", "parent": ["152:1174"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:611", "parent": ["152:1174"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:612", "parent": ["152:1174"], "method": "lemma", "score": 0.17, "anchors": ["Onameyyā"]}
+{"child": "46:613", "parent": ["152:1175"], "method": "lemma", "score": 1.6, "anchors": ["Sasamuddapariyāyan"]}
+{"child": "46:614", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:615", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:616", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:617", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:618", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:619", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:620", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:621", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:622", "parent": ["152:1175"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:623", "parent": ["152:1269"], "method": "lemma", "score": 0.9, "anchors": ["Samupādikā"]}
+{"child": "46:624", "parent": ["152:1269"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:625", "parent": ["152:1292"], "method": "lemma", "score": 2.1, "anchors": ["Mārabalanisūdane buddhe"]}
+{"child": "46:626", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:627", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:628", "parent": ["152:1292"], "method": "lemma", "score": 1.5, "anchors": ["Ussahate tārayitun"]}
+{"child": "46:629", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:630", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:631", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:632", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:633", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:634", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:635", "parent": ["152:1292"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:636", "parent": ["152:1322"], "method": "lemma", "score": 0.9, "anchors": ["Akatapuññā"]}
+{"child": "46:637", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:638", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:639", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:640", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:641", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:642", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:643", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:644", "parent": ["152:1322"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:645", "parent": ["152:1382", "152:1383", "152:1384", "152:1385"], "method": "lemma", "score": 1.1, "anchors": ["Mahārajakkhā"]}
+{"child": "46:646", "parent": ["152:1385"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:647", "parent": ["152:1391"], "method": "lemma", "score": 1.4, "anchors": ["Visamakoṭṭhassā"]}
+{"child": "46:648", "parent": ["152:1391"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:649", "parent": ["152:1391"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:650", "parent": ["152:1400"], "method": "lemma", "score": 2.5, "anchors": ["Maggo pi tassamahiyā anaññāto"]}
+{"child": "46:651", "parent": ["152:1400"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:652", "parent": ["152:1400"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:653", "parent": ["152:1400"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:654", "parent": ["152:1400"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:655", "parent": ["152:1400"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:656", "parent": ["152:1419"], "method": "lemma", "score": 0.9, "anchors": ["Bījajātānī"]}
+{"child": "46:657", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:658", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:659", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:660", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:661", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:662", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:663", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:664", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:665", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:666", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:667", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:668", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:669", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:670", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:671", "parent": ["152:1419"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:672", "parent": ["152:1528"], "method": "lemma", "score": 1.4, "anchors": ["Middhasamāpanno"]}
+{"child": "46:673", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:674", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:675", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:676", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:677", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:678", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:679", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:680", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:681", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:682", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:683", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:684", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:685", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:686", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:687", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:688", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:689", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:690", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:691", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:692", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:693", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:694", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:695", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:696", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:697", "parent": ["152:1528"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:698", "parent": ["152:1606"], "method": "lemma", "score": 0.04, "anchors": ["Anītito"]}
+{"child": "46:699", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:700", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:701", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:702", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:703", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:704", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:705", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:706", "parent": ["152:1606"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:707", "parent": ["152:1640"], "method": "lemma", "score": 0.9, "anchors": ["Saraṇasīlan"]}
+{"child": "46:708", "parent": ["152:1640"], "method": "lemma", "score": 2.0, "anchors": ["Pañcuddesapariyāpannan"]}
+{"child": "46:709", "parent": ["152:1640"], "method": "lemma", "score": 1.0, "anchors": ["Pātimokkhasaṃvarasīlan"]}
+{"child": "46:710", "parent": ["152:1671"], "method": "lemma", "score": 2.1, "anchors": ["Upādāyupādāya vimuttānan"]}
+{"child": "46:711", "parent": ["152:1672"], "method": "lemma", "score": 0.7, "anchors": ["Gehajano"]}
+{"child": "46:712", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:713", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:714", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:715", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:716", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:717", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:718", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:719", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:720", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:721", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:722", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:723", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:724", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:725", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:726", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:727", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:728", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:729", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:730", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:731", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:732", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:733", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:734", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:735", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:736", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:737", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:738", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:739", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:740", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:741", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:742", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:743", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:744", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:745", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:746", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:747", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:748", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:749", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:750", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:751", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:752", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:753", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:754", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:755", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:756", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:757", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:758", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:759", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:760", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:761", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:762", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:763", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:764", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:765", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:766", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:767", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:768", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:769", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:770", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:771", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:772", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:773", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:774", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:775", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:776", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:777", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:778", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:779", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:780", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:781", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:782", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:783", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:784", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:785", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:786", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:787", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:788", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:789", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:790", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:791", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:792", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:793", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:794", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:795", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:796", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:797", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:798", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:799", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:800", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:801", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:802", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:803", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:804", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:805", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:806", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:807", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:808", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:809", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:810", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:811", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:812", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:813", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:814", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:815", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:816", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:817", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:818", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:819", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:820", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:821", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:822", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:823", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:824", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:825", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:826", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:827", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:828", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:829", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:830", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:831", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:832", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:833", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:834", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:835", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:836", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:837", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:838", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:839", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:840", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:841", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:842", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:843", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:844", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:845", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:846", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:847", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:848", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:849", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:850", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:851", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:852", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:853", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:854", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:855", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:856", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:857", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:858", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:859", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:860", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:861", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:862", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:863", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:864", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:865", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:866", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:867", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:868", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:869", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:870", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:871", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:872", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:873", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:874", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:875", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:876", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:877", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:878", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:879", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:880", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:881", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:882", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:883", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:884", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:885", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:886", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:887", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:888", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:889", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:890", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:891", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:892", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:893", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:894", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:895", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:896", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:897", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:898", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:899", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:900", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:901", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:902", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:903", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:904", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:905", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:906", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:907", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:908", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:909", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:910", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:911", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:912", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:913", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:914", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:915", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:916", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:917", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:918", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:919", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:920", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:921", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:922", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:923", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:924", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:925", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:926", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:927", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:928", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:929", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:930", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:931", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:932", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:933", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:934", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:935", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:936", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:937", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:938", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:939", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:940", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:941", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:942", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:943", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:944", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:945", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:946", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:947", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:948", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:949", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:950", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:951", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:952", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:953", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:954", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:955", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:956", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:957", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:958", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:959", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:960", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:961", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:962", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:963", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:964", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:965", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:966", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:967", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:968", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:969", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:970", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:971", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:972", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:973", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:974", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:975", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:976", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:977", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:978", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:979", "parent": ["152:1672"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:980", "parent": ["152:1673"], "method": "lemma", "score": 2.6, "anchors": ["Vimuttiratanamālantu udikkhan"]}
+{"child": "46:981", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:982", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:983", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:984", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:985", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:986", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:987", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:988", "parent": ["152:1673"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:989", "parent": ["152:1690"], "method": "lemma", "score": 3.0, "anchors": ["Appena bahukenāpi kammamūlena gayha"]}
+{"child": "46:990", "parent": ["152:1690"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:991", "parent": ["152:1690"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:992", "parent": ["152:1690"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:993", "parent": ["152:1694"], "method": "lemma", "score": 3.0, "anchors": ["Vītataṇhā anādānā dhammanagare vasan"]}
+{"child": "46:994", "parent": ["152:1694"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:995", "parent": ["152:1696"], "method": "lemma", "score": 3.0, "anchors": ["Vivekābhiratā dhīrā dhammanagare vasan"]}
+{"child": "46:996", "parent": ["152:1696"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:997", "parent": ["152:1698"], "method": "lemma", "score": 3.0, "anchors": ["Paṃsukūladharā sabbe dhammanagare vasan"]}
+{"child": "46:998", "parent": ["152:1698"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:999", "parent": ["152:1698"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1000", "parent": ["152:1698"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1001", "parent": ["152:1702"], "method": "lemma", "score": 3.0, "anchors": ["Lābhālābhena santuṭṭhā dhammanagare vasan"]}
+{"child": "46:1002", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1003", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1004", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1005", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1006", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1007", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1008", "parent": ["152:1702"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1009", "parent": ["152:1710"], "method": "lemma", "score": 3.0, "anchors": ["Vipassakā dhammadharā dhammanagare vasan"]}
+{"child": "46:1010", "parent": ["152:1710"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1011", "parent": ["152:1710"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1012", "parent": ["152:1710"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1013", "parent": ["152:1714"], "method": "lemma", "score": 3.0, "anchors": ["Antaḷikkhamhi caraṇā dhammanagare vasan"]}
+{"child": "46:1014", "parent": ["152:1714"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1015", "parent": ["152:1714"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1016", "parent": ["152:1714"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1017", "parent": ["152:1714"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1018", "parent": ["152:1714"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1019", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānena jānan"]}
+{"child": "46:1020", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1021", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānena jānan"]}
+{"child": "46:1022", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānenajānan"]}
+{"child": "46:1023", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1024", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1025", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1026", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1027", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1028", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānena jānan"]}
+{"child": "46:1029", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1030", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1031", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1032", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1033", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1034", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1035", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānenajānan"]}
+{"child": "46:1036", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1037", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānena jānan"]}
+{"child": "46:1038", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānenajānan"]}
+{"child": "46:1039", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1040", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1041", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1042", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1043", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1044", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1045", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1046", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1047", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānena jānan"]}
+{"child": "46:1048", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1049", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1050", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1051", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1052", "parent": ["152:1763"], "method": "lemma", "score": 0.11, "anchors": ["Anumānena jānan"]}
+{"child": "46:1053", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1054", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1055", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1056", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1057", "parent": ["152:1763"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1058", "parent": ["152:1777"], "method": "lemma", "score": 0.4, "anchors": ["Puna passa"]}
+{"child": "46:1059", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1060", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1061", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1062", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1063", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1064", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1065", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1066", "parent": ["152:1777"], "method": "heading", "score": 0, "anchors": []}
+{"child": "46:1067", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1068", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1069", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1070", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1071", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1072", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1073", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1074", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1075", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1076", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1077", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1078", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1079", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1080", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1081", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1082", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1083", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1084", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1085", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1086", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1087", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1088", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1089", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1090", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1091", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1092", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1093", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1094", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1095", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1096", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1097", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1098", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1099", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1100", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1101", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1102", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1103", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1104", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1105", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1106", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1107", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1108", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1109", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1110", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1111", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1112", "parent": ["152:1777"], "method": "heading", "score": 0, "anchors": []}
+{"child": "46:1113", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1114", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1115", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1116", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1117", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1118", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1119", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1120", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1121", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1122", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1123", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1124", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1125", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1126", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1127", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1128", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1129", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1130", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1131", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1132", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1133", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1134", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1135", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1136", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1137", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1138", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1139", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1140", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1141", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1142", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1143", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1144", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1145", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1146", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1147", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1148", "parent": ["152:1777"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1149", "parent": ["152:1802"], "method": "lemma", "score": 0.27, "anchors": ["Rāhumukhan"]}
+{"child": "46:1150", "parent": ["152:1802"], "method": "lemma", "score": 0.3, "anchors": ["Jotimālikan"]}
+{"child": "46:1151", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1152", "parent": ["152:1802"], "method": "lemma", "score": 0.37, "anchors": ["Erakavattikan"]}
+{"child": "46:1153", "parent": ["152:1802"], "method": "lemma", "score": 0.23, "anchors": ["Eṇeyyakan"]}
+{"child": "46:1154", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1155", "parent": ["152:1802"], "method": "lemma", "score": 0.9, "anchors": ["Kahāpaṇakan"]}
+{"child": "46:1156", "parent": ["152:1802"], "method": "lemma", "score": 0.47, "anchors": ["Khārāpatacchikan"]}
+{"child": "46:1157", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1158", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1159", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1160", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1161", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1162", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1163", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1164", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1165", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1166", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1167", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1168", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1169", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1170", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1171", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1172", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1173", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1174", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1175", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1176", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1177", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1178", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1179", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1180", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1181", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1182", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1183", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1184", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1185", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1186", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1187", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1188", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1189", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1190", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1191", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1192", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1193", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1194", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1195", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1196", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1197", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1198", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1199", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1200", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1201", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1202", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1203", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1204", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1205", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1206", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1207", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1208", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1209", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1210", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1211", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1212", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1213", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1214", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1215", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1216", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1217", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1218", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1219", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1220", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1221", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1222", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1223", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1224", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1225", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1226", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1227", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1228", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1229", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1230", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1231", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1232", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1233", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1234", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1235", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1236", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1237", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1238", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1239", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}
+{"child": "46:1240", "parent": ["152:1802"], "method": "inherit", "score": 0, "anchors": []}

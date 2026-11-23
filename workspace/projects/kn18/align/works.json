@@ -1,0 +1,11 @@
+{
+  "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
+  "works": [
+    {"id": "M", "layer": "mula", "book": 152, "start": 3, "end": 2493,
+     "title": "Milindapañhapāḷi"},
+    {"id": "T", "layer": "tika", "book": 46, "start": 1, "end": 1240,
+     "title": "Milidaṭīkā", "parent": "M", "table": "46__152.jsonl"}
+  ],
+  "att_ref": {},
+  "harmonize_batches": [["T"]]
+}
