@@ -1,7 +1,37 @@
 {
  "schema": 2,
- "updated": "2026-11-23 18:02:35",
+ "updated": "2026-11-24 03:29:43",
  "projects": [
+  {
+   "name": "sn-khandhavagga",
+   "title": "相應部 蘊篇 三層翻譯",
+   "state": "done",
+   "book": 169,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 406,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 336,
+    "failed": 0,
+    "skipped": 70,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-24 03:29:42",
+   "created": "2026-11-23 18:02:11"
+  },
   {
    "name": "mn-mulapannasa",
    "title": "中部 根本五十經篇 三層翻譯",
@@ -151,36 +181,6 @@
    "pct": 0.0,
    "updated": "2026-11-23 18:02:14",
    "created": "2026-11-23 18:02:14"
-  },
-  {
-   "name": "sn-khandhavagga",
-   "title": "相應部 蘊篇 三層翻譯",
-   "state": "idle",
-   "book": 169,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 3,
-   "job_counts": {
-    "pending": 3,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 406,
-   "unit_counts": {
-    "pending": 406,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 0,
-   "pct": 0.0,
-   "updated": "2026-11-23 18:02:11",
-   "created": "2026-11-23 18:02:11"
   },
   {
    "name": "kn18",
