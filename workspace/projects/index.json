@@ -1,7 +1,37 @@
 {
  "schema": 2,
- "updated": "2026-11-24 02:02:17",
+ "updated": "2026-11-24 15:29:03",
  "projects": [
+  {
+   "name": "kn19",
+   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
+   "state": "idle",
+   "book": 153,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 5,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 5,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1355,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1343,
+    "failed": 0,
+    "skipped": 1,
+    "fixed": 11
+   },
+   "chars": 1685670,
+   "pct": 100.0,
+   "updated": "2026-11-24 15:28:54",
+   "created": "2026-11-23 07:18:46"
+  },
   {
    "name": "kn18",
    "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
@@ -91,36 +121,6 @@
    "pct": 0.0,
    "updated": "2026-11-23 08:23:01",
    "created": "2026-11-22 11:10:29"
-  },
-  {
-   "name": "kn19",
-   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
-   "state": "running",
-   "book": 153,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 5,
-   "job_counts": {
-    "pending": 4,
-    "running": 1,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 1355,
-   "unit_counts": {
-    "pending": 1106,
-    "running": 3,
-    "done": 246,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1685670,
-   "pct": 57.4,
-   "updated": "2026-11-24 02:02:16",
-   "created": "2026-11-23 07:18:46"
   },
   {
    "name": "an-catukkanipata",
