@@ -1,35 +1,35 @@
 {
  "schema": 2,
- "updated": "2026-11-24 16:09:52",
+ "updated": "2026-11-24 23:46:04",
  "projects": [
   {
    "name": "kn7",
    "title": "饿鬼事 Petavatthu 两层汉译（本文／义注 Petavatthu-aṭṭhakathā）",
-   "state": "paused",
+   "state": "running",
    "book": 161,
    "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
    "scan": true,
    "jobs": 4,
    "job_counts": {
     "pending": 3,
-    "running": 0,
+    "running": 1,
     "done": 0,
-    "failed": 1,
+    "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "units": 440,
    "unit_counts": {
-    "pending": 434,
-    "running": 0,
-    "done": 5,
-    "failed": 1,
+    "pending": 435,
+    "running": 2,
+    "done": 3,
+    "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "chars": 489463,
-   "pct": 2.8,
-   "updated": "2026-11-24 16:09:51",
+   "pct": 1.7,
+   "updated": "2026-11-24 23:46:03",
    "created": "2026-11-24 16:02:10"
   },
   {
