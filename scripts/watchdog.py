@@ -222,6 +222,8 @@ def main():
                     help="同一错误出现几次就当系统性问题告警")
     args, extra = ap.parse_known_args()   # 认不出的参数透传给 run_daemon.py
     args.extra = extra
+    if not rd.model_of(args.extra):           # 看门狗拉起守护进程时原样透传，这里先拦
+        sys.exit(rd.MODEL_REQUIRED)
 
     if not args.project:
         names = rd.pj.all_names()

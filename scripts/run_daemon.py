@@ -388,6 +388,21 @@ def rate_limited_in(path):
     return hit_since_last_run(path, RATE_LIMIT)
 
 
+
+def model_of(extra):
+    """透传参数里的 --model 值；没有就是空串。"""
+    for i, a in enumerate(extra):
+        if a == "--model" and i + 1 < len(extra):
+            return extra[i + 1]
+        if a.startswith("--model="):
+            return a.split("=", 1)[1]
+    return ""
+
+
+MODEL_REQUIRED = ("缺少 --model：模型没有默认值，必须显式指定（与对话模型、署名身份一致），"
+                  "如 --model claude-opus-5-5。不传就拒绝启动——否则每个 task 都会在 "
+                  "pipeline_batch.sh 里报错，几分钟内整个项目被记成失败")
+
 def refresh_credentials(args):
     """开跑前把凭据刷新一遍：模型身份 + channel access token。
 
@@ -945,6 +960,8 @@ def main():
         return cmd_reset(args)
     if not args.channel:
         sys.exit("run 需要 --channel <uid>")
+    if not model_of(args.extra):
+        sys.exit(MODEL_REQUIRED)
     cmd_run(args)
 
 
