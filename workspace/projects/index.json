@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-11-23 17:43:20",
+ "updated": "2026-11-24 02:02:17",
  "projects": [
   {
    "name": "kn18",
@@ -95,14 +95,14 @@
   {
    "name": "kn19",
    "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
-   "state": "idle",
+   "state": "running",
    "book": 153,
    "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
    "scan": true,
    "jobs": 5,
    "job_counts": {
-    "pending": 5,
-    "running": 0,
+    "pending": 4,
+    "running": 1,
     "done": 0,
     "failed": 0,
     "skipped": 0,
@@ -110,16 +110,16 @@
    },
    "units": 1355,
    "unit_counts": {
-    "pending": 1355,
-    "running": 0,
-    "done": 0,
+    "pending": 1106,
+    "running": 3,
+    "done": 246,
     "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "chars": 1685670,
-   "pct": 0.0,
-   "updated": "2026-11-23 07:18:46",
+   "pct": 57.4,
+   "updated": "2026-11-24 02:02:16",
    "created": "2026-11-23 07:18:46"
   },
   {
