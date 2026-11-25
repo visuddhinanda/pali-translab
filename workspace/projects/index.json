@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-11-25 15:51:56",
+ "updated": "2026-11-25 15:58:32",
  "projects": [
   {
    "name": "x57-saddanitippakaranam-dhatumala",
@@ -333,6 +333,246 @@
    "created": "2026-11-24 11:28:59"
   },
   {
+   "name": "mn-mulapannasa",
+   "title": "中部 根本五十經篇 三層翻譯",
+   "state": "done",
+   "book": 164,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1922,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1252,
+    "failed": 0,
+    "skipped": 670,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-25 09:54:46",
+   "created": "2026-11-23 18:02:30"
+  },
+  {
+   "name": "kn7",
+   "title": "饿鬼事 Petavatthu 两层汉译（本文／义注 Petavatthu-aṭṭhakathā）",
+   "state": "running",
+   "book": 161,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 3,
+    "running": 1,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 440,
+   "unit_counts": {
+    "pending": 434,
+    "running": 3,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 489463,
+   "pct": 1.7,
+   "updated": "2026-11-24 23:46:39",
+   "created": "2026-11-24 16:02:10"
+  },
+  {
+   "name": "kn14",
+   "title": "本生 Jātaka 两层汉译（本文／义注 Jātaka-aṭṭhakathā）",
+   "state": "idle",
+   "book": 148,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 4990,
+   "unit_counts": {
+    "pending": 4990,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 5959736,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:05:42",
+   "created": "2026-11-24 16:05:42"
+  },
+  {
+   "name": "kn10",
+   "title": "譬喻 Apadāna 两层汉译（本文 长老譬喻·长老尼譬喻／义注 Visuddhajanavilāsinī）",
+   "state": "idle",
+   "book": 143,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1780,
+   "unit_counts": {
+    "pending": 1780,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 1957155,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:04:01",
+   "created": "2026-11-24 16:04:01"
+  },
+  {
+   "name": "kn12",
+   "title": "佛种姓 Buddhavaṃsa 两层汉译（本文／义注 Buddhavaṃsa-aṭṭhakathā）",
+   "state": "idle",
+   "book": 145,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 587,
+   "unit_counts": {
+    "pending": 587,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 665825,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:02:26",
+   "created": "2026-11-24 16:02:26"
+  },
+  {
+   "name": "kn6",
+   "title": "天宫事 Vimānavatthu 两层汉译（本文／义注 Vimānavatthu-aṭṭhakathā）",
+   "state": "idle",
+   "book": 160,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 515,
+   "unit_counts": {
+    "pending": 515,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 598022,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:02:17",
+   "created": "2026-11-24 16:02:17"
+  },
+  {
+   "name": "kn19",
+   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
+   "state": "idle",
+   "book": 153,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 5,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 5,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1355,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1343,
+    "failed": 0,
+    "skipped": 1,
+    "fixed": 11
+   },
+   "chars": 1685670,
+   "pct": 100.0,
+   "updated": "2026-11-24 15:28:54",
+   "created": "2026-11-23 07:18:46"
+  },
+  {
+   "name": "sn-mahavagga",
+   "title": "相應部 大篇 三層翻譯",
+   "state": "done",
+   "book": 171,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 704,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 566,
+    "failed": 0,
+    "skipped": 138,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-24 14:32:01",
+   "created": "2026-11-23 18:02:21"
+  },
+  {
    "name": "x32-maharahaniti",
    "title": "Mahārahanīti 汉译（藏外·仅本文）",
    "state": "paused",
@@ -631,6 +871,36 @@
    "pct": 41.6,
    "updated": "2026-11-24 11:44:47",
    "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "sn-salayatanavagga",
+   "title": "相應部 六處篇 三層翻譯",
+   "state": "done",
+   "book": 170,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 582,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 490,
+    "failed": 0,
+    "skipped": 92,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:43:59",
+   "created": "2026-11-23 18:02:14"
   },
   {
    "name": "x25-rasavahini",
@@ -1171,6 +1441,36 @@
    "pct": 0.0,
    "updated": "2026-11-24 11:02:48",
    "created": "2026-11-24 02:47:58"
+  },
+  {
+   "name": "sn-nidanavagga",
+   "title": "相應部 因緣篇 三層翻譯",
+   "state": "done",
+   "book": 168,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 690,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 502,
+    "failed": 0,
+    "skipped": 188,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-24 09:25:02",
+   "created": "2026-11-23 18:02:17"
   },
   {
    "name": "x21-spv-anguttaranikaye",
@@ -1743,6 +2043,36 @@
    "created": "2026-11-24 02:47:46"
   },
   {
+   "name": "sn-khandhavagga",
+   "title": "相應部 蘊篇 三層翻譯",
+   "state": "done",
+   "book": 169,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 406,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 336,
+    "failed": 0,
+    "skipped": 70,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-24 03:29:42",
+   "created": "2026-11-23 18:02:11"
+  },
+  {
    "name": "x02-sasanavamsappadipika",
    "title": "Sāsanavaṃsappadīpikā 汉译（藏外·仅本文）",
    "state": "done",
@@ -1803,34 +2133,34 @@
    "created": "2026-11-24 02:47:25"
   },
   {
-   "name": "kn19",
-   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
-   "state": "running",
-   "book": 153,
+   "name": "dn-pathikavagga",
+   "title": "長部 波梨品 三層翻譯",
+   "state": "idle",
+   "book": 95,
    "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
    "scan": true,
-   "jobs": 5,
+   "jobs": 3,
    "job_counts": {
-    "pending": 4,
-    "running": 1,
+    "pending": 3,
+    "running": 0,
     "done": 0,
     "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
-   "units": 1355,
+   "units": 816,
    "unit_counts": {
-    "pending": 1104,
-    "running": 3,
-    "done": 248,
+    "pending": 816,
+    "running": 0,
+    "done": 0,
     "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
-   "chars": 1685670,
-   "pct": 58.0,
-   "updated": "2026-11-24 02:02:43",
-   "created": "2026-11-23 07:18:46"
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-23 18:02:24",
+   "created": "2026-11-23 18:02:24"
   },
   {
    "name": "kn18",
@@ -3033,126 +3363,6 @@
    "created": "2026-09-30 22:38:09"
   },
   {
-   "name": "sn-mahavagga",
-   "title": "相應部 大篇 三層翻譯",
-   "state": "done",
-   "book": 171,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 349,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 349,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 4718,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 4718,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1249873,
-   "pct": 100.0,
-   "updated": "2026-09-29 22:01:59",
-   "created": "2026-09-28 07:47:40"
-  },
-  {
-   "name": "sn-salayatanavagga",
-   "title": "相應部 六處篇 三層翻譯",
-   "state": "done",
-   "book": 170,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 211,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 211,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 3335,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 3335,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1006751,
-   "pct": 100.0,
-   "updated": "2026-09-23 19:51:33",
-   "created": "2026-09-18 03:21:22"
-  },
-  {
-   "name": "sn-khandhavagga",
-   "title": "相應部 蘊篇 三層翻譯",
-   "state": "done",
-   "book": 169,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 163,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 163,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 2213,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 2213,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 680703,
-   "pct": 100.0,
-   "updated": "2026-09-17 10:49:17",
-   "created": "2026-09-17 02:20:43"
-  },
-  {
-   "name": "sn-nidanavagga",
-   "title": "相應部 因緣篇 三層翻譯",
-   "state": "done",
-   "book": 168,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": false,
-   "jobs": 288,
-   "job_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 288,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 4645,
-   "unit_counts": {
-    "pending": 0,
-    "running": 0,
-    "done": 4645,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1108244,
-   "pct": 100.0,
-   "updated": "2026-09-16 12:30:33",
-   "created": "2026-09-09 08:03:41"
-  },
-  {
    "name": "sn-sagathavagga",
    "title": "相應部 有偈篇 三層翻譯",
    "state": "done",
@@ -3181,22 +3391,6 @@
    "pct": 100.0,
    "updated": "2026-09-09 04:41:35",
    "created": "2026-09-07 07:29:06"
-  },
-  {
-   "name": "mn-mulapannasa",
-   "title": "中部 根本五十經篇 三層翻譯",
-   "state": "archive",
-   "book": 164,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "jobs": 89,
-   "job_counts": {},
-   "units": 0,
-   "unit_counts": {},
-   "chars": 0,
-   "pct": 100.0,
-   "archive": true,
-   "updated": "2026-09-07 14:58:21",
-   "created": "2026-08-29 04:43:39"
   },
   {
    "name": "mn-uparipannasa",
@@ -3243,22 +3437,6 @@
    "archive": true,
    "updated": "2026-09-06 09:17:51",
    "created": "2026-09-05 07:17:09"
-  },
-  {
-   "name": "dn-pathikavagga",
-   "title": "長部 波梨品 三層翻譯",
-   "state": "archive",
-   "book": 95,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "jobs": 150,
-   "job_counts": {},
-   "units": 0,
-   "unit_counts": {},
-   "chars": 0,
-   "pct": 100.0,
-   "archive": true,
-   "updated": "2026-08-29 04:03:50",
-   "created": "2026-08-20 16:15:58"
   },
   {
    "name": "dn-mahavagga",
