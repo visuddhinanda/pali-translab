@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-11-25 10:53:02",
+ "updated": "2026-11-25 10:53:45",
  "projects": [
   {
    "name": "dn-pathikavagga",
@@ -20,16 +20,16 @@
    },
    "units": 816,
    "unit_counts": {
-    "pending": 704,
-    "running": 2,
-    "done": 110,
+    "pending": 701,
+    "running": 3,
+    "done": 112,
     "failed": 0,
     "skipped": 0,
     "fixed": 0
    },
    "chars": 0,
    "pct": 0.0,
-   "updated": "2026-11-25 10:53:01",
+   "updated": "2026-11-25 10:53:43",
    "created": "2026-11-23 18:02:24"
   },
   {
@@ -61,6 +61,186 @@
    "pct": 0.0,
    "updated": "2026-11-25 09:54:46",
    "created": "2026-11-23 18:02:30"
+  },
+  {
+   "name": "kn7",
+   "title": "饿鬼事 Petavatthu 两层汉译（本文／义注 Petavatthu-aṭṭhakathā）",
+   "state": "running",
+   "book": 161,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 3,
+    "running": 1,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 440,
+   "unit_counts": {
+    "pending": 434,
+    "running": 3,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 489463,
+   "pct": 1.7,
+   "updated": "2026-11-24 23:46:39",
+   "created": "2026-11-24 16:02:10"
+  },
+  {
+   "name": "kn14",
+   "title": "本生 Jātaka 两层汉译（本文／义注 Jātaka-aṭṭhakathā）",
+   "state": "idle",
+   "book": 148,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 4990,
+   "unit_counts": {
+    "pending": 4990,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 5959736,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:05:42",
+   "created": "2026-11-24 16:05:42"
+  },
+  {
+   "name": "kn10",
+   "title": "譬喻 Apadāna 两层汉译（本文 长老譬喻·长老尼譬喻／义注 Visuddhajanavilāsinī）",
+   "state": "idle",
+   "book": 143,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1780,
+   "unit_counts": {
+    "pending": 1780,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 1957155,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:04:01",
+   "created": "2026-11-24 16:04:01"
+  },
+  {
+   "name": "kn12",
+   "title": "佛种姓 Buddhavaṃsa 两层汉译（本文／义注 Buddhavaṃsa-aṭṭhakathā）",
+   "state": "idle",
+   "book": 145,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 587,
+   "unit_counts": {
+    "pending": 587,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 665825,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:02:26",
+   "created": "2026-11-24 16:02:26"
+  },
+  {
+   "name": "kn6",
+   "title": "天宫事 Vimānavatthu 两层汉译（本文／义注 Vimānavatthu-aṭṭhakathā）",
+   "state": "idle",
+   "book": 160,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 4,
+   "job_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 515,
+   "unit_counts": {
+    "pending": 515,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 598022,
+   "pct": 0.0,
+   "updated": "2026-11-24 16:02:17",
+   "created": "2026-11-24 16:02:17"
+  },
+  {
+   "name": "kn19",
+   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
+   "state": "idle",
+   "book": 153,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 5,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 5,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1355,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1343,
+    "failed": 0,
+    "skipped": 1,
+    "fixed": 11
+   },
+   "chars": 1685670,
+   "pct": 100.0,
+   "updated": "2026-11-24 15:28:54",
+   "created": "2026-11-23 07:18:46"
   },
   {
    "name": "sn-mahavagga",
@@ -271,36 +451,6 @@
    "pct": 0.0,
    "updated": "2026-11-23 08:23:01",
    "created": "2026-11-22 11:10:29"
-  },
-  {
-   "name": "kn19",
-   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
-   "state": "idle",
-   "book": 153,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 5,
-   "job_counts": {
-    "pending": 5,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 1355,
-   "unit_counts": {
-    "pending": 1355,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1685670,
-   "pct": 0.0,
-   "updated": "2026-11-23 07:18:46",
-   "created": "2026-11-23 07:18:46"
   },
   {
    "name": "an-catukkanipata",

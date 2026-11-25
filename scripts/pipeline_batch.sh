@@ -35,7 +35,7 @@
 #       [--channel <uid>] [--method <name>] \
 #       [--steps translate,review,revise,harmonize,evaluate,export] \
 #       [--layers mula,atthakatha,tika] [--chapter] [--chunk-chars N] [--max-paras N] \
-#       [--tries N] [--model sonnet] [--nissaya] [--dry-run] [--force]
+#       [--tries N] --model <id> [--nissaya] [--dry-run] [--force]
 #
 # 断点续传：
 #   audit.log 按 <层book>:<段> 记账；重跑时整个 chunk 都做过就跳过。--force 强制重做。
@@ -66,7 +66,10 @@ METHOD="default"
 STEPS="translate,review,revise,harmonize,evaluate,export"
 WANT_LAYERS="mula,atthakatha,tika,mulatika,anutika"   # 本卷没有的层自动跳过
 MAX_TRY=3
-MODEL="sonnet"
+# 模型**没有默认值**：必须显式 --model <id>，且应与署名身份（wikipali ensure-model）一致。
+# 以前默认 "sonnet"，重启时漏传就静默降级，而署名沿用旧身份——Sonnet 的译文署了 Opus 的名
+#（kn19 / kn7，2026-11-24）。
+MODEL=""
 CHANNEL=""
 NISSAYA=""
 FORCE=""
@@ -116,6 +119,7 @@ while [[ $# -gt 0 ]]; do
         *) echo "未知参数: $1" >&2; exit 1 ;;
     esac
 done
+[[ -n "$MODEL" ]] || { echo "缺少 --model：模型没有默认值，必须显式指定（与对话模型、署名身份一致），如 --model claude-opus-5-5" >&2; exit 1; }
 
 # 目标 channel：命令行 > config.toml [wikipali].channel
 if [[ -z "$CHANNEL" && -f "$PROJECT_DIR/config.toml" ]]; then

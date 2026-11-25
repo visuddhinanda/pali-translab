@@ -72,8 +72,16 @@ def write_blocks(rows, channel, max_bytes, max_count):
         os.unlink(tmp)
 
 
-def plan_of(rows, want, max_bytes, max_count):
-    bad = [r for r in rows if r["editor"]["nickName"] != want]
+def needs_fix(r, want, since=""):
+    """署名不是 want 的句子；给了 since 就只认 updated_at ≥ since 的（按写入时间圈定
+    某次运行写的句子——那次运行的身份错了，但别的句子署名本来就对）。"""
+    if r["editor"]["nickName"] == want:
+        return False
+    return not since or (r.get("updated_at") or "") >= since
+
+
+def plan_of(rows, want, max_bytes, max_count, since=""):
+    bad = [r for r in rows if needs_fix(r, want, since)]
     payload = [{"book_id": r["book"], "paragraph": r["paragraph"],
                 "word_start": r["word_start"], "word_end": r["word_end"],
                 "content": r["content"]} for r in bad]
@@ -88,7 +96,7 @@ def handle(book, lo, hi, args, state, key):
             state[key] = "done"
             return True, 0, 0
     rows = read_paras(book, paras, args.channel, args.read_batch)
-    bad, blocks = plan_of(rows, args.want, args.chunk_bytes, args.batch)
+    bad, blocks = plan_of(rows, args.want, args.chunk_bytes, args.batch, args.since)
     nicks = {}
     for r in bad:
         nicks[r["editor"]["nickName"]] = nicks.get(r["editor"]["nickName"], 0) + 1
@@ -116,7 +124,7 @@ def handle(book, lo, hi, args, state, key):
         if digest(after) != before:
             print(f"  {tag}｜✗ 内容哈希不符（{before} → {digest(after)}），停下", flush=True)
             return False, n, nblk
-        left = [r for r in after if r["editor"]["nickName"] != args.want]
+        left = [r for r in after if needs_fix(r, args.want, args.since)]
         print(f"  {tag}｜✓ 改 {n} 句（{nblk} 块），内容一致，剩余署名错 {len(left)}", flush=True)
     else:
         print(f"  {tag}｜✓ 改 {n} 句（{nblk} 块），未校验", flush=True)
@@ -128,6 +136,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--channel", required=True, help="目标 channel uid")
     ap.add_argument("--want", default="claude-opus-5", help="正确的署名（默认 claude-opus-5）")
+    ap.add_argument("--since", default="",
+                    help="只改 updated_at ≥ 此时刻的句子（ISO，UTC，如 2026-11-24T01:57:47）。"
+                         "注意：写回会刷新 updated_at，改过的句子之后仍落在范围内，但署名已对，不会重复改")
     ap.add_argument("--book", type=int, help="单本书：与 --from/--to 一起用")
     ap.add_argument("--from", dest="start", type=int, help="起始段")
     ap.add_argument("--to", dest="end", type=int, help="结束段")
