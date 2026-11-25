@@ -113,6 +113,9 @@ while [[ $# -gt 0 ]]; do
         # 不给目录名，默认落在项目目录的 pending-push/ 下。
         --out-dir)     OUTDIR="$2"; shift 2 ;;
         --local-only)  OUTDIR="auto"; shift ;;
+        # 只翻译、不上传：模型产物照常落 llm-cache，坐标照常校验，但不写 channel、
+        # 也不落本地 JSONL。网络好了再正常跑一遍（复用缓存、不再调模型）就写进去了
+        --cache-only)  CACHE_ONLY=1; shift ;;
         *) echo "未知参数: $1" >&2; exit 1 ;;
     esac
 done
@@ -146,6 +149,8 @@ LLM_CACHE="$PROJ_HOME/llm-cache"
 [[ "$OUTDIR" == "auto" ]] && OUTDIR="$PROJ_HOME/pending-push"
 PUSH_OUT=()
 PULL_LOC=()
+PUSH_DRY=""; CACHED_NOTE=""
+[[ -n "${CACHE_ONLY:-}" ]] && { PUSH_DRY="--dry-run"; CACHED_NOTE="（仅缓存，未上传）"; }
 if [[ -n "$OUTDIR" ]]; then
     PUSH_OUT=(--out-dir "$OUTDIR")
     # 本地模式下 channel 里没有译文，注释层要注入的父层译文只能从待补传目录取，
@@ -160,7 +165,10 @@ touch "$AUDIT"
 
 # translate 的两张便条：本轮期望的坐标清单、上一轮缺失的段号
 IDS_FILE="$(mktemp)"; MISS_FILE="$(mktemp)"
-trap 'rm -f "$IDS_FILE" "$MISS_FILE"' EXIT
+trap 'rm -f "$IDS_FILE" "$MISS_FILE" "$MISS_FILE.ids"' EXIT
+# translate 只差这么几句（坐标对不上之类）就不重试：已写的算成功，缺的记进
+# 项目目录的 manual_fix.tsv，由人工补译文。重试会复用缓存里同一份产物，补不上
+MANUAL_FIX_MAX=${MANUAL_FIX_MAX:-2}
 
 # --- 加载 knowledge（固定文件 + 规则文件）---
 read_or_empty() { [[ -f "$1" ]] && cat "$1" || true; }
@@ -709,16 +717,28 @@ $(wp_read --book "$T_ABOOK" --para "$T_APARAS" --channel "$CHANNEL" "${PULL_LOC[
                 audit_task "$TASK" skip "无可译巴利句" "$T_BOOK" "$T_START-$T_END"; exit 0
             fi
             echo ">>> translate 第 $try/$MAX_TRY 次（$N 句 / $(echo ${TODO//,/ } | wc -w) 段）"
-            : > "$MISS_FILE"
+            : > "$MISS_FILE"; rm -f "$MISS_FILE.ids"
             set +e
             emit_translate "$TASK" \
                 | python3 "$SCRIPT_DIR/wp_push.py" --book "$T_BOOK" --para "$TODO" \
                     --channel "$CHANNEL" --expect "$N" --expect-ids "$IDS_FILE" \
-                    --missing-out "$MISS_FILE" "${PUSH_OUT[@]}" $DRYRUN
+                    --missing-out "$MISS_FILE" "${PUSH_OUT[@]}" $DRYRUN $PUSH_DRY
             PUSH_RC=${PIPESTATUS[1]}
             set -e
             if [[ "$PUSH_RC" -eq 0 ]]; then
-                audit_task "$TASK" ok "$N 句" "$T_BOOK" "$T_START-$T_END"; exit 0
+                audit_task "$TASK" ok "$N 句$CACHED_NOTE" "$T_BOOK" "$T_START-$T_END"; exit 0
+            fi
+            # 只差一两句：不重试，记账待人工补，task 算成功
+            if [[ "$PUSH_RC" -eq 2 && -s "$MISS_FILE.ids" && -z "$DRYRUN" ]]; then
+                NMISS=$(grep -c . "$MISS_FILE.ids")
+                if [[ "$NMISS" -le "$MANUAL_FIX_MAX" ]]; then
+                    FIX="$(dirname "$PLAN")/manual_fix.tsv"
+                    while read -r sid; do
+                        [[ -n "$sid" ]] && printf '%s\t%s\t%s\n' "$TASK" "$sid" "$(date '+%F %T')" >> "$FIX"
+                    done < "$MISS_FILE.ids"
+                    echo "  缺 $NMISS 句（≤$MANUAL_FIX_MAX），不重试，已记入 $FIX 待人工补"
+                    audit_task "$TASK" ok "$((N - NMISS))/$N 句，缺 $NMISS 句待人工补$CACHED_NOTE" "$T_BOOK" "$T_START-$T_END"; exit 0
+                fi
             fi
             # 退出码 2 = 能写的都写进去了，只差几段：下一轮只补缺的
             if [[ "$PUSH_RC" -eq 2 && -s "$MISS_FILE" && $try -lt $MAX_TRY ]]; then

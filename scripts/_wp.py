@@ -13,7 +13,8 @@ import subprocess
 import sys
 import time
 
-PALI_UID = "00b577c0-13b9-11ee-a05a-b7307efd9ee6"  # _System_Pali_VRI_
+# _System_Pali_VRI_ 的 uid 各服务器不同（本地开发机是 f4d07a00-…），读别的服务器时用环境变量换
+PALI_UID = os.environ.get("WIKIPALI_PALI_UID") or "00b577c0-13b9-11ee-a05a-b7307efd9ee6"
 TAG_RE = re.compile(r"<[^>]+>")
 # 黑体在义注/复注里是**被解释词**（引自上一层），必须保住——剥成纯文本就看不出注的是哪个词
 BOLD_RE = re.compile(r"<(?:strong|b)\b[^>]*>(.*?)</(?:strong|b)>", re.S | re.I)
@@ -90,6 +91,22 @@ def jget(*args, retries=5):
 
 
 GET_LIMIT = 1000   # `wikipali get` 一次最多返回几行（句 × channel）；CLI 默认只有 200
+
+
+def toc_rows(book, para, depth=7):
+    """`wikipali toc --json` 的目录项，统一成旧格式 `{book, paragraph, toc, level}`。
+
+    0.29.0 起 CLI 改了输出：`paragraph`→`para`、`toc`→`title`，level 整体小 1；
+    `--depth` 上限也收紧到 7（传 9 服务端回 422）。新旧两种都认，调用方只看旧字段。
+    """
+    out = []
+    for t in jget("toc", f"{book}:{para}", "--json", "--depth", str(min(depth, 7))) or []:
+        if "paragraph" in t:
+            out.append(t)
+        else:
+            out.append({**t, "paragraph": t["para"], "toc": t.get("title") or "",
+                        "level": int(t["level"]) + 1})
+    return out
 
 
 def get_rows(book, paras, channels=(), batch=20):

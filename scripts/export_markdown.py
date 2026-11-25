@@ -30,7 +30,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import book_roots, get_rows, jget, plain  # noqa: E402
+from _wp import book_roots, get_rows, jget, para_chars, plain, toc_rows  # noqa: E402
 
 # 文件名/目录名保留章节名原貌，只挡掉路径分隔符与控制字符
 UNSAFE_RE = re.compile(r"[/\\\x00-\x1f]+")
@@ -39,13 +39,17 @@ PROBE = 200  # 末章没有下一条目录项时，向后探这么多段
 
 def chapters(book, anchor_para):
     """目录项 → [{start, end, title, path}]，path 是祖先标题面包屑。"""
-    toc = jget("toc", f"{book}:{anchor_para}", "--json", "--depth", "9")
+    toc = toc_rows(book, anchor_para)
+    last = max(para_chars(book) or [0])
     toc = [t for t in toc if t.get("book") == book]
     toc.sort(key=lambda t: t["paragraph"])
 
     out = []
     for i, t in enumerate(toc):
-        nxt = toc[i + 1]["paragraph"] - 1 if i + 1 < len(toc) else t["paragraph"] + PROBE
+        # 末章收到书末（段表缓存的最大段号）。以前是起段 + PROBE：整本只有一条目录的书
+        # （Padamañjarī 1640 段）只导出了前 200 段
+        nxt = (toc[i + 1]["paragraph"] - 1 if i + 1 < len(toc)
+               else max(last, t["paragraph"]) if last else t["paragraph"] + PROBE)
         # 面包屑：每一层只保留最近的那个祖先
         seen = {}
         for a in toc[:i]:
@@ -84,7 +88,7 @@ def main():
     args = ap.parse_args()
 
     args.out = args.out or "workspace/export"
-    meta = next((c for c in jget("channels", "--json") if c["uid"] == args.channel), {})
+    meta = next((c for c in jget("channels", "--json") if (c.get("uid") or c.get("id")) == args.channel), {})
     # 没指定段号时，锚点取书目表里这本书的根段（不是 1，也不是写死的 3——
     # 根段号各书不同，给错了 toc 会取不到或只取到半本）
     anchor = args.para or args.start or book_roots(args.book)[0]
@@ -97,7 +101,8 @@ def main():
     else:
         lo = args.start if args.start is not None else -10**9
         hi = args.end if args.end is not None else 10**9
-        chs = [c for c in chs if c["end"] >= lo and c["start"] <= hi]
+        chs = [{**c, "start": max(c["start"], lo), "end": min(c["end"], hi)}
+               for c in chs if c["end"] >= lo and c["start"] <= hi]
 
     today = datetime.date.today().isoformat()
     written = 0

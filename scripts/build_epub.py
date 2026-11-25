@@ -308,6 +308,14 @@ def main():
     books = [os.path.join(args.root, b) for b in args.book] or sorted(
         os.path.join(args.root, d) for d in os.listdir(args.root)
         if os.path.isdir(os.path.join(args.root, d)))
+    # 整本只有一章的书（Padamañjarī 等）只导出一个扉页文件、没有书目录：
+    # 按扉页的书名虚拟一个目录，load_chapters 会把旁边的扉页收进来
+    if not args.book:
+        have = {os.path.basename(b) for b in books}
+        for f in sorted(os.listdir(args.root)):
+            name = re.sub(r"^\[\d+\]\s+", "", f)[:-3] if f.endswith(".md") else ""
+            if name and name not in have:
+                books.append(os.path.join(args.root, name))
     if not books:
         sys.exit(f"{args.root} 下没有书目录")
 

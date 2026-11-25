@@ -32,7 +32,7 @@ import json
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from _wp import (LAYER_CHAIN, cs_filled, jget, layer_books,  # noqa: E402
+from _wp import (LAYER_CHAIN, cs_filled, jget, layer_books, toc_rows,  # noqa: E402
                  parse_paras)
 
 PROBE = 500   # 末章没有下一条目录项时，向后按这个跨度收尾
@@ -40,7 +40,7 @@ PROBE = 500   # 末章没有下一条目录项时，向后按这个跨度收尾
 
 def chapters(book, anchor):
     """该书的章节表：[(start, end, title)]，某条目录项到下一条之前即一章。"""
-    toc = sorted((t for t in jget("toc", f"{book}:{anchor}", "--json", "--depth", "9")
+    toc = sorted((t for t in toc_rows(book, anchor)
                   if t.get("book") == book), key=lambda t: t["paragraph"])
     out = []
     for i, t in enumerate(toc):

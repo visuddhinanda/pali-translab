@@ -116,6 +116,9 @@ def report_missing(book, scope, miss, missing_out):
     if missing_out:
         with open(missing_out, "w", encoding="utf-8") as f:
             f.write(",".join(str(p) for p in mparas) + "\n")
+        # 缺的句子坐标逐行另存：上游据此判断「只差一两句」就不重试、留给人工补
+        with open(missing_out + ".ids", "w", encoding="utf-8") as f:
+            f.write("".join(f"{book}-{p}-{a}-{b}\n" for p, a, b in miss))
     print(f"  缺失落在段 {','.join(str(p) for p in mparas)}——只需重跑这些段", file=sys.stderr)
     sys.exit(2)
 

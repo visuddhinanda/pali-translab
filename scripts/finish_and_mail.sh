@@ -10,6 +10,8 @@ set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 PROJ="$1"; shift
+# 只上传：workspace/UPLOAD_ONLY 在时不导出不发信（收尾已另做过），退出码 4 交给调用方识别
+if [[ -f workspace/UPLOAD_ONLY ]]; then echo "UPLOAD_ONLY：$PROJ 只上传，不导出不发信"; exit 4; fi
 BOOKS=("$@")
 PJ="workspace/projects/$PROJ/project.json"
 CH=$(python3 -c "import json;print(json.load(open('$PJ'))['channel'])")
@@ -59,6 +61,17 @@ for b, (lo, hi) in sorted(rng.items(), key=lambda kv: int(kv[0])):
     print(b, lo, hi)
 PYR
 )
+# translate 只差一两句时流水线不重试、记进 manual_fix.tsv 待人工补：没补完不发信
+if ! python3 scripts/manual_fix.py check --project "$PROJ"; then
+    echo "⚠ 有句子待人工补（python3 scripts/manual_fix.py list --project $PROJ），本次不导出不发信"
+    exit 3
+fi
+
+# plan_solo 的项目（藏外单层，project.json 带 seq）：导出前把纯编号句照抄原文补进 channel
+if python3 -c "import json,sys;sys.exit(0 if 'seq' in json.load(open('$PJ')) else 1)"; then
+    python3 scripts/fill_numbering.py --project "$PROJ" || echo "⚠ 补编号失败"
+fi
+
 for B in "${BOOKS[@]}"; do
     R=$(printf '%s\n' "$RANGES" | awk -v b="$B" '$1==b {print $2, $3}')
     if [[ -z "$R" ]]; then
@@ -71,7 +84,7 @@ for B in "${BOOKS[@]}"; do
         --from "$FROM" --to "$TO" || echo "⚠ 导出 book $B 失败"
 done
 
-python3 scripts/build_epub.py --root "$EXP" --out "$EPUB" --merge "$PROJ 三层合集" \
+python3 scripts/build_epub.py --root "$EXP" --out "$EPUB" --merge "${MERGE_TITLE:-$PROJ 三层合集}" \
     || echo "⚠ epub 失败"
 
 PKG="$HOME_DIR/$PROJ.zip"
