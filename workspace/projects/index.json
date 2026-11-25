@@ -1,7 +1,67 @@
 {
  "schema": 2,
- "updated": "2026-11-24 14:32:01",
+ "updated": "2026-11-25 10:53:02",
  "projects": [
+  {
+   "name": "dn-pathikavagga",
+   "title": "長部 波梨品 三層翻譯",
+   "state": "running",
+   "book": 95,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 2,
+    "running": 1,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 816,
+   "unit_counts": {
+    "pending": 704,
+    "running": 2,
+    "done": 110,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-25 10:53:01",
+   "created": "2026-11-23 18:02:24"
+  },
+  {
+   "name": "mn-mulapannasa",
+   "title": "中部 根本五十經篇 三層翻譯",
+   "state": "done",
+   "book": 164,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1922,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1252,
+    "failed": 0,
+    "skipped": 670,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-25 09:54:46",
+   "created": "2026-11-23 18:02:30"
+  },
   {
    "name": "sn-mahavagga",
    "title": "相應部 大篇 三層翻譯",
@@ -121,66 +181,6 @@
    "pct": 0.0,
    "updated": "2026-11-24 03:29:42",
    "created": "2026-11-23 18:02:11"
-  },
-  {
-   "name": "mn-mulapannasa",
-   "title": "中部 根本五十經篇 三層翻譯",
-   "state": "idle",
-   "book": 164,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 3,
-   "job_counts": {
-    "pending": 3,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 1922,
-   "unit_counts": {
-    "pending": 1922,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 0,
-   "pct": 0.0,
-   "updated": "2026-11-23 18:02:30",
-   "created": "2026-11-23 18:02:30"
-  },
-  {
-   "name": "dn-pathikavagga",
-   "title": "長部 波梨品 三層翻譯",
-   "state": "idle",
-   "book": 95,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 3,
-   "job_counts": {
-    "pending": 3,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 816,
-   "unit_counts": {
-    "pending": 816,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 0,
-   "pct": 0.0,
-   "updated": "2026-11-23 18:02:24",
-   "created": "2026-11-23 18:02:24"
   },
   {
    "name": "kn18",
