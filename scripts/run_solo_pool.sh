@@ -46,7 +46,8 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-WP_DIR=/home/deploy/workspace/wikipali-plugins/plugins/wikipali/bin
+# 换机器时插件路径不同：WP_DIR=<wikipali-plugins>/plugins/wikipali/bin 覆盖
+WP_DIR="${WP_DIR:-$HOME/workspace/wikipali-plugins/plugins/wikipali/bin}"
 export WIKIPALI_BIN="$WP_DIR/wikipali" PATH="$WP_DIR:$PATH"
 DAEMON_EXTRA=()
 if [[ -n "$CACHE_ONLY" ]]; then

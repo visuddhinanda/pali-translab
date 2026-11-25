@@ -23,6 +23,11 @@ __pycache__/
 !/workspace/projects/*/tasks.*.csv
 !/workspace/projects/*/audit.*.log
 !/workspace/projects/*/reports/
+# 藏外 x22–x62 的模型产物：只缓存翻译、尚未上传，换机器续传要用（上传完可移出 git）
+!/workspace/projects/x2[2-9]-*/llm-cache/
+!/workspace/projects/x[3-6][0-9]-*/llm-cache/
+# 只上传开关（run_solo_pool / finish_and_mail 读它）
+!/workspace/UPLOAD_ONLY
 # 重新规划要用的对齐表 / 对照表（含手工 overrides）与故事型计划的专名表
 !/workspace/projects/*/align.json
 !/workspace/projects/*/align/
