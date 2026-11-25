@@ -1,0 +1,77 @@
+{"id": "13-2413-2-7", "zh": "以 i 类元音、u 类元音结尾的动词词根，在词缀前依次变为 e、o。", "confidence": 80}
+{"id": "13-2413-8-15", "zh": "例如 cetabbaṃ、netabbaṃ、sotabbaṃ、bhavitabbaṃ。", "confidence": 90}
+{"id": "13-2414-2-6", "zh": "83. 短的次末音。", "confidence": 75}
+{"id": "13-2415-2-8", "zh": "作为短音的次末 i 类、u 类元音，依次变为 e、o。", "confidence": 80}
+{"id": "13-2415-9-15", "zh": "例如 esitabbaṃ、kositabbaṃ。为什么说“短的”？", "confidence": 85}
+{"id": "13-2415-16-20", "zh": "例如 dhūpitā。为什么说“次末的”？", "confidence": 85}
+{"id": "13-2415-21-22", "zh": "例如 rundhati。", "confidence": 90}
+{"id": "13-2416-2-7", "zh": "84. 在带 ṇ 附标的词缀前，a 变为 ā。", "confidence": 80}
+{"id": "13-2417-2-9", "zh": "后面接带 ṇ 附标的词缀时，次末的 a 变为 ā。", "confidence": 85}
+{"id": "13-2417-10-11", "zh": "例如 kārako。", "confidence": 90}
+{"id": "13-2418-2-8", "zh": "85. 在带 k 附标的词缀和 n 增音的情况下，这些变化不发生。", "confidence": 70}
+{"id": "13-2419-2-10", "zh": "在带 k 附标的词缀前以及有 n 增音时，上述 e、o、ā 的变化都不发生。", "confidence": 70}
+{"id": "13-2419-11-84", "zh": "例如 cito、suto、diṭṭho、puṭṭho；有 n 增音时，依“vanā”等规则（1.45）：cinitabbaṃ、cinituṃ、suṇitabbaṃ、suṇituṃ、pāpuṇitabbaṃ、pāpuṇituṃ、dhunitabbaṃ、dhunituṃ、dhunanaṃ、dhunayitabbaṃ、dhunāpetabbaṃ、dhunayituṃ、dhunāpetuṃ、dhunayanaṃ、dhunāpanaṃ、dhunayati、dhunāpeti、pīnetabbaṃ、pīnayituṃ、pīnanaṃ、pīnituṃ、pīnayati、sunoti、sinoti、dunoti、hinoti、pahiṇithabbaṃ、pahiṇituṃ、pahiṇanaṃ。", "confidence": 70}
+{"id": "13-2420-2-7", "zh": "86. 有时可任选。", "confidence": 75}
+{"id": "13-2421-2-8", "zh": "在带 k 附标的词缀和 n 增音的情况下，这些变化有时可以不发生，也可以发生。", "confidence": 70}
+{"id": "13-2421-9-14", "zh": "例如 mudito、ruditaṃ、roditaṃ。", "confidence": 90}
+{"id": "13-2422-2-6", "zh": "87. 在其他场合也是如此。", "confidence": 80}
+{"id": "13-2423-2-8", "zh": "在带 k 附标的词缀和 n 增音以外的场合，这些变化有时也不发生。", "confidence": 75}
+{"id": "13-2423-9-14", "zh": "例如 khipako、panūdanaṃ、vadhako。", "confidence": 90}
+{"id": "13-2424-2-7", "zh": "88. 在 pya 前，si 的末音变为 ā。", "confidence": 70}
+{"id": "13-2425-2-8", "zh": "在替代形 pya 前，si 的末音变为 ā，例如 nissāya。", "confidence": 70}
+{"id": "13-2426-2-7", "zh": "89. 在元音前，e、o 变为 aya、ava。", "confidence": 85}
+{"id": "13-2427-2-7", "zh": "后面接元音时，e、o 依次变为 aya、ava。", "confidence": 85}
+{"id": "13-2427-8-14", "zh": "例如 jayo、bhavo。为什么说“在元音前”？", "confidence": 85}
+{"id": "13-2427-15-18", "zh": "例如 jeti、anubhoti。", "confidence": 90}
+{"id": "13-2428-2-7", "zh": "90. 在带 ṇ 附标的词缀前，变为 āya、āva。", "confidence": 80}
+{"id": "13-2429-2-8", "zh": "在以元音开头、带 ṇ 附标的词缀前，e、o 依次变为 āya、āva。", "confidence": 80}
+{"id": "13-2429-9-18", "zh": "例如 nāyayati、bhāvayati；在“sayāpetvā”等词中则变为短音。", "confidence": 65}
+{"id": "13-2430-2-7", "zh": "91. 以 ā 结尾的词根，在 ṇāpi 以外的词缀前加 yuk 增音。", "confidence": 75}
+{"id": "13-2431-2-8", "zh": "以 ā 结尾的动词词根，在 ṇāpi 以外带 ṇ 附标的词缀前，加 yuk 增音。", "confidence": 80}
+{"id": "13-2431-9-12", "zh": "例如 dāyako。为什么限定“带 ṇ 附标的词缀”？", "confidence": 85}
+{"id": "13-2431-13-17", "zh": "例如 dānaṃ。为什么说“在 ṇāpi 以外”？", "confidence": 85}
+{"id": "13-2431-18-19", "zh": "例如 dāpayati。", "confidence": 90}
+{"id": "13-2432-2-7", "zh": "92. pad 等词根有时也加。", "confidence": 75}
+{"id": "13-2433-2-6", "zh": "pad 等词根有时加 yuk 增音。", "confidence": 80}
+{"id": "13-2433-7-20", "zh": "例如 nipajjitabbaṃ、nipajjituṃ、nipajjanaṃ、pamajjitabbaṃ、pamajjituṃ、pamajjanaṃ。为什么说“有时”？", "confidence": 85}
+{"id": "13-2433-21-22", "zh": "例如 pādo。", "confidence": 90}
+{"id": "13-2434-2-8", "zh": "93. rudh 等词根可任选加 ṃ 增音。", "confidence": 75}
+{"id": "13-2435-2-7", "zh": "rudh 等词根有时可任选加 ṃ 增音。", "confidence": 75}
+{"id": "13-2435-8-13", "zh": "例如 rundhituṃ、rujjhituṃ。为什么说“有时”？", "confidence": 85}
+{"id": "13-2435-14-15", "zh": "例如 nirodho。", "confidence": 90}
+{"id": "13-2436-2-7", "zh": "94. 在 kvi 前，末尾辅音脱落。", "confidence": 85}
+{"id": "13-2437-2-6", "zh": "在 kvi 词缀前，词根的末尾辅音脱落。", "confidence": 85}
+{"id": "13-2437-7-13", "zh": "人们在这里吃饭或取饭，所以叫 bhattaggaṃ（食堂）。", "confidence": 80}
+{"id": "13-2438-2-7", "zh": "95. 在 y 以外的辅音前，同化为后一音。", "confidence": 80}
+{"id": "13-2439-2-7", "zh": "在 y 以外的辅音前，动词词根的末尾辅音同化为后一辅音。", "confidence": 85}
+{"id": "13-2439-8-12", "zh": "例如 bhettabbaṃ。为什么说“在辅音前”？", "confidence": 85}
+{"id": "13-2439-13-17", "zh": "例如 bhinditabbaṃ。为什么说“在 y 以外”？", "confidence": 85}
+{"id": "13-2439-18-19", "zh": "例如 bhijjati。", "confidence": 90}
+{"id": "13-2440-2-7", "zh": "96. m、n 变为鼻音 ṃ。", "confidence": 80}
+{"id": "13-2441-2-9", "zh": "以 m、n 结尾的动词词根，在 y 以外的辅音前，末音变为鼻音 ṃ。", "confidence": 85}
+{"id": "13-2441-10-15", "zh": "例如 gantabbaṃ、jaṅghā。为什么限定“在辅音前”？", "confidence": 85}
+{"id": "13-2441-16-19", "zh": "例如 gamanaṃ。为什么限定“在 y 以外”？", "confidence": 85}
+{"id": "13-2441-20-21", "zh": "例如 gamyate。", "confidence": 90}
+{"id": "13-2442-2-7", "zh": "97. brū 不变为 o。", "confidence": 80}
+{"id": "13-2443-2-7", "zh": "在辅音前，brū 不变为 o。", "confidence": 85}
+{"id": "13-2443-8-11", "zh": "例如 brūmi。为什么限定“在辅音前”？", "confidence": 85}
+{"id": "13-2443-12-13", "zh": "例如 abravi。", "confidence": 90}
+{"id": "13-2444-2-8", "zh": "98. 在带 gh 附标的词缀前，c、j 变为 k、g。", "confidence": 80}
+{"id": "13-2445-2-8", "zh": "在带 gh 附标的词缀前，以 c、j 结尾的动词词根，其末音依次变为 k、g。", "confidence": 85}
+{"id": "13-2445-9-12", "zh": "例如 vākyaṃ、bhāgyaṃ。", "confidence": 90}
+{"id": "13-2446-2-8", "zh": "99. 在带 ṇ 附标的词缀前，han 变为 ghāt。", "confidence": 80}
+{"id": "13-2447-2-6", "zh": "在带 ṇ 附标的词缀前，han 变为 ghāt。", "confidence": 85}
+{"id": "13-2447-7-8", "zh": "例如 āghāto。", "confidence": 90}
+{"id": "13-2448-2-8", "zh": "100. 在 pari、paṭi、saṃ、o 之后，han 在 kvi 前变为 gh。", "confidence": 70}
+{"id": "13-2449-2-8", "zh": "在 pari 等之后的 han，在 kvi 前变为 gh。", "confidence": 75}
+{"id": "13-2449-9-20", "zh": "例如 paligho、paṭigho；aghaṃ 的短音是按特例形式（nipātana）形成的；又如 saṅgho、ogho。", "confidence": 70}
+{"id": "13-2450-2-8", "zh": "101. 在 sa 前，后一个变为 ghaṃ。", "confidence": 75}
+{"id": "13-2451-2-8", "zh": "词根重叠时，在 sa 前，后一个 han 变为 ghaṃ。", "confidence": 80}
+{"id": "13-2451-9-10", "zh": "例如 jighaṃsā。", "confidence": 90}
+{"id": "13-2452-2-7", "zh": "102. ji、har 变为 gī。", "confidence": 70}
+{"id": "13-2453-2-8", "zh": "词根重叠时，在 sa 前，后一个 ji、har 变为 gī。", "confidence": 65}
+{"id": "13-2453-9-12", "zh": "例如 vijigīsā、jigīsā。", "confidence": 90}
+{"id": "13-2454-2-7", "zh": "103. dhā 变为 h。", "confidence": 75}
+{"id": "13-2455-2-8", "zh": "词根重叠时，后一个 dhā 的 dh 变为 h。", "confidence": 70}
+{"id": "13-2455-9-10", "zh": "例如 dahati。", "confidence": 90}
+{"id": "13-2456-2-8", "zh": "104. 在 ṇi 前，dus 的元音变为长音。", "confidence": 75}

@@ -1,0 +1,80 @@
+{"id": "17-3701-2-2", "zh": "过去时词缀构形法", "confidence": 80}
+{"id": "17-3702-2-9", "zh": "612. 表示过去时，用 ta、tavantu、tāvī。", "confidence": 85}
+{"id": "17-3703-2-12", "zh": "在过去时中，一切词根之后都可以加 ta、tavantu、tāvī 这些词缀。", "confidence": 85}
+{"id": "17-3703-13-25", "zh": "这些词缀按照其他学派的术语也叫作 niṭṭha（完成）；它们又因为属于 kita 词缀，用来表示施事。", "confidence": 75}
+{"id": "17-3703-26-49", "zh": "表示“abhavi（曾有）”的意思，构成 bhūto、bhūtā、bhūtaṃ；由于“aññesu ca”一条中延续下来的 vā 字，在 ta、tavantu、tāvī 之前不发生强化（vuddhi）。", "confidence": 70}
+{"id": "17-3703-50-56", "zh": "Hu 表示施与、食用、献供；表示“ahavi（曾献供）”的意思，构成 huto，如 huto aggiṃ（已向火献供）。", "confidence": 70}
+{"id": "17-3704-2-4", "zh": "加 tavantu 词缀时——", "confidence": 85}
+{"id": "17-3704-5-21", "zh": "依照“ā simhi”一条变为 ā 音，构成 aggiṃ hutavā、hutavanto 等，变化与 guṇavantu 相同。", "confidence": 75}
+{"id": "17-3704-22-31", "zh": "加 tāvī 时，构成 aggiṃ hutāvī、aggiṃ hutāvino 等，变化与 daṇḍī 相同。", "confidence": 80}
+{"id": "17-3704-32-42", "zh": "阴性加 inī 词缀，构成 hutāvinī；中性则变为短音，构成 hutāvi。", "confidence": 80}
+{"id": "17-3705-2-22", "zh": "Vasa 表示居住；在“vassaṃ avasi（曾度过雨季）”的意思上加 ta 词缀，由于词根以 sa 结尾，依照“sādisanta”等条本应代换为 ṭha，这时——", "confidence": 70}
+{"id": "17-3706-2-17", "zh": "“tassa”是延续生效的条目，“sādi”也是。", "confidence": 75}
+{"id": "17-3707-2-8", "zh": "613. 在 vasa 之后变为 uttha。", "confidence": 80}
+{"id": "17-3708-2-14", "zh": "在 vasa 这个词根之后的 ta 音，连同前面的辅音一起代换为 uttha，然后作元音省略等处理。", "confidence": 75}
+{"id": "17-3708-15-40", "zh": "构成 vassaṃ vuttho（已度过雨季）、vutthā sā（她已居住）；而由于“saralopo”等条中的 tu 字，在不省略前音的情况下，像“adhivatthā devatā（居住在那里的天神）、vatthabbaṃ”等就省略后音。", "confidence": 60}
+{"id": "17-3709-2-10", "zh": "“vasassa”经过变格后延续生效。", "confidence": 70}
+{"id": "17-3710-2-8", "zh": "614. vasa 的 va 可以变为 vu。", "confidence": 75}
+{"id": "17-3711-2-20", "zh": "vasa 这个词根的 va 音，后面接 ta 音时变为 u 音，并且可以在那里增加一个 va 音。", "confidence": 70}
+{"id": "17-3711-21-25", "zh": "这只适用于 niṭṭha 的 ta 音。", "confidence": 75}
+{"id": "17-3711-26-68", "zh": "或者，“vū”中的 va 音是连音产生的，依照并列取义的规则，这里应当取第二个 vā 字，由此 a 音变为 u 音也能成立，如 usito brahmacariyaṃ（已修梵行）、vusito，同样还有 vusitavā、vusitāvī；由于中间增加了 i 音隔开，所以不代换为 uttha。", "confidence": 60}
+{"id": "17-3712-2-30", "zh": "Bhuja 表示保护、食用；在“odanaṃ abhuñji（曾吃饭）”的意思上加 ta、tavantu、tāvī，依照“bhujādīnamanto no dvi ca”一条省略词根末音，并把 ta 音重复，构成 bhutto、bhuttavā、bhuttāvī。", "confidence": 75}
+{"id": "17-3712-31-41", "zh": "同样，ranja 表示染着，表示“arañji”的意思，构成 ratto、rattā、rattaṃ。", "confidence": 80}
+{"id": "17-3712-42-51", "zh": "Yuja 表示结合，表示“ayuñji”的意思，构成 yutto、yuttā、yuttaṃ。", "confidence": 80}
+{"id": "17-3712-52-63", "zh": "Vica 表示分离，前面加 vi，表示“vivicci”的意思，构成 vivitto、vivittā、vivittaṃ。", "confidence": 80}
+{"id": "17-3712-64-70", "zh": "Muca 表示解脱，表示“amucci”的意思，构成 mutto，如 bandhanā mutto（从束缚中解脱）。", "confidence": 80}
+{"id": "17-3712-71-86", "zh": "**同样**，加 ti 词缀时也依照本条省略词根末音并重复辅音：执着叫作 āsatti；解脱，或者借以解脱的，叫作 vimutti。", "confidence": 70}
+{"id": "17-3713-2-36", "zh": "Kudha 表示愤怒；在“akujjhi（曾发怒）”的意思上加 ta 词缀，依照“dhaḍhabhahehi dhaḍhā ca”一条把它变为 dha，再依照“hacatutthānamantānaṃ dodhe”一条把 dha 音变为 da 音，构成 kuddho。", "confidence": 75}
+{"id": "17-3713-37-44", "zh": "Yudha 表示交战，表示“ayujjhi”的意思，构成 yuddho、yuddhaṃ。", "confidence": 80}
+{"id": "17-3713-45-50", "zh": "Sidha 表示成就，表示“asijjhi”的意思，构成 siddho。", "confidence": 80}
+{"id": "17-3713-51-59", "zh": "Rabha 表示急切，前面加 ā，表示“ārabhi”的意思，构成 āraddho，如 āraddho gantuṃ（已开始要去）。", "confidence": 70}
+{"id": "17-3713-60-82", "zh": "Naha 表示系缚，前面加 saṃ，表示“sannayhi”的意思，构成 sannaddho；依照“dhaḍhabhahehi dhaḍhā ca”一条，naha 等之后的 ta 音变为 dha 音。", "confidence": 75}
+{"id": "17-3714-2-25", "zh": "Vaḍḍha 表示增长；在“avaḍḍhi”的意思上加 ta 词缀，ta 变为 ḍha，依照“kvaci dhātu”等条把词根的 a 音变为 u 音，并省略 ḍa。", "confidence": 65}
+{"id": "17-3715-2-9", "zh": "“hacatutthānamantānaṃ”延续生效。", "confidence": 80}
+{"id": "17-3716-2-7", "zh": "615. 后面接 ḍha 音时变为 ḍa。", "confidence": 80}
+{"id": "17-3717-2-9", "zh": "以 ha 或第四类辅音结尾的词根，其末音在后面接 ḍha 音时代换为 ḍa 音。", "confidence": 75}
+{"id": "17-3717-10-23", "zh": "构成 vuḍḍho、vuḍḍhā；依照“bo vassa”一条变为 ba 后，构成 buḍḍho。", "confidence": 75}
+{"id": "17-3717-24-33", "zh": "加 ti 词缀时：觉知，或者借以觉知的，叫作 buddhi（觉慧）。", "confidence": 75}
+{"id": "17-3717-34-38", "zh": "同样构成 siddhi、vaḍḍhi。", "confidence": 85}
+{"id": "17-3717-39-43", "zh": "加 tabba 词缀时，构成 boddhabbaṃ 等。", "confidence": 85}
+{"id": "17-3718-2-12", "zh": "“anto”和“no”也是延续生效的条目。", "confidence": 80}
+{"id": "17-3719-2-7", "zh": "616. 在 tara 等之后变为 iṇṇa。", "confidence": 80}
+{"id": "17-3720-2-18", "zh": "在 tara 等词根之后的 ta 词缀代换为 iṇṇa，词根末音也随之消失，然后作元音省略等处理。", "confidence": 75}
+{"id": "17-3720-19-26", "zh": "Tara 表示渡过，表示“saṃsāraṇṇavaṃ atari（已渡过轮回之海）”的意思，构成 tiṇṇo，如 tiṇṇo tāreyyaṃ（我已渡过，愿令他人渡过）。", "confidence": 65}
+{"id": "17-3720-27-32", "zh": "同样构成 uttiṇṇo，或者 tiṇṇaṃ。", "confidence": 80}
+{"id": "17-3720-33-63", "zh": "Pūra 表示充满，表示“saṃpūri”的意思，构成 saṃpuṇṇo；而由于“saralopo”等条中的 tu 字，在不省略前音的情况下，u 音之后的后音依照“vā paro asarūpā”一条省略，在复辅音前变为短音。", "confidence": 60}
+{"id": "17-3720-64-73", "zh": "Tura 表示迅速，表示“aturi”的意思，构成 tuṇṇaṃ，或者 turitaṃ。", "confidence": 75}
+{"id": "17-3720-74-79", "zh": "Jara 表示年老衰损，表示“parijīri”的意思，构成 parijiṇṇo。", "confidence": 80}
+{"id": "17-3720-80-86", "zh": "Kira 表示散布，表示“ākiri”的意思，构成 ākiṇṇo 等。", "confidence": 80}
+{"id": "17-3721-2-10", "zh": "617. 在 susa、paca、saka 之后变为 kkha、kka。", "confidence": 80}
+{"id": "17-3722-2-19", "zh": "在 susa、paca、saka 这些词根之后的 ta 词缀代换为 kkha、kka，词根末尾的辅音也随之消失。", "confidence": 80}
+{"id": "17-3722-20-26", "zh": "由于有 ca 字，在 muca 等之后也代换为 kka。", "confidence": 75}
+{"id": "17-3722-27-33", "zh": "Susa 表示干枯，表示“asussi”的意思，构成 sukkho，如 sukkho rukkho（枯树）。", "confidence": 80}
+{"id": "17-3722-34-37", "zh": "表示“apacci”的意思，构成 pakkaṃ，如 pakkaṃ phalaṃ（熟果）。", "confidence": 80}
+{"id": "17-3722-38-48", "zh": "Saka 表示能够，表示“asakkhi”的意思，构成 sakko，如 sakko assa（他能够）；表示“omucci”的意思，构成 omukkā，如 omukkā upāhanā（脱下的鞋子）。", "confidence": 70}
+{"id": "17-3722-49-63", "zh": "但在“pacituṃ、pacitabbaṃ”等中不发生这种变化，因为中间有 i 音隔开。", "confidence": 80}
+{"id": "17-3722-64-69", "zh": "同样，凡是有音隔开的地方都不发生。", "confidence": 80}
+{"id": "17-3723-2-5", "zh": "依照**狮子回顾法**，ti 这个字延续生效。", "confidence": 60}
+{"id": "17-3724-2-8", "zh": "618. 在 pakkama 等之后变为 nta。", "confidence": 80}
+{"id": "17-3725-2-18", "zh": "在 pakkama 等以 ma 结尾的词根之后，ta 词缀代换为 nta，词根末音也随之消失。", "confidence": 80}
+{"id": "17-3725-19-26", "zh": "由于有 ca 这个**字**，ti 词缀也变为 nti。", "confidence": 65}
+{"id": "17-3725-27-32", "zh": "Kamu 表示举步，表示“pakkami”的意思，构成 pakkanto（已离去）。", "confidence": 80}
+{"id": "17-3725-33-53", "zh": "同样构成 saṅkanto、nikkhanto；由于“do dhassa ca”一条中的 ca 字，ka 变为 kha。", "confidence": 75}
+{"id": "17-3725-54-61", "zh": "Bhamu 表示不安定，表示“vibbhami”的意思，构成 vibbhanto、bhanto。", "confidence": 75}
+{"id": "17-3725-62-67", "zh": "Khamu 表示忍耐，表示“akkhami”的意思，构成 khanto。", "confidence": 80}
+{"id": "17-3725-68-73", "zh": "Samu 表示寂止，表示“asami”的意思，构成 santo。", "confidence": 80}
+{"id": "17-3725-74-79", "zh": "Damu 表示调伏，表示“adami”的意思，构成 danto。", "confidence": 80}
+{"id": "17-3726-2-7", "zh": "加 ti 时：转移叫作 saṅkanti。", "confidence": 80}
+{"id": "17-3726-8-18", "zh": "同样构成 okkanti、vibbhanti、khanti、santi、danti 等。", "confidence": 85}
+{"id": "17-3727-2-9", "zh": "619. jana 等的末音在 ti 之前也变为 ā。", "confidence": 75}
+{"id": "17-3728-2-15", "zh": "jana 等词根末尾的辅音，在 ta 词缀和 ti 之前变为 ā。", "confidence": 80}
+{"id": "17-3728-16-18", "zh": "通过拆分条文，在其他场合也适用。", "confidence": 70}
+{"id": "17-3728-19-31", "zh": "Jana 表示出生，表示“ajani”的意思，构成 jāto；表示“vijāyi puttaṃ（生了儿子）”的意思，构成 vijātā；出生叫作 jāti。", "confidence": 75}
+{"id": "17-3728-32-47", "zh": "虽然 ta 词缀中已经有 ta 音，**还**另外列出 ti 这个字，是为了排除其他词缀中的 ta 音变为 ā 的情况，例如 jantu。", "confidence": 60}
+{"id": "17-3728-48-62", "zh": "但在“janitvā、janituṃ”等中不发生这种变化，因为中间有 i 音隔开。", "confidence": 80}
+{"id": "17-3729-2-14", "zh": "“ā”“timhi”“ca”也延续生效。", "confidence": 80}
+{"id": "17-3730-2-7", "zh": "620. ṭhā、pā 的末音变为 i、ī。", "confidence": 80}
+{"id": "17-3731-2-21", "zh": "ṭhā、pā 这两个词根末尾的 ā 音，在 ta 词缀和 ti 之前依次代换为 i 音和 ī 音。", "confidence": 80}
+{"id": "17-3731-22-26", "zh": "由于有 ca 字，在其他地方有时也会这样。", "confidence": 75}
+{"id": "17-3731-27-42", "zh": "Ṭhā 表示停止行走，表示“aṭṭhāsi”的意思，构成 ṭhito，又如 upaṭṭhito garuṃ（侍奉师长）、ṭhitavā、adhiṭṭhitvā；站立叫作 ṭhiti。", "confidence": 70}
+{"id": "17-3731-43-56", "zh": "Pā 表示饮用，表示“apāyi”的意思，构成 pītā，又如 yāguṃ pītavā（已喝了粥）；饮用叫作 pīti；还有 pītvā。", "confidence": 70}

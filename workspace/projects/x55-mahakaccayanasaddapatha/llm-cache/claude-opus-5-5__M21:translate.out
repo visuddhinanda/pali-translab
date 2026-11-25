@@ -1,0 +1,80 @@
+{"id": "14-1666-2-2", "zh": "第四品", "confidence": 85}
+{"id": "14-1667-2-11", "zh": "211，126. atta 的词尾在 hi 时变为 ana。", "confidence": 70}
+{"id": "14-1668-2-11", "zh": "该 atta 的词尾在 hi 格尾之前变为 ana。", "confidence": 70}
+{"id": "14-1669-2-5", "zh": "如 attanehi、attanebhi。", "confidence": 90}
+{"id": "14-1670-2-5", "zh": "说“**atta 的词尾**”是为了什么？", "confidence": 75}
+{"id": "14-1670-6-9", "zh": "如 rājehi、rājebhi（不适用此规则）。", "confidence": 75}
+{"id": "14-1671-2-5", "zh": "说“在 hi 时”是为了什么？", "confidence": 80}
+{"id": "14-1671-6-7", "zh": "如 attano。", "confidence": 90}
+{"id": "14-1672-2-10", "zh": "通过“anattaṃ”这一抽象名词式的标示，表示 atta 一词在所有格尾中都替换为 saka。", "confidence": 55}
+{"id": "14-1672-11-18", "zh": "如 sako、sakā、sakaṃ、sake。", "confidence": 90}
+{"id": "14-1673-2-10", "zh": "212，329. 在其后，smiṃ 变为 ni。", "confidence": 80}
+{"id": "14-1674-2-9", "zh": "在该 atta 之后，smiṃ 语尾变为 ni。", "confidence": 85}
+{"id": "14-1674-10-11", "zh": "如 attani。", "confidence": 90}
+{"id": "14-1675-2-9", "zh": "213，127. sa 变为 no。", "confidence": 85}
+{"id": "14-1676-2-12", "zh": "在该 atta 之后，sa 格尾变为 no，如 attano。", "confidence": 85}
+{"id": "14-1677-2-9", "zh": "214，128. smā 变为 nā。", "confidence": 85}
+{"id": "14-1678-2-9", "zh": "在该 atta 之后，smā 语尾变为 nā。", "confidence": 85}
+{"id": "14-1678-10-11", "zh": "如 attanā。", "confidence": 90}
+{"id": "14-1679-2-14", "zh": "再次使用 tato 一词，是为了表示该 atta 的 t 音在所有语尾中都变为 r 音。", "confidence": 65}
+{"id": "14-1679-15-18", "zh": "如 atrajo、atrajaṃ。", "confidence": 90}
+{"id": "14-1680-2-9", "zh": "215，141. 在 jha、la 之后也是如此。", "confidence": 80}
+{"id": "14-1681-2-8", "zh": "在 jha、la 这两类词之后，smā 语尾变为 nā。", "confidence": 85}
+{"id": "14-1682-2-9", "zh": "如 agginā、daṇḍinā、bhikkhunā、sayambhunā。", "confidence": 90}
+{"id": "14-1683-2-5", "zh": "说“**smā**”是为了什么？", "confidence": 85}
+{"id": "14-1683-6-11", "zh": "如 aggayo、munayo、isayo（不适用此规则）。", "confidence": 80}
+{"id": "14-1684-2-11", "zh": "216，180. 在 gha、pa 之后，smiṃ 可以变为 yaṃ。", "confidence": 80}
+{"id": "14-1685-2-10", "zh": "在这些 gha、pa 之后，smiṃ 语尾可以变为 yaṃ。", "confidence": 85}
+{"id": "14-1686-2-6", "zh": "如 kaññāyaṃ、kaññāya。", "confidence": 90}
+{"id": "14-1686-7-10", "zh": "rattiyaṃ、rattiyā。", "confidence": 90}
+{"id": "14-1686-11-14", "zh": "itthiyaṃ、itthiyā。", "confidence": 90}
+{"id": "14-1686-15-18", "zh": "yāguyaṃ、yāguyā。", "confidence": 90}
+{"id": "14-1686-19-22", "zh": "vakhuyaṃ、vadhuyā。", "confidence": 70}
+{"id": "14-1687-2-10", "zh": "217，199. 在中性词之后，yo 可以变为 ni。", "confidence": 80}
+{"id": "14-1688-2-10", "zh": "在所有中性词之后，yo 都可以变为 ni。", "confidence": 85}
+{"id": "14-1689-2-9", "zh": "如 aṭṭhīni、aṭṭhī、āyūni、āyū。", "confidence": 90}
+{"id": "14-1690-2-5", "zh": "说“**在中性词之后**”是为了什么？", "confidence": 80}
+{"id": "14-1690-6-7", "zh": "如 itthiyo（不适用此规则）。", "confidence": 80}
+{"id": "14-1691-2-9", "zh": "218，196. 在 a 之后则必定如此。", "confidence": 80}
+{"id": "14-1692-2-10", "zh": "在以 a 结尾的中性词之后，yo 必定变为 ni。", "confidence": 85}
+{"id": "14-1693-2-5", "zh": "如 yāni、yāni。", "confidence": 90}
+{"id": "14-1693-6-9", "zh": "tāni、tāni。", "confidence": 90}
+{"id": "14-1693-10-13", "zh": "kāni、kāni。", "confidence": 90}
+{"id": "14-1693-14-17", "zh": "bhayāni、bhayāni。", "confidence": 90}
+{"id": "14-1693-18-21", "zh": "rūpāni、rūpāni。", "confidence": 90}
+{"id": "14-1694-2-8", "zh": "219，196. si 变为 aṃ。", "confidence": 75}
+{"id": "14-1695-2-10", "zh": "在以 a 结尾的中性词之后，si 语尾必定变为 aṃ。", "confidence": 85}
+{"id": "14-1696-2-11", "zh": "如 sabbaṃ、yaṃ、taṃ、kaṃ、rūpaṃ。", "confidence": 90}
+{"id": "14-1697-2-10", "zh": "220，74. 在其余的词之后，ga 与 si 也脱落。", "confidence": 70}
+{"id": "14-1698-2-9", "zh": "在前面已指明的词性以外的其余词之后，ga 与 si 这两个语尾都脱落。", "confidence": 60}
+{"id": "14-1699-2-8", "zh": "如 bhoti itthi，sā itthī。", "confidence": 85}
+{"id": "14-1699-9-14", "zh": "bho daṇḍi，so daṇḍī。", "confidence": 85}
+{"id": "14-1699-15-20", "zh": "bho sattha，so satthā。", "confidence": 85}
+{"id": "14-1699-21-26", "zh": "bho rāja，so rājā。", "confidence": 85}
+{"id": "14-1699-27-30", "zh": "说“**在其余的词之后**”是为了什么？", "confidence": 75}
+{"id": "14-1699-31-33", "zh": "如 puriso gacchati（男人走）。", "confidence": 85}
+{"id": "14-1700-2-5", "zh": "说“**ga 与 si**”是为了什么？", "confidence": 80}
+{"id": "14-1700-6-9", "zh": "如 itthiyā、satthussa（不适用此规则）。", "confidence": 80}
+{"id": "14-1701-2-10", "zh": "221，282. 在 āvuso、前缀、不变词等之后，一切格尾也都脱落。", "confidence": 75}
+{"id": "14-1702-2-19", "zh": "在 āvuso、前缀、不变词等之后，一切格尾——单数与复数的第一、第二、第三、第四、第五、第六、第七格——都脱落，", "confidence": 75}
+{"id": "14-1703-2-15", "zh": "如 tvaṃ panāvuso，tumhe panāvuso，padaso dhammaṃ vāceyya，vihāraṃ sve upagaccheyya。", "confidence": 80}
+{"id": "14-1704-2-86", "zh": "pa、parā、ni、nī、u、du、saṃ、vi、ava、anu、pari、adhi、abhi、pati、su、ā、ati、api、apa、upa；如 pahāro、parābhavo、nihāro、nīhāro、uhāro、duhāro、saṃhāro、vihāro、avahāro、anuhāro、parihāro、adhihāro、abhihāro、patihāro、suhāro、āhāro、atihāro、apihāro、apahāro、upahāro。像这样，在这二十个前缀之后也是如此。", "confidence": 75}
+{"id": "14-1705-2-51", "zh": "yathā、tathā、evaṃ、khalu、kho、tatra、atho、atha、hi、tu、ca、vā、vo、haṃ、abhaṃ、alaṃ、eva、ho、aho、he、ahe、re、are，在这些以及类似的不变词之后，也应当这样套用。", "confidence": 70}
+{"id": "14-1706-2-4", "zh": "使用 ca 一词，是为了表示限定。", "confidence": 65}
+{"id": "14-1707-2-10", "zh": "222，342. 在以 liṅga 等为后词的复合词中，puma 的词尾脱落。", "confidence": 75}
+{"id": "14-1708-2-9", "zh": "puma 这个词的词尾，在以 liṅga 等为后词的复合词中脱落。", "confidence": 80}
+{"id": "14-1709-2-7", "zh": "如 pulliṅgaṃ、pumbhāvo、puṅkokilo。", "confidence": 90}
+{"id": "14-1710-2-5", "zh": "说“**puma 的**”是为了什么？", "confidence": 80}
+{"id": "14-1710-6-9", "zh": "如 itthiliṅgaṃ、napuṃsakaliṅgaṃ（不适用此规则）。", "confidence": 80}
+{"id": "14-1711-2-5", "zh": "说“**在 liṅga 等之前**”是为了什么？", "confidence": 75}
+{"id": "14-1711-6-7", "zh": "如 pumitthī（不适用此规则）。", "confidence": 80}
+{"id": "14-1712-2-5", "zh": "说“**在复合词中**”是为了什么？", "confidence": 80}
+{"id": "14-1712-6-8", "zh": "如 pumassa liṅgaṃ（不适用此规则）。", "confidence": 80}
+{"id": "14-1713-2-10", "zh": "223，188. 在以 ī 结尾、称为 pa 的词之后，aṃ 可以变为 yaṃ。", "confidence": 75}
+{"id": "14-1714-2-10", "zh": "在以 ī 结尾、称为 pa 的词之后，aṃ 语尾可以变为 yaṃ。", "confidence": 80}
+{"id": "14-1715-2-5", "zh": "如 itthiyaṃ、itthiṃ。", "confidence": 90}
+{"id": "14-1716-2-5", "zh": "说“**称为 pa 的词**”是为了什么？", "confidence": 75}
+{"id": "14-1716-6-9", "zh": "如 daṇḍinaṃ、bhoginaṃ（不适用此规则）。", "confidence": 80}
+{"id": "14-1717-2-5", "zh": "说“aṃ”是为了什么？", "confidence": 80}
+{"id": "14-1717-6-7", "zh": "如 itthīhi（不适用此规则）。", "confidence": 80}
+{"id": "14-1718-2-10", "zh": "224，153. 在已变为短音的 jha 之后，变为 naṃ。", "confidence": 50}

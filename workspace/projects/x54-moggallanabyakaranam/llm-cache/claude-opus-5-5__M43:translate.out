@@ -1,0 +1,80 @@
+{"id": "13-2718-2-6", "zh": "53. 在 si、hi 之前，变为 aṭa。", "confidence": 75}
+{"id": "13-2719-2-9", "zh": "在 si、hi 之前，atthi 变为 aṭa；ṭ 表示整体替换。", "confidence": 78}
+{"id": "13-2719-10-12", "zh": "例如：asi、ahi。", "confidence": 90}
+{"id": "13-2720-2-9", "zh": "54. mi、ma 任意变为 mhi、mha，并且（atthi 变为 aṭa）。", "confidence": 72}
+{"id": "13-2721-2-12", "zh": "在 atthi 之后的 mi、ma 任意变为 mhi、mha；与此相配合，atthi 也变为 aṭa。", "confidence": 75}
+{"id": "13-2721-13-18", "zh": "例如：amhi、asmi，amha、asma。", "confidence": 90}
+{"id": "13-2722-2-7", "zh": "55. 在这些之前，变为 s。", "confidence": 72}
+{"id": "13-2723-2-7", "zh": "在这些 mi、ma 之前，atthi 变为 s 音。", "confidence": 75}
+{"id": "13-2723-8-12", "zh": "例如：asmi、asma。这条规则是为了排除后音同化。", "confidence": 68}
+{"id": "13-2724-2-7", "zh": "56. 在 ī 等之前，变为长音。", "confidence": 78}
+{"id": "13-2725-2-6", "zh": "在 ī 等语尾之前，atthi 变为长音。", "confidence": 75}
+{"id": "13-2725-7-19", "zh": "例如：āsi、āsuṃ、āsi、āsittha、āsiṃ、āsiṃ mhā。", "confidence": 70}
+{"id": "13-2726-2-6", "zh": "57. 在 hi、mi、ma 之前，a 变为长音。", "confidence": 80}
+{"id": "13-2727-2-6", "zh": "在 hi、mi、ma 之前，a 音变为长音。", "confidence": 85}
+{"id": "13-2727-7-14", "zh": "例如：pacāhi、pacāmi、pacāma、muyhāmi。", "confidence": 90}
+{"id": "13-2728-2-9", "zh": "58. 在 ī 等之前，sak 之后的 ṇā 变为 kha。", "confidence": 70}
+{"id": "13-2729-2-5", "zh": "在 ī 等语尾之前，sak 之后的 kṇā 变为 kha。", "confidence": 70}
+{"id": "13-2729-6-9", "zh": "例如：asakkhi、asakkhiṃsu。", "confidence": 90}
+{"id": "13-2730-2-7", "zh": "59. 在 ssa 之前，任意（变为 kha）。", "confidence": 75}
+{"id": "13-2731-2-8", "zh": "在 ssa 之前，sak 之后的 kṇa 任意变为 kha。", "confidence": 72}
+{"id": "13-2731-9-15", "zh": "例如：sakkhissā、sakkuṇissā，sakkhissati、sakkuṇissati。", "confidence": 90}
+{"id": "13-2732-2-9", "zh": "60. 在这些之前，su 之后的 kṇo、kṇā 变为 roṭa。", "confidence": 70}
+{"id": "13-2733-2-10", "zh": "在这些 ī 等及 ssa 等语尾之前，su 之后的 kṇo、kṇā 任意变为 roṭa。", "confidence": 70}
+{"id": "13-2733-11-19", "zh": "例如：assosi、asuṇi，assossā、asuṇissā，sossati、suṇissati。", "confidence": 90}
+{"id": "13-2734-2-9", "zh": "61. 在 ti 之前，带 nā 的 ñā 变为 nāya。", "confidence": 72}
+{"id": "13-2734-10-16", "zh": "在 ti 之前，带 nā 的 ñā 任意变为 nāya。", "confidence": 72}
+{"id": "13-2734-17-20", "zh": "例如：nāyati、jānāti。", "confidence": 90}
+{"id": "13-2735-2-7", "zh": "62. 在 ñā 之前，变为 jaṃ。", "confidence": 68}
+{"id": "13-2736-2-10", "zh": "在替换为 ñā 时，带 nā 的 ñā（任意）变为 jaṃ。", "confidence": 65}
+{"id": "13-2736-11-15", "zh": "例如：jaññā（jāneyya）。", "confidence": 88}
+{"id": "13-2737-2-7", "zh": "63. eyya 任意变为 iyā、ñā。", "confidence": 78}
+{"id": "13-2738-2-7", "zh": "在 ñā 之后，eyya 任意变为 iyā、ñā。", "confidence": 80}
+{"id": "13-2738-8-12", "zh": "例如：jāniyā、jaññā、jāneyya。", "confidence": 90}
+{"id": "13-2739-2-7", "zh": "64. 在 ī 及 ssati 等之前，knā 脱落。", "confidence": 75}
+{"id": "13-2740-2-9", "zh": "在 ī 等及 ssati 等语尾之前，ñā 之后的 knā 任意脱落。", "confidence": 75}
+{"id": "13-2740-10-15", "zh": "例如：aññāsi、ajāni，ñassati、jānissati。", "confidence": 90}
+{"id": "13-2741-2-8", "zh": "65. 表被动时，ssa 变为 hi。", "confidence": 78}
+{"id": "13-2742-2-9", "zh": "表被动时，ñā 之后的 ssa 任意变为 hi。", "confidence": 78}
+{"id": "13-2742-10-12", "zh": "例如：paññāyihiti、paññāyissati。", "confidence": 90}
+{"id": "13-2743-2-6", "zh": "66. 在 i 之后。", "confidence": 72}
+{"id": "13-2744-2-9", "zh": "在 i 之后，ssa 任意变为 hi。", "confidence": 75}
+{"id": "13-2744-10-12", "zh": "例如：ehiti、essati。", "confidence": 90}
+{"id": "13-2745-2-7", "zh": "67. 在 han 之后，变为 cha、kha。", "confidence": 80}
+{"id": "13-2746-2-7", "zh": "在 han 之后，ssa 任意变为 cha、kha。", "confidence": 80}
+{"id": "13-2746-8-13", "zh": "例如：hañchāmi、hanissāmi，paṭihaṅkhāmi、paṭihanissāmi。", "confidence": 90}
+{"id": "13-2747-2-7", "zh": "68. 在 hā 之后，变为 ha。", "confidence": 80}
+{"id": "13-2748-2-8", "zh": "在 hā 之后，ssa 任意变为 ha。", "confidence": 80}
+{"id": "13-2748-9-11", "zh": "例如：hāhati、jahissati。", "confidence": 90}
+{"id": "13-2749-2-10", "zh": "69. 在 dakkha、kha、hehi、hohi 之后，脱落。", "confidence": 72}
+{"id": "13-2750-2-9", "zh": "在 dakkha 等替换式之后，ssa 任意脱落。", "confidence": 78}
+{"id": "13-2750-10-19", "zh": "例如：dakkhati、dakkhissati，sakkhati、sakkhissati，hehiti、hehissati，hohiti、hohissati。", "confidence": 80}
+{"id": "13-2751-2-6", "zh": "70. 在 kayira 之后，eyyuṃ 等的 eyya（脱落）。", "confidence": 72}
+{"id": "13-2752-2-8", "zh": "在 kayira 之后，eyyuṃ 等语尾中的 eyya 脱落。", "confidence": 78}
+{"id": "13-2752-9-18", "zh": "例如：kayiruṃ、kayirāsi、kayirātha、kahirāmi、kayirāma。", "confidence": 85}
+{"id": "13-2753-2-6", "zh": "71. 变为 ṭā。", "confidence": 75}
+{"id": "13-2754-2-7", "zh": "在 kayira 之后，eyya 变为 ṭā。", "confidence": 80}
+{"id": "13-2754-8-10", "zh": "例如：so kayirā（他应当做）。", "confidence": 85}
+{"id": "13-2755-2-6", "zh": "72. etha 变为 ā。", "confidence": 80}
+{"id": "13-2756-2-7", "zh": "在 kayira 之后，etha 变为 ā。", "confidence": 82}
+{"id": "13-2756-8-9", "zh": "例如：kayirātha。", "confidence": 90}
+{"id": "13-2757-2-11", "zh": "73. 在 labha 之后，iṃ、ī 任意变为 thaṃ、thā。", "confidence": 80}
+{"id": "13-2758-2-8", "zh": "在 labha 之后，iṃ、ī 这两个语尾任意变为 thaṃ、thā。", "confidence": 80}
+{"id": "13-2758-9-14", "zh": "例如：alatthaṃ、alabhiṃ，alattha、alabhi。", "confidence": 90}
+{"id": "13-2759-2-9", "zh": "74. 在前有重音节的短元音之后，nti、nte 变为 re。", "confidence": 70}
+{"id": "13-2760-2-9", "zh": "在前面有重音节的短元音之后，nti、nte 任意变为 re。", "confidence": 70}
+{"id": "13-2760-10-24", "zh": "例如：gacchare、gacchanti，gacchare、gacchante，gamissare、gamissanti，gamissare、gamissante。为什么说“前有重音节”？", "confidence": 75}
+{"id": "13-2760-25-29", "zh": "因为像 paca 这样的就不适用。为什么说“短元音”？", "confidence": 62}
+{"id": "13-2760-30-31", "zh": "因为像 honti 这样的就不适用。", "confidence": 65}
+{"id": "13-2761-2-7", "zh": "75. eyya、eyyāsi、eyyaṃ 变为 ṭe。", "confidence": 80}
+{"id": "13-2762-2-6", "zh": "eyya 等语尾任意变为 ṭe。", "confidence": 82}
+{"id": "13-2762-7-18", "zh": "例如：so kare、kareyya（他应当做），tvaṃ kare、kareyyāsi（你应当做），ahaṃ kare、kareyyaṃ（我应当做）。", "confidence": 85}
+{"id": "13-2763-2-7", "zh": "76. 在后六语尾中，词干符 o 变为 u。", "confidence": 70}
+{"id": "13-2764-2-7", "zh": "在后六语尾的范围内，词干符 o 变为 u。", "confidence": 70}
+{"id": "13-2764-8-9", "zh": "例如：tanute。", "confidence": 90}
+{"id": "13-2765-2-8", "zh": "77. 在前六语尾中，有时任意（变为 u）。", "confidence": 72}
+{"id": "13-2766-2-8", "zh": "在前六语尾中，词干符 o 有时任意变为 u。", "confidence": 72}
+{"id": "13-2766-9-11", "zh": "例如：vanuti、vanoti。", "confidence": 90}
+{"id": "13-2767-2-7", "zh": "78. eyyāma 变为 emu，并且（变为）u。", "confidence": 65}
+{"id": "13-2768-2-7", "zh": "eyyāma 任意变为 emu，也变为 u。", "confidence": 62}
+{"id": "13-2768-8-12", "zh": "例如：bhavemha、bhaveyyāmu、bhaveyyāma。", "confidence": 85}

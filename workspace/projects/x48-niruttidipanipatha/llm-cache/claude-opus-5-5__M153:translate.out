@@ -1,0 +1,49 @@
+{"id": "22-5401-2-2", "zh": "非复辅音 na 替换类", "confidence": 70}
+{"id": "22-5402-2-53", "zh": "hā、i、ci、ji、ṭi、thī、dī、pī、mi、lī、thu、dū、dhū、pū、bhū、lū、vu、su、hu、āsa、katha、kupa、pala、mala、supa、paḷa。", "confidence": 85}
+{"id": "22-5403-2-10", "zh": "752. 在 bhid 等词根之后，kta、ktavantu 的 t 变为 na。", "confidence": 75}
+{"id": "22-5404-2-11", "zh": "在 bhid 等词根之后的 kta、ktavantu 词缀，其紧接词根的 t 音变为 na。", "confidence": 75}
+{"id": "22-5405-2-12", "zh": "hā 意为舍弃：因被舍弃，称为 hīno；又有 pahīno、nihīno、ohīno。", "confidence": 75}
+{"id": "22-5405-13-28", "zh": "这里先作 na 替换，然后依“ūbyañjanassa”规则加插 ī 音，这个 ī 有时变为短音。", "confidence": 70}
+{"id": "22-5405-29-31", "zh": "下面各例也照此类推。", "confidence": 80}
+{"id": "22-5406-2-7", "zh": "带前缀 adhi 的 i 意为依从：依附而行，称为 adhino。", "confidence": 60}
+{"id": "22-5407-2-8", "zh": "ci 意为积聚：因被积聚，称为 cino；又有 ācino。", "confidence": 75}
+{"id": "22-5408-2-7", "zh": "ji 意为胜利：战胜五魔，称为 jino（胜者）。", "confidence": 85}
+{"id": "22-5409-2-6", "zh": "ḍi 意为行走：行走，称为 ḍino。", "confidence": 70}
+{"id": "22-5410-2-6", "zh": "thī 意为聚集：被聚集，称为 thinaṃ。", "confidence": 65}
+{"id": "22-5411-2-8", "zh": "dī 意为消尽：依次被耗费、被消尽，称为 dino，也就是白天。", "confidence": 70}
+{"id": "22-5412-2-6", "zh": "pī 意为满足：因被养足，称为 pīno（肥壮的）。", "confidence": 70}
+{"id": "22-5413-2-6", "zh": "mi 意为投掷：投掷，称为 mino。", "confidence": 65}
+{"id": "22-5414-2-9", "zh": "lī 意为隐没：隐没了，称为 līno；紧贴了，称为 allīno。", "confidence": 70}
+{"id": "22-5414-10-21", "zh": "隐藏了，称为 nilīno；退隐了，称为 paṭilīno，如“paṭilīnacaro bhikkhu”（行止退隐的比丘）；独处静修了，称为 paṭisallīno。", "confidence": 70}
+{"id": "22-5415-2-7", "zh": "thu 意为呻吟：呻吟，称为 nitthuno。", "confidence": 70}
+{"id": "22-5416-2-6", "zh": "dū 意为苦恼：受苦恼，称为 dūno。", "confidence": 70}
+{"id": "22-5417-2-10", "zh": "dhū 意为抖落：抖落不善之法，称为 dhuno，如“dhonopaññavā”（具有涤除之慧的人）。", "confidence": 60}
+{"id": "22-5418-2-14", "zh": "pū 意为清洁：使清洁，称为 puno；人们用它清洁牙齿，称为 dantapoṇo（齿木），这里 n 变为 ṇ。", "confidence": 75}
+{"id": "22-5419-2-7", "zh": "bhū 意为增长：存在、增长，称为 bhūno，也就是利益的积聚。", "confidence": 60}
+{"id": "22-5420-2-6", "zh": "lū 意为割断：割断，称为 luno。", "confidence": 75}
+{"id": "22-5421-2-6", "zh": "vu 意为遮蔽：遮蔽，称为 āvuṇo。", "confidence": 70}
+{"id": "22-5422-2-11", "zh": "su 意为听闻：听闻，称为 suno，又作 soṇo，这里 n 变为 ṇ。", "confidence": 70}
+{"id": "22-5423-2-8", "zh": "su 也表示生长：生长、膨大，称为 sunaṃ，也就是肿胀。", "confidence": 60}
+{"id": "22-5424-2-11", "zh": "hu 意为供养与布施：应当供献，称为 āhunaṃ；应当馈赠，称为 pāhunaṃ，也就是应当给予的物品。", "confidence": 70}
+{"id": "22-5425-2-10", "zh": "āsa 意为坐：坐着，称为 āsino；默然坐着，称为 tuṇhīmāsino。", "confidence": 75}
+{"id": "22-5426-2-8", "zh": "katha 意为坚硬与稳固：坚固，称为 kathinaṃ。", "confidence": 70}
+{"id": "22-5427-2-8", "zh": "kupa 意为扰动：羞耻心会因它而受扰动，称为 hirīkopinaṃ（羞处）。", "confidence": 70}
+{"id": "22-5428-2-6", "zh": "pala 意为行走：行走，称为 palino。", "confidence": 70}
+{"id": "22-5429-2-8", "zh": "mala 意为污秽：污秽，称为 malino，如 malinaṃ，即污秽的衣服。", "confidence": 70}
+{"id": "22-5430-2-6", "zh": "supa 意为睡眠：睡眠，称为 supino（梦）。", "confidence": 75}
+{"id": "22-5431-2-18", "zh": "paḷa 意为行走：行走，称为 paḷino，例如“paḷinā jambudīpāte”〔《波罗夷义注》第一·第三结集论〕。", "confidence": 60}
+{"id": "22-5432-2-4", "zh": "以上是非复辅音 na 替换类。", "confidence": 75}
+{"id": "22-5433-2-2", "zh": "复辅音 na 替换类", "confidence": 70}
+{"id": "22-5434-2-22", "zh": "khida、chida、tuda、dā、nuda、pata、pada、bhida、vida、sada。", "confidence": 85}
+{"id": "22-5435-2-30", "zh": "依“bhidādito no ktaktavantūnaṃ”规则，这个 t 变为 na，词根末音同化为后音：疲倦了，称为 khinno；被割断，称为 chinno，又有 sañchinno；被刺，称为 tunno，又有 patunno、nitunno、vitunno。", "confidence": 70}
+{"id": "22-5436-2-8", "zh": "nuda 意为驱除：被驱除了，称为 nunno；又有 panunno。", "confidence": 75}
+{"id": "22-5437-2-14", "zh": "pata 意为落下：落下，称为 panno，如 pannadhajo（降下旗帜的人）；nn 变为 ṇṇ 时为 rukkhapaṇṇaṃ（树叶），或作 pattaṃ。", "confidence": 60}
+{"id": "22-5438-2-22", "zh": "pada 意为行走：到达了，称为 panno；又有 āpanno、uppanno、nipanno、vipanno、sampanno、upapanno、samupapanno、pariyāpanno。", "confidence": 75}
+{"id": "22-5439-2-14", "zh": "bhida 意为破裂：被破开了，称为 bhinno；又有 pabhinno、sambhinno、paribhinno、vibhinno。", "confidence": 80}
+{"id": "22-5440-2-6", "zh": "vida 意为满足：厌离，称为 nibbinno。", "confidence": 60}
+{"id": "22-5441-2-33", "zh": "sada 意为散落、行走与终结：沉没了，称为 sanno，又有 osanno；明净了，称为 pasanno，又有 abhippasanno；坐下了，称为 nisinno，又有 sannisinno。依“sadajarānamīma”规则变为 ī，在复辅音前又变为短音。", "confidence": 60}
+{"id": "22-5442-2-27", "zh": "加 tavantu 时：khinnavā、chinnavā、sañchinnavā、tunnavā、patunnavā、panunnavā、pannavā、āpannavā、bhinnavā、sambhinnavā、sannavā、pasannavā、nisinnavā。", "confidence": 80}
+{"id": "22-5443-2-19", "zh": "753. 在 dā 之后变为 inna〔《迦旃延文法》582；《形态成就》631；《声论》1185〕。", "confidence": 55}
+{"id": "22-5444-2-10", "zh": "在 dā 词根之后的 ta、tavantu 词缀，其 t 变为 inna。", "confidence": 75}
+{"id": "22-5445-2-18", "zh": "被给予了，称为 dinno；又有 padinno、ādinno、samādinno、upādinno、pariyādinno；nn 变为 ṇṇ 时为 upādiṇṇo。", "confidence": 75}
+{"id": "22-5446-2-4", "zh": "以上是复辅音 na 替换类。", "confidence": 75}

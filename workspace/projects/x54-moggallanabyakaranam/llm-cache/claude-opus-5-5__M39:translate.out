@@ -1,0 +1,42 @@
+{"id": "13-2584-2-9", "zh": "在词根 i 之后的 ktvā 词缀，可选地变为 cca。", "confidence": 75}
+{"id": "13-2584-10-15", "zh": "例如 adhicca 与 adhīyitvā，samecca 与 sametvā。", "confidence": 85}
+{"id": "13-2585-2-9", "zh": "169. 在 dis 之后，（ktvā）变为 vāna、vā，同时（dis）变为 sa。", "confidence": 70}
+{"id": "13-2586-2-12", "zh": "在 dis 之后，ktvā 可选地变为 vāna、vā，同时 dis 也随之变为 sa 音。", "confidence": 70}
+{"id": "13-2586-13-16", "zh": "这里规定 s 仍为 s，是为了排除同化为后一个音的规则。", "confidence": 55}
+{"id": "13-2586-17-29", "zh": "例如 disvāna、disvā、passitvā。那么，‘nādaṭṭhā parato dosan’（没有看到他人的过失）该怎么解释？", "confidence": 60}
+{"id": "13-2586-30-41", "zh": "根据提示性的用例，tvā 的 v 被省略了；‘laddhā dhanan’（得到财物后）等例子也是这样。", "confidence": 60}
+{"id": "13-2587-2-7", "zh": "170. 以辅音开头的词缀加 ñi。", "confidence": 60}
+{"id": "13-2588-2-8", "zh": "在动词根之后、以辅音开头的词缀前，可选地加 ñi（即插入 i）。", "confidence": 60}
+{"id": "13-2588-9-14", "zh": "例如 bhuñjituṃ 与 bhottuṃ。为什么说“以辅音开头”？", "confidence": 75}
+{"id": "13-2588-15-16", "zh": "因为像 pācako 这样的词就不加。", "confidence": 65}
+{"id": "13-2589-2-8", "zh": "171. 在 r 之后，n 变为 ṇ。", "confidence": 80}
+{"id": "13-2590-2-8", "zh": "在以 r 结尾的动词根之后，词缀里的 n 音变为 ṇ。", "confidence": 80}
+{"id": "13-2590-9-12", "zh": "例如 araṇaṃ、saraṇaṃ。", "confidence": 90}
+{"id": "13-2591-2-7", "zh": "172. 在 nta、māna、ti 等词缀中不变。", "confidence": 75}
+{"id": "13-2592-2-15", "zh": "在以 r 结尾的词根之后，nta、māna、ti 等词缀里的 n 不变为 ṇ，例如 karonto、kurumāno、karonti。", "confidence": 80}
+{"id": "13-2593-2-8", "zh": "173. gam、yam、is、ās、dis 可选地变为 ccha（替换词尾）。", "confidence": 65}
+{"id": "13-2594-2-7", "zh": "在 nta、māna、ti 等词缀前，这些词根可选地变为 ccha。", "confidence": 70}
+{"id": "13-2594-8-30", "zh": "例如 gacchanto、gacchamāno、gacchati，yacchanto、yacchamāno、yacchati，icchanto、icchamāno、icchati，acchanto、acchamāno、acchati，dicchanto、dicchamāno、dicchati。为什么说“可选地”？", "confidence": 75}
+{"id": "13-2594-31-46", "zh": "因为也有 gamissati 这样的形式。这是有定限的可选规则，所以在其他词缀中有时也适用，例如 icchitabbaṃ、icchā、icchituṃ、acchitabbaṃ、acchatuṃ；其他词根也通过拆分规则而有这种变化，例如 pavecchati。", "confidence": 55}
+{"id": "13-2595-2-6", "zh": "174. jar 与 mar 变为 īya（替换词尾）。", "confidence": 65}
+{"id": "13-2596-2-6", "zh": "在 nta、māna、ti 等词缀前，这两个词根可选地变为 īya。", "confidence": 70}
+{"id": "13-2596-7-24", "zh": "例如 jīyanto 与 jīranto，jīyamāno 与 jīramāno，jīyati 与 jīrati，mīyanto 与 maranto，mīyamāno 与 maramāno，mīyati 与 marati。", "confidence": 85}
+{"id": "13-2597-2-8", "zh": "175. ṭhā 与 pā 变为 tiṭṭha 与 piva。", "confidence": 80}
+{"id": "13-2598-2-6", "zh": "在 nta、māna、ti 等词缀前，ṭhā 与 pā 变为 tiṭṭha 与 piva。", "confidence": 75}
+{"id": "13-2598-7-20", "zh": "例如 tiṭṭhanto、tiṭṭhamāno、tiṭṭhati，pivanto、pivamāno、pivati。为什么这里仍说“可选地”？", "confidence": 60}
+{"id": "13-2598-21-24", "zh": "因为也有 ṭhāti、pāti 这样的形式。", "confidence": 65}
+{"id": "13-2599-2-7", "zh": "176. gam、vad、dā 变为 ghamma、vajja、dajja。", "confidence": 80}
+{"id": "13-2600-2-7", "zh": "在 nta、māna、ti 等词缀前，gam 等词根可选地变为 ghamma 等形式。", "confidence": 75}
+{"id": "13-2600-8-17", "zh": "例如 ghammanto 与 gacchanto，vajjanto 与 vadanto，dajjanto 与 dadanto。", "confidence": 85}
+{"id": "13-2601-2-8", "zh": "177. kar 连同 o 变为 kubba、kuru、kayira。", "confidence": 65}
+{"id": "13-2602-2-8", "zh": "在 nta、māna、ti 等词缀前，kar 连同 o 可选地变为 kubba 等形式。", "confidence": 65}
+{"id": "13-2602-9-46", "zh": "例如 kubbanto、kayiranto、karonto，kubbamāno、kurumāno、kayiramāno、karāṇo，kubbati、kayirati、karoti，kubbate、kurute、kayirate。由于这是有定限的可选规则，在“可选地”这一管辖下，在 māna 和后六个词尾（为自言）前大多变为 kuru，在前六个词尾（为他言）中只是偶尔这样，例如‘agghaṃ kurutu, no bhavaṃ’（请尊者为我们定个价）。又因为规则说的是“连同 o”，所以这些变化只用于主动语态。", "confidence": 45}
+{"id": "13-2603-2-7", "zh": "178. gah 变为 gheppa。", "confidence": 80}
+{"id": "13-2604-2-8", "zh": "在 nta、māna、ti 等词缀前，gah 可选地变为 gheppa。", "confidence": 80}
+{"id": "13-2604-9-16", "zh": "例如 gheppanto、gheppamāno、gheppati。为什么这里仍说“可选地”？", "confidence": 60}
+{"id": "13-2604-17-18", "zh": "因为也有 gaṇhati 这样的形式。", "confidence": 65}
+{"id": "13-2605-2-7", "zh": "179. 鼻音 niggahīta 变为 ṇ。", "confidence": 75}
+{"id": "13-2606-2-6", "zh": "gah 的鼻音 niggahīta 变为 ṇ。", "confidence": 65}
+{"id": "13-2606-7-12", "zh": "例如 gaṇhitabbaṃ、gaṇhituṃ、gaṇhanto。", "confidence": 90}
+{"id": "13-2607-2-4", "zh": "以上是《目犍连文法》的注释中，", "confidence": 70}
+{"id": "13-2608-2-4", "zh": "第五章 khādi 章。", "confidence": 75}

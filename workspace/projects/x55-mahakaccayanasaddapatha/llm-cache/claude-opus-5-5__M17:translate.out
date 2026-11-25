@@ -1,0 +1,80 @@
+{"id": "14-1447-2-2", "zh": "第三品", "confidence": 85}
+{"id": "14-1448-2-12", "zh": "161,244. 在 tumha、amha 之后，naṃ 变为 ākaṃ。", "confidence": 80}
+{"id": "14-1449-2-8", "zh": "在 tumha、amha 这两个词之后，naṃ 语尾变为 ākaṃ。", "confidence": 80}
+{"id": "14-1450-2-5", "zh": "例如 tumhākaṃ、amhākaṃ。", "confidence": 85}
+{"id": "14-1451-2-4", "zh": "为什么说“naṃ”？", "confidence": 85}
+{"id": "14-1451-5-8", "zh": "反例：tumhehi、amhehi。", "confidence": 75}
+{"id": "14-1452-2-9", "zh": "162,237. 非第一格的 yo 可选地变为 ākaṃ。", "confidence": 75}
+{"id": "14-1453-2-10", "zh": "在 tumha、amha 这两个词之后，非第一格的 yo 可选地变为 ākaṃ。", "confidence": 78}
+{"id": "14-1454-2-8", "zh": "例如“我看见你们”，可说 tumhākaṃ passāmi，也可说 tumhe passāmi。", "confidence": 78}
+{"id": "14-1454-9-15", "zh": "“你看见我们”，可说 amhākaṃ passasi，也可说 amhe passasi。", "confidence": 78}
+{"id": "14-1455-2-5", "zh": "为什么说“**yo**”？", "confidence": 85}
+{"id": "14-1455-6-9", "zh": "反例：tumhehi、amhehi。", "confidence": 75}
+{"id": "14-1456-2-5", "zh": "为什么说“**非第一格**”？", "confidence": 80}
+{"id": "14-1456-6-11", "zh": "反例：gacchatha tumhe（你们去）、gacchāma mayaṃ（我们去）。", "confidence": 80}
+{"id": "14-1457-2-7", "zh": "由于“vā”有选择的意思，yo 与 naṃ 也可以变为 aṃ 与 ānaṃ。", "confidence": 70}
+{"id": "14-1457-8-10", "zh": "例如 tumhaṃ、tumhānaṃ。", "confidence": 80}
+{"id": "14-1457-11-14", "zh": "amhaṃ、amhānaṃ。", "confidence": 80}
+{"id": "14-1458-2-8", "zh": "163,240. sa 变为 aṃ。", "confidence": 80}
+{"id": "14-1459-2-12", "zh": "在 tumha、amha 这两个词之后，sa 语尾可选地替换为 aṃ。", "confidence": 78}
+{"id": "14-1460-2-7", "zh": "例如“给你”，可说 tumhaṃ dīyate，也可说 tava dīyate。", "confidence": 78}
+{"id": "14-1460-8-13", "zh": "“你的所有物”，可说 tumhaṃ pariggaho，也可说 tava pariggaho。", "confidence": 78}
+{"id": "14-1460-14-19", "zh": "“给我”，可说 amhaṃ dīyate，也可说 mama dīyate。", "confidence": 78}
+{"id": "14-1460-20-25", "zh": "“我的所有物”，可说 amhaṃ pariggaho，也可说 mama pariggaho。", "confidence": 78}
+{"id": "14-1461-2-6", "zh": "为什么说“**sa**”？", "confidence": 82}
+{"id": "14-1461-7-10", "zh": "反例：tumhesu、amhesu。", "confidence": 80}
+{"id": "14-1462-2-11", "zh": "164,200. 在以 a 结尾的代词之后，第一格变为 e。", "confidence": 78}
+{"id": "14-1463-2-10", "zh": "在一切以 a 结尾的代词之后，第一格的 yo 变为 e。", "confidence": 80}
+{"id": "14-1464-2-15", "zh": "例如 sabbe、ye、te、ke、tumhe、amhe、ime。", "confidence": 85}
+{"id": "14-1465-2-5", "zh": "为什么说“**代词**”？", "confidence": 82}
+{"id": "14-1465-6-15", "zh": "反例：devā、asurā、nāgā、gandhabbā、manussā。", "confidence": 85}
+{"id": "14-1466-2-5", "zh": "为什么说“**以 a 结尾**”？", "confidence": 82}
+{"id": "14-1466-6-9", "zh": "反例：amū purisā tiṭṭhanti（那些人站着）。", "confidence": 82}
+{"id": "14-1467-2-5", "zh": "为什么说“**yo**”？", "confidence": 85}
+{"id": "14-1467-6-15", "zh": "反例：sabbo、yo、so、ko、ayaṃ。", "confidence": 85}
+{"id": "14-1468-2-4", "zh": "提到“第一格”，是为了供下一条规则使用。", "confidence": 75}
+{"id": "14-1469-2-9", "zh": "165,208. 处在相违释中的，可选。", "confidence": 72}
+{"id": "14-1470-2-12", "zh": "处在相违释复合词中、以 a 结尾的代词，其后的第一格 yo 可选地变为 e。", "confidence": 75}
+{"id": "14-1471-2-6", "zh": "例如 katarakatame，也可以是 katarakatamā。", "confidence": 80}
+{"id": "14-1472-2-5", "zh": "为什么说“**代词**”？", "confidence": 82}
+{"id": "14-1472-6-8", "zh": "反例：devāsuranāgagandhabbamanussā。", "confidence": 82}
+{"id": "14-1473-2-8", "zh": "为什么说“**处在相违释中**”？反例：te、sabbe。", "confidence": 72}
+{"id": "14-1474-2-10", "zh": "166,209. 不施行其他代词规则。", "confidence": 75}
+{"id": "14-1475-2-7", "zh": "处在相违释中的代词，不施行其他代词特有的规则，", "confidence": 75}
+{"id": "14-1476-2-7", "zh": "例如 pubbāparānaṃ、pubbuttarānaṃ、adharuttarānaṃ。", "confidence": 82}
+{"id": "14-1477-2-9", "zh": "167,210. 在有财释中也是如此。", "confidence": 78}
+{"id": "14-1478-2-9", "zh": "在有财释复合词中，也不施行代词规则或其他规则。", "confidence": 70}
+{"id": "14-1479-2-9", "zh": "例如 piyapubbāya、piyapubbānaṃ、piyapubbe、piyapubbassa。", "confidence": 82}
+{"id": "14-1480-2-5", "zh": "为什么说“**ca**”？", "confidence": 78}
+{"id": "14-1480-6-17", "zh": "这是表示有时也施行代词规则，例如 dakkhiṇapubbassaṃ、dakkhiṇapubbassā、uttarapubbassaṃ、uttarapubbassā。", "confidence": 65}
+{"id": "14-1481-2-11", "zh": "168,203. 在代词之后，naṃ 变为 saṃ、sānaṃ。", "confidence": 80}
+{"id": "14-1482-2-9", "zh": "在一切代词之后，naṃ 语尾替换为 saṃ、sānaṃ。", "confidence": 80}
+{"id": "14-1483-2-9", "zh": "例如 sabbesaṃ、sabbesānaṃ、sabbāsaṃ、sabbāsānaṃ。", "confidence": 85}
+{"id": "14-1483-10-17", "zh": "yesaṃ、yesānaṃ、yāsaṃ、yāsānaṃ。", "confidence": 85}
+{"id": "14-1483-18-25", "zh": "tesaṃ、tesānaṃ、tāsaṃ、tāsānaṃ。", "confidence": 85}
+{"id": "14-1483-26-33", "zh": "kesaṃ、kesānaṃ、kāsaṃ、kāsānaṃ。", "confidence": 85}
+{"id": "14-1483-34-41", "zh": "imesaṃ、imesānaṃ、imāsaṃ、imāsānaṃ。", "confidence": 85}
+{"id": "14-1483-42-45", "zh": "amūsaṃ、amūsānaṃ。", "confidence": 85}
+{"id": "14-1484-2-5", "zh": "为什么说“naṃ”？", "confidence": 85}
+{"id": "14-1484-6-13", "zh": "反例：sabbassa、yassa、tassa、kassa。", "confidence": 85}
+{"id": "14-1484-14-16", "zh": "其余各处都依此类推。", "confidence": 80}
+{"id": "14-1485-2-12", "zh": "169,117. 在 su、naṃ、hi 之前，rāja 也变为 rāju。", "confidence": 78}
+{"id": "14-1486-2-10", "zh": "整个 rāja 一词，在 su、naṃ、hi 这些语尾之前替换为 rāju。", "confidence": 80}
+{"id": "14-1487-2-9", "zh": "例如 rājūsu、rājūnaṃ、rājūhi、rājūbhi。", "confidence": 85}
+{"id": "14-1488-2-5", "zh": "为什么说“**在 su、naṃ、hi 之前**”？", "confidence": 80}
+{"id": "14-1488-6-7", "zh": "反例：rājā。", "confidence": 85}
+{"id": "14-1489-2-4", "zh": "用“ca”字，是为了表示限定，并非一律如此。", "confidence": 60}
+{"id": "14-1489-5-11", "zh": "所以也有 rājesu、rājānaṃ、rājehi、rājebhi。", "confidence": 70}
+{"id": "14-1490-2-9", "zh": "170,220. 整个 ima 可选地变为 e。", "confidence": 75}
+{"id": "14-1491-2-11", "zh": "整个 ima 一词，在 su、naṃ、hi 这些语尾之前，可选地变为 e。", "confidence": 78}
+{"id": "14-1492-2-17", "zh": "例如 esu、imesu、esaṃ、imesaṃ、ehi、ebhi、imehi、imebhi。", "confidence": 85}
+{"id": "14-1493-2-5", "zh": "为什么说“**ima**”？", "confidence": 82}
+{"id": "14-1493-6-13", "zh": "反例：etesu、etesaṃ、etehi、etebhi。", "confidence": 85}
+{"id": "14-1494-2-10", "zh": "171,219. 在 nā 之前，也变为 ana、imi。", "confidence": 75}
+{"id": "14-1495-2-12", "zh": "整个 ima 一词，在 nā 语尾之前，替换为 ana、imi。", "confidence": 80}
+{"id": "14-1496-2-4", "zh": "以这份法布施，", "confidence": 82}
+{"id": "14-1496-5-9", "zh": "愿那些众生快乐。", "confidence": 80}
+{"id": "14-1497-2-8", "zh": "以这份对佛的供养，证得不死之境。", "confidence": 75}
+{"id": "14-1498-2-5", "zh": "为什么说“**在 nā 之前**”？", "confidence": 80}
+{"id": "14-1498-6-13", "zh": "反例：imesu、imesaṃ、imehi、imebhi。", "confidence": 85}
+{"id": "14-1499-2-11", "zh": "172,218. 非中性的 ima，在 si 之前变为 ayaṃ。", "confidence": 75}

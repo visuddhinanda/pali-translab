@@ -1,0 +1,75 @@
+{"id": "17-3813-2-2", "zh": "以 tave、tuna 等词缀结尾的词形规则", "confidence": 70}
+{"id": "17-3814-2-15", "zh": "在“曾经想要、正在想要或将要想要做诸功德”这样的分解式中——", "confidence": 75}
+{"id": "17-3815-2-13", "zh": "636. 在表示“想要”意义且行为者相同的动词中，可加 tave、tuṃ。", "confidence": 75}
+{"id": "17-3816-2-35", "zh": "以“想要”为意义的，就是表愿望义的词；当这些表愿望义的词根行为者相同时，所有词根之后可加 tave、tuṃ 这两个词缀；依“tavetuṃ vā”这一规则的拆分，表示以另一行为为目的的行为时也加；这些词缀因为属于 kita 词缀，表示行为者。", "confidence": 65}
+{"id": "17-3817-2-12", "zh": "“karotissa”与“vā”也延续下来。", "confidence": 75}
+{"id": "17-3818-2-7", "zh": "637. 在 tave、tuna 等词缀之前，变为 kā。", "confidence": 75}
+{"id": "17-3819-2-20", "zh": "当 tave、tuna 等词缀在后时，词根 kar 可替换为 kā；“等”字包括 tuṃ、tvāna、tvā、tabba。", "confidence": 70}
+{"id": "17-3820-2-36", "zh": "在“taddhita、复合词、kita 词缀构成的词，除了在 tave、tuna 等词缀的情况下，都称为名词”这条规则中，由于用“除了在 tave、tuna 等词缀的情况下”排除了名词的称谓，以这些词缀结尾的词就成为不变词；因此，以 tave、tuna 结尾的词因为是不变词，依“sabbāsamāvuso”等规则省略格尾。", "confidence": 60}
+{"id": "17-3820-37-43", "zh": "他想要做诸功德（kātave icchati），想要做（kātumicchati）。", "confidence": 75}
+{"id": "17-3821-2-16", "zh": "不替换为 kā 时，依“tuṃtunatabbesu vā”，r 音变为 t。", "confidence": 70}
+{"id": "17-3821-17-22", "zh": "想要做的人，就是 kattukāma（想做者），意思是想要造作。", "confidence": 70}
+{"id": "17-3821-23-32", "zh": "同样，希望听闻正法：sotave、sotuṃ 或 suṇituṃ。", "confidence": 75}
+{"id": "17-3821-33-72", "zh": "同样，想要 anubhavituṃ（体验）、pacituṃ（煮）、gantuṃ、gamituṃ（去）、khantuṃ、khanituṃ（挖）、hantuṃ、hanituṃ（杀）、mantuṃ、manituṃ（思量）、harituṃ（拿走）、anussarituṃ（忆念）；这里在带 i 音的 ta 之前，因为被“namakarāna”等规则禁止，所以不省略词根末音。", "confidence": 60}
+{"id": "17-3822-2-25", "zh": "同样，tuda 意为刺痛：tudituṃ；还有 pavisituṃ（进入）、uddisibhuṃ（指示）、hotuṃ（成为）、sayibhuṃ（躺卧）、netuṃ（引导）、juhotuṃ（献祭）、pajahituṃ、pahātuṃ（舍弃）、dātuṃ（给予）。", "confidence": 55}
+{"id": "17-3822-26-38", "zh": "roddhuṃ、rundhituṃ（阻止）；依规则的拆分，在 tuṃ、tuna 等词缀之前，也有表行为者的词干插入词缀，以及元音省略等。", "confidence": 55}
+{"id": "17-3822-39-46", "zh": "bhottuṃ、bhuñjituṃ（吃），chettuṃ、chindituṃ（切断）。", "confidence": 80}
+{"id": "17-3822-47-52", "zh": "sibbituṃ（缝），boddhuṃ、bujjhituṃ（觉知）。", "confidence": 80}
+{"id": "17-3822-53-56", "zh": "jāyituṃ、janituṃ（出生）。", "confidence": 80}
+{"id": "17-3822-57-60", "zh": "pattuṃ、pāpuṇituṃ（到达）。", "confidence": 80}
+{"id": "17-3822-61-80", "zh": "jetuṃ、jinituṃ（战胜），ketuṃ、kiṇituṃ（购买），vinicchetuṃ、vinicchinituṃ（裁决），ñātuṃ、jānituṃ（知道），gahetuṃ、gaṇhituṃ（拿取）。", "confidence": 80}
+{"id": "17-3822-81-88", "zh": "coretuṃ、corayituṃ（偷盗），pāletuṃ、pālayituṃ（守护）。", "confidence": 80}
+{"id": "17-3823-2-15", "zh": "使役式：想要 bhāvetuṃ、bhāvayituṃ（修习），kāretuṃ、kārayituṃ、kārāpetuṃ、kārāpayituṃ（让人做），等等。", "confidence": 75}
+{"id": "17-3824-2-14", "zh": "依“tavetuṃ vā”这一规则的拆分，当所表达的是以另一行为为目的的行为时，也加 tuṃ 词缀。", "confidence": 65}
+{"id": "17-3824-15-26", "zh": "例如：subuddhuṃ vakkhāmi（为了让人好好理解，我将解说）；bhottuṃ vajati（去吃），意思是为了吃饭而去。", "confidence": 65}
+{"id": "17-3824-27-38", "zh": "同样，daṭṭhuṃ gacchati（去看）、gantumārabhati（开始去）、gantuṃ payojayati（促使去）、dassetumāha（为了说明而说），等等。", "confidence": 70}
+{"id": "17-3825-2-9", "zh": "“tuṃ”延续下来。", "confidence": 80}
+{"id": "17-3826-2-7", "zh": "638. 在 araha、sakka 等意义中也加 tuṃ。", "confidence": 75}
+{"id": "17-3827-2-14", "zh": "当使用 araha（值得）、sakka（能够）、bhabba（有可能）、anucchavika（适宜）、anurūpa（相称）等意义的词时，所有词根之后加 tuṃ 词缀；“ca”字表示在 kāla（时间）、samaya（时机）、velā（时刻）等词的情况下也加。", "confidence": 70}
+{"id": "17-3827-15-30", "zh": "nida 意为责备：谁值得责备他（ko taṃ ninditumarahati）；你值得成为国王（rājā arahasi bhavituṃ）；尊者值得说（araho bhavaṃ vattuṃ）。", "confidence": 65}
+{"id": "17-3827-31-41", "zh": "或者可以用财富战胜（sakkā jetuṃ dhanena vā）、可以得到（sakkā laddhuṃ）、他将能够做（kātuṃ sakkhissati）。", "confidence": 70}
+{"id": "17-3827-42-48", "zh": "有可能进入正性决定（bhabbo niyāmaṃ okkamituṃ），不可能做（abhabbo kātuṃ）。", "confidence": 70}
+{"id": "17-3827-49-53", "zh": "尊者适宜接受布施（anucchaviko bhavaṃ dānaṃ paṭiggahetuṃ）。", "confidence": 75}
+{"id": "17-3827-54-57", "zh": "这件事适合做（idaṃ kātuṃ anurūpaṃ）。", "confidence": 80}
+{"id": "17-3827-58-75", "zh": "适合布施（dānaṃ dātuṃ yuttaṃ），得以布施和说话（dātuṃ vattuñca labhati）；同样，可以说（vaṭṭati bhāsituṃ），也不允许切断（chindituṃ na ca kappati），等等。", "confidence": 70}
+{"id": "17-3827-76-85", "zh": "同样，是吃饭的时间（kālo bhuñjituṃ）、吃饭的时机（samayo bhuñjituṃ）、吃饭的时刻（velā bhuñjituṃ）。", "confidence": 75}
+{"id": "17-3828-2-9", "zh": "“tuṃ”延续下来。", "confidence": 80}
+{"id": "17-3829-2-8", "zh": "639. 在 alaṃ 的意义中表达“足够”时，也加 tuṃ。", "confidence": 65}
+{"id": "17-3830-2-17", "zh": "在 alaṃ 的意义中表达“足够”时，所有词根之后加 tuṃ 词缀；alaṃ 一词的意义称为 alamattha，即装饰、足够、禁止；这里说的是在这些 alaṃ 的意义中。", "confidence": 65}
+{"id": "17-3830-18-33", "zh": "表达“足够”的说法，就是 pattavacana；alameva dānāni dātuṃ（足以布施）、alameva puññāni kātuṃ（足以行功德），意思是正合适、正足够。", "confidence": 65}
+{"id": "17-3831-2-11", "zh": "在“做了业之后，去了、正在去或将要去”这样的意义上——", "confidence": 75}
+{"id": "17-3832-2-10", "zh": "640. 在行为者相同的行为中，表示先发生的行为时，可加 tuna、tvāna、tvā。", "confidence": 75}
+{"id": "17-3833-2-25", "zh": "**先时**指先发生的行为；有同一个行为者的，就是同一行为者的；在这些同一行为者、行为者相同的词根之中，从表示先发生之行为的词根之后，可加 tuna、tvāna、tvā 这些词缀。", "confidence": 65}
+{"id": "17-3834-2-9", "zh": "因为“vā”字表示有限定的选择，tuna 词缀只在某些地方出现。", "confidence": 70}
+{"id": "17-3834-10-25", "zh": "这些词缀因为称为 kita，又因为说了“同一行为者的”，所以只表示行为者。", "confidence": 70}
+{"id": "17-3834-26-39", "zh": "加 tuna 时，依“tavetunādīsu kā”替换为 kā；因为是不变词，省略 si。", "confidence": 70}
+{"id": "17-3834-40-49", "zh": "他做了业之后去（so kātuna kammaṃ gacchati）；众生没有造功德，将会受苦（akātuna puññaṃ kilamissanti sattā）。", "confidence": 75}
+{"id": "17-3835-2-27", "zh": "加 tvāna、tvā 时，依“rakāro ca”省略词根末音：做了善业（kammaṃ katvāna bhadrakaṃ）；做了布施等功德之后升天（dānādīni puññāni katvā saggaṃ gacchati）；abhisaṅkharitvā（造作之后）、karitvā（做了之后）。", "confidence": 70}
+{"id": "17-3835-28-47", "zh": "同样，sibbitvā（缝了之后），jāyitvā、janitvā（出生之后），听了法（dhammaṃ sutvā），听了法而欢喜（sutvāna dhammaṃ modati），suṇitvā（听了之后），patvā、pāpuṇitvā（到达之后）。", "confidence": 75}
+{"id": "17-3835-48-55", "zh": "kiṇitvā（买了之后），jetvā、jinitvā、jitvā（战胜之后）。", "confidence": 80}
+{"id": "17-3835-56-63", "zh": "coretvā、corayitvā（偷了之后），pūjetvā、pūjayitvā（供养之后）。", "confidence": 80}
+{"id": "17-3835-64-81", "zh": "同样，修习了慈心（mettaṃ bhāvetvā、bhāvayitvā）、让人建造了寺院（vihāraṃ kāretvā、kārayitvā、kārāpetvā、kārāpayitvā）之后，将会升天，等等。", "confidence": 75}
+{"id": "17-3836-2-5", "zh": "说“**先时**”是为了什么？", "confidence": 75}
+{"id": "17-3836-6-9", "zh": "例如 paṭhati（读）、pacati（煮）。", "confidence": 70}
+{"id": "17-3836-10-13", "zh": "说“同一行为者的”是为了什么？", "confidence": 75}
+{"id": "17-3836-14-18", "zh": "例如：天授吃完之后，祭授去（bhutte devadatte yaññadatto vajati）。", "confidence": 70}
+{"id": "17-3837-2-29", "zh": "至于“apatvāna nadiṃ pabbato（山在未到河之处）、atikkamma pabbataṃ nadī（河在越过山之处）”等例子，在所有这些地方，都因为与“bhavati（存在）”相连，而理解为同一行为者和先时。", "confidence": 60}
+{"id": "17-3838-2-9", "zh": "“vā”延续下来。", "confidence": 80}
+{"id": "17-3839-2-8", "zh": "641. 在所有词根之后，tuna 等变为 ya。", "confidence": 75}
+{"id": "17-3840-2-13", "zh": "在所有带前缀和不带前缀的词根之后，tuna 等词缀可替换为 ya 音。", "confidence": 75}
+{"id": "17-3840-14-34", "zh": "vanda 意为礼敬，前面加 abhi；tvā 词缀变为 ya，并插入 i 音：abhivandiya bhāsissaṃ（礼敬之后我将说），abhivanditvā；vandiya、vanditvā。", "confidence": 70}
+{"id": "17-3840-35-43", "zh": "同样，abhibhuyya（征服之后），其中有辅音重复和元音变短；abhibhavitvā、abhibhotvā。", "confidence": 65}
+{"id": "17-3841-2-20", "zh": "si 意为依止：依“kvaci dhātu”等规则，i 音变为 ā：nissāya、nissitvā（依靠之后）。", "confidence": 65}
+{"id": "17-3842-2-20", "zh": "bhaja 意为亲近：依“tathā kattari ca”同化为前一个音：vibhajja、vibhajiya、vibhajitvā（分别之后）。", "confidence": 60}
+{"id": "17-3843-2-11", "zh": "disa 意为指示：uddissa、uddisiya、uddisitvā（指定之后）。", "confidence": 65}
+{"id": "17-3843-12-17", "zh": "pavissa、pavisiya、pavisitvā（进入之后）。", "confidence": 80}
+{"id": "17-3844-2-8", "zh": "nī 意为带到：upanīya、upanetvā（带近之后）。", "confidence": 70}
+{"id": "17-3844-9-12", "zh": "atiseyya、atisayitvā（超越之后）。", "confidence": 70}
+{"id": "17-3844-13-20", "zh": "ohāya、ohitvā、jahitvā、hitvā（舍弃之后）。", "confidence": 80}
+{"id": "17-3844-21-50", "zh": "ādāya、ādiyitvā（拿取之后）：依“divādito yo”加 ya 词缀，并依“kvaci dhātu”等规则使词根末音变为 i 音；datvā、datvāna（给予之后）。", "confidence": 60}
+{"id": "17-3844-51-54", "zh": "pidhāya、pidahitvā（覆盖之后）。", "confidence": 80}
+{"id": "17-3844-55-60", "zh": "bhuñjiya、bhuñjitvā、bhotvā（吃了之后）。", "confidence": 80}
+{"id": "17-3844-61-64", "zh": "viceyya、vicinitvā（拣择之后）。", "confidence": 75}
+{"id": "17-3844-65-70", "zh": "viññāya、vijānitvā、ñatvā（了知之后）。", "confidence": 80}
+{"id": "17-3845-2-12", "zh": "“yathāgamaṃ（依照惯用）”与“tunādīsu”也延续下来。", "confidence": 70}
+{"id": "17-3846-2-8", "zh": "642. 在以 da、dha 结尾的词根之后，tuna 等有时变为 ya。", "confidence": 60}

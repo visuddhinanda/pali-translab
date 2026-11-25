@@ -1,0 +1,74 @@
+{"id": "17-3732-2-11", "zh": "621. 在以 h 结尾的词根之后，〔ta、ti〕变为 ha，词根末的 h 可选地变为 ḷ，但 dah、nah 除外。", "confidence": 70}
+{"id": "17-3733-2-29", "zh": "在以 ha 结尾的词根之后，后面的 ta 词缀和 ti 词缀被替换为 ha；除了 dah 和 nah 以外，词根末尾的 ha 可选地变为 la。这条规则是 ḍha 变化的例外。", "confidence": 65}
+{"id": "17-3733-30-36", "zh": "ruh（意为生长），“已登上”即 āruḷho，如“登上了树”（āruḷho rukkhaṃ）。", "confidence": 70}
+{"id": "17-3733-37-45", "zh": "la 与 ḷa 没有区别，所以也作 ārulho；生长即 ruḷhī。", "confidence": 60}
+{"id": "17-3733-46-54", "zh": "gāh（意为搅动、深入），“已深入”即 gāḷho，如“已没入大海”（ajjhogāḷho mahaṇṇavaṃ）。", "confidence": 70}
+{"id": "17-3733-55-69", "zh": "bah（意为增长），“已增长”即 bāḷho；依“kvaci dhātu”等规则变为长音。", "confidence": 70}
+{"id": "17-3733-70-75", "zh": "muh（意为迷乱），“已迷乱”即 mūḷho。", "confidence": 80}
+{"id": "17-3733-76-81", "zh": "guh（意为隐藏），“已隐藏”即 gūḷhaṃ。", "confidence": 80}
+{"id": "17-3733-82-101", "zh": "vah（意为送达），“已被带来”即 upavuḷho；依“vaca、vasa、vaha 等的 va 变为 u”这条规则的分句法，变为 u。", "confidence": 60}
+{"id": "17-3734-2-5", "zh": "为什么说“dah、nah 除外”？", "confidence": 85}
+{"id": "17-3734-6-9", "zh": "因为有 daḍḍho（已烧）、sannaddho（已披挂）。", "confidence": 75}
+{"id": "17-3734-10-13", "zh": "为什么说“**可选地**”？", "confidence": 80}
+{"id": "17-3734-14-17", "zh": "因为也有 duddho（已挤出）、siniddho（有黏性的）。", "confidence": 65}
+{"id": "17-3734-18-32", "zh": "但在 gahitaṃ、mahitaṃ 等词中，因为中间插入了增音 i 而被隔开，所以不适用这条规则。", "confidence": 75}
+{"id": "17-3735-2-16", "zh": "在以词根后缀结尾的词干之后，也依“atīte ta-tavantu-tāvī”这条规则加 ta 词缀：“曾想吃”即 bubhukkhito（饥饿的）。", "confidence": 65}
+{"id": "17-3735-17-22", "zh": "同样有 jighacchito（饥饿的）、pipāsito（口渴的）等等。", "confidence": 75}
+{"id": "17-3736-2-5", "zh": "以上是主动态中过去分词的构成方法。", "confidence": 70}
+{"id": "17-3737-2-9", "zh": "“过去时”这一项延续下来。", "confidence": 80}
+{"id": "17-3738-2-7", "zh": "622. 在表行为（bhāva）和表受事（kamma）的意义上加 ta。", "confidence": 75}
+{"id": "17-3739-2-11", "zh": "当表示过去时的时候，在行为与受事这两种意义上，一切词根之后都加 ta 词缀。", "confidence": 75}
+{"id": "17-3740-2-4", "zh": "先说表行为的情况——", "confidence": 80}
+{"id": "17-3741-2-12", "zh": "ge（意为发声），在“唱”或“已被唱”的意义上加 ta 词缀。", "confidence": 70}
+{"id": "17-3742-2-8", "zh": "623. 在一切情况下，ge 变为 gī。", "confidence": 80}
+{"id": "17-3743-2-14", "zh": "词根 ge 在一切情况下都替换为 gī；这条规则只用于 ta 等**词缀**之前。", "confidence": 60}
+{"id": "17-3743-15-23", "zh": "他的歌唱即 gītaṃ；“唱”或“应当唱的”即 gīti。", "confidence": 65}
+{"id": "17-3744-2-7", "zh": "表行为时，以 ta 词缀结尾的词是中性。", "confidence": 80}
+{"id": "17-3744-8-11", "zh": "表受事时，三性都有。", "confidence": 80}
+{"id": "17-3745-2-12", "zh": "nat（意为屈伸肢体，即舞蹈），在“跳舞”或“已跳舞”的意义上加 ta 词缀。", "confidence": 70}
+{"id": "17-3746-2-9", "zh": "624. 加了词缀仍不成形的词，依不规则形（nipātana）而成立。", "confidence": 70}
+{"id": "17-3747-2-21", "zh": "这里凡是带有词缀、却单凭词缀无法成形的词，都依不规则形而成立；所以 ta 词缀连同词根末音被替换为 cca 和 ṭṭa。", "confidence": 65}
+{"id": "17-3747-22-25", "zh": "如 naccaṃ、naṭṭaṃ（舞蹈）。", "confidence": 80}
+{"id": "17-3747-26-34", "zh": "has（意为笑），笑即 hasitaṃ，这里加了增音 i。", "confidence": 75}
+{"id": "17-3747-35-37", "zh": "行走即 gataṃ。", "confidence": 80}
+{"id": "17-3747-38-47", "zh": "同样有 ṭhitaṃ（站立）、sayitaṃ（躺卧）；由于“可选”这一项是有定规的选择，所以有元音强化（vuddhi）。", "confidence": 60}
+{"id": "17-3747-48-57", "zh": "rud（意为流泪），“已哭”即 roditaṃ，也作 ruṇṇaṃ，等等。", "confidence": 75}
+{"id": "17-3748-2-3", "zh": "表受事时——", "confidence": 80}
+{"id": "17-3749-2-10", "zh": "“已被制服”即 abhibhūto，如“愤怒已被您制服”（abhibhūto kodho bhavatā）；还有 abhibhūtā、abhibhūtaṃ。", "confidence": 75}
+{"id": "17-3749-11-25", "zh": "bhās（意为清楚地说话），“已被他说”即 bhāsito，如“所说的法”（bhāsito dhammo）、“所说的偈颂”（bhāsitā gāthā）、“所说的经”（bhāsitaṃ suttaṃ）。", "confidence": 75}
+{"id": "17-3749-26-31", "zh": "disī（意为宣说），因为属于 cur 等词根类，所以加 ṇe。", "confidence": 70}
+{"id": "17-3749-32-40", "zh": "“已被宣说”即 desito，如“世尊所宣说的法”（desito dhammo bhagavatā）；加增音 i 时，使役后缀的元音被删去。", "confidence": 65}
+{"id": "17-3749-41-47", "zh": "ji（意为胜），“已被战胜”即 jito，如“魔已被战胜”（jito māro）。", "confidence": 80}
+{"id": "17-3749-48-60", "zh": "nī（意为带到），“已被带去”即 nītā，如“山羊已被带到村里”（nītā gāmam ajā）；又如“你所听的法”（suto tayā dhammo）、ñāto（已被知道）。", "confidence": 65}
+{"id": "17-3750-2-9", "zh": "sās（意为教导），在“已被教导”的意义上加 ta 词缀。", "confidence": 75}
+{"id": "17-3751-2-9", "zh": "625. 在 sās 和 dis 之后，ta 也变为 riṭṭha。", "confidence": 75}
+{"id": "17-3752-2-44", "zh": "在 sās、dis 这两个词根之后，后面的 ta 词缀被替换为 riṭṭha；依 ca 这个**词**，ti 也被替换为 riṭṭhi；在 dis 之后，kicca 后缀的 ta 以及 tuṃ、tvā 等，也分别被替换为 raṭṭha、raṭṭhuṃ、raṭṭhā；然后 r 等被删去。如“他已被我教导”（anusiṭṭho so mayā），还有 anusiṭṭhā sā、anusiṭṭhaṃ。", "confidence": 60}
+{"id": "17-3752-45-52", "zh": "dis（意为看），“已被看见”即 diṭṭhaṃ，如“我看见了色”（diṭṭhaṃ me rūpaṃ）。", "confidence": 75}
+{"id": "17-3753-2-10", "zh": "加 ti 时：教导即 anusiṭṭhi，看见即 diṭṭhi。", "confidence": 80}
+{"id": "17-3754-2-39", "zh": "在 kicca 等后缀中：应当看的即 daṭṭhabbaṃ、daṭṭheyyaṃ；为了看即 daṭṭhuṃ，如“去看”（daṭṭhuṃ gacchati）；看了以后即 daṭṭhuṃ、daṭṭhā，如 nekkhamaṃ daṭṭhuṃ（看到出离之后）。如果因加了增音 i 而被隔开，就不这样变，例如 anusāsitaṃ、anusāsitabbaṃ、anusāsituṃ、anusāsitvā、dassitaṃ 等等。", "confidence": 55}
+{"id": "17-3755-2-10", "zh": "tus（意为喜悦），在“已喜悦”的意义上，于主动态加 ta 词缀。", "confidence": 75}
+{"id": "17-3756-2-9", "zh": "“ta 的”这一项延续下来。", "confidence": 75}
+{"id": "17-3757-2-9", "zh": "626. 在以 s 结尾的词根以及 pucch、bhañj、haṃs 等之后，ta 连同前面的〔词根末音〕变为 ṭṭha。", "confidence": 65}
+{"id": "17-3758-2-6", "zh": "与前面的〔音〕一起作用，所以叫 sādi。", "confidence": 60}
+{"id": "17-3758-7-24", "zh": "在以 s 结尾的词根，以及 pucch、bhañj、haṃs 等词根之后，紧接的 ta 连同前面词根末尾的辅音一起被替换为 ṭṭha。", "confidence": 70}
+{"id": "17-3758-25-46", "zh": "haṃs 虽然本来就以 s 结尾，仍然再次列出，是为了表明 ṭṭha 的替换有时并不适用；因此在 viddhasto、utrasto 等词中就不这样变。", "confidence": 70}
+{"id": "17-3758-47-50", "zh": "如 tuṭṭho（满足的）、santusito。", "confidence": 75}
+{"id": "17-3758-51-58", "zh": "bhas（意为掉落），“已掉落”即 bhaṭṭho，也作 bhassito。", "confidence": 70}
+{"id": "17-3758-59-64", "zh": "nas（意为消失），“已消失”即 naṭṭho。", "confidence": 80}
+{"id": "17-3758-65-85", "zh": "daṃs（意为咬），“已被咬”即 daṭṭho，如“被蛇咬了”（daṭṭho sappena），也作 ḍaṃsito；依“kvaci dhātu”等规则，d 变为 ḍ。", "confidence": 75}
+{"id": "17-3758-86-95", "zh": "phus（意为接触），“已被触及”即 phuṭṭho，如“被疾病所侵袭”（phuṭṭho rogena），也作 phussito。", "confidence": 75}
+{"id": "17-3758-96-105", "zh": "is（意为希求），“已被希求”即 iṭṭho，也作 icchito、esito。", "confidence": 75}
+{"id": "17-3758-106-111", "zh": "mas（意为触摸），“已被触摸”即 āmaṭho。", "confidence": 65}
+{"id": "17-3758-112-124", "zh": "vas（意为降下、洒），“已降雨”即 vuṭṭho，如“天下了雨”（vuṭṭho devo）；“已进入”即 paviṭṭho；“已被指示”即 uddiṭṭho。", "confidence": 60}
+{"id": "17-3758-125-133", "zh": "pucch（意为问），“已被问”即 puṭṭho，如“被问了问题”（puṭṭho pañhaṃ），也作 pucchito。", "confidence": 75}
+{"id": "17-3758-134-140", "zh": "bhañj（意为碾压），“已被碾”即 bhaṭṭhaṃ，如“炒过的谷子”（bhaṭṭhaṃ dhaññaṃ）。", "confidence": 60}
+{"id": "17-3758-141-150", "zh": "haṃs（意为喜悦），“已喜悦”即 haṭṭho，也作 pahaṭṭho、pahaṃsito。", "confidence": 75}
+{"id": "17-3759-2-17", "zh": "依“等”这个词，yaj（意为祭神、结交、布施），在“已被祭祀”的意义上加 ta 词缀，ta 被替换为 ṭṭha。", "confidence": 70}
+{"id": "17-3760-2-8", "zh": "627. 在 ṭṭha 之前，yaj 的元音变为 i。", "confidence": 80}
+{"id": "17-3761-2-11", "zh": "词根 yaj 的元音在后面接 ṭṭha 时替换为 i。", "confidence": 80}
+{"id": "17-3761-12-15", "zh": "如“胜者已被我供奉”（yiṭṭho mayā jino）。", "confidence": 70}
+{"id": "17-3761-16-26", "zh": "saj（意为放出），前加 saṃ，“已与之相混”即 saṃsaṭṭho，如“与他交往”（saṃsaṭṭho tena）；又如 vissaṭṭho（已放出）。", "confidence": 65}
+{"id": "17-3761-27-33", "zh": "maj（意为洁净），“已洁净”即 maṭṭho，等等。", "confidence": 75}
+{"id": "17-3762-2-32", "zh": "在 kicca 后缀、ta 等后缀中：应当满足即 toṭṭhabbaṃ，应当触即 phoṭṭhabbaṃ，为了问即 puṭṭhuṃ，为了祭祀即 yiṭṭhuṃ，为了带来即 abhihaṭṭhuṃ，满足即 tuṭṭhi，寻求即 eṭṭhi，下雨即 vuṭṭhi，放出即 vissaṭṭhi，等等。", "confidence": 70}
+{"id": "17-3763-2-12", "zh": "“ta 的”和“sādi”这两项都延续下来。", "confidence": 75}
+{"id": "17-3764-2-8", "zh": "628. 在 bhañj 之后，〔ta〕也变为 gga。", "confidence": 70}

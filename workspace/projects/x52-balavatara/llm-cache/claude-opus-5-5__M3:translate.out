@@ -1,0 +1,65 @@
+{"id": "12-110-2-2", "zh": "辅音连音", "confidence": 85}
+{"id": "12-111-2-6", "zh": "23. “在辅音前”是管辖词。", "confidence": 70}
+{"id": "12-111-7-8", "zh": "“有时”也同样延续。", "confidence": 65}
+{"id": "12-111-9-18", "zh": "在 so bhikkhu、kacci nu tvaṃ、jānema taṃ 这些情况下——", "confidence": 75}
+{"id": "12-112-2-4", "zh": "（元音）省略，并且在该处增加 a 音。", "confidence": 70}
+{"id": "12-113-2-15", "zh": "当后面是辅音时，元音有时省略；在省略的位置上增加 a 音；由 ca 字，也增加 o 音和 u 音。", "confidence": 75}
+{"id": "12-113-16-22", "zh": "例如：sabhikkhu、kaccino tvaṃ、jānemu taṃ。", "confidence": 80}
+{"id": "12-114-2-6", "zh": "为什么说“有时”？例如 so muni。", "confidence": 80}
+{"id": "12-115-2-13", "zh": "24. 在 ughoso、ākhātaṃ 这些情况下——“在双写时”“在适当的位置”同样延续。", "confidence": 60}
+{"id": "12-116-2-5", "zh": "在辅音组内，浊音与清音（双写时，前者）变为第三音与第一音。", "confidence": 60}
+{"id": "12-117-2-16", "zh": "在辅音组内，浊音与清音中的第四音与第二音，在适当的位置上，依次变为同组的第三音与第一音：ugghoso；在短元音后：akkhātaṃ。", "confidence": 65}
+{"id": "12-118-2-10", "zh": "25. 在 para sahassaṃ、atippa kho 这些情况下——", "confidence": 70}
+{"id": "12-118-11-20", "zh": "依“kvaci o byañjane（在辅音前有时增加 o）”，增加 o 音。", "confidence": 70}
+{"id": "12-118-21-22", "zh": "成为 parosahassaṃ。", "confidence": 80}
+{"id": "12-118-23-27", "zh": "并且增加 g 音：atippagokho。", "confidence": 70}
+{"id": "12-119-2-7", "zh": "26. 在 ava naddhā 这里——", "confidence": 75}
+{"id": "12-119-8-18", "zh": "依“o avassa（ava 变为 o）”，ava 有时变为 o。", "confidence": 65}
+{"id": "12-119-19-20", "zh": "成为 onaddhā。", "confidence": 80}
+{"id": "12-120-2-4", "zh": "为什么说“有时”？", "confidence": 85}
+{"id": "12-120-5-6", "zh": "例如 avasussatu。", "confidence": 80}
+{"id": "12-121-2-3", "zh": "辅音连音（完）。", "confidence": 85}
+{"id": "12-122-2-2", "zh": "鼻音符（niggahīta）连音", "confidence": 75}
+{"id": "12-123-2-7", "zh": "27. “鼻音符”是管辖词。", "confidence": 70}
+{"id": "12-123-8-22", "zh": "在 kiṃ kato、saṃ jāto、saṃ ṭhito、taṃ dhanaṃ、taṃ mittaṃ 这些情况下——", "confidence": 75}
+{"id": "12-124-2-5", "zh": "在组辅音前，可以变为该组的末音。", "confidence": 70}
+{"id": "12-125-2-8", "zh": "当后面是组辅音时，鼻音点（bindu）可以变为该组的末音。", "confidence": 75}
+{"id": "12-125-9-18", "zh": "例如：kiṅkato、sañjāto、saṇṭhito、tandhanaṃ、tammittaṃ。", "confidence": 80}
+{"id": "12-126-2-4", "zh": "为什么说“可以”？", "confidence": 80}
+{"id": "12-126-5-8", "zh": "例如 na taṃ kammaṃ。", "confidence": 80}
+{"id": "12-127-2-6", "zh": "正是由 vā 字，在 l 前也变为 l：", "confidence": 65}
+{"id": "12-127-7-8", "zh": "pulliṅgaṃ。", "confidence": 80}
+{"id": "12-128-2-7", "zh": "28. “可以”是管辖词。", "confidence": 70}
+{"id": "12-128-8-13", "zh": "在 evaṃ assa、etaṃ avoca 这些情况下——", "confidence": 75}
+{"id": "12-129-2-4", "zh": "在元音前变为 m 和 d。", "confidence": 70}
+{"id": "12-130-2-9", "zh": "当后面是元音时，鼻音点可以变为 m 和 d。", "confidence": 80}
+{"id": "12-130-10-13", "zh": "例如：evamassa、etadavoca。", "confidence": 80}
+{"id": "12-131-2-4", "zh": "为什么说“可以”？", "confidence": 80}
+{"id": "12-131-5-7", "zh": "例如 maṃ ajini。", "confidence": 80}
+{"id": "12-132-2-10", "zh": "29. 在 taṃ eva、taṃ hi 这些情况下——", "confidence": 75}
+{"id": "12-133-2-3", "zh": "在 e 和 h 前变为 ñ。", "confidence": 70}
+{"id": "12-134-2-11", "zh": "当后面是 e 音或 h 时，鼻音点可以变为 ñ。", "confidence": 75}
+{"id": "12-134-12-17", "zh": "双写时：taññeva；不变时：tameva。", "confidence": 65}
+{"id": "12-134-18-22", "zh": "tañhi；不变时：taṃ hi。", "confidence": 65}
+{"id": "12-135-2-6", "zh": "30. 在 saṃyogo 这里——", "confidence": 75}
+{"id": "12-136-2-4", "zh": "在 y 前也变为 ñ。", "confidence": 70}
+{"id": "12-137-2-10", "zh": "当后面是 y 时，鼻音点连同 y 一起可以变为 ñ。", "confidence": 70}
+{"id": "12-137-11-16", "zh": "双写时：saññogo；不变时：saṃyogo。", "confidence": 70}
+{"id": "12-138-2-14", "zh": "31. 在 cakkhu aniccaṃ、ava siro 这些情况下——“增音”“有时”同样延续。", "confidence": 65}
+{"id": "12-139-2-3", "zh": "鼻音符也（增加）。", "confidence": 70}
+{"id": "12-140-2-10", "zh": "当后面是元音或辅音时，有时增加鼻音点。", "confidence": 80}
+{"id": "12-140-11-14", "zh": "例如：cakkhuṃaniccaṃ、avaṃsiro。", "confidence": 80}
+{"id": "12-141-2-11", "zh": "32. 在 vidūnaṃ aggaṃ、tāsaṃ ahaṃ 这些情况下——", "confidence": 75}
+{"id": "12-142-2-13", "zh": "依“kvaci lopaṃ（有时省略）”，在元音前省略鼻音点：vidūnaggaṃ。", "confidence": 75}
+{"id": "12-142-14-15", "zh": "元音变长：tāsāhaṃ。", "confidence": 70}
+{"id": "12-143-2-10", "zh": "33. 在 buddhānaṃ sāsanaṃ、saṃ rāgo 这些情况下——", "confidence": 75}
+{"id": "12-144-2-12", "zh": "依“byañjane ca（在辅音前也一样）”，省略鼻音点：buddhānasāsanaṃ。", "confidence": 75}
+{"id": "12-144-13-14", "zh": "元音变长：sārāgo。", "confidence": 70}
+{"id": "12-145-2-7", "zh": "34. 在 bījaṃ iva 这里——", "confidence": 75}
+{"id": "12-146-2-5", "zh": "后面的元音可以（省略）。", "confidence": 70}
+{"id": "12-147-2-9", "zh": "鼻音点后面的元音可以被省略：bījaṃva。", "confidence": 80}
+{"id": "12-148-2-7", "zh": "35. 在 evaṃ assa 这里——", "confidence": 75}
+{"id": "12-149-2-5", "zh": "辅音也变为非复辅音。", "confidence": 70}
+{"id": "12-150-2-11", "zh": "当鼻音点后面的元音被省略时，复辅音变为失去复合的辅音，也就是省略前一个 s：", "confidence": 65}
+{"id": "12-150-12-13", "zh": "evaṃsa。", "confidence": 80}
+{"id": "12-151-2-3", "zh": "鼻音符连音（完）。", "confidence": 85}

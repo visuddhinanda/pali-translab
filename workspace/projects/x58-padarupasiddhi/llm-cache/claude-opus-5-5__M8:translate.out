@@ -1,0 +1,76 @@
+{"id": "17-203-2-2", "zh": "阴性词", "confidence": 85}
+{"id": "17-204-2-6", "zh": "下面讲阴性词。", "confidence": 90}
+{"id": "17-205-2-6", "zh": "以 a 结尾的阴性词不常见。", "confidence": 85}
+{"id": "17-206-2-7", "zh": "以 ā 结尾的阴性词，例如 kaññā（少女）一词。", "confidence": 85}
+{"id": "17-206-8-15", "zh": "以“kañña”为基础时——", "confidence": 75}
+{"id": "17-207-2-7", "zh": "176. 表阴性时，在 a 之后加 ā 词缀。", "confidence": 85}
+{"id": "17-208-2-11", "zh": "表示阴性时，在以 a 结尾的词干之后加 ā 词缀。", "confidence": 85}
+{"id": "17-209-2-6", "zh": "阴性词缀和 si 等格尾一样，只彰显词干本来的意义；", "confidence": 70}
+{"id": "17-210-2-7", "zh": "ṇa 等词缀则表达词缀的意义，也表达词干自身的意义。", "confidence": 65}
+{"id": "17-211-2-41", "zh": "依“saralopo”等规则，前一个元音脱落，并把辅音接到后一个元音上；由于前面说过“除去词根、词缀、格尾之外而有意义的是词干”，以词缀结尾的形式也不算词干，因而无法产生格尾；这时依“taddhitasamāsakitakā nāmaṃ vā’tavetunādīsu cā”这条规则中 vā 字的作用，以阴性词缀结尾的形式也得到名词的称号。", "confidence": 65}
+{"id": "17-211-42-57", "zh": "和前面一样产生 si 等格尾，再依“sesato lopaṃ gasipī”，si 脱落。", "confidence": 80}
+{"id": "17-211-58-60", "zh": "sā kaññā（那位少女）。", "confidence": 85}
+{"id": "17-212-2-35", "zh": "复数时，从“ālapane si gasañño”承接“sañño”，从“te itthikhyā po”承接“itthikhyā”。", "confidence": 75}
+{"id": "17-213-2-7", "zh": "177. ā 称为 gha。", "confidence": 85}
+{"id": "17-214-2-27", "zh": "词干末尾的 ā 音如果表示阴性，就称为 gha；得到 gha 的名称后，依“ghapato ca yonaṃ lopo”，yo 可以脱落。", "confidence": 80}
+{"id": "17-214-28-31", "zh": "tā kaññā、kaññāyo（那些少女）。", "confidence": 85}
+{"id": "17-215-2-19", "zh": "呼格时，从“sakhato gasse vā”承接“gassā”。", "confidence": 65}
+{"id": "17-216-2-7", "zh": "178. gha 之后也变为 e。", "confidence": 75}
+{"id": "17-217-2-12", "zh": "gha 之后的 ga 变为 e 音，再经元音脱落等变化。", "confidence": 80}
+{"id": "17-217-13-19", "zh": "bhoti kaññe（少女啊），bhotiyo kaññā、kaññāyo（少女们啊）。", "confidence": 85}
+{"id": "17-218-2-8", "zh": "在 aṃ 格尾，经元音脱落与保持原形，得 kaññaṃ；复数为 kaññā、kaññāyo。", "confidence": 75}
+{"id": "17-219-2-22", "zh": "在第三格等格中，从“āya catutthekavacanassa tū”承接“āyo”，又承接“ekavacanānaṃ”。", "confidence": 70}
+{"id": "17-220-2-7", "zh": "179. gha 之后的 nā 等格尾（变为 āya）。", "confidence": 75}
+{"id": "17-221-2-15", "zh": "在称为 gha 的词干末尾 ā 之后，从 nā 到 smiṃ 为止的单数格尾组都替换为 āya。", "confidence": 80}
+{"id": "17-221-16-17", "zh": "元音脱落，辅音接到后一个元音上。", "confidence": 75}
+{"id": "17-221-18-35", "zh": "kaññāya；kaññāhi、kaññābhi；kaññāya；kaññānaṃ；kaññāya；kaññāhi、kaññābhi；kaññāya；kaññānaṃ。", "confidence": 85}
+{"id": "17-222-2-4", "zh": "在 smiṃ 格尾——", "confidence": 75}
+{"id": "17-223-2-9", "zh": "180. gha、pa 之后的 smiṃ 可以变为 yaṃ。", "confidence": 85}
+{"id": "17-224-2-12", "zh": "gha、pa 之后的 smiṃ 格尾可以变为 yaṃ；不变时则替换为 āya。", "confidence": 80}
+{"id": "17-224-13-17", "zh": "kaññāyaṃ、kaññāya；kaññāsu。", "confidence": 85}
+{"id": "17-225-2-3", "zh": "其他词也是这样——", "confidence": 85}
+{"id": "17-226-2-11", "zh": "saddhā（信）、medhā（智力）、paññā（智慧）、vijjā（明）、cintā（思虑）、mantā（智慧）、vīṇā（琵琶）、taṇhā（渴爱）；", "confidence": 75}
+{"id": "17-227-2-11", "zh": "icchā（欲求）、mucchā（昏迷）、ejā（贪动）、māyā（幻惑）、mettā（慈）、mattā（分量）、sikkhā（学）、bhikkhā（乞食）。", "confidence": 75}
+{"id": "17-228-2-7", "zh": "jaṅghā（小腿）、gīvā（颈）、jivhā（舌）、vācā（言语），", "confidence": 85}
+{"id": "17-229-2-6", "zh": "chāyā（影子）、āsā（希望）、gaṅgā（恒河）、nāvā（船）；", "confidence": 85}
+{"id": "17-230-2-6", "zh": "gāthā（偈颂）、senā（军队）、lekhā（文字）、sālā（厅堂），", "confidence": 80}
+{"id": "17-231-2-6", "zh": "mālā（花鬘）、velā（时候）、pūjā（供养）、khiḍḍā（游戏）。", "confidence": 80}
+{"id": "17-232-2-9", "zh": "pipāsā（口渴）、vedanā（受）、saññā（想）、cetanā（思）、tasiṇā（渴求）、pajā（众生）；", "confidence": 80}
+{"id": "17-233-2-9", "zh": "devatā（天神）、vaṭṭakā（鹌鹑）、godhā（蜥蜴）、balākā（白鹭）、parisā（会众）、sabhā（会堂）。", "confidence": 80}
+{"id": "17-234-2-8", "zh": "ūkā（虱子）、sephālikā（夜花）、laṅkā（楞伽岛）、salākā（签筹）、vālikā（沙子）、sikhā（顶髻）；", "confidence": 70}
+{"id": "17-235-2-10", "zh": "visākhā（毗舍佉）、visikhā（街道）、sākhā（树枝）、vacā（菖蒲）、vañjhā（不孕的女人）、jaṭā（发髻）、ghaṭā（群）。", "confidence": 70}
+{"id": "17-236-2-10", "zh": "jeṭṭhā（长姐）、soṇḍā（嗜酒的女人）、vitaṇḍā（诡辩），以及 karuṇā（悲）、vanitā（妇女）、latā（藤蔓）；", "confidence": 65}
+{"id": "17-237-2-10", "zh": "kathā（谈论）、niddā（睡眠）、sudhā（甘露）、rādhā（罗陀）、vāsanā（习气）、siṃsapā（申恕树）、papā（施水亭）。", "confidence": 70}
+{"id": "17-238-2-6", "zh": "pabhā（光芒）、sīmā（界限）、khamā（大地）、jāyā（妻子），", "confidence": 75}
+{"id": "17-239-2-5", "zh": "khattiyā（刹帝利女）、sakkharā（砂砾）、surā（酒）；", "confidence": 80}
+{"id": "17-240-2-6", "zh": "dolā（秋千）、tulā（秤）、silā（石头）、līlā（嬉戏），", "confidence": 80}
+{"id": "17-241-2-7", "zh": "lālā（口涎）、elā（豆蔻）、mekhalā（腰带）、kalā（部分）。", "confidence": 55}
+{"id": "17-242-2-10", "zh": "vaḷavā（母马）、alambusā（阿兰布萨）、mūsā（坩埚）、mañjūsā（箱子）、sulasā（苏拉萨）、disā（方向）；", "confidence": 65}
+{"id": "17-243-2-9", "zh": "nāsā（鼻子）、juṇhā（月光）、guhā（洞穴）、īhā（努力）、lasikā（关节液）、vasudhā（大地）等等。", "confidence": 75}
+{"id": "17-244-2-5", "zh": "ammā 等词只在呼格上有形态差别。", "confidence": 80}
+{"id": "17-244-6-10", "zh": "ammā；复数 ammā、ammāyo。", "confidence": 80}
+{"id": "17-245-2-14", "zh": "依“ghate cā”，ga 本应变为 e 音时——", "confidence": 80}
+{"id": "17-246-2-7", "zh": "181. ammā 等词之后不变。", "confidence": 75}
+{"id": "17-247-2-11", "zh": "在 ammā、annā 等词之后的 ga，也就是呼格单数格尾，不变为 e 音。", "confidence": 80}
+{"id": "17-247-12-20", "zh": "依“ākāro vā”变为短音。", "confidence": 80}
+{"id": "17-248-2-10", "zh": "bhoti amma、bhoti ammā（母亲啊），bhotiyo ammā、ammāyo（母亲们啊）。", "confidence": 85}
+{"id": "17-248-11-25", "zh": "annā 也是这样：annā；annā、annāyo；bhoti anna、bhoti annā；bhotiyo annā、annāyo。", "confidence": 85}
+{"id": "17-248-26-41", "zh": "ambā：ambā；ambā、ambāyo；bhoti amba、bhoti ambā；bhotiyo ambā、ambāyo，等等。", "confidence": 85}
+{"id": "17-249-2-4", "zh": "以 ā 结尾的词讲完了。", "confidence": 80}
+{"id": "17-250-2-7", "zh": "以 i 结尾的阴性词，例如 ratti（夜）一词；", "confidence": 85}
+{"id": "17-251-2-10", "zh": "同样产生 si 等格尾，si 脱落，得 ratti。", "confidence": 85}
+{"id": "17-252-2-13", "zh": "复数时，承接“saññā”与“ivaṇṇuvaṇṇā”。", "confidence": 80}
+{"id": "17-253-2-8", "zh": "182. 这些表示阴性的称为 pa。", "confidence": 80}
+{"id": "17-254-2-37", "zh": "阴性的名称叫 itthikhyā；词干末尾的那些 i 类、u 类元音如果表示阴性，就称为 pa；得到 pa 的名称后，依“ghapato cā”等规则，yo 脱落，依“yosu kata”等规则变为长音。", "confidence": 75}
+{"id": "17-254-38-50", "zh": "rattī、rattiyo 或 ratyo；he ratti；he rattī、he rattiyo。", "confidence": 85}
+{"id": "17-255-2-14", "zh": "依“aṃmo”等规则加鼻音，得 rattiṃ；复数 rattī、rattiyo；", "confidence": 75}
+{"id": "17-256-2-13", "zh": "在第三格等格中，承接“ekavacanānaṃ”与“nādīnaṃ”。", "confidence": 80}
+{"id": "17-257-2-7", "zh": "183. pa 之后变为 yā。", "confidence": 80}
+{"id": "17-258-2-12", "zh": "在称为 pa 的 i 类、u 类元音之后，nā 等单数格尾组替换为 yā。", "confidence": 80}
+{"id": "17-258-13-24", "zh": "rattiyā；rattīhi、rattībhi、rattihi、rattibhi；rattiyā；rattīnaṃ、rattinaṃ。", "confidence": 85}
+{"id": "17-259-2-3", "zh": "在第五格——", "confidence": 85}
+{"id": "17-260-2-9", "zh": "184. pa 之后的 smiṃ、smā 可以变为 aṃ、ā。", "confidence": 80}
+{"id": "17-261-2-14", "zh": "在 pa 之后，smiṃ、smā 可以依次替换为 aṃ、ā。", "confidence": 80}
+{"id": "17-261-15-29", "zh": "这里的 vā 字表示有限定的任意，因此在以 u 类元音结尾的词之后不替换，在以 i 类元音结尾的词之后也要依照实际用例而定。", "confidence": 70}
+{"id": "17-262-2-16", "zh": "承接“sare”与“yakāro”，并按照狮子回顾与青蛙跳跃的方法，取用 yo 格尾和单数这两项。", "confidence": 60}
+{"id": "17-263-2-7", "zh": "185. 称为 pa 的也是如此。", "confidence": 60}

@@ -1,0 +1,59 @@
+{"id": "22-191-2-4", "zh": "长音、短音类", "confidence": 80}
+{"id": "22-192-2-8", "zh": "下面阐明长音与短音。", "confidence": 85}
+{"id": "22-193-2-7", "zh": "34. **剩余的**（元音）**变长**。", "confidence": 75}
+{"id": "22-194-2-4", "zh": "这一规则是插入的。", "confidence": 70}
+{"id": "22-194-5-16", "zh": "由于字母被删除或被替换，剩下的短元音有时会变为长音（任选）。", "confidence": 75}
+{"id": "22-195-2-4", "zh": "先说前一元音被删除的情形：", "confidence": 75}
+{"id": "22-196-2-96", "zh": "如 tatrāyamādi bhavati〔法句 375〕、tatrābhiratimiccheyya〔法句 88；相应部 5.198〕、buddhānussati、saddhīdha vittaṃ purisassa seṭṭhaṃ〔经集 183〕、anāgārehi cūbhayaṃ〔法句 404；经集 633〕、dhammūpasaṃhitā〔长部 2.349〕、tathūpamaṃ dhammavaraṃ adesayi〔小诵 6.13〕、tesaṃ vūpasamo sukho〔长部 2.221〕等。", "confidence": 75}
+{"id": "22-197-2-3", "zh": "后一元音被删除的情形：", "confidence": 75}
+{"id": "22-198-2-60", "zh": "如 ajitāti bhagavā avoca〔经集 1039、1041〕、sumedho sājāto cāti、ruppatīti rūpaṃ〔相应部 3.79〕、bujjhatīti buddho、sādhūti patissuṇitvā〔法句义注 1.4 迦罗夜叉女事〕、kiṃsūdha vittaṃ purisassa seṭṭhaṃ〔经集 184〕等。", "confidence": 75}
+{"id": "22-199-2-3", "zh": "鼻音（niggahīta）被删除的情形：", "confidence": 70}
+{"id": "22-200-2-19", "zh": "如 tāsāhaṃ〔波逸提 709〕、tesāhaṃ〔本生 2.22.313〕。", "confidence": 75}
+{"id": "22-201-2-3", "zh": "在替换的情形中：", "confidence": 75}
+{"id": "22-202-2-20", "zh": "如 myāyaṃ dhammo〔大品 7〕、svāhaṃ〔饿鬼事 485〕、vityānubhūyate 等。", "confidence": 70}
+{"id": "22-203-2-17", "zh": "虽然这些形式也能由后面“在辅音前”那条规则得出，但应当理解：加入这条规则，是为了表明在删除和替换的情形中，变长几乎是必然的。", "confidence": 65}
+{"id": "22-204-2-28", "zh": "35. **在辅音前**，**长短互变**〔迦旃延 25、26；尼 35、36、64、71、165、179〕。", "confidence": 70}
+{"id": "22-205-2-12", "zh": "后面接辅音时，短元音和长元音有时分别变为长音和短音（任选）。", "confidence": 75}
+{"id": "22-205-13-25", "zh": "其中，变长的规定是由于偈颂、由于增音、由于发音方便或由于理解方便而成立的。", "confidence": 70}
+{"id": "22-206-2-5", "zh": "其中，先说由于偈颂的情形：", "confidence": 75}
+{"id": "22-207-2-52", "zh": "如 madhuvā maññati bālo〔法句 69〕、khantī ca sovacassatā〔小诵 5.10〕、evaṃ gāme munī care〔法句 49〕、sakko ujū ca suhujū ca〔小诵 9.1〕等。", "confidence": 75}
+{"id": "22-208-2-3", "zh": "在增音的情形中：", "confidence": 75}
+{"id": "22-209-2-33", "zh": "如 uragāmiva〔本生 1.7.30〕、arahatāmiva〔长部 2.348〕、passatāmiva〔经集 769〕等。", "confidence": 75}
+{"id": "22-209-34-36", "zh": "说是由于偈颂也讲得通。", "confidence": 70}
+{"id": "22-210-2-7", "zh": "发音方便和理解方便，在前面的“剩余的变长”中也同样适用。", "confidence": 65}
+{"id": "22-211-2-4", "zh": "其中，由于发音方便的情形：", "confidence": 75}
+{"id": "22-212-2-41", "zh": "如 chārattaṃ mānattaṃ〔小品 97〕、pakaṭṭhaṃ vacanaṃ（殊胜的言教）即 pāvacanaṃ、pāsādo、pākāro、pāvassi megho、nagaraṃ pāvisi、pāvekkhi、pārisuddhi、pāṭipado、caturāsītisahassāni〔法集论义注 584〕等。", "confidence": 70}
+{"id": "22-213-2-5", "zh": "所谓理解方便，就是便于辨认分词。", "confidence": 70}
+{"id": "22-213-6-7", "zh": "其中：", "confidence": 80}
+{"id": "22-214-2-17", "zh": "如 sātthaṃ sabyañjanaṃ〔波罗夷 1〕、sātthikā dhammadesanā、cakkhumāssa yathā andho 等。", "confidence": 70}
+{"id": "22-215-2-10", "zh": "至于鼻音被删除的情形，sārāgo、sāratto 等例子前面已经举过了。", "confidence": 75}
+{"id": "22-216-2-4", "zh": "以上是长音类。", "confidence": 85}
+{"id": "22-217-2-6", "zh": "在变短的连声中，先说由于偈颂的情形：", "confidence": 70}
+{"id": "22-218-2-34", "zh": "如 yiṭṭhaṃ va hutaṃ va loke〔法句 108〕、bhovādi nāma so hoti〔法句 396；经集 625〕、yathābhāvi guṇena so 等。", "confidence": 70}
+{"id": "22-219-2-9", "zh": "在增音中，增加 y、r、d 时，前面的元音变短：", "confidence": 65}
+{"id": "22-220-2-47", "zh": "如 yathayidaṃ〔增支部 1.1-4〕、tathayidaṃ、yathariva amhākaṃ bhagavā、tathariva bhikkhusaṅgho、sammadeva samācare〔相应部 1.112〕、sammadakkhāto mayā satisambojjhaṅgo〔相应部 5.194〕等。", "confidence": 70}
+{"id": "22-221-2-6", "zh": "所谓在复辅音前变短，这种情形很常见：", "confidence": 70}
+{"id": "22-222-2-42", "zh": "如 akkamo、parakkamo、akkhāto、aññā、aññindriyaṃ、aññātaṃ bhagavā、aññātaṃ sugata、attharaṇaṃ、apphoṭeti、alliyati、acchindati、assādo、ābhassaro、pabhassaro、sabbaññutaññāṇaṃ、jhānassa lābhimhi vasimhi〔波罗夷 203-204〕。", "confidence": 70}
+{"id": "22-223-2-6", "zh": "在 tā、to 词缀前也会变短：", "confidence": 70}
+{"id": "22-224-2-13", "zh": "如 kataññutā、atthaññutā、dhammaññutā、kaññato、nadito、vadhuto。", "confidence": 75}
+{"id": "22-225-2-3", "zh": "在复合词中：", "confidence": 80}
+{"id": "22-226-2-10", "zh": "如 itthipumaṃ、itthiliṅgaṃ、itthibhāvo、sabbaññubuddho 等。", "confidence": 75}
+{"id": "22-227-2-4", "zh": "以上是短音类。", "confidence": 85}
+{"id": "22-228-2-6", "zh": "长音、短音类讲完了。", "confidence": 85}
+{"id": "22-229-2-2", "zh": "强化音类", "confidence": 70}
+{"id": "22-230-2-6", "zh": "下面阐明强化连声。", "confidence": 70}
+{"id": "22-231-2-20", "zh": "36. **i 类、u 类元音变为 e、o**，**在删除之后**〔迦旃延 14；成就 16；尼 34〕。", "confidence": 65}
+{"id": "22-232-2-15", "zh": "在前一元音或后一元音被删除之后，剩下的 i 类、u 类元音依次替换为 e、o（任选）。", "confidence": 70}
+{"id": "22-233-2-3", "zh": "后面是 i 类元音时：", "confidence": 70}
+{"id": "22-234-2-21", "zh": "如 bandhusseva samāgamo、ateva me acchariyaṃ〔本生 2.22.1988〕、vāteritaṃ、jineritaṃ。", "confidence": 75}
+{"id": "22-235-2-3", "zh": "后面是 u 类元音时：", "confidence": 70}
+{"id": "22-236-2-31", "zh": "如 gaṅgodakaṃ、pattaṃ vodakaṃ katvā〔小品 376〕、saṅkhyaṃ〔经集 754〕nopeti vedagū〔大义释 6〕、udakomiva jātaṃ。", "confidence": 70}
+{"id": "22-237-2-3", "zh": "在动词中：", "confidence": 80}
+{"id": "22-238-2-12", "zh": "如 veti、apeti、upeti、apekkhā、upekkhā 等。", "confidence": 75}
+{"id": "22-239-2-3", "zh": "前面是 i 类元音时：", "confidence": 70}
+{"id": "22-240-2-19", "zh": "如 rathesabho、janesabho、munelayo 等。其中，rathīnaṃ āsabho（车战者中的牛王），也就是最上者，叫作 rathesabho；rathīnaṃ 是指拥有战车、登上战车的战士。", "confidence": 65}
+{"id": "22-240-20-27", "zh": "janīnaṃ āsabho（拥有民众者中的牛王）叫作 janesabho；janīnaṃ 是指拥有民众的人，也就是统治者。", "confidence": 60}
+{"id": "22-240-28-32", "zh": "munīnaṃ ālayo（牟尼们的住所），也就是精舍，叫作 munelayo。", "confidence": 70}
+{"id": "22-241-2-3", "zh": "前面是 u 类元音时：", "confidence": 70}
+{"id": "22-242-2-14", "zh": "sundarā itthī（美好的存在）叫作 sotthi；“有美好的利益者”也叫作 sotthi，元音变短，意思是吉祥。", "confidence": 45}
+{"id": "22-243-2-4", "zh": "强化音类讲完了。", "confidence": 75}

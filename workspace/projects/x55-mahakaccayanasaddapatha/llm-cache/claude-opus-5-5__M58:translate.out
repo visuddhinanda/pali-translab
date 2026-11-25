@@ -1,0 +1,80 @@
+{"id":"14-3126-2-2","zh":"第三品","confidence":85}
+{"id":"14-3127-2-10","zh":"571,624. 不合常规的词形，由后缀等依特殊构词法（nipātana）而成立。","confidence":70}
+{"id":"14-3128-2-16","zh":"在数词、名词、复合词、派生词（taddhita）、动词（ākhyāta）、过分词（kita）各章中，那些带后缀而不合常规的词，不必依推导步骤去考察，各依自己的名称，以特殊构词法成立。","confidence":60}
+{"id":"14-3129-2-19","zh":"先说数词：eka 变为 e，dasa 的 da 音替换为 ra 音。","confidence":75}
+{"id":"14-3129-20-25","zh":"eko 和 dasa 合起来，成为 ekārasa（十一）。","confidence":80}
+{"id":"14-3130-2-21","zh":"dvi 变为 bā，dasa 的 da 音替换为 ra 音；dve 和 dasa 合起来，成为 bārasa（十二）。","confidence":80}
+{"id":"14-3131-2-12","zh":"dvi 变为 bā，dasa 变为 vīsaṃ。","confidence":65}
+{"id":"14-3131-13-17","zh":"dve 和 vīsaṃ 合起来，成为 bāvīsaṃ（二十二）。","confidence":80}
+{"id":"14-3132-2-20","zh":"cha 变为 so，dasa 的 da 音变为 ḷa；cha 和 dasa 合起来，成为 soḷasa（十六）。","confidence":80}
+{"id":"14-3133-2-9","zh":"在 chaāyatana 中，cha 变为 saḷa，成为 saḷāyatanaṃ（六处）。","confidence":80}
+{"id":"14-3133-10-14","zh":"其余数词也应这样构成。","confidence":85}
+{"id":"14-3134-2-20","zh":"再说名词：在 ima、samāna、apara 之后加 jja、jju 后缀，并且 ima、samāna 两词分别替换为 a 音、sa 音。","confidence":75}
+{"id":"14-3134-21-38","zh":"imasmiṃ kāle（在这个时候）成为 ajja、ajju；samāne kāle（在同一时候）成为 sajja、sajju；aparasmiṃ kāle（在另一个时候）成为 aparajja、aparajju。","confidence":80}
+{"id":"14-3135-2-10","zh":"再说复合词：bhūmigato、apāyagato、issarakataṃ。","confidence":80}
+{"id":"14-3135-11-22","zh":"sallaviddho、kathinadussaṃ、corabhayaṃ、dhaññarāsi、saṃsāradukkhaṃ、pubbāparaṃ。","confidence":80}
+{"id":"14-3136-2-15","zh":"再说派生词：vāsiṭṭho、bhāradvājo、bhaggavo、paṇḍavo、kāleyyo。","confidence":80}
+{"id":"14-3137-2-4","zh":"再说动词：","confidence":85}
+{"id":"14-3137-5-30","zh":"从“asa（有）”这个词根，在现在时的单数与复数语尾中，**单数**的 ti 连同词尾一起变为 ssa，复数的 anti 连同词尾一起变为 ssu。","confidence":65}
+{"id":"14-3137-31-36","zh":"例如：evamassa vacanīyo（他应当被这样说），evamassu vacanīyā（他们应当被这样说）。","confidence":70}
+{"id":"14-3138-2-12","zh":"在命令语气中，hi 可以变为 ssu：gacchassu、gacchāhi。","confidence":75}
+{"id":"14-3139-2-24","zh":"再说过分词：从 vada、hana 等词根加 ka 后缀，并且 vada 变为 vāda，hana 变为 ghāta。","confidence":75}
+{"id":"14-3139-25-28","zh":"vādako、ghātako。","confidence":85}
+{"id":"14-3140-2-12","zh":"从词根 naṭa，ta 后缀连同词尾一起替换为 cca、ṭṭa。","confidence":70}
+{"id":"14-3140-13-16","zh":"naccaṃ、naṭṭaṃ。","confidence":85}
+{"id":"14-3140-17-20","zh":"诸如此类的词，都依特殊构词法成立。","confidence":80}
+{"id":"14-3141-2-12","zh":"572,625. 在 sāsa、disa 之后，ta 变为 riṭṭha（ca）。","confidence":65}
+{"id":"14-3142-2-12","zh":"从 sāsa、disa 等词根，ta 后缀在适当情况下替换为 riṭṭha。","confidence":70}
+{"id":"14-3143-2-9","zh":"anusiṭṭho so mayā（他被我教导了），diṭṭhaṃ me rūpaṃ（色被我看见了）。","confidence":80}
+{"id":"14-3144-2-12","zh":"由于规则中有 ca 字，kicca 后缀中的 ta 音以及 tuṃ 后缀，也分别替换为 raṭṭha、raṭṭhuṃ。","confidence":60}
+{"id":"14-3144-13-15","zh":"dassanīyaṃ、daṭṭhabbaṃ。","confidence":85}
+{"id":"14-3144-16-20","zh":"daṭṭhuṃ vihāraṃ gacchanti samaṇānaṃ（他们为了见沙门而前往精舍）。","confidence":75}
+{"id":"14-3145-2-13","zh":"573,626. 在以 sa 结尾的词根以及 puccha、bhañja、haṃsa 等之后，〔ta〕变为 ṭṭha。","confidence":60}
+{"id":"14-3146-2-18","zh":"从以 sa 音结尾的词根以及 puccha、bhañja、haṃsa 等词根，ta 后缀连同前面的辅音，在适当情况下替换为 ṭṭha。","confidence":60}
+{"id":"14-3147-2-20","zh":"tuṭṭho，ahinā daṭṭho naro（被蛇咬的人），mayā puṭṭho（被我问过的），bhaṭṭho、pabhaṭṭho、haṭṭho、pahaṭṭho、yiṭṭho。","confidence":75}
+{"id":"14-3147-21-25","zh":"其他词根也应这样处处套用。","confidence":80}
+{"id":"14-3148-2-9","zh":"574,613. 在 vasa 之后，变为 uṭṭha。","confidence":75}
+{"id":"14-3149-2-12","zh":"从 vasa 这个词根，ta 音后缀连同前面的辅音，在适当情况下替换为 uṭṭha。","confidence":65}
+{"id":"14-3150-2-3","zh":"vassaṃvuṭṭho（已度过雨安居的）。","confidence":80}
+{"id":"14-3151-2-10","zh":"575,614. vasa 的〔va〕可以变为 vu。","confidence":65}
+{"id":"14-3152-2-14","zh":"就是 vasa 这个词根，当 ta 后缀在后时，va 音可以替换为 u 音。","confidence":70}
+{"id":"14-3153-2-6","zh":"vusitaṃ brahmacariyaṃ（梵行已经完成），uṭṭho。","confidence":75}
+{"id":"14-3153-7-9","zh":"或者作 vuṭho。","confidence":75}
+{"id":"14-3154-2-16","zh":"576,607. 在 dha、ḍha、bha、ha 之后，〔ta〕变为 dha、ḍha（ca）。","confidence":65}
+{"id":"14-3155-2-15","zh":"从以 dha、ḍha、bha、ha 结尾的词根，ta 音后缀依次替换为 dha、ḍha。","confidence":70}
+{"id":"14-3156-2-3","zh":"例如：","confidence":85}
+{"id":"14-3156-4-17","zh":"buddho bhagavā（觉悟的世尊），vaḍḍho bhikkhu（年长的比丘），laddhaṃ me patthacīvaraṃ（我得到了钵和衣），agginā daḍḍhaṃ vanaṃ（被火烧毁的树林）。","confidence":75}
+{"id":"14-3157-2-10","zh":"577,628. 在 bhañja 之后，〔ta〕变为 ggo（ca）。","confidence":55}
+{"id":"14-3158-2-11","zh":"从 bhañja 这个词根，ta 音后缀连同前面的辅音替换为 ggo。","confidence":65}
+{"id":"14-3159-2-3","zh":"bhaggo（已破碎的）。","confidence":80}
+{"id":"14-3160-2-11","zh":"578,560. bhuja 等词根的末音消失，〔ta〕重叠（ca）。","confidence":65}
+{"id":"14-3161-2-14","zh":"bhuja 等词根的末音消失，并且 ta 后缀重叠。","confidence":75}
+{"id":"14-3162-2-15","zh":"bhutto、bhuttāvī、catto、satto、ratto、yutto、vivitto。","confidence":85}
+{"id":"14-3163-2-9","zh":"579,629. vaca 的 va 可以变为 u。","confidence":65}
+{"id":"14-3164-2-22","zh":"vaca 这个词根的 va 音替换为 u 音，末尾的 ca 音消失，并且 ta 后缀重叠；这些变化是可选的。","confidence":65}
+{"id":"14-3165-2-7","zh":"vuttaṃ bhagavatā（世尊所说的），或者作 uttaṃ。","confidence":80}
+{"id":"14-3166-2-8","zh":"580,630. gupa 等词根也是如此。","confidence":75}
+{"id":"14-3167-2-16","zh":"gupa 等词根的末辅音消失，并且 ta 后缀重叠。","confidence":75}
+{"id":"14-3168-2-15","zh":"sugutto、catto、litto、santatto、utto、vivitto、sitto。","confidence":85}
+{"id":"14-3168-16-18","zh":"其他词根也应这样套用。","confidence":80}
+{"id":"14-3169-2-9","zh":"581,616. 在 tara 等之后，〔ta〕变为 iṇṇa。","confidence":75}
+{"id":"14-3170-2-16","zh":"从 tara 等词根，ta 后缀替换为 iṇṇa，并且末辅音消失。","confidence":75}
+{"id":"14-3171-2-19","zh":"taratīti（渡过）成为 tiṇṇo，uttaratīti（渡出）成为 uttiṇṇo，saṃpūratīti（充满）成为 sampuṇṇo，turatīti（急速）成为 tuṇṇo，parijīratīti（衰老）成为 parijiṇṇo，ākiratīti（散布）成为 ākiṇṇo。","confidence":65}
+{"id":"14-3172-2-12","zh":"582,631. 在 bhida 等之后，〔ta〕可以变为 inna、anna、īṇa。","confidence":70}
+{"id":"14-3173-2-19","zh":"从 bhidi 等词根，ta 后缀可以替换为 inna、anna、īṇa，并且末辅音消失。","confidence":75}
+{"id":"14-3174-2-29","zh":"bhinditabboti（应被破开的）成为 bhinno，chindīyatīti（被切断）成为 chinno，ucchindīyitthāti（已被断除）成为 ucchinno，dīyatīti（被给予）成为 dinno，nisīdatīti（坐下）成为 nisinno，suṭṭhu chādīyatīti（被好好覆盖）成为 suchanno，khidatīti（疲倦）成为 khinno，rodatīti（哭泣）成为 runno，以及 khīṇā jāti（生已经穷尽）。","confidence":65}
+{"id":"14-3175-2-5","zh":"说“**vā**（可以）”是为了什么？","confidence":75}
+{"id":"14-3175-6-8","zh":"bhijjatīti（被破开）成为 bhitti（墙）。","confidence":65}
+{"id":"14-3176-2-13","zh":"583,617. 在 susa、paca、saka 之后，〔ta〕变为 kkha、kka（ca）。","confidence":70}
+{"id":"14-3177-2-18","zh":"从 susa、paca、saka 等词根，ta 后缀替换为 kkha、kka，并且末辅音消失。","confidence":75}
+{"id":"14-3178-2-11","zh":"sussatīti（干枯）成为 sukkhaṃ，例如 kaṭṭhaṃ（干柴）；paccatīti（成熟）成为 pakkaṃ，例如 phalaṃ（熟果）。","confidence":65}
+{"id":"14-3178-12-20","zh":"sakati（能够），也就是有能力，或者说受人敬奉，所以成为 sakko，也就是 sujampati（帝释）。","confidence":55}
+{"id":"14-3179-2-10","zh":"584,618. 在 pakkama 等之后，〔ta〕变为 nta（ca）。","confidence":70}
+{"id":"14-3180-2-15","zh":"从 pakkama 等词根，ta 后缀替换为 nta，并且末音消失。","confidence":75}
+{"id":"14-3181-2-18","zh":"pakkamatīti（离去）成为 pakkanto，vibbhamatīti（游离）成为 vibbhanto，还有 saṅkanto、khanto、santo、danto、vanto。","confidence":70}
+{"id":"14-3182-2-4","zh":"规则中用 ca 字是为了什么？","confidence":80}
+{"id":"14-3182-5-10","zh":"从同样这些词根，ta 后缀变为 nti。","confidence":70}
+{"id":"14-3182-11-15","zh":"并且末音消失。","confidence":80}
+{"id":"14-3182-16-19","zh":"kanti、khanti。","confidence":85}
+{"id":"14-3182-20-22","zh":"其他各处都是这样。","confidence":80}
+{"id":"14-3183-2-10","zh":"585,619. jana 等词根的〔末音〕在 ti 之前变为 ā（ca）。","confidence":60}

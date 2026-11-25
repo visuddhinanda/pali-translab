@@ -1,0 +1,54 @@
+{"id": "17-77-2-2", "zh": "元音连声规则", "confidence": 85}
+{"id": "17-78-2-5", "zh": "下面讲元音连声。", "confidence": 90}
+{"id": "17-79-2-47", "zh": "loka aggapuggalo、paññā indriyaṃ、tīṇi imāni、no hi etaṃ、bhikkhunī ovādo、mātu upaṭṭhānaṃ、sametu āyasmā、abhibhū āyatanaṃ、dhanā me atthi、sabbe eva、tayo assu dhammā、asanto ettha na dissanti——在这些例子中，元音等名称已经确立，为了在一切作连声的地方把辅音分离出来，作者给出了一条释则（paribhāsā）：", "confidence": 75}
+{"id": "17-80-2-8", "zh": "12. 应当把前面的（辅音）置于下方、使它不带元音，与元音分离。", "confidence": 70}
+{"id": "17-81-2-21", "zh": "**与元音**：这是用于从格意义的具格，或者是表示“共同”的具格。意思是：在应当连声的地方，不越过带元音的前面辅音，把它置于下方、使它不带元音，再与元音分离——也就是说，应当把辅音从元音分离出来。", "confidence": 65}
+{"id": "17-81-22-33", "zh": "这里，凭借“不带元音”一词的作用，就可以推知所指的是“辅音”。", "confidence": 75}
+{"id": "17-82-2-8", "zh": "13. 元音在元音前脱落。", "confidence": 85}
+{"id": "17-83-2-10", "zh": "所有的元音，当后面有元音时，都会脱落。", "confidence": 85}
+{"id": "17-83-11-15", "zh": "**脱落**就是不显现、不发音。", "confidence": 85}
+{"id": "17-83-16-20", "zh": "这里，**元音**是对承受变化者的标示。", "confidence": 75}
+{"id": "17-83-21-28", "zh": "这里用复数，是为了表明后面的每一个元音都能使多个元音脱落。", "confidence": 70}
+{"id": "17-83-29-41", "zh": "**在元音前**是对条件的标示，这是表示条件的处格；由于采用了条件这一作用，如果中间隔着字母或时间，就不作连声。", "confidence": 70}
+{"id": "17-83-42-65", "zh": "“脱落”是对变化本身的标示。由于下文另外规定了后音脱落，应当知道这条经文规定的是前音脱落；同样，凡是用处格标示的地方，都应当理解为规定的是前面的成分，而不是后面的成分。", "confidence": 70}
+{"id": "17-84-2-15", "zh": "“不带元音”“置于下方”两词承前延续。为了连贯地表述，作者给出了一条释则：", "confidence": 70}
+{"id": "17-85-2-8", "zh": "14. 在适合的地方，应当把它引向后面。", "confidence": 75}
+{"id": "17-86-2-12", "zh": "不带元音、置于下方的辅音，应当在适合的地方引向后面的字母，也就是说，应当作引向后面的处理。", "confidence": 70}
+{"id": "17-86-13-31", "zh": "这里用“适合”一词，是为了排除鼻韵（niggahīta），因此在“akkocchi maṃ avadhi maṃ”等例子中，就不会产生是否引向后面的疑问。", "confidence": 70}
+{"id": "17-87-2-29", "zh": "Lokaggapuggalo、paññindriyaṃ、tīṇimāni、nohetaṃ、bhikkhunovādo、mātupaṭṭhānaṃ、sametāyasmā、abhibhāyatanaṃ、dhanā matthi、sabbeva、tayassu dhammā、asantettha na dissanti。", "confidence": 90}
+{"id": "17-88-2-83", "zh": "yassa idāni、saññā iti、chāyā iva、kathā eva kā、iti api、assamaṇī asi、cakkhu indriyaṃ、akataññū asi、ākāse iva、te api、vande ahaṃ、so ahaṃ、cattāro ime、vasalo iti、moggallāno āsi bījako、pāto eva——在这些例子中，本应适用前音脱落，“在元音前”是统领词；但这里依照“随意义需要变换格尾”的原则，“元音”“从元音”“脱落”承前延续——", "confidence": 65}
+{"id": "17-89-2-8", "zh": "15. 在不同形的元音之后，后面的元音可以脱落。", "confidence": 75}
+{"id": "17-90-2-9", "zh": "在形态不同的元音之后，后面的元音可以脱落。", "confidence": 80}
+{"id": "17-90-10-21", "zh": "具有相同形态的，叫作同形（sarūpa）；不是同形的，叫作不同形（asarūpa），也就是异类元音。", "confidence": 75}
+{"id": "17-90-22-53", "zh": "正如前缀 ā 用于“界限”和“包括”两种意义，vā 一词也有两种用法：有时表示任选，有时表示按既定的形态来取用；这里用的是后一种，所以这里的 vā 一词表示必然适用、非必然适用以及不适用三种规则。", "confidence": 60}
+{"id": "17-90-54-64", "zh": "依照“在适合的地方，应当把它引向后面”这一条，应当引向后面。", "confidence": 75}
+{"id": "17-91-2-27", "zh": "Yassadāni（yassa idāni）、saññāti（saññā iti）、chāyāva（chāyā iva）、kathāva kā（kathā eva kā）、itīpi（iti api）、assamaṇīsi（assamaṇī asi）。", "confidence": 85}
+{"id": "17-91-28-31", "zh": "cakkhundriyaṃ 一例是必然适用的。", "confidence": 75}
+{"id": "17-91-32-69", "zh": "Akataññūsi（akataññū asi）、ākāseva（ākāse iva）、tepi（te api）、vandehaṃ（vande ahaṃ）、sohaṃ（so ahaṃ）、cattārome（cattāro ime）、vasaloti（vasalo iti）、moggallānosi bījako（moggallāno āsi bījako）、pātova（pāto eva）。", "confidence": 85}
+{"id": "17-92-2-28", "zh": "以下这些例子不适用：pañcindriyāni、saddhindriyaṃ、sattuttamo、ekūnavīsati、yassete、sugatovādo、diṭṭhāsavo、diṭṭhogho、cakkhāyatanaṃ、taṃ kutettha labbhā 等。", "confidence": 80}
+{"id": "17-93-2-5", "zh": "这是依照定选（vavatthitavibhāsā）而成立的。", "confidence": 65}
+{"id": "17-94-2-6", "zh": "在 a 类元音之后，除了 idāni、iti、iva、eva 等以外，后面的元音", "confidence": 60}
+{"id": "17-95-2-7", "zh": "不脱落；在其他元音之后，长元音不脱落，但 āsi、eva 等除外。", "confidence": 60}
+{"id": "17-96-2-65", "zh": "bandhussa iva、upa ikkhati、upa ito、ava icca、jina īritaṃ、na upeti、canda udayo、yathā udake——在这些例子中，前面的 a 类元音脱落之后，“后面的”“不同形”承前延续；同样，“ivaṇṇo yaṃ navā”一条中的“i 类元音”一词，以及“vamodudantānaṃ”一条中的“u”一词，也要以狮子步（sīhagati）的方式延续到这里。", "confidence": 60}
+{"id": "17-97-2-7", "zh": "16. 前面的元音脱落后，（后面的元音）有时变为异类元音。", "confidence": 70}
+{"id": "17-98-2-16", "zh": "属于 i 类的元音和属于 u 音的元音，作为后面的元音，在不同形的前面元音脱落后，有时变为异类元音。", "confidence": 70}
+{"id": "17-98-17-28", "zh": "没有同类音的，叫作异类元音，就是 e 和 o；其中按发音部位相近，i 类元音变为 e，u 音变为 o。", "confidence": 75}
+{"id": "17-99-2-17", "zh": "Bandhusseva、upekkhati、upeto、avecca、jineritaṃ、nopeti、candodayo、yathodake。", "confidence": 90}
+{"id": "17-99-18-21", "zh": "为什么说**有时**？", "confidence": 85}
+{"id": "17-99-22-33", "zh": "例如 tatrime、yassindriyāni、mahiddhiko、sabbītiyo、tenupasaṅkami、lokuttaro。", "confidence": 80}
+{"id": "17-99-34-37", "zh": "为什么说**脱落后**？", "confidence": 85}
+{"id": "17-99-38-47", "zh": "例如 cha ime dhammā、yathā idaṃ、kusalassa upasampadā。", "confidence": 80}
+{"id": "17-99-48-51", "zh": "为什么说**不同形**？", "confidence": 80}
+{"id": "17-99-52-55", "zh": "例如 cattārimāni、mātupaṭṭhānaṃ。", "confidence": 80}
+{"id": "17-100-2-17", "zh": "这里，虽然上文已经有 vā 一词，这里仍然用了“有时”，所以应当知道，这里所说的规则只在 a 类元音脱落时才适用。", "confidence": 70}
+{"id": "17-100-18-31", "zh": "所以以下例子不适用：diṭṭhupādānaṃ、pañcahupāli、mudindriyaṃ、yo missaro。", "confidence": 80}
+{"id": "17-101-2-74", "zh": "tatra ayaṃ、buddha anussati、sa atthikā、paññavā assa、tadā ahaṃ、yāni idha bhūtāni、gacchāmi iti、ati ito、kikī iva、bahu upakāraṃ、madhu udakaṃ、su upadhāritaṃ、yopi ayaṃ、idāni ahaṃ、sace ayaṃ、appassuto ayaṃ、itara itarena、saddhā idha vittaṃ、kamma upanissayo、tathā upamaṃ、ratti uparato、vi upasamo——在这些例子中，前面的元音脱落之后——", "confidence": 75}
+{"id": "17-102-2-20", "zh": "“有时”是统领词，“后面的”“脱落后”承前延续。", "confidence": 75}
+{"id": "17-103-2-6", "zh": "17. 变长。", "confidence": 80}
+{"id": "17-104-2-13", "zh": "后面的元音，在前面的元音脱落后，有时变成长音；按发音部位相近，短元音变成同类的长元音。", "confidence": 75}
+{"id": "17-105-2-48", "zh": "Tatrāyaṃ、buddhānussati、sātthikā、paññavāssa、tadāhaṃ、yānīdha bhūtāni、gacchāmīti、atīto、kikīva、bahūpakāraṃ、madhūdakaṃ、sūpadhāritaṃ、yopāyaṃ、idānāhaṃ、sacāyaṃ、appassutāyaṃ、itarītarena、saddhīdha vittaṃ、kammūpanissayo、tathūpamaṃ、rattūparato、vūpasamo。", "confidence": 85}
+{"id": "17-106-2-5", "zh": "为什么说**有时**？", "confidence": 85}
+{"id": "17-106-6-35", "zh": "例如 aciraṃ vata’yaṃ kāyo、kimpimāya、tīṇimāni、pañcasupādānakkhandhesu、tassattho、pañcaṅgiko、munindo、satindriyaṃ、lahuṭṭhānaṃ、gacchāmahaṃ、tatridaṃ、pañcahupāli、natthaññaṃ。", "confidence": 80}
+{"id": "17-106-36-39", "zh": "为什么说**脱落后**？", "confidence": 85}
+{"id": "17-106-40-52", "zh": "例如 yathā ayaṃ、nimi iva rājā、kikī iva、su upadhāritaṃ。", "confidence": 80}
+{"id": "17-107-2-36", "zh": "lokassa iti、deva iti、vi ati patanti、vi ati nāmenti、saṅghāṭi api、jīvitahetu api、vijju iva、kiṃsu idha vittaṃ、sādhu iti——在这些例子中，后面的元音脱落之后——", "confidence": 75}

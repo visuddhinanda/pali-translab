@@ -1,0 +1,80 @@
+{"id": "13-1468-2-14", "zh": "在 sabhā、parisā 之后，smiṃ 可以变为 tiṃ，例如 sabhatiṃ（等于 sabhāya）、parisatiṃ（等于 parisāya）。", "confidence": 80}
+{"id": "13-1469-2-7", "zh": "105. 在 pada 等词之后变为 si。", "confidence": 78}
+{"id": "13-1470-2-13", "zh": "在这些词之后，smiṃ 可以变为 si，例如 padasi（等于 padasmiṃ）、bilasi（等于 bilasmiṃ）。", "confidence": 82}
+{"id": "13-1471-2-7", "zh": "106. nā 变为 sā。", "confidence": 82}
+{"id": "13-1472-2-13", "zh": "在 pada 等词之后，nā 可以变为 sā，例如 padasā（等于 padena）、bilasā（等于 bilena）。", "confidence": 84}
+{"id": "13-1473-2-6", "zh": "107. 在 kodha 等词之后。", "confidence": 80}
+{"id": "13-1474-2-13", "zh": "在这些词之后，nā 可以变为 sā，例如 kodhasā（等于 kodhena）、atthasā（等于 atthena）。", "confidence": 84}
+{"id": "13-1475-2-6", "zh": "108. 在 a 之后变为 ena。", "confidence": 78}
+{"id": "13-1476-2-12", "zh": "在以 a 结尾的词之后，具格单数词尾 nā 替换为 ena，例如 buddhena。为什么说“在 a 之后”？", "confidence": 82}
+{"id": "13-1476-13-14", "zh": "因为像 agginā 这样的词就不适用。", "confidence": 78}
+{"id": "13-1477-2-6", "zh": "109. si 变为 o。", "confidence": 82}
+{"id": "13-1478-2-11", "zh": "在以 a 结尾的名词之后，si 变为 o，例如 buddho。为什么仍说“在 a 之后”？", "confidence": 82}
+{"id": "13-1478-12-13", "zh": "因为像 aggi 这样的词就不适用。", "confidence": 78}
+{"id": "13-1479-2-7", "zh": "110. 有时可以变为 e。", "confidence": 78}
+{"id": "13-1480-2-13", "zh": "在以 a 结尾的名词之后，si 有时可以变为 e，例如“vanappagumbe yathā phussitagge”（如同林中树丛的枝梢开满花朵）。", "confidence": 70}
+{"id": "13-1480-14-18", "zh": "由于规则有“多样”（bahulaṃ）的规定，在例外规则的范围内也同样适用，例如 sukhe、dukkhe。", "confidence": 68}
+{"id": "13-1480-19-21", "zh": "为什么说“可以”？", "confidence": 82}
+{"id": "13-1480-22-25", "zh": "为了也有 vanappagumbo 这种形式。为什么说“有时”？", "confidence": 74}
+{"id": "13-1480-26-30", "zh": "为了在可选的情况下不至于处处都适用。", "confidence": 65}
+{"id": "13-1481-2-7", "zh": "111. 在中性中变为 aṃ。", "confidence": 82}
+{"id": "13-1482-2-8", "zh": "在中性中，以 a 结尾的名词之后，si 变为 aṃ。", "confidence": 84}
+{"id": "13-1482-9-10", "zh": "例如 rūpaṃ。", "confidence": 88}
+{"id": "13-1483-2-7", "zh": "112. yo 变为 ni。", "confidence": 82}
+{"id": "13-1484-2-8", "zh": "在中性中，以 a 结尾的名词之后，yo 变为 ni。", "confidence": 84}
+{"id": "13-1484-9-16", "zh": "例如 sabbāni rūpāni。把这条规定为必然适用，其作用体现在 ekacca 等词与 sabba 等词的第一格上。", "confidence": 60}
+{"id": "13-1485-2-7", "zh": "113. 在 jha、la 之后可以变。", "confidence": 74}
+{"id": "13-1486-2-14", "zh": "在中性中，jha、la 之后的 yo 可以变为 ni，例如 aṭṭhīni 或 aṭṭhī，āyūni 或 āyū。", "confidence": 80}
+{"id": "13-1487-2-6", "zh": "114. 省略。", "confidence": 82}
+{"id": "13-1488-2-16", "zh": "jha、la 之后的 yo 被省略，例如 aṭṭhī、āyū、aggī、bhikkhū。为什么仍说“在 jha、la 之后”？", "confidence": 80}
+{"id": "13-1488-17-18", "zh": "因为像 aggayo 这样的词就不适用。", "confidence": 72}
+{"id": "13-1488-19-23", "zh": "为什么不先适用省略规则呢？", "confidence": 70}
+{"id": "13-1488-24-26", "zh": "因为变为 a 的规则属于内部规则（antaraṅga），优先适用。", "confidence": 65}
+{"id": "13-1489-2-7", "zh": "115. 在 jantu、hetu、以 ī 结尾的词以及 gha、pa 之后可以省略。", "confidence": 76}
+{"id": "13-1490-2-36", "zh": "在 jantu、hetu、以 ī 结尾的词以及称为 gha、pa 的词之后，后面的 yo 可以省略，例如 jantū 或 jantuyo，hetū 或 hetuyo，daṇḍī 或 daṇḍiyo，kaññā 或 kaññāyo，rattī 或 rattiyo，itthī 或 itthiyo，dhenū 或 dhenuyo，vadhū 或 vadhuyo。", "confidence": 82}
+{"id": "13-1491-2-7", "zh": "116. 在 y 之前，pa 的 i 类元音省略。", "confidence": 76}
+{"id": "13-1492-2-23", "zh": "称为 pa 的词的 i 类元音在 y 之前可以省略，例如 ratyo、ratyā、ratyaṃ，pokkharañño、pokkharaññā、pokkharaññaṃ。为什么仍说“可以”？", "confidence": 80}
+{"id": "13-1492-24-28", "zh": "为了也有 rattiyo 这种形式。为什么说“pa”？", "confidence": 78}
+{"id": "13-1492-29-33", "zh": "因为像 daṇḍiyo 这样的词就不适用。为什么说“i 类元音”？", "confidence": 78}
+{"id": "13-1492-34-36", "zh": "因为像 dhenuyo、vadhuyo 这样的词就不适用。", "confidence": 78}
+{"id": "13-1492-37-44", "zh": "那么“anuññāto ahaṃ matyā”（我已得到母亲的允许）又该怎样解释呢？", "confidence": 72}
+{"id": "13-1492-45-51", "zh": "这是把“ye passa”这条规则拆分（yogavibhāga）开来而得的。", "confidence": 70}
+{"id": "13-1493-2-6", "zh": "117. ga 与 si 省略。", "confidence": 76}
+{"id": "13-1494-2-14", "zh": "在没有其他规则适用的时候，名词之后的 ga 与 si 被省略，例如 bho purisa、ayaṃ、daṇḍī。", "confidence": 68}
+{"id": "13-1495-2-7", "zh": "118. 在不变词（asaṅkhya）之后，一切格尾都省略。", "confidence": 74}
+{"id": "13-1496-2-19", "zh": "在没有数的变化的词之后，后面一切格尾都被省略，例如 ca、vā、eva、evaṃ。正是根据这条规则，可以推知不变词之后也有 si 等格尾生起。", "confidence": 74}
+{"id": "13-1497-2-6", "zh": "119. 在合为一义时。", "confidence": 72}
+{"id": "13-1498-2-36", "zh": "在合为一义的时候，一切格尾大多被省略，例如 puttīyati、rājapuriso、vāsiṭṭho。由于有“多样”的规定，有时也不省略，例如 parantapo、bhagandaro、parassapadaṃ、attanopadaṃ、gavampati、devānaṃpiyatisso、antevāsī、janesuto，以及 mamattaṃ、māmako。", "confidence": 72}
+{"id": "13-1499-2-6", "zh": "120. 在 amādi 合一词中以前分为主者之后。", "confidence": 58}
+{"id": "13-1500-2-11", "zh": "在 amādi 合一词中，前分为主的那个合一词之后，后面一切格尾都被省略。", "confidence": 60}
+{"id": "13-1500-12-13", "zh": "例如 adhitthi。", "confidence": 82}
+{"id": "13-1500-14-17", "zh": "下面这些词由于有“多样”", "confidence": 62}
+{"id": "13-1501-2-10", "zh": "的规定而不省略，例如 yathāpatthīyā、yathāparisāya。为什么说“前分”？", "confidence": 62}
+{"id": "13-1501-11-12", "zh": "因为像 gāmagato 这样的词就不适用。", "confidence": 74}
+{"id": "13-1502-2-7", "zh": "121. 以 a 结尾者不省略，除第五格外变为 aṃ。", "confidence": 62}
+{"id": "13-1503-2-22", "zh": "在 amādi 合一词中，如果前分为主的那个合一词以 a 结尾，其后一切格尾就不省略，而且除第五格外都变为 aṃ，例如 upakumbhaṃ。为什么说“除第五格外”？", "confidence": 64}
+{"id": "13-1503-23-25", "zh": "因为有 upakumbhā ānaya（从水罐旁拿来）这样的用法。", "confidence": 72}
+{"id": "13-1504-2-7", "zh": "122. 第三格、第七格可以变为 aṃ。", "confidence": 74}
+{"id": "13-1505-2-24", "zh": "在 amādi 合一词中，如果前分为主的那个合一词以 a 结尾，其后的第三格、第七格可以变为 aṃ，例如 upakumbhena kataṃ 或 upakumbhaṃ kataṃ（在水罐旁做成），upakumte nidhehi 或 upakumbhaṃ nidhehi（放在水罐旁）。", "confidence": 66}
+{"id": "13-1506-2-7", "zh": "123. 在 nā 之前，rāja 变为 rāji。", "confidence": 80}
+{"id": "13-1507-2-11", "zh": "在 nā 之前，rāja 可以变为 rāji，例如 sabbadattena rājinā（由施予一切的国王）。为什么仍说“可以”？", "confidence": 72}
+{"id": "13-1507-12-13", "zh": "为了也有 raññā 这种形式。", "confidence": 80}
+{"id": "13-1508-2-6", "zh": "124. 在 su、naṃ、hi 之前变为 ū。", "confidence": 80}
+{"id": "13-1509-2-16", "zh": "在 su、naṃ、hi 之前，rāja 可以变为带 ū 的形式，例如 rājūsu 或 rājesu，rājūnaṃ 或 raññaṃ，rājūhi 或 rājehi。", "confidence": 76}
+{"id": "13-1510-2-6", "zh": "125. 非阴性的 ima 变为 ṭe。", "confidence": 74}
+{"id": "13-1511-2-19", "zh": "在 su、naṃ、hi 之前，非阴性的 ima 一词可以变为 ṭe，例如 esu 或 imesu，esaṃ 或 imesaṃ，esi 或 imehi。为什么说“非阴性”？", "confidence": 74}
+{"id": "13-1511-20-25", "zh": "因为像 imāsu、imāsaṃ、imāhi 这样的词就不适用。", "confidence": 80}
+{"id": "13-1512-2-7", "zh": "126. 在 nā 之前变为 ana、imi。", "confidence": 76}
+{"id": "13-1513-2-12", "zh": "在 nā 之前，非阴性的 ima 一词替换为 ana、imi，例如 anena、imīnā。为什么仍说“非阴性”？", "confidence": 78}
+{"id": "13-1513-13-14", "zh": "因为像 imāya 这样的词就不适用。", "confidence": 80}
+{"id": "13-1514-2-7", "zh": "127. 在 si 之前，非中性者变为 ayaṃ。", "confidence": 78}
+{"id": "13-1515-2-15", "zh": "在 si 之前，非中性的 ima 一词变为 ayaṃ，例如 ayaṃ puriso（这个男人）、ayaṃ itthī（这个女人）。为什么说“非中性”？", "confidence": 82}
+{"id": "13-1515-16-17", "zh": "因为像 imaṃ 这样的词就不适用。", "confidence": 80}
+{"id": "13-1516-2-8", "zh": "128. tya、ta、eta 的 t 变为 s。", "confidence": 78}
+{"id": "13-1517-2-24", "zh": "在 si 之前，非中性的 tya、ta、eta 的 t 变为 s，例如 syo puriso、syā itthī；同样也有 so、sā、eso、esā。为什么仍说“非中性”？", "confidence": 80}
+{"id": "13-1517-25-30", "zh": "因为像 tyaṃ、taṃ、etaṃ 这样的词就不适用。", "confidence": 80}
+{"id": "13-1518-2-6", "zh": "129. amu 的 m 变为 s。", "confidence": 76}
+{"id": "13-1519-2-13", "zh": "在 si 之前，非中性的 amu 的 m 变为 s，例如 asu puriso（那个男人）、asu itthī（那个女人）。", "confidence": 80}
+{"id": "13-1520-2-7", "zh": "130. 在 ka 之前可以变。", "confidence": 76}
+{"id": "13-1521-2-20", "zh": "在 ka 之前，amu 的 m 可以变为 s，例如 asuko 或 amuko，asukā 或 amukā，asukaṃ 或 amukaṃ，asukāni 或 amukāni。", "confidence": 80}
+{"id": "13-1522-2-8", "zh": "131. ta 一词的 t 在一切格尾之前变为 n。", "confidence": 66}

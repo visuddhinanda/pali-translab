@@ -1,0 +1,80 @@
+{"id":"19-1025-2-5","zh":"4. 表示行走、知晓、食用、发声意义的动词，不及物动词，以及 bhajj 等动词，其被使役者（用第二格）","confidence":72}
+{"id":"19-1026-2-13","zh":"表示行走义、知晓义、食用义、发声义的动词，不及物动词，以及 bhajj 等动词，它们的被使役施事者用第二格。","confidence":75}
+{"id":"19-1026-14-21","zh":"“Datto gamayati māṇavakaṃ gāmaṃ”（达多让青年到村子去），也可以说 yāpayati。","confidence":75}
+{"id":"19-1026-22-29","zh":"“Guru bodhayati māṇavakaṃ dhammaṃ”（老师让青年明白法），也可以说 vedayati。","confidence":75}
+{"id":"19-1026-30-38","zh":"“Mātā bhojayati puttam odanaṃ”（母亲让儿子吃饭），也可以说 āsayati。","confidence":72}
+{"id":"19-1026-39-46","zh":"“Guru ajjhāpayati sissaṃ vedaṃ”（老师教学生诵读吠陀），也可以说 pāṭhayati。","confidence":75}
+{"id":"19-1026-47-52","zh":"被使役者以外的业（宾语）也用第二格。","confidence":65}
+{"id":"19-1026-53-59","zh":"“Poso āsayati dattaṃ”（这人让达多坐下），也可以说 sāyayati（让他躺下）。","confidence":70}
+{"id":"19-1026-60-69","zh":"“Poso aññaṃ bhajjāpeti, aññaṃ koṭṭāpeti, aññaṃ santharāpeti”（这人让一个人烘炒，让另一个人舂捣，再让另一个人铺设）。","confidence":72}
+{"id":"19-1027-2-5","zh":"5. hara 等动词（可选用）","confidence":75}
+{"id":"19-1028-2-9","zh":"hara 等动词的被使役施事者，可以用第二格。","confidence":78}
+{"id":"19-1028-10-17","zh":"“Poso hāreti bhāraṃ dattaṃ”（这人让达多搬运重担），也可以作 dattena。","confidence":75}
+{"id":"19-1028-18-24","zh":"“Dassayate janaṃ rājā”（国王让民众看见），也可以作 janena。","confidence":72}
+{"id":"19-1028-25-31","zh":"“Abhivādayate guruṃ dattaṃ”（让达多礼敬老师），也可以作 dattena。","confidence":75}
+{"id":"19-1028-32-38","zh":"“Ajjhohāreti sattuṃ dattaṃ”（让达多吞下炒麦粉），也可以作 dattena。","confidence":75}
+{"id":"19-1028-39-45","zh":"“Kāreti datto dattaṃ”（达多让另一个达多做事），也可以作 dattena。","confidence":72}
+{"id":"19-1028-46-50","zh":"在另一种选择下，以上各例的施事者都用第三格。","confidence":78}
+{"id":"19-1029-2-5","zh":"6. khād 等动词则不用","confidence":75}
+{"id":"19-1030-2-8","zh":"khād 等动词的被使役施事者不用第二格。","confidence":80}
+{"id":"19-1030-9-14","zh":"这条规则是用来在某些情况下否定行走义等动词的规定的。","confidence":72}
+{"id":"19-1030-15-33","zh":"“Khādayati datto dattena”（达多让另一个达多吃），“ādayati dattena”（让达多吃），“avhāpayati datthena”（让达多呼唤），“saddāyayati dattena”（让达多出声），“nāyayati dattena”（让达多引领），“kandayati dattena”（让达多哭喊）。","confidence":62}
+{"id":"19-1031-2-5","zh":"7. 与 dhi 等词相连者（用第二格）","confidence":62}
+{"id":"19-1032-2-6","zh":"与 dhi 等词相连的词用第二格。","confidence":75}
+{"id":"19-1032-7-28","zh":"“Dhiratthu maṃ pūtikāyaṃ”（可厌啊，我这腐臭的身体）；“antarā ca rājagahaṃ antarā ca nālandaṃ”（在王舍城与那烂陀之间），意思是在王舍城和那烂陀两地相隔的中间。","confidence":75}
+{"id":"19-1032-29-37","zh":"“Samādhānam antarena”（没有专注），“mucalindam abhito saraṃ”（目真邻陀周围的湖）。","confidence":62}
+{"id":"19-1032-38-42","zh":"这里的第二格是用在第六格（属格）的意义上。","confidence":75}
+{"id":"19-1033-2-6","zh":"8. 在标志、处于某种状态、遍及的意义上，与 abhi 相连者（用第二格）","confidence":70}
+{"id":"19-1034-2-9","zh":"在标志等意义上，与 abhi 相连的词用第二格。","confidence":78}
+{"id":"19-1034-10-31","zh":"“Rukkham abhivijjotate cando”（月亮朝着树照耀）：这里树是标志，月亮是被标示的对象；其中 abhi 表明树起着标志的作用，所以树叫做与 abhi 相连的词。","confidence":70}
+{"id":"19-1034-32-41","zh":"“Sādhu devadatto mātaram abhi”（提婆达多对母亲很好），意思是在对待母亲上表现出贤善。","confidence":72}
+{"id":"19-1034-42-49","zh":"“Rukkhaṃ rukkhaṃ abhi vijjotate cando”（月亮照着一棵又一棵树），意思是照在每一棵树上。","confidence":75}
+{"id":"19-1035-2-6","zh":"9. 与 pati、pari 相连者，在份额的意义上也（用第二格）","confidence":72}
+{"id":"19-1036-2-12","zh":"与 pati、pari 相连的词，在标志等意义上，以及在份额的意义上，用第二格。","confidence":75}
+{"id":"19-1036-13-37","zh":"“Rukkhaṃ pati vijjotate”（朝着树照耀），“sādhu devadatto mātaraṃ pati”（提婆达多对母亲很好），“rukkhaṃ rukkhaṃ pati tiṭṭhati”（在一棵又一棵树旁站着），“yad ettha maṃ pati siyā”（这里属于我的那一份），意思是：属于我的那一份，请给我。","confidence":70}
+{"id":"19-1036-38-40","zh":"同样，也有 rukkhaṃ pari 等用法。","confidence":78}
+{"id":"19-1037-2-4","zh":"10. 与 anu（相连者）","confidence":72}
+{"id":"19-1038-2-4","zh":"在标志等意义上用第二格。","confidence":72}
+{"id":"19-1038-5-33","zh":"“Rukkham anu vijjotate”（朝着树照耀），“saccakiriyam anu vassi”（随着真实誓言而降雨）——原因也算是一种标志；“sādhu devadatto mātaram anu”（提婆达多对母亲很好），“rukkhaṃ rukkham anu vijjotate”（照着一棵又一棵树），“yad ettha maṃ anu siyā”（这里属于我的那一份）。","confidence":68}
+{"id":"19-1039-2-4","zh":"11. 在“共同”的意义上","confidence":75}
+{"id":"19-1040-2-6","zh":"在“共同”的意义上，与 anu 相连的词用第二格。","confidence":78}
+{"id":"19-1040-7-15","zh":"“Pabbatam anu tiṭṭhati”（沿着山而立），意思是与山在一起。","confidence":68}
+{"id":"19-1041-2-4","zh":"12. 在“低劣”的意义上","confidence":75}
+{"id":"19-1042-2-6","zh":"在“低劣”的意义上，与 anu 相连的词用第二格。","confidence":78}
+{"id":"19-1042-7-14","zh":"“Anusāriputtaṃ paññavanto bhikkhū”（智慧不及舍利弗的比丘们），意思是在智慧上比舍利弗低。","confidence":78}
+{"id":"19-1043-2-4","zh":"13. 与 upa（相连者）","confidence":75}
+{"id":"19-1044-2-6","zh":"在“低劣”的意义上，与 upa 相连的词用第二格。","confidence":78}
+{"id":"19-1044-7-9","zh":"“Upasāriputtaṃ paññavanto”（智慧不及舍利弗的人们）。","confidence":75}
+{"id":"19-1045-2-5","zh":"16. 在施事者与工具上用第三格","confidence":78}
+{"id":"19-1046-2-8","zh":"在施事者和工具这两种格位关系上，用第三格。","confidence":75}
+{"id":"19-1046-9-20","zh":"“Jinena desito dhammo”（胜者所宣说的法），“buddhena jito māro”（被佛陀战胜的魔），“ahinā daṭṭho naro”（被蛇咬的人）。","confidence":82}
+{"id":"19-1046-21-41","zh":"凡是把原因的原因也当作原因来说的地方，也用第三格：“corehi gāmo daḍḍho”（村子被盗贼烧了），“tiṇehi bhattaṃ siddhaṃ”（饭是用草煮熟的），“saddhehi kāritā vihārā”（寺院是由有信心的人出资让人建造的）。","confidence":72}
+{"id":"19-1047-2-8","zh":"以自身为主、成就动作的那个作用者，","confidence":72}
+{"id":"19-1048-2-9","zh":"无论是否受他人驱使，都称为施事者。","confidence":75}
+{"id":"19-1049-2-19","zh":"工具又分为两种，即内在的和外在的，例如“hatthena kammaṃ karoti”（用手做事），“cakkhunā rūpaṃ passati”（用眼睛看色），“manasā dhammaṃ viññāyati”（用意了知法）。","confidence":75}
+{"id":"19-1049-20-27","zh":"“Dattena vīhayo lunāti”（用镰刀割稻子），“agginā kuṭiṃ jhāpeti”（用火烧茅屋）。","confidence":70}
+{"id":"19-1050-2-10","zh":"工具分为外在的与内在的两种，例如：","confidence":75}
+{"id":"19-1051-2-10","zh":"“Vīhiṃ lunāti dattena”（用镰刀割稻子），“nettena candam ikkhate”（用眼睛看月亮）。","confidence":72}
+{"id":"19-1052-2-12","zh":"“Pakatiyā abhirūpo”（天生俊美），“gottena gotamo”（就姓氏来说是乔达摩）等，由于隐含了动词 bhū（是、存在），所以在工具的意义上用第三格。","confidence":65}
+{"id":"19-1052-13-42","zh":"同样还有：“sāriputto ti nāmena vissuto”（以舍利弗这个名字闻名），“jātiyā khattiyo buddho”（佛陀出身刹帝利），“jātiyā sattavassiko”（从出生算起七岁），“sippena naḷakāro so”（他的手艺是编芦苇的工匠），“ekūnatiṃso vayasā”（年纪二十九岁），“samena dhāvati”（在平坦的地上跑），“visamena dhāvati”（在不平的地上跑），“dvidoṇena dhaññaṃ kiṇāti”（按两斗的价钱买谷物）。","confidence":68}
+{"id":"19-1053-2-4","zh":"17. 与表示“共同”的词（连用时）","confidence":75}
+{"id":"19-1054-2-6","zh":"与表示“共同”意义的词连用时，可以用第三格。","confidence":78}
+{"id":"19-1054-7-12","zh":"第三格也和第六格一样，只用在非主要的一方。","confidence":72}
+{"id":"19-1054-13-44","zh":"“Puttena saha āgato”（和儿子一起来了），“puttena saddhiṃ āgato”（同儿子一起来了），“vitakkena saha vattati”（与寻一起运作），“puttena saha thūlo”（和儿子一样胖），“nisīdi bhagavā saddhiṃ bhikkhusaṅghena”（世尊与比丘僧团一同坐下），“sahassena samaṃ mitā”（与一千相等的量），“sabbehi me piyehi manāpehi nānābhāvo”（与我所有可爱、合意的人和事分离）。","confidence":68}
+{"id":"19-1055-2-4","zh":"18. 在标志上","confidence":75}
+{"id":"19-1056-2-6","zh":"用作标志的词用第三格。","confidence":75}
+{"id":"19-1056-7-37","zh":"“Bhinnena sīsena paggharantena lohitena paṭivissake ujjhāpesi”（他头破血流，惹得邻居们抱怨），“ūnapañcabandhanena pattena aññaṃ navaṃ pattaṃ cetāpeyya”（拿着补缀不到五处的钵去换另一个新钵），“tidaṇḍakena paribbājakam addakkhi”（看见一个带着三杖的游方者），“akkhinā kāṇo”（一只眼睛瞎），“hatthena kuṇī”（手残），“pādena khañjo”（脚跛），“piṭṭhiyā khujjo”（背驼）。","confidence":68}
+{"id":"19-1056-38-44","zh":"因为这里是用残缺的肢体来标示肢体残缺者的缺陷。","confidence":72}
+{"id":"19-1057-2-4","zh":"19. 在原因上","confidence":78}
+{"id":"19-1058-2-5","zh":"作为居住等动作之原因的词，用第三格。","confidence":62}
+{"id":"19-1058-6-30","zh":"“Annena vasati”（靠食物生活），“vijjāya vasati”（靠学问生活），“na jaccā vasalo hoti, kammunā vasalo hoti”（人不是因为出身而成为贱民，而是因为行为而成为贱民），“dānena bhogavā”（因为布施而富有），“ācārena kulaṃ”（因为品行而有好家世），“tena pāṇi kāmadado”（因此这只手能满足所求）。","confidence":68}
+{"id":"19-1059-2-7","zh":"20. 在债务上可以用第五格","confidence":75}
+{"id":"19-1060-2-6","zh":"当原因是债务时，可以用第五格。","confidence":75}
+{"id":"19-1060-7-12","zh":"“Satasmā baddho”（因欠一百而被拘禁），也可以作 satena。","confidence":75}
+{"id":"19-1061-2-4","zh":"21. 在次要（原因）上","confidence":68}
+{"id":"19-1062-2-7","zh":"当原因是从属于他物的次要因素时，可以用第五格。","confidence":68}
+{"id":"19-1062-8-22","zh":"“Jaḷattā baddho”（因为愚钝而被缚），也可以作 jaḷattena；“paññāya mutto”（因为智慧而解脱），“hutvā abhāvato aniccā”（因为生起之后又不再存在，所以是无常），“saṅkhāranirodhā viññāṇanirodho”（行灭则识灭）。","confidence":72}
+{"id":"19-1062-23-52","zh":"由于规则可以广泛适用，第三格也用于第七格的意义：“tena samayena”（在那个时候），“kālena dhammasākacchā”（适时讨论佛法），“puratthimena dhataraṭṭho”（东方是持国天王），“dakkhiṇena virūḷhako”（南方是增长天王），“uttarena kapilavatthu”（北方是迦毗罗卫），“yena bhagavā tenupasaṅkami”（前往世尊所在的地方），“so vo mamaccayena satthā”（我去世以后，它就是你们的导师）。","confidence":70}
+{"id":"19-1062-53-97","zh":"“Māsena bhuñjati”（一个月吃一次），“ekāheneva bārāṇasiṃ pāvisi”（只用一天就进了波罗奈），“navahi māsehi vihāraṃ kārāpesi”（用九个月让人建成寺院），“kahāpaṇena ūno”（差一个迦哈波拿），“dhanena vikalo”（缺少钱财），“asinā kalaho”（用刀争斗），“ācārena nipuṇo”（在品行上精细），“guḷena missakaṃ”（掺了糖），“vācāya sakhilo”（言语和善），“maṇinā attho”（需要宝珠），“dhanena attho”（需要钱财），“yojanena gacchati”（走一由旬）等，都是在原因或工具的意义上用第三格。","confidence":65}
+{"id":"19-1062-98-105","zh":"“Attanāva attānaṃ sammannati”（自己推选自己），这是由于规则可以广泛适用，在主格意义的施事者上用了第三格。","confidence":65}
+{"id":"19-1062-106-118","zh":"同样，“tilehi khette vapati”（在田里播种芝麻）是用在业（宾语）的意义上，“sumuttā mayaṃ tena mahāsamaṇena”（我们从那位大沙门那里完全解脱了）是用在第五格的意义上。","confidence":68}

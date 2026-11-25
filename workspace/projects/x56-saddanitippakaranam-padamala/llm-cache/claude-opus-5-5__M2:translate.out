@@ -1,0 +1,69 @@
+{"id": "15-51-2-2", "zh": "单纯主动动词释", "confidence": 80}
+{"id": "15-52-2-21", "zh": "其中，bhavati、ubbhavati、samubbhavati、pabhavati、parābhavati、sambhavati、vibhavati，bhoti、sambhoti、vibhoti、pātubhavati、pātubbhavati、pātubhoti，这些是不及物词。", "confidence": 85}
+{"id": "15-52-22-48", "zh": "这里的 pātu 是不变词（nipāta）。正如“āvibhavati、tirobhavati”等词中的不变词 āvi、tiro 一样，它对由词根 bhū 构成的动词，既不起区别意义的作用，也不使它成为及物。", "confidence": 75}
+{"id": "15-52-49-59", "zh": "u 等是前缀（upasagga），它们起区别意义的作用，但不使动词成为及物。", "confidence": 80}
+{"id": "15-52-60-69", "zh": "意义不与宾语相关联的那些词，就是不及物词。", "confidence": 85}
+{"id": "15-52-70-75", "zh": "不及物词的意义，应当视情况按及物或不及物的方式来解说。", "confidence": 75}
+{"id": "15-52-76-99", "zh": "paribhoti、paribhavati，abhibhoti、abhibhavati，adhibhoti、adhibhavati，atibhoti、atibhavati，anubhoti、anubhavati，samanubhoti、samanubhavati，abhisambhoti、abhisambhavati，这些是及物词。", "confidence": 85}
+{"id": "15-52-100-113", "zh": "这里的 pari 等是前缀，它们对由词根 bhū 构成的动词，既起区别意义的作用，也使它成为及物。", "confidence": 80}
+{"id": "15-52-114-121", "zh": "意义与宾语相关联的那些词，就是及物词。", "confidence": 85}
+{"id": "15-52-122-129", "zh": "及物词的意义应当按及物的方式来解说，有时也按不及物的方式来解说。", "confidence": 80}
+{"id": "15-52-130-133", "zh": "单纯主动动词就是这样。", "confidence": 80}
+{"id": "15-52-134-135", "zh": "以上是总说。", "confidence": 85}
+{"id": "15-53-2-10", "zh": "其中，“**bhavati**”意思是：有、存在、显现、获得自身的形态。", "confidence": 80}
+{"id": "15-53-11-16", "zh": "“**ubbhavati**”意思是：生起、获得自身的形态。", "confidence": 80}
+{"id": "15-53-17-22", "zh": "“**samubbhavati**”意思是：一同生起、获得自身的形态。", "confidence": 75}
+{"id": "15-53-23-27", "zh": "“**pabhavati**”意思是：有、产生。", "confidence": 75}
+{"id": "15-53-28-46", "zh": "或者，“**pabhavati**”意思是：从某处流出，不中断，连续不断，流布到各处。", "confidence": 75}
+{"id": "15-53-47-55", "zh": "“**parābhavati**”意思是：发生衰败、陷入灾难、得不到增长。", "confidence": 80}
+{"id": "15-53-56-64", "zh": "“**sambhavati**”意思是：很好地存在，达到增长、繁盛、广大。", "confidence": 75}
+{"id": "15-53-65-75", "zh": "“**vibhavati**”意思是：断灭、毁坏、败坏；或者是特别地存在、得以成就。", "confidence": 75}
+{"id": "15-53-76-93", "zh": "bhoti、sambhoti、“**vibhoti**”这几个词，依次与“bhavati、sambhavati、vibhavati”的解释相同。", "confidence": 80}
+{"id": "15-53-94-101", "zh": "“**pātubhavati**”意思是：显现、被看见、被察觉、变得明显。", "confidence": 80}
+{"id": "15-53-102-114", "zh": "pātubbhavati、“**pātubhoti**”这两个词，与“pātubhavati”的解释相同。", "confidence": 80}
+{"id": "15-53-115-121", "zh": "不及物词的意义要视情况按及物或不及物的方式来解说，应当这样理解。", "confidence": 75}
+{"id": "15-53-122-125", "zh": "下文其他不及物词也是如此。", "confidence": 80}
+{"id": "15-54-2-19", "zh": "至于 paribhoti 等七对词，每一对中的两个词依次意义相同，所以我们只取每对两个词来解释。", "confidence": 75}
+{"id": "15-54-20-32", "zh": "其中，paribhoti、“**paribhavati**”意思是：伤害、压迫他人；或者是轻视、蔑视他人。", "confidence": 80}
+{"id": "15-54-33-39", "zh": "abhibhoti、“**abhibhavati**”意思是：压倒、践踏他人。", "confidence": 80}
+{"id": "15-54-40-49", "zh": "adhibhoti、“**adhibhavati**”意思是：压制他人而居于其上，使他人顺从自己的意志。", "confidence": 75}
+{"id": "15-54-50-56", "zh": "atibhoti、“**atibhavati**”意思是：超越他人而居于其上。", "confidence": 75}
+{"id": "15-54-57-65", "zh": "anubhoti、“**anubhavati**”意思是：感受苦乐、受用，成为苦乐的感受者。", "confidence": 80}
+{"id": "15-54-66-77", "zh": "samanubhoti、“**samanubhavati**”意思是：充分地感受苦乐、充分地受用，成为充分感受苦乐的人。", "confidence": 75}
+{"id": "15-54-78-84", "zh": "abhisambhoti、“**abhisambhavati**”意思是：压倒、践踏他人。", "confidence": 75}
+{"id": "15-54-85-90", "zh": "及物词的意义要按及物的方式来解说，应当这样理解。", "confidence": 80}
+{"id": "15-54-91-97", "zh": "不过在有些地方，也会像“gacchati（去）”“pavattati（运转）”这样，按不及物的方式来解说。", "confidence": 65}
+{"id": "15-54-98-101", "zh": "下文其他及物词也是如此。", "confidence": 80}
+{"id": "15-55-2-9", "zh": "词缀 a 接在后面，用于 bhū 等词根类时；", "confidence": 65}
+{"id": "15-56-2-5", "zh": "在表述单纯主动的动作、依附于全时词尾（sabbadhātuka）的场合。", "confidence": 60}
+{"id": "15-57-2-5", "zh": "以上是单纯主动动词的解释。", "confidence": 85}
+{"id": "15-58-2-2", "zh": "使役主动动词释", "confidence": 80}
+{"id": "15-59-2-9", "zh": "bhāveti、vibhāveti、sambhāveti、paribhāveti，使役主动动词就是这样。", "confidence": 80}
+{"id": "15-59-10-13", "zh": "它们的意义应当按单宾语的方式来理解。", "confidence": 80}
+{"id": "15-59-14-17", "zh": "不过最后一个也可以按双宾语的方式来理解。", "confidence": 80}
+{"id": "15-59-18-25", "zh": "paribhāvāpeti、abhibhāvāpeti、anubhāvāpeti，这样也构成使役主动动词。", "confidence": 80}
+{"id": "15-59-26-28", "zh": "它们的意义应当按双宾语的方式来理解。", "confidence": 80}
+{"id": "15-59-29-36", "zh": "这样，使役主动动词应知有两类，其他同类的词也应当收入。", "confidence": 75}
+{"id": "15-60-2-18", "zh": "其中，“**bhāveti**”意思是：一个人修习任何应当修习的事物，反复实行、多多修习；或者，“**bhāveti**”意思是使之增长。", "confidence": 75}
+{"id": "15-60-19-41", "zh": "“**vibhāveti**”意思是：对任何应当修习的事物加以 vibhāveti，即特别地修习，或者以各种方式修习、培养、使之增长；或者，“**vibhāveti**”意思是使之不存在、使之消失。", "confidence": 70}
+{"id": "15-60-42-52", "zh": "“**sambhāveti**”意思是：对任何人的功德加以 sambhāveti，即很好地宣扬、加以赞扬。", "confidence": 70}
+{"id": "15-60-53-62", "zh": "“**paribhāveti**”意思是：对任何应当培养的事物加以 paribhāveti，即从各方面使之增长。", "confidence": 70}
+{"id": "15-60-63-66", "zh": "这样，意义应当按单宾语的方式来理解。", "confidence": 80}
+{"id": "15-60-67-78", "zh": "或者，“**paribhāveti**”意思是：对应当熏染的物品加以 paribhāveti，即熏染它，使它沾上香气。", "confidence": 70}
+{"id": "15-60-79-84", "zh": "这样，意义也可以按双宾语的方式来理解。", "confidence": 80}
+{"id": "15-60-85-99", "zh": "“**paribhāvāpeti**”意思是：一个人让另一个人（具格）去伤害仇敌；或者，“**paribhāvāpeti**”意思是让人去轻视、蔑视仇敌。", "confidence": 70}
+{"id": "15-60-100-107", "zh": "“**abhibhāvāpeti**”意思是：一个人让另一个人（具格）去压倒仇敌。", "confidence": 75}
+{"id": "15-60-108-115", "zh": "“**anubhāvāpeti**”意思是：一个人让另一个人（具格）去享受荣华，使他受用。", "confidence": 70}
+{"id": "15-61-2-7", "zh": "被驱使者与主动者相结合，处在非主要的地位；", "confidence": 60}
+{"id": "15-62-2-9", "zh": "他完成动作——在教法中，表示他的那个词，", "confidence": 60}
+{"id": "15-63-2-6", "zh": "大多以具格的形式出现；", "confidence": 70}
+{"id": "15-64-2-8", "zh": "这是就动词中的使役用法而说的。", "confidence": 70}
+{"id": "15-65-2-13", "zh": "并非指名词中的使役用法，如“bodhetā（使人觉悟者）”等；", "confidence": 60}
+{"id": "15-66-2-12", "zh": "以及“Sunakhehipi khādāpenti（也让狗去吃）”等词，", "confidence": 65}
+{"id": "15-67-2-7", "zh": "精通用法的智者应当把它们举出来加以说明。", "confidence": 65}
+{"id": "15-68-2-9", "zh": "这里，具格表示宾语的意义；宾格和属格也表示同样的意义，应当这样配置。", "confidence": 65}
+{"id": "15-68-10-11", "zh": "怎样呢？", "confidence": 90}
+{"id": "15-68-12-26", "zh": "“**paribhāvāpeti**”是说：一个人让另一个人（宾格）去伤害仇敌；同样，“**paribhāvāpeti**”也可以说：一个人让另一个人（属格）去伤害仇敌。", "confidence": 65}
+{"id": "15-68-27-30", "zh": "其余的词应当依照这个方式来解释。", "confidence": 80}
+{"id": "15-68-31-40", "zh": "这样，所有这些具格、宾格、属格都只表示宾语的意义，所以意义应当按双宾语的方式来理解。", "confidence": 70}
+{"id": "15-69-2-5", "zh": "以上是使役主动动词的解释。", "confidence": 85}

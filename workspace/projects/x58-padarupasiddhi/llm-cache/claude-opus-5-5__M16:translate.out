@@ -1,0 +1,80 @@
+{"id": "17-506-2-2", "zh": "辅音连声规则", "confidence": 85}
+{"id": "17-507-2-5", "zh": "下面讲辅音连声。", "confidence": 90}
+{"id": "17-508-2-20", "zh": "“在辅音前”是总摄（adhikāra），“元音”与“有时”两词也延续下来。", "confidence": 80}
+{"id": "17-509-2-6", "zh": "第37条：长音。", "confidence": 90}
+{"id": "17-510-2-11", "zh": "元音在后面接辅音时，有时会变成长音——在为了便于念诵、为了维护格律的地方变长。", "confidence": 80}
+{"id": "17-511-2-60", "zh": "例如：tyassa pahīnā 变成 tyāssa pahīnā，svassa 变成 svāssa，madhuva maññati bālo 变成 madhuvā maññatī bālo；同样还有 evaṃ gāme munī care、khantī paramaṃ tapo titikkhā、na maṅkū bhavissāmi、svākkhāto、yvāhaṃ、kāmato jāyatī soko、kāmato jāyatī bhayaṃ、sakko ujū ca suhujū ca、anūpaghāto、dūrakkhaṃ、dūramaṃ、sūrakkhaṃ、dūharatā。", "confidence": 75}
+{"id": "17-512-2-5", "zh": "为什么说“**有时**”？", "confidence": 90}
+{"id": "17-512-6-11", "zh": "例如 tyajja、svassa、patiliyyati（这些不变长）。", "confidence": 75}
+{"id": "17-513-2-25", "zh": "在 yiṭṭhaṃ vā hutaṃ vā loke、yadi vā sāvake、puggalā dhammadasā te、bhovādī nāma so hoti、yathābhāvī guṇena so 这些句子中——", "confidence": 70}
+{"id": "17-514-2-3", "zh": "仍在前一条的总摄之下——", "confidence": 80}
+{"id": "17-515-2-6", "zh": "第38条：短音。", "confidence": 90}
+{"id": "17-516-2-16", "zh": "元音在后面接辅音时，有时会变成短音——在维护格律、增音以及复辅音之前变短。", "confidence": 80}
+{"id": "17-517-2-23", "zh": "先说维护格律的情况：yiṭṭhaṃva hutaṃva loke、yadiva sāvake、puggala dhammadasā te、bhovādi nāma so hoti、yathābhāvi guṇena so。", "confidence": 75}
+{"id": "17-518-2-6", "zh": "增音的情况：yathayidaṃ、sammadakkhāto。", "confidence": 80}
+{"id": "17-519-2-18", "zh": "复辅音之前的情况：parākamo 变成 parakkamo，āsādo 变成 assādo；同样还有 taṇhakkhayo、jhānassa lābhimhi、vasimhi、thullaccayo。", "confidence": 75}
+{"id": "17-520-2-5", "zh": "为什么说“**有时**”？", "confidence": 90}
+{"id": "17-520-6-19", "zh": "例如 māyidaṃ、manasā daññā vimuttānaṃ、yathākkamaṃ、ākhyātikaṃ、dīyyati、sūyyati（这些不变短）。", "confidence": 70}
+{"id": "17-521-2-12", "zh": "在 eso kho byantiṃ kāhiti、so gacchaṃ na nivattati 这类句子中——", "confidence": 75}
+{"id": "17-522-2-3", "zh": "仍在这条总摄之下——", "confidence": 80}
+{"id": "17-523-2-8", "zh": "第39条：删略，并在该处增加 a 音。", "confidence": 80}
+{"id": "17-524-2-17", "zh": "元音在后面接辅音时，有时会被删略，并且在删略的位置增加 a 音。", "confidence": 80}
+{"id": "17-524-18-21", "zh": "这种删略只用于 eta、ta 两词词尾的 o 音。", "confidence": 65}
+{"id": "17-525-2-24", "zh": "例如：esa kho byantiṃ kāhiti、sa gacchaṃ na nivattati；同样还有 esa dhammo、esa pattosi、sa muni、sa sīlavā。", "confidence": 75}
+{"id": "17-526-2-5", "zh": "为什么说“**有时**”？", "confidence": 90}
+{"id": "17-526-6-14", "zh": "例如 eso dhammo、so muni、so sīlavā（这些不删略）。", "confidence": 80}
+{"id": "17-527-2-9", "zh": "由于 ca 这个字，eta 一词的词尾在元音前有时也会删略。", "confidence": 75}
+{"id": "17-527-10-20", "zh": "例如：esa attho、esa ābhogo、esa idāni。", "confidence": 85}
+{"id": "17-528-2-13", "zh": "经过格位的转换，“元音之后”与“辅音的”两词也延续下来。", "confidence": 70}
+{"id": "17-529-2-7", "zh": "第40条：在适当场合，后面的辅音重复。", "confidence": 80}
+{"id": "17-530-2-8", "zh": "元音之后的辅音，在适当场合会重复。", "confidence": 80}
+{"id": "17-530-9-16", "zh": "两个的状态叫作 dvibhāva，它也就是 dvebhāva。", "confidence": 80}
+{"id": "17-531-2-44", "zh": "这里所谓“适当场合”，是指：在短元音 a 之后，pa、pati、paṭi、kamu、kusa、kudha、kī、gaha、juta、ñā、si、su、sambhū、sara、sasa 等词的首辅音重复；tika、taya、tiṃsa、vata 等词的首辅音；vatu、vaṭu、disa 等词的末辅音；u、du、ni 等前缀以及 ta、catu、cha、santa 的替代形之后的辅音；还有不在词尾、ā 以外的长元音之后以 ya 起首的辅音，以及——", "confidence": 55}
+{"id": "17-532-2-6", "zh": "带 ya、va 的 ta、la、na 等音的替代音，以及 saya 等词的替代音；", "confidence": 50}
+{"id": "17-533-2-7", "zh": "连同词根末音一起形成的替代音，以及 tapa 等词之后的 sa 音。", "confidence": 40}
+{"id": "17-534-2-16", "zh": "在维护格律时，还有 ghara、jhe、dhaṃsu、bhama 等词的首辅音；以及短元音 a 之后各组辅音的第四音和第二音，等等。", "confidence": 60}
+{"id": "17-535-2-39", "zh": "其中先说 pa、pati、paṭi：idha pamādo 变成 idhappamādo；同样还有 appamādo、vippayutto、suppasanno，sammā padhānaṃ 变成 sammappadhānaṃ（短音化），以及 appativattiyo、adhipatippaccayo、suppatiṭṭhito、appaṭipuggalo、vippaṭisāro、suppaṭipanno、suppaṭipatti。", "confidence": 70}
+{"id": "17-536-2-17", "zh": "在 kamu 等词根中：pakkamo、paṭikkamo、hetukkamo，ākamati 变成 akkamati；同样还有 parakkamati、yathākkamaṃ。", "confidence": 75}
+{"id": "17-537-2-11", "zh": "pakkosati、paṭikkosati、anukkosati，ākosati 变成 akkosati。", "confidence": 80}
+{"id": "17-538-2-5", "zh": "akkuddho、atikkodho。", "confidence": 85}
+{"id": "17-539-2-7", "zh": "dhanakkīto、vikkayo、anukkayo。", "confidence": 85}
+{"id": "17-540-2-13", "zh": "paggaho、viggaho、anuggaho、niggaho、candaggaho、diṭṭhiggāho。", "confidence": 85}
+{"id": "17-541-2-7", "zh": "pajjoto、vijjotati、ujjoto。", "confidence": 85}
+{"id": "17-542-2-15", "zh": "kataññū、viññū、paññāṇaṃ、viññāṇaṃ、anuññā、manuññā、samaññā。", "confidence": 85}
+{"id": "17-543-2-7", "zh": "avassayo、nissayo、samussayo。", "confidence": 85}
+{"id": "17-544-2-10", "zh": "appassuto、vissuto、bahussuto，āsavā 变成 assavā。", "confidence": 80}
+{"id": "17-545-2-5", "zh": "passambhanto、vissambhati。", "confidence": 85}
+{"id": "17-546-2-7", "zh": "aṭṭassaro、vissarati、anussarati。", "confidence": 85}
+{"id": "17-547-2-10", "zh": "passasanto、vissasanto、mahussasanto，āsāso 变成 assāso。", "confidence": 80}
+{"id": "17-548-2-18", "zh": "avissajjento、vissajjento、pariccajanto、upaddavo、upakkiliṭṭho、mittaddu、āyabbayo、udabbahi 等。", "confidence": 80}
+{"id": "17-549-2-6", "zh": "为什么说“**元音之后**”？", "confidence": 85}
+{"id": "17-549-7-16", "zh": "例如 sampayutto、sampatijāto、sampaṭicchannaṃ、saṅkamanto、saṅgaho（这些不重复）。", "confidence": 80}
+{"id": "17-550-2-5", "zh": "为什么说“**在适当场合**”？", "confidence": 85}
+{"id": "17-550-6-28", "zh": "例如 mā ca pamādo、patigayhati、vacīpakopaṃ rakkheyya、ye pamattā yathā matā、manopakopaṃ rakkheyya、idha modati、pecca modati（这些不重复）。", "confidence": 75}
+{"id": "17-551-2-17", "zh": "在 tika 等词中：kusalattikaṃ、pītittikaṃ、hetuttikaṃ、vedanāttikaṃ、lokattayaṃ、bodhittayaṃ、vatthuttayaṃ。", "confidence": 80}
+{"id": "17-551-18-23", "zh": "ekattiṃsa、dvattiṃsa、catuttiṃsa。", "confidence": 85}
+{"id": "17-551-24-34", "zh": "sīlabbataṃ、subbato、sappītiko、samannāgato、punappunaṃ 等。", "confidence": 80}
+{"id": "17-552-2-15", "zh": "在 vatu、vaṭu、disa 等词的末尾，例如：vattati、vaṭṭati、dassanaṃ、phasso 等。", "confidence": 80}
+{"id": "17-553-2-9", "zh": "在 u、du、ni 等前缀之后：ukaṃso 变成 ukkaṃso。", "confidence": 80}
+{"id": "17-553-10-15", "zh": "dukaraṃ 变成 dukkaraṃ，nikaṅkho 变成 nikkaṅkhe。", "confidence": 70}
+{"id": "17-554-2-38", "zh": "同样还有 uggataṃ、duccaritaṃ、nijjaṭaṃ、uññātaṃ、unnati、uttaro、dukkaro、niddaro、unnato、duppañño、dubbalo、nimmalo、uyyutto、dullabho、nibbatto、ussāho、dussaho、nissāro。", "confidence": 80}
+{"id": "17-555-2-12", "zh": "同样还有 takkaro、tajjo、tanninno、tappabhavo、tammayo。", "confidence": 80}
+{"id": "17-556-2-11", "zh": "catukkaṃ、catuddisaṃ、catuppādo、catubbidhaṃ、catussālaṃ。", "confidence": 85}
+{"id": "17-557-2-9", "zh": "chakkaṃ、channavuti、chappadikā、chabbassāni。", "confidence": 85}
+{"id": "17-558-2-11", "zh": "sakkāro、sakkato、saddiṭṭhi、sappuriso、mahabbalo。", "confidence": 85}
+{"id": "17-559-2-5", "zh": "为什么说“**在适当场合**”？", "confidence": 85}
+{"id": "17-559-6-19", "zh": "例如 nikāyo、nidānaṃ、nivāso、nivāto、tato、catuvīsati、chasaṭṭhi（这些不重复）。", "confidence": 80}
+{"id": "17-560-2-24", "zh": "在以 ya 起首的辅音中：nīyyati、sūyyati、abhibhūyya、viceyya、vineyya、dheyyaṃ、neyyaṃ、seyyo、jeyyo、veyyākaraṇo。", "confidence": 75}
+{"id": "17-561-2-7", "zh": "由于“等”（ādi）这个字，还包括 etto、ettāvatā。", "confidence": 75}
+{"id": "17-562-2-5", "zh": "为什么要说“ā 以外”？", "confidence": 75}
+{"id": "17-562-6-11", "zh": "例如 mālāya、dolāya、samādāya（这些不重复）。", "confidence": 80}
+{"id": "17-563-2-5", "zh": "为什么说“**在适当场合**”？", "confidence": 85}
+{"id": "17-563-6-11", "zh": "例如 upanīyati、sūyati、toyaṃ（这些不重复）。", "confidence": 80}
+{"id": "17-564-2-36", "zh": "在 ya、va、ta 等的替代音方面——遇到 jāti andho、vipali āso、ani āyo、yadi evaṃ、api ekacce、api ekadā 这些情况时，先依“ivaṇṇo yaṃ navā”一条把 i 音变成 ya 音，然后——", "confidence": 65}
+{"id": "17-565-2-16", "zh": "从“sabbassa so dāmhi vā”一条起，以蛙跳的方式延续“**或**”一词。", "confidence": 70}
+{"id": "17-566-2-9", "zh": "第41条：带 ya 的 ta、la、na、da 各音，其辅音依次变成 ca、la、ña、ja 音。", "confidence": 65}
+{"id": "17-567-2-11", "zh": "带 ya 音的 ta、la、na、da 各音，其复辅音依次变成 ca、la、ña、ja 音，这是可选的。", "confidence": 70}
+{"id": "17-568-2-33", "zh": "条文中取“kāra”一字，是为了让带 ya 的 sa 音以及 ka、ca、ṭa、pa 各组音，替代为 sa 音以及 ka、ca、ṭa、pa 各组音；同样也为了让带 ya 的 ta、dha、ṇa 音替代为 cha、jha、ña 音。然后，由此使 ya、va、ta 等的替代音重复。", "confidence": 50}
+{"id": "17-569-2-12", "zh": "例如 jaccandho、vipallāso、aññāyo、yajjevaṃ、appekacce、appekadā。", "confidence": 80}
+{"id": "17-570-2-5", "zh": "为什么说“**或**”？", "confidence": 85}
+{"id": "17-570-6-11", "zh": "例如 paṭisanthāravutyassa、bālyaṃ、ālasyaṃ（这些不变）。", "confidence": 75}

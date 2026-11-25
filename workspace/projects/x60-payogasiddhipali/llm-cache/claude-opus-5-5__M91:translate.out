@@ -1,0 +1,78 @@
+{"id": "19-2395-2-5", "zh": "175. ṭhā、pā 变为 tiṭṭha、piva", "confidence": 80}
+{"id": "19-2396-2-7", "zh": "在 nta 等词缀前，ṭhā、pā 可选地变为 tiṭṭha、piva。", "confidence": 80}
+{"id": "19-2396-8-11", "zh": "如 tiṭṭhanto、tiṭṭhamāno（站立着的）。", "confidence": 85}
+{"id": "19-2396-12-14", "zh": "pivanto、pivamāno（喝着的）。", "confidence": 85}
+{"id": "19-2397-2-13", "zh": "176. gama、vada、dā 变为 ghamma、vajja、dajja", "confidence": 80}
+{"id": "19-2398-2-8", "zh": "在 nta 等词缀前，gama 等可选地变为 ghamma 等。", "confidence": 80}
+{"id": "19-2398-9-17", "zh": "如 ghammanto、gacchanto（走着的），vajjanto、vadanto（说着的），dajjanto、dadanto（给予着的）。", "confidence": 85}
+{"id": "19-2399-2-8", "zh": "177. 带 o 的 kara 变为 kubba、kuru、kayira", "confidence": 70}
+{"id": "19-2400-2-8", "zh": "在 nta 等词缀前，带 o 词缀的 kara 可选地变为 kubba 等。", "confidence": 70}
+{"id": "19-2400-9-16", "zh": "如 kubbanto、kayiranto、karonto（做着的）；同样有 kubbamāno 等。", "confidence": 80}
+{"id": "19-2400-17-29", "zh": "在其他情况下，依“mānassa massā”一条，māna 的 ma 脱落，得 karāṇo。", "confidence": 65}
+{"id": "19-2400-30-38", "zh": "因为说的是“sossa（带 o 的）”，所以这条只用于主动态。", "confidence": 60}
+{"id": "19-2401-2-5", "zh": "178. gaha 变为 gheppa", "confidence": 80}
+{"id": "19-2402-2-7", "zh": "在 nta 等词缀前，gaha 可选地变为 gheppa。", "confidence": 80}
+{"id": "19-2402-8-10", "zh": "如 gheppanto、gheppamāno（拿取着的）。", "confidence": 80}
+{"id": "19-2403-2-5", "zh": "179. niggahīta（ṃ）变为 ṇ", "confidence": 75}
+{"id": "19-2404-2-22", "zh": "gaha 的 niggahīta 变为 ṇ。依“maṃ vā rudhādīnaṃ”一条加 ṃ，得 gaṇhitabbaṃ、gaṇhituṃ、gaṇhanto。", "confidence": 65}
+{"id": "19-2405-2-14", "zh": "130. 在 nta、māna、anti、yi、yuṃ 前，词首脱落", "confidence": 65}
+{"id": "19-2406-2-3", "zh": "即词首脱落。", "confidence": 70}
+{"id": "19-2406-4-11", "zh": "as 表示“存在”；存在着的，就是 santo、samāno。", "confidence": 75}
+{"id": "19-2407-2-8", "zh": "131. 在 pa 等前缀之后，ṭhā 有时可选地变为 ṭhaha", "confidence": 70}
+{"id": "19-2408-2-5", "zh": "在 pa 等前缀之后，ṭhā 变为 ṭhaha。", "confidence": 75}
+{"id": "19-2408-6-7", "zh": "如 saṇṭhahanto（安住着的）。", "confidence": 80}
+{"id": "19-2408-8-9", "zh": "也作 santiṭṭhanto。", "confidence": 80}
+{"id": "19-2409-2-5", "zh": "（以上是现在分词词缀的规则。）", "confidence": 70}
+{"id": "19-2410-2-10", "zh": "61. 表示将来，且有以此为目的的动作时，加 tuṃ、tāye、tave，表示动作本身", "confidence": 65}
+{"id": "19-2411-2-12", "zh": "动词词根表示将来意义时，如果可以理解有另一个以它为目的的动作，就加 tuṃ 等词缀，表示动作本身。", "confidence": 65}
+{"id": "19-2411-13-17", "zh": "为了做而去，即 kātuṃ gacchati（去做）。", "confidence": 80}
+{"id": "19-2411-18-32", "zh": "依“tuṃtunatabbesu vā”一条，kara 可选地变为 ā；不变时依前音同化，得 kattāye。", "confidence": 60}
+{"id": "19-2411-33-44", "zh": "依“karassā tave”一条，一定变为 ā，得 kātave。", "confidence": 75}
+{"id": "19-2411-45-55", "zh": "因为是不变词（nipāta），依“asaṅkhyehi sabbāsaṃ”一条，第四格词尾 sa 脱落。", "confidence": 70}
+{"id": "19-2411-56-60", "zh": "下文的 tuna 等也是这样。", "confidence": 75}
+{"id": "19-2411-61-68", "zh": "想要做，所以叫 kattukāmo（想做的人）；abhisaṅkharitumākaṅkhati（希望去造作）。", "confidence": 75}
+{"id": "19-2411-69-80", "zh": "saddhammaṃ suṇituṃ（为了听正法）：在 ñi 前加插音 nā，其中的 n 变为 ṇ；因为有插音 nā，所以不作元音强化（vuddhi）。", "confidence": 55}
+{"id": "19-2411-81-86", "zh": "你要希求去听：sotave、sotuṃ 或 suṇituṃ。", "confidence": 65}
+{"id": "19-2411-87-91", "zh": "同样有 anubhavituṃ（为了体验）、pacituṃ（为了煮）。", "confidence": 80}
+{"id": "19-2411-92-102", "zh": "gantuṃ（为了去）：依“manānaṃ niggahītaṃ”一条，变为 niggahīta。", "confidence": 70}
+{"id": "19-2411-103-121", "zh": "gamituṃ、khantuṃ、khanituṃ、hantuṃ、hanituṃ、mantuṃ、manituṃ、harituṃ，以及 anussarituṃ icchati（想要回忆）。", "confidence": 75}
+{"id": "19-2411-122-167", "zh": "同样有 tudituṃ、pavisituṃ、uddisituṃ、bhottuṃ、sayituṃ、netuṃ、juhotuṃ、pajahituṃ、pahātuṃ、dātuṃ、roddhuṃ、rundhituṃ、bhottuṃ、bhuñjītuṃ、chettuṃ、chindituṃ、sibbituṃ；在 ū 前 v 变为 b，并重复，得 buddhuṃ，其中 t 变为 dh。", "confidence": 55}
+{"id": "19-2411-168-171", "zh": "bujjhituṃ，加插音 y。", "confidence": 55}
+{"id": "19-2411-172-176", "zh": "jānituṃ：ñā 表示“了知”。", "confidence": 75}
+{"id": "19-2411-177-178", "zh": "janituṃ（为了生）。", "confidence": 70}
+{"id": "19-2411-179-181", "zh": "jetuṃ、jinituṃ（为了胜）。", "confidence": 80}
+{"id": "19-2411-182-184", "zh": "pattuṃ、pāpuṇituṃ（为了到达）。", "confidence": 80}
+{"id": "19-2411-185-187", "zh": "ketuṃ、kiṇituṃ（为了买）。", "confidence": 80}
+{"id": "19-2411-188-194", "zh": "vinicchetuṃ：i 变为 e；也作 vinicchinituṃ（为了裁决）。", "confidence": 75}
+{"id": "19-2411-195-197", "zh": "gahetuṃ、gaṇhituṃ（为了拿取）。", "confidence": 80}
+{"id": "19-2411-198-204", "zh": "corituṃ、coretuṃ、corayituṃ（为了偷），pāletuṃ、pālayituṃ（为了守护）。", "confidence": 80}
+{"id": "19-2411-205-215", "zh": "在使役义中：bhāvetuṃ、bhāvayituṃ，kāretuṃ、kārayituṃ、kārāpetuṃ、kārāpayituṃ icchati（想要使人去做）等。", "confidence": 75}
+{"id": "19-2412-2-25", "zh": "同样，当可以理解有以此为目的的动作时，例如 suboddhuṃ vakkhāmi（为了便于理解，我将解说）；同样有 daṭṭhuṃ gacchati（去看）、gantumārabhati（开始去）、gantuṃ payojeti（使人去）、dassetumāha（为了显示而说）等。", "confidence": 70}
+{"id": "19-2413-2-9", "zh": "用于 araha、sakka 等词时也成立；用于 kāla、samaya、velā（时候）也一样。", "confidence": 75}
+{"id": "19-2413-10-35", "zh": "例如：谁应当责备他？他配做国王；您值得说；或者可以用财富取胜；可以得到——laddhuṃ 中 bh 变为 dh。", "confidence": 70}
+{"id": "19-2413-36-38", "zh": "他将能够去做。", "confidence": 80}
+{"id": "19-2413-39-45", "zh": "有能力进入决定性（niyāma），没有能力去做。", "confidence": 65}
+{"id": "19-2413-46-62", "zh": "您适合接受布施；做这件事是相称的；布施是恰当的；可以布施，也可以说。", "confidence": 70}
+{"id": "19-2413-63-72", "zh": "同样有：可以说；不允许砍伐等。", "confidence": 75}
+{"id": "19-2413-73-81", "zh": "同样：是吃饭的时间，是吃饭的时刻，是吃饭的时候。", "confidence": 75}
+{"id": "19-2414-2-12", "zh": "在表示“足够、适宜”的意义上也成立：确实适合布施，确实适合造作功德。", "confidence": 70}
+{"id": "19-2415-2-10", "zh": "62. 在表示禁止的 alaṃ、khalu 后，可选地加 ktuna、ktvāna、ktvā", "confidence": 75}
+{"id": "19-2416-2-11", "zh": "使用表示禁止的 alaṃ、khalu 两个词时，可选地加 ktuna 等词缀，表示动作本身。", "confidence": 75}
+{"id": "19-2416-12-36", "zh": "以 alaṃ 在前；su 表示“听”。alaṃ savanaṃ katvā、khalu savanaṃ katvā（不必再听），即 alaṃ sotuna、khalu sotuna，alaṃ sutvāna、khalu sutvāna，alaṃ sutvā、khalu sutvā。", "confidence": 65}
+{"id": "19-2416-37-39", "zh": "因为是不变词，词尾 si 脱落。", "confidence": 75}
+{"id": "19-2417-2-6", "zh": "63. 同一主语的几个动作中，用于在先的动作", "confidence": 70}
+{"id": "19-2418-2-16", "zh": "几个动作共有同一个主语时，从表示其中在先动作的动词词根后加 tuna 等词缀，表示动作本身。", "confidence": 70}
+{"id": "19-2418-17-34", "zh": "依“tuṃtunā…”一条，kara 变为 ā：他做完事后离开；他们没有造作功德，就受苦。", "confidence": 60}
+{"id": "19-2418-35-44", "zh": "r 脱落时：做了善业之后；造作功德之后，他升到天界。", "confidence": 70}
+{"id": "19-2418-45-51", "zh": "造作之后，即 abhisaṅkharitvā，也作 karitvā。", "confidence": 65}
+{"id": "19-2418-52-93", "zh": "同样有 sibbitvā（缝了之后）、chādayitvā（覆盖之后）、jānitvā（知道之后）；dhammaṃ sutvā、sutvāna dhammaṃ modati（听了法之后欢喜）；suṇitvā；patvā、pāpuṇitvā（到达之后）；kinitvā（买了之后）；jetvā、jinitvā、jitvā（胜了之后）；coretvā、corayitvā（偷了之后）；pūjetvā、pūjayitvā（供养之后）；同样，mettaṃ bhāvetvā、bhāvayitvā（修习慈心之后），vihāraṃ kāretvā、kārayitvā、kārāpetvā、kārāpayitvā saggaṃ gamissanti（使人建造精舍之后，他们将升到天界）等。", "confidence": 70}
+{"id": "19-2418-94-101", "zh": "为什么说“在先”？因为像 bhuñjati ca pacati ca（又吃又煮）这样的情况就不用。", "confidence": 65}
+{"id": "19-2418-102-120", "zh": "在“还没到河就是山，越过山就是河”等例子中，因为可以补出 bhū 词根，所以可以理解为同一主语，也有时间上的先后。", "confidence": 60}
+{"id": "19-2418-121-135", "zh": "“吃了又吃才走”就靠这一条成立；至于反复的意思，则只是由重复来表达。", "confidence": 65}
+{"id": "19-2418-136-155", "zh": "“使人活捉了他”“摇晃着身体走”是怎样成立的？是靠带 ghaṇ 词缀、作动作修饰语的词成立的，就像 odanapākaṃ sayati（睡到饭煮熟）一样。", "confidence": 55}
+{"id": "19-2419-2-7", "zh": "164. 在复合词中，tvā 可选地变为 pya", "confidence": 75}
+{"id": "19-2420-2-7", "zh": "在复合词中，tvā 可选地变为 pya。", "confidence": 75}
+{"id": "19-2420-8-17", "zh": "p 是为“pye sissā”一条作区别用的。", "confidence": 60}
+{"id": "19-2420-18-25", "zh": "以 abhi 为前缀，构成前缀复合词：礼敬之后，即 abhivādiya bhāsissaṃ（礼敬之后我将说）。", "confidence": 65}
+{"id": "19-2420-26-30", "zh": "同样有 abhibhuyya（征服之后），其中有重复和短音化。", "confidence": 65}
+{"id": "19-2420-31-34", "zh": "si 表示“睡卧”——", "confidence": 75}

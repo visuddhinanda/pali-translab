@@ -1,0 +1,77 @@
+{"id": "17-2814-2-7", "zh": "464. 第二与第四辅音变为第一与第三辅音。", "confidence": 85}
+{"id": "17-2815-2-12", "zh": "处在叠音中的各组辅音，第二、第四辅音依次变为第一、第三辅音，因此 bha 音变为 ba 音。", "confidence": 85}
+{"id": "17-2816-2-7", "zh": "465. 在过去未见时语尾前，brū、bhū 分别替换为 āha、bhūva。", "confidence": 85}
+{"id": "17-2817-2-32", "zh": "brū、bhū 这两个词根，在过去未见时语尾前分别替换为 āha、bhūva，因此 bhū 替换为 bhūva；再依“saralopo mādesappaccayādimhi”等规则删去元音等，得到 so kira rājā babhūva（据说他曾是国王）、te kira babhūvu（据说他们曾是）。", "confidence": 80}
+{"id": "17-2817-33-36", "zh": "tvaṃ kira babhūve（据说你曾是）。", "confidence": 75}
+{"id": "17-2818-2-13", "zh": "“dhātūhi”（在词根之后）从前面延续下来；依狮顾法，也取用“kvaci”（有时）。", "confidence": 75}
+{"id": "17-2819-2-7", "zh": "466. 在非一切词根类语尾前，加插 i 音。", "confidence": 85}
+{"id": "17-2820-2-11", "zh": "在所有非一切词根类语尾前，有时在词根之后加插 i 音。", "confidence": 85}
+{"id": "17-2821-2-5", "zh": "在以辅音开头的非一切词根类语尾前，加插这个音；", "confidence": 80}
+{"id": "17-2822-2-7", "zh": "由于“kvaci”的支配，以辅音开头时有时也不加插。", "confidence": 80}
+{"id": "17-2823-2-31", "zh": "这里，按“na sabbadhātukaṃ asabbadhātukaṃ”（不是一切词根类的，就是非一切词根类）来理解；又因为“hiyyattanī sattamī pañcamī vattamānā sabbadhātukaṃ”这条规则已把昨日过去时等称为一切词根类，所以其余四种语尾就称为非一切词根类。", "confidence": 80}
+{"id": "17-2824-2-6", "zh": "tumhe kira babhūvittha（据说你们曾是）。", "confidence": 85}
+{"id": "17-2824-7-14", "zh": "ahaṃ kira babhūvaṃ（据说我曾是），mayaṃ kira babhūvimha（据说我们曾是）。", "confidence": 85}
+{"id": "17-2824-15-20", "zh": "为自言中：so babhūvittha，babhūvire。", "confidence": 85}
+{"id": "17-2824-21-24", "zh": "babhūvittho，babhūvivho。", "confidence": 90}
+{"id": "17-2824-25-28", "zh": "babhūviṃ，babhūvimhe。", "confidence": 90}
+{"id": "17-2825-2-35", "zh": "被动语态的为自言中，加插 ī 音、加 ya 词缀、加插 i 音，得到 anubabhūvīyittha；在非一切词根类语尾前，依“kvaci dhātu”等规则删去 ya 词缀时，就不加插 i 类元音，得到 tayā kira anubabhūvittha（据说曾被你经历）、anubabhūvire 等。", "confidence": 70}
+{"id": "17-2825-36-41", "zh": "无人称语态中：babhūvīyittha，或 babhūvittha。", "confidence": 80}
+{"id": "17-2826-2-6", "zh": "同样，papaca，papacū。", "confidence": 85}
+{"id": "17-2826-7-10", "zh": "papace，papacittha。", "confidence": 90}
+{"id": "17-2826-11-14", "zh": "papacaṃ，papacimha。", "confidence": 90}
+{"id": "17-2826-15-18", "zh": "papacittha，papacire。", "confidence": 90}
+{"id": "17-2826-19-22", "zh": "papacittho，papacivho。", "confidence": 90}
+{"id": "17-2826-23-26", "zh": "papaciṃ，papacimhe。", "confidence": 90}
+{"id": "17-2827-2-7", "zh": "被动语态中：papaccittha，papaccire 等。", "confidence": 85}
+{"id": "17-2827-8-13", "zh": "同样，apacca，apaccū 等。", "confidence": 80}
+{"id": "17-2828-2-18", "zh": "在 gam 词根上，依“kvacādivaṇṇānaṃ”等规则重叠，再依“pubbobbhāso”把前一部分称为叠音。", "confidence": 80}
+{"id": "17-2829-2-9", "zh": "“abbhāse”（在叠音中）从前面延续下来。", "confidence": 85}
+{"id": "17-2830-2-7", "zh": "467. 喉音组变为腭音组。", "confidence": 85}
+{"id": "17-2831-2-24", "zh": "处在叠音中的喉音组辅音变为腭音组辅音，因此 ga 音变为 ja 音；再依“kvaci dhātu”等规则，非叠音部分在第一人称单数中变为长音。", "confidence": 60}
+{"id": "17-2831-25-34", "zh": "so gāmaṃ jagāma kira（据说他去了村子），或 jagama，jagamu。", "confidence": 85}
+{"id": "17-2831-35-38", "zh": "jagame，jagamittha。", "confidence": 90}
+{"id": "17-2831-39-42", "zh": "jagamaṃ，jagamimha。", "confidence": 90}
+{"id": "17-2831-43-46", "zh": "jagamittha，jagamire。", "confidence": 90}
+{"id": "17-2831-47-50", "zh": "jagamittho，jagamivho。", "confidence": 90}
+{"id": "17-2831-51-54", "zh": "jagamiṃ，jagamimhe。", "confidence": 90}
+{"id": "17-2832-2-8", "zh": "被动语态中：jagamīyittha，或 jagamittha 等。", "confidence": 85}
+{"id": "17-2833-2-3", "zh": "过去未见时语尾（终）。", "confidence": 80}
+{"id": "17-2834-2-23", "zh": "468. 今日过去时：ī、uṃ，o、ttha，iṃ、mhā，ā、ū，se、vhaṃ，aṃ、mhe。", "confidence": 80}
+{"id": "17-2835-2-8", "zh": "ī 等十二个语尾称为今日过去时。", "confidence": 85}
+{"id": "17-2835-9-19", "zh": "今天发生的（ajja bhavo）叫作 ajjatano；因为表示这一点，这种语尾称为**今日过去时**（ajjatanī）。", "confidence": 80}
+{"id": "17-2836-2-14", "zh": "“apaccakkhe”（不现前的）、“atīte”（过去的）、“paccakkhe”（现前的）也从前面延续下来。", "confidence": 80}
+{"id": "17-2837-2-6", "zh": "469. 近处用今日过去时。", "confidence": 80}
+{"id": "17-2838-2-17", "zh": "从近处开始，也就是从今天起，在过去的时间里，无论现前还是不现前，都用今日过去时语尾，因此今日过去时为他言第一人称单数是 ī。", "confidence": 80}
+{"id": "17-2839-2-39", "zh": "和前面一样加插 a 音，并作强化等；依“kvaci dhātuvibhatti”等规则，ī、mhā 等语尾有时变为短音，o、ā、a 等语尾替换为 ittha、a 等；再删去元音等，得到 so abhavi（他曾存在），或 abhavī；不加插 a 音时为 bhavi。", "confidence": 55}
+{"id": "17-2840-2-10", "zh": "依蛙跳法，“vā”（或者）从前面延续下来。", "confidence": 80}
+{"id": "17-2841-2-9", "zh": "470. 在一切词根之后，uṃ 变为 iṃsu。", "confidence": 85}
+{"id": "17-2842-2-9", "zh": "在一切词根之后，uṃ 语尾可以替换为 iṃsu。", "confidence": 85}
+{"id": "17-2843-2-12", "zh": "te abhaviṃsu，或 bhaviṃsu；abhavuṃ，或 bhavuṃ。", "confidence": 85}
+{"id": "17-2843-13-32", "zh": "tvaṃ abhavi，或 bhavi；abhavo，或 bhavo；tumhe abhavittha，或 bhavittha，这里加插 i 音。", "confidence": 80}
+{"id": "17-2843-33-49", "zh": "ahaṃ abhaviṃ，或 bhaviṃ；mayaṃ abhavimha，或 bhavimha；abhavimhā，或 bhavimhā。", "confidence": 85}
+{"id": "17-2843-50-65", "zh": "so abhavittha，或 bhavittha；abhavā，或 bhavā；abhavū，或 bhavū。", "confidence": 85}
+{"id": "17-2843-66-75", "zh": "abhavise，或 bhavise；abhavivhaṃ，或 bhavivhaṃ。", "confidence": 85}
+{"id": "17-2843-76-91", "zh": "abhavaṃ，或 bhavaṃ；abhava，或 bhava；abhavimhe，或 bhavimhe。", "confidence": 85}
+{"id": "17-2844-2-16", "zh": "被动语态中，删去 ya 词缀，作强化、替换为 av 等，得到 sukhaṃ tayā anubhavittha（你曾经历快乐），anvabhūyittha，或 anubhūyittha 等。", "confidence": 70}
+{"id": "17-2844-17-35", "zh": "用为他言时：tayā anvabhūyi，anubhūyi，anvabhūyī，或 anubhūyī；anvabhūyiṃsu，anubhūyiṃsu，anvabhūyuṃ，anubhūyuṃ。", "confidence": 80}
+{"id": "17-2844-36-45", "zh": "tvaṃ anvabhūyi，anubhūyi；tumhe anvabhūyittha，anubhūyittha。", "confidence": 85}
+{"id": "17-2844-46-60", "zh": "ahaṃ anvabhūyiṃ，anubhūyiṃ；mayaṃ anvabhūyimha，anubhūyimha，anvabhūyimhā，或 anubhūyimhā。", "confidence": 85}
+{"id": "17-2844-61-66", "zh": "无人称语态中：abhavittha，abhūyittha tayā。", "confidence": 80}
+{"id": "17-2845-2-20", "zh": "so apaci，paci，apacī，或 pacī；te apaciṃsu，paciṃsu，apacuṃ，pacuṃ。", "confidence": 85}
+{"id": "17-2845-21-35", "zh": "tvaṃ apaci，paci，apaco，或 paco；tumhe apacittha，pacittha。", "confidence": 85}
+{"id": "17-2845-36-50", "zh": "ahaṃ apaciṃ，paciṃ；mayaṃ apacimha，pacimha，apacimhā，或 pacimhā。", "confidence": 85}
+{"id": "17-2845-51-64", "zh": "so apacittha，pacittha，apacā，或 pacā；apacū，pacū。", "confidence": 85}
+{"id": "17-2845-65-68", "zh": "apacise，apacivhaṃ。", "confidence": 90}
+{"id": "17-2845-69-81", "zh": "apacaṃ，pacaṃ，apaca，或 paca；apacimhe，pacimhe。", "confidence": 85}
+{"id": "17-2846-2-7", "zh": "被动语态中：apaccittha，paccittha 等。", "confidence": 85}
+{"id": "17-2846-8-25", "zh": "用为他言时：apacci，pacci，apaccī，或 paccī；apacciṃsu，pacciṃsu，apaccuṃ，paccuṃ。", "confidence": 85}
+{"id": "17-2846-26-38", "zh": "apacci，pacci，apacco，或 pacco；apaccittha，paccittha。", "confidence": 85}
+{"id": "17-2846-39-51", "zh": "apacciṃ，pacciṃ，apaccimha，paccimha，apaccimhā，或 paccimhā。", "confidence": 85}
+{"id": "17-2847-2-21", "zh": "so gāmaṃ agacchī（他去了村子），gacchī，agacchi，或 gacchi；te agacchiṃsu，gacchiṃsu，agacchuṃ，gacchuṃ。", "confidence": 85}
+{"id": "17-2847-22-36", "zh": "tvaṃ agacchi，gacchi，agaccho，或 gaccho；tumhe agacchittha，gacchittha。", "confidence": 85}
+{"id": "17-2847-37-51", "zh": "ahaṃ agacchiṃ，gacchiṃ；mayaṃ agacchimha，gacchimha，agacchimhā，或 gacchimhā。", "confidence": 85}
+{"id": "17-2848-2-35", "zh": "依“kvaci dhātu”等规则，在今日过去时中，gam 词根的 ccha 有时替换为 ñcha，得到 agañchi，gañchi，agañchī，或 gañchī；te agañchiṃsu，gañchiṃsu，agañchuṃ，gañchuṃ。", "confidence": 75}
+{"id": "17-2848-36-50", "zh": "tvaṃ agañchi，gañchi，agañcho，或 gañcho；tumhe agañchittha，gañchittha。", "confidence": 85}
+{"id": "17-2848-51-65", "zh": "ahaṃ agañchiṃ，gañchiṃ；mayaṃ agañchimha，gañchimha，agañchimhā，或 gañchimhā。", "confidence": 85}
+{"id": "17-2849-2-88", "zh": "没有 ccha 替换时：so agami，gami，agamī，或 gamī；依“karassa kāsattamajjatanimhi”这条规则中的状态表示，或者把“sattamajjatanimhi”分割为独立规则，加插 sa 音；再依“kvaci dhātu”等规则，在辅音之后加插 ā 音，得到 agamāsi；uṃ 语尾有时替换为 aṃsu，在 ttha、mha 等语尾前有时加插 u 音，得到 agamiṃsu，gamiṃsu，agamaṃsu，gamaṃsu，agamuṃ，gamuṃ；tvaṃ agami，gami，agamo，或 gamo；agamittha，gamittha，agamuttha，gamuttha。", "confidence": 55}
+{"id": "17-2849-89-106", "zh": "ahaṃ agamiṃ，gamiṃ，agamimha，gamimha，agamumha，gamumha，agamimhā，或 gamimhā。", "confidence": 85}

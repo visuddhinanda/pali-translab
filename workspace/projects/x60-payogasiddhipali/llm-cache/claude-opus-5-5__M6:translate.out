@@ -1,0 +1,71 @@
+{"id": "19-139-2-5", "zh": "50. h 的换位", "confidence": 75}
+{"id": "19-140-2-7", "zh": "在 y 音前，h 发生换位。", "confidence": 78}
+{"id": "19-140-8-11", "zh": "例如 muyhati、guyhati。", "confidence": 80}
+{"id": "19-141-2-16", "zh": "在 bahu ābādho 这类情况下，在 u 音（转为 v）时，“h 的换位”继续适用。", "confidence": 60}
+{"id": "19-142-2-5", "zh": "51. 在 v 前可选", "confidence": 75}
+{"id": "19-143-2-7", "zh": "在 v 音前，h 可选地发生换位。", "confidence": 80}
+{"id": "19-143-8-9", "zh": "例如 bavhābādho。", "confidence": 82}
+{"id": "19-143-10-13", "zh": "因为说了“可选”，所以也有 bahvābādho。", "confidence": 78}
+{"id": "19-144-2-5", "zh": "52. t、th、n、r 变为 ṭ、ṭh、ṇ、l", "confidence": 82}
+{"id": "19-145-2-7", "zh": "t、th、n、r 依次可选地变为 ṭ、ṭh、ṇ、l。", "confidence": 85}
+{"id": "19-145-8-22", "zh": "例如 dukkataṃ 变为 dukkaṭaṃ，同样还有 sukaṭaṃ、patthaṭo、pataṭo、uddhaṭo、visaṭo。", "confidence": 82}
+{"id": "19-145-23-24", "zh": "又如 aṭṭhakathā。", "confidence": 75}
+{"id": "19-145-25-42", "zh": "又如 paṇidhānaṃ、paṇipāto、paṇāmo、paṇītaṃ、pariṇato、pariṇāmo、duṇṇayo、niṇṇayo、oṇato。", "confidence": 82}
+{"id": "19-145-43-63", "zh": "paripanno 变为 palipanno，同样还有 palibodho、pallaṅkaṃ、taluno、mahāsālo、māluto、sukhumālo。（辅音连声完）", "confidence": 75}
+{"id": "19-146-2-41", "zh": "在 cakkhu udapādi、akkhi rujati、purima jāti、aṇu thūlāni、kattabba kusalaṃ bahuṃ、ta sampayuttā、tata sabhāvato 这些情况下，“ve”（即“可选”）一词继续适用，直到“mayadā sare”这条规则为止。", "confidence": 55}
+{"id": "19-147-2-4", "zh": "38. niggahīta（ṃ）", "confidence": 75}
+{"id": "19-148-2-6", "zh": "有时可选地增加 niggahīta。", "confidence": 80}
+{"id": "19-148-7-18", "zh": "按道理推知，这只是增音；而且它只出现在短元音之后……因为它是随着短元音而来的。", "confidence": 65}
+{"id": "19-148-19-25", "zh": "依附于原有的成分而来、而出现，所以叫作增音（āgama）。", "confidence": 60}
+{"id": "19-148-26-46", "zh": "例如 cakkhuṃ udapādi、akkhiṃ rujati、purimaṃ jāti、aṇuṃ thūlāni、kattabbaṃ kusalaṃ bahuṃ、taṃsampayuttā、taṃtaṃsabhāvato。", "confidence": 82}
+{"id": "19-148-47-51", "zh": "由于用了“vā”（可选）一词，也有 cakkhu udapādi 等形式。", "confidence": 78}
+{"id": "19-148-52-68", "zh": "avaṃsiro、yāvañcidaṃ 等是必然的……因为“vā”的支配作用属于有定选择；随顺既定的用例而在规则中施行的选择，叫作有定选择（vavatthitavibhāsā）。", "confidence": 60}
+{"id": "19-148-69-78", "zh": "因为“vā”一词用于两种意义：有时表示可选，有时表示按照既定的形式来涵盖。", "confidence": 65}
+{"id": "19-148-79-90", "zh": "用于后一种意义时，它表示必然的规则、非必然的规则，以及原本没有的规则。", "confidence": 65}
+{"id": "19-148-91-103", "zh": "不过在这里，由于“kvaci”（有时）一词延续下来，原本没有的规则就已由它确立；而另外两种则由“vā”一词表示。", "confidence": 60}
+{"id": "19-148-104-113", "zh": "因为说了“有时”，所以 na hi etehi、idha ceva 不增加 niggahīta。", "confidence": 65}
+{"id": "19-149-2-44", "zh": "在 saṃ rambho、saṃ ratto、saṃ rāgo、tāsaṃ ahaṃ santike、evaṃ ayaṃ、puṃ liṅgaṃ、kiṃ ahaṃ、tassa adāsiṃ ahaṃ 这些情况下，“niggahīta”的支配作用一直延续到“mayadā sare”这条规则为止。", "confidence": 62}
+{"id": "19-150-2-4", "zh": "39. 脱落", "confidence": 80}
+{"id": "19-151-2-7", "zh": "niggahīta 有时可选地脱落。", "confidence": 82}
+{"id": "19-151-8-32", "zh": "（前元音）变长时：sārambho 或 saṃrambho，sāratto 或 saṃratto，sārāgo 或 saṃrāgo；前元音脱落时：tāsāhaṃ santike、evāyaṃ；辅音重复时：pulliṅgaṃ 或 puṃliṅgaṃ；还有 kyāhaṃ、tassa adāsahaṃ。", "confidence": 70}
+{"id": "19-151-33-52", "zh": "在 paṭisallāno、sallekho、pātukāmo、gantumano、ariyasaccāna dassanaṃ、etaṃ buddhāna sāsanaṃ、avisāhāro、cirappavāsiṃ 等例子中，脱落是必然的。", "confidence": 75}
+{"id": "19-151-53-68", "zh": "为什么说“有时”？因为也有 evamayaṃ、kimahaṃ、etaṃ maṅgalamuttamaṃ 这样不脱落的形式。", "confidence": 75}
+{"id": "19-152-2-39", "zh": "在 kataṃ iti、abhinanduṃ iti、uttattaṃ iva、cakkaṃ iva、kaliṃ iva、halaṃ idāni、kiṃ idāni、tvaṃ asi、idaṃ api、uttariṃ api、dātuṃ api、sadisaṃ eva 这些情况下——", "confidence": 78}
+{"id": "19-153-2-4", "zh": "40. 后元音的（脱落）", "confidence": 78}
+{"id": "19-154-2-9", "zh": "在 niggahīta 之后，后面的元音有时可选地脱落。", "confidence": 82}
+{"id": "19-154-10-33", "zh": "例如 katanti、abhinandunti、uttattaṃva、cakkaṃva、kaliṃva、halaṃdāni、kiṃdāni、tvaṃsi、idampi、uttarimpi、dātumpi、sadisaṃva。", "confidence": 82}
+{"id": "19-154-34-45", "zh": "为什么说“可选”？因为也有 kataṃiti、kimiti、dātumapi、sadisaṃ eva 这样的形式。", "confidence": 78}
+{"id": "19-155-2-14", "zh": "在 pupphaṃ assā uppajjati、evaṃ assa te āsavā 这些情况下，后元音脱落之后——", "confidence": 75}
+{"id": "19-156-2-4", "zh": "53. 复辅音首位的脱落", "confidence": 78}
+{"id": "19-157-2-20", "zh": "两个中间没有间隔的辅音合在一处，叫作复辅音（saṃyoga）；这个复辅音中作为首位成分的辅音，有时可选地脱落，这就是首位辅音的脱落。", "confidence": 75}
+{"id": "19-157-21-27", "zh": "例如 pupphaṃsā uppajjati、evaṃsa te āsavā。", "confidence": 80}
+{"id": "19-157-28-36", "zh": "在三个辅音相连的情况下，有 agyāgāraṃ、vutyassa 这样的形式。", "confidence": 62}
+{"id": "19-158-2-73", "zh": "在 taṃ karoti、taṃ khaṇaṃ、saṃ gato、taṃ ghataṃ、dhammaṃ care、taṃ channaṃ、taṃ jātaṃ、taṃ jhānaṃ、taṃ ñāṇaṃ、taṃ ṭhānaṃ、taṃ ḍahati、taṃ tanoti、taṃ thiraṃ、taṃ dānaṃ、taṃ dhanaṃ、taṃ niccutaṃ、taṃ patto、taṃ phalaṃ、tesaṃ bodho、saṃ bhūto、taṃ mittaṃ、kiṃ kato、dātuṃ gato 这些情况下——", "confidence": 78}
+{"id": "19-159-2-5", "zh": "41. 在组辅音前变为该组末音", "confidence": 75}
+{"id": "19-160-2-12", "zh": "在组辅音前，niggahīta 可选地变为组末音，也就是说，依据作为条件的后接辅音与随声之间的相近，变为该组的第五个音。", "confidence": 65}
+{"id": "19-160-13-22", "zh": "所谓相近，是指发音部位上的接近，或者性质上的接近；“性质上”是指字母名称等性质方面。", "confidence": 65}
+{"id": "19-160-23-31", "zh": "niggahīta 是随后发出的，也就是放在后面发出，所以也叫作随声（anussara）。", "confidence": 62}
+{"id": "19-160-32-43", "zh": "例如 taṅkaroti 即 taṃ karoti，同样还有 taṅkhaṇaṃ、saṅgato、taṅghataṃ。", "confidence": 82}
+{"id": "19-160-44-53", "zh": "又如 dhammañcare、tañchannaṃ、tañjātaṃ、tañjhānaṃ、taññāṇaṃ。", "confidence": 85}
+{"id": "19-160-54-57", "zh": "又如 taṇṭhānaṃ、taṇḍahati。", "confidence": 85}
+{"id": "19-160-58-77", "zh": "又如 tantanoti、tanthiraṃ、tandānaṃ、tandhanaṃ、tanniccutaṃ、tampatto、tamphalaṃ、tesammodho、sambhūto、tammittaṃ。", "confidence": 82}
+{"id": "19-160-78-92", "zh": "又如 kiṅkato、dātuṅgato。在 taṇhaṅkaro、raṇañjaho、saṇṭhito、jutindharo、sammato 等例子中，这种变化是必然的。", "confidence": 72}
+{"id": "19-161-2-17", "zh": "在 ānantarikaṃ yamāhu、yaṃ yadeva、paccattaṃ eva、taṃ hi 这些情况下——", "confidence": 78}
+{"id": "19-162-2-5", "zh": "42. 在 ya、eva、hi 前变为 ñ", "confidence": 78}
+{"id": "19-163-2-11", "zh": "在 ya、eva、hi 这些词之前，niggahīta 可选地变为 ñ。", "confidence": 80}
+{"id": "19-163-12-21", "zh": "依照“vaggalasehi te”这条规则，ya 的 y 音变为 ñ。", "confidence": 62}
+{"id": "19-163-22-45", "zh": "例如 ānantarikaññamāhu 即 ānantarikaṃ yamāhu，yaññadeva 即 yaṃyadeva；ñ 重复时有 paccattaññeva，即 paccattaṃ eva；还有 tañhi、tañhi。", "confidence": 72}
+{"id": "19-163-46-64", "zh": "依照“以不偏离者限定偏离者”这条原则，由于“ya”与 eva 一词并列，这里只取代词类（sabbādi）中的 ya 一词。", "confidence": 60}
+{"id": "19-164-2-12", "zh": "在 saṃyogo、saṃyojanaṃ、saṃyato、saṃyācikāya 这些情况下——", "confidence": 80}
+{"id": "19-165-2-5", "zh": "43. 在 y 前 saṃ 的（niggahīta）", "confidence": 72}
+{"id": "19-166-2-11", "zh": "saṃ 一词的 niggahīta，在 y 音之前可选地变为 ñ。", "confidence": 82}
+{"id": "19-166-12-22", "zh": "例如 saññogo 即 saṃyogo，同样还有 saṃyojanaṃ、saññato、saññācikāya。", "confidence": 80}
+{"id": "19-166-23-26", "zh": "这里只取 y 音本身。", "confidence": 75}
+{"id": "19-166-27-39", "zh": "为什么说“saṃ 的”？因为有 etaṃ yojanaṃ、taṃ yānaṃ、taṃ saraṇaṃ yanti 这样不变的形式。", "confidence": 75}
+{"id": "19-167-2-39", "zh": "在 taṃ eva、taṃ ahaṃ brūmi、yaṃ āhu、dhanaṃ eva、kiṃ etaṃ、nindituṃ arahati、taṃ idaṃ、yaṃ aniccaṃ、taṃ anattā、etaṃ avoca、etaṃ eva 这些情况下——", "confidence": 80}
+{"id": "19-168-2-5", "zh": "44. 在元音前变为 m、y、d", "confidence": 80}
+{"id": "19-169-2-10", "zh": "在元音之前，niggahīta 有时可选地变为 m、y、d。", "confidence": 82}
+{"id": "19-169-11-29", "zh": "例如 tameva 即 taṃ eva，tamahaṃ brūmi 即 taṃ ahaṃ brūmi，还有 yamāhu、dhanameva、kimetaṃ、ninditumarahati。", "confidence": 80}
+{"id": "19-169-30-31", "zh": "又如 tayidaṃ。", "confidence": 80}
+{"id": "19-169-32-39", "zh": "又如 yadaniccaṃ、tadanattā、etadavoca、etadeva。", "confidence": 82}
+{"id": "19-169-40-51", "zh": "由于把“mayadā”分立为一条规则，也就有 buddhama saraṇama 等形式。", "confidence": 62}

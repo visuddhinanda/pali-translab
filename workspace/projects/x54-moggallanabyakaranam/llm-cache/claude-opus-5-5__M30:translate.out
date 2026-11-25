@@ -1,0 +1,35 @@
+{"id": "13-2227-2-11", "zh": "带 r 附标的词缀在后时，词中以末尾元音为起首的那一部分被删除。", "confidence": 65}
+{"id": "13-2227-12-15", "zh": "例如：kittakaṃ、petteyyaṃ。", "confidence": 80}
+{"id": "13-2228-2-8", "zh": "第133条：kisa、mahanta 在 ima 前变为 kasa、mahā。", "confidence": 70}
+{"id": "13-2229-2-12", "zh": "ima 在后时，kisa 与 mahanta 依次变为 kasa 与 mahā，例如：kasimā、mahimā。", "confidence": 75}
+{"id": "13-2230-2-7", "zh": "第134条：āyu 在 mantu 前变为 āyasa。", "confidence": 80}
+{"id": "13-2231-2-7", "zh": "mantu 在后时，āyu 替换为 āyasa。", "confidence": 80}
+{"id": "13-2231-8-9", "zh": "例如：āyasmā。", "confidence": 85}
+{"id": "13-2232-2-7", "zh": "第135条：vuddha 在 iya、iṭṭha 前变为 ja。", "confidence": 80}
+{"id": "13-2233-2-10", "zh": "iya、iṭṭha 在后时，vuddha 变为 ja，例如：jeyyo、jeṭṭho。", "confidence": 80}
+{"id": "13-2234-2-9", "zh": "第136条：bāḷha、antika、pasattha 变为 sādha、neda、sa。", "confidence": 75}
+{"id": "13-2235-2-9", "zh": "iya、iṭṭha 在后时，bāḷha、antika、pasattha 依次变为 sādha、neda、sa。", "confidence": 80}
+{"id": "13-2235-10-21", "zh": "例如：sādhiyo、sādhiṭṭho，nediyo、nediṭṭho，seyyo、seṭṭho。", "confidence": 85}
+{"id": "13-2236-2-6", "zh": "第137条：appa、yuva 变为 kaṇa、kana。", "confidence": 75}
+{"id": "13-2237-2-8", "zh": "iya、iṭṭha 在后时，appa、yuva 依次变为 kaṇa、kana。", "confidence": 80}
+{"id": "13-2237-9-14", "zh": "例如：kaṇiyo、kaṇiṭṭho，kaniyo、kaniṭṭho。", "confidence": 85}
+{"id": "13-2238-2-9", "zh": "第138条：vī、mantu、vantu 被删除。", "confidence": 80}
+{"id": "13-2239-2-8", "zh": "iya、iṭṭha 在后时，vī、mantu、vantu 被删除。", "confidence": 80}
+{"id": "13-2239-9-26", "zh": "最有智慧的，是 medhiyo、medhiṭṭho；最有正念的，是 satiyo、satiṭṭho；最有德行的，是 guṇiyo、guṇiṭṭho。", "confidence": 70}
+{"id": "13-2240-2-8", "zh": "第139条：ḍa 在后时，sati 的 ti 被删除。", "confidence": 65}
+{"id": "13-2241-2-13", "zh": "ḍa 在后时，以 ti 结尾的词，其 ti 音被删除，例如：vīsaṃ sataṃ、tiṃsaṃ sataṃ。", "confidence": 60}
+{"id": "13-2242-2-7", "zh": "第140条：eta 在 ttaka 前变为 eṭa。", "confidence": 80}
+{"id": "13-2243-2-7", "zh": "ttaka 在后时，eta 变为 eṭa。", "confidence": 80}
+{"id": "13-2243-8-9", "zh": "例如：ettakaṃ。", "confidence": 85}
+{"id": "13-2244-2-7", "zh": "第141条：ṇika 可选择变为 iya。", "confidence": 80}
+{"id": "13-2245-2-11", "zh": "ṇika 可选择变为 iya，例如：sakyaputtiyo，也作 sakyaputtiko。", "confidence": 80}
+{"id": "13-2246-2-8", "zh": "第142条：非词根的 k 前、且不在格尾之后的 gha 在后时，变为 i。", "confidence": 55}
+{"id": "13-2247-2-20", "zh": "gha 在后时，非词根的 k 音之前的 a 音，多半变为 i，条件是这个 gha 不跟在格尾等之后。", "confidence": 60}
+{"id": "13-2247-21-27", "zh": "例如：bālikā、kārikā。为什么说“非词根的”？", "confidence": 75}
+{"id": "13-2247-28-32", "zh": "例如 sakā。为什么说“k 之前的”？", "confidence": 70}
+{"id": "13-2247-33-37", "zh": "例如 nandanā。为什么说“不跟在格尾等之后”？", "confidence": 70}
+{"id": "13-2247-38-49", "zh": "例如 bahuparibbājakā mathurā、bahucammikā，这些形式之所以成立，是因为格尾等被 k 音隔开了。为什么说“gha 在后时”？", "confidence": 60}
+{"id": "13-2247-50-54", "zh": "例如 bālako。为什么说“a 音”？", "confidence": 75}
+{"id": "13-2247-55-57", "zh": "例如 bahukattukā sālā。", "confidence": 80}
+{"id": "13-2248-2-5", "zh": "以上是《目犍连文法》本注中的", "confidence": 75}
+{"id": "13-2249-2-4", "zh": "第四 ṇādi 品。", "confidence": 80}

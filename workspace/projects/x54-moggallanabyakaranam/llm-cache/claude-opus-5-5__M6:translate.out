@@ -1,0 +1,65 @@
+{"id":"13-1236-2-8","zh":"2. 第二篇（syādi，名词格尾篇）","confidence":80}
+{"id":"13-1237-2-29","zh":"1. 名词之后，在单数义与复数义上各用两个一组的格尾：si、yo，aṃ、yo，nā、hi，sa、naṃ，smā、hi，sa、naṃ，smiṃ、su。","confidence":75}
+{"id":"13-1238-2-9","zh":"这些格尾两个一组，分别在表示单数义与复数义时，加在名词之后。","confidence":75}
+{"id":"13-1238-10-37","zh":"如 muni、munayo，muniṃ、munayo，muninā、munīhi，munissa、munīnaṃ，munismā、munīhi，munissa、munīnaṃ，munismiṃ、munīsu；kumārī、kumāriyo，kaññā、kaññāyo 也是这样。","confidence":80}
+{"id":"13-1238-38-60","zh":"这七组成对的格尾就是七个格（vibhatti），因为“区分”就叫作格；这里 si、aṃ 中的 i 音与 a 音，是依“kimaṃ sisu”（2.200）规则所用的标记字母。","confidence":60}
+{"id":"13-1239-2-7","zh":"2. 在业（宾语）上用第二格。","confidence":85}
+{"id":"13-1240-2-10","zh":"被作者所作、与作者的动作相关联的，叫作业（kamma）；在业上用第二格。","confidence":70}
+{"id":"13-1240-11-19","zh":"如 kaṭaṃ karoti（编席子）、odanaṃ pacati（煮饭）、ādiccaṃ passati（看太阳）。","confidence":85}
+{"id":"13-1241-2-12","zh":"在“odano paccati”（饭被煮）里，业的性质不是从 odana 这个词得知的，那么是从哪里得知的呢？","confidence":75}
+{"id":"13-1241-13-14","zh":"是从动词（ākhyāta）得知的。","confidence":80}
+{"id":"13-1241-15-58","zh":"在“kaṭaṃ karoti vipulaṃ dassanīyaṃ”（编一张宽大好看的席子）里，带有修饰语的词确实也是业；对于想要得到的对象，也正因为它是业而成立第二格：如 gāvuṃ payo dohati（从母牛挤奶）、gomantaṃ gāvaṃ yācati（向牛主讨牛）、gāvamavarundhati vajaṃ（把牛关进牛栏）、māṇavakaṃ maggaṃ pucchati（向青年问路）、gomantaṃ gāvaṃ bhikkhate（向牛主乞牛）、rukkhamavacināti phalāni（从树上摘果子）、sissaṃ dhammaṃ brūte（对弟子说法）、sissaṃ dhammamanusāsati（用法教导弟子）。","confidence":55}
+{"id":"13-1241-59-66","zh":"同样，对于不想要的对象也是如此：如 ahiṃ laṅghayati（跨过蛇）、visaṃ bhakkheti（吃下毒药）。","confidence":70}
+{"id":"13-1241-67-75","zh":"既不是想要的、也不是不想要的对象，在那里也成立第二格。","confidence":75}
+{"id":"13-1241-76-79","zh":"如 gāmaṃ gacchanto rukkhamūlamupasappati（往村子去的人走近树根）。","confidence":75}
+{"id":"13-1242-2-14","zh":"如 pathaviṃ adhisessati（将躺在地上）、gāmamadhitiṭṭhati（住在村子里）、rukkhamajjhāsate（坐在树上）——adhi 与 sī、ṭhā、ās 连用时，是把所依处（adhikaraṇa）表达为业；因为造格（kāraka）是依说话者的表达意图而成立的。","confidence":55}
+{"id":"13-1242-15-30","zh":"例如 valāhakā vijjotate、valāhakassa vijjotate、valāhako vijjotate、valāhake vijjotate、valāhakena vijjotate（闪电从云中、云的、云、在云中、以云而闪耀）。","confidence":60}
+{"id":"13-1242-31-36","zh":"同样，与 abhi-nivis 连用时，可以说 dhammamabhinivisate，也可以说 dhamme abhinivisate（执着于法）。","confidence":60}
+{"id":"13-1243-2-14","zh":"同样，upa、anu、adhi、ā 与 vas 连用、而不表示禁食时：如 gāmamupavasati、gāmamanuvasati、pabbatamadhivasati、gharamāvasati（住在村里、住在山上、住在家中）。","confidence":55}
+{"id":"13-1243-15-18","zh":"为什么说“不表示禁食”？","confidence":70}
+{"id":"13-1243-19-25","zh":"如 gāme upavasati，意思是在村里持斋禁食。","confidence":65}
+{"id":"13-1243-26-42","zh":"在饮用、游行等义上，也正因为是业而用第二格：如 nadimpivati（喝河水）、gāmaṃ carati（在村里游行）；在“sace maṃ ālapissati”（如果他跟我说话）等处也是这样。","confidence":60}
+{"id":"13-1243-43-46","zh":"与 pati 连用时，第二格本来就已规定——","confidence":60}
+{"id":"13-1243-47-54","zh":"“paṭibhantu taṃ cunda bojjhaṅgā”（纯陀，愿觉支向你显现）。","confidence":70}
+{"id":"13-1243-55-74","zh":"意思是“愿觉支向你宣说”；但当 pati 与动词词根结合时，因为不再与那个词连用，在表示关系时就只用第六格，如“tassa nappaṭibhāti”（他想不出来）。","confidence":50}
+{"id":"13-1243-75-84","zh":"akkhe dibbati、akkhehi dibbati、akkhesu dibbati（用骰子赌博），这是分别想把它表达为业、具格、所依处。","confidence":65}
+{"id":"13-1244-2-6","zh":"3. 时间与路程在完全连续时（用第二格）。","confidence":75}
+{"id":"13-1245-2-11","zh":"时间与路程同动作、性质、实体全面地关联，叫作完全连续（accantasaṃyoga）。","confidence":70}
+{"id":"13-1245-12-19","zh":"表达这种关系时，时间词与路程词之后用第二格。","confidence":75}
+{"id":"13-1245-20-37","zh":"如 māsamadhīte（学习一整个月）、māsaṃ kalyāṇī（整个月都美好）、māsaṃ guḷadhānā（整个月都有糖粒）、kosamadhīte（走了一拘卢舍的路程都在学习）、kosaṃ kuṭilā nadī（河流弯曲了一拘卢舍）、kosaṃ pabbato（山绵延一拘卢舍）。","confidence":60}
+{"id":"13-1245-38-40","zh":"为什么说“完全连续时”？","confidence":75}
+{"id":"13-1245-41-46","zh":"如 māsassa dvīhamadhīte（一个月中学习两天）、kosassekadese pabbato（山在一拘卢舍中的一部分）。","confidence":70}
+{"id":"13-1246-2-19","zh":"在 pubbaṇhasamayaṃ nivāsetvā（上午时分穿好下衣）、ekaṃ samayaṃ bhagavā（有一次世尊）、imaṃ rattiṃ cattāro mahārājā（这一夜四大天王）等处，表示时间的词也正因为是完全连续而成立第二格。","confidence":70}
+{"id":"13-1246-20-23","zh":"或者也可以由格的转换来成立，因为有“多样规定”（bahulaṃvidhāna）。","confidence":55}
+{"id":"13-1247-2-20","zh":"达到结果时动作的完成叫作 apavagga；表达这一点时，时间与路程同动作完全连续，公认用第三格，这也正因为是具格而成立：如“māsenānuvāko adhīto, kosenānuvāko adhīto”（用一个月学完了这一章，走一拘卢舍学完了这一章）。","confidence":55}
+{"id":"13-1247-21-33","zh":"而没有完成时，因为不是最有效的手段，不具备具格的性质，所以只用第二格：如“māsamadhīto anuvāko, na cānena gahito”（这一章学了一个月，但还没有掌握）。","confidence":55}
+{"id":"13-1248-2-33","zh":"在两个造格之间表示时间与路程的词，公认用第七格与第五格：如“ajja bhutvā devadatto dvīhe bhuñjissati, dvīhā bhuñjissati”（天授今天吃过，两天后再吃），“atraṭṭho ayamissāso kose lakkhaṃ vijjhati, kosā lakkhaṃ vijjhati”（站在这里的这个弓手射中一拘卢舍外的靶子）；这里它们也只是依各自造格的表达意图而成立。","confidence":55}
+{"id":"13-1249-2-10","zh":"4. 行走、知觉、饮食、声音义的动词，不及物动词，以及 bhajj 等词根，其被使役者（用第二格）。","confidence":70}
+{"id":"13-1250-2-11","zh":"行走义、知觉义、饮食义、声音义的动词，不及物动词，以及 bhajj 等词根，在被使役的作者上用第二格。","confidence":70}
+{"id":"13-1250-12-18","zh":"而且由于语义的作用，可以知道它因使役者的行为而成为业。","confidence":55}
+{"id":"13-1250-19-66","zh":"如 gamayati māṇavakaṃ gāmaṃ、yāpayati māṇavakaṃ gāmaṃ（让青年到村里去），bodhayati māṇavakaṃ dhammaṃ、vedayati māṇavakaṃ dhammaṃ（让青年明白法），bhojayati māṇavakaṃ modakaṃ、āsayati māṇavakaṃ modakaṃ（让青年吃糕点），ajjhāpayati māṇavakaṃ vedaṃ、pāṭhayati māṇavakaṃ vedaṃ（教青年诵读吠陀），āsayati devadattaṃ（让天授坐下），sāyayati devadattaṃ（让天授躺下），aññaṃ bhajjāpeti（让别人烘烤），aññaṃ koṭṭāpeti（让别人舂捣），aññaṃ santharāpeti（让别人铺设）。","confidence":60}
+{"id":"13-1250-67-69","zh":"为什么说“只限这些”？","confidence":70}
+{"id":"13-1250-70-74","zh":"如 pāceti odanaṃ devadattena yaññadatto（祭授让天授煮饭）。","confidence":75}
+{"id":"13-1250-75-77","zh":"为什么说“被使役者”？","confidence":75}
+{"id":"13-1250-78-80","zh":"如 gacchati devadatto（天授去）。","confidence":80}
+{"id":"13-1250-81-97","zh":"那么，当祭授让天授去，而另一个人又使役祭授时，就应当说 gamayati devadattaṃ yaññadattena，因为这时的 gamayati 已不是行走义的动词。","confidence":55}
+{"id":"13-1251-2-7","zh":"5. har 等词根（的被使役者）可选用（第二格）。","confidence":70}
+{"id":"13-1252-2-8","zh":"har 等词根的被使役作者上，可选用第二格。","confidence":75}
+{"id":"13-1252-9-37","zh":"如 hāreti bhāraṃ devadattaṃ 或 devadattena（让天授搬运担子），ajjhohāreti sattuṃ devadattaṃ 或 devadattena（让天授吞食炒面），kāreti kaṭaṃ devadattaṃ 或 devadattena（让天授编席子），dassayate janaṃ rājaṃ 或 janena（让众人看见国王），abhivādayate guruṃ devadattaṃ 或 devadattena（让天授礼敬师长）。","confidence":65}
+{"id":"13-1253-2-7","zh":"6. khād 等词根则不（用第二格）。","confidence":75}
+{"id":"13-1254-2-8","zh":"khād 等词根的被使役作者上不用第二格。","confidence":75}
+{"id":"13-1254-9-28","zh":"如 khādayati devadattena（让天授嚼食），ādayati devadattena（让天授吃），avhāpayati devadattena（让天授呼唤），saddāyayati devadattena（让天授发声），kandayati devadattena（让天授哭泣），nāyayati devadattena（让天授引领）。","confidence":55}
+{"id":"13-1255-2-6","zh":"（1）vah 在没有驾驭者时（不用第二格）。","confidence":60}
+{"id":"13-1255-7-12","zh":"如 vāhayati bhāraṃ devadattena（让天授运送担子）。为什么说“没有驾驭者时”？","confidence":60}
+{"id":"13-1255-13-16","zh":"如 vāhayati bhāraṃ balībadde（让公牛驮运担子）。","confidence":65}
+{"id":"13-1256-2-8","zh":"（2）bhakkh 在不涉及伤害时（不用第二格）。","confidence":60}
+{"id":"13-1256-9-12","zh":"如 bhakkhayati modake devadattena（让天授吃糕点）。","confidence":70}
+{"id":"13-1256-13-15","zh":"为什么说“不涉及伤害”？","confidence":65}
+{"id":"13-1256-16-19","zh":"如 bhakkhayati balībadde sassaṃ（让公牛吃庄稼）。","confidence":70}
+{"id":"13-1257-2-7","zh":"7. 与 dhi 等词连用时（用第二格）。","confidence":60}
+{"id":"13-1258-2-6","zh":"与 dhi 等词连用的词之后用第二格。","confidence":65}
+{"id":"13-1258-7-24","zh":"如 dhiratthu maṃ pūtikāyaṃ（可耻啊，我这腐朽的身体），antarā ca rājagahaṃ antarā ca nālandaṃ（在王舍城与那烂陀之间），samādhānamantarena（离开了定），mucalindamabhito saraṃ（目真邻陀周围的湖）等；这是对第六格的例外规定。","confidence":60}
+{"id":"13-1259-2-6","zh":"8. 在标志、某种情状、遍及等义上与 abhi 连用时（用第二格）。","confidence":60}
+{"id":"13-1260-2-6","zh":"在标志等义上，与 abhi 连用的词之后用第二格。","confidence":60}
+{"id":"13-1260-7-17","zh":"如 rukkhamabhi vijjotate vijju（闪电向着树闪耀），sādhu devadatto mātaramabhi（天授对母亲很好），rukkhaṃ rukkhamabhitiṭṭhati（一棵树一棵树地站着）。","confidence":60}
+{"id":"13-1261-2-8","zh":"9. 与 pati、pari 连用，在表示部分时也（用第二格）。","confidence":60}

@@ -1,0 +1,79 @@
+{"id": "19-440-2-5", "zh": "130. 遇 ga（呼格）时，任意（变短）。", "confidence": 70}
+{"id": "19-441-2-8", "zh": "在三性中，非 gho 的词干遇 ga 时任意变为短音。", "confidence": 70}
+{"id": "19-441-9-12", "zh": "bho suva、suvā（喂，鹦鹉啊）。", "confidence": 75}
+{"id": "19-442-2-3", "zh": "以 ā 结尾的词（完）。", "confidence": 75}
+{"id": "19-443-2-5", "zh": "muni，si 脱落。", "confidence": 80}
+{"id": "19-443-6-8", "zh": "定为 jha 之后——", "confidence": 70}
+{"id": "19-444-2-6", "zh": "93. 在阳性中，jha 的 i 遇 yo 时", "confidence": 70}
+{"id": "19-445-2-9", "zh": "在阳性中，称为 jha 的 i 遇 yo 时任意变为 ṭa（即 a）。", "confidence": 70}
+{"id": "19-445-10-18", "zh": "munayo。为什么要取 jha？是为了不让它施用于以 i 结尾的整个词。", "confidence": 60}
+{"id": "19-445-19-24", "zh": "为什么要取 i？是为了排除 ī 音。", "confidence": 55}
+{"id": "19-445-25-34", "zh": "由于“ato”是泛指的表述，从派生而来的 a 之后，yo 虽然也应变为 ṭā、ṭe，但凭着“不另立规则”的效力，并不这样变。", "confidence": 50}
+{"id": "19-445-35-38", "zh": "所谓效力，就是不这样理解就说不通。", "confidence": 55}
+{"id": "19-446-2-4", "zh": "114. 脱落", "confidence": 80}
+{"id": "19-447-2-7", "zh": "jha、la 之后的 yo 脱落；yo 脱落以后——", "confidence": 75}
+{"id": "19-448-2-7", "zh": "88. yo 脱落时及遇 ni 时，变长音", "confidence": 75}
+{"id": "19-449-2-7", "zh": "yo 脱落时以及遇 ni 时，（词干末音）变为长音。", "confidence": 75}
+{"id": "19-449-8-9", "zh": "（得）munī。", "confidence": 60}
+{"id": "19-449-10-20", "zh": "在 munayo 这里，为什么 yo 不脱落？因为 jha 的身份已经被 a 音消除了。", "confidence": 60}
+{"id": "19-449-21-28", "zh": "为什么（yo 脱落）不先施行？因为 jha 身份属于内部规则，优先施行。", "confidence": 55}
+{"id": "19-449-29-35", "zh": "bho muni、munī，munayo、munī。", "confidence": 80}
+{"id": "19-449-36-40", "zh": "muniṃ，munayo、munī。", "confidence": 80}
+{"id": "19-449-41-45", "zh": "muninā，munīhi、munībhi。", "confidence": 80}
+{"id": "19-449-46-67", "zh": "由“yolopanisu”“vīmantuvantūna”等提示可知，i、u 音遇 su、naṃ、hi 时变长音并非必然，所以也有 munihi、muninaṃ、munisu 这些形式。", "confidence": 60}
+{"id": "19-449-68-82", "zh": "依“jhalā sassa no”，（sa 变为）no：munino、munissa，munīnaṃ。", "confidence": 70}
+{"id": "19-449-83-94", "zh": "依“nāsmāssā”，（smā 变为）nā：muninā、munimhā、munismā。", "confidence": 70}
+{"id": "19-449-95-99", "zh": "munimhi、munismiṃ，munīsu。", "confidence": 80}
+{"id": "19-449-100-134", "zh": "由于在 brahma 等词群中列有“ito kvaci sassa ṭānubandho”（群经），所以在“yo ca sisso mahāmune”（大牟尼啊，以及那位弟子）这里，依“gha + brahmādite”，sa 变为 eṭa（即 e）。", "confidence": 45}
+{"id": "19-450-2-3", "zh": "同样变化的有——", "confidence": 70}
+{"id": "19-451-2-12", "zh": "joti（光）、pāṇi（手）、gaṇṭhi（结）、muṭṭhi（拳），kucchi（腹）、vatthi（膀胱）、sāli（稻）、vīhi（谷）；", "confidence": 70}
+{"id": "19-452-2-11", "zh": "byādhi（病）、odhi（界限）、bodhi（菩提）、sandhi（连接），rāsi（堆）、kesi（有鬃者）、sāti（萨帝）、dīpi（豹）。", "confidence": 50}
+{"id": "19-453-2-11", "zh": "isi（仙人）、gini（火）、maṇi（宝珠）、dhani（富者），giri（山）、ravi（太阳）、kavi（诗人）、kapi（猴）；", "confidence": 55}
+{"id": "19-454-2-11", "zh": "asi（刀）、masi（墨）、nidhi（宝藏）、vidhi（规则），ahi（蛇）、kimi（虫）、pati（主人）、hari（诃利）。", "confidence": 55}
+{"id": "19-455-2-10", "zh": "ari（敌人）、timi（大鱼）、kali（恶运）、bali（供品），以及 jaladhi（海）、gahapati（居士）；", "confidence": 60}
+{"id": "19-456-2-7", "zh": "uramiti、varamati（具胜慧者），nirupadhi（无依者）、adhipati（主宰）；", "confidence": 40}
+{"id": "19-457-2-8", "zh": "añjali（合掌）、sārathi（御者）、atithi（客人），samādhi（定）、udadhi（海）等等。", "confidence": 65}
+{"id": "19-458-2-7", "zh": "aggi 与 isi 有以下特殊之处——", "confidence": 75}
+{"id": "19-459-2-7", "zh": "147. aggi 之后的 si 变为 ni", "confidence": 70}
+{"id": "19-460-2-7", "zh": "aggi 之后的 si 任意变为 ni。", "confidence": 80}
+{"id": "19-460-8-14", "zh": "aggini、aggi，aggayo 等，与 muni 一词相同。", "confidence": 80}
+{"id": "19-461-2-7", "zh": "133. isi 之后的 si 变为 ṭe", "confidence": 70}
+{"id": "19-462-2-7", "zh": "isi 之后的 si 任意变为 ṭe（即 e）。", "confidence": 80}
+{"id": "19-462-8-10", "zh": "ise、isi。", "confidence": 85}
+{"id": "19-462-11-29", "zh": "依“gha + brahmādite”，ga 任意变为 e：bho ise、isi，isayo、isī。", "confidence": 75}
+{"id": "19-462-30-31", "zh": "isiṃ。", "confidence": 85}
+{"id": "19-463-2-5", "zh": "134. 第二格的 yo", "confidence": 75}
+{"id": "19-464-2-47", "zh": "不说“dutiyā yossā”而另立“dutiyassa yossā”，是因为依照“同一条经文中指明的项目，也可以只延续其中一部分，但同一格位相连的项目不行”这一原则，“dutiyā yossa”不能整体延续，只泛泛地延续“yossa”，以便从 ekacca 等词之后，第一格的 yo 也能规定为 ṭe。", "confidence": 45}
+{"id": "19-464-48-55", "zh": "isi 之后的第二格 yo 任意变为 ṭe。", "confidence": 80}
+{"id": "19-464-56-62", "zh": "ise、isayo、isī，其余与 muni 相同。", "confidence": 80}
+{"id": "19-465-2-8", "zh": "ādi，ādayo 等；遇 smiṃ 时——", "confidence": 75}
+{"id": "19-466-2-6", "zh": "55. ratti 等之后的 smiṃ 变为 ṭo", "confidence": 70}
+{"id": "19-467-2-7", "zh": "ratti 等之后的 smiṃ 任意变为 ṭo（即 o）。", "confidence": 80}
+{"id": "19-467-8-13", "zh": "ādo、ādimhi、ādismiṃ，ādīsu。", "confidence": 85}
+{"id": "19-468-2-8", "zh": "在复合词中，以 i 结尾的词遇 yo 和 smiṃ 时有特殊之处。", "confidence": 75}
+{"id": "19-469-2-7", "zh": "182. 在阳性中，表示他义的 i 结尾词之后", "confidence": 65}
+{"id": "19-470-2-14", "zh": "在阳性中，从用于他义的 i 结尾名词之后，yo 依次任意变为 no、ne。", "confidence": 70}
+{"id": "19-470-15-18", "zh": "ariyavuttino、ariyavuttayo、ariyavuttī（行为高尚的人们）。", "confidence": 75}
+{"id": "19-470-19-26", "zh": "bho ariyavutti、ariyavuttī，ariyavuttino、ariyavuttayo、ariyavuttī。", "confidence": 80}
+{"id": "19-470-27-32", "zh": "ariyavuttiṃ，ariyavuttino、ariyavuttayo、ariyavuttī。", "confidence": 80}
+{"id": "19-470-33-37", "zh": "至于 ariyavuttinā 等，则与 muni 一词相同。", "confidence": 80}
+{"id": "19-471-2-6", "zh": "183. smiṃ 有时变为 ne", "confidence": 75}
+{"id": "19-472-2-10", "zh": "从用于他义的 i 结尾名词之后，smiṃ 有时任意变为 ne。", "confidence": 75}
+{"id": "19-472-11-16", "zh": "ariyavuttine、ariyavuttimhi、ariyavuttismiṃ，ariyavuttīsu。", "confidence": 85}
+{"id": "19-472-17-21", "zh": "同样还有 tomaraṅkusapāṇino（手持长矛与象钩的人们）、sāramatino（具有精要智慧的人们）等。", "confidence": 65}
+{"id": "19-472-22-26", "zh": "由于取了“kvaci（有时）”，并不是处处都替换为 ne。", "confidence": 75}
+{"id": "19-473-2-3", "zh": "以 i 结尾的词（完）。", "confidence": 75}
+{"id": "19-474-2-6", "zh": "daṇḍī（持杖者），si 脱落。", "confidence": 80}
+{"id": "19-474-7-25", "zh": "依“ekavacane”等规则本应变为短音，但因为不是中性词，依“sismiṃnā + napuṃsakassā”（遇 si 时，非中性词不变短）而被禁止。", "confidence": 55}
+{"id": "19-474-26-31", "zh": "遇 yo 以及单数时，一律变为短音。", "confidence": 60}
+{"id": "19-475-2-8", "zh": "75. 在阳性中，yo 变为 no、ne", "confidence": 75}
+{"id": "19-476-2-11", "zh": "在阳性中，从称为 jha 的词之后，yo 依次任意变为 no、ne。", "confidence": 75}
+{"id": "19-476-12-13", "zh": "daṇḍino。", "confidence": 85}
+{"id": "19-477-2-5", "zh": "115. 从 jantu、hetu、ī 结尾词以及 gha、pa 之后，任意（脱落）", "confidence": 70}
+{"id": "19-478-2-15", "zh": "从 jantu、hetu、ī 结尾的词以及称为 gha、pa 的词之后，yo 任意脱落。", "confidence": 75}
+{"id": "19-478-16-26", "zh": "依“yolopanisu dīgho”变为长音：daṇḍī、daṇḍiyo。", "confidence": 75}
+{"id": "19-478-27-38", "zh": "至于遇 ga 时，依“ge vā”任意变为短音。", "confidence": 75}
+{"id": "19-478-39-46", "zh": "bho daṇḍi、daṇḍī，daṇḍino、daṇḍī、daṇḍiyo。", "confidence": 85}
+{"id": "19-479-2-5", "zh": "74. 从 jha 的 ī 之后，（aṃ）变为 naṃ", "confidence": 70}
+{"id": "19-480-2-7", "zh": "从称为 jha 的 ī 之后，aṃ 语尾任意变为 naṃ。", "confidence": 75}
+{"id": "19-480-8-12", "zh": "daṇḍinaṃ、daṇḍiṃ，daṇḍine。", "confidence": 85}

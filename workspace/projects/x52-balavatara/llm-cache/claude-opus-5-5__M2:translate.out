@@ -1,0 +1,71 @@
+{"id": "12-64-2-2", "zh": "元音连音", "confidence": 85}
+{"id": "12-65-2-8", "zh": "11. 在 loka aggo 这里——", "confidence": 85}
+{"id": "12-65-9-21", "zh": "依照“应当把前面位于下方的无元音辅音与元音分开”这条，前面的辅音应当从元音中分离出来。", "confidence": 65}
+{"id": "12-66-2-5", "zh": "元音遇到元音时脱落。", "confidence": 85}
+{"id": "12-67-2-8", "zh": "后面紧接着有元音时，前面的元音脱落。", "confidence": 85}
+{"id": "12-68-2-16", "zh": "依照“应当连到后面”这条，无元音的辅音应当带到后面的字母上：lokaggo。", "confidence": 70}
+{"id": "12-69-2-12", "zh": "在 sare 这里，用的是表示紧邻的处所第七格，所以中间隔着字母或时间时，规则就不起作用。", "confidence": 70}
+{"id": "12-69-13-29", "zh": "例如 maṃ ahāsi，以及“pamādamanuyuñjanti”等偈颂中的 janā appamādaṃ。", "confidence": 65}
+{"id": "12-69-30-32", "zh": "所有的连音都是这样。", "confidence": 85}
+{"id": "12-70-2-17", "zh": "紧接着下一条将要说后面元音的脱落，所以由此可知本条说的是前面元音的脱落；也正因为这样，可以知道用第七格指示的元音位于后面。", "confidence": 70}
+{"id": "12-71-2-6", "zh": "12. “sare”是管辖语。", "confidence": 80}
+{"id": "12-71-7-14", "zh": "在 pana ime、pana ime 这里，“元音脱落”这一条照样适用——", "confidence": 65}
+{"id": "12-72-2-5", "zh": "不同形元音后面的元音可选脱落。", "confidence": 80}
+{"id": "12-73-2-11", "zh": "在形态不同的元音之后，后面的元音可选脱落：paname、panime。", "confidence": 80}
+{"id": "12-74-2-11", "zh": "13. 在 bandhussa iva、na upeti 这里——", "confidence": 85}
+{"id": "12-75-2-4", "zh": "脱落之后，有时变为非同类元音。", "confidence": 80}
+{"id": "12-76-2-14", "zh": "元音脱落后，后面的元音有时变为非同类元音，所以 i、u 这两个元音就依照发音部位相近变为 e、o。", "confidence": 75}
+{"id": "12-76-15-16", "zh": "Bandhusseva。", "confidence": 90}
+{"id": "12-76-17-18", "zh": "Nopeti。", "confidence": 90}
+{"id": "12-77-2-20", "zh": "14. 在 tatra ayaṃ、yāni idha、bahu upakāraṃ、saddhā idha、tathā upamaṃ 这里——", "confidence": 85}
+{"id": "12-78-2-3", "zh": "变长音。", "confidence": 80}
+{"id": "12-79-2-10", "zh": "元音脱落后，后面的元音有时变为发音部位相近的长音。", "confidence": 85}
+{"id": "12-79-11-20", "zh": "Tatrāyaṃ、yānīdha、bahūpakāraṃ、saddhīdha、tathūpamaṃ。", "confidence": 90}
+{"id": "12-80-2-7", "zh": "15. 在 kiṃsu idha 这里——", "confidence": 85}
+{"id": "12-81-2-4", "zh": "前面的元音也是如此。", "confidence": 75}
+{"id": "12-82-2-9", "zh": "元音脱落后，前面的元音有时也变为长音。", "confidence": 85}
+{"id": "12-82-10-12", "zh": "Kiṃ sūdha。", "confidence": 90}
+{"id": "12-83-2-11", "zh": "16. 在 te ajja、te ahaṃ 这里——", "confidence": 85}
+{"id": "12-84-2-3", "zh": "词末的 e 替换为 y。", "confidence": 80}
+{"id": "12-85-2-25", "zh": "后面接元音时，词末的 e 有时替换为 y：tyajja；依照“变长音”这条，后面接辅音时有时变为长音：tyāhaṃ。", "confidence": 70}
+{"id": "12-86-2-4", "zh": "为什么说“有时”？", "confidence": 85}
+{"id": "12-86-5-6", "zh": "Nettha。", "confidence": 90}
+{"id": "12-87-2-11", "zh": "17. 在 so assa、anu eti 这里——", "confidence": 85}
+{"id": "12-88-2-3", "zh": "词末的 o、u 替换为 v。", "confidence": 80}
+{"id": "12-89-2-10", "zh": "后面接元音时，词末的 o 音与 u 音有时替换为 v。", "confidence": 85}
+{"id": "12-89-11-14", "zh": "Svassa、anveti。", "confidence": 90}
+{"id": "12-90-2-4", "zh": "为什么说“有时”？", "confidence": 85}
+{"id": "12-90-5-8", "zh": "Tayassu、sametāyasmā。", "confidence": 90}
+{"id": "12-91-2-9", "zh": "18. 在 idha ahaṃ 这里——", "confidence": 85}
+{"id": "12-92-2-5", "zh": "dh 也变为 d。", "confidence": 80}
+{"id": "12-93-2-8", "zh": "后面接元音时，dh 有时变为 d。", "confidence": 85}
+{"id": "12-93-9-12", "zh": "再变长音：idāhaṃ。", "confidence": 75}
+{"id": "12-93-13-15", "zh": "为什么说“有时”？", "confidence": 85}
+{"id": "12-93-16-17", "zh": "Idheva。", "confidence": 90}
+{"id": "12-93-18-23", "zh": "由于有 ca 字，后面接辅音时也会这样：idha bhikkhave。", "confidence": 65}
+{"id": "12-94-2-10", "zh": "19. 在 pati antaṃ、vutti assa 这里——", "confidence": 80}
+{"id": "12-95-2-4", "zh": "i 类元音可选变为 y。", "confidence": 80}
+{"id": "12-96-2-8", "zh": "后面接元音时，i 类元音可选变为 y。", "confidence": 85}
+{"id": "12-96-9-32", "zh": "ti 已变成 y 之后，依照“sabbo canti”这条，有时替换为 c；再依照“paradvebhāvo ṭhāne”这条，元音后面的辅音依照发音部位相近而重叠。", "confidence": 65}
+{"id": "12-96-33-36", "zh": "Paccantaṃ、vutyassa。", "confidence": 90}
+{"id": "12-97-2-4", "zh": "为什么说“可选”？", "confidence": 85}
+{"id": "12-97-5-6", "zh": "Paṭaggi。", "confidence": 90}
+{"id": "12-98-2-18", "zh": "这里依照“kvaci paṭi patisse”这条，pati 变为 paṭi。规则里取“类”这个词，在所有地方都是为了把短音和长音都包括进来。", "confidence": 70}
+{"id": "12-99-2-8", "zh": "20. 在 yathā eva 这里——", "confidence": 85}
+{"id": "12-100-2-7", "zh": "eva 的首音变为 ri，前面的元音也变为短音。", "confidence": 75}
+{"id": "12-101-2-8", "zh": "在元音之后，eva 开头的 e 可选变为 ri。", "confidence": 80}
+{"id": "12-101-9-13", "zh": "前面的元音也变为发音部位相近的短音。", "confidence": 85}
+{"id": "12-101-14-15", "zh": "Yathariva。", "confidence": 90}
+{"id": "12-101-16-17", "zh": "Yatheva。", "confidence": 90}
+{"id": "12-102-2-37", "zh": "21. 在 na imassa、ti aṅgikaṃ、lahu essati、attha atthaṃ、ito āyati、tasmā iha、sabbhi eva、cha abhiññā、putha eva、pā eva 这里，“可选”这一条照样适用——", "confidence": 70}
+{"id": "12-103-2-11", "zh": "y、v、m、d、n、t、r、ḷ 也作为增音。", "confidence": 80}
+{"id": "12-104-2-12", "zh": "后面接元音时，y 等可选作为增音插入；由于有 ca 字，g 也是如此。", "confidence": 80}
+{"id": "12-104-13-41", "zh": "Nayimassa、tivaṅgikaṃ、lahumessati、attadatthaṃ、itonāyati、tasmātiha、sabbhireva、chaḷabhiññā、puthageva；依照“变短音”这条，后面接辅音时有时变为短音。", "confidence": 70}
+{"id": "12-104-42-43", "zh": "Pageva。", "confidence": 90}
+{"id": "12-105-2-4", "zh": "为什么说“可选”？", "confidence": 85}
+{"id": "12-105-5-13", "zh": "Cha abhiññā、putha eva、pā eva。", "confidence": 90}
+{"id": "12-106-2-18", "zh": "这里依照“sare kvaci”这条，元音保持本来的形态，意思是保持它自身的形式，不发生变化。", "confidence": 75}
+{"id": "12-107-2-8", "zh": "22. 在 abhi uggato 这里——", "confidence": 85}
+{"id": "12-108-2-11", "zh": "依照“abbho abhi”这条，abhi 变为 abbha。", "confidence": 80}
+{"id": "12-108-12-13", "zh": "Abbhuggato。", "confidence": 90}
+{"id": "12-109-2-2", "zh": "元音连音", "confidence": 80}

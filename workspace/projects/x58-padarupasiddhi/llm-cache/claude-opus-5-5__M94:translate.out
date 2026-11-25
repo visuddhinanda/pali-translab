@@ -1,0 +1,71 @@
+{"id": "17-3111-2-2", "zh": "div 等词根类（Divādigaṇa）", "confidence": 80}
+{"id": "17-3112-2-4", "zh": "√div 表示嬉戏、求胜、交易、发光、赞叹、爱乐、行走。", "confidence": 70}
+{"id": "17-3112-5-8", "zh": "词根末音的删除与语尾的生成，都和前面一样。", "confidence": 75}
+{"id": "17-3113-2-8", "zh": "510. 在 div 等词根之后加 ya。", "confidence": 85}
+{"id": "17-3114-2-11", "zh": "当为主动语态规定的语尾与词缀出现时，在 div 等词根类之后加 ya 词缀。", "confidence": 80}
+{"id": "17-3115-2-18", "zh": "“取 ya”“（ya）连同词根末音变为 c 组音、ya 音、va 音”“同化为前音”这几条也延续适用。", "confidence": 65}
+{"id": "17-3116-2-8", "zh": "511. 在主动语态中也同样如此。", "confidence": 80}
+{"id": "17-3117-2-60", "zh": "正如在无人称语态与被动语态中 ya 词缀有替换一样，在主动语态中，ya 词缀连同词根末音也要替换为 c 组音、ya 音或 va 音，并同化为前音。因此，由于词根末音是 va，ya 与它一起变为 va 之后就重复；又因为在“do dhassa ca”这条规则中用了 ca 字，从而规定了“bo vassa”，所以两个 va 变为两个 ba，得到 dibbati（他嬉戏）、dibbanti（他们嬉戏）。", "confidence": 65}
+{"id": "17-3117-61-64", "zh": "dibbasi（你嬉戏）、dibbatha（你们嬉戏）。", "confidence": 85}
+{"id": "17-3117-65-68", "zh": "dibbāmi（我嬉戏）、dibbāma（我们嬉戏）。", "confidence": 85}
+{"id": "17-3118-2-6", "zh": "被动语态：dibbate、dibbante。", "confidence": 75}
+{"id": "17-3118-7-10", "zh": "dibbati、dibbanti。", "confidence": 80}
+{"id": "17-3118-11-12", "zh": "dibbatu（命令式）。", "confidence": 75}
+{"id": "17-3118-13-14", "zh": "dibbataṃ。", "confidence": 75}
+{"id": "17-3118-15-16", "zh": "dibbe（愿望式）。", "confidence": 75}
+{"id": "17-3118-17-18", "zh": "dibbetha。", "confidence": 75}
+{"id": "17-3118-19-20", "zh": "adibbi（过去式）。", "confidence": 75}
+{"id": "17-3118-21-22", "zh": "adibbittha。", "confidence": 75}
+{"id": "17-3118-23-24", "zh": "dibbissati（将来式）。", "confidence": 75}
+{"id": "17-3118-25-26", "zh": "dibbissate。", "confidence": 75}
+{"id": "17-3118-27-29", "zh": "adibbissa（条件式）等等。", "confidence": 75}
+{"id": "17-3119-2-8", "zh": "√siv 表示缝纫（连接线缕）：sibbati、sibbanti。", "confidence": 75}
+{"id": "17-3119-9-10", "zh": "sibbatu。", "confidence": 80}
+{"id": "17-3119-11-12", "zh": "sibbeyya。", "confidence": 80}
+{"id": "17-3119-13-16", "zh": "asibbi、sibbi。", "confidence": 80}
+{"id": "17-3119-17-18", "zh": "sibbissati。", "confidence": 80}
+{"id": "17-3119-19-21", "zh": "asibbissa 等等。", "confidence": 80}
+{"id": "17-3120-2-24", "zh": "√pad 表示行走，前加 u，（其后辅音）重复；依“tathā kattari ca”这条规则，ya 连同词根末音变为 ja，并且重复。", "confidence": 65}
+{"id": "17-3121-2-5", "zh": "uppajjati（它生起）、uppajjanti（它们生起）。", "confidence": 80}
+{"id": "17-3121-6-11", "zh": "uppajjate、uppajjante、uppajjare。", "confidence": 80}
+{"id": "17-3122-2-6", "zh": "被动语态：paṭipajjate、paṭipajjante。", "confidence": 75}
+{"id": "17-3122-7-10", "zh": "paṭipajjati、paṭipajjanti。", "confidence": 80}
+{"id": "17-3122-11-14", "zh": "无人称语态：uppajjate tayā（由你生起）。", "confidence": 70}
+{"id": "17-3123-2-5", "zh": "同样有 uppajjatu。", "confidence": 75}
+{"id": "17-3123-6-7", "zh": "uppajjeyya。", "confidence": 80}
+{"id": "17-3123-8-9", "zh": "udapajjā。", "confidence": 80}
+{"id": "17-3123-10-11", "zh": "udapajjatha。", "confidence": 80}
+{"id": "17-3123-12-15", "zh": "udapādi、uppajjī。", "confidence": 80}
+{"id": "17-3123-16-17", "zh": "uppajjittha。", "confidence": 80}
+{"id": "17-3123-18-19", "zh": "uppajjissati。", "confidence": 80}
+{"id": "17-3123-20-24", "zh": "uppajjissa、uppajjissā 等等。", "confidence": 80}
+{"id": "17-3124-2-16", "zh": "√budh 表示理解，因为后面接 ya 词缀，所以不作强化，唯一的不同是替换为 jha：dhammaṃ bujjhati（他理解法）、bujjhanti。", "confidence": 70}
+{"id": "17-3124-17-23", "zh": "也可以作 bujjhate、bujjhante、bujjhare。", "confidence": 75}
+{"id": "17-3125-2-8", "zh": "被动语态：bujjhate mayā dhammo（法被我理解）、bujjhante。", "confidence": 75}
+{"id": "17-3125-9-12", "zh": "bujjhati、bujjhanti。", "confidence": 80}
+{"id": "17-3125-13-14", "zh": "bujjhatu。", "confidence": 80}
+{"id": "17-3125-15-16", "zh": "bujjheyya。", "confidence": 80}
+{"id": "17-3125-17-18", "zh": "abujjhi。", "confidence": 80}
+{"id": "17-3125-19-20", "zh": "abujjhittha。", "confidence": 80}
+{"id": "17-3125-21-22", "zh": "bujjhissati。", "confidence": 80}
+{"id": "17-3125-23-24", "zh": "abujjhissa。", "confidence": 80}
+{"id": "17-3126-2-8", "zh": "√yudh 表示战斗：yujjhati、yujjhanti。", "confidence": 80}
+{"id": "17-3127-2-8", "zh": "√kudh 表示发怒：kujjhati、kujjhanti。", "confidence": 80}
+{"id": "17-3128-2-9", "zh": "√vidh 表示刺穿：vijjhati、vijjhanti 等等。", "confidence": 75}
+{"id": "17-3129-2-14", "zh": "√nah 表示捆绑，依“ha vipariyayo”这条规则的分拆，（ha 与 ya）互换位置。", "confidence": 65}
+{"id": "17-3129-15-19", "zh": "sannayhati、sannayhanti 等等。", "confidence": 80}
+{"id": "17-3130-2-12", "zh": "√man 表示认知，唯一的不同是替换为 ña：maññati、maññanti 等等。", "confidence": 75}
+{"id": "17-3131-2-25", "zh": "√dā 表示拿取，前加 saṃ 与 ā，依“kvaci dhātu”等规则，在 ya 之前词根末音变为 i：sīlaṃ samādiyati（受持戒）、samādiyanti 等等。", "confidence": 70}
+{"id": "17-3132-2-12", "zh": "√tus 表示欢喜，ya 词缀同化为前音：tussati、tussanti 等等。", "confidence": 75}
+{"id": "17-3133-2-9", "zh": "同样，√sam 表示平息：sammati、sammanti。", "confidence": 75}
+{"id": "17-3134-2-8", "zh": "√kup 表示发怒：kuppati、kuppanti。", "confidence": 80}
+{"id": "17-3135-2-26", "zh": "√jan 表示出生，在“janādīnamā timhi ca”这条规则中，依“janādīnamā”的规则分拆，在 ya 之前词根末音变为 ā。", "confidence": 65}
+{"id": "17-3135-27-30", "zh": "jāyati、jāyanti。", "confidence": 80}
+{"id": "17-3135-31-34", "zh": "jāyate、jāyante。", "confidence": 80}
+{"id": "17-3136-2-7", "zh": "被动语态：janīyati、janīyanti。", "confidence": 75}
+{"id": "17-3136-8-9", "zh": "jāyatu。", "confidence": 80}
+{"id": "17-3136-10-11", "zh": "jāyeyya。", "confidence": 80}
+{"id": "17-3136-12-15", "zh": "ajāyi、ajani。", "confidence": 80}
+{"id": "17-3136-16-19", "zh": "jāyissati、janissati。", "confidence": 80}
+{"id": "17-3136-20-24", "zh": "ajāyissa、ajanissa 等等。", "confidence": 80}
+{"id": "17-3137-2-3", "zh": "div 等词根类结束。", "confidence": 80}

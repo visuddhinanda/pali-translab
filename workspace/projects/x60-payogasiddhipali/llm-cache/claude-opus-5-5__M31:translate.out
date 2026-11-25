@@ -1,0 +1,80 @@
+{"id":"19-959-2-5","zh":"118. 在无数词之后，一切格尾都省略","confidence":75}
+{"id":"19-960-2-8","zh":"在没有数的词之后，所有的格尾都省略。","confidence":80}
+{"id":"19-960-9-42","zh":"没有单数等数的词，称为无数词。这些无数词虽然在格尾上没有区别，仍要给它们加上 si 等格尾，因为在“愿他们今天不要宰割我们”这类句子中，它们凭着以格尾结尾才成立为词，vo、no 等形式也因此才能成立，而且也看到它们用于主格等意义。","confidence":55}
+{"id":"19-960-43-51","zh":"例如 pahāro、parābhavo、apahāro、saṃhāro、avahāro、ohāro 等。","confidence":75}
+{"id":"19-961-2-10","zh":"因为靠近词根而附加意义，所以 pa 等称为接头词；","confidence":65}
+{"id":"19-962-2-7","zh":"ca 等落在词的开头、中间和末尾，所以称为不变词。","confidence":70}
+{"id":"19-963-2-3","zh":"接头词类的词。","confidence":75}
+{"id":"19-964-2-11","zh":"表示并列、选择、否定、填充等意义，而不表示实体的，是不变词类的词。","confidence":70}
+{"id":"19-965-2-12","zh":"ca 用于并列、附带、相互结合、集合、限定等意义。","confidence":70}
+{"id":"19-965-13-21","zh":"vā 用于选择、比喻、并列、限定性任选等意义。","confidence":65}
+{"id":"19-965-22-36","zh":"na、no、mā、a、alaṃ、halaṃ，这些用于否定。","confidence":80}
+{"id":"19-965-37-67","zh":"依据“两个否定表达本来的意义”这一原则，在“而那些色法的缘并非不存在”这句里，na ca na honti 就是“确实存在”，表达的是本来的意义。","confidence":65}
+{"id":"19-965-68-73","zh":"alaṃ 也用于足够和装饰。","confidence":75}
+{"id":"19-966-2-66","zh":"填充有两种：填充意义和填充词句。其中 atha、khalu、vata、atho、assu、yagghe、hi、carahi、naṃ、taṃ、ca、tu、vā、vo、pana、have、kīva、ha、tato、yathā、sudaṃ、kho、ve、haṃ、enaṃ（《色成就》作 evaṃ）、seyyathidaṃ 等，用于填充词句。","confidence":65}
+{"id":"19-966-67-75","zh":"其中 atha 也用于提问、紧接、标示主题等意义。","confidence":65}
+{"id":"19-966-76-83","zh":"khalu 也用于否定、限定和众所周知。","confidence":70}
+{"id":"19-966-84-95","zh":"vata 也用于确定、悲叹、怜悯和意愿。","confidence":70}
+{"id":"19-966-96-99","zh":"atho 也用于再次提及。","confidence":70}
+{"id":"19-966-100-105","zh":"hi 也用于原因和限定。","confidence":80}
+{"id":"19-966-106-113","zh":"tu 也用于区别、原因、排除等意义。","confidence":70}
+{"id":"19-966-114-116","zh":"pana 也用于区别。","confidence":75}
+{"id":"19-966-117-122","zh":"have 和 ve，这些也用于确定的意义。","confidence":75}
+{"id":"19-966-123-134","zh":"haṃ 也用于沮丧和惊奇。（《色成就》作：沮丧、可能。）","confidence":60}
+{"id":"19-966-135-139","zh":"seyyathidaṃ 也用于“那是什么”的意思。","confidence":75}
+{"id":"19-967-2-6","zh":"填充意义的有两种：带格尾的和不带格尾的。","confidence":75}
+{"id":"19-967-7-14","zh":"atthi、sakkā、labbhā，这些用于主格。","confidence":75}
+{"id":"19-967-15-24","zh":"āvuso、ambho、hambho、are、hare、re、je，这些用于呼格。","confidence":80}
+{"id":"19-967-25-34","zh":"divā、bhiyyo（《色成就》作 namo），这些用于主格和宾格。","confidence":70}
+{"id":"19-967-35-42","zh":"sayaṃ、sāmaṃ、saṃ、sammā、kinti，这些用于具格的意义。","confidence":75}
+{"id":"19-967-43-56","zh":"还有以 so、to、dhā 词缀结尾的词，例如 suttaso、padaso、aniccato、dukkhato、ekadhā、dvidhā 等。","confidence":70}
+{"id":"19-967-57-76","zh":"以 tave、tuṃ 词缀结尾的词只用于与格，例如 kātave、dātave、kātuṃ、kāretuṃ、（《色成就》作 dātuṃ）dāpetuṃ 等。","confidence":70}
+{"id":"19-967-77-89","zh":"以 so、to 词缀结尾的词用于从格的意义，例如 dīghaso、oraso、rājato vā corato vā 等。","confidence":70}
+{"id":"19-967-90-116","zh":"to 也用于处格的意义，以 tra、ttha 等词缀结尾的词也是这样，例如 ekato、purato、pacchato、passato、piṭṭhito、pādato、sīsato、aggato、mūlato，yatra、yattha、yahiṃ、tatra、tattha、tahiṃ 等。","confidence":70}
+{"id":"19-967-117-154","zh":"samantā、sāmantā、parito、abhito、samantato、ekajjhaṃ、ekamantaṃ、heṭṭhā、upari、uddhaṃ、adho、tiriyaṃ、sammukhā、paramukhā、āvi、raho、tiro、uccaṃ、nīcaṃ、anto、antarā、antaraṃ、ajjhattaṃ、bahiddhā、bāhirā、bāhiraṃ、bahi、oraṃ、pāraṃ、ārā、ārakā、pacchā、pure、huraṃ、pecca，这些用于处格。","confidence":75}
+{"id":"19-967-155-198","zh":"sampati、āyati、ajja、aparajjha、suve、sve、uttarasuve（《色成就》作 kisu）、hiyyo、pare（《色成就》作 parasuve）、sajju、sāyaṃ、pāto、kālaṃ、kallaṃ、divā、rattaṃ、niccaṃ、satataṃ、abhiṇhaṃ、abhikkhaṇaṃ、muhuṃ、muhuttaṃ、bhūtapubbaṃ、purā、yadā、tadā（《色成就》作 kadā）等，用于表示时间的处格。","confidence":70}
+{"id":"19-967-199-201","zh":"以上是带格尾的。","confidence":80}
+{"id":"19-968-2-8","zh":"不带格尾的词中，appeva、appevanāma、nu，这些用于疑惑的意义。","confidence":75}
+{"id":"19-968-9-17","zh":"addhā、aññadatthu、taggha、jātu、kāmaṃ、sasakkaṃ，这些用于确定的意义。","confidence":75}
+{"id":"19-968-18-21","zh":"evaṃ、iti 用于限定。","confidence":70}
+{"id":"19-968-22-34","zh":"kacci、nu、nanu、kathaṃ（《色成就》作 kiṃsu）、kiṃ，这些用于询问的意义。","confidence":75}
+{"id":"19-968-35-40","zh":"evaṃ、iti、itthaṃ，这些用于举例说明的意义。","confidence":70}
+{"id":"19-968-41-46","zh":"iti 也用于原因和句子结束。","confidence":75}
+{"id":"19-968-47-56","zh":"yāva、tāva、yāvatā、tāvatā、kittāvatā、ettāvatā、kīva，这些用于限定范围的意义。","confidence":70}
+{"id":"19-968-57-66","zh":"evaṃ、sāhu、lahu、opāyikaṃ、paṭirūpaṃ、āma、sādhu，这些用于认可的意义。","confidence":70}
+{"id":"19-968-67-89","zh":"tathā、yathā、yatheva、tatheva、evaṃ、evameva、evampi、yathāpi、seyyathāpi、seyyathāpināma、viya、iva、yathariva、tathariva、yathānāma、tathānāma、yathāhi、tathāhi、yathāca、tathāca，这些用于比拟的意义。","confidence":75}
+{"id":"19-968-90-99","zh":"yathā 也用于适合、逐一、不超出词义、举例说明。","confidence":60}
+{"id":"19-968-100-106","zh":"evaṃ 也用于教导、提问等。","confidence":70}
+{"id":"19-968-107-109","zh":"kiñcāpi 用于让步的意义。","confidence":60}
+{"id":"19-968-110-112","zh":"dhi 用于呵责。","confidence":80}
+{"id":"19-968-113-119","zh":"aho 用于呵责、称赞和祈愿。","confidence":75}
+{"id":"19-968-120-128","zh":"nāma 用于呵责、称赞、名称和提问。","confidence":75}
+{"id":"19-968-129-133","zh":"sādhu 用于称赞和请求。","confidence":75}
+{"id":"19-968-134-138","zh":"iṅgha、handa，这些用于催促的意义。","confidence":75}
+{"id":"19-968-139-143","zh":"sādhu、suṭṭhu、evametaṃ 用于随喜。","confidence":75}
+{"id":"19-968-144-148","zh":"kira 用于传闻和不可信。","confidence":75}
+{"id":"19-968-149-155","zh":"nuna 用于推测、回忆和思量。","confidence":70}
+{"id":"19-968-156-158","zh":"kasmā 用于询问原因。","confidence":80}
+{"id":"19-968-159-166","zh":"yasmā、tasmā、tathā hi、tena，这些用于判明原因的意义。","confidence":65}
+{"id":"19-968-167-177","zh":"saha、saddhiṃ、amā（《色成就》作 samaṃ）用于共同行动。","confidence":70}
+{"id":"19-968-178-181","zh":"vinā、rite 用于分离。","confidence":75}
+{"id":"19-968-182-185","zh":"nānā、puthu 用于多种多样。","confidence":75}
+{"id":"19-968-186-190","zh":"puthu、visuṃ 也用于不聚合、各自分开。","confidence":65}
+{"id":"19-968-191-199","zh":"duṭṭhu、ku 用于贬斥（《色成就》作：厌恶）。","confidence":65}
+{"id":"19-968-200-202","zh":"puna 用于非第一次。","confidence":75}
+{"id":"19-968-203-205","zh":"kathaṃ 用于疑虑的意义。","confidence":45}
+{"id":"19-968-206-211","zh":"dhā、kkhattuṃ、so、kiñca 用于数目的区分。","confidence":65}
+{"id":"19-968-212-219","zh":"īsakaṃ 用于微小、少量（《色成就》作：仅仅少许）。","confidence":60}
+{"id":"19-968-220-222","zh":"saṇikaṃ 用于缓慢的意义。","confidence":80}
+{"id":"19-968-223-230","zh":"khippaṃ、araṃ、lahuṃ、āsu、tuṇhaṃ、aciraṃ 用于迅速的意义。","confidence":75}
+{"id":"19-968-231-234","zh":"ciraṃ、cirassaṃ 用于长时间。","confidence":80}
+{"id":"19-968-235-240","zh":"ce、yadi 用于疑虑和假设。","confidence":65}
+{"id":"19-968-241-253","zh":"dhuraṃ 用于坚固和限定（《色成就》作：dhuvaṃ 用于坚固和限定）。","confidence":65}
+{"id":"19-968-254-256","zh":"hā 用于悲叹。","confidence":75}
+{"id":"19-968-257-259","zh":"tuṇhī 用于不说话。","confidence":80}
+{"id":"19-968-260-262","zh":"sacchi 用于亲眼见证。","confidence":75}
+{"id":"19-968-263-266","zh":"musā、micchā、alikaṃ 用于不真实。","confidence":75}
+{"id":"19-968-267-270","zh":"suvatthi 用于祝福，等等。","confidence":70}
+{"id":"19-969-2-9","zh":"以 tuna、tvāna、tvā 词缀结尾的词，用于表示动作先行的意义。","confidence":50}
+{"id":"19-969-10-33","zh":"例如 passituna、passiya、passitvāna、passitvā，disvā、disvāna、dassetvā、dātuna、datvāna、datvā、upādāya、dāpetvā、viññāya、viceyya、vineyya、samecca、nihacca、upecca、ārabbha、āgamma 等。","confidence":75}
+{"id":"19-970-2-10","zh":"由格尾造成的区别，对有性别的词来说也同样如此；","confidence":60}

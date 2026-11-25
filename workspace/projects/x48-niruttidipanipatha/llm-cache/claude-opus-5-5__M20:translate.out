@@ -1,0 +1,45 @@
+{"id": "22-815-2-2", "zh": "ī 尾阴性词类", "confidence": 85}
+{"id": "22-816-2-28", "zh": "96. 在 si 之前，非中性词（的长元音）不变短［ka.85；rū.150；nī.239；moga-du.66；sismiṃ（bahūsu）］。", "confidence": 72}
+{"id": "22-817-2-11", "zh": "si 后接时，非中性词，也就是阳性词和阴性词的长元音，不变为短元音。", "confidence": 80}
+{"id": "22-818-2-7", "zh": "Itthī tiṭṭhati（女人站着），itthī tiṭṭhanti（女人们站着）。", "confidence": 85}
+{"id": "22-819-2-21", "zh": "97. 在单数格尾和 yo 之前，除 gha 与 o 之外（的长元音变短）［ka.84；rū.144；nī.237、238］。", "confidence": 68}
+{"id": "22-820-2-11", "zh": "gha 和 o 合称 gho，不是 gho 的就是 agho。", "confidence": 75}
+{"id": "22-820-12-24", "zh": "单数格尾和 yo 后接时，除 gha 与 o 以外，所有长元音都变为短元音。", "confidence": 75}
+{"id": "22-821-2-7", "zh": "Itthiyo tiṭṭhanti，ithyo tiṭṭhanti（女人们站着）。", "confidence": 85}
+{"id": "22-822-2-24", "zh": "98. 在 ga（呼格）之前可选（变短）［ka.245、246；rū.152、73；nī.476-9］。", "confidence": 72}
+{"id": "22-823-2-12", "zh": "ga 后接时，除 gha 与 o 以外，所有长元音可选变为短元音。", "confidence": 75}
+{"id": "22-824-2-19", "zh": "Bhoti itthi，bhoti itthī（女士啊），bhotiyo itthī，bhotiyo itthiyo，bhotiyo ithyo（女士们啊），itthiṃ passati（看见女人）。", "confidence": 80}
+{"id": "22-825-2-20", "zh": "99. 在 ī 之后（aṃ 变为）yaṃ［ka.223；rū.188；nī.450］。", "confidence": 72}
+{"id": "22-826-2-11", "zh": "在名为 pa 的 ī 之后，aṃ 格尾可选变为 yaṃ。", "confidence": 72}
+{"id": "22-827-2-26", "zh": "Itthiyaṃ passati（看见女人）；此外，依这条规则的分解，yaṃ 也使“bujjhassu jinabodhiyan”（你要证悟胜者的菩提）［bu.vaṃ.2.182］得以成立。", "confidence": 62}
+{"id": "22-827-27-78", "zh": "Itthī passati，itthiyo passati，ithyo passati，itthiyā，ithyā，itthīhi，itthībhi，itthiyā，ithyā，itthīnaṃ，itthiyā，itthimhā，ithyā，itthīhi，itthībhi，itthiyā，ithyā，itthīnaṃ，itthiyā，ithyā，itthiyaṃ，ithyaṃ，itthimhi，itthīsu。", "confidence": 85}
+{"id": "22-828-2-10", "zh": "Nadī sandati（河流流淌），nadī sandanti，nadiyo sandanti（河流们流淌）。", "confidence": 85}
+{"id": "22-829-2-28", "zh": "i 类元音脱落时，依连音规则，在 y 之前 ta 组辅音变为 ca 组，而 y 同化为前一个音［ka.98；rū.87 页；nī.104；262-3-4］。", "confidence": 65}
+{"id": "22-829-29-69", "zh": "Najjo sandanti［ka.98；rū.87 页；nī.104；262-3-4］；在 nā 等单数格尾中：najjā kataṃ（由河所作），najjā deti（给河），najjā apeti（离开河），najjā santakaṃ（河的所有物），najjā tiṭṭhati（在河中站立），najjaṃ tiṭṭhati（在河中站立）；其余形式与 itthī 相同。", "confidence": 72}
+{"id": "22-830-2-53", "zh": "同样有：gacchatī、gacchantī，satī、santī，asatī、asantī，mahatī、mahantī，brahmatī、brantī，bhotī、bhontī，bhavissatī、bhavissantī，gamissatī、gamissantī，guṇavatī、guṇavantī，sīlavatī、sīlavantī，satimatī、satimantī，sirimatī、sirimantī，katavatī、katavantī，bhuttāvatī、bhuttāvantī，sabbāvatī、sabbāvantī，yāvatī、yāvantī，tāvatī、tāvantī。", "confidence": 82}
+{"id": "22-830-54-61", "zh": "加 ka 增音时（ī）变短：yāvatikā，tāvatikā。", "confidence": 75}
+{"id": "22-831-2-30", "zh": "Gāvī、yakkhī、yakkhinī、ārāmikinī、daṇḍapāṇinī、daṇḍinī、bhikkhunī、paracittavidunī、muṭṭhassatinī、gharaṇī、pokkharaṇī、ācarinī、mātulānī、gahapatānī 等等。", "confidence": 82}
+{"id": "22-831-31-32", "zh": "（以上是）nadī 等词。", "confidence": 78}
+{"id": "22-832-2-3", "zh": "下面说特殊规则。", "confidence": 78}
+{"id": "22-833-2-12", "zh": "100. nadī 在 yo 之前（可选）加 āma 增音［nī.262］。", "confidence": 72}
+{"id": "22-834-2-9", "zh": "yo 后接时，nadī 的末尾可选加 āma 增音。", "confidence": 75}
+{"id": "22-835-2-53", "zh": "“Najjāyo sandanti”（诸河流淌）［saṃ.ni.3.224］、“najjāyo supatitthāyo”（诸河有良好的渡口）［jā.2.22.1414］，这是圣典的用例；而在《尼弥本生》中，又有“najjonupariyāyati，nānāpupphadumāyutā”（环绕着河流，与种种花树相连）以及“najjo cānupariyāti”［jā.2.22.537］这样的圣典句子，其中依大规则，si 变为 o。", "confidence": 58}
+{"id": "22-836-2-81", "zh": "“Uṭṭhehi revate supāpakamme”（起来吧，造了大恶业的 Revatī）［vi.va.863］，“dāsā ca dāsyo ca，anujīvino”（男仆、女仆以及依附的人）［jā.1.10.101］，“bārāṇasyaṃ mahārāja，kākarājā nivāsako”（大王啊，在波罗奈住着一位乌鸦王）［jā.1.3.124］，“bārāṇasyaṃ ahu rājā”（在波罗奈曾有一位国王）［jā.1.16.178］，“rañño mano ummādantyā niviṭṭho”（国王的心系在 Ummādantī 身上），“ummādantyā ramitvāna，sivirājā tato siyaṃ”（与 Ummādantī 欢娱之后，我才会是尸毗王）［jā.2.18.70］，“dārakeva ahaṃ nessaṃ”（我会把孩子们带走）。", "confidence": 60}
+{"id": "22-836-82-93", "zh": "“Brāhmaṇyā paricārake”（作婆罗门妇人的侍者）［jā.2.22.2111］。", "confidence": 62}
+{"id": "22-836-94-97", "zh": "同样，在 yo 中有 pokkharañño。", "confidence": 75}
+{"id": "22-836-98-104", "zh": "在 nā 等格尾中有 pathabyā、puthabyā、pokkharaññā。", "confidence": 75}
+{"id": "22-836-105-131", "zh": "在 smiṃ 中可以见到 pathabyā、pathabyaṃ、puthabyā、puthabyaṃ、pokkharaññā、pokkharaññaṃ、vetraññā、vetraññaṃ［异读 vetraraññā（nissaya）］等形式。", "confidence": 72}
+{"id": "22-837-2-4", "zh": "ī 尾阴性词类完。", "confidence": 88}
+{"id": "22-838-2-2", "zh": "u 尾阴性词类", "confidence": 85}
+{"id": "22-839-2-66", "zh": "si 脱落：dhenu gacchati（母牛走），dhenuyo gacchanti（母牛们走）；yo 脱落时变长：dhenū gacchanti；bhoti dhenu，bhoti dhenū，bhotiyo dhenuyo，bhotiyo dhenū，dhenuṃ passati，dhenuyo passati，dhenū passati，dhenuyā，dhenūhi，dhenūbhi，dhenuyā，dhenūnaṃ，dhenuyā，dhenumhā，dhenūhi，dhenūbhi，dhenuyā，dhenūnaṃ，dhenuyā，dhenuyaṃ，dhenumhi，dhenūsu。", "confidence": 82}
+{"id": "22-840-2-21", "zh": "同样有 yāgu、kāsu、daddu、kaṇḍu、kacchu、rajju、kareṇu、piyaṅgu、sassu 等等。", "confidence": 82}
+{"id": "22-840-22-23", "zh": "（以上是）dhenu 等词。", "confidence": 78}
+{"id": "22-841-2-11", "zh": "不过，dhātu 一词在圣典的用法中是阴性，在语法学的用法中是阳性和阴性。", "confidence": 75}
+{"id": "22-842-2-14", "zh": "mātu、dhītu、duhitu 这几个词是阴性，它们的变化形式将在 pitā 等词组中出现。", "confidence": 78}
+{"id": "22-843-2-4", "zh": "u 尾阴性词类完。", "confidence": 88}
+{"id": "22-844-2-2", "zh": "ū 尾阴性词类", "confidence": 85}
+{"id": "22-845-2-58", "zh": "Vadhū gacchati（新娘走），vadhū gacchanti；在 yo 中变短：vadhuyo gacchanti；bhoti vadhu，bhoti vadhū，bhotiyo vadhū，vadhuyo，vadhuṃ，vadhū，vadhuyo，vadhuyā，vadhūhi，vadhūbhi，vadhuyā，vadhūnaṃ，vadhuyā，vadhumhā，vadhūhi，vadhūbhi，vadhuyā，vadhūnaṃ，vadhuyā，vadhuyaṃ，vadhūsu。", "confidence": 82}
+{"id": "22-845-59-80", "zh": "同样有 jambū、sarabhū、sutanū、nāganāsūrū、saṃhitorū、vāmorū、lakkhaṇūrū、brahmabandhū、bhū、camū 等等。", "confidence": 82}
+{"id": "22-845-81-82", "zh": "（以上是）vadhū 等词。", "confidence": 78}
+{"id": "22-846-2-38", "zh": "有“Sāhaṃ gantvā manussattaṃ，vadaññū vītamaccharā”（我转生为人后，乐善好施，远离悭吝）［vi.va.634］以及“kodhanā akataññū ca”（易怒而又不知恩）［jā.1.1.63］这些圣典句子，所以即使没有 nī 词缀，有时 ū 尾的 kita 派生词也是阴性。", "confidence": 68}
+{"id": "22-847-2-4", "zh": "ū 尾阴性词类完。", "confidence": 88}

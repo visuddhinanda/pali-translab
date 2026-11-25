@@ -1,0 +1,77 @@
+{"id": "19-782-2-6", "zh": "211. 在 si 前变为 ahaṃ", "confidence": 75}
+{"id": "19-783-2-7", "zh": "在 si 格尾前，amha 连同格尾变为 ahaṃ。", "confidence": 85}
+{"id": "19-783-8-16", "zh": "例：ahaṃ。另依“yevasve＋ṭa”规则得 tumhe。", "confidence": 40}
+{"id": "19-784-2-10", "zh": "2,209. amha 变为 maya 与 asmā", "confidence": 70}
+{"id": "19-785-2-13", "zh": "在 yo 与 su 格尾前，amha 连同格尾依次任选变为 maya 与 asmā。", "confidence": 65}
+{"id": "19-785-14-16", "zh": "例：mayaṃ、amhe。", "confidence": 85}
+{"id": "19-786-2-11", "zh": "227. 在 aṃ 前变为 taṃ、maṃ、tavaṃ、mamaṃ", "confidence": 80}
+{"id": "19-787-2-14", "zh": "在 aṃ 格尾前，tumha、amha 二词连同格尾依次变为 taṃ、maṃ、tavaṃ、mamaṃ。", "confidence": 85}
+{"id": "19-787-15-22", "zh": "例：taṃ、maṃ、tavaṃ、mamaṃ。", "confidence": 90}
+{"id": "19-788-2-6", "zh": "231. 在第二格的 yo 前任选", "confidence": 75}
+{"id": "19-789-2-20", "zh": "在第二格的 yo 格尾前，tumha、amha 二词连同格尾各自任选变为 ṅaṃ 与 ṅākaṃ，例如：tumhaṃ、tumhākaṃ、tumhe；amhaṃ、amhākaṃ、amhe。", "confidence": 80}
+{"id": "19-790-2-7", "zh": "228. 在 nā 与 smā 前变为 tayā、mayā", "confidence": 80}
+{"id": "19-791-2-10", "zh": "在 nā 与 smā 格尾前，tumha、amha 二词连同格尾依次变为 tayā、mayā。", "confidence": 85}
+{"id": "19-791-11-26", "zh": "规则中的“nāsmāsu”虽然用的是复数，也不依格尾的次序，而是依词的次序，每个词各得两个替代形。", "confidence": 60}
+{"id": "19-792-2-7", "zh": "213. tayā、tayi 的 t 任选变为 tva", "confidence": 75}
+{"id": "19-793-2-8", "zh": "tumha 的 tayā、tayi 中的 t 音任选变为 tva。", "confidence": 85}
+{"id": "19-793-9-13", "zh": "例：tvayā、tayā；mayā。", "confidence": 90}
+{"id": "19-793-14-19", "zh": "tumhehi、tumhebhi；amhehi、amhebhi。", "confidence": 85}
+{"id": "19-794-2-11", "zh": "229. 在 sa 前变为 tava、mama、tuyhaṃ、mayhaṃ", "confidence": 80}
+{"id": "19-795-2-9", "zh": "在 sa 格尾前，tumha、amha 二词连同格尾依次变为这些替代形。", "confidence": 85}
+{"id": "19-795-10-15", "zh": "例：tava、tuyhaṃ；mama、mayhaṃ。", "confidence": 90}
+{"id": "19-796-2-9", "zh": "211. 在 naṃ 与 sa 前变为 asmākaṃ、mamaṃ。", "confidence": 75}
+{"id": "19-797-2-12", "zh": "在 naṃ 与 sa 格尾前，amha 连同格尾依次变为 asmākaṃ、mamaṃ。", "confidence": 85}
+{"id": "19-797-13-14", "zh": "例：mamaṃ。", "confidence": 90}
+{"id": "19-798-2-7", "zh": "230. 在 naṃ 前变为 ṅaṃ、ṅākaṃ", "confidence": 80}
+{"id": "19-799-2-10", "zh": "在 naṃ 格尾前，tumha、amha 二词连同格尾各自变为 ṅaṃ、ṅākaṃ。", "confidence": 85}
+{"id": "19-799-11-16", "zh": "例：tumhaṃ、tumhākaṃ；amhaṃ、amhākaṃ、asmākaṃ。", "confidence": 85}
+{"id": "19-799-17-32", "zh": "《迦旃延文法》为了给单数规定 aṃ 而另立了一条规则；而在这里，出于自尊的用法，凭“多用”这一统摄规则，在 aṃ 前 tumhaṃ、amhaṃ 也能成立。", "confidence": 55}
+{"id": "19-800-2-5", "zh": "214. 在 smā 前变为 tvamhā", "confidence": 80}
+{"id": "19-801-2-8", "zh": "在 smā 格尾前，tumha 连同格尾任选变为 tvamhā。", "confidence": 85}
+{"id": "19-801-9-14", "zh": "例：tvamhā、tvayā、tayā；mayā。", "confidence": 90}
+{"id": "19-802-2-8", "zh": "226. 在 smiṃ 前，tumha、amha 变为 tayi、mayi", "confidence": 80}
+{"id": "19-803-2-9", "zh": "在 smiṃ 格尾前，tumha、amha 二词连同格尾依次变为 tayi、mayi。", "confidence": 85}
+{"id": "19-803-10-14", "zh": "例：tvayi、tayi；mayi。", "confidence": 90}
+{"id": "19-803-15-16", "zh": "tumhesu。", "confidence": 85}
+{"id": "19-804-2-8", "zh": "203. 在 su 前，amha 变为 asmā", "confidence": 75}
+{"id": "19-805-2-7", "zh": "在 su 格尾前，amha 任选变为 asmā。", "confidence": 85}
+{"id": "19-805-8-10", "zh": "例：asmāsu、amhesu。", "confidence": 90}
+{"id": "19-805-11-21", "zh": "sabba 等代词的特征是：指向已经说过的或将要说的内容。", "confidence": 60}
+{"id": "19-806-2-7", "zh": "232. 不在偈句之首、位于词之后、在同一句中", "confidence": 70}
+{"id": "19-807-2-3", "zh": "这是统摄规则。", "confidence": 80}
+{"id": "19-807-4-24", "zh": "这里所说的“偈句”是偈颂的四分之一，所以在“tumhehi puññaṃ pasutaṃ anappakaṃ”（你们积下了不少功德）这句中，不变为 vo。", "confidence": 75}
+{"id": "19-807-25-30", "zh": "这里称为“词”的声音，就其本性而言——", "confidence": 60}
+{"id": "19-808-2-5", "zh": "由虚空与风从身体中生起，", "confidence": 65}
+{"id": "19-809-2-7", "zh": "发出的声响沿着通道运行；", "confidence": 55}
+{"id": "19-810-2-4", "zh": "在各个发音部位受到撞击，", "confidence": 65}
+{"id": "19-811-2-8", "zh": "就成为字母，这就是“声”——", "confidence": 65}
+{"id": "19-812-2-13", "zh": "因为这样说过，所以每一个字母叫作“声”，这些字母的集合是词，这些词的集合是句。", "confidence": 75}
+{"id": "19-812-14-16", "zh": "正如所说——", "confidence": 85}
+{"id": "19-813-2-10", "zh": "以格尾结尾的是词，词的连贯组合称为句，这是依循传统的说法；", "confidence": 45}
+{"id": "19-814-2-7", "zh": "依通俗用法，也不应舍弃“字母”与“声”所指的意义。", "confidence": 40}
+{"id": "19-815-2-4", "zh": "而这个词——", "confidence": 80}
+{"id": "19-816-2-11", "zh": "据说词有四种：由名词、动词、前缀构成的，", "confidence": 70}
+{"id": "19-817-2-10", "zh": "以及由不变词构成的；懂得这一点的人举例说：“asso khalu abhidhāvati”（马确实向前奔跑）。", "confidence": 60}
+{"id": "19-818-2-4", "zh": "而这个句——", "confidence": 80}
+{"id": "19-819-2-8", "zh": "带有一个动词、由多个词组成、带有造作者的，可以成为一个句——", "confidence": 65}
+{"id": "19-820-2-3", "zh": "这样说过。", "confidence": 80}
+{"id": "19-820-4-17", "zh": "所以也说：“以格尾结尾的是词，词的集合是句。”", "confidence": 80}
+{"id": "19-821-2-9", "zh": "233. 除第五格外，在 yo、naṃ、hi、su 前变为 vo、no", "confidence": 70}
+{"id": "19-822-2-19", "zh": "在第五格以外的 yo、naṃ、hi、su 格尾前，不在偈句之首、位于另一词之后、处于同一句中的 tumha、amha 二词，连同格尾依次任选变为 vo、no。", "confidence": 70}
+{"id": "19-822-20-27", "zh": "例：gāmaṃ vo gaccheyyātha，gāmaṃ tumhe gaccheyyātha（你们应当去村子）。", "confidence": 85}
+{"id": "19-822-28-35", "zh": "gāmaṃ no gaccheyyāma，gāmaṃ amhe gaccheyyāma（我们应当去村子）。", "confidence": 85}
+{"id": "19-822-36-43", "zh": "pahāya vo gamissāmi（我将离开你们而去），mā no vikantiṃsu（愿他们不要伤害我们）。", "confidence": 65}
+{"id": "19-822-44-49", "zh": "dīyate vo，dīyate tumhaṃ（给予你们）。", "confidence": 85}
+{"id": "19-822-50-56", "zh": "dīyate no，dīyate amhaṃ（给予我们）。", "confidence": 85}
+{"id": "19-822-57-67", "zh": "tuṭṭhosmi vo pakatiyā，tuṭṭhosmi tumhaṃ（我本来就对你们满意）。", "confidence": 75}
+{"id": "19-822-68-75", "zh": "satthā no bhagavā（世尊是我们的导师），eso amhākaṃ satthā（他是我们的导师）。", "confidence": 80}
+{"id": "19-822-76-81", "zh": "kataṃ vo，kataṃ tumhehi（由你们做了）。", "confidence": 85}
+{"id": "19-822-82-87", "zh": "kataṃ no，kataṃ amhehi（由我们做了）。", "confidence": 85}
+{"id": "19-823-2-7", "zh": "234. 在 nā 与 sa 前变为 te、me", "confidence": 80}
+{"id": "19-824-2-20", "zh": "在 nā 与 sa 格尾前，不在偈句之首、位于另一词之后、处于同一句中的 tumha、amha 二词，连同格尾依次任选变为 te、me。", "confidence": 75}
+{"id": "19-824-21-26", "zh": "例：kataṃ te，kataṃ tayā（由你做了）。", "confidence": 85}
+{"id": "19-824-27-32", "zh": "kataṃ me，kataṃ mayā（由我做了）。", "confidence": 85}
+{"id": "19-824-33-38", "zh": "dīyate te，dīyate tava（给予你）。", "confidence": 85}
+{"id": "19-824-39-44", "zh": "dīyate me，dīyate mama（给予我）。", "confidence": 85}
+{"id": "19-824-45-50", "zh": "dhanaṃ te，dhanaṃ tava（你的财物）。", "confidence": 85}
+{"id": "19-824-51-56", "zh": "dhanaṃ me，dhanaṃ mama（我的财物）。", "confidence": 85}

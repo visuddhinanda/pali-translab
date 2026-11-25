@@ -1,0 +1,76 @@
+{"id": "19-714-2-10", "zh": "128. tya、ta、tāna 的 t 变为 s", "confidence": 70}
+{"id": "19-715-2-13", "zh": "非中性的 tya、ta、tāna，其 t 在 si 前变为 s。", "confidence": 75}
+{"id": "19-715-14-17", "zh": "syo，tye。", "confidence": 90}
+{"id": "19-715-18-23", "zh": "syā，tyā，tyāyo。", "confidence": 90}
+{"id": "19-715-24-29", "zh": "tyaṃ，tyāni 等，变化全都与 sabba 相同。", "confidence": 80}
+{"id": "19-716-2-3", "zh": "so，", "confidence": 85}
+{"id": "19-717-2-6", "zh": "131. ta 的 t 在一切格尾中变为 n", "confidence": 75}
+{"id": "19-718-2-9", "zh": "ta 一词的 t 在一切格尾中可选地变为 n。", "confidence": 80}
+{"id": "19-718-10-32", "zh": "在“tya、ta、tāna 的 t 变为 s”这条规则里专门提到 tya 等的 t 音，是为了表明阴性的 syā、sā、esā、nāyo 等变化与 sabba 相同。", "confidence": 50}
+{"id": "19-718-33-35", "zh": "ne，te。", "confidence": 90}
+{"id": "19-718-36-41", "zh": "naṃ，taṃ；ne，te。", "confidence": 90}
+{"id": "19-718-42-49", "zh": "nena，tena；nehi，nebhi，tehi，tebhi。", "confidence": 80}
+{"id": "19-719-2-8", "zh": "132. 在 sa、smā、smiṃ、ssāya、ssaṃ、ssā、saṃ、mhā、mhi、su 前，ima 也变为 a", "confidence": 60}
+{"id": "19-720-2-41", "zh": "即使只说“在 sa、smā、smiṃ、naṃ 前，ima 也变为 a”，按照“替代形与原形同样对待”这一法则，在这些格尾的替代形 ssāya 等之后，a 的替代本来也能成立；之所以还要专门列出 ssā 等，是为了在 ya 等其他替代形之后排除这一替代。", "confidence": 50}
+{"id": "19-721-2-10", "zh": "在 sa 等之前，ima 以及 ta 一词的 t 可选地变为 a。", "confidence": 75}
+{"id": "19-721-11-12", "zh": "前面的元音脱落。", "confidence": 80}
+{"id": "19-721-13-16", "zh": "下文也是这样。", "confidence": 80}
+{"id": "19-721-17-25", "zh": "assa，nassa，tassa；nesaṃ，nesānaṃ，tesaṃ，tesānaṃ。", "confidence": 90}
+{"id": "19-721-26-32", "zh": "amhā，asmā，namhā，nasmā，tamhā，tasmā。", "confidence": 90}
+{"id": "19-721-33-42", "zh": "amhi，asmiṃ，namhi，nasmiṃ，tamhi，tasmiṃ；nesu，tesu。", "confidence": 90}
+{"id": "19-722-2-9", "zh": "阴性：sā；nā，nāyo，tā，tāyo。", "confidence": 85}
+{"id": "19-722-10-17", "zh": "naṃ，taṃ；nā，nāyo，tā，tāyo。", "confidence": 90}
+{"id": "19-722-18-19", "zh": "在 nā 时——", "confidence": 80}
+{"id": "19-723-2-12", "zh": "46. 在 ta、eta、ima、amu 之后，可选地变为 ssā", "confidence": 65}
+{"id": "19-724-2-15", "zh": "在称为 gha、pa 的 ta、eta、ima、amu 之后，单数的 nā 等可选地变为 ssā。", "confidence": 70}
+{"id": "19-724-16-43", "zh": "gha、pa 这一名称本来指词末元音，但按照“让持矛者进来”这一法则，与它相伴的词也一并涵盖在内，所以说“在称为 gha、pa 的 ta、eta、ima、amu 之后”。", "confidence": 55}
+{"id": "19-724-44-48", "zh": "可选地替代为 a 时：assā，nassā，nāya。", "confidence": 65}
+{"id": "19-725-2-5", "zh": "53. ta 可选地变为 i", "confidence": 45}
+{"id": "19-726-2-8", "zh": "在 ssaṃ、ssā、ssāya 前，ta 可选地变为 i。", "confidence": 75}
+{"id": "19-726-9-17", "zh": "tissā，tassā，tāya；nāhi，nābhi，tāhi，tābhi。", "confidence": 85}
+{"id": "19-726-18-25", "zh": "sa 可选地变为 ssā 时：assā，nassā，tissā，tassā。", "confidence": 70}
+{"id": "19-727-2-10", "zh": "54. 在 ta、eta、ima 之后，sa 变为 ssāya", "confidence": 70}
+{"id": "19-728-2-11", "zh": "在 tā、etā、imā 之后，sa 可选地变为 ssāya。", "confidence": 75}
+{"id": "19-728-12-27", "zh": "assāya，nassāya，tissāya，tassāya；依“ghapate”等规则替代为 ya 时：nāya，tāya。", "confidence": 70}
+{"id": "19-728-28-41", "zh": "naṃ 词尾替代为 saṃ，并且 t 可选地替代为 a 时：āsaṃ，nāsaṃ，nāsānaṃ，tāsaṃ，tāsānaṃ。", "confidence": 65}
+{"id": "19-728-42-58", "zh": "处格：assaṃ，assā，nassaṃ，nassā，nāyaṃ，nāya，tissaṃ，tissā，tassaṃ，tassā，tāyaṃ，tāya；nāsu，tāsu。", "confidence": 85}
+{"id": "19-729-2-8", "zh": "中性：naṃ，taṃ；nāni，tāni。", "confidence": 90}
+{"id": "19-729-9-16", "zh": "naṃ，taṃ；ne，nāni，te，tāni。", "confidence": 90}
+{"id": "19-729-17-19", "zh": "其余与阳性相同。", "confidence": 90}
+{"id": "19-730-2-14", "zh": "按照“ya 与 ta 两词总是相互关联”这一法则，ya 一词提出而没有确定的所指，由 ta 一词来确定。", "confidence": 70}
+{"id": "19-731-2-7", "zh": "指众所周知的事、亲身经历过的事，以及正在讨论的对象时，", "confidence": 60}
+{"id": "19-732-2-9", "zh": "ta 一词不需要 ya 一词也总能成立。——", "confidence": 65}
+{"id": "19-733-2-7", "zh": "因为有这样的说法，所以在这些情况下，ta 一词并不需要 ya 一词。", "confidence": 70}
+{"id": "19-733-8-14", "zh": "下面依次举例：", "confidence": 75}
+{"id": "19-734-2-51", "zh": "如“礼敬那位世尊”；如“……那位胜者确实是如所知而行的人”；以及承接前一首偈所说的“牟尼”一词而说的“他把连同习气的烦恼……”。", "confidence": 45}
+{"id": "19-735-2-5", "zh": "eso，ete。", "confidence": 90}
+{"id": "19-735-6-19", "zh": "esā，etā，etāyo；etaṃ，etāni 等，区别只在于没有 a 与 n 的替代。", "confidence": 70}
+{"id": "19-736-2-4", "zh": "ima 加 si，", "confidence": 75}
+{"id": "19-737-2-8", "zh": "127. 在 si 时，非中性的 ima 变为 ayaṃ", "confidence": 75}
+{"id": "19-738-2-7", "zh": "非中性的 ima 一词，在 si 时变为 ayaṃ。", "confidence": 85}
+{"id": "19-738-8-11", "zh": "ayaṃ，ime。", "confidence": 90}
+{"id": "19-738-12-15", "zh": "imaṃ，ime。", "confidence": 90}
+{"id": "19-739-2-8", "zh": "126. 在 nā 时，ima 变为 ana 与 imi", "confidence": 70}
+{"id": "19-740-2-10", "zh": "非阴性的 ima 一词，在 nā 时有 ana、imi 两种替代。", "confidence": 80}
+{"id": "19-740-11-22", "zh": "依“a 之后 nā 变为 ena”的规则变为 ena：anena，iminā。", "confidence": 70}
+{"id": "19-740-23-24", "zh": "在 hi 时——", "confidence": 80}
+{"id": "19-741-2-7", "zh": "125. 非阴性的 ima 变为 e", "confidence": 75}
+{"id": "19-742-2-13", "zh": "非阴性的 ima，在 su、naṃ、hi 前可选地变为 e。", "confidence": 80}
+{"id": "19-742-14-33", "zh": "按照“提到名词时，也包括带有性别标志的形式”这一法则，由于用“非阴性”排除了阴性，所以在“ima”这一名词所涉及的范围内，也包括以性别区分的 ima 一词。", "confidence": 45}
+{"id": "19-742-34-46", "zh": "它的作用在于：在“ta 的 t 在一切格尾中变为 n”等规则里，三种性别都能完成相应的变化。", "confidence": 55}
+{"id": "19-742-47-51", "zh": "ehi，ebhi，imehi，imebhi。", "confidence": 90}
+{"id": "19-742-52-73", "zh": "依“ṭa sasmāsmi”等规则，整个 ima 可选地替代为 a：assa，imassa；可选地变为 e：esaṃ，esānaṃ，imesaṃ，imesānaṃ。", "confidence": 65}
+{"id": "19-742-74-78", "zh": "amhā，asmā，imamhā，imasmā。", "confidence": 90}
+{"id": "19-742-79-86", "zh": "amhi，asmiṃ，imamhi，imasmiṃ；esu，imesu。", "confidence": 90}
+{"id": "19-743-2-7", "zh": "阴性：ayaṃ；imā，imāyo。", "confidence": 85}
+{"id": "19-743-8-12", "zh": "imaṃ；imā，imāyo。", "confidence": 90}
+{"id": "19-743-13-48", "zh": "nā 依“在 ta、eta、ima、amu 之后可选地变为 ssā”而可选地变为 ssā，再可选地替代为 a，或依“ssaṃ”等规则替代为 i，于是得到 assā，imissā，imāya；imāhi，imābhi。", "confidence": 55}
+{"id": "19-743-49-54", "zh": "assā，imissā，assāya，imissāya，imāya。", "confidence": 85}
+{"id": "19-743-55-79", "zh": "naṃ 词尾替代为 saṃ，ima 可选地替代为 a，再依“在 su、naṃ、hi 前变长音”变为长音，得到 āsaṃ；其他情况为 imāsaṃ，imāsānaṃ。", "confidence": 60}
+{"id": "19-743-80-89", "zh": "处格：assaṃ，imissaṃ，assā，imissā，imāyaṃ，imāya；imāsu。", "confidence": 85}
+{"id": "19-744-2-3", "zh": "中性——", "confidence": 85}
+{"id": "19-745-2-7", "zh": "201. ima 可选地变为 idaṃ", "confidence": 75}
+{"id": "19-746-2-12", "zh": "在中性中，ima 在 aṃ、si 前，连同这些词尾一起可选地变为 idaṃ。", "confidence": 75}
+{"id": "19-746-13-18", "zh": "idaṃ，imaṃ；ime，imāni。", "confidence": 90}
+{"id": "19-746-19-24", "zh": "idaṃ，imaṃ；ime，imāni。", "confidence": 90}
+{"id": "19-746-25-29", "zh": "anena，iminā 等，与阳性相同。", "confidence": 90}

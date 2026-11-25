@@ -1,0 +1,80 @@
+{"id": "13-1820-2-7", "zh": "33. 在表示妻子时，mātula 等词之后加 ānī。", "confidence": 75}
+{"id": "13-1821-2-6", "zh": "mātula 等词在表示妻子时，后面加 ānī。", "confidence": 80}
+{"id": "13-1821-7-31", "zh": "如 mātulānī（舅父之妻）、vāruṇānī、gahapatānī（家主之妻）、ācariyānī（老师之妻）；按“不表示妻子时，khattiya 可选”这条规则，有 khattiyānī 与 khattiyā；因为它列在 nadī 等词表里，表示妻子时则作 khattiyī。", "confidence": 60}
+{"id": "13-1822-2-11", "zh": "34. 以比喻词以及 saṃhita、sahita、saññata、saha、sapha、vāma、lakkhaṇa 等为前分的 ūru，后面加 ū。", "confidence": 65}
+{"id": "13-1823-2-6", "zh": "以比喻词等为前分的 ūru 一词，在阴性时加 ū。", "confidence": 75}
+{"id": "13-1823-7-26", "zh": "如 karabhorū（腿像象鼻的女子）、saṃhitorū、sahitorū、saññatorū、sahorū、saphorū、vāmorū、lakkhaṇorū；由于把“ū”拆出来单独成为一条规则，别处也加 ū，如 brahmabandhū。", "confidence": 60}
+{"id": "13-1824-2-7", "zh": "35. **yuva** 之后加 ti。", "confidence": 70}
+{"id": "13-1825-2-5", "zh": "**yuva 一词之后**，在阴性时加 ti。", "confidence": 70}
+{"id": "13-1825-6-7", "zh": "如 yuvati（少女）。", "confidence": 85}
+{"id": "13-1826-2-8", "zh": "36. 在 ī 前，nta 与 ntu 可以变为 t。", "confidence": 70}
+{"id": "13-1827-2-7", "zh": "在 ī 前，nta 与 ntu 可选择变为 t。", "confidence": 75}
+{"id": "13-1827-8-13", "zh": "如 gacchatī／gacchantī（正在走的女子），sīlavatī／sīlavantī（持戒的女子）。", "confidence": 80}
+{"id": "13-1828-2-7", "zh": "37. bhavant 变为 bhota。", "confidence": 75}
+{"id": "13-1829-2-7", "zh": "在 ī 前，bhavant 可选择替换为 bhota。", "confidence": 80}
+{"id": "13-1829-8-10", "zh": "如 bhotī／bhavantī。", "confidence": 85}
+{"id": "13-1830-2-6", "zh": "38. go 变为 āva。", "confidence": 65}
+{"id": "13-1831-2-5", "zh": "在 ī 前，go 一词变为 āva。", "confidence": 70}
+{"id": "13-1831-6-7", "zh": "如 gāvī（母牛）。", "confidence": 85}
+{"id": "13-1832-2-7", "zh": "39. puthu 变为 pathava 与 puthava。", "confidence": 75}
+{"id": "13-1833-2-7", "zh": "在 ī 前，puthu 变为 pathava 与 puthava。", "confidence": 80}
+{"id": "13-1833-8-14", "zh": "如 pathavī、puthavī；在 ṭha 前也作 pathavī。", "confidence": 40}
+{"id": "13-1834-2-6", "zh": "40. 复合词末加 a。", "confidence": 75}
+{"id": "13-1835-2-5", "zh": "“复合词末加 a”这一条作为总领规则，贯通以下各条。", "confidence": 70}
+{"id": "13-1836-2-7", "zh": "41. 在 pāpa 等词之后的 bhūmi。", "confidence": 75}
+{"id": "13-1837-2-10", "zh": "在 pāpa 等词之后的 bhūmi，复合词末加 a。", "confidence": 80}
+{"id": "13-1837-11-14", "zh": "如 pāpabhūmaṃ（恶地）、jātibhūmaṃ（出生地）。", "confidence": 80}
+{"id": "13-1838-2-6", "zh": "42. 在数词之后。", "confidence": 80}
+{"id": "13-1839-2-10", "zh": "在数词之后的 bhūmi，复合词末加 a。", "confidence": 80}
+{"id": "13-1839-11-14", "zh": "如 dvibhūmaṃ（二地）、tibhūmaṃ（三地）。", "confidence": 85}
+{"id": "13-1840-2-6", "zh": "43. nadī 与 godāvarī。", "confidence": 80}
+{"id": "13-1841-2-14", "zh": "在数词之后的 nadī 与 godāvarī，复合词末加 a，如 pañcanadaṃ（五河）、sattagodāvaraṃ（七条哥达瓦里河）。为什么说“在数词之后”？", "confidence": 80}
+{"id": "13-1841-15-19", "zh": "因为有 mahānadī（大河）。为什么说“nadī 与 godāvarī”？", "confidence": 80}
+{"id": "13-1841-20-21", "zh": "因为有 dasitthi（十个女人）。", "confidence": 75}
+{"id": "13-1842-2-7", "zh": "44. 在不变词与数词之后的 aṅguli 也是这样，但复合词表示他词义或不变词义时除外。", "confidence": 70}
+{"id": "13-1843-2-17", "zh": "在不变词与数词之后的 aṅguli，复合词末加 a，前提是这个复合词既不表示他词义，也不表示不变词义。", "confidence": 75}
+{"id": "13-1843-18-30", "zh": "如 niggatamaṅgulīhi 成 niraṅgulaṃ（离开手指的），accaṅgulaṃ（超过一指的），dve aṅguliyo samāhaṭā 成 dvaṅgulaṃ（两指合在一起）。为什么说“不表示他词义与不变词义时”？", "confidence": 70}
+{"id": "13-1843-31-44", "zh": "因为有 pañcaṅguli hattho（有五指的手）、upaṅguli（靠近手指）。那么，‘dve aṅgulīmānamassāti dvaṅgulan’（以两指为量的东西叫 dvaṅgula）又怎么解释？", "confidence": 65}
+{"id": "13-1843-45-53", "zh": "这里的复合词并不是按他词义构成的，而是省去 matta 等词缀后，才用于这个意思。", "confidence": 60}
+{"id": "13-1843-54-70", "zh": "或者说，aṅgula 是另一个表示量度的词，例如 ‘senaṅgulappamāṇena aṅgulānaṃ sataṃ puṇṇaṃ catuddasa vā aṅgulānī’（按标准指量，满一百指，或十四指）。", "confidence": 45}
+{"id": "13-1844-2-8", "zh": "45. 在 dīgha、aho、vassa 以及表示部分的词之后的 ratti，也是这样。", "confidence": 65}
+{"id": "13-1845-2-11", "zh": "在 dīgha 等词、不变词与数词之后的 ratti，复合词末加 a。", "confidence": 75}
+{"id": "13-1845-12-52", "zh": "如 dīgharattaṃ（长夜）、ahorattaṃ（日夜，也作 -tto）、vassārattaṃ（雨季之夜，也作 -tto）、pubbarattaṃ（前夜）、apararattaṃ（后夜）、aḍḍhurattaṃ（半夜），atikkanto rattiṃ 成 atiratto（过了夜晚的），dve rattī samāhaṭā 成 dirattaṃ（两夜，也作 -tto）；有时依“通常”这条总领规则可选，作 ekarattaṃ（也作 -tto）或 ekaratti（一夜）。为什么说“不表示他词义与不变词义时”？", "confidence": 60}
+{"id": "13-1845-53-61", "zh": "因为有 dīgharattihemanto（夜长的冬季）、uparatti（靠近夜晚）。有时依“通常”的规定也照样加，如 yathārattaṃ（每夜）。", "confidence": 55}
+{"id": "13-1846-2-7", "zh": "46. go 之后也是这样，但复合词表示“和”义时除外，且须在没有省略的情况下。", "confidence": 60}
+{"id": "13-1847-2-25", "zh": "在没有省略的情况下，go 之后复合词末加 a，前提是这个复合词不表示“和”义，也不表示他词义与不变词义，如 rājagavo（王的牛）、paramagavo（上等的牛）、pañcagavadhano（以五头牛为财产的人）、dasagavaṃ（十头牛）。为什么说“没有省略时”？", "confidence": 55}
+{"id": "13-1847-26-33", "zh": "因为有 pañcahi gohi kīto 成 pañcagu（用五头牛买来的）。为什么说“不表示‘和’义时”？", "confidence": 70}
+{"id": "13-1847-34-37", "zh": "因为有 ajassagāvo（山羊、马和牛）。为什么说“不表示他词义与不变词义时”？", "confidence": 70}
+{"id": "13-1847-38-41", "zh": "因为有 cittagu（拥有花斑牛的人）、upagu（靠近牛）。", "confidence": 70}
+{"id": "13-1848-2-6", "zh": "47. rattindiva、dāragava、caturassa。", "confidence": 80}
+{"id": "13-1849-2-6", "zh": "这些词作为以 a 结尾的现成形式直接给出。", "confidence": 75}
+{"id": "13-1849-7-29", "zh": "ratto ca divā ca 成 rattindivaṃ（夜和昼），ratti ca divā ca 也成 rattindivaṃ，dārā ca gāvo ca 成 dāragavaṃ（妻子和牛），catasso assiyo assa 成 caturasso（有四个角的，即四方形）。", "confidence": 75}
+{"id": "13-1850-2-6", "zh": "48. 表示长度时为 anugava。", "confidence": 75}
+{"id": "13-1851-2-7", "zh": "当所表达的是长度时，anugava 作为现成形式直接给出。", "confidence": 75}
+{"id": "13-1851-8-13", "zh": "如 anugavaṃ sakaṭaṃ（和牛一样长的车）。为什么说“表示长度时”？", "confidence": 70}
+{"id": "13-1851-14-17", "zh": "因为有 gunnaṃ pacchā 成 anugu（在牛的后面）。", "confidence": 70}
+{"id": "13-1852-2-6", "zh": "49. 表示他词义时，在 akkhi 之后。", "confidence": 75}
+{"id": "13-1852-7-14", "zh": "如果复合词表示他词义，akkhi 之后复合词末加 a。", "confidence": 65}
+{"id": "13-1852-15-18", "zh": "如 visālakkho、visālakkhī（大眼睛的男子、大眼睛的女子）。", "confidence": 80}
+{"id": "13-1853-2-6", "zh": "50. 指木器时的 aṅguli。", "confidence": 70}
+{"id": "13-1854-2-8", "zh": "以 aṅguli 结尾的复合词，在表示他词义而指木器时，复合词末加 a。", "confidence": 70}
+{"id": "13-1854-9-35", "zh": "如 dvaṅgulaṃ dāru（两齿的木器）、pañcaṅgulaṃ（五齿的木器），指的是带有像手指一样的部件、用来摊扬谷物等的木器。至于表示量度的，前面已经成立。sakha 与 rāja 两词本来就以 a 结尾；sissa 这种用法也见不到；gāṇḍīvadhanvā 则是由另一个词基构成的。", "confidence": 45}
+{"id": "13-1855-2-7", "zh": "51. 表示相互交换动作时加 ci。", "confidence": 70}
+{"id": "13-1856-2-8", "zh": "当所表达的是相互交换的动作时，在表示他词义的复合词之后加 ci。", "confidence": 60}
+{"id": "13-1856-9-32", "zh": "如 kesākesi（互相揪头发）、daṇḍādaṇḍi（互相用棍子打）。ca 字是为了在“cismiṃ”（3.66）这条规则里作区分；sugandhi、duggandhi 这样的用法则见不到。", "confidence": 45}
+{"id": "13-1857-2-7", "zh": "52. 在 ltu 以及阴性 ī、ū 之后加 ka。", "confidence": 70}
+{"id": "13-1858-2-10", "zh": "在以 ltu 词缀结尾的词，以及以阴性 ī、ū 结尾的词之后，表示他词义时，通常加 ka 词缀。", "confidence": 75}
+{"id": "13-1858-11-18", "zh": "如 bahukattuko（有许多作者的）、bahukumāriko（有许多少女的）、bahubrahmabandhuko。为什么说“通常”？", "confidence": 75}
+{"id": "13-1858-19-20", "zh": "因为有 subbhū（眉毛好看的）。", "confidence": 75}
+{"id": "13-1859-2-6", "zh": "53. 在其他词之后可选。", "confidence": 75}
+{"id": "13-1860-2-9", "zh": "在其他词之后，表示他词义时，可以选择加 ka，这也是通常的情况。", "confidence": 65}
+{"id": "13-1860-10-13", "zh": "如 bahumālako／bahumālo（有许多花环的）。", "confidence": 80}
+{"id": "13-1861-2-6", "zh": "54. 在后分之前。", "confidence": 75}
+{"id": "13-1861-7-9", "zh": "这一条应当理解为总领规则。", "confidence": 80}
+{"id": "13-1862-2-6", "zh": "55. ima 变为 idaṃ。", "confidence": 80}
+{"id": "13-1863-2-7", "zh": "在后分之前，ima 变为 idaṃ。", "confidence": 80}
+{"id": "13-1863-8-16", "zh": "如 idamaṭṭhitā、idappaccayatā；后者省去鼻音 ṃ，并把 p 重叠。", "confidence": 70}
+{"id": "13-1864-2-8", "zh": "56. puma 可以变为 puṃ。", "confidence": 80}
+{"id": "13-1864-9-13", "zh": "在后分之前，puma 可选择变为 puṃ。", "confidence": 80}
+{"id": "13-1864-14-17", "zh": "如 pulliṅgaṃ／pumaliṅgaṃ（阳性）。", "confidence": 85}
+{"id": "13-1865-2-6", "zh": "57. nta 与 ntu 变为 ṭa。", "confidence": 60}

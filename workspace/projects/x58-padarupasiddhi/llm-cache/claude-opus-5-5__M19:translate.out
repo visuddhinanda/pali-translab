@@ -1,0 +1,73 @@
+{"id":"17-627-2-2","zh":"鼻音（niggahīta）连声规则","confidence":85}
+{"id":"17-628-2-6","zh":"现在讲鼻音的连声。","confidence":90}
+{"id":"17-629-2-32","zh":"Taṇhaṃ karo，raṇaṃ jaho，saṃ ṭhito，jutiṃ dharo，saṃ mato：这里以“niggahītaṃ”（鼻音）为主题，“byañjane”（在辅音前）延续下来。","confidence":75}
+{"id":"17-630-2-8","zh":"49. 在组辅音前，可变为该组末音。","confidence":80}
+{"id":"17-631-2-14","zh":"当后面是属于某一组的辅音时，鼻音可以变为组末音；也就是按照后面的辅音与鼻音发音部位相近的原则，变为该组的第五个音。","confidence":70}
+{"id":"17-631-15-18","zh":"这里的 vā 一词表示限定的选择。","confidence":70}
+{"id":"17-631-19-35","zh":"因此，在 “taṇhaṅkaro，raṇañjaho，saṇṭhito，jutindharo，sammato” 等例子中，这种变化是必然的。","confidence":75}
+{"id":"17-632-2-15","zh":"Taṅkaroti 或 taṃ karoti，taṅkhaṇaṃ 或 taṃkhaṇaṃ，saṅgaho 或 saṃgaho，taṅghataṃ 或 taṃ ghataṃ。","confidence":80}
+{"id":"17-632-16-31","zh":"Dhammañcare 或 dhammaṃ care，tañchannaṃ 或 taṃ channaṃ，tañjātaṃ 或 taṃ jātaṃ，taññāṇaṃ 或 taṃ ñāṇaṃ。","confidence":80}
+{"id":"17-632-32-39","zh":"Taṇṭhānaṃ 或 taṃ ṭhānaṃ，taṇḍahati 或 bhaṃ ḍahati。","confidence":70}
+{"id":"17-632-40-59","zh":"Tantanoti 或 taṃ tanoti，tanthiraṃ 或 taṃ thiraṃ，tandānaṃ 或 taṃ dānaṃ，tandhanaṃ 或 taṃ dhanaṃ，tanniccutaṃ 或 taṃ niccutaṃ。","confidence":80}
+{"id":"17-632-60-78","zh":"Tampatto 或 taṃ patto，tamphalaṃ 或 taṃ phalaṃ，tesambodho 或 tesaṃ bodho，sambhūto 或 saṃbhūto，tammittaṃ 或 taṃ mittaṃ。","confidence":80}
+{"id":"17-632-79-88","zh":"Kiṅkato 或 kiṃ kato，dātuṅgato 或 dātuṃ gato——在这类例子中，这种变化是可选的。","confidence":80}
+{"id":"17-633-2-14","zh":"在下面的例子中则不变：na taṃ kammaṃ kataṃ sādhu，saraṇaṃ gacchāmi。","confidence":75}
+{"id":"17-634-2-19","zh":"上文虽然已经有 vā，中间又隔着别的规则，这里再取 vā，是为了表示另一层意思；因此，前缀 saṃ 和 puṃ 末尾的鼻音，在 l 前变为 l。","confidence":55}
+{"id":"17-634-20-36","zh":"例如：paṭisaṃlīno 变为 paṭisallīno，同样还有 paṭisallāṇo、sallakkhaṇā、sallekho、sallāpo，puṃliṅgaṃ 变为 pulliṅgaṃ。","confidence":75}
+{"id":"17-635-2-21","zh":"Paccattaṃ eva，taṃ eva，tañhi tassa，evañhi vo：这里以“vā”为主题延续下来。","confidence":75}
+{"id":"17-636-2-8","zh":"50. 在 e、h 前变为 ñ。","confidence":80}
+{"id":"17-637-2-19","zh":"当后面是 e 或 h 时，鼻音可以变为 ñ；在 e 前，替换出来的 ñ 要双写。","confidence":75}
+{"id":"17-638-2-18","zh":"Paccattaññeva 或 paccattaṃ eva，taññeva 或 taṃ eva，tañhi tassa 或 tañhi tassa，evañhi vo 或 evañhi vo。","confidence":75}
+{"id":"17-639-2-17","zh":"由于 vā 一词表示限定的选择，除了小品词 eva 和 hi 之外，其他情况下不发生这种变化，例如：evametaṃ，evaṃ hoti。","confidence":65}
+{"id":"17-640-2-23","zh":"Saṃyogo，saṃyojanaṃ，saṃyato，saṃyācikāya，yaṃ yadeva，ānantarikaṃ yamāhu：这里“ña”延续下来。","confidence":75}
+{"id":"17-641-2-8","zh":"51. 在 y 前，连同 y 一起也变为 ñ。","confidence":70}
+{"id":"17-642-2-18","zh":"当后面是 y 时，鼻音可以连同 y 一起变为 ñ；替换出来的 ñ 要双写。","confidence":75}
+{"id":"17-643-2-21","zh":"Saññogo 或 saṃyogo，saññojanaṃ 或 saṃyojanaṃ，saññato 或 saṃyato，saññācikāya 或 saṃyācikāya，yaññadeva 或 yaṃ yadeva，ānantarikaññamāhu 或 ānantarikaṃ yamāhu。","confidence":80}
+{"id":"17-644-2-16","zh":"由于 vā 一词表示限定的选择，鼻音只有在 saṃ 和词末，并且后面是代词的 y 时才这样变，其他情况下不发生。","confidence":60}
+{"id":"17-644-17-27","zh":"例如：etaṃ yojanaṃ，taṃ yānaṃ，saraṇaṃ yanti。","confidence":80}
+{"id":"17-645-2-42","zh":"这里本应说“saha ye ca”，却说成“sa ye ca”，由此应当知道，在经文中为了便于发音，也会删去字母；因此 paṭisaṅkhāya yoniso 作 paṭisaṅkhā yoniso，sayaṃ abhiññāya sacchikatvā 作 sayaṃ abhiññā sacchikatvā，pariyesanāya 作 pariyesanā 等形式都能成立。","confidence":70}
+{"id":"17-646-2-31","zh":"Taṃ ahaṃ brūmi，yaṃ āhu，dhanaṃ eva，kiṃ etaṃ，nindituṃ arahati，yaṃ aniccaṃ，taṃ anattā，etaṃ avoca，etaṃ eva：在这些例子中——","confidence":75}
+{"id":"17-647-2-7","zh":"52. 在元音前变为 m、d。","confidence":80}
+{"id":"17-648-2-12","zh":"当后面是元音时，鼻音可以替换为 m 或 d。","confidence":80}
+{"id":"17-648-13-23","zh":"这里由于延续下来的 vā 一词表示限定的选择，d 只出现在 ya、ta、eta 这些词的后面。","confidence":60}
+{"id":"17-649-2-20","zh":"Tamahaṃ brūmi，yamāhu，dhanameva，kimetaṃ，ninditumarahati，yadaniccaṃ，tadanattā，etadavoca，etadeva。","confidence":85}
+{"id":"17-650-2-5","zh":"为什么说 **vā**？","confidence":80}
+{"id":"17-650-6-16","zh":"因为也有不变的情况：taṃ ahaṃ，etaṃ eva，akkocchi maṃ avadhi maṃ。","confidence":75}
+{"id":"17-651-2-11","zh":"这里通过拆分规则单独取 **madā**，m 在辅音前也可以出现。","confidence":65}
+{"id":"17-651-12-22","zh":"因此 “buddhama saraṇama gacchāmī” 等形式能够成立。","confidence":75}
+{"id":"17-652-2-20","zh":"Tāsaṃ ahaṃ santike，vidūnaṃ aggaṃ，tassa adāsiṃ ahaṃ：这里“sare”（在元音前）延续下来。","confidence":75}
+{"id":"17-653-2-7","zh":"53. 有时删除。","confidence":85}
+{"id":"17-654-2-11","zh":"当后面是元音时，鼻音有时会被删除，这发生在需要维持格律或便于发音的地方。","confidence":75}
+{"id":"17-654-12-17","zh":"前面的元音被删除，后面的元音如果不在复辅音之前，就变为长音。","confidence":65}
+{"id":"17-655-2-15","zh":"Tāsāhaṃ santike，vidūnaggaṃ，tassa adāsāhaṃ，tathāgatāhaṃ，evāhaṃ，kyāhaṃ。","confidence":80}
+{"id":"17-656-2-5","zh":"为什么说 **kvaci**？","confidence":80}
+{"id":"17-656-6-9","zh":"因为也有不删除的情况：evamassa，kimahaṃ。","confidence":75}
+{"id":"17-657-2-34","zh":"Ariyasaccānaṃ dassanaṃ，etaṃ buddhānaṃ sāsanaṃ，saṃratto，saṃrāgo，saṃrambho，avisaṃhāro，ciraṃ pavāsiṃ，gantuṃ kāmo，gantuṃ mano：这里“kvaci lopaṃ”（有时删除）延续下来。","confidence":75}
+{"id":"17-658-2-8","zh":"54. 在辅音前也是这样。","confidence":75}
+{"id":"17-659-2-11","zh":"当后面是辅音时，鼻音有时也会被删除，这发生在需要维持格律等情况下。","confidence":75}
+{"id":"17-659-12-18","zh":"在 r 和 h 前，前缀末尾的元音变为长音。","confidence":70}
+{"id":"17-660-2-24","zh":"Ariyasaccāna dassanaṃ，etaṃ buddhāna sāsanaṃ，sāratto，sārāgo，sārambho，avisāhāro，cirappavāsiṃ（p 双写），gantukāmo，gantumano。","confidence":70}
+{"id":"17-661-2-5","zh":"为什么说 **kvaci**？","confidence":80}
+{"id":"17-661-6-8","zh":"因为也有不删除的情况：etaṃ maṅgalamuttamaṃ。","confidence":75}
+{"id":"17-662-2-48","zh":"Kataṃ iti，kiṃ iti，abhinanduṃ iti，uttattaṃ iva，cakkaṃ iva，kaliṃ idāni，kiṃ idāni，tvaṃ asi，idaṃ api，uttariṃ api，dātuṃ api，sadisaṃ eva：这里“niggahītamhā”（在鼻音之后）和“lopaṃ”（删除）延续下来。","confidence":75}
+{"id":"17-663-2-8","zh":"55. 后面的元音可以删除。","confidence":80}
+{"id":"17-664-2-8","zh":"鼻音后面的元音可以被删除。","confidence":80}
+{"id":"17-664-9-11","zh":"这时鼻音变为组末音。","confidence":70}
+{"id":"17-665-2-25","zh":"Katanti，kinti，abhinandunti，uttattaṃva，cakkaṃva，kalindāni，kindāni，tvaṃsi，idampi，uttarimpi，dātumpi，sadisaṃva。","confidence":85}
+{"id":"17-666-2-5","zh":"为什么说 **vā**？","confidence":80}
+{"id":"17-666-6-15","zh":"因为也有不删除的情况：kataṃ iti，kimiti，dātumapi，sāmaṃ eva。","confidence":75}
+{"id":"17-667-2-10","zh":"这里的 vā 一词同样表示限定的选择，所以除了 iti、iva、idāni、asi、api、eva 等词之外，其他情况下不发生删除。","confidence":65}
+{"id":"17-667-11-18","zh":"例如：ahaṃ ettha，etaṃ ahosi。","confidence":80}
+{"id":"17-668-2-27","zh":"Evaṃ assa te āsavā，pupphaṃ assā uppajjati：这里后面的元音被删除时，经过格的变换，“parasmiṃ”“sare”“lutte”延续下来。","confidence":60}
+{"id":"17-669-2-9","zh":"56. 辅音也变为非复辅音。","confidence":70}
+{"id":"17-670-2-15","zh":"在鼻音之后，后面的元音被删除时，如果后面的辅音是复辅音，就变为非复辅音；也就是删除复辅音的一部分，即前面那个辅音。","confidence":70}
+{"id":"17-671-2-21","zh":"两个辅音合在一处，叫作复辅音（saññoga）；但这里按“与别的音相结合”的意思，把前面那个音叫作 saññoga；失去了 saññoga 的那个音叫作 visaññoga，指后面的音。","confidence":55}
+{"id":"17-672-2-9","zh":"Evaṃ sa te āsavā，pupphaṃsā uppajjati。","confidence":85}
+{"id":"17-673-2-5","zh":"为什么说 **lutte**？","confidence":80}
+{"id":"17-673-6-7","zh":"因为元音没有删除时就不这样变：evamassa。","confidence":70}
+{"id":"17-674-2-9","zh":"由于 ca 一词，三个辅音中同形辅音的结合，也变为非复辅音。","confidence":55}
+{"id":"17-674-10-15","zh":"例如：agyāgāraṃ，vutyassa。","confidence":80}
+{"id":"17-675-2-30","zh":"Cakkhu udapādi，ava siro，yāvacidha bhikkhave，aṇuthūlāni，ta sampayuttā：这里“sare”“āgamo”“kvaci”“byañjane”延续下来。","confidence":70}
+{"id":"17-676-2-6","zh":"57. 鼻音也可作为增音。","confidence":80}
+{"id":"17-677-2-11","zh":"在元音或辅音前，有时为了便于发音，会增加一个鼻音。","confidence":75}
+{"id":"17-677-12-15","zh":"鼻音总是跟随在短音后面，所以这个增音只出现在短音之后。","confidence":65}

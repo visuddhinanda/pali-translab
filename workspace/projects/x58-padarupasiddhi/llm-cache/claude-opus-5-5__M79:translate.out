@@ -1,0 +1,80 @@
+{"id": "17-2770-2-3", "zh": "以上是第七语尾（sattamī，祈愿式）。", "confidence": 75}
+{"id": "17-2771-2-3", "zh": "以上是现在时、命令与假设时的语尾规则。", "confidence": 70}
+{"id": "17-2772-2-17", "zh": "455. 昨日过去时（hiyyattanī）语尾：ā、ū，o、ttha，aṃ、mhā，ttha、tthuṃ，se、vhaṃ，iṃ、mhase。", "confidence": 85}
+{"id": "17-2773-2-8", "zh": "ā 等十二个语尾称为昨日过去时。", "confidence": 90}
+{"id": "17-2774-2-12", "zh": "这里承接“appaccakkhe（不亲见时）”与“atīte（过去时）”两词。", "confidence": 80}
+{"id": "17-2775-2-8", "zh": "456. 从昨天起的过去，亲见时用昨日过去时。", "confidence": 75}
+{"id": "17-2776-2-14", "zh": "从昨天起的过去时间，无论亲见还是不亲见，都用昨日过去时语尾。这样就得到昨日过去时为他言第一人称单数语尾 ā。", "confidence": 80}
+{"id": "17-2777-2-19", "zh": "从“kvaci dhātu”等规则承接“kvaci（有时）”与“dhātūnaṃ（诸词根的）”。", "confidence": 80}
+{"id": "17-2778-2-9", "zh": "457. 在昨日过去时、今日过去时（ajjatanī）与条件式（kālātipatti）中加增音 a。", "confidence": 85}
+{"id": "17-2779-2-11", "zh": "在昨日过去时、今日过去时、条件式这三种语尾中，有时在词根开头加增音 a。", "confidence": 85}
+{"id": "17-2779-12-15", "zh": "如果问：为什么这个增音 a 要加在词根开头呢？", "confidence": 85}
+{"id": "17-2780-2-6", "zh": "即使词根末尾已有元音，这里在末尾再加增音 a，", "confidence": 65}
+{"id": "17-2781-2-7", "zh": "也没有意义；又为了顺应实际用例，所以这个增音加在词根开头。", "confidence": 65}
+{"id": "17-2782-2-5", "zh": "加 a 词缀、元音增强、替换为 av、元音脱落等，都按前面所说的方法。", "confidence": 75}
+{"id": "17-2783-2-5", "zh": "abhavā，abhavū。", "confidence": 90}
+{"id": "17-2783-6-24", "zh": "abhavo；依“kvaci dhātu”等规则，o 可替换为 a，得 abhava；abhavattha。", "confidence": 80}
+{"id": "17-2783-25-28", "zh": "abhavaṃ，abhavamhā。", "confidence": 90}
+{"id": "17-2783-29-32", "zh": "abhavattha，abhavatthuṃ。", "confidence": 90}
+{"id": "17-2783-33-36", "zh": "abhavase，abhavavhaṃ。", "confidence": 90}
+{"id": "17-2783-37-40", "zh": "abhaviṃ，abhavamhase。", "confidence": 90}
+{"id": "17-2784-2-32", "zh": "在被动语态中加 ya 词缀：tayā sukhamanvabhūyattha（快乐曾被你体验）；没有增音 a 时为 anubhūyattha；依“kvaci dhātu”等规则，ttha 替换为 tha，得 anvabhūyatha、anubhūyatha；anvabhūyatthuṃ，anubhūyatthuṃ。", "confidence": 75}
+{"id": "17-2784-33-40", "zh": "anvabhūyase，anubhūyase，anvabhūyavhaṃ，anubhūyavhaṃ。", "confidence": 90}
+{"id": "17-2784-41-48", "zh": "anvabhūyiṃ，anubhūyiṃ，anvabhūyamhase，anubhūyamhase。", "confidence": 90}
+{"id": "17-2784-49-54", "zh": "用为他言时为 anvabhūyā、anubhūyā 等。", "confidence": 80}
+{"id": "17-2784-55-57", "zh": "在无人称语态（bhāva）中为 anvabhūyattha。", "confidence": 80}
+{"id": "17-2785-2-12", "zh": "同样：so odanaṃ apacā（他曾煮饭），pacā；apacū，pacū。", "confidence": 85}
+{"id": "17-2785-13-20", "zh": "apaco，paco，apacattha，pacattha。", "confidence": 90}
+{"id": "17-2785-21-28", "zh": "apacaṃ，pacaṃ，apacamhā，pacamhā。", "confidence": 90}
+{"id": "17-2785-29-36", "zh": "apacattha，pacattha，apacatthu，pacatthuṃ。", "confidence": 85}
+{"id": "17-2785-37-44", "zh": "apacase，pacase，apacavhaṃ，pacavhaṃ。", "confidence": 90}
+{"id": "17-2785-45-52", "zh": "apaciṃ，paciṃ，apacamhase，pacamhase。", "confidence": 90}
+{"id": "17-2786-2-9", "zh": "被动语态：apaccatha，apaccattha，apaccatthuṃ。", "confidence": 85}
+{"id": "17-2786-10-13", "zh": "apaccase，apaccavhaṃ。", "confidence": 90}
+{"id": "17-2786-14-17", "zh": "apacciṃ，apaccamhase。", "confidence": 90}
+{"id": "17-2786-18-22", "zh": "apaccā，apaccū 等。", "confidence": 85}
+{"id": "17-2787-2-6", "zh": "同样：agacchā，agacchū。", "confidence": 90}
+{"id": "17-2787-7-12", "zh": "agaccho，agaccha，agacchattha。", "confidence": 90}
+{"id": "17-2787-13-16", "zh": "agacchaṃ，agacchamhā。", "confidence": 90}
+{"id": "17-2787-17-20", "zh": "agacchattha，agacchatthuṃ。", "confidence": 90}
+{"id": "17-2787-21-24", "zh": "agacchase，agacchavhaṃ。", "confidence": 90}
+{"id": "17-2787-25-28", "zh": "agacchiṃ，agacchamhase。", "confidence": 90}
+{"id": "17-2787-29-32", "zh": "agamā，agamū。", "confidence": 90}
+{"id": "17-2787-33-38", "zh": "agamo，agama，agamattha。", "confidence": 90}
+{"id": "17-2787-39-42", "zh": "agamaṃ，agamamhā。", "confidence": 90}
+{"id": "17-2787-43-46", "zh": "agamattha，agamatthuṃ。", "confidence": 90}
+{"id": "17-2787-47-50", "zh": "agamase，agamavhaṃ。", "confidence": 90}
+{"id": "17-2787-51-54", "zh": "agamiṃ，agamamhase。", "confidence": 90}
+{"id": "17-2788-2-19", "zh": "被动语态：agacchīyattha，gacchīyattha，agamīyattha，gamīyattha，agacchīyatthuṃ，gacchīyatthuṃ，agamīyatthuṃ，gamīyatthuṃ 等。", "confidence": 85}
+{"id": "17-2788-20-25", "zh": "同样：aghammā，aghammū 等。", "confidence": 85}
+{"id": "17-2789-2-3", "zh": "以上是昨日过去时语尾。", "confidence": 85}
+{"id": "17-2790-2-10", "zh": "458. 昨日过去时、第七语尾（祈愿式）、第五语尾（命令式）、现在时，称为全词根语尾（sabbadhātuka）。", "confidence": 80}
+{"id": "17-2791-2-23", "zh": "昨日过去时等四种语尾称为全词根语尾。由于昨日过去时等称为全词根语尾，所以“ikārāgamo asabbadhātukamhi（在非全词根语尾前加增音 i）”所说的增音 i 就不出现。", "confidence": 80}
+{"id": "17-2792-2-3", "zh": "以上是全词根语尾。", "confidence": 70}
+{"id": "17-2793-2-22", "zh": "459. 远过去时（parokkhā）语尾：a、u，e、ttha，aṃ、mha，ttha、re，tho、vho，iṃ、mhe。", "confidence": 85}
+{"id": "17-2794-2-8", "zh": "a 等十二个语尾称为远过去时。", "confidence": 90}
+{"id": "17-2794-9-20", "zh": "超出诸“akkha”即诸根之外的，叫作 parokkha（不现见）；这个语尾表示这种情况，所以称为**远过去时**（parokkhā）。", "confidence": 75}
+{"id": "17-2795-2-8", "zh": "460. 在不亲见的过去，用远过去时。", "confidence": 85}
+{"id": "17-2796-2-10", "zh": "在不亲见、即说话者诸根所不及的过去时间，用远过去时语尾。", "confidence": 85}
+{"id": "17-2796-11-18", "zh": "从这里越过而去，所以叫作 atīta（过去）；意思是：曾经存在，而已经过去了。", "confidence": 80}
+{"id": "17-2797-2-6", "zh": "按前面所说的方法，得到远过去时为他言第一人称单数语尾 a。", "confidence": 85}
+{"id": "17-2797-7-14", "zh": "在“bhū a”这里——", "confidence": 80}
+{"id": "17-2798-2-10", "zh": "“dhātūnaṃ”经变格后承接下来。", "confidence": 75}
+{"id": "17-2799-2-7", "zh": "461. 有时，开头带一个元音的音节重复。", "confidence": 75}
+{"id": "17-2800-2-7", "zh": "诸词根开头的、带一个元音的音节，有时重复。", "confidence": 80}
+{"id": "17-2800-8-13", "zh": "这里的 kvaci 一词表示限定的任意性，因此——", "confidence": 75}
+{"id": "17-2801-2-9", "zh": "在 kha、cha、sa 词缀前和远过去时中，所有词根都重复；", "confidence": 65}
+{"id": "17-2802-2-6", "zh": "加 a 词缀时，juhoti 等也重复；在 kicca 等词缀中有时重复。", "confidence": 60}
+{"id": "17-2803-2-10", "zh": "在“bhū bhū a”这里——", "confidence": 80}
+{"id": "17-2804-2-6", "zh": "462. 前一部分是重复音（abbhāsa）。", "confidence": 85}
+{"id": "17-2805-2-13", "zh": "重复后的词根，其前一部分称为重复音；这是重复音的定义。", "confidence": 85}
+{"id": "17-2806-2-4", "zh": "“abbhāsa（重复音）”一词承接下来。", "confidence": 85}
+{"id": "17-2807-2-7", "zh": "463. 末尾可变为 i 类元音或 a。", "confidence": 80}
+{"id": "17-2808-2-11", "zh": "重复音的末尾可变为 i 类元音，也可变为 a。", "confidence": 80}
+{"id": "17-2808-12-15", "zh": "这里的 vā 一词表示限定的任意性。", "confidence": 75}
+{"id": "17-2808-16-17", "zh": "因此——", "confidence": 85}
+{"id": "17-2809-2-7", "zh": "在 kha、cha、sa 词缀前，a 类元音", "confidence": 65}
+{"id": "17-2810-2-5", "zh": "变为 i；sa 与 gup 的变为 ī；", "confidence": 50}
+{"id": "17-2811-2-5", "zh": "在远过去时中，bhū 的可变为", "confidence": 60}
+{"id": "17-2812-2-4", "zh": "a，其余的则不变为 i。", "confidence": 50}
+{"id": "17-2813-2-6", "zh": "ū 变为 a。", "confidence": 80}

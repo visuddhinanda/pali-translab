@@ -1,0 +1,77 @@
+{"id": "22-2997-2-5", "zh": "生于中间的，是 majjhimo（中间的）。", "confidence": 85}
+{"id": "22-2997-6-22", "zh": "同样有 antimo（最后的）、heṭṭhimo（下面的）、uparimo（上面的）、orimo（此岸的）、pacchimo（后面的）、abbhantarimo（内部的）、paccantimo（边地的）、puratthimo（东方的）。", "confidence": 82}
+{"id": "22-2998-2-48", "zh": "459. 词缀 kaṇa、ṇeyya、ṇeyyaka、ya、iya［ka.352；rū.376；nī.765；caṃ.3.2.4,5,6……4.2.94,95,97,119-130］。", "confidence": 78}
+{"id": "22-2999-2-8", "zh": "以第七格（处格）结尾的词，在“生于（某处）”的意义上，接这五个词缀。", "confidence": 82}
+{"id": "22-3000-2-13", "zh": "kaṇa：生于拘尸那罗的，是 kosinārako；生于摩揭陀的，是 māgadhako；同样有 āraññako（林中的），例如 āraññako vihāro（林中的精舍）。", "confidence": 75}
+{"id": "22-3001-2-11", "zh": "ṇeyya：生于恒河的，是 gaṅgeyyo；同样有 pabbateyyo（山中的）；生于林中的，是 vāneyyo。", "confidence": 82}
+{"id": "22-3002-2-14", "zh": "ṇeyyaka：kosaleyyako（拘萨罗的）、bārāṇaseyyako（波罗奈的）、campeyyako（瞻波的）、mithileyyako（弥提罗的）；这里不作元音强化（vuddhi）。", "confidence": 78}
+{"id": "22-3003-2-9", "zh": "ya：生于村落的，是 gammo；生于天上的，是 dibbo；", "confidence": 80}
+{"id": "22-3004-2-24", "zh": "iya：gāmiyo，又作 gāmiko，这是 y 变为 k；生于腹中的，是 odariyo，又作 odariko；生于天上的，是 diviyo；同样有 pañcāliyo（般遮罗的）、bodhipakkhiyo（菩提分的）、lokiyo（世间的）。", "confidence": 70}
+{"id": "22-3005-2-43", "zh": "460. 词缀 ṇika［ka.351；rū.374；nī.764；caṃ.3.2.40,41,42；pā.4.2.126,127,128］。", "confidence": 80}
+{"id": "22-3006-2-6", "zh": "以第七格结尾的词，在“生于”的意义上，接 ṇika。", "confidence": 82}
+{"id": "22-3007-2-13", "zh": "sāradiko（秋天的），例如 divaso（日子）；sāradikā，例如 ratti（夜晚）；sāradikaṃ，例如 pupphaṃ（花）。", "confidence": 78}
+{"id": "22-3007-14-31", "zh": "这里用 bhava（生于）一词，也兼指其他意义：从山上奔流而下的河，是 pabbateyyā；生在虫茧里的，是 koseyyaṃ，指丝布。", "confidence": 75}
+{"id": "22-3007-32-36", "zh": "同样有 siveyyaṃ（尸毗国的）、bārāṇaseyyaṃ（波罗奈的）。", "confidence": 72}
+{"id": "22-3008-2-40", "zh": "461. 以它为其技艺、习性、货品、武器、目的［ka.351；rū.374；nī.764；caṃ.3.4.49-66……4.4.47-65］。", "confidence": 78}
+{"id": "22-3009-2-20", "zh": "在“以它为其技艺”“以它为其习性”“以它为其货品”“以它为其武器”“以它为其目的”这些意义上，以第一格结尾的词接 ṇika。", "confidence": 82}
+{"id": "22-3010-2-7", "zh": "技艺：弹琵琶是他的技艺，所以是 veṇiko（琵琶手）。", "confidence": 80}
+{"id": "22-3010-8-13", "zh": "这里的 vīṇā 一词，指的是弹琵琶。", "confidence": 82}
+{"id": "22-3010-14-15", "zh": "这是因为（两个词）合成一义的功能（ekatthībhāva-sāmatthiya）。", "confidence": 62}
+{"id": "22-3010-16-18", "zh": "其他各处都是这样。", "confidence": 80}
+{"id": "22-3010-19-25", "zh": "同样有 modiṅgiko（鼓手）、pāṇaviko（小鼓手）、vaṃsiko（吹笛人）。", "confidence": 75}
+{"id": "22-3011-2-12", "zh": "习性：持粪扫衣是他的习性，所以是 paṃsukūliko（粪扫衣者）；或者，他的习性是持粪扫衣，所以是 paṃsukūliko。", "confidence": 78}
+{"id": "22-3011-13-27", "zh": "这里的 sīla（习性）一词，也包括誓行、法和认真奉行；说“按习性持粪扫衣，所以是 paṃsukūliko”也讲得通。", "confidence": 65}
+{"id": "22-3011-28-55", "zh": "同样有 tecīvariko（三衣者）；一团一团地落下，所以叫 piṇḍapāto（钵食），即托钵所得的饮食；靠钵食维生是他的习性，所以是 piṇḍapātiko（常乞食者）；或者，靠钵食维生是他的习性、誓行、法和所尊重的事，所以是 piṇḍapātiko。", "confidence": 68}
+{"id": "22-3012-2-13", "zh": "“paṇya（货品）”指的是待售的东西；香是他的货品，所以是 gandhiko（香商）。", "confidence": 80}
+{"id": "22-3012-14-18", "zh": "同样有 teliko（油商）、goḷiko（糖商）。", "confidence": 78}
+{"id": "22-3013-2-11", "zh": "人们用它来打击，所以叫 paharaṇa（武器），也就是兵器；弓是他的武器，所以是 cāpiko（弓手）。", "confidence": 80}
+{"id": "22-3013-12-16", "zh": "同样有 tomariko（持矛者）、muggariko（持锤者）。", "confidence": 78}
+{"id": "22-3014-2-24", "zh": "payojana（目的）指的是果报；以依着（upadhi）为其目的的，是 opadhikaṃ［a.ni.8.59］，指福德；以一百为其目的的，是 sātikaṃ。", "confidence": 68}
+{"id": "22-3014-25-36", "zh": "同样有 sāhassikaṃ［jā.2.21.415］。", "confidence": 80}
+{"id": "22-3015-2-38", "zh": "462. 杀它、值它、往它、拾取它、奉行它［ka.351；rū.374；nī.764；caṃ.3.4.27-43；pā.4.4.28-46］。", "confidence": 75}
+{"id": "22-3016-2-20", "zh": "在“杀它”“值它”“往它”“拾取它”“奉行它”这些意义上，以第二格结尾的词接 ṇika。", "confidence": 80}
+{"id": "22-3017-2-6", "zh": "用鸟诱杀鸟的，是 pakkhiko（捕鸟人）。", "confidence": 70}
+{"id": "22-3017-7-29", "zh": "同样有 sākuṇiko（捕鸟人）［a.ni.2.263（也作 sākuniko）］、māyūriko（捕孔雀人）；用鱼诱杀鱼的，是 macchiko（渔夫）。", "confidence": 70}
+{"id": "22-3017-30-40", "zh": "同样有 dhenuko；用鹿诱杀鹿的，是 māgaviko（猎鹿人），中间增入 va。", "confidence": 62}
+{"id": "22-3017-41-50", "zh": "同样有 hāriṇiko（猎鹿人），“hariṇa”就是鹿。", "confidence": 75}
+{"id": "22-3017-51-56", "zh": "sūkariko（猎猪人），这里不作元音强化。", "confidence": 75}
+{"id": "22-3018-2-5", "zh": "值一百的，是 sātikaṃ。", "confidence": 80}
+{"id": "22-3018-6-8", "zh": "同样有 sāhassikaṃ。", "confidence": 82}
+{"id": "22-3019-2-8", "zh": "与他人妻子私通的，是 pāradāriko，也作 paradāriko（通奸者）。", "confidence": 80}
+{"id": "22-3019-9-13", "zh": "同样有 pathiko（行路人）、maggiko（行路人）。", "confidence": 78}
+{"id": "22-3020-2-7", "zh": "拾取、寻找枣子的，是 bādariko（拾枣人）。", "confidence": 80}
+{"id": "22-3020-8-10", "zh": "同样有 āmalakiko（拾余甘子的人）。", "confidence": 78}
+{"id": "22-3021-2-5", "zh": "奉行法的，是 dhammiko（如法者）。", "confidence": 82}
+{"id": "22-3021-6-8", "zh": "同样有 adhammiko（非法者）。", "confidence": 82}
+{"id": "22-3022-2-50", "zh": "463. 由它所作、所买、所缚、所制、所混、所杀、杀、所赢、赢、赌、挖、渡、行、运、谋生［ka.350；rū.373；nī.364；caṃ.3.4.1-26；pā.4.4.1-27］。", "confidence": 70}
+{"id": "22-3023-2-16", "zh": "在“由它所作”“用它所买”……“靠它谋生”这些意义上，以第三格结尾的词接 ṇika。", "confidence": 80}
+{"id": "22-3024-2-5", "zh": "由身所作的，是 kāyikaṃ（身的）。", "confidence": 82}
+{"id": "22-3024-6-16", "zh": "同样有 vācasikaṃ（语的）、mānasikaṃ（意的）；由风引起的，是 vātiko，指病。", "confidence": 80}
+{"id": "22-3025-2-7", "zh": "用一百的价钱买来的货物，是 sātikaṃ。", "confidence": 80}
+{"id": "22-3025-8-10", "zh": "同样有 sāhassikaṃ。", "confidence": 82}
+{"id": "22-3026-2-12", "zh": "用皮绳拴住的，是 vārattiko；用铁拴住的，是 āyasiko，带有增音 s。", "confidence": 70}
+{"id": "22-3026-13-15", "zh": "同样有 pāsiko（用绳套拴住的）。", "confidence": 72}
+{"id": "22-3027-2-7", "zh": "用酥油调制或混合的，是 ghātikaṃ。", "confidence": 75}
+{"id": "22-3027-8-14", "zh": "同样有 goḷikaṃ（加糖的）、dādhikaṃ（加酪的）、māricikaṃ（加胡椒的）。", "confidence": 75}
+{"id": "22-3028-2-7", "zh": "被网捕获的，是 jāliko，指鱼。", "confidence": 80}
+{"id": "22-3029-2-7", "zh": "用网捕杀的，是 jāliko，指撒网的渔夫。", "confidence": 80}
+{"id": "22-3029-8-19", "zh": "同样有 bāḷisiko（钓鱼人）［saṃ.ni.2.158］。", "confidence": 80}
+{"id": "22-3030-2-6", "zh": "用骰子赢来的财物，是 akkhikaṃ。", "confidence": 80}
+{"id": "22-3030-7-9", "zh": "同样有 sālākikaṃ（用筹码赢来的）。", "confidence": 70}
+{"id": "22-3031-2-7", "zh": "用骰子赢钱或用骰子赌博的，是 akkhiko（赌徒）。", "confidence": 78}
+{"id": "22-3032-2-5", "zh": "用铁锹挖掘的，是 khāṇittiko（挖土人）。", "confidence": 78}
+{"id": "22-3032-6-12", "zh": "同样有 kuddāliko（用锄头挖掘的人），这里不作元音强化。", "confidence": 78}
+{"id": "22-3033-2-9", "zh": "用筏子渡河的，是 oḷumpiko，也作 uḷumpiko（乘筏人）。", "confidence": 80}
+{"id": "22-3033-10-23", "zh": "同样有 nāviko（船夫）［jā.2.20.149］、gopucchiko（抓着牛尾渡河的人）。", "confidence": 70}
+{"id": "22-3034-2-5", "zh": "用车子行走的，是 sākaṭiko（赶车人）。", "confidence": 80}
+{"id": "22-3034-6-12", "zh": "同样有 rathiko（乘战车的人）、yāniko（乘车的人）、daṇḍiko（持杖行走的人），", "confidence": 72}
+{"id": "22-3035-2-5", "zh": "用肩膀扛运的，是 khandhiko（挑夫）。", "confidence": 80}
+{"id": "22-3035-6-14", "zh": "同样有 aṃsiko（用肩扛的人）、sīsiko（用头顶的人），这里不作元音强化。", "confidence": 75}
+{"id": "22-3036-2-5", "zh": "靠工资谋生的，是 vetaniko（受雇者）。", "confidence": 82}
+{"id": "22-3036-6-18", "zh": "同样有 bhatiko（佣工）、kasiko（农夫）、kayiko（买家）、vikkayiko（卖家）；bhatika 等词不作元音强化。", "confidence": 78}
+{"id": "22-3037-2-36", "zh": "464. 导向它［ka.351；rū.374；nī.765；caṃ.3.4.67-69；pā.4.4.66-68］。", "confidence": 78}
+{"id": "22-3038-2-8", "zh": "在“导向它”的意义上，以第四格结尾的词接 ṇika。", "confidence": 80}
+{"id": "22-3039-2-44", "zh": "导向再生的，是 ponobbhaviko：puna 的 u 变为 o，bha 重叠，例如 ponobbhavikā（导向再生的）［mahāva.14］，指渴爱；导向世间的，是 lokiko；最为殊胜，所以叫 sagga（天界）；导向天界的，是 sovaggikaṃ［dī.ni.1.163］，指福德。", "confidence": 72}
+{"id": "22-3039-45-49", "zh": "同样有 diṭṭhadhammikaṃ（导向现世的）、samparāyikaṃ（导向来世的）。", "confidence": 78}
+{"id": "22-3040-2-37", "zh": "465. 由它产生、从它而来［ka.351；rū.374；nī.765；caṃ.3.3.49-51；……4.3.77-79］。", "confidence": 78}
+{"id": "22-3041-2-11", "zh": "在“由它产生”“从它而来”这些意义上，以第五格结尾的词接 ṇika。", "confidence": 80}

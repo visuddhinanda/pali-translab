@@ -1,0 +1,50 @@
+{"id": "22-244-2-2", "zh": "替换连声（ādesasandhi）", "confidence": 85}
+{"id": "22-245-2-5", "zh": "现在阐明替换连声。", "confidence": 90}
+{"id": "22-246-2-30", "zh": "37. **Yavā** **sare**（后接元音时变为 y、v）［ka.18,19,21,45；nī.44,46,47,51,58］。", "confidence": 80}
+{"id": "22-247-2-10", "zh": "后接元音时，i 类元音与 u 类元音可选地替换为 y、v。", "confidence": 88}
+{"id": "22-248-2-3", "zh": "i 类元音的例子：", "confidence": 85}
+{"id": "22-249-2-141", "zh": "Paṭisanthāravutyassa［dha.pa.376］，sabbā vityānubhūyate，kyāhaṃ aparajjhāmi［pārā.383］——这里先删去鼻音点（niggahīta）；sutā ca paṇḍitātyattha，sutā ca paṇḍitātyamhā［jā.2.21.149］，ñāto senāpatītyāhaṃ［jā.2.21.94］，iccetaṃ kusalaṃ［pārā.411］，iccassa vacanīyaṃ［长部］，paccuttaritvā，paccāharati［pārā.305-307］，pacceti，paccayo，acceti，accayo［dī.ni.1.251］，accāyaṃ majjhimo khaṇḍo［jā.1.7.33］——意思是“这中间的一块是多余的”；apuccaṇḍatā——意思是 aputiaṇḍatā（蛋不腐坏）；jaccandho，jaccaghānako，jacceḷako，abbhuggacchati，abbheti，abbhokāso［dī.ni.1.191］，ajjhokāso，ajjhāgamā，等等。", "confidence": 72}
+{"id": "22-250-2-3", "zh": "既然规则说“可选地”，所以也有不变的：", "confidence": 65}
+{"id": "22-250-4-15", "zh": "Itissa muhuttampi［pāci.465］，atisigaṇo，adhīritaṃ。", "confidence": 82}
+{"id": "22-251-2-58", "zh": "这里，在 iccetaṃ 等例中，依本规则，iti、pati、ati、puti、jāti、abhi、adhi 等词的 i 类元音变为 y；依“tavagga, varaṇānan”这条规则，在 y 之前齿音组变为腭音组；依“vagga, la, sehi te”这条规则，y 同化为前一个音；而在 abhi、adhi 两词中，则依“catutthadutiyesvesan”这条规则，各组的第四音变为第三音。", "confidence": 72}
+{"id": "22-252-2-4", "zh": "u 类元音的例子：", "confidence": 85}
+{"id": "22-253-2-55", "zh": "Cakkhvābādhamāgacchati，pātvākāsi［ma.ni.2.308］，vatthvettha vihitaṃ niccaṃ，dvākāro［mahāva.9］，madhvāsavo［pāci.328］，anvayo，anveti，svākkhāto［mahāva.26,62］，svākāro［mahāva.9］，bahvābādho，等等。", "confidence": 85}
+{"id": "22-254-2-25", "zh": "38. **Eonaṃ**（e、o 的替换）［ka.17,18；rū.19,20；nī.43,44］。", "confidence": 78}
+{"id": "22-255-2-12", "zh": "后接元音时，e、o 可选地替换为 y、v。", "confidence": 85}
+{"id": "22-256-2-119", "zh": "Kyassa byapathayo assu［su.ni.967］，kyassu idha gocarā［su.ni.967］——意思是 ke + assa puggalassa（这个人的哪些），byapathayo 就是言语之道（vacanapathā）；yathā nāmaṃ tathā jhassa——拆分为 ce + assa；tyāhaṃ evaṃ vadeyyaṃ［ma.ni.1.30］，tyassa pahīnā honti，putto tyāhaṃ mahārāja［jā.1.1.7］，pabbatyāhaṃ gandhamādane［jā.2.22.397］，adhigato kho myāyaṃ dhammo［mahāva.7］，yyassa vippaṭisārajā，yyassa te honti anatthakāmā，yyassu maññāmi samaṇe——这里，即使语词本身没有区别，为了让读者便于看出拆分为 ye + assa，在书中写作“yyassa”也完全合理，就像下面这样：", "confidence": 65}
+{"id": "22-256-120-178", "zh": "正如“Yadāssa sīlaṃ paññañca”［jā.2.22.1474］等例那样。kvatthosi jīvitena me，yāvatakvassa kāyo，tāvatakvassa byāmo［dī.ni.2.35］，atha khvassa，atthi khvetaṃ brāhmaṇa，yatvādhikaraṇaṃ［dī.ni.1.213］，yvāhaṃ，svāhaṃ，等等。", "confidence": 72}
+{"id": "22-257-2-3", "zh": "既然规则说“可选地”，所以也有不变的：", "confidence": 65}
+{"id": "22-257-4-18", "zh": "So ahaṃ vicarissāmi［su.ni.194］，so ahaṃ bhante。", "confidence": 85}
+{"id": "22-258-2-19", "zh": "39. **Yuvaṇṇānamiyaṅuvaṅa**（i 类、u 类元音变为 iyaṅ、uvaṅ）［moga.5-136（yuvaṇṇāna miya ṅu va ṅa sare）］。", "confidence": 75}
+{"id": "22-259-2-11", "zh": "后接元音时，以 i 类、u 类元音结尾的词，词尾可选地替换为 iyaṅ、uvaṅ。", "confidence": 82}
+{"id": "22-259-12-14", "zh": "附加符 ṅ 表示替换的是词尾。", "confidence": 75}
+{"id": "22-259-15-17", "zh": "其他各处也都是这样。", "confidence": 82}
+{"id": "22-260-2-8", "zh": "这里每个词都举出两种形式。", "confidence": 82}
+{"id": "22-261-2-3", "zh": "i 类元音的例子：", "confidence": 85}
+{"id": "22-262-2-18", "zh": "Tiyantaṃ 和 tyantaṃ——其中 tiyantaṃ 由本规则构成，tyantaṃ 由“yavā sare”这条规则构成。", "confidence": 85}
+{"id": "22-262-19-21", "zh": "其余各例也是这样。", "confidence": 85}
+{"id": "22-262-22-94", "zh": "Aggiyāgāre／agyāgāre，catutthiyatthe［mahāva.37］／catutthyatthe，pañcamiyatthe／pañcamyatthe，pathaviyākāso／pathabyākāso，viyañjanaṃ／byañjanaṃ，viyākato／byākato，viyākaṃsu／byākaṃsu，viyatto／byatto，viyūḷho／byūḷho，dhammaṃ adhiyeti／ajjheti，patiyeti／pacceti 或 pattiyāyati，pariyaṅko／pallaṅko，vipariyāso／vipallāso。下列各例只有一种形式：pariyatti，pariyatto，pariyāyo；在 pallaṅko 等例中，先把 pari 一词的 r 变为 l，再依“yavā sare”把 i 变为 y，然后 y 同化为前一个音。", "confidence": 68}
+{"id": "22-263-2-3", "zh": "u 类元音的例子：", "confidence": 85}
+{"id": "22-264-2-18", "zh": "Bhikkhuvāsane，sayambhuvāsane；这里也可以得到两种形式：duvaṅgikaṃ = dvaṅgikaṃ，bhuvādigaṇo = bhvādigaṇo，等等。", "confidence": 75}
+{"id": "22-265-2-15", "zh": "40. **Vitisseve** **vā**（后接 eva 时，iti 的 i 可选地变为 v）［rū.33（piṭṭhe）］。", "confidence": 75}
+{"id": "22-266-2-9", "zh": "后接 eva 一词时，iti 一词的 i 音可选地变为 v。", "confidence": 85}
+{"id": "22-267-2-45", "zh": "Itveva coro aṅgulimālo，samuddotveva saṅkhyaṃ［udā.45］gacchati，mahāudakakkhandhotveva saṅkhyaṃ gacchati，mahāsammatotveva paṭhamaṃ akkharaṃ nibbattaṃ［dī.ni.3.131］，isigilitveva samaññā ahosi［ma.ni.3.133］。", "confidence": 85}
+{"id": "22-268-2-4", "zh": "为什么说“可选地”？", "confidence": 85}
+{"id": "22-268-5-10", "zh": "Iccevattho，samuddoteva saṅkhyaṃ gacchati。", "confidence": 82}
+{"id": "22-269-2-8", "zh": "依规则的拆分运用（suttavibhatta），后接 eva 一词时，其他的 i 音也变为 v。", "confidence": 70}
+{"id": "22-269-9-40", "zh": "Vilapatveva so dijo［jā.1.6.103］，anusetvevassa kāmarāgo，anusetvevassa rūparāgo——拆分为 anuseti + eva + assa；hotveva kāriyasanniṭṭhānaṃ，也可以作 hoteva。", "confidence": 78}
+{"id": "22-270-2-21", "zh": "41. **Eonama** **vaṇṇe**（后接字母时，e、o 变为 a）［ka.27；rū.39；nī.66,163-4］。", "confidence": 75}
+{"id": "22-271-2-11", "zh": "后接元音或辅音字母时，e、o 可选地变为 a。", "confidence": 82}
+{"id": "22-271-12-20", "zh": "其中 e 变为 a，大多只发生在有增音 m、d 的情况下。", "confidence": 72}
+{"id": "22-272-2-63", "zh": "Akaramhasa te kiccaṃ［jā.1.4.29］——意思是 akaramhase；disvā yācakamāgate［jā.1.7.58；2.22.2261］，disvā paṇḍitamāgate［jā.2.22.783］，yamāhu natthi vīriyanti［jā.2.18.162］——意思是 ye + āhu。", "confidence": 78}
+{"id": "22-272-64-96", "zh": "Kadassu——即 ke + assu；yadeva te jātinissitā，tadeva te jarānissitā——拆分为 ye + eva、te + eva；sve bhavo svātanaṃ［pārā.22］——在辅音之前变为长音。", "confidence": 72}
+{"id": "22-273-2-3", "zh": "o 的例子：", "confidence": 85}
+{"id": "22-274-2-124", "zh": "Sa sīlavā［dha.pa.84］，sa paññavā，sa ve kāsāvamarahati［dha.pa.10］，esa attho，esa dhammo［dha.pa.5］，dinnamāsi janindena［jā.2.22.2161（dinnamhāti janindena）］——拆分为 dinno + āsi；maggamatthi［vibha.aṭṭha.189］——即 maggo + atthi；aggamakkhāyati［a.ni.1.47］，paccayākārameva ca［vibha.aṭṭha.225］，saṅgho pabbatamiva，saddo cicciṭamiva，hiyyo bhavo hiyyattanaṃ，pāto asanaṃ pātarāso，pātamanusiṭṭho，kakusandha koṇāgamano，thera vādānamuttamo——拆分为 kakusandho 和 thero，意思是 theravādo（上座部之说）。", "confidence": 72}
+{"id": "22-275-2-6", "zh": "依规则的拆分运用，在没有后接字母这一条件时也会发生。", "confidence": 65}
+{"id": "22-275-7-29", "zh": "Tuvañca dhanusekha ca［jā.1.16.239］，paccayamahāpadeso hesa，ekakoṭṭhāso esa，abhilāpamattabhedo esa，等等。", "confidence": 82}
+{"id": "22-276-2-23", "zh": "42. **Gossāvaṅa**（go 的词尾变为 avaṅ）［ka.22,78；rū.28；nī.52,229］。", "confidence": 78}
+{"id": "22-277-2-8", "zh": "后接元音时，go 的词尾变为 avaṅ。", "confidence": 85}
+{"id": "22-278-2-7", "zh": "Go ca asso ca（牛和马）合为 gavāssaṃ。", "confidence": 85}
+{"id": "22-279-2-4", "zh": "依规则的拆分运用，后接辅音时也是这样。", "confidence": 75}
+{"id": "22-279-5-17", "zh": "Sagavacaṇḍo［a.ni.4.108］，paragavacaṇḍo。", "confidence": 85}
+{"id": "22-280-2-3", "zh": "下面讲述次要的规则。", "confidence": 55}

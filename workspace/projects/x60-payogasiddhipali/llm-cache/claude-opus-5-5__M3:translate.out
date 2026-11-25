@@ -1,0 +1,53 @@
+{"id": "19-86-2-4", "zh": "30. Eonaṃ（e 与 o）", "confidence": 70}
+{"id": "19-87-2-12", "zh": "后面接元音时，e 与 o 依次可选地变为 y 音与 v 音。", "confidence": 85}
+{"id": "19-87-13-62", "zh": "按“在辅音前长短互变”一条变为长音，例如：adhigato kho myāyaṃ dhammo、putto tyāhaṃ、tyāssa pahīnā pañca、tyāhaṃ、yyassa、tyajja、yāvatakvassa kāyo、tāvatakvassa byāmo、kvattho、atha khvassa、ahaṃ khvajja、svāhaṃ、svajja、sveva、yatvādhikaraṇaṃ、svāhaṃ。", "confidence": 65}
+{"id": "19-87-63-68", "zh": "由于这条规则是“可选”的，所以也有不变的形式：tejja、sohaṃ。", "confidence": 75}
+{"id": "19-87-69-83", "zh": "由于这条规则只是“有时”适用，所以也有：dhanamatthi、puttāmatthi、te nāgatā、asantettha、cattāro ime。", "confidence": 70}
+{"id": "19-88-2-20", "zh": "在 go eḷakaṃ、go assaṃ、go ajinaṃ 这些例子中，“后面接元音时”一语承前生效。", "confidence": 80}
+{"id": "19-89-2-6", "zh": "32. Gossāvaṅa（go 以 avaṅ 替换）", "confidence": 70}
+{"id": "19-90-2-7", "zh": "后面接元音时，go 以 ava 替换。", "confidence": 85}
+{"id": "19-90-8-25", "zh": "按“带 ṭ 符标的与多音的替换项替换整体”一条，这一替换本应施于整个词；此时“施于末音”一语承前生效。", "confidence": 60}
+{"id": "19-91-2-6", "zh": "18. Ṅanubandho（带 ṅ 符标的替换项）", "confidence": 70}
+{"id": "19-92-2-12", "zh": "以 ṅ 音为符标的替换项，即使由多个音组成，也只替换末音，所以只替换 o 音。", "confidence": 75}
+{"id": "19-92-13-27", "zh": "根据“符标是一种标记，不是词形的组成部分”这句话，ṅ 音不出现在实际词形中。", "confidence": 70}
+{"id": "19-92-28-35", "zh": "因为符标一经念出就随即消失；所谓符标，就是用来表明作用的标记。", "confidence": 60}
+{"id": "19-92-36-41", "zh": "例如：gaveḷakaṃ、gavāssaṃ、gavājinaṃ。", "confidence": 85}
+{"id": "19-93-2-8", "zh": "在 iti eva 这类例子中——", "confidence": 75}
+{"id": "19-94-2-9", "zh": "36. Vītisseve vā（iti 在 eva 前可选地变为 v）", "confidence": 70}
+{"id": "19-95-2-8", "zh": "后面接 eva 一词时，iti 可选地变为 v。", "confidence": 85}
+{"id": "19-95-9-11", "zh": "而这一替换——", "confidence": 70}
+{"id": "19-96-2-4", "zh": "17. Chaṭṭhiyantassa（以属格指明者的末音）", "confidence": 70}
+{"id": "19-97-2-14", "zh": "对以属格指明的项所施的操作，应理解为施于它的末音；所以被替换的是 i 音。", "confidence": 75}
+{"id": "19-97-15-18", "zh": "在被替换项的位置上被指示出来，所以叫做替换项（ādesa）。", "confidence": 75}
+{"id": "19-97-19-20", "zh": "得出 itveva。", "confidence": 70}
+{"id": "19-97-21-46", "zh": "在其他情况下，i 被替换为 y；再按“t 组与 v、r、ṇ 在 y 前分别变为 c 组与 b、y、ñ”一条，t 变为 c；又按“在组辅音、l、s 之后，y 变为与之相同的音”一条，y 变为 c 音，得出 icceva。", "confidence": 60}
+{"id": "19-97-47-55", "zh": "为什么说“在 eva 前”？因为还有 iccāha 这样的形式。（替换连声）", "confidence": 75}
+{"id": "19-98-2-15", "zh": "下面讲 ti aṅgulaṃ、ti aṅgikaṃ、bhū ādayo、migī bhantā udikkhati 等例子的连声。", "confidence": 75}
+{"id": "19-98-16-24", "zh": "“m、y、d 在元音前”一语承前生效。", "confidence": 75}
+{"id": "19-99-2-7", "zh": "45. Vanataragā cāgamā（v、n、t、r、g 也作为增音）", "confidence": 70}
+{"id": "19-100-2-10", "zh": "在元音前，这些音以及 m、y、d 有时可选地作为增音出现。", "confidence": 80}
+{"id": "19-100-11-13", "zh": "即使没有限定增音附在哪个音上——", "confidence": 60}
+{"id": "19-101-2-9", "zh": "增音所附的只能是元音，v、n 等就是证明；", "confidence": 65}
+{"id": "19-102-2-9", "zh": "否则，为 pada 等规定 yu 增音就毫无意义了。", "confidence": 70}
+{"id": "19-103-2-30", "zh": "意思是：如果这里的增音可以附在任何不确定的音上，那么单靠 y 增音就能得出 nipajja，“pada 等有时”一条为辅音规定的 yu 增音就毫无意义了。", "confidence": 65}
+{"id": "19-103-31-44", "zh": "例如：tivaṅgulaṃ、tivaṅgikaṃ、bhūvādayo、migī bhantā vudikkhati、pavuccati、pāguññavujutā。", "confidence": 85}
+{"id": "19-103-45-49", "zh": "又如：ito nāyati、cinitvā。", "confidence": 80}
+{"id": "19-103-50-55", "zh": "又如：yasmātiha、tasmātiha、ajjatagge。", "confidence": 80}
+{"id": "19-103-56-115", "zh": "又如：nirantaraṃ、nirālayo、nirindhano、nirīhakaṃ、niruttaro、nirojaṃ、duratikkamo、durāgataṃ、duruttaraṃ、pāturahosi、punarāgaccheyya、punaruttaṃ、punareva、punareti、dhīratthu、pātarāso、caturaṅgikaṃ、caturārakkhaṃ、caturiddhipādapaṭilābho、caturoghanittharaṇatthaṃ、bhatturatthe、vuttiresā、pathavīdhāturevesā、nakkhattarājāriva tārakānaṃ、vijjurivabbhakuṭe、āraggeriva sāsapo、usabhoriva、sabbhireva samāsetha。", "confidence": 85}
+{"id": "19-103-116-120", "zh": "又如：puthageva；前面变为短音的有：pageva。", "confidence": 65}
+{"id": "19-103-121-142", "zh": "又如：lahumessati、gurumessati、idhamāhu、kena te idha mijjhati、bhadro kasāmiva、ākāse mabhipūjaye、ekamekassa、yena midhekacce。", "confidence": 85}
+{"id": "19-103-143-190", "zh": "又如：bhātiyeva、hotiyeva、yathāyidaṃ、yathāyeva、māyidaṃ、nayidaṃ、nayidha、chayimāni、navayime dhammā、bodhiyāyeva、pathavīyeva dhātu、tesuyeva、teyeva、soyeva、pāṭiyekkaṃ、viyañjanaṃ、viyākāsi、pariyantaṃ、pariyādānaṃ、pariyuṭṭhānaṃ、pariyesati、pariyosānaṃ、niyāyogo。", "confidence": 85}
+{"id": "19-103-191-254", "zh": "又如：udaggo、udayo、udāhaṭaṃ、udito、udīritaṃ、udeti、sakideva、kiñcideva、kenacideva、kismiñcideva、kocideva、sammadatto、sammadaññā vimuttānaṃ、sammadeva、yāvadatthaṃ、yāvadicchakaṃ、yāvadeva、tāvadeva、punadeva、yadatthaṃ、yadantaraṃ、tadantaraṃ、tadaṅgavimutti、etadatthaṃ、attadatthaṃ、tadatthaṃ、sadatthapasuto siyā、aññadatthu、manasādaññā vimuttānaṃ、bahudeva ratti。", "confidence": 85}
+{"id": "19-103-255-262", "zh": "由于这条规则是“可选”的，所以也有：attaatthaṃ、dvādhiṭṭhitaṃ、pātuahosi。", "confidence": 75}
+{"id": "19-103-263-274", "zh": "由于“可选”这一统辖语是有定的可选，增音也可以出现在辅音之后：bhikkhunīnaṃ vuṭṭhāpeyya、ciraṃ nāyati、taṃyeva。", "confidence": 60}
+{"id": "19-104-2-33", "zh": "在 cha abhiññā、cha aṅgaṃ、cha asīti、cha aṃsā、cha āyatanaṃ 这些例子中，“在元音前可选地”与“增音”二语承前生效。", "confidence": 75}
+{"id": "19-105-2-5", "zh": "49. Chā ḷo（cha 之后加 ḷ）", "confidence": 70}
+{"id": "19-106-2-9", "zh": "在 cha 一词后面的元音前，可选地加入 ḷ 音作为增音。", "confidence": 80}
+{"id": "19-106-10-13", "zh": "“chā”是引述词形，所以用单数。", "confidence": 65}
+{"id": "19-106-14-23", "zh": "例如：chaḷabhiññā、chaḷaṅgaṃ、chaḷasīti、chaḷaṃsā、chaḷāyatanaṃ。", "confidence": 85}
+{"id": "19-106-24-31", "zh": "由于这条规则是“可选”的，所以也有 chaabhiññā。（增音连声）", "confidence": 75}
+{"id": "19-107-2-12", "zh": "脱落就是不再出现；把原位的音压掉而出现的，", "confidence": 55}
+{"id": "19-108-2-10", "zh": "叫做替换项；原本没有而新生出来的，就是增音。", "confidence": 60}
+{"id": "19-109-2-3", "zh": "元音连声（完）。", "confidence": 75}
+{"id": "19-110-2-13", "zh": "下面讲 kaññā iva、kaññāva 等例子中对元音连声的禁止；因为禁止必须以规则本应适用为前提。", "confidence": 65}
+{"id": "19-110-14-30", "zh": "在前面的元音本应脱落时，“元音”与“可选”二语承前生效。", "confidence": 55}

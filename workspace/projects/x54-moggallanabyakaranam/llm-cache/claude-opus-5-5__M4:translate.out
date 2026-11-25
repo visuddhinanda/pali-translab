@@ -1,0 +1,77 @@
+{"id": "13-1190-2-6", "zh": "38. 鼻音ṃ（niggahīta）。", "confidence": 80}
+{"id": "13-1191-2-6", "zh": "鼻音ṃ有时可以作为增音出现。", "confidence": 80}
+{"id": "13-1191-7-18", "zh": "例如：cakkhuṃ udapādi，也可作 cakkhuudapādi；purimaṃ jātiṃ，也可作 purimajātiṃ；以及 kattabbaṃ kusalaṃ bahuṃ。", "confidence": 70}
+{"id": "13-1191-19-35", "zh": "在 avaṃsiro 等例中，这个增音是必定出现的……因为 vā 所管辖的可选是有定限的可选；按道理推得，这里只是增音，而且它只出现在短元音之后……因为它随附于短元音。", "confidence": 55}
+{"id": "13-1192-2-6", "zh": "39. 删除。", "confidence": 85}
+{"id": "13-1193-2-7", "zh": "鼻音ṃ有时可以被删除。", "confidence": 85}
+{"id": "13-1193-8-11", "zh": "例如：kyāhaṃ，来自 kimahaṃ；sāratto，来自 saṃratto。", "confidence": 75}
+{"id": "13-1193-12-18", "zh": "在 salle kho、-gantukāmo、gantumano 等例中，删除是必定的。", "confidence": 50}
+{"id": "13-1194-2-6", "zh": "40. 后面元音的（删除）。", "confidence": 80}
+{"id": "13-1195-2-9", "zh": "在鼻音ṃ之后，后面的元音有时可以被删除。", "confidence": 85}
+{"id": "13-1195-10-12", "zh": "例如：tvaṃ-si，也可作 tvamasi。", "confidence": 75}
+{"id": "13-1196-2-7", "zh": "41. 在组辅音之前变为该组的末音。", "confidence": 80}
+{"id": "13-1197-2-9", "zh": "鼻音ṃ在组辅音之前，可以变为该组的末音（鼻音），这是因为发音部位最为相近。", "confidence": 75}
+{"id": "13-1197-10-29", "zh": "例如：taṅkaroti，也可作 taṃ karoti；tañcarati，也可作 taṃ carati；taṇṭhānaṃ，也可作 taṃ ṭhānaṃ；tandhanaṃ，也可作 taṃ dhanaṃ；tampāti，也可作 taṃ pāti。", "confidence": 80}
+{"id": "13-1197-30-36", "zh": "在词的中间则是必定的，例如 gantvā；有时在别的地方也是必定的，例如 santiṭṭhati。", "confidence": 70}
+{"id": "13-1198-2-7", "zh": "42. 在 ya、eva、hi 之前变为 ñ。", "confidence": 80}
+{"id": "13-1199-2-11", "zh": "在 ya、eva、hi 这几个词之前，鼻音ṃ可以变为 ñ。", "confidence": 85}
+{"id": "13-1199-12-19", "zh": "例如：yaññadeva、taññeva、tañhi。为什么说“可以”？", "confidence": 80}
+{"id": "13-1199-20-22", "zh": "因为也有 yaṃ yadeva 这样的形式。", "confidence": 75}
+{"id": "13-1200-2-7", "zh": "43. saṃ 在 y 之前（变为 ñ）。", "confidence": 80}
+{"id": "13-1201-2-10", "zh": "saṃ 这个词的鼻音ṃ，在 y 音之前可以变为 ñ。", "confidence": 85}
+{"id": "13-1201-11-13", "zh": "例如：saññamo，也可作 saṃyamo。", "confidence": 85}
+{"id": "13-1202-2-7", "zh": "44. 在元音之前变为 m、y、d。", "confidence": 85}
+{"id": "13-1203-2-8", "zh": "鼻音ṃ在元音之前，有时可以变为 m、y、d。", "confidence": 85}
+{"id": "13-1203-9-14", "zh": "例如：tamahaṃ、tayidaṃ、tadalaṃ。", "confidence": 85}
+{"id": "13-1203-15-17", "zh": "为什么说“可以”？", "confidence": 80}
+{"id": "13-1203-18-20", "zh": "因为也有 taṃ ahaṃ 这样的形式。", "confidence": 80}
+{"id": "13-1204-2-7", "zh": "45. v、n、t、r、g 也作为增音。", "confidence": 80}
+{"id": "13-1205-2-10", "zh": "这些音以及 m、y、d，有时在元音之前可以作为增音出现。", "confidence": 75}
+{"id": "13-1205-11-29", "zh": "例如：tivaṅgikaṃ、ito nāyati、cinitvā、tasmātiha、nirojaṃ、puthageva、idhamāhu、yathayidaṃ、attadatthaṃ。", "confidence": 80}
+{"id": "13-1205-30-32", "zh": "为什么说“可以”？", "confidence": 80}
+{"id": "13-1205-33-34", "zh": "因为也有 attatthaṃ 这样的形式。", "confidence": 80}
+{"id": "13-1205-35-42", "zh": "在“atippago kho tāva”中，pago 只是以主格结尾的 paga 这个词本身（并非增音 g）。", "confidence": 60}
+{"id": "13-1206-2-7", "zh": "46. 在 cha 之后增入 ḷ。", "confidence": 80}
+{"id": "13-1207-2-9", "zh": "在 cha 这个词之后，可以为后面的元音增入 ḷ 音。", "confidence": 80}
+{"id": "13-1207-10-13", "zh": "例如：chaḷaṅgaṃ、chaḷāyatanaṃ。", "confidence": 85}
+{"id": "13-1207-14-15", "zh": "为什么说“可以”？", "confidence": 80}
+{"id": "13-1207-16-17", "zh": "因为也有 chaabhiññā 这样的形式。", "confidence": 80}
+{"id": "13-1208-2-6", "zh": "47. tadaminā 等形式。", "confidence": 80}
+{"id": "13-1209-2-6", "zh": "tadaminā 等形式都是正确成立的。", "confidence": 80}
+{"id": "13-1209-7-53", "zh": "例如：taṃ iminā 成为 tadaminā；sakiṃ āgāmī 成为 sakadāgāmī；ekaṃ idha ahaṃ 成为 ekamidāhaṃ；saṃvidhāya avahāro 成为 saṃvidāvahāro；vārino vāhako（运水者）成为 valāhako（云）；jīvanassa mūto 成为 jīmūto（云）；chavassa sayanaṃ（尸体的卧处）成为 susānaṃ（坟场）；uddhaṃ khamassa 成为 udukkhalaṃ（臼）；pisitāso（食肉者）成为 pisāco（毕舍遮）；mahiyaṃ ravatīti（在地上鸣叫的）成为 mayūro（孔雀）。其他类似的形式也应当依照实际用例来理解。这相当于其他语法家所说的 pisodara 等类。", "confidence": 65}
+{"id": "13-1210-2-8", "zh": "48. t 组辅音以及 v、r、ṇ，在 y 之前变为 c 组辅音以及 b、y、ñ。", "confidence": 75}
+{"id": "13-1211-2-8", "zh": "t 组辅音以及 v、r、ṇ，在 y 音之前，有时依次变为 c 组辅音以及 b、y、ñ。", "confidence": 80}
+{"id": "13-1211-9-24", "zh": "例如：apuccaṇḍatāya、tacchaṃ、yajjevaṃ、ajjhattaṃ、thaññaṃ、dibbaṃ、payyosanā、pokkharañño。", "confidence": 80}
+{"id": "13-1211-25-26", "zh": "为什么说“有时”？", "confidence": 80}
+{"id": "13-1211-27-27", "zh": "因为像 rattyā 就不变。", "confidence": 75}
+{"id": "13-1212-2-7", "zh": "49. 在组辅音、l、s 之后（y 变为）与之相同的音。", "confidence": 70}
+{"id": "13-1213-2-9", "zh": "在组辅音、l、s 之后，后面的 y 音有时变为与前面相同的组辅音、l、s。", "confidence": 75}
+{"id": "13-1214-2-13", "zh": "例如：sakkate、paccate、aṭṭate、kuppate、phallate、assate。", "confidence": 85}
+{"id": "13-1214-14-15", "zh": "为什么说“有时”？", "confidence": 80}
+{"id": "13-1214-16-17", "zh": "因为像 kyāhaṃ 就不变。", "confidence": 75}
+{"id": "13-1215-2-7", "zh": "50. h 的换位。", "confidence": 80}
+{"id": "13-1216-2-6", "zh": "h 在 y 音之前发生换位。", "confidence": 80}
+{"id": "13-1216-7-8", "zh": "例如：guyhaṃ。", "confidence": 85}
+{"id": "13-1217-2-7", "zh": "51. 在 v 之前可以（换位）。", "confidence": 80}
+{"id": "13-1218-2-7", "zh": "h 在 v 音之前可以发生换位。", "confidence": 80}
+{"id": "13-1218-8-10", "zh": "例如：bavhābādho，也可作 bavhābādho。", "confidence": 50}
+{"id": "13-1219-2-6", "zh": "52. t、th、n、r 变为 ṭ、ṭh、ṇ、l。", "confidence": 80}
+{"id": "13-1220-2-7", "zh": "t、th、n、r 可以依次变为 ṭ、ṭh、ṇ、l。", "confidence": 85}
+{"id": "13-1220-8-17", "zh": "例如：dukkaṭaṃ、aṭṭhakathā、gahaṇaṃ、paligho、palāyati。", "confidence": 85}
+{"id": "13-1220-18-19", "zh": "为什么说“可以”？", "confidence": 80}
+{"id": "13-1220-20-21", "zh": "因为也有 dukkataṃ 这样的形式。", "confidence": 80}
+{"id": "13-1220-22-23", "zh": "为什么说“有时”？", "confidence": 75}
+{"id": "13-1220-24-25", "zh": "因为像 sugato 就不变。", "confidence": 75}
+{"id": "13-1221-2-7", "zh": "53. 复辅音首音的删除。", "confidence": 80}
+{"id": "13-1222-2-10", "zh": "复辅音中处于开头的那个成分，有时可以被删除。", "confidence": 80}
+{"id": "13-1222-11-13", "zh": "例如：pupphaṃ-sā、jāyate-gini。", "confidence": 65}
+{"id": "13-1223-2-7", "zh": "54. 在遍及义与反复义中重叠为二。", "confidence": 75}
+{"id": "13-1224-2-11", "zh": "在表示遍及与反复的意义中所用的词，会有两个形式，也就是重叠。", "confidence": 75}
+{"id": "13-1224-12-20", "zh": "对按动作、性质或实体区分开的各个事物，想要全部涉及，这就叫作遍及（vicchā）。", "confidence": 70}
+{"id": "13-1224-21-43", "zh": "例如：rukkhaṃ rukkhaṃ siñcati（一棵一棵地浇树）；gāmo gāmo ramaṇīyo（每个村子都可爱）；gāme gāme pānīyaṃ（每个村子里都有饮水）；gehe gehe issaro（每家都有主人）；rasaṃ rasaṃ bhakkhayati（每种味道都品尝）；kiriyaṃ kiriyamārabhate（每件事都着手去做）。", "confidence": 75}
+{"id": "13-1225-2-22", "zh": "在表示次第的情况中也确实有遍及，例如 mūle mūle thūlā（越近根部越粗）、agge agge sukhumā（越近梢部越细）；如果这里没有根与梢的区别，也就不会有次第。", "confidence": 65}
+{"id": "13-1225-23-39", "zh": "在“māsakaṃ māsakaṃ imamhā kahāpaṇā bhavantānaṃ dvinnaṃ dehi”（请从这枚迦哈波拿中给二位各一摩沙迦）这句话里，遍及是从 māsakaṃ māsakaṃ 得知的；至于“imamhā kahāpaṇā”（从这枚迦哈波拿中）这一限定，则是由另外的词表达的。", "confidence": 65}
+{"id": "13-1225-40-48", "zh": "在 pubbaṃ pubbaṃ pupphanti（先后依次开花）、paṭhamaṃ paṭhamaṃ paccanti（先后依次成熟）中，也同样是遍及。", "confidence": 70}
+{"id": "13-1225-49-67", "zh": "在“ime ubho aḍḍhā, katarā katarā esaṃ dvinnamaḍḍhatā”（这两人都富有，两人之中哪一个更富有）以及“sabbe ime aḍḍhā, katamā katamā imesaṃ aḍḍhutā”（这些人都富有，他们之中哪一个更富有）中，也同样是遍及。", "confidence": 60}
+{"id": "13-1225-68-88", "zh": "反复（ābhikkhañña）就是一再重复，例如：pacati pacati（一再地煮）、papacati papacati（一再地烹煮）、lunāhi lunāhi tveva ayaṃ lunāti（他一边说“割吧，割吧”，一边不停地割）、bhutvā bhutvā gacchati（吃了又吃才走）、paṭapaṭā karoti 与 paṭapaṭāyati（发出噼啪噼啪的声音）。", "confidence": 55}
+{"id": "13-1226-2-7", "zh": "55. 重叠中前一个词的 si 等词尾删除。", "confidence": 70}

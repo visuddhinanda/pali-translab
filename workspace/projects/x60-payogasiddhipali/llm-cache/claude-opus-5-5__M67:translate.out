@@ -1,0 +1,79 @@
+{"id":"19-1912-2-7","zh":"5,78. 第四与第二字母变为第三与第一字母","confidence":75}
+{"id":"19-1913-2-17","zh":"重叠时，前一音节中的第四、第二字母依次变为第三、第一字母，bh 因此变为 b：so babhūva kira（据说他曾是），te babhuvu kira（据说他们曾是）。","confidence":75}
+{"id":"19-1913-18-26","zh":"tvaṃ babhuve kira；加入插音 i 后，tumhe babhuvittha kira。","confidence":75}
+{"id":"19-1913-27-34","zh":"ahaṃ babhuva kira，mayaṃ babhuvimha kira。","confidence":85}
+{"id":"19-1913-35-42","zh":"so babhuvittha kira，te babhuvire kira。","confidence":85}
+{"id":"19-1913-43-50","zh":"tvaṃ babhuvittho kira，tumhe babhuvivho kira。","confidence":85}
+{"id":"19-1913-51-58","zh":"ahaṃ babhuvi kira，mayaṃ babhuvimhe kira。","confidence":85}
+{"id":"19-1913-59-62","zh":"被动语态：anupabhuva kira 等。","confidence":75}
+{"id":"19-1913-63-66","zh":"无人称语态：babhuva、babhuvittha kira。","confidence":75}
+{"id":"19-1914-2-5","zh":"papaca，papacu。","confidence":85}
+{"id":"19-1914-6-10","zh":"papace；加入插音 i 后，papacittha。","confidence":80}
+{"id":"19-1914-11-21","zh":"另一种情况下，依“saṃyogādilopo”（删除复辅音的首音）规则删除，作 papacittha。","confidence":60}
+{"id":"19-1914-22-25","zh":"papaca，papacimha。","confidence":85}
+{"id":"19-1914-26-29","zh":"papacittha，papacire。","confidence":85}
+{"id":"19-1914-30-34","zh":"papacittho、papacitho，papacivho。","confidence":85}
+{"id":"19-1914-35-38","zh":"papaci，papacimhe。","confidence":85}
+{"id":"19-1914-39-41","zh":"被动语态也照此类推。","confidence":80}
+{"id":"19-1915-2-30","zh":"加上 a 等词尾，词根重叠，删除前一音节非首位的辅音，再依“kavaggahānaṃ cavaggajā”（k 组字母与 h 变为 c 组字母与 j）把前一音节变为 c 组的 j，又依“byañjane dīgharassā”（在辅音前长短音互换）变为长音，就得到：so gāmaṃ jagāma kira（据说他去了村子），jagamu。","confidence":70}
+{"id":"19-1915-31-34","zh":"jagame，jagamittha。","confidence":85}
+{"id":"19-1915-35-38","zh":"jagama，jagamimha。","confidence":85}
+{"id":"19-1915-39-42","zh":"jagamittha，jagamire。","confidence":85}
+{"id":"19-1915-43-46","zh":"jagamittho，jagamivho。","confidence":85}
+{"id":"19-1915-47-50","zh":"jagami，jagamimhe。","confidence":85}
+{"id":"19-1915-51-53","zh":"被动语态也照此类推。","confidence":80}
+{"id":"19-1916-2-14","zh":"心智迷乱、散乱或执着于别的事情的人，即使是自己做过的行为，在行为发生的时候也没有察觉到，而是事后从结果推知的，所以实际上仍然属于“未亲见的过去”。","confidence":65}
+{"id":"19-1916-15-22","zh":"因此在第一人称中也可以使用这一时态。（远过去时词尾规则完）","confidence":65}
+{"id":"19-1917-2-18","zh":"7. 在条件式中，于 eyya 等词尾的适用范围内，可选用 ssā、ssaṃsu、sse、ssatha、ssaṃ、ssamhā、ssatha、ssiṃsu、ssase、ssavhe、ssiṃ、ssāmhase。","confidence":65}
+{"id":"19-1918-2-7","zh":"在 eyya 等词尾的适用范围内，当行为未能成就时，使用 ssā 等词尾。","confidence":70}
+{"id":"19-1918-8-15","zh":"由于遇到相违的条件，或由于缺少原因，行为落空、没有成就，这就叫作“行为未成”（kriyātipatti）。","confidence":70}
+{"id":"19-1918-16-28","zh":"这些 ssā 等词尾按其功用只用于过去和未来，不用于现在，因为现在不可能有行为未成的情况。","confidence":70}
+{"id":"19-1918-29-55","zh":"加入插音 i，ssā 可选择变为短音：sace so paṭhamavaye pabbajjaṃ alabhissa，arahā abhavissa、bhavissa、abhavissā、bhavissā（如果他在青年时期得以出家，早就成为阿罗汉了）；te ca taṃ alabhissaṃsu，arahanto abhavissaṃsu、bhavissaṃsu（如果他们得到出家，早就成为阿罗汉了）。","confidence":70}
+{"id":"19-1918-56-68","zh":"依“eyyātha”等规则，sse 可选变为 a：tvaṃ abhavissa、bhavisse。","confidence":65}
+{"id":"19-1918-69-71","zh":"tumhe abhavissatha。","confidence":85}
+{"id":"19-1918-72-74","zh":"ahaṃ abhavissaṃ。","confidence":85}
+{"id":"19-1918-75-81","zh":"变短音时：mayaṃ abhavissamha、bhavissamha；另有 abhavissamhā、bhavissamhā。","confidence":65}
+{"id":"19-1918-82-86","zh":"反身式六词尾：so abhavissatha，abhavissiṃsu。","confidence":75}
+{"id":"19-1918-87-90","zh":"abhavissase，abhavissavhe。","confidence":85}
+{"id":"19-1918-91-94","zh":"abhavissiṃ，abhavissāmhase。","confidence":85}
+{"id":"19-1919-2-8","zh":"被动语态：tena sukhaṃ anvabhavissa、anvabhavissaṃsu（安乐本会被他感受），这里删除了 kya。","confidence":65}
+{"id":"19-1919-9-12","zh":"也作 anvabhūyissa、anvabhūyissā 等。","confidence":75}
+{"id":"19-1919-13-18","zh":"无人称语态：tena abhūyissa、bhūyissa、abhūyissā、bhūyissā。","confidence":75}
+{"id":"19-1919-19-21","zh":"abhūyissatha、bhūyissatha。","confidence":85}
+{"id":"19-1920-2-10","zh":"同样：taṇḍulādisādhanaṃ alabhissa，odanaṃ apacissa、pacissa（如果得到了米等材料，就会煮饭了）等。","confidence":70}
+{"id":"19-1920-11-26","zh":"被动语态：tena odano apacissa、pacissa、apacissā、pacissā、apacīyissa、pacīyissa、apacīyissā、pacīyissā、apaccissa、paccissa、apaccissā、paccissā 等。","confidence":80}
+{"id":"19-1921-2-8","zh":"so agacchissa、gacchissa、agacchissā、gacchissā 等。","confidence":85}
+{"id":"19-1921-9-17","zh":"不替换为 cch 时：agamissa、gamissa、agamissā、gamissā 等。","confidence":70}
+{"id":"19-1921-18-23","zh":"被动语态：agacchissa、gacchissa、agacchīyissa 等。","confidence":80}
+{"id":"19-1921-24-28","zh":"agamissa、gamissa、agamīyissa 等。","confidence":85}
+{"id":"19-1921-29-36","zh":"同样有 aghammissa 等。（条件式词尾规则完）","confidence":75}
+{"id":"19-1922-2-18","zh":"8. 在表示原因与结果时，用 eyya、eyyuṃ、eyyāsi、eyyātha、eyyāmi、eyyāma、etha、eraṃ、etho、eyyāvho、eyyaṃ、eyyāmhe。","confidence":70}
+{"id":"19-1923-2-10","zh":"当行为是原因或结果时，表示现在时行为的动词词根之后，可选用 eyya 等词尾。","confidence":65}
+{"id":"19-1923-11-13","zh":"la、词缀与元音强化等变化，与前面相同。","confidence":55}
+{"id":"19-1923-14-15","zh":"在表示假设时——","confidence":70}
+{"id":"19-1924-2-9","zh":"75. eyya、eyyāsi、eyyaṃ 变为 e","confidence":65}
+{"id":"19-1925-2-13","zh":"eyya、eyyāsi、eyyaṃ 这些词尾可选变为 e。","confidence":70}
+{"id":"19-1925-14-27","zh":"so dāni kinnu kho bhave（他现在究竟会成为什么呢）？yadi so paṭhamavaye pabbajeyya，arahā bhaveyya（如果他在青年时期出家，就会成为阿罗汉）。","confidence":70}
+{"id":"19-1926-2-4","zh":"47. eyyuṃ 变为 uṃ","confidence":70}
+{"id":"19-1927-2-8","zh":"eyyuṃ 这个词尾可选变为 uṃ。","confidence":70}
+{"id":"19-1927-9-17","zh":"sace saṃkhārā niccā bhavuṃ、bhaveyyuṃ，na nirujjheyyuṃ（如果诸行是常住的，就不会灭去）。","confidence":75}
+{"id":"19-1927-18-22","zh":"yadi tvaṃ bhave、bhaveyyāsi（如果你会成为……）。","confidence":70}
+{"id":"19-1927-23-39","zh":"依“eyyātha”等规则，a 变为 o：tumhe bhaveyyātho、bhaveyyātha；kathamahaṃ devo bhaveyyāmi（我怎样才能成为天神呢）？","confidence":70}
+{"id":"19-1928-2-7","zh":"78. eyyāma 变为 emu，也变为 u","confidence":65}
+{"id":"19-1929-2-8","zh":"eyyāma 可选变为 emu，也可变为 u。","confidence":65}
+{"id":"19-1929-9-15","zh":"kinnu kho mayaṃ bhavemu、bhaveyyāmu、bhaveyyāma（我们究竟会成为什么呢）？","confidence":75}
+{"id":"19-1929-16-19","zh":"反身式六词尾：bhavetha，bhaveraṃ。","confidence":80}
+{"id":"19-1929-20-23","zh":"bhavetho，bhaveyyāvho。","confidence":85}
+{"id":"19-1929-24-28","zh":"bhave、bhaveyyaṃ，bhaveyyāmhe。","confidence":85}
+{"id":"19-1929-29-37","zh":"被动语态：sukhaṃ tayā anubhuyye、anubhuyyeyya（安乐可由你感受），anubhuyyuṃ、anubhūyeyyuṃ。","confidence":70}
+{"id":"19-1929-38-46","zh":"tena tvaṃ anubhūye、anubhūyeyyāsi，tumhe anubhūyeyyātho、anubhūyeyyātha。","confidence":80}
+{"id":"19-1929-47-56","zh":"tenāhaṃ anubhūyeyyāmi，mayaṃ anubhūyemu、anubhūyeyyāmu、anubhūyeyyāma。","confidence":80}
+{"id":"19-1929-57-59","zh":"反身式六词尾：anubhūyetha 等。","confidence":80}
+{"id":"19-1929-60-63","zh":"无人称语态：bhūye、bhūyeyya、bhūyetha。","confidence":80}
+{"id":"19-1930-2-7","zh":"表示指令时：so odanaṃ pace、paceyya（他应当煮饭）等。","confidence":75}
+{"id":"19-1930-8-13","zh":"被动语态：pacīye、pacīyeyya、pacce、pacceyya 等。","confidence":80}
+{"id":"19-1931-2-7","zh":"表示许可时：so gāmaṃ gacche、gaccheyya（他可以去村子）等。","confidence":75}
+{"id":"19-1931-8-12","zh":"另外也作 game、gameyya 等。","confidence":75}
+{"id":"19-1931-13-17","zh":"同样有 ghamme、ghammeyya 等。","confidence":80}
+{"id":"19-1932-2-11","zh":"“如果早上煮了饭，就可以吃”，在这句话里，煮的行为","confidence":70}
+{"id":"19-1933-2-9","zh":"应当理解为原因，而吃的行为则是结果。","confidence":70}
