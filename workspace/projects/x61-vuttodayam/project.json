@@ -1,0 +1,633 @@
+{
+ "schema": 3,
+ "name": "x61-vuttodayam",
+ "title": "Vuttodayaṃ 汉译（藏外·仅本文）",
+ "created": "2026-11-24 11:28:53",
+ "updated": "2026-11-24 15:21:28",
+ "book": 20,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "20": {
+   "layer": "mula",
+   "title": "Vuttodayaṃ"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 20,
+   "title": "Vuttodayaṃ",
+   "start": 2,
+   "end": 318,
+   "fam": "x61-vuttodayam",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 80,
+     "chars": 2412,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Vuttodayaṃ"
+      },
+      {
+       "start": 3,
+       "end": 3,
+       "title": "1. Saññāparibhāsāniddesa-paṭhamapariccheda"
+      },
+      {
+       "start": 4,
+       "end": 4,
+       "title": "Ratanattayappaṇāma"
+      },
+      {
+       "start": 5,
+       "end": 7,
+       "title": "1."
+      },
+      {
+       "start": 8,
+       "end": 8,
+       "title": "Nimitta"
+      },
+      {
+       "start": 9,
+       "end": 11,
+       "title": "2."
+      },
+      {
+       "start": 12,
+       "end": 12,
+       "title": "Ganthaparimāṇa"
+      },
+      {
+       "start": 13,
+       "end": 15,
+       "title": "3."
+      },
+      {
+       "start": 16,
+       "end": 16,
+       "title": "Abhidhānādi"
+      },
+      {
+       "start": 17,
+       "end": 19,
+       "title": "4."
+      },
+      {
+       "start": 20,
+       "end": 20,
+       "title": "Gaṇasaṅketasaññā"
+      },
+      {
+       "start": 21,
+       "end": 23,
+       "title": "5."
+      },
+      {
+       "start": 24,
+       "end": 24,
+       "title": "Gaṇaniyama"
+      },
+      {
+       "start": 25,
+       "end": 27,
+       "title": "6."
+      },
+      {
+       "start": 28,
+       "end": 28,
+       "title": "Garu,lahusarūpa"
+      },
+      {
+       "start": 29,
+       "end": 31,
+       "title": "7."
+      },
+      {
+       "start": 32,
+       "end": 34,
+       "title": "8."
+      },
+      {
+       "start": 35,
+       "end": 37,
+       "title": "9."
+      },
+      {
+       "start": 38,
+       "end": 40,
+       "title": "10."
+      },
+      {
+       "start": 41,
+       "end": 43,
+       "title": "11."
+      },
+      {
+       "start": 44,
+       "end": 46,
+       "title": "12."
+      },
+      {
+       "start": 47,
+       "end": 49,
+       "title": "13."
+      },
+      {
+       "start": 50,
+       "end": 52,
+       "title": "14."
+      },
+      {
+       "start": 53,
+       "end": 55,
+       "title": "15."
+      },
+      {
+       "start": 56,
+       "end": 60,
+       "title": "16."
+      },
+      {
+       "start": 61,
+       "end": 61,
+       "title": "2. Mattāvuttiniddesa-dutiyapariccheda"
+      },
+      {
+       "start": 62,
+       "end": 62,
+       "title": "Gaṇaniyama"
+      },
+      {
+       "start": 63,
+       "end": 66,
+       "title": "17."
+      },
+      {
+       "start": 67,
+       "end": 67,
+       "title": "Yatiniyama"
+      },
+      {
+       "start": 68,
+       "end": 73,
+       "title": "18."
+      },
+      {
+       "start": 74,
+       "end": 77,
+       "title": "21."
+      },
+      {
+       "start": 78,
+       "end": 80,
+       "title": "23."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 20,
+     "layer": "mula",
+     "title": "Vuttodayaṃ … 23.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 81,
+     "end": 138,
+     "chars": 1679,
+     "sents": 58,
+     "paras": 58,
+     "chapters": [
+      {
+       "start": 81,
+       "end": 84,
+       "title": "24."
+      },
+      {
+       "start": 85,
+       "end": 88,
+       "title": "25."
+      },
+      {
+       "start": 89,
+       "end": 92,
+       "title": "26."
+      },
+      {
+       "start": 93,
+       "end": 96,
+       "title": "27."
+      },
+      {
+       "start": 97,
+       "end": 100,
+       "title": "28."
+      },
+      {
+       "start": 101,
+       "end": 104,
+       "title": "29."
+      },
+      {
+       "start": 105,
+       "end": 108,
+       "title": "30."
+      },
+      {
+       "start": 109,
+       "end": 111,
+       "title": "32."
+      },
+      {
+       "start": 112,
+       "end": 115,
+       "title": "33."
+      },
+      {
+       "start": 116,
+       "end": 127,
+       "title": "35."
+      },
+      {
+       "start": 128,
+       "end": 133,
+       "title": "44."
+      },
+      {
+       "start": 134,
+       "end": 138,
+       "title": "45."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 20,
+     "layer": "mula",
+     "title": "24. … 45.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 139,
+     "end": 163,
+     "chars": 699,
+     "sents": 25,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 139,
+       "end": 163,
+       "title": "3. Samavuttiniddesa-tatiyapariccheda"
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 20,
+     "layer": "mula",
+     "title": "3. Samavuttiniddesa-tatiyapariccheda",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 164,
+     "end": 242,
+     "chars": 2615,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 164,
+       "end": 223,
+       "title": "65."
+      },
+      {
+       "start": 224,
+       "end": 224,
+       "title": "4. Aḍḍhasamavuttiniddesa-catutthapariccheda"
+      },
+      {
+       "start": 225,
+       "end": 227,
+       "title": "107."
+      },
+      {
+       "start": 228,
+       "end": 230,
+       "title": "108."
+      },
+      {
+       "start": 231,
+       "end": 233,
+       "title": "109."
+      },
+      {
+       "start": 234,
+       "end": 236,
+       "title": "110."
+      },
+      {
+       "start": 237,
+       "end": 239,
+       "title": "111."
+      },
+      {
+       "start": 240,
+       "end": 242,
+       "title": "112."
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 20,
+     "layer": "mula",
+     "title": "65. … 112.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 243,
+     "end": 318,
+     "chars": 2283,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 243,
+       "end": 245,
+       "title": "113."
+      },
+      {
+       "start": 246,
+       "end": 248,
+       "title": "114."
+      },
+      {
+       "start": 249,
+       "end": 251,
+       "title": "115."
+      },
+      {
+       "start": 252,
+       "end": 255,
+       "title": "116."
+      },
+      {
+       "start": 256,
+       "end": 260,
+       "title": "117."
+      },
+      {
+       "start": 261,
+       "end": 272,
+       "title": "5. Visamavuttiniddesa-pañcamapariccheda"
+      },
+      {
+       "start": 273,
+       "end": 277,
+       "title": "128."
+      },
+      {
+       "start": 278,
+       "end": 278,
+       "title": "6. Chappaccayavibhāga-chaṭṭhapariccheda"
+      },
+      {
+       "start": 279,
+       "end": 279,
+       "title": "Patthāranaya"
+      },
+      {
+       "start": 280,
+       "end": 282,
+       "title": "129."
+      },
+      {
+       "start": 283,
+       "end": 283,
+       "title": "Naṭṭhanaya"
+      },
+      {
+       "start": 284,
+       "end": 286,
+       "title": "130."
+      },
+      {
+       "start": 287,
+       "end": 287,
+       "title": "Uddiṭṭhanaya"
+      },
+      {
+       "start": 288,
+       "end": 290,
+       "title": "131."
+      },
+      {
+       "start": 291,
+       "end": 291,
+       "title": "Sabbagalakriyanaya"
+      },
+      {
+       "start": 292,
+       "end": 294,
+       "title": "132."
+      },
+      {
+       "start": 295,
+       "end": 295,
+       "title": "Vuttasaṅkhyānaya"
+      },
+      {
+       "start": 296,
+       "end": 298,
+       "title": "133."
+      },
+      {
+       "start": 299,
+       "end": 299,
+       "title": "Vuttaaddhānaya"
+      },
+      {
+       "start": 300,
+       "end": 304,
+       "title": "134."
+      },
+      {
+       "start": 305,
+       "end": 305,
+       "title": "Nigamana"
+      },
+      {
+       "start": 306,
+       "end": 310,
+       "title": "135."
+      },
+      {
+       "start": 311,
+       "end": 313,
+       "title": "136."
+      },
+      {
+       "start": 314,
+       "end": 318,
+       "title": "137."
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 20,
+     "layer": "mula",
+     "title": "113. … 137.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 317,
+   "chars": 9688,
+   "sents": 317,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 20,
+   "layer": "mula",
+   "start": 2,
+   "end": 318,
+   "title": "Vuttodayaṃ"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 20,
+   "start": 2,
+   "end": 80,
+   "chars": 2412,
+   "sents": 79,
+   "title": "Vuttodayaṃ … 23.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:12:38",
+   "ended": "2026-11-24 15:13:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 20,
+   "start": 81,
+   "end": 138,
+   "chars": 1679,
+   "sents": 58,
+   "title": "24. … 45.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:13:59",
+   "ended": "2026-11-24 15:15:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 20,
+   "start": 139,
+   "end": 163,
+   "chars": 699,
+   "sents": 25,
+   "title": "3. Samavuttiniddesa-tatiyapariccheda",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:15:20",
+   "ended": "2026-11-24 15:16:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 20,
+   "start": 164,
+   "end": 242,
+   "chars": 2615,
+   "sents": 79,
+   "title": "65. … 112.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:16:30",
+   "ended": "2026-11-24 15:19:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 20,
+   "start": 243,
+   "end": 318,
+   "chars": 2283,
+   "sents": 76,
+   "title": "113. … 137.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:19:42",
+   "ended": "2026-11-24 15:21:28",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 61
+}

@@ -1,0 +1,7073 @@
+{
+ "schema": 3,
+ "name": "x60-payogasiddhipali",
+ "title": "Payogasiddhipāḷi 汉译（藏外·仅本文）",
+ "created": "2026-11-24 11:28:50",
+ "updated": "2026-11-25 15:37:45",
+ "book": 19,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "19": {
+   "layer": "mula",
+   "title": "Payogasiddhipāḷi"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 19,
+   "title": "Payogasiddhipāḷi",
+   "start": 2,
+   "end": 2493,
+   "fam": "x60-payogasiddhipali",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 52,
+     "chars": 4160,
+     "sents": 75,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Payogasiddhipāḷi"
+      },
+      {
+       "start": 3,
+       "end": 4,
+       "title": "1. Saññādikaṇḍa"
+      },
+      {
+       "start": 5,
+       "end": 18,
+       "title": "Ganthārambhakathā"
+      },
+      {
+       "start": 19,
+       "end": 43,
+       "title": "1. Aādayo titālīsa vaṇṇā"
+      },
+      {
+       "start": 44,
+       "end": 46,
+       "title": "2. Dasā+do sarā"
+      },
+      {
+       "start": 47,
+       "end": 48,
+       "title": "3. Dve dve savaṇṇā"
+      },
+      {
+       "start": 49,
+       "end": 50,
+       "title": "4. Pubbo rasso"
+      },
+      {
+       "start": 51,
+       "end": 52,
+       "title": "5. Paro dīgho"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 19,
+     "layer": "mula",
+     "title": "Payogasiddhipāḷi … 5. Paro dīgho",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 53,
+     "end": 85,
+     "chars": 4623,
+     "sents": 63,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 53,
+       "end": 55,
+       "title": "6. Kādayo byañjanā"
+      },
+      {
+       "start": 56,
+       "end": 57,
+       "title": "7. Pañcapañcakā vaggā"
+      },
+      {
+       "start": 58,
+       "end": 67,
+       "title": "8. Bindu niggahītaṃ"
+      },
+      {
+       "start": 68,
+       "end": 70,
+       "title": "26. Saro lopo sare"
+      },
+      {
+       "start": 71,
+       "end": 73,
+       "title": "14. Sattamiyaṃ pubbassa"
+      },
+      {
+       "start": 74,
+       "end": 77,
+       "title": "27. Paro kvaci"
+      },
+      {
+       "start": 78,
+       "end": 79,
+       "title": "29. Yuvaṇṇāna+meo luttā"
+      },
+      {
+       "start": 80,
+       "end": 82,
+       "title": "24. Vaṇṇaparena savaṇṇopi"
+      },
+      {
+       "start": 83,
+       "end": 85,
+       "title": "30. Yavā sare"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 19,
+     "layer": "mula",
+     "title": "6. Kādayo byañjanā … 30. Yavā sare",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 86,
+     "end": 110,
+     "chars": 3594,
+     "sents": 53,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 86,
+       "end": 88,
+       "title": "30. Eonaṃ"
+      },
+      {
+       "start": 89,
+       "end": 90,
+       "title": "32. Gossā+vaṅa"
+      },
+      {
+       "start": 91,
+       "end": 93,
+       "title": "18. Ṅa+nubandho"
+      },
+      {
+       "start": 94,
+       "end": 95,
+       "title": "36. Vī+tisse+ve vā"
+      },
+      {
+       "start": 96,
+       "end": 98,
+       "title": "17. Chaṭṭhiyantassa"
+      },
+      {
+       "start": 99,
+       "end": 104,
+       "title": "45. Vanataragā cā+gamā"
+      },
+      {
+       "start": 105,
+       "end": 110,
+       "title": "49. Chā ḷo"
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 19,
+     "layer": "mula",
+     "title": "30. Eonaṃ … 49. Chā ḷo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 111,
+     "end": 117,
+     "chars": 3251,
+     "sents": 14,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 111,
+       "end": 114,
+       "title": "28. Na dve vā"
+      },
+      {
+       "start": 115,
+       "end": 117,
+       "title": "33. Byañjane dīgharassā"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 19,
+     "layer": "mula",
+     "title": "28. Na dve vā … 33. Byañjane dīgharassā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 118,
+     "end": 138,
+     "chars": 4936,
+     "sents": 76,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 118,
+       "end": 125,
+       "title": "34. Saramhā dve"
+      },
+      {
+       "start": 126,
+       "end": 129,
+       "title": "35. Catutthadutiyesve+saṃ tatiyapaṭhamā"
+      },
+      {
+       "start": 130,
+       "end": 132,
+       "title": "37. Eona+ma vaṇṇe"
+      },
+      {
+       "start": 133,
+       "end": 135,
+       "title": "48. Tavaggavaraṇānaṃ ye cavagga bayañā"
+      },
+      {
+       "start": 136,
+       "end": 138,
+       "title": "49. Vaggalasehite"
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 19,
+     "layer": "mula",
+     "title": "34. Saramhā dve … 49. Vaggalasehite",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 139,
+     "end": 169,
+     "chars": 4565,
+     "sents": 71,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 139,
+       "end": 141,
+       "title": "50. Hassa vipallāso"
+      },
+      {
+       "start": 142,
+       "end": 143,
+       "title": "51. Ve vā"
+      },
+      {
+       "start": 144,
+       "end": 146,
+       "title": "52. Tathanarānaṃ ṭaṭhaṇalā"
+      },
+      {
+       "start": 147,
+       "end": 149,
+       "title": "38. Niggahītaṃ"
+      },
+      {
+       "start": 150,
+       "end": 152,
+       "title": "39. Lopo"
+      },
+      {
+       "start": 153,
+       "end": 155,
+       "title": "40. Parasarassa"
+      },
+      {
+       "start": 156,
+       "end": 158,
+       "title": "53. Saṃyogādilopo"
+      },
+      {
+       "start": 159,
+       "end": 161,
+       "title": "41. Vagge vagganto"
+      },
+      {
+       "start": 162,
+       "end": 164,
+       "title": "42. Yevahisu ño"
+      },
+      {
+       "start": 165,
+       "end": 167,
+       "title": "43. Ye saṃssa"
+      },
+      {
+       "start": 168,
+       "end": 169,
+       "title": "44. Mayadā sare"
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 19,
+     "layer": "mula",
+     "title": "50. Hassa vipallāso … 44. Mayadā sare",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 170,
+     "end": 211,
+     "chars": 3933,
+     "sents": 79,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 170,
+       "end": 183,
+       "title": "47. Tadaminādīni"
+      },
+      {
+       "start": 184,
+       "end": 186,
+       "title": "2. Nāmakaṇḍa"
+      },
+      {
+       "start": 187,
+       "end": 193,
+       "title": "1. Dve dve+kānekesu nāmasmā siyo aṃyo nā hi sa naṃ smā hi sa naṃ smiṃ su"
+      },
+      {
+       "start": 194,
+       "end": 196,
+       "title": "37. Paṭhamā+tthamatte"
+      },
+      {
+       "start": 197,
+       "end": 198,
+       "title": "109. Sisso"
+      },
+      {
+       "start": 199,
+       "end": 201,
+       "title": "41. Ato yonaṃ ṭāṭe"
+      },
+      {
+       "start": 202,
+       "end": 203,
+       "title": "38. Āmantaṇe"
+      },
+      {
+       "start": 204,
+       "end": 206,
+       "title": "112. Go syā+lapane"
+      },
+      {
+       "start": 207,
+       "end": 209,
+       "title": "117. Gasīnaṃ"
+      },
+      {
+       "start": 210,
+       "end": 211,
+       "title": "59. Ayunaṃ vā dīgho"
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 19,
+     "layer": "mula",
+     "title": "47. Tadaminādīni … 59. Ayunaṃ vā dīgho",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 212,
+     "end": 247,
+     "chars": 2208,
+     "sents": 62,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 212,
+       "end": 213,
+       "title": "2. Kamme dutiyā"
+      },
+      {
+       "start": 214,
+       "end": 216,
+       "title": "19. Kattukaraṇesu tatiyā"
+      },
+      {
+       "start": 217,
+       "end": 218,
+       "title": "108. Ate+na"
+      },
+      {
+       "start": 219,
+       "end": 221,
+       "title": "98. Suhisva+sse"
+      },
+      {
+       "start": 222,
+       "end": 223,
+       "title": "95. Smāhismiṃnaṃ mhābhimhi"
+      },
+      {
+       "start": 224,
+       "end": 225,
+       "title": "24. Catutthī sampadāne"
+      },
+      {
+       "start": 226,
+       "end": 227,
+       "title": "51. Suña sassa"
+      },
+      {
+       "start": 228,
+       "end": 229,
+       "title": "1,20. Ñākānu bandhā+dyantā"
+      },
+      {
+       "start": 230,
+       "end": 235,
+       "title": "1,58. ‘‘Bahulaṃ’’tya+dhikāro"
+      },
+      {
+       "start": 236,
+       "end": 238,
+       "title": "44. Sassāya catutthiyā"
+      },
+      {
+       "start": 239,
+       "end": 240,
+       "title": "89. Sunaṃhisu"
+      },
+      {
+       "start": 241,
+       "end": 243,
+       "title": "29. Pañcamya+vadhismā"
+      },
+      {
+       "start": 244,
+       "end": 245,
+       "title": "43. Smā+smiṃnaṃ"
+      },
+      {
+       "start": 246,
+       "end": 247,
+       "title": "39. Chaṭṭhī sambandhe"
+      }
+     ],
+     "split": false,
+     "id": "M8",
+     "book": 19,
+     "layer": "mula",
+     "title": "2. Kamme dutiyā … 39. Chaṭṭhī sambandhe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 248,
+     "end": 289,
+     "chars": 3917,
+     "sents": 80,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 248,
+       "end": 296,
+       "title": "14. Sattamyā+dhāre"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 19,
+     "layer": "mula",
+     "title": "14. Sattamyā+dhāre（248-289）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 290,
+     "end": 296,
+     "chars": 615,
+     "sents": 11,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 248,
+       "end": 296,
+       "title": "14. Sattamyā+dhāre"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 19,
+     "layer": "mula",
+     "title": "14. Sattamyā+dhāre（290-296）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 297,
+     "end": 335,
+     "chars": 2846,
+     "sents": 79,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 297,
+       "end": 299,
+       "title": "110. Kvace+vā."
+      },
+      {
+       "start": 300,
+       "end": 303,
+       "title": "135. Ekaccādīha+to"
+      },
+      {
+       "start": 304,
+       "end": 306,
+       "title": "107. Kodhādīhi"
+      },
+      {
+       "start": 307,
+       "end": 309,
+       "title": "175. Divādito"
+      },
+      {
+       "start": 310,
+       "end": 317,
+       "title": "144. Manādīhi smiṃ+saṃ+nā+smānaṃ si+so+o+sā+sā"
+      },
+      {
+       "start": 318,
+       "end": 319,
+       "title": "148. Ntassaṃ"
+      },
+      {
+       "start": 320,
+       "end": 321,
+       "title": "215. Nta+ntūnaṃ nto yomhi paṭhame"
+      },
+      {
+       "start": 322,
+       "end": 323,
+       "title": "218. Ṭa+ṭā+aṃ ge"
+      },
+      {
+       "start": 324,
+       "end": 325,
+       "title": "92. Ntassa ca ṭa vaṃ+se"
+      },
+      {
+       "start": 326,
+       "end": 327,
+       "title": "217. To+tā+ti+tā sa+smā+smiṃ nāsu"
+      },
+      {
+       "start": 328,
+       "end": 333,
+       "title": "216. Taṃ naṃmhi"
+      },
+      {
+       "start": 334,
+       "end": 335,
+       "title": "149. Bhūto"
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 19,
+     "layer": "mula",
+     "title": "110. Kvace+vā. … 149. Bhūto",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 336,
+     "end": 367,
+     "chars": 2584,
+     "sents": 75,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 336,
+       "end": 339,
+       "title": "146. Bhavato vā bhontoga+yo+nā+se"
+      },
+      {
+       "start": 340,
+       "end": 341,
+       "title": "145. Sato saba bhe"
+      },
+      {
+       "start": 342,
+       "end": 344,
+       "title": "150. Mahantā+rahantānaṃ ṭā vā"
+      },
+      {
+       "start": 345,
+       "end": 346,
+       "title": "154. Rājādīyuvāditvā"
+      },
+      {
+       "start": 347,
+       "end": 348,
+       "title": "156. Yona+māno"
+      },
+      {
+       "start": 349,
+       "end": 350,
+       "title": "155. Vā+mhā+naṅa"
+      },
+      {
+       "start": 351,
+       "end": 352,
+       "title": "80. Nāsse+no"
+      },
+      {
+       "start": 353,
+       "end": 355,
+       "title": "79. Kammādito"
+      },
+      {
+       "start": 356,
+       "end": 357,
+       "title": "123. Rājassi nāmhi"
+      },
+      {
+       "start": 358,
+       "end": 359,
+       "title": "222. Nā+smāsu raññā"
+      },
+      {
+       "start": 360,
+       "end": 361,
+       "title": "124. Su+naṃ+hisū"
+      },
+      {
+       "start": 362,
+       "end": 363,
+       "title": "223. Rañño+raññassa+rājino se"
+      },
+      {
+       "start": 364,
+       "end": 365,
+       "title": "221. Rājassa raññaṃ"
+      },
+      {
+       "start": 366,
+       "end": 367,
+       "title": "224. Smimhi raññe+rājini"
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 19,
+     "layer": "mula",
+     "title": "146. Bhavato vā bhontoga+yo+nā+se … 224. Smimhi raññe+rājini",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 368,
+     "end": 405,
+     "chars": 3117,
+     "sents": 78,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 368,
+       "end": 370,
+       "title": "225. Samāse vā"
+      },
+      {
+       "start": 371,
+       "end": 372,
+       "title": "192. Puma+kamma+thāma+ddhānaṃ sa+smāsu ca"
+      },
+      {
+       "start": 373,
+       "end": 374,
+       "title": "1,9. Iyuvaṇṇā jhalā nāmassa+nte"
+      },
+      {
+       "start": 375,
+       "end": 376,
+       "title": "81. Jhalā sassa no"
+      },
+      {
+       "start": 377,
+       "end": 379,
+       "title": "82. Nā smāssa"
+      },
+      {
+       "start": 380,
+       "end": 381,
+       "title": "195. Su+hisu naka"
+      },
+      {
+       "start": 382,
+       "end": 383,
+       "title": "194. No+ttātumā"
+      },
+      {
+       "start": 384,
+       "end": 386,
+       "title": "196. Smāssa nā brahmā ca"
+      },
+      {
+       "start": 387,
+       "end": 388,
+       "title": "60. Gha+brahmādite"
+      },
+      {
+       "start": 389,
+       "end": 390,
+       "title": "191. Nāmhi"
+      },
+      {
+       "start": 391,
+       "end": 393,
+       "title": "190. Brahmassu vā"
+      },
+      {
+       "start": 394,
+       "end": 395,
+       "title": "2,157. Āyo no ca sakhā"
+      },
+      {
+       "start": 396,
+       "end": 397,
+       "title": "159. No+nā+sesvi"
+      },
+      {
+       "start": 398,
+       "end": 399,
+       "title": "161. Yo+svaṃ+hisu cā+raṅa"
+      },
+      {
+       "start": 400,
+       "end": 401,
+       "title": "171. Āraṅasmā"
+      },
+      {
+       "start": 402,
+       "end": 403,
+       "title": "172. Ṭo ṭe vā"
+      },
+      {
+       "start": 404,
+       "end": 405,
+       "title": "160. Smā+naṃsu vā"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 19,
+     "layer": "mula",
+     "title": "225. Samāse vā … 160. Smā+naṃsu vā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 406,
+     "end": 439,
+     "chars": 2758,
+     "sents": 80,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 406,
+       "end": 407,
+       "title": "171. Ṭā nā+smānaṃ"
+      },
+      {
+       "start": 408,
+       "end": 410,
+       "title": "158. Ṭe smino"
+      },
+      {
+       "start": 411,
+       "end": 412,
+       "title": "181. Yonaṃ no+ne vā"
+      },
+      {
+       "start": 413,
+       "end": 414,
+       "title": "179. No+nā+nesvā"
+      },
+      {
+       "start": 415,
+       "end": 416,
+       "title": "178. Yuvādīnaṃ su+hisvā+naṅa"
+      },
+      {
+       "start": 417,
+       "end": 418,
+       "title": "193. Yuvā sassi+no"
+      },
+      {
+       "start": 419,
+       "end": 420,
+       "title": "180. Smā+smiṃnaṃ nā+ne"
+      },
+      {
+       "start": 421,
+       "end": 422,
+       "title": "187. Gassaṃ"
+      },
+      {
+       "start": 423,
+       "end": 424,
+       "title": "185. Nāmhi"
+      },
+      {
+       "start": 425,
+       "end": 426,
+       "title": "184. Pumāti"
+      },
+      {
+       "start": 427,
+       "end": 428,
+       "title": "186. Sumhā ca"
+      },
+      {
+       "start": 429,
+       "end": 432,
+       "title": "189. Vattahā sa+naṃnaṃ no+nānaṃ"
+      },
+      {
+       "start": 433,
+       "end": 434,
+       "title": "64. Ekavacana+yosva+ghonaṃ"
+      },
+      {
+       "start": 435,
+       "end": 436,
+       "title": "66. Sismiṃ nā+napuṃsakassati"
+      },
+      {
+       "start": 437,
+       "end": 439,
+       "title": "188. Sāssaṃ+se cā+naṅa"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 19,
+     "layer": "mula",
+     "title": "171. Ṭā nā+smānaṃ … 188. Sāssaṃ+se cā+naṅa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 440,
+     "end": 480,
+     "chars": 3034,
+     "sents": 79,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 440,
+       "end": 443,
+       "title": "130. Ge vā"
+      },
+      {
+       "start": 444,
+       "end": 445,
+       "title": "93. Yosu jhissa pume"
+      },
+      {
+       "start": 446,
+       "end": 447,
+       "title": "114. Lopo"
+      },
+      {
+       "start": 448,
+       "end": 458,
+       "title": "88. Yolopa+nisu dīgho"
+      },
+      {
+       "start": 459,
+       "end": 460,
+       "title": "147. Sissā+ggito ni"
+      },
+      {
+       "start": 461,
+       "end": 462,
+       "title": "133. Ṭe sissi+sismā"
+      },
+      {
+       "start": 463,
+       "end": 465,
+       "title": "134. Dutiyassa yossa"
+      },
+      {
+       "start": 466,
+       "end": 468,
+       "title": "55. Ratyādīhi ṭo smino"
+      },
+      {
+       "start": 469,
+       "end": 470,
+       "title": "182. Ito+ññatthe pume"
+      },
+      {
+       "start": 471,
+       "end": 474,
+       "title": "183. Ne smino kvaci"
+      },
+      {
+       "start": 475,
+       "end": 476,
+       "title": "75. Yonaṃ no+ne pume"
+      },
+      {
+       "start": 477,
+       "end": 478,
+       "title": "115. Jantuhetvīghapehi vā"
+      },
+      {
+       "start": 479,
+       "end": 480,
+       "title": "74. Naṃ jhīto"
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 19,
+     "layer": "mula",
+     "title": "130. Ge vā … 74. Naṃ jhīto",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 481,
+     "end": 517,
+     "chars": 2921,
+     "sents": 78,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 481,
+       "end": 482,
+       "title": "76. No"
+      },
+      {
+       "start": 483,
+       "end": 492,
+       "title": "77. Smino ni"
+      },
+      {
+       "start": 493,
+       "end": 494,
+       "title": "83. Lā yonaṃ vo pume"
+      },
+      {
+       "start": 495,
+       "end": 496,
+       "title": "94. Ve+vosu lussa"
+      },
+      {
+       "start": 497,
+       "end": 500,
+       "title": "96. Pumā+lapane vevo"
+      },
+      {
+       "start": 501,
+       "end": 504,
+       "title": "84. Jantvādito no ca"
+      },
+      {
+       "start": 505,
+       "end": 507,
+       "title": "48. Bahukatinnaṃ"
+      },
+      {
+       "start": 508,
+       "end": 509,
+       "title": "57. Ltu+pitādīna+mā simhi"
+      },
+      {
+       "start": 510,
+       "end": 511,
+       "title": "162. Ltu+pitādīna+ma se"
+      },
+      {
+       "start": 512,
+       "end": 513,
+       "title": "58. Ge a ca"
+      },
+      {
+       "start": 514,
+       "end": 515,
+       "title": "166. Su+hisvā+raṅa"
+      },
+      {
+       "start": 516,
+       "end": 517,
+       "title": "165. Salopo"
+      }
+     ],
+     "split": false,
+     "id": "M16",
+     "book": 19,
+     "layer": "mula",
+     "title": "76. No … 165. Salopo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 518,
+     "end": 548,
+     "chars": 3822,
+     "sents": 80,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 518,
+       "end": 519,
+       "title": "163. Naṃmhi vā"
+      },
+      {
+       "start": 520,
+       "end": 521,
+       "title": "164. Ā"
+      },
+      {
+       "start": 522,
+       "end": 523,
+       "title": "174. Ṭi smino"
+      },
+      {
+       "start": 524,
+       "end": 529,
+       "title": "176. Rassā+raṅa"
+      },
+      {
+       "start": 530,
+       "end": 532,
+       "title": "177. Pitādīna+manatvādīnaṃ"
+      },
+      {
+       "start": 533,
+       "end": 534,
+       "title": "151. Ntussa"
+      },
+      {
+       "start": 535,
+       "end": 537,
+       "title": "91. Yvādo ntussa"
+      },
+      {
+       "start": 538,
+       "end": 543,
+       "title": "153. Himavato vā o"
+      },
+      {
+       "start": 544,
+       "end": 548,
+       "title": "85. Kūto"
+      }
+     ],
+     "split": false,
+     "id": "M17",
+     "book": 19,
+     "layer": "mula",
+     "title": "163. Naṃmhi vā … 85. Kūto",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 549,
+     "end": 594,
+     "chars": 2756,
+     "sents": 76,
+     "paras": 46,
+     "chapters": [
+      {
+       "start": 549,
+       "end": 550,
+       "title": "67. Gossā+ga+si+hi+naṃsu gāva+gavā"
+      },
+      {
+       "start": 551,
+       "end": 552,
+       "title": "170. Ubha+gohi ṭo"
+      },
+      {
+       "start": 553,
+       "end": 554,
+       "title": "72. Gāvu+mhi"
+      },
+      {
+       "start": 555,
+       "end": 556,
+       "title": "71. Nāssā"
+      },
+      {
+       "start": 557,
+       "end": 558,
+       "title": "69. Gavaṃ sena"
+      },
+      {
+       "start": 559,
+       "end": 560,
+       "title": "70. Gunnañca naṃnā"
+      },
+      {
+       "start": 561,
+       "end": 567,
+       "title": "68. Sumhi vā"
+      },
+      {
+       "start": 568,
+       "end": 569,
+       "title": "1,11. Ghā"
+      },
+      {
+       "start": 570,
+       "end": 571,
+       "title": "45. Gha+pate+kasmiṃ nādīnaṃ ya+yā"
+      },
+      {
+       "start": 572,
+       "end": 588,
+       "title": "103. Yaṃ"
+      },
+      {
+       "start": 589,
+       "end": 592,
+       "title": "62. Rasso vā"
+      },
+      {
+       "start": 593,
+       "end": 594,
+       "title": "1,10. Pi+tthiyaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M18",
+     "book": 19,
+     "layer": "mula",
+     "title": "67. Gossā+ga+si+hi+naṃsu gāva+gavā … 1,10. Pi+tthiyaṃ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 595,
+     "end": 615,
+     "chars": 1488,
+     "sents": 46,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 595,
+       "end": 603,
+       "title": "116. Ye passi+vaṇṇassa"
+      },
+      {
+       "start": 604,
+       "end": 607,
+       "title": "55. Ratyādīhi ṭo smino"
+      },
+      {
+       "start": 608,
+       "end": 615,
+       "title": "73. Yaṃ pito"
+      }
+     ],
+     "split": false,
+     "id": "M19",
+     "book": 19,
+     "layer": "mula",
+     "title": "116. Ye passi+vaṇṇassa … 73. Yaṃ pito",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 616,
+     "end": 651,
+     "chars": 2437,
+     "sents": 73,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 616,
+       "end": 629,
+       "title": "167. Najjā dhayāsvāma"
+      },
+      {
+       "start": 630,
+       "end": 631,
+       "title": "111. Aṃ napuṃsake"
+      },
+      {
+       "start": 632,
+       "end": 646,
+       "title": "112. Yonaṃ ni"
+      },
+      {
+       "start": 647,
+       "end": 649,
+       "title": "136. Na  nissa ṭā"
+      },
+      {
+       "start": 650,
+       "end": 651,
+       "title": "106. Nāssa sā"
+      }
+     ],
+     "split": false,
+     "id": "M20",
+     "book": 19,
+     "layer": "mula",
+     "title": "167. Najjā dhayāsvāma … 106. Nāssa sā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 652,
+     "end": 682,
+     "chars": 2792,
+     "sents": 77,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 652,
+       "end": 657,
+       "title": "105. Padādīhi"
+      },
+      {
+       "start": 658,
+       "end": 682,
+       "title": "113. Jhalā vā"
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 19,
+     "layer": "mula",
+     "title": "105. Padādīhi … 113. Jhalā vā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 683,
+     "end": 713,
+     "chars": 2409,
+     "sents": 76,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 683,
+       "end": 684,
+       "title": "138. Yona+meṭa"
+      },
+      {
+       "start": 685,
+       "end": 688,
+       "title": "99. Sabbādīnaṃ naṃmhi ca"
+      },
+      {
+       "start": 689,
+       "end": 691,
+       "title": "100. Saṃ+sānaṃ"
+      },
+      {
+       "start": 692,
+       "end": 693,
+       "title": "101. Ghapā sassa ssā vā"
+      },
+      {
+       "start": 694,
+       "end": 696,
+       "title": "102. Smino ssaṃ"
+      },
+      {
+       "start": 697,
+       "end": 698,
+       "title": "137. Sabbādīhi"
+      },
+      {
+       "start": 699,
+       "end": 701,
+       "title": "52. Ssaṃ+ssā+ssāyesvi-tare+ka+ññe+ti+māna+mi"
+      },
+      {
+       "start": 702,
+       "end": 703,
+       "title": "143. Pubbādīhi chahi"
+      },
+      {
+       "start": 704,
+       "end": 705,
+       "title": "139. Nā+ññañca nāma+ppadhānā"
+      },
+      {
+       "start": 706,
+       "end": 707,
+       "title": "140. Tatiyatthayoge"
+      },
+      {
+       "start": 708,
+       "end": 709,
+       "title": "141. Catthasamāse"
+      },
+      {
+       "start": 710,
+       "end": 713,
+       "title": "142. Ve+ṭa"
+      }
+     ],
+     "split": false,
+     "id": "M22",
+     "book": 19,
+     "layer": "mula",
+     "title": "138. Yona+meṭa … 142. Ve+ṭa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 714,
+     "end": 746,
+     "chars": 3269,
+     "sents": 76,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 714,
+       "end": 716,
+       "title": "128. Tya+te+tānaṃ tassa so"
+      },
+      {
+       "start": 717,
+       "end": 718,
+       "title": "131. Tatassa no sabbāsu"
+      },
+      {
+       "start": 719,
+       "end": 722,
+       "title": "132. Ṭa sasmāsmiṃssāyassaṃssāsaṃmhāmhisvi+massa ca"
+      },
+      {
+       "start": 723,
+       "end": 724,
+       "title": "46. Ssā vā te+ti+mā+mūhi"
+      },
+      {
+       "start": 725,
+       "end": 726,
+       "title": "53. Tāya vā"
+      },
+      {
+       "start": 727,
+       "end": 736,
+       "title": "54. Te+ti+māto sassa ssāya"
+      },
+      {
+       "start": 737,
+       "end": 738,
+       "title": "127. Simha+napuṃsakassā+yaṃ"
+      },
+      {
+       "start": 739,
+       "end": 740,
+       "title": "126. Nāmha+ni+mi"
+      },
+      {
+       "start": 741,
+       "end": 744,
+       "title": "125. Imassā+nitthiyaṃ ṭe"
+      },
+      {
+       "start": 745,
+       "end": 746,
+       "title": "201. Imassi+daṃ vā"
+      }
+     ],
+     "split": false,
+     "id": "M23",
+     "book": 19,
+     "layer": "mula",
+     "title": "128. Tya+te+tānaṃ tassa so … 201. Imassi+daṃ vā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 747,
+     "end": 781,
+     "chars": 2947,
+     "sents": 79,
+     "paras": 35,
+     "chapters": [
+      {
+       "start": 747,
+       "end": 749,
+       "title": "197. Ime+tāna+menā+nvādese dutiyāyaṃ"
+      },
+      {
+       "start": 750,
+       "end": 751,
+       "title": "129. Massā+mussa"
+      },
+      {
+       "start": 752,
+       "end": 756,
+       "title": "86. Lopo+musmā"
+      },
+      {
+       "start": 757,
+       "end": 760,
+       "title": "87. Na no sassa"
+      },
+      {
+       "start": 761,
+       "end": 763,
+       "title": "202. Amussā+duṃ"
+      },
+      {
+       "start": 764,
+       "end": 766,
+       "title": "130. Ke vā"
+      },
+      {
+       "start": 767,
+       "end": 768,
+       "title": "198. Kissa ko sabbāsu"
+      },
+      {
+       "start": 769,
+       "end": 772,
+       "title": "199. Ki sasmiṃsu vā nitthiyaṃ"
+      },
+      {
+       "start": 773,
+       "end": 779,
+       "title": "200. Ki+maṃsisu saha napuṃsake"
+      },
+      {
+       "start": 780,
+       "end": 781,
+       "title": "212. Tumhassa tuvaṃtva+mamhi ca"
+      }
+     ],
+     "split": false,
+     "id": "M24",
+     "book": 19,
+     "layer": "mula",
+     "title": "197. Ime+tāna+menā+nvādese dutiyāyaṃ … 212. Tumhassa tuvaṃtva+mamhi ca",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 782,
+     "end": 824,
+     "chars": 3031,
+     "sents": 77,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 782,
+       "end": 783,
+       "title": "211. Simha+haṃ"
+      },
+      {
+       "start": 784,
+       "end": 785,
+       "title": "2,209. Maya+masmā+mhassa"
+      },
+      {
+       "start": 786,
+       "end": 787,
+       "title": "227. Aṃmhi taṃ+maṃ+tavaṃ+mamaṃ"
+      },
+      {
+       "start": 788,
+       "end": 789,
+       "title": "231. Dutiyā yomhi vā"
+      },
+      {
+       "start": 790,
+       "end": 791,
+       "title": "228. Nāsmāsu tayā+mayā"
+      },
+      {
+       "start": 792,
+       "end": 793,
+       "title": "213. Tayātayīnaṃ tva vā tassa"
+      },
+      {
+       "start": 794,
+       "end": 795,
+       "title": "229. Tava+mama+tuyhaṃ+mayhaṃ se"
+      },
+      {
+       "start": 796,
+       "end": 797,
+       "title": "211. Naṃsesva+smākaṃ+mamaṃ."
+      },
+      {
+       "start": 798,
+       "end": 799,
+       "title": "230. Ṅaṃ+ṅākaṃ naṃmhi"
+      },
+      {
+       "start": 800,
+       "end": 801,
+       "title": "214. Smāmhi tvamhā"
+      },
+      {
+       "start": 802,
+       "end": 803,
+       "title": "226. Smimhi tumhamhānaṃ tayi+mayi"
+      },
+      {
+       "start": 804,
+       "end": 805,
+       "title": "203. Sumhā+mhassā+smā"
+      },
+      {
+       "start": 806,
+       "end": 820,
+       "title": "232. Apādādo padate+kavākyeti"
+      },
+      {
+       "start": 821,
+       "end": 822,
+       "title": "233. Yonaṃhisva+pañcamyā vo+no"
+      },
+      {
+       "start": 823,
+       "end": 824,
+       "title": "234. Te+me nāse"
+      }
+     ],
+     "split": false,
+     "id": "M25",
+     "book": 19,
+     "layer": "mula",
+     "title": "211. Simha+haṃ … 234. Te+me nāse",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 825,
+     "end": 863,
+     "chars": 3753,
+     "sents": 78,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 825,
+       "end": 826,
+       "title": "237. Na ca+vā+hā+he+vayoge"
+      },
+      {
+       "start": 827,
+       "end": 828,
+       "title": "235. Anvādese"
+      },
+      {
+       "start": 829,
+       "end": 830,
+       "title": "236. Sapubbā paṭhamantā vā"
+      },
+      {
+       "start": 831,
+       "end": 832,
+       "title": "238. Dassanatthe+nālocane"
+      },
+      {
+       "start": 833,
+       "end": 834,
+       "title": "239. Āmantaṇaṃ pubba+masantaṃva"
+      },
+      {
+       "start": 835,
+       "end": 836,
+       "title": "240. Na sāmaññavacana+mekatthe"
+      },
+      {
+       "start": 837,
+       "end": 839,
+       "title": "241. Bahūsu vā"
+      },
+      {
+       "start": 840,
+       "end": 841,
+       "title": "59. Suhisu+bhasso"
+      },
+      {
+       "start": 842,
+       "end": 843,
+       "title": "50. Ubhi+nnaṃ"
+      },
+      {
+       "start": 844,
+       "end": 845,
+       "title": "168. Ṭi katimhā"
+      },
+      {
+       "start": 846,
+       "end": 847,
+       "title": "1,54. Vicchā+bhikkhaññesu dve"
+      },
+      {
+       "start": 848,
+       "end": 849,
+       "title": "1,55. Syādilopo pubbasse+kassa"
+      },
+      {
+       "start": 850,
+       "end": 851,
+       "title": "1,56. Sabbādīnaṃ vītihāre"
+      },
+      {
+       "start": 852,
+       "end": 855,
+       "title": "1,57. Yāvabodhaṃ sambhame"
+      },
+      {
+       "start": 856,
+       "end": 857,
+       "title": "Saṅkhyākaṇḍa"
+      },
+      {
+       "start": 858,
+       "end": 859,
+       "title": "219. Yomhi dvinnaṃ duve+dve"
+      },
+      {
+       "start": 860,
+       "end": 861,
+       "title": "220. Duvinnaṃ naṃmhi vā"
+      },
+      {
+       "start": 862,
+       "end": 863,
+       "title": "47. Naṃmhi nuka dvādīnaṃ sattarasannaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M26",
+     "book": 19,
+     "layer": "mula",
+     "title": "237. Na ca+vā+hā+he+vayoge … 47. Naṃmhi nuka dvādīnaṃ sattarasannaṃ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 864,
+     "end": 896,
+     "chars": 2814,
+     "sents": 80,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 864,
+       "end": 865,
+       "title": "207. Pume tayo+cattāro"
+      },
+      {
+       "start": 866,
+       "end": 868,
+       "title": "49. Ṇṇaṃ+ṇṇannaṃ tito jhā"
+      },
+      {
+       "start": 869,
+       "end": 870,
+       "title": "205. Tisso catasso yomhi savibhattīnaṃ"
+      },
+      {
+       "start": 871,
+       "end": 872,
+       "title": "204. Naṃmhi ticatunna+mitthiyaṃ tissa+catassā"
+      },
+      {
+       "start": 873,
+       "end": 875,
+       "title": "206. Tīṇi+cattāri napuṃsake"
+      },
+      {
+       "start": 876,
+       "end": 879,
+       "title": "208. Caturo vā catussa"
+      },
+      {
+       "start": 880,
+       "end": 881,
+       "title": "169. Ṭa pañcādīhi cuddasahi"
+      },
+      {
+       "start": 882,
+       "end": 884,
+       "title": "90. Pañcādīnaṃ cuddasanna+ma"
+      },
+      {
+       "start": 885,
+       "end": 886,
+       "title": "3,102. Ekaṭṭhāna+mā"
+      },
+      {
+       "start": 887,
+       "end": 888,
+       "title": "3,103. Ra saṃkhyāto vā"
+      },
+      {
+       "start": 889,
+       "end": 894,
+       "title": "3,94. Ā saṃkhyāyā satādo nāññatthe"
+      },
+      {
+       "start": 895,
+       "end": 896,
+       "title": "3,98. Bā cattālīsā do"
+      }
+     ],
+     "split": false,
+     "id": "M27",
+     "book": 19,
+     "layer": "mula",
+     "title": "207. Pume tayo+cattāro … 3,98. Bā cattālīsā do",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 897,
+     "end": 913,
+     "chars": 1808,
+     "sents": 44,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 897,
+       "end": 898,
+       "title": "3,95. Tisse"
+      },
+      {
+       "start": 899,
+       "end": 900,
+       "title": "3,104. Chatīhi ḷo ca"
+      },
+      {
+       "start": 901,
+       "end": 902,
+       "title": "3,100. Catussa cuco dase"
+      },
+      {
+       "start": 903,
+       "end": 904,
+       "title": "3,99. Vīsatidasesu pañcassa paṇṇa+pannā"
+      },
+      {
+       "start": 905,
+       "end": 911,
+       "title": "3,101. Chassa so"
+      },
+      {
+       "start": 912,
+       "end": 913,
+       "title": "3,97. Dvīssā ca"
+      }
+     ],
+     "split": false,
+     "id": "M28",
+     "book": 19,
+     "layer": "mula",
+     "title": "3,95. Tisse … 3,97. Dvīssā ca",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 914,
+     "end": 940,
+     "chars": 4911,
+     "sents": 55,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 914,
+       "end": 958,
+       "title": "3,98. Cattālīsādo vā"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 19,
+     "layer": "mula",
+     "title": "3,98. Cattālīsādo vā（914-940）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 941,
+     "end": 958,
+     "chars": 3947,
+     "sents": 33,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 914,
+       "end": 958,
+       "title": "3,98. Cattālīsādo vā"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 19,
+     "layer": "mula",
+     "title": "3,98. Cattālīsādo vā（941-958）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 959,
+     "end": 970,
+     "chars": 4514,
+     "sents": 80,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 959,
+       "end": 976,
+       "title": "118. Asaṃkhyehi sabbāsaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M31",
+     "book": 19,
+     "layer": "mula",
+     "title": "118. Asaṃkhyehi sabbāsaṃ（959-970）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 971,
+     "end": 976,
+     "chars": 255,
+     "sents": 6,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 959,
+       "end": 976,
+       "title": "118. Asaṃkhyehi sabbāsaṃ"
+      }
+     ],
+     "split": true,
+     "id": "M32",
+     "book": 19,
+     "layer": "mula",
+     "title": "118. Asaṃkhyehi sabbāsaṃ（971-976）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 977,
+     "end": 1024,
+     "chars": 4720,
+     "sents": 76,
+     "paras": 48,
+     "chapters": [
+      {
+       "start": 977,
+       "end": 1008,
+       "title": "3. Kārakakaṇḍa"
+      },
+      {
+       "start": 1009,
+       "end": 1013,
+       "title": "38. Āmantaṇe –"
+      },
+      {
+       "start": 1014,
+       "end": 1021,
+       "title": "2,2. Kamme dutiyā"
+      },
+      {
+       "start": 1022,
+       "end": 1024,
+       "title": "3. Kāladdhāna+maccantasaṃyoge"
+      }
+     ],
+     "split": false,
+     "id": "M33",
+     "book": 19,
+     "layer": "mula",
+     "title": "3. Kārakakaṇḍa … 3. Kāladdhāna+maccantasaṃyoge",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1025,
+     "end": 1062,
+     "chars": 4687,
+     "sents": 80,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 1025,
+       "end": 1026,
+       "title": "4. Gatibodhāhārasaddatthākammakabhajjādīnaṃ payojje"
+      },
+      {
+       "start": 1027,
+       "end": 1028,
+       "title": "5. Harādīnaṃ vā"
+      },
+      {
+       "start": 1029,
+       "end": 1030,
+       "title": "6. Na khādādīnaṃ"
+      },
+      {
+       "start": 1031,
+       "end": 1032,
+       "title": "7. Jhādīhi yuttā"
+      },
+      {
+       "start": 1033,
+       "end": 1034,
+       "title": "8. Lakkhaṇitthambhūtavicchāsva+bhinā"
+      },
+      {
+       "start": 1035,
+       "end": 1036,
+       "title": "9. Patiparīhi bhāge ca"
+      },
+      {
+       "start": 1037,
+       "end": 1038,
+       "title": "10. Anunāti"
+      },
+      {
+       "start": 1039,
+       "end": 1040,
+       "title": "11. Sahatthe"
+      },
+      {
+       "start": 1041,
+       "end": 1042,
+       "title": "12. Hīne"
+      },
+      {
+       "start": 1043,
+       "end": 1044,
+       "title": "13. Upena"
+      },
+      {
+       "start": 1045,
+       "end": 1052,
+       "title": "16. Kattukaraṇesu tatiyā"
+      },
+      {
+       "start": 1053,
+       "end": 1054,
+       "title": "17. Sahatthena"
+      },
+      {
+       "start": 1055,
+       "end": 1056,
+       "title": "18. Lakkhaṇe"
+      },
+      {
+       "start": 1057,
+       "end": 1058,
+       "title": "19. Hetumhi"
+      },
+      {
+       "start": 1059,
+       "end": 1060,
+       "title": "20. Pañcamī+ṇe vā"
+      },
+      {
+       "start": 1061,
+       "end": 1062,
+       "title": "21. Guṇe"
+      }
+     ],
+     "split": false,
+     "id": "M34",
+     "book": 19,
+     "layer": "mula",
+     "title": "4. Gatibodhāhārasaddatthākammakabhajjādīnaṃ payojje … 21. Guṇe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1063,
+     "end": 1074,
+     "chars": 3524,
+     "sents": 31,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 1063,
+       "end": 1067,
+       "title": "24. Catutthī sampadāne"
+      },
+      {
+       "start": 1068,
+       "end": 1074,
+       "title": "25. Tādatthye"
+      }
+     ],
+     "split": false,
+     "id": "M35",
+     "book": 19,
+     "layer": "mula",
+     "title": "24. Catutthī sampadāne … 25. Tādatthye",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1075,
+     "end": 1102,
+     "chars": 4499,
+     "sents": 66,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1075,
+       "end": 1092,
+       "title": "26. Pañcamya+vadhismā"
+      },
+      {
+       "start": 1093,
+       "end": 1094,
+       "title": "27. Apaparīhi vajjane"
+      },
+      {
+       "start": 1095,
+       "end": 1096,
+       "title": "28. Paṭinidhipatidānesu patinā"
+      },
+      {
+       "start": 1097,
+       "end": 1098,
+       "title": "29. Rite dutiyā ca"
+      },
+      {
+       "start": 1099,
+       "end": 1100,
+       "title": "30. Vinā+ññatra tatiyā ca"
+      },
+      {
+       "start": 1101,
+       "end": 1102,
+       "title": "31. Puthanānāhi"
+      }
+     ],
+     "split": false,
+     "id": "M36",
+     "book": 19,
+     "layer": "mula",
+     "title": "26. Pañcamya+vadhismā … 31. Puthanānāhi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1103,
+     "end": 1125,
+     "chars": 4775,
+     "sents": 60,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 1103,
+       "end": 1114,
+       "title": "39. Chaṭṭhī sambandhe"
+      },
+      {
+       "start": 1115,
+       "end": 1116,
+       "title": "40. Tulyatthena vā tatiyā"
+      },
+      {
+       "start": 1117,
+       "end": 1123,
+       "title": "32. Sattamyā+dhāre"
+      },
+      {
+       "start": 1124,
+       "end": 1125,
+       "title": "33. Nimitte"
+      }
+     ],
+     "split": false,
+     "id": "M37",
+     "book": 19,
+     "layer": "mula",
+     "title": "39. Chaṭṭhī sambandhe … 33. Nimitte",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1126,
+     "end": 1169,
+     "chars": 4940,
+     "sents": 71,
+     "paras": 44,
+     "chapters": [
+      {
+       "start": 1126,
+       "end": 1130,
+       "title": "34. Yabbhāvo bhāvalakkhaṇaṃ"
+      },
+      {
+       "start": 1131,
+       "end": 1133,
+       "title": "35. Chaṭṭhī cā+nādare"
+      },
+      {
+       "start": 1134,
+       "end": 1135,
+       "title": "36. Yato niddhāraṇaṃ"
+      },
+      {
+       "start": 1136,
+       "end": 1137,
+       "title": "14. Sattamyā+dhikye"
+      },
+      {
+       "start": 1138,
+       "end": 1165,
+       "title": "15. Sāmitthe+dhinā"
+      },
+      {
+       "start": 1166,
+       "end": 1167,
+       "title": "4. Samāsakaṇḍa"
+      },
+      {
+       "start": 1168,
+       "end": 1169,
+       "title": "1. Syādi syādine+katthanti"
+      }
+     ],
+     "split": false,
+     "id": "M38",
+     "book": 19,
+     "layer": "mula",
+     "title": "34. Yabbhāvo bhāvalakkhaṇaṃ … 1. Syādi syādine+katthanti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1170,
+     "end": 1200,
+     "chars": 5000,
+     "sents": 72,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 1170,
+       "end": 1175,
+       "title": "2. Asaṅkhyaṃ vibhatti+sampatti+samīpa+sākalyā+bhāva+yathā+ pacchā+yugapadatthe"
+      },
+      {
+       "start": 1176,
+       "end": 1177,
+       "title": "2,119. Ekatthatāyaṃ"
+      },
+      {
+       "start": 1178,
+       "end": 1187,
+       "title": "9. Taṃ napuṃsakanti"
+      },
+      {
+       "start": 1188,
+       "end": 1191,
+       "title": "3. Yathā na tulye"
+      },
+      {
+       "start": 1192,
+       "end": 1193,
+       "title": "4. Yāvā+vadhāraṇe"
+      },
+      {
+       "start": 1194,
+       "end": 1196,
+       "title": "5. Payyapā bahi tiro pure pacchā vā pañcamyā"
+      },
+      {
+       "start": 1197,
+       "end": 1198,
+       "title": "6. Samīpā+yāmesva+nu"
+      },
+      {
+       "start": 1199,
+       "end": 1200,
+       "title": "7. Tiṭṭhagvādīni"
+      }
+     ],
+     "split": false,
+     "id": "M39",
+     "book": 19,
+     "layer": "mula",
+     "title": "2. Asaṅkhyaṃ vibhatti+sampatti+samīpa+sākalyā+bhāva+yathā+ pacchā+yugapadatthe … 7. Tiṭṭhagvādīni",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1201,
+     "end": 1202,
+     "chars": 433,
+     "sents": 4,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 1201,
+       "end": 1202,
+       "title": "8. Ore+pari+paṭi+pāre+majjhe+heṭṭhu+ddhā+dho+nto vā chaṭṭhiyā."
+      }
+     ],
+     "split": false,
+     "id": "M40",
+     "book": 19,
+     "layer": "mula",
+     "title": "8. Ore+pari+paṭi+pāre+majjhe+heṭṭhu+ddhā+dho+nto vā chaṭṭhiyā.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1203,
+     "end": 1213,
+     "chars": 4011,
+     "sents": 62,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 1203,
+       "end": 1215,
+       "title": "10. A+mādi"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 19,
+     "layer": "mula",
+     "title": "10. A+mādi（1203-1213）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1214,
+     "end": 1215,
+     "chars": 2081,
+     "sents": 25,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 1203,
+       "end": 1215,
+       "title": "10. A+mādi"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 19,
+     "layer": "mula",
+     "title": "10. A+mādi（1214-1215）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1216,
+     "end": 1253,
+     "chars": 4795,
+     "sents": 73,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 1216,
+       "end": 1237,
+       "title": "11. Visesana+mekatthena"
+      },
+      {
+       "start": 1238,
+       "end": 1253,
+       "title": "67. Itthiyaṃ bhāsitapumi+tthī pumeve+kattheti"
+      }
+     ],
+     "split": false,
+     "id": "M43",
+     "book": 19,
+     "layer": "mula",
+     "title": "11. Visesana+mekatthena … 67. Itthiyaṃ bhāsitapumi+tthī pumeve+kattheti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1254,
+     "end": 1292,
+     "chars": 4476,
+     "sents": 75,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 1254,
+       "end": 1255,
+       "title": "21. Saṃkhyādi"
+      },
+      {
+       "start": 1256,
+       "end": 1272,
+       "title": "12. Naña"
+      },
+      {
+       "start": 1273,
+       "end": 1274,
+       "title": "75. Ana sareti"
+      },
+      {
+       "start": 1275,
+       "end": 1276,
+       "title": "13. Kupādayo nicca+masyādividhimhi"
+      },
+      {
+       "start": 1277,
+       "end": 1278,
+       "title": "107. Sare kada kussu+ttaratthe"
+      },
+      {
+       "start": 1279,
+       "end": 1280,
+       "title": "108. Kā+ppatthe"
+      },
+      {
+       "start": 1281,
+       "end": 1292,
+       "title": "109. Purise vāti"
+      }
+     ],
+     "split": false,
+     "id": "M44",
+     "book": 19,
+     "layer": "mula",
+     "title": "21. Saṃkhyādi … 109. Purise vāti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1293,
+     "end": 1302,
+     "chars": 1299,
+     "sents": 17,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 1293,
+       "end": 1294,
+       "title": "14. Cī kriyatthehi"
+      },
+      {
+       "start": 1295,
+       "end": 1296,
+       "title": "15. Bhūsanā+darā+nādaresva+laṃ+sā+sāti"
+      },
+      {
+       "start": 1297,
+       "end": 1297,
+       "title": "16. Aññecā+ti suttena samāse kate…"
+      },
+      {
+       "start": 1298,
+       "end": 1302,
+       "title": "17. Vā+neka+ññatthe"
+      }
+     ],
+     "split": false,
+     "id": "M45",
+     "book": 19,
+     "layer": "mula",
+     "title": "14. Cī kriyatthehi … 17. Vā+neka+ññatthe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1303,
+     "end": 1322,
+     "chars": 4809,
+     "sents": 67,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1303,
+       "end": 1326,
+       "title": "1. Tattha dvipado tulyādhikaraṇo kammādīsu chasu vibhatyatthesu bhavati."
+      }
+     ],
+     "split": true,
+     "id": "M46",
+     "book": 19,
+     "layer": "mula",
+     "title": "1. Tattha dvipado tulyādhikaraṇo kammādīsu chasu vibhatyatthesu bhavati.（1303-1322）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1323,
+     "end": 1326,
+     "chars": 1015,
+     "sents": 15,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 1303,
+       "end": 1326,
+       "title": "1. Tattha dvipado tulyādhikaraṇo kammādīsu chasu vibhatyatthesu bhavati."
+      }
+     ],
+     "split": true,
+     "id": "M47",
+     "book": 19,
+     "layer": "mula",
+     "title": "1. Tattha dvipado tulyādhikaraṇo kammādīsu chasu vibhatyatthesu bhavati.（1323-1326）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1327,
+     "end": 1358,
+     "chars": 2900,
+     "sents": 48,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 1327,
+       "end": 1330,
+       "title": "69. Sabbādayo vuttimatteti"
+      },
+      {
+       "start": 1331,
+       "end": 1346,
+       "title": "19. Catthe"
+      },
+      {
+       "start": 1347,
+       "end": 1348,
+       "title": "64. Vijjāyonisambandhīna+mā tatra cattheti"
+      },
+      {
+       "start": 1349,
+       "end": 1350,
+       "title": "65. Putteti"
+      },
+      {
+       "start": 1351,
+       "end": 1356,
+       "title": "78. Jāyāya jayaṃ patimhi"
+      },
+      {
+       "start": 1357,
+       "end": 1358,
+       "title": "20. Samāhāre napuṃsakanti"
+      }
+     ],
+     "split": false,
+     "id": "M48",
+     "book": 19,
+     "layer": "mula",
+     "title": "69. Sabbādayo vuttimatteti … 20. Samāhāre napuṃsakanti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1359,
+     "end": 1383,
+     "chars": 4931,
+     "sents": 45,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 1359,
+       "end": 1386,
+       "title": "23. Syādīsu rassoti"
+      }
+     ],
+     "split": true,
+     "id": "M49",
+     "book": 19,
+     "layer": "mula",
+     "title": "23. Syādīsu rassoti（1359-1383）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1384,
+     "end": 1386,
+     "chars": 825,
+     "sents": 9,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 1359,
+       "end": 1386,
+       "title": "23. Syādīsu rassoti"
+      }
+     ],
+     "split": true,
+     "id": "M50",
+     "book": 19,
+     "layer": "mula",
+     "title": "23. Syādīsu rassoti（1384-1386）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1387,
+     "end": 1426,
+     "chars": 3345,
+     "sents": 78,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 1387,
+       "end": 1388,
+       "title": "40. Samāsantva"
+      },
+      {
+       "start": 1389,
+       "end": 1390,
+       "title": "41. Pāpādīhi bhūmiyā"
+      },
+      {
+       "start": 1391,
+       "end": 1392,
+       "title": "42. Saṃkhyāhiti"
+      },
+      {
+       "start": 1393,
+       "end": 1394,
+       "title": "43. Nadīgodhāvarīnaṃ"
+      },
+      {
+       "start": 1395,
+       "end": 1396,
+       "title": "44. Asaṃkhyehi cā+ṅgulyā+nāññāsaṃkhyatthesuti"
+      },
+      {
+       "start": 1397,
+       "end": 1398,
+       "title": "45. Dīghāhovassekadesehi ca rattyāti"
+      },
+      {
+       "start": 1399,
+       "end": 1400,
+       "title": "46. Gotva+catthe cā+lope"
+      },
+      {
+       "start": 1401,
+       "end": 1402,
+       "title": "47. Rattindiva+dāragava+caturassā"
+      },
+      {
+       "start": 1403,
+       "end": 1404,
+       "title": "48. Āyāme+nugavaṃ"
+      },
+      {
+       "start": 1405,
+       "end": 1406,
+       "title": "49. Akkhismā+ññatthe"
+      },
+      {
+       "start": 1407,
+       "end": 1408,
+       "title": "50. Dārumya+ṅgulyā"
+      },
+      {
+       "start": 1409,
+       "end": 1410,
+       "title": "54. Uttarapade"
+      },
+      {
+       "start": 1411,
+       "end": 1412,
+       "title": "55. Imassi+danti"
+      },
+      {
+       "start": 1413,
+       "end": 1414,
+       "title": "57. Ṭa ntantūnanti"
+      },
+      {
+       "start": 1415,
+       "end": 1416,
+       "title": "58. A"
+      },
+      {
+       "start": 1417,
+       "end": 1418,
+       "title": "60. Parassa saṃkhyāsuti"
+      },
+      {
+       "start": 1419,
+       "end": 1420,
+       "title": "61. Jane puthassuti"
+      },
+      {
+       "start": 1421,
+       "end": 1422,
+       "title": "62. So chassā+hā+yatane vā"
+      },
+      {
+       "start": 1423,
+       "end": 1424,
+       "title": "63. Ltu+pitādīna+māravaraṅa"
+      },
+      {
+       "start": 1425,
+       "end": 1426,
+       "title": "68. Kvaci paccayeti"
+      }
+     ],
+     "split": false,
+     "id": "M51",
+     "book": 19,
+     "layer": "mula",
+     "title": "40. Samāsantva … 68. Kvaci paccayeti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1427,
+     "end": 1469,
+     "chars": 2622,
+     "sents": 74,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 1427,
+       "end": 1428,
+       "title": "71. Saññāya+mudo+dakassa"
+      },
+      {
+       "start": 1429,
+       "end": 1430,
+       "title": "72. Kumbhādīsu vā"
+      },
+      {
+       "start": 1431,
+       "end": 1432,
+       "title": "73. Sotādīsū+lopo"
+      },
+      {
+       "start": 1433,
+       "end": 1434,
+       "title": "26. Itthiya+matvā"
+      },
+      {
+       "start": 1435,
+       "end": 1438,
+       "title": "27. Nadādito ṅī"
+      },
+      {
+       "start": 1439,
+       "end": 1440,
+       "title": "28. Yakkhāditvi+nī ca"
+      },
+      {
+       "start": 1441,
+       "end": 1443,
+       "title": "29. Ārāmikādīhi"
+      },
+      {
+       "start": 1444,
+       "end": 1445,
+       "title": "30. Yuvaṇṇehi nī"
+      },
+      {
+       "start": 1446,
+       "end": 1447,
+       "title": "31. Ttimhā+ññatthe"
+      },
+      {
+       "start": 1448,
+       "end": 1450,
+       "title": "32. Gharaṇyādayoti"
+      },
+      {
+       "start": 1451,
+       "end": 1453,
+       "title": "33. Mātulāditvā+nī bhariyāyanti"
+      },
+      {
+       "start": 1454,
+       "end": 1455,
+       "title": "34. Upamā+saṃhita+sahita+saññata+saha+sapha+vāma+lakkhaṇāditū+rutūti"
+      },
+      {
+       "start": 1456,
+       "end": 1457,
+       "title": "35. Yuvāti"
+      },
+      {
+       "start": 1458,
+       "end": 1459,
+       "title": "36. Ntantūnaṃ vīmhi to vāti"
+      },
+      {
+       "start": 1460,
+       "end": 1461,
+       "title": "37. Bhavato bhototi"
+      },
+      {
+       "start": 1462,
+       "end": 1464,
+       "title": "39. Puthussa pathavaputhavāti"
+      },
+      {
+       "start": 1465,
+       "end": 1467,
+       "title": "5. Ṇādikaṇḍa"
+      },
+      {
+       "start": 1468,
+       "end": 1469,
+       "title": "1. Ṇo vā+pacce"
+      }
+     ],
+     "split": false,
+     "id": "M52",
+     "book": 19,
+     "layer": "mula",
+     "title": "71. Saññāya+mudo+dakassa … 1. Ṇo vā+pacce",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1470,
+     "end": 1502,
+     "chars": 3584,
+     "sents": 78,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 1470,
+       "end": 1479,
+       "title": "124. Sarāna+mādissā+yuvaṇṇassā+eo ṇānubandhe"
+      },
+      {
+       "start": 1480,
+       "end": 1481,
+       "title": "2. Vacchādito ṇāna+ṇāyanā"
+      },
+      {
+       "start": 1482,
+       "end": 1483,
+       "title": "3. Kattikāvidhavādīhi ṇeyyaṇerā"
+      },
+      {
+       "start": 1484,
+       "end": 1485,
+       "title": "4. Ṇya diccādīhi"
+      },
+      {
+       "start": 1486,
+       "end": 1487,
+       "title": "125. Saṃyoge kvaci"
+      },
+      {
+       "start": 1488,
+       "end": 1490,
+       "title": "131. Lopo+vaṇṇi+vaṇṇānaṃ"
+      },
+      {
+       "start": 1491,
+       "end": 1492,
+       "title": "5. Ā ṇi"
+      },
+      {
+       "start": 1493,
+       "end": 1494,
+       "title": "6. Rājato ñño jātiyaṃ"
+      },
+      {
+       "start": 1495,
+       "end": 1496,
+       "title": "7. Khattā yi+yā"
+      },
+      {
+       "start": 1497,
+       "end": 1498,
+       "title": "8. Manuto ssa+saṇa"
+      },
+      {
+       "start": 1499,
+       "end": 1500,
+       "title": "9. Janapadanāmasmā khattiyā raññe ca ṇo"
+      },
+      {
+       "start": 1501,
+       "end": 1502,
+       "title": "10. Ṇya kurusivīhi"
+      }
+     ],
+     "split": false,
+     "id": "M53",
+     "book": 19,
+     "layer": "mula",
+     "title": "124. Sarāna+mādissā+yuvaṇṇassā+eo ṇānubandhe … 10. Ṇya kurusivīhi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1503,
+     "end": 1534,
+     "chars": 3810,
+     "sents": 77,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 1503,
+       "end": 1504,
+       "title": "11. Ṇa rāgā tena rattaṃ"
+      },
+      {
+       "start": 1505,
+       "end": 1506,
+       "title": "12. Nakkhatteni+nduyuttena kāle"
+      },
+      {
+       "start": 1507,
+       "end": 1508,
+       "title": "13. Sā+ssa devatā puṇṇamāsī"
+      },
+      {
+       "start": 1509,
+       "end": 1510,
+       "title": "14. Ta+madhīte taṃ jānāti ka+ṇikā ca"
+      },
+      {
+       "start": 1511,
+       "end": 1512,
+       "title": "15. Tassa visaye dese"
+      },
+      {
+       "start": 1513,
+       "end": 1514,
+       "title": "16. Nivāse tannāme"
+      },
+      {
+       "start": 1515,
+       "end": 1516,
+       "title": "17. Adūrabhaveti"
+      },
+      {
+       "start": 1517,
+       "end": 1518,
+       "title": "18. Tena nibbatteti"
+      },
+      {
+       "start": 1519,
+       "end": 1520,
+       "title": "19. Ta+midha+tthi"
+      },
+      {
+       "start": 1521,
+       "end": 1522,
+       "title": "20. Tatra bhaveti"
+      },
+      {
+       "start": 1523,
+       "end": 1524,
+       "title": "21. Ajjādīhi tanoti"
+      },
+      {
+       "start": 1525,
+       "end": 1526,
+       "title": "22. Purāto ṇo cati"
+      },
+      {
+       "start": 1527,
+       "end": 1528,
+       "title": "23. Amātva+ccoti"
+      },
+      {
+       "start": 1529,
+       "end": 1530,
+       "title": "24. Majjhāditvi+moti"
+      },
+      {
+       "start": 1531,
+       "end": 1532,
+       "title": "25. Kaṇa+ṇeyya+ṇeyyaka+yi+yāti"
+      },
+      {
+       "start": 1533,
+       "end": 1534,
+       "title": "26. Ṇiko"
+      }
+     ],
+     "split": false,
+     "id": "M54",
+     "book": 19,
+     "layer": "mula",
+     "title": "11. Ṇa rāgā tena rattaṃ … 26. Ṇiko",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1535,
+     "end": 1552,
+     "chars": 3787,
+     "sents": 80,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 1535,
+       "end": 1536,
+       "title": "27. Ta+massa sippaṃ sīlaṃ paṇyaṃ paharaṇaṃ payojanaṃ"
+      },
+      {
+       "start": 1537,
+       "end": 1538,
+       "title": "28. Taṃ hanta+rahati gacchatu+ñchati+carati"
+      },
+      {
+       "start": 1539,
+       "end": 1540,
+       "title": "29. Tena kataṃ kītaṃ baddha+mabhisaṅkhataṃ saṃsaṭṭhaṃ hataṃ hanti jitaṃ jayati dibbati khanati tarati carati vahati jīvatiti"
+      },
+      {
+       "start": 1541,
+       "end": 1542,
+       "title": "30. Tassa saṃvattati"
+      },
+      {
+       "start": 1543,
+       "end": 1544,
+       "title": "31. Tato sambhūta+māgataṃ"
+      },
+      {
+       "start": 1545,
+       "end": 1546,
+       "title": "32. Tattha vasati vidito bhatto niyutto"
+      },
+      {
+       "start": 1547,
+       "end": 1548,
+       "title": "33. Tassi+daṃ"
+      },
+      {
+       "start": 1549,
+       "end": 1550,
+       "title": "34. Ṇo"
+      },
+      {
+       "start": 1551,
+       "end": 1552,
+       "title": "35. Gavādīhi yo"
+      }
+     ],
+     "split": false,
+     "id": "M55",
+     "book": 19,
+     "layer": "mula",
+     "title": "27. Ta+massa sippaṃ sīlaṃ paṇyaṃ paharaṇaṃ payojanaṃ … 35. Gavādīhi yo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1553,
+     "end": 1586,
+     "chars": 3972,
+     "sents": 79,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 1553,
+       "end": 1554,
+       "title": "36. Pitito bhātari reyyaṇa"
+      },
+      {
+       "start": 1555,
+       "end": 1556,
+       "title": "37. Mātito ca bhaginiyaṃ ccho"
+      },
+      {
+       "start": 1557,
+       "end": 1558,
+       "title": "38. Mātāpitūsvā+maho"
+      },
+      {
+       "start": 1559,
+       "end": 1560,
+       "title": "39. Hite reyyaṇa"
+      },
+      {
+       "start": 1561,
+       "end": 1562,
+       "title": "40. Nindā+ññāta+ppa paṭibhāga rassa dayā saññāsu ko"
+      },
+      {
+       "start": 1563,
+       "end": 1564,
+       "title": "41. Ta+massa parimāṇaṃ ṇiko ca"
+      },
+      {
+       "start": 1565,
+       "end": 1566,
+       "title": "42. Ya+te+tehi+ttako"
+      },
+      {
+       "start": 1567,
+       "end": 1568,
+       "title": "43. Sabbā cā+vantu"
+      },
+      {
+       "start": 1569,
+       "end": 1570,
+       "title": "44. Kimhā rati+rīva+rīvataka+rittakā"
+      },
+      {
+       "start": 1571,
+       "end": 1572,
+       "title": "45. Sañjātaṃ tārakāditvi+toti"
+      },
+      {
+       "start": 1573,
+       "end": 1576,
+       "title": "46. Māne matto"
+      },
+      {
+       "start": 1577,
+       "end": 1578,
+       "title": "47. Taggho cu+ddhaṃ"
+      },
+      {
+       "start": 1579,
+       "end": 1580,
+       "title": "48. Ṇo ca purisāti"
+      },
+      {
+       "start": 1581,
+       "end": 1582,
+       "title": "49. Ayu+bhadvitīhaṃ+se"
+      },
+      {
+       "start": 1583,
+       "end": 1584,
+       "title": "50. Saṅkhyāya saccu+tī+sā+sa+dasantāyā+dhikā+smiṃ satasahasse ḍo"
+      },
+      {
+       "start": 1585,
+       "end": 1586,
+       "title": "139. Ḍe satissa tissati"
+      }
+     ],
+     "split": false,
+     "id": "M56",
+     "book": 19,
+     "layer": "mula",
+     "title": "36. Pitito bhātari reyyaṇa … 139. Ḍe satissa tissati",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1587,
+     "end": 1602,
+     "chars": 1742,
+     "sents": 43,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 1587,
+       "end": 1588,
+       "title": "51. Tassa pūraṇe+kādasādito vā"
+      },
+      {
+       "start": 1589,
+       "end": 1590,
+       "title": "52. Ma pañcādikatīhiti"
+      },
+      {
+       "start": 1591,
+       "end": 1592,
+       "title": "53. Sathādīna+mi cati"
+      },
+      {
+       "start": 1593,
+       "end": 1594,
+       "title": "54. Chā ṭṭha+ṭṭhamāti"
+      },
+      {
+       "start": 1595,
+       "end": 1596,
+       "title": "55. Ekā kā+kya+sahāye"
+      },
+      {
+       "start": 1597,
+       "end": 1598,
+       "title": "56. Vacchādīhi tanutte taro"
+      },
+      {
+       "start": 1599,
+       "end": 1600,
+       "title": "57. Kimhā niddhāraṇe ratara+ratamā"
+      },
+      {
+       "start": 1601,
+       "end": 1602,
+       "title": "58. Tena datte li+yāti"
+      }
+     ],
+     "split": false,
+     "id": "M57",
+     "book": 19,
+     "layer": "mula",
+     "title": "51. Tassa pūraṇe+kādasādito vā … 58. Tena datte li+yāti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1603,
+     "end": 1633,
+     "chars": 4976,
+     "sents": 79,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 1603,
+       "end": 1615,
+       "title": "59. Tassa bhāvakammesutta+tā+ttana+ṇya+ṇeyya+ṇi+ya+ṇiyā"
+      },
+      {
+       "start": 1616,
+       "end": 1617,
+       "title": "122. Sakattheti"
+      },
+      {
+       "start": 1618,
+       "end": 1619,
+       "title": "60. Bya vaddhadāsā vā"
+      },
+      {
+       "start": 1620,
+       "end": 1621,
+       "title": "61. Nasa yuvā bo ca vassa"
+      },
+      {
+       "start": 1622,
+       "end": 1623,
+       "title": "62. Aṇvāditvi+moti"
+      },
+      {
+       "start": 1624,
+       "end": 1625,
+       "title": "133. Kisa+mahata+mime kasa, mahāti"
+      },
+      {
+       "start": 1626,
+       "end": 1627,
+       "title": "63. Bhāvā tena nibbatteti"
+      },
+      {
+       "start": 1628,
+       "end": 1629,
+       "title": "127. Kosajjā+jjava+pārisajja+sohajja+maddavā+rissā+sabhā+jañña+theyya+ bāhusaccā"
+      },
+      {
+       "start": 1630,
+       "end": 1631,
+       "title": "64. Tara+tami+ssiki+yi+ṭṭhā+tisaye"
+      },
+      {
+       "start": 1632,
+       "end": 1633,
+       "title": "135. Jo vuddhassi+yi+ṭṭhesu"
+      }
+     ],
+     "split": false,
+     "id": "M58",
+     "book": 19,
+     "layer": "mula",
+     "title": "59. Tassa bhāvakammesutta+tā+ttana+ṇya+ṇeyya+ṇi+ya+ṇiyā … 135. Jo vuddhassi+yi+ṭṭhesu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1634,
+     "end": 1664,
+     "chars": 3292,
+     "sents": 80,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 1634,
+       "end": 1635,
+       "title": "136. Bāḷha+ntika+pasatthānaṃ sādha+neda+sā"
+      },
+      {
+       "start": 1636,
+       "end": 1637,
+       "title": "137. Kaṇa+kana+ppa+yuvānaṃ"
+      },
+      {
+       "start": 1638,
+       "end": 1639,
+       "title": "138. Lopo vī+mantu+vantūnanti"
+      },
+      {
+       "start": 1640,
+       "end": 1641,
+       "title": "65. Tannissite llo"
+      },
+      {
+       "start": 1642,
+       "end": 1643,
+       "title": "66. Tassa vikārāvayavesu ṇa+ṇika+ṇeyya+mayā"
+      },
+      {
+       "start": 1644,
+       "end": 1645,
+       "title": "67. Jatuto ssaṇa vā"
+      },
+      {
+       "start": 1646,
+       "end": 1647,
+       "title": "123. Lopoti"
+      },
+      {
+       "start": 1648,
+       "end": 1649,
+       "title": "68. Samūhe kaṇa+ṇa+ṇikā"
+      },
+      {
+       "start": 1650,
+       "end": 1652,
+       "title": "69. Janādīhi tāti"
+      },
+      {
+       "start": 1653,
+       "end": 1654,
+       "title": "70. Iyo hiteti"
+      },
+      {
+       "start": 1655,
+       "end": 1656,
+       "title": "71. Cakkhādito ssoti"
+      },
+      {
+       "start": 1657,
+       "end": 1658,
+       "title": "72. Ṇyo tattha sādhu"
+      },
+      {
+       "start": 1659,
+       "end": 1660,
+       "title": "73. Kammā niya+ññāti"
+      },
+      {
+       "start": 1661,
+       "end": 1662,
+       "title": "74. Kathāditvi+koti"
+      },
+      {
+       "start": 1663,
+       "end": 1664,
+       "title": "75. Pathādīhi ṇeyyoti"
+      }
+     ],
+     "split": false,
+     "id": "M59",
+     "book": 19,
+     "layer": "mula",
+     "title": "136. Bāḷha+ntika+pasatthānaṃ sādha+neda+sā … 75. Pathādīhi ṇeyyoti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1665,
+     "end": 1697,
+     "chars": 2947,
+     "sents": 78,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 1665,
+       "end": 1666,
+       "title": "76. Dakkhiṇāyā+raheti"
+      },
+      {
+       "start": 1667,
+       "end": 1668,
+       "title": "77. Rāyo tumantāti"
+      },
+      {
+       "start": 1669,
+       "end": 1673,
+       "title": "78. Ta+mettha+ssa+tthīti mantu"
+      },
+      {
+       "start": 1674,
+       "end": 1675,
+       "title": "134. Āyussā+yasa mantumhi"
+      },
+      {
+       "start": 1676,
+       "end": 1677,
+       "title": "79. Vantva+vaṇṇāti"
+      },
+      {
+       "start": 1678,
+       "end": 1688,
+       "title": "80. Daṇḍāditvi+ka+ī vāti"
+      },
+      {
+       "start": 1689,
+       "end": 1690,
+       "title": "81. Tapādīhi ssīti"
+      },
+      {
+       "start": 1691,
+       "end": 1693,
+       "title": "82. Mukhādito roti"
+      },
+      {
+       "start": 1694,
+       "end": 1695,
+       "title": "83. Tuṭṭhyādīhi bhoti"
+      },
+      {
+       "start": 1696,
+       "end": 1697,
+       "title": "84. Saddhāditva"
+      }
+     ],
+     "split": false,
+     "id": "M60",
+     "book": 19,
+     "layer": "mula",
+     "title": "76. Dakkhiṇāyā+raheti … 84. Saddhāditva",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1698,
+     "end": 1740,
+     "chars": 2676,
+     "sents": 78,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 1698,
+       "end": 1699,
+       "title": "85. Ṇo tapāti"
+      },
+      {
+       "start": 1700,
+       "end": 1701,
+       "title": "86. Ālva+bhijjhādīhiti"
+      },
+      {
+       "start": 1702,
+       "end": 1703,
+       "title": "87. Picchāditvi+loti"
+      },
+      {
+       "start": 1704,
+       "end": 1706,
+       "title": "88. Sīlādito voti"
+      },
+      {
+       "start": 1707,
+       "end": 1708,
+       "title": "89. Māyā medhāhi vīti"
+      },
+      {
+       "start": 1709,
+       "end": 1710,
+       "title": "90. Si+ssare āmyu+vāmī"
+      },
+      {
+       "start": 1711,
+       "end": 1712,
+       "title": "91. Lakkhyā ṇo a ca"
+      },
+      {
+       "start": 1713,
+       "end": 1714,
+       "title": "92. Aṅgā no kalyāṇeti"
+      },
+      {
+       "start": 1715,
+       "end": 1716,
+       "title": "93. So lomāti"
+      },
+      {
+       "start": 1717,
+       "end": 1718,
+       "title": "94. Imi+yāti"
+      },
+      {
+       "start": 1719,
+       "end": 1720,
+       "title": "95. To pañcamyā"
+      },
+      {
+       "start": 1721,
+       "end": 1722,
+       "title": "96. Ito+te+tto kuto"
+      },
+      {
+       "start": 1723,
+       "end": 1724,
+       "title": "97. Abhyādīhiti"
+      },
+      {
+       "start": 1725,
+       "end": 1726,
+       "title": "98. Ādyādīhiti"
+      },
+      {
+       "start": 1727,
+       "end": 1728,
+       "title": "99. Sabbādito sattamyā tra+tthā"
+      },
+      {
+       "start": 1729,
+       "end": 1730,
+       "title": "100. Katthe+ttha+kutrā+tra kve+hi+dha"
+      },
+      {
+       "start": 1731,
+       "end": 1732,
+       "title": "101. Dhi sabbā vāti"
+      },
+      {
+       "start": 1733,
+       "end": 1734,
+       "title": "102. Yā hinti"
+      },
+      {
+       "start": 1735,
+       "end": 1736,
+       "title": "103. Tā hañcati"
+      },
+      {
+       "start": 1737,
+       "end": 1738,
+       "title": "104. Kuhiṃ kahanti"
+      },
+      {
+       "start": 1739,
+       "end": 1740,
+       "title": "105. Sabbe+ka+ñña+ya+tehi kāle dā"
+      }
+     ],
+     "split": false,
+     "id": "M61",
+     "book": 19,
+     "layer": "mula",
+     "title": "85. Ṇo tapāti … 105. Sabbe+ka+ñña+ya+tehi kāle dā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1741,
+     "end": 1778,
+     "chars": 3099,
+     "sents": 75,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 1741,
+       "end": 1742,
+       "title": "106. Kadā kudā sadā+dhune+dāni"
+      },
+      {
+       "start": 1743,
+       "end": 1744,
+       "title": "107. Ajja sajjva+parajjve+tarahi karahā"
+      },
+      {
+       "start": 1745,
+       "end": 1746,
+       "title": "108. Sabbādīhi pakāre thā"
+      },
+      {
+       "start": 1747,
+       "end": 1748,
+       "title": "109. Katha+mitthaṃ"
+      },
+      {
+       "start": 1749,
+       "end": 1750,
+       "title": "110. Dhā saṅkhyāhiti"
+      },
+      {
+       "start": 1751,
+       "end": 1752,
+       "title": "111. Ve+kā+jjhanti"
+      },
+      {
+       "start": 1753,
+       "end": 1754,
+       "title": "112. Dvitīhe+dhāti"
+      },
+      {
+       "start": 1755,
+       "end": 1756,
+       "title": "113. Tabbati jātiyo"
+      },
+      {
+       "start": 1757,
+       "end": 1758,
+       "title": "114. Vārasaṅkhyāya kkhattuṃ"
+      },
+      {
+       "start": 1759,
+       "end": 1760,
+       "title": "115. Katimhāti"
+      },
+      {
+       "start": 1761,
+       "end": 1762,
+       "title": "116. Bahumhā dhā ca paccāsattiyaṃ"
+      },
+      {
+       "start": 1763,
+       "end": 1764,
+       "title": "117. Sa kiṃ vāti"
+      },
+      {
+       "start": 1765,
+       "end": 1766,
+       "title": "118. So vicchā+pakāresu"
+      },
+      {
+       "start": 1767,
+       "end": 1768,
+       "title": "119. Abhūtatabbhāve karā+sa+bhūyoge vikārā cī"
+      },
+      {
+       "start": 1769,
+       "end": 1773,
+       "title": "120. Dissanta+ññepi paccayāti"
+      },
+      {
+       "start": 1774,
+       "end": 1778,
+       "title": "6. Tyādikaṇḍa"
+      }
+     ],
+     "split": false,
+     "id": "M62",
+     "book": 19,
+     "layer": "mula",
+     "title": "106. Kadā kudā sadā+dhune+dāni … 6. Tyādikaṇḍa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1779,
+     "end": 1817,
+     "chars": 3780,
+     "sents": 77,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 1779,
+       "end": 1789,
+       "title": "14. Kriyatthā bahulaṃ – ti"
+      },
+      {
+       "start": 1790,
+       "end": 1791,
+       "title": "1. Vattamāneti anti si tha mi ma te ante se vhe e mhe."
+      },
+      {
+       "start": 1792,
+       "end": 1796,
+       "title": "14. Pubbaparacchakkāna+mekānekesu tumhā+mha+sesesu dve dve majjhimu+ttama+paṭhamā"
+      },
+      {
+       "start": 1797,
+       "end": 1798,
+       "title": "5,82. Yuvaṇṇāna+me, o paccaye"
+      },
+      {
+       "start": 1799,
+       "end": 1803,
+       "title": "5,89. Eona+maya+vā sare"
+      },
+      {
+       "start": 1804,
+       "end": 1805,
+       "title": "161. Kvaci vikaraṇānanti"
+      },
+      {
+       "start": 1806,
+       "end": 1814,
+       "title": "57. Himimesva+ssa"
+      },
+      {
+       "start": 1815,
+       "end": 1817,
+       "title": "1,22. Vippaṭisedhe"
+      }
+     ],
+     "split": false,
+     "id": "M63",
+     "book": 19,
+     "layer": "mula",
+     "title": "14. Kriyatthā bahulaṃ – ti … 1,22. Vippaṭisedhe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1818,
+     "end": 1860,
+     "chars": 3214,
+     "sents": 80,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 1818,
+       "end": 1819,
+       "title": "5,173. Gama yami+sā+sa disānaṃ vā cchaṅa"
+      },
+      {
+       "start": 1820,
+       "end": 1835,
+       "title": "74. Garupubbā rassā re+ntentīnaṃ"
+      },
+      {
+       "start": 1836,
+       "end": 1841,
+       "title": "5,175. Gama vada dānaṃ ghamma vajja dajjā"
+      },
+      {
+       "start": 1842,
+       "end": 1849,
+       "title": "5,17. Kyo  bhāvakammesva+parokkhesu māna+nta+tyādīsu"
+      },
+      {
+       "start": 1850,
+       "end": 1860,
+       "title": "37. Kyassati"
+      }
+     ],
+     "split": false,
+     "id": "M64",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,173. Gama yami+sā+sa disānaṃ vā cchaṅa … 37. Kyassati",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1861,
+     "end": 1889,
+     "chars": 3233,
+     "sents": 73,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 1861,
+       "end": 1862,
+       "title": "2. Bhavissati ssati ssanti ssati ssatha ssāmi ssāma ssate ssante ssase ssavhe ssaṃ ssāmhe"
+      },
+      {
+       "start": 1863,
+       "end": 1865,
+       "title": "35. A+ī+ssādīnaṃ byañjanassiña"
+      },
+      {
+       "start": 1866,
+       "end": 1869,
+       "title": "49. Kyassa sse"
+      },
+      {
+       "start": 1870,
+       "end": 1871,
+       "title": "3. Nāme garahāvimhayesu"
+      },
+      {
+       "start": 1872,
+       "end": 1877,
+       "title": "4. Bhūte ī uṃ o ttha iṃ mhā ā ū se vhaṃ a mhe"
+      },
+      {
+       "start": 1878,
+       "end": 1879,
+       "title": "15. Ā+ī+ssādīsva+ña vā"
+      },
+      {
+       "start": 1880,
+       "end": 1881,
+       "title": "38. Eyyātha+sse+a+ā+ī+thānaṃ o+a+aṃ+ttha+ttho+vhoka"
+      },
+      {
+       "start": 1882,
+       "end": 1883,
+       "title": "39. Uṃssiṃ+svaṃ+su"
+      },
+      {
+       "start": 1884,
+       "end": 1885,
+       "title": "42. Ossa a+i+ttha+ttho"
+      },
+      {
+       "start": 1886,
+       "end": 1887,
+       "title": "43. Si"
+      },
+      {
+       "start": 1888,
+       "end": 1889,
+       "title": "45. Mhātthāna+muña"
+      }
+     ],
+     "split": false,
+     "id": "M65",
+     "book": 19,
+     "layer": "mula",
+     "title": "2. Bhavissati ssati ssanti ssati ssatha ssāmi ssāma ssate ssante ssase ssavhe ssaṃ ssāmhe … 45. Mhātthāna+muña",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1890,
+     "end": 1911,
+     "chars": 4282,
+     "sents": 75,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1890,
+       "end": 1893,
+       "title": "46. Iṃssa ca siña"
+      },
+      {
+       "start": 1894,
+       "end": 1895,
+       "title": "30. Ḍaṃsassa ca ñchaṅa"
+      },
+      {
+       "start": 1896,
+       "end": 1897,
+       "title": "29. Gamissā"
+      },
+      {
+       "start": 1898,
+       "end": 1899,
+       "title": "13. Māyoge ī+āādī"
+      },
+      {
+       "start": 1900,
+       "end": 1903,
+       "title": "5. Anajjatane ā ūo ttha a mhā ttha tthuṃ se vhaṃ iṃ mhase"
+      },
+      {
+       "start": 1904,
+       "end": 1905,
+       "title": "6. Parokkhe a u e ttha a mha ttha re ttho vho i mhe"
+      },
+      {
+       "start": 1906,
+       "end": 1907,
+       "title": "5,71. Parokkhāyañca"
+      },
+      {
+       "start": 1908,
+       "end": 1909,
+       "title": "5,75. Lopo+nādibyañjanassa"
+      },
+      {
+       "start": 1910,
+       "end": 1911,
+       "title": "18. Pubbassa a"
+      }
+     ],
+     "split": false,
+     "id": "M66",
+     "book": 19,
+     "layer": "mula",
+     "title": "46. Iṃssa ca siña … 18. Pubbassa a",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1912,
+     "end": 1933,
+     "chars": 3725,
+     "sents": 79,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1912,
+       "end": 1916,
+       "title": "5,78. Catutthadutiyānaṃ tatiyapaṭhamā"
+      },
+      {
+       "start": 1917,
+       "end": 1921,
+       "title": "7. Yyodo  vā+tipattiyaṃ ssā ssaṃsu sse ssatha ssaṃ ssamhā ssatha ssiṃsussasessavhessiṃ ssāmhase."
+      },
+      {
+       "start": 1922,
+       "end": 1923,
+       "title": "8. Hetuphalesve+yya eyyuṃ eyyāsi eyyātha eyyāmi eyyāma etha eraṃ etho eyyāvho eyyaṃ eyyāmhe."
+      },
+      {
+       "start": 1924,
+       "end": 1925,
+       "title": "75. Eyye+yyāse+yyannaṃ ṭe"
+      },
+      {
+       "start": 1926,
+       "end": 1927,
+       "title": "47. Eyyuṃssuṃ"
+      },
+      {
+       "start": 1928,
+       "end": 1933,
+       "title": "78. Eyyāmasse+mu ca"
+      }
+     ],
+     "split": false,
+     "id": "M67",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,78. Catutthadutiyānaṃ tatiyapaṭhamā … 78. Eyyāmasse+mu ca",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1934,
+     "end": 1957,
+     "chars": 3319,
+     "sents": 78,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1934,
+       "end": 1935,
+       "title": "11. Sattya+rahesve+yyādī"
+      },
+      {
+       "start": 1936,
+       "end": 1937,
+       "title": "12. Sambhāvane vā"
+      },
+      {
+       "start": 1938,
+       "end": 1942,
+       "title": "9. Pañha+patthanā+vidhīsu"
+      },
+      {
+       "start": 1943,
+       "end": 1944,
+       "title": "10. Tu antu hi tha mi ma taṃ antaṃ ssu vho e āmase"
+      },
+      {
+       "start": 1945,
+       "end": 1955,
+       "title": "48. Hissa+to lopo"
+      },
+      {
+       "start": 1956,
+       "end": 1957,
+       "title": "5,173. Gama yami+sā+sa disānaṃ vā cchaṅa"
+      }
+     ],
+     "split": false,
+     "id": "M68",
+     "book": 19,
+     "layer": "mula",
+     "title": "11. Sattya+rahesve+yyādī … 5,173. Gama yami+sā+sa disānaṃ vā cchaṅa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1958,
+     "end": 1981,
+     "chars": 3211,
+     "sents": 75,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1958,
+       "end": 1959,
+       "title": "73. Labhā iṃ+īnaṃ thaṃ thā vā"
+      },
+      {
+       "start": 1960,
+       "end": 1962,
+       "title": "26. Labha vasa+cchida bhida rudānaṃ cchaṅa"
+      },
+      {
+       "start": 1963,
+       "end": 1964,
+       "title": "27. Bhuja muca vaca visānaṃ kkhaṅa"
+      },
+      {
+       "start": 1965,
+       "end": 1968,
+       "title": "21. Īādo vacassoma"
+      },
+      {
+       "start": 1969,
+       "end": 1972,
+       "title": "34. Kusa+ruhehī+ssa chi"
+      },
+      {
+       "start": 1973,
+       "end": 1975,
+       "title": "5,174. Jara marāna+mīyaṅa"
+      },
+      {
+       "start": 1976,
+       "end": 1977,
+       "title": "5,124. Disassa  passa dassa dasa da dakkhāti"
+      },
+      {
+       "start": 1978,
+       "end": 1981,
+       "title": "6,69. Dakkha+kha+heti+hohīti lopo"
+      }
+     ],
+     "split": false,
+     "id": "M69",
+     "book": 19,
+     "layer": "mula",
+     "title": "73. Labhā iṃ+īnaṃ thaṃ thā vā … 6,69. Dakkha+kha+heti+hohīti lopo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1982,
+     "end": 2001,
+     "chars": 3011,
+     "sents": 73,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1982,
+       "end": 1986,
+       "title": "5,113. Yajassa yassa ṭi+yīti"
+      },
+      {
+       "start": 1987,
+       "end": 1988,
+       "title": "31. Hūssa he+hehi+hohi ssatyādo"
+      },
+      {
+       "start": 1989,
+       "end": 1990,
+       "title": "69. Dakkha+kha+hehi+hohīhi lopoti"
+      },
+      {
+       "start": 1991,
+       "end": 1992,
+       "title": "41. Hūto resuṃ"
+      },
+      {
+       "start": 1993,
+       "end": 1997,
+       "title": "46. Iṃssa ca siña"
+      },
+      {
+       "start": 1998,
+       "end": 1999,
+       "title": "5,175. Ṭhāpānaṃ tiṭṭhapivā"
+      },
+      {
+       "start": 2000,
+       "end": 2001,
+       "title": "5,131. Pādito ṭhāssa vā ṭhaho kvaciti"
+      }
+     ],
+     "split": false,
+     "id": "M70",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,113. Yajassa yassa ṭi+yīti … 5,131. Pādito ṭhāssa vā ṭhaho kvaciti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2002,
+     "end": 2027,
+     "chars": 2396,
+     "sents": 74,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 2002,
+       "end": 2005,
+       "title": "5,137. Aññādissā+ssī kye"
+      },
+      {
+       "start": 2006,
+       "end": 2007,
+       "title": "52. Tassa thoti"
+      },
+      {
+       "start": 2008,
+       "end": 2009,
+       "title": "53. Sihisva+ṭa"
+      },
+      {
+       "start": 2010,
+       "end": 2011,
+       "title": "54. Mimānaṃ vā mhimhā ca"
+      },
+      {
+       "start": 2012,
+       "end": 2013,
+       "title": "55. Esu sa"
+      },
+      {
+       "start": 2014,
+       "end": 2015,
+       "title": "5,129. A+ā+ssaādīsu"
+      },
+      {
+       "start": 2016,
+       "end": 2018,
+       "title": "50. Atthite+yyādicchannaṃ sa+su+sa+satha+saṃ+sāma"
+      },
+      {
+       "start": 2019,
+       "end": 2020,
+       "title": "36. Brūto tissīña"
+      },
+      {
+       "start": 2021,
+       "end": 2022,
+       "title": "5,97. Na brūsso"
+      },
+      {
+       "start": 2023,
+       "end": 2024,
+       "title": "20. Tya+ntīnaṃ ṭa+ṭū"
+      },
+      {
+       "start": 2025,
+       "end": 2027,
+       "title": "16. Aādīsvā+ho brūssa"
+      }
+     ],
+     "split": false,
+     "id": "M71",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,137. Aññādissā+ssī kye … 16. Aādīsvā+ho brūssa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2028,
+     "end": 2040,
+     "chars": 2394,
+     "sents": 60,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 2028,
+       "end": 2032,
+       "title": "67. Hanā cha+khā"
+      },
+      {
+       "start": 2033,
+       "end": 2040,
+       "title": "22. Dāssa daṃ vā mimesva+dvitte"
+      }
+     ],
+     "split": false,
+     "id": "M72",
+     "book": 19,
+     "layer": "mula",
+     "title": "67. Hanā cha+khā … 22. Dāssa daṃ vā mimesva+dvitte",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2041,
+     "end": 2051,
+     "chars": 2550,
+     "sents": 61,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 2041,
+       "end": 2046,
+       "title": "5,19. Mañca rudhādīnaṃ"
+      },
+      {
+       "start": 2047,
+       "end": 2051,
+       "title": "5,21. Divādīhi yaka"
+      }
+     ],
+     "split": false,
+     "id": "M73",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,19. Mañca rudhādīnaṃ … 5,21. Divādīhi yaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2052,
+     "end": 2070,
+     "chars": 2004,
+     "sents": 70,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 2052,
+       "end": 2055,
+       "title": "5,22. Tudādīhi ko"
+      },
+      {
+       "start": 2056,
+       "end": 2058,
+       "title": "5,23. Jyādīhi knā"
+      },
+      {
+       "start": 2059,
+       "end": 2060,
+       "title": "5,120. Ñāssa ne jā"
+      },
+      {
+       "start": 2061,
+       "end": 2062,
+       "title": "61. Ñāssa sanāssa nāyo timhi"
+      },
+      {
+       "start": 2063,
+       "end": 2064,
+       "title": "65. Ssassa hi kamme"
+      },
+      {
+       "start": 2065,
+       "end": 2066,
+       "title": "63. Eyyassi+yāñā vā"
+      },
+      {
+       "start": 2067,
+       "end": 2070,
+       "title": "62. Ñāmhi jaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M74",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,22. Tudādīhi ko … 62. Ñāmhi jaṃ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2071,
+     "end": 2090,
+     "chars": 1966,
+     "sents": 78,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 2071,
+       "end": 2074,
+       "title": "24. Kyādīhi kṇā"
+      },
+      {
+       "start": 2075,
+       "end": 2076,
+       "title": "5,121. Sakā+pānaṃ kuka+ku ṇe"
+      },
+      {
+       "start": 2077,
+       "end": 2078,
+       "title": "53. Sse vā"
+      },
+      {
+       "start": 2079,
+       "end": 2082,
+       "title": "58. Sakā kṇāssa kha īādo"
+      },
+      {
+       "start": 2083,
+       "end": 2084,
+       "title": "25. Svādīhi kṇo"
+      },
+      {
+       "start": 2085,
+       "end": 2088,
+       "title": "60. Tesu suto kṇo+kṇānaṃ roṭa"
+      },
+      {
+       "start": 2089,
+       "end": 2090,
+       "title": "26. Tanāditvo"
+      }
+     ],
+     "split": false,
+     "id": "M75",
+     "book": 19,
+     "layer": "mula",
+     "title": "24. Kyādīhi kṇā … 26. Tanāditvo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2091,
+     "end": 2114,
+     "chars": 2229,
+     "sents": 80,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 2091,
+       "end": 2092,
+       "title": "76. Ovikaraṇassu paracchakke"
+      },
+      {
+       "start": 2093,
+       "end": 2095,
+       "title": "5,138. Tanassā vā"
+      },
+      {
+       "start": 2096,
+       "end": 2097,
+       "title": "5,177. Karassa sossa kubba+kuru+kayirā"
+      },
+      {
+       "start": 2098,
+       "end": 2099,
+       "title": "23. Karassa sossa kuṃ"
+      },
+      {
+       "start": 2100,
+       "end": 2101,
+       "title": "25. Hāssa cā+haṅa ssena"
+      },
+      {
+       "start": 2102,
+       "end": 2103,
+       "title": "24. Kā īādīsu"
+      },
+      {
+       "start": 2104,
+       "end": 2105,
+       "title": "44. Dīghā īssa"
+      },
+      {
+       "start": 2106,
+       "end": 2107,
+       "title": "71. Ṭā"
+      },
+      {
+       "start": 2108,
+       "end": 2109,
+       "title": "70. Kayire+yyasse+yyumādīnaṃ"
+      },
+      {
+       "start": 2110,
+       "end": 2111,
+       "title": "72. Ethassā"
+      },
+      {
+       "start": 2112,
+       "end": 2114,
+       "title": "5,133. Karotissa kho"
+      }
+     ],
+     "split": false,
+     "id": "M76",
+     "book": 19,
+     "layer": "mula",
+     "title": "76. Ovikaraṇassu paracchakke … 5,133. Karotissa kho",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2115,
+     "end": 2143,
+     "chars": 4575,
+     "sents": 80,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 2115,
+       "end": 2120,
+       "title": "1,15. Curādito ṇi"
+      },
+      {
+       "start": 2121,
+       "end": 2123,
+       "title": "5,1. Tija+mānehi kha+sā khamā+vīmaṃsāsu"
+      },
+      {
+       "start": 2124,
+       "end": 2125,
+       "title": "5,2. Kitā tikicchā+saṃsayesu cho"
+      },
+      {
+       "start": 2126,
+       "end": 2127,
+       "title": "5,3. Nindāyaṃ gupa+badhā bassa bho ca"
+      },
+      {
+       "start": 2128,
+       "end": 2131,
+       "title": "5,4. Tuṃsmā lopo ci+cchāyaṃ te"
+      },
+      {
+       "start": 2132,
+       "end": 2133,
+       "title": "5,5. Īyo kammā"
+      },
+      {
+       "start": 2134,
+       "end": 2135,
+       "title": "5,6. Upamānā+cāre"
+      },
+      {
+       "start": 2136,
+       "end": 2137,
+       "title": "5,7. Ādhārāti"
+      },
+      {
+       "start": 2138,
+       "end": 2139,
+       "title": "5,8. Kattutā+yo"
+      },
+      {
+       "start": 2140,
+       "end": 2141,
+       "title": "5,9. Cyatthe"
+      },
+      {
+       "start": 2142,
+       "end": 2143,
+       "title": "5,10. Saddādīni karoti"
+      }
+     ],
+     "split": false,
+     "id": "M77",
+     "book": 19,
+     "layer": "mula",
+     "title": "1,15. Curādito ṇi … 5,10. Saddādīni karoti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2144,
+     "end": 2170,
+     "chars": 3688,
+     "sents": 80,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 2144,
+       "end": 2145,
+       "title": "5,11. Namotva+sso"
+      },
+      {
+       "start": 2146,
+       "end": 2147,
+       "title": "5,12. Dhātvatthe nāmasmi"
+      },
+      {
+       "start": 2148,
+       "end": 2149,
+       "title": "5,13. Saccādīhā+pi"
+      },
+      {
+       "start": 2150,
+       "end": 2170,
+       "title": "5,16. Payojakabyāpāre ṇāpi ca"
+      }
+     ],
+     "split": false,
+     "id": "M78",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,11. Namotva+sso … 5,16. Payojakabyāpāre ṇāpi ca",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2171,
+     "end": 2202,
+     "chars": 4521,
+     "sents": 79,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 2171,
+       "end": 2173,
+       "title": "7. Khādikaṇḍa"
+      },
+      {
+       "start": 2174,
+       "end": 2184,
+       "title": "27. Bhāvakammesu tabbānīyā"
+      },
+      {
+       "start": 2185,
+       "end": 2186,
+       "title": "95. Pararūpa+mayakāre byañjane"
+      },
+      {
+       "start": 2187,
+       "end": 2188,
+       "title": "119. Tuṃ+tuna+tabbesu vā"
+      },
+      {
+       "start": 2189,
+       "end": 2191,
+       "title": "171. Rā nassa ṇo"
+      },
+      {
+       "start": 2192,
+       "end": 2195,
+       "title": "96. Manānaṃ niggahītaṃ"
+      },
+      {
+       "start": 2196,
+       "end": 2198,
+       "title": "28. Ghyaṇa"
+      },
+      {
+       "start": 2199,
+       "end": 2200,
+       "title": "98. Kagā cajānaṃ ghānubandhe"
+      },
+      {
+       "start": 2201,
+       "end": 2202,
+       "title": "84. Assā ṇānubandhe"
+      }
+     ],
+     "split": false,
+     "id": "M79",
+     "book": 19,
+     "layer": "mula",
+     "title": "7. Khādikaṇḍa … 84. Assā ṇānubandhe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2203,
+     "end": 2219,
+     "chars": 2628,
+     "sents": 55,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 2203,
+       "end": 2204,
+       "title": "5,122. Nito cissa cho"
+      },
+      {
+       "start": 2205,
+       "end": 2206,
+       "title": "29. Āsse+ca"
+      },
+      {
+       "start": 2207,
+       "end": 2209,
+       "title": "30. Vadādīhi yo"
+      },
+      {
+       "start": 2210,
+       "end": 2211,
+       "title": "83. Lahussupantassati"
+      },
+      {
+       "start": 2212,
+       "end": 2213,
+       "title": "31. Kicca ghacca bhacca bhabba leyyā"
+      },
+      {
+       "start": 2214,
+       "end": 2215,
+       "title": "32. Guhādīhi yaka"
+      },
+      {
+       "start": 2216,
+       "end": 2219,
+       "title": "117. Sāsassa sisa vā"
+      }
+     ],
+     "split": false,
+     "id": "M80",
+     "book": 19,
+     "layer": "mula",
+     "title": "5,122. Nito cissa cho … 117. Sāsassa sisa vā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2220,
+     "end": 2234,
+     "chars": 3062,
+     "sents": 77,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 2220,
+       "end": 2228,
+       "title": "33. Kattari ltu+ṇkā"
+      },
+      {
+       "start": 2229,
+       "end": 2230,
+       "title": "34. Āvī"
+      },
+      {
+       "start": 2231,
+       "end": 2232,
+       "title": "35. Āsiṃsāya+mako"
+      },
+      {
+       "start": 2233,
+       "end": 2234,
+       "title": "36. Karā ṇano"
+      }
+     ],
+     "split": false,
+     "id": "M81",
+     "book": 19,
+     "layer": "mula",
+     "title": "33. Kattari ltu+ṇkā … 36. Karā ṇano",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2235,
+     "end": 2262,
+     "chars": 2640,
+     "sents": 59,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 2235,
+       "end": 2236,
+       "title": "37. Hāto vīhi+kālesu"
+      },
+      {
+       "start": 2237,
+       "end": 2238,
+       "title": "38. Vidā kū"
+      },
+      {
+       "start": 2239,
+       "end": 2240,
+       "title": "39. Vito ñāto"
+      },
+      {
+       "start": 2241,
+       "end": 2242,
+       "title": "40. Kammā"
+      },
+      {
+       "start": 2243,
+       "end": 2245,
+       "title": "41. Kvacaṇa"
+      },
+      {
+       "start": 2246,
+       "end": 2248,
+       "title": "42. Gamā rū"
+      },
+      {
+       "start": 2249,
+       "end": 2250,
+       "title": "43. Samāna+ñña+bhavanta+yāditū+pamānā disā kamme rī+rikkha+kā"
+      },
+      {
+       "start": 2251,
+       "end": 2252,
+       "title": "125. Samānā ro rī+rikkha+kesu"
+      },
+      {
+       "start": 2253,
+       "end": 2254,
+       "title": "3,86. Sabbādīna+mā"
+      },
+      {
+       "start": 2255,
+       "end": 2256,
+       "title": "3,87. Nta+ki+mi+mānaṃ ṭā+kī+ṭī"
+      },
+      {
+       "start": 2257,
+       "end": 2258,
+       "title": "3,88. Tumhāmhānaṃ tāme+kasmiṃ"
+      },
+      {
+       "start": 2259,
+       "end": 2260,
+       "title": "3,89. Taṃ+ma+maññatra"
+      },
+      {
+       "start": 2261,
+       "end": 2262,
+       "title": "3,90. Ve+tasse+ṭa"
+      }
+     ],
+     "split": false,
+     "id": "M82",
+     "book": 19,
+     "layer": "mula",
+     "title": "37. Hāto vīhi+kālesu … 3,90. Ve+tasse+ṭa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2263,
+     "end": 2269,
+     "chars": 2883,
+     "sents": 71,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 2263,
+       "end": 2269,
+       "title": "44. Bhāvakārake sva+ghaṇa gha kā"
+      }
+     ],
+     "split": false,
+     "id": "M83",
+     "book": 19,
+     "layer": "mula",
+     "title": "44. Bhāvakārake sva+ghaṇa gha kā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2270,
+     "end": 2281,
+     "chars": 2301,
+     "sents": 69,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 2270,
+       "end": 2273,
+       "title": "127. Ana+ghaṇasvā+parīhi ḷo"
+      },
+      {
+       "start": 2274,
+       "end": 2275,
+       "title": "45. Dādhātvi"
+      },
+      {
+       "start": 2276,
+       "end": 2277,
+       "title": "46. Vamādīhya+thu"
+      },
+      {
+       "start": 2278,
+       "end": 2279,
+       "title": "47. Kvi"
+      },
+      {
+       "start": 2280,
+       "end": 2281,
+       "title": "159. Kvissa"
+      }
+     ],
+     "split": false,
+     "id": "M84",
+     "book": 19,
+     "layer": "mula",
+     "title": "127. Ana+ghaṇasvā+parīhi ḷo … 159. Kvissa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2282,
+     "end": 2286,
+     "chars": 1590,
+     "sents": 45,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 2282,
+       "end": 2286,
+       "title": "48. Ano"
+      }
+     ],
+     "split": false,
+     "id": "M85",
+     "book": 19,
+     "layer": "mula",
+     "title": "48. Ano",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2287,
+     "end": 2302,
+     "chars": 2790,
+     "sents": 78,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 2287,
+       "end": 2296,
+       "title": "49. Itthiya+ma+ṇa+kti+ka+yaka+yā ca"
+      },
+      {
+       "start": 2297,
+       "end": 2298,
+       "title": "50. Jāhāhi ni"
+      },
+      {
+       "start": 2299,
+       "end": 2300,
+       "title": "51. Karā ririyo"
+      },
+      {
+       "start": 2301,
+       "end": 2302,
+       "title": "52. I+ki+tī sarūpe"
+      }
+     ],
+     "split": false,
+     "id": "M86",
+     "book": 19,
+     "layer": "mula",
+     "title": "49. Itthiya+ma+ṇa+kti+ka+yaka+yā ca … 52. I+ki+tī sarūpe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2303,
+     "end": 2319,
+     "chars": 3489,
+     "sents": 67,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 2303,
+       "end": 2307,
+       "title": "53. Sīlā+bhikkhaññā+vassakesu ṇī"
+      },
+      {
+       "start": 2308,
+       "end": 2309,
+       "title": "54. Thāvari+ttara bhaṅgura bhidura bhāsura bhassarā"
+      },
+      {
+       "start": 2310,
+       "end": 2311,
+       "title": "55. Kattari bhūte ktavantu+ktāvī"
+      },
+      {
+       "start": 2312,
+       "end": 2313,
+       "title": "56. Kto bhāvakammesuti"
+      },
+      {
+       "start": 2314,
+       "end": 2315,
+       "title": "57. Kattari cā+rambhe"
+      },
+      {
+       "start": 2316,
+       "end": 2317,
+       "title": "58. Ṭhā+sa vasa silisa sī ruha jara janīhi"
+      },
+      {
+       "start": 2318,
+       "end": 2319,
+       "title": "59. Gamanatthā+kammakā+dhāre ca"
+      }
+     ],
+     "split": false,
+     "id": "M87",
+     "book": 19,
+     "layer": "mula",
+     "title": "53. Sīlā+bhikkhaññā+vassakesu ṇī … 59. Gamanatthā+kammakā+dhāre ca",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2320,
+     "end": 2332,
+     "chars": 2764,
+     "sents": 78,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 2320,
+       "end": 2322,
+       "title": "60. Āhāratthā"
+      },
+      {
+       "start": 2323,
+       "end": 2324,
+       "title": "150. Bhidādito no kta+ktavantūnaṃ"
+      },
+      {
+       "start": 2325,
+       "end": 2326,
+       "title": "151. Dātvi+nno"
+      },
+      {
+       "start": 2327,
+       "end": 2328,
+       "title": "152. Kirādīhi ṇoti"
+      },
+      {
+       "start": 2329,
+       "end": 2330,
+       "title": "153. Tarādīhi riṇṇoti"
+      },
+      {
+       "start": 2331,
+       "end": 2332,
+       "title": "154. Go bhañjādīhiti"
+      }
+     ],
+     "split": false,
+     "id": "M88",
+     "book": 19,
+     "layer": "mula",
+     "title": "60. Āhāratthā … 154. Go bhañjādīhiti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2333,
+     "end": 2364,
+     "chars": 2882,
+     "sents": 79,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 2333,
+       "end": 2334,
+       "title": "155. Susā khoti"
+      },
+      {
+       "start": 2335,
+       "end": 2336,
+       "title": "156. Pacā ko"
+      },
+      {
+       "start": 2337,
+       "end": 2338,
+       "title": "157. Mucā vāti"
+      },
+      {
+       "start": 2339,
+       "end": 2340,
+       "title": "106. Muha+bahānañca te kānubandhe+tve"
+      },
+      {
+       "start": 2341,
+       "end": 2342,
+       "title": "107. Vahassu+ssa"
+      },
+      {
+       "start": 2343,
+       "end": 2344,
+       "title": "108. Dhāssa hi"
+      },
+      {
+       "start": 2345,
+       "end": 2346,
+       "title": "109. Gamādirānaṃ lopo+ntassa"
+      },
+      {
+       "start": 2347,
+       "end": 2348,
+       "title": "110. Vacādīnaṃ vassu+ṭa vā"
+      },
+      {
+       "start": 2349,
+       "end": 2350,
+       "title": "112. Vaddhassa vā"
+      },
+      {
+       "start": 2351,
+       "end": 2352,
+       "title": "113. Yajassa yassa ṭi+yī"
+      },
+      {
+       "start": 2353,
+       "end": 2354,
+       "title": "114. Ṭhāssi"
+      },
+      {
+       "start": 2355,
+       "end": 2356,
+       "title": "115. Gā+pāna+mī"
+      },
+      {
+       "start": 2357,
+       "end": 2358,
+       "title": "116. Janissā"
+      },
+      {
+       "start": 2359,
+       "end": 2360,
+       "title": "117. Sāsassa sisa vā"
+      },
+      {
+       "start": 2361,
+       "end": 2362,
+       "title": "140. Sānantarassa tassa ṭho"
+      },
+      {
+       "start": 2363,
+       "end": 2364,
+       "title": "141. Kasassi+ma ca vā"
+      }
+     ],
+     "split": false,
+     "id": "M89",
+     "book": 19,
+     "layer": "mula",
+     "title": "155. Susā khoti … 141. Kasassi+ma ca vā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2365,
+     "end": 2394,
+     "chars": 2828,
+     "sents": 77,
+     "paras": 30,
+     "chapters": [
+      {
+       "start": 2365,
+       "end": 2366,
+       "title": "142. Dhasto+trastā"
+      },
+      {
+       "start": 2367,
+       "end": 2368,
+       "title": "143. Pucchādito"
+      },
+      {
+       "start": 2369,
+       "end": 2370,
+       "title": "144. Sāsa vasa saṃsa sasā tho"
+      },
+      {
+       "start": 2371,
+       "end": 2372,
+       "title": "145. Dho dha+ha+tehi"
+      },
+      {
+       "start": 2373,
+       "end": 2374,
+       "title": "146. Dahā ḍho"
+      },
+      {
+       "start": 2375,
+       "end": 2376,
+       "title": "147. Bahassu+ma ca"
+      },
+      {
+       "start": 2377,
+       "end": 2378,
+       "title": "148. Ruhādīhi ho ḷa ca"
+      },
+      {
+       "start": 2379,
+       "end": 2380,
+       "title": "149. Muhā vāti"
+      },
+      {
+       "start": 2381,
+       "end": 2382,
+       "title": "64. Nto kattari vattamāne"
+      },
+      {
+       "start": 2383,
+       "end": 2384,
+       "title": "65. Mānoti"
+      },
+      {
+       "start": 2385,
+       "end": 2386,
+       "title": "66. Bhāvakammesuti"
+      },
+      {
+       "start": 2387,
+       "end": 2388,
+       "title": "67. Te ssapubbā+nāgate"
+      },
+      {
+       "start": 2389,
+       "end": 2390,
+       "title": "5,172. Na nta+māna+tyādīnaṃ"
+      },
+      {
+       "start": 2391,
+       "end": 2392,
+       "title": "5,173. Gama yami+sāsa disānaṃ vā cchaṅa"
+      },
+      {
+       "start": 2393,
+       "end": 2394,
+       "title": "174. Jara+marāna+mīyaṅa"
+      }
+     ],
+     "split": false,
+     "id": "M90",
+     "book": 19,
+     "layer": "mula",
+     "title": "142. Dhasto+trastā … 174. Jara+marāna+mīyaṅa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2395,
+     "end": 2420,
+     "chars": 4047,
+     "sents": 78,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 2395,
+       "end": 2396,
+       "title": "175. Ṭhāpānaṃ tiṭṭhapivā"
+      },
+      {
+       "start": 2397,
+       "end": 2398,
+       "title": "176. Gama+vada+dānaṃ ghamma+vajja+dajjā"
+      },
+      {
+       "start": 2399,
+       "end": 2400,
+       "title": "177. Karassa sossa kubba kuru kayirā"
+      },
+      {
+       "start": 2401,
+       "end": 2402,
+       "title": "178. Gahassa gheppo"
+      },
+      {
+       "start": 2403,
+       "end": 2404,
+       "title": "179. Ṇo niggahītassa"
+      },
+      {
+       "start": 2405,
+       "end": 2406,
+       "title": "130. Nta+māna+nti+yi+yuṃsvā+dilopoti"
+      },
+      {
+       "start": 2407,
+       "end": 2409,
+       "title": "131. Pādito ṭhāssa vā ṭhaho kvaciti"
+      },
+      {
+       "start": 2410,
+       "end": 2414,
+       "title": "61. Tuṃ tāye tave bhāve bhavissati kriyāyaṃ tadatthāyaṃ"
+      },
+      {
+       "start": 2415,
+       "end": 2416,
+       "title": "62. Paṭisedhe+laṃkhalūnaṃ ktuna ktvāna ktvā vā"
+      },
+      {
+       "start": 2417,
+       "end": 2418,
+       "title": "63. Pubbe+kakattukānaṃ"
+      },
+      {
+       "start": 2419,
+       "end": 2420,
+       "title": "164. Pyo vā tvāssa samāse"
+      }
+     ],
+     "split": false,
+     "id": "M91",
+     "book": 19,
+     "layer": "mula",
+     "title": "175. Ṭhāpānaṃ tiṭṭhapivā … 164. Pyo vā tvāssa samāse",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2421,
+     "end": 2483,
+     "chars": 2774,
+     "sents": 79,
+     "paras": 63,
+     "chapters": [
+      {
+       "start": 2421,
+       "end": 2422,
+       "title": "88. Pye sissā"
+      },
+      {
+       "start": 2423,
+       "end": 2425,
+       "title": "165. Tuṃ+yānā"
+      },
+      {
+       "start": 2426,
+       "end": 2426,
+       "title": "Payogasiddhi nigamanaṃ"
+      },
+      {
+       "start": 2427,
+       "end": 2431,
+       "title": "1."
+      },
+      {
+       "start": 2432,
+       "end": 2434,
+       "title": "2."
+      },
+      {
+       "start": 2435,
+       "end": 2437,
+       "title": "3."
+      },
+      {
+       "start": 2438,
+       "end": 2440,
+       "title": "4."
+      },
+      {
+       "start": 2441,
+       "end": 2443,
+       "title": "5."
+      },
+      {
+       "start": 2444,
+       "end": 2446,
+       "title": "6."
+      },
+      {
+       "start": 2447,
+       "end": 2449,
+       "title": "7."
+      },
+      {
+       "start": 2450,
+       "end": 2452,
+       "title": "8."
+      },
+      {
+       "start": 2453,
+       "end": 2455,
+       "title": "9."
+      },
+      {
+       "start": 2456,
+       "end": 2458,
+       "title": "10."
+      },
+      {
+       "start": 2459,
+       "end": 2464,
+       "title": "11."
+      },
+      {
+       "start": 2465,
+       "end": 2467,
+       "title": "1."
+      },
+      {
+       "start": 2468,
+       "end": 2470,
+       "title": "2."
+      },
+      {
+       "start": 2471,
+       "end": 2473,
+       "title": "3."
+      },
+      {
+       "start": 2474,
+       "end": 2478,
+       "title": "4."
+      },
+      {
+       "start": 2479,
+       "end": 2483,
+       "title": "5."
+      }
+     ],
+     "split": false,
+     "id": "M92",
+     "book": 19,
+     "layer": "mula",
+     "title": "88. Pye sissā … 5.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2484,
+     "end": 2493,
+     "chars": 280,
+     "sents": 10,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 2484,
+       "end": 2486,
+       "title": "5."
+      },
+      {
+       "start": 2487,
+       "end": 2489,
+       "title": "6."
+      },
+      {
+       "start": 2490,
+       "end": 2493,
+       "title": "7."
+      }
+     ],
+     "split": false,
+     "id": "M93",
+     "book": 19,
+     "layer": "mula",
+     "title": "5. … 7.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 2492,
+   "chars": 294643,
+   "sents": 6078,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 19,
+   "layer": "mula",
+   "start": 2,
+   "end": 2493,
+   "title": "Payogasiddhipāḷi"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2,
+   "end": 52,
+   "chars": 4160,
+   "sents": 75,
+   "title": "Payogasiddhipāḷi … 5. Paro dīgho",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:06",
+   "ended": "2026-11-24 11:52:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 53,
+   "end": 85,
+   "chars": 4623,
+   "sents": 63,
+   "title": "6. Kādayo byañjanā … 30. Yavā sare",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:16",
+   "ended": "2026-11-24 11:52:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 86,
+   "end": 110,
+   "chars": 3594,
+   "sents": 53,
+   "title": "30. Eonaṃ … 49. Chā ḷo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:26",
+   "ended": "2026-11-24 11:52:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 111,
+   "end": 117,
+   "chars": 3251,
+   "sents": 14,
+   "title": "28. Na dve vā … 33. Byañjane dīgharassā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:22",
+   "ended": "2026-11-24 11:53:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 118,
+   "end": 138,
+   "chars": 4936,
+   "sents": 76,
+   "title": "34. Saramhā dve … 49. Vaggalasehite",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:43",
+   "ended": "2026-11-24 11:54:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 139,
+   "end": 169,
+   "chars": 4565,
+   "sents": 71,
+   "title": "50. Hassa vipallāso … 44. Mayadā sare",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:58",
+   "ended": "2026-11-24 11:56:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 170,
+   "end": 211,
+   "chars": 3933,
+   "sents": 79,
+   "title": "47. Tadaminādīni … 59. Ayunaṃ vā dīgho",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:53:23",
+   "ended": "2026-11-24 11:55:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 212,
+   "end": 247,
+   "chars": 2208,
+   "sents": 62,
+   "title": "2. Kamme dutiyā … 39. Chaṭṭhī sambandhe",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 12:19:29",
+   "ended": "2026-11-24 13:24:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 248,
+   "end": 289,
+   "chars": 3917,
+   "sents": 80,
+   "title": "14. Sattamyā+dhāre（248-289）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:24:16",
+   "ended": "2026-11-24 13:45:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 290,
+   "end": 296,
+   "chars": 615,
+   "sents": 11,
+   "title": "14. Sattamyā+dhāre（290-296）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:45:58",
+   "ended": "2026-11-24 13:46:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 297,
+   "end": 335,
+   "chars": 2846,
+   "sents": 79,
+   "title": "110. Kvace+vā. … 149. Bhūto",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:46:23",
+   "ended": "2026-11-24 13:47:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 336,
+   "end": 367,
+   "chars": 2584,
+   "sents": 75,
+   "title": "146. Bhavato vā bhontoga+yo+nā+se … 224. Smimhi raññe+rājini",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:47:49",
+   "ended": "2026-11-24 13:49:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 368,
+   "end": 405,
+   "chars": 3117,
+   "sents": 78,
+   "title": "225. Samāse vā … 160. Smā+naṃsu vā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:49:14",
+   "ended": "2026-11-24 13:51:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 406,
+   "end": 439,
+   "chars": 2758,
+   "sents": 80,
+   "title": "171. Ṭā nā+smānaṃ … 188. Sāssaṃ+se cā+naṅa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:51:10",
+   "ended": "2026-11-24 13:52:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 440,
+   "end": 480,
+   "chars": 3034,
+   "sents": 79,
+   "title": "130. Ge vā … 74. Naṃ jhīto",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:10:27",
+   "ended": "2026-11-25 14:12:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 481,
+   "end": 517,
+   "chars": 2921,
+   "sents": 78,
+   "title": "76. No … 165. Salopo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:12:03",
+   "ended": "2026-11-25 14:13:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 518,
+   "end": 548,
+   "chars": 3822,
+   "sents": 80,
+   "title": "163. Naṃmhi vā … 85. Kūto",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:13:24",
+   "ended": "2026-11-25 14:14:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 549,
+   "end": 594,
+   "chars": 2756,
+   "sents": 76,
+   "title": "67. Gossā+ga+si+hi+naṃsu gāva+gavā … 1,10. Pi+tthiyaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 14:58:55",
+   "ended": "2026-11-24 15:01:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 595,
+   "end": 615,
+   "chars": 1488,
+   "sents": 46,
+   "title": "116. Ye passi+vaṇṇassa … 73. Yaṃ pito",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:01:36",
+   "ended": "2026-11-24 15:02:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 616,
+   "end": 651,
+   "chars": 2437,
+   "sents": 73,
+   "title": "167. Najjā dhayāsvāma … 106. Nāssa sā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:02:42",
+   "ended": "2026-11-24 15:06:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 652,
+   "end": 682,
+   "chars": 2792,
+   "sents": 77,
+   "title": "105. Padādīhi … 113. Jhalā vā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:06:44",
+   "ended": "2026-11-24 15:11:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 683,
+   "end": 713,
+   "chars": 2409,
+   "sents": 76,
+   "title": "138. Yona+meṭa … 142. Ve+ṭa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:11:42",
+   "ended": "2026-11-24 15:13:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 714,
+   "end": 746,
+   "chars": 3269,
+   "sents": 76,
+   "title": "128. Tya+te+tānaṃ tassa so … 201. Imassi+daṃ vā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:13:13",
+   "ended": "2026-11-24 15:14:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 747,
+   "end": 781,
+   "chars": 2947,
+   "sents": 79,
+   "title": "197. Ime+tāna+menā+nvādese dutiyāyaṃ … 212. Tumhassa tuvaṃtva+mamhi ca",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:14:44",
+   "ended": "2026-11-24 15:16:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 782,
+   "end": 824,
+   "chars": 3031,
+   "sents": 77,
+   "title": "211. Simha+haṃ … 234. Te+me nāse",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:16:05",
+   "ended": "2026-11-24 15:17:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 825,
+   "end": 863,
+   "chars": 3753,
+   "sents": 78,
+   "title": "237. Na ca+vā+hā+he+vayoge … 47. Naṃmhi nuka dvādīnaṃ sattarasannaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:17:41",
+   "ended": "2026-11-24 15:19:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 864,
+   "end": 896,
+   "chars": 2814,
+   "sents": 80,
+   "title": "207. Pume tayo+cattāro … 3,98. Bā cattālīsā do",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:19:22",
+   "ended": "2026-11-24 15:22:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 897,
+   "end": 913,
+   "chars": 1808,
+   "sents": 44,
+   "title": "3,95. Tisse … 3,97. Dvīssā ca",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-25 14:14:50",
+   "ended": "2026-11-25 14:15:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 914,
+   "end": 940,
+   "chars": 4911,
+   "sents": 55,
+   "title": "3,98. Cattālīsādo vā（914-940）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:15:45",
+   "ended": "2026-11-25 14:17:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 941,
+   "end": 958,
+   "chars": 3947,
+   "sents": 33,
+   "title": "3,98. Cattālīsādo vā（941-958）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:17:26",
+   "ended": "2026-11-25 14:18:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 959,
+   "end": 970,
+   "chars": 4514,
+   "sents": 80,
+   "title": "118. Asaṃkhyehi sabbāsaṃ（959-970）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:18:27",
+   "ended": "2026-11-25 14:19:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 971,
+   "end": 976,
+   "chars": 255,
+   "sents": 6,
+   "title": "118. Asaṃkhyehi sabbāsaṃ（971-976）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:19:37",
+   "ended": "2026-11-25 14:19:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 977,
+   "end": 1024,
+   "chars": 4720,
+   "sents": 76,
+   "title": "3. Kārakakaṇḍa … 3. Kāladdhāna+maccantasaṃyoge",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:19:53",
+   "ended": "2026-11-25 14:21:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1025,
+   "end": 1062,
+   "chars": 4687,
+   "sents": 80,
+   "title": "4. Gatibodhāhārasaddatthākammakabhajjādīnaṃ payojje … 21. Guṇe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:21:18",
+   "ended": "2026-11-25 14:23:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1063,
+   "end": 1074,
+   "chars": 3524,
+   "sents": 31,
+   "title": "24. Catutthī sampadāne … 25. Tādatthye",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:23:04",
+   "ended": "2026-11-25 14:24:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1075,
+   "end": 1102,
+   "chars": 4499,
+   "sents": 66,
+   "title": "26. Pañcamya+vadhismā … 31. Puthanānāhi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:24:10",
+   "ended": "2026-11-25 14:25:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1103,
+   "end": 1125,
+   "chars": 4775,
+   "sents": 60,
+   "title": "39. Chaṭṭhī sambandhe … 33. Nimitte",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:25:25",
+   "ended": "2026-11-25 14:26:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1126,
+   "end": 1169,
+   "chars": 4940,
+   "sents": 71,
+   "title": "34. Yabbhāvo bhāvalakkhaṇaṃ … 1. Syādi syādine+katthanti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:26:51",
+   "ended": "2026-11-25 14:28:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1170,
+   "end": 1200,
+   "chars": 5000,
+   "sents": 72,
+   "title": "2. Asaṅkhyaṃ vibhatti+sampatti+samīpa+sākalyā+bhāva+yathā+ pacchā+yugapadatthe … 7. Tiṭṭhagvādīni",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:28:22",
+   "ended": "2026-11-25 14:29:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1201,
+   "end": 1202,
+   "chars": 433,
+   "sents": 4,
+   "title": "8. Ore+pari+paṭi+pāre+majjhe+heṭṭhu+ddhā+dho+nto vā chaṭṭhiyā.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:29:58",
+   "ended": "2026-11-25 14:30:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1203,
+   "end": 1213,
+   "chars": 4011,
+   "sents": 62,
+   "title": "10. A+mādi（1203-1213）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:30:13",
+   "ended": "2026-11-25 14:31:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1214,
+   "end": 1215,
+   "chars": 2081,
+   "sents": 25,
+   "title": "10. A+mādi（1214-1215）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:31:39",
+   "ended": "2026-11-25 14:32:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1216,
+   "end": 1253,
+   "chars": 4795,
+   "sents": 73,
+   "title": "11. Visesana+mekatthena … 67. Itthiyaṃ bhāsitapumi+tthī pumeve+kattheti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:32:34",
+   "ended": "2026-11-25 14:34:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1254,
+   "end": 1292,
+   "chars": 4476,
+   "sents": 75,
+   "title": "21. Saṃkhyādi … 109. Purise vāti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:34:30",
+   "ended": "2026-11-25 14:36:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1293,
+   "end": 1302,
+   "chars": 1299,
+   "sents": 17,
+   "title": "14. Cī kriyatthehi … 17. Vā+neka+ññatthe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:36:21",
+   "ended": "2026-11-25 14:36:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1303,
+   "end": 1322,
+   "chars": 4809,
+   "sents": 67,
+   "title": "1. Tattha dvipado tulyādhikaraṇo kammādīsu chasu vibhatyatthesu bhavati.（1303-1322）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:36:57",
+   "ended": "2026-11-25 14:38:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1323,
+   "end": 1326,
+   "chars": 1015,
+   "sents": 15,
+   "title": "1. Tattha dvipado tulyādhikaraṇo kammādīsu chasu vibhatyatthesu bhavati.（1323-1326）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:38:33",
+   "ended": "2026-11-25 14:39:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1327,
+   "end": 1358,
+   "chars": 2900,
+   "sents": 48,
+   "title": "69. Sabbādayo vuttimatteti … 20. Samāhāre napuṃsakanti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:39:03",
+   "ended": "2026-11-25 14:39:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1359,
+   "end": 1383,
+   "chars": 4931,
+   "sents": 45,
+   "title": "23. Syādīsu rassoti（1359-1383）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:39:58",
+   "ended": "2026-11-25 14:41:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1384,
+   "end": 1386,
+   "chars": 825,
+   "sents": 9,
+   "title": "23. Syādīsu rassoti（1384-1386）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:41:09",
+   "ended": "2026-11-25 14:41:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1387,
+   "end": 1426,
+   "chars": 3345,
+   "sents": 78,
+   "title": "40. Samāsantva … 68. Kvaci paccayeti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:41:34",
+   "ended": "2026-11-25 14:42:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M52:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1427,
+   "end": 1469,
+   "chars": 2622,
+   "sents": 74,
+   "title": "71. Saññāya+mudo+dakassa … 1. Ṇo vā+pacce",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:42:45",
+   "ended": "2026-11-25 14:43:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M53:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1470,
+   "end": 1502,
+   "chars": 3584,
+   "sents": 78,
+   "title": "124. Sarāna+mādissā+yuvaṇṇassā+eo ṇānubandhe … 10. Ṇya kurusivīhi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:43:55",
+   "ended": "2026-11-25 14:45:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M54:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1503,
+   "end": 1534,
+   "chars": 3810,
+   "sents": 77,
+   "title": "11. Ṇa rāgā tena rattaṃ … 26. Ṇiko",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:45:21",
+   "ended": "2026-11-25 14:47:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M55:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1535,
+   "end": 1552,
+   "chars": 3787,
+   "sents": 80,
+   "title": "27. Ta+massa sippaṃ sīlaṃ paṇyaṃ paharaṇaṃ payojanaṃ … 35. Gavādīhi yo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:47:12",
+   "ended": "2026-11-25 14:48:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M56:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1553,
+   "end": 1586,
+   "chars": 3972,
+   "sents": 79,
+   "title": "36. Pitito bhātari reyyaṇa … 139. Ḍe satissa tissati",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:48:48",
+   "ended": "2026-11-25 14:50:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M57:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1587,
+   "end": 1602,
+   "chars": 1742,
+   "sents": 43,
+   "title": "51. Tassa pūraṇe+kādasādito vā … 58. Tena datte li+yāti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:50:19",
+   "ended": "2026-11-25 14:51:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M58:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1603,
+   "end": 1633,
+   "chars": 4976,
+   "sents": 79,
+   "title": "59. Tassa bhāvakammesutta+tā+ttana+ṇya+ṇeyya+ṇi+ya+ṇiyā … 135. Jo vuddhassi+yi+ṭṭhesu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:51:14",
+   "ended": "2026-11-25 14:53:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M59:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1634,
+   "end": 1664,
+   "chars": 3292,
+   "sents": 80,
+   "title": "136. Bāḷha+ntika+pasatthānaṃ sādha+neda+sā … 75. Pathādīhi ṇeyyoti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:53:10",
+   "ended": "2026-11-25 14:54:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M60:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1665,
+   "end": 1697,
+   "chars": 2947,
+   "sents": 78,
+   "title": "76. Dakkhiṇāyā+raheti … 84. Saddhāditva",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:54:16",
+   "ended": "2026-11-25 14:55:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M61:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1698,
+   "end": 1740,
+   "chars": 2676,
+   "sents": 78,
+   "title": "85. Ṇo tapāti … 105. Sabbe+ka+ñña+ya+tehi kāle dā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:55:42",
+   "ended": "2026-11-25 14:57:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M62:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1741,
+   "end": 1778,
+   "chars": 3099,
+   "sents": 75,
+   "title": "106. Kadā kudā sadā+dhune+dāni … 6. Tyādikaṇḍa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:57:13",
+   "ended": "2026-11-25 14:58:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M63:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1779,
+   "end": 1817,
+   "chars": 3780,
+   "sents": 77,
+   "title": "14. Kriyatthā bahulaṃ – ti … 1,22. Vippaṭisedhe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:58:18",
+   "ended": "2026-11-25 14:59:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M64:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1818,
+   "end": 1860,
+   "chars": 3214,
+   "sents": 80,
+   "title": "5,173. Gama yami+sā+sa disānaṃ vā cchaṅa … 37. Kyassati",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:59:49",
+   "ended": "2026-11-25 15:01:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M65:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1861,
+   "end": 1889,
+   "chars": 3233,
+   "sents": 73,
+   "title": "2. Bhavissati ssati ssanti ssati ssatha ssāmi ssāma ssate ssante ssase ssavhe ssaṃ ssāmhe … 45. Mhātthāna+muña",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:01:10",
+   "ended": "2026-11-25 15:02:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M66:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1890,
+   "end": 1911,
+   "chars": 4282,
+   "sents": 75,
+   "title": "46. Iṃssa ca siña … 18. Pubbassa a",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:02:31",
+   "ended": "2026-11-25 15:04:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M67:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1912,
+   "end": 1933,
+   "chars": 3725,
+   "sents": 79,
+   "title": "5,78. Catutthadutiyānaṃ tatiyapaṭhamā … 78. Eyyāmasse+mu ca",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:04:27",
+   "ended": "2026-11-25 15:05:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M68:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1934,
+   "end": 1957,
+   "chars": 3319,
+   "sents": 78,
+   "title": "11. Sattya+rahesve+yyādī … 5,173. Gama yami+sā+sa disānaṃ vā cchaṅa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:05:37",
+   "ended": "2026-11-25 15:07:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M69:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1958,
+   "end": 1981,
+   "chars": 3211,
+   "sents": 75,
+   "title": "73. Labhā iṃ+īnaṃ thaṃ thā vā … 6,69. Dakkha+kha+heti+hohīti lopo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:07:03",
+   "ended": "2026-11-25 15:08:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M70:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 1982,
+   "end": 2001,
+   "chars": 3011,
+   "sents": 73,
+   "title": "5,113. Yajassa yassa ṭi+yīti … 5,131. Pādito ṭhāssa vā ṭhaho kvaciti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:08:19",
+   "ended": "2026-11-25 15:09:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M71:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2002,
+   "end": 2027,
+   "chars": 2396,
+   "sents": 74,
+   "title": "5,137. Aññādissā+ssī kye … 16. Aādīsvā+ho brūssa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:09:35",
+   "ended": "2026-11-25 15:10:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M72:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2028,
+   "end": 2040,
+   "chars": 2394,
+   "sents": 60,
+   "title": "67. Hanā cha+khā … 22. Dāssa daṃ vā mimesva+dvitte",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:10:45",
+   "ended": "2026-11-25 15:12:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M73:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2041,
+   "end": 2051,
+   "chars": 2550,
+   "sents": 61,
+   "title": "5,19. Mañca rudhādīnaṃ … 5,21. Divādīhi yaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:12:01",
+   "ended": "2026-11-25 15:12:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M74:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2052,
+   "end": 2070,
+   "chars": 2004,
+   "sents": 70,
+   "title": "5,22. Tudādīhi ko … 62. Ñāmhi jaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:12:56",
+   "ended": "2026-11-25 15:13:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M75:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2071,
+   "end": 2090,
+   "chars": 1966,
+   "sents": 78,
+   "title": "24. Kyādīhi kṇā … 26. Tanāditvo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:13:57",
+   "ended": "2026-11-25 15:14:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M76:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2091,
+   "end": 2114,
+   "chars": 2229,
+   "sents": 80,
+   "title": "76. Ovikaraṇassu paracchakke … 5,133. Karotissa kho",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:14:53",
+   "ended": "2026-11-25 15:15:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M77:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2115,
+   "end": 2143,
+   "chars": 4575,
+   "sents": 80,
+   "title": "1,15. Curādito ṇi … 5,10. Saddādīni karoti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:15:58",
+   "ended": "2026-11-25 15:17:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M78:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2144,
+   "end": 2170,
+   "chars": 3688,
+   "sents": 80,
+   "title": "5,11. Namotva+sso … 5,16. Payojakabyāpāre ṇāpi ca",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:17:39",
+   "ended": "2026-11-25 15:19:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M79:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2171,
+   "end": 2202,
+   "chars": 4521,
+   "sents": 79,
+   "title": "7. Khādikaṇḍa … 84. Assā ṇānubandhe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:19:05",
+   "ended": "2026-11-25 15:20:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M80:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2203,
+   "end": 2219,
+   "chars": 2628,
+   "sents": 55,
+   "title": "5,122. Nito cissa cho … 117. Sāsassa sisa vā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:20:36",
+   "ended": "2026-11-25 15:21:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M81:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2220,
+   "end": 2234,
+   "chars": 3062,
+   "sents": 77,
+   "title": "33. Kattari ltu+ṇkā … 36. Karā ṇano",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:21:41",
+   "ended": "2026-11-25 15:22:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M82:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2235,
+   "end": 2262,
+   "chars": 2640,
+   "sents": 59,
+   "title": "37. Hāto vīhi+kālesu … 3,90. Ve+tasse+ṭa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:22:57",
+   "ended": "2026-11-25 15:24:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M83:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2263,
+   "end": 2269,
+   "chars": 2883,
+   "sents": 71,
+   "title": "44. Bhāvakārake sva+ghaṇa gha kā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:24:07",
+   "ended": "2026-11-25 15:25:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M84:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2270,
+   "end": 2281,
+   "chars": 2301,
+   "sents": 69,
+   "title": "127. Ana+ghaṇasvā+parīhi ḷo … 159. Kvissa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:25:18",
+   "ended": "2026-11-25 15:26:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M85:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2282,
+   "end": 2286,
+   "chars": 1590,
+   "sents": 45,
+   "title": "48. Ano",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:26:19",
+   "ended": "2026-11-25 15:27:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M86:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2287,
+   "end": 2302,
+   "chars": 2790,
+   "sents": 78,
+   "title": "49. Itthiya+ma+ṇa+kti+ka+yaka+yā ca … 52. I+ki+tī sarūpe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:27:09",
+   "ended": "2026-11-25 15:28:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M87:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2303,
+   "end": 2319,
+   "chars": 3489,
+   "sents": 67,
+   "title": "53. Sīlā+bhikkhaññā+vassakesu ṇī … 59. Gamanatthā+kammakā+dhāre ca",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:28:35",
+   "ended": "2026-11-25 15:30:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M88:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2320,
+   "end": 2332,
+   "chars": 2764,
+   "sents": 78,
+   "title": "60. Āhāratthā … 154. Go bhañjādīhiti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:30:21",
+   "ended": "2026-11-25 15:31:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M89:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2333,
+   "end": 2364,
+   "chars": 2882,
+   "sents": 79,
+   "title": "155. Susā khoti … 141. Kasassi+ma ca vā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:31:42",
+   "ended": "2026-11-25 15:33:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M90:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2365,
+   "end": 2394,
+   "chars": 2828,
+   "sents": 77,
+   "title": "142. Dhasto+trastā … 174. Jara+marāna+mīyaṅa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:33:02",
+   "ended": "2026-11-25 15:34:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M91:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2395,
+   "end": 2420,
+   "chars": 4047,
+   "sents": 78,
+   "title": "175. Ṭhāpānaṃ tiṭṭhapivā … 164. Pyo vā tvāssa samāse",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:34:18",
+   "ended": "2026-11-25 15:35:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M92:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2421,
+   "end": 2483,
+   "chars": 2774,
+   "sents": 79,
+   "title": "88. Pye sissā … 5.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:35:59",
+   "ended": "2026-11-25 15:37:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M93:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 19,
+   "start": 2484,
+   "end": 2493,
+   "chars": 280,
+   "sents": 10,
+   "title": "5. … 7.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:37:30",
+   "ended": "2026-11-25 15:37:45",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 60
+}

@@ -1,0 +1,833 @@
+{
+ "schema": 3,
+ "name": "x05-padasadhanam",
+ "title": "Padasādhanaṃ 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:46",
+ "updated": "2026-11-24 04:24:34",
+ "book": 48,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "48": {
+   "layer": "mula",
+   "title": "Padasādhanaṃ"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 48,
+   "title": "Padasādhanaṃ",
+   "start": 1,
+   "end": 1095,
+   "fam": "x05-padasadhanam",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1,
+     "end": 55,
+     "chars": 4704,
+     "sents": 65,
+     "paras": 55,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M1",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （1-55）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 56,
+     "end": 113,
+     "chars": 4944,
+     "sents": 72,
+     "paras": 58,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （56-113）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 114,
+     "end": 190,
+     "chars": 4561,
+     "sents": 80,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （114-190）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 191,
+     "end": 267,
+     "chars": 4367,
+     "sents": 80,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （191-267）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 268,
+     "end": 337,
+     "chars": 4631,
+     "sents": 80,
+     "paras": 70,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （268-337）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 338,
+     "end": 408,
+     "chars": 4508,
+     "sents": 80,
+     "paras": 71,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （338-408）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 409,
+     "end": 468,
+     "chars": 4999,
+     "sents": 63,
+     "paras": 60,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （409-468）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 469,
+     "end": 529,
+     "chars": 4920,
+     "sents": 67,
+     "paras": 61,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （469-529）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 530,
+     "end": 584,
+     "chars": 4936,
+     "sents": 57,
+     "paras": 55,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （530-584）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 585,
+     "end": 609,
+     "chars": 4952,
+     "sents": 26,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （585-609）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 610,
+     "end": 665,
+     "chars": 4972,
+     "sents": 58,
+     "paras": 56,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （610-665）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 666,
+     "end": 717,
+     "chars": 4899,
+     "sents": 57,
+     "paras": 52,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （666-717）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 718,
+     "end": 766,
+     "chars": 4936,
+     "sents": 69,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （718-766）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 767,
+     "end": 832,
+     "chars": 4953,
+     "sents": 71,
+     "paras": 66,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （767-832）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 833,
+     "end": 893,
+     "chars": 4791,
+     "sents": 63,
+     "paras": 61,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （833-893）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 894,
+     "end": 942,
+     "chars": 4738,
+     "sents": 50,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （894-942）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 943,
+     "end": 985,
+     "chars": 4931,
+     "sents": 43,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （943-985）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 986,
+     "end": 1030,
+     "chars": 4779,
+     "sents": 49,
+     "paras": 45,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （986-1030）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1031,
+     "end": 1095,
+     "chars": 3724,
+     "sents": 68,
+     "paras": 65,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1095,
+       "title": "Padasādhanaṃ "
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 48,
+     "layer": "mula",
+     "title": "Padasādhanaṃ （1031-1095）",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1095,
+   "chars": 90245,
+   "sents": 1198,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 48,
+   "layer": "mula",
+   "start": 1,
+   "end": 1095,
+   "title": "Padasādhanaṃ"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 1,
+   "end": 55,
+   "chars": 4704,
+   "sents": 65,
+   "title": "Padasādhanaṃ （1-55）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:18:26",
+   "ended": "2026-11-24 04:20:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 56,
+   "end": 113,
+   "chars": 4944,
+   "sents": 72,
+   "title": "Padasādhanaṃ （56-113）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:18:36",
+   "ended": "2026-11-24 04:21:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 114,
+   "end": 190,
+   "chars": 4561,
+   "sents": 80,
+   "title": "Padasādhanaṃ （114-190）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:18:46",
+   "ended": "2026-11-24 04:20:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 191,
+   "end": 267,
+   "chars": 4367,
+   "sents": 80,
+   "title": "Padasādhanaṃ （191-267）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:18:56",
+   "ended": "2026-11-24 04:21:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 268,
+   "end": 337,
+   "chars": 4631,
+   "sents": 80,
+   "title": "Padasādhanaṃ （268-337）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:19:06",
+   "ended": "2026-11-24 04:21:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 338,
+   "end": 408,
+   "chars": 4508,
+   "sents": 80,
+   "title": "Padasādhanaṃ （338-408）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:19:16",
+   "ended": "2026-11-24 04:21:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 409,
+   "end": 468,
+   "chars": 4999,
+   "sents": 63,
+   "title": "Padasādhanaṃ （409-468）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:19:26",
+   "ended": "2026-11-24 04:21:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 469,
+   "end": 529,
+   "chars": 4920,
+   "sents": 67,
+   "title": "Padasādhanaṃ （469-529）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:19:36",
+   "ended": "2026-11-24 04:22:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 530,
+   "end": 584,
+   "chars": 4936,
+   "sents": 57,
+   "title": "Padasādhanaṃ （530-584）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:19:46",
+   "ended": "2026-11-24 04:22:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 585,
+   "end": 609,
+   "chars": 4952,
+   "sents": 26,
+   "title": "Padasādhanaṃ （585-609）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:19:56",
+   "ended": "2026-11-24 04:22:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 610,
+   "end": 665,
+   "chars": 4972,
+   "sents": 58,
+   "title": "Padasādhanaṃ （610-665）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:20:36",
+   "ended": "2026-11-24 04:22:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 666,
+   "end": 717,
+   "chars": 4899,
+   "sents": 57,
+   "title": "Padasādhanaṃ （666-717）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:20:51",
+   "ended": "2026-11-24 04:22:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 718,
+   "end": 766,
+   "chars": 4936,
+   "sents": 69,
+   "title": "Padasādhanaṃ （718-766）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:21:07",
+   "ended": "2026-11-24 04:23:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 767,
+   "end": 832,
+   "chars": 4953,
+   "sents": 71,
+   "title": "Padasādhanaṃ （767-832）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:21:17",
+   "ended": "2026-11-24 04:23:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 833,
+   "end": 893,
+   "chars": 4791,
+   "sents": 63,
+   "title": "Padasādhanaṃ （833-893）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:21:32",
+   "ended": "2026-11-24 04:23:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 894,
+   "end": 942,
+   "chars": 4738,
+   "sents": 50,
+   "title": "Padasādhanaṃ （894-942）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:21:47",
+   "ended": "2026-11-24 04:23:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 943,
+   "end": 985,
+   "chars": 4931,
+   "sents": 43,
+   "title": "Padasādhanaṃ （943-985）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:21:57",
+   "ended": "2026-11-24 04:23:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 986,
+   "end": 1030,
+   "chars": 4779,
+   "sents": 49,
+   "title": "Padasādhanaṃ （986-1030）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:22:13",
+   "ended": "2026-11-24 04:24:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 48,
+   "start": 1031,
+   "end": 1095,
+   "chars": 3724,
+   "sents": 68,
+   "title": "Padasādhanaṃ （1031-1095）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:22:23",
+   "ended": "2026-11-24 04:24:34",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 5
+}

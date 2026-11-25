@@ -1,0 +1,2903 @@
+{
+ "schema": 3,
+ "name": "x22-spv-vinayapitaka",
+ "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:55",
+ "updated": "2026-11-24 11:26:34",
+ "book": 43,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "43": {
+   "layer": "mula",
+   "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 43,
+   "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka",
+   "start": 2,
+   "end": 1554,
+   "fam": "x22-spv-vinayapitaka",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 58,
+     "chars": 4256,
+     "sents": 57,
+     "paras": 57,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka"
+      },
+      {
+       "start": 3,
+       "end": 3,
+       "title": "Saṃgāyanassa pucchā vissajjanā"
+      },
+      {
+       "start": 4,
+       "end": 13,
+       "title": "Okāsa dānakathā"
+      },
+      {
+       "start": 14,
+       "end": 58,
+       "title": "Paṭhama pārājika sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 43,
+     "layer": "mula",
+     "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka … Paṭhama pārājika sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 59,
+     "end": 67,
+     "chars": 881,
+     "sents": 9,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 59,
+       "end": 67,
+       "title": "Okāsa dānakathā"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 43,
+     "layer": "mula",
+     "title": "Okāsa dānakathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 68,
+     "end": 134,
+     "chars": 4907,
+     "sents": 68,
+     "paras": 67,
+     "chapters": [
+      {
+       "start": 68,
+       "end": 135,
+       "title": "Dutiya pārājika sikkhāpucchā"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 43,
+     "layer": "mula",
+     "title": "Dutiya pārājika sikkhāpucchā（68-134）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 135,
+     "end": 135,
+     "chars": 928,
+     "sents": 2,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 68,
+       "end": 135,
+       "title": "Dutiya pārājika sikkhāpucchā"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 43,
+     "layer": "mula",
+     "title": "Dutiya pārājika sikkhāpucchā（135-135）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 136,
+     "end": 202,
+     "chars": 4766,
+     "sents": 67,
+     "paras": 67,
+     "chapters": [
+      {
+       "start": 136,
+       "end": 203,
+       "title": "Tatiya pārājika sikkhāpucchā"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 43,
+     "layer": "mula",
+     "title": "Tatiya pārājika sikkhāpucchā（136-202）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 203,
+     "end": 203,
+     "chars": 914,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 136,
+       "end": 203,
+       "title": "Tatiya pārājika sikkhāpucchā"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 43,
+     "layer": "mula",
+     "title": "Tatiya pārājika sikkhāpucchā（203-203）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 204,
+     "end": 267,
+     "chars": 4921,
+     "sents": 64,
+     "paras": 64,
+     "chapters": [
+      {
+       "start": 204,
+       "end": 269,
+       "title": "Catuttha pārājika sikkhāpucchā"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 43,
+     "layer": "mula",
+     "title": "Catuttha pārājika sikkhāpucchā（204-267）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 268,
+     "end": 269,
+     "chars": 150,
+     "sents": 2,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 204,
+       "end": 269,
+       "title": "Catuttha pārājika sikkhāpucchā"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 43,
+     "layer": "mula",
+     "title": "Catuttha pārājika sikkhāpucchā（268-269）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 270,
+     "end": 321,
+     "chars": 4636,
+     "sents": 53,
+     "paras": 52,
+     "chapters": [
+      {
+       "start": 270,
+       "end": 270,
+       "title": "Saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 271,
+       "end": 321,
+       "title": "1. Sukkavissaṭṭhisaṅghādisesa sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 43,
+     "layer": "mula",
+     "title": "Saṅghādisesa sikkhāpucchā … 1. Sukkavissaṭṭhisaṅghādisesa sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 322,
+     "end": 361,
+     "chars": 3566,
+     "sents": 41,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 322,
+       "end": 328,
+       "title": "6. Kuṭikāra saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 329,
+       "end": 335,
+       "title": "7. Vihārakāra saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 336,
+       "end": 340,
+       "title": "8-9. Duṭṭhadosa saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 341,
+       "end": 346,
+       "title": "10. Saṅghabhedaka saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 347,
+       "end": 351,
+       "title": "11. Bhedānuvattaka sikkhāpucchā"
+      },
+      {
+       "start": 352,
+       "end": 356,
+       "title": "12. Dubbaca, saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 357,
+       "end": 361,
+       "title": "13. Kuladūsaka saṅghādisesa sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 43,
+     "layer": "mula",
+     "title": "6. Kuṭikāra saṅghādisesa sikkhāpucchā … 13. Kuladūsaka saṅghādisesa sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 362,
+     "end": 385,
+     "chars": 2320,
+     "sents": 24,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 362,
+       "end": 374,
+       "title": "Aniyata sikkhāpucchā"
+      },
+      {
+       "start": 375,
+       "end": 375,
+       "title": "Nissaggipācittiya"
+      },
+      {
+       "start": 376,
+       "end": 380,
+       "title": "1. Cīvaravagga 1. paṭhamakathina sikkhāpucchā"
+      },
+      {
+       "start": 381,
+       "end": 385,
+       "title": "1. Cīvaravagga 2. udosita sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 43,
+     "layer": "mula",
+     "title": "Aniyata sikkhāpucchā … 1. Cīvaravagga 2. udosita sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 386,
+     "end": 434,
+     "chars": 4695,
+     "sents": 50,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 386,
+       "end": 414,
+       "title": "1. Cīvaravagga 3. tatiyakathina sikkhāpucchā"
+      },
+      {
+       "start": 415,
+       "end": 419,
+       "title": "1. Cīvaravagga 10. rāja sikkhāpucchā"
+      },
+      {
+       "start": 420,
+       "end": 424,
+       "title": "2. Kosiyavagga, 1. kosiya sikkhāpucchā"
+      },
+      {
+       "start": 425,
+       "end": 429,
+       "title": "2. Kosiyavagga 2. suddhakāḷaka sikkhāpucchā"
+      },
+      {
+       "start": 430,
+       "end": 434,
+       "title": "2. Kosiyavagga 3. dvebhāga sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 43,
+     "layer": "mula",
+     "title": "1. Cīvaravagga 3. tatiyakathina sikkhāpucchā … 2. Kosiyavagga 3. dvebhāga sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 435,
+     "end": 471,
+     "chars": 3653,
+     "sents": 37,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 435,
+       "end": 447,
+       "title": "2. Kosiyavagga 4. chabbassa sikkhāpucchā"
+      },
+      {
+       "start": 448,
+       "end": 452,
+       "title": "2. Kosiyavagga 5. nisīdanasanthata sikkhāpucchā"
+      },
+      {
+       "start": 453,
+       "end": 457,
+       "title": "2. Kosiyavagga 6. eḷakaloma sikkhāpucchā"
+      },
+      {
+       "start": 458,
+       "end": 462,
+       "title": "2. Kosiyavagga 7. eḷakalomadhovāpana sikkhāpucchā"
+      },
+      {
+       "start": 463,
+       "end": 471,
+       "title": "2. Kosiyavagga 8. rūpiya sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 43,
+     "layer": "mula",
+     "title": "2. Kosiyavagga 4. chabbassa sikkhāpucchā … 2. Kosiyavagga 8. rūpiya sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 472,
+     "end": 526,
+     "chars": 4998,
+     "sents": 55,
+     "paras": 55,
+     "chapters": [
+      {
+       "start": 472,
+       "end": 485,
+       "title": "2. Kosiyavagga 9. rūpiyasaṃvohāra sikkhāpucchā"
+      },
+      {
+       "start": 486,
+       "end": 496,
+       "title": "3. Pattavagga, 1. patta sikkhāpucchā"
+      },
+      {
+       "start": 497,
+       "end": 501,
+       "title": "3. Pattavagga 3. bhesajja sikkhāpucchā"
+      },
+      {
+       "start": 502,
+       "end": 506,
+       "title": "3. Pattavagga 4. vassikasāṭika sikkhāpucchā"
+      },
+      {
+       "start": 507,
+       "end": 511,
+       "title": "3. Pattavagga 5. cīvaraacchindana sikkhāpucchā"
+      },
+      {
+       "start": 512,
+       "end": 516,
+       "title": "3. Pattavaggo, 6. suttaviññatti sikkhāpucchā"
+      },
+      {
+       "start": 517,
+       "end": 521,
+       "title": "3. Pattavagga, 7. mahāpesakāra sikkhāpucchā"
+      },
+      {
+       "start": 522,
+       "end": 526,
+       "title": "3. Pattavaggo, 8. accekacīvara sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 43,
+     "layer": "mula",
+     "title": "2. Kosiyavagga 9. rūpiyasaṃvohāra sikkhāpucchā … 3. Pattavaggo, 8. accekacīvara sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 527,
+     "end": 564,
+     "chars": 4883,
+     "sents": 39,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 527,
+       "end": 531,
+       "title": "3. Pattavaggo, 9. sāsaṅka sikkhāpucchā"
+      },
+      {
+       "start": 532,
+       "end": 544,
+       "title": "3. Pattavaggo, 10. pariṇata sikkhāpucchā"
+      },
+      {
+       "start": 545,
+       "end": 546,
+       "title": "Saṃgāyanatthāya ñāpanaṃ"
+      },
+      {
+       "start": 547,
+       "end": 547,
+       "title": "Pācittiyapāḷi"
+      },
+      {
+       "start": 548,
+       "end": 550,
+       "title": "1. Musāvādavagga, 1. musāvāda sikkhāpucchā"
+      },
+      {
+       "start": 551,
+       "end": 553,
+       "title": "1. Musāvādavaggo, 2-3. omasavāda, pesuñña sikkhāpucchā"
+      },
+      {
+       "start": 554,
+       "end": 556,
+       "title": "1. Musāvādavagga, 4. padasodhamma sikkhāpucchā"
+      },
+      {
+       "start": 557,
+       "end": 561,
+       "title": "1. Musāvādavaggo 5. sahaseyya sikkhāpucchā"
+      },
+      {
+       "start": 562,
+       "end": 564,
+       "title": "1. Musāvādavaggo, 6. dutiya sahaseyya sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 43,
+     "layer": "mula",
+     "title": "3. Pattavaggo, 9. sāsaṅka sikkhāpucchā … 1. Musāvādavaggo, 6. dutiya sahaseyya sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 565,
+     "end": 605,
+     "chars": 4969,
+     "sents": 41,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 565,
+       "end": 567,
+       "title": "1. Musāvādavaggo, 7. dhammadesanā sikkhāpucchā"
+      },
+      {
+       "start": 568,
+       "end": 570,
+       "title": "1. Musāvādavaggo, 8. bhūtārocana sikkhāpucchā"
+      },
+      {
+       "start": 571,
+       "end": 573,
+       "title": "1. Musāvādavaggo, 9. duṭṭhullārocana sikkhāpucchā"
+      },
+      {
+       "start": 574,
+       "end": 576,
+       "title": "1. Musāvādavaggo, 10. pathavīkhaṇana sikkhāpucchā"
+      },
+      {
+       "start": 577,
+       "end": 582,
+       "title": "2. Bhūtagāmavaggo, 1. bhūtagāma sikkhāpucchā"
+      },
+      {
+       "start": 583,
+       "end": 585,
+       "title": "2. Bhūtagāmavagga, 3. ujjhāpanaka sikkhāpucchā"
+      },
+      {
+       "start": 586,
+       "end": 588,
+       "title": "2. Bhūtagāmavagga, 4. paṭhama senāsana sikkhāpucchā"
+      },
+      {
+       "start": 589,
+       "end": 597,
+       "title": "2. Bhūtagāmavagga, 5. dutiya senāsana sikkhāpucchā"
+      },
+      {
+       "start": 598,
+       "end": 599,
+       "title": "Saṅghassa ñāpanaṃ"
+      },
+      {
+       "start": 600,
+       "end": 602,
+       "title": "2. Bhūtagāmavagga, 6. anupakhajja sikkhāpucchā"
+      },
+      {
+       "start": 603,
+       "end": 605,
+       "title": "2. Bhūtagāmavagga, 7. nikaḍḍhana sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M16",
+     "book": 43,
+     "layer": "mula",
+     "title": "1. Musāvādavaggo, 7. dhammadesanā sikkhāpucchā … 2. Bhūtagāmavagga, 7. nikaḍḍhana sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 606,
+     "end": 641,
+     "chars": 4764,
+     "sents": 37,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 606,
+       "end": 608,
+       "title": "2. Bhūtagāmavagga, 8. vehāsakuṭi sikkhāpucchā"
+      },
+      {
+       "start": 609,
+       "end": 611,
+       "title": "2. Bhūtagāmavagga, 9. mahallakavihāra sikkhāpucchā"
+      },
+      {
+       "start": 612,
+       "end": 614,
+       "title": "2. Bhūtagāmavagga, 10. sappāṇaka sikkhāpucchā"
+      },
+      {
+       "start": 615,
+       "end": 617,
+       "title": "3. Ovādavagga, 1. ovāda sikkhāpucchā"
+      },
+      {
+       "start": 618,
+       "end": 620,
+       "title": "3. Ovādavagga, 2. atthaṅgata sikkhāpucchā"
+      },
+      {
+       "start": 621,
+       "end": 623,
+       "title": "3. Ovādavagga, 3-4. bhikkhunupassaya, āmisa sikkhāpucchā"
+      },
+      {
+       "start": 624,
+       "end": 626,
+       "title": "3. Ovādavagga, 5. cīvaradāna sikkhāpucchā"
+      },
+      {
+       "start": 627,
+       "end": 629,
+       "title": "3. Ovādavagga, 6. cīvarasibbana sikkhāpucchā"
+      },
+      {
+       "start": 630,
+       "end": 632,
+       "title": "3. Ovādavagga, 7. saṃvidhāna sikkhāpucchā"
+      },
+      {
+       "start": 633,
+       "end": 635,
+       "title": "3. Ovādavagga, 8. nāvābhiruhana sikkhāpucchā"
+      },
+      {
+       "start": 636,
+       "end": 638,
+       "title": "3. Ovādavagga, 9. paripācita sikkhāpucchā"
+      },
+      {
+       "start": 639,
+       "end": 641,
+       "title": "3. Ovādavagga, 10. rahonisajja sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M17",
+     "book": 43,
+     "layer": "mula",
+     "title": "2. Bhūtagāmavagga, 8. vehāsakuṭi sikkhāpucchā … 3. Ovādavagga, 10. rahonisajja sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 642,
+     "end": 683,
+     "chars": 4651,
+     "sents": 42,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 642,
+       "end": 644,
+       "title": "4. Bhojanavagga, 1. āvasathapiṇḍa sikkhāpucchā"
+      },
+      {
+       "start": 645,
+       "end": 647,
+       "title": "4. Bhojanavagga, 2. gaṇabhojana sikkhāpucchā"
+      },
+      {
+       "start": 648,
+       "end": 650,
+       "title": "4. Bhojanavagga 3. paramparabhojana sikkhāpucchā"
+      },
+      {
+       "start": 651,
+       "end": 659,
+       "title": "4. Bhojanavagga, 4. kāṇamātu sikkhāpucchā"
+      },
+      {
+       "start": 660,
+       "end": 662,
+       "title": "4. Bhojanavagga, 5. paṭhamapavāraṇā sikkhāpucchā"
+      },
+      {
+       "start": 663,
+       "end": 665,
+       "title": "4. Bhojanavagga, 6. dutiya pavāraṇā sikkhāpucchā"
+      },
+      {
+       "start": 666,
+       "end": 668,
+       "title": "4. Bhojanavagga, 7. vikālabhojana sikkhāpucchā"
+      },
+      {
+       "start": 669,
+       "end": 671,
+       "title": "4. Bhojanavagga, 8. sannidhikāraka sikkhāpucchā"
+      },
+      {
+       "start": 672,
+       "end": 674,
+       "title": "4. Bhojanavagga, 9. paṇītabhojana sikkhāpucchā"
+      },
+      {
+       "start": 675,
+       "end": 677,
+       "title": "4. Bhojanavagga, 10. dantapona sikkhāpucchā"
+      },
+      {
+       "start": 678,
+       "end": 680,
+       "title": "5. Acelakavagga, 1. acelaka sikkhāpucchā"
+      },
+      {
+       "start": 681,
+       "end": 683,
+       "title": "5. Acelakavagga, 2. uyyojana sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M18",
+     "book": 43,
+     "layer": "mula",
+     "title": "4. Bhojanavagga, 1. āvasathapiṇḍa sikkhāpucchā … 5. Acelakavagga, 2. uyyojana sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 684,
+     "end": 716,
+     "chars": 4092,
+     "sents": 35,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 684,
+       "end": 686,
+       "title": "5. Acelakavagga, 3. sabhojana sikkhāpucchā"
+      },
+      {
+       "start": 687,
+       "end": 689,
+       "title": "5. Acelakavagga 4-5. rahopaṭicchanna, rahonisajja sikkhāpucchā"
+      },
+      {
+       "start": 690,
+       "end": 692,
+       "title": "5. Acelakavagga, 6. cāritta sikkhāpucchā"
+      },
+      {
+       "start": 693,
+       "end": 695,
+       "title": "5. Acelakavagga, 7. mahānāma sikkhāpucchā"
+      },
+      {
+       "start": 696,
+       "end": 698,
+       "title": "5. Acelakavagga 8-9-10. uyyuttasenā caso sikkhāpucchā"
+      },
+      {
+       "start": 699,
+       "end": 701,
+       "title": "6. Surāpānavagga, 1. surāpāna sikkhāpucchā"
+      },
+      {
+       "start": 702,
+       "end": 704,
+       "title": "6. Surāpānavagga, 2. aṅgulipatodaka sikkhāpucchā"
+      },
+      {
+       "start": 705,
+       "end": 707,
+       "title": "6. Surāpānavagga, 3. hasadhamma sikkhāpucchā"
+      },
+      {
+       "start": 708,
+       "end": 710,
+       "title": "6. Surāpānavagga, 4. anādariya sikkhāpucchā"
+      },
+      {
+       "start": 711,
+       "end": 713,
+       "title": "6. Surāpānavagga, 5. bhiṃsāpana sikkhāpucchā"
+      },
+      {
+       "start": 714,
+       "end": 716,
+       "title": "6. Surāpānavagga, 6. jotika sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M19",
+     "book": 43,
+     "layer": "mula",
+     "title": "5. Acelakavagga, 3. sabhojana sikkhāpucchā … 6. Surāpānavagga, 6. jotika sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 717,
+     "end": 757,
+     "chars": 4711,
+     "sents": 41,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 717,
+       "end": 728,
+       "title": "6. Surāpānavagga, 7. nahāna sikkhāpucchā"
+      },
+      {
+       "start": 729,
+       "end": 731,
+       "title": "6. Surāpānavagga, 10. cīvaraapanidhāna sikkhāpucchā"
+      },
+      {
+       "start": 732,
+       "end": 734,
+       "title": "7. Sappāṇakavagga, 1. sañcicca sikkhāpucchā"
+      },
+      {
+       "start": 735,
+       "end": 737,
+       "title": "7. Sappāṇakavagga, 2. sappāṇaka sikkhāpucchā"
+      },
+      {
+       "start": 738,
+       "end": 740,
+       "title": "7. Sappāṇakavagga, 6. theyyasattha sikkhāpucchā"
+      },
+      {
+       "start": 741,
+       "end": 743,
+       "title": "7. Sappāṇakavagga, 7. saṃvidhāna sikkhāpucchā"
+      },
+      {
+       "start": 744,
+       "end": 746,
+       "title": "8. Sahadhammikavagga, 1. sahadhammika sikkhāpucchā"
+      },
+      {
+       "start": 747,
+       "end": 749,
+       "title": "8. Sahadhammikavagga, 2. vilekhana sikkhāpucchā"
+      },
+      {
+       "start": 750,
+       "end": 754,
+       "title": "8. Sahadhammikavagga, 3. mohana sikkhāpucchā"
+      },
+      {
+       "start": 755,
+       "end": 757,
+       "title": "8. Sahadhammikavagga, 7. sañcicca sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M20",
+     "book": 43,
+     "layer": "mula",
+     "title": "6. Surāpānavagga, 7. nahāna sikkhāpucchā … 8. Sahadhammikavagga, 7. sañcicca sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 758,
+     "end": 782,
+     "chars": 3038,
+     "sents": 25,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 758,
+       "end": 760,
+       "title": "8. Sahadhammikavagga, 8. upassuti sikkhāpucchā"
+      },
+      {
+       "start": 761,
+       "end": 763,
+       "title": "8. Sahadhammikavagga, 9. kammapaṭibāhana sikkhāpucchā"
+      },
+      {
+       "start": 764,
+       "end": 766,
+       "title": "8. Sahadhammikavagga 10. chandaṃ adatvāgamana sikkhāpucchā"
+      },
+      {
+       "start": 767,
+       "end": 769,
+       "title": "8. Sahadhammikavagga, 12. pariṇāmana sikkhāpucchā"
+      },
+      {
+       "start": 770,
+       "end": 772,
+       "title": "9. Ratanavagga, 1. antepura sikkhāpucchā"
+      },
+      {
+       "start": 773,
+       "end": 775,
+       "title": "9. Ratanavagga, 2. ratana sikkhāpucchā"
+      },
+      {
+       "start": 776,
+       "end": 778,
+       "title": "9. Ratanavagga, 3. vikālagāmappavisana sikkhāpucchā"
+      },
+      {
+       "start": 779,
+       "end": 779,
+       "title": "Pāṭidesanīya"
+      },
+      {
+       "start": 780,
+       "end": 782,
+       "title": "3. Tatiyapāṭidesanī sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 43,
+     "layer": "mula",
+     "title": "8. Sahadhammikavagga, 8. upassuti sikkhāpucchā … 3. Tatiyapāṭidesanī sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 783,
+     "end": 803,
+     "chars": 4824,
+     "sents": 21,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 783,
+       "end": 816,
+       "title": "Sekhiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M22",
+     "book": 43,
+     "layer": "mula",
+     "title": "Sekhiyakaṇḍa（783-803）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 804,
+     "end": 816,
+     "chars": 4137,
+     "sents": 14,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 783,
+       "end": 816,
+       "title": "Sekhiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M23",
+     "book": 43,
+     "layer": "mula",
+     "title": "Sekhiyakaṇḍa（804-816）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 817,
+     "end": 858,
+     "chars": 4864,
+     "sents": 43,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 817,
+       "end": 817,
+       "title": "Bhikkhunīvibhaṅga"
+      },
+      {
+       "start": 818,
+       "end": 820,
+       "title": "5. Pañcama pārājika sikkhāpucchā"
+      },
+      {
+       "start": 821,
+       "end": 837,
+       "title": "Bhikkhunīvibhaṅga, saṅghādisesa sikkhāpucchā"
+      },
+      {
+       "start": 838,
+       "end": 838,
+       "title": "Bhikkhunī vibhaṅgapācittiya"
+      },
+      {
+       "start": 839,
+       "end": 841,
+       "title": "1. Lasuṇavagga, 1. paṭhama sikkhāpucchā"
+      },
+      {
+       "start": 842,
+       "end": 844,
+       "title": "1. Lasuṇavagga, 6. chaṭṭha sikkhāpucchā"
+      },
+      {
+       "start": 845,
+       "end": 847,
+       "title": "1. Lasuṇavagga, 8. aṭṭhama sikkhāpucchā"
+      },
+      {
+       "start": 848,
+       "end": 852,
+       "title": "1. Lasuṇavagga, 10. dasama sikkhāpucchā"
+      },
+      {
+       "start": 853,
+       "end": 855,
+       "title": "1. Paṭhama sikkhāpucchā"
+      },
+      {
+       "start": 856,
+       "end": 858,
+       "title": "2. Andhakāravagga, 2-3. dutiya, tatiya sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M24",
+     "book": 43,
+     "layer": "mula",
+     "title": "Bhikkhunīvibhaṅga … 2. Andhakāravagga, 2-3. dutiya, tatiya sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 859,
+     "end": 894,
+     "chars": 4540,
+     "sents": 38,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 859,
+       "end": 861,
+       "title": "2. Andhakāravagga, 8. aṭṭhama sikkhāpucchā"
+      },
+      {
+       "start": 862,
+       "end": 864,
+       "title": "2. Andhakāravagga, 9. navama sikkhāpucchā"
+      },
+      {
+       "start": 865,
+       "end": 867,
+       "title": "2. Andhakāravagga, 10. dasama sikkhāpucchā"
+      },
+      {
+       "start": 868,
+       "end": 870,
+       "title": "3. Naggavagga, 3. tatiya sikkhāpucchā"
+      },
+      {
+       "start": 871,
+       "end": 873,
+       "title": "3. Naggavagga, 8. aṭṭhama sikkhāpucchā"
+      },
+      {
+       "start": 874,
+       "end": 876,
+       "title": "4. Tuvaṭṭavagga, 1-2. paṭhama, dutiya sikkhāpucchā"
+      },
+      {
+       "start": 877,
+       "end": 879,
+       "title": "4. Tuvaṭṭavagga, 3. tatiya sikkhāpucchā"
+      },
+      {
+       "start": 880,
+       "end": 882,
+       "title": "4. Tuvaṭṭavagga, 4. catuttha sikkhāpucchā"
+      },
+      {
+       "start": 883,
+       "end": 885,
+       "title": "4. Tuvaṭṭavagga, 5. pañcama sikkhāpucchā"
+      },
+      {
+       "start": 886,
+       "end": 888,
+       "title": "4. Tuvaṭṭavagga, 6. chaṭṭha sikkhāpucchā"
+      },
+      {
+       "start": 889,
+       "end": 891,
+       "title": "4. Tuvaṭṭavagga, 7-8. sattama aṭṭhama sikkhāpucchā"
+      },
+      {
+       "start": 892,
+       "end": 894,
+       "title": "4. Tuvaṭṭavagga, 9. navama sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M25",
+     "book": 43,
+     "layer": "mula",
+     "title": "2. Andhakāravagga, 8. aṭṭhama sikkhāpucchā … 4. Tuvaṭṭavagga, 9. navama sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 895,
+     "end": 940,
+     "chars": 4869,
+     "sents": 47,
+     "paras": 46,
+     "chapters": [
+      {
+       "start": 895,
+       "end": 902,
+       "title": "4. Tuvaṭṭavagga, 10. dasama sikkhāpucchā"
+      },
+      {
+       "start": 903,
+       "end": 905,
+       "title": "5. Cittāgāravagga, 1. paṭhama sikkhāpucchā"
+      },
+      {
+       "start": 906,
+       "end": 908,
+       "title": "5. Cittāgāravagga, 4. catuttha sikkhāpucchā"
+      },
+      {
+       "start": 909,
+       "end": 911,
+       "title": "5. Cittāgāravagga, 6. chaṭṭha sikkhāpucchā"
+      },
+      {
+       "start": 912,
+       "end": 916,
+       "title": "5. Cittāgāravagga, 9-10. navama, dasama sikkhāpucchā"
+      },
+      {
+       "start": 917,
+       "end": 919,
+       "title": "6. Ārāmavagga, 1. paṭhama sikkhāpucchā"
+      },
+      {
+       "start": 920,
+       "end": 922,
+       "title": "6. Ārāmavagga, 2. dutiya sikkhāpucchā"
+      },
+      {
+       "start": 923,
+       "end": 925,
+       "title": "6. Ārāmavagga, 3. tatiya sikkhāpucchā"
+      },
+      {
+       "start": 926,
+       "end": 928,
+       "title": "6. Ārāmavagga, 5. pañcama sikkhāpucchā"
+      },
+      {
+       "start": 929,
+       "end": 931,
+       "title": "6. Ārāmavagga, 6. chaṭṭha sikkhāpucchā"
+      },
+      {
+       "start": 932,
+       "end": 934,
+       "title": "6. Ārāmavagga, 7. sattama sikkhāpucchā"
+      },
+      {
+       "start": 935,
+       "end": 937,
+       "title": "6. Ārāmavagga, 8. aṭṭhama sikkhāpucchā"
+      },
+      {
+       "start": 938,
+       "end": 940,
+       "title": "6. Ārāmavagga, 9. navama sikkhāpucchā"
+      }
+     ],
+     "split": false,
+     "id": "M26",
+     "book": 43,
+     "layer": "mula",
+     "title": "4. Tuvaṭṭavagga, 10. dasama sikkhāpucchā … 6. Ārāmavagga, 9. navama sikkhāpucchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 941,
+     "end": 987,
+     "chars": 4790,
+     "sents": 49,
+     "paras": 47,
+     "chapters": [
+      {
+       "start": 941,
+       "end": 943,
+       "title": "7. Gabbhinīvagga, 1-2. paṭhama, dutiya sikkhāpucchā"
+      },
+      {
+       "start": 944,
+       "end": 946,
+       "title": "7. Gabbhinīvagga, 3. tatiya sikkhāpucchā"
+      },
+      {
+       "start": 947,
+       "end": 949,
+       "title": "8. Kumārībhūtavagga, 9. navama sikkhāpucchā"
+      },
+      {
+       "start": 950,
+       "end": 952,
+       "title": "8. Kumārībhūtavagga, 10. dasama sikkhāpucchā"
+      },
+      {
+       "start": 953,
+       "end": 955,
+       "title": "9. Chattupāhanavagga, 1-2. paṭhama, dutiya sikkhāpucchā"
+      },
+      {
+       "start": 956,
+       "end": 960,
+       "title": "9. Chattupāhanavagga, 4. catuttha sikkhāpucchā"
+      },
+      {
+       "start": 961,
+       "end": 963,
+       "title": "9. Chattupāhanavagga, 5. pañcama sikkhāpucchā"
+      },
+      {
+       "start": 964,
+       "end": 966,
+       "title": "9. Chattupāhanavagga, 11. ekādasama sikkhāpucchā"
+      },
+      {
+       "start": 967,
+       "end": 986,
+       "title": "9. Chattupāhanavagga, 12. dvādasama sikkhāpucchā"
+      },
+      {
+       "start": 987,
+       "end": 987,
+       "title": "Mahāvaggapāḷi"
+      }
+     ],
+     "split": false,
+     "id": "M27",
+     "book": 43,
+     "layer": "mula",
+     "title": "7. Gabbhinīvagga, 1-2. paṭhama, dutiya sikkhāpucchā … Mahāvaggapāḷi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 988,
+     "end": 1042,
+     "chars": 4558,
+     "sents": 55,
+     "paras": 55,
+     "chapters": [
+      {
+       "start": 988,
+       "end": 996,
+       "title": "Saṃgāyanassa pucchā vissajjanā"
+      },
+      {
+       "start": 997,
+       "end": 997,
+       "title": "Mahākhandhaka"
+      },
+      {
+       "start": 998,
+       "end": 1002,
+       "title": "Mahābodhipucchā"
+      },
+      {
+       "start": 1003,
+       "end": 1005,
+       "title": "Ajapāla"
+      },
+      {
+       "start": 1006,
+       "end": 1016,
+       "title": "Mucalindā"
+      },
+      {
+       "start": 1017,
+       "end": 1042,
+       "title": "Sahampati brahmā"
+      }
+     ],
+     "split": false,
+     "id": "M28",
+     "book": 43,
+     "layer": "mula",
+     "title": "Saṃgāyanassa pucchā vissajjanā … Sahampati brahmā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1043,
+     "end": 1092,
+     "chars": 4961,
+     "sents": 50,
+     "paras": 50,
+     "chapters": [
+      {
+       "start": 1043,
+       "end": 1120,
+       "title": "Saraṇagamana"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 43,
+     "layer": "mula",
+     "title": "Saraṇagamana（1043-1092）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1093,
+     "end": 1120,
+     "chars": 4143,
+     "sents": 30,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1043,
+       "end": 1120,
+       "title": "Saraṇagamana"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 43,
+     "layer": "mula",
+     "title": "Saraṇagamana（1093-1120）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1121,
+     "end": 1135,
+     "chars": 2121,
+     "sents": 18,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 1121,
+       "end": 1135,
+       "title": "2. Uposathakkhandhaka"
+      }
+     ],
+     "split": false,
+     "id": "M31",
+     "book": 43,
+     "layer": "mula",
+     "title": "2. Uposathakkhandhaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1136,
+     "end": 1172,
+     "chars": 4701,
+     "sents": 41,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 1136,
+       "end": 1159,
+       "title": "3. Vassupanāyikakkhandhaka"
+      },
+      {
+       "start": 1160,
+       "end": 1171,
+       "title": "4. Pavāraṇākkhandhaka"
+      },
+      {
+       "start": 1172,
+       "end": 1172,
+       "title": "5. Cammakkhandhaka"
+      }
+     ],
+     "split": false,
+     "id": "M32",
+     "book": 43,
+     "layer": "mula",
+     "title": "3. Vassupanāyikakkhandhaka … 5. Cammakkhandhaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1173,
+     "end": 1200,
+     "chars": 4971,
+     "sents": 30,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1173,
+       "end": 1193,
+       "title": "Soṇamathera vatthu"
+      },
+      {
+       "start": 1194,
+       "end": 1200,
+       "title": "6. Bhesajjakkhandhaka"
+      }
+     ],
+     "split": false,
+     "id": "M33",
+     "book": 43,
+     "layer": "mula",
+     "title": "Soṇamathera vatthu … 6. Bhesajjakkhandhaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1201,
+     "end": 1233,
+     "chars": 4951,
+     "sents": 38,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 1201,
+       "end": 1217,
+       "title": "Suppiyā vatthu"
+      },
+      {
+       "start": 1218,
+       "end": 1220,
+       "title": "Keṇiya vatthu"
+      },
+      {
+       "start": 1221,
+       "end": 1233,
+       "title": "Rojamallā vatthu"
+      }
+     ],
+     "split": false,
+     "id": "M34",
+     "book": 43,
+     "layer": "mula",
+     "title": "Suppiyā vatthu … Rojamallā vatthu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1234,
+     "end": 1267,
+     "chars": 4932,
+     "sents": 38,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 1234,
+       "end": 1238,
+       "title": "7. Kathinakkhandhaka"
+      },
+      {
+       "start": 1239,
+       "end": 1239,
+       "title": "8. Cīvarakkhandhaka"
+      },
+      {
+       "start": 1240,
+       "end": 1267,
+       "title": "Jīvakavatthu"
+      }
+     ],
+     "split": false,
+     "id": "M35",
+     "book": 43,
+     "layer": "mula",
+     "title": "7. Kathinakkhandhaka … Jīvakavatthu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1268,
+     "end": 1280,
+     "chars": 2322,
+     "sents": 19,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 1268,
+       "end": 1272,
+       "title": "6. Campeyyakkhandhaka"
+      },
+      {
+       "start": 1273,
+       "end": 1279,
+       "title": "10. Kosambakakkhandhaka"
+      },
+      {
+       "start": 1280,
+       "end": 1280,
+       "title": "Cūḷavaggapāḷi"
+      }
+     ],
+     "split": false,
+     "id": "M36",
+     "book": 43,
+     "layer": "mula",
+     "title": "6. Campeyyakkhandhaka … Cūḷavaggapāḷi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1281,
+     "end": 1304,
+     "chars": 4949,
+     "sents": 25,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1281,
+       "end": 1310,
+       "title": "1. Kambakkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M37",
+     "book": 43,
+     "layer": "mula",
+     "title": "1. Kambakkhandhaka（1281-1304）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1305,
+     "end": 1310,
+     "chars": 953,
+     "sents": 8,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 1281,
+       "end": 1310,
+       "title": "1. Kambakkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 43,
+     "layer": "mula",
+     "title": "1. Kambakkhandhaka（1305-1310）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1311,
+     "end": 1320,
+     "chars": 922,
+     "sents": 14,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 1311,
+       "end": 1317,
+       "title": "2. Pārivāsikakkhandhaka"
+      },
+      {
+       "start": 1318,
+       "end": 1320,
+       "title": "3. Samuccayakkhandhaka"
+      }
+     ],
+     "split": false,
+     "id": "M39",
+     "book": 43,
+     "layer": "mula",
+     "title": "2. Pārivāsikakkhandhaka … 3. Samuccayakkhandhaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1321,
+     "end": 1344,
+     "chars": 4798,
+     "sents": 33,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1321,
+       "end": 1365,
+       "title": "4. Samathakkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M40",
+     "book": 43,
+     "layer": "mula",
+     "title": "4. Samathakkhandhaka（1321-1344）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1345,
+     "end": 1365,
+     "chars": 3162,
+     "sents": 25,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1321,
+       "end": 1365,
+       "title": "4. Samathakkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 43,
+     "layer": "mula",
+     "title": "4. Samathakkhandhaka（1345-1365）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1366,
+     "end": 1394,
+     "chars": 4837,
+     "sents": 29,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 1366,
+       "end": 1436,
+       "title": "5. Khuddakavatthukkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 43,
+     "layer": "mula",
+     "title": "5. Khuddakavatthukkhandhaka（1366-1394）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1395,
+     "end": 1423,
+     "chars": 4891,
+     "sents": 30,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 1366,
+       "end": 1436,
+       "title": "5. Khuddakavatthukkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M43",
+     "book": 43,
+     "layer": "mula",
+     "title": "5. Khuddakavatthukkhandhaka（1395-1423）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1424,
+     "end": 1436,
+     "chars": 2226,
+     "sents": 13,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 1366,
+       "end": 1436,
+       "title": "5. Khuddakavatthukkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M44",
+     "book": 43,
+     "layer": "mula",
+     "title": "5. Khuddakavatthukkhandhaka（1424-1436）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1437,
+     "end": 1439,
+     "chars": 223,
+     "sents": 5,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 1437,
+       "end": 1439,
+       "title": "Khuddakavatthukkhandhaka"
+      }
+     ],
+     "split": false,
+     "id": "M45",
+     "book": 43,
+     "layer": "mula",
+     "title": "Khuddakavatthukkhandhaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1440,
+     "end": 1467,
+     "chars": 4856,
+     "sents": 29,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1440,
+       "end": 1470,
+       "title": "6. Senāsanakkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M46",
+     "book": 43,
+     "layer": "mula",
+     "title": "6. Senāsanakkhandhaka（1440-1467）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1468,
+     "end": 1470,
+     "chars": 416,
+     "sents": 5,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 1440,
+       "end": 1470,
+       "title": "6. Senāsanakkhandhaka"
+      }
+     ],
+     "split": true,
+     "id": "M47",
+     "book": 43,
+     "layer": "mula",
+     "title": "6. Senāsanakkhandhaka（1468-1470）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1471,
+     "end": 1479,
+     "chars": 1277,
+     "sents": 10,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 1471,
+       "end": 1473,
+       "title": "7. Saṅghatedakakkhandhaka"
+      },
+      {
+       "start": 1474,
+       "end": 1476,
+       "title": "Pakāsanīya"
+      },
+      {
+       "start": 1477,
+       "end": 1479,
+       "title": "Pakāsanīya"
+      }
+     ],
+     "split": false,
+     "id": "M48",
+     "book": 43,
+     "layer": "mula",
+     "title": "7. Saṅghatedakakkhandhaka … Pakāsanīya",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1480,
+     "end": 1506,
+     "chars": 4349,
+     "sents": 33,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 1480,
+       "end": 1506,
+       "title": "Devadatta"
+      }
+     ],
+     "split": false,
+     "id": "M49",
+     "book": 43,
+     "layer": "mula",
+     "title": "Devadatta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1507,
+     "end": 1527,
+     "chars": 4237,
+     "sents": 25,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1507,
+       "end": 1522,
+       "title": "8. Vattakkhandhaka"
+      },
+      {
+       "start": 1523,
+       "end": 1527,
+       "title": "9. Pātimokkhaṭṭhapanakkhandhaka"
+      }
+     ],
+     "split": false,
+     "id": "M50",
+     "book": 43,
+     "layer": "mula",
+     "title": "8. Vattakkhandhaka … 9. Pātimokkhaṭṭhapanakkhandhaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1528,
+     "end": 1554,
+     "chars": 2367,
+     "sents": 33,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 1528,
+       "end": 1536,
+       "title": "10. Bhikkhunikkhandhaka"
+      },
+      {
+       "start": 1537,
+       "end": 1537,
+       "title": "11. Pañcasatikakkhandhaka"
+      },
+      {
+       "start": 1538,
+       "end": 1540,
+       "title": "Paṭhama saṃgāyanā"
+      },
+      {
+       "start": 1541,
+       "end": 1541,
+       "title": "12. Sattasatikakkhandhaka"
+      },
+      {
+       "start": 1542,
+       "end": 1554,
+       "title": "Dutiya saṃgāyanā"
+      }
+     ],
+     "split": false,
+     "id": "M51",
+     "book": 43,
+     "layer": "mula",
+     "title": "10. Bhikkhunikkhandhaka … Dutiya saṃgāyanā",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1553,
+   "chars": 186846,
+   "sents": 1638,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 43,
+   "layer": "mula",
+   "start": 2,
+   "end": 1554,
+   "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 2,
+   "end": 58,
+   "chars": 4256,
+   "sents": 57,
+   "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka … Paṭhama pārājika sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:04:18",
+   "ended": "2026-11-24 11:04:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 59,
+   "end": 67,
+   "chars": 881,
+   "sents": 9,
+   "title": "Okāsa dānakathā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:04:28",
+   "ended": "2026-11-24 11:04:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 68,
+   "end": 134,
+   "chars": 4907,
+   "sents": 68,
+   "title": "Dutiya pārājika sikkhāpucchā（68-134）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:04:38",
+   "ended": "2026-11-24 11:05:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 135,
+   "end": 135,
+   "chars": 928,
+   "sents": 2,
+   "title": "Dutiya pārājika sikkhāpucchā（135-135）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:04:54",
+   "ended": "2026-11-24 11:05:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 136,
+   "end": 202,
+   "chars": 4766,
+   "sents": 67,
+   "title": "Tatiya pārājika sikkhāpucchā（136-202）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:05:04",
+   "ended": "2026-11-24 11:06:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 203,
+   "end": 203,
+   "chars": 914,
+   "sents": 1,
+   "title": "Tatiya pārājika sikkhāpucchā（203-203）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:05:19",
+   "ended": "2026-11-24 11:05:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 204,
+   "end": 267,
+   "chars": 4921,
+   "sents": 64,
+   "title": "Catuttha pārājika sikkhāpucchā（204-267）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:05:39",
+   "ended": "2026-11-24 11:06:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 268,
+   "end": 269,
+   "chars": 150,
+   "sents": 2,
+   "title": "Catuttha pārājika sikkhāpucchā（268-269）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:05:49",
+   "ended": "2026-11-24 11:06:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 270,
+   "end": 321,
+   "chars": 4636,
+   "sents": 53,
+   "title": "Saṅghādisesa sikkhāpucchā … 1. Sukkavissaṭṭhisaṅghādisesa sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:06:05",
+   "ended": "2026-11-24 11:06:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 322,
+   "end": 361,
+   "chars": 3566,
+   "sents": 41,
+   "title": "6. Kuṭikāra saṅghādisesa sikkhāpucchā … 13. Kuladūsaka saṅghādisesa sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:06:25",
+   "ended": "2026-11-24 11:07:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 362,
+   "end": 385,
+   "chars": 2320,
+   "sents": 24,
+   "title": "Aniyata sikkhāpucchā … 1. Cīvaravagga 2. udosita sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:06:35",
+   "ended": "2026-11-24 11:07:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 386,
+   "end": 434,
+   "chars": 4695,
+   "sents": 50,
+   "title": "1. Cīvaravagga 3. tatiyakathina sikkhāpucchā … 2. Kosiyavagga 3. dvebhāga sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:06:50",
+   "ended": "2026-11-24 11:07:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 435,
+   "end": 471,
+   "chars": 3653,
+   "sents": 37,
+   "title": "2. Kosiyavagga 4. chabbassa sikkhāpucchā … 2. Kosiyavagga 8. rūpiya sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:07:06",
+   "ended": "2026-11-24 11:07:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 472,
+   "end": 526,
+   "chars": 4998,
+   "sents": 55,
+   "title": "2. Kosiyavagga 9. rūpiyasaṃvohāra sikkhāpucchā … 3. Pattavaggo, 8. accekacīvara sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 11:12:39",
+   "ended": "2026-11-24 11:13:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 527,
+   "end": 564,
+   "chars": 4883,
+   "sents": 39,
+   "title": "3. Pattavaggo, 9. sāsaṅka sikkhāpucchā … 1. Musāvādavaggo, 6. dutiya sahaseyya sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 11:12:49",
+   "ended": "2026-11-24 11:13:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 565,
+   "end": 605,
+   "chars": 4969,
+   "sents": 41,
+   "title": "1. Musāvādavaggo, 7. dhammadesanā sikkhāpucchā … 2. Bhūtagāmavagga, 7. nikaḍḍhana sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:12:59",
+   "ended": "2026-11-24 11:13:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 606,
+   "end": 641,
+   "chars": 4764,
+   "sents": 37,
+   "title": "2. Bhūtagāmavagga, 8. vehāsakuṭi sikkhāpucchā … 3. Ovādavagga, 10. rahonisajja sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:13:14",
+   "ended": "2026-11-24 11:13:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 642,
+   "end": 683,
+   "chars": 4651,
+   "sents": 42,
+   "title": "4. Bhojanavagga, 1. āvasathapiṇḍa sikkhāpucchā … 5. Acelakavagga, 2. uyyojana sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:13:24",
+   "ended": "2026-11-24 11:14:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 684,
+   "end": 716,
+   "chars": 4092,
+   "sents": 35,
+   "title": "5. Acelakavagga, 3. sabhojana sikkhāpucchā … 6. Surāpānavagga, 6. jotika sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:13:39",
+   "ended": "2026-11-24 11:14:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 717,
+   "end": 757,
+   "chars": 4711,
+   "sents": 41,
+   "title": "6. Surāpānavagga, 7. nahāna sikkhāpucchā … 8. Sahadhammikavagga, 7. sañcicca sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:13:49",
+   "ended": "2026-11-24 11:14:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 758,
+   "end": 782,
+   "chars": 3038,
+   "sents": 25,
+   "title": "8. Sahadhammikavagga, 8. upassuti sikkhāpucchā … 3. Tatiyapāṭidesanī sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:05",
+   "ended": "2026-11-24 11:14:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 783,
+   "end": 803,
+   "chars": 4824,
+   "sents": 21,
+   "title": "Sekhiyakaṇḍa（783-803）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:15",
+   "ended": "2026-11-24 11:14:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 804,
+   "end": 816,
+   "chars": 4137,
+   "sents": 14,
+   "title": "Sekhiyakaṇḍa（804-816）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:30",
+   "ended": "2026-11-24 11:14:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 817,
+   "end": 858,
+   "chars": 4864,
+   "sents": 43,
+   "title": "Bhikkhunīvibhaṅga … 2. Andhakāravagga, 2-3. dutiya, tatiya sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:40",
+   "ended": "2026-11-24 11:15:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 859,
+   "end": 894,
+   "chars": 4540,
+   "sents": 38,
+   "title": "2. Andhakāravagga, 8. aṭṭhama sikkhāpucchā … 4. Tuvaṭṭavagga, 9. navama sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:56",
+   "ended": "2026-11-24 11:15:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 895,
+   "end": 940,
+   "chars": 4869,
+   "sents": 47,
+   "title": "4. Tuvaṭṭavagga, 10. dasama sikkhāpucchā … 6. Ārāmavagga, 9. navama sikkhāpucchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:15:06",
+   "ended": "2026-11-24 11:15:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 941,
+   "end": 987,
+   "chars": 4790,
+   "sents": 49,
+   "title": "7. Gabbhinīvagga, 1-2. paṭhama, dutiya sikkhāpucchā … Mahāvaggapāḷi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:15:21",
+   "ended": "2026-11-24 11:16:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 988,
+   "end": 1042,
+   "chars": 4558,
+   "sents": 55,
+   "title": "Saṃgāyanassa pucchā vissajjanā … Sahampati brahmā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:15:37",
+   "ended": "2026-11-24 11:16:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1043,
+   "end": 1092,
+   "chars": 4961,
+   "sents": 50,
+   "title": "Saraṇagamana（1043-1092）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:15:47",
+   "ended": "2026-11-24 11:16:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1093,
+   "end": 1120,
+   "chars": 4143,
+   "sents": 30,
+   "title": "Saraṇagamana（1093-1120）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:16:02",
+   "ended": "2026-11-24 11:16:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1121,
+   "end": 1135,
+   "chars": 2121,
+   "sents": 18,
+   "title": "2. Uposathakkhandhaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:16:18",
+   "ended": "2026-11-24 11:16:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1136,
+   "end": 1172,
+   "chars": 4701,
+   "sents": 41,
+   "title": "3. Vassupanāyikakkhandhaka … 5. Cammakkhandhaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:16:33",
+   "ended": "2026-11-24 11:17:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1173,
+   "end": 1200,
+   "chars": 4971,
+   "sents": 30,
+   "title": "Soṇamathera vatthu … 6. Bhesajjakkhandhaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:16:43",
+   "ended": "2026-11-24 11:17:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1201,
+   "end": 1233,
+   "chars": 4951,
+   "sents": 38,
+   "title": "Suppiyā vatthu … Rojamallā vatthu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:16:53",
+   "ended": "2026-11-24 11:17:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1234,
+   "end": 1267,
+   "chars": 4932,
+   "sents": 38,
+   "title": "7. Kathinakkhandhaka … Jīvakavatthu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:17:08",
+   "ended": "2026-11-24 11:17:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1268,
+   "end": 1280,
+   "chars": 2322,
+   "sents": 19,
+   "title": "6. Campeyyakkhandhaka … Cūḷavaggapāḷi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:17:24",
+   "ended": "2026-11-24 11:18:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1281,
+   "end": 1304,
+   "chars": 4949,
+   "sents": 25,
+   "title": "1. Kambakkhandhaka（1281-1304）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:17:39",
+   "ended": "2026-11-24 11:18:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1305,
+   "end": 1310,
+   "chars": 953,
+   "sents": 8,
+   "title": "1. Kambakkhandhaka（1305-1310）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:17:49",
+   "ended": "2026-11-24 11:18:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1311,
+   "end": 1320,
+   "chars": 922,
+   "sents": 14,
+   "title": "2. Pārivāsikakkhandhaka … 3. Samuccayakkhandhaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:18:05",
+   "ended": "2026-11-24 11:18:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1321,
+   "end": 1344,
+   "chars": 4798,
+   "sents": 33,
+   "title": "4. Samathakkhandhaka（1321-1344）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:18:15",
+   "ended": "2026-11-24 11:18:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1345,
+   "end": 1365,
+   "chars": 3162,
+   "sents": 25,
+   "title": "4. Samathakkhandhaka（1345-1365）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:18:25",
+   "ended": "2026-11-24 11:19:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1366,
+   "end": 1394,
+   "chars": 4837,
+   "sents": 29,
+   "title": "5. Khuddakavatthukkhandhaka（1366-1394）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:18:40",
+   "ended": "2026-11-24 11:22:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1395,
+   "end": 1423,
+   "chars": 4891,
+   "sents": 30,
+   "title": "5. Khuddakavatthukkhandhaka（1395-1423）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:18:55",
+   "ended": "2026-11-24 11:21:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1424,
+   "end": 1436,
+   "chars": 2226,
+   "sents": 13,
+   "title": "5. Khuddakavatthukkhandhaka（1424-1436）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:19:11",
+   "ended": "2026-11-24 11:20:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1437,
+   "end": 1439,
+   "chars": 223,
+   "sents": 5,
+   "title": "Khuddakavatthukkhandhaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:20:26",
+   "ended": "2026-11-24 11:20:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1440,
+   "end": 1467,
+   "chars": 4856,
+   "sents": 29,
+   "title": "6. Senāsanakkhandhaka（1440-1467）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:20:56",
+   "ended": "2026-11-24 11:23:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1468,
+   "end": 1470,
+   "chars": 416,
+   "sents": 5,
+   "title": "6. Senāsanakkhandhaka（1468-1470）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:21:12",
+   "ended": "2026-11-24 11:21:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1471,
+   "end": 1479,
+   "chars": 1277,
+   "sents": 10,
+   "title": "7. Saṅghatedakakkhandhaka … Pakāsanīya",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:21:57",
+   "ended": "2026-11-24 11:23:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1480,
+   "end": 1506,
+   "chars": 4349,
+   "sents": 33,
+   "title": "Devadatta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:22:12",
+   "ended": "2026-11-24 11:23:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1507,
+   "end": 1527,
+   "chars": 4237,
+   "sents": 25,
+   "title": "8. Vattakkhandhaka … 9. Pātimokkhaṭṭhapanakkhandhaka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:23:18",
+   "ended": "2026-11-24 11:26:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 43,
+   "start": 1528,
+   "end": 1554,
+   "chars": 2367,
+   "sents": 33,
+   "title": "10. Bhikkhunikkhandhaka … Dutiya saṃgāyanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:23:33",
+   "ended": "2026-11-24 11:25:39",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 22
+}

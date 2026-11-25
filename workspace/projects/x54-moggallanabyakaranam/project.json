@@ -1,0 +1,2618 @@
+{
+ "schema": 3,
+ "name": "x54-moggallanabyakaranam",
+ "title": "Moggallānabyākaraṇaṃ 汉译（藏外·仅本文）",
+ "created": "2026-11-24 11:28:02",
+ "updated": "2026-11-25 14:41:32",
+ "book": 13,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "13": {
+   "layer": "mula",
+   "title": "Moggallānabyākaraṇaṃ"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 13,
+   "title": "Moggallānabyākaraṇaṃ",
+   "start": 1105,
+   "end": 3262,
+   "fam": "x54-moggallanabyakaranam",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1105,
+     "end": 1105,
+     "chars": 20,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 1105,
+       "end": 1105,
+       "title": "Moggallānabyākaraṇaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 13,
+     "layer": "mula",
+     "title": "Moggallānabyākaraṇaṃ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1106,
+     "end": 1150,
+     "chars": 2904,
+     "sents": 80,
+     "paras": 45,
+     "chapters": [
+      {
+       "start": 1106,
+       "end": 1235,
+       "title": "1. Paṭhamo saññādikaṇḍo"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 13,
+     "layer": "mula",
+     "title": "1. Paṭhamo saññādikaṇḍo（1106-1150）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1151,
+     "end": 1189,
+     "chars": 2780,
+     "sents": 80,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 1106,
+       "end": 1235,
+       "title": "1. Paṭhamo saññādikaṇḍo"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 13,
+     "layer": "mula",
+     "title": "1. Paṭhamo saññādikaṇḍo（1151-1189）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1190,
+     "end": 1226,
+     "chars": 3302,
+     "sents": 77,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 1106,
+       "end": 1235,
+       "title": "1. Paṭhamo saññādikaṇḍo"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 13,
+     "layer": "mula",
+     "title": "1. Paṭhamo saññādikaṇḍo（1190-1226）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1227,
+     "end": 1235,
+     "chars": 654,
+     "sents": 15,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 1106,
+       "end": 1235,
+       "title": "1. Paṭhamo saññādikaṇḍo"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 13,
+     "layer": "mula",
+     "title": "1. Paṭhamo saññādikaṇḍo（1227-1235）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1236,
+     "end": 1261,
+     "chars": 4785,
+     "sents": 65,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1236-1261）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1262,
+     "end": 1301,
+     "chars": 4693,
+     "sents": 65,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1262-1301）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1302,
+     "end": 1333,
+     "chars": 4951,
+     "sents": 73,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1302-1333）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1334,
+     "end": 1384,
+     "chars": 4329,
+     "sents": 79,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1334-1384）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1385,
+     "end": 1423,
+     "chars": 2467,
+     "sents": 80,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1385-1423）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1424,
+     "end": 1467,
+     "chars": 2958,
+     "sents": 80,
+     "paras": 44,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1424-1467）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1468,
+     "end": 1522,
+     "chars": 3411,
+     "sents": 80,
+     "paras": 55,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1468-1522）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1523,
+     "end": 1588,
+     "chars": 4213,
+     "sents": 80,
+     "paras": 66,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1523-1588）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1589,
+     "end": 1655,
+     "chars": 3576,
+     "sents": 80,
+     "paras": 67,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1589-1655）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1656,
+     "end": 1719,
+     "chars": 4157,
+     "sents": 80,
+     "paras": 64,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1656-1719）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1720,
+     "end": 1737,
+     "chars": 2798,
+     "sents": 35,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 1236,
+       "end": 1737,
+       "title": "2. Dutiyo kaṇḍo (syādi)"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 13,
+     "layer": "mula",
+     "title": "2. Dutiyo kaṇḍo (syādi)（1720-1737）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1738,
+     "end": 1765,
+     "chars": 4788,
+     "sents": 48,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1738-1765）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1766,
+     "end": 1790,
+     "chars": 4754,
+     "sents": 51,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1766-1790）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1791,
+     "end": 1819,
+     "chars": 4983,
+     "sents": 69,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1791-1819）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1820,
+     "end": 1865,
+     "chars": 3606,
+     "sents": 80,
+     "paras": 46,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1820-1865）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1866,
+     "end": 1909,
+     "chars": 3127,
+     "sents": 80,
+     "paras": 44,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M21",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1866-1909）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1910,
+     "end": 1958,
+     "chars": 3371,
+     "sents": 80,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M22",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1910-1958）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1959,
+     "end": 1972,
+     "chars": 928,
+     "sents": 21,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 1738,
+       "end": 1972,
+       "title": "(3) Tatiyo kaṇḍo (samāso)"
+      }
+     ],
+     "split": true,
+     "id": "M23",
+     "book": 13,
+     "layer": "mula",
+     "title": "(3) Tatiyo kaṇḍo (samāso)（1959-1972）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1973,
+     "end": 2028,
+     "chars": 4854,
+     "sents": 77,
+     "paras": 56,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M24",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（1973-2028）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2029,
+     "end": 2070,
+     "chars": 4961,
+     "sents": 73,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M25",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（2029-2070）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2071,
+     "end": 2106,
+     "chars": 4926,
+     "sents": 72,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M26",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（2071-2106）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2107,
+     "end": 2147,
+     "chars": 3859,
+     "sents": 80,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M27",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（2107-2147）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2148,
+     "end": 2185,
+     "chars": 2961,
+     "sents": 80,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M28",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（2148-2185）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2186,
+     "end": 2226,
+     "chars": 3218,
+     "sents": 80,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（2186-2226）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2227,
+     "end": 2249,
+     "chars": 1347,
+     "sents": 35,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 1973,
+       "end": 2249,
+       "title": "4. Catuttho kaṇḍo (ṇādi)"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 13,
+     "layer": "mula",
+     "title": "4. Catuttho kaṇḍo (ṇādi)（2227-2249）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2250,
+     "end": 2283,
+     "chars": 3948,
+     "sents": 80,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M31",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2250-2283）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2284,
+     "end": 2325,
+     "chars": 3225,
+     "sents": 80,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M32",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2284-2325）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2326,
+     "end": 2368,
+     "chars": 3820,
+     "sents": 79,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M33",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2326-2368）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2369,
+     "end": 2412,
+     "chars": 4298,
+     "sents": 80,
+     "paras": 44,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M34",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2369-2412）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2413,
+     "end": 2456,
+     "chars": 2594,
+     "sents": 77,
+     "paras": 44,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M35",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2413-2456）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2457,
+     "end": 2494,
+     "chars": 2125,
+     "sents": 79,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M36",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2457-2494）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2495,
+     "end": 2535,
+     "chars": 2856,
+     "sents": 80,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M37",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2495-2535）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2536,
+     "end": 2583,
+     "chars": 2853,
+     "sents": 79,
+     "paras": 48,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2536-2583）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2584,
+     "end": 2608,
+     "chars": 2026,
+     "sents": 42,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2608,
+       "title": "5. Pañcamo kaṇḍo (khādi)"
+      }
+     ],
+     "split": true,
+     "id": "M39",
+     "book": 13,
+     "layer": "mula",
+     "title": "5. Pañcamo kaṇḍo (khādi)（2584-2608）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2609,
+     "end": 2629,
+     "chars": 4077,
+     "sents": 39,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 2609,
+       "end": 2770,
+       "title": "6. Chaṭṭho kaṇḍo (tyādi)"
+      }
+     ],
+     "split": true,
+     "id": "M40",
+     "book": 13,
+     "layer": "mula",
+     "title": "6. Chaṭṭho kaṇḍo (tyādi)（2609-2629）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2630,
+     "end": 2666,
+     "chars": 4928,
+     "sents": 57,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 2609,
+       "end": 2770,
+       "title": "6. Chaṭṭho kaṇḍo (tyādi)"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 13,
+     "layer": "mula",
+     "title": "6. Chaṭṭho kaṇḍo (tyādi)（2630-2666）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2667,
+     "end": 2717,
+     "chars": 2918,
+     "sents": 80,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 2609,
+       "end": 2770,
+       "title": "6. Chaṭṭho kaṇḍo (tyādi)"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 13,
+     "layer": "mula",
+     "title": "6. Chaṭṭho kaṇḍo (tyādi)（2667-2717）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2718,
+     "end": 2768,
+     "chars": 2355,
+     "sents": 80,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 2609,
+       "end": 2770,
+       "title": "6. Chaṭṭho kaṇḍo (tyādi)"
+      }
+     ],
+     "split": true,
+     "id": "M43",
+     "book": 13,
+     "layer": "mula",
+     "title": "6. Chaṭṭho kaṇḍo (tyādi)（2718-2768）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2769,
+     "end": 2770,
+     "chars": 52,
+     "sents": 2,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 2609,
+       "end": 2770,
+       "title": "6. Chaṭṭho kaṇḍo (tyādi)"
+      }
+     ],
+     "split": true,
+     "id": "M44",
+     "book": 13,
+     "layer": "mula",
+     "title": "6. Chaṭṭho kaṇḍo (tyādi)（2769-2770）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2771,
+     "end": 2783,
+     "chars": 4453,
+     "sents": 70,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M45",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2771-2783）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2784,
+     "end": 2802,
+     "chars": 4412,
+     "sents": 74,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M46",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2784-2802）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2803,
+     "end": 2826,
+     "chars": 3759,
+     "sents": 79,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M47",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2803-2826）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2827,
+     "end": 2858,
+     "chars": 3665,
+     "sents": 80,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M48",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2827-2858）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2859,
+     "end": 2890,
+     "chars": 3339,
+     "sents": 72,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M49",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2859-2890）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2891,
+     "end": 2915,
+     "chars": 3705,
+     "sents": 78,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M50",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2891-2915）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2916,
+     "end": 2939,
+     "chars": 2927,
+     "sents": 70,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M51",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2916-2939）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2940,
+     "end": 2963,
+     "chars": 3463,
+     "sents": 79,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M52",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2940-2963）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2964,
+     "end": 2989,
+     "chars": 3399,
+     "sents": 79,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M53",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2964-2989）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2990,
+     "end": 3020,
+     "chars": 3306,
+     "sents": 80,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M54",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（2990-3020）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3021,
+     "end": 3048,
+     "chars": 2699,
+     "sents": 67,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M55",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3021-3048）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3049,
+     "end": 3070,
+     "chars": 3852,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M56",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3049-3070）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3071,
+     "end": 3099,
+     "chars": 3554,
+     "sents": 79,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M57",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3071-3099）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3100,
+     "end": 3139,
+     "chars": 3954,
+     "sents": 79,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M58",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3100-3139）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3140,
+     "end": 3164,
+     "chars": 4065,
+     "sents": 80,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M59",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3140-3164）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3165,
+     "end": 3203,
+     "chars": 2947,
+     "sents": 80,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M60",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3165-3203）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3204,
+     "end": 3227,
+     "chars": 3940,
+     "sents": 80,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M61",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3204-3227）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3228,
+     "end": 3243,
+     "chars": 1211,
+     "sents": 33,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 2771,
+       "end": 3243,
+       "title": "7. Sattamo kaṇḍo (ṇvādi)"
+      }
+     ],
+     "split": true,
+     "id": "M62",
+     "book": 13,
+     "layer": "mula",
+     "title": "7. Sattamo kaṇḍo (ṇvādi)（3228-3243）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3244,
+     "end": 3262,
+     "chars": 563,
+     "sents": 19,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 3244,
+       "end": 3246,
+       "title": "1."
+      },
+      {
+       "start": 3247,
+       "end": 3249,
+       "title": "2."
+      },
+      {
+       "start": 3250,
+       "end": 3252,
+       "title": "3."
+      },
+      {
+       "start": 3253,
+       "end": 3255,
+       "title": "4."
+      },
+      {
+       "start": 3256,
+       "end": 3258,
+       "title": "5."
+      },
+      {
+       "start": 3259,
+       "end": 3262,
+       "title": "6."
+      }
+     ],
+     "split": false,
+     "id": "M63",
+     "book": 13,
+     "layer": "mula",
+     "title": "1. … 6.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 2158,
+   "chars": 208969,
+   "sents": 4268,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 13,
+   "layer": "mula",
+   "start": 1105,
+   "end": 3262,
+   "title": "Moggallānabyākaraṇaṃ"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1105,
+   "end": 1105,
+   "chars": 20,
+   "sents": 1,
+   "title": "Moggallānabyākaraṇaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:06",
+   "ended": "2026-11-24 11:49:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1106,
+   "end": 1150,
+   "chars": 2904,
+   "sents": 80,
+   "title": "1. Paṭhamo saññādikaṇḍo（1106-1150）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:16",
+   "ended": "2026-11-24 11:50:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1151,
+   "end": 1189,
+   "chars": 2780,
+   "sents": 80,
+   "title": "1. Paṭhamo saññādikaṇḍo（1151-1189）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:26",
+   "ended": "2026-11-24 11:50:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1190,
+   "end": 1226,
+   "chars": 3302,
+   "sents": 77,
+   "title": "1. Paṭhamo saññādikaṇḍo（1190-1226）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:42",
+   "ended": "2026-11-24 11:51:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1227,
+   "end": 1235,
+   "chars": 654,
+   "sents": 15,
+   "title": "1. Paṭhamo saññādikaṇḍo（1227-1235）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:37",
+   "ended": "2026-11-24 11:51:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1236,
+   "end": 1261,
+   "chars": 4785,
+   "sents": 65,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1236-1261）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:53",
+   "ended": "2026-11-24 11:52:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1262,
+   "end": 1301,
+   "chars": 4693,
+   "sents": 65,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1262-1301）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:08",
+   "ended": "2026-11-24 11:52:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1302,
+   "end": 1333,
+   "chars": 4951,
+   "sents": 73,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1302-1333）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:24",
+   "ended": "2026-11-24 11:53:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1334,
+   "end": 1384,
+   "chars": 4329,
+   "sents": 79,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1334-1384）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:29",
+   "ended": "2026-11-24 11:57:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1385,
+   "end": 1423,
+   "chars": 2467,
+   "sents": 80,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1385-1423）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:59",
+   "ended": "2026-11-24 11:54:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1424,
+   "end": 1467,
+   "chars": 2958,
+   "sents": 80,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1424-1467）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:53:14",
+   "ended": "2026-11-24 11:56:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1468,
+   "end": 1522,
+   "chars": 3411,
+   "sents": 80,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1468-1522）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 12:19:09",
+   "ended": "2026-11-24 13:18:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1523,
+   "end": 1588,
+   "chars": 4213,
+   "sents": 80,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1523-1588）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:56:42",
+   "ended": "2026-11-24 12:06:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1589,
+   "end": 1655,
+   "chars": 3576,
+   "sents": 80,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1589-1655）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:18:30",
+   "ended": "2026-11-24 13:24:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1656,
+   "end": 1719,
+   "chars": 4157,
+   "sents": 80,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1656-1719）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:24:13",
+   "ended": "2026-11-24 13:44:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1720,
+   "end": 1737,
+   "chars": 2798,
+   "sents": 35,
+   "title": "2. Dutiyo kaṇḍo (syādi)（1720-1737）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:44:43",
+   "ended": "2026-11-24 13:45:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1738,
+   "end": 1765,
+   "chars": 4788,
+   "sents": 48,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1738-1765）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:45:59",
+   "ended": "2026-11-24 13:47:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1766,
+   "end": 1790,
+   "chars": 4754,
+   "sents": 51,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1766-1790）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:47:40",
+   "ended": "2026-11-24 13:49:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1791,
+   "end": 1819,
+   "chars": 4983,
+   "sents": 69,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1791-1819）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:49:21",
+   "ended": "2026-11-24 13:51:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1820,
+   "end": 1865,
+   "chars": 3606,
+   "sents": 80,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1820-1865）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:51:22",
+   "ended": "2026-11-24 13:53:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1866,
+   "end": 1909,
+   "chars": 3127,
+   "sents": 80,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1866-1909）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:00:05",
+   "ended": "2026-11-25 14:01:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1910,
+   "end": 1958,
+   "chars": 3371,
+   "sents": 80,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1910-1958）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:01:51",
+   "ended": "2026-11-25 14:03:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1959,
+   "end": 1972,
+   "chars": 928,
+   "sents": 21,
+   "title": "(3) Tatiyo kaṇḍo (samāso)（1959-1972）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:03:17",
+   "ended": "2026-11-25 14:03:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 1973,
+   "end": 2028,
+   "chars": 4854,
+   "sents": 77,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（1973-2028）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 14:58:40",
+   "ended": "2026-11-24 15:02:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2029,
+   "end": 2070,
+   "chars": 4961,
+   "sents": 73,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（2029-2070）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:02:17",
+   "ended": "2026-11-24 15:06:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2071,
+   "end": 2106,
+   "chars": 4926,
+   "sents": 72,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（2071-2106）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:06:55",
+   "ended": "2026-11-24 15:09:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2107,
+   "end": 2147,
+   "chars": 3859,
+   "sents": 80,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（2107-2147）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:09:21",
+   "ended": "2026-11-24 15:11:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2148,
+   "end": 2185,
+   "chars": 2961,
+   "sents": 80,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（2148-2185）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:11:22",
+   "ended": "2026-11-24 15:12:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2186,
+   "end": 2226,
+   "chars": 3218,
+   "sents": 80,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（2186-2226）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:12:58",
+   "ended": "2026-11-24 15:14:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2227,
+   "end": 2249,
+   "chars": 1347,
+   "sents": 35,
+   "title": "4. Catuttho kaṇḍo (ṇādi)（2227-2249）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:14:24",
+   "ended": "2026-11-24 15:15:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2250,
+   "end": 2283,
+   "chars": 3948,
+   "sents": 80,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2250-2283）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:15:19",
+   "ended": "2026-11-24 15:16:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2284,
+   "end": 2325,
+   "chars": 3225,
+   "sents": 80,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2284-2325）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:16:55",
+   "ended": "2026-11-24 15:18:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2326,
+   "end": 2368,
+   "chars": 3820,
+   "sents": 79,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2326-2368）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:18:36",
+   "ended": "2026-11-24 15:20:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2369,
+   "end": 2412,
+   "chars": 4298,
+   "sents": 80,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2369-2412）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-25 14:03:47",
+   "ended": "2026-11-25 14:05:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2413,
+   "end": 2456,
+   "chars": 2594,
+   "sents": 77,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2413-2456）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:05:38",
+   "ended": "2026-11-25 14:06:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2457,
+   "end": 2494,
+   "chars": 2125,
+   "sents": 79,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2457-2494）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:06:54",
+   "ended": "2026-11-25 14:08:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2495,
+   "end": 2535,
+   "chars": 2856,
+   "sents": 80,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2495-2535）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:08:04",
+   "ended": "2026-11-25 14:09:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2536,
+   "end": 2583,
+   "chars": 2853,
+   "sents": 79,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2536-2583）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:09:15",
+   "ended": "2026-11-25 14:10:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2584,
+   "end": 2608,
+   "chars": 2026,
+   "sents": 42,
+   "title": "5. Pañcamo kaṇḍo (khādi)（2584-2608）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:10:30",
+   "ended": "2026-11-25 14:11:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2609,
+   "end": 2629,
+   "chars": 4077,
+   "sents": 39,
+   "title": "6. Chaṭṭho kaṇḍo (tyādi)（2609-2629）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:11:26",
+   "ended": "2026-11-25 14:12:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2630,
+   "end": 2666,
+   "chars": 4928,
+   "sents": 57,
+   "title": "6. Chaṭṭho kaṇḍo (tyādi)（2630-2666）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:12:42",
+   "ended": "2026-11-25 14:14:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2667,
+   "end": 2717,
+   "chars": 2918,
+   "sents": 80,
+   "title": "6. Chaṭṭho kaṇḍo (tyādi)（2667-2717）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:14:23",
+   "ended": "2026-11-25 14:15:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2718,
+   "end": 2768,
+   "chars": 2355,
+   "sents": 80,
+   "title": "6. Chaṭṭho kaṇḍo (tyādi)（2718-2768）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:15:48",
+   "ended": "2026-11-25 14:16:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2769,
+   "end": 2770,
+   "chars": 52,
+   "sents": 2,
+   "title": "6. Chaṭṭho kaṇḍo (tyādi)（2769-2770）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:16:54",
+   "ended": "2026-11-25 14:17:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2771,
+   "end": 2783,
+   "chars": 4453,
+   "sents": 70,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2771-2783）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:17:09",
+   "ended": "2026-11-25 14:18:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2784,
+   "end": 2802,
+   "chars": 4412,
+   "sents": 74,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2784-2802）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:18:25",
+   "ended": "2026-11-25 14:19:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2803,
+   "end": 2826,
+   "chars": 3759,
+   "sents": 79,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2803-2826）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:19:55",
+   "ended": "2026-11-25 14:21:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2827,
+   "end": 2858,
+   "chars": 3665,
+   "sents": 80,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2827-2858）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:21:31",
+   "ended": "2026-11-25 14:23:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2859,
+   "end": 2890,
+   "chars": 3339,
+   "sents": 72,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2859-2890）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:23:02",
+   "ended": "2026-11-25 14:24:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2891,
+   "end": 2915,
+   "chars": 3705,
+   "sents": 78,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2891-2915）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:24:18",
+   "ended": "2026-11-25 14:25:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2916,
+   "end": 2939,
+   "chars": 2927,
+   "sents": 70,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2916-2939）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:25:49",
+   "ended": "2026-11-25 14:26:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M52:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2940,
+   "end": 2963,
+   "chars": 3463,
+   "sents": 79,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2940-2963）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:26:54",
+   "ended": "2026-11-25 14:28:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M53:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2964,
+   "end": 2989,
+   "chars": 3399,
+   "sents": 79,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2964-2989）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:28:15",
+   "ended": "2026-11-25 14:29:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M54:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 2990,
+   "end": 3020,
+   "chars": 3306,
+   "sents": 80,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（2990-3020）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:29:46",
+   "ended": "2026-11-25 14:30:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M55:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3021,
+   "end": 3048,
+   "chars": 2699,
+   "sents": 67,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3021-3048）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:30:56",
+   "ended": "2026-11-25 14:32:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M56:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3049,
+   "end": 3070,
+   "chars": 3852,
+   "sents": 80,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3049-3070）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:32:02",
+   "ended": "2026-11-25 14:33:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M57:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3071,
+   "end": 3099,
+   "chars": 3554,
+   "sents": 79,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3071-3099）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:33:28",
+   "ended": "2026-11-25 14:34:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M58:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3100,
+   "end": 3139,
+   "chars": 3954,
+   "sents": 79,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3100-3139）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:34:49",
+   "ended": "2026-11-25 14:36:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M59:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3140,
+   "end": 3164,
+   "chars": 4065,
+   "sents": 80,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3140-3164）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:36:14",
+   "ended": "2026-11-25 14:37:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M60:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3165,
+   "end": 3203,
+   "chars": 2947,
+   "sents": 80,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3165-3203）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:37:40",
+   "ended": "2026-11-25 14:38:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M61:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3204,
+   "end": 3227,
+   "chars": 3940,
+   "sents": 80,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3204-3227）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:38:45",
+   "ended": "2026-11-25 14:40:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M62:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3228,
+   "end": 3243,
+   "chars": 1211,
+   "sents": 33,
+   "title": "7. Sattamo kaṇḍo (ṇvādi)（3228-3243）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:40:21",
+   "ended": "2026-11-25 14:41:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M63:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 13,
+   "start": 3244,
+   "end": 3262,
+   "chars": 563,
+   "sents": 19,
+   "title": "1. … 6.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:41:12",
+   "ended": "2026-11-25 14:41:32",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 54
+}

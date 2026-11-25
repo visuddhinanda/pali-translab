@@ -1,0 +1,253 @@
+{
+ "schema": 3,
+ "name": "x06-saddabindu-pakaranam",
+ "title": "Saddabindu pakaraṇaṃ 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:49:53",
+ "updated": "2026-11-24 04:26:56",
+ "book": 49,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "49": {
+   "layer": "mula",
+   "title": "Saddabindu pakaraṇaṃ"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 49,
+   "title": "Saddabindu pakaraṇaṃ",
+   "start": 1,
+   "end": 83,
+   "fam": "x06-saddabindu-pakaranam",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1,
+     "end": 69,
+     "chars": 1896,
+     "sents": 69,
+     "paras": 69,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 2,
+       "title": "Saddabindu pakaraṇaṃ"
+      },
+      {
+       "start": 3,
+       "end": 5,
+       "title": "1."
+      },
+      {
+       "start": 6,
+       "end": 8,
+       "title": "2. "
+      },
+      {
+       "start": 9,
+       "end": 11,
+       "title": "3."
+      },
+      {
+       "start": 12,
+       "end": 15,
+       "title": "4. "
+      },
+      {
+       "start": 16,
+       "end": 18,
+       "title": "5. "
+      },
+      {
+       "start": 19,
+       "end": 21,
+       "title": "6."
+      },
+      {
+       "start": 22,
+       "end": 24,
+       "title": "7. "
+      },
+      {
+       "start": 25,
+       "end": 27,
+       "title": "8."
+      },
+      {
+       "start": 28,
+       "end": 31,
+       "title": "9. "
+      },
+      {
+       "start": 32,
+       "end": 34,
+       "title": "10."
+      },
+      {
+       "start": 35,
+       "end": 37,
+       "title": "11. "
+      },
+      {
+       "start": 38,
+       "end": 41,
+       "title": "12."
+      },
+      {
+       "start": 42,
+       "end": 44,
+       "title": "13. "
+      },
+      {
+       "start": 45,
+       "end": 48,
+       "title": "14."
+      },
+      {
+       "start": 49,
+       "end": 52,
+       "title": "15."
+      },
+      {
+       "start": 53,
+       "end": 55,
+       "title": "16. "
+      },
+      {
+       "start": 56,
+       "end": 59,
+       "title": "17."
+      },
+      {
+       "start": 60,
+       "end": 63,
+       "title": "18."
+      },
+      {
+       "start": 64,
+       "end": 66,
+       "title": "19. "
+      },
+      {
+       "start": 67,
+       "end": 69,
+       "title": "20."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 49,
+     "layer": "mula",
+     "title": "Saddabindu pakaraṇaṃ … 20.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 70,
+     "end": 83,
+     "chars": 451,
+     "sents": 14,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 70,
+       "end": 83,
+       "title": "21. "
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 49,
+     "layer": "mula",
+     "title": "21. ",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 83,
+   "chars": 2347,
+   "sents": 83,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 49,
+   "layer": "mula",
+   "start": 1,
+   "end": 83,
+   "title": "Saddabindu pakaraṇaṃ"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 49,
+   "start": 1,
+   "end": 69,
+   "chars": 1896,
+   "sents": 69,
+   "title": "Saddabindu pakaraṇaṃ … 20.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:25:20",
+   "ended": "2026-11-24 04:26:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 49,
+   "start": 70,
+   "end": 83,
+   "chars": 451,
+   "sents": 14,
+   "title": "21. ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:25:30",
+   "ended": "2026-11-24 04:25:55",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 6
+}

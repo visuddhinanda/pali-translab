@@ -1,0 +1,1798 @@
+{
+ "schema": 3,
+ "name": "x10-thupavamso",
+ "title": "Thupavaṃso 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:47",
+ "updated": "2026-11-24 05:14:11",
+ "book": 53,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "53": {
+   "layer": "mula",
+   "title": "Thupavaṃso"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 53,
+   "title": "Thupavaṃso",
+   "start": 1,
+   "end": 709,
+   "fam": "x10-thupavamso",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1,
+     "end": 25,
+     "chars": 4365,
+     "sents": 37,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 45,
+       "title": "Thupavaṃso "
+      }
+     ],
+     "split": true,
+     "id": "M1",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thupavaṃso （1-25）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 26,
+     "end": 45,
+     "chars": 3592,
+     "sents": 26,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 45,
+       "title": "Thupavaṃso "
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thupavaṃso （26-45）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 46,
+     "end": 75,
+     "chars": 4868,
+     "sents": 39,
+     "paras": 30,
+     "chapters": [
+      {
+       "start": 46,
+       "end": 198,
+       "title": "Abhinīhāra kathā"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 53,
+     "layer": "mula",
+     "title": "Abhinīhāra kathā（46-75）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 76,
+     "end": 113,
+     "chars": 4833,
+     "sents": 52,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 46,
+       "end": 198,
+       "title": "Abhinīhāra kathā"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 53,
+     "layer": "mula",
+     "title": "Abhinīhāra kathā（76-113）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 114,
+     "end": 150,
+     "chars": 4994,
+     "sents": 46,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 46,
+       "end": 198,
+       "title": "Abhinīhāra kathā"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 53,
+     "layer": "mula",
+     "title": "Abhinīhāra kathā（114-150）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 151,
+     "end": 190,
+     "chars": 4991,
+     "sents": 48,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 46,
+       "end": 198,
+       "title": "Abhinīhāra kathā"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 53,
+     "layer": "mula",
+     "title": "Abhinīhāra kathā（151-190）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 191,
+     "end": 198,
+     "chars": 810,
+     "sents": 9,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 46,
+       "end": 198,
+       "title": "Abhinīhāra kathā"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 53,
+     "layer": "mula",
+     "title": "Abhinīhāra kathā（191-198）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 199,
+     "end": 204,
+     "chars": 4617,
+     "sents": 18,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 199,
+       "end": 247,
+       "title": "Cūḷāmaṇidussa thupadvayakathā"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 53,
+     "layer": "mula",
+     "title": "Cūḷāmaṇidussa thupadvayakathā（199-204）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 205,
+     "end": 209,
+     "chars": 4292,
+     "sents": 18,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 199,
+       "end": 247,
+       "title": "Cūḷāmaṇidussa thupadvayakathā"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 53,
+     "layer": "mula",
+     "title": "Cūḷāmaṇidussa thupadvayakathā（205-209）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 210,
+     "end": 215,
+     "chars": 4704,
+     "sents": 27,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 199,
+       "end": 247,
+       "title": "Cūḷāmaṇidussa thupadvayakathā"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 53,
+     "layer": "mula",
+     "title": "Cūḷāmaṇidussa thupadvayakathā（210-215）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 216,
+     "end": 229,
+     "chars": 4363,
+     "sents": 28,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 199,
+       "end": 247,
+       "title": "Cūḷāmaṇidussa thupadvayakathā"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 53,
+     "layer": "mula",
+     "title": "Cūḷāmaṇidussa thupadvayakathā（216-229）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 230,
+     "end": 247,
+     "chars": 4878,
+     "sents": 37,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 199,
+       "end": 247,
+       "title": "Cūḷāmaṇidussa thupadvayakathā"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 53,
+     "layer": "mula",
+     "title": "Cūḷāmaṇidussa thupadvayakathā（230-247）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 248,
+     "end": 255,
+     "chars": 3747,
+     "sents": 18,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 248,
+       "end": 255,
+       "title": "Dasathūpakathā"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dasathūpakathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 256,
+     "end": 265,
+     "chars": 4755,
+     "sents": 27,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 256,
+       "end": 281,
+       "title": "Dhātunidhāna kathā"
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātunidhāna kathā（256-265）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 266,
+     "end": 274,
+     "chars": 4796,
+     "sents": 38,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 256,
+       "end": 281,
+       "title": "Dhātunidhāna kathā"
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātunidhāna kathā（266-274）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 275,
+     "end": 281,
+     "chars": 2289,
+     "sents": 15,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 256,
+       "end": 281,
+       "title": "Dhātunidhāna kathā"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātunidhāna kathā（275-281）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 282,
+     "end": 293,
+     "chars": 4875,
+     "sents": 32,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 282,
+       "end": 347,
+       "title": "Caturāsīti sahassa thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 53,
+     "layer": "mula",
+     "title": "Caturāsīti sahassa thūpakathā（282-293）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 294,
+     "end": 312,
+     "chars": 4920,
+     "sents": 45,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 282,
+       "end": 347,
+       "title": "Caturāsīti sahassa thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 53,
+     "layer": "mula",
+     "title": "Caturāsīti sahassa thūpakathā（294-312）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 313,
+     "end": 321,
+     "chars": 4795,
+     "sents": 29,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 282,
+       "end": 347,
+       "title": "Caturāsīti sahassa thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 53,
+     "layer": "mula",
+     "title": "Caturāsīti sahassa thūpakathā（313-321）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 322,
+     "end": 340,
+     "chars": 4931,
+     "sents": 43,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 282,
+       "end": 347,
+       "title": "Caturāsīti sahassa thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 53,
+     "layer": "mula",
+     "title": "Caturāsīti sahassa thūpakathā（322-340）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 341,
+     "end": 347,
+     "chars": 3101,
+     "sents": 10,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 282,
+       "end": 347,
+       "title": "Caturāsīti sahassa thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M21",
+     "book": 53,
+     "layer": "mula",
+     "title": "Caturāsīti sahassa thūpakathā（341-347）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 348,
+     "end": 355,
+     "chars": 2355,
+     "sents": 27,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 348,
+       "end": 353,
+       "title": "Bodhi āgamanakathā"
+      },
+      {
+       "start": 354,
+       "end": 355,
+       "title": "Yojanathūpa kathā"
+      }
+     ],
+     "split": false,
+     "id": "M22",
+     "book": 53,
+     "layer": "mula",
+     "title": "Bodhi āgamanakathā … Yojanathūpa kathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 356,
+     "end": 366,
+     "chars": 4599,
+     "sents": 42,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 356,
+       "end": 381,
+       "title": "Tadatthadīpanatthaṃ ayamanupubbakathā"
+      }
+     ],
+     "split": true,
+     "id": "M23",
+     "book": 53,
+     "layer": "mula",
+     "title": "Tadatthadīpanatthaṃ ayamanupubbakathā（356-366）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 367,
+     "end": 381,
+     "chars": 2548,
+     "sents": 25,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 356,
+       "end": 381,
+       "title": "Tadatthadīpanatthaṃ ayamanupubbakathā"
+      }
+     ],
+     "split": true,
+     "id": "M24",
+     "book": 53,
+     "layer": "mula",
+     "title": "Tadatthadīpanatthaṃ ayamanupubbakathā（367-381）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 382,
+     "end": 405,
+     "chars": 4974,
+     "sents": 50,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 382,
+       "end": 432,
+       "title": "Mahiyaṅgana thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M25",
+     "book": 53,
+     "layer": "mula",
+     "title": "Mahiyaṅgana thūpakathā（382-405）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 406,
+     "end": 426,
+     "chars": 5000,
+     "sents": 48,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 382,
+       "end": 432,
+       "title": "Mahiyaṅgana thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M26",
+     "book": 53,
+     "layer": "mula",
+     "title": "Mahiyaṅgana thūpakathā（406-426）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 427,
+     "end": 432,
+     "chars": 199,
+     "sents": 7,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 382,
+       "end": 432,
+       "title": "Mahiyaṅgana thūpakathā"
+      }
+     ],
+     "split": true,
+     "id": "M27",
+     "book": 53,
+     "layer": "mula",
+     "title": "Mahiyaṅgana thūpakathā（427-432）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 433,
+     "end": 446,
+     "chars": 4899,
+     "sents": 41,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 433,
+       "end": 456,
+       "title": "Marīcavaṭṭi vihārakathā"
+      }
+     ],
+     "split": true,
+     "id": "M28",
+     "book": 53,
+     "layer": "mula",
+     "title": "Marīcavaṭṭi vihārakathā（433-446）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 447,
+     "end": 456,
+     "chars": 4226,
+     "sents": 31,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 433,
+       "end": 456,
+       "title": "Marīcavaṭṭi vihārakathā"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 53,
+     "layer": "mula",
+     "title": "Marīcavaṭṭi vihārakathā（447-456）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 457,
+     "end": 470,
+     "chars": 4779,
+     "sents": 34,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 457,
+       "end": 478,
+       "title": "Thūpasādhana lābhakathā"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpasādhana lābhakathā（457-470）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 471,
+     "end": 478,
+     "chars": 3736,
+     "sents": 26,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 457,
+       "end": 478,
+       "title": "Thūpasādhana lābhakathā"
+      }
+     ],
+     "split": true,
+     "id": "M31",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpasādhana lābhakathā（471-478）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 479,
+     "end": 496,
+     "chars": 4848,
+     "sents": 41,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 534,
+       "title": "Thūpāramha kathā"
+      }
+     ],
+     "split": true,
+     "id": "M32",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpāramha kathā（479-496）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 497,
+     "end": 508,
+     "chars": 4784,
+     "sents": 36,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 534,
+       "title": "Thūpāramha kathā"
+      }
+     ],
+     "split": true,
+     "id": "M33",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpāramha kathā（497-508）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 509,
+     "end": 519,
+     "chars": 4526,
+     "sents": 29,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 534,
+       "title": "Thūpāramha kathā"
+      }
+     ],
+     "split": true,
+     "id": "M34",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpāramha kathā（509-519）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 520,
+     "end": 525,
+     "chars": 4881,
+     "sents": 22,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 534,
+       "title": "Thūpāramha kathā"
+      }
+     ],
+     "split": true,
+     "id": "M35",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpāramha kathā（520-525）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 526,
+     "end": 534,
+     "chars": 2868,
+     "sents": 25,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 534,
+       "title": "Thūpāramha kathā"
+      }
+     ],
+     "split": true,
+     "id": "M36",
+     "book": 53,
+     "layer": "mula",
+     "title": "Thūpāramha kathā（526-534）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 535,
+     "end": 546,
+     "chars": 4938,
+     "sents": 30,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 535,
+       "end": 685,
+       "title": "Dhātugabba rūpavaṇṇanākathā"
+      }
+     ],
+     "split": true,
+     "id": "M37",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātugabba rūpavaṇṇanākathā（535-546）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 547,
+     "end": 589,
+     "chars": 4963,
+     "sents": 62,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 535,
+       "end": 685,
+       "title": "Dhātugabba rūpavaṇṇanākathā"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātugabba rūpavaṇṇanākathā（547-589）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 590,
+     "end": 615,
+     "chars": 4920,
+     "sents": 45,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 535,
+       "end": 685,
+       "title": "Dhātugabba rūpavaṇṇanākathā"
+      }
+     ],
+     "split": true,
+     "id": "M39",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātugabba rūpavaṇṇanākathā（590-615）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 616,
+     "end": 669,
+     "chars": 4944,
+     "sents": 68,
+     "paras": 54,
+     "chapters": [
+      {
+       "start": 535,
+       "end": 685,
+       "title": "Dhātugabba rūpavaṇṇanākathā"
+      }
+     ],
+     "split": true,
+     "id": "M40",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātugabba rūpavaṇṇanākathā（616-669）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 670,
+     "end": 683,
+     "chars": 4815,
+     "sents": 39,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 535,
+       "end": 685,
+       "title": "Dhātugabba rūpavaṇṇanākathā"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātugabba rūpavaṇṇanākathā（670-683）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 684,
+     "end": 685,
+     "chars": 561,
+     "sents": 8,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 535,
+       "end": 685,
+       "title": "Dhātugabba rūpavaṇṇanākathā"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 53,
+     "layer": "mula",
+     "title": "Dhātugabba rūpavaṇṇanākathā（684-685）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 686,
+     "end": 709,
+     "chars": 899,
+     "sents": 25,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 686,
+       "end": 709,
+       "title": "27."
+      }
+     ],
+     "split": false,
+     "id": "M43",
+     "book": 53,
+     "layer": "mula",
+     "title": "27.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 709,
+   "chars": 174778,
+   "sents": 1403,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 53,
+   "layer": "mula",
+   "start": 1,
+   "end": 709,
+   "title": "Thupavaṃso"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 1,
+   "end": 25,
+   "chars": 4365,
+   "sents": 37,
+   "title": "Thupavaṃso （1-25）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:05:06",
+   "ended": "2026-11-24 05:06:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 26,
+   "end": 45,
+   "chars": 3592,
+   "sents": 26,
+   "title": "Thupavaṃso （26-45）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:05:16",
+   "ended": "2026-11-24 05:06:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 46,
+   "end": 75,
+   "chars": 4868,
+   "sents": 39,
+   "title": "Abhinīhāra kathā（46-75）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:05:26",
+   "ended": "2026-11-24 05:06:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 76,
+   "end": 113,
+   "chars": 4833,
+   "sents": 52,
+   "title": "Abhinīhāra kathā（76-113）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:05:36",
+   "ended": "2026-11-24 05:07:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 114,
+   "end": 150,
+   "chars": 4994,
+   "sents": 46,
+   "title": "Abhinīhāra kathā（114-150）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:05:46",
+   "ended": "2026-11-24 05:07:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 151,
+   "end": 190,
+   "chars": 4991,
+   "sents": 48,
+   "title": "Abhinīhāra kathā（151-190）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:05:56",
+   "ended": "2026-11-24 05:07:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 191,
+   "end": 198,
+   "chars": 810,
+   "sents": 9,
+   "title": "Abhinīhāra kathā（191-198）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:06:06",
+   "ended": "2026-11-24 05:06:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 199,
+   "end": 204,
+   "chars": 4617,
+   "sents": 18,
+   "title": "Cūḷāmaṇidussa thupadvayakathā（199-204）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:06:16",
+   "ended": "2026-11-24 05:07:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 205,
+   "end": 209,
+   "chars": 4292,
+   "sents": 18,
+   "title": "Cūḷāmaṇidussa thupadvayakathā（205-209）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:06:26",
+   "ended": "2026-11-24 05:07:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 210,
+   "end": 215,
+   "chars": 4704,
+   "sents": 27,
+   "title": "Cūḷāmaṇidussa thupadvayakathā（210-215）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:06:36",
+   "ended": "2026-11-24 05:08:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 216,
+   "end": 229,
+   "chars": 4363,
+   "sents": 28,
+   "title": "Cūḷāmaṇidussa thupadvayakathā（216-229）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:06:52",
+   "ended": "2026-11-24 05:08:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 230,
+   "end": 247,
+   "chars": 4878,
+   "sents": 37,
+   "title": "Cūḷāmaṇidussa thupadvayakathā（230-247）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:07:02",
+   "ended": "2026-11-24 05:08:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 248,
+   "end": 255,
+   "chars": 3747,
+   "sents": 18,
+   "title": "Dasathūpakathā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:07:12",
+   "ended": "2026-11-24 05:08:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 256,
+   "end": 265,
+   "chars": 4755,
+   "sents": 27,
+   "title": "Dhātunidhāna kathā（256-265）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:07:22",
+   "ended": "2026-11-24 05:08:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 266,
+   "end": 274,
+   "chars": 4796,
+   "sents": 38,
+   "title": "Dhātunidhāna kathā（266-274）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:07:37",
+   "ended": "2026-11-24 05:09:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 275,
+   "end": 281,
+   "chars": 2289,
+   "sents": 15,
+   "title": "Dhātunidhāna kathā（275-281）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:07:47",
+   "ended": "2026-11-24 05:08:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 282,
+   "end": 293,
+   "chars": 4875,
+   "sents": 32,
+   "title": "Caturāsīti sahassa thūpakathā（282-293）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:07:57",
+   "ended": "2026-11-24 05:09:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 294,
+   "end": 312,
+   "chars": 4920,
+   "sents": 45,
+   "title": "Caturāsīti sahassa thūpakathā（294-312）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:08:07",
+   "ended": "2026-11-24 05:09:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 313,
+   "end": 321,
+   "chars": 4795,
+   "sents": 29,
+   "title": "Caturāsīti sahassa thūpakathā（313-321）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:08:17",
+   "ended": "2026-11-24 05:09:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 322,
+   "end": 340,
+   "chars": 4931,
+   "sents": 43,
+   "title": "Caturāsīti sahassa thūpakathā（322-340）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:08:33",
+   "ended": "2026-11-24 05:10:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 341,
+   "end": 347,
+   "chars": 3101,
+   "sents": 10,
+   "title": "Caturāsīti sahassa thūpakathā（341-347）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:08:43",
+   "ended": "2026-11-24 05:09:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 348,
+   "end": 355,
+   "chars": 2355,
+   "sents": 27,
+   "title": "Bodhi āgamanakathā … Yojanathūpa kathā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:08:53",
+   "ended": "2026-11-24 05:10:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 356,
+   "end": 366,
+   "chars": 4599,
+   "sents": 42,
+   "title": "Tadatthadīpanatthaṃ ayamanupubbakathā（356-366）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:09:03",
+   "ended": "2026-11-24 05:10:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 367,
+   "end": 381,
+   "chars": 2548,
+   "sents": 25,
+   "title": "Tadatthadīpanatthaṃ ayamanupubbakathā（367-381）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:09:13",
+   "ended": "2026-11-24 05:10:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 382,
+   "end": 405,
+   "chars": 4974,
+   "sents": 50,
+   "title": "Mahiyaṅgana thūpakathā（382-405）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:09:23",
+   "ended": "2026-11-24 05:11:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 406,
+   "end": 426,
+   "chars": 5000,
+   "sents": 48,
+   "title": "Mahiyaṅgana thūpakathā（406-426）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:09:38",
+   "ended": "2026-11-24 05:11:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 427,
+   "end": 432,
+   "chars": 199,
+   "sents": 7,
+   "title": "Mahiyaṅgana thūpakathā（427-432）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:09:48",
+   "ended": "2026-11-24 05:10:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 433,
+   "end": 446,
+   "chars": 4899,
+   "sents": 41,
+   "title": "Marīcavaṭṭi vihārakathā（433-446）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:09:58",
+   "ended": "2026-11-24 05:11:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 447,
+   "end": 456,
+   "chars": 4226,
+   "sents": 31,
+   "title": "Marīcavaṭṭi vihārakathā（447-456）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:10:08",
+   "ended": "2026-11-24 05:11:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 457,
+   "end": 470,
+   "chars": 4779,
+   "sents": 34,
+   "title": "Thūpasādhana lābhakathā（457-470）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:10:18",
+   "ended": "2026-11-24 05:12:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 471,
+   "end": 478,
+   "chars": 3736,
+   "sents": 26,
+   "title": "Thūpasādhana lābhakathā（471-478）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:10:34",
+   "ended": "2026-11-24 05:12:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 479,
+   "end": 496,
+   "chars": 4848,
+   "sents": 41,
+   "title": "Thūpāramha kathā（479-496）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:10:44",
+   "ended": "2026-11-24 05:12:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 497,
+   "end": 508,
+   "chars": 4784,
+   "sents": 36,
+   "title": "Thūpāramha kathā（497-508）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:10:54",
+   "ended": "2026-11-24 05:12:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 509,
+   "end": 519,
+   "chars": 4526,
+   "sents": 29,
+   "title": "Thūpāramha kathā（509-519）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:11:04",
+   "ended": "2026-11-24 05:12:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 520,
+   "end": 525,
+   "chars": 4881,
+   "sents": 22,
+   "title": "Thūpāramha kathā（520-525）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:11:14",
+   "ended": "2026-11-24 05:12:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 526,
+   "end": 534,
+   "chars": 2868,
+   "sents": 25,
+   "title": "Thūpāramha kathā（526-534）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:11:29",
+   "ended": "2026-11-24 05:12:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 535,
+   "end": 546,
+   "chars": 4938,
+   "sents": 30,
+   "title": "Dhātugabba rūpavaṇṇanākathā（535-546）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:11:39",
+   "ended": "2026-11-24 05:13:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 547,
+   "end": 589,
+   "chars": 4963,
+   "sents": 62,
+   "title": "Dhātugabba rūpavaṇṇanākathā（547-589）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:11:49",
+   "ended": "2026-11-24 05:13:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 590,
+   "end": 615,
+   "chars": 4920,
+   "sents": 45,
+   "title": "Dhātugabba rūpavaṇṇanākathā（590-615）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:11:59",
+   "ended": "2026-11-24 05:13:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 616,
+   "end": 669,
+   "chars": 4944,
+   "sents": 68,
+   "title": "Dhātugabba rūpavaṇṇanākathā（616-669）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:12:15",
+   "ended": "2026-11-24 05:14:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 670,
+   "end": 683,
+   "chars": 4815,
+   "sents": 39,
+   "title": "Dhātugabba rūpavaṇṇanākathā（670-683）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:12:25",
+   "ended": "2026-11-24 05:13:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 684,
+   "end": 685,
+   "chars": 561,
+   "sents": 8,
+   "title": "Dhātugabba rūpavaṇṇanākathā（684-685）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:12:35",
+   "ended": "2026-11-24 05:12:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 53,
+   "start": 686,
+   "end": 709,
+   "chars": 899,
+   "sents": 25,
+   "title": "27.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:12:50",
+   "ended": "2026-11-24 05:13:31",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 10
+}

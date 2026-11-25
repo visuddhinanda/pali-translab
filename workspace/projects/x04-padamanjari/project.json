@@ -1,0 +1,913 @@
+{
+ "schema": 3,
+ "name": "x04-padamanjari",
+ "title": "Padamañjarī 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:46",
+ "updated": "2026-11-24 04:17:49",
+ "book": 47,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "47": {
+   "layer": "mula",
+   "title": "Padamañjarī"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 47,
+   "title": "Padamañjarī",
+   "start": 1,
+   "end": 1640,
+   "fam": "x04-padamanjari",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1,
+     "end": 80,
+     "chars": 2552,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M1",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1-80）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 81,
+     "end": 160,
+     "chars": 2602,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （81-160）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 161,
+     "end": 240,
+     "chars": 2840,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （161-240）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 241,
+     "end": 320,
+     "chars": 2747,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （241-320）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 321,
+     "end": 400,
+     "chars": 2369,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （321-400）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 401,
+     "end": 480,
+     "chars": 2414,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （401-480）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 481,
+     "end": 560,
+     "chars": 2759,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （481-560）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 561,
+     "end": 640,
+     "chars": 2849,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （561-640）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 641,
+     "end": 720,
+     "chars": 3122,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （641-720）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 721,
+     "end": 800,
+     "chars": 2784,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （721-800）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 801,
+     "end": 880,
+     "chars": 2958,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （801-880）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 881,
+     "end": 960,
+     "chars": 2717,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （881-960）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 961,
+     "end": 1040,
+     "chars": 2888,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （961-1040）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1041,
+     "end": 1120,
+     "chars": 3194,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1041-1120）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1121,
+     "end": 1200,
+     "chars": 2568,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1121-1200）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1201,
+     "end": 1280,
+     "chars": 2544,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1201-1280）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1281,
+     "end": 1360,
+     "chars": 2449,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1281-1360）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1361,
+     "end": 1440,
+     "chars": 2336,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1361-1440）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1441,
+     "end": 1520,
+     "chars": 2032,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1441-1520）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1521,
+     "end": 1600,
+     "chars": 2091,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1521-1600）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1601,
+     "end": 1640,
+     "chars": 1441,
+     "sents": 40,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 1640,
+       "title": "Padamañjarī "
+      }
+     ],
+     "split": true,
+     "id": "M21",
+     "book": 47,
+     "layer": "mula",
+     "title": "Padamañjarī （1601-1640）",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1640,
+   "chars": 54256,
+   "sents": 1640,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 47,
+   "layer": "mula",
+   "start": 1,
+   "end": 1640,
+   "title": "Padamañjarī"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1,
+   "end": 80,
+   "chars": 2552,
+   "sents": 80,
+   "title": "Padamañjarī （1-80）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:13:06",
+   "ended": "2026-11-24 04:14:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 81,
+   "end": 160,
+   "chars": 2602,
+   "sents": 80,
+   "title": "Padamañjarī （81-160）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:13:16",
+   "ended": "2026-11-24 04:14:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 161,
+   "end": 240,
+   "chars": 2840,
+   "sents": 80,
+   "title": "Padamañjarī （161-240）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:13:26",
+   "ended": "2026-11-24 04:15:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 241,
+   "end": 320,
+   "chars": 2747,
+   "sents": 80,
+   "title": "Padamañjarī （241-320）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:13:36",
+   "ended": "2026-11-24 04:15:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 321,
+   "end": 400,
+   "chars": 2369,
+   "sents": 80,
+   "title": "Padamañjarī （321-400）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:13:46",
+   "ended": "2026-11-24 04:15:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 401,
+   "end": 480,
+   "chars": 2414,
+   "sents": 80,
+   "title": "Padamañjarī （401-480）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:13:56",
+   "ended": "2026-11-24 04:15:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 481,
+   "end": 560,
+   "chars": 2759,
+   "sents": 80,
+   "title": "Padamañjarī （481-560）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:14:06",
+   "ended": "2026-11-24 04:15:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 561,
+   "end": 640,
+   "chars": 2849,
+   "sents": 80,
+   "title": "Padamañjarī （561-640）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:14:16",
+   "ended": "2026-11-24 04:15:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 641,
+   "end": 720,
+   "chars": 3122,
+   "sents": 80,
+   "title": "Padamañjarī （641-720）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:14:26",
+   "ended": "2026-11-24 04:16:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 721,
+   "end": 800,
+   "chars": 2784,
+   "sents": 80,
+   "title": "Padamañjarī （721-800）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:14:36",
+   "ended": "2026-11-24 04:15:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 801,
+   "end": 880,
+   "chars": 2958,
+   "sents": 80,
+   "title": "Padamañjarī （801-880）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:14:52",
+   "ended": "2026-11-24 04:16:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 881,
+   "end": 960,
+   "chars": 2717,
+   "sents": 80,
+   "title": "Padamañjarī （881-960）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:15:02",
+   "ended": "2026-11-24 04:16:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 961,
+   "end": 1040,
+   "chars": 2888,
+   "sents": 80,
+   "title": "Padamañjarī （961-1040）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:15:17",
+   "ended": "2026-11-24 04:17:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1041,
+   "end": 1120,
+   "chars": 3194,
+   "sents": 80,
+   "title": "Padamañjarī （1041-1120）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:15:27",
+   "ended": "2026-11-24 04:17:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1121,
+   "end": 1200,
+   "chars": 2568,
+   "sents": 80,
+   "title": "Padamañjarī （1121-1200）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:15:37",
+   "ended": "2026-11-24 04:17:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1201,
+   "end": 1280,
+   "chars": 2544,
+   "sents": 80,
+   "title": "Padamañjarī （1201-1280）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:15:53",
+   "ended": "2026-11-24 04:17:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1281,
+   "end": 1360,
+   "chars": 2449,
+   "sents": 80,
+   "title": "Padamañjarī （1281-1360）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:16:03",
+   "ended": "2026-11-24 04:17:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1361,
+   "end": 1440,
+   "chars": 2336,
+   "sents": 80,
+   "title": "Padamañjarī （1361-1440）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:16:13",
+   "ended": "2026-11-24 04:17:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1441,
+   "end": 1520,
+   "chars": 2032,
+   "sents": 80,
+   "title": "Padamañjarī （1441-1520）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:16:23",
+   "ended": "2026-11-24 04:17:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1521,
+   "end": 1600,
+   "chars": 2091,
+   "sents": 80,
+   "title": "Padamañjarī （1521-1600）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:16:38",
+   "ended": "2026-11-24 04:17:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 47,
+   "start": 1601,
+   "end": 1640,
+   "chars": 1441,
+   "sents": 40,
+   "title": "Padamañjarī （1601-1640）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:16:48",
+   "ended": "2026-11-24 04:17:49",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 4
+}

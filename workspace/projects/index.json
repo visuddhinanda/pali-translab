@@ -1,7 +1,1837 @@
 {
  "schema": 2,
- "updated": "2026-11-24 02:02:17",
+ "updated": "2026-11-25 15:42:23",
  "projects": [
+  {
+   "name": "x59-moggallana-pancika-tika",
+   "title": "Moggallāna pañcikā ṭīkā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 18,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 120,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 120,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 448559,
+   "pct": 100.0,
+   "updated": "2026-11-25 15:42:22",
+   "created": "2026-11-24 11:28:47"
+  },
+  {
+   "name": "x60-payogasiddhipali",
+   "title": "Payogasiddhipāḷi 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 19,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 93,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 93,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 294643,
+   "pct": 100.0,
+   "updated": "2026-11-25 15:37:45",
+   "created": "2026-11-24 11:28:50"
+  },
+  {
+   "name": "x55-mahakaccayanasaddapatha",
+   "title": "Mahākaccāyanasaddāpāṭha 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 14,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 66,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 66,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 177438,
+   "pct": 100.0,
+   "updated": "2026-11-25 14:52:49",
+   "created": "2026-11-24 11:28:09"
+  },
+  {
+   "name": "x54-moggallanabyakaranam",
+   "title": "Moggallānabyākaraṇaṃ 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 13,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 63,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 63,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 208969,
+   "pct": 100.0,
+   "updated": "2026-11-25 14:41:32",
+   "created": "2026-11-24 11:28:02"
+  },
+  {
+   "name": "x57-saddanitippakaranam-dhatumala",
+   "title": "Saddanītippakaraṇaṃ (dhātumālā) 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 16,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 178,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 178,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 453172,
+   "pct": 100.0,
+   "updated": "2026-11-25 14:33:29",
+   "created": "2026-11-24 11:28:16"
+  },
+  {
+   "name": "x62-abhidhanappadipika",
+   "title": "Abhidhānappadīpikā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 21,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 51,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 51,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 118026,
+   "pct": 100.0,
+   "updated": "2026-11-25 14:28:31",
+   "created": "2026-11-24 11:28:59"
+  },
+  {
+   "name": "x56-saddanitippakaranam-padamala",
+   "title": "Saddanītippakaraṇaṃ (padamālā) 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 15,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 130,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 130,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 541564,
+   "pct": 100.0,
+   "updated": "2026-11-25 14:10:26",
+   "created": "2026-11-24 11:28:13"
+  },
+  {
+   "name": "x58-padarupasiddhi",
+   "title": "Padarūpasiddhi 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 17,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 132,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 132,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 416400,
+   "pct": 100.0,
+   "updated": "2026-11-25 13:52:05",
+   "created": "2026-11-24 11:28:21"
+  },
+  {
+   "name": "x61-vuttodayam",
+   "title": "Vuttodayaṃ 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 20,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 5,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 5,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 9688,
+   "pct": 100.0,
+   "updated": "2026-11-24 15:21:28",
+   "created": "2026-11-24 11:28:53"
+  },
+  {
+   "name": "x52-balavatara",
+   "title": "Bālāvatāra 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 12,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 23,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 23,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 48260,
+   "pct": 100.0,
+   "updated": "2026-11-24 15:16:08",
+   "created": "2026-11-24 11:27:42"
+  },
+  {
+   "name": "x53-moggallanasuttapatho",
+   "title": "Moggallānasuttapāṭho 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 13,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 17,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 17,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 24761,
+   "pct": 100.0,
+   "updated": "2026-11-24 15:12:37",
+   "created": "2026-11-24 11:28:02"
+  },
+  {
+   "name": "x32-maharahaniti",
+   "title": "Mahārahanīti 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 30,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 17,
+   "unit_counts": {
+    "pending": 16,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 23360,
+   "pct": 5.7,
+   "updated": "2026-11-24 11:45:00",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x49-petakopadesapali",
+   "title": "Peṭakopadesapāḷi 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 155,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 72,
+   "unit_counts": {
+    "pending": 13,
+    "running": 0,
+    "done": 59,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 298857,
+   "pct": 81.5,
+   "updated": "2026-11-24 11:44:53",
+   "created": "2026-11-24 07:25:30"
+  },
+  {
+   "name": "x48-niruttidipanipatha",
+   "title": "Niruttidīpanīpāṭha 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 22,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 174,
+   "unit_counts": {
+    "pending": 118,
+    "running": 0,
+    "done": 56,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 589883,
+   "pct": 33.6,
+   "updated": "2026-11-24 11:44:52",
+   "created": "2026-11-24 02:48:01"
+  },
+  {
+   "name": "x38-naradakkhadipani",
+   "title": "Naradakkhadīpanī 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 35,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 24,
+   "unit_counts": {
+    "pending": 2,
+    "running": 0,
+    "done": 22,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 35951,
+   "pct": 92.3,
+   "updated": "2026-11-24 11:44:50",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x26-simavisodhani",
+   "title": "Sīmavisodhanī 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 37,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 45,
+   "unit_counts": {
+    "pending": 5,
+    "running": 0,
+    "done": 40,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 210266,
+   "pct": 92.3,
+   "updated": "2026-11-24 11:44:49",
+   "created": "2026-11-24 02:47:56"
+  },
+  {
+   "name": "x27-vessantaragiti",
+   "title": "Vessantarāgīti 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 38,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 33,
+   "unit_counts": {
+    "pending": 14,
+    "running": 0,
+    "done": 19,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 46038,
+   "pct": 57.8,
+   "updated": "2026-11-24 11:44:49",
+   "created": "2026-11-24 02:47:56"
+  },
+  {
+   "name": "x47-buddhagunagathavali",
+   "title": "Buddhaguṇagāthāvalī 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 8,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 47,
+   "unit_counts": {
+    "pending": 24,
+    "running": 0,
+    "done": 23,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 114437,
+   "pct": 49.4,
+   "updated": "2026-11-24 11:44:48",
+   "created": "2026-11-24 02:47:58"
+  },
+  {
+   "name": "x28-caturarakkhadipani",
+   "title": "Caturārakkhadīpanī 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 26,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 25,
+   "unit_counts": {
+    "pending": 3,
+    "running": 0,
+    "done": 22,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 54997,
+   "pct": 88.7,
+   "updated": "2026-11-24 11:44:47",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x29-kavidappananiti",
+   "title": "Kavidappaṇanīti 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 27,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 18,
+   "unit_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 17,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 42995,
+   "pct": 99.6,
+   "updated": "2026-11-24 11:44:47",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x31-dhammaniti",
+   "title": "Dhammanīti 汉译（藏外·仅本文）",
+   "state": "paused",
+   "book": 29,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 17,
+   "unit_counts": {
+    "pending": 10,
+    "running": 0,
+    "done": 7,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 36912,
+   "pct": 41.6,
+   "updated": "2026-11-24 11:44:47",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x25-rasavahini",
+   "title": "Rasavāhinī 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 36,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 54,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 54,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 214114,
+   "pct": 100.0,
+   "updated": "2026-11-24 11:41:51",
+   "created": "2026-11-24 02:47:56"
+  },
+  {
+   "name": "x22-spv-vinayapitaka",
+   "title": "(saṅgayana-puccha vissajjanā) Vinayapiṭaka 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 43,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 51,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 51,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 186846,
+   "pct": 100.0,
+   "updated": "2026-11-24 11:26:34",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x23-spv-abhidhammapitaka",
+   "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 44,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 15,
+   "unit_counts": {
+    "pending": 15,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 63226,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x24-spv-atthakatha",
+   "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 45,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 15,
+   "unit_counts": {
+    "pending": 15,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 47628,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x30-nitimanjari",
+   "title": "Nītimañjarī 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 28,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 4,
+   "unit_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 4885,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x33-lokaniti",
+   "title": "Lokanīti 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 31,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 12,
+   "unit_counts": {
+    "pending": 12,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 16309,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x34-suttantaniti",
+   "title": "Suttantanīti 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 32,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 2,
+   "unit_counts": {
+    "pending": 2,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 2522,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x35-vasalasutta",
+   "title": "Vasalasutta 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 32,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 2,
+   "unit_counts": {
+    "pending": 2,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 2811,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x36-surassatiniti",
+   "title": "Sūrassatīnīti 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 33,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 7,
+   "unit_counts": {
+    "pending": 7,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 10271,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x37-canakyanitipali",
+   "title": "Cāṇakyanītipāḷi 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 34,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 7,
+   "unit_counts": {
+    "pending": 7,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 10043,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x39-mahapanamapatha",
+   "title": "Mahāpaṇāmapāṭha 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 2,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 6,
+   "unit_counts": {
+    "pending": 6,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 13483,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x40-tigumbacetiya-thomana",
+   "title": "Tigumbacetiya thomanā 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 2,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1,
+   "unit_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 1572,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x41-vasamalinikya",
+   "title": "Vāsamālinīkya 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 2,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 5,
+   "unit_counts": {
+    "pending": 5,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 9940,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x42-lakkhanato",
+   "title": "Lakkhaṇāto 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 3,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 4,
+   "unit_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 5304,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:57"
+  },
+  {
+   "name": "x43-suttavandana",
+   "title": "Suttavandanā 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 4,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 8,
+   "unit_counts": {
+    "pending": 8,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 10950,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:58"
+  },
+  {
+   "name": "x44-jinalankara",
+   "title": "Jinālaṅkāra 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 5,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 14,
+   "unit_counts": {
+    "pending": 14,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 27892,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:58"
+  },
+  {
+   "name": "x45-kamalanjali",
+   "title": "Kamalāñjali 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 6,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 4,
+   "unit_counts": {
+    "pending": 4,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 10897,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:58"
+  },
+  {
+   "name": "x46-pajjamadhu",
+   "title": "Pajjamadhu 汉译（藏外·仅本文）",
+   "state": "idle",
+   "book": 7,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 1,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 7,
+   "unit_counts": {
+    "pending": 7,
+    "running": 0,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 15875,
+   "pct": 0.0,
+   "updated": "2026-11-24 11:02:48",
+   "created": "2026-11-24 02:47:58"
+  },
+  {
+   "name": "x21-spv-anguttaranikaye",
+   "title": "(saṅgayana-puccha vissajjanā) Aṅguttaranikāye 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 42,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 25,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 25,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 116497,
+   "pct": 100.0,
+   "updated": "2026-11-24 07:14:37",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x16-jinavamsadipam",
+   "title": "Jinavaṃsadīpaṃ 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 59,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 126,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 126,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 280756,
+   "pct": 100.0,
+   "updated": "2026-11-24 07:00:06",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x20-spv-samyuttanikaye",
+   "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 41,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 31,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 31,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 138441,
+   "pct": 100.0,
+   "updated": "2026-11-24 06:54:21",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x08-samantakutavannana",
+   "title": "Samantakūṭavaṇṇanā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 51,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 40,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 40,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 86247,
+   "pct": 100.0,
+   "updated": "2026-11-24 06:49:34",
+   "created": "2026-11-24 02:47:46"
+  },
+  {
+   "name": "x15-jinacaritaya",
+   "title": "Jinacaritaya 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 58,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 22,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 22,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 48307,
+   "pct": 100.0,
+   "updated": "2026-11-24 06:49:33",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x19-spv-majjhimanikaya",
+   "title": "(saṅgayana-puccha vissajjanā) Majjhimanikāya 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 40,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 23,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 23,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 102339,
+   "pct": 100.0,
+   "updated": "2026-11-24 06:42:55",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x18-spv-dighanikaye",
+   "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 39,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 14,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 14,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 54733,
+   "pct": 100.0,
+   "updated": "2026-11-24 06:34:28",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x17-telakatahagatha",
+   "title": "Telakaṭāhagāthā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 60,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 7,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 7,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 14710,
+   "pct": 100.0,
+   "updated": "2026-11-24 06:28:26",
+   "created": "2026-11-24 02:47:55"
+  },
+  {
+   "name": "x14-hatthavanagallavihara-vamso",
+   "title": "Hatthavanagallavihāra  vaṃso 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 57,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 13,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 13,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 48658,
+   "pct": 100.0,
+   "updated": "2026-11-24 05:48:24",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x13-dhatuvamso",
+   "title": "Dhātuvaṃso 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 56,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 26,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 26,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 100384,
+   "pct": 100.0,
+   "updated": "2026-11-24 05:41:48",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x12-dhatupatha-vilasiniya",
+   "title": "Dhātupāṭha  vilāsiniyā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 55,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 2,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 2,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 4078,
+   "pct": 100.0,
+   "updated": "2026-11-24 05:34:43",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x11-dathavamso",
+   "title": "Dāṭhāvaṃso 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 54,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 21,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 21,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 51013,
+   "pct": 100.0,
+   "updated": "2026-11-24 05:24:40",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x10-thupavamso",
+   "title": "Thupavaṃso 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 53,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 43,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 43,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 174778,
+   "pct": 100.0,
+   "updated": "2026-11-24 05:14:11",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x09-moggallana-vuttivivaranapancika",
+   "title": "Moggallāna vuttivivaraṇapañcikā. 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 52,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 54,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 54,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 142767,
+   "pct": 100.0,
+   "updated": "2026-11-24 04:54:48",
+   "created": "2026-11-24 02:47:47"
+  },
+  {
+   "name": "x03-mahavamsapali",
+   "title": "Mahāvaṃsapāḷi 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 63,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 203,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 203,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 473751,
+   "pct": 100.0,
+   "updated": "2026-11-24 04:46:39",
+   "created": "2026-11-24 02:47:45"
+  },
+  {
+   "name": "x07-kaccayana-dhatu-manjusa",
+   "title": "Kaccāyana  dhātu mañjūsā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 50,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 7,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 7,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 16195,
+   "pct": 100.0,
+   "updated": "2026-11-24 04:29:52",
+   "created": "2026-11-24 02:47:46"
+  },
+  {
+   "name": "x06-saddabindu-pakaranam",
+   "title": "Saddabindu pakaraṇaṃ 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 49,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 2,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 2,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 2347,
+   "pct": 100.0,
+   "updated": "2026-11-24 04:26:56",
+   "created": "2026-11-24 02:49:53"
+  },
+  {
+   "name": "x05-padasadhanam",
+   "title": "Padasādhanaṃ 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 48,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 19,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 19,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 90245,
+   "pct": 100.0,
+   "updated": "2026-11-24 04:24:34",
+   "created": "2026-11-24 02:47:46"
+  },
+  {
+   "name": "x04-padamanjari",
+   "title": "Padamañjarī 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 47,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 21,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 21,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 54256,
+   "pct": 100.0,
+   "updated": "2026-11-24 04:17:49",
+   "created": "2026-11-24 02:47:46"
+  },
+  {
+   "name": "x02-sasanavamsappadipika",
+   "title": "Sāsanavaṃsappadīpikā 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 62,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 59,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 59,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 257629,
+   "pct": 100.0,
+   "updated": "2026-11-24 03:26:27",
+   "created": "2026-11-24 02:47:25"
+  },
+  {
+   "name": "x01-culaganthavamsapali",
+   "title": "Cūḷaganthavaṃsapāḷi 汉译（藏外·仅本文）",
+   "state": "done",
+   "book": 61,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 1,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 1,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 11,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 11,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 36068,
+   "pct": 100.0,
+   "updated": "2026-11-24 03:03:21",
+   "created": "2026-11-24 02:47:25"
+  },
+  {
+   "name": "kn19",
+   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
+   "state": "running",
+   "book": 153,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 5,
+   "job_counts": {
+    "pending": 4,
+    "running": 1,
+    "done": 0,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 1355,
+   "unit_counts": {
+    "pending": 1104,
+    "running": 3,
+    "done": 248,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "chars": 1685670,
+   "pct": 58.0,
+   "updated": "2026-11-24 02:02:43",
+   "created": "2026-11-23 07:18:46"
+  },
   {
    "name": "kn18",
    "title": "弥兰王问 Milindapañha 两层汉译（本文／复注 Milidaṭīkā）",
@@ -91,36 +1921,6 @@
    "pct": 0.0,
    "updated": "2026-11-23 08:23:01",
    "created": "2026-11-22 11:10:29"
-  },
-  {
-   "name": "kn19",
-   "title": "导论 Nettippakaraṇa 汉译（本文／义注／复注 Nettiṭīkā·Nettivibhāvinī）",
-   "state": "running",
-   "book": 153,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 5,
-   "job_counts": {
-    "pending": 4,
-    "running": 1,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 1355,
-   "unit_counts": {
-    "pending": 1106,
-    "running": 3,
-    "done": 246,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 1685670,
-   "pct": 57.4,
-   "updated": "2026-11-24 02:02:16",
-   "created": "2026-11-23 07:18:46"
   },
   {
    "name": "an-catukkanipata",

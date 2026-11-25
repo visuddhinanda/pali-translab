@@ -1,0 +1,2733 @@
+{
+ "schema": 3,
+ "name": "x55-mahakaccayanasaddapatha",
+ "title": "Mahākaccāyanasaddāpāṭha 汉译（藏外·仅本文）",
+ "created": "2026-11-24 11:28:09",
+ "updated": "2026-11-25 14:52:49",
+ "book": 14,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "14": {
+   "layer": "mula",
+   "title": "Mahākaccāyanasaddāpāṭha"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 14,
+   "title": "Mahākaccāyanasaddāpāṭha",
+   "start": 715,
+   "end": 3486,
+   "fam": "x55-mahakaccayanasaddapatha",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 715,
+     "end": 767,
+     "chars": 2625,
+     "sents": 72,
+     "paras": 53,
+     "chapters": [
+      {
+       "start": 715,
+       "end": 715,
+       "title": "Mahākaccāyanasaddāpāṭha"
+      },
+      {
+       "start": 716,
+       "end": 716,
+       "title": "1. Sandhikappa"
+      },
+      {
+       "start": 717,
+       "end": 767,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 14,
+     "layer": "mula",
+     "title": "Mahākaccāyanasaddāpāṭha … Paṭhamakaṇḍa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 768,
+     "end": 819,
+     "chars": 2223,
+     "sents": 80,
+     "paras": 52,
+     "chapters": [
+      {
+       "start": 768,
+       "end": 824,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（768-819）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 820,
+     "end": 824,
+     "chars": 243,
+     "sents": 6,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 768,
+       "end": 824,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（820-824）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 825,
+     "end": 853,
+     "chars": 1520,
+     "sents": 37,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 825,
+       "end": 853,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 854,
+     "end": 907,
+     "chars": 2985,
+     "sents": 80,
+     "paras": 54,
+     "chapters": [
+      {
+       "start": 854,
+       "end": 908,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（854-907）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 908,
+     "end": 908,
+     "chars": 31,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 854,
+       "end": 908,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（908-908）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 909,
+     "end": 948,
+     "chars": 1912,
+     "sents": 47,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 909,
+       "end": 947,
+       "title": "Pañcamakaṇḍa"
+      },
+      {
+       "start": 948,
+       "end": 948,
+       "title": "2. Nāmakappa"
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 14,
+     "layer": "mula",
+     "title": "Pañcamakaṇḍa … 2. Nāmakappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 949,
+     "end": 1006,
+     "chars": 2558,
+     "sents": 80,
+     "paras": 58,
+     "chapters": [
+      {
+       "start": 949,
+       "end": 1273,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（949-1006）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1007,
+     "end": 1069,
+     "chars": 3131,
+     "sents": 80,
+     "paras": 63,
+     "chapters": [
+      {
+       "start": 949,
+       "end": 1273,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（1007-1069）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1070,
+     "end": 1121,
+     "chars": 2787,
+     "sents": 80,
+     "paras": 52,
+     "chapters": [
+      {
+       "start": 949,
+       "end": 1273,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（1070-1121）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1122,
+     "end": 1178,
+     "chars": 2963,
+     "sents": 80,
+     "paras": 57,
+     "chapters": [
+      {
+       "start": 949,
+       "end": 1273,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（1122-1178）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1179,
+     "end": 1231,
+     "chars": 2625,
+     "sents": 79,
+     "paras": 53,
+     "chapters": [
+      {
+       "start": 949,
+       "end": 1273,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（1179-1231）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1232,
+     "end": 1273,
+     "chars": 2009,
+     "sents": 62,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 949,
+       "end": 1273,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（1232-1273）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1274,
+     "end": 1332,
+     "chars": 3147,
+     "sents": 80,
+     "paras": 59,
+     "chapters": [
+      {
+       "start": 1274,
+       "end": 1446,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（1274-1332）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1333,
+     "end": 1395,
+     "chars": 3145,
+     "sents": 79,
+     "paras": 63,
+     "chapters": [
+      {
+       "start": 1274,
+       "end": 1446,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（1333-1395）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1396,
+     "end": 1446,
+     "chars": 2616,
+     "sents": 70,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 1274,
+       "end": 1446,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（1396-1446）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1447,
+     "end": 1499,
+     "chars": 2521,
+     "sents": 80,
+     "paras": 53,
+     "chapters": [
+      {
+       "start": 1447,
+       "end": 1665,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（1447-1499）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1500,
+     "end": 1558,
+     "chars": 3084,
+     "sents": 80,
+     "paras": 59,
+     "chapters": [
+      {
+       "start": 1447,
+       "end": 1665,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（1500-1558）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1559,
+     "end": 1621,
+     "chars": 2540,
+     "sents": 80,
+     "paras": 63,
+     "chapters": [
+      {
+       "start": 1447,
+       "end": 1665,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（1559-1621）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1622,
+     "end": 1665,
+     "chars": 2168,
+     "sents": 56,
+     "paras": 44,
+     "chapters": [
+      {
+       "start": 1447,
+       "end": 1665,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（1622-1665）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1666,
+     "end": 1718,
+     "chars": 2657,
+     "sents": 80,
+     "paras": 53,
+     "chapters": [
+      {
+       "start": 1666,
+       "end": 1801,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M21",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（1666-1718）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1719,
+     "end": 1786,
+     "chars": 2616,
+     "sents": 80,
+     "paras": 68,
+     "chapters": [
+      {
+       "start": 1666,
+       "end": 1801,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M22",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（1719-1786）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1787,
+     "end": 1801,
+     "chars": 715,
+     "sents": 16,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 1666,
+       "end": 1801,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M23",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（1787-1801）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1802,
+     "end": 1873,
+     "chars": 2947,
+     "sents": 79,
+     "paras": 72,
+     "chapters": [
+      {
+       "start": 1802,
+       "end": 1882,
+       "title": "Pañcamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M24",
+     "book": 14,
+     "layer": "mula",
+     "title": "Pañcamakaṇḍa（1802-1873）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1874,
+     "end": 1882,
+     "chars": 493,
+     "sents": 14,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 1802,
+       "end": 1882,
+       "title": "Pañcamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M25",
+     "book": 14,
+     "layer": "mula",
+     "title": "Pañcamakaṇḍa（1874-1882）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1883,
+     "end": 1883,
+     "chars": 14,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 1883,
+       "end": 1883,
+       "title": "3. Kārakakappa"
+      }
+     ],
+     "split": false,
+     "id": "M26",
+     "book": 14,
+     "layer": "mula",
+     "title": "3. Kārakakappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1884,
+     "end": 1925,
+     "chars": 4918,
+     "sents": 70,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 1884,
+       "end": 2108,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M27",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（1884-1925）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1926,
+     "end": 1965,
+     "chars": 4863,
+     "sents": 64,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 1884,
+       "end": 2108,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M28",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（1926-1965）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1966,
+     "end": 2026,
+     "chars": 4349,
+     "sents": 80,
+     "paras": 61,
+     "chapters": [
+      {
+       "start": 1884,
+       "end": 2108,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（1966-2026）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2027,
+     "end": 2088,
+     "chars": 3971,
+     "sents": 79,
+     "paras": 62,
+     "chapters": [
+      {
+       "start": 1884,
+       "end": 2108,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（2027-2088）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2089,
+     "end": 2108,
+     "chars": 1120,
+     "sents": 25,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1884,
+       "end": 2108,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M31",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（2089-2108）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2109,
+     "end": 2109,
+     "chars": 14,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 2109,
+       "end": 2109,
+       "title": "4. Samāsakappa"
+      }
+     ],
+     "split": false,
+     "id": "M32",
+     "book": 14,
+     "layer": "mula",
+     "title": "4. Samāsakappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2110,
+     "end": 2160,
+     "chars": 4953,
+     "sents": 79,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 2110,
+       "end": 2248,
+       "title": "Sattamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M33",
+     "book": 14,
+     "layer": "mula",
+     "title": "Sattamakaṇḍa（2110-2160）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2161,
+     "end": 2178,
+     "chars": 3923,
+     "sents": 39,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 2110,
+       "end": 2248,
+       "title": "Sattamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M34",
+     "book": 14,
+     "layer": "mula",
+     "title": "Sattamakaṇḍa（2161-2178）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2179,
+     "end": 2194,
+     "chars": 4877,
+     "sents": 26,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 2110,
+       "end": 2248,
+       "title": "Sattamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M35",
+     "book": 14,
+     "layer": "mula",
+     "title": "Sattamakaṇḍa（2179-2194）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2195,
+     "end": 2248,
+     "chars": 3715,
+     "sents": 68,
+     "paras": 54,
+     "chapters": [
+      {
+       "start": 2110,
+       "end": 2248,
+       "title": "Sattamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M36",
+     "book": 14,
+     "layer": "mula",
+     "title": "Sattamakaṇḍa（2195-2248）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2249,
+     "end": 2249,
+     "chars": 16,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 2249,
+       "end": 2249,
+       "title": "5. Taddhitakappa"
+      }
+     ],
+     "split": false,
+     "id": "M37",
+     "book": 14,
+     "layer": "mula",
+     "title": "5. Taddhitakappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2250,
+     "end": 2285,
+     "chars": 4675,
+     "sents": 80,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2519,
+       "title": "Aṭṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 14,
+     "layer": "mula",
+     "title": "Aṭṭhamakaṇḍa（2250-2285）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2286,
+     "end": 2336,
+     "chars": 3821,
+     "sents": 80,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2519,
+       "title": "Aṭṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M39",
+     "book": 14,
+     "layer": "mula",
+     "title": "Aṭṭhamakaṇḍa（2286-2336）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2337,
+     "end": 2400,
+     "chars": 3360,
+     "sents": 80,
+     "paras": 64,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2519,
+       "title": "Aṭṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M40",
+     "book": 14,
+     "layer": "mula",
+     "title": "Aṭṭhamakaṇḍa（2337-2400）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2401,
+     "end": 2459,
+     "chars": 4438,
+     "sents": 78,
+     "paras": 59,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2519,
+       "title": "Aṭṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 14,
+     "layer": "mula",
+     "title": "Aṭṭhamakaṇḍa（2401-2459）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2460,
+     "end": 2516,
+     "chars": 4038,
+     "sents": 79,
+     "paras": 57,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2519,
+       "title": "Aṭṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 14,
+     "layer": "mula",
+     "title": "Aṭṭhamakaṇḍa（2460-2516）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2517,
+     "end": 2519,
+     "chars": 130,
+     "sents": 4,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 2250,
+       "end": 2519,
+       "title": "Aṭṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M43",
+     "book": 14,
+     "layer": "mula",
+     "title": "Aṭṭhamakaṇḍa（2517-2519）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2520,
+     "end": 2520,
+     "chars": 15,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 2520,
+       "end": 2520,
+       "title": "6. Ākhyātakappa"
+      }
+     ],
+     "split": false,
+     "id": "M44",
+     "book": 14,
+     "layer": "mula",
+     "title": "6. Ākhyātakappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2521,
+     "end": 2585,
+     "chars": 3074,
+     "sents": 80,
+     "paras": 65,
+     "chapters": [
+      {
+       "start": 2521,
+       "end": 2623,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M45",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（2521-2585）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2586,
+     "end": 2623,
+     "chars": 2705,
+     "sents": 50,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 2521,
+       "end": 2623,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M46",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（2586-2623）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2624,
+     "end": 2673,
+     "chars": 3779,
+     "sents": 80,
+     "paras": 50,
+     "chapters": [
+      {
+       "start": 2624,
+       "end": 2716,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M47",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（2624-2673）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2674,
+     "end": 2716,
+     "chars": 2013,
+     "sents": 43,
+     "paras": 43,
+     "chapters": [
+      {
+       "start": 2624,
+       "end": 2716,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M48",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa（2674-2716）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2717,
+     "end": 2780,
+     "chars": 2529,
+     "sents": 73,
+     "paras": 64,
+     "chapters": [
+      {
+       "start": 2717,
+       "end": 2805,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M49",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（2717-2780）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2781,
+     "end": 2805,
+     "chars": 1384,
+     "sents": 42,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2717,
+       "end": 2805,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M50",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（2781-2805）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2806,
+     "end": 2877,
+     "chars": 3019,
+     "sents": 80,
+     "paras": 72,
+     "chapters": [
+      {
+       "start": 2806,
+       "end": 2954,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M51",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（2806-2877）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2878,
+     "end": 2943,
+     "chars": 2604,
+     "sents": 80,
+     "paras": 66,
+     "chapters": [
+      {
+       "start": 2806,
+       "end": 2954,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M52",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（2878-2943）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2944,
+     "end": 2954,
+     "chars": 428,
+     "sents": 14,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 2806,
+       "end": 2954,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M53",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa（2944-2954）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2955,
+     "end": 2955,
+     "chars": 18,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 2955,
+       "end": 2955,
+       "title": "7. Kibbidhānakappa"
+      }
+     ],
+     "split": false,
+     "id": "M54",
+     "book": 14,
+     "layer": "mula",
+     "title": "7. Kibbidhānakappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2956,
+     "end": 3021,
+     "chars": 3872,
+     "sents": 80,
+     "paras": 66,
+     "chapters": [
+      {
+       "start": 2956,
+       "end": 3060,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M55",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（2956-3021）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3022,
+     "end": 3060,
+     "chars": 2199,
+     "sents": 46,
+     "paras": 39,
+     "chapters": [
+      {
+       "start": 2956,
+       "end": 3060,
+       "title": "Paṭhamakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M56",
+     "book": 14,
+     "layer": "mula",
+     "title": "Paṭhamakaṇḍa（3022-3060）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3061,
+     "end": 3125,
+     "chars": 3473,
+     "sents": 74,
+     "paras": 65,
+     "chapters": [
+      {
+       "start": 3061,
+       "end": 3125,
+       "title": "Dutiyakaṇḍa"
+      }
+     ],
+     "split": false,
+     "id": "M57",
+     "book": 14,
+     "layer": "mula",
+     "title": "Dutiyakaṇḍa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3126,
+     "end": 3183,
+     "chars": 4117,
+     "sents": 80,
+     "paras": 58,
+     "chapters": [
+      {
+       "start": 3126,
+       "end": 3201,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M58",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（3126-3183）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3184,
+     "end": 3201,
+     "chars": 1132,
+     "sents": 27,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 3126,
+       "end": 3201,
+       "title": "Tatiyakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M59",
+     "book": 14,
+     "layer": "mula",
+     "title": "Tatiyakaṇḍa（3184-3201）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3202,
+     "end": 3260,
+     "chars": 3227,
+     "sents": 72,
+     "paras": 59,
+     "chapters": [
+      {
+       "start": 3202,
+       "end": 3260,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": false,
+     "id": "M60",
+     "book": 14,
+     "layer": "mula",
+     "title": "Catutthakaṇḍa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3261,
+     "end": 3321,
+     "chars": 2379,
+     "sents": 69,
+     "paras": 61,
+     "chapters": [
+      {
+       "start": 3261,
+       "end": 3320,
+       "title": "Pañcamakaṇḍa"
+      },
+      {
+       "start": 3321,
+       "end": 3321,
+       "title": "8. Uṇādikappa"
+      }
+     ],
+     "split": false,
+     "id": "M61",
+     "book": 14,
+     "layer": "mula",
+     "title": "Pañcamakaṇḍa … 8. Uṇādikappa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3322,
+     "end": 3369,
+     "chars": 4199,
+     "sents": 56,
+     "paras": 48,
+     "chapters": [
+      {
+       "start": 3322,
+       "end": 3486,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M62",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（3322-3369）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3370,
+     "end": 3393,
+     "chars": 4909,
+     "sents": 34,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 3322,
+       "end": 3486,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M63",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（3370-3393）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3394,
+     "end": 3431,
+     "chars": 3260,
+     "sents": 52,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 3322,
+       "end": 3486,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M64",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（3394-3431）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3432,
+     "end": 3458,
+     "chars": 4678,
+     "sents": 62,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 3322,
+       "end": 3486,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M65",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（3432-3458）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3459,
+     "end": 3486,
+     "chars": 4969,
+     "sents": 37,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 3322,
+       "end": 3486,
+       "title": "Chaṭṭhakaṇḍa"
+      }
+     ],
+     "split": true,
+     "id": "M66",
+     "book": 14,
+     "layer": "mula",
+     "title": "Chaṭṭhakaṇḍa（3459-3486）",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 2772,
+   "chars": 177438,
+   "sents": 3745,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 14,
+   "layer": "mula",
+   "start": 715,
+   "end": 3486,
+   "title": "Mahākaccāyanasaddāpāṭha"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 715,
+   "end": 767,
+   "chars": 2625,
+   "sents": 72,
+   "title": "Mahākaccāyanasaddāpāṭha … Paṭhamakaṇḍa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:48:06",
+   "ended": "2026-11-24 11:49:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 768,
+   "end": 819,
+   "chars": 2223,
+   "sents": 80,
+   "title": "Dutiyakaṇḍa（768-819）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:48:16",
+   "ended": "2026-11-24 11:49:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 820,
+   "end": 824,
+   "chars": 243,
+   "sents": 6,
+   "title": "Dutiyakaṇḍa（820-824）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:48:26",
+   "ended": "2026-11-24 11:48:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 825,
+   "end": 853,
+   "chars": 1520,
+   "sents": 37,
+   "title": "Tatiyakaṇḍa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:48:42",
+   "ended": "2026-11-24 11:49:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 854,
+   "end": 907,
+   "chars": 2985,
+   "sents": 80,
+   "title": "Catutthakaṇḍa（854-907）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:12",
+   "ended": "2026-11-24 11:50:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 908,
+   "end": 908,
+   "chars": 31,
+   "sents": 1,
+   "title": "Catutthakaṇḍa（908-908）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:32",
+   "ended": "2026-11-24 11:49:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 909,
+   "end": 948,
+   "chars": 1912,
+   "sents": 47,
+   "title": "Pañcamakaṇḍa … 2. Nāmakappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:48",
+   "ended": "2026-11-24 11:50:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 949,
+   "end": 1006,
+   "chars": 2558,
+   "sents": 80,
+   "title": "Paṭhamakaṇḍa（949-1006）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:58",
+   "ended": "2026-11-24 11:51:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1007,
+   "end": 1069,
+   "chars": 3131,
+   "sents": 80,
+   "title": "Paṭhamakaṇḍa（1007-1069）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:33",
+   "ended": "2026-11-24 11:51:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1070,
+   "end": 1121,
+   "chars": 2787,
+   "sents": 80,
+   "title": "Paṭhamakaṇḍa（1070-1121）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:53",
+   "ended": "2026-11-24 11:52:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1122,
+   "end": 1178,
+   "chars": 2963,
+   "sents": 80,
+   "title": "Paṭhamakaṇḍa（1122-1178）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:13",
+   "ended": "2026-11-24 11:52:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1179,
+   "end": 1231,
+   "chars": 2625,
+   "sents": 79,
+   "title": "Paṭhamakaṇḍa（1179-1231）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:43",
+   "ended": "2026-11-24 11:52:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1232,
+   "end": 1273,
+   "chars": 2009,
+   "sents": 62,
+   "title": "Paṭhamakaṇḍa（1232-1273）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:09",
+   "ended": "2026-11-24 11:53:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1274,
+   "end": 1332,
+   "chars": 3147,
+   "sents": 80,
+   "title": "Dutiyakaṇḍa（1274-1332）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:29",
+   "ended": "2026-11-24 11:54:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1333,
+   "end": 1395,
+   "chars": 3145,
+   "sents": 79,
+   "title": "Dutiyakaṇḍa（1333-1395）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:49",
+   "ended": "2026-11-24 11:54:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1396,
+   "end": 1446,
+   "chars": 2616,
+   "sents": 70,
+   "title": "Dutiyakaṇḍa（1396-1446）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:53:35",
+   "ended": "2026-11-24 11:55:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1447,
+   "end": 1499,
+   "chars": 2521,
+   "sents": 80,
+   "title": "Tatiyakaṇḍa（1447-1499）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:28:32",
+   "ended": "2026-11-25 14:29:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1500,
+   "end": 1558,
+   "chars": 3084,
+   "sents": 80,
+   "title": "Tatiyakaṇḍa（1500-1558）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:54:15",
+   "ended": "2026-11-24 12:06:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1559,
+   "end": 1621,
+   "chars": 2540,
+   "sents": 80,
+   "title": "Tatiyakaṇḍa（1559-1621）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:02:58",
+   "ended": "2026-11-24 13:07:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1622,
+   "end": 1665,
+   "chars": 2168,
+   "sents": 56,
+   "title": "Tatiyakaṇḍa（1622-1665）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 12:06:22",
+   "ended": "2026-11-24 12:10:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1666,
+   "end": 1718,
+   "chars": 2657,
+   "sents": 80,
+   "title": "Catutthakaṇḍa（1666-1718）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:07:25",
+   "ended": "2026-11-24 13:13:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1719,
+   "end": 1786,
+   "chars": 2616,
+   "sents": 80,
+   "title": "Catutthakaṇḍa（1719-1786）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:13:43",
+   "ended": "2026-11-24 13:19:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1787,
+   "end": 1801,
+   "chars": 715,
+   "sents": 16,
+   "title": "Catutthakaṇḍa（1787-1801）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:19:36",
+   "ended": "2026-11-24 13:35:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1802,
+   "end": 1873,
+   "chars": 2947,
+   "sents": 79,
+   "title": "Pañcamakaṇḍa（1802-1873）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:35:19",
+   "ended": "2026-11-24 13:44:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1874,
+   "end": 1882,
+   "chars": 493,
+   "sents": 14,
+   "title": "Pañcamakaṇḍa（1874-1882）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:44:43",
+   "ended": "2026-11-24 13:45:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1883,
+   "end": 1883,
+   "chars": 14,
+   "sents": 1,
+   "title": "3. Kārakakappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:45:14",
+   "ended": "2026-11-24 13:45:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1884,
+   "end": 1925,
+   "chars": 4918,
+   "sents": 70,
+   "title": "Chaṭṭhakaṇḍa（1884-1925）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:45:44",
+   "ended": "2026-11-24 13:47:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1926,
+   "end": 1965,
+   "chars": 4863,
+   "sents": 64,
+   "title": "Chaṭṭhakaṇḍa（1926-1965）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:47:09",
+   "ended": "2026-11-24 13:48:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 1966,
+   "end": 2026,
+   "chars": 4349,
+   "sents": 80,
+   "title": "Chaṭṭhakaṇḍa（1966-2026）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:48:50",
+   "ended": "2026-11-24 13:51:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2027,
+   "end": 2088,
+   "chars": 3971,
+   "sents": 79,
+   "title": "Chaṭṭhakaṇḍa（2027-2088）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:51:52",
+   "ended": "2026-11-24 13:53:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2089,
+   "end": 2108,
+   "chars": 1120,
+   "sents": 25,
+   "title": "Chaṭṭhakaṇḍa（2089-2108）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:53:02",
+   "ended": "2026-11-24 13:53:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2109,
+   "end": 2109,
+   "chars": 14,
+   "sents": 1,
+   "title": "4. Samāsakappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:29:38",
+   "ended": "2026-11-25 14:29:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2110,
+   "end": 2160,
+   "chars": 4953,
+   "sents": 79,
+   "title": "Sattamakaṇḍa（2110-2160）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:29:53",
+   "ended": "2026-11-25 14:31:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2161,
+   "end": 2178,
+   "chars": 3923,
+   "sents": 39,
+   "title": "Sattamakaṇḍa（2161-2178）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:31:19",
+   "ended": "2026-11-25 14:32:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2179,
+   "end": 2194,
+   "chars": 4877,
+   "sents": 26,
+   "title": "Sattamakaṇḍa（2179-2194）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 14:51:47",
+   "ended": "2026-11-24 15:01:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2195,
+   "end": 2248,
+   "chars": 3715,
+   "sents": 68,
+   "title": "Sattamakaṇḍa（2195-2248）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:01:17",
+   "ended": "2026-11-24 15:02:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2249,
+   "end": 2249,
+   "chars": 16,
+   "sents": 1,
+   "title": "5. Taddhitakappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:02:52",
+   "ended": "2026-11-24 15:06:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2250,
+   "end": 2285,
+   "chars": 4675,
+   "sents": 80,
+   "title": "Aṭṭhamakaṇḍa（2250-2285）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:06:39",
+   "ended": "2026-11-24 15:09:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2286,
+   "end": 2336,
+   "chars": 3821,
+   "sents": 80,
+   "title": "Aṭṭhamakaṇḍa（2286-2336）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:09:01",
+   "ended": "2026-11-24 15:11:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2337,
+   "end": 2400,
+   "chars": 3360,
+   "sents": 80,
+   "title": "Aṭṭhamakaṇḍa（2337-2400）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:11:17",
+   "ended": "2026-11-24 15:12:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2401,
+   "end": 2459,
+   "chars": 4438,
+   "sents": 78,
+   "title": "Aṭṭhamakaṇḍa（2401-2459）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:12:43",
+   "ended": "2026-11-24 15:14:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2460,
+   "end": 2516,
+   "chars": 4038,
+   "sents": 79,
+   "title": "Aṭṭhamakaṇḍa（2460-2516）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:14:19",
+   "ended": "2026-11-24 15:16:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2517,
+   "end": 2519,
+   "chars": 130,
+   "sents": 4,
+   "title": "Aṭṭhamakaṇḍa（2517-2519）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:16:04",
+   "ended": "2026-11-24 15:17:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2520,
+   "end": 2520,
+   "chars": 15,
+   "sents": 1,
+   "title": "6. Ākhyātakappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:17:20",
+   "ended": "2026-11-24 15:17:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2521,
+   "end": 2585,
+   "chars": 3074,
+   "sents": 80,
+   "title": "Paṭhamakaṇḍa（2521-2585）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:17:55",
+   "ended": "2026-11-24 15:21:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2586,
+   "end": 2623,
+   "chars": 2705,
+   "sents": 50,
+   "title": "Paṭhamakaṇḍa（2586-2623）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-25 14:32:04",
+   "ended": "2026-11-25 14:32:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2624,
+   "end": 2673,
+   "chars": 3779,
+   "sents": 80,
+   "title": "Dutiyakaṇḍa（2624-2673）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:32:55",
+   "ended": "2026-11-25 14:34:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2674,
+   "end": 2716,
+   "chars": 2013,
+   "sents": 43,
+   "title": "Dutiyakaṇḍa（2674-2716）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:34:05",
+   "ended": "2026-11-25 14:34:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2717,
+   "end": 2780,
+   "chars": 2529,
+   "sents": 73,
+   "title": "Tatiyakaṇḍa（2717-2780）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:34:50",
+   "ended": "2026-11-25 14:35:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2781,
+   "end": 2805,
+   "chars": 1384,
+   "sents": 42,
+   "title": "Tatiyakaṇḍa（2781-2805）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:35:46",
+   "ended": "2026-11-25 14:36:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2806,
+   "end": 2877,
+   "chars": 3019,
+   "sents": 80,
+   "title": "Catutthakaṇḍa（2806-2877）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:36:21",
+   "ended": "2026-11-25 14:37:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M52:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2878,
+   "end": 2943,
+   "chars": 2604,
+   "sents": 80,
+   "title": "Catutthakaṇḍa（2878-2943）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:37:27",
+   "ended": "2026-11-25 14:38:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M53:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2944,
+   "end": 2954,
+   "chars": 428,
+   "sents": 14,
+   "title": "Catutthakaṇḍa（2944-2954）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:38:32",
+   "ended": "2026-11-25 14:38:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M54:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2955,
+   "end": 2955,
+   "chars": 18,
+   "sents": 1,
+   "title": "7. Kibbidhānakappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:38:47",
+   "ended": "2026-11-25 14:39:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M55:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 2956,
+   "end": 3021,
+   "chars": 3872,
+   "sents": 80,
+   "title": "Paṭhamakaṇḍa（2956-3021）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:39:03",
+   "ended": "2026-11-25 14:40:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M56:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3022,
+   "end": 3060,
+   "chars": 2199,
+   "sents": 46,
+   "title": "Paṭhamakaṇḍa（3022-3060）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:40:33",
+   "ended": "2026-11-25 14:41:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M57:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3061,
+   "end": 3125,
+   "chars": 3473,
+   "sents": 74,
+   "title": "Dutiyakaṇḍa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:41:24",
+   "ended": "2026-11-25 14:42:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M58:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3126,
+   "end": 3183,
+   "chars": 4117,
+   "sents": 80,
+   "title": "Tatiyakaṇḍa（3126-3183）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:42:29",
+   "ended": "2026-11-25 14:43:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M59:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3184,
+   "end": 3201,
+   "chars": 1132,
+   "sents": 27,
+   "title": "Tatiyakaṇḍa（3184-3201）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:43:50",
+   "ended": "2026-11-25 14:44:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M60:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3202,
+   "end": 3260,
+   "chars": 3227,
+   "sents": 72,
+   "title": "Catutthakaṇḍa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:44:20",
+   "ended": "2026-11-25 14:45:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M61:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3261,
+   "end": 3321,
+   "chars": 2379,
+   "sents": 69,
+   "title": "Pañcamakaṇḍa … 8. Uṇādikappa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:45:26",
+   "ended": "2026-11-25 14:46:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M62:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3322,
+   "end": 3369,
+   "chars": 4199,
+   "sents": 56,
+   "title": "Chaṭṭhakaṇḍa（3322-3369）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:46:16",
+   "ended": "2026-11-25 14:47:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M63:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3370,
+   "end": 3393,
+   "chars": 4909,
+   "sents": 34,
+   "title": "Chaṭṭhakaṇḍa（3370-3393）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:47:37",
+   "ended": "2026-11-25 14:49:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M64:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3394,
+   "end": 3431,
+   "chars": 3260,
+   "sents": 52,
+   "title": "Chaṭṭhakaṇḍa（3394-3431）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:49:02",
+   "ended": "2026-11-25 14:50:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M65:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3432,
+   "end": 3458,
+   "chars": 4678,
+   "sents": 62,
+   "title": "Chaṭṭhakaṇḍa（3432-3458）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:50:03",
+   "ended": "2026-11-25 14:51:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M66:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 14,
+   "start": 3459,
+   "end": 3486,
+   "chars": 4969,
+   "sents": 37,
+   "title": "Chaṭṭhakaṇḍa（3459-3486）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:51:29",
+   "ended": "2026-11-25 14:52:49",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 55
+}

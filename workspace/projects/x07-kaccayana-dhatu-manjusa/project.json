@@ -1,0 +1,1118 @@
+{
+ "schema": 3,
+ "name": "x07-kaccayana-dhatu-manjusa",
+ "title": "Kaccāyana  dhātu mañjūsā 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:46",
+ "updated": "2026-11-24 04:29:52",
+ "book": 50,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "50": {
+   "layer": "mula",
+   "title": "Kaccāyana  dhātu mañjūsā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 50,
+   "title": "Kaccāyana  dhātu mañjūsā",
+   "start": 1,
+   "end": 494,
+   "fam": "x07-kaccayana-dhatu-manjusa",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1,
+     "end": 79,
+     "chars": 3162,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 7,
+       "title": "Kaccāyana  dhātu mañjūsā"
+      },
+      {
+       "start": 8,
+       "end": 10,
+       "title": "1."
+      },
+      {
+       "start": 11,
+       "end": 13,
+       "title": "2."
+      },
+      {
+       "start": 14,
+       "end": 19,
+       "title": "3."
+      },
+      {
+       "start": 20,
+       "end": 22,
+       "title": "6."
+      },
+      {
+       "start": 23,
+       "end": 25,
+       "title": "7."
+      },
+      {
+       "start": 26,
+       "end": 28,
+       "title": "8."
+      },
+      {
+       "start": 29,
+       "end": 31,
+       "title": "9. "
+      },
+      {
+       "start": 32,
+       "end": 34,
+       "title": "10."
+      },
+      {
+       "start": 35,
+       "end": 37,
+       "title": "11."
+      },
+      {
+       "start": 38,
+       "end": 40,
+       "title": "12."
+      },
+      {
+       "start": 41,
+       "end": 43,
+       "title": "13."
+      },
+      {
+       "start": 44,
+       "end": 46,
+       "title": "14. "
+      },
+      {
+       "start": 47,
+       "end": 49,
+       "title": "15."
+      },
+      {
+       "start": 50,
+       "end": 52,
+       "title": "16."
+      },
+      {
+       "start": 53,
+       "end": 55,
+       "title": "17."
+      },
+      {
+       "start": 56,
+       "end": 58,
+       "title": "18."
+      },
+      {
+       "start": 59,
+       "end": 61,
+       "title": "19. "
+      },
+      {
+       "start": 62,
+       "end": 64,
+       "title": "20."
+      },
+      {
+       "start": 65,
+       "end": 67,
+       "title": "21."
+      },
+      {
+       "start": 68,
+       "end": 70,
+       "title": "22."
+      },
+      {
+       "start": 71,
+       "end": 73,
+       "title": "23."
+      },
+      {
+       "start": 74,
+       "end": 76,
+       "title": "24. "
+      },
+      {
+       "start": 77,
+       "end": 79,
+       "title": "25."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 50,
+     "layer": "mula",
+     "title": "Kaccāyana  dhātu mañjūsā … 25.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 80,
+     "end": 157,
+     "chars": 2419,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 80,
+       "end": 82,
+       "title": "26."
+      },
+      {
+       "start": 83,
+       "end": 85,
+       "title": "27."
+      },
+      {
+       "start": 86,
+       "end": 88,
+       "title": "28."
+      },
+      {
+       "start": 89,
+       "end": 91,
+       "title": "29. "
+      },
+      {
+       "start": 92,
+       "end": 96,
+       "title": "30."
+      },
+      {
+       "start": 97,
+       "end": 99,
+       "title": "31."
+      },
+      {
+       "start": 100,
+       "end": 102,
+       "title": "32."
+      },
+      {
+       "start": 103,
+       "end": 105,
+       "title": "33."
+      },
+      {
+       "start": 106,
+       "end": 108,
+       "title": "34. "
+      },
+      {
+       "start": 109,
+       "end": 111,
+       "title": "35."
+      },
+      {
+       "start": 112,
+       "end": 114,
+       "title": "36."
+      },
+      {
+       "start": 115,
+       "end": 117,
+       "title": "37."
+      },
+      {
+       "start": 118,
+       "end": 120,
+       "title": "38."
+      },
+      {
+       "start": 121,
+       "end": 123,
+       "title": "39."
+      },
+      {
+       "start": 124,
+       "end": 126,
+       "title": "40. "
+      },
+      {
+       "start": 127,
+       "end": 129,
+       "title": "41."
+      },
+      {
+       "start": 130,
+       "end": 132,
+       "title": "42."
+      },
+      {
+       "start": 133,
+       "end": 135,
+       "title": "43."
+      },
+      {
+       "start": 136,
+       "end": 139,
+       "title": "44."
+      },
+      {
+       "start": 140,
+       "end": 142,
+       "title": "45. "
+      },
+      {
+       "start": 143,
+       "end": 145,
+       "title": "46."
+      },
+      {
+       "start": 146,
+       "end": 148,
+       "title": "47."
+      },
+      {
+       "start": 149,
+       "end": 151,
+       "title": "48."
+      },
+      {
+       "start": 152,
+       "end": 154,
+       "title": "49."
+      },
+      {
+       "start": 155,
+       "end": 157,
+       "title": "50. "
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 50,
+     "layer": "mula",
+     "title": "26. … 50. ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 158,
+     "end": 235,
+     "chars": 2564,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 158,
+       "end": 160,
+       "title": "51."
+      },
+      {
+       "start": 161,
+       "end": 163,
+       "title": "52."
+      },
+      {
+       "start": 164,
+       "end": 166,
+       "title": "53."
+      },
+      {
+       "start": 167,
+       "end": 169,
+       "title": "54."
+      },
+      {
+       "start": 170,
+       "end": 172,
+       "title": "55."
+      },
+      {
+       "start": 173,
+       "end": 175,
+       "title": "56. "
+      },
+      {
+       "start": 176,
+       "end": 180,
+       "title": "57."
+      },
+      {
+       "start": 181,
+       "end": 183,
+       "title": "58."
+      },
+      {
+       "start": 184,
+       "end": 186,
+       "title": "59."
+      },
+      {
+       "start": 187,
+       "end": 189,
+       "title": "60. "
+      },
+      {
+       "start": 190,
+       "end": 192,
+       "title": "61."
+      },
+      {
+       "start": 193,
+       "end": 195,
+       "title": "62."
+      },
+      {
+       "start": 196,
+       "end": 198,
+       "title": "63."
+      },
+      {
+       "start": 199,
+       "end": 201,
+       "title": "64."
+      },
+      {
+       "start": 202,
+       "end": 204,
+       "title": "65."
+      },
+      {
+       "start": 205,
+       "end": 207,
+       "title": "66. "
+      },
+      {
+       "start": 208,
+       "end": 210,
+       "title": "67."
+      },
+      {
+       "start": 211,
+       "end": 213,
+       "title": "68."
+      },
+      {
+       "start": 214,
+       "end": 216,
+       "title": "69."
+      },
+      {
+       "start": 217,
+       "end": 220,
+       "title": "70."
+      },
+      {
+       "start": 221,
+       "end": 223,
+       "title": "71. "
+      },
+      {
+       "start": 224,
+       "end": 226,
+       "title": "72."
+      },
+      {
+       "start": 227,
+       "end": 229,
+       "title": "73."
+      },
+      {
+       "start": 230,
+       "end": 232,
+       "title": "74."
+      },
+      {
+       "start": 233,
+       "end": 235,
+       "title": "75."
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 50,
+     "layer": "mula",
+     "title": "51. … 75.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 236,
+     "end": 312,
+     "chars": 2392,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 236,
+       "end": 238,
+       "title": "76. "
+      },
+      {
+       "start": 239,
+       "end": 241,
+       "title": "77."
+      },
+      {
+       "start": 242,
+       "end": 244,
+       "title": "78."
+      },
+      {
+       "start": 245,
+       "end": 247,
+       "title": "79."
+      },
+      {
+       "start": 248,
+       "end": 250,
+       "title": "80."
+      },
+      {
+       "start": 251,
+       "end": 253,
+       "title": "81. "
+      },
+      {
+       "start": 254,
+       "end": 256,
+       "title": "82."
+      },
+      {
+       "start": 257,
+       "end": 260,
+       "title": "83."
+      },
+      {
+       "start": 261,
+       "end": 261,
+       "title": "Tudādayo avuddhikā"
+      },
+      {
+       "start": 262,
+       "end": 264,
+       "title": "84."
+      },
+      {
+       "start": 265,
+       "end": 267,
+       "title": "85. "
+      },
+      {
+       "start": 268,
+       "end": 270,
+       "title": "86."
+      },
+      {
+       "start": 271,
+       "end": 273,
+       "title": "87."
+      },
+      {
+       "start": 274,
+       "end": 276,
+       "title": "88."
+      },
+      {
+       "start": 277,
+       "end": 279,
+       "title": "89."
+      },
+      {
+       "start": 280,
+       "end": 282,
+       "title": "90."
+      },
+      {
+       "start": 283,
+       "end": 285,
+       "title": "91. "
+      },
+      {
+       "start": 286,
+       "end": 288,
+       "title": "92."
+      },
+      {
+       "start": 289,
+       "end": 291,
+       "title": "93."
+      },
+      {
+       "start": 292,
+       "end": 294,
+       "title": "94."
+      },
+      {
+       "start": 295,
+       "end": 299,
+       "title": "95."
+      },
+      {
+       "start": 300,
+       "end": 302,
+       "title": "96."
+      },
+      {
+       "start": 303,
+       "end": 305,
+       "title": "97."
+      },
+      {
+       "start": 306,
+       "end": 308,
+       "title": "98."
+      },
+      {
+       "start": 309,
+       "end": 311,
+       "title": "99."
+      },
+      {
+       "start": 312,
+       "end": 312,
+       "title": "Juhotyā’dayo  sadvibhāvaluttavikaraṇā."
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 50,
+     "layer": "mula",
+     "title": "76.  … Juhotyā’dayo  sadvibhāvaluttavikaraṇā.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 313,
+     "end": 391,
+     "chars": 2548,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 313,
+       "end": 316,
+       "title": "100."
+      },
+      {
+       "start": 317,
+       "end": 317,
+       "title": "Rudhādayo"
+      },
+      {
+       "start": 318,
+       "end": 320,
+       "title": "101."
+      },
+      {
+       "start": 321,
+       "end": 324,
+       "title": "102."
+      },
+      {
+       "start": 325,
+       "end": 325,
+       "title": "Divādayo "
+      },
+      {
+       "start": 326,
+       "end": 328,
+       "title": "103."
+      },
+      {
+       "start": 329,
+       "end": 331,
+       "title": "104."
+      },
+      {
+       "start": 332,
+       "end": 334,
+       "title": "105."
+      },
+      {
+       "start": 335,
+       "end": 337,
+       "title": "106."
+      },
+      {
+       "start": 338,
+       "end": 340,
+       "title": "107."
+      },
+      {
+       "start": 341,
+       "end": 343,
+       "title": "108. "
+      },
+      {
+       "start": 344,
+       "end": 346,
+       "title": "109."
+      },
+      {
+       "start": 347,
+       "end": 349,
+       "title": "110."
+      },
+      {
+       "start": 350,
+       "end": 352,
+       "title": "111."
+      },
+      {
+       "start": 353,
+       "end": 355,
+       "title": "112."
+      },
+      {
+       "start": 356,
+       "end": 358,
+       "title": "113. "
+      },
+      {
+       "start": 359,
+       "end": 361,
+       "title": "114."
+      },
+      {
+       "start": 362,
+       "end": 365,
+       "title": "115."
+      },
+      {
+       "start": 366,
+       "end": 368,
+       "title": "Svādayo "
+      },
+      {
+       "start": 369,
+       "end": 369,
+       "title": "Kiyādayo"
+      },
+      {
+       "start": 370,
+       "end": 372,
+       "title": "118."
+      },
+      {
+       "start": 373,
+       "end": 376,
+       "title": "119."
+      },
+      {
+       "start": 377,
+       "end": 377,
+       "title": "Tanādayo "
+      },
+      {
+       "start": 378,
+       "end": 382,
+       "title": "120."
+      },
+      {
+       "start": 383,
+       "end": 385,
+       "title": "121."
+      },
+      {
+       "start": 386,
+       "end": 388,
+       "title": "122."
+      },
+      {
+       "start": 389,
+       "end": 391,
+       "title": "123. "
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 50,
+     "layer": "mula",
+     "title": "100. … 123. ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 392,
+     "end": 469,
+     "chars": 2384,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 392,
+       "end": 394,
+       "title": "124."
+      },
+      {
+       "start": 395,
+       "end": 397,
+       "title": "125."
+      },
+      {
+       "start": 398,
+       "end": 400,
+       "title": "126."
+      },
+      {
+       "start": 401,
+       "end": 403,
+       "title": "127."
+      },
+      {
+       "start": 404,
+       "end": 406,
+       "title": "128. "
+      },
+      {
+       "start": 407,
+       "end": 410,
+       "title": "129."
+      },
+      {
+       "start": 411,
+       "end": 413,
+       "title": "130."
+      },
+      {
+       "start": 414,
+       "end": 416,
+       "title": "131."
+      },
+      {
+       "start": 417,
+       "end": 419,
+       "title": "132."
+      },
+      {
+       "start": 420,
+       "end": 422,
+       "title": "133. "
+      },
+      {
+       "start": 423,
+       "end": 425,
+       "title": "134."
+      },
+      {
+       "start": 426,
+       "end": 428,
+       "title": "135."
+      },
+      {
+       "start": 429,
+       "end": 431,
+       "title": "136."
+      },
+      {
+       "start": 432,
+       "end": 434,
+       "title": "137."
+      },
+      {
+       "start": 435,
+       "end": 437,
+       "title": "138. "
+      },
+      {
+       "start": 438,
+       "end": 440,
+       "title": "139."
+      },
+      {
+       "start": 441,
+       "end": 443,
+       "title": "140."
+      },
+      {
+       "start": 444,
+       "end": 446,
+       "title": "141."
+      },
+      {
+       "start": 447,
+       "end": 449,
+       "title": "142."
+      },
+      {
+       "start": 450,
+       "end": 452,
+       "title": "143. "
+      },
+      {
+       "start": 453,
+       "end": 455,
+       "title": "144."
+      },
+      {
+       "start": 456,
+       "end": 458,
+       "title": "145."
+      },
+      {
+       "start": 459,
+       "end": 463,
+       "title": "146."
+      },
+      {
+       "start": 464,
+       "end": 466,
+       "title": "147. "
+      },
+      {
+       "start": 467,
+       "end": 469,
+       "title": "148."
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 50,
+     "layer": "mula",
+     "title": "124. … 148.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 470,
+     "end": 494,
+     "chars": 726,
+     "sents": 25,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 470,
+       "end": 472,
+       "title": "149."
+      },
+      {
+       "start": 473,
+       "end": 478,
+       "title": "150."
+      },
+      {
+       "start": 479,
+       "end": 479,
+       "title": "Sācariyānusiṭṭhā  parisiṭṭhaparibhāsā"
+      },
+      {
+       "start": 480,
+       "end": 482,
+       "title": "1."
+      },
+      {
+       "start": 483,
+       "end": 485,
+       "title": "2."
+      },
+      {
+       "start": 486,
+       "end": 488,
+       "title": "3."
+      },
+      {
+       "start": 489,
+       "end": 491,
+       "title": "4. "
+      },
+      {
+       "start": 492,
+       "end": 494,
+       "title": "5."
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 50,
+     "layer": "mula",
+     "title": "149. … 5.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 494,
+   "chars": 16195,
+   "sents": 494,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 50,
+   "layer": "mula",
+   "start": 1,
+   "end": 494,
+   "title": "Kaccāyana  dhātu mañjūsā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 1,
+   "end": 79,
+   "chars": 3162,
+   "sents": 79,
+   "title": "Kaccāyana  dhātu mañjūsā … 25.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:27:31",
+   "ended": "2026-11-24 04:29:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 80,
+   "end": 157,
+   "chars": 2419,
+   "sents": 78,
+   "title": "26. … 50. ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:27:41",
+   "ended": "2026-11-24 04:29:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 158,
+   "end": 235,
+   "chars": 2564,
+   "sents": 78,
+   "title": "51. … 75.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:27:51",
+   "ended": "2026-11-24 04:29:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 236,
+   "end": 312,
+   "chars": 2392,
+   "sents": 77,
+   "title": "76.  … Juhotyā’dayo  sadvibhāvaluttavikaraṇā.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:28:01",
+   "ended": "2026-11-24 04:29:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 313,
+   "end": 391,
+   "chars": 2548,
+   "sents": 79,
+   "title": "100. … 123. ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:28:11",
+   "ended": "2026-11-24 04:29:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 392,
+   "end": 469,
+   "chars": 2384,
+   "sents": 78,
+   "title": "124. … 148.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:28:21",
+   "ended": "2026-11-24 04:29:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 50,
+   "start": 470,
+   "end": 494,
+   "chars": 726,
+   "sents": 25,
+   "title": "149. … 5.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 04:28:31",
+   "ended": "2026-11-24 04:29:12",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 7
+}

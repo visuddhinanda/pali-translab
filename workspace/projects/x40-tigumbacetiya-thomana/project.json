@@ -1,0 +1,173 @@
+{
+ "schema": 3,
+ "name": "x40-tigumbacetiya-thomana",
+ "title": "Tigumbacetiya thomanā 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:57",
+ "updated": "2026-11-24 11:02:48",
+ "book": 2,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "2": {
+   "layer": "mula",
+   "title": "Tigumbacetiya thomanā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 2,
+   "title": "Tigumbacetiya thomanā",
+   "start": 428,
+   "end": 478,
+   "fam": "x40-tigumbacetiya-thomana",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 428,
+     "end": 478,
+     "chars": 1572,
+     "sents": 51,
+     "paras": 51,
+     "chapters": [
+      {
+       "start": 428,
+       "end": 429,
+       "title": "Tigumbacetiya thomanā"
+      },
+      {
+       "start": 430,
+       "end": 433,
+       "title": "1."
+      },
+      {
+       "start": 434,
+       "end": 437,
+       "title": "2."
+      },
+      {
+       "start": 438,
+       "end": 441,
+       "title": "3."
+      },
+      {
+       "start": 442,
+       "end": 445,
+       "title": "4."
+      },
+      {
+       "start": 446,
+       "end": 449,
+       "title": "5."
+      },
+      {
+       "start": 450,
+       "end": 453,
+       "title": "6."
+      },
+      {
+       "start": 454,
+       "end": 457,
+       "title": "7."
+      },
+      {
+       "start": 458,
+       "end": 461,
+       "title": "8."
+      },
+      {
+       "start": 462,
+       "end": 465,
+       "title": "9."
+      },
+      {
+       "start": 466,
+       "end": 469,
+       "title": "10."
+      },
+      {
+       "start": 470,
+       "end": 473,
+       "title": "11."
+      },
+      {
+       "start": 474,
+       "end": 478,
+       "title": "12."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 2,
+     "layer": "mula",
+     "title": "Tigumbacetiya thomanā … 12.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 51,
+   "chars": 1572,
+   "sents": 51,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 2,
+   "layer": "mula",
+   "start": 428,
+   "end": 478,
+   "title": "Tigumbacetiya thomanā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 2,
+   "start": 428,
+   "end": 478,
+   "chars": 1572,
+   "sents": 51,
+   "title": "Tigumbacetiya thomanā … 12.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 40
+}

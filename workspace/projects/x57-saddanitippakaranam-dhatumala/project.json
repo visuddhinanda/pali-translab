@@ -1,0 +1,7223 @@
+{
+ "schema": 3,
+ "name": "x57-saddanitippakaranam-dhatumala",
+ "title": "Saddanītippakaraṇaṃ (dhātumālā) 汉译（藏外·仅本文）",
+ "created": "2026-11-24 11:28:16",
+ "updated": "2026-11-25 14:33:29",
+ "book": 16,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "16": {
+   "layer": "mula",
+   "title": "Saddanītippakaraṇaṃ (dhātumālā)"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 16,
+   "title": "Saddanītippakaraṇaṃ (dhātumālā)",
+   "start": 2,
+   "end": 3401,
+   "fam": "x57-saddanitippakaranam-dhatumala",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 3,
+     "chars": 28,
+     "sents": 2,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Saddanītippakaraṇaṃ (dhātumālā)"
+      },
+      {
+       "start": 3,
+       "end": 3,
+       "title": "Dhātumālā"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 16,
+     "layer": "mula",
+     "title": "Saddanītippakaraṇaṃ (dhātumālā) … Dhātumālā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 4,
+     "end": 30,
+     "chars": 3657,
+     "sents": 58,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 4,
+       "end": 84,
+       "title": "15. Saravaggapañcakantika suddhassaradhātu"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 16,
+     "layer": "mula",
+     "title": "15. Saravaggapañcakantika suddhassaradhātu（4-30）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 31,
+     "end": 62,
+     "chars": 4340,
+     "sents": 77,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 4,
+       "end": 84,
+       "title": "15. Saravaggapañcakantika suddhassaradhātu"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 16,
+     "layer": "mula",
+     "title": "15. Saravaggapañcakantika suddhassaradhātu（31-62）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 63,
+     "end": 84,
+     "chars": 2467,
+     "sents": 76,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 4,
+       "end": 84,
+       "title": "15. Saravaggapañcakantika suddhassaradhātu"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 16,
+     "layer": "mula",
+     "title": "15. Saravaggapañcakantika suddhassaradhātu（63-84）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 85,
+     "end": 104,
+     "chars": 3248,
+     "sents": 76,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 85,
+       "end": 130,
+       "title": "Kakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kakārantadhātu（85-104）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 105,
+     "end": 123,
+     "chars": 4977,
+     "sents": 78,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 85,
+       "end": 130,
+       "title": "Kakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kakārantadhātu（105-123）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 124,
+     "end": 130,
+     "chars": 1070,
+     "sents": 26,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 85,
+       "end": 130,
+       "title": "Kakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kakārantadhātu（124-130）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 131,
+     "end": 147,
+     "chars": 2924,
+     "sents": 78,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 131,
+       "end": 196,
+       "title": "Khakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 16,
+     "layer": "mula",
+     "title": "Khakārantadhātu（131-147）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 148,
+     "end": 162,
+     "chars": 3440,
+     "sents": 79,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 131,
+       "end": 196,
+       "title": "Khakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 16,
+     "layer": "mula",
+     "title": "Khakārantadhātu（148-162）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 163,
+     "end": 188,
+     "chars": 3228,
+     "sents": 73,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 131,
+       "end": 196,
+       "title": "Khakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 16,
+     "layer": "mula",
+     "title": "Khakārantadhātu（163-188）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 189,
+     "end": 196,
+     "chars": 1895,
+     "sents": 30,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 131,
+       "end": 196,
+       "title": "Khakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 16,
+     "layer": "mula",
+     "title": "Khakārantadhātu（189-196）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 197,
+     "end": 216,
+     "chars": 2100,
+     "sents": 76,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 197,
+       "end": 216,
+       "title": "Gakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 16,
+     "layer": "mula",
+     "title": "Gakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 217,
+     "end": 231,
+     "chars": 1023,
+     "sents": 50,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 217,
+       "end": 231,
+       "title": "Ghakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ghakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 232,
+     "end": 250,
+     "chars": 2562,
+     "sents": 77,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 232,
+       "end": 304,
+       "title": "Cakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 16,
+     "layer": "mula",
+     "title": "Cakārantadhātu（232-250）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 251,
+     "end": 269,
+     "chars": 2318,
+     "sents": 78,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 232,
+       "end": 304,
+       "title": "Cakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 16,
+     "layer": "mula",
+     "title": "Cakārantadhātu（251-269）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 270,
+     "end": 288,
+     "chars": 4605,
+     "sents": 80,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 232,
+       "end": 304,
+       "title": "Cakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 16,
+     "layer": "mula",
+     "title": "Cakārantadhātu（270-288）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 289,
+     "end": 304,
+     "chars": 1522,
+     "sents": 31,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 232,
+       "end": 304,
+       "title": "Cakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 16,
+     "layer": "mula",
+     "title": "Cakārantadhātu（289-304）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 305,
+     "end": 336,
+     "chars": 3021,
+     "sents": 78,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 305,
+       "end": 338,
+       "title": "Chakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 16,
+     "layer": "mula",
+     "title": "Chakārantadhātu（305-336）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 337,
+     "end": 338,
+     "chars": 66,
+     "sents": 4,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 305,
+       "end": 338,
+       "title": "Chakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 16,
+     "layer": "mula",
+     "title": "Chakārantadhātu（337-338）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 339,
+     "end": 355,
+     "chars": 2080,
+     "sents": 77,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 339,
+       "end": 418,
+       "title": "Jakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jakārantadhātu（339-355）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 356,
+     "end": 373,
+     "chars": 1295,
+     "sents": 74,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 339,
+       "end": 418,
+       "title": "Jakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M21",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jakārantadhātu（356-373）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 374,
+     "end": 401,
+     "chars": 2518,
+     "sents": 79,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 339,
+       "end": 418,
+       "title": "Jakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M22",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jakārantadhātu（374-401）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 402,
+     "end": 411,
+     "chars": 2061,
+     "sents": 74,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 339,
+       "end": 418,
+       "title": "Jakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M23",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jakārantadhātu（402-411）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 412,
+     "end": 418,
+     "chars": 868,
+     "sents": 37,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 339,
+       "end": 418,
+       "title": "Jakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M24",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jakārantadhātu（412-418）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 419,
+     "end": 432,
+     "chars": 3145,
+     "sents": 68,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 419,
+       "end": 425,
+       "title": "Jhakārantadhātu"
+      },
+      {
+       "start": 426,
+       "end": 432,
+       "title": "Ñakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M25",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jhakārantadhātu … Ñakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 433,
+     "end": 455,
+     "chars": 1268,
+     "sents": 71,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 433,
+       "end": 478,
+       "title": "Ṭakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M26",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṭakārantadhātu（433-455）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 456,
+     "end": 478,
+     "chars": 1002,
+     "sents": 64,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 433,
+       "end": 478,
+       "title": "Ṭakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M27",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṭakārantadhātu（456-478）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 479,
+     "end": 494,
+     "chars": 2043,
+     "sents": 77,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 507,
+       "title": "Ṭhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M28",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṭhakārantadhātu（479-494）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 495,
+     "end": 507,
+     "chars": 577,
+     "sents": 39,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 479,
+       "end": 507,
+       "title": "Ṭhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṭhakārantadhātu（495-507）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 508,
+     "end": 533,
+     "chars": 1442,
+     "sents": 79,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 508,
+       "end": 533,
+       "title": "Ḍakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M30",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḍakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 534,
+     "end": 537,
+     "chars": 249,
+     "sents": 9,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 534,
+       "end": 537,
+       "title": "Ḍakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M31",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḍakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 538,
+     "end": 565,
+     "chars": 2053,
+     "sents": 79,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 538,
+       "end": 575,
+       "title": "Ṇakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M32",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṇakārantadhātu（538-565）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 566,
+     "end": 575,
+     "chars": 398,
+     "sents": 20,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 538,
+       "end": 575,
+       "title": "Ṇakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M33",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṇakārantadhātu（566-575）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 576,
+     "end": 591,
+     "chars": 4493,
+     "sents": 77,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 576,
+       "end": 605,
+       "title": "Takārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M34",
+     "book": 16,
+     "layer": "mula",
+     "title": "Takārantadhātu（576-591）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 592,
+     "end": 605,
+     "chars": 1939,
+     "sents": 50,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 576,
+       "end": 605,
+       "title": "Takārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M35",
+     "book": 16,
+     "layer": "mula",
+     "title": "Takārantadhātu（592-605）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 606,
+     "end": 639,
+     "chars": 4893,
+     "sents": 77,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 606,
+       "end": 656,
+       "title": "Thakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M36",
+     "book": 16,
+     "layer": "mula",
+     "title": "Thakārantadhātu（606-639）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 640,
+     "end": 656,
+     "chars": 2938,
+     "sents": 64,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 606,
+       "end": 656,
+       "title": "Thakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M37",
+     "book": 16,
+     "layer": "mula",
+     "title": "Thakārantadhātu（640-656）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 657,
+     "end": 694,
+     "chars": 3651,
+     "sents": 61,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（657-694）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 695,
+     "end": 709,
+     "chars": 4724,
+     "sents": 77,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M39",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（695-709）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 710,
+     "end": 720,
+     "chars": 2419,
+     "sents": 75,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M40",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（710-720）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 721,
+     "end": 739,
+     "chars": 4478,
+     "sents": 78,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（721-739）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 740,
+     "end": 762,
+     "chars": 4731,
+     "sents": 80,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（740-762）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 763,
+     "end": 796,
+     "chars": 2974,
+     "sents": 80,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M43",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（763-796）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 797,
+     "end": 816,
+     "chars": 3166,
+     "sents": 77,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M44",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（797-816）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 817,
+     "end": 829,
+     "chars": 2166,
+     "sents": 78,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M45",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（817-829）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 830,
+     "end": 853,
+     "chars": 2746,
+     "sents": 79,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M46",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（830-853）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 854,
+     "end": 872,
+     "chars": 4808,
+     "sents": 71,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M47",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（854-872）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 873,
+     "end": 892,
+     "chars": 3485,
+     "sents": 79,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M48",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（873-892）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 893,
+     "end": 894,
+     "chars": 77,
+     "sents": 4,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 657,
+       "end": 894,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M49",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（893-894）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 895,
+     "end": 911,
+     "chars": 3406,
+     "sents": 75,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 895,
+       "end": 942,
+       "title": "Dhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M50",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dhakārantadhātu（895-911）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 912,
+     "end": 936,
+     "chars": 2209,
+     "sents": 78,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 895,
+       "end": 942,
+       "title": "Dhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M51",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dhakārantadhātu（912-936）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 937,
+     "end": 942,
+     "chars": 388,
+     "sents": 17,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 895,
+       "end": 942,
+       "title": "Dhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M52",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dhakārantadhātu（937-942）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 943,
+     "end": 959,
+     "chars": 2512,
+     "sents": 78,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 943,
+       "end": 985,
+       "title": "Nakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M53",
+     "book": 16,
+     "layer": "mula",
+     "title": "Nakārantadhātu（943-959）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 960,
+     "end": 971,
+     "chars": 2290,
+     "sents": 69,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 943,
+       "end": 985,
+       "title": "Nakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M54",
+     "book": 16,
+     "layer": "mula",
+     "title": "Nakārantadhātu（960-971）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 972,
+     "end": 985,
+     "chars": 3909,
+     "sents": 59,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 943,
+       "end": 985,
+       "title": "Nakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M55",
+     "book": 16,
+     "layer": "mula",
+     "title": "Nakārantadhātu（972-985）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 986,
+     "end": 1018,
+     "chars": 3163,
+     "sents": 80,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 986,
+       "end": 1041,
+       "title": "Pakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M56",
+     "book": 16,
+     "layer": "mula",
+     "title": "Pakārantadhātu（986-1018）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1019,
+     "end": 1040,
+     "chars": 1714,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 986,
+       "end": 1041,
+       "title": "Pakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M57",
+     "book": 16,
+     "layer": "mula",
+     "title": "Pakārantadhātu（1019-1040）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1041,
+     "end": 1041,
+     "chars": 21,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 986,
+       "end": 1041,
+       "title": "Pakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M58",
+     "book": 16,
+     "layer": "mula",
+     "title": "Pakārantadhātu（1041-1041）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1042,
+     "end": 1050,
+     "chars": 563,
+     "sents": 26,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 1042,
+       "end": 1050,
+       "title": "Phakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M59",
+     "book": 16,
+     "layer": "mula",
+     "title": "Phakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1051,
+     "end": 1066,
+     "chars": 2570,
+     "sents": 77,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 1051,
+       "end": 1066,
+       "title": "Bakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M60",
+     "book": 16,
+     "layer": "mula",
+     "title": "Bakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1067,
+     "end": 1094,
+     "chars": 2611,
+     "sents": 76,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1067,
+       "end": 1120,
+       "title": "Bhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M61",
+     "book": 16,
+     "layer": "mula",
+     "title": "Bhakārantadhātu（1067-1094）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1095,
+     "end": 1115,
+     "chars": 2243,
+     "sents": 77,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1067,
+       "end": 1120,
+       "title": "Bhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M62",
+     "book": 16,
+     "layer": "mula",
+     "title": "Bhakārantadhātu（1095-1115）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1116,
+     "end": 1120,
+     "chars": 855,
+     "sents": 27,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 1067,
+       "end": 1120,
+       "title": "Bhakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M63",
+     "book": 16,
+     "layer": "mula",
+     "title": "Bhakārantadhātu（1116-1120）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1121,
+     "end": 1135,
+     "chars": 2171,
+     "sents": 78,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 1121,
+       "end": 1175,
+       "title": "Makārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M64",
+     "book": 16,
+     "layer": "mula",
+     "title": "Makārantadhātu（1121-1135）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1136,
+     "end": 1153,
+     "chars": 1968,
+     "sents": 80,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 1121,
+       "end": 1175,
+       "title": "Makārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M65",
+     "book": 16,
+     "layer": "mula",
+     "title": "Makārantadhātu（1136-1153）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1154,
+     "end": 1175,
+     "chars": 4515,
+     "sents": 62,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1121,
+       "end": 1175,
+       "title": "Makārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M66",
+     "book": 16,
+     "layer": "mula",
+     "title": "Makārantadhātu（1154-1175）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1176,
+     "end": 1178,
+     "chars": 110,
+     "sents": 3,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 1176,
+       "end": 1178,
+       "title": "16. Bhūvādigaṇikapariccheda"
+      }
+     ],
+     "split": false,
+     "id": "M67",
+     "book": 16,
+     "layer": "mula",
+     "title": "16. Bhūvādigaṇikapariccheda",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1179,
+     "end": 1200,
+     "chars": 3167,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1179,
+       "end": 1224,
+       "title": "Yakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M68",
+     "book": 16,
+     "layer": "mula",
+     "title": "Yakārantadhātu（1179-1200）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1201,
+     "end": 1219,
+     "chars": 4761,
+     "sents": 80,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 1179,
+       "end": 1224,
+       "title": "Yakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M69",
+     "book": 16,
+     "layer": "mula",
+     "title": "Yakārantadhātu（1201-1219）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1220,
+     "end": 1224,
+     "chars": 986,
+     "sents": 29,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 1179,
+       "end": 1224,
+       "title": "Yakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M70",
+     "book": 16,
+     "layer": "mula",
+     "title": "Yakārantadhātu（1220-1224）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1225,
+     "end": 1241,
+     "chars": 1622,
+     "sents": 78,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M71",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1225-1241）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1242,
+     "end": 1278,
+     "chars": 3258,
+     "sents": 80,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M72",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1242-1278）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1279,
+     "end": 1300,
+     "chars": 2852,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M73",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1279-1300）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1301,
+     "end": 1313,
+     "chars": 2727,
+     "sents": 79,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M74",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1301-1313）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1314,
+     "end": 1343,
+     "chars": 2642,
+     "sents": 79,
+     "paras": 30,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M75",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1314-1343）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1344,
+     "end": 1369,
+     "chars": 2879,
+     "sents": 79,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M76",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1344-1369）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1370,
+     "end": 1372,
+     "chars": 131,
+     "sents": 6,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 1225,
+       "end": 1372,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M77",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（1370-1372）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1373,
+     "end": 1400,
+     "chars": 4824,
+     "sents": 71,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1373,
+       "end": 1462,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M78",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（1373-1400）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1401,
+     "end": 1418,
+     "chars": 2542,
+     "sents": 74,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 1373,
+       "end": 1462,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M79",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（1401-1418）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1419,
+     "end": 1435,
+     "chars": 1751,
+     "sents": 79,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 1373,
+       "end": 1462,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M80",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（1419-1435）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1436,
+     "end": 1453,
+     "chars": 3046,
+     "sents": 80,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 1373,
+       "end": 1462,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M81",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（1436-1453）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1454,
+     "end": 1462,
+     "chars": 224,
+     "sents": 18,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 1373,
+       "end": 1462,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M82",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（1454-1462）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1463,
+     "end": 1484,
+     "chars": 1147,
+     "sents": 67,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1463,
+       "end": 1484,
+       "title": "Vakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M83",
+     "book": 16,
+     "layer": "mula",
+     "title": "Vakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1485,
+     "end": 1513,
+     "chars": 1407,
+     "sents": 80,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M84",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1485-1513）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1514,
+     "end": 1534,
+     "chars": 1816,
+     "sents": 77,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M85",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1514-1534）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1535,
+     "end": 1556,
+     "chars": 2229,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M86",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1535-1556）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1557,
+     "end": 1586,
+     "chars": 3109,
+     "sents": 78,
+     "paras": 30,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M87",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1557-1586）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1587,
+     "end": 1602,
+     "chars": 3494,
+     "sents": 75,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M88",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1587-1602）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1603,
+     "end": 1628,
+     "chars": 1761,
+     "sents": 76,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M89",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1603-1628）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1629,
+     "end": 1644,
+     "chars": 3306,
+     "sents": 79,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M90",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1629-1644）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1645,
+     "end": 1676,
+     "chars": 2332,
+     "sents": 77,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M91",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1645-1676）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1677,
+     "end": 1686,
+     "chars": 743,
+     "sents": 27,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 1485,
+       "end": 1686,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M92",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（1677-1686）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1687,
+     "end": 1699,
+     "chars": 2120,
+     "sents": 77,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 1687,
+       "end": 1782,
+       "title": "Hakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M93",
+     "book": 16,
+     "layer": "mula",
+     "title": "Hakārantadhātu（1687-1699）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1700,
+     "end": 1719,
+     "chars": 2842,
+     "sents": 76,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1687,
+       "end": 1782,
+       "title": "Hakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M94",
+     "book": 16,
+     "layer": "mula",
+     "title": "Hakārantadhātu（1700-1719）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1720,
+     "end": 1743,
+     "chars": 2167,
+     "sents": 78,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1687,
+       "end": 1782,
+       "title": "Hakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M95",
+     "book": 16,
+     "layer": "mula",
+     "title": "Hakārantadhātu（1720-1743）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1744,
+     "end": 1777,
+     "chars": 2432,
+     "sents": 80,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 1687,
+       "end": 1782,
+       "title": "Hakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M96",
+     "book": 16,
+     "layer": "mula",
+     "title": "Hakārantadhātu（1744-1777）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1778,
+     "end": 1782,
+     "chars": 248,
+     "sents": 7,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 1687,
+       "end": 1782,
+       "title": "Hakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M97",
+     "book": 16,
+     "layer": "mula",
+     "title": "Hakārantadhātu（1778-1782）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1783,
+     "end": 1816,
+     "chars": 1228,
+     "sents": 79,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 1783,
+       "end": 1897,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M98",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḷakārantadhātu（1783-1816）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1817,
+     "end": 1824,
+     "chars": 3018,
+     "sents": 80,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 1783,
+       "end": 1897,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M99",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḷakārantadhātu（1817-1824）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1825,
+     "end": 1843,
+     "chars": 4308,
+     "sents": 80,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 1783,
+       "end": 1897,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M100",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḷakārantadhātu（1825-1843）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1844,
+     "end": 1857,
+     "chars": 2541,
+     "sents": 73,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 1783,
+       "end": 1897,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M101",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḷakārantadhātu（1844-1857）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1858,
+     "end": 1881,
+     "chars": 2567,
+     "sents": 80,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1783,
+       "end": 1897,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M102",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḷakārantadhātu（1858-1881）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1882,
+     "end": 1897,
+     "chars": 570,
+     "sents": 16,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 1783,
+       "end": 1897,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M103",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ḷakārantadhātu（1882-1897）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1898,
+     "end": 1898,
+     "chars": 17,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 1898,
+       "end": 1898,
+       "title": "17. Rudhādichakka"
+      }
+     ],
+     "split": false,
+     "id": "M104",
+     "book": 16,
+     "layer": "mula",
+     "title": "17. Rudhādichakka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1899,
+     "end": 1912,
+     "chars": 2322,
+     "sents": 69,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 1899,
+       "end": 1950,
+       "title": "Rudhādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M105",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rudhādigaṇika（1899-1912）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1913,
+     "end": 1933,
+     "chars": 3098,
+     "sents": 79,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1899,
+       "end": 1950,
+       "title": "Rudhādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M106",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rudhādigaṇika（1913-1933）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1934,
+     "end": 1950,
+     "chars": 3759,
+     "sents": 51,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 1899,
+       "end": 1950,
+       "title": "Rudhādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M107",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rudhādigaṇika（1934-1950）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1951,
+     "end": 1970,
+     "chars": 4016,
+     "sents": 70,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M108",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（1951-1970）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1971,
+     "end": 1993,
+     "chars": 2694,
+     "sents": 75,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M109",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（1971-1993）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1994,
+     "end": 2013,
+     "chars": 2147,
+     "sents": 79,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M110",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（1994-2013）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2014,
+     "end": 2035,
+     "chars": 4627,
+     "sents": 79,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M111",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（2014-2035）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2036,
+     "end": 2057,
+     "chars": 2282,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M112",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（2036-2057）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2058,
+     "end": 2074,
+     "chars": 3390,
+     "sents": 79,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M113",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（2058-2074）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2075,
+     "end": 2097,
+     "chars": 2965,
+     "sents": 78,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M114",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（2075-2097）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2098,
+     "end": 2119,
+     "chars": 1872,
+     "sents": 77,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M115",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（2098-2119）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2120,
+     "end": 2129,
+     "chars": 1214,
+     "sents": 43,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 1951,
+       "end": 2129,
+       "title": "Divādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M116",
+     "book": 16,
+     "layer": "mula",
+     "title": "Divādigaṇika（2120-2129）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2130,
+     "end": 2156,
+     "chars": 3792,
+     "sents": 77,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 2130,
+       "end": 2181,
+       "title": "Svādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M117",
+     "book": 16,
+     "layer": "mula",
+     "title": "Svādigaṇika（2130-2156）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2157,
+     "end": 2181,
+     "chars": 2063,
+     "sents": 78,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2130,
+       "end": 2181,
+       "title": "Svādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M118",
+     "book": 16,
+     "layer": "mula",
+     "title": "Svādigaṇika（2157-2181）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2182,
+     "end": 2195,
+     "chars": 2494,
+     "sents": 79,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 2182,
+       "end": 2260,
+       "title": "Kiyādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M119",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kiyādigaṇika（2182-2195）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2196,
+     "end": 2221,
+     "chars": 3877,
+     "sents": 78,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 2182,
+       "end": 2260,
+       "title": "Kiyādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M120",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kiyādigaṇika（2196-2221）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2222,
+     "end": 2241,
+     "chars": 3432,
+     "sents": 79,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 2182,
+       "end": 2260,
+       "title": "Kiyādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M121",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kiyādigaṇika（2222-2241）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2242,
+     "end": 2260,
+     "chars": 696,
+     "sents": 38,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 2182,
+       "end": 2260,
+       "title": "Kiyādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M122",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kiyādigaṇika（2242-2260）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2261,
+     "end": 2293,
+     "chars": 3207,
+     "sents": 79,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 2261,
+       "end": 2316,
+       "title": "Gahādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M123",
+     "book": 16,
+     "layer": "mula",
+     "title": "Gahādigaṇika（2261-2293）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2294,
+     "end": 2316,
+     "chars": 2988,
+     "sents": 42,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 2261,
+       "end": 2316,
+       "title": "Gahādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M124",
+     "book": 16,
+     "layer": "mula",
+     "title": "Gahādigaṇika（2294-2316）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2317,
+     "end": 2330,
+     "chars": 2290,
+     "sents": 78,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 2317,
+       "end": 2394,
+       "title": "Tanādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M125",
+     "book": 16,
+     "layer": "mula",
+     "title": "Tanādigaṇika（2317-2330）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2331,
+     "end": 2344,
+     "chars": 4691,
+     "sents": 66,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 2317,
+       "end": 2394,
+       "title": "Tanādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M126",
+     "book": 16,
+     "layer": "mula",
+     "title": "Tanādigaṇika（2331-2344）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2345,
+     "end": 2360,
+     "chars": 4521,
+     "sents": 76,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 2317,
+       "end": 2394,
+       "title": "Tanādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M127",
+     "book": 16,
+     "layer": "mula",
+     "title": "Tanādigaṇika（2345-2360）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2361,
+     "end": 2372,
+     "chars": 4273,
+     "sents": 79,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 2317,
+       "end": 2394,
+       "title": "Tanādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M128",
+     "book": 16,
+     "layer": "mula",
+     "title": "Tanādigaṇika（2361-2372）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2373,
+     "end": 2383,
+     "chars": 4977,
+     "sents": 62,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 2317,
+       "end": 2394,
+       "title": "Tanādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M129",
+     "book": 16,
+     "layer": "mula",
+     "title": "Tanādigaṇika（2373-2383）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2384,
+     "end": 2394,
+     "chars": 364,
+     "sents": 11,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 2317,
+       "end": 2394,
+       "title": "Tanādigaṇika"
+      }
+     ],
+     "split": true,
+     "id": "M130",
+     "book": 16,
+     "layer": "mula",
+     "title": "Tanādigaṇika（2384-2394）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2395,
+     "end": 2398,
+     "chars": 455,
+     "sents": 11,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 2395,
+       "end": 2398,
+       "title": "18. Curādigaṇaparidīpana"
+      }
+     ],
+     "split": false,
+     "id": "M131",
+     "book": 16,
+     "layer": "mula",
+     "title": "18. Curādigaṇaparidīpana",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2399,
+     "end": 2420,
+     "chars": 4231,
+     "sents": 74,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 2399,
+       "end": 2430,
+       "title": "Kakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M132",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kakārantadhātu（2399-2420）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2421,
+     "end": 2430,
+     "chars": 1420,
+     "sents": 40,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 2399,
+       "end": 2430,
+       "title": "Kakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M133",
+     "book": 16,
+     "layer": "mula",
+     "title": "Kakārantadhātu（2421-2430）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2431,
+     "end": 2445,
+     "chars": 1728,
+     "sents": 52,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 2431,
+       "end": 2445,
+       "title": "Khakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M134",
+     "book": 16,
+     "layer": "mula",
+     "title": "Khakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2446,
+     "end": 2464,
+     "chars": 4689,
+     "sents": 67,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 2446,
+       "end": 2466,
+       "title": "Gakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M135",
+     "book": 16,
+     "layer": "mula",
+     "title": "Gakārantadhātu（2446-2464）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2465,
+     "end": 2466,
+     "chars": 1721,
+     "sents": 11,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 2446,
+       "end": 2466,
+       "title": "Gakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M136",
+     "book": 16,
+     "layer": "mula",
+     "title": "Gakārantadhātu（2465-2466）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2467,
+     "end": 2485,
+     "chars": 2070,
+     "sents": 41,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 2467,
+       "end": 2485,
+       "title": "Ghakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M137",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ghakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2486,
+     "end": 2508,
+     "chars": 2221,
+     "sents": 72,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 2486,
+       "end": 2508,
+       "title": "Cakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M138",
+     "book": 16,
+     "layer": "mula",
+     "title": "Cakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2509,
+     "end": 2514,
+     "chars": 260,
+     "sents": 11,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 2509,
+       "end": 2514,
+       "title": "Chakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M139",
+     "book": 16,
+     "layer": "mula",
+     "title": "Chakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2515,
+     "end": 2538,
+     "chars": 1657,
+     "sents": 76,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 2515,
+       "end": 2538,
+       "title": "Jakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M140",
+     "book": 16,
+     "layer": "mula",
+     "title": "Jakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2539,
+     "end": 2566,
+     "chars": 1735,
+     "sents": 78,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 2539,
+       "end": 2566,
+       "title": "Ṭakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M141",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṭakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2567,
+     "end": 2595,
+     "chars": 1515,
+     "sents": 65,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 2567,
+       "end": 2579,
+       "title": "Ṭhakārantadhātu"
+      },
+      {
+       "start": 2580,
+       "end": 2592,
+       "title": "Ḍakārantadhātu"
+      },
+      {
+       "start": 2593,
+       "end": 2595,
+       "title": "Ḍhakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M142",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṭhakārantadhātu … Ḍhakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2596,
+     "end": 2618,
+     "chars": 3443,
+     "sents": 78,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 2596,
+       "end": 2646,
+       "title": "Ṇakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M143",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṇakārantadhātu（2596-2618）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2619,
+     "end": 2646,
+     "chars": 1974,
+     "sents": 54,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 2596,
+       "end": 2646,
+       "title": "Ṇakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M144",
+     "book": 16,
+     "layer": "mula",
+     "title": "Ṇakārantadhātu（2619-2646）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2647,
+     "end": 2668,
+     "chars": 4634,
+     "sents": 78,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 2647,
+       "end": 2683,
+       "title": "Takārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M145",
+     "book": 16,
+     "layer": "mula",
+     "title": "Takārantadhātu（2647-2668）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2669,
+     "end": 2683,
+     "chars": 1731,
+     "sents": 54,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 2647,
+       "end": 2683,
+       "title": "Takārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M146",
+     "book": 16,
+     "layer": "mula",
+     "title": "Takārantadhātu（2669-2683）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2684,
+     "end": 2703,
+     "chars": 1266,
+     "sents": 49,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 2684,
+       "end": 2703,
+       "title": "Thakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M147",
+     "book": 16,
+     "layer": "mula",
+     "title": "Thakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2704,
+     "end": 2725,
+     "chars": 2167,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 2704,
+       "end": 2747,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M148",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（2704-2725）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2726,
+     "end": 2741,
+     "chars": 4422,
+     "sents": 60,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 2704,
+       "end": 2747,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M149",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（2726-2741）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2742,
+     "end": 2747,
+     "chars": 2394,
+     "sents": 21,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 2704,
+       "end": 2747,
+       "title": "Dakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M150",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dakārantadhātu（2742-2747）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2748,
+     "end": 2762,
+     "chars": 2520,
+     "sents": 63,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 2748,
+       "end": 2762,
+       "title": "Dhakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M151",
+     "book": 16,
+     "layer": "mula",
+     "title": "Dhakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2763,
+     "end": 2779,
+     "chars": 1581,
+     "sents": 46,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 2763,
+       "end": 2779,
+       "title": "Nakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M152",
+     "book": 16,
+     "layer": "mula",
+     "title": "Nakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2780,
+     "end": 2798,
+     "chars": 3962,
+     "sents": 80,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 2780,
+       "end": 2825,
+       "title": "Pakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M153",
+     "book": 16,
+     "layer": "mula",
+     "title": "Pakārantadhātu（2780-2798）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2799,
+     "end": 2825,
+     "chars": 2103,
+     "sents": 76,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 2780,
+       "end": 2825,
+       "title": "Pakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M154",
+     "book": 16,
+     "layer": "mula",
+     "title": "Pakārantadhātu（2799-2825）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2826,
+     "end": 2846,
+     "chars": 3134,
+     "sents": 76,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 2826,
+       "end": 2833,
+       "title": "Bakārantadhātu"
+      },
+      {
+       "start": 2834,
+       "end": 2846,
+       "title": "Bhakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M155",
+     "book": 16,
+     "layer": "mula",
+     "title": "Bakārantadhātu … Bhakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2847,
+     "end": 2876,
+     "chars": 3251,
+     "sents": 80,
+     "paras": 30,
+     "chapters": [
+      {
+       "start": 2847,
+       "end": 2882,
+       "title": "Makārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M156",
+     "book": 16,
+     "layer": "mula",
+     "title": "Makārantadhātu（2847-2876）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2877,
+     "end": 2882,
+     "chars": 680,
+     "sents": 19,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 2847,
+       "end": 2882,
+       "title": "Makārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M157",
+     "book": 16,
+     "layer": "mula",
+     "title": "Makārantadhātu（2877-2882）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2883,
+     "end": 2887,
+     "chars": 160,
+     "sents": 10,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 2883,
+       "end": 2887,
+       "title": "Yakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M158",
+     "book": 16,
+     "layer": "mula",
+     "title": "Yakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2888,
+     "end": 2909,
+     "chars": 2645,
+     "sents": 80,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 2888,
+       "end": 2936,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M159",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（2888-2909）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2910,
+     "end": 2936,
+     "chars": 2852,
+     "sents": 55,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 2888,
+       "end": 2936,
+       "title": "Rakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M160",
+     "book": 16,
+     "layer": "mula",
+     "title": "Rakārantadhātu（2910-2936）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2937,
+     "end": 2961,
+     "chars": 3078,
+     "sents": 78,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2937,
+       "end": 2979,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M161",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（2937-2961）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2962,
+     "end": 2979,
+     "chars": 2302,
+     "sents": 65,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 2937,
+       "end": 2979,
+       "title": "Lakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M162",
+     "book": 16,
+     "layer": "mula",
+     "title": "Lakārantadhātu（2962-2979）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2980,
+     "end": 2984,
+     "chars": 220,
+     "sents": 12,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 2980,
+       "end": 2984,
+       "title": "Vakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M163",
+     "book": 16,
+     "layer": "mula",
+     "title": "Vakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 2985,
+     "end": 3009,
+     "chars": 2162,
+     "sents": 80,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2985,
+       "end": 3034,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M164",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（2985-3009）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3010,
+     "end": 3034,
+     "chars": 1641,
+     "sents": 73,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 2985,
+       "end": 3034,
+       "title": "Sakārantadhātu"
+      }
+     ],
+     "split": true,
+     "id": "M165",
+     "book": 16,
+     "layer": "mula",
+     "title": "Sakārantadhātu（3010-3034）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3035,
+     "end": 3066,
+     "chars": 1828,
+     "sents": 74,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 3035,
+       "end": 3047,
+       "title": "Hakārantadhātu"
+      },
+      {
+       "start": 3048,
+       "end": 3066,
+       "title": "Ḷakārantadhātu"
+      }
+     ],
+     "split": false,
+     "id": "M166",
+     "book": 16,
+     "layer": "mula",
+     "title": "Hakārantadhātu … Ḷakārantadhātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3067,
+     "end": 3135,
+     "chars": 3357,
+     "sents": 76,
+     "paras": 69,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M167",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3067-3135）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3136,
+     "end": 3177,
+     "chars": 4321,
+     "sents": 66,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M168",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3136-3177）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3178,
+     "end": 3190,
+     "chars": 4388,
+     "sents": 43,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M169",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3178-3190）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3191,
+     "end": 3239,
+     "chars": 4962,
+     "sents": 73,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M170",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3191-3239）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3240,
+     "end": 3286,
+     "chars": 4920,
+     "sents": 72,
+     "paras": 47,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M171",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3240-3286）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3287,
+     "end": 3317,
+     "chars": 4658,
+     "sents": 70,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M172",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3287-3317）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3318,
+     "end": 3344,
+     "chars": 3886,
+     "sents": 68,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M173",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3318-3344）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3345,
+     "end": 3350,
+     "chars": 4759,
+     "sents": 61,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M174",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3345-3350）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3351,
+     "end": 3361,
+     "chars": 4501,
+     "sents": 80,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M175",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3351-3361）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3362,
+     "end": 3372,
+     "chars": 4503,
+     "sents": 56,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M176",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3362-3372）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3373,
+     "end": 3387,
+     "chars": 4746,
+     "sents": 56,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M177",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3373-3387）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3388,
+     "end": 3401,
+     "chars": 3058,
+     "sents": 56,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 3067,
+       "end": 3401,
+       "title": "19. Sabbagaṇavinicchaya"
+      }
+     ],
+     "split": true,
+     "id": "M178",
+     "book": 16,
+     "layer": "mula",
+     "title": "19. Sabbagaṇavinicchaya（3388-3401）",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 3400,
+   "chars": 453172,
+   "sents": 11156,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 16,
+   "layer": "mula",
+   "start": 2,
+   "end": 3401,
+   "title": "Saddanītippakaraṇaṃ (dhātumālā)"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2,
+   "end": 3,
+   "chars": 28,
+   "sents": 2,
+   "title": "Saddanītippakaraṇaṃ (dhātumālā) … Dhātumālā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:46",
+   "ended": "2026-11-24 11:50:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 4,
+   "end": 30,
+   "chars": 3657,
+   "sents": 58,
+   "title": "15. Saravaggapañcakantika suddhassaradhātu（4-30）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:56",
+   "ended": "2026-11-24 11:51:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 31,
+   "end": 62,
+   "chars": 4340,
+   "sents": 77,
+   "title": "15. Saravaggapañcakantika suddhassaradhātu（31-62）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:06",
+   "ended": "2026-11-24 11:51:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 63,
+   "end": 84,
+   "chars": 2467,
+   "sents": 76,
+   "title": "15. Saravaggapañcakantika suddhassaradhātu（63-84）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:22",
+   "ended": "2026-11-24 11:51:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 85,
+   "end": 104,
+   "chars": 3248,
+   "sents": 76,
+   "title": "Kakārantadhātu（85-104）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:17",
+   "ended": "2026-11-24 11:52:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 105,
+   "end": 123,
+   "chars": 4977,
+   "sents": 78,
+   "title": "Kakārantadhātu（105-123）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:27",
+   "ended": "2026-11-24 11:52:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 124,
+   "end": 130,
+   "chars": 1070,
+   "sents": 26,
+   "title": "Kakārantadhātu（124-130）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:43",
+   "ended": "2026-11-24 11:52:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 131,
+   "end": 147,
+   "chars": 2924,
+   "sents": 78,
+   "title": "Khakārantadhātu（131-147）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:18",
+   "ended": "2026-11-24 11:54:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 148,
+   "end": 162,
+   "chars": 3440,
+   "sents": 79,
+   "title": "Khakārantadhātu（148-162）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:33",
+   "ended": "2026-11-24 11:53:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 163,
+   "end": 188,
+   "chars": 3228,
+   "sents": 73,
+   "title": "Khakārantadhātu（163-188）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:53",
+   "ended": "2026-11-24 11:57:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 189,
+   "end": 196,
+   "chars": 1895,
+   "sents": 30,
+   "title": "Khakārantadhātu（189-196）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:53:49",
+   "ended": "2026-11-24 11:56:00",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 197,
+   "end": 216,
+   "chars": 2100,
+   "sents": 76,
+   "title": "Gakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:01:12",
+   "ended": "2026-11-25 12:02:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 217,
+   "end": 231,
+   "chars": 1023,
+   "sents": 50,
+   "title": "Ghakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:34:50",
+   "ended": "2026-11-24 13:37:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 232,
+   "end": 250,
+   "chars": 2562,
+   "sents": 77,
+   "title": "Cakārantadhātu（232-250）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:37:07",
+   "ended": "2026-11-24 13:44:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 251,
+   "end": 269,
+   "chars": 2318,
+   "sents": 78,
+   "title": "Cakārantadhātu（251-269）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:44:46",
+   "ended": "2026-11-24 13:45:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 270,
+   "end": 288,
+   "chars": 4605,
+   "sents": 80,
+   "title": "Cakārantadhātu（270-288）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:45:51",
+   "ended": "2026-11-24 13:47:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 289,
+   "end": 304,
+   "chars": 1522,
+   "sents": 31,
+   "title": "Cakārantadhātu（289-304）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:32:48",
+   "ended": "2026-11-25 14:33:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 305,
+   "end": 336,
+   "chars": 3021,
+   "sents": 78,
+   "title": "Chakārantadhātu（305-336）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:48:18",
+   "ended": "2026-11-24 13:49:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 337,
+   "end": 338,
+   "chars": 66,
+   "sents": 4,
+   "title": "Chakārantadhātu（337-338）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:49:33",
+   "ended": "2026-11-24 13:49:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 339,
+   "end": 355,
+   "chars": 2080,
+   "sents": 77,
+   "title": "Jakārantadhātu（339-355）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:49:48",
+   "ended": "2026-11-24 13:51:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 356,
+   "end": 373,
+   "chars": 1295,
+   "sents": 74,
+   "title": "Jakārantadhātu（356-373）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:51:09",
+   "ended": "2026-11-24 13:52:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 374,
+   "end": 401,
+   "chars": 2518,
+   "sents": 79,
+   "title": "Jakārantadhātu（374-401）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:52:14",
+   "ended": "2026-11-24 13:53:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 402,
+   "end": 411,
+   "chars": 2061,
+   "sents": 74,
+   "title": "Jakārantadhātu（402-411）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:02:48",
+   "ended": "2026-11-25 12:03:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 412,
+   "end": 418,
+   "chars": 868,
+   "sents": 37,
+   "title": "Jakārantadhātu（412-418）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:03:48",
+   "ended": "2026-11-25 12:04:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 419,
+   "end": 432,
+   "chars": 3145,
+   "sents": 68,
+   "title": "Jhakārantadhātu … Ñakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:04:23",
+   "ended": "2026-11-25 12:05:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 433,
+   "end": 455,
+   "chars": 1268,
+   "sents": 71,
+   "title": "Ṭakārantadhātu（433-455）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 14:57:29",
+   "ended": "2026-11-24 15:01:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 456,
+   "end": 478,
+   "chars": 1002,
+   "sents": 64,
+   "title": "Ṭakārantadhātu（456-478）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:01:52",
+   "ended": "2026-11-24 15:02:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 479,
+   "end": 494,
+   "chars": 2043,
+   "sents": 77,
+   "title": "Ṭhakārantadhātu（479-494）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:02:47",
+   "ended": "2026-11-24 15:06:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 495,
+   "end": 507,
+   "chars": 577,
+   "sents": 39,
+   "title": "Ṭhakārantadhātu（495-507）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:06:54",
+   "ended": "2026-11-24 15:11:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 508,
+   "end": 533,
+   "chars": 1442,
+   "sents": 79,
+   "title": "Ḍakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:11:22",
+   "ended": "2026-11-24 15:12:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 534,
+   "end": 537,
+   "chars": 249,
+   "sents": 9,
+   "title": "Ḍakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:12:33",
+   "ended": "2026-11-24 15:12:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 538,
+   "end": 565,
+   "chars": 2053,
+   "sents": 79,
+   "title": "Ṇakārantadhātu（538-565）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:12:53",
+   "ended": "2026-11-24 15:14:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 566,
+   "end": 575,
+   "chars": 398,
+   "sents": 20,
+   "title": "Ṇakārantadhātu（566-575）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:14:03",
+   "ended": "2026-11-24 15:14:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 576,
+   "end": 591,
+   "chars": 4493,
+   "sents": 77,
+   "title": "Takārantadhātu（576-591）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:14:44",
+   "ended": "2026-11-24 15:16:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 592,
+   "end": 605,
+   "chars": 1939,
+   "sents": 50,
+   "title": "Takārantadhātu（592-605）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:16:25",
+   "ended": "2026-11-24 15:17:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 606,
+   "end": 639,
+   "chars": 4893,
+   "sents": 77,
+   "title": "Thakārantadhātu（606-639）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:17:31",
+   "ended": "2026-11-24 15:19:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 640,
+   "end": 656,
+   "chars": 2938,
+   "sents": 64,
+   "title": "Thakārantadhātu（640-656）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:19:42",
+   "ended": "2026-11-24 15:21:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 657,
+   "end": 694,
+   "chars": 3651,
+   "sents": 61,
+   "title": "Dakārantadhātu（657-694）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-25 12:05:40",
+   "ended": "2026-11-25 12:07:00",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 695,
+   "end": 709,
+   "chars": 4724,
+   "sents": 77,
+   "title": "Dakārantadhātu（695-709）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:07:00",
+   "ended": "2026-11-25 12:08:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 710,
+   "end": 720,
+   "chars": 2419,
+   "sents": 75,
+   "title": "Dakārantadhātu（710-720）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:08:21",
+   "ended": "2026-11-25 12:09:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 721,
+   "end": 739,
+   "chars": 4478,
+   "sents": 78,
+   "title": "Dakārantadhātu（721-739）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:09:21",
+   "ended": "2026-11-25 12:10:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 740,
+   "end": 762,
+   "chars": 4731,
+   "sents": 80,
+   "title": "Dakārantadhātu（740-762）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:10:37",
+   "ended": "2026-11-25 12:11:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 763,
+   "end": 796,
+   "chars": 2974,
+   "sents": 80,
+   "title": "Dakārantadhātu（763-796）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:11:58",
+   "ended": "2026-11-25 12:13:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 797,
+   "end": 816,
+   "chars": 3166,
+   "sents": 77,
+   "title": "Dakārantadhātu（797-816）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:13:08",
+   "ended": "2026-11-25 12:14:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 817,
+   "end": 829,
+   "chars": 2166,
+   "sents": 78,
+   "title": "Dakārantadhātu（817-829）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:14:19",
+   "ended": "2026-11-25 12:15:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 830,
+   "end": 853,
+   "chars": 2746,
+   "sents": 79,
+   "title": "Dakārantadhātu（830-853）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:15:25",
+   "ended": "2026-11-25 12:16:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 854,
+   "end": 872,
+   "chars": 4808,
+   "sents": 71,
+   "title": "Dakārantadhātu（854-872）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:16:35",
+   "ended": "2026-11-25 12:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 873,
+   "end": 892,
+   "chars": 3485,
+   "sents": 79,
+   "title": "Dakārantadhātu（873-892）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:18:06",
+   "ended": "2026-11-25 12:19:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 893,
+   "end": 894,
+   "chars": 77,
+   "sents": 4,
+   "title": "Dakārantadhātu（893-894）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:19:17",
+   "ended": "2026-11-25 12:19:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 895,
+   "end": 911,
+   "chars": 3406,
+   "sents": 75,
+   "title": "Dhakārantadhātu（895-911）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:19:32",
+   "ended": "2026-11-25 12:20:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 912,
+   "end": 936,
+   "chars": 2209,
+   "sents": 78,
+   "title": "Dhakārantadhātu（912-936）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:20:53",
+   "ended": "2026-11-25 12:22:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M52:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 937,
+   "end": 942,
+   "chars": 388,
+   "sents": 17,
+   "title": "Dhakārantadhātu（937-942）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:22:03",
+   "ended": "2026-11-25 12:22:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M53:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 943,
+   "end": 959,
+   "chars": 2512,
+   "sents": 78,
+   "title": "Nakārantadhātu（943-959）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:22:23",
+   "ended": "2026-11-25 12:23:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M54:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 960,
+   "end": 971,
+   "chars": 2290,
+   "sents": 69,
+   "title": "Nakārantadhātu（960-971）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:23:29",
+   "ended": "2026-11-25 12:24:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M55:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 972,
+   "end": 985,
+   "chars": 3909,
+   "sents": 59,
+   "title": "Nakārantadhātu（972-985）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:24:45",
+   "ended": "2026-11-25 12:25:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M56:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 986,
+   "end": 1018,
+   "chars": 3163,
+   "sents": 80,
+   "title": "Pakārantadhātu（986-1018）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:25:56",
+   "ended": "2026-11-25 12:26:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M57:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1019,
+   "end": 1040,
+   "chars": 1714,
+   "sents": 80,
+   "title": "Pakārantadhātu（1019-1040）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:26:56",
+   "ended": "2026-11-25 12:27:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M58:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1041,
+   "end": 1041,
+   "chars": 21,
+   "sents": 1,
+   "title": "Pakārantadhātu（1041-1041）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:27:52",
+   "ended": "2026-11-25 12:28:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M59:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1042,
+   "end": 1050,
+   "chars": 563,
+   "sents": 26,
+   "title": "Phakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:28:07",
+   "ended": "2026-11-25 12:28:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M60:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1051,
+   "end": 1066,
+   "chars": 2570,
+   "sents": 77,
+   "title": "Bakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:28:27",
+   "ended": "2026-11-25 12:29:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M61:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1067,
+   "end": 1094,
+   "chars": 2611,
+   "sents": 76,
+   "title": "Bhakārantadhātu（1067-1094）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:29:23",
+   "ended": "2026-11-25 12:30:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M62:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1095,
+   "end": 1115,
+   "chars": 2243,
+   "sents": 77,
+   "title": "Bhakārantadhātu（1095-1115）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:30:28",
+   "ended": "2026-11-25 12:31:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M63:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1116,
+   "end": 1120,
+   "chars": 855,
+   "sents": 27,
+   "title": "Bhakārantadhātu（1116-1120）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:31:29",
+   "ended": "2026-11-25 12:32:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M64:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1121,
+   "end": 1135,
+   "chars": 2171,
+   "sents": 78,
+   "title": "Makārantadhātu（1121-1135）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:32:04",
+   "ended": "2026-11-25 12:33:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M65:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1136,
+   "end": 1153,
+   "chars": 1968,
+   "sents": 80,
+   "title": "Makārantadhātu（1136-1153）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:33:10",
+   "ended": "2026-11-25 12:34:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M66:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1154,
+   "end": 1175,
+   "chars": 4515,
+   "sents": 62,
+   "title": "Makārantadhātu（1154-1175）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:34:15",
+   "ended": "2026-11-25 12:35:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M67:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1176,
+   "end": 1178,
+   "chars": 110,
+   "sents": 3,
+   "title": "16. Bhūvādigaṇikapariccheda",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:35:31",
+   "ended": "2026-11-25 12:35:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M68:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1179,
+   "end": 1200,
+   "chars": 3167,
+   "sents": 80,
+   "title": "Yakārantadhātu（1179-1200）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:35:46",
+   "ended": "2026-11-25 12:36:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M69:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1201,
+   "end": 1219,
+   "chars": 4761,
+   "sents": 80,
+   "title": "Yakārantadhātu（1201-1219）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:36:57",
+   "ended": "2026-11-25 12:38:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M70:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1220,
+   "end": 1224,
+   "chars": 986,
+   "sents": 29,
+   "title": "Yakārantadhātu（1220-1224）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:38:28",
+   "ended": "2026-11-25 12:38:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M71:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1225,
+   "end": 1241,
+   "chars": 1622,
+   "sents": 78,
+   "title": "Rakārantadhātu（1225-1241）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:38:58",
+   "ended": "2026-11-25 12:39:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M72:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1242,
+   "end": 1278,
+   "chars": 3258,
+   "sents": 80,
+   "title": "Rakārantadhātu（1242-1278）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:39:49",
+   "ended": "2026-11-25 12:41:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M73:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1279,
+   "end": 1300,
+   "chars": 2852,
+   "sents": 80,
+   "title": "Rakārantadhātu（1279-1300）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:41:04",
+   "ended": "2026-11-25 12:42:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M74:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1301,
+   "end": 1313,
+   "chars": 2727,
+   "sents": 79,
+   "title": "Rakārantadhātu（1301-1313）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:42:10",
+   "ended": "2026-11-25 12:43:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M75:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1314,
+   "end": 1343,
+   "chars": 2642,
+   "sents": 79,
+   "title": "Rakārantadhātu（1314-1343）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:43:15",
+   "ended": "2026-11-25 12:44:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M76:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1344,
+   "end": 1369,
+   "chars": 2879,
+   "sents": 79,
+   "title": "Rakārantadhātu（1344-1369）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:44:26",
+   "ended": "2026-11-25 12:45:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M77:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1370,
+   "end": 1372,
+   "chars": 131,
+   "sents": 6,
+   "title": "Rakārantadhātu（1370-1372）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:45:41",
+   "ended": "2026-11-25 12:45:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M78:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1373,
+   "end": 1400,
+   "chars": 4824,
+   "sents": 71,
+   "title": "Lakārantadhātu（1373-1400）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:45:57",
+   "ended": "2026-11-25 12:47:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M79:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1401,
+   "end": 1418,
+   "chars": 2542,
+   "sents": 74,
+   "title": "Lakārantadhātu（1401-1418）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:47:12",
+   "ended": "2026-11-25 12:48:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M80:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1419,
+   "end": 1435,
+   "chars": 1751,
+   "sents": 79,
+   "title": "Lakārantadhātu（1419-1435）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:48:18",
+   "ended": "2026-11-25 12:49:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M81:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1436,
+   "end": 1453,
+   "chars": 3046,
+   "sents": 80,
+   "title": "Lakārantadhātu（1436-1453）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:49:13",
+   "ended": "2026-11-25 12:50:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M82:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1454,
+   "end": 1462,
+   "chars": 224,
+   "sents": 18,
+   "title": "Lakārantadhātu（1454-1462）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:50:19",
+   "ended": "2026-11-25 12:50:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M83:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1463,
+   "end": 1484,
+   "chars": 1147,
+   "sents": 67,
+   "title": "Vakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:50:34",
+   "ended": "2026-11-25 12:51:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M84:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1485,
+   "end": 1513,
+   "chars": 1407,
+   "sents": 80,
+   "title": "Sakārantadhātu（1485-1513）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:51:25",
+   "ended": "2026-11-25 12:52:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M85:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1514,
+   "end": 1534,
+   "chars": 1816,
+   "sents": 77,
+   "title": "Sakārantadhātu（1514-1534）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:52:20",
+   "ended": "2026-11-25 12:53:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M86:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1535,
+   "end": 1556,
+   "chars": 2229,
+   "sents": 80,
+   "title": "Sakārantadhātu（1535-1556）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:53:11",
+   "ended": "2026-11-25 12:54:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M87:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1557,
+   "end": 1586,
+   "chars": 3109,
+   "sents": 78,
+   "title": "Sakārantadhātu（1557-1586）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:54:11",
+   "ended": "2026-11-25 12:55:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M88:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1587,
+   "end": 1602,
+   "chars": 3494,
+   "sents": 75,
+   "title": "Sakārantadhātu（1587-1602）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:55:17",
+   "ended": "2026-11-25 12:56:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M89:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1603,
+   "end": 1628,
+   "chars": 1761,
+   "sents": 76,
+   "title": "Sakārantadhātu（1603-1628）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:56:42",
+   "ended": "2026-11-25 12:57:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M90:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1629,
+   "end": 1644,
+   "chars": 3306,
+   "sents": 79,
+   "title": "Sakārantadhātu（1629-1644）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:57:48",
+   "ended": "2026-11-25 12:59:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M91:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1645,
+   "end": 1676,
+   "chars": 2332,
+   "sents": 77,
+   "title": "Sakārantadhātu（1645-1676）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 12:59:04",
+   "ended": "2026-11-25 13:00:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M92:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1677,
+   "end": 1686,
+   "chars": 743,
+   "sents": 27,
+   "title": "Sakārantadhātu（1677-1686）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:00:10",
+   "ended": "2026-11-25 13:00:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M93:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1687,
+   "end": 1699,
+   "chars": 2120,
+   "sents": 77,
+   "title": "Hakārantadhātu（1687-1699）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:00:35",
+   "ended": "2026-11-25 13:01:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M94:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1700,
+   "end": 1719,
+   "chars": 2842,
+   "sents": 76,
+   "title": "Hakārantadhātu（1700-1719）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:01:25",
+   "ended": "2026-11-25 13:02:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M95:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1720,
+   "end": 1743,
+   "chars": 2167,
+   "sents": 78,
+   "title": "Hakārantadhātu（1720-1743）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:02:36",
+   "ended": "2026-11-25 13:03:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M96:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1744,
+   "end": 1777,
+   "chars": 2432,
+   "sents": 80,
+   "title": "Hakārantadhātu（1744-1777）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:03:42",
+   "ended": "2026-11-25 13:04:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M97:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1778,
+   "end": 1782,
+   "chars": 248,
+   "sents": 7,
+   "title": "Hakārantadhātu（1778-1782）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:04:57",
+   "ended": "2026-11-25 13:05:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M98:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1783,
+   "end": 1816,
+   "chars": 1228,
+   "sents": 79,
+   "title": "Ḷakārantadhātu（1783-1816）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:05:18",
+   "ended": "2026-11-25 13:06:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M99:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1817,
+   "end": 1824,
+   "chars": 3018,
+   "sents": 80,
+   "title": "Ḷakārantadhātu（1817-1824）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:06:18",
+   "ended": "2026-11-25 13:07:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M100:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1825,
+   "end": 1843,
+   "chars": 4308,
+   "sents": 80,
+   "title": "Ḷakārantadhātu（1825-1843）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:07:34",
+   "ended": "2026-11-25 13:08:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M101:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1844,
+   "end": 1857,
+   "chars": 2541,
+   "sents": 73,
+   "title": "Ḷakārantadhātu（1844-1857）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:08:50",
+   "ended": "2026-11-25 13:09:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M102:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1858,
+   "end": 1881,
+   "chars": 2567,
+   "sents": 80,
+   "title": "Ḷakārantadhātu（1858-1881）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:09:40",
+   "ended": "2026-11-25 13:10:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M103:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1882,
+   "end": 1897,
+   "chars": 570,
+   "sents": 16,
+   "title": "Ḷakārantadhātu（1882-1897）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:10:41",
+   "ended": "2026-11-25 13:11:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M104:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1898,
+   "end": 1898,
+   "chars": 17,
+   "sents": 1,
+   "title": "17. Rudhādichakka",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:11:06",
+   "ended": "2026-11-25 13:11:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M105:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1899,
+   "end": 1912,
+   "chars": 2322,
+   "sents": 69,
+   "title": "Rudhādigaṇika（1899-1912）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:11:22",
+   "ended": "2026-11-25 13:12:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M106:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1913,
+   "end": 1933,
+   "chars": 3098,
+   "sents": 79,
+   "title": "Rudhādigaṇika（1913-1933）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:12:12",
+   "ended": "2026-11-25 13:13:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M107:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1934,
+   "end": 1950,
+   "chars": 3759,
+   "sents": 51,
+   "title": "Rudhādigaṇika（1934-1950）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:13:12",
+   "ended": "2026-11-25 13:14:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M108:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1951,
+   "end": 1970,
+   "chars": 4016,
+   "sents": 70,
+   "title": "Divādigaṇika（1951-1970）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:14:13",
+   "ended": "2026-11-25 13:15:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M109:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1971,
+   "end": 1993,
+   "chars": 2694,
+   "sents": 75,
+   "title": "Divādigaṇika（1971-1993）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:15:39",
+   "ended": "2026-11-25 13:16:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M110:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 1994,
+   "end": 2013,
+   "chars": 2147,
+   "sents": 79,
+   "title": "Divādigaṇika（1994-2013）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:16:45",
+   "ended": "2026-11-25 13:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M111:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2014,
+   "end": 2035,
+   "chars": 4627,
+   "sents": 79,
+   "title": "Divādigaṇika（2014-2035）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:18:06",
+   "ended": "2026-11-25 13:19:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M112:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2036,
+   "end": 2057,
+   "chars": 2282,
+   "sents": 80,
+   "title": "Divādigaṇika（2036-2057）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:19:26",
+   "ended": "2026-11-25 13:20:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M113:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2058,
+   "end": 2074,
+   "chars": 3390,
+   "sents": 79,
+   "title": "Divādigaṇika（2058-2074）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:20:37",
+   "ended": "2026-11-25 13:21:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M114:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2075,
+   "end": 2097,
+   "chars": 2965,
+   "sents": 78,
+   "title": "Divādigaṇika（2075-2097）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:21:58",
+   "ended": "2026-11-25 13:23:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M115:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2098,
+   "end": 2119,
+   "chars": 1872,
+   "sents": 77,
+   "title": "Divādigaṇika（2098-2119）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:23:14",
+   "ended": "2026-11-25 13:24:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M116:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2120,
+   "end": 2129,
+   "chars": 1214,
+   "sents": 43,
+   "title": "Divādigaṇika（2120-2129）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:24:30",
+   "ended": "2026-11-25 13:25:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M117:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2130,
+   "end": 2156,
+   "chars": 3792,
+   "sents": 77,
+   "title": "Svādigaṇika（2130-2156）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:25:15",
+   "ended": "2026-11-25 13:26:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M118:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2157,
+   "end": 2181,
+   "chars": 2063,
+   "sents": 78,
+   "title": "Svādigaṇika（2157-2181）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:26:31",
+   "ended": "2026-11-25 13:27:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M119:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2182,
+   "end": 2195,
+   "chars": 2494,
+   "sents": 79,
+   "title": "Kiyādigaṇika（2182-2195）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:27:51",
+   "ended": "2026-11-25 13:29:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M120:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2196,
+   "end": 2221,
+   "chars": 3877,
+   "sents": 78,
+   "title": "Kiyādigaṇika（2196-2221）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:29:17",
+   "ended": "2026-11-25 13:30:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M121:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2222,
+   "end": 2241,
+   "chars": 3432,
+   "sents": 79,
+   "title": "Kiyādigaṇika（2222-2241）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:30:28",
+   "ended": "2026-11-25 13:31:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M122:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2242,
+   "end": 2260,
+   "chars": 696,
+   "sents": 38,
+   "title": "Kiyādigaṇika（2242-2260）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:31:48",
+   "ended": "2026-11-25 13:32:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M123:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2261,
+   "end": 2293,
+   "chars": 3207,
+   "sents": 79,
+   "title": "Gahādigaṇika（2261-2293）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:32:24",
+   "ended": "2026-11-25 13:33:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M124:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2294,
+   "end": 2316,
+   "chars": 2988,
+   "sents": 42,
+   "title": "Gahādigaṇika（2294-2316）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:33:45",
+   "ended": "2026-11-25 13:34:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M125:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2317,
+   "end": 2330,
+   "chars": 2290,
+   "sents": 78,
+   "title": "Tanādigaṇika（2317-2330）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:34:40",
+   "ended": "2026-11-25 13:35:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M126:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2331,
+   "end": 2344,
+   "chars": 4691,
+   "sents": 66,
+   "title": "Tanādigaṇika（2331-2344）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:35:41",
+   "ended": "2026-11-25 13:37:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M127:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2345,
+   "end": 2360,
+   "chars": 4521,
+   "sents": 76,
+   "title": "Tanādigaṇika（2345-2360）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:37:12",
+   "ended": "2026-11-25 13:38:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M128:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2361,
+   "end": 2372,
+   "chars": 4273,
+   "sents": 79,
+   "title": "Tanādigaṇika（2361-2372）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:38:32",
+   "ended": "2026-11-25 13:39:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M129:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2373,
+   "end": 2383,
+   "chars": 4977,
+   "sents": 62,
+   "title": "Tanādigaṇika（2373-2383）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:39:58",
+   "ended": "2026-11-25 13:41:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M130:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2384,
+   "end": 2394,
+   "chars": 364,
+   "sents": 11,
+   "title": "Tanādigaṇika（2384-2394）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:41:19",
+   "ended": "2026-11-25 13:41:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M131:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2395,
+   "end": 2398,
+   "chars": 455,
+   "sents": 11,
+   "title": "18. Curādigaṇaparidīpana",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:41:34",
+   "ended": "2026-11-25 13:41:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M132:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2399,
+   "end": 2420,
+   "chars": 4231,
+   "sents": 74,
+   "title": "Kakārantadhātu（2399-2420）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:41:49",
+   "ended": "2026-11-25 13:43:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M133:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2421,
+   "end": 2430,
+   "chars": 1420,
+   "sents": 40,
+   "title": "Kakārantadhātu（2421-2430）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:43:05",
+   "ended": "2026-11-25 13:43:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M134:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2431,
+   "end": 2445,
+   "chars": 1728,
+   "sents": 52,
+   "title": "Khakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:43:40",
+   "ended": "2026-11-25 13:44:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M135:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2446,
+   "end": 2464,
+   "chars": 4689,
+   "sents": 67,
+   "title": "Gakārantadhātu（2446-2464）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:44:31",
+   "ended": "2026-11-25 13:45:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M136:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2465,
+   "end": 2466,
+   "chars": 1721,
+   "sents": 11,
+   "title": "Gakārantadhātu（2465-2466）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:45:36",
+   "ended": "2026-11-25 13:46:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M137:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2467,
+   "end": 2485,
+   "chars": 2070,
+   "sents": 41,
+   "title": "Ghakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:46:11",
+   "ended": "2026-11-25 13:46:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M138:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2486,
+   "end": 2508,
+   "chars": 2221,
+   "sents": 72,
+   "title": "Cakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:46:57",
+   "ended": "2026-11-25 13:47:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M139:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2509,
+   "end": 2514,
+   "chars": 260,
+   "sents": 11,
+   "title": "Chakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:47:58",
+   "ended": "2026-11-25 13:48:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M140:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2515,
+   "end": 2538,
+   "chars": 1657,
+   "sents": 76,
+   "title": "Jakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:48:28",
+   "ended": "2026-11-25 13:49:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M141:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2539,
+   "end": 2566,
+   "chars": 1735,
+   "sents": 78,
+   "title": "Ṭakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:49:18",
+   "ended": "2026-11-25 13:50:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M142:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2567,
+   "end": 2595,
+   "chars": 1515,
+   "sents": 65,
+   "title": "Ṭhakārantadhātu … Ḍhakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:50:14",
+   "ended": "2026-11-25 13:51:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M143:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2596,
+   "end": 2618,
+   "chars": 3443,
+   "sents": 78,
+   "title": "Ṇakārantadhātu（2596-2618）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:51:04",
+   "ended": "2026-11-25 13:52:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M144:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2619,
+   "end": 2646,
+   "chars": 1974,
+   "sents": 54,
+   "title": "Ṇakārantadhātu（2619-2646）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:52:15",
+   "ended": "2026-11-25 13:53:00",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M145:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2647,
+   "end": 2668,
+   "chars": 4634,
+   "sents": 78,
+   "title": "Takārantadhātu（2647-2668）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:53:00",
+   "ended": "2026-11-25 13:57:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M146:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2669,
+   "end": 2683,
+   "chars": 1731,
+   "sents": 54,
+   "title": "Takārantadhātu（2669-2683）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:57:03",
+   "ended": "2026-11-25 13:57:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M147:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2684,
+   "end": 2703,
+   "chars": 1266,
+   "sents": 49,
+   "title": "Thakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:57:53",
+   "ended": "2026-11-25 13:59:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M148:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2704,
+   "end": 2725,
+   "chars": 2167,
+   "sents": 80,
+   "title": "Dakārantadhātu（2704-2725）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:59:04",
+   "ended": "2026-11-25 14:00:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M149:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2726,
+   "end": 2741,
+   "chars": 4422,
+   "sents": 60,
+   "title": "Dakārantadhātu（2726-2741）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:00:09",
+   "ended": "2026-11-25 14:02:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M150:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2742,
+   "end": 2747,
+   "chars": 2394,
+   "sents": 21,
+   "title": "Dakārantadhātu（2742-2747）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:02:36",
+   "ended": "2026-11-25 14:03:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M151:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2748,
+   "end": 2762,
+   "chars": 2520,
+   "sents": 63,
+   "title": "Dhakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:03:21",
+   "ended": "2026-11-25 14:04:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M152:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2763,
+   "end": 2779,
+   "chars": 1581,
+   "sents": 46,
+   "title": "Nakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:04:27",
+   "ended": "2026-11-25 14:05:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M153:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2780,
+   "end": 2798,
+   "chars": 3962,
+   "sents": 80,
+   "title": "Pakārantadhātu（2780-2798）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:05:12",
+   "ended": "2026-11-25 14:06:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M154:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2799,
+   "end": 2825,
+   "chars": 2103,
+   "sents": 76,
+   "title": "Pakārantadhātu（2799-2825）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:06:38",
+   "ended": "2026-11-25 14:07:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M155:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2826,
+   "end": 2846,
+   "chars": 3134,
+   "sents": 76,
+   "title": "Bakārantadhātu … Bhakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:07:38",
+   "ended": "2026-11-25 14:08:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M156:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2847,
+   "end": 2876,
+   "chars": 3251,
+   "sents": 80,
+   "title": "Makārantadhātu（2847-2876）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:08:44",
+   "ended": "2026-11-25 14:10:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M157:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2877,
+   "end": 2882,
+   "chars": 680,
+   "sents": 19,
+   "title": "Makārantadhātu（2877-2882）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:10:20",
+   "ended": "2026-11-25 14:10:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M158:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2883,
+   "end": 2887,
+   "chars": 160,
+   "sents": 10,
+   "title": "Yakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:10:40",
+   "ended": "2026-11-25 14:10:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M159:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2888,
+   "end": 2909,
+   "chars": 2645,
+   "sents": 80,
+   "title": "Rakārantadhātu（2888-2909）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:10:55",
+   "ended": "2026-11-25 14:12:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M160:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2910,
+   "end": 2936,
+   "chars": 2852,
+   "sents": 55,
+   "title": "Rakārantadhātu（2910-2936）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:12:06",
+   "ended": "2026-11-25 14:12:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M161:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2937,
+   "end": 2961,
+   "chars": 3078,
+   "sents": 78,
+   "title": "Lakārantadhātu（2937-2961）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:12:51",
+   "ended": "2026-11-25 14:13:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M162:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2962,
+   "end": 2979,
+   "chars": 2302,
+   "sents": 65,
+   "title": "Lakārantadhātu（2962-2979）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:13:52",
+   "ended": "2026-11-25 14:14:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M163:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2980,
+   "end": 2984,
+   "chars": 220,
+   "sents": 12,
+   "title": "Vakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:14:43",
+   "ended": "2026-11-25 14:14:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M164:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 2985,
+   "end": 3009,
+   "chars": 2162,
+   "sents": 80,
+   "title": "Sakārantadhātu（2985-3009）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:14:58",
+   "ended": "2026-11-25 14:15:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M165:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3010,
+   "end": 3034,
+   "chars": 1641,
+   "sents": 73,
+   "title": "Sakārantadhātu（3010-3034）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:15:53",
+   "ended": "2026-11-25 14:16:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M166:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3035,
+   "end": 3066,
+   "chars": 1828,
+   "sents": 74,
+   "title": "Hakārantadhātu … Ḷakārantadhātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:16:44",
+   "ended": "2026-11-25 14:17:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M167:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3067,
+   "end": 3135,
+   "chars": 3357,
+   "sents": 76,
+   "title": "19. Sabbagaṇavinicchaya（3067-3135）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:17:34",
+   "ended": "2026-11-25 14:18:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M168:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3136,
+   "end": 3177,
+   "chars": 4321,
+   "sents": 66,
+   "title": "19. Sabbagaṇavinicchaya（3136-3177）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:18:45",
+   "ended": "2026-11-25 14:20:00",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M169:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3178,
+   "end": 3190,
+   "chars": 4388,
+   "sents": 43,
+   "title": "19. Sabbagaṇavinicchaya（3178-3190）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:20:00",
+   "ended": "2026-11-25 14:21:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M170:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3191,
+   "end": 3239,
+   "chars": 4962,
+   "sents": 73,
+   "title": "19. Sabbagaṇavinicchaya（3191-3239）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:21:06",
+   "ended": "2026-11-25 14:22:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M171:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3240,
+   "end": 3286,
+   "chars": 4920,
+   "sents": 72,
+   "title": "19. Sabbagaṇavinicchaya（3240-3286）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:22:32",
+   "ended": "2026-11-25 14:23:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M172:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3287,
+   "end": 3317,
+   "chars": 4658,
+   "sents": 70,
+   "title": "19. Sabbagaṇavinicchaya（3287-3317）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:23:53",
+   "ended": "2026-11-25 14:25:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M173:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3318,
+   "end": 3344,
+   "chars": 3886,
+   "sents": 68,
+   "title": "19. Sabbagaṇavinicchaya（3318-3344）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:25:18",
+   "ended": "2026-11-25 14:26:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M174:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3345,
+   "end": 3350,
+   "chars": 4759,
+   "sents": 61,
+   "title": "19. Sabbagaṇavinicchaya（3345-3350）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:26:14",
+   "ended": "2026-11-25 14:27:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M175:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3351,
+   "end": 3361,
+   "chars": 4501,
+   "sents": 80,
+   "title": "19. Sabbagaṇavinicchaya（3351-3361）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:27:24",
+   "ended": "2026-11-25 14:28:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M176:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3362,
+   "end": 3372,
+   "chars": 4503,
+   "sents": 56,
+   "title": "19. Sabbagaṇavinicchaya（3362-3372）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:28:50",
+   "ended": "2026-11-25 14:30:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M177:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3373,
+   "end": 3387,
+   "chars": 4746,
+   "sents": 56,
+   "title": "19. Sabbagaṇavinicchaya（3373-3387）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:30:21",
+   "ended": "2026-11-25 14:31:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M178:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 16,
+   "start": 3388,
+   "end": 3401,
+   "chars": 3058,
+   "sents": 56,
+   "title": "19. Sabbagaṇavinicchaya（3388-3401）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:31:42",
+   "ended": "2026-11-25 14:32:48",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 57
+}

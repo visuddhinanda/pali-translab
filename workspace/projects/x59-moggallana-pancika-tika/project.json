@@ -1,0 +1,6908 @@
+{
+ "schema": 3,
+ "name": "x59-moggallana-pancika-tika",
+ "title": "Moggallāna pañcikā ṭīkā 汉译（藏外·仅本文）",
+ "created": "2026-11-24 11:28:47",
+ "updated": "2026-11-25 15:42:22",
+ "book": 18,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "18": {
+   "layer": "mula",
+   "title": "Moggallāna pañcikā ṭīkā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 18,
+   "title": "Moggallāna pañcikā ṭīkā",
+   "start": 2,
+   "end": 1579,
+   "fam": "x59-moggallana-pancika-tika",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 4,
+     "chars": 54,
+     "sents": 3,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Moggallāna pañcikā ṭīkā"
+      },
+      {
+       "start": 3,
+       "end": 3,
+       "title": "Sāratthavilāsinīnāma"
+      },
+      {
+       "start": 4,
+       "end": 4,
+       "title": "Pañcikāṭīkā"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 18,
+     "layer": "mula",
+     "title": "Moggallāna pañcikā ṭīkā … Pañcikāṭīkā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 5,
+     "end": 30,
+     "chars": 3140,
+     "sents": 29,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（5-30）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 31,
+     "end": 38,
+     "chars": 4893,
+     "sents": 10,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（31-38）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 39,
+     "end": 46,
+     "chars": 4531,
+     "sents": 9,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（39-46）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 47,
+     "end": 59,
+     "chars": 4770,
+     "sents": 14,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（47-59）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 60,
+     "end": 61,
+     "chars": 3758,
+     "sents": 2,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（60-61）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 62,
+     "end": 79,
+     "chars": 4883,
+     "sents": 18,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（62-79）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 80,
+     "end": 83,
+     "chars": 4239,
+     "sents": 7,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 5,
+       "end": 83,
+       "title": "Paṇāmādikathā"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 18,
+     "layer": "mula",
+     "title": "Paṇāmādikathā（80-83）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 84,
+     "end": 85,
+     "chars": 34,
+     "sents": 2,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 84,
+       "end": 84,
+       "title": "1. Paṭhamakaṇḍavaṇṇanā"
+      },
+      {
+       "start": 85,
+       "end": 85,
+       "title": "Saññādhikāra"
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Paṭhamakaṇḍavaṇṇanā … Saññādhikāra",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 86,
+     "end": 91,
+     "chars": 3268,
+     "sents": 6,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 86,
+       "end": 101,
+       "title": "1. A ādayo"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. A ādayo（86-91）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 92,
+     "end": 100,
+     "chars": 4149,
+     "sents": 12,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 86,
+       "end": 101,
+       "title": "1. A ādayo"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. A ādayo（92-100）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 101,
+     "end": 101,
+     "chars": 3204,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 86,
+       "end": 101,
+       "title": "1. A ādayo"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. A ādayo（101-101）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 102,
+     "end": 120,
+     "chars": 4724,
+     "sents": 27,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 102,
+       "end": 103,
+       "title": "2. Dasā"
+      },
+      {
+       "start": 104,
+       "end": 107,
+       "title": "3. Dvedve"
+      },
+      {
+       "start": 108,
+       "end": 109,
+       "title": "4. Pubbo"
+      },
+      {
+       "start": 110,
+       "end": 111,
+       "title": "5. Paro"
+      },
+      {
+       "start": 112,
+       "end": 116,
+       "title": "6. Kādayo"
+      },
+      {
+       "start": 117,
+       "end": 118,
+       "title": "7. Pañca"
+      },
+      {
+       "start": 119,
+       "end": 120,
+       "title": "8. Bindu"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Dasā … 8. Bindu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 121,
+     "end": 139,
+     "chars": 4598,
+     "sents": 40,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 121,
+       "end": 128,
+       "title": "9. Iyu"
+      },
+      {
+       "start": 129,
+       "end": 130,
+       "title": "10. Pitthi"
+      },
+      {
+       "start": 131,
+       "end": 132,
+       "title": "11. Ghā"
+      },
+      {
+       "start": 133,
+       "end": 136,
+       "title": "12. Gosyā"
+      },
+      {
+       "start": 137,
+       "end": 137,
+       "title": "Paribhāsādhikāra"
+      },
+      {
+       "start": 138,
+       "end": 139,
+       "title": "13. Vidhi"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 18,
+     "layer": "mula",
+     "title": "9. Iyu … 13. Vidhi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 140,
+     "end": 140,
+     "chars": 12,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 140,
+       "end": 141,
+       "title": "14. Sattadhī"
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 18,
+     "layer": "mula",
+     "title": "14. Sattadhī（140-140）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 141,
+     "end": 141,
+     "chars": 5389,
+     "sents": 4,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 140,
+       "end": 141,
+       "title": "14. Sattadhī"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 18,
+     "layer": "mula",
+     "title": "14. Sattadhī（141-141）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 142,
+     "end": 145,
+     "chars": 4647,
+     "sents": 9,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 142,
+       "end": 143,
+       "title": "15. Pañca"
+      },
+      {
+       "start": 144,
+       "end": 145,
+       "title": "16. Ādissa"
+      }
+     ],
+     "split": false,
+     "id": "M17",
+     "book": 18,
+     "layer": "mula",
+     "title": "15. Pañca … 16. Ādissa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 146,
+     "end": 155,
+     "chars": 3771,
+     "sents": 10,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 146,
+       "end": 147,
+       "title": "17. Chaṭṭhī"
+      },
+      {
+       "start": 148,
+       "end": 149,
+       "title": "18. Vānu"
+      },
+      {
+       "start": 150,
+       "end": 151,
+       "title": "19. Ṭānu"
+      },
+      {
+       "start": 152,
+       "end": 153,
+       "title": "20. Ñakā"
+      },
+      {
+       "start": 154,
+       "end": 155,
+       "title": "21. Mānubandho"
+      }
+     ],
+     "split": false,
+     "id": "M18",
+     "book": 18,
+     "layer": "mula",
+     "title": "17. Chaṭṭhī … 21. Mānubandho",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 156,
+     "end": 158,
+     "chars": 4271,
+     "sents": 11,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 156,
+       "end": 159,
+       "title": "22. Vippaṭi"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 18,
+     "layer": "mula",
+     "title": "22. Vippaṭi（156-158）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 159,
+     "end": 159,
+     "chars": 1845,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 156,
+       "end": 159,
+       "title": "22. Vippaṭi"
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 18,
+     "layer": "mula",
+     "title": "22. Vippaṭi（159-159）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 160,
+     "end": 161,
+     "chars": 680,
+     "sents": 2,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 160,
+       "end": 161,
+       "title": "23. Saṅketo"
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 18,
+     "layer": "mula",
+     "title": "23. Saṅketo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 162,
+     "end": 168,
+     "chars": 4949,
+     "sents": 9,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 162,
+       "end": 163,
+       "title": "24. Vaṇṇa"
+      },
+      {
+       "start": 164,
+       "end": 167,
+       "title": "25. Ntu"
+      },
+      {
+       "start": 168,
+       "end": 168,
+       "title": "Saralopādi vaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "M22",
+     "book": 18,
+     "layer": "mula",
+     "title": "24. Vaṇṇa … Saralopādi vaṇṇanā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 169,
+     "end": 170,
+     "chars": 2418,
+     "sents": 3,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 169,
+       "end": 170,
+       "title": "26. Saro"
+      }
+     ],
+     "split": false,
+     "id": "M23",
+     "book": 18,
+     "layer": "mula",
+     "title": "26. Saro",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 171,
+     "end": 174,
+     "chars": 4826,
+     "sents": 7,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 171,
+       "end": 172,
+       "title": "27. Paro"
+      },
+      {
+       "start": 173,
+       "end": 174,
+       "title": "28. Nadve"
+      }
+     ],
+     "split": false,
+     "id": "M24",
+     "book": 18,
+     "layer": "mula",
+     "title": "27. Paro … 28. Nadve",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 175,
+     "end": 186,
+     "chars": 3936,
+     "sents": 14,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 175,
+       "end": 176,
+       "title": "29. Yuva"
+      },
+      {
+       "start": 177,
+       "end": 178,
+       "title": "30. Yavā"
+      },
+      {
+       "start": 179,
+       "end": 180,
+       "title": "31. Eo"
+      },
+      {
+       "start": 181,
+       "end": 182,
+       "title": "32. Gossa"
+      },
+      {
+       "start": 183,
+       "end": 184,
+       "title": "33. Byañja"
+      },
+      {
+       "start": 185,
+       "end": 186,
+       "title": "34. Sara"
+      }
+     ],
+     "split": false,
+     "id": "M25",
+     "book": 18,
+     "layer": "mula",
+     "title": "29. Yuva … 34. Sara",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 187,
+     "end": 204,
+     "chars": 4440,
+     "sents": 22,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 187,
+       "end": 188,
+       "title": "35. Catu"
+      },
+      {
+       "start": 189,
+       "end": 190,
+       "title": "36. Vitissa"
+      },
+      {
+       "start": 191,
+       "end": 192,
+       "title": "37. Eo"
+      },
+      {
+       "start": 193,
+       "end": 194,
+       "title": "38. Nigga"
+      },
+      {
+       "start": 195,
+       "end": 196,
+       "title": "39. Lopo"
+      },
+      {
+       "start": 197,
+       "end": 198,
+       "title": "40. Para"
+      },
+      {
+       "start": 199,
+       "end": 200,
+       "title": "41. Vagge"
+      },
+      {
+       "start": 201,
+       "end": 202,
+       "title": "42. Yeva"
+      },
+      {
+       "start": 203,
+       "end": 204,
+       "title": "43. Yesaṃ"
+      }
+     ],
+     "split": false,
+     "id": "M26",
+     "book": 18,
+     "layer": "mula",
+     "title": "35. Catu … 43. Yesaṃ",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 205,
+     "end": 208,
+     "chars": 3272,
+     "sents": 9,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 205,
+       "end": 206,
+       "title": "44. Vana"
+      },
+      {
+       "start": 207,
+       "end": 208,
+       "title": "46. Cha"
+      }
+     ],
+     "split": false,
+     "id": "M27",
+     "book": 18,
+     "layer": "mula",
+     "title": "44. Vana … 46. Cha",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 209,
+     "end": 224,
+     "chars": 3306,
+     "sents": 22,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 209,
+       "end": 213,
+       "title": "47. Tada"
+      },
+      {
+       "start": 214,
+       "end": 215,
+       "title": "48. Tava"
+      },
+      {
+       "start": 216,
+       "end": 220,
+       "title": "49. Vagga"
+      },
+      {
+       "start": 221,
+       "end": 222,
+       "title": "50. Vevā"
+      },
+      {
+       "start": 223,
+       "end": 224,
+       "title": "53. Saṃyo"
+      }
+     ],
+     "split": false,
+     "id": "M28",
+     "book": 18,
+     "layer": "mula",
+     "title": "47. Tada … 53. Saṃyo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 225,
+     "end": 226,
+     "chars": 4332,
+     "sents": 4,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 225,
+       "end": 237,
+       "title": "54. Vicchā"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 18,
+     "layer": "mula",
+     "title": "54. Vicchā（225-226）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 227,
+     "end": 228,
+     "chars": 4820,
+     "sents": 5,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 225,
+       "end": 237,
+       "title": "54. Vicchā"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 18,
+     "layer": "mula",
+     "title": "54. Vicchā（227-228）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 229,
+     "end": 236,
+     "chars": 4600,
+     "sents": 8,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 225,
+       "end": 237,
+       "title": "54. Vicchā"
+      }
+     ],
+     "split": true,
+     "id": "M31",
+     "book": 18,
+     "layer": "mula",
+     "title": "54. Vicchā（229-236）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 237,
+     "end": 237,
+     "chars": 753,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 225,
+       "end": 237,
+       "title": "54. Vicchā"
+      }
+     ],
+     "split": true,
+     "id": "M32",
+     "book": 18,
+     "layer": "mula",
+     "title": "54. Vicchā（237-237）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 238,
+     "end": 249,
+     "chars": 516,
+     "sents": 12,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 238,
+       "end": 239,
+       "title": "55. Syādi"
+      },
+      {
+       "start": 240,
+       "end": 241,
+       "title": "56. Sabbā"
+      },
+      {
+       "start": 242,
+       "end": 243,
+       "title": "57. Yāva"
+      },
+      {
+       "start": 244,
+       "end": 248,
+       "title": "58. Bahula"
+      },
+      {
+       "start": 249,
+       "end": 249,
+       "title": "2. Dutiyakaṇḍa vaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "M33",
+     "book": 18,
+     "layer": "mula",
+     "title": "55. Syādi … 2. Dutiyakaṇḍa vaṇṇanā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 250,
+     "end": 261,
+     "chars": 3708,
+     "sents": 13,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 250,
+       "end": 262,
+       "title": "1. Dvedve"
+      }
+     ],
+     "split": true,
+     "id": "M34",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Dvedve（250-261）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 262,
+     "end": 262,
+     "chars": 2577,
+     "sents": 4,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 250,
+       "end": 262,
+       "title": "1. Dvedve"
+      }
+     ],
+     "split": true,
+     "id": "M35",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Dvedve（262-262）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 263,
+     "end": 285,
+     "chars": 4591,
+     "sents": 23,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 263,
+       "end": 301,
+       "title": "2. Kamme"
+      }
+     ],
+     "split": true,
+     "id": "M36",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Kamme（263-285）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 286,
+     "end": 290,
+     "chars": 4688,
+     "sents": 6,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 263,
+       "end": 301,
+       "title": "2. Kamme"
+      }
+     ],
+     "split": true,
+     "id": "M37",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Kamme（286-290）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 291,
+     "end": 300,
+     "chars": 4878,
+     "sents": 13,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 263,
+       "end": 301,
+       "title": "2. Kamme"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Kamme（291-300）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 301,
+     "end": 301,
+     "chars": 1663,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 263,
+       "end": 301,
+       "title": "2. Kamme"
+      }
+     ],
+     "split": true,
+     "id": "M39",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Kamme（301-301）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 302,
+     "end": 304,
+     "chars": 2657,
+     "sents": 8,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 302,
+       "end": 304,
+       "title": "3. Kāla"
+      }
+     ],
+     "split": false,
+     "id": "M40",
+     "book": 18,
+     "layer": "mula",
+     "title": "3. Kāla",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 305,
+     "end": 308,
+     "chars": 3129,
+     "sents": 6,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 305,
+       "end": 306,
+       "title": "4. Gati"
+      },
+      {
+       "start": 307,
+       "end": 308,
+       "title": "5. Harā"
+      }
+     ],
+     "split": false,
+     "id": "M41",
+     "book": 18,
+     "layer": "mula",
+     "title": "4. Gati … 5. Harā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 309,
+     "end": 323,
+     "chars": 4782,
+     "sents": 21,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 309,
+       "end": 321,
+       "title": "6. Nakhā"
+      },
+      {
+       "start": 322,
+       "end": 323,
+       "title": "7. Dhyādi"
+      }
+     ],
+     "split": false,
+     "id": "M42",
+     "book": 18,
+     "layer": "mula",
+     "title": "6. Nakhā … 7. Dhyādi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 324,
+     "end": 334,
+     "chars": 4779,
+     "sents": 13,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 324,
+       "end": 328,
+       "title": "8. Lakkhaṇi"
+      },
+      {
+       "start": 329,
+       "end": 330,
+       "title": "9. Pati"
+      },
+      {
+       "start": 331,
+       "end": 332,
+       "title": "10. Anu"
+      },
+      {
+       "start": 333,
+       "end": 334,
+       "title": "11. Saha"
+      }
+     ],
+     "split": false,
+     "id": "M43",
+     "book": 18,
+     "layer": "mula",
+     "title": "8. Lakkhaṇi … 11. Saha",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 335,
+     "end": 340,
+     "chars": 2108,
+     "sents": 9,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 335,
+       "end": 336,
+       "title": "12. Hīne"
+      },
+      {
+       "start": 337,
+       "end": 338,
+       "title": "14. Satta"
+      },
+      {
+       "start": 339,
+       "end": 340,
+       "title": "15. Sāmi"
+      }
+     ],
+     "split": false,
+     "id": "M44",
+     "book": 18,
+     "layer": "mula",
+     "title": "12. Hīne … 15. Sāmi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 341,
+     "end": 366,
+     "chars": 4860,
+     "sents": 29,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 341,
+       "end": 366,
+       "title": "16. Kattu"
+      }
+     ],
+     "split": false,
+     "id": "M45",
+     "book": 18,
+     "layer": "mula",
+     "title": "16. Kattu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 367,
+     "end": 372,
+     "chars": 4849,
+     "sents": 17,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 367,
+       "end": 368,
+       "title": "17. Saha"
+      },
+      {
+       "start": 369,
+       "end": 370,
+       "title": "18. Lakkhaṇe"
+      },
+      {
+       "start": 371,
+       "end": 372,
+       "title": "19. Hetu"
+      }
+     ],
+     "split": false,
+     "id": "M46",
+     "book": 18,
+     "layer": "mula",
+     "title": "17. Saha … 19. Hetu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 373,
+     "end": 380,
+     "chars": 2313,
+     "sents": 8,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 373,
+       "end": 374,
+       "title": "21. Guṇe"
+      },
+      {
+       "start": 375,
+       "end": 376,
+       "title": "22. Chaṭṭhī"
+      },
+      {
+       "start": 377,
+       "end": 378,
+       "title": "23. Sabbā"
+      },
+      {
+       "start": 379,
+       "end": 380,
+       "title": "24. Catu"
+      }
+     ],
+     "split": false,
+     "id": "M47",
+     "book": 18,
+     "layer": "mula",
+     "title": "21. Guṇe … 24. Catu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 381,
+     "end": 383,
+     "chars": 2960,
+     "sents": 4,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 381,
+       "end": 384,
+       "title": "25. Tāda"
+      }
+     ],
+     "split": true,
+     "id": "M48",
+     "book": 18,
+     "layer": "mula",
+     "title": "25. Tāda（381-383）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 384,
+     "end": 384,
+     "chars": 3604,
+     "sents": 6,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 381,
+       "end": 384,
+       "title": "25. Tāda"
+      }
+     ],
+     "split": true,
+     "id": "M49",
+     "book": 18,
+     "layer": "mula",
+     "title": "25. Tāda（384-384）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 385,
+     "end": 391,
+     "chars": 680,
+     "sents": 7,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 385,
+       "end": 395,
+       "title": "26. Pañca"
+      }
+     ],
+     "split": true,
+     "id": "M50",
+     "book": 18,
+     "layer": "mula",
+     "title": "26. Pañca（385-391）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 392,
+     "end": 392,
+     "chars": 11524,
+     "sents": 24,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 385,
+       "end": 395,
+       "title": "26. Pañca"
+      }
+     ],
+     "split": true,
+     "id": "M51",
+     "book": 18,
+     "layer": "mula",
+     "title": "26. Pañca（392-392）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 393,
+     "end": 395,
+     "chars": 631,
+     "sents": 3,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 385,
+       "end": 395,
+       "title": "26. Pañca"
+      }
+     ],
+     "split": true,
+     "id": "M52",
+     "book": 18,
+     "layer": "mula",
+     "title": "26. Pañca（393-395）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 396,
+     "end": 403,
+     "chars": 2227,
+     "sents": 10,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 396,
+       "end": 397,
+       "title": "27. Apa"
+      },
+      {
+       "start": 398,
+       "end": 399,
+       "title": "28. Paṭi"
+      },
+      {
+       "start": 400,
+       "end": 401,
+       "title": "29. Rite"
+      },
+      {
+       "start": 402,
+       "end": 403,
+       "title": "31. Putha"
+      }
+     ],
+     "split": false,
+     "id": "M53",
+     "book": 18,
+     "layer": "mula",
+     "title": "27. Apa … 31. Putha",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 404,
+     "end": 415,
+     "chars": 4192,
+     "sents": 16,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 404,
+       "end": 411,
+       "title": "32. Satta"
+      },
+      {
+       "start": 412,
+       "end": 413,
+       "title": "33. Nimitta"
+      },
+      {
+       "start": 414,
+       "end": 415,
+       "title": "34. Yabbhā"
+      }
+     ],
+     "split": false,
+     "id": "M54",
+     "book": 18,
+     "layer": "mula",
+     "title": "32. Satta … 34. Yabbhā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 416,
+     "end": 429,
+     "chars": 4621,
+     "sents": 21,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 416,
+       "end": 417,
+       "title": "35. Chaṭṭhī"
+      },
+      {
+       "start": 418,
+       "end": 419,
+       "title": "36. Yato"
+      },
+      {
+       "start": 420,
+       "end": 421,
+       "title": "37. Paṭhamā"
+      },
+      {
+       "start": 422,
+       "end": 429,
+       "title": "38. Āmanta"
+      }
+     ],
+     "split": false,
+     "id": "M55",
+     "book": 18,
+     "layer": "mula",
+     "title": "35. Chaṭṭhī … 38. Āmanta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 430,
+     "end": 437,
+     "chars": 4744,
+     "sents": 9,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 430,
+       "end": 438,
+       "title": "39. Chaṭṭhī"
+      }
+     ],
+     "split": true,
+     "id": "M56",
+     "book": 18,
+     "layer": "mula",
+     "title": "39. Chaṭṭhī（430-437）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 438,
+     "end": 438,
+     "chars": 1046,
+     "sents": 3,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 430,
+       "end": 438,
+       "title": "39. Chaṭṭhī"
+      }
+     ],
+     "split": true,
+     "id": "M57",
+     "book": 18,
+     "layer": "mula",
+     "title": "39. Chaṭṭhī（438-438）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 439,
+     "end": 461,
+     "chars": 4704,
+     "sents": 24,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 439,
+       "end": 440,
+       "title": "40. Tulya"
+      },
+      {
+       "start": 441,
+       "end": 442,
+       "title": "41. Ato"
+      },
+      {
+       "start": 443,
+       "end": 444,
+       "title": "42. Nīnaṃ"
+      },
+      {
+       "start": 445,
+       "end": 446,
+       "title": "44. Sassāya"
+      },
+      {
+       "start": 447,
+       "end": 448,
+       "title": "45. Ghapa"
+      },
+      {
+       "start": 449,
+       "end": 450,
+       "title": "46. Ssāvā"
+      },
+      {
+       "start": 451,
+       "end": 453,
+       "title": "47. Namhi"
+      },
+      {
+       "start": 454,
+       "end": 455,
+       "title": "51. Suña"
+      },
+      {
+       "start": 456,
+       "end": 457,
+       "title": "55. Ratyā"
+      },
+      {
+       "start": 458,
+       "end": 459,
+       "title": "56. Suhi"
+      },
+      {
+       "start": 460,
+       "end": 461,
+       "title": "57. Ltu"
+      }
+     ],
+     "split": false,
+     "id": "M58",
+     "book": 18,
+     "layer": "mula",
+     "title": "40. Tulya … 57. Ltu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 462,
+     "end": 497,
+     "chars": 4953,
+     "sents": 38,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 462,
+       "end": 463,
+       "title": "58. Ge"
+      },
+      {
+       "start": 464,
+       "end": 465,
+       "title": "60. Ghabrahmā"
+      },
+      {
+       "start": 466,
+       "end": 467,
+       "title": "63. Ghossaṃ"
+      },
+      {
+       "start": 468,
+       "end": 469,
+       "title": "64. Eka"
+      },
+      {
+       "start": 470,
+       "end": 471,
+       "title": "67. Gossā"
+      },
+      {
+       "start": 472,
+       "end": 473,
+       "title": "69. Gavaṃ"
+      },
+      {
+       "start": 474,
+       "end": 475,
+       "title": "72. Gāvu"
+      },
+      {
+       "start": 476,
+       "end": 477,
+       "title": "73. Yaṃ"
+      },
+      {
+       "start": 478,
+       "end": 479,
+       "title": "77. Smi"
+      },
+      {
+       "start": 480,
+       "end": 481,
+       "title": "81. Jhalā"
+      },
+      {
+       "start": 482,
+       "end": 483,
+       "title": "85. Kū"
+      },
+      {
+       "start": 484,
+       "end": 485,
+       "title": "86. Lo"
+      },
+      {
+       "start": 486,
+       "end": 487,
+       "title": "87. Nano"
+      },
+      {
+       "start": 488,
+       "end": 489,
+       "title": "88. Yolo"
+      },
+      {
+       "start": 490,
+       "end": 491,
+       "title": "92. Ntassa"
+      },
+      {
+       "start": 492,
+       "end": 493,
+       "title": "93. Yosu"
+      },
+      {
+       "start": 494,
+       "end": 495,
+       "title": "94. Vevo"
+      },
+      {
+       "start": 496,
+       "end": 497,
+       "title": "95. Yomhi"
+      }
+     ],
+     "split": false,
+     "id": "M59",
+     "book": 18,
+     "layer": "mula",
+     "title": "58. Ge … 95. Yomhi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 498,
+     "end": 505,
+     "chars": 3960,
+     "sents": 8,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 498,
+       "end": 499,
+       "title": "99. Sabbā"
+      },
+      {
+       "start": 500,
+       "end": 501,
+       "title": "104.Ti"
+      },
+      {
+       "start": 502,
+       "end": 503,
+       "title": "108. Ate"
+      },
+      {
+       "start": 504,
+       "end": 505,
+       "title": "110. Kvace"
+      }
+     ],
+     "split": false,
+     "id": "M60",
+     "book": 18,
+     "layer": "mula",
+     "title": "99. Sabbā … 110. Kvace",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 506,
+     "end": 509,
+     "chars": 2309,
+     "sents": 5,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 506,
+       "end": 507,
+       "title": "114. Lopo"
+      },
+      {
+       "start": 508,
+       "end": 509,
+       "title": "116. Ye"
+      }
+     ],
+     "split": false,
+     "id": "M61",
+     "book": 18,
+     "layer": "mula",
+     "title": "114. Lopo … 116. Ye",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 510,
+     "end": 515,
+     "chars": 3640,
+     "sents": 11,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 510,
+       "end": 511,
+       "title": "118. Asaṃ"
+      },
+      {
+       "start": 512,
+       "end": 513,
+       "title": "119. Eka"
+      },
+      {
+       "start": 514,
+       "end": 515,
+       "title": "120. Pubba"
+      }
+     ],
+     "split": false,
+     "id": "M62",
+     "book": 18,
+     "layer": "mula",
+     "title": "118. Asaṃ … 120. Pubba",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 516,
+     "end": 528,
+     "chars": 4852,
+     "sents": 14,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 516,
+       "end": 518,
+       "title": "121. Nāto"
+      },
+      {
+       "start": 519,
+       "end": 520,
+       "title": "125. Ima"
+      },
+      {
+       "start": 521,
+       "end": 522,
+       "title": "127. Simha"
+      },
+      {
+       "start": 523,
+       "end": 524,
+       "title": "129. Massā"
+      },
+      {
+       "start": 525,
+       "end": 526,
+       "title": "130. Kevā"
+      },
+      {
+       "start": 527,
+       "end": 528,
+       "title": "131. Tata"
+      }
+     ],
+     "split": false,
+     "id": "M63",
+     "book": 18,
+     "layer": "mula",
+     "title": "121. Nāto … 131. Tata",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 529,
+     "end": 560,
+     "chars": 4695,
+     "sents": 33,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 529,
+       "end": 531,
+       "title": "132. Ṭasa"
+      },
+      {
+       "start": 532,
+       "end": 533,
+       "title": "134. Duti"
+      },
+      {
+       "start": 534,
+       "end": 535,
+       "title": "139. Nāññaṃ"
+      },
+      {
+       "start": 536,
+       "end": 537,
+       "title": "140. Tati"
+      },
+      {
+       "start": 538,
+       "end": 539,
+       "title": "141. Cattha"
+      },
+      {
+       "start": 540,
+       "end": 541,
+       "title": "144. Manā"
+      },
+      {
+       "start": 542,
+       "end": 543,
+       "title": "146. Bhava"
+      },
+      {
+       "start": 544,
+       "end": 545,
+       "title": "148. Ntassaṃ"
+      },
+      {
+       "start": 546,
+       "end": 548,
+       "title": "154. Rāja"
+      },
+      {
+       "start": 549,
+       "end": 550,
+       "title": "162. Ltu"
+      },
+      {
+       "start": 551,
+       "end": 552,
+       "title": "165. Salo"
+      },
+      {
+       "start": 553,
+       "end": 554,
+       "title": "169. Ṭapa"
+      },
+      {
+       "start": 555,
+       "end": 556,
+       "title": "175. Divā"
+      },
+      {
+       "start": 557,
+       "end": 558,
+       "title": "181. Yonaṃ"
+      },
+      {
+       "start": 559,
+       "end": 560,
+       "title": "185. Nāmhi"
+      }
+     ],
+     "split": false,
+     "id": "M64",
+     "book": 18,
+     "layer": "mula",
+     "title": "132. Ṭasa … 185. Nāmhi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 561,
+     "end": 588,
+     "chars": 4991,
+     "sents": 32,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 561,
+       "end": 562,
+       "title": "187. Gassaṃ"
+      },
+      {
+       "start": 563,
+       "end": 564,
+       "title": "192. Puma"
+      },
+      {
+       "start": 565,
+       "end": 566,
+       "title": "197. Ime"
+      },
+      {
+       "start": 567,
+       "end": 568,
+       "title": "198. Kissa"
+      },
+      {
+       "start": 569,
+       "end": 570,
+       "title": "204. Namhi"
+      },
+      {
+       "start": 571,
+       "end": 572,
+       "title": "205. Nta"
+      },
+      {
+       "start": 573,
+       "end": 574,
+       "title": "219. Yomhi"
+      },
+      {
+       "start": 575,
+       "end": 576,
+       "title": "228. Nāsmā"
+      },
+      {
+       "start": 577,
+       "end": 578,
+       "title": "230. Caṃvā"
+      },
+      {
+       "start": 579,
+       "end": 580,
+       "title": "232. Apā"
+      },
+      {
+       "start": 581,
+       "end": 582,
+       "title": "233. Yonaṃ"
+      },
+      {
+       "start": 583,
+       "end": 584,
+       "title": "235. Anvā"
+      },
+      {
+       "start": 585,
+       "end": 586,
+       "title": "236. Sapu"
+      },
+      {
+       "start": 587,
+       "end": 588,
+       "title": "237. Naca"
+      }
+     ],
+     "split": false,
+     "id": "M65",
+     "book": 18,
+     "layer": "mula",
+     "title": "187. Gassaṃ … 237. Naca",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 589,
+     "end": 593,
+     "chars": 749,
+     "sents": 5,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 589,
+       "end": 592,
+       "title": "240. Nasā"
+      },
+      {
+       "start": 593,
+       "end": 593,
+       "title": "3. Tatiyakaṇḍavaṇṇanā"
+      }
+     ],
+     "split": false,
+     "id": "M66",
+     "book": 18,
+     "layer": "mula",
+     "title": "240. Nasā … 3. Tatiyakaṇḍavaṇṇanā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 594,
+     "end": 605,
+     "chars": 4832,
+     "sents": 21,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 594,
+       "end": 609,
+       "title": "1. Syādi"
+      }
+     ],
+     "split": true,
+     "id": "M67",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Syādi（594-605）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 606,
+     "end": 609,
+     "chars": 1605,
+     "sents": 8,
+     "paras": 4,
+     "chapters": [
+      {
+       "start": 594,
+       "end": 609,
+       "title": "1. Syādi"
+      }
+     ],
+     "split": true,
+     "id": "M68",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Syādi（606-609）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 610,
+     "end": 630,
+     "chars": 4559,
+     "sents": 29,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 610,
+       "end": 628,
+       "title": "2. Asaṃ"
+      },
+      {
+       "start": 629,
+       "end": 630,
+       "title": "4. Yāvāvadhāraṇe"
+      }
+     ],
+     "split": false,
+     "id": "M69",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Asaṃ … 4. Yāvāvadhāraṇe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 631,
+     "end": 643,
+     "chars": 2640,
+     "sents": 20,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 631,
+       "end": 634,
+       "title": "5. Payyapābahitiro purepacchāvāpañcamyā"
+      },
+      {
+       "start": 635,
+       "end": 638,
+       "title": "6. Samī"
+      },
+      {
+       "start": 639,
+       "end": 641,
+       "title": "7. Tiṭṭha"
+      },
+      {
+       "start": 642,
+       "end": 643,
+       "title": "8. Ore"
+      }
+     ],
+     "split": false,
+     "id": "M70",
+     "book": 18,
+     "layer": "mula",
+     "title": "5. Payyapābahitiro purepacchāvāpañcamyā … 8. Ore",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 644,
+     "end": 658,
+     "chars": 4443,
+     "sents": 18,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 644,
+       "end": 658,
+       "title": "10. Amā"
+      }
+     ],
+     "split": false,
+     "id": "M71",
+     "book": 18,
+     "layer": "mula",
+     "title": "10. Amā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 659,
+     "end": 670,
+     "chars": 4426,
+     "sents": 17,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 659,
+       "end": 696,
+       "title": "11. Vise"
+      }
+     ],
+     "split": true,
+     "id": "M72",
+     "book": 18,
+     "layer": "mula",
+     "title": "11. Vise（659-670）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 671,
+     "end": 680,
+     "chars": 4721,
+     "sents": 18,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 659,
+       "end": 696,
+       "title": "11. Vise"
+      }
+     ],
+     "split": true,
+     "id": "M73",
+     "book": 18,
+     "layer": "mula",
+     "title": "11. Vise（671-680）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 681,
+     "end": 693,
+     "chars": 4741,
+     "sents": 28,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 659,
+       "end": 696,
+       "title": "11. Vise"
+      }
+     ],
+     "split": true,
+     "id": "M74",
+     "book": 18,
+     "layer": "mula",
+     "title": "11. Vise（681-693）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 694,
+     "end": 696,
+     "chars": 1488,
+     "sents": 8,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 659,
+       "end": 696,
+       "title": "11. Vise"
+      }
+     ],
+     "split": true,
+     "id": "M75",
+     "book": 18,
+     "layer": "mula",
+     "title": "11. Vise（694-696）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 697,
+     "end": 715,
+     "chars": 4789,
+     "sents": 38,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 697,
+       "end": 707,
+       "title": "12. Naña"
+      },
+      {
+       "start": 708,
+       "end": 709,
+       "title": "13. Kupā"
+      },
+      {
+       "start": 710,
+       "end": 711,
+       "title": "14. Cīkri"
+      },
+      {
+       "start": 712,
+       "end": 713,
+       "title": "15. Bhūsa"
+      },
+      {
+       "start": 714,
+       "end": 715,
+       "title": "16. Aññe"
+      }
+     ],
+     "split": false,
+     "id": "M76",
+     "book": 18,
+     "layer": "mula",
+     "title": "12. Naña … 16. Aññe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 716,
+     "end": 733,
+     "chars": 4286,
+     "sents": 24,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 716,
+       "end": 735,
+       "title": "17. Vāne"
+      }
+     ],
+     "split": true,
+     "id": "M77",
+     "book": 18,
+     "layer": "mula",
+     "title": "17. Vāne（716-733）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 734,
+     "end": 735,
+     "chars": 1202,
+     "sents": 8,
+     "paras": 2,
+     "chapters": [
+      {
+       "start": 716,
+       "end": 735,
+       "title": "17. Vāne"
+      }
+     ],
+     "split": true,
+     "id": "M78",
+     "book": 18,
+     "layer": "mula",
+     "title": "17. Vāne（734-735）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 736,
+     "end": 746,
+     "chars": 4313,
+     "sents": 28,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 736,
+       "end": 754,
+       "title": "19. Catthe"
+      }
+     ],
+     "split": true,
+     "id": "M79",
+     "book": 18,
+     "layer": "mula",
+     "title": "19. Catthe（736-746）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 747,
+     "end": 754,
+     "chars": 3504,
+     "sents": 25,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 736,
+       "end": 754,
+       "title": "19. Catthe"
+      }
+     ],
+     "split": true,
+     "id": "M80",
+     "book": 18,
+     "layer": "mula",
+     "title": "19. Catthe（747-754）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 755,
+     "end": 771,
+     "chars": 3182,
+     "sents": 34,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 755,
+       "end": 763,
+       "title": "21. Saṅkhyā"
+      },
+      {
+       "start": 764,
+       "end": 765,
+       "title": "22. Kvace"
+      },
+      {
+       "start": 766,
+       "end": 767,
+       "title": "23. Syādi"
+      },
+      {
+       "start": 768,
+       "end": 769,
+       "title": "24. Ghama"
+      },
+      {
+       "start": 770,
+       "end": 771,
+       "title": "25. Gossu"
+      }
+     ],
+     "split": false,
+     "id": "M81",
+     "book": 18,
+     "layer": "mula",
+     "title": "21. Saṅkhyā … 25. Gossu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 772,
+     "end": 789,
+     "chars": 4894,
+     "sents": 47,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 772,
+       "end": 781,
+       "title": "26. Itthi"
+      },
+      {
+       "start": 782,
+       "end": 783,
+       "title": "29. Ārā"
+      },
+      {
+       "start": 784,
+       "end": 785,
+       "title": "31. Kti"
+      },
+      {
+       "start": 786,
+       "end": 787,
+       "title": "32. Ghara"
+      },
+      {
+       "start": 788,
+       "end": 789,
+       "title": "33. Mātu"
+      }
+     ],
+     "split": false,
+     "id": "M82",
+     "book": 18,
+     "layer": "mula",
+     "title": "26. Itthi … 33. Mātu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 790,
+     "end": 813,
+     "chars": 4692,
+     "sents": 45,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 790,
+       "end": 791,
+       "title": "39. Puthu"
+      },
+      {
+       "start": 792,
+       "end": 793,
+       "title": "40. Samā"
+      },
+      {
+       "start": 794,
+       "end": 795,
+       "title": "44. Asaṃ"
+      },
+      {
+       "start": 796,
+       "end": 799,
+       "title": "45. Dīghā"
+      },
+      {
+       "start": 800,
+       "end": 801,
+       "title": "46. Gotva"
+      },
+      {
+       "start": 802,
+       "end": 803,
+       "title": "47. Ratti"
+      },
+      {
+       "start": 804,
+       "end": 805,
+       "title": "50. Dāru"
+      },
+      {
+       "start": 806,
+       "end": 807,
+       "title": "51. Civī"
+      },
+      {
+       "start": 808,
+       "end": 809,
+       "title": "52. Latvī"
+      },
+      {
+       "start": 810,
+       "end": 811,
+       "title": "53. Vāñña"
+      },
+      {
+       "start": 812,
+       "end": 813,
+       "title": "54. Utta"
+      }
+     ],
+     "split": false,
+     "id": "M83",
+     "book": 18,
+     "layer": "mula",
+     "title": "39. Puthu … 54. Utta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 814,
+     "end": 847,
+     "chars": 4857,
+     "sents": 51,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 814,
+       "end": 815,
+       "title": "57. Ṭanta"
+      },
+      {
+       "start": 816,
+       "end": 817,
+       "title": "58. A"
+      },
+      {
+       "start": 818,
+       "end": 819,
+       "title": "60. Para"
+      },
+      {
+       "start": 820,
+       "end": 821,
+       "title": "63. Klu"
+      },
+      {
+       "start": 822,
+       "end": 823,
+       "title": "64. Vijjā"
+      },
+      {
+       "start": 824,
+       "end": 825,
+       "title": "65. Putte"
+      },
+      {
+       "start": 826,
+       "end": 827,
+       "title": "66. Cismiṃ"
+      },
+      {
+       "start": 828,
+       "end": 829,
+       "title": "67. Itthi"
+      },
+      {
+       "start": 830,
+       "end": 831,
+       "title": "69. Sabbā"
+      },
+      {
+       "start": 832,
+       "end": 833,
+       "title": "70. Jāyā"
+      },
+      {
+       "start": 834,
+       "end": 835,
+       "title": "75. Ana"
+      },
+      {
+       "start": 836,
+       "end": 837,
+       "title": "76. Nakhā"
+      },
+      {
+       "start": 838,
+       "end": 839,
+       "title": "77. Nago"
+      },
+      {
+       "start": 840,
+       "end": 841,
+       "title": "78. Saha"
+      },
+      {
+       "start": 842,
+       "end": 843,
+       "title": "80. Apa"
+      },
+      {
+       "start": 844,
+       "end": 845,
+       "title": "81. Akā"
+      },
+      {
+       "start": 846,
+       "end": 847,
+       "title": "82. Gantha"
+      }
+     ],
+     "split": false,
+     "id": "M84",
+     "book": 18,
+     "layer": "mula",
+     "title": "57. Ṭanta … 82. Gantha",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 848,
+     "end": 868,
+     "chars": 1335,
+     "sents": 23,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 848,
+       "end": 849,
+       "title": "83. Samā"
+      },
+      {
+       "start": 850,
+       "end": 851,
+       "title": "84. Uda"
+      },
+      {
+       "start": 852,
+       "end": 853,
+       "title": "88. Tumhā"
+      },
+      {
+       "start": 854,
+       "end": 855,
+       "title": "90. Vidhā"
+      },
+      {
+       "start": 856,
+       "end": 857,
+       "title": "92. Digu"
+      },
+      {
+       "start": 858,
+       "end": 859,
+       "title": "93. Tīsva"
+      },
+      {
+       "start": 860,
+       "end": 861,
+       "title": "94. Āsaṃ"
+      },
+      {
+       "start": 862,
+       "end": 863,
+       "title": "96. Cattā"
+      },
+      {
+       "start": 864,
+       "end": 867,
+       "title": "97. Dvissā"
+      },
+      {
+       "start": 868,
+       "end": 868,
+       "title": "Catutthakaṇḍa"
+      }
+     ],
+     "split": false,
+     "id": "M85",
+     "book": 18,
+     "layer": "mula",
+     "title": "83. Samā … Catutthakaṇḍa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 869,
+     "end": 879,
+     "chars": 4688,
+     "sents": 40,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 869,
+       "end": 884,
+       "title": "1. Ṇo vāpacce"
+      }
+     ],
+     "split": true,
+     "id": "M86",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Ṇo vāpacce（869-879）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 880,
+     "end": 884,
+     "chars": 2125,
+     "sents": 27,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 869,
+       "end": 884,
+       "title": "1. Ṇo vāpacce"
+      }
+     ],
+     "split": true,
+     "id": "M87",
+     "book": 18,
+     "layer": "mula",
+     "title": "1. Ṇo vāpacce（880-884）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 885,
+     "end": 902,
+     "chars": 3713,
+     "sents": 55,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 885,
+       "end": 887,
+       "title": "2. Vacchā"
+      },
+      {
+       "start": 888,
+       "end": 889,
+       "title": "3. Katti"
+      },
+      {
+       "start": 890,
+       "end": 891,
+       "title": "4. Ṇyadi"
+      },
+      {
+       "start": 892,
+       "end": 893,
+       "title": "5. Āṇi"
+      },
+      {
+       "start": 894,
+       "end": 895,
+       "title": "6. Rāja"
+      },
+      {
+       "start": 896,
+       "end": 897,
+       "title": "8. Manu"
+      },
+      {
+       "start": 898,
+       "end": 899,
+       "title": "9. Jana"
+      },
+      {
+       "start": 900,
+       "end": 902,
+       "title": "11. Ṇarā"
+      }
+     ],
+     "split": false,
+     "id": "M88",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Vacchā … 11. Ṇarā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 903,
+     "end": 907,
+     "chars": 2995,
+     "sents": 25,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 903,
+       "end": 907,
+       "title": "12. Nakkha"
+      }
+     ],
+     "split": false,
+     "id": "M89",
+     "book": 18,
+     "layer": "mula",
+     "title": "12. Nakkha",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 908,
+     "end": 918,
+     "chars": 4825,
+     "sents": 43,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 908,
+       "end": 912,
+       "title": "13. Sāssa"
+      },
+      {
+       "start": 913,
+       "end": 916,
+       "title": "14. Tama"
+      },
+      {
+       "start": 917,
+       "end": 918,
+       "title": "15. Tassa"
+      }
+     ],
+     "split": false,
+     "id": "M90",
+     "book": 18,
+     "layer": "mula",
+     "title": "13. Sāssa … 15. Tassa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 919,
+     "end": 944,
+     "chars": 4637,
+     "sents": 62,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 919,
+       "end": 920,
+       "title": "16. Nivā"
+      },
+      {
+       "start": 921,
+       "end": 922,
+       "title": "17. Adū"
+      },
+      {
+       "start": 923,
+       "end": 924,
+       "title": "18. Tena"
+      },
+      {
+       "start": 925,
+       "end": 926,
+       "title": "19. Tami"
+      },
+      {
+       "start": 927,
+       "end": 928,
+       "title": "21. Ajjā"
+      },
+      {
+       "start": 929,
+       "end": 930,
+       "title": "23. Amā"
+      },
+      {
+       "start": 931,
+       "end": 932,
+       "title": "24. Majjhā"
+      },
+      {
+       "start": 933,
+       "end": 934,
+       "title": "25. Kaṇa"
+      },
+      {
+       "start": 935,
+       "end": 936,
+       "title": "26. Ṇiko"
+      },
+      {
+       "start": 937,
+       "end": 940,
+       "title": "27. Tamassa"
+      },
+      {
+       "start": 941,
+       "end": 944,
+       "title": "28. Taṃhanti"
+      }
+     ],
+     "split": false,
+     "id": "M91",
+     "book": 18,
+     "layer": "mula",
+     "title": "16. Nivā … 28. Taṃhanti",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 945,
+     "end": 969,
+     "chars": 4974,
+     "sents": 54,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 945,
+       "end": 948,
+       "title": "29. Tena"
+      },
+      {
+       "start": 949,
+       "end": 950,
+       "title": "30. Tassa"
+      },
+      {
+       "start": 951,
+       "end": 952,
+       "title": "34. Ṇo"
+      },
+      {
+       "start": 953,
+       "end": 954,
+       "title": "35. Gavā"
+      },
+      {
+       "start": 955,
+       "end": 956,
+       "title": "38. Mātā"
+      },
+      {
+       "start": 957,
+       "end": 958,
+       "title": "39. Hite"
+      },
+      {
+       "start": 959,
+       "end": 961,
+       "title": "40. Ninda"
+      },
+      {
+       "start": 962,
+       "end": 963,
+       "title": "41. Tamassa"
+      },
+      {
+       "start": 964,
+       "end": 965,
+       "title": "44. Kimhā"
+      },
+      {
+       "start": 966,
+       "end": 967,
+       "title": "45. Sañjātaṃ"
+      },
+      {
+       "start": 968,
+       "end": 969,
+       "title": "46. Māne"
+      }
+     ],
+     "split": false,
+     "id": "M92",
+     "book": 18,
+     "layer": "mula",
+     "title": "29. Tena … 46. Māne",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 970,
+     "end": 988,
+     "chars": 4976,
+     "sents": 53,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 970,
+       "end": 972,
+       "title": "47. Taggho"
+      },
+      {
+       "start": 973,
+       "end": 974,
+       "title": "48. Ṇoca"
+      },
+      {
+       "start": 975,
+       "end": 976,
+       "title": "49. Ayū"
+      },
+      {
+       "start": 977,
+       "end": 978,
+       "title": "50. Saṅkhyā"
+      },
+      {
+       "start": 979,
+       "end": 981,
+       "title": "51. Tassa"
+      },
+      {
+       "start": 982,
+       "end": 983,
+       "title": "54. Chā"
+      },
+      {
+       "start": 984,
+       "end": 985,
+       "title": "55. Ekā"
+      },
+      {
+       "start": 986,
+       "end": 988,
+       "title": "56. Vacchā"
+      }
+     ],
+     "split": false,
+     "id": "M93",
+     "book": 18,
+     "layer": "mula",
+     "title": "47. Taggho … 56. Vacchā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 989,
+     "end": 1000,
+     "chars": 4204,
+     "sents": 51,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 989,
+       "end": 990,
+       "title": "57. Kimhā"
+      },
+      {
+       "start": 991,
+       "end": 993,
+       "title": "58. Tena"
+      },
+      {
+       "start": 994,
+       "end": 998,
+       "title": "59. Tassa"
+      },
+      {
+       "start": 999,
+       "end": 1000,
+       "title": "62. Aṇvā"
+      }
+     ],
+     "split": false,
+     "id": "M94",
+     "book": 18,
+     "layer": "mula",
+     "title": "57. Kimhā … 62. Aṇvā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1001,
+     "end": 1013,
+     "chars": 4498,
+     "sents": 45,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 1001,
+       "end": 1007,
+       "title": "64. Tara"
+      },
+      {
+       "start": 1008,
+       "end": 1009,
+       "title": "66. Tassa"
+      },
+      {
+       "start": 1010,
+       "end": 1011,
+       "title": "67. Jatu"
+      },
+      {
+       "start": 1012,
+       "end": 1013,
+       "title": "68. Samū"
+      }
+     ],
+     "split": false,
+     "id": "M95",
+     "book": 18,
+     "layer": "mula",
+     "title": "64. Tara … 68. Samū",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1014,
+     "end": 1031,
+     "chars": 3596,
+     "sents": 36,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 1014,
+       "end": 1016,
+       "title": "69. Janā"
+      },
+      {
+       "start": 1017,
+       "end": 1018,
+       "title": "70. Iyo"
+      },
+      {
+       "start": 1019,
+       "end": 1020,
+       "title": "74. Kathā"
+      },
+      {
+       "start": 1021,
+       "end": 1022,
+       "title": "75. Pathā"
+      },
+      {
+       "start": 1023,
+       "end": 1024,
+       "title": "77. Rāyo"
+      },
+      {
+       "start": 1025,
+       "end": 1029,
+       "title": "78. Tame"
+      },
+      {
+       "start": 1030,
+       "end": 1031,
+       "title": "79. Vantva"
+      }
+     ],
+     "split": false,
+     "id": "M96",
+     "book": 18,
+     "layer": "mula",
+     "title": "69. Janā … 79. Vantva",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1032,
+     "end": 1065,
+     "chars": 4511,
+     "sents": 79,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 1032,
+       "end": 1035,
+       "title": "80. Daṇḍā"
+      },
+      {
+       "start": 1036,
+       "end": 1037,
+       "title": "82. Mukhā"
+      },
+      {
+       "start": 1038,
+       "end": 1039,
+       "title": "87. Picchā"
+      },
+      {
+       "start": 1040,
+       "end": 1041,
+       "title": "88. Sīlā"
+      },
+      {
+       "start": 1042,
+       "end": 1043,
+       "title": "90. Sissa"
+      },
+      {
+       "start": 1044,
+       "end": 1045,
+       "title": "91. Lakkhyā"
+      },
+      {
+       "start": 1046,
+       "end": 1047,
+       "title": "94. Imiyā"
+      },
+      {
+       "start": 1048,
+       "end": 1049,
+       "title": "95. Topa"
+      },
+      {
+       "start": 1050,
+       "end": 1051,
+       "title": "96. Ito"
+      },
+      {
+       "start": 1052,
+       "end": 1053,
+       "title": "97. Abhyā"
+      },
+      {
+       "start": 1054,
+       "end": 1055,
+       "title": "98. Ādyā"
+      },
+      {
+       "start": 1056,
+       "end": 1057,
+       "title": "100. Katthe"
+      },
+      {
+       "start": 1058,
+       "end": 1059,
+       "title": "101. Dhi"
+      },
+      {
+       "start": 1060,
+       "end": 1061,
+       "title": "102. Yā"
+      },
+      {
+       "start": 1062,
+       "end": 1063,
+       "title": "104. Kuhiṃ"
+      },
+      {
+       "start": 1064,
+       "end": 1065,
+       "title": "105. Sabbe"
+      }
+     ],
+     "split": false,
+     "id": "M97",
+     "book": 18,
+     "layer": "mula",
+     "title": "80. Daṇḍā … 105. Sabbe",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1066,
+     "end": 1089,
+     "chars": 4551,
+     "sents": 46,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1066,
+       "end": 1067,
+       "title": "106. Kadā"
+      },
+      {
+       "start": 1068,
+       "end": 1069,
+       "title": "107. Ajja"
+      },
+      {
+       "start": 1070,
+       "end": 1075,
+       "title": "110. Dhāsaṃ"
+      },
+      {
+       "start": 1076,
+       "end": 1077,
+       "title": "113. Tabba"
+      },
+      {
+       "start": 1078,
+       "end": 1079,
+       "title": "115. Kati"
+      },
+      {
+       "start": 1080,
+       "end": 1081,
+       "title": "116. Bahu"
+      },
+      {
+       "start": 1082,
+       "end": 1083,
+       "title": "117. Sakiṃ"
+      },
+      {
+       "start": 1084,
+       "end": 1085,
+       "title": "118. So"
+      },
+      {
+       "start": 1086,
+       "end": 1087,
+       "title": "119. Abhū"
+      },
+      {
+       "start": 1088,
+       "end": 1089,
+       "title": "120. Dissa"
+      }
+     ],
+     "split": false,
+     "id": "M98",
+     "book": 18,
+     "layer": "mula",
+     "title": "106. Kadā … 120. Dissa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1090,
+     "end": 1113,
+     "chars": 4710,
+     "sents": 50,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1090,
+       "end": 1093,
+       "title": "125. Saṃyo"
+      },
+      {
+       "start": 1094,
+       "end": 1095,
+       "title": "127. Kosa"
+      },
+      {
+       "start": 1096,
+       "end": 1097,
+       "title": "135. Jovu"
+      },
+      {
+       "start": 1098,
+       "end": 1099,
+       "title": "137. Kaṇa"
+      },
+      {
+       "start": 1100,
+       "end": 1101,
+       "title": "139. Ḍesa"
+      },
+      {
+       "start": 1102,
+       "end": 1108,
+       "title": "142. Adhā"
+      },
+      {
+       "start": 1109,
+       "end": 1109,
+       "title": "Pañcamakaṇḍa"
+      },
+      {
+       "start": 1110,
+       "end": 1113,
+       "title": "1. Tija"
+      }
+     ],
+     "split": false,
+     "id": "M99",
+     "book": 18,
+     "layer": "mula",
+     "title": "125. Saṃyo … 1. Tija",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1114,
+     "end": 1123,
+     "chars": 4070,
+     "sents": 51,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 1114,
+       "end": 1115,
+       "title": "2. Kitā"
+      },
+      {
+       "start": 1116,
+       "end": 1117,
+       "title": "3. Nindā"
+      },
+      {
+       "start": 1118,
+       "end": 1123,
+       "title": "4. Tuṃsmā"
+      }
+     ],
+     "split": false,
+     "id": "M100",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. Kitā … 4. Tuṃsmā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1124,
+     "end": 1135,
+     "chars": 4904,
+     "sents": 65,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 1124,
+       "end": 1130,
+       "title": "5. Īyo"
+      },
+      {
+       "start": 1131,
+       "end": 1135,
+       "title": "6. Upamā"
+      }
+     ],
+     "split": false,
+     "id": "M101",
+     "book": 18,
+     "layer": "mula",
+     "title": "5. Īyo … 6. Upamā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1136,
+     "end": 1150,
+     "chars": 4571,
+     "sents": 47,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 1136,
+       "end": 1137,
+       "title": "7. Ādhā"
+      },
+      {
+       "start": 1138,
+       "end": 1139,
+       "title": "8. Kattu"
+      },
+      {
+       "start": 1140,
+       "end": 1143,
+       "title": "9. Jhatthe"
+      },
+      {
+       "start": 1144,
+       "end": 1148,
+       "title": "10. Saddā"
+      },
+      {
+       "start": 1149,
+       "end": 1150,
+       "title": "11. Namo"
+      }
+     ],
+     "split": false,
+     "id": "M102",
+     "book": 18,
+     "layer": "mula",
+     "title": "7. Ādhā … 11. Namo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1151,
+     "end": 1162,
+     "chars": 3550,
+     "sents": 42,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 1151,
+       "end": 1153,
+       "title": "12. Dhātvā"
+      },
+      {
+       "start": 1154,
+       "end": 1155,
+       "title": "13. Saccā"
+      },
+      {
+       "start": 1156,
+       "end": 1157,
+       "title": "15. Curā"
+      },
+      {
+       "start": 1158,
+       "end": 1162,
+       "title": "16. Payo"
+      }
+     ],
+     "split": false,
+     "id": "M103",
+     "book": 18,
+     "layer": "mula",
+     "title": "12. Dhātvā … 16. Payo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1163,
+     "end": 1174,
+     "chars": 4970,
+     "sents": 57,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 1163,
+       "end": 1174,
+       "title": "17. Kyotā"
+      }
+     ],
+     "split": false,
+     "id": "M104",
+     "book": 18,
+     "layer": "mula",
+     "title": "17. Kyotā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1175,
+     "end": 1198,
+     "chars": 4822,
+     "sents": 64,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1175,
+       "end": 1176,
+       "title": "20. Ṇiṇā"
+      },
+      {
+       "start": 1177,
+       "end": 1178,
+       "title": "23. Jyā"
+      },
+      {
+       "start": 1179,
+       "end": 1180,
+       "title": "27. Bhāva"
+      },
+      {
+       "start": 1181,
+       "end": 1182,
+       "title": "28. Dhyaṇa"
+      },
+      {
+       "start": 1183,
+       "end": 1184,
+       "title": "30. Vadā"
+      },
+      {
+       "start": 1185,
+       "end": 1187,
+       "title": "31. Kīcca"
+      },
+      {
+       "start": 1188,
+       "end": 1191,
+       "title": "32. Guhā"
+      },
+      {
+       "start": 1192,
+       "end": 1193,
+       "title": "33. Katta"
+      },
+      {
+       "start": 1194,
+       "end": 1196,
+       "title": "35. Āsiṃ"
+      },
+      {
+       "start": 1197,
+       "end": 1198,
+       "title": "36. Karā"
+      }
+     ],
+     "split": false,
+     "id": "M105",
+     "book": 18,
+     "layer": "mula",
+     "title": "20. Ṇiṇā … 36. Karā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1199,
+     "end": 1227,
+     "chars": 4803,
+     "sents": 80,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 1199,
+       "end": 1200,
+       "title": "37. Hāto"
+      },
+      {
+       "start": 1201,
+       "end": 1202,
+       "title": "39. Vito"
+      },
+      {
+       "start": 1203,
+       "end": 1204,
+       "title": "40. Kasmā"
+      },
+      {
+       "start": 1205,
+       "end": 1208,
+       "title": "41. Kvaca"
+      },
+      {
+       "start": 1209,
+       "end": 1210,
+       "title": "42. Gamā"
+      },
+      {
+       "start": 1211,
+       "end": 1212,
+       "title": "43. Samā"
+      },
+      {
+       "start": 1213,
+       "end": 1219,
+       "title": "44. Bhāva"
+      },
+      {
+       "start": 1220,
+       "end": 1221,
+       "title": "45. Dādhā"
+      },
+      {
+       "start": 1222,
+       "end": 1223,
+       "title": "46. Vamā"
+      },
+      {
+       "start": 1224,
+       "end": 1225,
+       "title": "47. Kvi"
+      },
+      {
+       "start": 1226,
+       "end": 1227,
+       "title": "48. Ano"
+      }
+     ],
+     "split": false,
+     "id": "M106",
+     "book": 18,
+     "layer": "mula",
+     "title": "37. Hāto … 48. Ano",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1228,
+     "end": 1248,
+     "chars": 4847,
+     "sents": 70,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1228,
+       "end": 1231,
+       "title": "49. Itthi"
+      },
+      {
+       "start": 1232,
+       "end": 1233,
+       "title": "51. Karā"
+      },
+      {
+       "start": 1234,
+       "end": 1236,
+       "title": "52. Iki"
+      },
+      {
+       "start": 1237,
+       "end": 1241,
+       "title": "53. Sīla"
+      },
+      {
+       "start": 1242,
+       "end": 1243,
+       "title": "54. Thāva"
+      },
+      {
+       "start": 1244,
+       "end": 1246,
+       "title": "55. Katta"
+      },
+      {
+       "start": 1247,
+       "end": 1248,
+       "title": "56. Kto"
+      }
+     ],
+     "split": false,
+     "id": "M107",
+     "book": 18,
+     "layer": "mula",
+     "title": "49. Itthi … 56. Kto",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1249,
+     "end": 1261,
+     "chars": 3539,
+     "sents": 50,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 1249,
+       "end": 1252,
+       "title": "57. Katta"
+      },
+      {
+       "start": 1253,
+       "end": 1254,
+       "title": "58. Ṭhāsa"
+      },
+      {
+       "start": 1255,
+       "end": 1256,
+       "title": "59. Gama"
+      },
+      {
+       "start": 1257,
+       "end": 1261,
+       "title": "60. Āhā"
+      }
+     ],
+     "split": false,
+     "id": "M108",
+     "book": 18,
+     "layer": "mula",
+     "title": "57. Katta … 60. Āhā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1262,
+     "end": 1271,
+     "chars": 4345,
+     "sents": 49,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 1262,
+       "end": 1272,
+       "title": "61. Tuṃtā"
+      }
+     ],
+     "split": true,
+     "id": "M109",
+     "book": 18,
+     "layer": "mula",
+     "title": "61. Tuṃtā（1262-1271）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1272,
+     "end": 1272,
+     "chars": 1533,
+     "sents": 14,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 1262,
+       "end": 1272,
+       "title": "61. Tuṃtā"
+      }
+     ],
+     "split": true,
+     "id": "M110",
+     "book": 18,
+     "layer": "mula",
+     "title": "61. Tuṃtā（1272-1272）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1273,
+     "end": 1288,
+     "chars": 4920,
+     "sents": 72,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 1273,
+       "end": 1274,
+       "title": "62. Paṭi"
+      },
+      {
+       "start": 1275,
+       "end": 1280,
+       "title": "63. Pubbe"
+      },
+      {
+       "start": 1281,
+       "end": 1284,
+       "title": "64. Nto"
+      },
+      {
+       "start": 1285,
+       "end": 1286,
+       "title": "65. Māno"
+      },
+      {
+       "start": 1287,
+       "end": 1288,
+       "title": "67. Tessa"
+      }
+     ],
+     "split": false,
+     "id": "M111",
+     "book": 18,
+     "layer": "mula",
+     "title": "62. Paṭi … 67. Tessa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1289,
+     "end": 1308,
+     "chars": 4812,
+     "sents": 56,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 1289,
+       "end": 1291,
+       "title": "68. Ṇvāda"
+      },
+      {
+       "start": 1292,
+       "end": 1298,
+       "title": "69. Khacha"
+      },
+      {
+       "start": 1299,
+       "end": 1300,
+       "title": "70. Paro"
+      },
+      {
+       "start": 1301,
+       "end": 1302,
+       "title": "71. Ādi"
+      },
+      {
+       "start": 1303,
+       "end": 1304,
+       "title": "72. Napu"
+      },
+      {
+       "start": 1305,
+       "end": 1306,
+       "title": "73. Yathi"
+      },
+      {
+       "start": 1307,
+       "end": 1308,
+       "title": "76. Kha cha"
+      }
+     ],
+     "split": false,
+     "id": "M112",
+     "book": 18,
+     "layer": "mula",
+     "title": "68. Ṇvāda … 76. Kha cha",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1309,
+     "end": 1355,
+     "chars": 3855,
+     "sents": 80,
+     "paras": 47,
+     "chapters": [
+      {
+       "start": 1309,
+       "end": 1310,
+       "title": "82. Yuva"
+      },
+      {
+       "start": 1311,
+       "end": 1312,
+       "title": "83. Lahu"
+      },
+      {
+       "start": 1313,
+       "end": 1315,
+       "title": "85. Nate"
+      },
+      {
+       "start": 1316,
+       "end": 1317,
+       "title": "87. Añña"
+      },
+      {
+       "start": 1318,
+       "end": 1319,
+       "title": "92. Padā"
+      },
+      {
+       "start": 1320,
+       "end": 1321,
+       "title": "93. Maṃvā"
+      },
+      {
+       "start": 1322,
+       "end": 1323,
+       "title": "94. Kvimhi"
+      },
+      {
+       "start": 1324,
+       "end": 1325,
+       "title": "101. Para"
+      },
+      {
+       "start": 1326,
+       "end": 1327,
+       "title": "103. Dhāssa"
+      },
+      {
+       "start": 1328,
+       "end": 1329,
+       "title": "104. Kimhi"
+      },
+      {
+       "start": 1330,
+       "end": 1331,
+       "title": "106. Muha"
+      },
+      {
+       "start": 1332,
+       "end": 1333,
+       "title": "107. Vaha"
+      },
+      {
+       "start": 1334,
+       "end": 1335,
+       "title": "108."
+      },
+      {
+       "start": 1336,
+       "end": 1337,
+       "title": "109. Gamā"
+      },
+      {
+       "start": 1338,
+       "end": 1339,
+       "title": "110. Vacā"
+      },
+      {
+       "start": 1340,
+       "end": 1341,
+       "title": "112. Vaddha"
+      },
+      {
+       "start": 1342,
+       "end": 1343,
+       "title": "113. Yaja"
+      },
+      {
+       "start": 1344,
+       "end": 1345,
+       "title": "115. Gāpā"
+      },
+      {
+       "start": 1346,
+       "end": 1347,
+       "title": "117. Sāsa"
+      },
+      {
+       "start": 1348,
+       "end": 1349,
+       "title": "120. Ñā"
+      },
+      {
+       "start": 1350,
+       "end": 1351,
+       "title": "121. Sakā"
+      },
+      {
+       "start": 1352,
+       "end": 1353,
+       "title": "122. Nīto"
+      },
+      {
+       "start": 1354,
+       "end": 1355,
+       "title": "123. Jara"
+      }
+     ],
+     "split": false,
+     "id": "M113",
+     "book": 18,
+     "layer": "mula",
+     "title": "82. Yuva … 123. Jara",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1356,
+     "end": 1402,
+     "chars": 3526,
+     "sents": 78,
+     "paras": 47,
+     "chapters": [
+      {
+       "start": 1356,
+       "end": 1357,
+       "title": "124. Disassa"
+      },
+      {
+       "start": 1358,
+       "end": 1359,
+       "title": "125. Samā"
+      },
+      {
+       "start": 1360,
+       "end": 1361,
+       "title": "127. Ana"
+      },
+      {
+       "start": 1362,
+       "end": 1366,
+       "title": "128. Atyā"
+      },
+      {
+       "start": 1367,
+       "end": 1368,
+       "title": "129. Aā"
+      },
+      {
+       "start": 1369,
+       "end": 1370,
+       "title": "130. Nta"
+      },
+      {
+       "start": 1371,
+       "end": 1372,
+       "title": "131. Pādi"
+      },
+      {
+       "start": 1373,
+       "end": 1374,
+       "title": "141. Kasa"
+      },
+      {
+       "start": 1375,
+       "end": 1376,
+       "title": "142. Dhasto"
+      },
+      {
+       "start": 1377,
+       "end": 1378,
+       "title": "144. Sāsa"
+      },
+      {
+       "start": 1379,
+       "end": 1380,
+       "title": "147. Baha"
+      },
+      {
+       "start": 1381,
+       "end": 1382,
+       "title": "148. Ruhā"
+      },
+      {
+       "start": 1383,
+       "end": 1384,
+       "title": "149. Muhā"
+      },
+      {
+       "start": 1385,
+       "end": 1386,
+       "title": "150. Bhidā"
+      },
+      {
+       "start": 1387,
+       "end": 1388,
+       "title": "151. Dātvī"
+      },
+      {
+       "start": 1389,
+       "end": 1390,
+       "title": "152. Kirā"
+      },
+      {
+       "start": 1391,
+       "end": 1392,
+       "title": "153. Tarā"
+      },
+      {
+       "start": 1393,
+       "end": 1394,
+       "title": "157. Mucā"
+      },
+      {
+       "start": 1395,
+       "end": 1396,
+       "title": "158. Lopo"
+      },
+      {
+       "start": 1397,
+       "end": 1398,
+       "title": "159. Kvi"
+      },
+      {
+       "start": 1399,
+       "end": 1400,
+       "title": "162. Māna"
+      },
+      {
+       "start": 1401,
+       "end": 1402,
+       "title": "163. Ññila"
+      }
+     ],
+     "split": false,
+     "id": "M114",
+     "book": 18,
+     "layer": "mula",
+     "title": "124. Disassa … 163. Ññila",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1403,
+     "end": 1429,
+     "chars": 4405,
+     "sents": 74,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 1403,
+       "end": 1404,
+       "title": "164. Pyo"
+      },
+      {
+       "start": 1405,
+       "end": 1406,
+       "title": "165. Tuṃ"
+      },
+      {
+       "start": 1407,
+       "end": 1408,
+       "title": "169. Disā"
+      },
+      {
+       "start": 1409,
+       "end": 1410,
+       "title": "171. Rā na"
+      },
+      {
+       "start": 1411,
+       "end": 1412,
+       "title": "173. Gama"
+      },
+      {
+       "start": 1413,
+       "end": 1414,
+       "title": "177. Kara"
+      },
+      {
+       "start": 1415,
+       "end": 1418,
+       "title": "179. Ṇo"
+      },
+      {
+       "start": 1419,
+       "end": 1419,
+       "title": "Chaṭṭhakaṇḍa"
+      },
+      {
+       "start": 1420,
+       "end": 1424,
+       "title": "1. Vatta"
+      },
+      {
+       "start": 1425,
+       "end": 1427,
+       "title": "3. Nāme"
+      },
+      {
+       "start": 1428,
+       "end": 1429,
+       "title": "4. Bhūte"
+      }
+     ],
+     "split": false,
+     "id": "M115",
+     "book": 18,
+     "layer": "mula",
+     "title": "164. Pyo … 4. Bhūte",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1430,
+     "end": 1448,
+     "chars": 4994,
+     "sents": 70,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 1430,
+       "end": 1437,
+       "title": "5. Ana"
+      },
+      {
+       "start": 1438,
+       "end": 1441,
+       "title": "6. Paro"
+      },
+      {
+       "start": 1442,
+       "end": 1446,
+       "title": "7. Eyyā"
+      },
+      {
+       "start": 1447,
+       "end": 1448,
+       "title": "8. Hetu"
+      }
+     ],
+     "split": false,
+     "id": "M116",
+     "book": 18,
+     "layer": "mula",
+     "title": "5. Ana … 8. Hetu",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1449,
+     "end": 1460,
+     "chars": 3187,
+     "sents": 47,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 1449,
+       "end": 1451,
+       "title": "9. Pañhe"
+      },
+      {
+       "start": 1452,
+       "end": 1453,
+       "title": "10. Tu antu"
+      },
+      {
+       "start": 1454,
+       "end": 1455,
+       "title": "11. Satya"
+      },
+      {
+       "start": 1456,
+       "end": 1457,
+       "title": "12. Sambhā"
+      },
+      {
+       "start": 1458,
+       "end": 1460,
+       "title": "13. Māyo"
+      }
+     ],
+     "split": false,
+     "id": "M117",
+     "book": 18,
+     "layer": "mula",
+     "title": "9. Pañhe … 13. Māyo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1461,
+     "end": 1491,
+     "chars": 4686,
+     "sents": 70,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 1461,
+       "end": 1466,
+       "title": "14. Pubba"
+      },
+      {
+       "start": 1467,
+       "end": 1468,
+       "title": "15. Āī"
+      },
+      {
+       "start": 1469,
+       "end": 1470,
+       "title": "17. Bhūssa"
+      },
+      {
+       "start": 1471,
+       "end": 1472,
+       "title": "18. Pubba"
+      },
+      {
+       "start": 1473,
+       "end": 1474,
+       "title": "23. Kara"
+      },
+      {
+       "start": 1475,
+       "end": 1477,
+       "title": "25. Hāssa"
+      },
+      {
+       "start": 1478,
+       "end": 1479,
+       "title": "28. Āī"
+      },
+      {
+       "start": 1480,
+       "end": 1481,
+       "title": "29. Gami"
+      },
+      {
+       "start": 1482,
+       "end": 1483,
+       "title": "30. Ḍaṃsa"
+      },
+      {
+       "start": 1484,
+       "end": 1485,
+       "title": "32. Ṇānā"
+      },
+      {
+       "start": 1486,
+       "end": 1487,
+       "title": "33. Āī ū"
+      },
+      {
+       "start": 1488,
+       "end": 1489,
+       "title": "34. Kusa"
+      },
+      {
+       "start": 1490,
+       "end": 1491,
+       "title": "35. Ā ī ssa"
+      }
+     ],
+     "split": false,
+     "id": "M118",
+     "book": 18,
+     "layer": "mula",
+     "title": "14. Pubba … 35. Ā ī ssa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1492,
+     "end": 1567,
+     "chars": 2662,
+     "sents": 78,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 1492,
+       "end": 1493,
+       "title": "38. Eyyā"
+      },
+      {
+       "start": 1494,
+       "end": 1495,
+       "title": "40. Eo"
+      },
+      {
+       "start": 1496,
+       "end": 1497,
+       "title": "42. Ossa"
+      },
+      {
+       "start": 1498,
+       "end": 1499,
+       "title": "46. Iṃssa"
+      },
+      {
+       "start": 1500,
+       "end": 1501,
+       "title": "52. Tassa"
+      },
+      {
+       "start": 1502,
+       "end": 1503,
+       "title": "54. Mimā"
+      },
+      {
+       "start": 1504,
+       "end": 1505,
+       "title": "57. Himi"
+      },
+      {
+       "start": 1506,
+       "end": 1507,
+       "title": "61. Ñāssa"
+      },
+      {
+       "start": 1508,
+       "end": 1509,
+       "title": "67. Hanā"
+      },
+      {
+       "start": 1510,
+       "end": 1511,
+       "title": "70. Kayi"
+      },
+      {
+       "start": 1512,
+       "end": 1513,
+       "title": "71. Ṭā"
+      },
+      {
+       "start": 1514,
+       "end": 1515,
+       "title": "74. Guru"
+      },
+      {
+       "start": 1516,
+       "end": 1517,
+       "title": "76. Ovi"
+      },
+      {
+       "start": 1518,
+       "end": 1523,
+       "title": "78. Eyyā"
+      },
+      {
+       "start": 1524,
+       "end": 1526,
+       "title": "1."
+      },
+      {
+       "start": 1527,
+       "end": 1529,
+       "title": "2."
+      },
+      {
+       "start": 1530,
+       "end": 1532,
+       "title": "3."
+      },
+      {
+       "start": 1533,
+       "end": 1537,
+       "title": "4."
+      },
+      {
+       "start": 1538,
+       "end": 1540,
+       "title": "6."
+      },
+      {
+       "start": 1541,
+       "end": 1543,
+       "title": "7."
+      },
+      {
+       "start": 1544,
+       "end": 1548,
+       "title": "8."
+      },
+      {
+       "start": 1549,
+       "end": 1553,
+       "title": "9."
+      },
+      {
+       "start": 1554,
+       "end": 1558,
+       "title": "10."
+      },
+      {
+       "start": 1559,
+       "end": 1564,
+       "title": "11."
+      },
+      {
+       "start": 1565,
+       "end": 1567,
+       "title": "1."
+      }
+     ],
+     "split": false,
+     "id": "M119",
+     "book": 18,
+     "layer": "mula",
+     "title": "38. Eyyā … 1.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1568,
+     "end": 1579,
+     "chars": 354,
+     "sents": 12,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 1568,
+       "end": 1570,
+       "title": "2."
+      },
+      {
+       "start": 1571,
+       "end": 1573,
+       "title": "3."
+      },
+      {
+       "start": 1574,
+       "end": 1576,
+       "title": "4."
+      },
+      {
+       "start": 1577,
+       "end": 1579,
+       "title": "5."
+      }
+     ],
+     "split": false,
+     "id": "M120",
+     "book": 18,
+     "layer": "mula",
+     "title": "2. … 5.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1578,
+   "chars": 448559,
+   "sents": 3160,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 18,
+   "layer": "mula",
+   "start": 2,
+   "end": 1579,
+   "title": "Moggallāna pañcikā ṭīkā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 2,
+   "end": 4,
+   "chars": 54,
+   "sents": 3,
+   "title": "Moggallāna pañcikā ṭīkā … Pañcikāṭīkā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:48:46",
+   "ended": "2026-11-24 11:49:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 5,
+   "end": 30,
+   "chars": 3140,
+   "sents": 29,
+   "title": "Paṇāmādikathā（5-30）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:48:56",
+   "ended": "2026-11-24 11:49:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 31,
+   "end": 38,
+   "chars": 4893,
+   "sents": 10,
+   "title": "Paṇāmādikathā（31-38）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:06",
+   "ended": "2026-11-24 11:50:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 39,
+   "end": 46,
+   "chars": 4531,
+   "sents": 9,
+   "title": "Paṇāmādikathā（39-46）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:22",
+   "ended": "2026-11-24 11:50:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 47,
+   "end": 59,
+   "chars": 4770,
+   "sents": 14,
+   "title": "Paṇāmādikathā（47-59）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:49:57",
+   "ended": "2026-11-24 11:51:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 60,
+   "end": 61,
+   "chars": 3758,
+   "sents": 2,
+   "title": "Paṇāmādikathā（60-61）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:17",
+   "ended": "2026-11-24 11:51:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 62,
+   "end": 79,
+   "chars": 4883,
+   "sents": 18,
+   "title": "Paṇāmādikathā（62-79）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:50:33",
+   "ended": "2026-11-24 11:51:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 80,
+   "end": 83,
+   "chars": 4239,
+   "sents": 7,
+   "title": "Paṇāmādikathā（80-83）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:03",
+   "ended": "2026-11-24 11:52:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 84,
+   "end": 85,
+   "chars": 34,
+   "sents": 2,
+   "title": "1. Paṭhamakaṇḍavaṇṇanā … Saññādhikāra",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:18",
+   "ended": "2026-11-24 11:51:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 86,
+   "end": 91,
+   "chars": 3268,
+   "sents": 6,
+   "title": "1. A ādayo（86-91）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:33",
+   "ended": "2026-11-24 11:52:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 92,
+   "end": 100,
+   "chars": 4149,
+   "sents": 12,
+   "title": "1. A ādayo（92-100）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:51:49",
+   "ended": "2026-11-24 11:53:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 101,
+   "end": 101,
+   "chars": 3204,
+   "sents": 1,
+   "title": "1. A ādayo（101-101）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:09",
+   "ended": "2026-11-24 11:53:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 102,
+   "end": 120,
+   "chars": 4724,
+   "sents": 27,
+   "title": "2. Dasā … 8. Bindu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:52:50",
+   "ended": "2026-11-24 11:54:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 121,
+   "end": 139,
+   "chars": 4598,
+   "sents": 40,
+   "title": "9. Iyu … 13. Vidhi",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 12:18:29",
+   "ended": "2026-11-24 13:46:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 140,
+   "end": 140,
+   "chars": 12,
+   "sents": 1,
+   "title": "14. Sattadhī（140-140）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:53:41",
+   "ended": "2026-11-24 11:54:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 141,
+   "end": 141,
+   "chars": 5389,
+   "sents": 4,
+   "title": "14. Sattadhī（141-141）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:54:06",
+   "ended": "2026-11-24 12:07:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 142,
+   "end": 145,
+   "chars": 4647,
+   "sents": 9,
+   "title": "15. Pañca … 16. Ādissa",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:46:23",
+   "ended": "2026-11-24 13:47:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 146,
+   "end": 155,
+   "chars": 3771,
+   "sents": 10,
+   "title": "17. Chaṭṭhī … 21. Mānubandho",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 13:47:39",
+   "ended": "2026-11-24 13:48:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 156,
+   "end": 158,
+   "chars": 4271,
+   "sents": 11,
+   "title": "22. Vippaṭi（156-158）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:48:54",
+   "ended": "2026-11-24 13:50:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 159,
+   "end": 159,
+   "chars": 1845,
+   "sents": 1,
+   "title": "22. Vippaṭi（159-159）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:50:20",
+   "ended": "2026-11-24 13:51:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 160,
+   "end": 161,
+   "chars": 680,
+   "sents": 2,
+   "title": "23. Saṅketo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:51:25",
+   "ended": "2026-11-24 13:51:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 162,
+   "end": 168,
+   "chars": 4949,
+   "sents": 9,
+   "title": "24. Vaṇṇa … Saralopādi vaṇṇanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:51:56",
+   "ended": "2026-11-24 13:53:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 169,
+   "end": 170,
+   "chars": 2418,
+   "sents": 3,
+   "title": "26. Saro",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 13:53:11",
+   "ended": "2026-11-24 13:53:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 171,
+   "end": 174,
+   "chars": 4826,
+   "sents": 7,
+   "title": "27. Paro … 28. Nadve",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:52:06",
+   "ended": "2026-11-25 13:53:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 175,
+   "end": 186,
+   "chars": 3936,
+   "sents": 14,
+   "title": "29. Yuva … 34. Sara",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:53:06",
+   "ended": "2026-11-25 13:56:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 187,
+   "end": 204,
+   "chars": 4440,
+   "sents": 22,
+   "title": "35. Catu … 43. Yesaṃ",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:56:33",
+   "ended": "2026-11-25 13:57:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 205,
+   "end": 208,
+   "chars": 3272,
+   "sents": 9,
+   "title": "44. Vana … 46. Cha",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 14:57:59",
+   "ended": "2026-11-24 15:01:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 209,
+   "end": 224,
+   "chars": 3306,
+   "sents": 22,
+   "title": "47. Tada … 53. Saṃyo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:01:31",
+   "ended": "2026-11-24 15:02:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 225,
+   "end": 226,
+   "chars": 4332,
+   "sents": 4,
+   "title": "54. Vicchā（225-226）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:02:52",
+   "ended": "2026-11-24 15:06:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 227,
+   "end": 228,
+   "chars": 4820,
+   "sents": 5,
+   "title": "54. Vicchā（227-228）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 15:06:54",
+   "ended": "2026-11-24 15:21:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 229,
+   "end": 236,
+   "chars": 4600,
+   "sents": 8,
+   "title": "54. Vicchā（229-236）",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-25 13:57:49",
+   "ended": "2026-11-25 13:59:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 237,
+   "end": 237,
+   "chars": 753,
+   "sents": 1,
+   "title": "54. Vicchā（237-237）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:59:04",
+   "ended": "2026-11-25 13:59:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 238,
+   "end": 249,
+   "chars": 516,
+   "sents": 12,
+   "title": "55. Syādi … 2. Dutiyakaṇḍa vaṇṇanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:59:25",
+   "ended": "2026-11-25 13:59:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 250,
+   "end": 261,
+   "chars": 3708,
+   "sents": 13,
+   "title": "1. Dvedve（250-261）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 13:59:50",
+   "ended": "2026-11-25 14:00:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 262,
+   "end": 262,
+   "chars": 2577,
+   "sents": 4,
+   "title": "1. Dvedve（262-262）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:00:45",
+   "ended": "2026-11-25 14:01:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 263,
+   "end": 285,
+   "chars": 4591,
+   "sents": 23,
+   "title": "2. Kamme（263-285）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:01:56",
+   "ended": "2026-11-25 14:03:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 286,
+   "end": 290,
+   "chars": 4688,
+   "sents": 6,
+   "title": "2. Kamme（286-290）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:03:02",
+   "ended": "2026-11-25 14:04:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 291,
+   "end": 300,
+   "chars": 4878,
+   "sents": 13,
+   "title": "2. Kamme（291-300）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:04:07",
+   "ended": "2026-11-25 14:05:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 301,
+   "end": 301,
+   "chars": 1663,
+   "sents": 1,
+   "title": "2. Kamme（301-301）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:05:23",
+   "ended": "2026-11-25 14:05:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 302,
+   "end": 304,
+   "chars": 2657,
+   "sents": 8,
+   "title": "3. Kāla",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:05:58",
+   "ended": "2026-11-25 14:06:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 305,
+   "end": 308,
+   "chars": 3129,
+   "sents": 6,
+   "title": "4. Gati … 5. Harā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:06:54",
+   "ended": "2026-11-25 14:07:39",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 309,
+   "end": 323,
+   "chars": 4782,
+   "sents": 21,
+   "title": "6. Nakhā … 7. Dhyādi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:07:39",
+   "ended": "2026-11-25 14:09:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 324,
+   "end": 334,
+   "chars": 4779,
+   "sents": 13,
+   "title": "8. Lakkhaṇi … 11. Saha",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:09:15",
+   "ended": "2026-11-25 14:10:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 335,
+   "end": 340,
+   "chars": 2108,
+   "sents": 9,
+   "title": "12. Hīne … 15. Sāmi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:10:31",
+   "ended": "2026-11-25 14:11:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 341,
+   "end": 366,
+   "chars": 4860,
+   "sents": 29,
+   "title": "16. Kattu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:11:11",
+   "ended": "2026-11-25 14:12:17",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 367,
+   "end": 372,
+   "chars": 4849,
+   "sents": 17,
+   "title": "17. Saha … 19. Hetu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:12:17",
+   "ended": "2026-11-25 14:13:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 373,
+   "end": 380,
+   "chars": 2313,
+   "sents": 8,
+   "title": "21. Guṇe … 24. Catu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:13:42",
+   "ended": "2026-11-25 14:14:28",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 381,
+   "end": 383,
+   "chars": 2960,
+   "sents": 4,
+   "title": "25. Tāda（381-383）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:14:28",
+   "ended": "2026-11-25 14:15:23",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 384,
+   "end": 384,
+   "chars": 3604,
+   "sents": 6,
+   "title": "25. Tāda（384-384）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:15:23",
+   "ended": "2026-11-25 14:16:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 385,
+   "end": 391,
+   "chars": 680,
+   "sents": 7,
+   "title": "26. Pañca（385-391）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:16:34",
+   "ended": "2026-11-25 14:16:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 392,
+   "end": 392,
+   "chars": 11524,
+   "sents": 24,
+   "title": "26. Pañca（392-392）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:16:49",
+   "ended": "2026-11-25 14:18:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M52:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 393,
+   "end": 395,
+   "chars": 631,
+   "sents": 3,
+   "title": "26. Pañca（393-395）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:18:50",
+   "ended": "2026-11-25 14:19:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M53:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 396,
+   "end": 403,
+   "chars": 2227,
+   "sents": 10,
+   "title": "27. Apa … 31. Putha",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:19:11",
+   "ended": "2026-11-25 14:19:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M54:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 404,
+   "end": 415,
+   "chars": 4192,
+   "sents": 16,
+   "title": "32. Satta … 34. Yabbhā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:19:56",
+   "ended": "2026-11-25 14:21:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M55:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 416,
+   "end": 429,
+   "chars": 4621,
+   "sents": 21,
+   "title": "35. Chaṭṭhī … 38. Āmanta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:21:12",
+   "ended": "2026-11-25 14:22:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M56:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 430,
+   "end": 437,
+   "chars": 4744,
+   "sents": 9,
+   "title": "39. Chaṭṭhī（430-437）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:22:22",
+   "ended": "2026-11-25 14:23:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M57:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 438,
+   "end": 438,
+   "chars": 1046,
+   "sents": 3,
+   "title": "39. Chaṭṭhī（438-438）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:23:38",
+   "ended": "2026-11-25 14:24:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M58:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 439,
+   "end": 461,
+   "chars": 4704,
+   "sents": 24,
+   "title": "40. Tulya … 57. Ltu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:24:03",
+   "ended": "2026-11-25 14:25:29",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M59:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 462,
+   "end": 497,
+   "chars": 4953,
+   "sents": 38,
+   "title": "58. Ge … 95. Yomhi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:25:29",
+   "ended": "2026-11-25 14:27:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M60:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 498,
+   "end": 505,
+   "chars": 3960,
+   "sents": 8,
+   "title": "99. Sabbā … 110. Kvace",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:27:10",
+   "ended": "2026-11-25 14:28:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M61:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 506,
+   "end": 509,
+   "chars": 2309,
+   "sents": 5,
+   "title": "114. Lopo … 116. Ye",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:28:15",
+   "ended": "2026-11-25 14:29:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M62:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 510,
+   "end": 515,
+   "chars": 3640,
+   "sents": 11,
+   "title": "118. Asaṃ … 120. Pubba",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:29:11",
+   "ended": "2026-11-25 14:30:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M63:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 516,
+   "end": 528,
+   "chars": 4852,
+   "sents": 14,
+   "title": "121. Nāto … 131. Tata",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:30:16",
+   "ended": "2026-11-25 14:31:47",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M64:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 529,
+   "end": 560,
+   "chars": 4695,
+   "sents": 33,
+   "title": "132. Ṭasa … 185. Nāmhi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:31:47",
+   "ended": "2026-11-25 14:33:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M65:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 561,
+   "end": 588,
+   "chars": 4991,
+   "sents": 32,
+   "title": "187. Gassaṃ … 237. Naca",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:33:03",
+   "ended": "2026-11-25 14:34:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M66:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 589,
+   "end": 593,
+   "chars": 749,
+   "sents": 5,
+   "title": "240. Nasā … 3. Tatiyakaṇḍavaṇṇanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:34:14",
+   "ended": "2026-11-25 14:34:34",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M67:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 594,
+   "end": 605,
+   "chars": 4832,
+   "sents": 21,
+   "title": "1. Syādi（594-605）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:34:34",
+   "ended": "2026-11-25 14:35:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M68:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 606,
+   "end": 609,
+   "chars": 1605,
+   "sents": 8,
+   "title": "1. Syādi（606-609）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:35:40",
+   "ended": "2026-11-25 14:36:15",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M69:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 610,
+   "end": 630,
+   "chars": 4559,
+   "sents": 29,
+   "title": "2. Asaṃ … 4. Yāvāvadhāraṇe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:36:15",
+   "ended": "2026-11-25 14:37:30",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M70:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 631,
+   "end": 643,
+   "chars": 2640,
+   "sents": 20,
+   "title": "5. Payyapābahitiro purepacchāvāpañcamyā … 8. Ore",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:37:30",
+   "ended": "2026-11-25 14:38:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M71:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 644,
+   "end": 658,
+   "chars": 4443,
+   "sents": 18,
+   "title": "10. Amā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:38:16",
+   "ended": "2026-11-25 14:39:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M72:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 659,
+   "end": 670,
+   "chars": 4426,
+   "sents": 17,
+   "title": "11. Vise（659-670）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:39:41",
+   "ended": "2026-11-25 14:40:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M73:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 671,
+   "end": 680,
+   "chars": 4721,
+   "sents": 18,
+   "title": "11. Vise（671-680）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:40:42",
+   "ended": "2026-11-25 14:42:08",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M74:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 681,
+   "end": 693,
+   "chars": 4741,
+   "sents": 28,
+   "title": "11. Vise（681-693）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:42:08",
+   "ended": "2026-11-25 14:43:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M75:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 694,
+   "end": 696,
+   "chars": 1488,
+   "sents": 8,
+   "title": "11. Vise（694-696）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:43:44",
+   "ended": "2026-11-25 14:44:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M76:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 697,
+   "end": 715,
+   "chars": 4789,
+   "sents": 38,
+   "title": "12. Naña … 16. Aññe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:44:09",
+   "ended": "2026-11-25 14:45:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M77:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 716,
+   "end": 733,
+   "chars": 4286,
+   "sents": 24,
+   "title": "17. Vāne（716-733）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:45:20",
+   "ended": "2026-11-25 14:46:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M78:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 734,
+   "end": 735,
+   "chars": 1202,
+   "sents": 8,
+   "title": "17. Vāne（734-735）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:46:21",
+   "ended": "2026-11-25 14:46:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M79:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 736,
+   "end": 746,
+   "chars": 4313,
+   "sents": 28,
+   "title": "19. Catthe（736-746）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:46:51",
+   "ended": "2026-11-25 14:48:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M80:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 747,
+   "end": 754,
+   "chars": 3504,
+   "sents": 25,
+   "title": "19. Catthe（747-754）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:48:01",
+   "ended": "2026-11-25 14:49:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M81:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 755,
+   "end": 771,
+   "chars": 3182,
+   "sents": 34,
+   "title": "21. Saṅkhyā … 25. Gossu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:49:12",
+   "ended": "2026-11-25 14:50:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M82:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 772,
+   "end": 789,
+   "chars": 4894,
+   "sents": 47,
+   "title": "26. Itthi … 33. Mātu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:50:07",
+   "ended": "2026-11-25 14:51:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M83:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 790,
+   "end": 813,
+   "chars": 4692,
+   "sents": 45,
+   "title": "39. Puthu … 54. Utta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:51:38",
+   "ended": "2026-11-25 14:53:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M84:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 814,
+   "end": 847,
+   "chars": 4857,
+   "sents": 51,
+   "title": "57. Ṭanta … 82. Gantha",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:53:09",
+   "ended": "2026-11-25 14:54:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M85:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 848,
+   "end": 868,
+   "chars": 1335,
+   "sents": 23,
+   "title": "83. Samā … Catutthakaṇḍa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:54:20",
+   "ended": "2026-11-25 14:54:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M86:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 869,
+   "end": 879,
+   "chars": 4688,
+   "sents": 40,
+   "title": "1. Ṇo vāpacce（869-879）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:54:55",
+   "ended": "2026-11-25 14:56:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M87:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 880,
+   "end": 884,
+   "chars": 2125,
+   "sents": 27,
+   "title": "1. Ṇo vāpacce（880-884）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:56:16",
+   "ended": "2026-11-25 14:57:07",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M88:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 885,
+   "end": 902,
+   "chars": 3713,
+   "sents": 55,
+   "title": "2. Vacchā … 11. Ṇarā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:57:07",
+   "ended": "2026-11-25 14:58:22",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M89:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 903,
+   "end": 907,
+   "chars": 2995,
+   "sents": 25,
+   "title": "12. Nakkha",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:58:22",
+   "ended": "2026-11-25 14:59:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M90:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 908,
+   "end": 918,
+   "chars": 4825,
+   "sents": 43,
+   "title": "13. Sāssa … 15. Tassa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 14:59:18",
+   "ended": "2026-11-25 15:00:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M91:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 919,
+   "end": 944,
+   "chars": 4637,
+   "sents": 62,
+   "title": "16. Nivā … 28. Taṃhanti",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:00:54",
+   "ended": "2026-11-25 15:02:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M92:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 945,
+   "end": 969,
+   "chars": 4974,
+   "sents": 54,
+   "title": "29. Tena … 46. Māne",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:02:09",
+   "ended": "2026-11-25 15:03:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M93:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 970,
+   "end": 988,
+   "chars": 4976,
+   "sents": 53,
+   "title": "47. Taggho … 56. Vacchā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:03:46",
+   "ended": "2026-11-25 15:05:11",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M94:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 989,
+   "end": 1000,
+   "chars": 4204,
+   "sents": 51,
+   "title": "57. Kimhā … 62. Aṇvā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:05:11",
+   "ended": "2026-11-25 15:06:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M95:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1001,
+   "end": 1013,
+   "chars": 4498,
+   "sents": 45,
+   "title": "64. Tara … 68. Samū",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:06:37",
+   "ended": "2026-11-25 15:07:48",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M96:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1014,
+   "end": 1031,
+   "chars": 3596,
+   "sents": 36,
+   "title": "69. Janā … 79. Vantva",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:07:48",
+   "ended": "2026-11-25 15:08:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M97:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1032,
+   "end": 1065,
+   "chars": 4511,
+   "sents": 79,
+   "title": "80. Daṇḍā … 105. Sabbe",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:08:58",
+   "ended": "2026-11-25 15:10:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M98:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1066,
+   "end": 1089,
+   "chars": 4551,
+   "sents": 46,
+   "title": "106. Kadā … 120. Dissa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:10:44",
+   "ended": "2026-11-25 15:12:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M99:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1090,
+   "end": 1113,
+   "chars": 4710,
+   "sents": 50,
+   "title": "125. Saṃyo … 1. Tija",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:12:25",
+   "ended": "2026-11-25 15:13:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M100:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1114,
+   "end": 1123,
+   "chars": 4070,
+   "sents": 51,
+   "title": "2. Kitā … 4. Tuṃsmā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:13:51",
+   "ended": "2026-11-25 15:14:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M101:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1124,
+   "end": 1135,
+   "chars": 4904,
+   "sents": 65,
+   "title": "5. Īyo … 6. Upamā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:14:57",
+   "ended": "2026-11-25 15:16:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M102:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1136,
+   "end": 1150,
+   "chars": 4571,
+   "sents": 47,
+   "title": "7. Ādhā … 11. Namo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:16:33",
+   "ended": "2026-11-25 15:18:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M103:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1151,
+   "end": 1162,
+   "chars": 3550,
+   "sents": 42,
+   "title": "12. Dhātvā … 16. Payo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:18:03",
+   "ended": "2026-11-25 15:19:20",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M104:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1163,
+   "end": 1174,
+   "chars": 4970,
+   "sents": 57,
+   "title": "17. Kyotā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:19:20",
+   "ended": "2026-11-25 15:20:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M105:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1175,
+   "end": 1198,
+   "chars": 4822,
+   "sents": 64,
+   "title": "20. Ṇiṇā … 36. Karā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:20:55",
+   "ended": "2026-11-25 15:22:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M106:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1199,
+   "end": 1227,
+   "chars": 4803,
+   "sents": 80,
+   "title": "37. Hāto … 48. Ano",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:22:41",
+   "ended": "2026-11-25 15:24:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M107:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1228,
+   "end": 1248,
+   "chars": 4847,
+   "sents": 70,
+   "title": "49. Itthi … 56. Kto",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:24:02",
+   "ended": "2026-11-25 15:25:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M108:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1249,
+   "end": 1261,
+   "chars": 3539,
+   "sents": 50,
+   "title": "57. Katta … 60. Āhā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:25:53",
+   "ended": "2026-11-25 15:26:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M109:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1262,
+   "end": 1271,
+   "chars": 4345,
+   "sents": 49,
+   "title": "61. Tuṃtā（1262-1271）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:26:59",
+   "ended": "2026-11-25 15:28:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M110:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1272,
+   "end": 1272,
+   "chars": 1533,
+   "sents": 14,
+   "title": "61. Tuṃtā（1272-1272）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:28:19",
+   "ended": "2026-11-25 15:28:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M111:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1273,
+   "end": 1288,
+   "chars": 4920,
+   "sents": 72,
+   "title": "62. Paṭi … 67. Tessa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:28:50",
+   "ended": "2026-11-25 15:30:05",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M112:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1289,
+   "end": 1308,
+   "chars": 4812,
+   "sents": 56,
+   "title": "68. Ṇvāda … 76. Kha cha",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:30:05",
+   "ended": "2026-11-25 15:31:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M113:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1309,
+   "end": 1355,
+   "chars": 3855,
+   "sents": 80,
+   "title": "82. Yuva … 123. Jara",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:31:42",
+   "ended": "2026-11-25 15:33:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M114:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1356,
+   "end": 1402,
+   "chars": 3526,
+   "sents": 78,
+   "title": "124. Disassa … 163. Ññila",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:33:02",
+   "ended": "2026-11-25 15:34:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M115:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1403,
+   "end": 1429,
+   "chars": 4405,
+   "sents": 74,
+   "title": "164. Pyo … 4. Bhūte",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:34:33",
+   "ended": "2026-11-25 15:36:04",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M116:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1430,
+   "end": 1448,
+   "chars": 4994,
+   "sents": 70,
+   "title": "5. Ana … 8. Hetu",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:36:04",
+   "ended": "2026-11-25 15:37:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M117:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1449,
+   "end": 1460,
+   "chars": 3187,
+   "sents": 47,
+   "title": "9. Pañhe … 13. Māyo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:37:55",
+   "ended": "2026-11-25 15:39:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M118:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1461,
+   "end": 1491,
+   "chars": 4686,
+   "sents": 70,
+   "title": "14. Pubba … 35. Ā ī ssa",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:39:06",
+   "ended": "2026-11-25 15:40:31",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M119:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1492,
+   "end": 1567,
+   "chars": 2662,
+   "sents": 78,
+   "title": "38. Eyyā … 1.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:40:31",
+   "ended": "2026-11-25 15:41:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M120:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 18,
+   "start": 1568,
+   "end": 1579,
+   "chars": 354,
+   "sents": 12,
+   "title": "2. … 5.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-25 15:41:57",
+   "ended": "2026-11-25 15:42:22",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 59
+}

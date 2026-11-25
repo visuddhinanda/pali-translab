@@ -1,0 +1,14 @@
+{"ts":"2026-11-24T09:00:55Z","task":"M1:translate","status":"ok","detail":"64 句（仅缓存，未上传）","book":"5","para":"2-80","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:02:00Z","task":"M2:translate","status":"ok","detail":"64 句（仅缓存，未上传）","book":"5","para":"81-160","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:03:06Z","task":"M3:translate","status":"ok","detail":"60 句（仅缓存，未上传）","book":"5","para":"161-238","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:04:12Z","task":"M4:translate","status":"ok","detail":"61 句（仅缓存，未上传）","book":"5","para":"239-314","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:05:20Z","task":"M5:translate","status":"ok","detail":"61 句（仅缓存，未上传）","book":"5","para":"315-390","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:06:27Z","task":"M6:translate","status":"ok","detail":"61 句（仅缓存，未上传）","book":"5","para":"391-466","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:07:36Z","task":"M7:translate","status":"ok","detail":"59 句（仅缓存，未上传）","book":"5","para":"467-543","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:08:33Z","task":"M8:translate","status":"ok","detail":"55 句（仅缓存，未上传）","book":"5","para":"544-622","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:09:23Z","task":"M9:translate","status":"ok","detail":"53 句（仅缓存，未上传）","book":"5","para":"623-701","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:10:15Z","task":"M10:translate","status":"ok","detail":"59 句（仅缓存，未上传）","book":"5","para":"702-777","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:11:13Z","task":"M11:translate","status":"ok","detail":"59 句（仅缓存，未上传）","book":"5","para":"778-856","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:12:08Z","task":"M12:translate","status":"ok","detail":"53 句（仅缓存，未上传）","book":"5","para":"857-934","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:12:53Z","task":"M13:translate","status":"ok","detail":"55 句（仅缓存，未上传）","book":"5","para":"935-1010","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T09:13:14Z","task":"M14:translate","status":"ok","detail":"12 句（仅缓存，未上传）","book":"5","para":"1011-1025","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}

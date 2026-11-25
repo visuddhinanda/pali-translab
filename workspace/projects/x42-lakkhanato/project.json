@@ -1,0 +1,528 @@
+{
+ "schema": 3,
+ "name": "x42-lakkhanato",
+ "title": "Lakkhaṇāto 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:57",
+ "updated": "2026-11-24 11:02:48",
+ "book": 3,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "3": {
+   "layer": "mula",
+   "title": "Lakkhaṇāto"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 3,
+   "title": "Lakkhaṇāto",
+   "start": 2,
+   "end": 316,
+   "fam": "x42-lakkhanato",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 78,
+     "chars": 1231,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Lakkhaṇāto"
+      },
+      {
+       "start": 3,
+       "end": 3,
+       "title": "Buddhathomanāgāthā"
+      },
+      {
+       "start": 4,
+       "end": 8,
+       "title": "1."
+      },
+      {
+       "start": 9,
+       "end": 13,
+       "title": "2."
+      },
+      {
+       "start": 14,
+       "end": 18,
+       "title": "3."
+      },
+      {
+       "start": 19,
+       "end": 23,
+       "title": "4."
+      },
+      {
+       "start": 24,
+       "end": 28,
+       "title": "5."
+      },
+      {
+       "start": 29,
+       "end": 33,
+       "title": "6."
+      },
+      {
+       "start": 34,
+       "end": 38,
+       "title": "8."
+      },
+      {
+       "start": 39,
+       "end": 43,
+       "title": "8."
+      },
+      {
+       "start": 44,
+       "end": 48,
+       "title": "9."
+      },
+      {
+       "start": 49,
+       "end": 53,
+       "title": "10."
+      },
+      {
+       "start": 54,
+       "end": 58,
+       "title": "11."
+      },
+      {
+       "start": 59,
+       "end": 63,
+       "title": "12."
+      },
+      {
+       "start": 64,
+       "end": 68,
+       "title": "13."
+      },
+      {
+       "start": 69,
+       "end": 73,
+       "title": "14."
+      },
+      {
+       "start": 74,
+       "end": 78,
+       "title": "15."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 3,
+     "layer": "mula",
+     "title": "Lakkhaṇāto … 15.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 79,
+     "end": 158,
+     "chars": 1338,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 79,
+       "end": 83,
+       "title": "16."
+      },
+      {
+       "start": 84,
+       "end": 88,
+       "title": "17."
+      },
+      {
+       "start": 89,
+       "end": 93,
+       "title": "18."
+      },
+      {
+       "start": 94,
+       "end": 98,
+       "title": "19."
+      },
+      {
+       "start": 99,
+       "end": 103,
+       "title": "20."
+      },
+      {
+       "start": 104,
+       "end": 108,
+       "title": "21."
+      },
+      {
+       "start": 109,
+       "end": 113,
+       "title": "22."
+      },
+      {
+       "start": 114,
+       "end": 118,
+       "title": "23."
+      },
+      {
+       "start": 119,
+       "end": 123,
+       "title": "24."
+      },
+      {
+       "start": 124,
+       "end": 128,
+       "title": "25."
+      },
+      {
+       "start": 129,
+       "end": 133,
+       "title": "26."
+      },
+      {
+       "start": 134,
+       "end": 138,
+       "title": "27."
+      },
+      {
+       "start": 139,
+       "end": 143,
+       "title": "28."
+      },
+      {
+       "start": 144,
+       "end": 148,
+       "title": "29."
+      },
+      {
+       "start": 149,
+       "end": 153,
+       "title": "30."
+      },
+      {
+       "start": 154,
+       "end": 158,
+       "title": "31."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 3,
+     "layer": "mula",
+     "title": "16. … 31.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 159,
+     "end": 238,
+     "chars": 1343,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 159,
+       "end": 163,
+       "title": "32."
+      },
+      {
+       "start": 164,
+       "end": 168,
+       "title": "33."
+      },
+      {
+       "start": 169,
+       "end": 173,
+       "title": "34."
+      },
+      {
+       "start": 174,
+       "end": 178,
+       "title": "35."
+      },
+      {
+       "start": 179,
+       "end": 183,
+       "title": "36."
+      },
+      {
+       "start": 184,
+       "end": 188,
+       "title": "37."
+      },
+      {
+       "start": 189,
+       "end": 193,
+       "title": "38."
+      },
+      {
+       "start": 194,
+       "end": 198,
+       "title": "39."
+      },
+      {
+       "start": 199,
+       "end": 203,
+       "title": "40."
+      },
+      {
+       "start": 204,
+       "end": 208,
+       "title": "41."
+      },
+      {
+       "start": 209,
+       "end": 213,
+       "title": "42."
+      },
+      {
+       "start": 214,
+       "end": 218,
+       "title": "43."
+      },
+      {
+       "start": 219,
+       "end": 223,
+       "title": "44."
+      },
+      {
+       "start": 224,
+       "end": 228,
+       "title": "45."
+      },
+      {
+       "start": 229,
+       "end": 233,
+       "title": "46."
+      },
+      {
+       "start": 234,
+       "end": 238,
+       "title": "47."
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 3,
+     "layer": "mula",
+     "title": "32. … 47.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 239,
+     "end": 316,
+     "chars": 1392,
+     "sents": 79,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 239,
+       "end": 243,
+       "title": "48."
+      },
+      {
+       "start": 244,
+       "end": 248,
+       "title": "49."
+      },
+      {
+       "start": 249,
+       "end": 253,
+       "title": "50."
+      },
+      {
+       "start": 254,
+       "end": 258,
+       "title": "51."
+      },
+      {
+       "start": 259,
+       "end": 267,
+       "title": "52."
+      },
+      {
+       "start": 268,
+       "end": 268,
+       "title": "Buddhavandanā"
+      },
+      {
+       "start": 269,
+       "end": 273,
+       "title": "1."
+      },
+      {
+       "start": 274,
+       "end": 278,
+       "title": "2."
+      },
+      {
+       "start": 279,
+       "end": 283,
+       "title": "3."
+      },
+      {
+       "start": 284,
+       "end": 288,
+       "title": "4."
+      },
+      {
+       "start": 289,
+       "end": 293,
+       "title": "5."
+      },
+      {
+       "start": 294,
+       "end": 298,
+       "title": "6."
+      },
+      {
+       "start": 299,
+       "end": 303,
+       "title": "7."
+      },
+      {
+       "start": 304,
+       "end": 316,
+       "title": "Uṇṇālomikanātha vandanā"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 3,
+     "layer": "mula",
+     "title": "48. … Uṇṇālomikanātha vandanā",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 315,
+   "chars": 5304,
+   "sents": 316,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 3,
+   "layer": "mula",
+   "start": 2,
+   "end": 316,
+   "title": "Lakkhaṇāto"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 3,
+   "start": 2,
+   "end": 78,
+   "chars": 1231,
+   "sents": 77,
+   "title": "Lakkhaṇāto … 15.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 3,
+   "start": 79,
+   "end": 158,
+   "chars": 1338,
+   "sents": 80,
+   "title": "16. … 31.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 3,
+   "start": 159,
+   "end": 238,
+   "chars": 1343,
+   "sents": 80,
+   "title": "32. … 47.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 3,
+   "start": 239,
+   "end": 316,
+   "chars": 1392,
+   "sents": 79,
+   "title": "48. … Uṇṇālomikanātha vandanā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 42
+}

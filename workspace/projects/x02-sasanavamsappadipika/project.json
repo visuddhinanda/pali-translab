@@ -1,0 +1,2453 @@
+{
+ "schema": 3,
+ "name": "x02-sasanavamsappadipika",
+ "title": "Sāsanavaṃsappadīpikā 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:25",
+ "updated": "2026-11-24 03:26:27",
+ "book": 62,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "62": {
+   "layer": "mula",
+   "title": "Sāsanavaṃsappadīpikā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 62,
+   "title": "Sāsanavaṃsappadīpikā",
+   "start": 2,
+   "end": 971,
+   "fam": "x02-sasanavamsappadipika",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 34,
+     "chars": 916,
+     "sents": 33,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Sāsanavaṃsappadīpikā"
+      },
+      {
+       "start": 3,
+       "end": 23,
+       "title": "Sāsanavaṃsappadīpikā"
+      },
+      {
+       "start": 24,
+       "end": 34,
+       "title": "Tatrāyaṃmātikā –"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 62,
+     "layer": "mula",
+     "title": "Sāsanavaṃsappadīpikā … Tatrāyaṃmātikā –",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 35,
+     "end": 52,
+     "chars": 4231,
+     "sents": 26,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 35,
+       "end": 129,
+       "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 62,
+     "layer": "mula",
+     "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（35-52）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 53,
+     "end": 84,
+     "chars": 4608,
+     "sents": 57,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 35,
+       "end": 129,
+       "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 62,
+     "layer": "mula",
+     "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（53-84）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 85,
+     "end": 106,
+     "chars": 4727,
+     "sents": 48,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 35,
+       "end": 129,
+       "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 62,
+     "layer": "mula",
+     "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（85-106）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 107,
+     "end": 120,
+     "chars": 4906,
+     "sents": 60,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 35,
+       "end": 129,
+       "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 62,
+     "layer": "mula",
+     "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（107-120）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 121,
+     "end": 129,
+     "chars": 1836,
+     "sents": 13,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 35,
+       "end": 129,
+       "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 62,
+     "layer": "mula",
+     "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（121-129）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 130,
+     "end": 149,
+     "chars": 4889,
+     "sents": 53,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（130-149）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 150,
+     "end": 163,
+     "chars": 4596,
+     "sents": 42,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（150-163）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 164,
+     "end": 177,
+     "chars": 4783,
+     "sents": 39,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（164-177）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 178,
+     "end": 200,
+     "chars": 4827,
+     "sents": 44,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（178-200）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 201,
+     "end": 211,
+     "chars": 4562,
+     "sents": 42,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（201-211）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 212,
+     "end": 228,
+     "chars": 4937,
+     "sents": 44,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（212-228）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 229,
+     "end": 243,
+     "chars": 1803,
+     "sents": 30,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 243,
+       "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 62,
+     "layer": "mula",
+     "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（229-243）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 244,
+     "end": 257,
+     "chars": 4870,
+     "sents": 46,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 244,
+       "end": 304,
+       "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M14",
+     "book": 62,
+     "layer": "mula",
+     "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（244-257）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 258,
+     "end": 273,
+     "chars": 4505,
+     "sents": 45,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 244,
+       "end": 304,
+       "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M15",
+     "book": 62,
+     "layer": "mula",
+     "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（258-273）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 274,
+     "end": 285,
+     "chars": 4467,
+     "sents": 31,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 244,
+       "end": 304,
+       "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M16",
+     "book": 62,
+     "layer": "mula",
+     "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（274-285）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 286,
+     "end": 298,
+     "chars": 4746,
+     "sents": 34,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 244,
+       "end": 304,
+       "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M17",
+     "book": 62,
+     "layer": "mula",
+     "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（286-298）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 299,
+     "end": 304,
+     "chars": 1959,
+     "sents": 18,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 244,
+       "end": 304,
+       "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M18",
+     "book": 62,
+     "layer": "mula",
+     "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（299-304）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 305,
+     "end": 332,
+     "chars": 4815,
+     "sents": 56,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 305,
+       "end": 337,
+       "title": "4. Yonakaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M19",
+     "book": 62,
+     "layer": "mula",
+     "title": "4. Yonakaraṭṭhasāsanavaṃsakathāmaggo（305-332）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 333,
+     "end": 337,
+     "chars": 918,
+     "sents": 12,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 305,
+       "end": 337,
+       "title": "4. Yonakaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M20",
+     "book": 62,
+     "layer": "mula",
+     "title": "4. Yonakaraṭṭhasāsanavaṃsakathāmaggo（333-337）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 338,
+     "end": 363,
+     "chars": 2402,
+     "sents": 49,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 338,
+       "end": 363,
+       "title": "5. Navavāsīraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 62,
+     "layer": "mula",
+     "title": "5. Navavāsīraṭṭhasāsanavaṃsakathāmaggo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 364,
+     "end": 380,
+     "chars": 4927,
+     "sents": 49,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M22",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（364-380）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 381,
+     "end": 393,
+     "chars": 4371,
+     "sents": 46,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M23",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（381-393）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 394,
+     "end": 404,
+     "chars": 4782,
+     "sents": 37,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M24",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（394-404）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 405,
+     "end": 421,
+     "chars": 4633,
+     "sents": 47,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M25",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（405-421）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 422,
+     "end": 445,
+     "chars": 4986,
+     "sents": 54,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M26",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（422-445）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 446,
+     "end": 461,
+     "chars": 4861,
+     "sents": 47,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M27",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（446-461）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 462,
+     "end": 477,
+     "chars": 4979,
+     "sents": 52,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M28",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（462-477）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 478,
+     "end": 504,
+     "chars": 4911,
+     "sents": 61,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M29",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（478-504）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 505,
+     "end": 523,
+     "chars": 4770,
+     "sents": 51,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M30",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（505-523）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 524,
+     "end": 547,
+     "chars": 4557,
+     "sents": 56,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M31",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（524-547）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 548,
+     "end": 557,
+     "chars": 4711,
+     "sents": 53,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M32",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（548-557）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 558,
+     "end": 571,
+     "chars": 4974,
+     "sents": 59,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M33",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（558-571）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 572,
+     "end": 585,
+     "chars": 3945,
+     "sents": 41,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M34",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（572-585）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 586,
+     "end": 601,
+     "chars": 4742,
+     "sents": 43,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M35",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（586-601）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 602,
+     "end": 612,
+     "chars": 4806,
+     "sents": 47,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M36",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（602-612）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 613,
+     "end": 629,
+     "chars": 4782,
+     "sents": 47,
+     "paras": 17,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M37",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（613-629）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 630,
+     "end": 645,
+     "chars": 4404,
+     "sents": 50,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M38",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（630-645）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 646,
+     "end": 656,
+     "chars": 4990,
+     "sents": 49,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M39",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（646-656）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 657,
+     "end": 664,
+     "chars": 4741,
+     "sents": 40,
+     "paras": 8,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M40",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（657-664）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 665,
+     "end": 674,
+     "chars": 3723,
+     "sents": 29,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M41",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（665-674）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 675,
+     "end": 685,
+     "chars": 4775,
+     "sents": 37,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M42",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（675-685）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 686,
+     "end": 692,
+     "chars": 4390,
+     "sents": 37,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M43",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（686-692）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 693,
+     "end": 705,
+     "chars": 4820,
+     "sents": 38,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M44",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（693-705）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 706,
+     "end": 720,
+     "chars": 4789,
+     "sents": 34,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M45",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（706-720）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 721,
+     "end": 733,
+     "chars": 4950,
+     "sents": 43,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M46",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（721-733）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 734,
+     "end": 753,
+     "chars": 4926,
+     "sents": 33,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M47",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（734-753）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 754,
+     "end": 766,
+     "chars": 4952,
+     "sents": 35,
+     "paras": 13,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M48",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（754-766）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 767,
+     "end": 780,
+     "chars": 4955,
+     "sents": 38,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M49",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（767-780）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 781,
+     "end": 800,
+     "chars": 4897,
+     "sents": 37,
+     "paras": 20,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M50",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（781-800）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 801,
+     "end": 814,
+     "chars": 4603,
+     "sents": 32,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M51",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（801-814）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 815,
+     "end": 845,
+     "chars": 4997,
+     "sents": 54,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M52",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（815-845）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 846,
+     "end": 864,
+     "chars": 4917,
+     "sents": 46,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M53",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（846-864）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 865,
+     "end": 873,
+     "chars": 4811,
+     "sents": 20,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M54",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（865-873）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 874,
+     "end": 883,
+     "chars": 4900,
+     "sents": 27,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M55",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（874-883）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 884,
+     "end": 895,
+     "chars": 4984,
+     "sents": 39,
+     "paras": 12,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M56",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（884-895）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 896,
+     "end": 906,
+     "chars": 2385,
+     "sents": 28,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 364,
+       "end": 906,
+       "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": true,
+     "id": "M57",
+     "book": 62,
+     "layer": "mula",
+     "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（896-906）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 907,
+     "end": 937,
+     "chars": 4569,
+     "sents": 54,
+     "paras": 31,
+     "chapters": [
+      {
+       "start": 907,
+       "end": 928,
+       "title": "7. Kasmiragandhāraraṭṭhasāsanavaṃsakathāmaggo"
+      },
+      {
+       "start": 929,
+       "end": 937,
+       "title": "8. Mahiṃsakaraṭṭhassāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": false,
+     "id": "M58",
+     "book": 62,
+     "layer": "mula",
+     "title": "7. Kasmiragandhāraraṭṭhasāsanavaṃsakathāmaggo … 8. Mahiṃsakaraṭṭhassāsanavaṃsakathāmaggo",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 938,
+     "end": 971,
+     "chars": 4111,
+     "sents": 53,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 938,
+       "end": 949,
+       "title": "9. Mahāraṭṭhasāsanavaṃsakathāmaggo"
+      },
+      {
+       "start": 950,
+       "end": 971,
+       "title": "10. Cinaraṭṭhasāsanavaṃsakathāmaggo"
+      }
+     ],
+     "split": false,
+     "id": "M59",
+     "book": 62,
+     "layer": "mula",
+     "title": "9. Mahāraṭṭhasāsanavaṃsakathāmaggo … 10. Cinaraṭṭhasāsanavaṃsakathāmaggo",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 970,
+   "chars": 257629,
+   "sents": 2465,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 62,
+   "layer": "mula",
+   "start": 2,
+   "end": 971,
+   "title": "Sāsanavaṃsappadīpikā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 2,
+   "end": 34,
+   "chars": 916,
+   "sents": 33,
+   "title": "Sāsanavaṃsappadīpikā … Tatrāyaṃmātikā –",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:14:04",
+   "ended": "2026-11-24 03:15:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 35,
+   "end": 52,
+   "chars": 4231,
+   "sents": 26,
+   "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（35-52）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:14:14",
+   "ended": "2026-11-24 03:15:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 53,
+   "end": 84,
+   "chars": 4608,
+   "sents": 57,
+   "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（53-84）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:14:24",
+   "ended": "2026-11-24 03:15:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 85,
+   "end": 106,
+   "chars": 4727,
+   "sents": 48,
+   "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（85-106）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:14:34",
+   "ended": "2026-11-24 03:16:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 107,
+   "end": 120,
+   "chars": 4906,
+   "sents": 60,
+   "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（107-120）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:14:44",
+   "ended": "2026-11-24 03:16:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 121,
+   "end": 129,
+   "chars": 1836,
+   "sents": 13,
+   "title": "1. Navaṭṭhānāgatasāsanavaṃsakathāmaggo（121-129）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:14:55",
+   "ended": "2026-11-24 03:15:50",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 130,
+   "end": 149,
+   "chars": 4889,
+   "sents": 53,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（130-149）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:15:05",
+   "ended": "2026-11-24 03:16:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 150,
+   "end": 163,
+   "chars": 4596,
+   "sents": 42,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（150-163）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:15:15",
+   "ended": "2026-11-24 03:16:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 164,
+   "end": 177,
+   "chars": 4783,
+   "sents": 39,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（164-177）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:15:25",
+   "ended": "2026-11-24 03:17:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 178,
+   "end": 200,
+   "chars": 4827,
+   "sents": 44,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（178-200）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:15:35",
+   "ended": "2026-11-24 03:17:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 201,
+   "end": 211,
+   "chars": 4562,
+   "sents": 42,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（201-211）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:15:50",
+   "ended": "2026-11-24 03:17:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 212,
+   "end": 228,
+   "chars": 4937,
+   "sents": 44,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（212-228）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:16:00",
+   "ended": "2026-11-24 03:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 229,
+   "end": 243,
+   "chars": 1803,
+   "sents": 30,
+   "title": "2. Sīhaḷadīpikasāsanavaṃsakathāmaggo（229-243）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:16:10",
+   "ended": "2026-11-24 03:17:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 244,
+   "end": 257,
+   "chars": 4870,
+   "sents": 46,
+   "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（244-257）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:16:20",
+   "ended": "2026-11-24 03:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 258,
+   "end": 273,
+   "chars": 4505,
+   "sents": 45,
+   "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（258-273）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:16:35",
+   "ended": "2026-11-24 03:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 274,
+   "end": 285,
+   "chars": 4467,
+   "sents": 31,
+   "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（274-285）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:16:45",
+   "ended": "2026-11-24 03:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 286,
+   "end": 298,
+   "chars": 4746,
+   "sents": 34,
+   "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（286-298）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:16:56",
+   "ended": "2026-11-24 03:19:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 299,
+   "end": 304,
+   "chars": 1959,
+   "sents": 18,
+   "title": "3. Suvaṇṇabhūmisāsanavaṃsakathāmaggo（299-304）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:17:06",
+   "ended": "2026-11-24 03:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 305,
+   "end": 332,
+   "chars": 4815,
+   "sents": 56,
+   "title": "4. Yonakaraṭṭhasāsanavaṃsakathāmaggo（305-332）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:17:21",
+   "ended": "2026-11-24 03:19:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 333,
+   "end": 337,
+   "chars": 918,
+   "sents": 12,
+   "title": "4. Yonakaraṭṭhasāsanavaṃsakathāmaggo（333-337）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:17:31",
+   "ended": "2026-11-24 03:18:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 338,
+   "end": 363,
+   "chars": 2402,
+   "sents": 49,
+   "title": "5. Navavāsīraṭṭhasāsanavaṃsakathāmaggo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:17:41",
+   "ended": "2026-11-24 03:19:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 364,
+   "end": 380,
+   "chars": 4927,
+   "sents": 49,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（364-380）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:17:51",
+   "ended": "2026-11-24 03:19:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 381,
+   "end": 393,
+   "chars": 4371,
+   "sents": 46,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（381-393）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:18:06",
+   "ended": "2026-11-24 03:19:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 394,
+   "end": 404,
+   "chars": 4782,
+   "sents": 37,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（394-404）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:18:16",
+   "ended": "2026-11-24 03:19:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 405,
+   "end": 421,
+   "chars": 4633,
+   "sents": 47,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（405-421）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:18:26",
+   "ended": "2026-11-24 03:19:57",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 422,
+   "end": 445,
+   "chars": 4986,
+   "sents": 54,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（422-445）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:18:36",
+   "ended": "2026-11-24 03:20:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 446,
+   "end": 461,
+   "chars": 4861,
+   "sents": 47,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（446-461）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:18:46",
+   "ended": "2026-11-24 03:20:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 462,
+   "end": 477,
+   "chars": 4979,
+   "sents": 52,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（462-477）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:18:56",
+   "ended": "2026-11-24 03:20:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 478,
+   "end": 504,
+   "chars": 4911,
+   "sents": 61,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（478-504）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:19:12",
+   "ended": "2026-11-24 03:20:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 505,
+   "end": 523,
+   "chars": 4770,
+   "sents": 51,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（505-523）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:19:22",
+   "ended": "2026-11-24 03:20:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 524,
+   "end": 547,
+   "chars": 4557,
+   "sents": 56,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（524-547）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:19:32",
+   "ended": "2026-11-24 03:20:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M32:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 548,
+   "end": 557,
+   "chars": 4711,
+   "sents": 53,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（548-557）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:19:42",
+   "ended": "2026-11-24 03:21:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M33:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 558,
+   "end": 571,
+   "chars": 4974,
+   "sents": 59,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（558-571）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:19:57",
+   "ended": "2026-11-24 03:21:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M34:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 572,
+   "end": 585,
+   "chars": 3945,
+   "sents": 41,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（572-585）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:20:07",
+   "ended": "2026-11-24 03:21:44",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M35:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 586,
+   "end": 601,
+   "chars": 4742,
+   "sents": 43,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（586-601）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:20:17",
+   "ended": "2026-11-24 03:22:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M36:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 602,
+   "end": 612,
+   "chars": 4806,
+   "sents": 47,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（602-612）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:20:33",
+   "ended": "2026-11-24 03:22:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M37:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 613,
+   "end": 629,
+   "chars": 4782,
+   "sents": 47,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（613-629）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:20:43",
+   "ended": "2026-11-24 03:22:19",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M38:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 630,
+   "end": 645,
+   "chars": 4404,
+   "sents": 50,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（630-645）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:20:58",
+   "ended": "2026-11-24 03:22:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M39:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 646,
+   "end": 656,
+   "chars": 4990,
+   "sents": 49,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（646-656）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:21:08",
+   "ended": "2026-11-24 03:22:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M40:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 657,
+   "end": 664,
+   "chars": 4741,
+   "sents": 40,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（657-664）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:21:18",
+   "ended": "2026-11-24 03:22:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M41:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 665,
+   "end": 674,
+   "chars": 3723,
+   "sents": 29,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（665-674）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:21:28",
+   "ended": "2026-11-24 03:22:55",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M42:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 675,
+   "end": 685,
+   "chars": 4775,
+   "sents": 37,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（675-685）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:21:44",
+   "ended": "2026-11-24 03:23:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M43:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 686,
+   "end": 692,
+   "chars": 4390,
+   "sents": 37,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（686-692）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:21:54",
+   "ended": "2026-11-24 03:23:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M44:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 693,
+   "end": 705,
+   "chars": 4820,
+   "sents": 38,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（693-705）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:22:04",
+   "ended": "2026-11-24 03:24:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M45:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 706,
+   "end": 720,
+   "chars": 4789,
+   "sents": 34,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（706-720）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:22:19",
+   "ended": "2026-11-24 03:23:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M46:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 721,
+   "end": 733,
+   "chars": 4950,
+   "sents": 43,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（721-733）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:22:29",
+   "ended": "2026-11-24 03:24:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M47:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 734,
+   "end": 753,
+   "chars": 4926,
+   "sents": 33,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（734-753）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:22:39",
+   "ended": "2026-11-24 03:24:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M48:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 754,
+   "end": 766,
+   "chars": 4952,
+   "sents": 35,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（754-766）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:22:55",
+   "ended": "2026-11-24 03:24:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M49:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 767,
+   "end": 780,
+   "chars": 4955,
+   "sents": 38,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（767-780）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:23:05",
+   "ended": "2026-11-24 03:25:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M50:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 781,
+   "end": 800,
+   "chars": 4897,
+   "sents": 37,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（781-800）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:23:15",
+   "ended": "2026-11-24 03:25:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M51:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 801,
+   "end": 814,
+   "chars": 4603,
+   "sents": 32,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（801-814）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:23:25",
+   "ended": "2026-11-24 03:25:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M52:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 815,
+   "end": 845,
+   "chars": 4997,
+   "sents": 54,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（815-845）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:23:40",
+   "ended": "2026-11-24 03:25:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M53:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 846,
+   "end": 864,
+   "chars": 4917,
+   "sents": 46,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（846-864）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:23:50",
+   "ended": "2026-11-24 03:25:16",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M54:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 865,
+   "end": 873,
+   "chars": 4811,
+   "sents": 20,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（865-873）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:24:00",
+   "ended": "2026-11-24 03:25:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M55:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 874,
+   "end": 883,
+   "chars": 4900,
+   "sents": 27,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（874-883）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:24:16",
+   "ended": "2026-11-24 03:25:41",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M56:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 884,
+   "end": 895,
+   "chars": 4984,
+   "sents": 39,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（884-895）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:24:26",
+   "ended": "2026-11-24 03:25:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M57:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 896,
+   "end": 906,
+   "chars": 2385,
+   "sents": 28,
+   "title": "6. Aparantaraṭṭhasāsanavaṃsakathāmaggo（896-906）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:24:36",
+   "ended": "2026-11-24 03:25:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M58:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 907,
+   "end": 937,
+   "chars": 4569,
+   "sents": 54,
+   "title": "7. Kasmiragandhāraraṭṭhasāsanavaṃsakathāmaggo … 8. Mahiṃsakaraṭṭhassāsanavaṃsakathāmaggo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:24:46",
+   "ended": "2026-11-24 03:26:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M59:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 62,
+   "start": 938,
+   "end": 971,
+   "chars": 4111,
+   "sents": 53,
+   "title": "9. Mahāraṭṭhasāsanavaṃsakathāmaggo … 10. Cinaraṭṭhasāsanavaṃsakathāmaggo",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:25:01",
+   "ended": "2026-11-24 03:26:27",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 2
+}

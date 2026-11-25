@@ -1,0 +1,888 @@
+{
+ "schema": 3,
+ "name": "x18-spv-dighanikaye",
+ "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:55",
+ "updated": "2026-11-24 06:34:28",
+ "book": 39,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "39": {
+   "layer": "mula",
+   "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 39,
+   "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye",
+   "start": 3,
+   "end": 349,
+   "fam": "x18-spv-dighanikaye",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 3,
+     "end": 44,
+     "chars": 4763,
+     "sents": 42,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 3,
+       "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye"
+      },
+      {
+       "start": 4,
+       "end": 4,
+       "title": "Sīlakkhandhavaggasutta"
+      },
+      {
+       "start": 5,
+       "end": 13,
+       "title": "Saṃgāyanassa pucchā vissajjanā"
+      },
+      {
+       "start": 14,
+       "end": 20,
+       "title": "Brahmajālasutta"
+      },
+      {
+       "start": 21,
+       "end": 23,
+       "title": "Anusandhe"
+      },
+      {
+       "start": 24,
+       "end": 27,
+       "title": "Paṭhama anusandhe"
+      },
+      {
+       "start": 28,
+       "end": 31,
+       "title": "Dutiya anusandhe"
+      },
+      {
+       "start": 32,
+       "end": 35,
+       "title": "Tatiya anusandhe"
+      },
+      {
+       "start": 36,
+       "end": 44,
+       "title": "Suttanidesanā"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 39,
+     "layer": "mula",
+     "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye … Suttanidesanā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 45,
+     "end": 82,
+     "chars": 4087,
+     "sents": 39,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 45,
+       "end": 51,
+       "title": "Sāmaññaphalasutta"
+      },
+      {
+       "start": 52,
+       "end": 57,
+       "title": "Ajātasattu"
+      },
+      {
+       "start": 58,
+       "end": 64,
+       "title": "Charājīvaka"
+      },
+      {
+       "start": 65,
+       "end": 68,
+       "title": "Ajātasattu"
+      },
+      {
+       "start": 69,
+       "end": 77,
+       "title": "Ajātasatta"
+      },
+      {
+       "start": 78,
+       "end": 80,
+       "title": "Pūraṇakassapa ayūvāda"
+      },
+      {
+       "start": 81,
+       "end": 82,
+       "title": "Pūraṇakassapavāda"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 39,
+     "layer": "mula",
+     "title": "Sāmaññaphalasutta … Pūraṇakassapavāda",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 83,
+     "end": 98,
+     "chars": 4211,
+     "sents": 24,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 83,
+       "end": 86,
+       "title": "Makkhaligosāla ayūvāda"
+      },
+      {
+       "start": 87,
+       "end": 88,
+       "title": "Makkhaligosālavāda"
+      },
+      {
+       "start": 89,
+       "end": 91,
+       "title": "Ajitakesakambalavāda"
+      },
+      {
+       "start": 92,
+       "end": 93,
+       "title": "Ajitakesakambala"
+      },
+      {
+       "start": 94,
+       "end": 96,
+       "title": "Pakudhakaccāyanavāda"
+      },
+      {
+       "start": 97,
+       "end": 98,
+       "title": "Pakudhakaccāyanavāda"
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 39,
+     "layer": "mula",
+     "title": "Makkhaligosāla ayūvāda … Pakudhakaccāyanavāda",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 99,
+     "end": 109,
+     "chars": 2404,
+     "sents": 15,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 99,
+       "end": 102,
+       "title": "Nigaṇṭhanāṭaputtavāda"
+      },
+      {
+       "start": 103,
+       "end": 104,
+       "title": "Nigaṇṭhavāda"
+      },
+      {
+       "start": 105,
+       "end": 109,
+       "title": "Siñcaññavāda"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 39,
+     "layer": "mula",
+     "title": "Nigaṇṭhanāṭaputtavāda … Siñcaññavāda",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 110,
+     "end": 136,
+     "chars": 4848,
+     "sents": 35,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 110,
+       "end": 180,
+       "title": "Titthiayūvāda"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 39,
+     "layer": "mula",
+     "title": "Titthiayūvāda（110-136）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 137,
+     "end": 157,
+     "chars": 4870,
+     "sents": 27,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 110,
+       "end": 180,
+       "title": "Titthiayūvāda"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 39,
+     "layer": "mula",
+     "title": "Titthiayūvāda（137-157）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 158,
+     "end": 173,
+     "chars": 4630,
+     "sents": 21,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 110,
+       "end": 180,
+       "title": "Titthiayūvāda"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 39,
+     "layer": "mula",
+     "title": "Titthiayūvāda（158-173）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 174,
+     "end": 180,
+     "chars": 2603,
+     "sents": 11,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 110,
+       "end": 180,
+       "title": "Titthiayūvāda"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 39,
+     "layer": "mula",
+     "title": "Titthiayūvāda（174-180）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 181,
+     "end": 229,
+     "chars": 4248,
+     "sents": 49,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 181,
+       "end": 183,
+       "title": "Ambaṭṭhasutta"
+      },
+      {
+       "start": 184,
+       "end": 186,
+       "title": "Soṇadaṇḍasutta"
+      },
+      {
+       "start": 187,
+       "end": 189,
+       "title": "Kūṭadantasutta"
+      },
+      {
+       "start": 190,
+       "end": 192,
+       "title": "Mahālisutta"
+      },
+      {
+       "start": 193,
+       "end": 195,
+       "title": "Jāliyasutta"
+      },
+      {
+       "start": 196,
+       "end": 198,
+       "title": "Mahāsīhanādasutta"
+      },
+      {
+       "start": 199,
+       "end": 201,
+       "title": "Poṭṭhapādasutta"
+      },
+      {
+       "start": 202,
+       "end": 204,
+       "title": "Subhasutta"
+      },
+      {
+       "start": 205,
+       "end": 207,
+       "title": "Kevaṭṭasutta"
+      },
+      {
+       "start": 208,
+       "end": 210,
+       "title": "Lohiccasutta"
+      },
+      {
+       "start": 211,
+       "end": 213,
+       "title": "Tevijjasutta"
+      },
+      {
+       "start": 214,
+       "end": 216,
+       "title": "Mahāpadānasutta"
+      },
+      {
+       "start": 217,
+       "end": 220,
+       "title": "Mahānidānasutta"
+      },
+      {
+       "start": 221,
+       "end": 226,
+       "title": "Mahāparinibbānasutta"
+      },
+      {
+       "start": 227,
+       "end": 229,
+       "title": "Jarāsutta"
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 39,
+     "layer": "mula",
+     "title": "Ambaṭṭhasutta … Jarāsutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 230,
+     "end": 266,
+     "chars": 4778,
+     "sents": 43,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 230,
+       "end": 237,
+       "title": "Attadīpa dhammadesanā"
+      },
+      {
+       "start": 238,
+       "end": 241,
+       "title": "Catumahāpadesa"
+      },
+      {
+       "start": 242,
+       "end": 247,
+       "title": "Saṃvega"
+      },
+      {
+       "start": 248,
+       "end": 253,
+       "title": "Mahāsudassanasutta"
+      },
+      {
+       "start": 254,
+       "end": 257,
+       "title": "Parinibbānasutta"
+      },
+      {
+       "start": 258,
+       "end": 260,
+       "title": "Janavasabhasutta"
+      },
+      {
+       "start": 261,
+       "end": 263,
+       "title": "Mahāgovindasutta"
+      },
+      {
+       "start": 264,
+       "end": 266,
+       "title": "Mahāsamayasutta"
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 39,
+     "layer": "mula",
+     "title": "Attadīpa dhammadesanā … Mahāsamayasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 267,
+     "end": 272,
+     "chars": 530,
+     "sents": 6,
+     "paras": 6,
+     "chapters": [
+      {
+       "start": 267,
+       "end": 269,
+       "title": "Sakkapañhasutta"
+      },
+      {
+       "start": 270,
+       "end": 272,
+       "title": "Mahāsatipaṭṭhānasutta"
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 39,
+     "layer": "mula",
+     "title": "Sakkapañhasutta … Mahāsatipaṭṭhānasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 273,
+     "end": 295,
+     "chars": 4878,
+     "sents": 25,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 273,
+       "end": 311,
+       "title": "Pāyāsisutta"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 39,
+     "layer": "mula",
+     "title": "Pāyāsisutta（273-295）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 296,
+     "end": 311,
+     "chars": 4560,
+     "sents": 18,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 273,
+       "end": 311,
+       "title": "Pāyāsisutta"
+      }
+     ],
+     "split": true,
+     "id": "M13",
+     "book": 39,
+     "layer": "mula",
+     "title": "Pāyāsisutta（296-311）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 312,
+     "end": 349,
+     "chars": 3323,
+     "sents": 38,
+     "paras": 38,
+     "chapters": [
+      {
+       "start": 312,
+       "end": 314,
+       "title": "Udumbarikasutta"
+      },
+      {
+       "start": 315,
+       "end": 317,
+       "title": "Cakkavattisutta"
+      },
+      {
+       "start": 318,
+       "end": 323,
+       "title": "Aggaññasutta"
+      },
+      {
+       "start": 324,
+       "end": 326,
+       "title": "Pāsādikasutta"
+      },
+      {
+       "start": 327,
+       "end": 329,
+       "title": "Lakkhaṇasutta"
+      },
+      {
+       "start": 330,
+       "end": 332,
+       "title": "Siṅgālasutta"
+      },
+      {
+       "start": 333,
+       "end": 335,
+       "title": "Āṭānāṭiyasutta"
+      },
+      {
+       "start": 336,
+       "end": 338,
+       "title": "Saṅgītisutta"
+      },
+      {
+       "start": 339,
+       "end": 349,
+       "title": "Dasuttarasutta"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 39,
+     "layer": "mula",
+     "title": "Udumbarikasutta … Dasuttarasutta",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 347,
+   "chars": 54733,
+   "sents": 393,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 39,
+   "layer": "mula",
+   "start": 3,
+   "end": 349,
+   "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 3,
+   "end": 44,
+   "chars": 4763,
+   "sents": 42,
+   "title": "(saṅgayana-puccha vissajjanā) Dīghanikāye … Suttanidesanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:31:07",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 45,
+   "end": 82,
+   "chars": 4087,
+   "sents": 39,
+   "title": "Sāmaññaphalasutta … Pūraṇakassapavāda",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:31:17",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 83,
+   "end": 98,
+   "chars": 4211,
+   "sents": 24,
+   "title": "Makkhaligosāla ayūvāda … Pakudhakaccāyanavāda",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:31:27",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 99,
+   "end": 109,
+   "chars": 2404,
+   "sents": 15,
+   "title": "Nigaṇṭhanāṭaputtavāda … Siñcaññavāda",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:31:37",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 110,
+   "end": 136,
+   "chars": 4848,
+   "sents": 35,
+   "title": "Titthiayūvāda（110-136）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:31:47",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 137,
+   "end": 157,
+   "chars": 4870,
+   "sents": 27,
+   "title": "Titthiayūvāda（137-157）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:31:57",
+   "ended": "2026-11-24 06:33:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 158,
+   "end": 173,
+   "chars": 4630,
+   "sents": 21,
+   "title": "Titthiayūvāda（158-173）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:32:07",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 174,
+   "end": 180,
+   "chars": 2603,
+   "sents": 11,
+   "title": "Titthiayūvāda（174-180）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:32:17",
+   "ended": "2026-11-24 06:32:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 181,
+   "end": 229,
+   "chars": 4248,
+   "sents": 49,
+   "title": "Ambaṭṭhasutta … Jarāsutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:32:27",
+   "ended": "2026-11-24 06:33:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 230,
+   "end": 266,
+   "chars": 4778,
+   "sents": 43,
+   "title": "Attadīpa dhammadesanā … Mahāsamayasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:32:37",
+   "ended": "2026-11-24 06:34:03",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 267,
+   "end": 272,
+   "chars": 530,
+   "sents": 6,
+   "title": "Sakkapañhasutta … Mahāsatipaṭṭhānasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:32:53",
+   "ended": "2026-11-24 06:33:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 273,
+   "end": 295,
+   "chars": 4878,
+   "sents": 25,
+   "title": "Pāyāsisutta（273-295）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:33:03",
+   "ended": "2026-11-24 06:34:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 296,
+   "end": 311,
+   "chars": 4560,
+   "sents": 18,
+   "title": "Pāyāsisutta（296-311）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:33:13",
+   "ended": "2026-11-24 06:34:13",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 39,
+   "start": 312,
+   "end": 349,
+   "chars": 3323,
+   "sents": 38,
+   "title": "Udumbarikasutta … Dasuttarasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:33:23",
+   "ended": "2026-11-24 06:34:28",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 18
+}

@@ -1,0 +1,273 @@
+{
+ "schema": 3,
+ "name": "x35-vasalasutta",
+ "title": "Vasalasutta 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:57",
+ "updated": "2026-11-24 11:02:48",
+ "book": 32,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "32": {
+   "layer": "mula",
+   "title": "Vasalasutta"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 32,
+   "title": "Vasalasutta",
+   "start": 134,
+   "end": 266,
+   "fam": "x35-vasalasutta",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 134,
+     "end": 209,
+     "chars": 1365,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 134,
+       "end": 134,
+       "title": "Vasalasutta"
+      },
+      {
+       "start": 135,
+       "end": 139,
+       "title": "1."
+      },
+      {
+       "start": 140,
+       "end": 144,
+       "title": "2."
+      },
+      {
+       "start": 145,
+       "end": 149,
+       "title": "3."
+      },
+      {
+       "start": 150,
+       "end": 154,
+       "title": "4."
+      },
+      {
+       "start": 155,
+       "end": 159,
+       "title": "5."
+      },
+      {
+       "start": 160,
+       "end": 164,
+       "title": "6."
+      },
+      {
+       "start": 165,
+       "end": 169,
+       "title": "7."
+      },
+      {
+       "start": 170,
+       "end": 174,
+       "title": "8."
+      },
+      {
+       "start": 175,
+       "end": 179,
+       "title": "9."
+      },
+      {
+       "start": 180,
+       "end": 184,
+       "title": "10."
+      },
+      {
+       "start": 185,
+       "end": 189,
+       "title": "11."
+      },
+      {
+       "start": 190,
+       "end": 194,
+       "title": "12."
+      },
+      {
+       "start": 195,
+       "end": 199,
+       "title": "13."
+      },
+      {
+       "start": 200,
+       "end": 204,
+       "title": "14."
+      },
+      {
+       "start": 205,
+       "end": 209,
+       "title": "15."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 32,
+     "layer": "mula",
+     "title": "Vasalasutta … 15.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 210,
+     "end": 266,
+     "chars": 1446,
+     "sents": 58,
+     "paras": 57,
+     "chapters": [
+      {
+       "start": 210,
+       "end": 214,
+       "title": "16."
+      },
+      {
+       "start": 215,
+       "end": 219,
+       "title": "17."
+      },
+      {
+       "start": 220,
+       "end": 224,
+       "title": "18."
+      },
+      {
+       "start": 225,
+       "end": 230,
+       "title": "19."
+      },
+      {
+       "start": 231,
+       "end": 235,
+       "title": "20."
+      },
+      {
+       "start": 236,
+       "end": 240,
+       "title": "21."
+      },
+      {
+       "start": 241,
+       "end": 243,
+       "title": "22."
+      },
+      {
+       "start": 244,
+       "end": 248,
+       "title": "23."
+      },
+      {
+       "start": 249,
+       "end": 253,
+       "title": "24."
+      },
+      {
+       "start": 254,
+       "end": 266,
+       "title": "25."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 32,
+     "layer": "mula",
+     "title": "16. … 25.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 133,
+   "chars": 2811,
+   "sents": 134,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 32,
+   "layer": "mula",
+   "start": 134,
+   "end": 266,
+   "title": "Vasalasutta"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 32,
+   "start": 134,
+   "end": 209,
+   "chars": 1365,
+   "sents": 76,
+   "title": "Vasalasutta … 15.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 32,
+   "start": 210,
+   "end": 266,
+   "chars": 1446,
+   "sents": 58,
+   "title": "16. … 25.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 35
+}

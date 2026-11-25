@@ -1,0 +1,2263 @@
+{
+ "schema": 3,
+ "name": "x20-spv-samyuttanikaye",
+ "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:55",
+ "updated": "2026-11-24 06:54:21",
+ "book": 41,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "41": {
+   "layer": "mula",
+   "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 41,
+   "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye",
+   "start": 3,
+   "end": 1256,
+   "fam": "x20-spv-samyuttanikaye",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 3,
+     "end": 77,
+     "chars": 4926,
+     "sents": 77,
+     "paras": 75,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 3,
+       "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye"
+      },
+      {
+       "start": 4,
+       "end": 4,
+       "title": "Sagāthāvaggapāḷi"
+      },
+      {
+       "start": 5,
+       "end": 14,
+       "title": "Saṃgāyanassa pucchā vissajjanā"
+      },
+      {
+       "start": 15,
+       "end": 15,
+       "title": "Devatāsaṃyutta"
+      },
+      {
+       "start": 16,
+       "end": 19,
+       "title": "Oghataraṇasutta"
+      },
+      {
+       "start": 20,
+       "end": 32,
+       "title": "Accentisutta"
+      },
+      {
+       "start": 33,
+       "end": 45,
+       "title": "Sattisutta"
+      },
+      {
+       "start": 46,
+       "end": 62,
+       "title": "Jaṭāsutta"
+      },
+      {
+       "start": 63,
+       "end": 77,
+       "title": "Accharāsutta"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 41,
+     "layer": "mula",
+     "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye … Accharāsutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 78,
+     "end": 129,
+     "chars": 4711,
+     "sents": 67,
+     "paras": 52,
+     "chapters": [
+      {
+       "start": 78,
+       "end": 90,
+       "title": "Jarāsutta"
+      },
+      {
+       "start": 91,
+       "end": 91,
+       "title": "Devaputtasaṃyutta"
+      },
+      {
+       "start": 92,
+       "end": 106,
+       "title": "Subrahmasutta"
+      },
+      {
+       "start": 107,
+       "end": 109,
+       "title": "Rohitassasutta"
+      },
+      {
+       "start": 110,
+       "end": 110,
+       "title": "Kosalasaṃyutta"
+      },
+      {
+       "start": 111,
+       "end": 116,
+       "title": "Daharasutta"
+      },
+      {
+       "start": 117,
+       "end": 122,
+       "title": "Attarakkhitasutta"
+      },
+      {
+       "start": 123,
+       "end": 125,
+       "title": "Appakasutta"
+      },
+      {
+       "start": 126,
+       "end": 129,
+       "title": "Mallikāsutta"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 41,
+     "layer": "mula",
+     "title": "Jarāsutta … Mallikāsutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 130,
+     "end": 178,
+     "chars": 4303,
+     "sents": 58,
+     "paras": 49,
+     "chapters": [
+      {
+       "start": 130,
+       "end": 136,
+       "title": "Sattajaṭilasutta"
+      },
+      {
+       "start": 137,
+       "end": 141,
+       "title": "Pañcarājasutta"
+      },
+      {
+       "start": 142,
+       "end": 152,
+       "title": "Dutiyaaputtakasutta"
+      },
+      {
+       "start": 153,
+       "end": 153,
+       "title": "Mārasaṃyutta"
+      },
+      {
+       "start": 154,
+       "end": 168,
+       "title": "Tapokammasutta"
+      },
+      {
+       "start": 169,
+       "end": 177,
+       "title": "Hatthirājavaṇṇasutta"
+      },
+      {
+       "start": 178,
+       "end": 178,
+       "title": "Bhikkhunīsaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 41,
+     "layer": "mula",
+     "title": "Sattajaṭilasutta … Bhikkhunīsaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 179,
+     "end": 244,
+     "chars": 4113,
+     "sents": 72,
+     "paras": 66,
+     "chapters": [
+      {
+       "start": 179,
+       "end": 196,
+       "title": "Āḷavikāsutta"
+      },
+      {
+       "start": 197,
+       "end": 213,
+       "title": "Somāsutta"
+      },
+      {
+       "start": 214,
+       "end": 230,
+       "title": "Kisāgotamīsutta"
+      },
+      {
+       "start": 231,
+       "end": 244,
+       "title": "Uppalavaṇṇāsutta"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 41,
+     "layer": "mula",
+     "title": "Āḷavikāsutta … Uppalavaṇṇāsutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 245,
+     "end": 309,
+     "chars": 4610,
+     "sents": 74,
+     "paras": 65,
+     "chapters": [
+      {
+       "start": 245,
+       "end": 263,
+       "title": "Cālāsutta"
+      },
+      {
+       "start": 264,
+       "end": 276,
+       "title": "Selāsutta"
+      },
+      {
+       "start": 277,
+       "end": 293,
+       "title": "Vajirāsutta"
+      },
+      {
+       "start": 294,
+       "end": 294,
+       "title": "Brahmasaṃyutta"
+      },
+      {
+       "start": 295,
+       "end": 309,
+       "title": "Gāravasutta"
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 41,
+     "layer": "mula",
+     "title": "Cālāsutta … Gāravasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 310,
+     "end": 370,
+     "chars": 4062,
+     "sents": 70,
+     "paras": 61,
+     "chapters": [
+      {
+       "start": 310,
+       "end": 322,
+       "title": "Aññaratabrahmasutta"
+      },
+      {
+       "start": 323,
+       "end": 329,
+       "title": "Aruṇavatīsutta"
+      },
+      {
+       "start": 330,
+       "end": 330,
+       "title": "Brāhmaṇasaṃyutta"
+      },
+      {
+       "start": 331,
+       "end": 349,
+       "title": "Dhanañjānīsutta"
+      },
+      {
+       "start": 350,
+       "end": 370,
+       "title": "Akkosasutta"
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 41,
+     "layer": "mula",
+     "title": "Aññaratabrahmasutta … Akkosasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 371,
+     "end": 433,
+     "chars": 3045,
+     "sents": 66,
+     "paras": 63,
+     "chapters": [
+      {
+       "start": 371,
+       "end": 433,
+       "title": "Bahudhītarasutta"
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 41,
+     "layer": "mula",
+     "title": "Bahudhītarasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 434,
+     "end": 487,
+     "chars": 3874,
+     "sents": 60,
+     "paras": 54,
+     "chapters": [
+      {
+       "start": 434,
+       "end": 453,
+       "title": "Kasibhāradvājasutta"
+      },
+      {
+       "start": 454,
+       "end": 467,
+       "title": "Udayasutta"
+      },
+      {
+       "start": 468,
+       "end": 473,
+       "title": "Mātuposakasutta"
+      },
+      {
+       "start": 474,
+       "end": 486,
+       "title": "Khomadussasutta"
+      },
+      {
+       "start": 487,
+       "end": 487,
+       "title": "Vaṅgīsasaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M8",
+     "book": 41,
+     "layer": "mula",
+     "title": "Kasibhāradvājasutta … Vaṅgīsasaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 488,
+     "end": 562,
+     "chars": 3944,
+     "sents": 80,
+     "paras": 75,
+     "chapters": [
+      {
+       "start": 488,
+       "end": 512,
+       "title": "Ānandasutta"
+      },
+      {
+       "start": 513,
+       "end": 536,
+       "title": "Vaṅgīsasutta"
+      },
+      {
+       "start": 537,
+       "end": 537,
+       "title": "Vanasaṃyutta"
+      },
+      {
+       "start": 538,
+       "end": 547,
+       "title": "Ānandasutta"
+      },
+      {
+       "start": 548,
+       "end": 548,
+       "title": "Yakkhasaṃyutta"
+      },
+      {
+       "start": 549,
+       "end": 562,
+       "title": "Indakasutta"
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 41,
+     "layer": "mula",
+     "title": "Ānandasutta … Indakasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 563,
+     "end": 637,
+     "chars": 4338,
+     "sents": 79,
+     "paras": 75,
+     "chapters": [
+      {
+       "start": 563,
+       "end": 595,
+       "title": "Āḷavakasutta"
+      },
+      {
+       "start": 596,
+       "end": 596,
+       "title": "Sakkasaṃyutta"
+      },
+      {
+       "start": 597,
+       "end": 604,
+       "title": "Vatapadasutta"
+      },
+      {
+       "start": 605,
+       "end": 608,
+       "title": "Daliddasutta"
+      },
+      {
+       "start": 609,
+       "end": 625,
+       "title": "Yajamānasutta"
+      },
+      {
+       "start": 626,
+       "end": 635,
+       "title": "Gahaṭṭhavandanāsutta"
+      },
+      {
+       "start": 636,
+       "end": 636,
+       "title": "Nidānavaggapāḷi"
+      },
+      {
+       "start": 637,
+       "end": 637,
+       "title": "Nidānasaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 41,
+     "layer": "mula",
+     "title": "Āḷavakasutta … Nidānasaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 638,
+     "end": 655,
+     "chars": 4003,
+     "sents": 31,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 638,
+       "end": 642,
+       "title": "Paṭiccasamuppādasutta"
+      },
+      {
+       "start": 643,
+       "end": 645,
+       "title": "Vibhaṅgasutta"
+      },
+      {
+       "start": 646,
+       "end": 655,
+       "title": "Pañcaverabhayasutta"
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 41,
+     "layer": "mula",
+     "title": "Paṭiccasamuppādasutta … Pañcaverabhayasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 656,
+     "end": 685,
+     "chars": 4787,
+     "sents": 49,
+     "paras": 30,
+     "chapters": [
+      {
+       "start": 656,
+       "end": 662,
+       "title": "Dukkhasutta"
+      },
+      {
+       "start": 663,
+       "end": 674,
+       "title": "Puttamaṃsūpamasutta"
+      },
+      {
+       "start": 675,
+       "end": 680,
+       "title": "Susimaparibbājakasutta"
+      },
+      {
+       "start": 681,
+       "end": 681,
+       "title": "Abhisamayasaṃyutta"
+      },
+      {
+       "start": 682,
+       "end": 684,
+       "title": "Nakhasikhāsutta"
+      },
+      {
+       "start": 685,
+       "end": 685,
+       "title": "Dhātusaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 41,
+     "layer": "mula",
+     "title": "Dukkhasutta … Dhātusaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 686,
+     "end": 718,
+     "chars": 4794,
+     "sents": 49,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 686,
+       "end": 688,
+       "title": "Caṅkamasutta"
+      },
+      {
+       "start": 689,
+       "end": 691,
+       "title": "Assaddhasaṃsandanasutta"
+      },
+      {
+       "start": 692,
+       "end": 692,
+       "title": "Anamataggasaṃyutta"
+      },
+      {
+       "start": 693,
+       "end": 698,
+       "title": "Pathavīsutta"
+      },
+      {
+       "start": 699,
+       "end": 701,
+       "title": "Assusutta"
+      },
+      {
+       "start": 702,
+       "end": 704,
+       "title": "Sāsapasutta"
+      },
+      {
+       "start": 705,
+       "end": 708,
+       "title": "Gaṅgāsutta"
+      },
+      {
+       "start": 709,
+       "end": 711,
+       "title": "Puggalasutta"
+      },
+      {
+       "start": 712,
+       "end": 715,
+       "title": "Duggatasutta, sukhitasutta"
+      },
+      {
+       "start": 716,
+       "end": 718,
+       "title": "Tiṃsamattasutta"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 41,
+     "layer": "mula",
+     "title": "Caṅkamasutta … Tiṃsamattasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 719,
+     "end": 747,
+     "chars": 4249,
+     "sents": 47,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 719,
+       "end": 721,
+       "title": "Mātusutta"
+      },
+      {
+       "start": 722,
+       "end": 722,
+       "title": "Kassapasaṃyutta"
+      },
+      {
+       "start": 723,
+       "end": 731,
+       "title": "Candūpamasutta"
+      },
+      {
+       "start": 732,
+       "end": 735,
+       "title": "Kulūpakasutta"
+      },
+      {
+       "start": 736,
+       "end": 739,
+       "title": "Dutiya ovādasutta"
+      },
+      {
+       "start": 740,
+       "end": 743,
+       "title": "Tatiya ovādasutta"
+      },
+      {
+       "start": 744,
+       "end": 746,
+       "title": "Saddhammappatirūpakasutta"
+      },
+      {
+       "start": 747,
+       "end": 747,
+       "title": "Lābhasakkārasaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 41,
+     "layer": "mula",
+     "title": "Mātusutta … Lābhasakkārasaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 748,
+     "end": 774,
+     "chars": 4126,
+     "sents": 39,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 748,
+       "end": 753,
+       "title": "Mīḷhakasutta"
+      },
+      {
+       "start": 754,
+       "end": 760,
+       "title": "Ekaputtakasutta"
+      },
+      {
+       "start": 761,
+       "end": 765,
+       "title": "Ekavītusutta"
+      },
+      {
+       "start": 766,
+       "end": 768,
+       "title": "Rāhulasaṃyutta"
+      },
+      {
+       "start": 769,
+       "end": 769,
+       "title": "Lakkhaṇasaṃyutta"
+      },
+      {
+       "start": 770,
+       "end": 774,
+       "title": "Aṭṭhisutta"
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 41,
+     "layer": "mula",
+     "title": "Mīḷhakasutta … Aṭṭhisutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 775,
+     "end": 797,
+     "chars": 4691,
+     "sents": 45,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 775,
+       "end": 777,
+       "title": "Piṇḍasutta"
+      },
+      {
+       "start": 778,
+       "end": 780,
+       "title": "Asilomasutta"
+      },
+      {
+       "start": 781,
+       "end": 784,
+       "title": "Sūcilomasutta"
+      },
+      {
+       "start": 785,
+       "end": 787,
+       "title": "Pāpabhikkhusutta"
+      },
+      {
+       "start": 788,
+       "end": 788,
+       "title": "Opammasaṃyutta"
+      },
+      {
+       "start": 789,
+       "end": 793,
+       "title": "Nakhasikhasutta"
+      },
+      {
+       "start": 794,
+       "end": 796,
+       "title": "Āṇisutta"
+      },
+      {
+       "start": 797,
+       "end": 797,
+       "title": "Bhikkhusaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M16",
+     "book": 41,
+     "layer": "mula",
+     "title": "Piṇḍasutta … Bhikkhusaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 798,
+     "end": 830,
+     "chars": 4971,
+     "sents": 49,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 798,
+       "end": 806,
+       "title": "Navasutta"
+      },
+      {
+       "start": 807,
+       "end": 807,
+       "title": "Khandhavaggasaṃyuttapāḷi"
+      },
+      {
+       "start": 808,
+       "end": 808,
+       "title": "Saṃgāyanassa pucchā vissajjanā"
+      },
+      {
+       "start": 809,
+       "end": 814,
+       "title": "Nakulapitusutta"
+      },
+      {
+       "start": 815,
+       "end": 817,
+       "title": "Aniccasutta"
+      },
+      {
+       "start": 818,
+       "end": 820,
+       "title": "Dukkhaanattasutta"
+      },
+      {
+       "start": 821,
+       "end": 827,
+       "title": "Bhārasutta"
+      },
+      {
+       "start": 828,
+       "end": 830,
+       "title": "Natumhākasutta"
+      }
+     ],
+     "split": false,
+     "id": "M17",
+     "book": 41,
+     "layer": "mula",
+     "title": "Navasutta … Natumhākasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 831,
+     "end": 854,
+     "chars": 4949,
+     "sents": 48,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 831,
+       "end": 833,
+       "title": "Anattalakkhaṇasutta"
+      },
+      {
+       "start": 834,
+       "end": 839,
+       "title": "Yamakasutta"
+      },
+      {
+       "start": 840,
+       "end": 851,
+       "title": "Vakkalisutta"
+      },
+      {
+       "start": 852,
+       "end": 854,
+       "title": "Assajisutta"
+      }
+     ],
+     "split": false,
+     "id": "M18",
+     "book": 41,
+     "layer": "mula",
+     "title": "Anattalakkhaṇasutta … Assajisutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 855,
+     "end": 886,
+     "chars": 4504,
+     "sents": 41,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 855,
+       "end": 859,
+       "title": "Khemakasutta"
+      },
+      {
+       "start": 860,
+       "end": 863,
+       "title": "Channasutta"
+      },
+      {
+       "start": 864,
+       "end": 868,
+       "title": "Pupphasutta"
+      },
+      {
+       "start": 869,
+       "end": 886,
+       "title": "Pheṇapiṇḍūpamasutta"
+      }
+     ],
+     "split": false,
+     "id": "M19",
+     "book": 41,
+     "layer": "mula",
+     "title": "Khemakasutta … Pheṇapiṇḍūpamasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 887,
+     "end": 920,
+     "chars": 4614,
+     "sents": 50,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 887,
+       "end": 889,
+       "title": "Dutiyadhammakatikasutta"
+      },
+      {
+       "start": 890,
+       "end": 892,
+       "title": "Sīlavantasutta, sutavantasutta"
+      },
+      {
+       "start": 893,
+       "end": 893,
+       "title": "Rādhasaṃyutta"
+      },
+      {
+       "start": 894,
+       "end": 896,
+       "title": "Sattasutta"
+      },
+      {
+       "start": 897,
+       "end": 897,
+       "title": "Diṭṭhisaṃyutta"
+      },
+      {
+       "start": 898,
+       "end": 900,
+       "title": "Soattāsutta"
+      },
+      {
+       "start": 901,
+       "end": 903,
+       "title": "Natthidinnasutta"
+      },
+      {
+       "start": 904,
+       "end": 904,
+       "title": "Okkantasaṃyutta"
+      },
+      {
+       "start": 905,
+       "end": 907,
+       "title": "Cakkhusutta"
+      },
+      {
+       "start": 908,
+       "end": 908,
+       "title": "Sāriputtasaṃyutta"
+      },
+      {
+       "start": 909,
+       "end": 915,
+       "title": "Sucimukhīsutta"
+      },
+      {
+       "start": 916,
+       "end": 916,
+       "title": "Saḷāyatanavaggasaṃyuttapāḷi"
+      },
+      {
+       "start": 917,
+       "end": 919,
+       "title": "Ajjhattāniccasutta, bāhirasutta"
+      },
+      {
+       "start": 920,
+       "end": 920,
+       "title": "Sabbavagga"
+      }
+     ],
+     "split": false,
+     "id": "M20",
+     "book": 41,
+     "layer": "mula",
+     "title": "Dutiyadhammakatikasutta … Sabbavagga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 921,
+     "end": 949,
+     "chars": 4645,
+     "sents": 43,
+     "paras": 29,
+     "chapters": [
+      {
+       "start": 921,
+       "end": 923,
+       "title": "Ādittasutta"
+      },
+      {
+       "start": 924,
+       "end": 924,
+       "title": "Migajālavagga"
+      },
+      {
+       "start": 925,
+       "end": 927,
+       "title": "Paṭhama migajālasutta"
+      },
+      {
+       "start": 928,
+       "end": 934,
+       "title": "Paṭhama chaphassāyatanasutta"
+      },
+      {
+       "start": 935,
+       "end": 935,
+       "title": "Gilānavagga"
+      },
+      {
+       "start": 936,
+       "end": 940,
+       "title": "Paṭhama gilānasutta"
+      },
+      {
+       "start": 941,
+       "end": 941,
+       "title": "Channavagga"
+      },
+      {
+       "start": 942,
+       "end": 948,
+       "title": "Puṇṇasutta"
+      },
+      {
+       "start": 949,
+       "end": 949,
+       "title": "Saḷavagga"
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 41,
+     "layer": "mula",
+     "title": "Ādittasutta … Saḷavagga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 950,
+     "end": 986,
+     "chars": 4674,
+     "sents": 54,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 950,
+       "end": 959,
+       "title": "Mālukyaputtasutta"
+      },
+      {
+       "start": 960,
+       "end": 972,
+       "title": "Peyyāla"
+      },
+      {
+       "start": 973,
+       "end": 975,
+       "title": "Pamādavihārīsutta"
+      },
+      {
+       "start": 976,
+       "end": 976,
+       "title": "Lokakāmaguṇavagga"
+      },
+      {
+       "start": 977,
+       "end": 981,
+       "title": "Rāhulovādasutta"
+      },
+      {
+       "start": 982,
+       "end": 982,
+       "title": "Gahapativagga"
+      },
+      {
+       "start": 983,
+       "end": 986,
+       "title": "Bhāradvājasutta"
+      }
+     ],
+     "split": false,
+     "id": "M22",
+     "book": 41,
+     "layer": "mula",
+     "title": "Mālukyaputtasutta … Bhāradvājasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 987,
+     "end": 1023,
+     "chars": 4976,
+     "sents": 48,
+     "paras": 37,
+     "chapters": [
+      {
+       "start": 987,
+       "end": 989,
+       "title": "Verahaccānisutta"
+      },
+      {
+       "start": 990,
+       "end": 990,
+       "title": "Devadahavagga"
+      },
+      {
+       "start": 991,
+       "end": 993,
+       "title": "Khaṇasutta"
+      },
+      {
+       "start": 994,
+       "end": 994,
+       "title": "Samuddavagga"
+      },
+      {
+       "start": 995,
+       "end": 997,
+       "title": "Bāḷisikopamasutta"
+      },
+      {
+       "start": 998,
+       "end": 1000,
+       "title": "Ādittapariyāyasutta"
+      },
+      {
+       "start": 1001,
+       "end": 1001,
+       "title": "Āsīvisavagga"
+      },
+      {
+       "start": 1002,
+       "end": 1004,
+       "title": "Paṭhamadārukkhandhopamasutta"
+      },
+      {
+       "start": 1005,
+       "end": 1012,
+       "title": "Upacāravacanaṃ"
+      },
+      {
+       "start": 1013,
+       "end": 1015,
+       "title": "Kiṃsukopamasutta"
+      },
+      {
+       "start": 1016,
+       "end": 1022,
+       "title": "Chappāṇakopamasutta"
+      },
+      {
+       "start": 1023,
+       "end": 1023,
+       "title": "Vedanāsaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M23",
+     "book": 41,
+     "layer": "mula",
+     "title": "Verahaccānisutta … Vedanāsaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1024,
+     "end": 1059,
+     "chars": 4554,
+     "sents": 49,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 1024,
+       "end": 1032,
+       "title": "Daṭṭhabbasutta"
+      },
+      {
+       "start": 1033,
+       "end": 1035,
+       "title": "Sallasutta"
+      },
+      {
+       "start": 1036,
+       "end": 1036,
+       "title": "Jambukhādakasaṃyutta"
+      },
+      {
+       "start": 1037,
+       "end": 1039,
+       "title": "Nibbānapañhāsutta"
+      },
+      {
+       "start": 1040,
+       "end": 1044,
+       "title": "Dhammavādīpañhāsutta"
+      },
+      {
+       "start": 1045,
+       "end": 1047,
+       "title": "Dukkarapañhāsutta"
+      },
+      {
+       "start": 1048,
+       "end": 1048,
+       "title": "Moggallānasaṃyutta"
+      },
+      {
+       "start": 1049,
+       "end": 1051,
+       "title": "Sakkasutta"
+      },
+      {
+       "start": 1052,
+       "end": 1052,
+       "title": "Cittasaṃyutta"
+      },
+      {
+       "start": 1053,
+       "end": 1059,
+       "title": "Nigaṇṭhanāṭaputtasutta"
+      }
+     ],
+     "split": false,
+     "id": "M24",
+     "book": 41,
+     "layer": "mula",
+     "title": "Daṭṭhabbasutta … Nigaṇṭhanāṭaputtasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1060,
+     "end": 1085,
+     "chars": 4731,
+     "sents": 43,
+     "paras": 26,
+     "chapters": [
+      {
+       "start": 1060,
+       "end": 1062,
+       "title": "Acelakassapasutta"
+      },
+      {
+       "start": 1063,
+       "end": 1063,
+       "title": "Gāmaṇisaṃyutta"
+      },
+      {
+       "start": 1064,
+       "end": 1066,
+       "title": "Caṇḍasutta"
+      },
+      {
+       "start": 1067,
+       "end": 1069,
+       "title": "Khettūpamasutta"
+      },
+      {
+       "start": 1070,
+       "end": 1072,
+       "title": "Saṅkhadhamasutta"
+      },
+      {
+       "start": 1073,
+       "end": 1079,
+       "title": "Yaṃ bahulavāda"
+      },
+      {
+       "start": 1080,
+       "end": 1085,
+       "title": "Bhadrakasutta"
+      }
+     ],
+     "split": false,
+     "id": "M25",
+     "book": 41,
+     "layer": "mula",
+     "title": "Acelakassapasutta … Bhadrakasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1086,
+     "end": 1107,
+     "chars": 4274,
+     "sents": 39,
+     "paras": 22,
+     "chapters": [
+      {
+       "start": 1086,
+       "end": 1092,
+       "title": "Rāsiyasutta"
+      },
+      {
+       "start": 1093,
+       "end": 1093,
+       "title": "Abyākatasaṃyutta"
+      },
+      {
+       "start": 1094,
+       "end": 1097,
+       "title": "Khemāsutta"
+      },
+      {
+       "start": 1098,
+       "end": 1100,
+       "title": "Kutūhalasālāsutta"
+      },
+      {
+       "start": 1101,
+       "end": 1101,
+       "title": "Mahāvaggasaṃyuttapāḷi"
+      },
+      {
+       "start": 1102,
+       "end": 1102,
+       "title": "Avijjāvagga"
+      },
+      {
+       "start": 1103,
+       "end": 1106,
+       "title": "Upaḍḍhasutta"
+      },
+      {
+       "start": 1107,
+       "end": 1107,
+       "title": "Bojjhaṅgasaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M26",
+     "book": 41,
+     "layer": "mula",
+     "title": "Rāsiyasutta … Bojjhaṅgasaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1108,
+     "end": 1135,
+     "chars": 4447,
+     "sents": 39,
+     "paras": 28,
+     "chapters": [
+      {
+       "start": 1108,
+       "end": 1110,
+       "title": "Kuṇḍaliyasutta"
+      },
+      {
+       "start": 1111,
+       "end": 1113,
+       "title": "Paṭhama gilānasutta"
+      },
+      {
+       "start": 1114,
+       "end": 1116,
+       "title": "Udāyisutta"
+      },
+      {
+       "start": 1117,
+       "end": 1117,
+       "title": "Satipaṭṭhānasaṃyutta"
+      },
+      {
+       "start": 1118,
+       "end": 1120,
+       "title": "Satisutta"
+      },
+      {
+       "start": 1121,
+       "end": 1123,
+       "title": "Sālasutta"
+      },
+      {
+       "start": 1124,
+       "end": 1135,
+       "title": "Sakuṇagghisutta"
+      }
+     ],
+     "split": false,
+     "id": "M27",
+     "book": 41,
+     "layer": "mula",
+     "title": "Kuṇḍaliyasutta … Sakuṇagghisutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1136,
+     "end": 1156,
+     "chars": 4517,
+     "sents": 43,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 1136,
+       "end": 1138,
+       "title": "Bhikkhunupassayasutta"
+      },
+      {
+       "start": 1139,
+       "end": 1143,
+       "title": "Cundasutta"
+      },
+      {
+       "start": 1144,
+       "end": 1146,
+       "title": "Bāhiyasutta"
+      },
+      {
+       "start": 1147,
+       "end": 1147,
+       "title": "Sīlaṭṭhitivagga"
+      },
+      {
+       "start": 1148,
+       "end": 1152,
+       "title": "Ciraṭṭhitisutta"
+      },
+      {
+       "start": 1153,
+       "end": 1155,
+       "title": "Sirivaḍḍhasutta"
+      },
+      {
+       "start": 1156,
+       "end": 1156,
+       "title": "Iddhipādasaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M28",
+     "book": 41,
+     "layer": "mula",
+     "title": "Bhikkhunupassayasutta … Iddhipādasaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1157,
+     "end": 1190,
+     "chars": 4490,
+     "sents": 42,
+     "paras": 34,
+     "chapters": [
+      {
+       "start": 1157,
+       "end": 1164,
+       "title": "Moggallānasutta"
+      },
+      {
+       "start": 1165,
+       "end": 1165,
+       "title": "Anuruddhasaṃyutta"
+      },
+      {
+       "start": 1166,
+       "end": 1168,
+       "title": "Bāḷhagilānasutta"
+      },
+      {
+       "start": 1169,
+       "end": 1169,
+       "title": "Ānāpānasaṃyutta"
+      },
+      {
+       "start": 1170,
+       "end": 1172,
+       "title": "Mahākappinasutta"
+      },
+      {
+       "start": 1173,
+       "end": 1175,
+       "title": "Icchānaṅgalasutta"
+      },
+      {
+       "start": 1176,
+       "end": 1176,
+       "title": "Sotāpattisaṃyutta"
+      },
+      {
+       "start": 1177,
+       "end": 1179,
+       "title": "Cakkavattirājasutta"
+      },
+      {
+       "start": 1180,
+       "end": 1190,
+       "title": "Dīghāvu upāsakasutta"
+      }
+     ],
+     "split": false,
+     "id": "M29",
+     "book": 41,
+     "layer": "mula",
+     "title": "Moggallānasutta … Dīghāvu upāsakasutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1191,
+     "end": 1214,
+     "chars": 4615,
+     "sents": 29,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 1191,
+       "end": 1194,
+       "title": "Veḷudvāreyyasutta"
+      },
+      {
+       "start": 1195,
+       "end": 1195,
+       "title": "Saraṇānivagga"
+      },
+      {
+       "start": 1196,
+       "end": 1198,
+       "title": "Paṭhama mahānāmasutta"
+      },
+      {
+       "start": 1199,
+       "end": 1203,
+       "title": "Dutiya saraṇānisakkasutta"
+      },
+      {
+       "start": 1204,
+       "end": 1213,
+       "title": "Paṭhama anāthapiṇḍikasutta"
+      },
+      {
+       "start": 1214,
+       "end": 1214,
+       "title": "Puññābhisandavagga"
+      }
+     ],
+     "split": false,
+     "id": "M30",
+     "book": 41,
+     "layer": "mula",
+     "title": "Veḷudvāreyyasutta … Puññābhisandavagga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1215,
+     "end": 1256,
+     "chars": 4904,
+     "sents": 50,
+     "paras": 42,
+     "chapters": [
+      {
+       "start": 1215,
+       "end": 1219,
+       "title": "Mahānāmasutta"
+      },
+      {
+       "start": 1220,
+       "end": 1223,
+       "title": "Kāḷigodhasutta"
+      },
+      {
+       "start": 1224,
+       "end": 1226,
+       "title": "Nandiyasakkasutta"
+      },
+      {
+       "start": 1227,
+       "end": 1227,
+       "title": "Saccasaṃyutta"
+      },
+      {
+       "start": 1228,
+       "end": 1232,
+       "title": "Tiracchānakathāsutta"
+      },
+      {
+       "start": 1233,
+       "end": 1235,
+       "title": "Dhammacakkapavattanasutta"
+      },
+      {
+       "start": 1236,
+       "end": 1238,
+       "title": "Āsavakkhayasutta"
+      },
+      {
+       "start": 1239,
+       "end": 1241,
+       "title": "Sīsapāvanasutta"
+      },
+      {
+       "start": 1242,
+       "end": 1256,
+       "title": "Pañcagatipeyyālavagga"
+      }
+     ],
+     "split": false,
+     "id": "M31",
+     "book": 41,
+     "layer": "mula",
+     "title": "Mahānāmasutta … Pañcagatipeyyālavagga",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1254,
+   "chars": 138441,
+   "sents": 1630,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 41,
+   "layer": "mula",
+   "start": 3,
+   "end": 1256,
+   "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 3,
+   "end": 77,
+   "chars": 4926,
+   "sents": 77,
+   "title": "(saṅgayana-puccha vissajjanā) Saṃyuttanikāye … Accharāsutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:47:16",
+   "ended": "2026-11-24 06:49:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 78,
+   "end": 129,
+   "chars": 4711,
+   "sents": 67,
+   "title": "Jarāsutta … Mallikāsutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:47:26",
+   "ended": "2026-11-24 06:49:02",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 130,
+   "end": 178,
+   "chars": 4303,
+   "sents": 58,
+   "title": "Sattajaṭilasutta … Bhikkhunīsaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:47:36",
+   "ended": "2026-11-24 06:49:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 179,
+   "end": 244,
+   "chars": 4113,
+   "sents": 72,
+   "title": "Āḷavikāsutta … Uppalavaṇṇāsutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:47:46",
+   "ended": "2026-11-24 06:49:27",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 245,
+   "end": 309,
+   "chars": 4610,
+   "sents": 74,
+   "title": "Cālāsutta … Gāravasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:47:56",
+   "ended": "2026-11-24 06:49:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 310,
+   "end": 370,
+   "chars": 4062,
+   "sents": 70,
+   "title": "Aññaratabrahmasutta … Akkosasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:48:07",
+   "ended": "2026-11-24 06:49:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 371,
+   "end": 433,
+   "chars": 3045,
+   "sents": 66,
+   "title": "Bahudhītarasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:48:17",
+   "ended": "2026-11-24 06:49:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 434,
+   "end": 487,
+   "chars": 3874,
+   "sents": 60,
+   "title": "Kasibhāradvājasutta … Vaṅgīsasaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:48:27",
+   "ended": "2026-11-24 06:49:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 488,
+   "end": 562,
+   "chars": 3944,
+   "sents": 80,
+   "title": "Ānandasutta … Indakasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:48:37",
+   "ended": "2026-11-24 06:50:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 563,
+   "end": 637,
+   "chars": 4338,
+   "sents": 79,
+   "title": "Āḷavakasutta … Nidānasaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:48:47",
+   "ended": "2026-11-24 06:50:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 638,
+   "end": 655,
+   "chars": 4003,
+   "sents": 31,
+   "title": "Paṭiccasamuppādasutta … Pañcaverabhayasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:49:02",
+   "ended": "2026-11-24 06:50:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 656,
+   "end": 685,
+   "chars": 4787,
+   "sents": 49,
+   "title": "Dukkhasutta … Dhātusaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:49:12",
+   "ended": "2026-11-24 06:50:38",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 686,
+   "end": 718,
+   "chars": 4794,
+   "sents": 49,
+   "title": "Caṅkamasutta … Tiṃsamattasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:49:27",
+   "ended": "2026-11-24 06:51:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 719,
+   "end": 747,
+   "chars": 4249,
+   "sents": 47,
+   "title": "Mātusutta … Lābhasakkārasaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:49:37",
+   "ended": "2026-11-24 06:51:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 748,
+   "end": 774,
+   "chars": 4126,
+   "sents": 39,
+   "title": "Mīḷhakasutta … Aṭṭhisutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:49:53",
+   "ended": "2026-11-24 06:51:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 775,
+   "end": 797,
+   "chars": 4691,
+   "sents": 45,
+   "title": "Piṇḍasutta … Bhikkhusaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:50:03",
+   "ended": "2026-11-24 06:51:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 798,
+   "end": 830,
+   "chars": 4971,
+   "sents": 49,
+   "title": "Navasutta … Natumhākasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:50:13",
+   "ended": "2026-11-24 06:51:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 831,
+   "end": 854,
+   "chars": 4949,
+   "sents": 48,
+   "title": "Anattalakkhaṇasutta … Assajisutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:50:23",
+   "ended": "2026-11-24 06:51:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 855,
+   "end": 886,
+   "chars": 4504,
+   "sents": 41,
+   "title": "Khemakasutta … Pheṇapiṇḍūpamasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:50:38",
+   "ended": "2026-11-24 06:51:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 887,
+   "end": 920,
+   "chars": 4614,
+   "sents": 50,
+   "title": "Dutiyadhammakatikasutta … Sabbavagga",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:50:48",
+   "ended": "2026-11-24 06:52:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 921,
+   "end": 949,
+   "chars": 4645,
+   "sents": 43,
+   "title": "Ādittasutta … Saḷavagga",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:50:58",
+   "ended": "2026-11-24 06:52:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 950,
+   "end": 986,
+   "chars": 4674,
+   "sents": 54,
+   "title": "Mālukyaputtasutta … Bhāradvājasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:51:09",
+   "ended": "2026-11-24 06:52:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 987,
+   "end": 1023,
+   "chars": 4976,
+   "sents": 48,
+   "title": "Verahaccānisutta … Vedanāsaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:51:24",
+   "ended": "2026-11-24 06:52:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1024,
+   "end": 1059,
+   "chars": 4554,
+   "sents": 49,
+   "title": "Daṭṭhabbasutta … Nigaṇṭhanāṭaputtasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:51:34",
+   "ended": "2026-11-24 06:53:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M25:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1060,
+   "end": 1085,
+   "chars": 4731,
+   "sents": 43,
+   "title": "Acelakassapasutta … Bhadrakasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:51:44",
+   "ended": "2026-11-24 06:52:45",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M26:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1086,
+   "end": 1107,
+   "chars": 4274,
+   "sents": 39,
+   "title": "Rāsiyasutta … Bojjhaṅgasaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:51:59",
+   "ended": "2026-11-24 06:53:10",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M27:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1108,
+   "end": 1135,
+   "chars": 4447,
+   "sents": 39,
+   "title": "Kuṇḍaliyasutta … Sakuṇagghisutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:52:09",
+   "ended": "2026-11-24 06:53:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M28:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1136,
+   "end": 1156,
+   "chars": 4517,
+   "sents": 43,
+   "title": "Bhikkhunupassayasutta … Iddhipādasaṃyutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:52:20",
+   "ended": "2026-11-24 06:53:26",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M29:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1157,
+   "end": 1190,
+   "chars": 4490,
+   "sents": 42,
+   "title": "Moggallānasutta … Dīghāvu upāsakasutta",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:52:30",
+   "ended": "2026-11-24 06:53:51",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M30:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1191,
+   "end": 1214,
+   "chars": 4615,
+   "sents": 29,
+   "title": "Veḷudvāreyyasutta … Puññābhisandavagga",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:52:45",
+   "ended": "2026-11-24 06:53:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M31:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 41,
+   "start": 1215,
+   "end": 1256,
+   "chars": 4904,
+   "sents": 50,
+   "title": "Mahānāmasutta … Pañcagatipeyyālavagga",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 06:52:55",
+   "ended": "2026-11-24 06:54:21",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 20
+}

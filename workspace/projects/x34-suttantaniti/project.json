@@ -1,0 +1,223 @@
+{
+ "schema": 3,
+ "name": "x34-suttantaniti",
+ "title": "Suttantanīti 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:57",
+ "updated": "2026-11-24 11:02:48",
+ "book": 32,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "32": {
+   "layer": "mula",
+   "title": "Suttantanīti"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 32,
+   "title": "Suttantanīti",
+   "start": 2,
+   "end": 133,
+   "fam": "x34-suttantaniti",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 80,
+     "chars": 1469,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Suttantanīti"
+      },
+      {
+       "start": 3,
+       "end": 7,
+       "title": "1."
+      },
+      {
+       "start": 8,
+       "end": 12,
+       "title": "2."
+      },
+      {
+       "start": 13,
+       "end": 17,
+       "title": "3."
+      },
+      {
+       "start": 18,
+       "end": 26,
+       "title": "4."
+      },
+      {
+       "start": 27,
+       "end": 31,
+       "title": "5."
+      },
+      {
+       "start": 32,
+       "end": 36,
+       "title": "6."
+      },
+      {
+       "start": 37,
+       "end": 41,
+       "title": "7."
+      },
+      {
+       "start": 42,
+       "end": 46,
+       "title": "8."
+      },
+      {
+       "start": 47,
+       "end": 51,
+       "title": "9."
+      },
+      {
+       "start": 52,
+       "end": 80,
+       "title": "10."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 32,
+     "layer": "mula",
+     "title": "Suttantanīti … 10.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 81,
+     "end": 133,
+     "chars": 1053,
+     "sents": 53,
+     "paras": 53,
+     "chapters": [
+      {
+       "start": 81,
+       "end": 95,
+       "title": "11."
+      },
+      {
+       "start": 96,
+       "end": 115,
+       "title": "12."
+      },
+      {
+       "start": 116,
+       "end": 120,
+       "title": "13."
+      },
+      {
+       "start": 121,
+       "end": 128,
+       "title": "14."
+      },
+      {
+       "start": 129,
+       "end": 133,
+       "title": "15."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 32,
+     "layer": "mula",
+     "title": "11. … 15.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 132,
+   "chars": 2522,
+   "sents": 132,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 32,
+   "layer": "mula",
+   "start": 2,
+   "end": 133,
+   "title": "Suttantanīti"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 32,
+   "start": 2,
+   "end": 80,
+   "chars": 1469,
+   "sents": 79,
+   "title": "Suttantanīti … 10.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 32,
+   "start": 81,
+   "end": 133,
+   "chars": 1053,
+   "sents": 53,
+   "title": "11. … 15.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 34
+}

@@ -1,0 +1,778 @@
+{
+ "schema": 3,
+ "name": "x24-spv-atthakatha",
+ "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:55",
+ "updated": "2026-11-24 11:02:48",
+ "book": 45,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "45": {
+   "layer": "mula",
+   "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 45,
+   "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā",
+   "start": 2,
+   "end": 503,
+   "fam": "x24-spv-atthakatha",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 2,
+     "chars": 10,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 45,
+     "layer": "mula",
+     "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3,
+     "end": 82,
+     "chars": 4295,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 140,
+       "title": "Saṃgāyanassa pucchā-vissajjanā"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 45,
+     "layer": "mula",
+     "title": "Saṃgāyanassa pucchā-vissajjanā（3-82）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 83,
+     "end": 140,
+     "chars": 3028,
+     "sents": 59,
+     "paras": 58,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 140,
+       "title": "Saṃgāyanassa pucchā-vissajjanā"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 45,
+     "layer": "mula",
+     "title": "Saṃgāyanassa pucchā-vissajjanā（83-140）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 141,
+     "end": 164,
+     "chars": 3901,
+     "sents": 37,
+     "paras": 24,
+     "chapters": [
+      {
+       "start": 141,
+       "end": 141,
+       "title": "Dutiyasannipāta"
+      },
+      {
+       "start": 142,
+       "end": 149,
+       "title": "Mahāpadānasutta aṭṭhakathā"
+      },
+      {
+       "start": 150,
+       "end": 153,
+       "title": "Pubbenivāsa"
+      },
+      {
+       "start": 154,
+       "end": 159,
+       "title": "Kappaparicchedavāra"
+      },
+      {
+       "start": 160,
+       "end": 164,
+       "title": "Āyuparicchedavāra"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 45,
+     "layer": "mula",
+     "title": "Dutiyasannipāta … Āyuparicchedavāra",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 165,
+     "end": 223,
+     "chars": 4963,
+     "sents": 68,
+     "paras": 59,
+     "chapters": [
+      {
+       "start": 165,
+       "end": 230,
+       "title": "Upaṭṭhākaparicchedavāra"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 45,
+     "layer": "mula",
+     "title": "Upaṭṭhākaparicchedavāra（165-223）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 224,
+     "end": 230,
+     "chars": 820,
+     "sents": 7,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 165,
+       "end": 230,
+       "title": "Upaṭṭhākaparicchedavāra"
+      }
+     ],
+     "split": true,
+     "id": "M6",
+     "book": 45,
+     "layer": "mula",
+     "title": "Upaṭṭhākaparicchedavāra（224-230）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 231,
+     "end": 263,
+     "chars": 4964,
+     "sents": 39,
+     "paras": 33,
+     "chapters": [
+      {
+       "start": 231,
+       "end": 314,
+       "title": "Mahāsāvaka cetī"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 45,
+     "layer": "mula",
+     "title": "Mahāsāvaka cetī（231-263）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 264,
+     "end": 298,
+     "chars": 4840,
+     "sents": 45,
+     "paras": 35,
+     "chapters": [
+      {
+       "start": 231,
+       "end": 314,
+       "title": "Mahāsāvaka cetī"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 45,
+     "layer": "mula",
+     "title": "Mahāsāvaka cetī（264-298）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 299,
+     "end": 314,
+     "chars": 3127,
+     "sents": 30,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 231,
+       "end": 314,
+       "title": "Mahāsāvaka cetī"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 45,
+     "layer": "mula",
+     "title": "Mahāsāvaka cetī（299-314）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 315,
+     "end": 329,
+     "chars": 2329,
+     "sents": 24,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 315,
+       "end": 327,
+       "title": "Cūḷagosiṅgasutta"
+      },
+      {
+       "start": 328,
+       "end": 328,
+       "title": "Sagāthāvaggasaṃyutta aṭṭhakathā"
+      },
+      {
+       "start": 329,
+       "end": 329,
+       "title": "Yakkhasaṃyutta"
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 45,
+     "layer": "mula",
+     "title": "Cūḷagosiṅgasutta … Yakkhasaṃyutta",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 330,
+     "end": 389,
+     "chars": 4285,
+     "sents": 80,
+     "paras": 60,
+     "chapters": [
+      {
+       "start": 330,
+       "end": 398,
+       "title": "Āḷavakasutta"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 45,
+     "layer": "mula",
+     "title": "Āḷavakasutta（330-389）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 390,
+     "end": 398,
+     "chars": 323,
+     "sents": 9,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 330,
+       "end": 398,
+       "title": "Āḷavakasutta"
+      }
+     ],
+     "split": true,
+     "id": "M12",
+     "book": 45,
+     "layer": "mula",
+     "title": "Āḷavakasutta（390-398）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 399,
+     "end": 448,
+     "chars": 4536,
+     "sents": 59,
+     "paras": 50,
+     "chapters": [
+      {
+       "start": 399,
+       "end": 428,
+       "title": "Mahāvaggasaṃyutta aṭṭhakathā"
+      },
+      {
+       "start": 429,
+       "end": 447,
+       "title": "Dasakaniddesa"
+      },
+      {
+       "start": 448,
+       "end": 448,
+       "title": "8. Sammappadhānavibhaṅga"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 45,
+     "layer": "mula",
+     "title": "Mahāvaggasaṃyutta aṭṭhakathā … 8. Sammappadhānavibhaṅga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 449,
+     "end": 493,
+     "chars": 4803,
+     "sents": 55,
+     "paras": 45,
+     "chapters": [
+      {
+       "start": 449,
+       "end": 453,
+       "title": "1. Suttantabhājanīyavaṇṇanā"
+      },
+      {
+       "start": 454,
+       "end": 454,
+       "title": "16. Ñāṇavibhaṅga"
+      },
+      {
+       "start": 455,
+       "end": 455,
+       "title": "10. Dasakaniddesavaṇṇanā"
+      },
+      {
+       "start": 456,
+       "end": 459,
+       "title": "Ekissā lokadhātuyā"
+      },
+      {
+       "start": 460,
+       "end": 460,
+       "title": "Jhānavibhaṅga"
+      },
+      {
+       "start": 461,
+       "end": 486,
+       "title": "Suttantabhājanīya"
+      },
+      {
+       "start": 487,
+       "end": 487,
+       "title": "Puggalapaññattiaṭṭhakathā"
+      },
+      {
+       "start": 488,
+       "end": 489,
+       "title": "Ekakaniddesa"
+      },
+      {
+       "start": 490,
+       "end": 491,
+       "title": "Asamayavimutta"
+      },
+      {
+       "start": 492,
+       "end": 493,
+       "title": "Kuppākuppaniddesa"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 45,
+     "layer": "mula",
+     "title": "1. Suttantabhājanīyavaṇṇanā … Kuppākuppaniddesa",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 494,
+     "end": 503,
+     "chars": 1404,
+     "sents": 16,
+     "paras": 10,
+     "chapters": [
+      {
+       "start": 494,
+       "end": 495,
+       "title": "Sattakkhattuparama sotāpanna"
+      },
+      {
+       "start": 496,
+       "end": 497,
+       "title": "Sotāpanna adhippāyya"
+      },
+      {
+       "start": 498,
+       "end": 499,
+       "title": "Kolaṃ kola sotāpanna"
+      },
+      {
+       "start": 500,
+       "end": 501,
+       "title": "Ekabījī sotāpanna"
+      },
+      {
+       "start": 502,
+       "end": 503,
+       "title": "Sakadāgāminiddesa"
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 45,
+     "layer": "mula",
+     "title": "Sattakkhattuparama sotāpanna … Sakadāgāminiddesa",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 502,
+   "chars": 47628,
+   "sents": 609,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 45,
+   "layer": "mula",
+   "start": 2,
+   "end": 503,
+   "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 2,
+   "end": 2,
+   "chars": 10,
+   "sents": 1,
+   "title": "(saṅgayana-puccha vissajjanā) Aṭṭhakathā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 3,
+   "end": 82,
+   "chars": 4295,
+   "sents": 80,
+   "title": "Saṃgāyanassa pucchā-vissajjanā（3-82）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 83,
+   "end": 140,
+   "chars": 3028,
+   "sents": 59,
+   "title": "Saṃgāyanassa pucchā-vissajjanā（83-140）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 141,
+   "end": 164,
+   "chars": 3901,
+   "sents": 37,
+   "title": "Dutiyasannipāta … Āyuparicchedavāra",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 165,
+   "end": 223,
+   "chars": 4963,
+   "sents": 68,
+   "title": "Upaṭṭhākaparicchedavāra（165-223）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 224,
+   "end": 230,
+   "chars": 820,
+   "sents": 7,
+   "title": "Upaṭṭhākaparicchedavāra（224-230）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 231,
+   "end": 263,
+   "chars": 4964,
+   "sents": 39,
+   "title": "Mahāsāvaka cetī（231-263）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 264,
+   "end": 298,
+   "chars": 4840,
+   "sents": 45,
+   "title": "Mahāsāvaka cetī（264-298）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 299,
+   "end": 314,
+   "chars": 3127,
+   "sents": 30,
+   "title": "Mahāsāvaka cetī（299-314）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 315,
+   "end": 329,
+   "chars": 2329,
+   "sents": 24,
+   "title": "Cūḷagosiṅgasutta … Yakkhasaṃyutta",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 330,
+   "end": 389,
+   "chars": 4285,
+   "sents": 80,
+   "title": "Āḷavakasutta（330-389）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 390,
+   "end": 398,
+   "chars": 323,
+   "sents": 9,
+   "title": "Āḷavakasutta（390-398）",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 399,
+   "end": 448,
+   "chars": 4536,
+   "sents": 59,
+   "title": "Mahāvaggasaṃyutta aṭṭhakathā … 8. Sammappadhānavibhaṅga",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 449,
+   "end": 493,
+   "chars": 4803,
+   "sents": 55,
+   "title": "1. Suttantabhājanīyavaṇṇanā … Kuppākuppaniddesa",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 45,
+   "start": 494,
+   "end": 503,
+   "chars": 1404,
+   "sents": 16,
+   "title": "Sattakkhattuparama sotāpanna … Sakadāgāminiddesa",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 24
+}

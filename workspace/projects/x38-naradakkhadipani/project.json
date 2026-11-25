@@ -1,0 +1,2773 @@
+{
+ "schema": 3,
+ "name": "x38-naradakkhadipani",
+ "title": "Naradakkhadīpanī 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:57",
+ "updated": "2026-11-24 11:44:50",
+ "book": 35,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "paused",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "35": {
+   "layer": "mula",
+   "title": "Naradakkhadīpanī"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 35,
+   "title": "Naradakkhadīpanī",
+   "start": 2,
+   "end": 1847,
+   "fam": "x38-naradakkhadipani",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 78,
+     "chars": 1670,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 26,
+       "title": "Naradakkhadīpanī"
+      },
+      {
+       "start": 27,
+       "end": 28,
+       "title": "Naradakkhadīpanī"
+      },
+      {
+       "start": 29,
+       "end": 29,
+       "title": "Paṇāma"
+      },
+      {
+       "start": 30,
+       "end": 34,
+       "title": "Naradakkhadīpakassa,"
+      },
+      {
+       "start": 35,
+       "end": 35,
+       "title": "Matthanā"
+      },
+      {
+       "start": 36,
+       "end": 40,
+       "title": "2."
+      },
+      {
+       "start": 41,
+       "end": 41,
+       "title": "Āsīsa"
+      },
+      {
+       "start": 42,
+       "end": 46,
+       "title": "3."
+      },
+      {
+       "start": 47,
+       "end": 47,
+       "title": "Abhiyācaka"
+      },
+      {
+       "start": 48,
+       "end": 52,
+       "title": "4."
+      },
+      {
+       "start": 53,
+       "end": 57,
+       "title": "5."
+      },
+      {
+       "start": 58,
+       "end": 62,
+       "title": "6."
+      },
+      {
+       "start": 63,
+       "end": 70,
+       "title": "7."
+      },
+      {
+       "start": 71,
+       "end": 75,
+       "title": "8."
+      },
+      {
+       "start": 76,
+       "end": 78,
+       "title": "9."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 35,
+     "layer": "mula",
+     "title": "Naradakkhadīpanī … 9.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 79,
+     "end": 158,
+     "chars": 1511,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 79,
+       "end": 83,
+       "title": "10."
+      },
+      {
+       "start": 84,
+       "end": 88,
+       "title": "11."
+      },
+      {
+       "start": 89,
+       "end": 93,
+       "title": "12."
+      },
+      {
+       "start": 94,
+       "end": 98,
+       "title": "13."
+      },
+      {
+       "start": 99,
+       "end": 103,
+       "title": "14."
+      },
+      {
+       "start": 104,
+       "end": 108,
+       "title": "15."
+      },
+      {
+       "start": 109,
+       "end": 113,
+       "title": "16."
+      },
+      {
+       "start": 114,
+       "end": 118,
+       "title": "17."
+      },
+      {
+       "start": 119,
+       "end": 123,
+       "title": "18."
+      },
+      {
+       "start": 124,
+       "end": 128,
+       "title": "19."
+      },
+      {
+       "start": 129,
+       "end": 133,
+       "title": "20."
+      },
+      {
+       "start": 134,
+       "end": 138,
+       "title": "21."
+      },
+      {
+       "start": 139,
+       "end": 143,
+       "title": "22."
+      },
+      {
+       "start": 144,
+       "end": 148,
+       "title": "23."
+      },
+      {
+       "start": 149,
+       "end": 153,
+       "title": "24."
+      },
+      {
+       "start": 154,
+       "end": 158,
+       "title": "25."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 35,
+     "layer": "mula",
+     "title": "10. … 25.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 159,
+     "end": 238,
+     "chars": 1480,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 159,
+       "end": 163,
+       "title": "26."
+      },
+      {
+       "start": 164,
+       "end": 168,
+       "title": "27."
+      },
+      {
+       "start": 169,
+       "end": 173,
+       "title": "28."
+      },
+      {
+       "start": 174,
+       "end": 178,
+       "title": "29."
+      },
+      {
+       "start": 179,
+       "end": 183,
+       "title": "30."
+      },
+      {
+       "start": 184,
+       "end": 188,
+       "title": "31."
+      },
+      {
+       "start": 189,
+       "end": 193,
+       "title": "32."
+      },
+      {
+       "start": 194,
+       "end": 198,
+       "title": "33."
+      },
+      {
+       "start": 199,
+       "end": 203,
+       "title": "34."
+      },
+      {
+       "start": 204,
+       "end": 208,
+       "title": "35."
+      },
+      {
+       "start": 209,
+       "end": 213,
+       "title": "36."
+      },
+      {
+       "start": 214,
+       "end": 218,
+       "title": "37."
+      },
+      {
+       "start": 219,
+       "end": 223,
+       "title": "38."
+      },
+      {
+       "start": 224,
+       "end": 228,
+       "title": "39."
+      },
+      {
+       "start": 229,
+       "end": 233,
+       "title": "40."
+      },
+      {
+       "start": 234,
+       "end": 238,
+       "title": "41."
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 35,
+     "layer": "mula",
+     "title": "26. … 41.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 239,
+     "end": 314,
+     "chars": 1436,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 239,
+       "end": 243,
+       "title": "42."
+      },
+      {
+       "start": 244,
+       "end": 248,
+       "title": "43."
+      },
+      {
+       "start": 249,
+       "end": 253,
+       "title": "44."
+      },
+      {
+       "start": 254,
+       "end": 258,
+       "title": "45."
+      },
+      {
+       "start": 259,
+       "end": 263,
+       "title": "46."
+      },
+      {
+       "start": 264,
+       "end": 268,
+       "title": "47."
+      },
+      {
+       "start": 269,
+       "end": 273,
+       "title": "48."
+      },
+      {
+       "start": 274,
+       "end": 278,
+       "title": "49."
+      },
+      {
+       "start": 279,
+       "end": 283,
+       "title": "50."
+      },
+      {
+       "start": 284,
+       "end": 288,
+       "title": "51."
+      },
+      {
+       "start": 289,
+       "end": 293,
+       "title": "52."
+      },
+      {
+       "start": 294,
+       "end": 298,
+       "title": "53."
+      },
+      {
+       "start": 299,
+       "end": 303,
+       "title": "54."
+      },
+      {
+       "start": 304,
+       "end": 304,
+       "title": "Paññā-niddesa"
+      },
+      {
+       "start": 305,
+       "end": 309,
+       "title": "55."
+      },
+      {
+       "start": 310,
+       "end": 314,
+       "title": "56."
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 35,
+     "layer": "mula",
+     "title": "42. … 56.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 315,
+     "end": 390,
+     "chars": 1651,
+     "sents": 79,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 315,
+       "end": 319,
+       "title": "57."
+      },
+      {
+       "start": 320,
+       "end": 324,
+       "title": "58."
+      },
+      {
+       "start": 325,
+       "end": 329,
+       "title": "59."
+      },
+      {
+       "start": 330,
+       "end": 334,
+       "title": "60."
+      },
+      {
+       "start": 335,
+       "end": 339,
+       "title": "61."
+      },
+      {
+       "start": 340,
+       "end": 344,
+       "title": "62."
+      },
+      {
+       "start": 345,
+       "end": 350,
+       "title": "63."
+      },
+      {
+       "start": 351,
+       "end": 355,
+       "title": "65."
+      },
+      {
+       "start": 356,
+       "end": 360,
+       "title": "66."
+      },
+      {
+       "start": 361,
+       "end": 365,
+       "title": "67."
+      },
+      {
+       "start": 366,
+       "end": 370,
+       "title": "68."
+      },
+      {
+       "start": 371,
+       "end": 375,
+       "title": "69."
+      },
+      {
+       "start": 376,
+       "end": 380,
+       "title": "70."
+      },
+      {
+       "start": 381,
+       "end": 385,
+       "title": "71."
+      },
+      {
+       "start": 386,
+       "end": 390,
+       "title": "72."
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 35,
+     "layer": "mula",
+     "title": "57. … 72.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 391,
+     "end": 469,
+     "chars": 1455,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 391,
+       "end": 395,
+       "title": "73."
+      },
+      {
+       "start": 396,
+       "end": 400,
+       "title": "74."
+      },
+      {
+       "start": 401,
+       "end": 405,
+       "title": "75."
+      },
+      {
+       "start": 406,
+       "end": 412,
+       "title": "76."
+      },
+      {
+       "start": 413,
+       "end": 417,
+       "title": "77."
+      },
+      {
+       "start": 418,
+       "end": 422,
+       "title": "78."
+      },
+      {
+       "start": 423,
+       "end": 427,
+       "title": "79."
+      },
+      {
+       "start": 428,
+       "end": 432,
+       "title": "80."
+      },
+      {
+       "start": 433,
+       "end": 437,
+       "title": "81."
+      },
+      {
+       "start": 438,
+       "end": 442,
+       "title": "82."
+      },
+      {
+       "start": 443,
+       "end": 449,
+       "title": "83."
+      },
+      {
+       "start": 450,
+       "end": 454,
+       "title": "84."
+      },
+      {
+       "start": 455,
+       "end": 459,
+       "title": "85."
+      },
+      {
+       "start": 460,
+       "end": 464,
+       "title": "86."
+      },
+      {
+       "start": 465,
+       "end": 469,
+       "title": "87."
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 35,
+     "layer": "mula",
+     "title": "73. … 87.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 470,
+     "end": 545,
+     "chars": 1425,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 470,
+       "end": 474,
+       "title": "88."
+      },
+      {
+       "start": 475,
+       "end": 479,
+       "title": "89."
+      },
+      {
+       "start": 480,
+       "end": 484,
+       "title": "90."
+      },
+      {
+       "start": 485,
+       "end": 489,
+       "title": "91."
+      },
+      {
+       "start": 490,
+       "end": 494,
+       "title": "92."
+      },
+      {
+       "start": 495,
+       "end": 499,
+       "title": "93."
+      },
+      {
+       "start": 500,
+       "end": 504,
+       "title": "94."
+      },
+      {
+       "start": 505,
+       "end": 509,
+       "title": "95."
+      },
+      {
+       "start": 510,
+       "end": 514,
+       "title": "96."
+      },
+      {
+       "start": 515,
+       "end": 519,
+       "title": "97."
+      },
+      {
+       "start": 520,
+       "end": 524,
+       "title": "98."
+      },
+      {
+       "start": 525,
+       "end": 529,
+       "title": "99."
+      },
+      {
+       "start": 530,
+       "end": 530,
+       "title": "Cāritta-niddesa"
+      },
+      {
+       "start": 531,
+       "end": 535,
+       "title": "100."
+      },
+      {
+       "start": 536,
+       "end": 540,
+       "title": "101."
+      },
+      {
+       "start": 541,
+       "end": 545,
+       "title": "102."
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 35,
+     "layer": "mula",
+     "title": "88. … 102.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 546,
+     "end": 622,
+     "chars": 1505,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 546,
+       "end": 550,
+       "title": "103."
+      },
+      {
+       "start": 551,
+       "end": 555,
+       "title": "104."
+      },
+      {
+       "start": 556,
+       "end": 560,
+       "title": "105."
+      },
+      {
+       "start": 561,
+       "end": 565,
+       "title": "106."
+      },
+      {
+       "start": 566,
+       "end": 570,
+       "title": "107."
+      },
+      {
+       "start": 571,
+       "end": 575,
+       "title": "108."
+      },
+      {
+       "start": 576,
+       "end": 580,
+       "title": "109."
+      },
+      {
+       "start": 581,
+       "end": 585,
+       "title": "110."
+      },
+      {
+       "start": 586,
+       "end": 590,
+       "title": "111."
+      },
+      {
+       "start": 591,
+       "end": 595,
+       "title": "112."
+      },
+      {
+       "start": 596,
+       "end": 600,
+       "title": "113."
+      },
+      {
+       "start": 601,
+       "end": 605,
+       "title": "114."
+      },
+      {
+       "start": 606,
+       "end": 612,
+       "title": "115."
+      },
+      {
+       "start": 613,
+       "end": 617,
+       "title": "116."
+      },
+      {
+       "start": 618,
+       "end": 622,
+       "title": "117."
+      }
+     ],
+     "split": false,
+     "id": "M8",
+     "book": 35,
+     "layer": "mula",
+     "title": "103. … 117.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 623,
+     "end": 700,
+     "chars": 1456,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 623,
+       "end": 627,
+       "title": "118."
+      },
+      {
+       "start": 628,
+       "end": 632,
+       "title": "119."
+      },
+      {
+       "start": 633,
+       "end": 637,
+       "title": "120."
+      },
+      {
+       "start": 638,
+       "end": 642,
+       "title": "121."
+      },
+      {
+       "start": 643,
+       "end": 645,
+       "title": "122."
+      },
+      {
+       "start": 646,
+       "end": 650,
+       "title": "123."
+      },
+      {
+       "start": 651,
+       "end": 655,
+       "title": "124."
+      },
+      {
+       "start": 656,
+       "end": 660,
+       "title": "125."
+      },
+      {
+       "start": 661,
+       "end": 665,
+       "title": "126."
+      },
+      {
+       "start": 666,
+       "end": 670,
+       "title": "127."
+      },
+      {
+       "start": 671,
+       "end": 675,
+       "title": "128."
+      },
+      {
+       "start": 676,
+       "end": 680,
+       "title": "129."
+      },
+      {
+       "start": 681,
+       "end": 685,
+       "title": "130."
+      },
+      {
+       "start": 686,
+       "end": 690,
+       "title": "131."
+      },
+      {
+       "start": 691,
+       "end": 695,
+       "title": "132."
+      },
+      {
+       "start": 696,
+       "end": 700,
+       "title": "133."
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 35,
+     "layer": "mula",
+     "title": "118. … 133.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 701,
+     "end": 777,
+     "chars": 1487,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 701,
+       "end": 705,
+       "title": "134."
+      },
+      {
+       "start": 706,
+       "end": 710,
+       "title": "135."
+      },
+      {
+       "start": 711,
+       "end": 715,
+       "title": "136."
+      },
+      {
+       "start": 716,
+       "end": 720,
+       "title": "137."
+      },
+      {
+       "start": 721,
+       "end": 725,
+       "title": "138."
+      },
+      {
+       "start": 726,
+       "end": 730,
+       "title": "139."
+      },
+      {
+       "start": 731,
+       "end": 735,
+       "title": "140."
+      },
+      {
+       "start": 736,
+       "end": 740,
+       "title": "141."
+      },
+      {
+       "start": 741,
+       "end": 745,
+       "title": "142."
+      },
+      {
+       "start": 746,
+       "end": 750,
+       "title": "143."
+      },
+      {
+       "start": 751,
+       "end": 755,
+       "title": "144."
+      },
+      {
+       "start": 756,
+       "end": 762,
+       "title": "145."
+      },
+      {
+       "start": 763,
+       "end": 767,
+       "title": "146."
+      },
+      {
+       "start": 768,
+       "end": 772,
+       "title": "147."
+      },
+      {
+       "start": 773,
+       "end": 777,
+       "title": "148."
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 35,
+     "layer": "mula",
+     "title": "134. … 148.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 778,
+     "end": 854,
+     "chars": 1486,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 778,
+       "end": 782,
+       "title": "149."
+      },
+      {
+       "start": 783,
+       "end": 787,
+       "title": "150."
+      },
+      {
+       "start": 788,
+       "end": 792,
+       "title": "151."
+      },
+      {
+       "start": 793,
+       "end": 797,
+       "title": "152."
+      },
+      {
+       "start": 798,
+       "end": 802,
+       "title": "153."
+      },
+      {
+       "start": 803,
+       "end": 809,
+       "title": "154."
+      },
+      {
+       "start": 810,
+       "end": 814,
+       "title": "155."
+      },
+      {
+       "start": 815,
+       "end": 819,
+       "title": "156."
+      },
+      {
+       "start": 820,
+       "end": 824,
+       "title": "157."
+      },
+      {
+       "start": 825,
+       "end": 829,
+       "title": "158."
+      },
+      {
+       "start": 830,
+       "end": 834,
+       "title": "159."
+      },
+      {
+       "start": 835,
+       "end": 839,
+       "title": "160."
+      },
+      {
+       "start": 840,
+       "end": 844,
+       "title": "161."
+      },
+      {
+       "start": 845,
+       "end": 849,
+       "title": "162."
+      },
+      {
+       "start": 850,
+       "end": 854,
+       "title": "163."
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 35,
+     "layer": "mula",
+     "title": "149. … 163.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 855,
+     "end": 932,
+     "chars": 1479,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 855,
+       "end": 859,
+       "title": "164."
+      },
+      {
+       "start": 860,
+       "end": 864,
+       "title": "165."
+      },
+      {
+       "start": 865,
+       "end": 869,
+       "title": "166."
+      },
+      {
+       "start": 870,
+       "end": 874,
+       "title": "167."
+      },
+      {
+       "start": 875,
+       "end": 879,
+       "title": "168."
+      },
+      {
+       "start": 880,
+       "end": 884,
+       "title": "169."
+      },
+      {
+       "start": 885,
+       "end": 889,
+       "title": "170."
+      },
+      {
+       "start": 890,
+       "end": 890,
+       "title": "Gharāvāsa-niddesa"
+      },
+      {
+       "start": 891,
+       "end": 895,
+       "title": "171."
+      },
+      {
+       "start": 896,
+       "end": 900,
+       "title": "172."
+      },
+      {
+       "start": 901,
+       "end": 905,
+       "title": "173."
+      },
+      {
+       "start": 906,
+       "end": 910,
+       "title": "174."
+      },
+      {
+       "start": 911,
+       "end": 915,
+       "title": "175."
+      },
+      {
+       "start": 916,
+       "end": 920,
+       "title": "176."
+      },
+      {
+       "start": 921,
+       "end": 925,
+       "title": "177."
+      },
+      {
+       "start": 926,
+       "end": 932,
+       "title": "178."
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 35,
+     "layer": "mula",
+     "title": "164. … 178.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 933,
+     "end": 1009,
+     "chars": 1432,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 933,
+       "end": 937,
+       "title": "179."
+      },
+      {
+       "start": 938,
+       "end": 942,
+       "title": "180."
+      },
+      {
+       "start": 943,
+       "end": 947,
+       "title": "181."
+      },
+      {
+       "start": 948,
+       "end": 954,
+       "title": "182."
+      },
+      {
+       "start": 955,
+       "end": 959,
+       "title": "183."
+      },
+      {
+       "start": 960,
+       "end": 964,
+       "title": "184."
+      },
+      {
+       "start": 965,
+       "end": 969,
+       "title": "185."
+      },
+      {
+       "start": 970,
+       "end": 974,
+       "title": "186."
+      },
+      {
+       "start": 975,
+       "end": 979,
+       "title": "187."
+      },
+      {
+       "start": 980,
+       "end": 984,
+       "title": "188."
+      },
+      {
+       "start": 985,
+       "end": 989,
+       "title": "189."
+      },
+      {
+       "start": 990,
+       "end": 994,
+       "title": "190."
+      },
+      {
+       "start": 995,
+       "end": 999,
+       "title": "191."
+      },
+      {
+       "start": 1000,
+       "end": 1004,
+       "title": "192."
+      },
+      {
+       "start": 1005,
+       "end": 1009,
+       "title": "193."
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 35,
+     "layer": "mula",
+     "title": "179. … 193.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1010,
+     "end": 1089,
+     "chars": 1459,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1010,
+       "end": 1014,
+       "title": "194."
+      },
+      {
+       "start": 1015,
+       "end": 1019,
+       "title": "195."
+      },
+      {
+       "start": 1020,
+       "end": 1024,
+       "title": "196."
+      },
+      {
+       "start": 1025,
+       "end": 1029,
+       "title": "197."
+      },
+      {
+       "start": 1030,
+       "end": 1034,
+       "title": "198."
+      },
+      {
+       "start": 1035,
+       "end": 1039,
+       "title": "199."
+      },
+      {
+       "start": 1040,
+       "end": 1044,
+       "title": "200."
+      },
+      {
+       "start": 1045,
+       "end": 1049,
+       "title": "201."
+      },
+      {
+       "start": 1050,
+       "end": 1054,
+       "title": "202."
+      },
+      {
+       "start": 1055,
+       "end": 1059,
+       "title": "203."
+      },
+      {
+       "start": 1060,
+       "end": 1064,
+       "title": "204."
+      },
+      {
+       "start": 1065,
+       "end": 1069,
+       "title": "205."
+      },
+      {
+       "start": 1070,
+       "end": 1074,
+       "title": "206."
+      },
+      {
+       "start": 1075,
+       "end": 1079,
+       "title": "207."
+      },
+      {
+       "start": 1080,
+       "end": 1084,
+       "title": "208."
+      },
+      {
+       "start": 1085,
+       "end": 1089,
+       "title": "209."
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 35,
+     "layer": "mula",
+     "title": "194. … 209.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1090,
+     "end": 1165,
+     "chars": 1499,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 1090,
+       "end": 1094,
+       "title": "210."
+      },
+      {
+       "start": 1095,
+       "end": 1099,
+       "title": "211."
+      },
+      {
+       "start": 1100,
+       "end": 1100,
+       "title": "Sādhujana-niddesa"
+      },
+      {
+       "start": 1101,
+       "end": 1105,
+       "title": "212."
+      },
+      {
+       "start": 1106,
+       "end": 1110,
+       "title": "213."
+      },
+      {
+       "start": 1111,
+       "end": 1115,
+       "title": "214."
+      },
+      {
+       "start": 1116,
+       "end": 1120,
+       "title": "215."
+      },
+      {
+       "start": 1121,
+       "end": 1125,
+       "title": "216."
+      },
+      {
+       "start": 1126,
+       "end": 1130,
+       "title": "217."
+      },
+      {
+       "start": 1131,
+       "end": 1135,
+       "title": "218."
+      },
+      {
+       "start": 1136,
+       "end": 1140,
+       "title": "219."
+      },
+      {
+       "start": 1141,
+       "end": 1145,
+       "title": "220."
+      },
+      {
+       "start": 1146,
+       "end": 1150,
+       "title": "221."
+      },
+      {
+       "start": 1151,
+       "end": 1155,
+       "title": "222."
+      },
+      {
+       "start": 1156,
+       "end": 1160,
+       "title": "223."
+      },
+      {
+       "start": 1161,
+       "end": 1165,
+       "title": "224."
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 35,
+     "layer": "mula",
+     "title": "210. … 224.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1166,
+     "end": 1226,
+     "chars": 1892,
+     "sents": 76,
+     "paras": 61,
+     "chapters": [
+      {
+       "start": 1166,
+       "end": 1170,
+       "title": "225."
+      },
+      {
+       "start": 1171,
+       "end": 1175,
+       "title": "226."
+      },
+      {
+       "start": 1176,
+       "end": 1180,
+       "title": "227."
+      },
+      {
+       "start": 1181,
+       "end": 1185,
+       "title": "228."
+      },
+      {
+       "start": 1186,
+       "end": 1190,
+       "title": "229."
+      },
+      {
+       "start": 1191,
+       "end": 1195,
+       "title": "230."
+      },
+      {
+       "start": 1196,
+       "end": 1196,
+       "title": "Tatīya sādhunara"
+      },
+      {
+       "start": 1197,
+       "end": 1201,
+       "title": "231."
+      },
+      {
+       "start": 1202,
+       "end": 1202,
+       "title": "Catuttha sādhunara"
+      },
+      {
+       "start": 1203,
+       "end": 1207,
+       "title": "232."
+      },
+      {
+       "start": 1208,
+       "end": 1212,
+       "title": "233."
+      },
+      {
+       "start": 1213,
+       "end": 1213,
+       "title": "Kāyakhamanīya-niddesa"
+      },
+      {
+       "start": 1214,
+       "end": 1220,
+       "title": "234."
+      },
+      {
+       "start": 1221,
+       "end": 1226,
+       "title": "237."
+      }
+     ],
+     "split": false,
+     "id": "M16",
+     "book": 35,
+     "layer": "mula",
+     "title": "225. … 237.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1227,
+     "end": 1304,
+     "chars": 1468,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 1227,
+       "end": 1231,
+       "title": "239."
+      },
+      {
+       "start": 1232,
+       "end": 1238,
+       "title": "240."
+      },
+      {
+       "start": 1239,
+       "end": 1243,
+       "title": "241."
+      },
+      {
+       "start": 1244,
+       "end": 1248,
+       "title": "242."
+      },
+      {
+       "start": 1249,
+       "end": 1253,
+       "title": "243."
+      },
+      {
+       "start": 1254,
+       "end": 1258,
+       "title": "244."
+      },
+      {
+       "start": 1259,
+       "end": 1263,
+       "title": "245."
+      },
+      {
+       "start": 1264,
+       "end": 1268,
+       "title": "246."
+      },
+      {
+       "start": 1269,
+       "end": 1273,
+       "title": "247."
+      },
+      {
+       "start": 1274,
+       "end": 1278,
+       "title": "248."
+      },
+      {
+       "start": 1279,
+       "end": 1283,
+       "title": "249."
+      },
+      {
+       "start": 1284,
+       "end": 1288,
+       "title": "250."
+      },
+      {
+       "start": 1289,
+       "end": 1293,
+       "title": "250."
+      },
+      {
+       "start": 1294,
+       "end": 1298,
+       "title": "252."
+      },
+      {
+       "start": 1299,
+       "end": 1299,
+       "title": "Pakiṇṇaka-niddesa"
+      },
+      {
+       "start": 1300,
+       "end": 1304,
+       "title": "253."
+      }
+     ],
+     "split": false,
+     "id": "M17",
+     "book": 35,
+     "layer": "mula",
+     "title": "239. … 253.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1305,
+     "end": 1383,
+     "chars": 1546,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 1305,
+       "end": 1309,
+       "title": "254."
+      },
+      {
+       "start": 1310,
+       "end": 1314,
+       "title": "255."
+      },
+      {
+       "start": 1315,
+       "end": 1319,
+       "title": "256."
+      },
+      {
+       "start": 1320,
+       "end": 1324,
+       "title": "257."
+      },
+      {
+       "start": 1325,
+       "end": 1329,
+       "title": "258."
+      },
+      {
+       "start": 1330,
+       "end": 1334,
+       "title": "259."
+      },
+      {
+       "start": 1335,
+       "end": 1339,
+       "title": "260."
+      },
+      {
+       "start": 1340,
+       "end": 1346,
+       "title": "261."
+      },
+      {
+       "start": 1347,
+       "end": 1353,
+       "title": "262."
+      },
+      {
+       "start": 1354,
+       "end": 1358,
+       "title": "263."
+      },
+      {
+       "start": 1359,
+       "end": 1363,
+       "title": "264."
+      },
+      {
+       "start": 1364,
+       "end": 1368,
+       "title": "265."
+      },
+      {
+       "start": 1369,
+       "end": 1373,
+       "title": "266."
+      },
+      {
+       "start": 1374,
+       "end": 1378,
+       "title": "267."
+      },
+      {
+       "start": 1379,
+       "end": 1383,
+       "title": "268."
+      }
+     ],
+     "split": false,
+     "id": "M18",
+     "book": 35,
+     "layer": "mula",
+     "title": "254. … 268.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1384,
+     "end": 1457,
+     "chars": 1429,
+     "sents": 74,
+     "paras": 74,
+     "chapters": [
+      {
+       "start": 1384,
+       "end": 1388,
+       "title": "269."
+      },
+      {
+       "start": 1389,
+       "end": 1393,
+       "title": "270."
+      },
+      {
+       "start": 1394,
+       "end": 1398,
+       "title": "271."
+      },
+      {
+       "start": 1399,
+       "end": 1403,
+       "title": "272."
+      },
+      {
+       "start": 1404,
+       "end": 1410,
+       "title": "273."
+      },
+      {
+       "start": 1411,
+       "end": 1415,
+       "title": "274."
+      },
+      {
+       "start": 1416,
+       "end": 1420,
+       "title": "275."
+      },
+      {
+       "start": 1421,
+       "end": 1425,
+       "title": "276."
+      },
+      {
+       "start": 1426,
+       "end": 1430,
+       "title": "277."
+      },
+      {
+       "start": 1431,
+       "end": 1435,
+       "title": "278."
+      },
+      {
+       "start": 1436,
+       "end": 1440,
+       "title": "279."
+      },
+      {
+       "start": 1441,
+       "end": 1445,
+       "title": "280."
+      },
+      {
+       "start": 1446,
+       "end": 1450,
+       "title": "281."
+      },
+      {
+       "start": 1451,
+       "end": 1457,
+       "title": "282."
+      }
+     ],
+     "split": false,
+     "id": "M19",
+     "book": 35,
+     "layer": "mula",
+     "title": "269. … 282.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1458,
+     "end": 1537,
+     "chars": 1516,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1458,
+       "end": 1464,
+       "title": "283."
+      },
+      {
+       "start": 1465,
+       "end": 1469,
+       "title": "284."
+      },
+      {
+       "start": 1470,
+       "end": 1474,
+       "title": "285."
+      },
+      {
+       "start": 1475,
+       "end": 1479,
+       "title": "286."
+      },
+      {
+       "start": 1480,
+       "end": 1484,
+       "title": "287."
+      },
+      {
+       "start": 1485,
+       "end": 1489,
+       "title": "288."
+      },
+      {
+       "start": 1490,
+       "end": 1494,
+       "title": "289."
+      },
+      {
+       "start": 1495,
+       "end": 1501,
+       "title": "290."
+      },
+      {
+       "start": 1502,
+       "end": 1502,
+       "title": "Sīla-niddesa"
+      },
+      {
+       "start": 1503,
+       "end": 1507,
+       "title": "291."
+      },
+      {
+       "start": 1508,
+       "end": 1512,
+       "title": "292."
+      },
+      {
+       "start": 1513,
+       "end": 1517,
+       "title": "Ka."
+      },
+      {
+       "start": 1518,
+       "end": 1522,
+       "title": "Kha."
+      },
+      {
+       "start": 1523,
+       "end": 1527,
+       "title": "Ga."
+      },
+      {
+       "start": 1528,
+       "end": 1532,
+       "title": "Gha."
+      },
+      {
+       "start": 1533,
+       "end": 1537,
+       "title": "Ṅa."
+      }
+     ],
+     "split": false,
+     "id": "M20",
+     "book": 35,
+     "layer": "mula",
+     "title": "283. … Ṅa.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1538,
+     "end": 1617,
+     "chars": 1460,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 1538,
+       "end": 1542,
+       "title": "Ca."
+      },
+      {
+       "start": 1543,
+       "end": 1547,
+       "title": "Cha."
+      },
+      {
+       "start": 1548,
+       "end": 1552,
+       "title": "Ja."
+      },
+      {
+       "start": 1553,
+       "end": 1557,
+       "title": "Jha."
+      },
+      {
+       "start": 1558,
+       "end": 1562,
+       "title": "Ña."
+      },
+      {
+       "start": 1563,
+       "end": 1567,
+       "title": "Ṭa."
+      },
+      {
+       "start": 1568,
+       "end": 1572,
+       "title": "Ṭha."
+      },
+      {
+       "start": 1573,
+       "end": 1577,
+       "title": "Ḍa."
+      },
+      {
+       "start": 1578,
+       "end": 1582,
+       "title": "Ḍha."
+      },
+      {
+       "start": 1583,
+       "end": 1587,
+       "title": "Ṇa."
+      },
+      {
+       "start": 1588,
+       "end": 1592,
+       "title": "Ta."
+      },
+      {
+       "start": 1593,
+       "end": 1597,
+       "title": "Tha."
+      },
+      {
+       "start": 1598,
+       "end": 1602,
+       "title": "Da."
+      },
+      {
+       "start": 1603,
+       "end": 1607,
+       "title": "Dha."
+      },
+      {
+       "start": 1608,
+       "end": 1612,
+       "title": "Na."
+      },
+      {
+       "start": 1613,
+       "end": 1617,
+       "title": "293."
+      }
+     ],
+     "split": false,
+     "id": "M21",
+     "book": 35,
+     "layer": "mula",
+     "title": "Ca. … 293.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1618,
+     "end": 1696,
+     "chars": 1435,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 1618,
+       "end": 1621,
+       "title": "294."
+      },
+      {
+       "start": 1622,
+       "end": 1626,
+       "title": "Ka."
+      },
+      {
+       "start": 1627,
+       "end": 1631,
+       "title": "Kha."
+      },
+      {
+       "start": 1632,
+       "end": 1636,
+       "title": "Ga."
+      },
+      {
+       "start": 1637,
+       "end": 1641,
+       "title": "Gha."
+      },
+      {
+       "start": 1642,
+       "end": 1646,
+       "title": "Ṅa."
+      },
+      {
+       "start": 1647,
+       "end": 1651,
+       "title": "Ca."
+      },
+      {
+       "start": 1652,
+       "end": 1656,
+       "title": "Cha."
+      },
+      {
+       "start": 1657,
+       "end": 1661,
+       "title": "Ja."
+      },
+      {
+       "start": 1662,
+       "end": 1666,
+       "title": "Jha."
+      },
+      {
+       "start": 1667,
+       "end": 1671,
+       "title": "Ña."
+      },
+      {
+       "start": 1672,
+       "end": 1676,
+       "title": "Ṭa."
+      },
+      {
+       "start": 1677,
+       "end": 1681,
+       "title": "Ṭha."
+      },
+      {
+       "start": 1682,
+       "end": 1686,
+       "title": "Ḍa."
+      },
+      {
+       "start": 1687,
+       "end": 1691,
+       "title": "Ḍha."
+      },
+      {
+       "start": 1692,
+       "end": 1696,
+       "title": "Ṇa."
+      }
+     ],
+     "split": false,
+     "id": "M22",
+     "book": 35,
+     "layer": "mula",
+     "title": "294. … Ṇa.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1697,
+     "end": 1773,
+     "chars": 1428,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 1697,
+       "end": 1701,
+       "title": "Ta."
+      },
+      {
+       "start": 1702,
+       "end": 1706,
+       "title": "Tha."
+      },
+      {
+       "start": 1707,
+       "end": 1711,
+       "title": "Da."
+      },
+      {
+       "start": 1712,
+       "end": 1716,
+       "title": "Dha."
+      },
+      {
+       "start": 1717,
+       "end": 1721,
+       "title": "Na."
+      },
+      {
+       "start": 1722,
+       "end": 1726,
+       "title": "Pa."
+      },
+      {
+       "start": 1727,
+       "end": 1733,
+       "title": "Ka."
+      },
+      {
+       "start": 1734,
+       "end": 1738,
+       "title": "Kha."
+      },
+      {
+       "start": 1739,
+       "end": 1743,
+       "title": "Ga."
+      },
+      {
+       "start": 1744,
+       "end": 1748,
+       "title": "Gha."
+      },
+      {
+       "start": 1749,
+       "end": 1753,
+       "title": "Ṅa."
+      },
+      {
+       "start": 1754,
+       "end": 1758,
+       "title": "1."
+      },
+      {
+       "start": 1759,
+       "end": 1766,
+       "title": "2."
+      },
+      {
+       "start": 1767,
+       "end": 1773,
+       "title": "3."
+      }
+     ],
+     "split": false,
+     "id": "M23",
+     "book": 35,
+     "layer": "mula",
+     "title": "Ta. … 3.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1774,
+     "end": 1847,
+     "chars": 1346,
+     "sents": 74,
+     "paras": 74,
+     "chapters": [
+      {
+       "start": 1774,
+       "end": 1778,
+       "title": "4."
+      },
+      {
+       "start": 1779,
+       "end": 1783,
+       "title": "5."
+      },
+      {
+       "start": 1784,
+       "end": 1788,
+       "title": "6."
+      },
+      {
+       "start": 1789,
+       "end": 1793,
+       "title": "7."
+      },
+      {
+       "start": 1794,
+       "end": 1798,
+       "title": "8."
+      },
+      {
+       "start": 1799,
+       "end": 1803,
+       "title": "9."
+      },
+      {
+       "start": 1804,
+       "end": 1808,
+       "title": "10."
+      },
+      {
+       "start": 1809,
+       "end": 1813,
+       "title": "11."
+      },
+      {
+       "start": 1814,
+       "end": 1818,
+       "title": "12."
+      },
+      {
+       "start": 1819,
+       "end": 1819,
+       "title": "Naradakkha thomanā āsīsa"
+      },
+      {
+       "start": 1820,
+       "end": 1820,
+       "title": "3. Gāthā"
+      },
+      {
+       "start": 1821,
+       "end": 1825,
+       "title": "1."
+      },
+      {
+       "start": 1826,
+       "end": 1830,
+       "title": "2."
+      },
+      {
+       "start": 1831,
+       "end": 1835,
+       "title": "3."
+      },
+      {
+       "start": 1836,
+       "end": 1836,
+       "title": "Naradakkha thomanā āsīsa"
+      },
+      {
+       "start": 1837,
+       "end": 1837,
+       "title": "2. Gāthā"
+      },
+      {
+       "start": 1838,
+       "end": 1842,
+       "title": "1."
+      },
+      {
+       "start": 1843,
+       "end": 1847,
+       "title": "2."
+      }
+     ],
+     "split": false,
+     "id": "M24",
+     "book": 35,
+     "layer": "mula",
+     "title": "4. … 2.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1846,
+   "chars": 35951,
+   "sents": 1864,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 35,
+   "layer": "mula",
+   "start": 2,
+   "end": 1847,
+   "title": "Naradakkhadīpanī"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 2,
+   "end": 78,
+   "chars": 1670,
+   "sents": 77,
+   "title": "Naradakkhadīpanī … 9.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:03:38",
+   "ended": "2026-11-24 11:04:14",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 79,
+   "end": 158,
+   "chars": 1511,
+   "sents": 80,
+   "title": "10. … 25.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:04:14",
+   "ended": "2026-11-24 11:04:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 159,
+   "end": 238,
+   "chars": 1480,
+   "sents": 80,
+   "title": "26. … 41.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:04:54",
+   "ended": "2026-11-24 11:05:49",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 239,
+   "end": 314,
+   "chars": 1436,
+   "sents": 76,
+   "title": "42. … 56.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:05:49",
+   "ended": "2026-11-24 11:06:35",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 315,
+   "end": 390,
+   "chars": 1651,
+   "sents": 79,
+   "title": "57. … 72.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:06:35",
+   "ended": "2026-11-24 11:07:25",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 391,
+   "end": 469,
+   "chars": 1455,
+   "sents": 79,
+   "title": "73. … 87.",
+   "needs": [],
+   "status": "done",
+   "tries": 2,
+   "began": "2026-11-24 11:13:02",
+   "ended": "2026-11-24 11:13:37",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 470,
+   "end": 545,
+   "chars": 1425,
+   "sents": 76,
+   "title": "88. … 102.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:13:37",
+   "ended": "2026-11-24 11:14:18",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 546,
+   "end": 622,
+   "chars": 1505,
+   "sents": 77,
+   "title": "103. … 117.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:18",
+   "ended": "2026-11-24 11:14:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 623,
+   "end": 700,
+   "chars": 1456,
+   "sents": 78,
+   "title": "118. … 133.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:14:58",
+   "ended": "2026-11-24 11:15:33",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 701,
+   "end": 777,
+   "chars": 1487,
+   "sents": 77,
+   "title": "134. … 148.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:15:33",
+   "ended": "2026-11-24 11:16:24",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 778,
+   "end": 854,
+   "chars": 1486,
+   "sents": 77,
+   "title": "149. … 163.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:16:24",
+   "ended": "2026-11-24 11:17:09",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 855,
+   "end": 932,
+   "chars": 1479,
+   "sents": 78,
+   "title": "164. … 178.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:17:09",
+   "ended": "2026-11-24 11:17:54",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 933,
+   "end": 1009,
+   "chars": 1432,
+   "sents": 77,
+   "title": "179. … 193.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:17:54",
+   "ended": "2026-11-24 11:18:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1010,
+   "end": 1089,
+   "chars": 1459,
+   "sents": 80,
+   "title": "194. … 209.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:18:40",
+   "ended": "2026-11-24 11:22:12",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1090,
+   "end": 1165,
+   "chars": 1499,
+   "sents": 76,
+   "title": "210. … 224.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:22:12",
+   "ended": "2026-11-24 11:24:58",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M16:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1166,
+   "end": 1226,
+   "chars": 1892,
+   "sents": 76,
+   "title": "225. … 237.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:24:58",
+   "ended": "2026-11-24 11:29:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M17:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1227,
+   "end": 1304,
+   "chars": 1468,
+   "sents": 78,
+   "title": "239. … 253.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:29:36",
+   "ended": "2026-11-24 11:30:36",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M18:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1305,
+   "end": 1383,
+   "chars": 1546,
+   "sents": 79,
+   "title": "254. … 268.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:30:36",
+   "ended": "2026-11-24 11:32:52",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M19:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1384,
+   "end": 1457,
+   "chars": 1429,
+   "sents": 74,
+   "title": "269. … 282.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:32:52",
+   "ended": "2026-11-24 11:34:53",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M20:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1458,
+   "end": 1537,
+   "chars": 1516,
+   "sents": 80,
+   "title": "283. … Ṅa.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:34:53",
+   "ended": "2026-11-24 11:35:59",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M21:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1538,
+   "end": 1617,
+   "chars": 1460,
+   "sents": 80,
+   "title": "Ca. … 293.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:35:59",
+   "ended": "2026-11-24 11:41:42",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M22:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1618,
+   "end": 1696,
+   "chars": 1435,
+   "sents": 79,
+   "title": "294. … Ṇa.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 11:41:42",
+   "ended": "2026-11-24 11:42:32",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M23:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1697,
+   "end": 1773,
+   "chars": 1428,
+   "sents": 77,
+   "title": "Ta. … 3.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "环境异常（网络/5xx），已退回队列",
+   "detail": ""
+  },
+  {
+   "id": "M24:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 35,
+   "start": 1774,
+   "end": 1847,
+   "chars": 1346,
+   "sents": 74,
+   "title": "4. … 2.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 38
+}

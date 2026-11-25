@@ -1,0 +1,11 @@
+{"ts":"2026-11-24T03:00:07Z","task":"M1:translate","status":"ok","detail":"1 句","book":"61","para":"2-2","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:00:35Z","task":"M3:translate","status":"ok","detail":"7 句","book":"61","para":"24-24","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:01:28Z","task":"M9:translate","status":"ok","detail":"1 句","book":"61","para":"65-65","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:01:35Z","task":"M2:translate","status":"ok","detail":"66 句","book":"61","para":"3-23","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:01:50Z","task":"M4:translate","status":"ok","detail":"51 句","book":"61","para":"25-31","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:01:57Z","task":"M5:translate","status":"ok","detail":"40 句","book":"61","para":"32-36","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:02:01Z","task":"M6:translate","status":"ok","detail":"42 句","book":"61","para":"37-50","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:02:20Z","task":"M7:translate","status":"ok","detail":"43 句","book":"61","para":"51-57","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:02:35Z","task":"M11:translate","status":"ok","detail":"33 句","book":"61","para":"121-152","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:02:42Z","task":"M8:translate","status":"ok","detail":"45 句","book":"61","para":"58-64","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T03:03:18Z","task":"M10:translate","status":"ok","detail":"80 句","book":"61","para":"66-120","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}

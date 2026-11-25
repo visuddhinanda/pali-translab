@@ -1,0 +1,958 @@
+{
+ "schema": 3,
+ "name": "x23-spv-abhidhammapitaka",
+ "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:55",
+ "updated": "2026-11-24 11:02:48",
+ "book": 44,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "44": {
+   "layer": "mula",
+   "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 44,
+   "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka",
+   "start": 2,
+   "end": 296,
+   "fam": "x23-spv-abhidhammapitaka",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 37,
+     "chars": 4639,
+     "sents": 50,
+     "paras": 36,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka"
+      },
+      {
+       "start": 3,
+       "end": 31,
+       "title": "Saṃgāyanassa pucchā vissajjanā"
+      },
+      {
+       "start": 32,
+       "end": 34,
+       "title": "Kāmāvacarakusala"
+      },
+      {
+       "start": 35,
+       "end": 37,
+       "title": "Rūpāvacarakusala"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 44,
+     "layer": "mula",
+     "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka … Rūpāvacarakusala",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 38,
+     "end": 58,
+     "chars": 4317,
+     "sents": 32,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 38,
+       "end": 40,
+       "title": "Lokuttarākusala"
+      },
+      {
+       "start": 41,
+       "end": 43,
+       "title": "Akusala"
+      },
+      {
+       "start": 44,
+       "end": 46,
+       "title": "Abyākata"
+      },
+      {
+       "start": 47,
+       "end": 49,
+       "title": "Vibhaṅga"
+      },
+      {
+       "start": 50,
+       "end": 52,
+       "title": "Khandhavibhaṅga"
+      },
+      {
+       "start": 53,
+       "end": 55,
+       "title": "Āyatanavibhaṅga"
+      },
+      {
+       "start": 56,
+       "end": 58,
+       "title": "Dhātuvibhaṅga"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 44,
+     "layer": "mula",
+     "title": "Lokuttarākusala … Dhātuvibhaṅga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 59,
+     "end": 85,
+     "chars": 4754,
+     "sents": 30,
+     "paras": 27,
+     "chapters": [
+      {
+       "start": 59,
+       "end": 61,
+       "title": "Saccavibhaṅga"
+      },
+      {
+       "start": 62,
+       "end": 64,
+       "title": "Indriyavibhaṅga"
+      },
+      {
+       "start": 65,
+       "end": 67,
+       "title": "Paṭiccasamuppāda vibhaṅga"
+      },
+      {
+       "start": 68,
+       "end": 70,
+       "title": "Satipaṭṭhānavibhaṅga"
+      },
+      {
+       "start": 71,
+       "end": 73,
+       "title": "Sammappadhānavibhaṅga"
+      },
+      {
+       "start": 74,
+       "end": 76,
+       "title": "Iddhipādavibhaṅga"
+      },
+      {
+       "start": 77,
+       "end": 79,
+       "title": "Bojjhaṅgavibhaṅga"
+      },
+      {
+       "start": 80,
+       "end": 82,
+       "title": "Maggaṅgavibhaṅga"
+      },
+      {
+       "start": 83,
+       "end": 85,
+       "title": "Jhānavibhaṅga"
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 44,
+     "layer": "mula",
+     "title": "Saccavibhaṅga … Jhānavibhaṅga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 86,
+     "end": 110,
+     "chars": 4740,
+     "sents": 34,
+     "paras": 25,
+     "chapters": [
+      {
+       "start": 86,
+       "end": 88,
+       "title": "Appamaññāvibhaṅga"
+      },
+      {
+       "start": 89,
+       "end": 91,
+       "title": "Sikkhāpadavibhaṅga"
+      },
+      {
+       "start": 92,
+       "end": 94,
+       "title": "Paṭisambhidāvibhaṅga"
+      },
+      {
+       "start": 95,
+       "end": 97,
+       "title": "Ñāṇavibhaṅga"
+      },
+      {
+       "start": 98,
+       "end": 100,
+       "title": "Khuddakavatthuvibhaṅga"
+      },
+      {
+       "start": 101,
+       "end": 107,
+       "title": "Dhammahadayavibhaṅga"
+      },
+      {
+       "start": 108,
+       "end": 110,
+       "title": "Dhātukathā"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 44,
+     "layer": "mula",
+     "title": "Appamaññāvibhaṅga … Dhātukathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 111,
+     "end": 126,
+     "chars": 3953,
+     "sents": 24,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 111,
+       "end": 113,
+       "title": "Puggalapaññatti"
+      },
+      {
+       "start": 114,
+       "end": 120,
+       "title": "Kathāvatthu"
+      },
+      {
+       "start": 121,
+       "end": 123,
+       "title": "Puggalakathā"
+      },
+      {
+       "start": 124,
+       "end": 126,
+       "title": "Aññāṇakathā"
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 44,
+     "layer": "mula",
+     "title": "Puggalapaññatti … Aññāṇakathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 127,
+     "end": 167,
+     "chars": 4421,
+     "sents": 47,
+     "paras": 41,
+     "chapters": [
+      {
+       "start": 127,
+       "end": 138,
+       "title": "Asaññakathā"
+      },
+      {
+       "start": 139,
+       "end": 139,
+       "title": "Chaṭṭhavagga"
+      },
+      {
+       "start": 140,
+       "end": 145,
+       "title": "Pathavīdhātusanidassanātiādikathā"
+      },
+      {
+       "start": 146,
+       "end": 156,
+       "title": "Antarābhavakathā"
+      },
+      {
+       "start": 157,
+       "end": 167,
+       "title": "Saḷāyatanuppattikathā"
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 44,
+     "layer": "mula",
+     "title": "Asaññakathā … Saḷāyatanuppattikathā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 168,
+     "end": 190,
+     "chars": 4479,
+     "sents": 41,
+     "paras": 23,
+     "chapters": [
+      {
+       "start": 168,
+       "end": 172,
+       "title": "Mūlayamaka"
+      },
+      {
+       "start": 173,
+       "end": 175,
+       "title": "Khandhayamaka"
+      },
+      {
+       "start": 176,
+       "end": 178,
+       "title": "Āyatanayamaka"
+      },
+      {
+       "start": 179,
+       "end": 181,
+       "title": "Dhātuyamaka"
+      },
+      {
+       "start": 182,
+       "end": 184,
+       "title": "Saccayamaka"
+      },
+      {
+       "start": 185,
+       "end": 187,
+       "title": "Saṅkhārayamaka"
+      },
+      {
+       "start": 188,
+       "end": 190,
+       "title": "Anusayayamaka"
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 44,
+     "layer": "mula",
+     "title": "Mūlayamaka … Anusayayamaka",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 191,
+     "end": 208,
+     "chars": 4138,
+     "sents": 27,
+     "paras": 18,
+     "chapters": [
+      {
+       "start": 191,
+       "end": 193,
+       "title": "Cittayamaka"
+      },
+      {
+       "start": 194,
+       "end": 196,
+       "title": "Dhammayamaka"
+      },
+      {
+       "start": 197,
+       "end": 199,
+       "title": "Indriyayamaka"
+      },
+      {
+       "start": 200,
+       "end": 202,
+       "title": "Atītavāra"
+      },
+      {
+       "start": 203,
+       "end": 208,
+       "title": "Uppādaanāgatavāra"
+      }
+     ],
+     "split": false,
+     "id": "M8",
+     "book": 44,
+     "layer": "mula",
+     "title": "Cittayamaka … Uppādaanāgatavāra",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 209,
+     "end": 224,
+     "chars": 3515,
+     "sents": 25,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 209,
+       "end": 221,
+       "title": "Paṭṭhāna"
+      },
+      {
+       "start": 222,
+       "end": 224,
+       "title": "Dhammānuloma tikapaṭṭhāna"
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 44,
+     "layer": "mula",
+     "title": "Paṭṭhāna … Dhammānuloma tikapaṭṭhāna",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 225,
+     "end": 235,
+     "chars": 4507,
+     "sents": 32,
+     "paras": 11,
+     "chapters": [
+      {
+       "start": 225,
+       "end": 228,
+       "title": "Kusalatika paṭiccavāra"
+      },
+      {
+       "start": 229,
+       "end": 231,
+       "title": "Kusalatika sahajātavāra"
+      },
+      {
+       "start": 232,
+       "end": 235,
+       "title": "Kusalatika paccayavāra"
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 44,
+     "layer": "mula",
+     "title": "Kusalatika paṭiccavāra … Kusalatika paccayavāra",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 236,
+     "end": 244,
+     "chars": 3668,
+     "sents": 21,
+     "paras": 9,
+     "chapters": [
+      {
+       "start": 236,
+       "end": 239,
+       "title": "Pañhāvāra"
+      },
+      {
+       "start": 240,
+       "end": 240,
+       "title": "Vissajjanāvāra"
+      },
+      {
+       "start": 241,
+       "end": 244,
+       "title": "Hetupaccayavibhaṅga"
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 44,
+     "layer": "mula",
+     "title": "Pañhāvāra … Hetupaccayavibhaṅga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 245,
+     "end": 260,
+     "chars": 4951,
+     "sents": 26,
+     "paras": 16,
+     "chapters": [
+      {
+       "start": 245,
+       "end": 247,
+       "title": "Ārammaṇapaccayavibhaṅga"
+      },
+      {
+       "start": 248,
+       "end": 250,
+       "title": "Adhipatipaccayavibhaṅga"
+      },
+      {
+       "start": 251,
+       "end": 253,
+       "title": "Anantarapaccayavibhaṅga"
+      },
+      {
+       "start": 254,
+       "end": 256,
+       "title": "Sahajātapaccayavibhaṅga"
+      },
+      {
+       "start": 257,
+       "end": 260,
+       "title": "Upanissayapaccayavibhaṅga"
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 44,
+     "layer": "mula",
+     "title": "Ārammaṇapaccayavibhaṅga … Upanissayapaccayavibhaṅga",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 261,
+     "end": 279,
+     "chars": 4832,
+     "sents": 38,
+     "paras": 19,
+     "chapters": [
+      {
+       "start": 261,
+       "end": 263,
+       "title": "Purejātapaccayavibhaṅga"
+      },
+      {
+       "start": 264,
+       "end": 266,
+       "title": "Kammapaccayavibhaṅga"
+      },
+      {
+       "start": 267,
+       "end": 269,
+       "title": "Āhārapaccayavibhaṅga"
+      },
+      {
+       "start": 270,
+       "end": 272,
+       "title": "Indriyapaccayavibhaṅga"
+      },
+      {
+       "start": 273,
+       "end": 276,
+       "title": "Saṅkhyāvāra"
+      },
+      {
+       "start": 277,
+       "end": 279,
+       "title": "Vedanātika paṭiccavāra"
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 44,
+     "layer": "mula",
+     "title": "Purejātapaccayavibhaṅga … Vedanātika paṭiccavāra",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 280,
+     "end": 293,
+     "chars": 4999,
+     "sents": 42,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 280,
+       "end": 284,
+       "title": "Dukapaṭṭhāna"
+      },
+      {
+       "start": 285,
+       "end": 287,
+       "title": "Dukatikapaṭṭhāna dukadukapaṭṭhāna"
+      },
+      {
+       "start": 288,
+       "end": 290,
+       "title": "Dhammapaccanīyapaṭṭhāna"
+      },
+      {
+       "start": 291,
+       "end": 293,
+       "title": "Dhammānulomapaccanīyapaṭṭhāna"
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 44,
+     "layer": "mula",
+     "title": "Dukapaṭṭhāna … Dhammānulomapaccanīyapaṭṭhāna",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 294,
+     "end": 296,
+     "chars": 1313,
+     "sents": 7,
+     "paras": 3,
+     "chapters": [
+      {
+       "start": 294,
+       "end": 296,
+       "title": "Dhammapaccanīyānulomapaṭṭhāna"
+      }
+     ],
+     "split": false,
+     "id": "M15",
+     "book": 44,
+     "layer": "mula",
+     "title": "Dhammapaccanīyānulomapaṭṭhāna",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 295,
+   "chars": 63226,
+   "sents": 476,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 44,
+   "layer": "mula",
+   "start": 2,
+   "end": 296,
+   "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 2,
+   "end": 37,
+   "chars": 4639,
+   "sents": 50,
+   "title": "(saṅgayana-puccha vissajjanā) Abhidhammapiṭaka … Rūpāvacarakusala",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 38,
+   "end": 58,
+   "chars": 4317,
+   "sents": 32,
+   "title": "Lokuttarākusala … Dhātuvibhaṅga",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 59,
+   "end": 85,
+   "chars": 4754,
+   "sents": 30,
+   "title": "Saccavibhaṅga … Jhānavibhaṅga",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 86,
+   "end": 110,
+   "chars": 4740,
+   "sents": 34,
+   "title": "Appamaññāvibhaṅga … Dhātukathā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 111,
+   "end": 126,
+   "chars": 3953,
+   "sents": 24,
+   "title": "Puggalapaññatti … Aññāṇakathā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 127,
+   "end": 167,
+   "chars": 4421,
+   "sents": 47,
+   "title": "Asaññakathā … Saḷāyatanuppattikathā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 168,
+   "end": 190,
+   "chars": 4479,
+   "sents": 41,
+   "title": "Mūlayamaka … Anusayayamaka",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 191,
+   "end": 208,
+   "chars": 4138,
+   "sents": 27,
+   "title": "Cittayamaka … Uppādaanāgatavāra",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 209,
+   "end": 224,
+   "chars": 3515,
+   "sents": 25,
+   "title": "Paṭṭhāna … Dhammānuloma tikapaṭṭhāna",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 225,
+   "end": 235,
+   "chars": 4507,
+   "sents": 32,
+   "title": "Kusalatika paṭiccavāra … Kusalatika paccayavāra",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 236,
+   "end": 244,
+   "chars": 3668,
+   "sents": 21,
+   "title": "Pañhāvāra … Hetupaccayavibhaṅga",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 245,
+   "end": 260,
+   "chars": 4951,
+   "sents": 26,
+   "title": "Ārammaṇapaccayavibhaṅga … Upanissayapaccayavibhaṅga",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 261,
+   "end": 279,
+   "chars": 4832,
+   "sents": 38,
+   "title": "Purejātapaccayavibhaṅga … Vedanātika paṭiccavāra",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 280,
+   "end": 293,
+   "chars": 4999,
+   "sents": 42,
+   "title": "Dukapaṭṭhāna … Dhammānulomapaccanīyapaṭṭhāna",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M15:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 44,
+   "start": 294,
+   "end": 296,
+   "chars": 1313,
+   "sents": 7,
+   "title": "Dhammapaccanīyānulomapaṭṭhāna",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 23
+}

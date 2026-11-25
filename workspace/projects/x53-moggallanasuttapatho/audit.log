@@ -1,0 +1,23 @@
+{"ts":"2026-11-24T11:51:21Z","task":"M1:translate","status":"ok","detail":"63 句（仅缓存，未上传）","book":"13","para":"2-64","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T11:52:41Z","task":"M2:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"65-144","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T11:59:33Z","task":"M3:translate","status":"ok","detail":"79/80 句，缺 1 句待人工补（仅缓存，未上传）","book":"13","para":"145-224","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:07:08Z","task":"M4:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"225-304","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:11:28Z","task":"M5:translate","status":"ok","detail":"11 句（仅缓存，未上传）","book":"13","para":"305-315","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:27:25Z","task":"M6:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"316-395","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:32:38Z","task":"M7:translate","status":"ok","detail":"42 句（仅缓存，未上传）","book":"13","para":"396-437","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:34:12Z","task":"M8:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"438-517","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:49:57Z","task":"M9:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"518-597","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:50:36Z","task":"M10:translate","status":"ok","detail":"6 句（仅缓存，未上传）","book":"13","para":"598-603","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:51:49Z","task":"M11:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"604-683","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T13:53:46Z","task":"M12:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"684-763","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T14:06:27Z","task":"M13:translate","status":"fail","detail":"3 次未成","book":"13","para":"764-786","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T14:15:08Z","task":"M13:translate","status":"fail","detail":"3 次未成","book":"13","para":"764-786","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T14:24:18Z","task":"M14:translate","status":"fail","detail":"3 次未成","book":"13","para":"787-866","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T14:33:21Z","task":"M14:translate","status":"fail","detail":"3 次未成","book":"13","para":"787-866","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T14:42:16Z","task":"M15:translate","status":"fail","detail":"3 次未成","book":"13","para":"867-946","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T14:51:17Z","task":"M15:translate","status":"fail","detail":"3 次未成","book":"13","para":"867-946","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T15:02:07Z","task":"M16:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"947-1026","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T15:07:22Z","task":"M17:translate","status":"ok","detail":"78 句（仅缓存，未上传）","book":"13","para":"1027-1104","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T15:08:08Z","task":"M13:translate","status":"ok","detail":"23 句（仅缓存，未上传）","book":"13","para":"764-786","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T15:10:32Z","task":"M14:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"787-866","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}
+{"ts":"2026-11-24T15:12:36Z","task":"M15:translate","status":"ok","detail":"80 句（仅缓存，未上传）","book":"13","para":"867-946","channel":"73c03e1a-f333-11f0-808a-438f0af4b9e9","method":"default"}

@@ -1,0 +1,528 @@
+{
+ "schema": 3,
+ "name": "x01-culaganthavamsapali",
+ "title": "Cūḷaganthavaṃsapāḷi 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:25",
+ "updated": "2026-11-24 03:03:21",
+ "book": 61,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "61": {
+   "layer": "mula",
+   "title": "Cūḷaganthavaṃsapāḷi"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 61,
+   "title": "Cūḷaganthavaṃsapāḷi",
+   "start": 2,
+   "end": 152,
+   "fam": "x01-culaganthavamsapali",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 2,
+     "chars": 19,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Cūḷaganthavaṃsapāḷi"
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 61,
+     "layer": "mula",
+     "title": "Cūḷaganthavaṃsapāḷi",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 3,
+     "end": 23,
+     "chars": 4972,
+     "sents": 66,
+     "paras": 21,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 24,
+       "title": "1. Piṭakattayaparicchedo"
+      }
+     ],
+     "split": true,
+     "id": "M2",
+     "book": 61,
+     "layer": "mula",
+     "title": "1. Piṭakattayaparicchedo（3-23）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 24,
+     "end": 24,
+     "chars": 512,
+     "sents": 7,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 3,
+       "end": 24,
+       "title": "1. Piṭakattayaparicchedo"
+      }
+     ],
+     "split": true,
+     "id": "M3",
+     "book": 61,
+     "layer": "mula",
+     "title": "1. Piṭakattayaparicchedo（24-24）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 25,
+     "end": 31,
+     "chars": 4934,
+     "sents": 51,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 25,
+       "end": 36,
+       "title": "2. Ganthakārakācariya-paricchedo"
+      }
+     ],
+     "split": true,
+     "id": "M4",
+     "book": 61,
+     "layer": "mula",
+     "title": "2. Ganthakārakācariya-paricchedo（25-31）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 32,
+     "end": 36,
+     "chars": 4891,
+     "sents": 40,
+     "paras": 5,
+     "chapters": [
+      {
+       "start": 25,
+       "end": 36,
+       "title": "2. Ganthakārakācariya-paricchedo"
+      }
+     ],
+     "split": true,
+     "id": "M5",
+     "book": 61,
+     "layer": "mula",
+     "title": "2. Ganthakārakācariya-paricchedo（32-36）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 37,
+     "end": 50,
+     "chars": 4653,
+     "sents": 42,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 37,
+       "end": 41,
+       "title": "3. Ācariyānaṃ sañjātaṭṭhānaparicchedo"
+      },
+      {
+       "start": 42,
+       "end": 43,
+       "title": "4. Āyāyakācariya-paricchedo"
+      },
+      {
+       "start": 44,
+       "end": 46,
+       "title": "Ka. buddhaghosācariya-ganthadīpanā"
+      },
+      {
+       "start": 47,
+       "end": 50,
+       "title": "Kha. buddhadattācariya-ganthadīpanā"
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 61,
+     "layer": "mula",
+     "title": "3. Ācariyānaṃ sañjātaṭṭhānaparicchedo … Kha. buddhadattācariya-ganthadīpanā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 51,
+     "end": 57,
+     "chars": 4689,
+     "sents": 43,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 51,
+       "end": 65,
+       "title": "Ga. dhammapālācariyena-ganthadīpanā"
+      }
+     ],
+     "split": true,
+     "id": "M7",
+     "book": 61,
+     "layer": "mula",
+     "title": "Ga. dhammapālācariyena-ganthadīpanā（51-57）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 58,
+     "end": 64,
+     "chars": 4990,
+     "sents": 45,
+     "paras": 7,
+     "chapters": [
+      {
+       "start": 51,
+       "end": 65,
+       "title": "Ga. dhammapālācariyena-ganthadīpanā"
+      }
+     ],
+     "split": true,
+     "id": "M8",
+     "book": 61,
+     "layer": "mula",
+     "title": "Ga. dhammapālācariyena-ganthadīpanā（58-64）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 65,
+     "end": 65,
+     "chars": 69,
+     "sents": 1,
+     "paras": 1,
+     "chapters": [
+      {
+       "start": 51,
+       "end": 65,
+       "title": "Ga. dhammapālācariyena-ganthadīpanā"
+      }
+     ],
+     "split": true,
+     "id": "M9",
+     "book": 61,
+     "layer": "mula",
+     "title": "Ga. dhammapālācariyena-ganthadīpanā（65-65）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 66,
+     "end": 120,
+     "chars": 4718,
+     "sents": 80,
+     "paras": 55,
+     "chapters": [
+      {
+       "start": 66,
+       "end": 152,
+       "title": "5. Pakiṇṇaka-paricchedo"
+      }
+     ],
+     "split": true,
+     "id": "M10",
+     "book": 61,
+     "layer": "mula",
+     "title": "5. Pakiṇṇaka-paricchedo（66-120）",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 121,
+     "end": 152,
+     "chars": 1621,
+     "sents": 33,
+     "paras": 32,
+     "chapters": [
+      {
+       "start": 66,
+       "end": 152,
+       "title": "5. Pakiṇṇaka-paricchedo"
+      }
+     ],
+     "split": true,
+     "id": "M11",
+     "book": 61,
+     "layer": "mula",
+     "title": "5. Pakiṇṇaka-paricchedo（121-152）",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 151,
+   "chars": 36068,
+   "sents": 409,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 61,
+   "layer": "mula",
+   "start": 2,
+   "end": 152,
+   "title": "Cūḷaganthavaṃsapāḷi"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 2,
+   "end": 2,
+   "chars": 19,
+   "sents": 1,
+   "title": "Cūḷaganthavaṃsapāḷi",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 02:59:55",
+   "ended": "2026-11-24 03:01:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 3,
+   "end": 23,
+   "chars": 4972,
+   "sents": 66,
+   "title": "1. Piṭakattayaparicchedo（3-23）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:00:05",
+   "ended": "2026-11-24 03:01:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 24,
+   "end": 24,
+   "chars": 512,
+   "sents": 7,
+   "title": "1. Piṭakattayaparicchedo（24-24）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:00:15",
+   "ended": "2026-11-24 03:01:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 25,
+   "end": 31,
+   "chars": 4934,
+   "sents": 51,
+   "title": "2. Ganthakārakācariya-paricchedo（25-31）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:00:25",
+   "ended": "2026-11-24 03:01:56",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 32,
+   "end": 36,
+   "chars": 4891,
+   "sents": 40,
+   "title": "2. Ganthakārakācariya-paricchedo（32-36）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:00:35",
+   "ended": "2026-11-24 03:02:01",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 37,
+   "end": 50,
+   "chars": 4653,
+   "sents": 42,
+   "title": "3. Ācariyānaṃ sañjātaṭṭhānaparicchedo … Kha. buddhadattācariya-ganthadīpanā",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:00:45",
+   "ended": "2026-11-24 03:02:06",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 51,
+   "end": 57,
+   "chars": 4689,
+   "sents": 43,
+   "title": "Ga. dhammapālācariyena-ganthadīpanā（51-57）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:00:55",
+   "ended": "2026-11-24 03:02:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 58,
+   "end": 64,
+   "chars": 4990,
+   "sents": 45,
+   "title": "Ga. dhammapālācariyena-ganthadīpanā（58-64）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:01:05",
+   "ended": "2026-11-24 03:02:46",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 65,
+   "end": 65,
+   "chars": 69,
+   "sents": 1,
+   "title": "Ga. dhammapālācariyena-ganthadīpanā（65-65）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:01:15",
+   "ended": "2026-11-24 03:01:40",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 66,
+   "end": 120,
+   "chars": 4718,
+   "sents": 80,
+   "title": "5. Pakiṇṇaka-paricchedo（66-120）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:01:25",
+   "ended": "2026-11-24 03:03:21",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 61,
+   "start": 121,
+   "end": 152,
+   "chars": 1621,
+   "sents": 33,
+   "title": "5. Pakiṇṇaka-paricchedo（121-152）",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 03:01:40",
+   "ended": "2026-11-24 03:02:36",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 1
+}

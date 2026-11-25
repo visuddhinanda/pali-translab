@@ -1,0 +1,268 @@
+{
+ "schema": 3,
+ "name": "x12-dhatupatha-vilasiniya",
+ "title": "Dhātupāṭha  vilāsiniyā 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:47",
+ "updated": "2026-11-24 05:34:43",
+ "book": 55,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "done",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "55": {
+   "layer": "mula",
+   "title": "Dhātupāṭha  vilāsiniyā"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 55,
+   "title": "Dhātupāṭha  vilāsiniyā",
+   "start": 1,
+   "end": 118,
+   "fam": "x12-dhatupatha-vilasiniya",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 1,
+     "end": 78,
+     "chars": 2904,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 1,
+       "end": 2,
+       "title": "Dhātupāṭha  vilāsiniyā"
+      },
+      {
+       "start": 3,
+       "end": 5,
+       "title": "1."
+      },
+      {
+       "start": 6,
+       "end": 8,
+       "title": "2."
+      },
+      {
+       "start": 9,
+       "end": 11,
+       "title": "3."
+      },
+      {
+       "start": 12,
+       "end": 14,
+       "title": "4."
+      },
+      {
+       "start": 15,
+       "end": 17,
+       "title": "5."
+      },
+      {
+       "start": 18,
+       "end": 20,
+       "title": "6."
+      },
+      {
+       "start": 21,
+       "end": 23,
+       "title": "7."
+      },
+      {
+       "start": 24,
+       "end": 69,
+       "title": "8."
+      },
+      {
+       "start": 70,
+       "end": 72,
+       "title": "1. "
+      },
+      {
+       "start": 73,
+       "end": 75,
+       "title": "2."
+      },
+      {
+       "start": 76,
+       "end": 78,
+       "title": "3."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 55,
+     "layer": "mula",
+     "title": "Dhātupāṭha  vilāsiniyā … 3.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 79,
+     "end": 118,
+     "chars": 1174,
+     "sents": 40,
+     "paras": 40,
+     "chapters": [
+      {
+       "start": 79,
+       "end": 81,
+       "title": "4."
+      },
+      {
+       "start": 82,
+       "end": 84,
+       "title": "5."
+      },
+      {
+       "start": 85,
+       "end": 87,
+       "title": "6."
+      },
+      {
+       "start": 88,
+       "end": 90,
+       "title": "7."
+      },
+      {
+       "start": 91,
+       "end": 93,
+       "title": "8. "
+      },
+      {
+       "start": 94,
+       "end": 96,
+       "title": "9."
+      },
+      {
+       "start": 97,
+       "end": 99,
+       "title": "10."
+      },
+      {
+       "start": 100,
+       "end": 102,
+       "title": "11."
+      },
+      {
+       "start": 103,
+       "end": 105,
+       "title": "12."
+      },
+      {
+       "start": 106,
+       "end": 108,
+       "title": "13."
+      },
+      {
+       "start": 109,
+       "end": 111,
+       "title": "14."
+      },
+      {
+       "start": 112,
+       "end": 114,
+       "title": "15."
+      },
+      {
+       "start": 115,
+       "end": 118,
+       "title": "16."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 55,
+     "layer": "mula",
+     "title": "4. … 16.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 118,
+   "chars": 4078,
+   "sents": 118,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 55,
+   "layer": "mula",
+   "start": 1,
+   "end": 118,
+   "title": "Dhātupāṭha  vilāsiniyā"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 55,
+   "start": 1,
+   "end": 78,
+   "chars": 2904,
+   "sents": 78,
+   "title": "Dhātupāṭha  vilāsiniyā … 3.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:32:52",
+   "ended": "2026-11-24 05:34:43",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 55,
+   "start": 79,
+   "end": 118,
+   "chars": 1174,
+   "sents": 40,
+   "title": "4. … 16.",
+   "needs": [],
+   "status": "done",
+   "tries": 1,
+   "began": "2026-11-24 05:33:02",
+   "ended": "2026-11-24 05:33:52",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 12
+}

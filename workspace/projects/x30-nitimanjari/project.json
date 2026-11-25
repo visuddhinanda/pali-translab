@@ -1,0 +1,323 @@
+{
+ "schema": 3,
+ "name": "x30-nitimanjari",
+ "title": "Nītimañjarī 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:57",
+ "updated": "2026-11-24 11:02:48",
+ "book": 28,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "28": {
+   "layer": "mula",
+   "title": "Nītimañjarī"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 28,
+   "title": "Nītimañjarī",
+   "start": 2,
+   "end": 243,
+   "fam": "x30-nitimanjari",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 78,
+     "chars": 1551,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Nītimañjarī"
+      },
+      {
+       "start": 3,
+       "end": 7,
+       "title": "1."
+      },
+      {
+       "start": 8,
+       "end": 12,
+       "title": "2."
+      },
+      {
+       "start": 13,
+       "end": 17,
+       "title": "3."
+      },
+      {
+       "start": 18,
+       "end": 40,
+       "title": "4."
+      },
+      {
+       "start": 41,
+       "end": 61,
+       "title": "5."
+      },
+      {
+       "start": 62,
+       "end": 78,
+       "title": "6."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 28,
+     "layer": "mula",
+     "title": "Nītimañjarī … 6.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 79,
+     "end": 152,
+     "chars": 1509,
+     "sents": 74,
+     "paras": 74,
+     "chapters": [
+      {
+       "start": 79,
+       "end": 83,
+       "title": "7."
+      },
+      {
+       "start": 84,
+       "end": 88,
+       "title": "8."
+      },
+      {
+       "start": 89,
+       "end": 99,
+       "title": "9."
+      },
+      {
+       "start": 100,
+       "end": 114,
+       "title": "10."
+      },
+      {
+       "start": 115,
+       "end": 129,
+       "title": "11."
+      },
+      {
+       "start": 130,
+       "end": 134,
+       "title": "12."
+      },
+      {
+       "start": 135,
+       "end": 147,
+       "title": "13."
+      },
+      {
+       "start": 148,
+       "end": 152,
+       "title": "14."
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 28,
+     "layer": "mula",
+     "title": "7. … 14.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 153,
+     "end": 229,
+     "chars": 1574,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 153,
+       "end": 169,
+       "title": "15."
+      },
+      {
+       "start": 170,
+       "end": 186,
+       "title": "16."
+      },
+      {
+       "start": 187,
+       "end": 199,
+       "title": "17."
+      },
+      {
+       "start": 200,
+       "end": 224,
+       "title": "18."
+      },
+      {
+       "start": 225,
+       "end": 229,
+       "title": "19."
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 28,
+     "layer": "mula",
+     "title": "15. … 19.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 230,
+     "end": 243,
+     "chars": 251,
+     "sents": 14,
+     "paras": 14,
+     "chapters": [
+      {
+       "start": 230,
+       "end": 236,
+       "title": "20."
+      },
+      {
+       "start": 237,
+       "end": 243,
+       "title": "21."
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 28,
+     "layer": "mula",
+     "title": "20. … 21.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 242,
+   "chars": 4885,
+   "sents": 242,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 28,
+   "layer": "mula",
+   "start": 2,
+   "end": 243,
+   "title": "Nītimañjarī"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 28,
+   "start": 2,
+   "end": 78,
+   "chars": 1551,
+   "sents": 77,
+   "title": "Nītimañjarī … 6.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 28,
+   "start": 79,
+   "end": 152,
+   "chars": 1509,
+   "sents": 74,
+   "title": "7. … 14.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 28,
+   "start": 153,
+   "end": 229,
+   "chars": 1574,
+   "sents": 77,
+   "title": "15. … 19.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 28,
+   "start": 230,
+   "end": 243,
+   "chars": 251,
+   "sents": 14,
+   "title": "20. … 21.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 30
+}

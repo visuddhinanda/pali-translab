@@ -1,0 +1,1958 @@
+{
+ "schema": 3,
+ "name": "x44-jinalankara",
+ "title": "Jinālaṅkāra 汉译（藏外·仅本文）",
+ "created": "2026-11-24 02:47:58",
+ "updated": "2026-11-24 11:02:48",
+ "book": 5,
+ "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+ "method": "default",
+ "state": "idle",
+ "command": null,
+ "steps": [
+  "translate"
+ ],
+ "chunking": {
+  "chunk_chars": 5000,
+  "max_sents": 80,
+  "max_paras": 0,
+  "sent_counts": true,
+  "harm_chars": 30000,
+  "harm_sents": 200,
+  "harm_ctx": 60000,
+  "ref_chars": 0,
+  "scan": true
+ },
+ "align": null,
+ "books": {
+  "5": {
+   "layer": "mula",
+   "title": "Jinālaṅkāra"
+  }
+ },
+ "layers": [
+  {
+   "layer": "mula",
+   "book": 5,
+   "title": "Jinālaṅkāra",
+   "start": 2,
+   "end": 1025,
+   "fam": "x44-jinalankara",
+   "pfx": "M",
+   "id": "M",
+   "chunks": [
+    {
+     "start": 2,
+     "end": 80,
+     "chars": 2295,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 2,
+       "end": 2,
+       "title": "Jinālaṅkāra"
+      },
+      {
+       "start": 3,
+       "end": 3,
+       "title": "Paṇāmadīpanīgāthā"
+      },
+      {
+       "start": 4,
+       "end": 7,
+       "title": "1."
+      },
+      {
+       "start": 8,
+       "end": 11,
+       "title": "2."
+      },
+      {
+       "start": 12,
+       "end": 12,
+       "title": "Yogāvacarasampattidīpanīgāthā"
+      },
+      {
+       "start": 13,
+       "end": 15,
+       "title": "3."
+      },
+      {
+       "start": 16,
+       "end": 16,
+       "title": "Vatthuvisodhanīgāthā"
+      },
+      {
+       "start": 17,
+       "end": 21,
+       "title": "4."
+      },
+      {
+       "start": 22,
+       "end": 24,
+       "title": "5."
+      },
+      {
+       "start": 25,
+       "end": 29,
+       "title": "6."
+      },
+      {
+       "start": 30,
+       "end": 30,
+       "title": "Anaññasādhāraṇadīpanīgāthā"
+      },
+      {
+       "start": 31,
+       "end": 37,
+       "title": "7."
+      },
+      {
+       "start": 38,
+       "end": 44,
+       "title": "8."
+      },
+      {
+       "start": 45,
+       "end": 49,
+       "title": "9."
+      },
+      {
+       "start": 50,
+       "end": 54,
+       "title": "10."
+      },
+      {
+       "start": 55,
+       "end": 59,
+       "title": "11."
+      },
+      {
+       "start": 60,
+       "end": 64,
+       "title": "12."
+      },
+      {
+       "start": 65,
+       "end": 65,
+       "title": "Abhinīhāradīpanīgāthā"
+      },
+      {
+       "start": 66,
+       "end": 70,
+       "title": "13."
+      },
+      {
+       "start": 71,
+       "end": 75,
+       "title": "14."
+      },
+      {
+       "start": 76,
+       "end": 80,
+       "title": "15."
+      }
+     ],
+     "split": false,
+     "id": "M1",
+     "book": 5,
+     "layer": "mula",
+     "title": "Jinālaṅkāra … 15.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 81,
+     "end": 160,
+     "chars": 2196,
+     "sents": 80,
+     "paras": 80,
+     "chapters": [
+      {
+       "start": 81,
+       "end": 85,
+       "title": "16."
+      },
+      {
+       "start": 86,
+       "end": 90,
+       "title": "17."
+      },
+      {
+       "start": 91,
+       "end": 95,
+       "title": "18."
+      },
+      {
+       "start": 96,
+       "end": 100,
+       "title": "19."
+      },
+      {
+       "start": 101,
+       "end": 105,
+       "title": "20."
+      },
+      {
+       "start": 106,
+       "end": 110,
+       "title": "21."
+      },
+      {
+       "start": 111,
+       "end": 113,
+       "title": "22."
+      },
+      {
+       "start": 114,
+       "end": 114,
+       "title": "Bodhisambhāradīpanīgāthā"
+      },
+      {
+       "start": 115,
+       "end": 119,
+       "title": "23."
+      },
+      {
+       "start": 120,
+       "end": 124,
+       "title": "24."
+      },
+      {
+       "start": 125,
+       "end": 129,
+       "title": "25."
+      },
+      {
+       "start": 130,
+       "end": 134,
+       "title": "26."
+      },
+      {
+       "start": 135,
+       "end": 139,
+       "title": "27."
+      },
+      {
+       "start": 140,
+       "end": 144,
+       "title": "28."
+      },
+      {
+       "start": 145,
+       "end": 149,
+       "title": "29."
+      },
+      {
+       "start": 150,
+       "end": 154,
+       "title": "30."
+      },
+      {
+       "start": 155,
+       "end": 159,
+       "title": "31."
+      },
+      {
+       "start": 160,
+       "end": 160,
+       "title": "Gabbhokkantidīpanīgāthā"
+      }
+     ],
+     "split": false,
+     "id": "M2",
+     "book": 5,
+     "layer": "mula",
+     "title": "16. … Gabbhokkantidīpanīgāthā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 161,
+     "end": 238,
+     "chars": 2065,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 161,
+       "end": 163,
+       "title": "32."
+      },
+      {
+       "start": 164,
+       "end": 166,
+       "title": "33."
+      },
+      {
+       "start": 167,
+       "end": 169,
+       "title": "34."
+      },
+      {
+       "start": 170,
+       "end": 172,
+       "title": "35."
+      },
+      {
+       "start": 173,
+       "end": 173,
+       "title": "Vijāyanamaṅgaladīpanīgāthā"
+      },
+      {
+       "start": 174,
+       "end": 178,
+       "title": "36."
+      },
+      {
+       "start": 179,
+       "end": 183,
+       "title": "37."
+      },
+      {
+       "start": 184,
+       "end": 188,
+       "title": "38."
+      },
+      {
+       "start": 189,
+       "end": 193,
+       "title": "39."
+      },
+      {
+       "start": 194,
+       "end": 198,
+       "title": "40."
+      },
+      {
+       "start": 199,
+       "end": 203,
+       "title": "41."
+      },
+      {
+       "start": 204,
+       "end": 206,
+       "title": "42."
+      },
+      {
+       "start": 207,
+       "end": 209,
+       "title": "43."
+      },
+      {
+       "start": 210,
+       "end": 214,
+       "title": "44."
+      },
+      {
+       "start": 215,
+       "end": 219,
+       "title": "45."
+      },
+      {
+       "start": 220,
+       "end": 220,
+       "title": "Agāriyasampattidīpanīgāthā"
+      },
+      {
+       "start": 221,
+       "end": 223,
+       "title": "46."
+      },
+      {
+       "start": 224,
+       "end": 226,
+       "title": "47."
+      },
+      {
+       "start": 227,
+       "end": 231,
+       "title": "48."
+      },
+      {
+       "start": 232,
+       "end": 233,
+       "title": "Nekkhammajjhāsayadīpanīyamakagāthā"
+      },
+      {
+       "start": 234,
+       "end": 238,
+       "title": "49."
+      }
+     ],
+     "split": false,
+     "id": "M3",
+     "book": 5,
+     "layer": "mula",
+     "title": "32. … 49.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 239,
+     "end": 314,
+     "chars": 1865,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 239,
+       "end": 243,
+       "title": "50."
+      },
+      {
+       "start": 244,
+       "end": 248,
+       "title": "51."
+      },
+      {
+       "start": 249,
+       "end": 253,
+       "title": "52."
+      },
+      {
+       "start": 254,
+       "end": 258,
+       "title": "53."
+      },
+      {
+       "start": 259,
+       "end": 263,
+       "title": "54."
+      },
+      {
+       "start": 264,
+       "end": 268,
+       "title": "55."
+      },
+      {
+       "start": 269,
+       "end": 273,
+       "title": "56."
+      },
+      {
+       "start": 274,
+       "end": 278,
+       "title": "57."
+      },
+      {
+       "start": 279,
+       "end": 283,
+       "title": "58."
+      },
+      {
+       "start": 284,
+       "end": 288,
+       "title": "59."
+      },
+      {
+       "start": 289,
+       "end": 293,
+       "title": "60."
+      },
+      {
+       "start": 294,
+       "end": 298,
+       "title": "61."
+      },
+      {
+       "start": 299,
+       "end": 303,
+       "title": "62."
+      },
+      {
+       "start": 304,
+       "end": 308,
+       "title": "63."
+      },
+      {
+       "start": 309,
+       "end": 313,
+       "title": "64."
+      },
+      {
+       "start": 314,
+       "end": 314,
+       "title": "Pāduddhāravimhayadīpanīgāthā"
+      }
+     ],
+     "split": false,
+     "id": "M4",
+     "book": 5,
+     "layer": "mula",
+     "title": "50. … Pāduddhāravimhayadīpanīgāthā",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 315,
+     "end": 390,
+     "chars": 2045,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 315,
+       "end": 319,
+       "title": "65."
+      },
+      {
+       "start": 320,
+       "end": 324,
+       "title": "66."
+      },
+      {
+       "start": 325,
+       "end": 329,
+       "title": "67."
+      },
+      {
+       "start": 330,
+       "end": 334,
+       "title": "68."
+      },
+      {
+       "start": 335,
+       "end": 339,
+       "title": "69."
+      },
+      {
+       "start": 340,
+       "end": 344,
+       "title": "70."
+      },
+      {
+       "start": 345,
+       "end": 349,
+       "title": "71."
+      },
+      {
+       "start": 350,
+       "end": 354,
+       "title": "72."
+      },
+      {
+       "start": 355,
+       "end": 359,
+       "title": "73."
+      },
+      {
+       "start": 360,
+       "end": 364,
+       "title": "74."
+      },
+      {
+       "start": 365,
+       "end": 369,
+       "title": "75."
+      },
+      {
+       "start": 370,
+       "end": 374,
+       "title": "76."
+      },
+      {
+       "start": 375,
+       "end": 379,
+       "title": "77."
+      },
+      {
+       "start": 380,
+       "end": 380,
+       "title": "Apunarāvattigamanadīpanīyamakagāthā"
+      },
+      {
+       "start": 381,
+       "end": 385,
+       "title": "78."
+      },
+      {
+       "start": 386,
+       "end": 390,
+       "title": "79."
+      }
+     ],
+     "split": false,
+     "id": "M5",
+     "book": 5,
+     "layer": "mula",
+     "title": "65. … 79.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 391,
+     "end": 466,
+     "chars": 1895,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 391,
+       "end": 395,
+       "title": "80."
+      },
+      {
+       "start": 396,
+       "end": 400,
+       "title": "81."
+      },
+      {
+       "start": 401,
+       "end": 405,
+       "title": "82."
+      },
+      {
+       "start": 406,
+       "end": 410,
+       "title": "83."
+      },
+      {
+       "start": 411,
+       "end": 415,
+       "title": "84."
+      },
+      {
+       "start": 416,
+       "end": 420,
+       "title": "85."
+      },
+      {
+       "start": 421,
+       "end": 425,
+       "title": "86."
+      },
+      {
+       "start": 426,
+       "end": 426,
+       "title": "Dvipādabyāsayamakagāthā"
+      },
+      {
+       "start": 427,
+       "end": 431,
+       "title": "87."
+      },
+      {
+       "start": 432,
+       "end": 436,
+       "title": "88."
+      },
+      {
+       "start": 437,
+       "end": 441,
+       "title": "89."
+      },
+      {
+       "start": 442,
+       "end": 446,
+       "title": "90."
+      },
+      {
+       "start": 447,
+       "end": 451,
+       "title": "91."
+      },
+      {
+       "start": 452,
+       "end": 456,
+       "title": "92."
+      },
+      {
+       "start": 457,
+       "end": 461,
+       "title": "93."
+      },
+      {
+       "start": 462,
+       "end": 466,
+       "title": "94."
+      }
+     ],
+     "split": false,
+     "id": "M6",
+     "book": 5,
+     "layer": "mula",
+     "title": "80. … 94.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 467,
+     "end": 543,
+     "chars": 1933,
+     "sents": 77,
+     "paras": 77,
+     "chapters": [
+      {
+       "start": 467,
+       "end": 471,
+       "title": "95."
+      },
+      {
+       "start": 472,
+       "end": 472,
+       "title": "Tipādabyāsayamakagāthā"
+      },
+      {
+       "start": 473,
+       "end": 477,
+       "title": "96."
+      },
+      {
+       "start": 478,
+       "end": 478,
+       "title": "Pādabyāsamahāyamakagāthā"
+      },
+      {
+       "start": 479,
+       "end": 483,
+       "title": "97."
+      },
+      {
+       "start": 484,
+       "end": 484,
+       "title": "Abyāpetādyantayamakagāthā"
+      },
+      {
+       "start": 485,
+       "end": 489,
+       "title": "98."
+      },
+      {
+       "start": 490,
+       "end": 490,
+       "title": "Paṭilomayamakagāthā"
+      },
+      {
+       "start": 491,
+       "end": 493,
+       "title": "99."
+      },
+      {
+       "start": 494,
+       "end": 496,
+       "title": "100."
+      },
+      {
+       "start": 497,
+       "end": 497,
+       "title": "Ekaṭhānikādiyamakagāthā"
+      },
+      {
+       "start": 498,
+       "end": 500,
+       "title": "101."
+      },
+      {
+       "start": 501,
+       "end": 503,
+       "title": "102."
+      },
+      {
+       "start": 504,
+       "end": 506,
+       "title": "103."
+      },
+      {
+       "start": 507,
+       "end": 509,
+       "title": "104."
+      },
+      {
+       "start": 510,
+       "end": 510,
+       "title": "Akkharuttarikayamakagāthā"
+      },
+      {
+       "start": 511,
+       "end": 513,
+       "title": "105."
+      },
+      {
+       "start": 514,
+       "end": 516,
+       "title": "106."
+      },
+      {
+       "start": 517,
+       "end": 519,
+       "title": "107."
+      },
+      {
+       "start": 520,
+       "end": 522,
+       "title": "108."
+      },
+      {
+       "start": 523,
+       "end": 523,
+       "title": "Paheḷigāthā"
+      },
+      {
+       "start": 524,
+       "end": 526,
+       "title": "109."
+      },
+      {
+       "start": 527,
+       "end": 527,
+       "title": "Byāpetādiyamakagāthā"
+      },
+      {
+       "start": 528,
+       "end": 532,
+       "title": "110."
+      },
+      {
+       "start": 533,
+       "end": 533,
+       "title": "Mahāpadhānadīpanīgāthā"
+      },
+      {
+       "start": 534,
+       "end": 538,
+       "title": "111."
+      },
+      {
+       "start": 539,
+       "end": 543,
+       "title": "112."
+      }
+     ],
+     "split": false,
+     "id": "M7",
+     "book": 5,
+     "layer": "mula",
+     "title": "95. … 112.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 544,
+     "end": 622,
+     "chars": 2271,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 544,
+       "end": 548,
+       "title": "113."
+      },
+      {
+       "start": 549,
+       "end": 553,
+       "title": "114."
+      },
+      {
+       "start": 554,
+       "end": 554,
+       "title": "Māraparājayadīpanīgāthā"
+      },
+      {
+       "start": 555,
+       "end": 559,
+       "title": "115."
+      },
+      {
+       "start": 560,
+       "end": 562,
+       "title": "116."
+      },
+      {
+       "start": 563,
+       "end": 565,
+       "title": "118."
+      },
+      {
+       "start": 566,
+       "end": 568,
+       "title": "119."
+      },
+      {
+       "start": 569,
+       "end": 571,
+       "title": "120."
+      },
+      {
+       "start": 572,
+       "end": 574,
+       "title": "121."
+      },
+      {
+       "start": 575,
+       "end": 577,
+       "title": "122."
+      },
+      {
+       "start": 578,
+       "end": 580,
+       "title": "123."
+      },
+      {
+       "start": 581,
+       "end": 583,
+       "title": "124."
+      },
+      {
+       "start": 584,
+       "end": 586,
+       "title": "125."
+      },
+      {
+       "start": 587,
+       "end": 589,
+       "title": "126."
+      },
+      {
+       "start": 590,
+       "end": 592,
+       "title": "127."
+      },
+      {
+       "start": 593,
+       "end": 595,
+       "title": "128."
+      },
+      {
+       "start": 596,
+       "end": 598,
+       "title": "129."
+      },
+      {
+       "start": 599,
+       "end": 601,
+       "title": "130."
+      },
+      {
+       "start": 602,
+       "end": 604,
+       "title": "131."
+      },
+      {
+       "start": 605,
+       "end": 607,
+       "title": "132."
+      },
+      {
+       "start": 608,
+       "end": 610,
+       "title": "133."
+      },
+      {
+       "start": 611,
+       "end": 613,
+       "title": "134."
+      },
+      {
+       "start": 614,
+       "end": 616,
+       "title": "135."
+      },
+      {
+       "start": 617,
+       "end": 619,
+       "title": "136."
+      },
+      {
+       "start": 620,
+       "end": 622,
+       "title": "137."
+      }
+     ],
+     "split": false,
+     "id": "M8",
+     "book": 5,
+     "layer": "mula",
+     "title": "113. … 137.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 623,
+     "end": 701,
+     "chars": 2333,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 623,
+       "end": 625,
+       "title": "138."
+      },
+      {
+       "start": 626,
+       "end": 628,
+       "title": "139."
+      },
+      {
+       "start": 629,
+       "end": 631,
+       "title": "140."
+      },
+      {
+       "start": 632,
+       "end": 634,
+       "title": "141."
+      },
+      {
+       "start": 635,
+       "end": 635,
+       "title": "Abhisambodhidīpanīgāthā"
+      },
+      {
+       "start": 636,
+       "end": 638,
+       "title": "142."
+      },
+      {
+       "start": 639,
+       "end": 641,
+       "title": "143."
+      },
+      {
+       "start": 642,
+       "end": 644,
+       "title": "144."
+      },
+      {
+       "start": 645,
+       "end": 647,
+       "title": "145."
+      },
+      {
+       "start": 648,
+       "end": 650,
+       "title": "146."
+      },
+      {
+       "start": 651,
+       "end": 653,
+       "title": "147."
+      },
+      {
+       "start": 654,
+       "end": 656,
+       "title": "148."
+      },
+      {
+       "start": 657,
+       "end": 659,
+       "title": "149."
+      },
+      {
+       "start": 660,
+       "end": 662,
+       "title": "150."
+      },
+      {
+       "start": 663,
+       "end": 665,
+       "title": "151."
+      },
+      {
+       "start": 666,
+       "end": 668,
+       "title": "152."
+      },
+      {
+       "start": 669,
+       "end": 671,
+       "title": "153."
+      },
+      {
+       "start": 672,
+       "end": 674,
+       "title": "154."
+      },
+      {
+       "start": 675,
+       "end": 677,
+       "title": "155."
+      },
+      {
+       "start": 678,
+       "end": 680,
+       "title": "156."
+      },
+      {
+       "start": 681,
+       "end": 683,
+       "title": "157."
+      },
+      {
+       "start": 684,
+       "end": 686,
+       "title": "158."
+      },
+      {
+       "start": 687,
+       "end": 689,
+       "title": "159."
+      },
+      {
+       "start": 690,
+       "end": 692,
+       "title": "160."
+      },
+      {
+       "start": 693,
+       "end": 695,
+       "title": "161."
+      },
+      {
+       "start": 696,
+       "end": 698,
+       "title": "162."
+      },
+      {
+       "start": 699,
+       "end": 701,
+       "title": "163."
+      }
+     ],
+     "split": false,
+     "id": "M9",
+     "book": 5,
+     "layer": "mula",
+     "title": "138. … 163.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 702,
+     "end": 777,
+     "chars": 2013,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 702,
+       "end": 704,
+       "title": "164."
+      },
+      {
+       "start": 705,
+       "end": 707,
+       "title": "165."
+      },
+      {
+       "start": 708,
+       "end": 710,
+       "title": "166."
+      },
+      {
+       "start": 711,
+       "end": 713,
+       "title": "167."
+      },
+      {
+       "start": 714,
+       "end": 716,
+       "title": "168."
+      },
+      {
+       "start": 717,
+       "end": 719,
+       "title": "169."
+      },
+      {
+       "start": 720,
+       "end": 724,
+       "title": "170."
+      },
+      {
+       "start": 725,
+       "end": 729,
+       "title": "171."
+      },
+      {
+       "start": 730,
+       "end": 734,
+       "title": "172."
+      },
+      {
+       "start": 735,
+       "end": 739,
+       "title": "173."
+      },
+      {
+       "start": 740,
+       "end": 740,
+       "title": "Dhammacakkapavattanadīpanīgāthā"
+      },
+      {
+       "start": 741,
+       "end": 745,
+       "title": "174."
+      },
+      {
+       "start": 746,
+       "end": 746,
+       "title": "Pāṭihāriyadīpanīgāthā"
+      },
+      {
+       "start": 747,
+       "end": 751,
+       "title": "175."
+      },
+      {
+       "start": 752,
+       "end": 756,
+       "title": "176."
+      },
+      {
+       "start": 757,
+       "end": 757,
+       "title": "Navaguṇadīpanīgāthā"
+      },
+      {
+       "start": 758,
+       "end": 762,
+       "title": "177."
+      },
+      {
+       "start": 763,
+       "end": 767,
+       "title": "178."
+      },
+      {
+       "start": 768,
+       "end": 772,
+       "title": "179."
+      },
+      {
+       "start": 773,
+       "end": 777,
+       "title": "180."
+      }
+     ],
+     "split": false,
+     "id": "M10",
+     "book": 5,
+     "layer": "mula",
+     "title": "164. … 180.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 778,
+     "end": 856,
+     "chars": 2186,
+     "sents": 79,
+     "paras": 79,
+     "chapters": [
+      {
+       "start": 778,
+       "end": 782,
+       "title": "181."
+      },
+      {
+       "start": 783,
+       "end": 787,
+       "title": "182."
+      },
+      {
+       "start": 788,
+       "end": 792,
+       "title": "183."
+      },
+      {
+       "start": 793,
+       "end": 793,
+       "title": "Guṇadīpanīgāthā"
+      },
+      {
+       "start": 794,
+       "end": 798,
+       "title": "184."
+      },
+      {
+       "start": 799,
+       "end": 803,
+       "title": "185."
+      },
+      {
+       "start": 804,
+       "end": 807,
+       "title": "186."
+      },
+      {
+       "start": 808,
+       "end": 812,
+       "title": "187."
+      },
+      {
+       "start": 813,
+       "end": 817,
+       "title": "188."
+      },
+      {
+       "start": 818,
+       "end": 818,
+       "title": "Pūjānidhānadīpanīgāthā"
+      },
+      {
+       "start": 819,
+       "end": 823,
+       "title": "189."
+      },
+      {
+       "start": 824,
+       "end": 826,
+       "title": "190."
+      },
+      {
+       "start": 827,
+       "end": 829,
+       "title": "191."
+      },
+      {
+       "start": 830,
+       "end": 832,
+       "title": "192."
+      },
+      {
+       "start": 833,
+       "end": 835,
+       "title": "193."
+      },
+      {
+       "start": 836,
+       "end": 838,
+       "title": "194."
+      },
+      {
+       "start": 839,
+       "end": 841,
+       "title": "195."
+      },
+      {
+       "start": 842,
+       "end": 844,
+       "title": "196."
+      },
+      {
+       "start": 845,
+       "end": 847,
+       "title": "197."
+      },
+      {
+       "start": 848,
+       "end": 850,
+       "title": "198."
+      },
+      {
+       "start": 851,
+       "end": 853,
+       "title": "199."
+      },
+      {
+       "start": 854,
+       "end": 856,
+       "title": "200."
+      }
+     ],
+     "split": false,
+     "id": "M11",
+     "book": 5,
+     "layer": "mula",
+     "title": "181. … 200.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 857,
+     "end": 934,
+     "chars": 2328,
+     "sents": 78,
+     "paras": 78,
+     "chapters": [
+      {
+       "start": 857,
+       "end": 859,
+       "title": "201."
+      },
+      {
+       "start": 860,
+       "end": 862,
+       "title": "202."
+      },
+      {
+       "start": 863,
+       "end": 865,
+       "title": "203."
+      },
+      {
+       "start": 866,
+       "end": 868,
+       "title": "205."
+      },
+      {
+       "start": 869,
+       "end": 871,
+       "title": "206."
+      },
+      {
+       "start": 872,
+       "end": 874,
+       "title": "207."
+      },
+      {
+       "start": 875,
+       "end": 878,
+       "title": "208."
+      },
+      {
+       "start": 879,
+       "end": 883,
+       "title": "209."
+      },
+      {
+       "start": 884,
+       "end": 886,
+       "title": "210."
+      },
+      {
+       "start": 887,
+       "end": 889,
+       "title": "211."
+      },
+      {
+       "start": 890,
+       "end": 892,
+       "title": "212."
+      },
+      {
+       "start": 893,
+       "end": 895,
+       "title": "213."
+      },
+      {
+       "start": 896,
+       "end": 898,
+       "title": "214."
+      },
+      {
+       "start": 899,
+       "end": 901,
+       "title": "215."
+      },
+      {
+       "start": 902,
+       "end": 904,
+       "title": "216."
+      },
+      {
+       "start": 905,
+       "end": 907,
+       "title": "217."
+      },
+      {
+       "start": 908,
+       "end": 910,
+       "title": "218."
+      },
+      {
+       "start": 911,
+       "end": 913,
+       "title": "219."
+      },
+      {
+       "start": 914,
+       "end": 916,
+       "title": "220."
+      },
+      {
+       "start": 917,
+       "end": 919,
+       "title": "221."
+      },
+      {
+       "start": 920,
+       "end": 922,
+       "title": "222."
+      },
+      {
+       "start": 923,
+       "end": 925,
+       "title": "223."
+      },
+      {
+       "start": 926,
+       "end": 928,
+       "title": "224."
+      },
+      {
+       "start": 929,
+       "end": 931,
+       "title": "225."
+      },
+      {
+       "start": 932,
+       "end": 934,
+       "title": "226."
+      }
+     ],
+     "split": false,
+     "id": "M12",
+     "book": 5,
+     "layer": "mula",
+     "title": "201. … 226.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 935,
+     "end": 1010,
+     "chars": 2100,
+     "sents": 76,
+     "paras": 76,
+     "chapters": [
+      {
+       "start": 935,
+       "end": 937,
+       "title": "227."
+      },
+      {
+       "start": 938,
+       "end": 940,
+       "title": "228."
+      },
+      {
+       "start": 941,
+       "end": 943,
+       "title": "229."
+      },
+      {
+       "start": 944,
+       "end": 946,
+       "title": "230."
+      },
+      {
+       "start": 947,
+       "end": 949,
+       "title": "231."
+      },
+      {
+       "start": 950,
+       "end": 952,
+       "title": "232."
+      },
+      {
+       "start": 953,
+       "end": 955,
+       "title": "233."
+      },
+      {
+       "start": 956,
+       "end": 958,
+       "title": "234."
+      },
+      {
+       "start": 959,
+       "end": 961,
+       "title": "235."
+      },
+      {
+       "start": 962,
+       "end": 964,
+       "title": "236."
+      },
+      {
+       "start": 965,
+       "end": 967,
+       "title": "237."
+      },
+      {
+       "start": 968,
+       "end": 970,
+       "title": "238."
+      },
+      {
+       "start": 971,
+       "end": 973,
+       "title": "239."
+      },
+      {
+       "start": 974,
+       "end": 976,
+       "title": "240."
+      },
+      {
+       "start": 977,
+       "end": 979,
+       "title": "241."
+      },
+      {
+       "start": 980,
+       "end": 980,
+       "title": "Patthanādīpanīgāthā"
+      },
+      {
+       "start": 981,
+       "end": 985,
+       "title": "242."
+      },
+      {
+       "start": 986,
+       "end": 990,
+       "title": "243."
+      },
+      {
+       "start": 991,
+       "end": 995,
+       "title": "244."
+      },
+      {
+       "start": 996,
+       "end": 1000,
+       "title": "245."
+      },
+      {
+       "start": 1001,
+       "end": 1005,
+       "title": "246."
+      },
+      {
+       "start": 1006,
+       "end": 1010,
+       "title": "247."
+      }
+     ],
+     "split": false,
+     "id": "M13",
+     "book": 5,
+     "layer": "mula",
+     "title": "227. … 247.",
+     "skip": [],
+     "att_ref": null
+    },
+    {
+     "start": 1011,
+     "end": 1025,
+     "chars": 367,
+     "sents": 15,
+     "paras": 15,
+     "chapters": [
+      {
+       "start": 1011,
+       "end": 1015,
+       "title": "248."
+      },
+      {
+       "start": 1016,
+       "end": 1020,
+       "title": "249."
+      },
+      {
+       "start": 1021,
+       "end": 1025,
+       "title": "250."
+      }
+     ],
+     "split": false,
+     "id": "M14",
+     "book": 5,
+     "layer": "mula",
+     "title": "248. … 250.",
+     "skip": [],
+     "att_ref": null
+    }
+   ],
+   "paras": 1024,
+   "chars": 27892,
+   "sents": 1024,
+   "layer_cn": "本文 mūla",
+   "parent_ids": []
+  }
+ ],
+ "harmonize": [],
+ "exports": [
+  {
+   "id": "EM",
+   "book": 5,
+   "layer": "mula",
+   "start": 2,
+   "end": 1025,
+   "title": "Jinālaṅkāra"
+  }
+ ],
+ "stages": [
+  {
+   "id": "translate",
+   "step": "translate",
+   "layer": ""
+  }
+ ],
+ "tasks": [
+  {
+   "id": "M1:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 2,
+   "end": 80,
+   "chars": 2295,
+   "sents": 79,
+   "title": "Jinālaṅkāra … 15.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M2:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 81,
+   "end": 160,
+   "chars": 2196,
+   "sents": 80,
+   "title": "16. … Gabbhokkantidīpanīgāthā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M3:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 161,
+   "end": 238,
+   "chars": 2065,
+   "sents": 78,
+   "title": "32. … 49.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M4:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 239,
+   "end": 314,
+   "chars": 1865,
+   "sents": 76,
+   "title": "50. … Pāduddhāravimhayadīpanīgāthā",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M5:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 315,
+   "end": 390,
+   "chars": 2045,
+   "sents": 76,
+   "title": "65. … 79.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M6:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 391,
+   "end": 466,
+   "chars": 1895,
+   "sents": 76,
+   "title": "80. … 94.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M7:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 467,
+   "end": 543,
+   "chars": 1933,
+   "sents": 77,
+   "title": "95. … 112.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M8:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 544,
+   "end": 622,
+   "chars": 2271,
+   "sents": 79,
+   "title": "113. … 137.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M9:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 623,
+   "end": 701,
+   "chars": 2333,
+   "sents": 79,
+   "title": "138. … 163.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M10:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 702,
+   "end": 777,
+   "chars": 2013,
+   "sents": 76,
+   "title": "164. … 180.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M11:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 778,
+   "end": 856,
+   "chars": 2186,
+   "sents": 79,
+   "title": "181. … 200.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M12:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 857,
+   "end": 934,
+   "chars": 2328,
+   "sents": 78,
+   "title": "201. … 226.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M13:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 935,
+   "end": 1010,
+   "chars": 2100,
+   "sents": 76,
+   "title": "227. … 247.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  },
+  {
+   "id": "M14:translate",
+   "stage": "translate",
+   "step": "translate",
+   "layer": "mula",
+   "book": 5,
+   "start": 1011,
+   "end": 1025,
+   "chars": 367,
+   "sents": 15,
+   "title": "248. … 250.",
+   "needs": [],
+   "status": "pending",
+   "tries": 0,
+   "began": "",
+   "ended": "",
+   "note": "",
+   "detail": ""
+  }
+ ],
+ "seq": 44
+}
