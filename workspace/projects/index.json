@@ -1,7 +1,37 @@
 {
  "schema": 2,
- "updated": "2026-11-25 15:58:32",
+ "updated": "2026-11-25 16:14:16",
  "projects": [
+  {
+   "name": "dn-pathikavagga",
+   "title": "長部 波梨品 三層翻譯",
+   "state": "done",
+   "book": 95,
+   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
+   "scan": true,
+   "jobs": 3,
+   "job_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 3,
+    "failed": 0,
+    "skipped": 0,
+    "fixed": 0
+   },
+   "units": 816,
+   "unit_counts": {
+    "pending": 0,
+    "running": 0,
+    "done": 538,
+    "failed": 0,
+    "skipped": 278,
+    "fixed": 0
+   },
+   "chars": 0,
+   "pct": 0.0,
+   "updated": "2026-11-25 16:09:26",
+   "created": "2026-11-23 18:02:24"
+  },
   {
    "name": "x57-saddanitippakaranam-dhatumala",
    "title": "Saddanītippakaraṇaṃ (dhātumālā) 汉译（藏外·仅本文）",
@@ -2131,36 +2161,6 @@
    "pct": 100.0,
    "updated": "2026-11-24 03:03:21",
    "created": "2026-11-24 02:47:25"
-  },
-  {
-   "name": "dn-pathikavagga",
-   "title": "長部 波梨品 三層翻譯",
-   "state": "idle",
-   "book": 95,
-   "channel": "73c03e1a-f333-11f0-808a-438f0af4b9e9",
-   "scan": true,
-   "jobs": 3,
-   "job_counts": {
-    "pending": 3,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "units": 816,
-   "unit_counts": {
-    "pending": 816,
-    "running": 0,
-    "done": 0,
-    "failed": 0,
-    "skipped": 0,
-    "fixed": 0
-   },
-   "chars": 0,
-   "pct": 0.0,
-   "updated": "2026-11-23 18:02:24",
-   "created": "2026-11-23 18:02:24"
   },
   {
    "name": "kn18",
