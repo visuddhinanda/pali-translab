@@ -92,7 +92,13 @@ rm -f "$PKG"
 (cd "$HOME_DIR" && zip -qr "$PROJ.zip" . -x "logs/*" "*.zip" ".*" "*/.*") || echo "⚠ 打包失败"
 ls -la "$PKG"
 
-python3 scripts/mail_file.py "$PKG" \
+# 以 mail_file.py 的退出码为准：没收件人、认证失败、超体积都是非零退出，
+# 不能照样记「已发信」（kn8/9/13 曾因此误报）
+if python3 scripts/mail_file.py "$PKG" \
     --subject "$PROJ 翻译完成" \
-    --body "$PROJ 全部 $TOT 条流水线已完成。附件含 markdown 导出、epub 与过程报告。"
-echo "[$(date '+%F %T')] 已发信"
+    --body "$PROJ 全部 $TOT 条流水线已完成。附件含 markdown 导出、epub 与过程报告。"; then
+    echo "[$(date '+%F %T')] 已发信"
+else
+    echo "[$(date '+%F %T')] ✗ 未发出（见上一行原因）；包在 $PKG，可用 scripts/mail_file.py 补寄"
+    exit 5
+fi
